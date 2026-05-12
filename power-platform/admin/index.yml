@@ -95,8 +95,6 @@ landingContent:
             url: geographical-availability-copilot.md
           - text: Track, manage, and scale Copilot adoption
             url: copilot/copilot-hub.md
-          - text: View agent inventory (preview)
-            url: tenant-wide-agent-inventory.md
 
   # Card
   - title: Troubleshoot

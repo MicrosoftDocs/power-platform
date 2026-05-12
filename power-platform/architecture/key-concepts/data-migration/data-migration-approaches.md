@@ -5,7 +5,7 @@ description: Learn how to plan and execute simple, medium, and complex data migr
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.subservice: guidance
+ms.subservice: architecture-center
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 08/19/2025
@@ -67,7 +67,7 @@ The next article outlines the strategic role of a staging database in large-scal
 > [!div class="nextstepaction"]
 > [Use a staging database for data migration](staging-database-approach.md)
 
-## Related information
+## Related resources
 
 - [Ingest exported Dataverse data with Azure Data Factory](/power-apps/maker/data-platform/export-to-data-lake-data-adf)
 - [Link your Dataverse environment to Microsoft Fabric and unlock deep insights](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric)

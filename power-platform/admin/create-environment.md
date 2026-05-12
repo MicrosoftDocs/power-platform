@@ -4,7 +4,7 @@ description: Learn how to create and manage environments in the Power Platform a
 author: sericks007
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/06/2025
+ms.date: 05/06/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: mbajwa
@@ -123,18 +123,9 @@ For Dynamics 365 finance and operations apps, you need at least:
 
 ### Steps
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select **New** in the command bar.
-   
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select **New** in the command bar.
----
 
 4. Enter the following settings:
 
@@ -142,10 +133,10 @@ For Dynamics 365 finance and operations apps, you need at least:
    |---------|---------|
    |Name     | The name of your environment.        |
    |Region     | Choose a region for the environment.        |
-   |Get new features early     | Select **Yes** for early release cycle.        |
-   |Type     | Choose production, trial, or sandbox.        |
-   |Purpose     | A description of the environment.         |
-   |Add a Dataverse data store | Select **Yes**. |
+   |Get new features early     | Select **Yes** for early release cycle. This setting is available for environments in *United States*, *Europe - Default*, *Australia* and *Canada* regions.        |
+   |Type     | Choose *Trial (subscription-based)*, *Developer*, *Production*, *Trial* or *Sandbox*.        |
+   |Purpose     | Optional, a description of the environment.         |
+   |Add a Dataverse data store | Select **Yes**. This setting cannot be undone. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
 5. Select **Next**.
@@ -173,18 +164,9 @@ You need 1 GB of available database capacity.
 
 ### Steps
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select **New** in the command bar.
-   
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select **New** in the command bar.
----
 
 4. Enter the following settings:
 
@@ -192,10 +174,10 @@ You need 1 GB of available database capacity.
    |---------|---------|
    |Name     | The name of your environment.        |
    |Region     | Choose a region for the environment.        |
-   |Get new features early     | Select **Yes** for early release cycle.        |
+   |Get new features early     | Select **Yes** for early release cycle. This setting is available for environments in *United States*, *Europe - Default*, *Australia* and *Canada* regions.       |
    |Type     | You can choose production or trial.        |
-   |Purpose     | A description of the environment.         |
-   |Add a Dataverse data store | Select **No**. |
+   |Purpose     | Optional, a description of the environment.         |
+   |Add a Dataverse data store | Select **No**. Can be added afterwards. |
    |Pay-as-you-go with Azure | Select **Yes** to link this environment to an Azure subscription to pay for select Power Platform services such as Dataverse and Power Apps. |
 
 5. Select **Save** to apply the changes.
@@ -211,7 +193,6 @@ You can indicate how often you prefer an environment to receive updates and feat
 
 ### Set refresh cadence
 
-### [Modern admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
@@ -219,16 +200,6 @@ You can indicate how often you prefer an environment to receive updates and feat
 1. Select **Edit**.
 1. Under **Refresh cadence**, select the desired cadence type.
 1. Select **Save** to apply the changes.
-   
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a Dynamics 365 or Power Platform admin.
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. Select **Edit**.
-1. Under **Refresh cadence**, select the desired cadence type.
-1. Select **Save** to apply the changes.
----
 
 The refresh cadence doesn't change when you receive updates for:
 
@@ -260,9 +231,7 @@ Users can access resources in an environment if they have:
 
 ### Why do I no longer see Preview (United states) region?
 
-This region is no longer available as a choice. It is now replaced with the **Get new features early** setting when the United States region is selected.
-
-Preview or early release cycle capabilities are available for environments in other regions, in addition to the United States.
+This region is no longer available as a choice. It is now replaced with the **Get new features early** setting.
 
 ### What are the new trial limits for Power Apps customers?
 
@@ -282,7 +251,12 @@ Provisioning environments is based on database capacity.
 
 Previously, the limit allowed two environments per Power Apps Plan 2 license. Now, you only need 1 GB of available capacity to provision. All environments with or without Dataverse consume at least 1 GB capacity.
 
-### See also
+### Why are Sales and Customer Service applications installed when I choose 'Yes' for 'Enable Dynamics 365 Apps'?
+The Sales and Customer Service apps are installed by default when the **Enable Dynamcis 365 Apps** setting is **Yes**. We don't recommend removing these apps.
+
+You can determine which users will have access and visibility to these apps using [security roles](security-roles-privileges.md). Learn more in [Manage access to Power Apps apps](admin-manage-apps.md) by using security roles.
+
+### Related content
 
 [Dataverse storage capacity](capacity-storage.md) <br>
 [Control user access to environments: security groups and licenses](control-user-access.md)

@@ -26,7 +26,7 @@ You can install, update, and uninstall the Power Platform CLI using [.NET tool c
 
 ## Prerequisites
 
-You must have .NET installed. (.NET 6.0 is recommended.)
+You must have .NET installed. (.NET 10.0 is recommended.)
 
 # [Windows](#tab/windows)
 

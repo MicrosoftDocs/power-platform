@@ -1,10 +1,10 @@
 ---
-title: "Test model-driven applications with Test Engine (preview)"
+title: "Test model-driven applications with Test Engine (deprecated)"
 description: "Explains how to test a Power Apps Model Driven application using Test Engine."
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/27/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -12,10 +12,9 @@ contributors:
  - grant-archibald-ms 
 ---
 
-# Test model-driven applications with Test Engine (preview)
+# Test model-driven applications with Test Engine (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Testing your model-driven application with [Test Engine](./overview.md) requires the following steps:
 
@@ -26,7 +25,7 @@ Testing your model-driven application with [Test Engine](./overview.md) requires
 
 ## Create a test plan
 
-Create a yaml file using the test plan schema explained in [Power Apps Test Engine YAML format (preview)](yaml.md).
+Create a yaml file using the test plan schema explained in [Power Apps Test Engine YAML format (deprecated)](yaml.md).
 
 > [!TIP]
 > Review [available sample](samples.md#available-samples) plans in the GitHub repository.

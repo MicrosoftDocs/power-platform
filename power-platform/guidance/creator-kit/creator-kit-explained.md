@@ -147,7 +147,7 @@ There are several strategies to consider depending on the organization's priorit
 
 **As the overlap between the new Modern controls and the Creator Kit increases over time, will some Creator Kit components be deprecated? If so, what will that process entail?**
 
-Yes, a subset of Creator Kit components are reimplemented as modern controls and are considered successors of the Creator Kit components. The team will deprecate the Creator Kit component predecessors in the AppSource offering once the successor meets parity for the needs of the majority. Deprecation timelines will be announced through regular channels such as GitHub updates, Office Hours, and discussion forums. For more information on the recommended migration process, see the [migration process documentation](https://github.com/microsoft/powercat-creator-kit/discussions/473).
+Yes, a subset of Creator Kit components are reimplemented as modern controls and are considered successors of the Creator Kit components. The team will deprecate the Creator Kit component predecessors in the Marketplace offering once the successor meets parity for the needs of the majority. Deprecation timelines will be announced through regular channels such as GitHub updates, Office Hours, and discussion forums. For more information on the recommended migration process, see the [migration process documentation](https://github.com/microsoft/powercat-creator-kit/discussions/473).
 
 **What are the best practices for development pipelines (dev > UAT > prod) involving the Creator Kit?**
 

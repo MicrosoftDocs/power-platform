@@ -28,15 +28,9 @@ With the new provisioning model, users with the correct licenses can create an e
 
 To restrict environment creation and management to admins from the Power Platform admin center, follow these steps:
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Tenant settings** to open the Tenant settings page.
-
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Settings** to open the Tenant settings page.
----
 
 In the **Tenant settings** page, select one of these environment-type creation settings:
 

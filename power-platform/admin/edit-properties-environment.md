@@ -4,7 +4,7 @@ description: Learn how to edit the properties of an environment in Power Platfor
 author: LaurentPepin 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/11/2024
+ms.date: 11/20/2025
 ms.subservice: admin
 ms.author: lapepin
 ms.reviewer: sericks
@@ -22,14 +22,15 @@ Administrators can edit properties of an environment, such as the friendly name,
   
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in using administrator credentials.
 
-2. From the left-side menu, select **Environments**, and then select an environment.
+1. In the navigation pane, select **Manage**.
 
-3. Select **Edit**.
+1. In the **Manage** pane, select **Environments**.
 
-   > [!div class="mx-imgBorder"] 
-   > ![Select Edit.](media/select-edit.png "Select Edit")
+1. On the **Environments** page, select an environment.
+   
+1. In the **Details** section, select **Edit**.
 
-4. Select any of the following field values that you want to change.  
+1. Select any of the following field values that you want to change.  
   
    - **Name:** This is typically the name of your organization and is displayed in the customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). After you save the change, it may take up to 5 minutes for the friendly name to appear in the application.  
   
@@ -50,7 +51,7 @@ Administrators can edit properties of an environment, such as the friendly name,
      > - For users of Dynamics 365 for Outlook, the following two tasks must be completed in the order specified here:  
      > 
      >   1. **Synchronize offline data**. Dynamics 365 for Outlook users connected to this environment who work offline must synchronize by using the previous URL. If you run the Configuration Wizard and change the URL before completing this step, offline data may be lost.  
-     >   2. **Run the Configuration Wizard**. After a URL name change is saved and any offline data is synchronized, users of Dynamics 365 for Outlook must run the Configuration Wizard to update the URL.  
+     >   1. **Run the Configuration Wizard**. After a URL name change is saved and any offline data is synchronized, users of Dynamics 365 for Outlook must run the Configuration Wizard to update the URL.  
   
         After a URL name change is saved, all users who access that environment must be notified of the change. For 24 hours after the change, users will be able to access the environment using the most recent, previous URL. No other environment will be able to use the most recent URL. After the 24-hour period has passed, users won't be able to access the environment using the most recent, previous URL. Other environments will be able to use the most recent URL.
   
@@ -82,7 +83,7 @@ Administrators can edit properties of an environment, such as the friendly name,
      > [!IMPORTANT]
      >  If you do not specify a security group, all users who have a license will be added to this environment.  
   
-5. Select **Save**.  
+1. Select **Save**.  
   
 ### See also
 [Control user access to environments: security groups and licenses](control-user-access.md)

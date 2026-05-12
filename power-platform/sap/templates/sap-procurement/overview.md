@@ -74,7 +74,7 @@ Once deployed, you'll see your procurement team members quickly and easily adapt
 
 You can access the SAP Procurement template in two ways:
 
-- [Microsoft AppSource](<https://aka.ms/AccessSAPProcurementTemplate>)
+- [Microsoft Marketplace](<https://aka.ms/AccessSAPProcurementTemplate>)
 - [Template for Power Platform on GitHub](<https://aka.ms/TemplatesforPowerPlatform>)
 
 > [!IMPORTANT]

@@ -4,7 +4,7 @@ description: Discover how to evaluate Power Platform delivery models to align wi
 #customer intent: As a Power Platform user, I want to understand different Power Platform delivery models so that I can choose the best approach for my organization.
 author: manuelap-msft
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle

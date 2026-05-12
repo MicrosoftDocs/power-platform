@@ -15,7 +15,7 @@ ms.contributors:
 # System Settings Service tab
 
 > [!IMPORTANT]
-> This article describes how to use the legacy settings experience for managing service assets with Dynamics 365 Customer Service apps. For the modern experience, in the Customer Service admin center app, select **Service Teams** > **Other SLA Settings** in the sitemap to access the service configuration settings. More information: [Configure service level agreements](/dynamics365/customer-service/administer/define-service-level-agreements).
+> This article describes how to use the legacy settings experience for managing service assets with Dynamics 365 Customer Service apps. For the modern experience, in the Customer Service admin center app, select **Service Terms** > **Other SLA Settings** in the sitemap to access the service configuration settings. More information: [Configure service level agreements](/dynamics365/customer-service/administer/define-service-level-agreements).
 
 Use this tab to set preferences for customer service, such as service level agreements and entitlements in customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation).  
 

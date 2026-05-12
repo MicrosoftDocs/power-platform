@@ -3,13 +3,15 @@ title: Extend and customize CoE Starter Kit components
 description: Learn how to extend and modify the components of the Power Platform Center of Excellence (CoE) Starter Kit.
 author: conorto
 ms.topic: how-to
-ms.date: 08/21/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: conorto
 ms.reviewer: jhaskett-msft
 ---
 
 # Extend and customize CoE Starter Kit components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 There's no "one size fits all" solution for a Center of Excellence (CoE). Some companies will want a more restrictive set of rules for their organization, while others will want to let users personally explore with less limitation.
 

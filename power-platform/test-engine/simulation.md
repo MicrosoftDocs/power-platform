@@ -1,20 +1,19 @@
 ---
-title: "Dataverse and Connector Simulation with Test Engine (preview)"
+title: "Dataverse and Connector Simulation with Test Engine (deprecated)"
 description: "Discusses the ability to simulate interaction with Dataverse and Connectors using Power Fx functions"
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
 - grant-archibald-ms
 ---
 
-# Dataverse and connector simulation with Test Engine (preview)
+# Dataverse and connector simulation with Test Engine (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 The ability to simulate interaction with Dataverse and Power Platform connectors can play an important role in testing your low code apps by allowing you to define test scenarios without the need for actual data.
 

@@ -28,19 +28,11 @@ There are various ways to add or create a database:
 
 ## Add a database in the Power Platform admin center
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select the environment to which you want to add a database.
 1. In the **Add Dataverse** web part, click **+ Add Dataverse**.
- 
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select the environment to which you want to add a database.
-1. In the **Add Dataverse** web part, click **+ Add Dataverse**.
----
 
 In the **Add Dataverse** side pane, enter the following information, then select **Add** to apply the changes.
 

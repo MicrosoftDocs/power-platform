@@ -1,16 +1,16 @@
 ### YamlMime:Landing
 
-title: Microsoft Power Apps Test Engine (preview)
+title: Microsoft Power Apps Test Engine (deprecated)
 summary: Learn how to create automated tests for Power Platform apps.
 
 metadata:
-  title: Microsoft Power Apps Test Engine (preview)
+  title: Microsoft Power Apps Test Engine (deprecated)
   description: Learn how to create automated test for Power Platform apps.
   ms.subservice: test-engine
   
   ms.topic: landing-page
-  author: pvillads
-  ms.author: pvillads
+  author: caburk
+  ms.author: caburk
   ms.reviewer: jdaly
   ms.date: 05/19/2025
 

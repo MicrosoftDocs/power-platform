@@ -41,9 +41,7 @@ Pay-as-you-go can be set up via the [Power Platform admin center](https://admin.
 
 ## Create a billing plan
 
-To create a [billing plan](pay-as-you-go-overview.md), link [environments](environments-overview.md) to it, and add Azure subscription details for billing, complete the following steps depending on whether you're using the new admin center or the classic admin center.
-
-# [New admin center](#tab/new)
+To create a [billing plan](pay-as-you-go-overview.md), link [environments](environments-overview.md) to it, and add Azure subscription details for billing, complete the following steps.
 
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
@@ -65,67 +63,15 @@ To create a [billing plan](pay-as-you-go-overview.md), link [environments](envir
 1. In the **Select environments** pane, in the **Region** list, select your region. Then the list of environments in that region is displayed.
 
 1. Select the environment you want to add to the billing plan.
-
-1. Select **Save**. 
-
-# [Classic admin center](#tab/classic)
-
-1. In the navigation pane, select **Billing** > **Billing plans**. The **Billing plans** page is displayed.
-
-1. Select **New billing plan**. The **New billing plan** pane is displayed.
-
-1. Select **Azure subscription**.
-
-1. In the **Name** field, provide a name for your new billing plan.
-
-1. From the **Azure subscription** dropdown list, select the Azure subscription you'd like to bill. This list shows all the Azure subscriptions in your tenant for which you have sufficient permissions. If you don't see a subscription that you expect to be listed, or if you receive a permission error at any point, contact the owner of that subscription or your Azure administrator and ensure you have the right permissions as outlined. Learn more at [Procure or create an Azure subscription](#procure-or-create-an-azure-subscription).
-
-1. From the **Resource group** dropdown list, specify a resource group with that subscription. The Power Platform account resource&mdash;that's associated with this billing plan&mdash;is created in this resource group. If there are no resource groups in the specified subscription, you need to create one in the [Azure portal](https://portal.azure.com) before proceeding. To learn more about Azure resources, go to [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview)
-
-1. From the **Power Platform products** dropdown list, select the Power Platform product for which the corresponding meters are applied to in the billing plan.
-
-1. Select **Next**.
-
-1. In the **Select environments** pane, in the **Region** list, select your region. Then the list of environments in that region is displayed.
-
-1. Select the environment you want to add to the billing plan.
-
-1. Select **Save**. 
-
----
-## Create billing plan for Microsoft 365 Copilot Chat
-Microsoft 365 users without a paid Copilot license can now access and use Copilot agents by using a pay-as-you-go meter. Setting up a billing plan for Microsoft Copilot agents differs slightly from the standard billing plan setup process.
-
-# [New admin center](#tab/new)
-
-1. In the navigation pane, select **Licensing**.
-
-1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
-
-1. Select **New billing plan**. The **New billing plan** pane is displayed.
-
-1. Select **Microsoft 365 Copilot Chat**.
-
-1. In the **Name** field, provide a name for your new billing plan.
-
-1. From the **Azure subscription** dropdown list, select the Azure subscription you'd like to bill. This list shows all the Azure subscriptions in your tenant for which you have sufficient permissions.
-
-    If you don't see a subscription that you expect to be listed, or if you receive a permission error at any point, contact the owner of that subscription or your Azure administrator to ensure you have the right permissions, as outlined. Learn more at [Procure or create an Azure subscription](#procure-or-create-an-azure-subscription).
-
-1. From the **Resource group** dropdown list, specify a resource group with that subscription. The Power Platform account resource&mdash;that's associated with this billing plan&mdash;is created in this resource group.
-
-    If there are no resource groups in the specified subscription, you must create one in the [Azure portal](https://portal.azure.com) before proceeding. Learn more about Azure resources in [What is Azure Resource Manager?](/azure/azure-resource-manager/management/overview).
 
 1. Select **Save**.
 
-When a billing plan is created, a new environment named **Microsoft 365 Copilot Chat** is automatically provisioned and linked to the newly created billing plan. Copilot consumption reporting is accessible through this environment. If a new billing plan is created for **Microsoft 365 Copilot Chat** and an environment already exists, it's automatically linked to the new billing plan.
+## Create billing plan for Microsoft 365 Copilot Chat
+Microsoft 365 users without a paid Copilot license can now access and use Copilot agents by using a pay-as-you-go meter. Setting up a billing plan for Microsoft Copilot agents differs slightly from the standard billing plan setup process.
 
-> [!NOTE]
-> Once created, the **Microsoft 365 Copilot Chat** environment can't be deleted by administrators. You can unlink the environment from the linked billing plan. 
+1. In the navigation pane, select **Licensing**.
 
-# [Classic admin center](#tab/classic)
-
-1. In the navigation pane, select **Billing** > **Billing plans**. The **Billing plans** page is displayed.
+1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
 
 1. Select **New billing plan**. The **New billing plan** pane is displayed.
 

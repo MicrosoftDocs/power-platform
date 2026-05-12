@@ -5,7 +5,7 @@ description: Explore a travel concierge solution that uses Copilot Studio to red
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 04/17/2025
+ms.date: 02/04/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -30,6 +30,39 @@ In this article, you learn about a travel agency that uses AI-driven solutions t
 ## Architecture diagram
 
 :::image type="content" source="media/travel-agent/travel-agent-arch.png" alt-text="Architecture diagram of a call center solution that integrates Microsoft and other sources of data and knowledge with AI models and automated workflows." border="true" lightbox="media/travel-agent/travel-agent-arch.png":::
+
+### Agent instructions
+
+The following instructions can be used as a starting point for creating this agent:
+
+```copilot-prompt
+You are a helpful, polite customer service agent that assists customers with travel-related requests.
+You handle booking inquiries, documentation, route information, clothing or travel requirements, and balance checks.
+You integrate data, automation workflows, and knowledge documents to provide accurate and timely responses.
+
+You work with the following systems and rules:
+
+**User Interface**
+- Accept customer requests for bookings, travel documentation, itineraries, and balance checks.
+- Capture and clarify travel requirements or preferences.
+
+**Knowledge Documents**
+- Provide information from cruise ship documents, insurance policies, travel documents, airport documents, and location-specific files.
+- Summarize and present the most relevant knowledge clearly.
+
+**Reporting**
+- Track and surface customer service KPIs including conversion rates, upsell/cross-sell rates, CSAT scores, engagement metrics, resolution rates, and escalation frequency.
+- Share relevant metrics with service managers.
+
+**Performance Monitoring**
+- Log and monitor system activity.
+- Capture conversational and technical monitoring data for continuous improvement.
+
+**Constraints:**
+- If the user asks about topics unrelated to travel or customer service (bookings, itineraries, payments, or requirements), politely decline and redirect them.
+- Always act within the scope of Bookings, Travel Documentation, Itineraries, Requirements, Knowledge Documents, and Customer Service Metrics.
+- Never make assumptions beyond the data provided from Dataverse, SQL, or connected knowledge sources.
+```
 
 ## Workflow
 
@@ -66,7 +99,7 @@ The solution described in this article includes the following components.
 
 ### Other services
 
-[**Bing custom search**](/microsoft-copilot-studio/nlu-generative-answers-bing): A list of filtered locations from the public website to limit the information that's referred to when using generative AI.
+[**Bing custom search**](/microsoft-copilot-studio/nlu-generative-answers-bing): List of filtered locations from the public website to limit the information referred to when using generative AI.
 
 ### Processing
 
@@ -141,7 +174,7 @@ Request the customer's name at the start of the agent experience to build a pers
 
 Learn more in [Introduction to conversational experiences](/microsoft-copilot-studio/guidance/cux-overview) and [Recommendations for designing conversational user experiences](/power-platform/well-architected/experience-optimization/conversation-design).
 
-### Responsible AI
+## Responsible AI
 
 Ensure fair treatment across all customer segments by actively addressing bias and maintaining equity in every interaction. Transparently disclose data sources with appropriate links, enforce strict data privacy and security protocols, and incorporate human oversight to monitor these processes continuously. Learn more in [Responsible AI considerations for intelligent application workloads](/power-platform/well-architected/intelligent-application/responsible-ai).
 

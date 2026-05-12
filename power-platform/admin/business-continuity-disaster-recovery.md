@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 11/04/2025
+ms.date: 05/05/2026
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -83,8 +83,6 @@ Turning on disaster recovery in an environment doesn't affect the environment or
 
 To turn on disaster recovery, follow these steps.
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**. The **Environments** page appears.
@@ -94,21 +92,6 @@ To turn on disaster recovery, follow these steps.
 1. Select **Save**.
 1. The environment briefly displays the **Edit details** page.
 1. The **Environment details** page displays that the process of turning on the feature has started.
-
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
-1. In the navigation pane, select **Environments**.
-1. Select the production environment where you want to turn on self-service disaster recovery.
-1. Select **Disaster Recovery** in the command bar at the top of the page. The **Disaster Recovery** pane appears.
-1. Select the checkbox to turn on **Disaster Recovery**.
-1. Select **Save**.
-1. The environment briefly displays the **Edit details** page.
-1. The **Environment details** page displays that the process of turning on the feature has started.
-
-
----
 
 You might also want to turn on disaster recovery for other events, like:
 
@@ -171,6 +154,12 @@ With the implementation of [availability zones](/azure/reliability/availability-
 - Pay-as-you-go is designed to generate various alerts and warnings at various thresholds to warn administrators of depleting storage. Use the alert mechanism to your advantage.
 - Pay-as-you-go links the selected environment to the Azure subscription by using a billing policy. Once you link an environment to an Azure subscription, the usage of apps and any Dataverse or Power Platform usage that goes above the included storage amounts are billed against the Azure subscription by using Azure meters. For more information, go to [Pay-as-you-go meters](pay-as-you-go-meters.md). If you acquire more storage entitlements, the pay-as-you-go plan stops running the meters and consuming from available free storage and entitlements take precedence. 
 
+### What are the recovery point and recovery time objectives with business continuity and disaster recovery?
+
+Power Platform and Dataverse are designed with high availability built into every region. Within a region, the platform targets approximately near zero recovery point objective (RPO) and a recovery time of under five minutes across availability zones and data centers within a region. For cross-region resiliency, Microsoft provides self-service disaster recovery, which gives customers full visibility and control over the failover process. 
+
+In this model, typical replication lag is under 15 minutes (often under five minutes), and the platform is designed to complete failover within minutes once initiated. Because customers retain control of when and whether to trigger a cross-region failover, Microsoft doesn't publish a cross-region RTO commitment. However, customers can monitor real-time replication lag directly in the Power Platform admin center to inform their own recovery decisions. It's also important to note that when Power Platform solutions connect to external systems, such as SQL Server, REST APIs, or other third-party services, the RPO of those integrations are governed by the availability and recovery capabilities of the respective target systems, and fall outside the scope of Power Platform's resiliency commitments.
+
 ### How does billing work for self-service disaster recovery?
 
 - If you configure your environment to draw capacity from your tenant's Dataverse capacity entitlement, the system consumes the entitled capacity first. You still need a pay-as-you-go billing plan to avoid capacity overages.
@@ -185,10 +174,12 @@ If there's a regional outage, the system supports failover only to the designate
 ### Is my region supported for self-service disaster recovery?
 Self-service disaster recovery depends on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. For more information, go to [Azure supported regions](/azure/reliability/regions-list). 
 
-As of November 2025,  Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported. Once a region gets a regional pair, it's on our roadmap for Power Platform geo build-out and for supporting self-service disaster. 
+As of November 2025, Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for self-service disaster recovery.
 
-> [!NOTE]
-> UAE, Brazil, and South Africa have regional pairs in constrained regions and are on the roadmap for Power Platform geo buildout followed by self-service disaster recovery support. Geo build-out prioritization is influenced by impact, opportunity, and resource constraints. 
+> [!Note]
+> Brazil and South Africa don't have self-service disaster recovery because their regional pairs are in heavily constrained regions. Adding supported regions is influenced by impact, opportunity, and resource constraints.
+>
+> United Arab Emirates has self-service disaster recovery but continues to be capacity-constrained, which has impacted its general availability.
 
 ### What should I know about the capacity experience?
 

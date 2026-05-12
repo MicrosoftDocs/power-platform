@@ -2,12 +2,12 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: how-to
-ms.date: 10/13/2025
+ms.date: 05/04/2026
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta
 ms.reviewer: ellenwehrle
-contributors: 
+contributors:
   - tapas1447
   - ttreen
   - Funken1766
@@ -25,16 +25,15 @@ ms.custom:
 
 It's important to protect your data on Microsoft Power Platform and in Dataverse and to provide continuous availability of service through system or manual backups.
 
-System backups are automatically created for environments that have a database. System backups of production environments that have a database and Dynamics 365 applications are retained for up to 28 days. By default, backups of production environments without Dynamics 365 applications and other nonproduction environments are retained for seven days. However, for managed production environments without Dynamics 365 applications, the retention period can be extended up to 28 days using PowerShell.
+System backups are automatically created for environments that have a database. By default, backups of all production and nonproduction environments are retained for seven days. However, for production [Managed Environments](managed-environment-overview.md), the retention period can be extended up to 28 days through the Power Platform admin center or PowerShell.
 
-Manual backups are backups that the user initiates. It's recommended for creating manual backups before performing major customizations, applying a version update, or making significant changes to the environment. You can create these backups for production and sandbox environments, but not for the default environment. Manual backups of production environments that have Dynamics 365 applications are kept for up to 28 days. Backups of environments that don't have Dynamics 365 applications are kept for seven days.
+Manual backups are backups that the user initiates. It's recommended that you create manual backups before performing major customizations, applying a version update, or making significant changes to the environment. You can create these backups for production and sandbox environments, but not for the default environment. By default, manual backups are kept for seven days. For production Managed Environments, the retention period can be extended up to 28 days.
 
 ## Supported retention period
 
 | Environment types | System backup | Manual backup |
 | --- | --- | --- |
-| Production with Dynamics 365 apps | 28 days | 28 days |
-| Production without Dynamics 365 apps\* | 7 days | 7 days |
+| Production\* | 7 days | 7 days |
 | Sandbox | 7 days | 7 days |
 | Developer | 7 days | 7 days |
 | Teams | 7 days | 7 days |
@@ -42,7 +41,7 @@ Manual backups are backups that the user initiates. It's recommended for creatin
 | Trial | Not backed up | Not supported |
 | Trial (subscription-based) | Not backed up | Not supported |
 
-\* For managed production environments that don't have Dynamics 365 applications, we allow you to extend the retention period beyond seven days, to a maximum of 28 days, through PowerShell. Learn more in [Change the backup retention period for production environments without Dynamics 365 applications](#change-the-backup-retention-period-for-production-environments-without-dynamics-365-applications).
+\* For production [Managed Environments](managed-environment-overview.md), you can extend the retention period beyond seven days, to a maximum of 28 days, through the Power Platform admin center or PowerShell. Learn more in [Change the backup retention period for production Managed Environments](#change-the-backup-retention-period-for-production-managed-environments).
 
 \*\* We don't support restoring a system backup of the default environment through the Power Platform admin center. Learn more in [Backup and restoration of the default environment](../guidance/adoption/manage-default-environment.md#back-up-and-restore-the-default-environment).
 
@@ -52,8 +51,6 @@ System backup and restore operations aren't supported for trial-type environment
 
 Environments that have a database are automatically backed up and can be restored. All your environments, except trial environments (both standard and subscription-based), have system backups. System backups are created continuously using the Azure SQL Database automated backup feature. Learn more in [Automated backups](/azure/sql-database/sql-database-automated-backups).
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
@@ -62,18 +59,6 @@ Environments that have a database are automatically backed up and can be restore
 1. Click **Continue**.
 1. The **Backup retention** side panel displays the backup details.
 
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Backup & Restore**, then select **Restore or manage**.  
-1. On the **System** tab, select an available system backup by choosing a date and time.
-1. Click **Continue**.
-1. The **Backup retention** side panel displays the backup details.
-
----
-
 ### About system backups
 
 - System backups aren't counted toward storage capacity. To restore an environment, you need **1 gigabyte (GB)** of free capacity. If you're over capacity, learn more in: [Is there a database size restriction for backing up or restoring an organization through the user interface or API?](#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api).
@@ -81,9 +66,9 @@ Environments that have a database are automatically backed up and can be restore
 - Backup and restore operations include only apps (created by using Power Apps) and flows (created by using Power Automate) in a Dataverse solution.
 - Downloading a copy of a database backup for offline use isn't supported.
 
-### Change the backup retention period for production environments without Dynamics 365 applications
+### Change the backup retention period for production Managed Environments
 
-For environments without Dynamics 365 applications, the default backup retention period is seven days. Admins who run production [Managed Environments](managed-environment-overview.md) of this type can use PowerShell to change the retention period to 7, 14, 21, or 28 days. To change this setting, you must have an admin role, such as Power Platform admin or Dynamics 365 admin in Microsoft Entra ID.
+For production environments, the default backup retention period is seven days. Tenant admins with a Power Platform admin, Global admin, or Dynamics 365 admin role in Microsoft Entra ID can change the retention period to 7, 14, 21, or 28 days for production [Managed Environments](managed-environment-overview.md) through the Power Platform admin center or PowerShell. The configured retention period applies to both system and manual backups.
 
 Keep the these points in mind:
 
@@ -91,12 +76,25 @@ Keep the these points in mind:
 - For all other nonproduction environments, including default-type environments, the backup retention period is seven days by default.
 For example, you create an environment on January 1. On that day, the system starts to make backups of your environment, and it stores those backups for a default period of seven days. Therefore, on January 8, backups from January 1 to January 8 are available for restoration. If you change the retention period to 14 days on January 8, the system starts to keep the backups for a longer time. Therefore, on January 16, backups from January 3 to January 16 are available for restoration. In this way, you have more flexibility and control over your backup data.
 
-#### Prepare your environment for PowerShell
+#### Change the retention period in the Power Platform admin center
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select a production Managed Environment.
+1. In the command bar, select **Edit**.
+1. In the **Edit details** panel, under **Backup retention**, select the retention period you want (7, 14, 21, or 28 days).
+1. Select **Save**.
+
+> [!NOTE]
+> To change the backup retention period, you must have a tenant-level admin role, such as Power Platform admin, Global admin, or Dynamics 365 admin in Microsoft Entra ID. If a backup retention rule is already set at the [environment group](environment-groups.md) level, you can't override the setting at the individual environment level.
+
+#### Change the retention period with PowerShell
 
 The PowerShell module for Power Platform Administrators is the recommended tool for managing administrative capabilities in Power Platform environments. For information that helps you get started with the PowerShell for Power Platform Administrators module, go to [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 > [!NOTE]
-> You can extend the backup retention period only for production environments where Dynamics 365 applications aren't enabled. For production environments where Dynamics 365 applications are enabled, a retention period of 28 days is used. For all other nonproduction environments, the default backup retention period of seven days is used, regardless of the setting's value.
+> You can extend the backup retention period only for production Managed Environments. For all other nonproduction environments, the default backup retention period of seven days is used, regardless of the setting's value.
 
 #### Set the retention period
 
@@ -123,8 +121,6 @@ You can't directly restore backups to production environments. To restore a back
 
 You must restore an environment in the same region where it was backed up. The target and source environments should be in the same region. When an environment is restored onto itself, audit logs aren't deleted. For example, when an environment is restored onto itself to a past time (t1), full audit data for the environment is available. This data includes any audit logs that were generated after t1.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
@@ -133,19 +129,6 @@ You must restore an environment in the same region where it was backed up. The t
 1. Select **Continue**.
 1. On the **Backup retention** side panel, select the target environment to overwrite.
 1. Select **Restore**, then select **Confirm** to proceed with overwriting the environment.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Backup & Restore**, then select **Restore or manage**.  
-1. Under the **System** tab, select an available system backup by choosing a date and time.
-1. Select **Continue**.
-1. On the **Backup retention** side panel, select the target environment to overwrite.
-1. Select **Restore**, then select **Confirm** to proceed with overwriting the environment.
-
----
 
 > [!NOTE]
 >
@@ -183,7 +166,7 @@ Although automated system backups are great, you should create your own backups 
 
 - You can create backups of production, sandbox, Teams, and developer environments.
 - You can't create backups of the default environment.
-- Manual backups of production environments that have a database and Dynamics 365 applications are kept for up to 28 days. Manual backups for production environments that don't have Dynamics 365 applications are kept for seven days.
+- Manual backups of production environments are kept for up to seven days, by default. For production Managed Environments, the retention period can be extended up to 28 days.
 - Sandbox backups are kept for up to seven days.
 - Check your expiration date.
 
@@ -197,25 +180,12 @@ Although automated system backups are great, you should create your own backups 
 
 ## Create a manual backup
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the command bar, click **Backup & Restore**, then select **Restore or manage**.  
 1. Select the **Manual** tab, then click **Create a manual backup**.
 1. Fill in the information, then select **Create** to proceed.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, click **Backup & Restore**, then select **Restore or manage**.  
-1. Select the **Manual** tab, then click **Create a manual backup**.
-1. Fill in the information, then select **Create** to proceed.
-
----
 
 There's no real-time status indicator while the backup is being processed. However, you receive a confirmation message once the backup is successfully created. When the backup is completed, you receive the following message: "The &lt;*backup name*&gt; backup was successfully created."
 
@@ -226,8 +196,6 @@ You can restore backups only to sandbox environments. You can't restore them to 
 > [!IMPORTANT]
 > Changing the environment type to sandbox affects database retention. For more information about the effects of changing the environment type, go to the section: [Can I restore to a production environment?](#can-i-restore-to-a-production-environment).
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
@@ -236,19 +204,6 @@ You can restore backups only to sandbox environments. You can't restore them to 
 1. On the **Backup retention** side panel, select the target environment to overwrite.
 1. Select whether you want to include audit logs. The inclusion of audit logs can significantly increase the time that's required to restore an environment. Therefore, audit logs are excluded by default. Learn more in [Restore audit logs](#restore-audit-logs).
 1. Select **Restore**, then select **Confirm** to proceed with overwriting the environment.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Backup & Restore**, then select **Restore or manage**.  
-1. On the **Manual** tab, select a manual backup to restore, then select **Restore** in the command bar.
-1. On the **Backup retention** side panel, select the target environment to overwrite.
-1. Select whether you want to include **audit logs**. The inclusion of audit logs can significantly increase the time that is required to restore an environment. Therefore, audit logs are excluded by default. Learn more in [Restore audit logs](#restore-audit-logs).
-1. Select **Restore**, then select **Confirm** to proceed with overwriting the environment.
-
----
 
 ## Restore audit logs
 
@@ -269,24 +224,12 @@ Restoration of audit logs can significantly increase the time that is required t
 
 You can delete manual backups. You can't delete system backups.
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**, then in the **Manage** pane, select **Environments**.
 1. On the **Environments** page, choose an environment.
 1. In the command bar, select **Backup & Restore**, then select **Restore or manage**.  
 1. Navigate to the **Manual** tab. Select the backup to delete, then select **Delete** in the command bar.
 1. Select **Continue** to confirm the deletion.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Backup & Restore**, then select **Restore or manage**.  
-1. Navigate to the **Manual** tab. Select the backup to delete, then select **Delete** in the command bar.
-1. Select **Continue** to confirm the deletion.
----
 
 ## App-specific backups
 
@@ -322,19 +265,19 @@ Because Azure SQL Database continuously makes backups, and there's no specific w
 
 ### How long are my manual, on-demand backups and system backups retained?
 
-System and manual backups for some production-type environments are retained for up to 28 days. Backups for other environment types are retained for only up to seven days. Learn more in the section: [How do I determine if backups of a production environment are retained for 28 days?](#how-do-i-determine-if-backups-of-a-production-environment-are-retained-for-28-days).
+System and manual backups are retained for up to seven days, by default. For production Managed Environments, the retention period can be extended up to 28 days. Learn more in [Change the backup retention period for production Managed Environments](#change-the-backup-retention-period-for-production-managed-environments).
 
 ### How do I determine if backups of a production environment are retained for 28 days?
 
-Production environments that have been created with a database give you the option to enable one or more Dynamics 365 applications (for example, Dynamics 365 Sales or Dynamics 365 Customer Service). However, you must purchase licenses that entitle you to deploy those applications. Backups of production environments that have a database and Dynamics 365 applications are retained for up to 28 days. By default, backups of production environments that don't have Dynamics 365 applications are retained for seven days. However, for Managed Environments, you can increase the retention period beyond seven days.
+Production environments default to a seven-day backup retention period. If the environment is a production [Managed Environment](managed-environment-overview.md), an admin can extend the retention period up to 28 days through the Power Platform admin center or PowerShell. Learn more in [Change the backup retention period for production Managed Environments](#change-the-backup-retention-period-for-production-managed-environments).
 
 ### Can I move my data from an online environment to an on-premises version?
 
-It isn't possible to obtain a copy of your database backup. If you want to move your online data to Dynamics 365 Customer Engagement (on-premises), data migration is required. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).
+It isn't possible to obtain a copy of your database backup. If you want to move your online data to Dynamics 365 Customer Engagement (on-premises), data migration is required. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft Marketplace](https://marketplace.microsoft.com/).
 
 ### How can I download a copy of my backup?
 
-It isn't possible to obtain a copy of your database backup. Moving your online data requires data migration. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft AppSource](https://appsource.microsoft.com/).
+It isn't possible to obtain a copy of your database backup. Moving your online data requires data migration. For smaller data sets, consider [exporting data to Excel](/powerapps/user/export-data-excel). For larger data sets, find a third-party data migration solution on [Microsoft Marketplace](https://marketplace.microsoft.com/).
 
 ### Is there a database size restriction for backing up or restoring an organization through the user interface or API?
 
@@ -397,7 +340,7 @@ For more information about the recovery environment, go to [Recover environment]
 
 ### The restore operation failed. What action can I take?
 
-The restore process, especially for environments with large amounts of data, is a complex backend operation. If the restore operation fails, wait 30 minutes and retry the operation again. The other actions you can take are reset, delete, copy, or restore. To retry copy or restore, the failed environment must be the target environment for the operation. 
+The restore process, especially for environments with large amounts of data, is a complex backend operation. If the restore operation fails, the target environment is left in a disabled state. To retry the restore process, the failed environment must be the target environment for the operation. Wait 30 minutes and retry the operation again. The other actions you can take for the disabled, target environment are reset, delete, or copy to as a target environment.
 
 ### You don't see the environment that you want to restore to
 

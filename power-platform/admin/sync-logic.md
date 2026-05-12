@@ -4,7 +4,7 @@ description: Learn how appointments, contacts, and tasks are synchronized betwee
 author: danamartens
 ms.service: power-platform
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 10/14/2025
 ms.subservice: admin
 ms.author: dmartens
@@ -92,7 +92,7 @@ If an appointment organizer is changed in Dynamics 365 after it has been synchro
 
 - **Mapping:** Appointments in Dynamics 365 sync to Exchange as meetings.
 
-- **Appointment status:** If the appointment status in Dynamics 365 is **Completed**, **Canceled**, or **Free** (Open), the appointment status syncs to Exchange as **Free**.
+- **Appointment status:** If the appointment status in Dynamics 365 is **Completed**, **Canceled**, or **Free** (Open), the appointment status syncs to Exchange as **Free**. If the appointment status in Dynamics 365 is **Busy** (Scheduled), the appointment syncs to Exchange as **Busy**.
 
 - **Reminder:** No reminder is set if the appointment is more than seven days in the past or the appointment status is **Free** (Open).
 
@@ -138,7 +138,7 @@ If the organizer has deleted past instances of the series, then Dynamics 365 see
 
 - **Mapping:** Meetings in Exchange sync to Dynamics 365 as appointments. Recurring meetings sync to Dynamics 365 as a recurring appointment primary and its instances. If individual instances of a recurring meeting are modified in Exchange, they sync to Dynamics 365 as exception appointment records.
 
-- **Appointment status and Free/Busy state:** If the appointment state in Exchange is **Free**, the appointment state syncs to Dynamics 365 as **Free**. If the state is **Completed** or **Canceled** in Dynamics 365, the appointment status in Dynamics 365 is set to **Completed**. If the state is **Open** in Dynamics 365, the appointment status is set to **Free**. If the Exchange appointment's **Free/Busy** status is set to **Working elsewhere**, the Dynamics 365 appointment is set to the **Open** state and the status is **Free**.
+- **Appointment status and Free/Busy state:** If the appointment state in Exchange is **Free**, the appointment state syncs to Dynamics 365 as **Free**. If the state is **Completed** or **Canceled** in Dynamics 365, the appointment status in Dynamics 365 is set to **Completed**. If the state is **Open** in Dynamics 365, the appointment status is set to **Free**. If the Exchange appointment's **Free/Busy** status is set to **Working elsewhere**, the Dynamics 365 appointment is set to the **Open** state and the status is **Free**. If the Exchange appointment status is **Busy**, the Dynamics 365 appointment is set to **Busy** (Scheduled).
 
 - **Appointments with Completed or Canceled state in Dynamics 365:** If the appointment state in Dynamics 365 is **Completed** or **Canceled**, any changes to the meeting in Exchange don't sync to Dynamics 365.
 
@@ -283,6 +283,7 @@ By default, tasks that are created in Dynamics 365 for Outlook don't sync with D
 - [Address synchronization for contacts](/dynamics365/outlook-addin/admin-guide/configure-synchronization-appointments-contacts-tasks#address-synchronization-for-contacts)
 - [Integrate your email system](/power-platform/admin/integrate-synchronize-your-email-system)
 - [Which fields can be synchronized between Dynamics 365 apps and Outlook?](/dynamics365/outlook-addin/admin-guide/which-fields-synchronized)
+
 
 
 

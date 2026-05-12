@@ -18,7 +18,7 @@ When you create an environment that includes a database in Microsoft Power Platf
 In some situations, you might have to change the base currency of an environment. This article explains how to change it.
 
 1. Before you begin base currency conversion, make a backup of the environment's database. Learn more: [Back up and restore environments](backup-restore-environments.md)
-1. Open [AppSource](https://appsource.microsoft.com/), enter *base currency* in the search field, and then select **Get it now** next to **Base Currency Conversion**. Follow the on-screen instructions to install the app in the Power Platform environment that you want.
+1. Open [Marketplace](https://marketplace.microsoft.com/), enter *base currency* in the search field, and then select **Get it now** next to **Base Currency Conversion**. Follow the on-screen instructions to install the app in the Power Platform environment that you want.
 1. After the Base Currency Conversion solution is installed, open [Power Apps](https://make.powerapps.com/), select **Apps** on the left navigation pane, and then select **Play** for the **Base Currency Conversion** app.
 
     > [!NOTE]
@@ -60,8 +60,12 @@ You can import data into the **CurrencyExchangeRate** table by using a comma-sep
 
 In the CSV file, the `fromcurrencyid` and `tocurrencyid` values must be currency codes. To find these values, follow these steps.
 
-1. Open the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), and open the environment that you want.
-1. Select **Settings** > **Resources** > **All legacy settings** > **Settings** > **Business Management** > **Currencies**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. Select **Settings** > **Resources** > **All legacy settings**.
+1. On the **Business Management** page, select **Currencies**.
 
 ### Examples: Importing exchange rate data for a non-base currency through a CSV file
 

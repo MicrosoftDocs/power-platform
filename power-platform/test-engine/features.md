@@ -1,20 +1,19 @@
 ---
-title: Power Apps Test Engine features (preview)
+title: Power Apps Test Engine features (deprecated)
 description: Summary of Power Apps Test Engine features.
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
 - grant-archibald-ms
 ---
 
-# Power Apps Test Engine features (preview)
+# Power Apps Test Engine features (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Power Apps Test Engine provides a comprehensive set of features for effectively testing Power Platform solutions. This page details the capabilities available to help you build robust test suites for your Power Platform applications.
 

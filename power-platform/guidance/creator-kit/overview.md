@@ -36,7 +36,7 @@ Elevate your development workflow and create modern, seamless user experiences e
 
 | Resource | Short Url | Description |
 | -------- | --------- | ----------- |
-| **AppSource Offering** | [aka.ms/creatorkit/appsource](https://aka.ms/creatorkit/appsource) | Offering page for the Creator Kit on AppSource (see [instructions](./setup.md) to learn more). |
+| **Marketplace Offering** | [aka.ms/creatorkit/appsource](https://aka.ms/creatorkit/appsource) | Offering page for the Creator Kit on Marketplace (see [instructions](./setup.md) to learn more). |
 | **Canvas reference solution** | [aka.ms/creatorkit/referencecanvas](https://aka.ms/creatorkitreferencecanvas) | Direct download link for the Canvas reference solution. |
 | **Model Driven App (Custom page) reference solution** | [aka.ms/creatorkit/referenceMDA](https://aka.ms/creatorkitreferencemda) | Direct download link for the Model Driven App/Custom Pages reference solution |
 | **Latest release notes** | [aka.ms/creatorkitlatestrelease](https://aka.ms/creatorkitlatestrelease) | Release notes for the latest version of the Creator Kit |

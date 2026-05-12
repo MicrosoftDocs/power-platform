@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 09/17/2025
+ms.date: 05/06/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -32,5 +32,13 @@ Reference architectures are essential frameworks that guide the design and imple
 | **[Use Dataverse as a data source for canvas apps​](dataverse-canvas-app.md)** | Creating a Power Apps application that uses Dataverse as a data source can enable building a more custom user experience. |
 | **[Reduce infrastructure challenges with hosted RPA in Power Automate​](rpa-scale-operations.md)** | Learn how to use the Hosted RPA feature to decrease the time and effort required for procuring, provisioning, operationalizing, and maintaining infrastructure to support robotic process automations. |
 | **[Use SQL Server with canvas apps​](sqlserver-canvas-app.md)** | Learn how to build and publish an enterprise-grade canvas app using SQL Server as a data source. |
-| **[Use an autonomous agent in Copilot Studio for document processing](document-processing-agent.md)** | Learn how to build an autonomous agent in Copilot Studio for document processing. |
 | **[Use complex relationships with Microsoft Dataverse](complex-relationships-dataverse.md)** | Learn how to model complex data relationships in Microsoft Dataverse to design effective business applications. |
+| **[Extract and analyze agent conversation transcripts](analyze-agent-conversation-transcripts.md)** | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
+| **[Implement a scalable notification system with Power Platform](scalable-notification-system.md)** | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
+| **[Optimize the performance of canvas apps that require complex business logic](optimize-performance-canvas-apps.md)** | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
+| **[Use Copilot Studio agents in model-driven apps](contextual-ai-model-driven-app.md)** | Learn how to integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
+| **[Analyze and automate business data with Dataverse SDK for Python](dataverse-sdk-for-python.md)** | Learn how the Dataverse SDK for Python empowers developers and data scientists to analyze, automate, and innovate with enterprise-grade data. |
+| **[Automate vendor invoice processing with Power Automate and AI Builder](vendor-invoice-integration.md)** | Learn how to automate vendor invoice ingestion by extracting and validating XML invoice data using Power Automate and AI Builder. |
+| **[Upload files to SharePoint with metadata from model-driven apps](custom-page-file-upload.md)** | Learn how to use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
+| **[Synchronize data across Dataverse environments using Power Platform](sync-dataverse-data.md)** | Learn how to manage master data across two Dataverse environments using Power Automate cloud flows and Power Platform dataflows. |
+| **[Automate service order lifecycle and SLA governance with Power Platform](service-order-process.md)** | Learn how to design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |

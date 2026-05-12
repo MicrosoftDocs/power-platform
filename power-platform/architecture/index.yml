@@ -124,14 +124,14 @@ additionalContent:
         # Card
         - title: Microsoft Copilot Studio guidance
           links:
-            - text: Topics best practices
-              url: /power-virtual-agents/guidance/topics-overview
-            - text: Trigger phrases best practices
-              url: /power-virtual-agents/guidance/trigger-phrases-best-practices
-            - text: Measuring agent engagement
-              url: /power-virtual-agents/guidance/measuring-engagement
+            - text: Instruction guidance for generative orchestration
+              url: /microsoft-copilot-studio/guidance/generative-mode-guidance
+            - text: Testing conversational agents
+              url: /microsoft-copilot-studio/guidance/conversational-agents-performance-testing
+            - text: "Architecting agent solutions: Principles and patterns"
+              url: /microsoft-copilot-studio/guidance/architecture/
             - text: More...
-              url: /power-virtual-agents/guidance
+              url: /microsoft-copilot-studio/guidance
     - title: Build your skills with Microsoft Learn training
       summary: Learning paths and modules to help you build your skills with Microsoft Power Platform.
       items:

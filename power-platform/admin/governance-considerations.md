@@ -3,7 +3,7 @@ title: Security and governance considerations in Power Platform
 description: Learn how Power Apps and Power Automate are made widely available to their business and are supported by IT.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/28/2025
+ms.date: 04/07/2026
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
@@ -114,7 +114,7 @@ For customers with Microsoft Entra ID P1 or P2, conditional access policies can 
 
 Q: Can I control, on the tenant level, which connector is at all available, for example No to Dropbox or Twitter but Yes to SharePoint?
 
-A: This is possible by utilizing the [connectors classification](dlp-connector-classification.md) capabilities and assigning the **Blocked** classifier to one or more connectors that you want to keep from being used. There's a [set of connectors that can’t be blocked](dlp-connector-classification.md#list-of-connectors-that-cant-be-blocked).
+A: This is possible by utilizing the [connectors classification](dlp-connector-classification.md) capabilities and assigning the **Blocked** classifier to one or more connectors that you want to keep from being used. There's a [set of connectors that can’t be blocked](dlp-connector-classification.md#list-of-connectors-that-you-cant-block).
 
 Q: What about Sharing connectors between users? For example, the connector for Teams is a general one that can be shared?
 
@@ -156,16 +156,9 @@ It's well understood that monitoring is a critical aspect of managing software a
 
 ### View the Power Apps and Power Automate license report
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, select **Power Automate** or **Power Apps** to review the information.
-
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Analytics**.
-1. Choose **Power Automate** or **Power Apps** to review the information.
----
 
 You can get information about the following:
    - Active User and App usage  - how many users are using an app and how often? 
@@ -194,19 +187,11 @@ The export can take a while for tenants with a large number of Power Platform us
 
 ### View app resources used in an Environment
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the **Resources** section, review the list of apps used in the environment.
-
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the **Resources** section, review the list of apps used in the environment.
----
 
 ## Related content
 

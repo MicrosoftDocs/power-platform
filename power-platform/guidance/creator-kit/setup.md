@@ -19,7 +19,7 @@ contributors:
 There are two ways to install the Creator Kit: 
 
 1. Download and manually install the managed solutions
-2. Install the solution directly into your Environment from AppSource
+2. Install the solution directly into your Environment from Marketplace
 
 ## Prerequisites
 
@@ -59,9 +59,9 @@ Each solution has specific requirements:
 ### Upgrading
 Import the updated solution to install the latest version manually. Get the latest version at https://aka.ms/CreatorKitLatestRelease.
 
-## Option 2: Install from AppSource
+## Option 2: Install from Marketplace
 
-The AppSource package will install the latest version of the following managed solutions from Creator Kit into your selected Environment:
+The Marketplace package will install the latest version of the following managed solutions from Creator Kit into your selected Environment:
 - CreatorKitCore
 - CreatorKitReference(Canvas)
 - CreatorKitReference(MDA)
@@ -70,10 +70,10 @@ The following configurations will be modified in the environment:
 - *Enable code components for Canvas* is set to **true**
 
 > [!IMPORTANT]
-> Using this AppSource install option will **modify the selected Environment's settings**. Ensure this modification is acceptable with your organization's security standards before continuing with this install option.
+> Using this Marketplace install option will **modify the selected Environment's settings**. Ensure this modification is acceptable with your organization's security standards before continuing with this install option.
 
 ### Method 1: Power Platform CLI
-Install the AppSource package using the [Power Platform cli](/power-platform/developer/cli/introduction) ([How to find your Environment Id and Url](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)).
+Install the Marketplace package using the [Power Platform cli](/power-platform/developer/cli/introduction) ([How to find your Environment Id and Url](/power-platform/admin/determine-org-id-name#find-your-environment-and-organization-id)).
 
 1. Create or select an auth profile (see [pac auth](/power-platform/developer/cli/reference/auth) for instructions)
 
@@ -85,10 +85,10 @@ Install the AppSource package using the [Power Platform cli](/power-platform/dev
 
    `pac application install --environment https://orgname.crm.dynamics.com/ --application-name CreatorKitCore`
    
-### Method 2: AppSource install wizard
-The offering page on the AppSource website allows you to install the Creator Kit into your Environment through a wizard experience.
+### Method 2: Marketplace install wizard
+The offering page on the Marketplace website allows you to install the Creator Kit into your Environment through a wizard experience.
 
-1. Go to the [Creator Kit page on AppSource](https://appsource.microsoft.com/en-US/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Overview) page. 
+1. Go to the [Creator Kit page on Marketplace](https://marketplace.microsoft.com/en-US/product/dynamics-365/microsoftpowercatarch.creatorkit1?tab=Overview) page. 
 
    Sign in to an account that has System Administrator permissions in the target Environment.
 

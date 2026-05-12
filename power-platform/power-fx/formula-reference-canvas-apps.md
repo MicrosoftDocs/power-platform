@@ -123,6 +123,8 @@ Other elements include:
 
 **[Concurrent](reference/function-concurrent.md)** – Evaluates multiple formulas concurrently with one another.
 
+**[Confirm](reference/function-confirm.md)** - Display a confirmation dialog box.
+
 **[Connection](reference/signals.md)** – Returns information about your network connection.
 
 **[Copy](reference/function-copy.md)** – Copies text to the clipboard on the device where the app is running.
@@ -206,6 +208,8 @@ Other elements include:
 **[First](reference/function-first-last.md)** – Returns the first record of a table.
 
 **[FirstN](reference/function-first-last.md)** – Returns the first set of records (N records) of a table.
+
+**[Float](reference/function-value.md)** – Converts a string to a Float value.
 
 **[ForAll](reference/function-forall.md)** – Calculates values and performs actions for all records of a table.
 

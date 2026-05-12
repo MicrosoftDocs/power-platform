@@ -5,7 +5,7 @@ author: manuelap-msft
 manager: devkeydet
 ms.component: pa-admin
 ms.topic: faq
-ms.date: 08/21/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -18,6 +18,8 @@ search.app:
 ---
 
 # Frequently asked questions about the Data Export integration
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article addresses common questions about the Data Export integration, including its setup, requirements, licensing, and functionality.
 

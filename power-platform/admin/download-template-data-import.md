@@ -19,7 +19,6 @@ Whether your data is stored in spreadsheets, databases, or other systems, you wa
 
 These settings can be accessed in the Microsoft Power Platform admin center. TO update them, ensure sure you have the System Administrator or System Customizer security role, or equivalent permissions.
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -27,16 +26,7 @@ These settings can be accessed in the Microsoft Power Platform admin center. TO 
 1. In the command bar, select **Settings**. 
 1. Expand **Templates**, then select **Data import templates**.
 1. Select the record type for which a template is needed, then select **Download**. The file downloads to your machine.
-   
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Templates**, then select **Data import templates**.
-1. Select the record type for which a template is needed, then select **Download**. The file downloads to your machine.
----
- 
+
 ### Related content
 [Import data (all record types) from multiple sources](import-data-all-record-types.md) <br />
 [Import data](/powerapps/developer/common-data-service/import-data)

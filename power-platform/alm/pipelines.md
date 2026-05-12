@@ -5,11 +5,11 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 01/30/2025
+ms.date: 01/12/2026
 ms.reviewer: "matp"
 ms.topic: "overview"
 contributors:
-  - asheehi1
+  - sandhangitms
 ---
 # Overview of pipelines in Power Platform
 
@@ -97,17 +97,30 @@ No. Solutions are exported as soon as a deployment request is submitted (when th
 A common setup example:
 
 | Environment purpose | Environment type |  Standalone license required |
-|--------------|-----|-----------|
+| -------------- | ----- | ----------- |
 | Host | Production | No |
 | Development | Developer | No |
-| QA |  Developer | No |
-| Production |  Production | Yes |
+| QA | Developer | No |
+| Production | Production | Yes |
+
+### Can I ensure pipeline targets are Managed Environments?
+
+Yes. Tenant admins can automatically convert pipeline target environments to Managed Environments, ensuring compliance with Microsoft standards.
+To enable an environment as a Managed Environment, go to the Power Platform admin center **Deployments** > **Settings**. Turn on the automatic managed environment setting for each pipeline host.
+
+ > [!IMPORTANT]
+ > Starting February 2026, Microsoft will start enabling Managed Environments for any pipeline target environments that aren’t already enabled. Customers will be notified via Microsoft 365 Message center.
+ > We recommend you review and enable Managed Environments for all pipeline targets now. You can do this manually now or set it to occur automatically:
+>
+> - **Manually:** Go to enable [Managed Environments](../admin/managed-environment-enable.md).
+> - **Automatically:** Configure the setting for new pipelines as described above.
 
 ### Can I configure approvals for deployments?
 
 Yes. See [delegated deployments](delegated-deployments-setup.md).
 
 ### Can I use different service principals for different pipelines and stages?
+
 Yes. More information: [Deploy with a service principal](delegated-deployments-setup.md#deploy-with-a-service-principal)
 
 ### What connections can be used?

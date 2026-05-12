@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/15/2021
+ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -23,13 +23,13 @@ Power BI works with model-driven apps in Microsoft Dataverse to provide a self-s
   
 ### Enable Power BI visualizations in an environment  
   
-1. In the Power Platform admin center, select an environment. 
-
-2. Select **Settings** > **Product** > **Features**.  
-  
-3. Under **Embedded content** set **Power BI visualization embedding** to **On** to enable or **Off** to disable.  
-  
-4. Select **Save**.  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. Select an environment.
+1. Go to **Settings** > **Product** > **Features**.  
+1. Under **Embedded content** set **Power BI visualization embedding** to **On** to enable or **Off** to disable.  
+1. Select **Save**.  
 
 ## Add Power BI tiles and dashboards in a model-driven app  
 To learn more about how to add Power BI tiles to personal dashboards, see [Embed Power BI tiles on your personal dashboard  ](/powerapps/user/add-powerbi-dashboards#embed--power-bi-tiles-on-your-personal-dashboard).  

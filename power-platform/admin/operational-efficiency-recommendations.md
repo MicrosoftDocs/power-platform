@@ -3,7 +3,7 @@ title: View operational efficiency recommendations
 description: Learn how the actions page helps improve operational efficiency with recommendations for apps, sites, and tenant settings.
 author: sidhartg
 ms.component: pa-admin
-ms.topic: conceptual
+ms.topic: concept-article
 ms.date: 05/29/2025
 ms.subservice: admin
 ms.author: sidhartg

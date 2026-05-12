@@ -1,10 +1,10 @@
 ---
-title: "Test Engine feature lifecycle (preview)"
+title: "Test Engine feature lifecycle (deprecated)"
 description: "Describes how Test Engine features progress from open source to preview to general availability"
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -12,10 +12,9 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Test Engine feature lifecycle (preview)
+# Test Engine feature lifecycle (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Test Engine has a structured feature lifecycle model to manage the progression of features from experimental concepts to generally available capabilities. This approach allows users to access new functionality at different maturity levels while ensuring reliability and stability for production scenarios.
 

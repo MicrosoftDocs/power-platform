@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 07/15/2025
+ms.date: 05/06/2026
 ---
 
 # Power Automate reference architectures and solution ideas
@@ -27,6 +27,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | Title | Description |
 | --- | --- |
 | [**Distributed tracing across multiple services in Power Platform**](../key-concepts/distributed-tracing.md) | Learn how to achieve observability across services like Power Platform, Azure, and Dynamics 365. |
+| [**Cloud flow integration patterns**](../key-concepts/integration-patterns/index.md) | Learn how to design scalable and cost-effective integrations with Power Automate. Identify requirements and explore design patterns. |
 | [**Power Automate coding guidelines**](/power-automate/guidance/coding-guidelines/) | Learn about standards for naming objects, collections, and variables, and guidelines for developing consistent, well-performing, and easily maintainable flows. |
 | [**Introduction to SAP GUI–based RPA in Power Automate desktop**](/power-automate/guidance/rpa-sap-playbook/introduction) | Prototype the automation of an example SAP scenario with robotic process automation (RPA). |
 
@@ -40,6 +41,8 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Integrate Power Platform with SAP for data management**](../reference-architectures/arch-pattern-sap.md) | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | [**Reduce infrastructure challenges with hosted RPA in Power Automate​**](../reference-architectures/rpa-scale-operations.md) | Use hosted RPA to reduce the time and effort needed to procure, set up, operationalize, and maintain infrastructure for robotic process automations. |
+| [**Automate vendor invoice processing with Power Automate and AI Builder**](../reference-architectures/vendor-invoice-integration.md) | Learn how to automate vendor invoice ingestion by extracting and validating XML invoice data using Power Automate and AI Builder. |
+| [**Automate service order lifecycle and SLA governance with Power Platform**](../reference-architectures/service-order-process.md) | Learn how to design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |
 
 ## Solution ideas
 
@@ -51,6 +54,8 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
 | [**Automate software bug reporting with Auto Triage AI Agent**](../solution-ideas/auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
 | [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
+| [**AI-enabled donor management solution**](../solution-ideas/agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
+| [**Learning management app using Microsoft Learn content**](../solution-ideas/app-learning-management.md) | Design a learning management solution using Microsoft Power Platform and Microsoft Learn content to enhance trainer and learner experiences. |
 
 ## Related resources
 

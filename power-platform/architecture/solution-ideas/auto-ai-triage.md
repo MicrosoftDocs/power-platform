@@ -102,7 +102,7 @@ Auto Triage AI changes this process by automating it with generative AI. With tw
 - Reduces manual tasks and speeds up issue resolution.
 - Triages bugs quickly with AI-powered insights.
 
-### Responsible AI
+## Responsible AI
 
 - **Fairness:** AI models trained on diverse datasets deliver balanced bug classification.
 - **Reliability and safety:** The architecture delivers reliable AI-powered decisions.

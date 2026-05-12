@@ -4,7 +4,7 @@ description: "Learn how to set up the environment request components solution of
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/08/2023
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Set up environment request components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article helps you set up the environment request components of the core solution, which automate the request, approval, and creation of environments and data policies.
 

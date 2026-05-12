@@ -50,7 +50,7 @@ Most of these users are hidden from user views but they can be found by using th
 | Microsoft Project | Project@microsoft.com |Allow Project for the Web and Roadmap Service to communicate with Dataverse. |Project System and Portfolio User |
 | Power Apps Checker Application | Pacheckerapp@microsoft.com |To perform static analysis of Power Apps solutions to assist in identifying performance and stability risks. |Export customizations and Solution checker |
 | Powerqueryonline-CDStoAzuredatalake | Powerqueryonline-<br />CDStoAzuredatalake<br />@onmicrosoft.com |Service application to perform data query between Dataverse and Azure Data Lake. |N/A |
-| Provision User | provisionapp@fabrikam.com |To perform Application installation from AppSource or System updates from Microsoft. |System admin |
+| Provision User | provisionapp@fabrikam.com |To perform Application installation from Marketplace or System updates from Microsoft. |System admin |
 | DataLakeStorage | DataLakeStorage@onmicrosoft.com | To allow solutions to manage workspaces, workspace permissions and the discovery of workspaces. | DataLakeWorkspaceAppAccess |
 | JobServicePreProd| JobServicePreProd<br />@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |
 | JobServiceProd| JobServiceProd@onmicrosoft.com| Enable satellite services to schedule and dispatch messages to independently built workloads with guaranteed delivery of messages based on service-defined policies. | System admin |

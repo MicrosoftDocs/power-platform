@@ -47,8 +47,6 @@ Before you use [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-b
 
 To enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-business.md)], take these steps:  
 
-### [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -58,23 +56,9 @@ To enable [!INCLUDE[pn_onedrive_for_business](../includes/pn-onedrive-for-busine
 1. Select **Enable OneDrive for Business**, then select the **Enable OneDrive for Business** check box to activate it.
 1. Select **OK** to save the changes.
 
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Integration**, then select **Document management settings**.
-1. Select **Enable OneDrive for Business**, then select the **Enable OneDrive for Business** check box to activate it.
-1. Select **OK** to save the changes.
-
----
-
 ## Controlling access to OneDrive for Business
 
 You can toggle availability of [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md)] in customer engagement apps for end users through the **OneDrive for Business** privilege.  
-
-### [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
@@ -85,19 +69,6 @@ You can toggle availability of [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md
 1. Select a security role, then go to the **Miscellaneous privileges** tab.
 1. Assign the **OneDrive for Business** privilege to the appropriate level.
 1. In the command bar, select **Save** to apply the changes.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, choose an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Users + permissions**, then select **Security roles**.
-1. Select a security role, then go to the **Miscellaneous Privileges** tab.
-1. Assign the **OneDrive for Business** privilege to the appropriate level.
-1. In the command bar, select **Save** to apply the changes.
-
----
 
 ### Related content
 

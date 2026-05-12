@@ -1,10 +1,10 @@
 ---
-title: "Authentication in Power Apps Test Engine (preview)"
+title: "Authentication in Power Apps Test Engine (deprecated)"
 description: "Simple guide to authentication options in Test Engine"
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
@@ -12,10 +12,9 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Authentication in Power Apps Test Engine (preview)
+# Authentication in Power Apps Test Engine (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Test Engine offers straightforward authentication options to support both development and production scenarios. This article provides a clear overview of your authentication choices and how to select the best option for your needs.
 

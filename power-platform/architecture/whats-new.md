@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 09/17/2025
+ms.date: 05/06/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -16,7 +16,58 @@ ms.custom:
 
 # What's new in the Power Platform and Copilot Studio Architecture Center
 
-Get the latest info about what's new and what's changed in the Power Platform  and Copilot Studio Architecture Center.
+Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
+
+## May 2026
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Automate service order lifecycle and SLA governance with Power Platform](reference-architectures/service-order-process.md)
+
+## April 2026
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Automate vendor invoice processing with Power Automate and AI Builder](reference-architectures/vendor-invoice-integration.md)
+- [Upload files to SharePoint with metadata from model-driven apps](reference-architectures/custom-page-file-upload.md)
+- [Synchronize data across Dataverse environments using Power Platform](reference-architectures/sync-dataverse-data.md)
+
+## February 2026
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Analyze and automate business data with Dataverse SDK for Python](reference-architectures/dataverse-sdk-for-python.md)
+
+New in [Solution ideas](solution-ideas/index.md):
+
+- [​Build anomaly detection with Copilot Studio and Fabric](solution-ideas/agent-anomaly-detection.md)
+- [​​Streamline customer service with a customer support assistance agent​](solution-ideas/customer-support-agent.md)
+- [​Improve the new hire experience with a smart onboarding agent](solution-ideas/onboarding-agent.md)
+- [AI-enabled donor management solution](solution-ideas/agent-donor-management.md)
+- [Learning management app using Microsoft Learn content](solution-ideas/app-learning-management.md)
+
+Updated in [Solution ideas](solution-ideas/index.md):
+
+- [Ticket management system with Copilot Studio agents](solution-ideas/agent-ticket-and-refund.md) to include instructions that can be used as a starting point for creating the agent
+- [Travel concierge using generative AI with Copilot Studio](solution-ideas/agent-travel-customer.md) to include instructions that can be used as a starting point for creating the agent
+
+## January 2026
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Optimize the performance of canvas apps requiring complex business logic](reference-architectures/optimize-performance-canvas-apps.md)
+- [Use Copilot Studio agents in model-driven apps](reference-architectures/contextual-ai-model-driven-app.md)
+
+## December 2025
+
+New in [Architecture key concepts](key-concepts/index.md):
+
+- [Cloud flow integration patterns: Design scalable integrations with Power Automate](key-concepts/integration-patterns/index.md)
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Extract and analyze agent conversation transcripts](reference-architectures/analyze-agent-conversation-transcripts.md)
+- [Implement a scalable notification system with Power Platform](reference-architectures/scalable-notification-system.md)
 
 ## September 2025
 
@@ -48,12 +99,6 @@ New solution ideas:
 Other updates:
 
 - [Contributors guide](contribute.md) for external contributions
-
-## June 2025
-
-New reference architecture:
-
-- [Use an autonomous agent in Copilot Studio for document processing](reference-architectures/document-processing-agent.md)
 
 ## April 2025
 

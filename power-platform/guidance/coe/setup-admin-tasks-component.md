@@ -4,14 +4,17 @@ description: "Instructions for how to set up the Power Platform administration p
 author: stjeffer
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/07/2022
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
+
 # Set up the Microsoft Power Platform administration planning component
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article will help you set up the [Microsoft Power Platform administration planning component](admin-tasks-component.md) of the Center of Excellence (CoE) Starter Kit.
 

@@ -5,7 +5,7 @@ description: Learn how to use a staging database for data migration to Dataverse
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: example-scenario
-ms.subservice: guidance
+ms.subservice: architecture-center
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 08/19/2025

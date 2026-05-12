@@ -3,7 +3,7 @@ title: Data policies for Managed Environments
 description: View the data policies that are in effect in your Managed Environments.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 8/20/2025
+ms.date: 11/20/2025
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
@@ -29,11 +29,11 @@ With Managed Environments, admins can easily identify all the data policies that
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 
-2. In the navigation pane, select **Manage**.
+1. In the navigation pane, select **Manage**.
 
-3. In the **Manage** pane, select **Environments**, and then select a managed environment.
+1. In the **Manage** pane, select **Environments**, and then select a managed environment.
 
-4. [Edit the selected managed environment's settings](managed-environment-enable.md#enable-or-edit-managed-environments-in-the-admin-center).
+1. [Edit the selected managed environment's settings](managed-environment-enable.md#enable-or-edit-managed-environments-in-the-admin-center).
 
 1. In the **Data policies** section, select **See active data policies for this environment**.
 

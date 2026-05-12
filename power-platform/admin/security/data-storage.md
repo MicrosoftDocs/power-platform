@@ -1,7 +1,7 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 07/30/2025
+ms.date: 11/25/2025
 ms.service: power-platform
 ms.topic: concept-article
 ms.custom: 
@@ -137,8 +137,9 @@ This setting lets all SAS calls within Power Platform be logged into Purview. Th
 ### Turn on Purview audit logging
 In order for the logs to show in your Purview instance, you must first opt into it for each environment that you want logs for. This setting can be updated in the Power Platform admin center by a **tenant admin**.
 
-1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and sign in with tenant admin credentials.
-1. In the left navigation pane, select **Environments**.
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with tenant admin credentials.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
 1. Select the environment that you want to turn on admin logging for.
 1. Select **Settings** in the command bar.
 1. Select **Product** > **Privacy + Security**.

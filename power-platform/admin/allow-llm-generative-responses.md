@@ -1,10 +1,10 @@
 ---
-title: Allow external large language models (LLMs) for generative responses
-description: Learn how to allow external large language models for generative responses in Power Platform.
+title: Allow external language models for generative responses
+description: Learn how to allow external language models for generative responses in Power Platform.
 ms.subservice: admin
 ms.component: pa-admin
-ms.topic: concept-article
-ms.date: 09/24/2025
+ms.topic: how-to
+ms.date: 02/27/2026
 author: sericks007
 ms.author: sericks
 ms.reviewer: sericks
@@ -12,35 +12,57 @@ search.audienceType:
   - admin
 ms.contributors:
   - jcaugusto
+  - yiannismavridis
 ---
 
-# Allow external large language models (LLMs) for generative responses
+# Allow external language models for generative responses
 
-AI innovation moves at a a rapid pace, and each AI model has different strengths and specialties. With the **External models** rule and setting, you can allow the use of external AI models for an environment or an environment group. These models offer an alternative approach to generative AI in Microsoft Copilot Studio. These models support advanced summarization and conversational capabilities and are now available in preview for evaluation purposes. The models available under the **External models** setting are Anthropic models that are hosted outside of Microsoft and subject to Anthropic terms and data handling.
+AI innovation moves at a rapid pace, and each AI model has different strengths and specialties. With the **Enable External models** rule and setting, you can allow the choice of external AI models in model-picking scenarios for an environment or an environment group. These models offer an alternative approach to generative AI in Microsoft Copilot Studio and Power Platform. These models support advanced summarization and conversational capabilities. 
+
+Some model families are available in preview for evaluation purposes, and also in production as Microsoft subprocessors. The models available under the **Enable External Models** setting are hosted outside of Microsoft and, in some cases, are subject to their own usage and data handling terms. Currently, the only models available under the **Enable External Models** setting are through third-parties Anthropic and xAI.
+
+On January 7, 2026, Anthropic operates as a Microsoft subprocessor and the Microsoft [Product Terms](https://www.microsoft.com/licensing/terms?msockid=344e0e6ad66c6b3e19441848d7416abd) and [Microsoft Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?lang=18&msockid=344e0e6ad66c6b3e19441848d7416abd) apply to use of Anthropic models through Copilot Studio and Power Platform.
 
 > [!NOTE]
-> Your admin must first allow access in the [Microsoft 365 admin center](/copilot/microsoft-365/connect-to-ai-models). Once allowed there, you can access these settings in the Power Platform admin center.
+> You must [allow Anthropic access in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2341952) and [allow xAI access in Microsoft 365 admin center.](https://go.microsoft.com/fwlink/?linkid=2348423) If enabled there, you can access these settings in the Power Platform admin center.  
+
+[!INCLUDE [models-xai-disclaimer-note](~/../shared-content/shared/models-xai-disclaimer-note.md)]
 
 ## Control external AI models use for an environment
-To control the use of external models, complete these steps.
+
+To enable external models, complete these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**. Then select the environment you want to manage.
 1. In the command bar, select **Settings**.
 1. On the **Settings** page, select **Product** > **Features**.
-1. On the **Features** page, turn the **External models** setting **On** or **Off**.
+1. On the **Features** page, check or uncheck the available model family setting to turn it **On** or **Off**.
+1. Select **Save**.
 
 ## Control external models use for an environment group
-If your environment is part of an [environment group](environment-groups.md), you can govern external models use through the **External models** environment group rule.
+
+If your environment is part of an [environment group](environment-groups.md), you can govern use of external models through the [External models environment group rule](environment-groups-rules.md).
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**. Then select the environment you want to manage.
+1. In the **Manage** pane, select **Environment groups**. Then select the environment group you want to manage.
 1. Select the **Rules** tab.
-1. Select the **External models** rule. In the **External models** pane, turn the feature **On** or **Off**.
-1. Save your changes.
+1. Select the **External Models** rule.
+1. In the **External Models** pane, check or uncheck the available model family features to turn them on or off.
+1. Select **Save**.
 1. To apply your changes to the environments in the group, select **Publish rules**.
 
 > [!NOTE]
-> If the **External models** toggle is visible but unable to be switched, that means your organization's admin hasn't allowed access to Anthropic models in the Microsoft 365 admin center. Complete the steps in [Connect to Anthropic LLM](https://go.microsoft.com/fwlink/?linkid=2334803).
+> If the external model toggle is visible but you can't check it, your organization's admin didn't enable access to that model family in the Microsoft 365 admin center. For Anthropic models, to enable access before January 7, 2026, complete the steps in [Connect to Anthropic's AI models](/copilot/microsoft-365/connect-to-ai-subprocessor).  To enable Anthropic models on January 7, 2026 or later, complete the steps in [Anthropic as a subprocessor for Microsoft Online Services](/copilot/microsoft-365/connect-to-ai-subprocessor).
+
+## Exclusions
+
+The following exclusions apply:
+
+- Anthropic models in Copilot Studio are currently excluded from EU Data Boundary commitments.
+- xAI models within Copilot Studio are currently available for US tenants only. 
+- FedRAMP isn't achieved for Anthropic or xAI models in Copilot Studio. If your organization requires FedRAMP before use, consult with your authorization official to determine if use of Anthropic models is allowed.
+- Payment Card Industry (PCI) Data Security Standard (DSS) isn't applicable to Anthropic or xAI models within Copilot Studio to store, process, or transmit payment and cardholder data.
+
+[!INCLUDE[footer-include](../includes/footer-banner.md)]

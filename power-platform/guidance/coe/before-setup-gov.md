@@ -4,14 +4,17 @@ description: Prerequisites and instructions for setting up the governance compon
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 08/21/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ---
+
 # Before setting up the governance components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article will provide you with prerequisite steps to perform before setting up the governance components of the CoE Starter Kit.
 
@@ -26,7 +29,7 @@ If you're installing the solution in a new environment or one in which approvals
 
 1. Go to [Power Automate](https://make.powerautomate.com) and select your CoE environment.
 
-1. Select **+ Create**. 
+1. Select **+ Create**.
  
 1. Select **Instant cloud flow**.
 

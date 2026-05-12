@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 11/18/2025
+ms.date: 02/27/2026
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -24,6 +24,108 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of Test Engine
+
+Effective April 2026, Test Engine is deprecated. The documentation and GitHub repository are no longer maintained by Microsoft and will be removed in a future release.
+
+### Why is this needed?
+
+Test Engine has near-zero usage and failed to meet customer needs in an evolving AI landscape. The Power Fx implementation created unnecessary limitations that are avoided if using Playwright directly (Test Engine is built on Playwright). 
+
+### Replacement feature
+
+The [Power Platform Playwright samples](developer/playwright-samples/overview.md) guide the use of Playwright for Power Platform test automation. These practical examples resemble how Microsoft tests first-party applications internally, with best-practice guidance baked in. 
+
+## Deprecation of Editable Grid and Power Apps Read-Only Grid controls
+Effective March 2026, the Editable Grid control and the Power Apps Read-Only Grid control are deprecated in model-driven apps. These controls will continue to function until further notice, after which they are no longer supported. These controls will receive critical security fixes only and no new features.
+### Why is this needed?
+We are streamlining the grid experience in Power Apps to provide a modern, unified solution. The [Power Apps grid control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control) is the next evolution of grid control, built from the ground up with modern design standards, accessibility compliance, and comprehensive functionality.
+
+- **Editable Grid**: Based on older architecture that does not align with current Microsoft accessibility standards and has limited extensibility.
+- **Power Apps Read-Only Grid**: An interim solution that is no longer necessary, as the Power Apps grid control supports both read-only and editable capabilities in a single control.
+### Impact
+Makers who have configured apps to use the Editable Grid or Power Apps Read-Only Grid controls need to transition to the Power Apps grid control. Existing implementations will continue to work but only receive critical security fixes and no new features.
+### Replacement feature
+The [Power Apps grid control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control) is the recommended solution for all grid scenarios in model-driven apps. This modern control offers extensive capabilities including inline editing, infinite scrolling, nested grids, grouping, aggregation, enhanced filtering and sorting, and [many configurable properties](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#configure-the-power-apps-grid-control) to customize the experience for your needs.
+### Action required
+
+To ensure a smooth transition:
+1. **Identify affected apps**: Review your model-driven apps to identify views and subgrids using the deprecated controls.
+2. **Transition to Power Apps grid control**: [Add the control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#add-the-power-apps-grid-control-using-form-designer) to your forms, views, and subgrids.
+3. **Configure and test**: Customize the [control properties](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#configure-the-power-apps-grid-control) and validate the experience before publishing.
+
+## Deprecation of the Microsoft Power Automate for Excel add-in (AppSource)
+
+The [Microsoft Power Automate for Excel](https://marketplace.microsoft.com/en-us/product/office/wa104381701?tab=overview) add-in available through AppSource is deprecated. Users should switch to the native Power Automate integration available in the **Automate** tab of Excel.
+
+### Why is this needed?
+
+Excel now includes a built-in **Automate** tab that provides native Power Automate integration, removing the need for a separate add-in. The native experience offers a more seamless and reliable way to create and manage flows directly from Excel.
+
+### Impact
+
+If you currently rely on the Power Automate for Excel add-in from AppSource, you need to transition to the native **Automate** tab in Excel. The add-in is no longer supported.
+
+### Replacement feature
+
+Use the native Power Automate integration in the **Automate** tab of Excel. Learn more in [Use flows in Excel](/power-automate/flows-excel).
+
+The native experience is supported on:
+
+- Excel on the web
+- Excel on Windows desktop
+
+> [!NOTE]
+> If you use Office macOS desktop, you need to open the spreadsheet in Excel in the browser to access the **Automate** tab.
+
+If the **Automate** tab isn't visible in Excel, verify it's enabled:
+
+1. Select **Excel Options** > **Customize Ribbon** > **Main Tabs**.
+1. Make sure the **Automate** checkbox is selected.
+
+## Removal of before-and-after field change values in audit events sent to Microsoft Purview
+
+Starting in May 2026, Dataverse will no longer include before-and-after field change values in the audit events that are sent to Microsoft Purview. Audit events will continue to flow to Purview; however, the detailed field-level value changes will be excluded.
+
+### Why is this needed?
+To strengthen data protection and prevent potential data leaks.
+
+Removing detailed field-level values from Purview-bound audit events reduces the risk of exposing sensitive business or personal information through downstream monitoring or analytics systems.
+
+### Impact
+If you have existing monitoring, alerting, or reporting solutions that depend on before-and-after field change values within Purview audit events, those solutions will stop working once this deprecation takes effect. Examples include:
+
+-   Rules that compare old/new values for anomaly detection.
+
+-   Data pipelines that analyze field-level deltas.
+
+-   Custom compliance checks running in Purview.
+
+These scenarios must be updated to avoid disruption.
+
+### Action required
+Update your monitoring or downstream workflows to retrieve detailed field-level audit information directly from Dataverse, not from Purview. Dataverse continues to store and expose before-and-after field changes through its native audit APIs and tables.
+
+### More information
+-   No changes are required if your solution uses Dataverse audit logs as the source of truth.
+-   Purview continues receiving audit event metadata (such as who made changes, the date of the changes, and the tables affected), but field-level value changes will no longer be included.
+
+## Deprecation of Copilot chat in model-driven apps
+Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) in environments not [enabled for Dynamics 365 apps](admin/create-environment.md#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.
+
+### Why is this needed?
+We are unifying the chat experience across apps with [Microsoft 365 Copilot](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot), which is becoming the new standard in Power Apps. As Microsoft 365 Copilot gradually replaces [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot), makers will have the flexibility to use one or both chat experiences during the transition period.
+
+### Impact
+[Microsoft 365 Copilot](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot) is gradually replacing [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot).
+
+During the transition period, makers can enable either one or both chat experiences. When both options are available, the **Copilot** dropdown menu shows the following options:
+- **Chat** button opens [Microsoft 365 Copilot](/power-apps/user/use-microsoft-365-copilot-model-driven-apps).
+- **App Skills** button opens [Copilot chat in model-driven apps](/power-apps/user/use-copilot-model-driven-apps).
+
+### Replacement feature
+[Microsoft 365 Copilot](/power-apps/user/use-microsoft-365-copilot-model-driven-apps) is now the recommended solution for natural language interactions in model-driven apps. To ensure a smooth transition and prevent any disruption when Copilot chat is retired, we recommend that you migrate to Microsoft 365 Copilot as soon as it becomes available in your environment. 
 
 ## Deprecation of the classic look for model-driven apps
 Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. All apps will use the modern, refreshed look by default.
@@ -257,11 +359,11 @@ The schema for Lockbox audit events is deprecated and won't be available startin
 
 ## ISV Studio removed
 
-ISV Studio was a preview analytics portal that showed limited install data for ISV solutions built on Dynamics CE or Power Platform and deployed from AppSource. It also provided another access point to the connector certification wizard.  
+ISV Studio was a preview analytics portal that showed limited install data for ISV solutions built on Dynamics CE or Power Platform and deployed from Marketplace. It also provided another access point to the connector certification wizard.  
 
 Thanks to our ISV partners for trying out ISV Studio during the preview. After careful consideration and extensive review of partner feedback, we recognized the limitations of the service over time and acknowledged that it didn't provide the expected value. ISV Studio was deprecated on April 1, 2024 and removed on May 31, 2024.
 
-To continue accessing analytics related to your AppSource solutions, use the reporting features in Partner Center. Although this alternative might not offer the same data from ISV Studio, Partner Center serves as a valuable resource for insights and tools to empower your business growth and success.
+To continue accessing analytics related to your Marketplace solutions, use the reporting features in Partner Center. Although this alternative might not offer the same data from ISV Studio, Partner Center serves as a valuable resource for insights and tools to empower your business growth and success.
 
 ## Connector Certification Portal Deprecation
 
@@ -407,19 +509,19 @@ Cloud flows that use the [Microsoft Dataverse (legacy)](/connectors/commondatase
 
 Review the cloud flows you own that use the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector and identify which are ready to update. As of January 2024, most flows using the legacy connector are recommended for migration except for flows triggering based on changes in other environments.
 
-A migration assistant is available on the detail page of cloud flows that are able to be automatically updated. The assistant creates a copy of the flow with the legacy connector's triggers, actions, and dynamic content references replaced.
+A migration assistant is available on the detail page of cloud flows that are able to be automatically updated. The assistant creates a copy of the flow with the legacy connector's triggers, actions, and dynamic content references replaced. This migration assistant does not currently support legacy triggers, or actions connecting to other environments.
 
 ## Microsoft Dataverse (legacy) connector for Azure Logic Apps will be deprecated and replaced with another connector
 
-Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (also referred to as the CDS 2.0 connector) was deprecated. This connector was used to connect to Dataverse for use in multiple clients and components. The [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector was made available for use in Azure Logic Apps starting August 2022. The Dataverse connector provides both legacy triggers and actions and new preview triggers and actions for the newest connector. Dates for when previews will be generally available will be provided by November 2023.
+Effective October 2022, the [Microsoft Dataverse (legacy)](/connectors/commondataservice/) connector (also referred to as the CDS 2.0 connector) was deprecated. This connector was used to connect to Dataverse for use in multiple clients and components. The [Microsoft Dataverse](/connectors/commondataserviceforapps/) connector was made available for use in Azure Logic Apps starting August 2022. The Dataverse connector in Logic Apps now provides both legacy triggers and actions and new preview triggers and actions for the newest connector.
 
 There will be a phased-in approach before deprecation takes place. Here's the timeline:
 
 - **August 30, 2022:** The actions and triggers in Dataverse legacy connector became available in the Dataverse connector.
-  - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility for time with more timelines available in August 2023.
+  - Existing Dataverse Legacy connector triggers and actions can continue to be used in existing logic apps for backward compatibility.
   - All new logic apps are created using the new actions.
-- **August 2022 through preview period:** Both new and legacy actions and triggers are available during new flow creation. By January 2024, a date for the move to general availability will be provided.
-- **Date TBD:** No new logic apps can be created using the legacy actions and triggers, but existing logic apps with those actions and triggers will continue to work. Updates will be provided in January 2024.
+- **August 2022 through preview period:** Both new and legacy actions and triggers are available during new flow creation. A date for the move to general availability is yet to be finalized.
+- **Date TBD:** No new logic apps can be created using the legacy actions and triggers, but existing logic apps with those actions and triggers will continue to work.
 
 In August 2023, we provided a timeline when all existing logic apps using the deprecated legacy actions and triggers will stop working. Users need to review their existing logic apps to update them to the new Azure Logic Apps triggers by the specified timeline (typically one year from the announcement date).
 
@@ -473,7 +575,7 @@ On June 20, 2022 [Power Apps for Windows](https://apps.microsoft.com/store/detai
 
 ## Data Export Service deprecation
 
-Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft AppSource. The Data Export Service add-on won't be available for download for all customers. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
+Effective November 2021, Data Export Service was deprecated. Data Export Service will continue to work and will be fully supported until it reaches end-of-support and end-of-life in November 2022. This will impact Dynamics 365 and Power Platform customers who use Data Export Service add-on from Microsoft Marketplace. The Data Export Service add-on won't be available for download for all customers. We recommend that customers transition to [Azure Synapse Link for Dataverse](/powerapps/maker/data-platform/export-to-data-lake). For more information, see our [blog](https://powerapps.microsoft.com/blog/do-more-with-data-from-data-export-service-to-azure-synapse-link-for-dataverse/) or download [the deprecation playbook](https://aka.ms/DESDeprecationPlaybook).
 
 ## Dataverse OData v2.0 Service removal
 
@@ -970,7 +1072,7 @@ will be removed in a future major release.
 
 Ready-to-use business processes available through the Add Ready-to-Use Business
 Processes setting (<strong>Settings \> Data Management \> Add Ready-to-Use Business
-Processes</strong>) are deprecated and will be removed in a future major release. You can find ready-to-use business processes on Microsoft AppSource.
+Processes</strong>) are deprecated and will be removed in a future major release. You can find ready-to-use business processes on Microsoft Marketplace.
 
 ## Silverlight (XAP) web resource is deprecated <a name="BKMK_Silverlight"></a>
 
@@ -1001,3 +1103,4 @@ See [Important changes coming in Power Pages](/power-pages/important-changes-dep
 [Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)<br/>
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
+

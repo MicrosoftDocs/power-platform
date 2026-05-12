@@ -34,21 +34,12 @@ Admins can do the following from the Power Platform admin center:
 
 ## Manage Power Automate flows
 
-## [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select an environment.
 1. In the **Resources** web part, select **Flows**.
 1. On the **Flows** page, select the flow you want to manage.
-
-## [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the **Resources** web part, select **Flows**.
-1. On the **Flows** page, select the flow you want to manage.
----
 
 Choose your desired **action** for the selected flow.
 

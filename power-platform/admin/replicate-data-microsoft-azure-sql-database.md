@@ -85,8 +85,8 @@ For information about the programmatic interface for managing configuration and 
 - A version 9.0 or later version environment.  
   
 - The [!INCLUDE[cc_Data_Export_Service](../includes/cc-data-export-service.md)] solution must be installed.  
-    - Go to **Settings** > **Microsoft Appsource** > search or browse to **Microsoft Dynamics 365 - Data Export Service**, and then select **Get it now**. 
-    - Or, find it on [Microsoft AppSource](https://appsource.microsoft.com/marketplace/apps?product=dynamics-365).  
+    - Go to **Settings** > **Microsoft Marketplace** > search or browse to **Microsoft Dynamics 365 - Data Export Service**, and then select **Get it now**. 
+    - Or, find it on [Microsoft Marketplace](https://marketplace.microsoft.com/marketplace/apps?product=dynamics-365).  
   
 - The entities that will be added to the Export Profile must be enabled with change tracking. To ensure a standard or custom entity can be synchronized go to **Customization** > **Customize the System**, and then select the entity. On the **General** tab make sure the **Change Tracking** option under the **Data Services** section is enabled.  
   

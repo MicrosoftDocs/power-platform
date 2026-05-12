@@ -1,10 +1,10 @@
 ---
-title: "Power Apps Test Engine YAML format (preview)"
+title: "Power Apps Test Engine YAML format (deprecated)"
 description: Describes the YAML format for test following the same guidelines as Power Fx.
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/27/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: reference
 contributors:
@@ -14,10 +14,9 @@ contributors:
  - grant-archibald-ms
 ---
 
-# Power Apps Test Engine YAML format (preview)
+# Power Apps Test Engine YAML format (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Tests are defined in YAML following the same guidelines as Power Fx does. [Learn more about the Power Fx YAML formula grammar](../power-fx/yaml-formula-grammar.md).
 
@@ -256,8 +255,8 @@ $env:user1Email = "someone@example.com"
 
 ### See also
 
-[Power Apps Test Engine overview (preview)](overview.md)  
-[Power Apps Test Engine Power Fx functions (preview)](powerfx.md)  
+[Power Apps Test Engine overview (deprecated)](overview.md)  
+[Power Apps Test Engine Power Fx functions (deprecated)](powerfx.md)  
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]
 

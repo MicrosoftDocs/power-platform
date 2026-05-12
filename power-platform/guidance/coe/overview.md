@@ -4,7 +4,7 @@ description: Establish a Power Platform Center of Excellence using the CoE Start
 #customer intent: As a business decision maker, I want to understand how to establish a Power Platform Center of Excellence and evaluate the CoE Starter Kit components to support our organizational transformation and governance goals.
 author: manuelap-msft
 ms.topic: overview
-ms.date: 07/25/2025
+ms.date: 04/21/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -17,19 +17,23 @@ ms.custom:
 
 # Power Platform Center of Excellence (CoE) Starter Kit overview
 
-The Power Platform CoE Starter Kit is a comprehensive reference implementation that demonstrates how to build sophisticated governance, monitoring, and adoption capabilities using Power Platform's native low-code tools. This collection of components and solutions helps you develop a strategy for adopting and supporting Power Platform while showcasing what's possible with the platform's out-of-the-box features. 
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
-## What is a Center of Excellence (CoE)?    
+The Power Platform CoE Starter Kit is a comprehensive reference implementation that demonstrates how to build sophisticated governance, monitoring, and adoption capabilities using Power Platform's native low-code tools. This collection of components and solutions helps you develop a strategy for adopting and supporting Power Platform while showcasing what's possible with the platform's out-of-the-box features.
 
-A Center of Excellence (CoE) is a team or entity within an organization that provides leadership, best practices, research, support, and training for a specific focus area—in this case, Power Platform. 
+## What is a Center of Excellence (CoE)?
+
+A Center of Excellence or Center of Enablement (CoE) is a team or entity within an organization that drives innovation and improvement and provides leadership, best practices, research, support, and training for a specific focus area—in this case, Power Platform. A CoE brings together like-minded people with similar business goals to share knowledge and success, while providing standards, consistency, and governance to the organization. Learn more about the benefits in [Establish a Microsoft Power Platform Center of Excellence](../adoption/coe.md).
+
+A Center of Excellence (CoE) is a team or entity within an organization that provides leadership, best practices, research, support, and training for a specific focus area—in this case, Power Platform.
 
 The Power Platform CoE Starter Kit doesn't represent the entire Center of Excellence or CoE. Managing a CoE requires more than tools. A CoE needs people, communication, and defined requirements and processes. Tools are a means to an end, and each organization must thoughtfully design its CoE based on its unique needs and goals. Learn more about creating a Center of Excellence for Power Platform adoption in [Establish a Microsoft Power Platform Center of Excellence](../adoption/coe.md).
 
 ## Strategic foundation: Power Platform Center of Excellence
 
-A Power Platform Center of Excellence (CoE) is a strategic organizational capability that provides leadership, governance, and enablement for low-code transformation. 
+A Power Platform Center of Excellence (CoE) is a strategic organizational capability that provides leadership, governance, and enablement for low-code transformation.
 
-The CoE Starter Kit demonstrates this capability through a reference low-code solution built entirely using out-of-the-box Power Platform features, including Power Apps, Power Automate, Power BI, and Dataverse. This approach showcases how organizations can implement sophisticated governance and monitoring capabilities using the platform's native low-code tools.
+The CoE Starter Kit demonstrates this capability through a reference low-code solution built entirely using out-of-the-box Power Platform features, including Power Apps, Power Automate, Power BI, Dataverse, and Copilot Studio. This approach showcases how organizations can implement sophisticated governance and monitoring capabilities using the platform's native low-code tools.
 
 Unlike traditional IT approaches, a Power Platform CoE:
 
@@ -44,13 +48,30 @@ The CoE Starter Kit bridges the gap between strategic vision and practical imple
 
 **Strategic + technical approach**: Successful CoE implementation combines organizational strategy (people, processes, governance) with technical enablement (monitoring, automation, analytics). The Starter Kit addresses the technical implementation while supporting your broader strategic transformation—all through low-code solutions that demonstrate the platform's enterprise capabilities.
 
+:::row:::
+   :::column span="":::
+      :::image type="icon" source="media/i-overview-icon.svg":::<br><br>**Overview**<br>Define goals and expected outcomes of your CoE and get started.<br><ul><li>[Overview](overview.md)</li><li>[Download](<https://aka.ms/coestarterkitdownload>)</li></ul>
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="media/i-dashboard-icon.svg":::<br><br>**Admin**<br>Gain insights into your Power Platform adoption.<br><ul><li>[Set up](setup-core-components.md)</li><li>[Use](core-components.md)</li><li>[Deep dive](power-bi.md)</li></ul>
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="media/i-setup-icon.svg":::<br><br>**Govern**<br>Establish required audit and compliance processes.<br><ul><li>[Set up](setup-governance-components.md)</li><li>[Use](governance-components.md)</li><li>[Deep dive](example-processes.md)</li></ul>
+   :::column-end:::
+   :::column span="":::
+      :::image type="icon" source="media/i-get-started-icon.svg":::<br><br>**Nurture**<br>Accelerate your adoption by thriving with a community of makers.<br><ul><li>[Set up](setup-nurture-components.md)</li><li>[Use](nurture-components.md)</li></ul>
+   :::column-end:::
+:::row-end:::
+
+[Watch a quick overview](https://www.youtube.com/embed/3eF__GY0Vzg) of the CoE Starter Kit.
+
 ## What's in the CoE Starter Kit?
 
-The CoE Starter Kit is a set of templates designed to help you develop a strategy for adopting, maintaining, and supporting Power Platform. The kit includes: 
+The CoE Starter Kit is a set of templates designed to help you develop a strategy for adopting, maintaining, and supporting Power Platform. The kit includes:
 
 - Multiple Power Apps and Power BI analytics reports to view and interact with the data collected.
 - Assets such as templates and suggested patterns and practices for implementing CoE efforts.
-- Automation and tooling to build the monitoring and automation necessary to support a CoE. 
+- Automation and tooling to build the monitoring and automation necessary to support a CoE.
 
 The foundation of the kit is a Microsoft Dataverse data model and workflows to collect resource information across the tenant environments.
 
@@ -61,7 +82,7 @@ Download the most recently updated assets from the [coe-starter-kit](https://aka
 
 > [!TIP]
 > If you face issues with:
-> 
+>
 > - **Using the kit**: Report your issue at [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues). Microsoft Support might not be able to help you with issues related to the kit, but can assist with related platform and feature issues.
 > - **Core features of Microsoft Power Platform**: Use your standard channel to contact Support.
 
@@ -78,7 +99,7 @@ First, [set up the CoE Starter Kit solution](setup.md). Then start to become fam
 
 1. Identify orphaned apps and assign them to new owners by using the embedded app in the Power BI dashboard.
 
-1. Start planning your [governance strategy](../adoption/common-vision/establish-coe.md). 
+1. Start planning your [governance strategy](../adoption/common-vision/establish-coe.md).
 
     Start by asking:
 
@@ -138,7 +159,7 @@ Consider the individual features of Managed Environments to see how they compare
 
 - **[Limit sharing](/power-platform/admin/managed-environment-sharing-limits)**
 
-  The CoE Starter Kit doesn't limit sharing on resources. Proactive governance is only possible through Managed Environments. 
+  The CoE Starter Kit doesn't limit sharing on resources. Proactive governance is only possible through Managed Environments.
 
   The [Compliance process](governance-components.md) in the CoE Starter Kit offers a reactive way to identify highly shared resources. This process identifies highly shared resources and asks makers to provide additional information, enabling admins to make better support solutions. For example, admins might choose to move resources to a dedicated environment. With the Power BI dashboard, admins can also identify highly shared resources.
 
@@ -166,5 +187,6 @@ Tenant-level insights in the Power Platform admin center provide a great startin
 - Read up on customer success stories and find resources relevant to your experience, technical background, and skill level at [aka.ms/PowerPlatformResources](https://aka.ms/powerplatformresources).
 - Explore [Microsoft Power Platform training](/training/powerplatform/).
 - Learn more about [Power Platform adoption](../index.yml).
+- Learn about implementing [Application lifecycle management (ALM) using Microsoft Power Platform](../../alm/index.yml).
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

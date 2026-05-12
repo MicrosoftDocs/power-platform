@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/11/2025
+ms.date: 02/02/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.contributors:
@@ -60,26 +60,12 @@ Be sure to check out the latest known limitations available in the overview arti
 
 You can provision a new environment with finance and operations apps preinstalled using the Power Platform admin center or PowerShell.
 
-### [New admin center](#tab/new)
+### [Admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**.
 1. On the **Environments** page, select the **New** button. Enter details for your environment. Keep the following points in mind:
-    - The environment name must be globally unique because it impacts the finance and operations URL.
-    - If you want to use preview releases of finance and operations, select the **Get new features early** option.
-    - Select **Yes** for **Add a Dataverse data store**.
-1. Select **Next**. On the following screen, complete the following tasks:
-    - Select a security group to restrict access to the environment.
-    - Select **Yes** for the **Enable Dynamics 365 apps** option.
-    - Choose an available template such as Finance (preview), Supply Chain Management (preview), and so on.
-1. Select **Save**.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Go to **Environments** in the navigation pane.
-1. Select the **New** button and fill out the environment details. Keep the following points in mind:
     - The environment name must be globally unique because it impacts the finance and operations URL.
     - If you want to use preview releases of finance and operations, select the **Get new features early** option.
     - Select **Yes** for **Add a Dataverse data store**.
@@ -132,17 +118,11 @@ You can provision a new environment with finance and operations apps preinstalle
 
 In this procedure, delete the environment you previously created. Deleting an environment is an action commonly done by admins who want to free up the Dataverse and Operations storage consumed by this environment for other needs. An environment can be deleted using the Power Platform admin center or PowerShell.
 
-### [New admin center](#tab/new)
- 
+### [Admin center](#tab/new)
+
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, select **Environments**.
-1. Select an appropriate environment, and then select the **Delete** button in the command bar at the top of the page. Confirm that you want to delete the environment and proceed.
-
-### [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. Select **Environments** in the navigation pane.
 1. Select an appropriate environment, and then select the **Delete** button in the command bar at the top of the page. Confirm that you want to delete the environment and proceed.
 
 ### [PowerShell](#tab/PowerShell)
@@ -154,4 +134,3 @@ Use the following script to delete the previously created environment. Set the *
 Remove-AdminPowerAppEnvironment -EnvironmentName [Guid]
 ```
 ---
-

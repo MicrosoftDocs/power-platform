@@ -1,20 +1,19 @@
 ---
-title: "Power Apps Test Engine Power Fx Functions (preview)"
+title: "Power Apps Test Engine Power Fx Functions (deprecated)"
 description: "Describes Power Fx functions you can use with Power Apps Test Engine."
-author: pvillads
-ms.author: pvillads
+author: caburk
+ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/27/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: article
 contributors:
 - grant-archibald-ms
 ---
 
-# Power Apps Test Engine Power Fx Functions (preview)
+# Power Apps Test Engine Power Fx Functions (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Test engine uses these existing PowerFx functions:
 
@@ -277,6 +276,6 @@ Preview.SimulateDataverse({
 
 ### Related articles
 
-[Dataverse and Connector Simulation with Test Engine (preview)](simulation.md)
+[Dataverse and Connector Simulation with Test Engine (deprecated)](simulation.md)
 
 [!INCLUDE [footer-banner](../includes/footer-banner.md)]

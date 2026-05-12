@@ -57,7 +57,6 @@ To enforce users to reauthenticate after a predetermined period of time, admins 
 
 ## Configure session timeout 
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -71,21 +70,6 @@ To enforce users to reauthenticate after a predetermined period of time, admins 
 
     These settings apply to all users.
 1. Select **Save**.
-   
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Product**, then select **Privacy + Security**.
-1. Turn on the **Session Expiration** setting.
-1. Enter values in the following fields:
-    - **Enter maximum session length**
-    - **How long before the session expires do you want to show  timeout warning?**
-
-    These settings apply to all users.
-1. Select **Save**.
----
 
 > [!NOTE]
 > **Session timeout** is a server side feature where life time of all sessions is enforced. Default values are:
@@ -114,7 +98,6 @@ The Dynamics 365 portal has its own settings to manage its session timeout and i
 
 ## Configure inactivity timeout
 
-#### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -128,21 +111,6 @@ The Dynamics 365 portal has its own settings to manage its session timeout and i
 
     These settings apply to all users.
 1. Select **Save**.
-   
-#### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, select **Settings**.  
-1. Expand **Product**, then select **Privacy + Security**.
-1. Turn on the **Inactivity timeout** setting.
-1. Enter values in the following fields:
-    - **Duration of inactivity before timeout**
-    - **How long before the session expires do you want to show an inactivity warning?**
-
-    These settings apply to all users.
-1. Select **Save**.
----
 
 > [!NOTE]
 >  **Inactivity timeout** is a client side feature where client is making decision to primitively sign out based on the inactivity. Default values are:

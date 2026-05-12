@@ -1,10 +1,10 @@
 ---
 title: "Set incoming and outgoing email synchronization | MicrosoftDocs"
-description: You can set a synchronization method for user mailboxes and specify incoming and outgoing email messaging options.
+description: Learn how to set a synchronization method for user mailboxes and specify incoming and outgoing email messaging options.
 author: DanaMartens
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/12/2021
+ms.date: 11/24/2025
 ms.subservice: admin
 ms.author: dmartens
 ms.reviewer: sericks
@@ -17,25 +17,34 @@ You have several options for synchronizing email messages with Microsoft Dataver
   
 ## Set the synchronization method
 
-**To set the default synchronization method for all newly created user mailboxes** 
-  
-1. In the  [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+You can set the default synchronization method for all newly created user mailboxes or set the synchronization method for individual mailboxes.
+For information about picking a synchronization method, go to [Integrate your email system](integrate-synchronize-your-email-system.md).
 
-2. On the command bar, select **Settings** > **Email** > **Email settings**.  
+### Set the default synchronization method for all newly created user mailboxes 
   
-   > [!NOTE]
-   > In the legacy web app, in the upper-right corner, select **Settings** ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. Then go to   **Settings** > **Email Configuration** > **Email Configuration Settings.**.  
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+
+1. In the navigation pane, select **Manage**.
+   
+1. In the **Manage** pane, select **Environments**.
+   
+1. Select an environment.
+
+1. On the command bar, select **Settings** > **Email** > **Email settings**.  
+ 
   
-**To set the synchronization method for individual mailboxes** 
+### Set the synchronization method for individual mailboxes 
 
-1.  In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), select an environment. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
-    > [!NOTE]
-    > In the legacy web app, in the upper-right corner, select **Settings** ![Gear icon.](media/selection-rule-gear-button.png), and then select **Advanced settings**. 
+1. In the navigation pane, select **Manage**.
+   
+1. In the **Manage** pane, select **Environments**.
+   
+1. Select an environment.
 
-2. Select **Settings** > **Mailboxes**, and then select a mailbox.
+1. Select **Settings** > **Mailboxes**, and then select a mailbox.
   
-For information about picking a synchronization method, go to [Integrate your email system](integrate-synchronize-your-email-system.md).  
   
 ## Incoming email messaging options
 
@@ -59,15 +68,12 @@ The available outgoing email configurations that you can use when users or queue
   
 - **Server-Side Synchronization or Email Router**. This option delivers email messages by using the server-side synchronization or email router component. The email system must be SMTP-compliant. The server-side synchronization or email router can be installed on the SMTP server or on a different computer that has a connection to the SMTP server.
 
-
 ## Find the right combination of settings
 
 Email auto-tracking behavior for a given user or queue is a combination of personal options and system settings. In addition to the synchronization methods described in this topic, server-side synchronization honors a user's [personal email options](/powerapps/user/set-personal-options#email-tab-options) and environment-level [system settings](system-settings-dialog-box-email-tab.md). 
 
 For help finding the right combination of settings for your organization, go to [Community forum: How to choose System Settings and Personal Options for automatic Email tracking](https://community.dynamics.com/crm/b/crminthefield/posts/dynamics-365-customer-engagement-how-to-choose-system-settings-and-personal-options-for-automatic-email-tracking).
 
-
-  
 ### See also
 
  [Forward mailbox vs. individual mailboxes](../admin/forward-mailbox-vs-individual-mailboxes.md)

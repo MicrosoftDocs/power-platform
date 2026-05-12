@@ -1,11 +1,13 @@
 ---
 title: Degrees of Change automates nonprofit operations with Power Apps, Power Pages, and AI Builder
 description: Learn from nonprofit Degrees of Change how to automate nonprofit operations with Power Apps, Power Pages, and AI Builder.
+#customer intent: As a Power Platform user, I want to learn how Degrees of Change automated application and selection processes for their students so that I can implement a similar solution in my organization.
 author: shellyhaverkamp
 ms.author: sashi
 ms.topic: overview
+ms.reviewer: jhaskett-msft
 ms.subservice: case-study
-ms.date: 08/28/2024
+ms.date: 04/08/2026
 ---
 
 # Degrees of Change automates nonprofit operations with Power Pages, Power Apps, and AI Builder
@@ -16,9 +18,9 @@ Through its Act Six and Seed Internships programs, Degrees of Change provides ac
 
 Since Degrees of Change transformed the application and selection process with Power Platform and generative AI, it's able to deliver services to more students. This shift also streamlined operations and improved data tracking and analysis.
 
-*“Part of our work is how we empower and give the tools to local, grassroots community nonprofits. We provide the technology, training, and curriculum assistance to be able to deliver the Act Six program in their community.”*&mdash;Tim Herron, Founder & Chief Innovation Officer
-
-Read the full story: [Nonprofit organization expands career programs by using Power Pages and generative AI](https://customers.microsoft.com/story/1703120647074644538-degreesofchange-nonprofit-power-platform)
+> Part of our work is how we empower and give the tools to local, grassroots community nonprofits. We provide the technology, training, and curriculum assistance to be able to deliver the Act Six program in their community.
+>
+> — *Tim Herron, Founder & Chief Innovation Officer*
 
 ## Business challenges
 
@@ -34,7 +36,6 @@ Before building its Act Six and Seed Internships solutions with Power Platform t
 
 Degrees of Change automated its application processes by using Power Platform tools to:
 
-
 - **Build an Application Scoring app in Power Apps**: Community volunteers use this app to assess and score program applications. This automation ensures that applications are evaluated consistently and efficiently.
 
 - **Create a Power Pages portal**: Candidates apply for programs through a user-friendly portal. This portal streamlines the application submission process, making it easier for students to provide necessary information.
@@ -47,16 +48,15 @@ Degrees of Change automated its application processes by using Power Platform to
 
 ## Identify key tasks to automate
 
-Before implementing its Power Platform solutions, Degrees of Change faced several technology challenges with the Act Six and Seed Internships programs. The team needed a secure way to share more than 1,000 applications per year with 150 volunteer assessors. Initially, the team sent printed copies, and then digital PDFs to the volunteers, which limited scalability and risked the security of students’ personal information.
+Before implementing its Power Platform solutions, Degrees of Change faced several technology challenges with the Act Six and Seed Internships programs. The team needed a secure way to share more than 1,000 applications per year with 150 volunteer assessors. Initially, the team sent printed copies, and then digital PDFs to the volunteers, which limited scalability and risked the security of students' personal information.
 
 Each community group selects local volunteers who reflect the diverse backgrounds of students in their area. These volunteers are assigned applications to review and score. The scores are then used to make program placement decisions, ensuring an equitable selection process. A significant investment was made in a custom web application, built and maintained by a vendor, but this approach soon became cost prohibitive.
 
-*“What’s been so compelling to us is that the integration, extensibility, and flexibility of Power Platform means that we can do way more than we should be able to with the resources that we have.”*&mdash;Tim Herron, Founder & Chief Innovation Officer
+"What's been so compelling to us," says Tim Herron, Founder and CIO, "is that the integration, extensibility, and flexibility of Power Platform means that we can do way more than we should be able to with the resources that we have."
 
 :::image type="content" source="media/nonprofit/manual-task-flow.png" alt-text="Diagram showing manual tasks completed for Degrees of Change nonprofit." lightbox="media/nonprofit/manual-task-flow.png":::
 
 ## Build an app to automate the program application process
-
 
 In 2019, the organization's IT resource, Tommy Kim, suggested a Power Platform solution to reduce the ongoing maintenance costs associated with the custom web application. A Power Platform solution would also enable greater control over solution functionality. The team used Power Apps to build an Application Scoring app in a few weeks, enabling secure access and improving ease of use for the community volunteers engaged in assessing program applications. Power Platform enabled the Degrees of Change team to design, develop, and maintain the tools needed to deliver its Act Six and Seed Internships programs with local community groups.
 
@@ -68,9 +68,7 @@ The solution supports three key personas:
 
 1. **Community volunteers** who assess and score program applications in the Power Apps Application Scoring app.
 
-
 1. **Degrees of Change staff** who manage the selection process and assign placements in the Power Apps Matching app.
-
 
 The Seed Internships solution supports two more personas:
 
@@ -78,10 +76,9 @@ The Seed Internships solution supports two more personas:
 
 1. **Hiring managers** who submit internship position requirements and review candidates through the Power Pages portal.
 
-:::image type="content" source="media/nonprofit/automated-task-flow.png" alt-text="Screenshot showing automated application workflow." lightbox="media/nonprofit/automated-task-flow.png":::
+:::image type="content" source="media/nonprofit/automated-task-flow.png" alt-text="Screenshot showing automated application workflow.":::
 
 The program application experience for candidates involves a series of Power Pages forms, Power Automate flows, and authentication steps:
-
 
 1. The experience begins when a candidate fills out an interest form. The form is a public, nonauthenticated Power Pages form for collecting basic information from interested students.
 
@@ -97,17 +94,13 @@ The program application experience for candidates involves a series of Power Pag
 
 This combination of Power Platform tools enables Degrees of Change to tackle the external access, security, and scalability challenges associated with growing its Act Six and Seed Internships programs:
 
-
 - **Enabling authenticated, external access** to candidates and employers through the Power Pages portal.
 
 - **Selectively displaying program data** appropriate for different users through the Power Pages portal and the Power Apps Matching and Application Scoring apps.
 
-
 - **Securing and maintaining program data centrally** in Dataverse, which integrates with the Power Pages sites and apps in Power Apps.
 
-
 The solution also helps with matching candidates to internship positions, a difficult and time-consuming part of the Seed Internships program. A prebuilt AI model in AI Builder performs two important functions in reducing bias and enabling scalability in the selection process:
-
 
 - **Anonymize and extract key details** from candidate r&eacute;sum&eacute;s.
 
@@ -115,29 +108,25 @@ The solution also helps with matching candidates to internship positions, a diff
 
 ## Build a candidate portal in Power Pages Design Studio
 
-The team expanded the solution to include a Power Pages portal for candidates to submit program applications. Power Pages Design Studio allows you to build and deploy external-facing websites, such as a portal for program applications. With Power Pages, you can build sites that use the same shared business data stored in Microsoft Dataverse that you use for building apps and automations.
+The team expanded the solution to include a Power Pages portal for candidates to submit program applications. Power Pages Design Studio allows you to build and deploy external-facing websites, such as a portal for program applications. By using Power Pages, you can build sites that use the same shared business data stored in Microsoft Dataverse that you use for building apps and automations.
 
-:::image type="content" source="media/nonprofit/candidate-portal.png" alt-text="Screenshot showing candidate portal created with Power Pages." lightbox="media/nonprofit/candidate-portal.png":::
+:::image type="content" source="media/nonprofit/candidate-portal.png" alt-text="Screenshot showing candidate portal created with Power Pages.":::
 
 Understanding your user personas is important to inform Power Pages site architectural decisions. For the Seed Internships portal, the team set up different pages for employers and candidates in the Power Pages site.
 
-In the employer section of the portal, employers and hiring managers have access to set up and maintain their employer profile and add and monitor internship positions.
-
+In the employer section of the portal, employers and hiring managers can set up and maintain their employer profile and add and monitor internship positions.
 
 For a seamless user experience, the Degrees of Change team also styled its Power Pages portal to match its corporate brand colors and public website.
 
-
-:::image type="content" source="media/nonprofit/candidate-portal2.png" alt-text="Screenshot showing internship application portal created with Power Pages." lightbox="media/nonprofit/candidate-portal2.png":::
+:::image type="content" source="media/nonprofit/candidate-portal2.png" alt-text="Screenshot showing internship application portal created with Power Pages.":::
 
 ## Improve application security and quality
 
 The Degrees of Change team uses an Application Scoring app in Power Apps to share and monitor the progress of more than 1,000 applications with 150 community volunteer assessors. The Application Scoring app reads and writes program data to Dataverse, mitigating the privacy risk associated with sharing unsecured copies of candidate information.
 
-
 :::image type="content" source="media/nonprofit/application-scoring-task-flow.png" alt-text="Screenshot showing application scoring task flow." lightbox="media/nonprofit/application-scoring-task-flow.png":::
 
 The app interface improves the readability of the applications by laying out candidate information in sections on-screen to highlight the most important details.
-
 
 The flexibility of the Power Apps user interface allowed the team to be self-sufficient when adding functionality to assist volunteers with the application assessment process. They created:
 
@@ -149,8 +138,9 @@ The flexibility of the Power Apps user interface allowed the team to be self-suf
 
 - **A built-in support request** integrated with Power Automate to automatically route the email to the right support person. The team collects feedback from app users to curate a backlog of improvement ideas.
 
-*“The enhancements we added in a couple of weeks of internal time would have probably cost $50,000&ndash;$100,000 in custom development.”*&mdash;Tim Herron, Founder & Chief Innovation Officer
-
+> The enhancements we added in a couple of weeks of internal time would have probably cost $50,000&ndash;$100,000 in custom development.
+>
+> — *Tim Herron*
 
 :::image type="content" source="media/nonprofit/form-example.png" alt-text="Screenshot showing example of application scoring form." lightbox="media/nonprofit/form-example.png":::
 
@@ -158,18 +148,13 @@ The flexibility of the Power Apps user interface allowed the team to be self-suf
 
 The team uses prebuilt AI models in AI Builder to reduce bias and help accelerate matching of candidates to available placements in the Seed Internships Program. AI Builder performs two important functions that support the fairness and scalability of the application matching process for the Seed Internships program:
 
-
 - **Anonymize and extract key details** from candidate r&eacute;sum&eacute;s to reduce bias in decision-making.
 
 - **Generate candidate-to-internship match recommendations** by combining candidate and role information, the candidate quality score captured by volunteer assessors in the Application Scoring app, and a candidate fit score generated by Microsoft Fabric.
 
 Match recommendations from AI Builder are displayed in the Matching app for staff to review. The Degrees of Change team also set up AI Builder to generate an explanation for each match recommendation.
 
-
-The AI Builder match recommendations significantly increase the speed and quantity of internship placements that staff are able to process.
-
-*“Using the prebuilt models in AI Builder is helping our staff make faster, more effective recruitment decisions without having to burn hours processing the raw data.”*&mdash;Tim Herron, Founder & Chief Innovation Officer
-
+The AI Builder match recommendations significantly increase the speed and quantity of internship placements that staff are able to process. "Using the prebuilt models in AI Builder is helping our staff make faster, more effective recruitment decisions without having to burn hours processing the raw data," reports Herron.
 
 :::image type="content" source="media/nonprofit/matching-system-task-flow.png" alt-text="Screenshot showing matching system task flow." lightbox="media/nonprofit/matching-system-task-flow.png":::
 
@@ -177,24 +162,22 @@ The AI Builder match recommendations significantly increase the speed and quanti
 
 AI Builder provides a selection of prebuilt models and the ability to create custom models for different business scenarios. To streamline the candidate matching process, the Degrees of Change team uses these models and tools:
 
-
 - **Entity extraction**: The team uses the prebuilt entity extraction model in AI Builder to identify key elements of structured data from candidate applications and unstructured data from candidate r&eacute;sum&eacute;s. The data is used to match with the internship position requirements outlined by employers and hiring managers.
-
 
 - **Match recommendation**: A second AI model then combines these elements to generate a match recommendation that is displayed to staff in the Matching app.
 
-
 - **Power Automate**: Power Automate orchestrates the processing of information by providing AI Builder with the data it needs from Dataverse, and then storing the results back in Dataverse.
 
-:::image type="content" source="media/nonprofit/entity-extraction-model-flow.png" alt-text="Screenshot showing entity extraction task flow." lightbox="media/nonprofit/entity-extraction-model-flow.png":::
+:::image type="content" source="media/nonprofit/entity-extraction-model-flow.png" alt-text="Screenshot showing entity extraction task flow.":::
 
-*“Augmenting our selection process with AI Builder allows us to scale and make the most use of our human assessments.”*&mdash;Tim Herron, Founder & Chief Innovation Officer
-
+> Augmenting our selection process with AI Builder allows us to scale and make the most use of our human assessments.
+>
+> — *Tim Herron*
 
 ## Related information
 
 - [Power Platform Well-Architected](/power-platform/well-architected/)
 - [Overview of AI Builder](/ai-builder/overview)
 - [AI models and business scenarios](/ai-builder/model-types)
-- [Design and build sites in Power Pages Design Studio](/power-pages/configure/design-build-overview)
+- [Design and build sites in Power Pages design studio](/power-pages/configure/design-build-overview)
 - [Style your Power Pages site](/power-pages/getting-started/style-site)

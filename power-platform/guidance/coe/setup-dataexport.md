@@ -3,7 +3,7 @@ title: Data Export inventory setup
 description: Instructions for how to set up the inventory components solution of the Microsoft CoE Starter Kit using Data Export.
 author: jenefer-monroe
 ms.topic: install-set-up-deploy
-ms.date: 08/28/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -11,6 +11,8 @@ ms.custom: sfi-image-nochange
 ---
 
 # Data Export inventory setup
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 You can set up dataflows to retrieve your inventory from Data Export.
 

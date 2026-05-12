@@ -16,7 +16,7 @@ This tutorial provides step-by-step guidance for administrators on how to conver
 
 ## Purpose and scenario
 
-Use the conversion process when your organization is ready to transition from pre-production testing to live operations. Use sandbox environments to validate configurations, code, and integrations before performing this conversion as part of your formal go-live process.
+Use the conversion process when your organization is ready to transition from preproduction testing to live operations. Use sandbox environments to validate configurations, code, and integrations before performing this conversion as part of your formal go-live process.
 
 - **Why convert?**
   - To upgrade the environment's disaster recovery capabilities and reliability for business usage.
@@ -47,7 +47,7 @@ Use the conversion process when your organization is ready to transition from pr
 
 ## Supplemental notes
 
-- **Rollback:** This procedure is bi-directional; reverting a production environment back to sandbox follows the same steps as above.
+- **Rollback:** This procedure is bidirectional; reverting a production environment back to sandbox follows the same steps as above.
 - **Customizations:** Existing customizations, X++ code, and Dataverse solutions are preserved. No reinstallation or redeployment is required.
 - **Timing:** Allow for variable timing (up to two hours). Actual conversion duration depends on tenant load and regional capacity at the time of conversion.
 

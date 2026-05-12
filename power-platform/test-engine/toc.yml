@@ -1,5 +1,5 @@
 items:
-- name: Test Engine (preview)
+- name: Test Engine (deprecated)
   items:
   - name: Overview
     href: overview.md

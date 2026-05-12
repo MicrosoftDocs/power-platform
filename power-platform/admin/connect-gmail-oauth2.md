@@ -84,7 +84,6 @@ Follow the steps for **Create a project** in [Create, shut down, and restore pro
 
 ## Step 4. Create an email server profile
 
-### [New admin center](#tab/new)
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**.
@@ -92,16 +91,6 @@ Follow the steps for **Create a project** in [Create, shut down, and restore pro
 1. In the command bar, select **Settings**.
 1. Expand **Email**, then select **Server profiles**.
 1. In the command bar, select **New server profile**.
-
-### [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Environments**.
-1. On the **Environments** page, select an environment.
-1. In the command bar, click **Settings**.
-1. Expand **Email**, then select **Server profiles**.
-1. In the command bar, click **New server profile**.
-
----
 
 In the **Set up server profile** panel:
 1. For **Email Server Type**, select **Gmail**, then enter a meaningful **Name** for the profile.

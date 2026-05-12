@@ -8,7 +8,7 @@ ms.component: pa-admin
 ms.custom: NewPPAC
 ms.subservice: admin
 ms.topic: how-to
-ms.date: 09/15/2025
+ms.date: 04/20/2026
 search.audienceType: 
   - admin
 ---
@@ -85,8 +85,6 @@ Your environment must be a Managed Environment. Learn more in [Managed Environme
 
 ### Turn on auditing in the environment
 
-# [New admin center](#tab/new)
-
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**. Then select your specific environment.
@@ -94,17 +92,6 @@ Your environment must be a Managed Environment. Learn more in [Managed Environme
 1. Select **Audit and logs** > **Audit settings**.
 1. In the **Auditing** section, select the **Start auditing**, **Log access**, and **Read logs** options.
 1. Select **Save**.
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
-1. In the navigation pane, select **Environments**. Then select your specific environment.
-1. Select **Settings** in the command bar.
-1. Select **Audit and logs** > **Audit settings**.
-1. In the **Auditing** section, select the **Start auditing**, **Log access**, and **Read logs** options.
-1. Select **Save**.
-
----
 
 ### Review the application list in the environment
 
@@ -121,8 +108,6 @@ There’s a set of applications that are preregistered to run in a Dataverse env
 #### Add applications to the list
 
 To add an application to the list by completing the following steps.
-
-# [New admin center](#tab/new)
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
@@ -141,28 +126,6 @@ To add an application to the list by completing the following steps.
 1. On the new screen, enter an **ApplicationId**.
 1. Enter a **Name**.
 1. Select **Save**.
-
-
-# [Classic admin center](#tab/classic)
-
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Environments**.
-1. In the **Environments** page, select the name of an environment
-1. Copy the **Environment URL** such as `contoso.crm.dynamics.com`.
-1. Open a new tab in the same browser (to stay signed in) and add the following URL to the address bar. Replace `<EnvironmentURL>` with your environment URL and then press **Enter**.
-
-   ```http  
-   https:/<EnvironmentURL>/main.aspx?forceUCI=1&pagetype=entitylist&etn=application&viewid=76302387-6f41-48e5-8eaf-4e74c1971020&viewType=1039
-   ```
-
-    The form shows the list of applications that are loaded in your environment.
-
-1. Select **+ New**.
-1. On the new screen, enter an **ApplicationId**.
-1. Enter a **Name**.
-1. Select **Save**.
-
----
 
 #### Remove applications from the list
 To remove an application from the list:
@@ -265,7 +228,6 @@ The audit settings for an environment must be allowed, including the **Log acces
 
 #### Retrieve your audit log list
 
-# [New admin center](#tab/new)
 1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/home) as a system administrator.
 1. In the navigation pane, select **Manage**.
 1. In the **Manage** pane, select **Environments**. Then select an environment where you turned on auditing.
@@ -279,22 +241,6 @@ The audit settings for an environment must be allowed, including the **Log acces
 1. Select **OK**.
 
    Your filtered audits appear.
-
-# [Classic admin center](#tab/classic)
-1. Sign in to the [Power Platform Admin center](https://admin.powerplatform.microsoft.com/home) as a system administrator.
-1. In the navigation pane, select **Environments**. Then select an environment where you turned on auditing.
-1. Select **Settings**.  
-1. Select **Audit and logs** > **Audit summary view**.
-1. Select **Enable/Disable Filters** to review a list of heading dropdown capabilities.
-1. Select the dropdown arrow near the **Event** heading, then find and select **ApplicationBasedAccessDenied** and **ApplicationBasedAccessAllowed**.
-
-   :::image type="content" source="media/control-client-app-access-to-environment/enable-disable-filters.png" alt-text="Screenshot that shows where the Enable/Disable Filters button and ApplicationBasedAccessDenied and ApplicationBasedAccessAllowed checkboxes are located on the Audit summary view page." lightbox="media/control-client-app-access-to-environment/enable-disable-filters.png":::
-
-1. Select **OK**.
-
-   Your filtered audits appear.
-
----
 
 ### Turn on enabled mode
 
@@ -385,6 +331,10 @@ The following apps are Microsoft first-party services. This list of apps can be 
 | 8c1a9936-578e-4d13-9bd9-9afe53ef7de8 | Finance Copilot |
 | a59cef1e-2e32-4703-8dab-810d9807efeb | ccibots |
 | 96ff4394-9197-43aa-b393-6a41652e21f8 | ccibotsprod |
+| 300e430c-5476-4a1d-b223-35194efd4e57 | Dataverse organization routing service |
+| aeb01831-b358-4750-92ce-722e4f3ea7e8 | Dataverse Question & Answer |
+| 1884bdbf-452a-4a11-9c76-afdbdb1b3768 | Dataverse Search |
+| 1a28d27c-cc86-4773-b5ef-10a70a3da179 | Dataverse Search enhancements |
 
 ## Related content
 

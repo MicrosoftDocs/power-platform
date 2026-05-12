@@ -1,136 +1,167 @@
 ---
-title: Set up Microsoft Entra ID using SuccessFactors (Preview)
-description: This guide walks you through setting up the connector so your users can access SAP SuccessFactors data using their Microsoft Entra ID for authentication.​
-author: ryanb58
-ms.author: tbrazelton
+title: Set up Microsoft Entra ID using SAP SuccessFactors
+description: This guide walks you through setting up a connection between Microsoft Entra ID and SAP SuccessFactors using the SAP OData connector for Power Platform, enabling token-based single sign-on (SSO) between Microsoft Entra ID and SAP SuccessFactors.
+author: haowusky
+ms.author: hawu1
 contributors:
   - hidasa
-  - robinsonshields
-  - microsoft-george
   - tverhasselt
   - galitskyd
   - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
   - EllenWehrle
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 12/02/2024
+ms.date: 05/06/2026
 ms.service: power-platform
 ms.subservice: sap
-# Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID using SuccessFactors, so that users can use single sign-on (SSO).
+# Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID using SAP SuccessFactors so users can access SuccessFactors data using single sign-on (SSO).
 ---
 
-# Microsoft Entra ID using SuccessFactors (Preview)
+# Set up Microsoft Entra ID using SAP SuccessFactors
 
-[This article is prerelease documentation and is subject to change.]
-
-This guide walks you through setting up the **Microsoft Entra ID using SuccessFactors** authentication method in the SAP OData connector for Power Platform. The goal is to accumulate all necessary parameters to enable Single Sign-On (SSO) between Microsoft Entra ID and SuccessFactors.
-
-> [!IMPORTANT]
-> The parameters collected in this guide are essential for setting up SSO. Ensure your values match your specific SuccessFactors and Microsoft Entra ID configuration.
-
-> [!TIP]
-> Consider using an API Management solution to govern and secure your SAP APIs. For more information, see [this docs article](entra-id-apim-oauth.md) and [this community post](https://community.sap.com/t5/technology-blogs-by-members/perform-sap-principal-propagation-with-microsoft-entra-id-for-sap/ba-p/13860532).
+This guide walks you through how to set up Microsoft Entra ID using the SAP SuccessFactors authentication method in the SAP OData connector for Power Platform. The goal is to enable token-based Single Sign-On (SSO) between Microsoft Entra ID and SAP SuccessFactors.
 
 ## Prerequisites
 
 - [Set up SAP OData Connector](sap-odata-connector.md).
-- Admin access to SAP SuccessFactors.
-- Admin access within the [Azure Portal](https://aka.ms/azure).
+- Admin access to SAP SuccessFactors with an SSO-enabled subscription.
+- Admin access within the [Azure portal](https://aka.ms/azure) where you can manage [Microsoft Entra ID](https://entra.microsoft.com/).
 
-## Parameters for SuccessFactors connection
+> [!TIP]
+> Consider using an API Management solution to govern and secure your SAP APIs. For more information, see [Set up Microsoft Entra ID, Azure API Management, and SAP for SSO from SAP OData connector](entra-id-apim-oauth.md) and the SAP Community blog post [Perform SAP Principal Propagation with Microsoft Entra ID for SAP SuccessFactors](https://community.sap.com/t5/technology-blogs-by-members/perform-sap-principal-propagation-with-microsoft-entra-id-for-sap/ba-p/13860532).
 
-- **SuccessFactors Token API**
-- **SuccessFactors Client ID**
-- **App Resource URI** (format: `api://<App-ID>`)
-- **SuccessFactors OData Base URI**
-- **Company ID** - Represents the specific SuccessFactors environment for login.
+## Named values
 
----
+This section lists *named values* to make the examples easier to follow. These values are reused throughout the article and referenced in later sections. When following the examples in this article, be sure to replace the named values with your own values.
 
-## Key configuration notes
+| Name | Sample value | Description |
+|------|-------------|-------------|
+| SuccessFactors token URL | `https://\<api-server name\>/oauth/token` | SuccessFactors SAML token Recipient field |
+| Service Provider Client ID | `API key` | SuccessFactors OAuth API key |
+| OData Base URI | `https://\<odata-sf name\>/odata/v2` | SuccessFactors OData base URI |
+| Microsoft Entra Resource URL (Application ID URI) | `https://www.successfactors.com` | Unique SAML service provider identifier (Entity ID) |
+| Company ID | `SFSALES012345` | SuccessFactors Company ID |
 
-- Ensure that the Unique User Identifier claim of the Microsoft Entra ID user aligns precisely with the user alias in SuccessFactors (one-to-one matching).
-- **User Access Control:** Only users or groups listed in the Enterprise Application will be allowed to authenticate with SuccessFactors.
-- **Resource URI:** Found in the Enterprise App settings under **Expose an API** as the Application ID URI.
-- Your **Company ID** is generated based on the enabled SuccessFactors modules.
+> [!IMPORTANT]
+> The named values detailed in this guide are essential for setting up SSO. Ensure your values match your specific SuccessFactors and Microsoft Entra ID configurations.
 
-## High-Level overview
+## High-level overview
 
-1. Create an *OAuth 2.0 Client Application* in SuccessFactors.
-2. Establish a *Microsoft Enterprise Application*.
-3. Configure *SAML* settings within the Enterprise Application.
-4. Obtain the Enterprise Application's *SAML Certificate*.
-5. Upload the SAML Certificate to your OAuth 2.0 Client Application within SuccessFactors.
-6. Establish trust.
+You can enable users to access SAP SuccessFactors securely through Power Platform by using single sign-on (SSO) and OAuth. The process involves:
 
-### Create an OAuth 2.0 Client Application in SuccessFactors
+1. Adding an enterprise application in Microsoft Entra ID.
+1. Creating an OAuth 2.0 client application in SAP SuccessFactors.
+1. Establishing trust between Microsoft Entra ID and SAP SuccessFactors by using SAML.
+1. Mapping users from Microsoft Entra ID to SAP SuccessFactors to enable seamless SSO.
 
-1. Log in to the *SuccessFactors Web UI* with an admin account.
-2. Go to **Manage OAuth2 Client Applications**.
-3. Select **Register Client Application**.
-4. Fill out the required fields:
-   - **Company:** Auto-populated.
-   - **Application Name:** Any descriptive name.
-   - **Description:** Any descriptive text.
-   - **Application URL:** Placeholder for now; update later.
-   - **X.509 Certificate:** Leave empty initially.
-5. Select **Save**. Your new client application now has an **API Key** that serves as the *Client ID* in the SAML2 session flow and is used in the connection and Enterprise App configuration.
+In short, you configure the apps on both sides, establish trust, match users, and enable token-based access for API integrations.
 
-Later in the process, you'll import a certificate from your Microsoft Entra ID Enterprise App into SuccessFactors.
+### Step 1: Set up SAP SuccessFactors as a Microsoft Entra ID enterprise application
 
-### Create a Microsoft Entra ID Enterprise Application
+1. Create Microsoft Entra ID enterprise application:
 
-1. Open the **Azure Portal** and go to **Microsoft Entra ID** > **Enterprise Applications**.
-1. Select **New application**.
-1. Search for and select  **SAP SuccessFactors**.
-1. Assign a name for the application and select **Create**.
-1. Go to **Single sign-on** and select **SAML**.
-1. Follow the specific guidelines in the **SuccessFactors SSO Configuration Guide**.
-1. Configure the following:
-   - **Identifier (Entity ID):** Set to `api://<Enterprise App ID>` (e.g., `api://33135bc6-be6a-4cdc-9c96-af918e367425`).
-   - **Reply URL:** Used in the SAML token as the `Recipient` field (e.g., `https://<api-server>/oauth/token`).
-   - **Sign-On URL:** Advisable to set as `https://<your-sf-url>/sf/start?company=<CompanyID>&logonMethod=SSO`.
-1. Edit the **Attributes and Claims** section:
-    1. Add a claim for `api_key` with the value of the API Key from SuccessFactors.
-    1. Update the *Unique User Identifier* claim to match the unique ID for each SuccessFactors user.
-1. Download the **Certificate (Base64 format)** from this application.
+    1. Sign in to the [Azure portal](https://portal.azure.com), search for and select **Microsoft Entra ID**.
+    1. In the left navigation pane, expand **Manage** > **Enterprise applications**.
+    1. Select **New application**.
+    1. Search for and select **SAP SuccessFactors** from the gallery.
+    1. Enter a name for the application and select **Create**.
+       
+1. Configure **Basic SAML Configuration**:
 
-### Configure Enterprise Application
+    1. Go to the **Single sign-on** section and select **SAML** as the sign-on method.
+    1. **Identifier (Entity ID):** Set to an identifier which is unique within your organization. (for example,*`https://www.successfactors.com`*). Save this value as **Microsoft Entra Resource URL (Application ID URI)** in the [*named values* table](#named-values).
+    1. **Reply URL:** Use the SuccessFactors SAML token *Recipient* field. (for example, *`https://\<api-server name\>/oauth/token`*).
+    1. **Sign-On URL:** Recommended format: *https://\<your-sf-url\>/sf/start?company=CompanyID&logonMethod=SSO*. Be sure to confirm the correct server URL with your SuccessFactors IT admin if unsure.
+    1. Select **Save**.
 
-1. In the **Azure Portal**, go to **App Registrations**.
-2. Under **Expose an API**, locate your **Resource URI** (Application ID URI).
-3. Select **Add a client application**.
-4. Enter the *Client ID for SAP OData*: `6bee4d13-fd19-43de-b82c-4b6401d174c3`.
-5. Select the existing scope from the **Authorized scopes** checklist.
-6. Select **Add application**.
+1. Confirm the correct attribute is set:
 
-### Configure SuccessFactors to trust Microsoft Entra ID
+    1. Go to the **Attributes & Claims** section.
+    1. Select **Edit**. 
+    1. Confirm that **Claim name Unique User Identifier (Name ID)** is set to `user.userprincipalname` [`nameid`="{email address}"].
 
-1. Log in to the SuccessFactors Web UI with an admin account.
-2. Go to **Manage OAuth2 Client Applications**.
-3. Select the *client application* you created earlier.
-4. Update the certificate to the one downloaded from Microsoft Entra ID and paste only the certificate body content without the header and footer.
+1. Download the certificates:
 
-### Test the connection
+   1. Go to the **SAML Certificates** section.
+   1. Select the *download link* for:
+
+       - **Certificate (Base64)**.
+   
+1. Add users and groups:
+
+    1. Go to the **Users and groups** section.
+    1. Select **Add users/group**.
+    1. Select **Users and groups**.
+    1. Search for and select **ALL Company** and then select **assign**. 
+
+### Step 2: Create an OAuth 2.0 client application in SuccessFactors
+
+1. Sign in to the SuccessFactors Web UI by using an admin account.
+1. Go to **Manage OAuth2 Client Applications**.
+1. Select **Register Client Application**.
+1. Fill in the required fields:
+   
+    1. **Company**: Auto-populates. Copy the value and save it as the **Company ID** in the *Named values* table.
+    1. **Application Name**: Enter any descriptive name.
+    1. **Description**: Enter any descriptive text.
+    1. **API Key**: Auto-populates. Copy the value and save it as the **Service Provider Client ID** in the *Named values* table.
+    1. **Application URL**: Update this value with the **Microsoft Entra Resource URL (Application ID URI)** from the *Named values* table.
+    1. **X.509 Certificate**: Open the certificate you downloaded in step one by using a text editor (for example, Visual Studio Code). Copy everything between *-----BEGIN CERTIFICATE-----* and *-----END CERTIFICATE-----*, and paste it.
+
+1. Select **Save**.
+
+### Step 3: Create or update a user in SuccessFactors to map to a Microsoft Entra user
+
+Ensure the *Unique User Identifier* claim for the Microsoft Entra ID user is an exact one-to-one match with their SuccessFactors user alias.
+
+To learn how to configure SSO in SuccessFactors, see [Configure SuccessFactors SSO](/entra/identity/saas-apps/successfactors-tutorial#configure-successfactors-sso).
+
+
+### Step 4: Update Microsoft Entra ID enterprise application
+
+1. Search for and select **Microsoft Entra ID**.
+1. In the left navigation pane, expand **Manage** > **Enterprise applications**.
+1. Locate and select the enterprise application you created in step one.
+
+   1. Go to **Manage** > **Single sign-on**.
+   1. Go to **Attributes & Claims**, and then select **Edit**.
+   1. Select **Add new claim**, and configure it as follows:
+   
+    - **Name**: *api_key*
+    - **Source**: *Attribute*
+    - **Source attribute**: Paste the **Service Provider Client ID** from the *Named values* table.
+
+### Step 5: Configure Microsoft Entra ID app registrations
+
+1. Search for and select **Microsoft Entra ID**.
+1. In the left navigation pane, go to **Manage** > **App Registrations**.
+1. Under the **All applications** tab, locate and select the application you created in step one.
+
+    1. Go to **Manage** > **Expose an API**. Under *Application ID URI*, select **Add**, and enter the **Microsoft Entra Resource URL (Application ID URI)** from the *Named values* table.
+    1. Under *Authorized client applications*, select **Add a client application**.
+    1. Enter the *Client ID* for SAP OData connector: **6bee4d13-fd19-43de-b82c-4b6401d174c3**.
+    1. From the *Authorized scopes* list, select the **existing scope**.
+    1. Select **Add application**.
+
+
+### Step 6: Test the connection
 
 1. Open **Power Automate** in your browser.
-2. Create a new flow (manual trigger type).
-3. Add an **SAP OData** action.
-4. Select **Microsoft Entra ID using SuccessFactors** as the connection.
-5. Fill in the required parameters gathered earlier.
-6. Choose an **Entity** from the dropdown to test.
-7. Save your flow.
-8. Run the flow to test the connection.
-9. Verify the run history for successful authentication and data retrieval.
+1. Create a new manual-trigger type **flow**.
+1. Add an **SAP OData action**.
+1. Select **Microsoft Entra ID using SuccessFactors** as the connection.
+1. Fill in the required parameters gathered from *Named values* table.
+1. Choose an **Entity** from the *dropdown* to test.
+1. Save your **flow**.
+1. Run your **flow** to test the connection.
+1. Verify the *run history* for successful authentication and data retrieval.
 
-> [!NOTE]
+> [!TIP]
 >
-> - If the test fails, verify your connection parameters and ensure all previous configuration steps are completed correctly.
-> - If the **Entity** dropdown does not populate, recheck your connection parameters, the OAuth 2.0 app configuration in SuccessFactors, and the Enterprise App configuration.
+> - If the test fails, verify your connection parameters and ensure you completed all previous configuration steps correctly.
+> - If the **Entity** dropdown doesn't populate, recheck your connection parameters, the OAuth 2.0 app configuration in SuccessFactors, and the enterprise app configuration.
 
 ## Related content
 
@@ -138,4 +169,5 @@ Later in the process, you'll import a certificate from your Microsoft Entra ID E
 - [SAP OData connector now supports OAuth2 and SAP Principal Propagation](https://community.powerplatform.com/blogs/post/?postid=c6a609ab-3556-ef11-a317-6045bda95bf0) | Power Automate community blog
 - [Azure API Management policy for SAP SuccessFactors](https://github.com/Azure/api-management-policy-snippets/blob/master/examples/Request%20OAuth2%20access%20token%20from%20SuccessFactors%20using%20AAD%20JWT%20token.xml) | GitHub
 - [SAP OData connector for SAP SuccessFactors](https://community.sap.com/t5/technology-blogs-by-members/perform-sap-principal-propagation-with-microsoft-entra-id-for-sap/ba-p/13860532) | SAP community blog
+- [What is application management in Microsoft Entra ID?](/entra/identity/enterprise-apps/what-is-application-management)
 - The SAP Business Accelerator Hub also offers content related to the SAP integration suite policy for SuccessFactors and NetWeaver. You must have an SAP account to access this content.

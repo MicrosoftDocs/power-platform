@@ -3,7 +3,7 @@
   "info": {
     "title": "Microsoft Power Platform REST API - governance",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
-    "version": "2022-03-01-preview"
+    "version": "2024-10-01"
   },
   "host": "api.powerplatform.com",
   "schemes": [
@@ -15,8 +15,8 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "Create a rule based policy.",
-        "description": "Create a new rule based policy. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "summary": "Create rule based policy.",
+        "description": "Creates a rule-based policy with rule sets and metadata.",
         "operationId": "CreateRuleBasedPolicy",
         "consumes": [
           "application/json"
@@ -31,7 +31,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -80,7 +80,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -111,7 +111,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "Get rule based policy by ID.",
-        "description": "Retrieves details about a specific policy based on the policy ID. The response includes rule sets, inputs, and other metadata related to the policy.",
+        "description": "Gets policy details by ID including rule sets and metadata.",
         "operationId": "GetRuleBasedPolicyByID",
         "produces": [
           "application/json"
@@ -130,7 +130,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -159,7 +159,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "Update rule based policy by ID.",
-        "description": "Updates details about a specific policy based on the policy ID. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "description": "Updates a policy by ID including rule sets and metadata.",
         "operationId": "UpdateRuleBasedPolicyByID",
         "consumes": [
           "application/json"
@@ -181,7 +181,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -212,6 +212,65 @@
             "description": "Internal Server Error - Unexpected server error."
           }
         }
+      },
+      "patch": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "Patch rule based policy.",
+        "description": "Allows adding or updating one or more rule sets to an existing policy.",
+        "operationId": "PatchRuleBasedPolicy",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "policyId",
+            "description": "The unique identifier of the policy.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PolicyRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated policy.",
+            "schema": {
+              "$ref": "#/definitions/Policy"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified policy does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
       }
     },
     "/governance/ruleBasedPolicies/{policyId}/assignments": {
@@ -220,7 +279,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "List rule based policy assignments for a specific policy.",
-        "description": "Retrieves a list of rule assignments for a specific policy. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "description": "Lists rule assignments for a policy with rule set details.",
         "operationId": "ListRuleAssignmentsByPolicyId",
         "produces": [
           "application/json"
@@ -246,7 +305,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -277,7 +336,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "Create environment group rule based assignment.",
-        "description": "Create new rule based policy assignment for an environment group. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "description": "Creates a rule-based policy assignment for an environment group.",
         "operationId": "CreateEnviornmentGroupRuleBasedAssignment",
         "consumes": [
           "application/json"
@@ -306,7 +365,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -325,7 +384,7 @@
             }
           },
           "201": {
-            "description": "Record created",
+            "description": "Record created.",
             "schema": {
               "$ref": "#/definitions/RuleAssignment"
             }
@@ -351,7 +410,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "Create environment rule based assignment.",
-        "description": "Create new rule based policy assignment for an environment. The input includes rule sets, inputs, and other metadata related to the policy.",
+        "description": "Creates a rule-based policy assignment for an environment.",
         "operationId": "CreateEnvironmentRuleBasedAssignment",
         "consumes": [
           "application/json"
@@ -380,7 +439,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -399,7 +458,7 @@
             }
           },
           "201": {
-            "description": "Record created",
+            "description": "Record created.",
             "schema": {
               "$ref": "#/definitions/RuleAssignment"
             }
@@ -419,13 +478,74 @@
         }
       }
     },
+    "/governance/ruleBasedPolicies/{policyId}/removeRule": {
+      "patch": {
+        "tags": [
+          "RuleBasedPolicies"
+        ],
+        "summary": "Removes a rule set from an existing policy.",
+        "description": "Removes a rule set from an existing policy.",
+        "operationId": "RemoveRuleFromRuleBasedPolicy",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "policyId",
+            "description": "The unique identifier of the policy.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/PolicyRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The updated policy.",
+            "schema": {
+              "$ref": "#/definitions/Policy"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The query parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified policy does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
     "/governance/ruleBasedPolicies/assignments": {
       "get": {
         "tags": [
           "RuleBasedPolicies"
         ],
         "summary": "List rule based policy assignments.",
-        "description": "Retrieves a list of rule assignments for a tenant. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "description": "Lists rule assignments for a tenant with rule set details.",
         "operationId": "ListRuleAssignments",
         "produces": [
           "application/json"
@@ -444,7 +564,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -475,7 +595,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "List rule based policy assignments for a specific environment group.",
-        "description": "Retrieves a list of rule assignments for a specific environment group. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "description": "Lists rule assignments for an environment group.",
         "operationId": "ListRuleAssignmentsByEnvironmentGroupId",
         "produces": [
           "application/json"
@@ -501,7 +621,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -532,7 +652,7 @@
           "RuleBasedPolicies"
         ],
         "summary": "List rule based policy assignments for a specific environment.",
-        "description": "Retrieves a list of rule assignments for a specific environment. This operation provides details about the policy assignments, including rule sets and associated resource types.",
+        "description": "Lists rule assignments for a specific environment.",
         "operationId": "ListRuleAssignmentsByEnvironmentId",
         "produces": [
           "application/json"
@@ -558,7 +678,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -583,6 +703,364 @@
         }
       }
     },
+    "/governance/environmentGroups/{groupId}/ruleSets": {
+      "get": {
+        "tags": [
+          "RuleSets"
+        ],
+        "summary": "Get Rule Set for Environment Group.",
+        "description": "Returns the Rule Set for the given environment group.",
+        "operationId": "GetRuleSet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "groupId",
+            "description": "The unique identifier of the environment group.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved Rule Set.",
+            "schema": {
+              "$ref": "#/definitions/MgGovODataResponse"
+            }
+          },
+          "204": {
+            "description": "No Content - Rule Set not found."
+          },
+          "400": {
+            "description": "Bad Request.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "RuleSets"
+        ],
+        "summary": "Create Rule Set.",
+        "description": "Creates the Rule Set for the environment group.",
+        "operationId": "CreateRuleSet",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "groupId",
+            "description": "The unique identifier of the environment group.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/RuleSetDto"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successfully created Rule Set.",
+            "schema": {
+              "$ref": "#/definitions/RuleSetDto"
+            }
+          },
+          "204": {
+            "description": "No Content."
+          },
+          "400": {
+            "description": "Bad Request.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          }
+        }
+      }
+    },
+    "/governance/ruleSets": {
+      "get": {
+        "tags": [
+          "RuleSets"
+        ],
+        "summary": "List Rule Sets for Tenant.",
+        "description": "Returns all the Rule Sets under the given tenant with OData pagination support.",
+        "operationId": "GetRuleSetListForTenant",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "$select",
+            "description": "OData select query option.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$filter",
+            "description": "OData filter query option.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$expand",
+            "description": "OData expand query option.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$skiptoken",
+            "description": "OData skip token for pagination.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$top",
+            "description": "OData top query option to limit results.",
+            "type": "integer"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved Rule Set list.",
+            "schema": {
+              "$ref": "#/definitions/MgGovODataResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          }
+        }
+      }
+    },
+    "/governance/ruleSets/{ruleSetId}": {
+      "put": {
+        "tags": [
+          "RuleSets"
+        ],
+        "summary": "Update Rule Set.",
+        "description": "Updates the Rule Set.",
+        "operationId": "UpdateRuleSet",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "ruleSetId",
+            "description": "The unique identifier of the Rule Set.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/RuleSetDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully updated Rule Set.",
+            "schema": {
+              "$ref": "#/definitions/RuleSetDto"
+            }
+          },
+          "400": {
+            "description": "Bad Request.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "RuleSets"
+        ],
+        "summary": "Delete Rule Set.",
+        "description": "Deletes the Rule Set. Only tenant admins can delete.",
+        "operationId": "DeleteRuleSet",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "ruleSetId",
+            "description": "The unique identifier of the Rule Set.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully deleted Rule Set."
+          },
+          "400": {
+            "description": "Bad Request.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error.",
+            "schema": {
+              "$ref": "#/definitions/MgGovErrorResponse"
+            }
+          }
+        }
+      }
+    },
     "/governance/crossTenantConnectionReports": {
       "get": {
         "tags": [
@@ -600,24 +1078,24 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "Success.",
             "schema": {
               "$ref": "#/definitions/CrossTenantConnectionReportsResponseWithOdataContinuation"
             }
           },
           "400": {
-            "description": "Bad Request"
+            "description": "Bad Request."
           },
           "401": {
-            "description": "Unauthorized"
+            "description": "Unauthorized."
           },
           "403": {
-            "description": "Forbidden"
+            "description": "Forbidden."
           }
         }
       },
@@ -637,30 +1115,30 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
           "400": {
-            "description": "Bad Request"
+            "description": "Bad Request."
           },
           "401": {
-            "description": "Unauthorized"
+            "description": "Unauthorized."
           },
           "403": {
-            "description": "Forbidden"
+            "description": "Forbidden."
           },
           "404": {
-            "description": "Not Found"
+            "description": "Not Found."
           },
           "200": {
-            "description": "Success",
+            "description": "Success.",
             "schema": {
               "$ref": "#/definitions/CrossTenantConnectionReport"
             }
           },
           "202": {
-            "description": "Accepted",
+            "description": "Accepted.",
             "schema": {
               "$ref": "#/definitions/CrossTenantConnectionReport"
             }
@@ -692,27 +1170,27 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
           "200": {
-            "description": "Success",
+            "description": "Success.",
             "schema": {
               "$ref": "#/definitions/CrossTenantConnectionReport"
             }
           },
           "400": {
-            "description": "Bad Request"
+            "description": "Bad Request."
           },
           "401": {
-            "description": "Unauthorized"
+            "description": "Unauthorized."
           },
           "403": {
-            "description": "Forbidden"
+            "description": "Forbidden."
           },
           "404": {
-            "description": "Not Found"
+            "description": "Not Found."
           }
         }
       }
@@ -857,11 +1335,11 @@
       "type": "object",
       "properties": {
         "resourceId": {
-          "description": "Resource ID. FOr example, the environment group ID.",
+          "description": "Resource Id ex. the environment group id.",
           "type": "string"
         },
         "resourceType": {
-          "description": "The resource type.",
+          "description": "The Resource type.",
           "enum": [
             "NotSpecified",
             "EnvironmentGroup",
@@ -871,7 +1349,7 @@
           "type": "string"
         },
         "behaviorType": {
-          "description": "The behavior type.",
+          "description": "The Behavior type.",
           "enum": [
             "NotSpecified",
             "Include",
@@ -889,6 +1367,188 @@
           "type": "array",
           "items": {
             "$ref": "#/definitions/PolicyAssignmentOverride"
+          }
+        }
+      }
+    },
+    "MgGovRuleSetType": {
+      "description": "The type of the Rule Set.",
+      "enum": [
+        "NotSpecified",
+        "Sharing",
+        "AdminDigest",
+        "SolutionChecker",
+        "MakerOnboarding",
+        "Lifecycle",
+        "Copilot",
+        "CrossGeoCopilotDataMovement",
+        "GenerativeAISettings",
+        "CopilotAuth",
+        "FlowAutomationRestrictions"
+      ],
+      "type": "string",
+      "example": "Sharing"
+    },
+    "MgGovResourceType": {
+      "description": "The type of resource.",
+      "enum": [
+        "NotSpecified",
+        "Flow",
+        "App",
+        "AuthoringBot",
+        "UsersBot"
+      ],
+      "type": "string",
+      "example": "App"
+    },
+    "MgGovFilterType": {
+      "description": "The type of environment filter.",
+      "enum": [
+        "NotSpecified",
+        "Include",
+        "Exclude"
+      ],
+      "type": "string",
+      "example": "Include"
+    },
+    "MgGovRule": {
+      "description": "A rule definition.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The rule ID.",
+          "type": "string",
+          "example": "rule-001"
+        },
+        "value": {
+          "description": "The rule value.",
+          "type": "string",
+          "example": "enabled"
+        }
+      }
+    },
+    "MgGovEnvironmentValues": {
+      "description": "Environment information.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The ID of the environment.",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000004"
+        },
+        "type": {
+          "description": "The type of the environment.",
+          "type": "string",
+          "example": "EnvironmentGroup"
+        },
+        "name": {
+          "description": "The name of the environment.",
+          "type": "string",
+          "example": "Production Environment Group"
+        }
+      }
+    },
+    "MgGovPolicyEnvironmentFilter": {
+      "description": "Defines the environment filters.",
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/MgGovFilterType"
+        },
+        "values": {
+          "description": "The environment information.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MgGovEnvironmentValues"
+          }
+        }
+      }
+    },
+    "RuleSetParameters": {
+      "description": "Parameters for a Rule Set.",
+      "required": [
+        "type",
+        "resourceType"
+      ],
+      "type": "object",
+      "properties": {
+        "type": {
+          "$ref": "#/definitions/MgGovRuleSetType"
+        },
+        "resourceType": {
+          "$ref": "#/definitions/MgGovResourceType"
+        },
+        "value": {
+          "description": "The rule values.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MgGovRule"
+          }
+        }
+      }
+    },
+    "RuleSetDto": {
+      "description": "Rule Set data transfer object.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The ID of the Rule Set.",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000003"
+        },
+        "lastModified": {
+          "format": "date-time",
+          "description": "The last modified timestamp.",
+          "type": "string",
+          "example": "2024-01-15T10:30:00.0000000+00:00"
+        },
+        "environmentFilter": {
+          "$ref": "#/definitions/MgGovPolicyEnvironmentFilter"
+        },
+        "parameters": {
+          "description": "The Rule Set parameters.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RuleSetParameters"
+          }
+        }
+      }
+    },
+    "MgGovODataResponse": {
+      "description": "OData response wrapper with continuation support.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The array of Rule Sets.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/RuleSetDto"
+          }
+        },
+        "@odata.nextLink": {
+          "description": "The link to the next page of results.",
+          "type": "string",
+          "example": "https://api.powerplatform.com/governance/ruleSets?$skiptoken=abc123"
+        }
+      }
+    },
+    "MgGovErrorResponse": {
+      "description": "Standard error response.",
+      "type": "object",
+      "properties": {
+        "error": {
+          "type": "object",
+          "properties": {
+            "code": {
+              "description": "Error code.",
+              "type": "string",
+              "example": "BadRequest"
+            },
+            "message": {
+              "description": "Error message.",
+              "type": "string",
+              "example": "The request was invalid."
+            }
           }
         }
       }
@@ -968,7 +1628,7 @@
           }
         },
         "@odata.nextLink": {
-          "description": "The URI of the next page of the report containing additional cross-tenant connections.",
+          "description": "Next page URI for additional cross-tenant connections.",
           "type": "string"
         }
       },
