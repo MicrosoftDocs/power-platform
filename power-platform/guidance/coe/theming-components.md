@@ -1,18 +1,20 @@
 ---
-title: "Theming components | MicrosoftDocs"
-description: "The Power Apps theming solution contains a set apps, tables, custom controls and a component library.  The Theme editor app allows designers to create and manage themes."
+title: "Theming components"
+description: "The Power Apps theming solution contains a set apps, tables, custom controls and a component library. The Theme editor app allows designers to create and manage themes."
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/02/2023
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
+
 # Use theming components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 A frequent ask from organizations in which makers create canvas apps is the ability to apply themes&mdash;specifically, the ability to create apps that match the organizational brand. The assets in this solution will help you create, manage, and share themes. More information: [Set up theming components](setup-theming.md)
 

@@ -6,6 +6,7 @@ ms.author: miferlan
 ms.reviewer: sericks
 ms.date: 03/31/2026
 ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # Copilot Studio agents inventory schema

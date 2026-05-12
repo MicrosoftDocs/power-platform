@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/07/2025
+ms.date: 05/07/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -18,7 +18,7 @@ This article provides an overview of the versioning and breaking change policies
 ## Support and deprecation information
 As a new version of the REST API is released, earlier versions are retired. Microsoft declares a version deprecated at least 12 months before it retires an API endpoint. When a version is deprecated, it's supported as-is. If you face an issue with that version, we request that you move to the currently stable version. When a version is retired, it's not supported and will soon be shut off.
 
-By incrementing the version number of the API (for example, from 2021-10-01 to 2022-04-01), Microsoft announces that the prior generally available version (in this example, 2021-10-01) is immediately deprecated and will be retired 12 months after the announcement. The same treatment is had for public preview versions. Microsoft might make exceptions to this policy for service health and security issues.  
+By incrementing the version number of the API (for example, from 2021-10-01 to 2022-04-01), Microsoft announces that the prior generally available version (in this example, 2021-10-01) is immediately deprecated and will be retired 12 months after the announcement. Microsoft might make exceptions to this policy for service health and security issues.  
 
 The various tools and SDKs that are generated on top of Power Platform API like Power Platform CLI, the Admin V2 connector, and PowerShell, are updated to newer API versions on a per action basis and are transparent to end users.
 
@@ -45,11 +45,10 @@ Here are examples of nonbreaking changes:
 | Version | Type | Reference | Deprecation date | Decommission date
 | --- | --- | --- | --- |
 | 2024-10-01 | Stable | [Reference](/rest/api/power-platform) | N/A | N/A |
-| 2022-03-01-preview | Public preview | [2022-03-01-preview Ref](/rest/api/power-platform) | 2025-03-01 | 2026-03-01 |
 | 2020-10-01 | Generally available | [2020-10-01 Ref](list-environments.md) | N/A | N/A |
 
 > [!Note]
-> The 2020-10-01 Generally available version of Power Platform API is specific to environment management and is also commonly referred to as Business Application Platform (BAP) API. The functionality of this set of endpoints are made available in the newer versions of Power Platform API along with many additional features after version 2022-03-01-preview.
+> The 2020-10-01 generally available version of Power Platform API is specific to environment management and is also commonly referred to as Business Application Platform (BAP) API. The functionality of this set of endpoints are made available in the newer versions of Power Platform API.
 
 ## Next steps
 Now that you understand the versioning and support strategy, let's walk through how to authenticate with Microsoft Power Platform API.

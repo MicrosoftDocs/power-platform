@@ -4,7 +4,7 @@ description: This article covers information on how customers can review and app
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/30/2026
+ms.date: 05/05/2026
 ms.update-cycle: 180-days
 author: mihaelablendea
 ms.author: mihaelab
@@ -15,7 +15,8 @@ ms.collection: bap-ai-copilot
 contributors:
    - lavanyakr01 
    - iaanw 
-   - kavehkazms 
+   - kavehkazms
+   - jordanchodak
 ms.custom: sfi-image-nochange
 ---
 # Securely access customer data by using Customer Lockbox in Power Platform and Dynamics 365
@@ -45,6 +46,7 @@ Power Platform and Dynamics 365 applications and services store customer data in
 > - Features powered by Azure OpenAI Service are excluded from lockbox policy enforcement unless product documentation for a given feature states that lockbox applies.
 > - Nuance Conversational IVR is excluded from lockbox policy enforcement unless product documentation for a given feature states that lockbox applies.
 > - [Maker Welcome Content](welcome-content.md) is excluded from lockbox policy enforcement.
+> - Power Platform environment settings are excluded from lockbox policy enforcement.
 > - You must disable Lucene.NET search from your website and move to Dataverse Search to be able to use Customer Lockbox. For more information, see [Portals search using Lucene.NET search is deprecated](/power-apps/maker/portals/important-changes-deprecations#portals-search-using-lucenenet-search).
 
 ## Workflow

@@ -2,10 +2,9 @@
 title: Compliance and Adoption with the CoE Power BI dashboard
 description: "The Compliance and Adoption Power BI dashboard gives you the ability to review compliance, security and governance statistics and gain further adoption insights."
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/02/2023
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -13,12 +12,21 @@ search.audienceType:
   - admin
 ms.custom: sfi-image-nochange
 ---
+
 # Compliance and Adoption with the CoE Power BI dashboard
 
->[!IMPORTANT]
-> The reports on this page are part of a separate dashboard, **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit**. See: [Setup Power BI dashboard](setup-powerbi.md).
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
-The **Compliance and Adoption** dashboard highlights governance, compliance and security insights, allows you to gain a high level view into your adoption and provides a tech debt report of the [Default environment](/power-platform/admin/environments-overview#the-default-environment).
+> [!TIP]
+> Use Power Platform APIs to help monitor and govern your tenant, including:
+>
+> - [Power Platform inventory API](../../admin/inventory-api.md) to query your Power Platform resources.
+> - [Microsoft Power Platform API reference](/rest/api/power-platform/) to access Power Platform services and resources.
+
+The **Compliance and Adoption** dashboard highlights governance, compliance, and security insights, allows you to gain a high level view into your adoption, and provides a tech debt report of the [default environment](/power-platform/admin/environments-overview#the-default-environment).
+
+>[!IMPORTANT]
+> The reports on this page are part of a separate dashboard, **PowerPlatformGovernance_CoEDashboard_MMMYY.pbit**. Learn more in [Set up the Power BI dashboard](setup-powerbi.md).
 
 ## Compliance and Governance
 

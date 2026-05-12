@@ -4,14 +4,17 @@ description: "Learn about the limitations within the Microsoft CoE Starter Kit, 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/07/2022
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
+
 # Limitations
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 You can implement the Center of Excellence (CoE) solution in various ways. Each company has its own preferences and objectives with some opting for stringent rules to mitigate risks, while others prioritize user exploration with minimal constraints. Therefore, the CoE Starter Kit doesn't provide a predefined set of design patterns applicable to all scenarios. If your organization requires a more restrictive approach, it must implement more restrictions alongside utilizing the tools offered by the starter kit.
 
@@ -127,7 +130,7 @@ The longer you have the CoE starter kit installed, the more usage data is gather
 
 The [inventory](setup-core-components.md) in the CoE Starter Kit runs daily to look for new and modified resources since the last run. However, certain cleanup flows only run every two weeks. One of these flows is [CLEANUP - Admin | Sync Template v3 (Check Deleted)](core-components.md#flows) which checks if a resource such as a canvas app is in the environment. If the resource isn't in the environment, it gets deleted. This flow compares every row in the CoE tables to every Power Platform resource in your tenant. The flow consumes a high volume of API calls, therefore this and similar flows are scheduled to run only every two weeks. This schedule means that your data might be out of date if resources are deleted in the past two weeks.
 
-The CoE starter Kit expects all [inventory flows](core-components.md#flows) to always run with elevated Power Platform admin privileges. If admin access expires during a flow run, or if the user doesn’t have admin privileges, any resources that can’t be retrieved are marked as deleted in the CoE tables. Once an app is marked as deleted, it remains deactivated. A single flow run with insufficient privileges can significantly affect the inventory.
+The CoE starter Kit expects all [inventory flows](core-components.md#flows) to always run with elevated Power Platform admin privileges. If admin access expires during a flow run, or if the user doesn't have admin privileges, any resources that can't be retrieved are marked as deleted in the CoE tables. Once an app is marked as deleted, it remains deactivated. A single flow run with insufficient privileges can significantly affect the inventory.
 
 The CoE Starter Kit shows canvas apps, published model-driven apps, and SharePoint custom forms but not unpublished model-driven apps (if the "play" button on a model-driven app is disabled).
 

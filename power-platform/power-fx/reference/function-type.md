@@ -25,12 +25,6 @@ no-loc: ["RecordOf","Type"]
 
 Constructs a user defined type for use with user defined functions and untyped values.
 
-> [!IMPORTANT]
-> - These functions are experimental.
-> - Experimental features aren't meant for production use and might not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
-> - This behavior is available only when the **User-defined types** experimental feature in [**Settings > Upcoming features > Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
-> - Your feedback is valuable. Let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
-
 ## Description
 
 Every function in Power Fx defines the types of values that can be passed in as parameters and the type of the output. Types are checked when you write a formula and errors shown if they don't agree with what is expected. Types are also used by the editor to suggest good options for what to pass into the function and detect errors as early as possible. 
