@@ -58,7 +58,7 @@ If your environment is part of an [environment group](environment-groups.md), yo
 1. To apply your changes to the environments in the group, select **Publish rules**.
 
 > [!NOTE]
-> If the external model toggle is visible but you can't check it, your organization's admin didn't enable access to that model family in the Microsoft 365 admin center. To enable Anthropic models on January 7, 2026 or later, complete the steps in [Anthropic as a subprocessor for Microsoft Online Services](/copilot/microsoft-365/connect-to-ai-subprocessor).
+> If the external model toggle is visible but you can't select it, your organization's admin didn't enable access to that model family in the Microsoft 365 admin center. To enable Anthropic models on January 7, 2026 or later, complete the steps in [Anthropic as a subprocessor for Microsoft Online Services](/copilot/microsoft-365/connect-to-ai-subprocessor).
 
 ## Exclusions
 
