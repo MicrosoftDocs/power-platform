@@ -4,13 +4,14 @@ description: Learn about enhancements for Dataverse capacity-based storage that 
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 11/20/2025
+ms.date: 5/12/2026
 ms.subservice: admin
 ms.author: ceian
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+- rijoshi1
 - ianceicys-msft
 - dasussMS
 ms.contributors:
@@ -54,7 +55,7 @@ Two versions of storage capacity reporting are available:
 
 ## What happens when my organization exceeds storage entitlements?
 
-If your organization exceeds its storage capacity, you receive email notifications that alert you to the over-capacity usage. For details about the new model for email notification, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For details about the legacy model for email notification, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner will appear in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and model-driven apps when any of the three storage capacities (database, file, or log) fall below 15% remaining or exceed the allocated capacity. Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
+If your organization exceeds its storage capacity, you receive email notifications that alert you to the over-capacity usage. For details about the new model for email notification, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For details about the legacy model for email notification, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner appears in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and model-driven apps when any of the three storage capacities (database, file, or log) fall below 15 percent remaining or exceed the allocated capacity. Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
 
 The following admin operations aren't available when a tenant exceeds storage capacity entitlements:
 
