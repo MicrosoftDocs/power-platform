@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 03/31/2026
+ms.date: 05/12/2026
 ms.topic: concept-article
 author: amiyapatr 
 ms.subservice: admin
@@ -10,6 +10,7 @@ ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+- rijoshi1
 - olegovanesyan
 - ianceicys-msft 
 - amiyapatr-zz
@@ -318,7 +319,7 @@ Notifications for capacity approaching storage limits are triggered when any of 
 
 Tenant admins, Power Platform admins, and Dynamics 365 admins receive these notifications on a weekly basis. At this time, there's no option for a customer to opt out of these notifications or delegate these notifications to someone else. All admin types listed earlier automatically receive these notifications.
 
-Additionally, a notification banner will appear in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and model-driven apps when any of the three storage capacities (database, file, or log) fall below 15% remaining or exceed the allocated capacity.
+Additionally, a notification banner appears in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and model-driven apps when any of the three storage capacities (database, file, or log) fall below 15 percent remaining or exceed the allocated capacity.
 
 The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization's use of the online service, including consumption that exceeds the online service's documented entitlements or usage limits.
 
