@@ -4,7 +4,7 @@ description: Learn how to connect audit log sync flows to the audit log by using
 author: pete-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/27/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: petrip
 ms.reviewer: jhaskett-msft
@@ -16,6 +16,8 @@ ms.custom: sfi-image-nochange
 ---
 
 # Collect audit logs by using the Office 365 Management API
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 The audit log sync flows connect to the [Office 365 Management Activity API reference](/office/office-365-management-api/office-365-management-activity-api-reference) to gather telemetry data, such as unique users and launches for apps. The flows use an HTTP action to access the API. In this article, you set up the app registration for the HTTP action and the environment variables that are needed to run the flows.
 

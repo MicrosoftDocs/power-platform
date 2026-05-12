@@ -3,13 +3,15 @@ title: Update the Center of Excellence (CoE) Starter Kit
 description: Learn how to upgrade, test, and manage new releases for the Power Platform Center of Excellence Starter Kit to keep your organization current.
 author: stjeffer
 ms.topic: how-to
-ms.date: 08/27/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft
 ---
 
 # Update the Center of Excellence (CoE) Starter Kit
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article helps you upgrade the CoE Starter Kit. It provides guidance on:
 

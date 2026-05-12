@@ -1,20 +1,22 @@
 ---
-title: "Use the Innovation Backlog components | MicrosoftDocs"
-description: "The Innovation Backlog app contains assets log ideas and perform business value assessments."
+title: Use the Innovation Backlog components
+description: "The Innovation Backlog app contains assets to log ideas and perform business value assessments."
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/14/2020
+ms.date: 04/21/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ---
+
 # Use the Innovation Backlog components
 
-Use the Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+Use the Innovation Backlog app to gather ideas from users for apps and flows to build, and capture pain points with the current process. As users describe the process, they provide information about personas involved, tools used, and measures for improvement. The app uses this information to calculate a return on investment (ROI) and complexity score.
 
 Pick the most impactful ideas for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
@@ -64,9 +66,9 @@ This instant flow runs once during setup to add some default values in the softw
 
 ### Innovation Backlog Admin app
 
-A canvas app that the Innovation Backlog admin uses to update icons for non-software tools, configure further pain point,s and delete obsolete or old ideas from the Innovation Backlog app.
+A canvas app that the Innovation Backlog admin uses to update icons for non-software tools, configure further pain points, and delete obsolete or old ideas from the Innovation Backlog app.
 
-**Permission**: Share this app with the Innovation Backlog admin - this can be your CoE or Power Platform adoption lead.
+**Permission**: Share this app with the Innovation Backlog admin, for example, your CoE or Power Platform adoption lead.
 
 **Prerequisite**: This app uses Microsoft Dataverse. If you have installed this solution in a Production environment, end users need to have a Per User license, or the app needs to be assigned a Per App license, or the environment needs to be covered by pay-as-you-go.
 
@@ -74,7 +76,7 @@ A canvas app that the Innovation Backlog admin uses to update icons for non-soft
 
 ### Innovation Backlog app
 
-A canvas app that is used to share and vote on ideas, describe pain points and apps that need building, and measure ROI.
+A canvas app that is used to share and vote on ideas, describe pain points and apps to build, and measure ROI.
 
 **Permission**: The Innovation Backlog app can be shared with the entire organization.
 
@@ -83,6 +85,5 @@ A canvas app that is used to share and vote on ideas, describe pain points and a
 ![Innovation Backlog app.](media/ib-12.png "Innovation Backlog app")
 
 More information: [Use the Innovation Backlog app](use-innovationbacklog.md)
-
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -1,10 +1,10 @@
 - name: Power Platform guidance
   href: index.yml
   items:
+    - name: What's new
+      href: adoption/whats-new.md
     - name: Power Platform adoption guidance
       items:
-        - name: What's new
-          href: adoption/whats-new.md
         - name: Overview
           href: adoption/methodology.md
         - name: Maturity model
