@@ -65,7 +65,7 @@ You can access self-help resources in the **Support** experience without a suppo
 >    - If you have a non-Unified/Premier Support plan, verify the plan is active. For support information, see [community forums](https://community.dynamics.com/forums/thread/).
 
 ## Request support
-Two experiences exist depending on your tenant and scenario. Most users see the new support agent, which says **Support agent** at the top of the pane, but some users see the back-up support experience if the support agent isn't available.
+Two experiences exist depending on your tenant and scenario. Most users see the new support agent, which says **Support agent** at the top of the pane, but some users see the backup support experience if the support agent isn't available.
 
 While the support agent is in preview, users can switch between experiences by selecting the ellipsis icon (**...**) in the upper-right corner of the **Support agent** pane. You can switch back to the support agent by closing the pane and selecting **Get support** again, or by selecting the **Switch to support agent** toggle at the top of the pane.
 
@@ -138,21 +138,21 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
    
 ### Use the backup support experience
 
-If the support agent is unavailable or isn't performant, the back-up support experience is available automatically or by selecting the **Switch to webform** button at the top of the panel. Through this experience, you can describe your issue, review any self-help solutions, and create a support request, if needed.
+If the support agent is unavailable or isn't performant, the backup support experience is available automatically or by selecting the **Switch to webform** button at the top of the panel. Through this experience, you can describe your issue, review any self-help solutions, and create a support request, if needed.
 
-1. **Open back-up support.**
+1. **Open backup support.**
 
       1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
       1. In the navigation pane, select **Support**. In the **Support** pane, select **Support requests**.
-      1. On the **Support requests** page, select **Get support**. Typically, the support agent loads. The back-up support experience shows in these scenarios.
+      1. On the **Support requests** page, select **Get support**. Typically, the support agent loads. The backup support experience shows in these scenarios.
             
-         | Scenario | Back-up support Behavior |
+         | Scenario | Backup support Behavior |
          | -------- | -------- |
-         | Support agent is unavailable | The back-up support experience loads automatically until the root cause is addressed. |
-         | Support agent crashes | You're prompted to select the **Switch to webform** button at the top of the panel. An 8-hour cooldown period is triggered where the back-up support experience loads by default when selecting **Get support** to allow the issue to be resolved. |
+         | Support agent is unavailable | The backup support experience loads automatically until the root cause is addressed. |
+         | Support agent crashes | You're prompted to select the **Switch to webform** button at the top of the panel. An 8-hour cooldown period is triggered where the backup support experience loads by default when selecting **Get support** to allow the issue to be resolved. |
          | Support agent isn't performant | In the case of a critical timeout, the **Switch to webform** button appears at the top of the panel. You can choose to select it or wait for the support agent to respond. |
      
-      If you choose to or must switch to the back-up experience, leave feedback when prompted so Microsoft can diagnose and address the issues. 
+      If you choose to or must switch to the backup experience, leave feedback when prompted so Microsoft can diagnose and address the issues. 
       
 1. **Describe the problem.**
 
