@@ -203,7 +203,7 @@ If the support agent is unavailable or isn't performant, the backup support expe
 ## Add a support plan
 To add a support plan or check the support plans currently associated with a product, select the **Support plans** button shown on any of the **Support** pages. 
 
-:::image type="content" source="media/get-help-support/support-plans-add-new-plan-panel.png" alt-text="Screenshot of Support agent pane with Issue step active." lightbox="media/get-help-support/support-plans-add-new-plan-panel.png":::
+:::image type="content" source="media/get-help-support/support-plans-add-new-plan-panel.png" alt-text="Screenshot of Support plans panel showing options to view existing plans and add a new plan." lightbox="media/get-help-support/support-plans-add-new-plan-panel.png":::
 
 Follow these instructions to add new support plans.
 
@@ -223,7 +223,7 @@ During the solutions phase of support workflows, you might see several distinct 
 
 Service health alerts notify you of active and recently resolved disruptions affecting your products and tenant. Expanding the **Service Health** card shows a title and preview of each alert along with a link to the details page. The details page contains the latest updates from Microsoft. You can notify Microsoft that you're seeking support for these issues by checking the relevant box and selecting **Submit**. You can also view active and recently resolved alerts on the [Support/Service Health](https://admin.powerplatform.microsoft.com/support/serviceHealth) page of the Power Platform admin center, and in the Microsoft admin center (where you can subscribe for email updates). For more information, see [View service health](view-service-health.md).
 
-:::image type="content" source="media/get-help-support/service-health-card-active-alerts.png" alt-text="Screenshot of Get support webform." lightbox="media/get-help-support/service-health-card-active-alerts.png":::
+:::image type="content" source="media/get-help-support/service-health-card-active-alerts.png" alt-text="Screenshot of Service Health card showing active alerts." lightbox="media/get-help-support/service-health-card-active-alerts.png":::
 
 ### Known issues
 
@@ -238,7 +238,7 @@ Generative answers are created in real time based on your issue description from
 > [!IMPORTANT]
 > It's important to note that AI-generated content might be incorrect.
 
-:::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of expanded Service Health card." lightbox="media/get-help-support/support-agent-generative-answer.png":::
+:::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of support agent generative answer card with citation links and follow-up options." lightbox="media/get-help-support/support-agent-generative-answer.png":::
 
 ## Report an outage
 
