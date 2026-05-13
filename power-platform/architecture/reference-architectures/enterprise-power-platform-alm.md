@@ -27,7 +27,7 @@ This reference architecture addresses these challenges by combining native Datav
 
 1. **Development and source control workflow**
 
-    1. Makers and developers build changes in one of several Dataverse development environments. In addition to a primary development environment, you might use extra dev environments. Examples include dev environments for junior developers, external resources, work-in-progress from long-running initiatives, or any other work that shouldn't automatically be promoted into the core production pathway.
+    1. Makers and developers build changes in one of several Dataverse development environments. In addition to a primary development environment, you might use extra development environments. Examples include development environments for junior developers, external resources, work-in-progress from long-running initiatives, or any other work that shouldn't automatically be promoted into the core production pathway.
 
     1. Each development stream maps to a Git environment or feature branch.
 
@@ -35,17 +35,17 @@ This reference architecture addresses these challenges by combining native Datav
 
     1. Review feature branches and merge them into Git main branch by using pull requests and branch protection policies when ready for submission into the production testing application lifecycle management (ALM) pathway.
 
-    1. To avoid feature drift, pull changes accepted into the main branch into branches corresponding to all dev environments.
+    1. To avoid feature drift, pull changes accepted into the main branch into branches corresponding to all development environments.
 
     1. The main branch becomes the authoritative source for integration and release promotion.
 
 1. **Test and validation workflow**
 
-    1. From the main branch, a [custom pipeline host](/power-platform/alm/custom-host-pipelines) promotes the packaged solution into TEST directly from the source code in the main branch by using the Source Control deployment type.
+    1. From the main branch, a [custom pipeline host](/power-platform/alm/custom-host-pipelines) promotes the packaged solution into the test environment directly from the source code in the main branch by using the Source Control deployment type.
 
-    1. Use TEST for technical validation, integration checks, and smoke testing.
+    1. Use the test environment for technical validation, integration checks, and smoke testing.
 
-    1. After validation, promote the solution to UAT by using pipelines in Power Platform. Create or update the corresponding release branch in Git from the main branch.
+    1. After validation, promote the solution to the user acceptance test (UAT) environment by using pipelines in Power Platform. Create or update the corresponding release branch in Git from the main branch.
 
     1. Generate release notes from DevOps work items in a UAT status and distribute them to UAT responsible testers. Use a Copilot Studio agent to generate and format these release notes by using the DevOps Get Query Results connector action.
 
@@ -71,9 +71,9 @@ This reference architecture addresses these challenges by combining native Datav
 
 ## Components
 
-[**Microsoft Dataverse Git integration**](/power-platform/alm/git-integration/overview)
+### Git integration in Power Platform
 
-**Role in architecture:** Synchronizes solution changes to and from development environments into Git-based source control.
+**Role in architecture:** [**Microsoft Dataverse Git integration**](/power-platform/alm/git-integration/overview) synchronizes solution changes to and from development environments into Git-based source control.
 
 **Why chosen:**
 
@@ -81,9 +81,9 @@ This reference architecture addresses these challenges by combining native Datav
 - Supports branch-based team collaboration
 - Reduces manual export and import handling
 
-[**Azure DevOps Repos, Branching Strategy, and Work Items**](/azure/devops/user-guide/what-is-azure-devops)
+### Azure Repos, branches, and work items
 
-**Role in architecture:** Hosts main, feature, and release branches and enforces pull request governance. Also houses work items and acts as the structured source for release scope and change summaries.
+**Role in architecture:** [**Azure DevOps**](/azure/devops/user-guide/what-is-azure-devops) hosts main, feature, and release branches and enforces pull request governance. Also houses work items and acts as the structured source for release scope and change summaries.
 
 **Why chosen:**
 
@@ -98,11 +98,11 @@ This reference architecture addresses these challenges by combining native Datav
 - GitHub for [code repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories) and [project work items](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 
 **Why this architecture favors Azure DevOps:**  
-Although GitHub Projects can provide flexible work tracking, including custom fields, roadmap views, and automation, this architecture includes Azure DevOps Boards as the authoritative release work-item source. Azure DevOps Boards currently provides stronger enterprise work item process modeling, shared query and WIQL-based release scoping, and richer built-in development and deployment traceability for governed release operations.
+Although GitHub Projects can provide flexible work tracking, including custom fields, roadmap views, and automation, this architecture includes Azure Boards as the authoritative release work-item source. Azure Boards currently provides stronger enterprise work item process modeling, shared query and WIQL-based release scoping, and richer built-in development and deployment traceability for governed release operations.
 
-[**Pipelines in Power Platform**](/power-platform/alm/custom-host-pipelines)
+### Pipelines in Power Platform
 
-**Role in architecture:** Promotes solutions across TEST, UAT, and Production, including hotfix promotion paths.
+**Role in architecture:** [**Pipelines in Power Platform**](/power-platform/alm/custom-host-pipelines) promotes solutions across environments, including hotfix promotion paths.
 
 **Why chosen:**
 
@@ -113,14 +113,14 @@ Although GitHub Projects can provide flexible work tracking, including custom fi
 **Alternatives considered:**
 
 - Azure DevOps or GitHub-only deployment orchestration
-- Fully custom PAC CLI pipeline orchestration
+- Fully custom Power Platform command-line interface (PAC CLI) pipeline orchestration
 
 **Why this architecture favors pipelines in Power Platform:**  
-This architecture includes pipelines in Power Platform as the primary environment promotion mechanism. The reason is that they reduce configuration complexity and specialized CI/CD knowledge requirements while providing a native, governed deployment experience for makers, admins, and pro developers.
+This architecture includes pipelines in Power Platform as the primary environment promotion mechanism. The reason is that they reduce configuration complexity and specialized continuous integration/continuous deployment (CI/CD) knowledge requirements while providing a native, governed deployment experience for makers, admins, and pro developers.
 
-[**Copilot Studio release notes agent**](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio)
+### Microsoft Copilot Studio
 
-**Role in architecture:** Generates standardized release notes from approved work items and release context.
+**Role in architecture:** A [**Copilot Studio**](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) release notes agent generates standardized release notes from approved work items and release context.
 
 **Why chosen:**
 
@@ -146,7 +146,7 @@ Key value delivered by this architecture includes:
 
 - **Source control as the source of truth** for solution customizations, rather than treating a maker environment as the authoritative deployment source. This approach improves consistency and supports controlled promotion into downstream environments.
 
-- **Safety, auditing, and compliance through SDLC best practices**, including version control, code reviews, change traceability, and integration with enterprise governance processes.
+- **Safety, auditing, and compliance through software development lifecycle (SDLC) best practices**, including version control, code reviews, change traceability, and integration with enterprise governance processes.
 
 - **Parallel development at scale**, using branches and isolated development environments so multiple contributors can build and iterate simultaneously with less collision risk.
 
@@ -166,7 +166,7 @@ These considerations implement the pillars of Power Platform Well-Architected, w
 
 This architecture improves reliability by implementing controlled promotion paths and branch-aware release handling. This approach reduces deployment failure risk and supports recoverability during urgent production support scenarios.
 
-- Standardized deployment progression from TEST to UAT to Production
+- Standardized deployment progression from UAT to test to production
 - Dedicated hotfix path with release branch traceability
 - Reusable pipeline mechanisms instead of manual deployments
 - Validation checkpoints before production promotion
@@ -176,10 +176,10 @@ This architecture improves reliability by implementing controlled promotion path
 This architecture applies security through least privilege, role separation, and controlled automation identities. This approach reduces the risk of unauthorized changes and improves change accountability.
 
 - Role‑based access control across Power Platform environments and Azure DevOps
-- service principals or managed identities for pipeline execution
-- restricted production deployment permissions
-- auditable branch merge and release activities
-- approved channels for release note distribution
+- Service principals or managed identities for pipeline execution
+- Restricted production deployment permissions
+- Auditable branch merge and release activities
+- Approved channels for release note distribution
 
 ### Operational Excellence
 
