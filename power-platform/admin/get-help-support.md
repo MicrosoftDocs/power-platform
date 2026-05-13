@@ -5,7 +5,7 @@ description: Get support in the Power Platform admin center using the AI-powered
 author: johnehart
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/11/2026
+ms.date: 05/13/2026
 ms.subservice: admin
 ms.author: johhar
 ms.reviewer: sericks
@@ -69,11 +69,7 @@ Two experiences exist depending on your tenant and scenario. Most users see the 
 
 While the support agent is in preview, users can switch between experiences by selecting the ellipsis icon (**...**) in the upper-right corner of the **Support agent** pane. You can switch back to the support agent by closing the pane and selecting **Get support** again, or by selecting the **Switch to support agent** toggle at the top of the pane.
 
-### Use the support agent (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+### Use the support agent 
 
 The support agent is an AI-powered virtual agent that takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. By following these steps, you can find self-help solutions, create a support request, and engage Microsoft representatives.
 
@@ -244,19 +240,9 @@ Generative answers are created in real time based on your issue description from
 
 :::image type="content" source="media/get-help-support/support-agent-generative-answer.png" alt-text="Screenshot of expanded Service Health card." lightbox="media/get-help-support/support-agent-generative-answer.png":::
 
-### Dialogs
-
-Troubleshooting dialogs guide you toward a solution if generative answers don't resolve the issue. These dialogs often trigger if there's a level of ambiguity about your problem. You need to navigate these dialogs to a solution to proceed in many cases. Product teams create these dialogs to represent frequent problems, questions, and other topics seen in previous support requests. By navigating the dialog, you can both find answers and help Microsoft categorize the problem, so any support request is routed to the correct Microsoft support representative, and the owning product engineering team is alerted.
-
-### Documentation search results (Support experience only)
-
-You see the top three search results from Microsoft product documentation based on your selected product and issue description. Select a link to review the articles relevant to your issue.
-
 ## Report an outage
 
 Depending on your tenant, you might be able to access the direct **Report outage** feature. If enabled, the **Report outage** button is visible on any of the support pages, next to the **Get support** button. If the **Report outage** feature isn't enabled, you can use the support agent or experience workflows to create a high-priority support request, if you have an active support plan.
-
-:::image type="content" source="media/troubleshoot-dialog.png" alt-text="Screenshot of a known issue card." lightbox="media/troubleshoot-dialog.png":::
 
 To use the **Report outage** feature to raise a high-priority support request, complete the following steps:
 
