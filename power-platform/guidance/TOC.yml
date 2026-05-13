@@ -1,10 +1,10 @@
 - name: Power Platform guidance
   href: index.yml
   items:
+    - name: What's new
+      href: adoption/whats-new.md
     - name: Power Platform adoption guidance
       items:
-        - name: What's new
-          href: adoption/whats-new.md
         - name: Overview
           href: adoption/methodology.md
         - name: Maturity model
@@ -229,12 +229,18 @@
           href: case-studies/slb-enhances-productivity.md
         - name: Teck automates data extraction
           href: case-studies/teck-automates-data-extraction.md
+        - name: Telecom provider mobilezone modernizes service delivery
+          href: case-studies/mobilezone-modernizes-service-delivery.md
+        - name: Tiendas CUADRA delivers always-on customer service and product discovery
+          href: case-studies/tiendas-cuadra-customer-service.md
         - name: T-Mobile empowers customer service representatives
           href: case-studies/tmobile-empowers-customer-service.md
     - name: White papers
       items:
         - name: Power Platform white papers
           href: white-papers/index.md
+        - name: Administering and governing the Power Platform for Enterprise
+          href: https://aka.ms/PowerPlatformAdministrationandGovernance
         - name: Migrating apps and flows from the default environment
           href: white-papers/migrating-from-default-environment.md
     - name: Resources

@@ -5,7 +5,7 @@ description: Prerequisites and step-by-step instructions for setting up the CoE 
 author: Grant-Archibald-MS
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/21/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: grarchib
 ms.reviewer: jhaskett-msft
@@ -18,6 +18,8 @@ ms.custom:
 ---
 
 # Set up the CoE Starter Kit: Prerequisites and instructions
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article describes how to install the CoE Starter Kit and provides guidance on:
 

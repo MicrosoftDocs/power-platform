@@ -5,11 +5,12 @@ description: Learn how to best use the features of the platform to implement an 
 author: robstand
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/29/2025
+ms.date: 05/04/2026
 ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.custom: bap-template
 ms.subservice: guidance
+
 ---
  
 # Develop a tenant environment strategy to adopt Power Platform at scale
@@ -67,7 +68,7 @@ The following table describes the types of environments you can create, their ch
 | **Type**                      | **Characteristics and uses**                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Default                       | The environment that comes with every tenant. Many Microsoft 365 experiences use this environment for customizations and automations. This environment isn't intended for long-term or permanent work beyond the Microsoft 365 personal, productivity scenarios.             |
-| Production                    | This environment is intended to be used for permanent work in an organization. Production environments support extended, back-up retention, from seven days to up to 28 days.       |
+| Production                    | This environment is intended to be used for permanent work in an organization. Production [Managed Environments](/power-platform/admin/managed-environment-overview) support extended back-up retention from seven days to up to 28 days.       |
 | Sandbox                       | These nonproduction environments support environment actions like copy and reset. Sandboxes are best used for testing and ALM build environments.                          |
 | Developer                     | These special environments are intended as makers' personal development workspaces, which isolate low-code assets from users and other makers. Makers can have up to three developer environments. They don't count against your tenant capacity. Developer environments that haven't been used for 90 days are automatically turned off and then removed from your tenant if the owner doesn't respond to notifications. Dynamics 365 apps aren't available in developer environments. |
 | Trial                         | These environments are intended to support short-term testing and proofs of concept. They're limited to one per user. Trial environments are automatically removed from your tenant after a short period of time.   |

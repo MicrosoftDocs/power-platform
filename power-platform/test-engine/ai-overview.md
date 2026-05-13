@@ -1,20 +1,19 @@
 ---
-title: Generative AI capabilities in Power Apps Test Engine (preview)
+title: Generative AI capabilities in Power Apps Test Engine (deprecated)
 description: Overview of Generative AI features in Power Apps Test Engine, including authoring assistance, Model Context Protocol, and nondeterministic AI testing
 author: caburk
 ms.author: caburk
 ms.subservice: test-engine
-ms.date: 05/19/2025
+ms.date: 04/17/2026
 ms.reviewer: jdaly
 ms.topic: overview
 contributors:
  - grant-archibald-ms
 ---
 
-# Generative AI capabilities in Power Apps Test Engine (preview)
+# Generative AI capabilities in Power Apps Test Engine (deprecated)
 
-> [!NOTE]
-> [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+[!INCLUDE [guidance-deprecate-test-engine](../includes/guidance-deprecate-test-engine.md)]
 
 Power Apps Test Engine offers comprehensive generative AI capabilities that span the entire testing lifecycle. This page provides an overview of how generative AI can enhance your testing experience, from test creation to execution and validation.
 

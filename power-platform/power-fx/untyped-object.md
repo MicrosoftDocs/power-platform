@@ -24,7 +24,7 @@ There are two ways to create a **Dynamic** value:
 - Using a connector that returns a "dynamic" type.
 
 > [!NOTE]
-> **Dynamic** was formerly called **UntypedObject**. Only the name has changed, there is no change in the semantics. The only place where the name would have appeared in a formula is in the experimental versions of User Defined Functions and User Defined Types.
+> **Dynamic** was formerly called **UntypedObject**. Only the name has changed, there is no change in the semantics. 
 
 ## Simple Types
 
@@ -135,12 +135,6 @@ ForAll( Table(UORecordArray), { FirstField: Value(ThisRecord.Value.FirstField), 
 ```
 
 ## Converting to typed records and tables
-
-> [!IMPORTANT]
-> - Using **AsType** and **IsType** with **Dynamic** values is an experimental feature.
-> - Experimental features aren't meant for production use and may not be complete. These features are available before an official release so that you can get early access and provide feedback. More information: [**Understand experimental, preview, and retired features in canvas apps**](/power-apps/maker/canvas-apps/working-with-experimental-preview)
-> - The behavior that this article describes is available only when the **User-defined types** experimental feature in [**Settings &gt; Upcoming features &gt; Experimental**](/power-apps/maker/canvas-apps/working-with-experimental-preview#controlling-which-features-are-enabled) is turned on (it's off by default).
-> - Your feedback is valuable to us. Let us know what you think in the [**Power Apps experimental features community forum**](https://community.powerplatform.com/forums/thread/details/?threadid=c8824a08-8198-ef11-8a69-7c1e52494f33).
 
 Instead of converting each simple value individually, the **ParseJSON**, [**IsType**](reference/function-astype-istype.md), and [**AsType**](reference/function-astype-istype.md) functions can be used to convert a **Dynamic** to a typed object in bulk. Use the [**Type**](reference/function-type.md) function to create a type that will map the dynamic structure to a typed structure.
 

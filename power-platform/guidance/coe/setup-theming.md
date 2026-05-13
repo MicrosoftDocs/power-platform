@@ -4,7 +4,7 @@ description: Learn how to install and configure theming components for canvas ap
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/18/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Set up theming components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 Use theming components to create, manage, and share themes for canvas apps. A *theme* is a collection of styles that define multiple design properties for controls and components, such as colors, fonts, and borders. When makers use the themed template app to create a new app, these styles automatically apply to controls and components.
 

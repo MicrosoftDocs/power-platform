@@ -587,7 +587,7 @@
                       href: control-app-access-environment.md
                     - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
-                - name: Global Secure Access for agents (preview)
+                - name: Global Secure Access for agents
                   href: security/secure-web-ai-gateway-agents.md
                 - name: Role-based access control for Power Platform admin center (preview)
                   href: security/role-based-access-control.md
@@ -635,6 +635,8 @@
                   href: modernized-business-units-security.md
                 - name: Configure user security in an environment
                   href: database-security-configure.md
+                - name: Control guest access
+                  href: security/guest-access.md
                 - name: How access to records is determined
                   href: how-record-access-determined.md
                 - name: Email exfiltration controls for connectors
@@ -675,6 +677,8 @@
                   href: admin-view-user-licenses.md
                 - name: Create users
                   href: create-users.md
+                - name: Create Entra agent users (preview)
+                  href: agent-users.md
                 - name: Assign licenses
                   href: assign-licenses.md
                 - name: Assign security roles
@@ -965,7 +969,7 @@
               href: disable-delete-address-records.md
             - name: View and take action on bulk deletion jobs
               href: view-take-action-bulk-deletion-jobs.md
-            - name: Restore deleted table records (preview)
+            - name: Restore deleted table records
               href: restore-deleted-table-records.md
             - name: Remove user personal data
               href: remove-user-personal-data.md
@@ -1176,6 +1180,8 @@
               href: unified-experience/admin-trials.md
             - name: Elastic compute for finance and operations apps
               href: unified-experience/elastic-compute.md
+            - name: Unified admin user management (preview)
+              href: unified-experience/unified-admin-user-management.md
             - name: Tutorials
               items:
                 - name: "Tutorial: Provision a new environment with an ERP-based template"

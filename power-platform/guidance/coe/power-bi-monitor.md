@@ -2,18 +2,26 @@
 title: "Monitor with the CoE Power BI dashboard | MicrosoftDocs"
 description: "The Monitor section of the Center of Excellence (CoE) Power BI dashboard gives you the ability to query basic inventory (environments, apps, flows, makers, connectors, and audit logs) to monitor usage across your entire tenant and within each environment."
 author: manuelap-msft
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/02/2023
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
 ---
+
 # Monitor with the CoE Power BI dashboard
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+> [!TIP]
+> Find Power Platform admin center functionality related to monitoring resources in:
+>
+> - [Power Platform admin center inventory capabilities](../../admin/power-platform-inventory.md) to obtain a unified view of Power Platform resources across the organization including apps, flows, and agents.
+> - [Power Platform admin center Usage page](../../admin/usage.md) to track engagement and adoption across resources.
 
 With the **Monitor** section of the Center of Excellence (CoE) Power BI dashboard, you can query basic inventory (environments, apps, flows, makers, connectors, and audit logs) to monitor usage across your entire tenant and within each environment. These reports also support drill-downs and filtering, for example by maker department/country/city, connector usage, or premium feature usage.
 

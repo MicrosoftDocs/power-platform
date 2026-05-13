@@ -4,14 +4,17 @@ description: Learn how core, governance, and nurture modules streamline Power Pl
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/27/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ---
+
 # CoE Starter Kit modules
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 The Center of Excellence (CoE) Starter Kit is shipped in multiple components.
 

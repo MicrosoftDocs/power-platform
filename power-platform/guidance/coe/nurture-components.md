@@ -4,7 +4,7 @@ description: "The CoE nurture components solution contains assets to share best 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/05/2023
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Use nurture components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 An essential part of establishing a Center of Excellence (CoE) is nurturing your makers and an internal community. You want to share best practices and templates, and onboard new makers. The assets in this solution can help you develop a strategy for this motion.   More information: [Set up nurture components](setup-nurture-components.md) and [watch the video](https://www.youtube.com/embed/StqxBgbt_ZM) on how to use the core components solution.
 
