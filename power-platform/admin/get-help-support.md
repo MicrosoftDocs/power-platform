@@ -87,7 +87,7 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
    
         > [!IMPORTANT]
         > - Selecting "Dynamics 365 Customer Service" for customer service with another product **misroutes and delays a request.**
-        > - For administration issues or if you encountered an issue in Power Platform admin center, select **Power Platfrom Administration** as the product.
+        > - For administration issues or if you encountered an issue in Power Platform admin center, select **Power Platform Administration** as the product.
      
 1. **Answer clarifying questions from the agent.**
 
