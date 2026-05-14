@@ -126,11 +126,11 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
       1. Set your contact preferences and advanced diagnostic consent. Learn more about [advanced diagnostics](/power-platform/admin/support-environment).
    
            > [!IMPORTANT]
-           > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If you don't provide consent when it's required, a Microsoft support representative contacts you to update the consent before proceeding.
+           > Microsoft can't access or run diagnostics on data in your tenant or environment without consent. If you don't provide consent when it's required, a Microsoft support representative will contact you to update the consent before proceeding.
        
-      1. If available, a **Live chat** checkbox appears in contact preferences. If you leave it checked, a Microsoft representative joins the chat after support request creation.
+      1. If available, a **Live chat** checkbox appears in contact preferences. If you leave it checked, a Microsoft representative will join the chat after support request creation.
          
-      1. Select **Create support request** to submit your request to Microsoft support. You receive a confirmation message when the request is created.
+      1. Select **Create support request** to submit your request to Microsoft support. You'll receive a confirmation message when the request is created.
          
       1.  If offered a customer satisfaction survey, respond with your perspective to improve the experience. Engineers review your feedback.
    
