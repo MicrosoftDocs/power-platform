@@ -4,7 +4,7 @@ description: Learn how to streamline Power Platform development and releases by 
 #customer intent: As a developer, I want to integrate Dataverse environments with Git so that I can manage source control and enable collaborative development.
 author: carcla
 ms.author: v-caclaesson
-ms.date: 05/13/2026
+ms.date: 05/14/2026
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.reviewer: jhaskett-msft
@@ -43,13 +43,13 @@ Makers and developers use one of several Dataverse development environments to m
 
 ### Test and validation workflow
 
-1. From the main branch, use a [custom pipeline host](../../alm/custom-host-pipelines.md) to promote the packaged solution into the test environment directly from the source code in the main branch by using the Source Control deployment type.
+1. From the main branch, use a [custom pipeline host](../../alm/custom-host-pipelines.md) to promote the packaged solution into the test environment directly from the source code in the main branch by using the [Source Control deployment type](../../alm/source-control-operations.md).
 
 1. Use the test environment for technical validation, integration checks, and smoke testing.
 
 1. After validation, promote the solution to the user acceptance test (UAT) environment by using pipelines in Power Platform. Create or update the corresponding release branch in Git from the main branch.
 
-1. Generate release notes from DevOps work items in a UAT status and distribute them to UAT responsible testers. Use a Copilot Studio agent to generate and format these release notes by using the DevOps Get Query Results connector action.
+1. Generate release notes from DevOps work items in a UAT status and distribute them to UAT responsible testers. Use a Copilot Studio agent to generate and format these release notes by using the [Azure DevOps Get Query Results connector action](https://learn.microsoft.com/en-us/connectors/visualstudioteamservices/#get-query-results).
 
 1. Ensure UAT supports business validation and release-readiness checks before production approval.
 
@@ -101,11 +101,11 @@ The following components support source control, environment promotion, governan
 GitHub for [code repositories](https://docs.github.com/repositories/creating-and-managing-repositories/about-repositories) and [project work items](https://docs.github.com/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
 
 **Why this architecture favors Azure DevOps:**  
-Although GitHub projects can provide flexible work tracking, like custom fields, roadmap views, and automation, this architecture includes Azure Boards as the authoritative release work-item source. Azure Boards currently provides stronger enterprise work item process modeling, shared query and Work Item Query Language (WIQL) based release scoping, and richer built-in development and deployment traceability for governed release operations.
+Although GitHub projects can provide flexible work tracking, like custom fields, roadmap views, and automation, this architecture includes [Azure Boards](/azure/devops/boards/get-started/what-is-azure-boards) as the authoritative release work-item source. Azure Boards currently provides stronger enterprise work item process modeling, shared query and Work Item Query Language (WIQL) based release scoping, and richer built-in development and deployment traceability for governed release operations.
 
 ### Pipelines in Power Platform
 
-**Role in architecture:** [Pipelines in Power Platform](../../alm/custom-host-pipelines.md) promotes solutions across environments, including hotfix promotion paths.
+**Role in architecture:** [Pipelines in Power Platform](../../alm/custom-host-pipelines.md) promote solutions across environments, including hotfix promotion paths.
 
 **Why chosen:**
 
@@ -116,7 +116,7 @@ Although GitHub projects can provide flexible work tracking, like custom fields,
 **Alternatives considered:**
 
 - Azure DevOps or GitHub-only deployment orchestration
-- Fully custom Power Platform command-line interface (PAC CLI) pipeline orchestration
+- Fully custom [Power Platform command-line interface](../../developer/cli/introduction.md) (PAC CLI) pipeline orchestration
 
 **Why this architecture favors pipelines in Power Platform:**  
 This architecture uses pipelines in Power Platform as the primary environment promotion mechanism. They reduce configuration complexity and specialized continuous integration/continuous deployment (CI/CD) knowledge requirements while providing a native, governed deployment experience for makers, admins, and pro developers.

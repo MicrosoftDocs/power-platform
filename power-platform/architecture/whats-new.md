@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 05/06/2026
+ms.date: 05/14/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -23,6 +23,7 @@ Get the latest info about what's new and what's changed in the Power Platform an
 New in [Reference architectures](reference-architectures/index.md):
 
 - [Automate service order lifecycle and SLA governance with Power Platform](reference-architectures/service-order-process.md)
+- [Automate deployments with Dataverse Git integration and pipelines in Power Platform](reference-architectures/enterprise-power-platform-alm.md)
 
 ## April 2026
 

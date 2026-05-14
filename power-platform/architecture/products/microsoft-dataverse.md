@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 05/06/2026
+ms.date: 05/14/2026
 ---
 
 # Microsoft Dataverse reference architectures and solution ideas
@@ -49,6 +49,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Analyze and automate business data with Dataverse SDK for Python**](../reference-architectures/dataverse-sdk-for-python.md) | Learn how the Dataverse SDK for Python empowers developers and data scientists to analyze, automate, and innovate with enterprise-grade data. |
 | [**Synchronize data across Dataverse environments using Power Platform**](../reference-architectures/sync-dataverse-data.md) | Learn how to manage master data across two Dataverse environments using Power Automate cloud flows and Power Platform dataflows. |
 | [**Automate service order lifecycle and SLA governance with Power Platform**](../reference-architectures/service-order-process.md) | Learn how to design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |
+| [**Automate deployments with Dataverse Git integration and pipelines in Power Platform**](../reference-architectures/enterprise-power-platform-alm.md) | Learn how to streamline Power Platform development and releases by integrating Dataverse Git, pipelines in Power Platform, and AI-assisted governance. |
 
 ## Solution ideas
 
