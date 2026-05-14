@@ -105,14 +105,10 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
     If the solution content doesn't address or resolve your issue, and you have an active support plan, you can choose to create a support request. 
    
 1. **Request support.**
-
-      1. Provide any requested details, such as an affected environment. Microsoft uses this information to help troubleshoot your issue. 
-   
-          > [!TIP]
-          > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.
      
       1. Select whether your request is [advisory or technical](support-overview.md#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
       
+      1. Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
       1. Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request. 
    
           > [!WARNING]
@@ -120,8 +116,11 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
           > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
           > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
      
-      1. Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
       1. Review the generated title and description for your request, and modify as needed. Set the date the issue occurred. If you're unsure, leave as current.
+      1. Provide any requested details, such as an affected environment. Microsoft uses this information to help troubleshoot your issue. 
+   
+          > [!TIP]
+          > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.
       
       1. Set your contact preferences and advanced diagnostic consent. Learn more about [advanced diagnostics](/power-platform/admin/support-environment).
    
@@ -183,6 +182,7 @@ If the support agent is unavailable or isn't performant, the backup support expe
           > If the affected environment isn't listed, select **My environment is not listed** and provide the URL of the environment.
       
       1. Select whether your request is [advisory or technical](support-overview.md#technical-support-vs-advisory-services). Some support plans don't have Advisory support.
+      1. Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
       1. Set the [appropriate severity](support-overview.md#severity-and-responsiveness) for your request.
   
           > [!WARNING]
@@ -190,7 +190,6 @@ If the support agent is unavailable or isn't performant, the backup support expe
           > - Selecting **Severity A** for a low priority issue results in automatic downgrade to an appropriate severity.
           > - Selecting **Technical** in order to submit an **Advisory** request results in closure of your request. 
     
-      1. Choose a support plan. You can add a support plan if you don't have one active for the affected product. Learn more in [Add a support plan](#add-a-support-plan).
       1. Set your contact preferences and advanced diagnostic consent. To learn more, see [advanced diagnostics](/power-platform/admin/support-environment).
   
           > [!IMPORTANT]
