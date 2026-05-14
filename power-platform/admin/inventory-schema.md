@@ -142,7 +142,7 @@ For more information, see [App Builder](https://www.microsoft.com/power-platform
 
 ## Copilot Studio agents
 
-Copilot Studio agents have a rich set of properties beyond the shared fields, including core, identity, and configuration properties. For the full schema, see [Copilot Studio agents inventory schema](/copilot-studio/admin-agent-inventory).
+Copilot Studio agents have a rich set of properties beyond the shared fields, including core, identity, and configuration properties. For the full schema, see [Copilot Studio agents inventory schema](/microsoft-copilot-studio/admin-agent-inventory).
 
 ## Environments
 
