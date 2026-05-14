@@ -135,7 +135,7 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
    
 ### Use the backup support experience
 
-If the support agent is unavailable or isn't performant, the backup support experience is available automatically or by selecting the **Switch to webform** button at the top of the panel. Through this experience, you can describe your issue, review any self-help solutions, and create a support request, if needed.
+If the support agent is unavailable or isn't performant, the backup support experience is available automatically or by selecting the **Switch to web form** button at the top of the panel. Through this experience, you can describe your issue, review any self-help solutions, and create a support request, if needed.
 
 1. **Open backup support.**
 
