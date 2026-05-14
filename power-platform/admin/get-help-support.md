@@ -5,7 +5,7 @@ description: Get support in the Power Platform admin center using the AI-powered
 author: johnehart
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/13/2026
+ms.date: 05/14/2026
 ms.subservice: admin
 ms.author: johhar
 ms.reviewer: sericks
@@ -67,7 +67,7 @@ You can access self-help resources in the **Support** experience without a suppo
 ## Request support
 Two experiences exist depending on your tenant and scenario. Most users see the new support agent, which says **Support agent** at the top of the pane, but some users see the backup support experience if the support agent isn't available.
 
-While the support agent is in preview, users can switch between experiences by selecting the ellipsis icon (**...**) in the upper-right corner of the **Support agent** pane. You can switch back to the support agent by closing the pane and selecting **Get support** again, or by selecting the **Switch to support agent** toggle at the top of the pane.
+You can switch back to the support agent by closing the pane and selecting **Get support** again, or by selecting the **Switch to support agent** toggle at the top of the pane.
 
 ### Use the support agent 
 
