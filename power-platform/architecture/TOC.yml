@@ -113,7 +113,7 @@
           href: reference-architectures/sync-dataverse-data.md
         - name: Automate service order lifecycle and SLA governance
           href: reference-architectures/service-order-process.md
-        - name: Automate deployments with Dataverse Git integration and Power Platform pipelines
+        - name: Automate enterprise Power Platform ALM
           href: reference-architectures/enterprise-power-platform-alm.md
     - name: Solution ideas
       items:
