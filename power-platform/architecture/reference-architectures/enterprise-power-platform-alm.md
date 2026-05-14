@@ -49,7 +49,7 @@ Makers and developers use one of several Dataverse development environments to m
 
 1. After validation, promote the solution to the user acceptance test (UAT) environment by using pipelines in Power Platform. Create or update the corresponding release branch in Git from the main branch.
 
-1. Generate release notes from DevOps work items in a UAT status and distribute them to UAT responsible testers. Use a Copilot Studio agent to generate and format these release notes by using the [Azure DevOps Get Query Results connector action](https://learn.microsoft.com/en-us/connectors/visualstudioteamservices/#get-query-results).
+1. Generate release notes from DevOps work items in a UAT status and distribute them to UAT responsible testers. Use a Copilot Studio agent to generate and format these release notes by using the [Azure DevOps Get Query Results connector action](/connectors/visualstudioteamservices/#get-query-results).
 
 1. Ensure UAT supports business validation and release-readiness checks before production approval.
 
