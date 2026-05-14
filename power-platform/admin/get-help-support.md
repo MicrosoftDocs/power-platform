@@ -149,6 +149,7 @@ If the support agent is unavailable or isn't performant, the backup support expe
          | Support agent is unavailable | The backup support experience loads automatically until the root cause is addressed. |
          | Support agent crashes | You're prompted to select the **Switch to webform** button at the top of the panel. An 8-hour cooldown period is triggered where the backup support experience loads by default when selecting **Get support** to allow the issue to be resolved. |
          | Support agent isn't performant | In the case of a critical timeout, the **Switch to webform** button appears at the top of the panel. You can choose to select it or wait for the support agent to respond. |
+         | Specific scenario | A specific business scenario, technical limitation, or policy compliance reasons prevent use of some or all agentic features. |
      
       If you choose to or must switch to the backup experience, leave feedback when prompted so Microsoft can diagnose and address the issues. 
       
