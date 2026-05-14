@@ -33,7 +33,7 @@ Makers and developers use one of several Dataverse development environments to m
 
 1. Map each development stream to a Git environment or feature branch.
 
-1. Synchronize changes into Git through [Dataverse Git integration](../../alm/git-integration/overview.md)
+1. Synchronize changes into Git through [Dataverse Git integration](../../alm/git-integration/overview.md).
 
 1. Review feature branches and merge them into the Git main branch by using pull requests and branch protection policies when ready for submission into the production testing ALM path.
 
