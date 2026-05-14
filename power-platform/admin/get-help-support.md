@@ -67,8 +67,6 @@ You can access self-help resources in the **Support** experience without a suppo
 ## Request support
 Two experiences exist depending on your tenant and scenario. Most users see the new support agent, which says **Support agent** at the top of the pane, but some users see the backup support experience if the support agent isn't available.
 
-You can switch back to the support agent by closing the pane and selecting **Get support** again, or by selecting the **Switch to support agent** toggle at the top of the pane.
-
 ### Use the support agent 
 
 The support agent is an AI-powered virtual agent that takes you through a workflow to resolve your issue. It's an expanding and evolving service with improvements being made and tested all the time. However, it's not purely a virtual support experience. By following these steps, you can find self-help solutions, create a support request, and engage Microsoft representatives.
