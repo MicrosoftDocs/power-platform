@@ -43,7 +43,7 @@ Makers and developers use one of several Dataverse development environments to m
 
 ### Test and validation workflow
 
-1. From the main branch, use a [custom pipeline host](../../alm/custom-host-pipelines.md) to promote the packaged solution into the test environment directly from the source code in the main branch by using the [Source Control deployment type](../../alm/source-control-operations.md).
+1. From the main branch, use a [custom pipeline host](../../alm/custom-host-pipelines.md) to promote the packaged solution into the test environment directly from the source code in the main branch by using the [Source Control deployment type](../../alm/git-integration/source-control-operations.md).
 
 1. Use the test environment for technical validation, integration checks, and smoke testing.
 
