@@ -74,7 +74,8 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
 1. **Open the support agent.**
 
     1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-    1. In the navigation pane, select **Support**. In the **Support** pane, select **Support requests**.
+    1. In the navigation pane, select **Support**.
+    1. In the **Support** pane, select **Support requests**.
     1. On the **Support requests** page, select **Get support**. The **Support agent** pane is displayed. Using the chat experience, complete the following steps.
       
 1. **Describe the issue.**
@@ -102,7 +103,7 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
      > [!IMPORTANT]
      > AI-generated content might be incorrect.
      
-    If the solution content doesn't address or resolve your issue, and you have an active support plan, you can choose to create a support request. 
+    If the solution content doesn't address or resolve your issue, and you have an active support plan, you can choose to **Create a support request**. 
    
 1. **Request support.**
      
