@@ -3,7 +3,7 @@ title: Establish tenant hygiene with the CoE Starter Kit
 description: Establish tenant hygiene, manage environments, and secure your Power Platform with actionable governance strategies using the CoE Starter Kit.
 author: stjeffer
 ms.topic: how-to
-ms.date: 04/23/2026
+ms.date: 05/15/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft
