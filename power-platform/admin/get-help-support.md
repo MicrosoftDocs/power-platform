@@ -5,7 +5,7 @@ description: Get support in the Power Platform admin center using the AI-powered
 author: johnehart
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/14/2026
+ms.date: 05/15/2026
 ms.subservice: admin
 ms.author: johhar
 ms.reviewer: sericks
@@ -103,7 +103,7 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
      > [!IMPORTANT]
      > AI-generated content might be incorrect.
      
-    If the solution content doesn't address or resolve your issue, and you have an active support plan, you can choose to **[Create a support request](#request-support-step)** or **[Add a new support contract](#add-a-new-support-contract).**
+    If the solution content doesn't address or resolve your issue, and you have an active support plan, you can choose to **[Create a support request](#request-support-step)** or **[Add a new support contract](#use-the-support-agent-to-add-a-plan).**
 
     <a id="request-support-step"></a>   
 1. **Request support.**
@@ -209,15 +209,16 @@ Follow these instructions to add new support plans.
 
 - **View existing plans:** Choose the product to check the associated plans. The **Support plans** menu lists the resulting plans once loaded.
 
-- **Add a new plan:** Enter your **Access ID** and **Password** and select **Save** to associate the plan. To confirm the plan is ready to use, select the product the plan is associated with and check the value in the **Support plans** menu. It might take a few minutes. Select the refresh button to check again. Once a plan appears in this menu, it's ready to use. 
+- **Add a new plan:** Enter your **Access ID** and **Password** and select **Save** to associate the plan. To confirm the plan is ready to use, select the product the plan is associated with and check the value in the **Support plans** menu. It might take up to ah hour to appear. Select the refresh button to check again. Once a plan appears in this menu, it's ready to use. 
 
 > [!NOTE]
 >   - If you don't know your access or contract ID, contact your service admin, incident, or customer success account manager (CSAM).
 >   - The **Contract ID**/**Password** defaults to the Unified or Premier contract ID. If you changed the password when registering online in the Unified/Premier portal, use the updated password instead of the contract ID.
 
-### Add a new support contract
+### Use the support agent to add a plan
 
-You can add a new contract when using the support agent. 
+You can add a support plan while using the support agent.
+1. After the self-help solutions are shown, select Create a support request.
 1. Select **Add a new support contract**. 
 1. Enter your access ID and password when prompted and select **Submit**.
     The support agent will confirm if the link was successful.
