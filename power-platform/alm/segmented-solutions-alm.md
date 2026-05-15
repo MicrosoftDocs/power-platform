@@ -42,8 +42,8 @@ When you add an existing system table, such as account or contact, or a custom t
 > [!IMPORTANT]
 > Don't segment tables that don't exist in the target environment. Notice that if a table has never been imported or doesn't already exist in the target environment you must select **Include all objects** when you add the table to the solution, such as when adding a new custom table that you recently created. Otherwise you receive a missing dependency error message when you try to import the solution.
 
-> [!IMPORTANT]
-> Quick find views will pull their required attributes to the solution file when customized, regardless of table segmentation properties.
+## Known limitations
+- Quick find views will pull their required attributes to the solution file when customized, regardless of table segmentation properties.
 
 ## See also
 
