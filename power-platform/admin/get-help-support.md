@@ -106,12 +106,13 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
     If the solution content doesn't address or resolve your issue, and you have an active support plan, you can choose to **[Create a support request]** or **[Add a new support contract].**
 
 1. **Add a new support contract.**
+
     Enter your access ID and password when prompted and select Submit.
 
-   Support agent will confirm if the link was successful.
+    Support agent will confirm if the link was successful.
 
-   > [!Note]
-   > It may take up to an hour to link the new support contract. Return after that time to submit a support request.
+    > [!Note]
+    > It may take up to an hour to link the new support contract. Return after that time to submit a support request.
    
 1. **Request support.**
      
