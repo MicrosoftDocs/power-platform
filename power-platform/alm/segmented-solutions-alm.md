@@ -4,7 +4,7 @@ description: "Learn how to use table segmentation in solutions when you distribu
 keywords: 
 author: Mattp123
 ms.subservice: alm
-ms.author: cdietrich
+ms.author: cdietric
 ms.custom: ""
 ms.date: 05/15/2026
 ms.reviewer: ""
