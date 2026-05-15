@@ -74,6 +74,14 @@ The following users receive email notifications about inactive environments:
 - The creator of the environment.
 - If environment administrators are no longer part of the tenant, then the tenant administrators are notified.
 
+### View last user activity of environment
+Environment admins can see when an environment was last used by checking the **Last activity** column in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). The activity for each environment is updated once a day.
+
+1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. See **Last activity** column for environment in question.
+
 ## Developer environments
 Power Platform automatically removes developer environments that aren't being used based on the following schedule. After 30 days of inactivity, the system automatically disables environments. If, after 15 days, you don't [re-enable the environment](#re-enable-a-disabled-environment), the system deletes the environment. You have seven days to [recover the environment](recover-environment.md) once it's deleted.
 
@@ -134,14 +142,6 @@ The environment administrators receive email notifications according to the foll
 | 402 days with no [user activity](#definition-of-user-activity) | 120 days with no [user activity](#definition-of-user-activity) | The environment is deleted, and a new default environment without Dataverse is created for the tenant. An email notice is sent stating that the environment is deleted. |
 
 A warning message appears on the **Environments** list page and **Environment** page when the default environment is within 30 days of deletion.
-
-### View last user activity of environment
-Environment admins can see when an environment was last used by checking the **Last activity** column in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). The activity for each environment is updated once a day.
-
-1. Sign in as an admin to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**.
-1. See **Last activity** column for environment in question.
 
 ## Dataverse for Teams environments
 
