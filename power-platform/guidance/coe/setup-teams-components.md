@@ -32,7 +32,7 @@ For more information, see [Microsoft Dataverse for Teams environment management]
 - Sign in to your environment with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
 
 > [!NOTE]
-> The Power Platform admin center automatically deletes an inactive Dataverse for Teams environment. Learn more in [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
+> The Power Platform admin center automatically deletes an inactive Dataverse for Teams environment. Learn more in [Automatic deletion of inactive Dataverse for Teams environments](../../admin/automatic-environment-cleanup.md#dataverse-for-teams-environments).
 
 ## Set up the Dataverse for Teams environment management components using the Setup Wizard
 

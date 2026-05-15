@@ -119,7 +119,7 @@ The **Governance components** of the CoE Starter Kit help you capture business j
 
 Learn more:
 
-- [Automatic deletion of inactive Dataverse for Teams environments](/power-platform/admin/inactive-teams-environment)
+- [Automatic deletion of inactive Dataverse for Teams environments](/power-platform/admin/automatic-environment-cleanup#dataverse-for-teams-environments)
 - [CoE Starter Kit &ndash; Manage Dataverse for Teams environments](teams-governance.md)
 
 ## Secure your environments
