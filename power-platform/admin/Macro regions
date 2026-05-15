@@ -1,5 +1,5 @@
 ---
-title: Power Platform and Dynamics 365 Macro regions
+title: Power Platform and Dynamics 365 macro regions
 description: Provides information about Power Platform and Dynamics 365 apps hosted in datacenters across many regions. Find a list of regions and URLs, plus how to migrate to a new datacenter.
 author: shpradha
 ms.component: pa-admin
@@ -8,6 +8,7 @@ ms.collection: get-started
 ms.date: 05/14/2026
 ms.subservice: admin
 ms.author: shpradha
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
