@@ -4,11 +4,12 @@ description: "Learn how to use table segmentation in solutions when you distribu
 keywords: 
 author: Mattp123
 ms.subservice: alm
-ms.author: matp
+ms.author: cdietric
 ms.custom: ""
-ms.date: 01/26/2026
+ms.date: 05/15/2026
 ms.reviewer: ""
 ms.topic: how-to
+contributors: fmurtin
 search.audienceType: 
   - maker
 ---
@@ -41,6 +42,9 @@ When you add an existing system table, such as account or contact, or a custom t
 
 > [!IMPORTANT]
 > Don't segment tables that don't exist in the target environment. Notice that if a table has never been imported or doesn't already exist in the target environment you must select **Include all objects** when you add the table to the solution, such as when adding a new custom table that you recently created. Otherwise you receive a missing dependency error message when you try to import the solution.
+
+## Known limitations
+- Quick find views pull their required attributes to the solution file when customized, regardless of table segmentation properties.
 
 ## See also
 
