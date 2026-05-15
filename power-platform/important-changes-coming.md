@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 02/27/2026
+ms.date: 05/15/2026
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
