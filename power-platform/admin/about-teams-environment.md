@@ -330,7 +330,7 @@ For example, you can specify a default policy for all environments except Teams 
 - The **Run diagnostics** feature in the Power Platform admin center for team owners, members, and guests who don't have Microsoft Entra admin roles like Global Admin, or Power Platform Admin assigned, shows an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas, so this alert can be ignored.
 
 ### See also
-[Automatic deletion of inactive Microsoft Dataverse for Teams environments (preview)](inactive-teams-environment.md) <br />
+[Automatic deletion of inactive Dataverse for Teams environments](automatic-environment-cleanup.md#dataverse-for-teams-environments) <br />
 [Power Apps and Teams](/powerapps/teams/overview) <br/>
 [Power Automate and Teams](/power-automate/teams/overview)<br/>
 [Microsoft Copilot Studio and Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)<br />
