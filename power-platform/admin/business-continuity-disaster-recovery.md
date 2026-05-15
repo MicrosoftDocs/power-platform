@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 05/05/2026
+ms.date: 05/15/2026
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -217,6 +217,14 @@ Field service now supports self-service disaster recovery. You can now manage wo
 
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
+#### Business Events limitation
+After a self-service disaster recovery failover to a secondary region or a Finance & Operations database refresh, existing Business Event endpoints stop delivering events to their configured endpoints (ex. webhooks, Azure Service Bus, or Event Grid). This occurs because the underlying Finance & Operations database change breaks the linkage between Finance & Operations and the corresponding Dataverse endpoint registrations. As a result, events may continue to be generated but aren't dispatched until the endpoint configuration is revalidated.
+To restore event delivery, you must recreate or reconfigure the affected Business Events endpoints:
+- Delete existing endpoint definitions and recreate them with the same configuration
+- Validate event delivery before resuming normal operations
+For detailed steps, see [Manage Business Events endpoints](https://learn.microsoft.com/en-us/dynamics365/fin-ops-core/dev-itpro/business-events/managing-business-event-endpoints).
+
+#### Other limitations
 - Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully failover and failback since they're saved on Dataverse.
 - In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
 -  In Dynamics 365 Customer Insights - Data, real-time updates are impacted. It doesn't support self-service disaster recovery today.
