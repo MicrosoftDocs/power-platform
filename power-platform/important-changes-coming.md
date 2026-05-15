@@ -128,13 +128,13 @@ During the transition period, makers can enable either one or both chat experien
 [Microsoft 365 Copilot](/power-apps/user/use-microsoft-365-copilot-model-driven-apps) is now the recommended solution for natural language interactions in model-driven apps. To ensure a smooth transition and prevent any disruption when Copilot chat is retired, we recommend that you migrate to Microsoft 365 Copilot as soon as it becomes available in your environment. 
 
 ## Deprecation of the classic look for model-driven apps
-Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. All apps will use the modern, refreshed look by default.
+Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. This timing applies to all release channels, including the semi-annual channel. All apps will use the modern, refreshed look by default.
 
 ### Why is this needed?
 We are standardizing the experience across model-driven apps to deliver a consistent, accessible, and modern interface that ensures customers benefit from ongoing user experience improvements while unlocking AI-powered capabilities available only in the modern look.
 
 ### Impact
-There is no impact on app logic, data, or permissions. Existing apps will automatically display the modern look. The admin settings related to this feature will be removed.
+There is no impact on app logic, data, or permissions. Existing apps will automatically display the modern look across all release channels, including the semi-annual channel. The admin settings related to this feature will be removed.
 
 ### Replacement feature
 The modern, refreshed look is now the default experience for all model-driven apps. No action is required from makers or admins. For more information on this, see [Modern, refreshed look for model-driven apps](/power-apps/user/modern-fluent-design).
