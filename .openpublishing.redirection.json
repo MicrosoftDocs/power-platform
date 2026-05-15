@@ -2011,7 +2011,7 @@
     },
    {
       "source_path": "power-platform/admin/inactive-teams-environment.md",
-      "redirect_url": "/power-platform/admin/about-teams-environment",
+      "redirect_url": "/power-platform/admin/automatic-environment-cleanup",
       "redirect_document_id": false
     }
   ]
