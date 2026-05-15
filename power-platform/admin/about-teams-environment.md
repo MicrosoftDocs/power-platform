@@ -4,7 +4,7 @@ description: Administer and manage a Microsoft Dataverse for Teams environment
 author: paulliew
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/20/2025
+ms.date: 05/15/2026
 ms.subservice: admin
 ms.author: matp
 ms.reviewer: ellenwehrle
@@ -329,8 +329,8 @@ For example, you can specify a default policy for all environments except Teams 
 
 - The **Run diagnostics** feature in the Power Platform admin center for team owners, members, and guests who don't have Microsoft Entra admin roles like Global Admin, or Power Platform Admin assigned, shows an alert that no security roles have been assigned directly to them. Security roles are automatically assigned by the system for Microsoft Teams personas, so this alert can be ignored.
 
-### See also
-[Automatic deletion of inactive Dataverse for Teams environments](automatic-environment-cleanup.md#dataverse-for-teams-environments) <br />
+### Related content
+[Automatic deletion of inactive Dataverse for Teams environments](inactive-teams-environment.md) <br />
 [Power Apps and Teams](/powerapps/teams/overview) <br/>
 [Power Automate and Teams](/power-automate/teams/overview)<br/>
 [Microsoft Copilot Studio and Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)<br />
