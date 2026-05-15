@@ -14,7 +14,8 @@ search.audienceType:
 ---
 
 # Macro region 
-A macro region represents the data residency boundary that aligns with data residency laws for a given geography. To learn more about the countries available in a specific macro region, see [link needed].
+A macro region represents the data residency boundary that aligns with data residency laws for a given geography. This article lists the countries available in a specific macro region.
+
 The macro region enhancement to environment provisioning enables you to select a macro region during environment creation. This feature applies to public cloud only and is being introduced for tenants in the Canada region.
 
 > [!NOTE]
@@ -29,7 +30,7 @@ Using a macro region provides the following capabilities:
 - You still control where your data resides at a regional level, ensuring alignment with business, compliance, and regulatory requirements.
 
 ## Expected changes in your provisioning experience with a macro region 
-- New tenants that don't meet high scale deployment criteria select a macro region and don't explicitly choose a region (country) during environment creation. 
+- New tenants that don't meet [geo-selection eligibility](#geo-selection-eligibility-criteria) criteria criteria select a macro region and don't explicitly choose a region (country) during environment creation. 
 - Customers see their macro region and region in the environment properties and in the environment list. 
 - A macro region is a continental residency boundary, for example, the European Union Data Boundary (EUDB), while a region represents the country for deployment for clarity. 
 - The system automatically determines the geo within that macro region geography by using capacity-based routing. 
@@ -47,18 +48,18 @@ Using a macro region provides the following capabilities:
  
 \* Australia and India geographies have tax restrictions and need data residency alignment and accountability for compliance with local tax reporting rules and for auditability within jurisdiction.
 
-## High-scale deployment criteria
+## Geo-selection eligibility criteria
 Customers who meet the criteria can select a specific geo (region) during environment creation. Qualifying criteria include any one of the following characteristics:
 
 -	[Advanced data residency](/microsoft-365/enterprise/advanced-data-residency) is enabled for Microsoft 365 in this tenant.
--	High-scale deployments, such as 100 or more paid Dynamics 365 licenses or 1 TB or more of Dataverse storage. 
+-	High-deployment workloads, such as 100 or more paid Dynamics 365 licenses or 1 TB or more of Dataverse storage. 
 -	Premium Dynamics 365 workloads, such as Finance Premium or Supply Chain Premium with 20 or more paid licenses.
--	High-scale premium Power Platform workloads, such as Power Apps or Power Automate with 5,000 or more paid licenses.
+-	Premium Power Platform workloads, such as Power Apps or Power Automate with 5,000 or more paid licenses.
 -	Specialized workloads, for example Contact Center. 
 
 This criteria ensures customers with strict geo control requirements can continue operating with full flexibility.
 
-As tenants mature and begin to meet one of the high-scale deployment criteria, the auto Upgrade Enablement feature enables the ability at the tenant-level to select a specific region during environment creation going forward. 
+As tenants mature and begin to meet one of the geo-selection eligibility criteria, the auto Upgrade Enablement feature enables the ability at the tenant-level to select a specific region during environment creation going forward. 
 
 ## Data residency and compliance
 -	Data always resides within the selected macro region boundary. 
