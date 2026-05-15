@@ -48,7 +48,7 @@ The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 
 | KOR           | crm21.dynamics.com |
 
 ## Macro region 
-Macro region represents the data residency boundary aligning with data residency laws for the given geography. Learn more about the countries available in a specific macro region. 
+A [macro region](macro-regions.md) represents the data residency boundary aligning with data residency laws for the given geography. Learn more about the countries available in a specific macro region. 
 
 | # | Macro region geography          | Countries                | Description                                               |
 |---|---------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------|
