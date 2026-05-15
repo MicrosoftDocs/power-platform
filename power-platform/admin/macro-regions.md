@@ -1,6 +1,6 @@
 ---
 title: Power Platform and Dynamics 365 macro regions
-description: Provides information about Power Platform and Dynamics 365 apps hosted in datacenters across many regions. Find a list of regions and URLs, plus how to migrate to a new datacenter.
+description: Macro region represents the data residency boundary aligning with data residency laws for a given geography. Learn more about the countries available in a specific macro region.
 author: shpradha
 ms.component: pa-admin
 ms.topic: concept-article
@@ -74,7 +74,7 @@ If the customer requires explicit geo selection, such as France, they can qualif
 There is no impact to existing environments or tenants. Existing customers retain current geo selections and continue to have access to geo-based provisioning like they always have, ensuring a non-disruptive rollout while enabling a modern provisioning model for future environments.
   
 ## Related content
-- [Advanced Data Residency](/microsoft-365/enterprise/advanced-data-residency?view=o365-worldwide)
+- [Advanced Data Residency](/microsoft-365/enterprise/advanced-data-residency)
 - [Products by region](https://azure.microsoft.com/regions/services/)   
 
 
