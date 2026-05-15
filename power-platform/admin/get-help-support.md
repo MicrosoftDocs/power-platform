@@ -218,7 +218,7 @@ Follow these instructions to add new support plans.
 ### Use the support agent to add a plan
 
 You can add a support plan while using the support agent.
-1. After the self-help solutions are shown, select Create a support request.
+1. After the self-help solutions are shown, select **Create a support request**.
 1. Select **Add a new support contract**. 
 1. Enter your access ID and password when prompted and select **Submit**.
     The support agent will confirm if the link was successful.
