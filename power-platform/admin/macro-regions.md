@@ -35,7 +35,10 @@ Using a macro region provides the following capabilities:
 - A macro region is a continental residency boundary, for example, the European Union Data Boundary (EUDB), while a region represents the country for deployment for clarity. 
 - The system automatically determines the geo within that macro region geography by using capacity-based routing. 
 - Customers continue to see their data location (region) transparently after provisioning.
-- Existing tenants remain unchanged and retain their current geo selection capabilities. 
+- Existing tenants remain unchanged and retain their current geo selection capabilities.
+
+## Macro region geography
+The following table describes each macro region.
 
 | # | Macro region geography          | Countries                | Description                                               |
 |---|---------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------|
