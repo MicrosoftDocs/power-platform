@@ -4,7 +4,7 @@ description: Learn how to use governance components of the Center of Excellence 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/20/2026
+ms.date: 05/15/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -330,7 +330,7 @@ Learn more about the Microsoft Teams governance process in the CoE Starter Kit: 
 #### Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments
 
 > [!NOTE]
-> Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. Learn more in [Automatic deletion of inactive Microsoft Dataverse for Teams environments](../../admin/inactive-teams-environment.md).
+> Automatically deleting an inactive Dataverse for Teams environment is now part of the Power Platform admin center. Learn more in [Automatic deletion of inactive Dataverse for Teams environments](../../admin/automatic-environment-cleanup.md#dataverse-for-teams-environments).
 
 > [!IMPORTANT]
 > This flow deletes environments for which no business justification exists, or where the business justification has been rejected. Environment owners have seven days to provide a business justification before the environment is deleted.
