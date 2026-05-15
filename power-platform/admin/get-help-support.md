@@ -103,17 +103,7 @@ The support agent is an AI-powered virtual agent that takes you through a workfl
      > [!IMPORTANT]
      > AI-generated content might be incorrect.
      
-    If the solution content doesn't address or resolve your issue, and you have an active support plan, you can choose to **[Create a support request](#request-support-step)** or **[Add a new support contract](#support-contract).**
-
-    <a id="support-contract"></a>
-1. **Add a new support contract.**
-
-    Enter your access ID and password when prompted and select Submit.
-
-    Support agent will confirm if the link was successful.
-
-    > [!Note]
-    > It may take up to an hour to link the new support contract. Return after that time to submit a support request.
+    If the solution content doesn't address or resolve your issue, and you have an active support plan, you can choose to **[Create a support request](#request-support-step)** or **[Add a new support contract](#add-a-new-support-contract).**
 
     <a id="request-support-step"></a>   
 1. **Request support.**
@@ -224,6 +214,16 @@ Follow these instructions to add new support plans.
 > [!NOTE]
 >   - If you don't know your access or contract ID, contact your service admin, incident, or customer success account manager (CSAM).
 >   - The **Contract ID**/**Password** defaults to the Unified or Premier contract ID. If you changed the password when registering online in the Unified/Premier portal, use the updated password instead of the contract ID.
+
+### Add a new support contract
+
+You can add a new contract when using the support agent. 
+1. Select **Add a new support contract**. 
+1. Enter your access ID and password when prompted and select **Submit**.
+    The support agent will confirm if the link was successful.
+
+> [!Note]
+> It may take up to an hour to add the new support contract. After that, you can submit a support request.
 
 ## Self-help content types
 
