@@ -3,7 +3,7 @@ title: "Work with solutions using the Dataverse SDK with Power Platform"
 description: "Learn about the .NET APIs that are available to manage Microsoft Dataverse solutions with Power Platform."
 author: marcelbf
 ms.author: marcelbf
-ms.date: 06/30/2025
+ms.date: 05/15/2026
 ms.reviewer: pehecke
 ms.topic: how-to
 search.audienceType: 
@@ -301,7 +301,7 @@ _serviceProxy.Execute(createOptionSetRequest);
 This sample shows how to add an existing solution component to a solution.  
   
 The following code uses the <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> to add the `Account` table as a solution component to an unmanaged solution.  
-  
+   
  ```csharp
 // Add an existing Solution Component
 // Add the Account entity to the solution
@@ -318,6 +318,8 @@ AddSolutionComponentRequest addReq = new AddSolutionComponentRequest()
 };
 _serviceProxy.Execute(addReq);
 ```
+
+Use <xref:Microsoft.Crm.Sdk.Messages.AddSolutionComponentRequest> only when you know the correct `ComponentType` integer value for the component you want to add. Most common component types are defined in the `componenttype` global choice, which is used by the [SolutionComponent.ComponentType choice column](/power-apps/developer/data-platform/reference/entities/solutioncomponent#componenttype-choicesoptions), but some newer component types might not be listed there. When possible, create or update the component in the context of the target solution by using a `SolutionUniqueName` property or the `SolutionUniqueName` optional parameter. More information: [Associate a solution component with a solution using an optional parameter](/power-apps/developer/data-platform/optional-parameters#associate-a-solution-component-with-a-solution).
 
 ### Remove a solution component  
 
