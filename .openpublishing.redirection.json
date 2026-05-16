@@ -2008,6 +2008,11 @@
       "source_path": "power-platform/admin/enable-use-comprehensive-auditing.md",
       "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-dataverse-model-driven-apps",
       "redirect_document_id": false
+    },
+   {
+      "source_path": "power-platform/admin/inactive-teams-environment.md",
+      "redirect_url": "/power-platform/admin/automatic-environment-cleanup",
+      "redirect_document_id": false
     }
   ]
 }
