@@ -1,11 +1,11 @@
 {
   "redirections": [
     {
-      "source_path": "power-platform/admin/cmk-migrate-from-byok",
+      "source_path": "power-platform/admin/cmk-migrate-from-byok.md",
       "redirect_url": "power-platform/admin/customer-managed-key",
       "redirect_document_id": "false"
     },{
-      "source_path": "power-platform/admin/manage-encryption-key",
+      "source_path": "power-platform/admin/manage-encryption-key.md",
       "redirect_url": "power-platform/admin/customer-managed-key",
       "redirect_document_id": "false"
     },
