@@ -276,7 +276,7 @@ Make sure your reverse proxy is configured to send the client IP address in the 
 
 ### IP firewall audit functionality isn't working in my environment. What should I do?
 
-IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key (BYOK) encryption keys. We recommend that you migrate to [customer-managed key](customer-managed-key.md).
+IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key (BYOK) encryption keys. We recommend that you migrate to a [customer-managed key](customer-managed-key.md).
 
 ### Does IP firewall support IPv6 IP ranges?
 
