@@ -339,6 +339,7 @@ Additionally, a notification banner appears in **Dataverse Only** tenants in the
       - Request a [capacity extension](https://learn.microsoft.com/en-us/power-platform/admin/extend-capacity)
       - [Set up a Pay-as-you-go plan](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-set-up) to be billed automatically through Azure
       - [Free up storage](https://learn.microsoft.com/en-us/power-platform/admin/free-storage-space) from environments
+      - [Delete enviornments](https://learn.microsoft.com/en-us/power-platform/admin/delete-environment) to recover storage.
 
  **For System Admins:**
 
