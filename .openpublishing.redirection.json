@@ -1,6 +1,11 @@
 {
   "redirections": [
-   {
+    {
+      "source_path": "power-platform/admin/inventory-schema-copilot-studio-agents.md",
+      "redirect_url": "/copilot-studio/admin-agent-inventory",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/tenant-wide-agent-inventory.md",
       "redirect_url": "power-platform/admin/power-platform-inventory",
       "redirect_document_id": "false"
@@ -2002,6 +2007,11 @@
     {
       "source_path": "power-platform/admin/enable-use-comprehensive-auditing.md",
       "redirect_url": "/power-platform/admin/activity-logging-auditing/activity-logs-dataverse-model-driven-apps",
+      "redirect_document_id": false
+    },
+   {
+      "source_path": "power-platform/admin/inactive-teams-environment.md",
+      "redirect_url": "/power-platform/admin/automatic-environment-cleanup",
       "redirect_document_id": false
     }
   ]

@@ -3,7 +3,7 @@
   "info": {
     "title": "Microsoft Power Platform REST API - powerapps",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
-    "version": "2022-03-01-preview"
+    "version": "2024-10-01"
   },
   "host": "api.powerplatform.com",
   "schemes": [
@@ -52,7 +52,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -105,7 +105,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
