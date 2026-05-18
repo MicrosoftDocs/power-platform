@@ -58,7 +58,8 @@ A [macro region](macro-regions.md) represents the data residency boundary aligni
 |6  |Asia-Pacific                     | Singapore, Australia*, India*, Japan, South Korea                                           | Your data resides within the Asia Pacific region. |
  
 \* Australia and India geographies have tax-restrictions and need data residency alignment and accountability for compliance with local tax reporting rules and for auditability within jurisdiction.
-Learn more about [Macro region](https://learn.microsoft.com/en-us/power-platform/admin/macro-regions).
+
+For more information, see [Power Platform and Dynamics 365 macro regions](macro-regions.md).
 
 ## Migration process  
  This is the overall process for migrating to a new datacenter.  
