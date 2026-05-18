@@ -38,7 +38,7 @@ Before we explain how to extend the CoE Starter Kit, here's some guidance on wha
 
 - Tables and model-driven apps support merging. These resources can easily be extended by creating your own unmanaged solution and making changes there (for example, adding new fields). During an upgrade, you'll receive our changes and also keep your changes.
 - Canvas apps, custom pages, and cloud flows do not support merging. These resources can only be extended and customized by creating a copy in your own unmanaged solution. During an upgrade, you no longer receive our changes, which should be a deliberate choice in order to customize a process and make it fit to your organization.
-- Cloud flows that are responsible for [gathering inventory](core-components.md#flows) should not be customized. These flows are frequently updated to fix bugs, gather additional data, or improve performance. If you have additional requirements for what inventory to gather, raise a [feature ask](https://github.com/microsoft/coe-starter-kit/issues) or create separate flows for your requirements.
+- Cloud flows that are responsible for [gathering inventory](core-components.md#flows) should not be customized. These flows are frequently updated to fix bugs, gather additional data, or improve performance.
 - Power BI dashboards do not support merging. We recommend creating a copy of the dashboard, creating your own custom reports and publishing them to same workspace as the main CoE dashboard for your admins to have a seamless experience between out of the box CoE kit reports and your custom reports.
 
 ## What's the mechanism to extend the CoE Starter Kit?
