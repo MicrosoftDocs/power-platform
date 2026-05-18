@@ -195,15 +195,16 @@ To disable self-service disaster recovery, go to the *disaster recovery pane* in
 
 Disabling self-service disaster recovery deletes all replicated environment data in the paired region. You're prompted to confirm the environment's name before proceeding.
 
-### Can I disable self-service disaster recovery while in a paired region (in a failed over state)?
+### Can I disable self-service disaster recovery while in a paired region (in a failover state)?
 
-No, you can't disable self-service disaster recovery while the environment is in a failed over state. You must switch to the primary region first.
+No, you can't disable self-service disaster recovery while the environment is in a failover state. You must switch to the primary region first.
 
 ### Are Power Apps and Power Pages supported with self-service disaster recovery?
 
 Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 
 ### Is Power Automate supported with self-service disaster recovery?
+
 As of October 2025:
 - Power Automate desktop flows are fully supported for failover and failback with self-service disaster recovery.
 - Power Automate cloud flows are now available in preview. Don't use features in preview with production workloads.
@@ -213,6 +214,7 @@ As of October 2025:
 Microsoft reserves the right to disclose the exact details of where your data resides for security reasons. If your data needs to be moved or replicated, Microsoft considers various high availability and resiliency scenarios. You can be assured that your data at rest respects geographical boundaries and abides by legislated residency laws. Even if self-service disaster recovery isn't turned on, Microsoft reserves the right to replicate, move, and relocate the data within a region for high availability and operational needs. The location of customer data within a geography (for example, _APAC_) isn't disclosed and may change based on Azure capacity constraints.
 
 ### Is Field service supported for self-service disaster recovery?
+
 Field service now supports self-service disaster recovery. You can now manage work orders, scheduling, inventory, and customer communications in one unified platform. In a disaster, fail over your automated service workflows, orders, inventory, and dispatching to a remote region for business continuity.
 
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
