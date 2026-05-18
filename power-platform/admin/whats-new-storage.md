@@ -71,7 +71,7 @@ More information:
 
 - [Is there a database size restriction for backing-up or restoring an organization through the user interface or API?](backup-restore-environments.md#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api)
 - [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit).
-- [Banner notifications for storage usage](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements)
+- [Banner notifications on Power platform admin center, power portals and D365 apps](capacity-storage.md#banner-notifications)
 - For the legacy capacity storage model, go to [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario).
 - For the new capacity storage model, go to [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-and-overage-enforcement).
 
