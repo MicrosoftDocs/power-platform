@@ -3,7 +3,7 @@ title: Establish tenant hygiene with the CoE Starter Kit
 description: Establish tenant hygiene, manage environments, and secure your Power Platform with actionable governance strategies using the CoE Starter Kit.
 author: stjeffer
 ms.topic: how-to
-ms.date: 04/23/2026
+ms.date: 05/15/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft
@@ -119,7 +119,7 @@ The **Governance components** of the CoE Starter Kit help you capture business j
 
 Learn more:
 
-- [Automatic deletion of inactive Dataverse for Teams environments](/power-platform/admin/inactive-teams-environment)
+- [Automatic deletion of inactive Dataverse for Teams environments](/power-platform/admin/automatic-environment-cleanup#dataverse-for-teams-environments)
 - [CoE Starter Kit &ndash; Manage Dataverse for Teams environments](teams-governance.md)
 
 ## Secure your environments

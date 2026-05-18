@@ -440,8 +440,6 @@
               items:
                 - name: Automatic deletion of Power Platform environments
                   href: automatic-environment-cleanup.md
-                - name: Automatic deletion of inactive Dataverse for Teams environments
-                  href: inactive-teams-environment.md
                 - name: Tenant-to-tenant migrations
                   href: move-environment-tenant.md
                 - name: Geo-to-geo migrations
