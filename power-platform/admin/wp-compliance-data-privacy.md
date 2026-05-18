@@ -53,7 +53,7 @@ The following links point to detailed information to help you respond to DSR req
 |Dataverse     |  [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md)     |
 |Power Automate    | [Responding to Data Subject Requests for Power Automate](/power-automate/gdpr-dsr-summary)       |
 |Microsoft Accounts (MSAs)     | [Respond to Data Subject Rights requests](/power-automate/gdpr-dsr-summary-msa)       |
-|Customer engagement apps     | [Dynamics 365 Data Subject Requests for privacy](/compliance/regulatory/gdpr-dsr-Dynamics365?view=o365-worldwide)        |
+|Customer engagement apps     | [Dynamics 365 Data Subject Requests for privacy](/compliance/regulatory/gdpr-dsr-Dynamics365)        |
 
 ## Microsoft 365 Security and Compliance Center
 
