@@ -80,12 +80,6 @@ Download the most recently updated assets from the [coe-starter-kit](https://aka
 > [!NOTE]
 > Although the kit's underlying features and components (such as Dataverse, admin APIs, and connectors) are fully supported, the kit itself represents sample implementations. You'll need to create your own vision for Power Platform adoption and customize the kit's features to reflect the administrative and governance goals of your organization.
 
-> [!TIP]
-> If you face issues with:
->
-> - **Using the kit**: Report your issue at [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues). Microsoft Support might not be able to help you with issues related to the kit, but can assist with related platform and feature issues.
-> - **Core features of Microsoft Power Platform**: Use your standard channel to contact Support.
-
 ## Get started using the CoE Starter Kit
 
 First, [set up the CoE Starter Kit solution](setup.md). Then start to become familiar with the resources in your tenant.

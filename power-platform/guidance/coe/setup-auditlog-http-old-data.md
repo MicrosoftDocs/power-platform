@@ -40,7 +40,3 @@ You can use one of the flows in the solution to manually load historic data into
     > If the file isn't loaded after you select **Import**, it might exceed the allowed content size for this trigger. Try to break the file into smaller files, each of which contains a maximum of 50,000 rows. Then run the flow once per file. The flow can be run for multiple files simultaneously.
 
 After the flow runs, the logs are included in your telemetry. If more recent launches are found, the *last launched* list for the apps is updated.
-
-## Provide feedback
-
-If you find a bug with the CoE Starter Kit, file a bug against the solution at [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
