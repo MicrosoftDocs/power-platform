@@ -319,14 +319,33 @@ Notifications for capacity approaching storage limits are triggered when any of 
 
 Tenant admins, Power Platform admins, and Dynamics 365 admins receive these notifications on a weekly basis. At this time, there's no option for a customer to opt out of these notifications or delegate these notifications to someone else. All admin types listed earlier automatically receive these notifications.
 
-Additionally, a notification banner appears in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and model-driven apps when any of the three storage capacities (database, file, or log) fall below 15 percent remaining or exceed the allocated capacity.
-
 The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization's use of the online service, including consumption that exceeds the online service's documented entitlements or usage limits.
 
 Your organization must have the right licenses for the storage you use:
 
 - If you use more than your documented entitlements or usage limits, you must buy more licenses.
 - If your storage consumption exceeds the documented entitlements or usage limits, Microsoft might suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
+  
+### **Banner Notifications**
+
+Additionally, a notification banner appears in **Dataverse Only** tenants in the **Power Platform admin center, Power Apps, Power Automate, Power Pages, and D365 apps** when any of the three storage capacities (database, file, or log) has less than 15% remaining or exceeds the allocated capacity ([Storage overage example scenarios](https://github.com/MicrosoftDocs/power-platform-pr/edit/main/power-platform/admin/capacity-storage.md#example-storage-capacity-scenarios-and-overage-enforcement)). The banner remains visible as long as it is not dismissed and the tenant continues to meet the banner visibility criteria. If a user dismisses the banner and the tenant's remaining storage capacity is still below 15%, the banner will reappear after 7 days. These banner notifications are visible to tenant admins and system admins.
+
+**For Tenant Admins:**
+
+  The banner displays two call-to-action buttons:
+
+   - Buy more capacity — Takes you directly to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?LinkId=2364302) where you can purchase additional storage capacity.[Learn how to add more Dataverse capacity to your tenant](https://learn.microsoft.com/en-us/power-platform/admin/add-storage). 
+   - Manage capacity — Takes you to the [Licensing page in the Power Platform admin center](https://go.microsoft.com/fwlink/?LinkId=2364104) where you can view capacity consumption by type (database, log, file) and by environment. From there, you can:
+      - Request a [capacity extension](https://learn.microsoft.com/en-us/power-platform/admin/extend-capacity)
+      - [Set up a Pay-as-you-go plan](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-set-up) to be billed automatically through Azure
+      - [Free up storage](https://learn.microsoft.com/en-us/power-platform/admin/free-storage-space) from environments
+
+ **For System Admins:**
+
+  The banner displays one call-to-action button:
+
+   - Manage environment — Takes you to your [environments in Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments) where you can free up storage to optimize capacity usage. If freeing up storage does not resolve your capacity concerns, reach out to your IT department or tenant admin to purchase additional storage. [Learn to free up storage](https://learn.microsoft.com/en-us/power-platform/admin/free-storage-space) from enviornments.
+
 
 ## Example storage capacity scenarios and overage enforcement
 
