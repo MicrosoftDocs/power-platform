@@ -185,8 +185,6 @@ You should see a (200) status returned, which means the query was successful.
 > - Your resource URL should have no added spaces or characters at the end.
 > - Review the steps in your [Microsoft Entra app registration](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api) for correctness.
 > - The security settings of the custom connector, as described in [step 6 of the custom connector setup](#set-up-the-custom-connector), should be updated correctly.
->
-> If you're still seeing failures, your connection might be in a bad state. Learn more in [Step-by-step instructions to repair Audit Log connection](https://github.com/microsoft/coe-starter-kit/issues/4961).
 
 ### Set up the Power Automate flow
 
@@ -253,7 +251,3 @@ Here are example configurations for these values:
 ## How to get older data
 
 Once configured, this solution collects app launches, but isn't set up to collect historic app launches. Depending on your [Microsoft 365 license](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log), historic data is available for up to one year using the audit log within Microsoft Purview.
-
-You can load historic data into the CoE Starter Kit tables manually. Learn more in [How to import old Audit Logs](https://github.com/microsoft/coe-starter-kit/issues/3040).
-
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]
