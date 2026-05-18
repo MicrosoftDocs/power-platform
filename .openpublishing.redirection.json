@@ -1,6 +1,15 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/cmk-migrate-from-byok",
+      "redirect_url": "power-platform/admin/customer-managed-key",
+      "redirect_document_id": "false"
+    },{
+      "source_path": "power-platform/admin/manage-encryption-key",
+      "redirect_url": "power-platform/admin/customer-managed-key",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/inventory-schema-copilot-studio-agents.md",
       "redirect_url": "/copilot-studio/admin-agent-inventory",
       "redirect_document_id": "false"
