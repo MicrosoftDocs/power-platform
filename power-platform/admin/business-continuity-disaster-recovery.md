@@ -172,6 +172,7 @@ In this model, typical replication lag is under 15 minutes (often under five min
 If there's a regional outage, the system supports failover only to the designated secondary region as part of self-service disaster recovery. It doesn't support switching to any other arbitrary region.
 
 ### Is my region supported for self-service disaster recovery?
+
 Self-service disaster recovery depends on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. For more information, go to [Azure supported regions](/azure/reliability/regions-list). 
 
 As of November 2025, Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for self-service disaster recovery.
@@ -220,6 +221,7 @@ Field service now supports self-service disaster recovery. You can now manage wo
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
 #### Business Events limitation
+
 After a self-service disaster recovery failover to a secondary region or a Finance & Operations database refresh, existing Business Event endpoints stop delivering events to their configured endpoints (ex. webhooks, Azure Service Bus, or Event Grid). This stop occurs because the underlying Finance & Operations database change breaks the linkage between Finance & Operations and the corresponding Dataverse endpoint registrations. As a result, events continue to be generated but aren't dispatched until the endpoint configuration is revalidated.
 To restore event delivery, you must recreate or reconfigure the affected Business Events endpoints:
 - Delete existing endpoint definitions and recreate them with the same configuration
@@ -227,6 +229,7 @@ To restore event delivery, you must recreate or reconfigure the affected Busines
 For detailed steps, see [Manage Business Events endpoints](/dynamics365/fin-ops-core/dev-itpro/business-events/managing-business-event-endpoints).
 
 #### Other limitations
+
 - Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully fail over and fail back since they're saved on Dataverse.
 - In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
 -  In Dynamics 365 Customer Insights - Data, real-time updates are impacted. It doesn't support self-service disaster recovery today.
