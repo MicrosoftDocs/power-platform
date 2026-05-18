@@ -1,7 +1,7 @@
 ---
 title: IP firewall in Power Platform environments
 description: Learn how to configure the IP firewall in Microsoft Power Platform environments to help keep your organizational data secure.
-ms.date: 08/07/2025
+ms.date: 05/18/2026
 ms.topic: how-to
 author: ritesp
 ms.author: ritesp
@@ -276,7 +276,7 @@ Make sure your reverse proxy is configured to send the client IP address in the 
 
 ### IP firewall audit functionality isn't working in my environment. What should I do?
 
-IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key (BYOK) encryption keys. If your tenant is enabled for bring-your-own-key, then all environments in a BYOK-enabled tenant are locked down to SQL only, therefore audit logs can only be stored in SQL. We recommend that you migrate to [customer-managed key](customer-managed-key.md).
+IP firewall audit logs aren't supported in tenants enabled for bring-your-own-key (BYOK) encryption keys. We recommend that you migrate to [customer-managed key](customer-managed-key.md).
 
 ### Does IP firewall support IPv6 IP ranges?
 
