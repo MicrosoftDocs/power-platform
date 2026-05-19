@@ -40,9 +40,6 @@ Make sure your environment isn't restricted with an [environment security group]
 1. This app provides a guided step by step experience through the configuration steps.
  :::image type="content" source="media/setupwizard-inact.png" alt-text="CoE Starter Kit Setup Wizard":::
 
->[!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
-
 ## Set up the Inactivity process components manually
 
 ### Configure mandatory environment variables
@@ -111,6 +108,3 @@ Environment variables are used to store application and flow configuration data 
 | ProductionEnvironment | Set to **No** if you've installed the solution for development or test purposes. This will send approvals to the admin email instead of the maker. | Yes |
 | InactivityNotifications-PastTime-Interval | The interval for the past time for how far back to go to see if an app/flow is useful. | 6 (months) |
 | InactivityNotifications-PastTime-Unit | The units for the past time for how far back to go to see if an app/flow is useful. | Month. |
-
-
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]
