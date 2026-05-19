@@ -4,7 +4,7 @@ description: Learn how to streamline Power Platform development and releases by 
 #customer intent: As a developer, I want to integrate Dataverse environments with Git so that I can manage source control and enable collaborative development.
 author: carcla
 ms.author: v-caclaesson
-ms.date: 05/14/2026
+ms.date: 05/19/2026
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.reviewer: jhaskett-msft
@@ -21,7 +21,7 @@ This reference architecture addresses these challenges by combining native Datav
 
 ## Architecture diagram
 
-:::image type="content" source="media/enterprise-power-platform-alm/enterprise-power-platform-alm.png" alt-text="Diagram of Dataverse ALM strategy with Git integration across development, testing, and production environments using pipelines in Power Platform." lightbox="media/enterprise-power-platform-alm/enterprise-power-platform-alm.png":::
+:::image type="content" source="media/enterprise-power-platform-alm/enterprise-power-platform-alm.svg" alt-text="Diagram of Dataverse ALM strategy with Git integration across development, testing, and production environments using pipelines in Power Platform." lightbox="media/enterprise-power-platform-alm/enterprise-power-platform-alm.svg":::
 
 ## Workflow
 

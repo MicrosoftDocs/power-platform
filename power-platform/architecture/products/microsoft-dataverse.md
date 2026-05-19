@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 05/14/2026
+ms.date: 05/19/2026
 ---
 
 # Microsoft Dataverse reference architectures and solution ideas
