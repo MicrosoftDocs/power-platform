@@ -27,11 +27,11 @@ This article addresses common questions about the Data Export integration, inclu
 
 First, enable the [Data Export](/power-platform/admin/self-service-analytics#set-up-the-data-export-process-for-your-tenant) feature in your tenant. Proceed with the CoE Starter Kit configuration only when you see inventory data files in your storage account. The initial data export can take up to five days.
 
-[Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-by-using-the-setup-wizard) to configure the feature in your tenant. Your feedback is critical to this process. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
+[Download](https://aka.ms/CoEBYODLdownload) the version of the CoE Starter Kit that integrates with Data Export and use the [setup wizard](setup-core-components.md#set-up-the-inventory-components-by-using-the-setup-wizard) to configure the feature in your tenant.
 
 ## Why is this feature in preview?
 
-The [Data Export](/power-platform/admin/self-service-analytics) feature itself is currently in public preview. Using Data Export for the CoE Starter Kit is a fundamental change to the underlying architecture of the CoE Starter Kit. To help balance improvement with the potential impact on your existing CoE kit deployment, we're introducing this feature as a preview feature. If you're an early adopter and think this feature could be useful to you, try it out and help test the feature. We recommend that you don't depend on it yet, and first try it out in a dedicated test environment. Trying out this feature helps us validate that the feature meets your needs and that we're not introducing unintended side effects. Your feedback is critical to this process. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
+The [Data Export](/power-platform/admin/self-service-analytics) feature itself is currently in public preview. Using Data Export for the CoE Starter Kit is a fundamental change to the underlying architecture of the CoE Starter Kit. To help balance improvement with the potential impact on your existing CoE kit deployment, we're introducing this feature as a preview feature. If you're an early adopter and think this feature could be useful to you, try it out and help test the feature. We recommend that you don't depend on it yet, and first try it out in a dedicated test environment.
 
 ## What are the requirements for using Data Export with the CoE Starter Kit?
 
@@ -52,7 +52,7 @@ The identity setting up the CoE Starter Kit needs Storage Data Reader permission
 The cloud flows that sync inventory to Dataverse consume a high number of API calls, and can hit throttling and scale limits if you have a large number of Power Platform resources (environments, apps, flows) in your tenant. These cloud flows work best for small to medium-sized tenants that have less than 10,000 apps and flows. The Data Export feature uses Power BI and Power Platform dataflows, which are powerful at transforming and handling large amounts of data. Once we've validated that this feature works as intended, using Data Export with the CoE Starter Kit will increase performance and scale.
 
 > [!IMPORTANT]
-> The CoE Starter Kit using Data Export for inventory is currently in experimental preview. We recommend you don't depend on it just yet, and first test it in a dedicated, test environment. Trying out this feature will help us validate that the feature meets your needs and that we're not introducing unintended side effects. Your feedback is critical to this process. Please post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
+> The CoE Starter Kit using Data Export for inventory is currently in experimental preview. We recommend you don't depend on it just yet, and first test it in a dedicated, test environment.
 
 ## Will the CoE Starter Kit still have inventory of resources not yet available in the Data Export feature?
 
@@ -96,10 +96,6 @@ Yes, there will be no change in functionality.
 ## Will there be two versions of the CoE kit or will the version using cloud flows go away?
 
 There will be only one version of the CoE Starter Kit that supports both mechanisms to gather inventory and telemetry. Using the setup wizard, you decide which mechanism and the wizard will then guide you through the configuration steps required, based on your choice. You can also upgrade and move from using cloud flows to using Data Export by simply changing the inventory data source in the setup wizard. We don't have plans to remove the cloud flow inventory mechanism.
-
-## I want to try out this feature, but have more questions or have found a bug
-
-If you have more questions about the CoE Starter Kit using Data Export, [raise a question on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION). If you've tried out the CoE Starter Kit using Data Export and found a bug, please [raise an issue on GitHub](https://aka.ms/coe-starter-kit-issues).
 
 ## Known limitations
 

@@ -208,5 +208,3 @@ Before you begin:
    ![Update the InnovationBacklogAppURL environment variable.](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")
 
 You can now [use the Innovation Backlog app](innovationbacklog-components.md).
-
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]
