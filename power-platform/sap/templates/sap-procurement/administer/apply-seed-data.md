@@ -1,21 +1,16 @@
 ---
 title: Apply seed data
 description: Learn how you can populate a database with an initial set of data for your SAP Procurement apps and flows that run on Microsoft Power Platform.
-author: jongilman88
-ms.author: jongilman
+author: microsoft-dustin
+ms.author: dustin.rasener
 contributors:
-  - robinsonshields
-  - microsoft-george
+  - EllenWehrle
   - tverhasselt
   - galitskyd
-  - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
-  - EllenWehrle
+ms.date: 05/19/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/27/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -23,7 +18,7 @@ ms.subservice: solution-templates
 
 # Apply seed data
 
-Data seeding is the process of populating a database with an initial set of data. The SAP Procurement apps and flows require that key seed data be added to and managed by the SAP Administrator model-driven app. Adding seed data ensures an efficient and localized integration with SAP.
+Data seeding is the process of populating a database with an initial set of data. The SAP Procurement apps and flows require that the SAP Administrator model-driven app add and manage key seed data. Adding seed data ensures an efficient and localized integration with SAP.
 
 ## Manage menu options
 
@@ -33,7 +28,7 @@ You can manage the menu options for one or more of the following apps that are p
 - SAP Purchase Requisitions
 - SAP Purchase Order Management
 
-Managing the menu options enables you to determine which users will be able to view and access specific navigation items in the canvas apps deployed.
+By managing the menu options, you can determine which users can view and access specific navigation items in the deployed canvas apps.
 
 You need to have _Data_.
 
@@ -48,28 +43,28 @@ Follow these steps to set up application menus:
 1. Open the _SAP Administrator_ app that was part of the SAP Administrator Base solution.
 1. Select **Menu Items**.
 1. Select **+New**.
-1. Populate the fields.
+1. Fill in the fields.
 
-To help you set up application menus, a list of the fields with examples and descriptions are provided in this table.
+To help you set up application menus, the following table provides a list of the fields with examples and descriptions.
 
-| Field | Examples| Description |
+| Field | Examples | Description |
 | ----------- | ----------- | ----------- |
 | Menu Item Name | "Vendors", "Requisitions", "Purchase Orders" | The short descriptive name of the menu item. |
 | Used By Team | "Vendor Management Team", "Requisition Management Team", "Purchase Orders Team" | The Dataverse group that you previously set up. Select the appropriate group. |
-| Menu Group | "Purchasing" | A logical grouping of menu items. Typically, this is a process domain area. |
-| Order | _1_, _2_, _3_, _4_ | The order in which the menu items should be displayed. |
+| Menu Group | "Purchasing" | A logical grouping of menu items. Typically, this grouping is a process domain area. |
+| Order | _1_, _2_, _3_, _4_ | The order in which the menu items appear. |
 | Capability | "Vendors", "Requisitions", "Purchase Orders" | The capability or app that corresponds to each menu item. |
-| Launch URL | _apps.powerapps.com/play_ | The URL of the corresponding app to launch when the menu item is selected. You obtain it by copying the Web link value from the respective app details page. Note, this URL example is incomplete. Your unique URL will have additional identifying information.|
-| Menu Icon | Purchase Orders Menu Icon | The icon to be displayed with the menu item in the app. You can select your own or the one that is contained in the SAP Procurement solution located underneath _web resources_. |
+| Launch URL | _apps.powerapps.com/play_ | The URL of the corresponding app to launch when the menu item is selected. You get it by copying the Web link value from the respective app details page. Note, this URL example is incomplete. Your unique URL has additional identifying information.|
+| Menu Icon | Purchase Orders Menu Icon | The icon to display with the menu item in the app. You can select your own icon or use the one contained in the SAP Procurement solution located under _web resources_. |
 
 ## Apply SAP's list of values
 
-SAP requires a constrained _list of values_ on transactions. These values need to be seeded and administered in the apps so they can be bound to the _combobox_ or _dropdown_ controls. This enables your users to make selections from the list of available values.
+SAP requires a constrained _list of values_ on transactions. Seed and administer these values in the apps so you can bind them to the _combobox_ or _dropdown_ controls. This setup enables your users to make selections from the list of available values.
 
 The constrained list of values varies according to what business process is being implemented. Work with your SAP admin and functional analyst to:
 
 - Identify the necessary values from SAP.
-- Extract the values from SAP and import through the _SAP Administrator_ app.
+- Extract the values from SAP and import them through the _SAP Administrator_ app.
 
 > [!TIP]
 >
@@ -79,20 +74,20 @@ The constrained list of values varies according to what business process is bein
 
 ### Create and manage list of values
 
-1. Open the _SAP Administrator_ app that was installed as part of the SAP Base solution.
+1. Open the _SAP Administrator_ app that you installed as part of the SAP Base solution.
 1. Select **List of Values**.
 1. Select **Export to Excel | Open in Excel Online**.
 
    :::image type="content" source="media/apply-seed-data/list-value-export.png" alt-text="Export list values to Excel.":::
 
-   To help you create and manage the list of values, a list of the fields with examples and descriptions are provided in this table.
+   To help you create and manage the list of values, this table provides a list of fields with examples and descriptions.
 
-   | Field | Examples| Description |
+   | Field | Examples | Description |
    | ----------- | ----------- | ----------- |
-   | Display Value | "United States", "German", "Mexico" | The localized version of the display value the user will see in combo box app controls. |
-   | Language | "en", "de", "es" | The language code of the display value. The app combo box controls filter the appropriate values based on the user's browser language from the app. More languages can be created by extending the Dataverse choice values. |
+   | Display Value | "United States", "German", "Mexico" | The localized version of the display value the user sees in combo box app controls. |
+   | Language | "en", "de", "es" | The language code of the display value. The app combo box controls filter the appropriate values based on the user's browser language from the app. You can create more languages by extending the Dataverse choice values. |
    | Value Code | "US", "DE", "MX" | The language independent code that SAP expects within the API. |
-   | Domain | "Country", "State", "Payment Terms" | Constrained value representing the domain that the list of values is mapped to. The app combo box controls filter the appropriate values based on mapped domain. More domains can be added by extending the Dataverse choice values. |
+   | Domain | "Country", "State", "Payment Terms" | Constrained value representing the domain that the list of values is mapped to. The app combo box controls filter the appropriate values based on mapped domain. You can add more domains by extending the Dataverse choice values. |
    | Parent Value |  | Allows for parent-child relationships of values. For example, specific state/province domain values can be parented to a single country/region domain value. |
    | Description |  | General description of what the value represents. |
 
@@ -101,22 +96,22 @@ The constrained list of values varies according to what business process is bein
 More information: [Open your app data in Excel Online](/power-apps/user/export-to-excel-online)
 
 > [!NOTE]
-> If your requirements call for more domains, extend the **SAP List of Value** Dataverse entity by adding possible values to the domain choices list.
+> If you need more domains, extend the **SAP List of Value** Dataverse entity by adding possible values to the domain choices list.
 
 > [!TIP]
-> When a value is no longer in use, a best practice is to **deactivate** a _list-of-value_ record rather than delete it. The app _combo box_ controls will only show _Active_ status values for selections going forward.
+> When a value is no longer in use, a best practice is to **deactivate** a _list-of-value_ record rather than delete it. The app _combo box_ controls only show _Active_ status values for selections going forward.
 
 ## String localization administration
 
-All strings in the canvas apps are defaulted to English. However, the canvas apps are localization ready. This means all _Text_, _Accessible Label_, _Tool Tip_, _HintText_, _InputPlaceHolderText_, and _Notifications_ have Power Fx functions built in to check whether a localized string is present for the user's logged-in browser language code. These strings are administered and maintained via the _SAP Solution Administrator_ app. The most efficient way to load and maintain these values is by using the _Export to Excel Online_ capability available in the administrator app in bulk rather than manually entering each one.
+All strings in the canvas apps default to English. However, the canvas apps are localization ready. This feature means all _Text_, _Accessible Label_, _Tool Tip_, _HintText_, _InputPlaceHolderText_, and _Notifications_ use Power Fx functions to check whether a localized string is present for the user's logged-in browser language code. You administer and maintain these strings through the _SAP Solution Administrator_ app. To load and maintain these values most efficiently, use the _Export to Excel Online_ capability available in the administrator app to handle bulk updates rather than entering each value manually.
 
-More information: [Localization and global app support](extend-canvas-apps.md#localization-and-global-app-support)
+For more information, see [Localization and global app support](extend-canvas-apps.md#localization-and-global-app-support).
 
 :::image type="content" source="media/apply-seed-data/sap-base-localizations.png" alt-text="Manage SAP string localizations.":::
 
 ### Create localization strings
 
-1. Open the _SAP Administrator_ app that was installed as part of the SAP Base solution.
+1. Open the _SAP Administrator_ app that you installed as part of the SAP Base solution.
 1. Select **Localizations**.
 1. Select **Export to Excel | Open in Excel Online**.
 
@@ -124,19 +119,19 @@ More information: [Localization and global app support](extend-canvas-apps.md#lo
 
 1. Create or update rows with the following attributes:
 
-   | Field | Examples| Description |
+   | Field | Examples | Description |
    | ----------- | ----------- | ----------- |
-   | English Value | _Cancel_ | The English version of the string that serves as the _string key_ that the application will always look up to see if there's a corresponding localized value to display. |
-   | Language | _de_ | The language ISO code of the display value. The apps will automatically look up to see if there are localized strings to display based upon the user's browser language code. |
+   | English Value | _Cancel_ | The English version of the string that serves as the _string key_. The application always looks up this key to see if there's a corresponding localized value to display. |
+   | Language | _de_ | The language ISO code of the display value. The apps automatically look up to see if there are localized strings to display based on the user's browser language code. |
    | Localized Value | _Abbrechen_ | The localized string value to display for the given English value. |
-   | String Type | _Label_ | Not required, but helps categorize what control/property the string is, noting that one localization entry can support multiple property types so just choose the primary property type in that situation. |
+   | String Type | _Label_ | Not required, but helps categorize what control or property the string is. One localization entry can support multiple property types, so just choose the primary property type in that situation. |
 
 > [!NOTE]
-> List of Values localizations are not impacted by these strings because combo box items behave differently than standard strings. Refer to the _List of values_ section to administer localized dropdown values.
+> List of Values localizations aren't impacted by these strings because combo box items behave differently than standard strings. To administer localized dropdown values, see the _List of values_ section.
 
 #### Import default English strings
 
-To help you quickly identify localization strings you need to prepare for your required language, you can access a [**CSV file available on GitHub**](https://aka.ms/SAPProcurementLocalizationStrings) that contains all the app default English strings. You can import the CSV file into your environment using the [_**Import data**_](/power-apps/user/import-data) capability that is part of the SAP Administrator app.
+To help you quickly identify localization strings you need to prepare for your required language, access a [**CSV file available on GitHub**](https://aka.ms/SAPProcurementLocalizationStrings) that contains all the app default English strings. You can import the CSV file into your environment by using the [_**Import data**_](/power-apps/user/import-data) capability that's part of the SAP Administrator app.
 
 To further accelerate the string localization creation process, create a cloud flow to trigger off of Dataverse English imported localization records selected in the SAP Administrator app. This flow can use _AI Builder_ action steps to automatically translate the English records to your target language and directly load them into the _SAP Localizations_ table.
 

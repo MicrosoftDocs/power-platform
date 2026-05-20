@@ -4,18 +4,15 @@ description: Microsoft's SAP Procurement template streamlines and automates SAP 
 author: jongilman88
 ms.author: jongilman
 contributors:
-  - microsoft-george
   - EllenWehrle
   - tverhasselt
   - galitskyd
   - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
   - shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 03/27/2025
+ms.date: 05/19/2026
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

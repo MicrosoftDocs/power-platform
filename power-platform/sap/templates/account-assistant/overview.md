@@ -1,22 +1,19 @@
 ---
 title: Account assistant for SAP solutions
 description: Learn about Account assistant for SAP solutions and how it translates business-oriented goals into actionable SAP NetWeaver tasks.
-author: ryanb58
-ms.author: tbrazelton
+author: microsoft-dustin
+ms.author: drasener
 contributors:
+  - haowusky
   - hidasa
-  - robinsonshields
-  - microsoft-george
   - tverhasselt
   - galitskyd
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
   - EllenWehrle
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 12/18/2024
+ms.date: 05/19/2026
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As an administrator, I want to learn about the Account assistant for SAP solutions and how it translates business-oriented goals into actionable SAP NetWeaver tasks.
@@ -50,6 +47,6 @@ More information:
 - [Get access to Microsoft Copilot Studio](/microsoft-copilot-studio/requirements-licensing-subscriptions)
 - [Quickstart: Create and deploy a Copilot Studio agent](/microsoft-copilot-studio/fundamentals-get-started)
 
-## Use Cases
+## Use cases
 
-The Account assistant for SAP is an essential tool for both employees and support agents. Employees can resolve account access issues independently, avoiding delays and ensuring uninterrupted workflow. Support teams benefit from reduced workloads as routine tasks, like account unlocks, are handled directly by users. This solution is particularly valuable for organizations looking to minimize downtime, improve user satisfaction, and optimize resource allocation in account servicing scenarios.
+The Account assistant for SAP is an essential tool for both employees and support agents. Employees can resolve account access problems on their own, so they avoid delays and keep their workflow uninterrupted. Support teams have less work because users handle routine tasks, like unlocking accounts. This solution is especially valuable for organizations that want to reduce downtime, improve user satisfaction, and make the best use of resources in account servicing scenarios.

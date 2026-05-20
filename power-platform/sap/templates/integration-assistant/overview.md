@@ -4,6 +4,7 @@ description: Learn about Integration assistant for SAP solutions and how it tran
 author: microsoft-dustin
 ms.author: drasener
 contributors:
+  - haowusky
   - hidasa
   - robinsonshields
   - microsoft-george

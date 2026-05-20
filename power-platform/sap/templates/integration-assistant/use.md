@@ -4,22 +4,19 @@ description: Follow some examples of how to use Integration assistant for SAP so
 author: microsoft-dustin
 ms.author: drasener
 contributors:
+  - haowusky
   - hidasa
-  - robinsonshields
-  - microsoft-george
   - tverhasselt
   - galitskyd
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
   - EllenWehrle
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: get-started
-ms.date: 12/11/2024
+ms.date: 05/19/2026
 ms.service: power-platform
 ms.subservice: sap
-# Customer intent: As an administrator, I want to learn how to access, install, and set up the Integration assistant for SAP olutions.
+# Customer intent: As an administrator, I want to learn how to access, install, and set up the Integration assistant for SAP solutions.
 ---
 
 # Use Integration assistant for SAP solutions
