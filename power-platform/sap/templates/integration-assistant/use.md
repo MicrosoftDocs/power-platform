@@ -21,12 +21,12 @@ ms.subservice: sap
 
 # Use Integration assistant for SAP solutions
 
-The Integration assistant for SAP solutions is designed to handle a wide range of business goals by leveraging SAP's NetWeaver capabilities. (remote-enabled function modules). Here are examples of goals it can help your makers achieve:
+The Integration assistant for SAP solutions is designed to handle a wide range of business goals by leveraging SAP's NetWeaver capabilities, including remote-enabled function modules. Here are examples of goals it can help your makers achieve:
 
 - Retrieve customer or vendor information from SAP tables.
-- Create or update sales orders. (the agent may suggest **BAPI_SALESORDER_CREATEFROMDAT2**, for example)
-- Fetch real-time inventory data. (**BAPI_MATERIAL_AVAILABILITY**)
-- Check or export Sales Order statuses (**BAPI_SALESORDER_GETLIST**, **BAPI_SALESORDER_GETSTATUS**, **BAPI_ACC_DOCUMENT_CHECK**)
+- Create or update sales orders (The agent might suggest **BAPI_SALESORDER_CREATEFROMDAT2**, for example).
+- Fetch real-time inventory data (**BAPI_MATERIAL_AVAILABILITY**).
+- Check or export sales order statuses (**BAPI_SALESORDER_GETLIST**, **BAPI_SALESORDER_GETSTATUS**, **BAPI_ACC_DOCUMENT_CHECK**).
 
 ## Example query and output
 
@@ -34,7 +34,7 @@ Here's an example of a user query and an agent response:
 
 **User Query**: How do I identify purchasing trends in 2024?
 
-**Agent Response**: To identify the purchase order IDs for analyzing purchasing trends in 2024, you can use the `BAPI_PO_GETLIST` function. This function retrieves a list of purchase orders based on various selection criteria, such as date range, vendor, and purchasing organization.
+**Agent Response**: To identify the purchase order IDs for analyzing purchasing trends in 2024, use the `BAPI_PO_GETLIST` function. This function retrieves a list of purchase orders based on various selection criteria, such as date range, vendor, and purchasing organization.
 
 Function: BAPI_PO_GETLIST
 Parameters:
@@ -47,7 +47,7 @@ Parameters:
 
 ## Example JSON for Power Automate flow
 
-Here's an example JSON for Power Automate flow
+Here's an example JSON for Power Automate flow.
 
  ```json
  {
@@ -75,7 +75,7 @@ Explanations:
 - **MATERIAL**: The material number (optional). You can specify a particular material if needed.
 - **PLANT**: The plant (optional). You can specify a particular plant if needed.
 
-By using this function, you can retrieve a list of purchase orders created within the specified date range. This helps you identify the purchase order IDs needed to analyze purchasing trends for the year 2024.
+By using this function, you can retrieve a list of purchase orders created within the specified date range. This list helps you identify the purchase order IDs needed to analyze purchasing trends for the year 2024.
 
 Here are some next steps you can take:
 
@@ -84,19 +84,19 @@ Here are some next steps you can take:
 1. Use the `BAPI_PO_GETDETAIL` function with the extracted purchase order IDs to get detailed information about each purchase order.
 1. Analyze the detailed information to identify purchasing trends.
 
-This approach will help you gather the necessary data to analyze purchasing trends effectively. Always keep in mind that AI-generated content may be incorrect.
+This approach helps you gather the necessary data to analyze purchasing trends effectively. Always keep in mind that AI-generated content might be incorrect.
 
-## Recommended Workflow
+## Recommended workflow
 
 Here's a recommended workflow for working with an agent:
 
-1. **Define Business Goal**: Clearly define the business goal you want to achieve with the agent.
-2. **Query Agent**: Ask the agent how to achieve your business goal.
-3. **Challenge the Agent**: Challenge the agent to test the solution against your SAP system. At this step, the agent may identify errors in the suggested solution. This feedback loop allows you to avoid hallucinations and ensures that your solution will work. **The agent is using the same connector and parameters that you will use.**
-4. **Implement Solution**: Implement the solution in Power Automate using the SAP ERP connector. For now, this is a manual process; future versions may automate more of the implementation.
+1. **Define business goal**: Clearly define the business goal you want to achieve with the agent.
+1. **Query agent**: Ask the agent how to achieve your business goal.
+1. **Challenge the agent**: Challenge the agent to test the solution against your SAP system. At this step, the agent might identify errors in the suggested solution. This feedback loop helps you avoid hallucinations and ensures that your solution works. **The agent uses the same connector and parameters that you use.**
+1. **Implement solution**: Implement the solution in Power Automate using the SAP ERP connector. For now, this process is manual; future versions might automate more of the implementation.
 
 :::image type="content" source="media/usage-screenshot.png" alt-text="Usage example showing copy/paste from agent output to Power Automate designer":::
 
-## Optional Functionality: Find RFCs
+## Optional functionality: Find RFCs
 
-There is an Action that is defined and shipped with the agent solution called `Find RFCs` that reads the table `TFDIR` to identify functions that are available in your SAP system. This can be useful if you are looking for a custom or fringe-usage RFC to use in your flows. However, the agent tends to overweight the results from this function, which means that it may pass over more common functions and suggest functions that are a poor fit for your use case.
+The agent solution includes an action named `Find RFCs` that reads the `TFDIR` table to identify functions that are available in your SAP system. This action can be useful if you're looking for a custom or fringe-usage RFC to use in your flows. However, the agent tends to overweight the results from this function, which means that it might pass over more common functions and suggest functions that are a poor fit for your use case.

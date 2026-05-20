@@ -13,7 +13,7 @@ contributors:
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 05/19/2026
+ms.date: 05/20/2026
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As an administrator, I want to learn about the Account assistant for SAP solutions and how it translates business-oriented goals into actionable SAP NetWeaver tasks.
