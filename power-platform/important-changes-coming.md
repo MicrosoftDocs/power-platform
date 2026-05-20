@@ -64,7 +64,7 @@ Users who currently rely on the Visio-to-Power Automate export workflow should t
 
 ## Deprecation of Test Engine
 
-Effective April 2026, Test Engine is deprecated.The documentation and GitHub repository are no longer maintained by Microsoft and will be removed in a future release.
+Effective April 2026, Test Engine is deprecated. The documentation and GitHub repository are no longer maintained by Microsoft and will be removed in a future release.
 
 ### Why is this needed?
 
