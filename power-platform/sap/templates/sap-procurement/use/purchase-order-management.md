@@ -1,11 +1,10 @@
 ---
 title: Use the SAP Purchase Order Management app
 description: Learn how you can search for, view, and edit an existing PO in SAP or create a new PO in SAP using Microsoft's SAP Purchase Order Management app for Microsoft Power Platform.
-author: microsoft-dustin
-ms.author: drasener
+author: tverhasselt
+ms.author: thoverh
 contributors:
   - EllenWehrle
-  - tverhasselt
   - Wrighttyler
   - shanep
 ms.reviewer: ellenwehrle

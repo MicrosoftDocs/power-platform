@@ -1,11 +1,10 @@
 ---
 title: Use the SAP Requisition Management app
 description: Learn how you can view, create, edit, and convert SAP requisition data using Microsoft's SAP Requisition Management app for Microsoft Power Platform.
-author: microsoft-dustin
-ms.author: drasener
+author: tverhasselt
+ms.author: thoverh
 contributors:
   - EllenWehrle
-  - tverhasselt
   - Wrighttyler
   - shanep
 ms.reviewer: ellenwehrle

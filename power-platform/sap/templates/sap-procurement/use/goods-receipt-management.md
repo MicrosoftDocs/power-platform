@@ -1,11 +1,10 @@
 ---
 title: Use the SAP Goods Receipt Management app
 description: Learn how you can search for, view, and post an SAP goods receipt using Microsoft's SAP Goods Receipt Management app for Microsoft Power Platform.
-author: microsoft-dustin
-ms.author: drasener
+author: tverhasselt
+ms.author: thoverh
 contributors:
 - EllenWehrle
-- tverhasselt
 - Wrighttyler
 - shanep
 ms.reviewer: ellenwehrle

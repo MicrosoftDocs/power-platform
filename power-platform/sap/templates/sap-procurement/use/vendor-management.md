@@ -1,11 +1,10 @@
 ---
 title: Use the SAP Vendor Management app
 description: Learn how you can view, update, and create a vendor in SAP using Microsoft's SAP Vendor Management app for Microsoft Power Platform.
-author: microsoft-dustin
-ms.author: drasener
+author: tverhasselt
+ms.author: thoverh
 contributors:
   - EllenWehrle
-  - tverhasselt
   - Wrighttyler
   - shanep
 ms.reviewer: ellenwehrle

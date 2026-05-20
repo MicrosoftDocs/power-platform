@@ -1,11 +1,10 @@
 ---
 title: SAP Procurement template for Power Platform
 description: Microsoft's SAP Procurement template streamlines and automates SAP procurement processes to drive efficiencies in your organization's procure-to-pay processes.
-author: microsoft-dustin
-ms.author: drasener
+author: tverhasselt
+ms.author: thoverh
 contributors:
   - EllenWehrle
-  - tverhasselt
   - galitskyd
   - Wrighttyler
   - shanep

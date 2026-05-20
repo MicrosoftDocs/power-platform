@@ -1,11 +1,10 @@
 ---
 title: Use the SAP Vendor Invoice Management app
 description: Work with vendor invoices in SAP using the SAP Vendor Invoice Management app for Microsoft Power Platform.
-author: microsoft-dustin
-ms.author: drasener
+author: tverhasselt
+ms.author: thoverh
 contributors:
 - EllenWehrle
-- tverhasselt
 - Wrighttyler
 - shanep
 ms.reviewer: ellenwehrle
