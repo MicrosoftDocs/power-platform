@@ -6,7 +6,6 @@ ms.author: edleh
 contributors: 
   - tverhasselt
   - EllenWehrle
-  - tbrazelton
   - dgalitsky
   - edlehman
   - haowusky

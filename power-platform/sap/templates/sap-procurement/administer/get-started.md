@@ -4,18 +4,13 @@ description: Walk through the high-level steps to integrate SAP with Power Platf
 author: tverhasselt
 ms.author: thoverh
 contributors:
-- jongilman88
-- microsoft-george
-- robinsonshields
 - EllenWehrle
 - galitskyd
 - microsoft-dustin
-- ryanb58
-- scottwoodallmsft
 - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: get-started
-ms.date: 03/27/2025
+ms.date: 05/19/2026
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -27,7 +22,7 @@ Enterprise templates for Power Platform published by Microsoft on Marketplace ar
 
 The SAP Procurement solutions are enterprise-ready and therefore need to be customized, deployed, and managed by a [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) to [maintain governance and security](/power-platform/guidance/adoption/admin-best-practices).
 
-It's recommended that an [executive sponsor](/power-platform/guidance/adoption/executive-sponsorship?source=recommendations) establishes a team that consists of key stakeholders, product owners, business analysts, Power Platform administrators and developers and SAP admins (S-User) and functional analysts (SAP BASIS).
+An [executive sponsor](/power-platform/guidance/adoption/executive-sponsorship?source=recommendations) should establish a team that consists of key stakeholders, product owners, business analysts, Power Platform administrators and developers, SAP admins (S-User), and functional analysts (SAP BASIS).
 
 Once established, your team can get started with its SAP + Power Platform administration journey by reviewing the Power Platform resource links and following the SAP integration and administration steps.
 
