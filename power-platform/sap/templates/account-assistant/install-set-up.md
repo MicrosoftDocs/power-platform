@@ -39,8 +39,8 @@ To successfully install and manage **Account assistant for SAP solutions**, conf
   - A Microsoft Entra ID global or tenant user administrator to assign Copilot Studio and Power Automate licensing.
   - A [Power Platform Administrator](/power-platform/admin) to create environments and assign Copilot Studio message capacity.
 - **Environments**: Follow [application lifecycle management (ALM)](/power-platform/alm) best practices in [creating and managing environments](/power-platform/admin/create-environment). Also consider:
-  - Set up a Power Platform environment with a Dataverse database.
-  - Assign environment maker security role privileges, at a minimum, to the user who installs the solutions in that environment.
+  - A Power Platform environment that's set up with a Dataverse database.
+  - Environment maker security role privileges, at a minimum, are assigned to the user who installs the solutions in that environment.
   - For more information, see [Environments overview](/power-platform/admin/environments-overview).
 - **Data loss prevention policies**: Ensure the environment has access to the connectors used by **Account assistant for SAP solutions**:
   - [Microsoft Teams connector](/connectors/teams/).
