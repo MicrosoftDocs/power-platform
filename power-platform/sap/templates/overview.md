@@ -14,7 +14,7 @@ contributors:
   - tshanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 05/19/2026
+ms.date: 05/20/2026
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As an administrator, I want to learn about templates and prebuilt agents that can help me accelerate my Power Platform and SAP integration and solution development.

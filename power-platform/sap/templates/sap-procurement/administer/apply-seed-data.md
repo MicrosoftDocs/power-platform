@@ -2,13 +2,13 @@
 title: Apply seed data
 description: Learn how you can populate a database with an initial set of data for your SAP Procurement apps and flows that run on Microsoft Power Platform.
 author: microsoft-dustin
-ms.author: dustin.rasener
+ms.author: drasener
 contributors:
   - EllenWehrle
   - tverhasselt
   - galitskyd
   - Wrighttyler
-ms.date: 05/19/2026
+ms.date: 05/20/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.custom: bap-template
