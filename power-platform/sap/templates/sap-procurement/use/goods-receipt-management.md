@@ -1,19 +1,16 @@
 ---
 title: Use the SAP Goods Receipt Management app
 description: Learn how you can search for, view, and post an SAP goods receipt using Microsoft's SAP Goods Receipt Management app for Microsoft Power Platform.
-author: jongilman88
-ms.author: jongilman
+author: microsoft-dustin
+ms.author: drasener
 contributors:
 - EllenWehrle
-- microsoft-george
-- robinsonshields
 - tverhasselt
-- ryanb58
 - Wrighttyler
 - shanep
 ms.reviewer: ellenwehrle
 ms.topic: get-started
-ms.date: 1/8/2024
+ms.date: 05/20/2026
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -21,7 +18,7 @@ ms.subservice: solution-templates
 
 # Get started using the SAP Goods Receipt Management app
 
-The SAP Goods Receipt Management app is part of the SAP Procurement solution for Microsoft Power Platform. It allows you to do several functions in SAP quicker and easier than using SAP GUI.  You can search for and view an existing goods receipt document and receive goods against a purchase order.
+The SAP Goods Receipt Management app is part of the SAP Procurement solution for Microsoft Power Platform. It makes several functions in SAP quicker and easier than using SAP GUI. You can search for and view an existing goods receipt document and receive goods against a purchase order.
 
 :::image type="content" source="media/goods-receipts/sap-procure-gr-ed.png" alt-text="Image of Microsoft's SAP Procurement purchase order app for Power Platform.":::
 
@@ -30,22 +27,22 @@ The SAP Goods Receipt Management app is part of the SAP Procurement solution for
 You have three options for viewing a goods receipt:
 
 - Enter a known goods receipt number and fiscal year.
-- Select a recent goods receipt that you have interacted with.
+- Select a recent goods receipt that you interacted with.
 - Search for a goods receipt based on vendor, purchase order, material, and date range.
 
 ### Enter a goods receipt
 
-If you know the goods receipt number of the material document you want to view, you can type it in the _Search goods receipt number_ field, select a _Fiscal Year_ and select **Search**.
+If you know the goods receipt number of the material document you want to view, type it in the _Search goods receipt number_ field, select a _Fiscal Year_, and select **Search**.
 
 ### Select a goods receipt
 
-You can select a recently viewed goods receipt from the _Select recent goods receipt_ drop-down list. Choose a _goods receipt_ from the list to load onto your screen.
+Select a recently viewed goods receipt from the _Select recent goods receipt_ drop-down list. Choose a _goods receipt_ from the list to load onto your screen.
 
 ### Search for a goods receipt
 
-If you haven't interacted with the goods receipt and you don't know the exact number, you can search for a goods receipt. Select the **Search Goods Receipt** button to open the goods receipt search screen.
+If you didn't interact with the goods receipt and you don't know the exact number, search for a goods receipt. Select the **Search Goods Receipt** button to open the goods receipt search screen.
 
-The goods receipt search screen allows you to search by any individual field or a combination of _Vendor_, _Purchase order_, _Material_ and _Posting date range_.
+The goods receipt search screen allows you to search by any individual field or a combination of _Vendor_, _Purchase order_, _Material_, and _Posting date range_.
 
 1. Enter your selection criteria.
 1. Select **Search** to display your results.
@@ -68,9 +65,9 @@ The goods receipt search screen allows you to search by any individual field or 
 
 The table provides requisition screen to function module field mappings.
 
-### BAPI_GOODSMVT_CREATE Mapping
+### BAPI_GOODSMVT_CREATE mapping
 
-| Area             | Display Name            | Parameter | Field     | Default       |
+| Area             | Display name            | Parameter | Field     | Default       |
 |------------------|-------------------------|-----------|------------|---------------|
 | Header           | Posting Date                  | GOODSMVT_HEADER    | PSTNG_DATE |               |
 | Header           | Document Date             | GOODSMVT_HEADER    | DOC_DATE           |      |
