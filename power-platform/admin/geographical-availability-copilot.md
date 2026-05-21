@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: mikferland-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/16/2026
+ms.date: 05/21/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: miferlan
