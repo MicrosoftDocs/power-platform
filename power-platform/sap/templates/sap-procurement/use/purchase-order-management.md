@@ -1,19 +1,15 @@
 ---
 title: Use the SAP Purchase Order Management app
 description: Learn how you can search for, view, and edit an existing PO in SAP or create a new PO in SAP using Microsoft's SAP Purchase Order Management app for Microsoft Power Platform.
-author: jongilman88
-ms.author: jongilman
+author: tverhasselt
+ms.author: thoverh
 contributors:
   - EllenWehrle
-  - microsoft-george
-  - robinsonshields
-  - tverhasselt
-  - ryanb58
   - Wrighttyler
   - shanep
 ms.reviewer: ellenwehrle
 ms.topic: get-started
-ms.date: 1/8/2024
+ms.date: 05/20/2026
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -21,7 +17,7 @@ ms.subservice: solution-templates
 
 # Get started using the SAP Purchase Order Management app
 
-The SAP Purchase Order Management app is part of the SAP Procurement solution for Microsoft Power Platform. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can search for, view, and change an existing purchase order (PO), or create a new PO.
+The SAP Purchase Order Management app is part of the SAP Procurement solution for Microsoft Power Platform. It makes several functions in SAP quicker and easier than using SAP GUI. You can search for, view, and change an existing purchase order (PO), or create a new PO.
 
 
 ## View a purchase order
@@ -29,40 +25,40 @@ The SAP Purchase Order Management app is part of the SAP Procurement solution fo
 You have three options for viewing a purchase order:
 
 - Enter a known PO order number.
-- Select a recent PO that you have interacted with.
+- Select a recent PO that you interacted with.
 - Search for a purchase order based on vendor and date range.
 
 :::image type="content" source="media/purchase-order-management/sap-procure-po-ed.png" alt-text="Image of the Power Platform Procurement purchase order app.":::
 
 ### Enter a purchase order number
 
-If you know the purchase order number, you can enter it in the _Search Purchase Orders_ field and select **Search**.
+If you know the purchase order number, enter it in the _Search Purchase Orders_ field and select **Search**.
 
 ### Select a recent purchase order
 
-You can select a recently viewed PO from the _Recently Searched Purchase Orders_ list. Select a _purchase order_ from the list to load onto your screen.
+Select a recently viewed PO from the _Recently Searched Purchase Orders_ list. Select a _purchase order_ from the list to load onto your screen.
 
 ### Search for a purchase order
 
-If you haven't interacted with the purchase order, and you don't know the exact number, you can search for a PO.
+If you didn't interact with the purchase order and you don't know the exact number, search for a PO.
 
-1. Select **Search Purchase Orders** to open the purchase order search screen. On the screen, you can search by entering information in either the _Order number_, _Vendor Number_, or _Created from/Created to_ field or any combination of the fields.
+1. Select **Search Purchase Orders** to open the purchase order search screen. On the screen, search by entering information in either the _Order number_, _Vendor Number_, or _Created from/Created to_ field or any combination of the fields.
 
    :::image type="content" source="media/purchase-order-management/search-po.png" alt-text="The purchase order search screen.":::
 
 1. Enter your selection criteria in the fields.
 1. Select **Search** to display your results.
-1. Select the _PO_ from the search results you would like to see displayed.
+1. Select the _PO_ from the search results you want to see.
 
 ## Create a purchase order
 
-You can create a new purchase order:
+Create a new purchase order:
 
 1. Select **New Purchase Order**.
 
 1. Enter a _vendor number_.
 
-1. Select **Search** next to the vendor number to determine the vendor name.
+1. Select **Search** next to the vendor number to find the vendor name.
 
 1. Select the appropriate _purchasing organization_ from the drop-down list.
 
@@ -72,7 +68,7 @@ You can create a new purchase order:
 
 1. Select the appropriate _currency_ from the drop-down list.
 
-1. Optionally provide header text.
+1. Optionally, enter header text.
 
 1. Select **Next**.
 
@@ -80,34 +76,34 @@ You can create a new purchase order:
 
 1. Select your _location_ (plant).
 
-1. Specify a material number. You can do this in one of two ways:
+1. Specify a material number. You can do this step in one of two ways:
 
     - Enter a known _material number_.
     - Search for a material. Select **Go to advanced search** to open the material search page so you can search by _material number_, _description_, _material type_, or _location (plant)_.
 
 1. Specify the _Quantity_ and _Unit price_.
 
-1. Select **Add Line Item**
+1. Select **Add Line Item**.
 
-1. Continue to add additional line items until complete.
+1. Continue to add line items until complete.
 
 
-## Review and Submit Purchase Order
+## Review and submit purchase order
 
 1. Select **Next** after adding all line items.
 
-1. Review the Purchase Order details and select **Submit**.
+1. Review the purchase order details and select **Submit**.
 
 ## Additional functionality
 
-When you load an existing purchase order, you have the ability to edit or approve it.
+When you load an existing purchase order, you can edit or approve it.
 
 ### Edit a purchase order
 
-If you select **Edit Purchase Order**, you're able to:
+When you select **Edit Purchase Order**, you can:
 
-- Change values
-- Add line items
+- Change values.
+- Add line items.
 - Delete unwanted line items. To delete an unwanted line item, select a line item and then select **Delete**. You can also copy an existing line item by selecting it and selecting **Copy**.
 
 - If you want to edit a line item, select the line item and then select **Edit**.
@@ -118,14 +114,14 @@ If you select **Edit Purchase Order**, you're able to:
 
   > [!NOTE]
   >
-  > The sort is done as a character string, so numbers may not be in numeric order.
+  > The sort is done as a character string, so numbers might not be in numeric order.
 
 - You can edit the column width of columns in the _Items_ list. Select **Column Heading** and then select **Column Width** in the drop-down list. Specify the width.
 ## Field mappings
 
 Field mappings from purchase order screen to the function module.
 
-### BAPI_PO_CREATE1 Mapping
+### BAPI_PO_CREATE1 mapping
 
 | Area             | Display Name            | Parameter | Field     | Default       |
 |------------------|-------------------------|-----------|------------|---------------|
@@ -147,9 +143,9 @@ Field mappings from purchase order screen to the function module.
 | Condition (Default)             | Condition Type                    | POCOND    | COND_TYPE  | PBXX               |
 | Condition (Default)             | Condition Type                    | POCOND    | CHANGE_ID | U               |
 
-### BAPI_PO_CHANGE Mapping
+### BAPI_PO_CHANGE mapping
 
-| Area      | Display Name   | Parameter | Field     | Default    |
+| Area      | Display name   | Parameter | Field     | Default    |
 |-----------|----------------|-----------|---------|-------------|
 | Header    | Order Number  |     | PURCHASEORDER |               |
 | Header    | Vendor        | POHEADER    | VENDOR |               |

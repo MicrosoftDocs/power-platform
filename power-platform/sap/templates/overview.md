@@ -4,19 +4,17 @@ description: Learn about templates and agents that accelerate your Power Platfor
 author: microsoft-dustin
 ms.author: drasener
 contributors:
+  - haowusky
   - hidasa
-  - robinsonshields
-  - microsoft-george
   - tverhasselt
   - galitskyd
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
   - EllenWehrle
   - MartinPankraz
+  - tshanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 03/27/2025
+ms.date: 05/20/2026
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As an administrator, I want to learn about templates and prebuilt agents that can help me accelerate my Power Platform and SAP integration and solution development.
@@ -24,7 +22,7 @@ ms.subservice: sap
 
 # What are templates and prebuilt agents for Microsoft Power Platform and SAP?
 
-Templates and agents for Power Platform and SAP integration and solution development are created and published by Microsoft. They can be accessed at [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) on GitHub.
+Microsoft creates and publishes templates and agents for Power Platform and SAP integration and solution development. You can access them at [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) on GitHub.
 
 ## Templates for Power Platform and SAP
 
@@ -36,7 +34,7 @@ During the design phase, a solution template helps a maker see how:
 - Workflows can be automated by Power Automate cloud flows operating behind the scenes.
 - Solutions can be enhanced and extended to meet an organization's needs.
 
-Get started by learning more about:
+Learn more about:
 
 [SAP Procurement template for Power Platform](/power-platform/sap/templates/sap-procurement/overview)
 [SAP Setup Assistant](/power-platform/sap/templates/sap-procurement/administer/sap-setup-assistant/overview)
@@ -44,28 +42,28 @@ Get started by learning more about:
 
 ## Agents for Power Platform and SAP
 
-Agents for Power Platform and SAP are advanced, LLM-based assistants that translate business-oriented goals into actionable SAP NetWeaver tasks. The agents are powerful tools that provide dynamic, installation-specific insights to maximize accuracy when working to integrate Power Platform with a specific SAP system.
+Agents for Power Platform and SAP are advanced, LLM-based assistants that translate business-oriented goals into actionable SAP NetWeaver tasks. These agents are powerful tools that provide dynamic, installation-specific insights to maximize accuracy when working to integrate Power Platform with a specific SAP system.
 
 During the design phase, an agent helps a maker discover what specific SAP BAPIs, RFCs, and table reads are needed to achieve their business goals.
 
-Get started by learning more about:
+Learn more about:
 
 - [Integration assistant for SAP solutions](integration-assistant/overview.md)
 - [Account assistant for SAP solutions](account-assistant/overview.md)
 
 ## Administration
 
-Power Platform and SAP integration and solution development are enterprise-grade initiatives that should be carried out by a knowledgeable, [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) that consists of key stakeholders, product owners, business analysts, Power Platform administrators and developers and SAP admins (S-User) and functional analysts (SAP BASIS).
+Power Platform and SAP integration and solution development are enterprise-grade initiatives that a knowledgeable, [centralized team](/power-platform/guidance/adoption/delivery-models#centralized) should carry out. This team consists of key stakeholders, product owners, business analysts, Power Platform administrators and developers, SAP admins (S-User), and functional analysts (SAP BASIS).
 
 Once established, your team can [get started with its Power Platform and SAP administration journey](/power-platform/sap/templates/sap-procurement/overview).
 
 ## Support
 
-Power Platform and SAP templates and agents are published _as is_. However, we do provide support to help you be successful.
+Power Platform and SAP templates and agents are published _as is_. However, Microsoft provides support to help you be successful.
 
-Support can be accessed at [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) on GitHub. It's a dedicated support space for you to:
+You can access support at [Templates for Power Platform](https://github.com/microsoft/Templates-for-Power-Platform) on GitHub. It's a dedicated support space for you to:
 
-- log questions
-- access template and agent assets
-- access template and agent release updates
-- access template and agent support resources
+- Log questions
+- Access template and agent assets
+- Access template and agent release updates
+- Access template and agent support resources
