@@ -112,7 +112,7 @@ To turn on data movement across regions, Bing search, Microsoft 365 services, an
 
 1. If your environment is in the European Union Data Boundary, the **Allow flex routing during periods of peak load** checkbox is displayed.
 
-  For tenants that are managed through the Microsoft 365 admin center, the default value of the **Allow flex routing during periods of peak load** setting in the Power Platform admin center is the same as the Microsoft 365 admin center toggle, unless the **Move data across regions** setting is turned off.
+    For tenants that are managed through the Microsoft 365 admin center, the default value of the **Allow flex routing during periods of peak load** setting in the Power Platform admin center is the same as the Microsoft 365 admin center toggle, unless the **Move data across regions** setting is turned off.
 
     - Select the **Allow flex routing during periods of peak load** checkbox, if desired. This setting allows LLM inferencing and the storage of associated pseudonymized data to occur outside the EU Data Boundary during periods of peak demand.
       - If you don’t want to allow flex routing, clear the **Allow flex routing during periods of peak load** checkbox, which results in all LLM inferencing occuring inside the EU Data Boundary, even during periods of peak demand.
