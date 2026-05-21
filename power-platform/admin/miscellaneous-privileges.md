@@ -3,7 +3,7 @@ title: Miscellaneous privileges
 description: Learn about the miscellaneous privileges that you can assign to a security role in Power Platform.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/15/2025
+ms.date: 05/18/2026
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
@@ -53,9 +53,6 @@ The following table describes the miscellaneous privileges, which in the new, mo
 | ISV Extensions | prvISVExtensions | Not currently in use. |
 | Language Settings | prvLanguageSettings | [Regional and language options for your environment](enable-languages.md) |
 | Learning Path Authoring | Not applicable  | [On-off switch for Learning Path](/power-platform/admin/on-off-switch-for-learning-path-guided-help) |
-| Manage Data Encryption key - Activate | prvRestoreSqlEncryptionKey | [Activate an encryption key for a tenant](manage-encryption-key.md#activate-an-encryption-key-for-a-tenant)|
-| Manage Data Encryption key - Change | prvChangeSqlEncryptionKey | [Manage encryption for an environment](manage-encryption-key.md#manage-encryption-for-an-environment) |
-| Manage Data Encryption key - Read | prvReadSqlEncryptionKey | [Manage the encryption key](manage-encryption-key.md)  |
 | Manage User Synchronization Filters | prvAdminFilter | [Control field synchronization with Outlook](control-field-synchronization-outlook.md) |
 | Merge | prvMerge | [Merge data](merge-data.md) |
 | Override Created on or Created by for Records during Data Import | prvOverrideCreatedOnCreatedBy | [Import data (all record types) from multiple sources](import-data-all-record-types.md) |
