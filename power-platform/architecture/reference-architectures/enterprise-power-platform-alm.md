@@ -245,7 +245,7 @@ _Microsoft maintains this article. The following contributors wrote this article
 
 **Principal authors**:
 
-- **[Nick Talsma](https://www.linkedin.com/in/biswapm/)**, Power Platform Technical Architect
+- **[Nick Talsma](https://www.linkedin.com/in/nick-talsma/)**, Power Platform Technical Architect
 
 ## Related resources
 
