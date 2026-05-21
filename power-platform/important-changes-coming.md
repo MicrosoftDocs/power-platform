@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 05/15/2026
+ms.date: 05/22/2026
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -29,11 +29,10 @@ For deprecation information of other products, see [Other deprecation articles](
 
 Effective July 14, 2026, the Power Automate integration in the Visio desktop app is deprecated. This feature allowed users to export BPMN (Business Process Model and Notation) diagrams from Visio as cloud flows in Power Automate.
 
-Users on Current Channel may see this change as early as June 23, 2026. Monthly Enterprise Channel and Semi-Annual Enterprise Channel users will see the change starting July 14, 2026. Users on older builds of Microsoft 365 Apps will continue to see the feature until their apps are updated to a build released after the deprecation date. The feature will function on those older builds but is no longer maintained or supported.
 
 ### Why is this needed?
 
-This integration sees very low usage and has not kept pace with the capabilities available in Power Automate today. The Visio export path supports a limited subset of flow actions and connectors. The Power Automate portal at [make.powerautomate.com](https://make.powerautomate.com) now provides a full-featured flow designer with hundreds of templates, Copilot-assisted flow creation, and over 1,500 connectors. Users who need to create automation flows will have a more complete experience working directly in Power Automate.
+This integration maintains low usage and hasn't kept pace with the capabilities available in Power Automate today. The Visio export path supports a limited subset of flow actions and connectors. [Power Automate](https://make.powerautomate.com) now provides a full-featured flow designer with hundreds of templates, Copilot-assisted flow creation, and over 1,500 connectors. Users who need to create automation flows will have a more complete experience working directly in Power Automate.
 
 ### Impact
 
@@ -43,9 +42,9 @@ After the deprecation date, the following Visio desktop features will no longer 
 - The **Show Flow Markup** button on the ribbon
 - Power Automate export options in Visio search results
 
-These features are removed from the UI. Users will not encounter an error or broken state; the entry points are hidden.
+These features are removed from the UI. Users don't encounter an error or broken state; the entry points are hidden.
 
-**What is NOT affected:**
+#### What is *not* affected
 
 - All existing BPMN diagrams in Visio remain as-is. Nothing is deleted or modified.
 - All flows previously exported from Visio to Power Automate continue to run normally. No action is required for existing flows.
@@ -55,12 +54,13 @@ These features are removed from the UI. Users will not encounter an error or bro
 
 No action is required for existing flows or diagrams.
 
-Users who currently rely on the Visio-to-Power Automate export workflow should transition to creating flows directly in Power Automate:
+Users who currently rely on the Visio-to-Power Automate export workflow should transition to creating flows directly in Power Automate.
 
-- Sign in at [make.powerautomate.com](https://make.powerautomate.com)
-- Use the flow designer to build cloud flows with a visual editor
-- Explore [flow templates](https://make.powerautomate.com/templates) for common automation patterns
-- Learn more: [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow)
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Use the flow designer to build cloud flows with a visual editor.
+1. Explore [flow templates](https://make.powerautomate.com/templates) for common automation patterns.
+
+Learn more: [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow)
 
 ## Deprecation of Test Engine
 
