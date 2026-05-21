@@ -14,8 +14,7 @@ search.audienceType:
 
 # CoE CLI ALM accelerator for Microsoft Power Platform (Deprecated)
 
-> [!NOTE]
-> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+[!INCLUDE [guidance-deprecate-coe-cli](../../../../includes/guidance-deprecate-coe-cli.md)]
 
 You can use the CLI application lifecycle management (ALM) accelerator for Microsoft Power Platform to manage common ALM tasks to install, set up, and administer the ALM accelerator for Microsoft Power Platform. This article contains:
 

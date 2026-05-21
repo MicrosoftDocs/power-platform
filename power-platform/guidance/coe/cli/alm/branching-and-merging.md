@@ -14,8 +14,7 @@ search.audienceType:
 
 # CoE ALM Accelerator for Power Platform branching and merging (Deprecated)
 
-> [!NOTE]
-> The CoE CLI is deprecated and will be removed in a future release. Please use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+[!INCLUDE [guidance-deprecate-coe-cli](../../../../includes/guidance-deprecate-coe-cli.md)]
 
 Development as a team of makers, advanced makers, and professional developers often uncovers new concepts. One area of complexity is branching and merging. Using the links below, different [personas](./personas.md) can review each concept and determine their level of comfort.
 

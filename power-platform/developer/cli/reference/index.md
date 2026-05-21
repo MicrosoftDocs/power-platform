@@ -34,8 +34,8 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac env](env.md)|Work with your Dataverse organization.|
 |[pac help](help.md)|Show help for the Microsoft Power Platform CLI.|
 |[pac managed-identity](managed-identity.md)|Commands for managing Managed Identity records for Dataverse components.|
-|[pac model](model.md)|(Preview) Commands for working with model-driven apps.|
-|[pac modelbuilder](modelbuilder.md)|Code Generator for Dataverse APIs and Tables.|
+|[pac model](model.md)|Commands for working with model-driven apps.|
+|[pac modelbuilder](modelbuilder.md)|(Deprecated) Code Generator for Dataverse APIs and Tables.|
 |[pac package](package.md)|Commands for working with Dataverse package projects.|
 |[pac pages](pages.md)|Commands for working with Power Pages website.|
 |[pac pcf](pcf.md)|Commands for working with Power Apps component framework projects.|
@@ -44,7 +44,7 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac power-fx](power-fx.md)|(Preview) Commands for working with Power Fx.|
 |[pac solution](solution.md)|Commands for working with Dataverse solution projects.|
 |[pac telemetry](telemetry.md)|Manage telemetry settings.|
-|[pac test](test.md)|(Preview) Execution of automated tests for a Power App.|
+|[pac test](test.md)|(Deprecated) Execution of automated tests for a Power App.|
 |[pac tool](tool.md)|Power Platform tools that can be installed and launched.|
 
 

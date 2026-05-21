@@ -3,7 +3,7 @@
   "info": {
     "title": "Microsoft Power Platform REST API - workflowsagent",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
-    "version": "2022-03-01-preview"
+    "version": "2024-10-01"
   },
   "host": "api.powerplatform.com",
   "schemes": [
@@ -49,7 +49,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -60,7 +60,7 @@
             },
             "headers": {
               "Retry-After": {
-                "description": "Present when additional pages are available. Indicates the recommended delay in seconds before fetching the next page.",
+                "description": "Recommended delay in seconds before fetching the next page.",
                 "type": "string"
               }
             }
@@ -72,7 +72,7 @@
             "description": "Forbidden."
           },
           "404": {
-            "description": "Not found. M365 Copilot workflows environment could not be resolved or feature is not enabled."
+            "description": "Not found. Workflows environment not resolved or not enabled."
           },
           "500": {
             "description": "Internal server error."
@@ -104,7 +104,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -152,7 +152,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -198,7 +198,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -235,7 +235,7 @@
           {
             "in": "path",
             "name": "connectionIdentifier",
-            "description": "The connection ID in apiName/connectionName format.",
+            "description": "The connection identifier in apiName/connectionName format.",
             "required": true,
             "type": "string"
           },
@@ -245,7 +245,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -291,7 +291,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -302,7 +302,7 @@
             },
             "headers": {
               "Retry-After": {
-                "description": "Present when additional pages are available. Indicates the recommended delay in seconds before fetching the next page.",
+                "description": "Recommended delay in seconds before fetching the next page.",
                 "type": "string"
               }
             }
@@ -314,7 +314,7 @@
             "description": "Forbidden."
           },
           "404": {
-            "description": "Not found. M365 Copilot workflows environment could not be resolved or feature is not enabled."
+            "description": "Not found. Workflows environment not resolved or not enabled."
           },
           "500": {
             "description": "Internal server error."
@@ -368,7 +368,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -379,7 +379,7 @@
             },
             "headers": {
               "Retry-After": {
-                "description": "Present when additional pages are available. Indicates the recommended delay in seconds before fetching the next page.",
+                "description": "Recommended delay in seconds before fetching the next page.",
                 "type": "string"
               }
             }
@@ -430,7 +430,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -441,7 +441,7 @@
             },
             "headers": {
               "Retry-After": {
-                "description": "Present when additional pages are available. Indicates the recommended delay in seconds before fetching the next page.",
+                "description": "Recommended delay in seconds before fetching the next page.",
                 "type": "string"
               }
             }
@@ -500,7 +500,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -571,7 +571,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -620,7 +620,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -668,7 +668,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -722,7 +722,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -786,7 +786,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -835,7 +835,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -883,7 +883,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
