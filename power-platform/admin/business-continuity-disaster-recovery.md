@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 05/04/2026
+ms.date: 05/21/2026
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -60,9 +60,7 @@ Most geographies have region pairs separated by at least 300 miles when possible
 Self-service disaster recovery is a Power Platform infrastructure capability that lets you replicate your environment across long distances and start environment failover between regions yourself.
 You usually have multiple environments of different types in your tenant. This capability is available only for production environments.
 
-To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md)
-
-
+To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md).
 
 ## Allow Virtual Network pairing for self-service disaster recovery in Dynamics 365
 
@@ -119,7 +117,10 @@ Admins check the current disaster recovery state and location of an environment 
 To check data replication latency at any time, select **Disaster Recovery**, and then select **Emergency response** as the disaster recovery reason. This action opens a confirmation dialog that shows the last replication time between regions for that environment. You can select **Cancel** if your only purpose is to check the potential loss of data if there's a failover operation. Remember, the last sync time always changes because data is replicated continuously.
 
 ## Recovery point and recovery time objectives with business continuity and disaster recovery
-Power Platform and Dataverse are designed with high availability built into every region. Within a region, the platform targets approximately near zero RPO (recovery point objective) and a recovery time of under 5 minutes across availability zones and data centers within a region. For cross-region resiliency, Microsoft provides Self-Service Disaster Recovery (SSDR), which gives customers full visibility and control over the failover process. In this model, typical replication lag is under 15 minutes (often under 5 minutes), and the platform is designed to complete failover within minutes once initiated. Because customers retain control of when and whether to trigger a cross-region failover, Microsoft does not publish a  cross-region RTO commitment— however, customers can monitor real-time replication lag directly in the Power Platform Admin Center (PPAC) to inform their own recovery decisions. It is also important to note that when Power Platform solutions connect to external systems — such as SQL Server, REST APIs, or other third-party services — the RPO of those integrations are governed by the availability and recovery capabilities of the respective target systems, and fall outside the scope of Power Platform's resiliency commitments. 
+
+Power Platform and Dataverse are designed with high availability built into every region. Within a region, the platform targets approximately near zero RPO (recovery point objective) and a recovery time of under five minutes across availability zones and data centers within a region. For cross-region resiliency, Microsoft provides self-service disaster recovery (SSDR), which gives customers full visibility and control over the failover process. In this model, typical replication lag is under 15 minutes (often under five minutes), and the platform is designed to complete failover within minutes once initiated. 
+
+Because customers retain control of when and whether to trigger a cross-region failover, Microsoft doesn't publish a  cross-region RTO commitment. Customers can monitor real-time replication lag directly in the Power Platform admin center to inform their own recovery decisions. It's important to note that when Power Platform solutions connect to external systems&mdash;such as SQL Server, REST APIs, or other third-party services&mdash;the RPO of those integrations are governed by the availability and recovery capabilities of the respective target systems, and fall outside the scope of Power Platform's resiliency commitments. 
 
 ## Document your business continuity plan
 
@@ -142,12 +143,12 @@ With the implementation of [availability zones](/azure/reliability/availability-
  
 ### What are the costs associated with using self-service disaster recovery?
 
-- You must turn on a [pay-as-you-go billing plan](pay-as-you-go-overview.md) as a prerequisite to turning on self-service disaster recovery for that environment. This prerequisite won't be required after May 22, 2026.
+- You must turn on a [pay-as-you-go billing plan](pay-as-you-go-overview.md) as a prerequisite to turning on self-service disaster recovery for that environment. This prerequisite isn't required after May 22, 2026.
 - The selected environment must be a [Managed Environment](managed-environment-licensing.md). This environment is a premium license tier. 
 - Capacity charges are based on the storage consumption of the environment's paired secondary region for database, file, and log storage types.
 - Capacity consumption is reflected in the familiar licensing experience within the Power Platform admin center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
-  For example, suppose a user has 10-GB capacity consumption in the primary location. When self-service disaster recovery is turned on, a copy of data is created in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. Only if you exceed your available free storage or available entitlements does a pay-as-you-go plan actively start billing.
+For example, suppose a user has 10 GB capacity consumption in the primary location. When self-service disaster recovery is turned on, a copy of data is created in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. If you exceed your available free storage or available entitlements, is when a pay-as-you-go plan actively start billing.
   
 ### How does billing work for self-service disaster recovery?
 
