@@ -8,7 +8,7 @@ contributors:
 ms.author: menakakollu
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 12/02/2024
+ms.date: 05/19/2026
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -19,7 +19,7 @@ ms.subservice: solution-templates
 
 The SAP Setup Assistant walks you through a checklist of manual and automated steps to help you get your Power Platform + SAP Procurement installation up and running as quickly as possible.
 
-The Assistant is organized by stages, activities, and steps. Each stage has at least one activity with specific steps you need to complete. For example, you'll walk through these stages with the SAP Setup Assistant:
+The Assistant is organized by stages, activities, and steps. Each stage has at least one activity with specific steps you need to complete. For example, you walk through these stages with the SAP Setup Assistant:
 
 - **Introduction**: Get to know the SAP Procurement template and the SAP Setup Assistant.
 - **Prerequisites**: Ensure you have the necessary licensing and environment setup.
@@ -27,13 +27,13 @@ The Assistant is organized by stages, activities, and steps. Each stage has at l
 - **Optional activities**: Enable additional features to optimize your deployment and end-user experience.
 - **Deployment and next steps**: Review the installer stages, launch the app, and explore the next steps.
   
-To ensure the best chance of a successful installation and deployment of the SAP Procurement template, it's important to complete as many activity steps as possible in each stage before going to the next stage.
+To ensure the best chance of a successful installation and deployment of the SAP Procurement template, complete as many activity steps as possible in each stage before going to the next stage.
 
 ## Access SAP Setup Assistant
 
-The SAP Setup Assistant template is available in [Microsoft Marketplace](<https://aka.ms/AccessSAPSetupAssistantTemplate>).
+You can find the SAP Setup Assistant template in [Microsoft Marketplace](<https://aka.ms/AccessSAPSetupAssistantTemplate>).
 
-To avoid having to transfer downloaded files across the machines, we recommend you **run the SAP Setup Assistant on the Windows Virtual Machine** where the data gateway is set up.
+To avoid transferring downloaded files across machines, **run the SAP Setup Assistant on the Windows Virtual Machine** where the data gateway is set up.
 
 ## SAP Setup Assistant package
 

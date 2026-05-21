@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery for Dynamics 365 SaaS apps
 description: Microsoft provides business continuity and disaster recovery for Dynamics 365 SaaS applications' production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 05/05/2026
+ms.date: 05/18/2026
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -69,9 +69,9 @@ You usually have multiple environments of different types in your tenant. This c
 
 To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md). For more information about managed environments, go to [Managed Environments](managed-environment-overview.md).
 
-## Allow Virtual Network pairing for self-service disaster recovery in Dynamics 365
+## Allow virtual network pairing for self-service disaster recovery in Dynamics 365
 
-If you deploy your Dynamics 365 environment within a Virtual Network and plan to use self-service disaster recovery, you need to configure a **Virtual Network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a Virtual Network pair, disaster recovery operations fail because network connectivity between regions can't be established.
+If you deploy your Dynamics 365 environment within a virtual network and plan to use self-service disaster recovery, you need to configure a **virtual network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a virtual network pair, disaster recovery operations fail because network connectivity between regions can't be established.
 
 For setup instructions, go to [Set up virtual network support for Power Platform](vnet-support-setup-configure.md).
 
@@ -81,7 +81,7 @@ This action sets up resources and starts replicating data between the primary an
 
 Turning on disaster recovery in an environment doesn't affect the environment or its data.
 
-To turn on disaster recovery, follow these steps.
+To turn on disaster recovery, follow these steps:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system administrator.
 1. In the navigation pane, select **Manage**.
@@ -102,7 +102,7 @@ You might also want to turn on disaster recovery for other events, like:
 
 Your company might have disaster recovery drills documented as a requirement in your internal business continuity plans. Some industries and companies might be required by government regulations to perform audits on their business continuity disaster recovery capabilities. In these cases, you can run a disaster recovery drill on an environment. A disaster recovery drill lets you do self-service disaster recovery without losing any data. The duration of the failover action can be slightly longer while all remaining data is replicated to the secondary region.
 
-We recommend doing drills on a copy of a production environment, since this process involves downtime when failing over to remote region that can last for minutes. For example, you might want to copy a production environment to a sandbox environment and then change the type from sandbox to production.
+Run drills on a copy of a production environment, since this process involves downtime when failing over to remote region that can last for minutes. For example, you might want to copy a production environment to a sandbox environment and then change the type from sandbox to production.
 
 ## Emergency response failover
 
@@ -125,7 +125,7 @@ To check data replication latency at any time, select **Disaster Recovery**, and
 
 ## Document your business continuity plan
 
-We recommend that you perform disaster recovery drills or an emergency response before a real disaster strikes, so you can document all steps required for any integration points that are external to Power Platform. Your company is then more prepared for recovery if there's a real disaster.
+Perform disaster recovery drills or an emergency response before a real disaster strikes, so you can document all steps required for any integration points that are external to Power Platform. Your company is then more prepared for recovery if there's a real disaster.
 
 ## Frequently asked questions (FAQs)
 
@@ -133,7 +133,7 @@ We recommend that you perform disaster recovery drills or an emergency response 
 
 Super storms, natural calamities, and unforeseen political uncertainties that have the potential to bring an entire region down are becoming more common. To minimize the impact of a disaster that brings an entire region down, maintain an asynchronous copy in a remote region. You might also want to maintain a copy in a remote region for compliance audits. 
 
-Self-service disaster recovery gives you control to fail over to a secondary region with the push of a button and failback with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and failback to the secondary region to test a real compliance drill. Run drills with a copy of the production environment to avoid any downtime.
+Self-service disaster recovery gives you control to fail over to a secondary region with the push of a button and fail back with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and fail back to the secondary region to test a real compliance drill. Run drills with a copy of the production environment to avoid any downtime.
 
 ### Why do I need self-service disaster recovery if I already have a secondary copy maintained in a remote, secondary region? 
 For the public cloud, the system doesn't maintain secondary copies in a remote, secondary region unless you turn on self-service disaster recovery.
@@ -172,6 +172,7 @@ In this model, typical replication lag is under 15 minutes (often under five min
 If there's a regional outage, the system supports failover only to the designated secondary region as part of self-service disaster recovery. It doesn't support switching to any other arbitrary region.
 
 ### Is my region supported for self-service disaster recovery?
+
 Self-service disaster recovery depends on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. For more information, go to [Azure supported regions](/azure/reliability/regions-list). 
 
 As of November 2025, Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for self-service disaster recovery.
@@ -195,35 +196,47 @@ To disable self-service disaster recovery, go to the *disaster recovery pane* in
 
 Disabling self-service disaster recovery deletes all replicated environment data in the paired region. You're prompted to confirm the environment's name before proceeding.
 
-### Can I disable self-service disaster recovery while in a paired region (in a failed over state)?
+### Can I disable self-service disaster recovery while in a paired region (in a failover state)?
 
-No, you can't disable self-service disaster recovery while the environment is in a failed over state. You must switch to the primary region first.
+No, you can't disable self-service disaster recovery while the environment is in a failover state. You must switch to the primary region first.
 
 ### Are Power Apps and Power Pages supported with self-service disaster recovery?
 
 Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 
 ### Is Power Automate supported with self-service disaster recovery?
+
 As of October 2025:
 - Power Automate desktop flows are fully supported for failover and failback with self-service disaster recovery.
 - Power Automate cloud flows are now available in preview. Don't use features in preview with production workloads.
 
-### How can I find out where my data is being replicated to? Can I change my secondary destination region?
+### How can I find out where my data is being replicated? Can I change my secondary destination region?
 
-Microsoft reserves the rights to disclose the exact details of where the customer's data is residing for security and if it may need to be moved or replicated for various, high availability and resiliency scenarios. Customers can be assured that their data at rest respects geographical boundaries and abides by legislated residency laws. Even if self-service disaster recovery isn't turned on, Microsoft reserves the right to replicate, move, and relocate the data within a region for high availability and operational needs. The location of customer data within a geography (for example, _APAC_) isn't disclosed and may change based on Azure capacity constraints.
+Microsoft reserves the right to disclose the exact details of where your data resides for security reasons. If your data needs to be moved or replicated, Microsoft considers various high availability and resiliency scenarios. You can be assured that your data at rest respects geographical boundaries and abides by legislated residency laws. Even if self-service disaster recovery isn't turned on, Microsoft reserves the right to replicate, move, and relocate the data within a region for high availability and operational needs. The location of customer data within a geography (for example, _APAC_) isn't disclosed and may change based on Azure capacity constraints.
 
 ### Is Field service supported for self-service disaster recovery?
-Field service now supports self-service disaster recovery. You can now manage work orders, scheduling, inventory, and customer communications in one unified platform and in a disaster, fail over your automated service workflows, orders, inventory, and dispatching to a remote region for business continuity.
+
+Field service now supports self-service disaster recovery. You can now manage work orders, scheduling, inventory, and customer communications in one unified platform. In a disaster, fail over your automated service workflows, orders, inventory, and dispatching to a remote region for business continuity.
 
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
-- Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully failover and failback since they're saved on Dataverse.
+#### Business Events limitation
+
+After a self-service disaster recovery failover to a secondary region or a Finance & Operations database refresh, existing Business Event endpoints stop delivering events to their configured endpoints (ex. webhooks, Azure Service Bus, or Event Grid). This stop occurs because the underlying Finance & Operations database change breaks the linkage between Finance & Operations and the corresponding Dataverse endpoint registrations. As a result, events continue to be generated but aren't dispatched until the endpoint configuration is revalidated.
+To restore event delivery, you must recreate or reconfigure the affected Business Events endpoints:
+- Delete existing endpoint definitions and recreate them with the same configuration
+- Validate event delivery before resuming normal operations
+For detailed steps, see [Manage Business Events endpoints](/dynamics365/fin-ops-core/dev-itpro/business-events/managing-business-event-endpoints).
+
+#### Other limitations
+
+- Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully fail over and fail back since they're saved on Dataverse.
 - In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
 -  In Dynamics 365 Customer Insights - Data, real-time updates are impacted. It doesn't support self-service disaster recovery today.
 -  In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, or Knowledge Base articles work. Case knowledge base access in customer service is unavailable.
 - Dynamics 365 Project Operations features aren't yet supported.
 - Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
-- Connectors may have recovery issues when dependent on external systems, like SharePoint, SQL Server or third-party applications.
+- Connectors might have recovery problems when dependent on external systems, like SharePoint, SQL server, or third-party applications.
 - For Dynamics 365 Sales, analytics, reporting, and functions dependent on automation, such as sales forecasting, are unavailable.
 - Finance and operations products aren't currently supported for self-serve disaster recovery during regional outages.
-- AI Builder may see latency impact.
+- AI Builder might see latency impact.

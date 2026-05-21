@@ -42,9 +42,6 @@ For more information, see [Microsoft Dataverse for Teams environment management]
 
    :::image type="content" source="media/setupwizard-teams.png" alt-text="Screenshot of the CoE Starter Kit Setup Wizard." lightbox="media/setupwizard-teams.png":::
 
-> [!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the Inventory components manually.
-
 ## Set up the Dataverse for Teams environment management components manually
 
 ### Exempt environments from the empty environment processes
@@ -58,5 +55,3 @@ Turn on flows installed as part of the **Governance components** solution:
 - [Microsoft Teams Admin | Weekly Clean Up of Microsoft Teams environments](governance-components.md#microsoft-teams-admin--weekly-clean-up-of-microsoft-teams-environments)
 - [Microsoft Teams Admin | Ask for Business Justification when Microsoft Teams environment is created](governance-components.md#microsoft-teams-admin--ask-for-business-justification-when-microsoft-teams-environment-is-created)
 - [Microsoft Teams Admin | Send Reminder Mail](governance-components.md#microsoft-teams-admin--send-reminder-mail)
-
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

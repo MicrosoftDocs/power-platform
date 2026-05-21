@@ -15,8 +15,7 @@ ms.service: power-platform
 ms.subservice: sap
 ms.topic: how-to
 ms.date: 02/05/2026
-search.audienceType:
-  - admin
+search.audienceType: admin
 # Customer intent: As an administrator, I want to learn how to set up Microsoft Entra ID, Azure API Management, and SAP for SSO from SAP OData connector so my users can access SAP data in Power Platform solutions without having to sign in multiple times to multiple services.
 ---
 
