@@ -5,7 +5,7 @@ description: Learn how to track Power Platform license consumption and storage c
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/14/2025
+ms.date: 04/21/2026
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -53,7 +53,6 @@ Capacity monitoring involves tracking the usage of various resources in your Pow
 As an administrator, you should:
 
 - Review what happens when you [exceed storage capacity entitlements](/power-platform/admin/capacity-storage#changes-for-exceeding-storage-capacity-entitlements).
-- Use the [environment capacity management and alerting](/power-platform/guidance/coe/capacity-alerting) feature of the [CoE Starter Kit](/power-platform/guidance/coe/starter-kit) to monitor capacity consumption in the tenant, configure approved limits, and receive alerts when an environment is near or over its approved capacity.
 - Regularly check the capacity available to ensure users can create new environments.
 - Check the top storage used by environments to stay aware of the highest-consuming ones.
 - Check database, file, and log charts for unexpected usage spikes in individual environments.

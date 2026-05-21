@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/12/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -16,7 +16,9 @@ ms.custom: sfi-image-nochange
 
 # Set up Innovation Backlog components
 
-Use the Innovation Backlog app to ask users to submit ideas for apps and flows that need building, and describe pain points with the current process. As users describe the process, they will provide information about personas involved, tools used, and measures for improvement. This information is then used to calculate an ROI and complexity score.
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+Use the Innovation Backlog app to gather ideas from users for apps and flows to build, and capture pain points with the current process. As users describe the process, they provide information about personas involved, tools used, and measures for improvement. The app uses this information to calculate a return on investment (ROI) and complexity score.
 
 Pick the most impactful ideas for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
@@ -175,7 +177,7 @@ Before you begin:
 
 1. Extract the **ToolIcons.zip**. You can find this file in the initial download.
 
-1. Open the **Innovation Backlog Admin** app and select **Preview**. There's no need to publish this app because you will only use it for some admin tasks.
+1. Open the **Innovation Backlog Admin** app and select **Preview**. There's no need to publish this app because you'll only use it for some admin tasks.
 
 1. Select **Go Icon**.
 
@@ -206,5 +208,3 @@ Before you begin:
    ![Update the InnovationBacklogAppURL environment variable.](media/ib-8.png "Update the InnovationBacklogAppURL environment variable")
 
 You can now [use the Innovation Backlog app](innovationbacklog-components.md).
-
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

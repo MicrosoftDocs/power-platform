@@ -18,8 +18,7 @@ ms.custom:
 
 # CoE CLI development documentation (Deprecated)
 
-> [!NOTE]
-> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+[!INCLUDE [guidance-deprecate-coe-cli](../../../../includes/guidance-deprecate-coe-cli.md)]
 
 Documentation is key to understanding how the CLI works. As you add new commands, consider the following documentation:
 

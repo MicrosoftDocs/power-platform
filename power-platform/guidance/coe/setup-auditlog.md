@@ -4,7 +4,7 @@ description: Learn how to set up a custom connector to gather Microsoft 365 app 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/29/2025
+ms.date: 04/20/2026
 ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.author: mapichle
@@ -15,6 +15,8 @@ ms.custom: sfi-image-nochange
 ---
 
 # Collect audit logs using a custom connector (Deprecated)
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 > [!IMPORTANT]
 > Using the dedicated **Center of Excellence - Audit Log** solution and the Office 365 Management custom connector to collect audit log events is deprecated. The solution and custom connector will be removed from the CoE Starter Kit in August 2023.
@@ -183,8 +185,6 @@ You should see a (200) status returned, which means the query was successful.
 > - Your resource URL should have no added spaces or characters at the end.
 > - Review the steps in your [Microsoft Entra app registration](#create-a-microsoft-entra-app-registration-for-the-office-365-management-api) for correctness.
 > - The security settings of the custom connector, as described in [step 6 of the custom connector setup](#set-up-the-custom-connector), should be updated correctly.
->
-> If you're still seeing failures, your connection might be in a bad state. Learn more in [Step-by-step instructions to repair Audit Log connection](https://github.com/microsoft/coe-starter-kit/issues/4961).
 
 ### Set up the Power Automate flow
 
@@ -251,7 +251,3 @@ Here are example configurations for these values:
 ## How to get older data
 
 Once configured, this solution collects app launches, but isn't set up to collect historic app launches. Depending on your [Microsoft 365 license](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-search-the-audit-log), historic data is available for up to one year using the audit log within Microsoft Purview.
-
-You can load historic data into the CoE Starter Kit tables manually. Learn more in [How to import old Audit Logs](https://github.com/microsoft/coe-starter-kit/issues/3040).
-
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

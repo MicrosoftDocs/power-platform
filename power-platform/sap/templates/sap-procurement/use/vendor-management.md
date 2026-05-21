@@ -1,19 +1,15 @@
 ---
 title: Use the SAP Vendor Management app
 description: Learn how you can view, update, and create a vendor in SAP using Microsoft's SAP Vendor Management app for Microsoft Power Platform.
-author: jongilman88
-ms.author: jongilman
+author: tverhasselt
+ms.author: thoverh
 contributors:
   - EllenWehrle
-  - microsoft-george
-  - robinsonshields
-  - tverhasselt
-  - ryanb58
   - Wrighttyler
   - shanep
 ms.reviewer: ellenwehrle
 ms.topic: get-started
-ms.date: 1/8/2024
+ms.date: 5/20/2026
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -21,7 +17,7 @@ ms.subservice: solution-templates
 
 # Get started using the SAP Vendor Management app
 
-The SAP Vendor Management app is part of the SAP Procurement solution for Microsoft Power Platform. It allows you to do several functions in SAP quicker and easier than using SAP GUI. You can view, update, and create a vendor.
+The SAP Vendor Management app is part of the SAP Procurement solution for Microsoft Power Platform. It makes several functions in SAP quicker and easier than using SAP GUI. You can view, update, and create a vendor.
 
 ## View vendor information
 
@@ -39,7 +35,7 @@ You can select a recently viewed vendor from the _Recently Searched Vendors_ lis
 
 ### Search for a vendor
 
-You can search for a vendor using known search criteria.
+You can search for a vendor by using known search criteria.
 
   1. Select the **Search Vendor** button to open the vendor search screen.
   1. Enter your search criteria into one or more of the following fields:
@@ -55,11 +51,11 @@ You can search for a vendor using known search criteria.
 
 ### Enter a vendor ID
 
-You can enter a known vendor ID into the _Enter Vendor ID_ field and select **Search** to retrieve the vendor record from SAP and display the information on your screen.
+Enter a known vendor ID into the _Enter Vendor ID_ field and select **Search** to retrieve the vendor record from SAP and display the information on your screen.
 
 ## Update vendor information
 
-Once an existing vendor record is loaded to the app, making changes is straightforward. Select the **Edit Vendor** button to make updates.
+After you load an existing vendor record to the app, you can make changes. Select the **Edit Vendor** button to make updates.
 
 ## Create a vendor
 
@@ -71,19 +67,19 @@ Provide the vendor name, account group, and address on the first page and select
 
 ### Add purchasing organizations
 
-For each vendor purchasing organization, enter in the required information and select **Add Purchasing Organization**. Select **Next** when all purchasing organizations have been added.
+For each vendor purchasing organization, enter the required information and select **Add Purchasing Organization**. Select **Next** when you add all purchasing organizations.
 
 ### Add company codes
 
-For each vendor company code, enter in the required information and select **Add Company Code**. Select **Next** when all company codes have been added.
+For each vendor company code, enter the required information and select **Add Company Code**. Select **Next** when you add all company codes.
 
 ### Add phone numbers
 
-For each vendor phone number, enter in the required information and select **Add Phone Number**. Select **Next** when all phone numbers have been added.
+For each vendor phone number, enter the required information and select **Add Phone Number**. Select **Next** when you add all phone numbers.
 
 ### Add email addresses
 
-For each vendor email address, enter in the required information and select **Add Email Address**. Select **Review & Submit** when all email addresses have been added.
+For each vendor email address, enter the required information and select **Add Email Address**. Select **Review & Submit** when you add all email addresses.
 
 ### Submit
 

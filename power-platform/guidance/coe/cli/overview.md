@@ -14,8 +14,7 @@ search.audienceType:
 
 # Center of Excellence (CoE) command line interface (CLI) overview (Deprecated)
 
-> [!NOTE]
-> The CoE CLI is deprecated and will be removed in a future release. Use the [Power Platform Project Setup Wizard](../../alm-accelerator/setup-admin-tasks.md) to set up and manage your ALM Accelerator for Power Platform projects.
+[!INCLUDE [guidance-deprecate-coe-cli](../../../includes/guidance-deprecate-coe-cli.md)]
 
 The Center of Excellence (CoE) command line interface automates common tasks for the CoE Starter Kit. It provides a set of commands that meet the needs of various [personas](./alm/personas.md) across the organization.
 

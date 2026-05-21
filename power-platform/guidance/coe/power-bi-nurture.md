@@ -4,14 +4,20 @@ description: "The Nurture section of the Center of Excellence (CoE) Power BI das
 author: manuelap-msft 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/02/2023
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 ---
+
 # Nurture in the CoE Power BI dashboard
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+> [!TIP]
+> Use the Power Platform admin center to [discover what drives engagement in Power Platform by using the Usage page](../../admin/usage.md).
 
 As you establish your Center of Excellence (CoE), a significant part of your activity will be nurturing your maker community, enabling them to follow best practices and working together with them to identify whether they need more support.
 

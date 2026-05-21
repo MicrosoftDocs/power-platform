@@ -4,7 +4,7 @@ description: Learn how to set up the clean-up for orphaned objects component of 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/29/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Set up clean-up for orphaned objects
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article helps you set up clean-up for orphaned objects.
 
@@ -38,9 +40,6 @@ Use this functionality to identify objects where the maker left the organization
  
     :::image type="content" source="media/setupwizard-orph.png" alt-text="Screenshot showing the steps in the CoE Starter Kit Setup Wizard to configure the clean-up for orphaned objects process.":::
 
->[!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise the issues on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the components manually.
-
 ## Set up the clean-up for orphaned objects components manually
 
 Turn on the following flows, which are installed as part of the governance components solution:
@@ -48,4 +47,3 @@ Turn on the following flows, which are installed as part of the governance compo
 - [Request Orphaned Objects Reassigned (Child)](governance-components.md#request-orphaned-objects-reassigned-child)
 - [Request Orphaned Objects Reassigned (Parent)](governance-components.md#request-orphaned-objects-reassigned-parent)
 
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

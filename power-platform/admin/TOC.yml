@@ -440,8 +440,6 @@
               items:
                 - name: Automatic deletion of Power Platform environments
                   href: automatic-environment-cleanup.md
-                - name: Automatic deletion of inactive Dataverse for Teams environments
-                  href: inactive-teams-environment.md
                 - name: Tenant-to-tenant migrations
                   href: move-environment-tenant.md
                 - name: Geo-to-geo migrations
@@ -486,9 +484,6 @@
                   href: inventory-api.md
                 - name: Power Platform inventory schema reference
                   href: inventory-schema.md
-                  items:
-                    - name: Copilot Studio agents schema
-                      href: inventory-schema-copilot-studio-agents.md
         - name: Copilot
           items:
             - name: Track, manage, and scale Copilot adoption
@@ -587,7 +582,7 @@
                       href: control-app-access-environment.md
                     - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
-                - name: Global Secure Access for agents (preview)
+                - name: Global Secure Access for agents
                   href: security/secure-web-ai-gateway-agents.md
                 - name: Role-based access control for Power Platform admin center (preview)
                   href: security/role-based-access-control.md

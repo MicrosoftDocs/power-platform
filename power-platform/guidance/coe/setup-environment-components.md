@@ -4,7 +4,7 @@ description: "Learn how to set up the environment request components solution of
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/08/2023
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -13,6 +13,8 @@ search.audienceType:
 ---
 
 # Set up environment request components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article helps you set up the environment request components of the core solution, which automate the request, approval, and creation of environments and data policies.
 
@@ -32,9 +34,6 @@ This article helps you set up the environment request components of the core sol
 1. This app provides a guided step by step experience through the configuration steps.
 
    :::image type="content" source="media/setupwizard-env.png" alt-text="Screenshot showing the CoE Starter Kit Setup Wizard." lightbox="media/setupwizard-env.png":::
-
-> [!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the inventory components manually.
 
 ## Set up the Environment request components manually
 
@@ -74,5 +73,3 @@ Environment variables can affect the environment request components.
 Update the `Environment Request Admin App Url` variable with the URL for the **Admin - Environment Request** canvas app. You can [get a Power Apps URL from a production environment](faq.md#get-a-power-apps-url-from-a-production-environment). There's no default value for this environment variable.
 
 You might have to [update environment variables](faq.md#update-environment-variables) after import.
-
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]
