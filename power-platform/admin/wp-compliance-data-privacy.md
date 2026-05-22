@@ -4,7 +4,7 @@ description: Compliance and data privacy
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/29/2022
+ms.date: 05/18/2026
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -37,7 +37,7 @@ Data transferred through the on-premises data gateway is also encrypted. Data th
 
 All environments of the Dataverse database use SQL Server Transparent Data Encryption (TDE) to perform real-time encryption of data when written to disk, also known as encryption at rest.
 
-By default, Microsoft stores and manages the database encryption keys for your environments so you don’t have to. The manage keys feature in the Power Platform admin center gives administrators the ability to self-manage the database encryption keys that are associated with environments of Dynamics 365 (online). You can read more about managing your own keys [here](manage-encryption-key.md) but generally it's recommended have Microsoft manage the keys unless you have a specific business need to maintain your own.
+By default, Microsoft stores and manages the database encryption keys for your environments so you don’t have to. The manage keys feature in the Power Platform admin center gives administrators the ability to self-manage the database encryption keys that are associated with environments of Dynamics 365 (online). You can read more about managing your own keys in [Manage your customer-managed encryption key](customer-managed-key.md).
 
 ## Resources to manage GDPR compliance
 
@@ -53,7 +53,7 @@ The following links point to detailed information to help you respond to DSR req
 |Dataverse     |  [Responding to Data Subject Rights (DSR) requests for Dataverse customer data](dataverse-privacy-dsr-guide.md)     |
 |Power Automate    | [Responding to Data Subject Requests for Power Automate](/power-automate/gdpr-dsr-summary)       |
 |Microsoft Accounts (MSAs)     | [Respond to Data Subject Rights requests](/power-automate/gdpr-dsr-summary-msa)       |
-|Customer engagement apps     | [Dynamics 365 Data Subject Requests for privacy](/compliance/regulatory/gdpr-dsr-Dynamics365?view=o365-worldwide)        |
+|Customer engagement apps     | [Dynamics 365 Data Subject Requests for privacy](/compliance/regulatory/gdpr-dsr-Dynamics365)        |
 
 ## Microsoft 365 Security and Compliance Center
 
