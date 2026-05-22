@@ -31,6 +31,15 @@ IP-based cookie binding is available only for [Managed Environments](managed-env
      
 1.  Select **Save**.
 
+## Check cookie binding status on an environment 
+
+1. To check whether cookie binding is enabled for an environment or not, go to privacy + Security  
+   Sign in to Power Platform admin center. 
+2. Select Manage > Environments > Settings > Privacy + Security. 
+3. Under IP address settings > select Enable IP address-based cookie binding and toggle it to ON. 
+4. If cookie binding is already enabled, you can check the flag here. it will show as enabled.
+   Cookie binding can also be enabled from here. 
+
 ## How cookie binding uses your IP address to work
 
 IP-based cookie binding sets the IP address claim in the session cookie. Each request is evaluated to compare the current IP address with the source IP address that was stored in the cookie when it was created. If the addresses don't match, the user is denied access.
