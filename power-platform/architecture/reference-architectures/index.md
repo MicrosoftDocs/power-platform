@@ -19,7 +19,7 @@ search.audienceType:
 
 Reference architectures are essential frameworks that guide the design and implementation of solutions using Power Platform. By evaluating reference architectures, organizations can build powerful, reliable, and scalable solutions that meet their business needs and drive innovation.
 
-Browse reference architectures categorized by common design decisions. Each reference architecture includes a description to help you understand its purpose and how to apply it to your specific use case.
+Browse reference architectures categorized by common design decisions. Each reference architecture includes an architecture diagram, a step-by-step workflow, key components, and design considerations.
 
 > [!TIP]
 > Reference architectures are listed by product under the "Power Platform products" node in the table of contents.
