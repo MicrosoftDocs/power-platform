@@ -29,7 +29,7 @@ For deprecation information of other products, see [Other deprecation articles](
 
 Effective July 14, 2026, the Power Automate integration in the Visio desktop app is deprecated. This feature allowed users to export BPMN (Business Process Model and Notation) diagrams from Visio as cloud flows in Power Automate.
 
-Users on Current Channel might see this change as early as June 23, 2026. Monthly Enterprise Channel and Semi-Annual Enterprise Channel users will see the change starting July 14, 2026. Users on older builds of Microsoft 365 Apps will continue to see the feature until their apps are updated to a build released after the deprecation date. The feature will function on those older builds, but is no longer maintained or supported.
+Users on Current Channel might see this change as early as June 30, 2026. Monthly Enterprise Channel and Semi-Annual Enterprise Channel users will see the change starting July 14, 2026. Users on older builds of Microsoft 365 Apps will continue to see the feature until their apps are updated to a build released after the deprecation date. The feature will function on those older builds, but is no longer maintained or supported.
 
 ### Why is this needed?
 
