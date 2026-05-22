@@ -19,13 +19,12 @@ search.audienceType:
 
 Reference architectures are essential frameworks that guide the design and implementation of solutions using Power Platform. By evaluating reference architectures, organizations can build powerful, reliable, and scalable solutions that meet their business needs and drive innovation.
 
-## Reference architectures by design decision
-
 Browse reference architectures categorized by common design decisions. Each reference architecture includes a description to help you understand its purpose and how to apply it to your specific use case.
 
-Reference architectures are listed by product under the "Power Platform products" node in the table of contents.
+> [!TIP]
+> Reference architectures are listed by product under the "Power Platform products" node in the table of contents.
 
-### Apply AI and agent patterns
+## Apply AI and agent patterns
 
 | Title | Description |
 | --- | --- |
@@ -35,7 +34,7 @@ Reference architectures are listed by product under the "Power Platform products
 | **[Use Copilot Studio agents in model-driven apps](contextual-ai-model-driven-app.md)** | Learn how to integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
 | **[Automate vendor invoice processing with Power Automate and AI Builder](vendor-invoice-integration.md)** | Learn how to automate vendor invoice ingestion by extracting and validating XML invoice data using Power Automate and AI Builder. |
 
-### Manage data with Dataverse
+## Manage data with Dataverse
 
 | Title | Description |
 | --- | --- |
@@ -44,7 +43,7 @@ Reference architectures are listed by product under the "Power Platform products
 | **[Analyze and automate business data with Dataverse SDK for Python](dataverse-sdk-for-python.md)** | Learn how the Dataverse SDK for Python empowers developers and data scientists to analyze, automate, and innovate with enterprise-grade data. |
 | **[Synchronize data across Dataverse environments using Power Platform](sync-dataverse-data.md)** | Learn how to manage master data across two Dataverse environments using Power Automate cloud flows and Power Platform dataflows. |
 
-### Integrate with external systems
+## Integrate with external systems
 
 | Title | Description |
 | --- | --- |
@@ -54,7 +53,7 @@ Reference architectures are listed by product under the "Power Platform products
 | ?? **[Use REST APIs to extend the functionality of canvas apps](custom-connector-canvas.md)** | When dealing with complex algorithms or with many data sources shifting the logic from the canvas app to a RESTful API can be a good choice to help keep your formulas within your Power Apps canvas application simple while moving more complex functionality server-side. |
 | ?? **[Upload files to SharePoint with metadata from model-driven apps](custom-page-file-upload.md)** | Learn how to use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
 
-### Build canvas and model-driven apps
+## Build canvas and model-driven apps
 
 | Title | Description |
 | --- | --- |
@@ -62,7 +61,7 @@ Reference architectures are listed by product under the "Power Platform products
 | **[Use SQL Server with canvas apps​](sqlserver-canvas-app.md)** | Learn how to build and publish an enterprise-grade canvas app using SQL Server as a data source. |
 | **[Optimize the performance of canvas apps that require complex business logic](optimize-performance-canvas-apps.md)** | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
 
-### Automate business processes
+## Automate business processes
 
 | Title | Description |
 | --- | --- |
@@ -70,7 +69,7 @@ Reference architectures are listed by product under the "Power Platform products
 | **[Implement a scalable notification system with Power Platform](scalable-notification-system.md)** | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
 | **[Automate service order lifecycle and SLA governance with Power Platform](service-order-process.md)** | Learn how to design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |
 
-### Secure, govern, and manage
+## Secure, govern, and manage
 
 | Title | Description |
 | --- | --- |
