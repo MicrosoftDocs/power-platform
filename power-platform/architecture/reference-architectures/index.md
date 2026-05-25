@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 05/22/2026
+ms.date: 05/25/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -50,16 +50,16 @@ Browse reference architectures categorized by common design decisions. Each refe
 | **[Integrate legacy data with Power Automate and SharePoint](../reference-architectures/app-legacy-data-integration.md)** | Streamline the process of integrating legacy data with modern platforms. |
 | **[Integrate Power Platform with SAP](arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
 | **[​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables](app-integrate-lakehouse.md)** | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
-| ?? **[Use REST APIs to extend the functionality of canvas apps](custom-connector-canvas.md)** | When dealing with complex algorithms or with many data sources shifting the logic from the canvas app to a RESTful API can be a good choice to help keep your formulas within your Power Apps canvas application simple while moving more complex functionality server-side. |
-| ?? **[Upload files to SharePoint with metadata from model-driven apps](custom-page-file-upload.md)** | Learn how to use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
 
-## Build canvas and model-driven apps
+## Build and extend apps
 
 | Title | Description |
 | --- | --- |
-| ?? **[Use Dataverse as a data source for canvas apps​](dataverse-canvas-app.md)** | Creating a Power Apps application that uses Dataverse as a data source can enable building a more custom user experience. |
+| **[Use Dataverse as a data source for canvas apps​](dataverse-canvas-app.md)** | Creating a Power Apps application that uses Dataverse as a data source can enable building a more custom user experience. |
 | **[Use SQL Server with canvas apps​](sqlserver-canvas-app.md)** | Learn how to build and publish an enterprise-grade canvas app using SQL Server as a data source. |
 | **[Optimize the performance of canvas apps that require complex business logic](optimize-performance-canvas-apps.md)** | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
+| **[Use REST APIs to extend the functionality of canvas apps](custom-connector-canvas.md)** | When dealing with complex algorithms or with many data sources shifting the logic from the canvas app to a RESTful API can be a good choice to help keep your formulas within your Power Apps canvas application simple while moving more complex functionality server-side. |
+| **[Upload files to SharePoint with metadata from model-driven apps](custom-page-file-upload.md)** | Learn how to use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
 
 ## Automate business processes
 

@@ -101,11 +101,7 @@
               href: reference-architectures/arch-pattern-sap.md
             - name: ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
               href: reference-architectures/app-integrate-lakehouse.md
-            - name: Use REST APIs to extend functionality of canvas apps
-              href: reference-architectures/custom-connector-canvas.md
-            - name: Upload files to SharePoint with metadata from model‑driven apps
-              href: reference-architectures/custom-page-file-upload.md
-        - name: Build canvas and model-driven apps
+        - name: Build and extend apps
           items:
             - name: Use Dataverse as a data source for canvas apps
               href: reference-architectures/dataverse-canvas-app.md
@@ -113,6 +109,10 @@
               href: reference-architectures/sqlserver-canvas-app.md
             - name: Optimize performance of canvas apps requiring complex logic
               href: reference-architectures/optimize-performance-canvas-apps.md
+            - name: Use REST APIs to extend functionality of canvas apps
+              href: reference-architectures/custom-connector-canvas.md
+            - name: Upload files to SharePoint with metadata from model‑driven apps
+              href: reference-architectures/custom-page-file-upload.md
         - name: Automate business processes
           items:
             - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
