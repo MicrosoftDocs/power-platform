@@ -18,7 +18,7 @@ Power Platform inventory gives tenant administrators a unified view of all agent
 
 By using Power Platform inventory, you can easily complete the following tasks:
 
-- **Map connector usage (preview)**: Find which apps, flows, and agents use a given connector or operation, so a deprecation, security issue, or licensing change becomes a query, not a project.
+- **Map connector usage (preview)**: Find which apps, flows, and agents use a given connector or operation. Use this to scope DLP, audit Premium connector adoption, and plan ahead of deprecations, security issues, or licensing changes.
 
 - **Spot your champions**: Quickly identify who's creating the most resources so you can recognize, nurture, and empower your top innovators.
 
