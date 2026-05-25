@@ -69,49 +69,6 @@ PowerPlatformResources
 | order by resourceCount desc
 ```
 
-## Field discovery
-
-### Discover available fields for a resource type
-
-The inventory schema evolves over time as new data fields are added. Use this query to see all available fields for a specific resource type. This query is the recommended way to stay up to date with available data.
-
-```Kusto
-// Discover all available fields for Copilot Studio agents
-PowerPlatformResources
-| where type == "microsoft.copilotstudio/agents"
-| take 1
-// Parse the properties bag
-| extend properties = parse_json(properties)
-// Pack the base fields into a bag for expansion
-| extend baseFields = pack("id", id, "location", location, "name", name, "tenantId", tenantId, "type", type)
-| extend key = bag_keys(baseFields)
-| mv-expand key to typeof(string)
-| project FieldName = key, SampleValue = baseFields[key], Source = "base"
-// Union with the extended properties
-| union (
-    PowerPlatformResources
-    | where type == "microsoft.copilotstudio/agents"
-    | take 1
-    | extend properties = parse_json(properties)
-    | extend key = bag_keys(properties)
-    | mv-expand key to typeof(string)
-    | project FieldName = key, SampleValue = properties[key], Source = "properties"
-)
-// Sort base fields first, then properties
-| order by Source asc, FieldName asc
-```
-
-To discover fields for other resource types, replace the `type` filter value. For example:
-
-| Resource type | Type filter value |
-|---------------|-------------------|
-| Copilot Studio agents | `microsoft.copilotstudio/agents` |
-| Power Apps canvas apps | `microsoft.powerapps/canvasapps` |
-| Power Automate cloud flows | `microsoft.powerautomate/cloudflows` |
-
-> [!NOTE]
-> This query requires at least one resource of the specified type to exist in your tenant.
-
 ## Resource lookups
 
 ### Find a single agent in the tenant
