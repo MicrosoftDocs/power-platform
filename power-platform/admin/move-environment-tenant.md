@@ -57,7 +57,7 @@ If you already defined your flows in Dataverse, then no extra work is required.
 Add the definitions of any Power Automate flows that you want to migrate into Dataverse solutions in the source environment. For more information, see [Add an existing cloud flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution). You can run the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution?view=pa-ps-latest&preserve-view=true) cmdlet to add these definitions in bulk.
       
 ### Prepare Power Apps
-Any Power Apps must be manually exported. We don't support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration.
+Any Power Apps must be manually exported. We don't support the migration of custom connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration.
 
 #### For solution-aware apps
 1. For solution-aware apps, go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all apps and solutions. You can export them individually or group them together in a single solution, if they're not already.
