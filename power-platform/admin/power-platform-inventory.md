@@ -122,11 +122,13 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 ## Connector inventory (preview)
 
-Power Platform inventory captures the connectors and connector operations used by each resource. In the Power Platform admin center, this data appears as the **Connectors** column in the inventory grid. The same data is queryable through the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/), the [Power Platform inventory API](inventory-api.md), and [Azure Resource Graph](/azure/governance/resource-graph/overview).
+Power Platform inventory captures the connectors and connector operations used by each resource. In the Power Platform admin center, this data appears as a **Connectors** column across the inventory grids: the unified **Manage > Inventory** page as well as the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate**. The same data is queryable through the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/), the [Power Platform inventory API](inventory-api.md), and [Azure Resource Graph](/azure/governance/resource-graph/overview).
 
 Connector inventory makes common admin workflows query-driven: identifying every resource affected by a deprecated connector, tracking Premium connector adoption for license decisions, scoping DLP policies to actual usage patterns, and reviewing a resource's full connector footprint during troubleshooting.
 
 **Supported resource types**: canvas apps, model-driven apps, cloud flows, agent flows, workflow agent flows, and Copilot Studio agents (including Microsoft 365 Copilot Agent Builder).
+
+For flows, the inventory additionally captures the trigger connector and trigger operation that initiate the flow.
 
 For the data shape and known limitations, see [Connector inventory (preview)](inventory-schema.md#connector-inventory-preview) in the schema reference.
 

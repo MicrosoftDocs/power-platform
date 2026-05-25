@@ -51,9 +51,11 @@ The following fields are available on all resource types in the PowerPlatformRes
 
 ## Connector inventory (preview)
 
-Power Platform inventory captures the connectors and connector operations used by each resource. This data appears in the **Connectors** column of the Power Platform admin center inventory grid and as the `properties.powerPlatformConnectors` array in programmatic queries.
+Power Platform inventory captures the connectors and connector operations used by each resource. This data appears as a **Connectors** column across the Power Platform admin center inventory grids — the unified **Manage > Inventory** page and the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate** — and as the `properties.powerPlatformConnectors` array in programmatic queries.
 
 The following resource types emit connector data: canvas apps, model-driven apps, cloud flows, agent flows, workflow agent flows, and Copilot Studio agents (including Microsoft 365 Copilot Agent Builder).
+
+For flows (cloud flows, agent flows, and workflow agent flows), the inventory additionally captures the connector and operation that initiate the flow as `properties.trigger` and `properties.triggerOperation`. These fields complement `powerPlatformConnectors`, which captures the connectors invoked during flow execution.
 
 ### Schema
 
@@ -176,6 +178,8 @@ For more information, see [App Builder](https://www.microsoft.com/power-platform
 | `properties.lastModifiedBy` | string | The object ID of the user who last modified the flow. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.workflowEntityId` | string | The Dataverse workflow entity ID. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.powerPlatformConnectors` | array | The connectors and operations used by the flow. See [Connector inventory (preview)](#connector-inventory-preview). | See section. | Preview |
+| `properties.trigger` | string | The connector that initiates the flow. Empty when the trigger isn't connector-based (for example, recurrence or manual). | `sharepointonline` | Preview |
+| `properties.triggerOperation` | string | The operation that initiates the flow. | `GetOnNewItems` | Preview |
 
 ## Agent flows
 
@@ -187,6 +191,8 @@ For more information, see [App Builder](https://www.microsoft.com/power-platform
 | `properties.lastModifiedBy` | string | The object ID of the user who last modified the flow. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.workflowEntityId` | string | The Dataverse workflow entity ID. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.powerPlatformConnectors` | array | The connectors and operations used by the flow. See [Connector inventory (preview)](#connector-inventory-preview). | See section. | Preview |
+| `properties.trigger` | string | The connector that initiates the flow. Empty when the trigger isn't connector-based (for example, recurrence or manual). | `sharepointonline` | Preview |
+| `properties.triggerOperation` | string | The operation that initiates the flow. | `GetOnNewItems` | Preview |
 
 ## Workflow agent flows
 
@@ -198,6 +204,8 @@ For more information, see [App Builder](https://www.microsoft.com/power-platform
 | `properties.lastModifiedBy` | string | The object ID of the user who last modified the flow. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.workflowEntityId` | string | The Dataverse workflow entity ID. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.powerPlatformConnectors` | array | The connectors and operations used by the flow. See [Connector inventory (preview)](#connector-inventory-preview). | See section. | Preview |
+| `properties.trigger` | string | The connector that initiates the flow. Empty when the trigger isn't connector-based (for example, recurrence or manual). | `sharepointonline` | Preview |
+| `properties.triggerOperation` | string | The operation that initiates the flow. | `GetOnNewItems` | Preview |
 
 ## Copilot Studio agents
 
