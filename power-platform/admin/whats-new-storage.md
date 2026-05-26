@@ -1,13 +1,13 @@
 ---
 title: Dataverse capacity-based storage overview
 description: Learn about enhancements for Dataverse capacity-based storage that affect administrators.
-author: ianceicys-msft
+author: rijoshi1
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 5/12/2026
+ms.date: 5/26/2026
 ms.subservice: admin
-ms.author: ashi
-ms.reviewer: ellenwehrle
+ms.author: rijoshi
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
