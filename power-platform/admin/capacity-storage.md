@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 05/12/2026
+ms.date: 05/26/2026
 ms.topic: concept-article
 author: amiyapatr 
 ms.subservice: admin
@@ -326,27 +326,24 @@ Your organization must have the right licenses for the storage you use:
 - If you use more than your documented entitlements or usage limits, you must buy more licenses.
 - If your storage consumption exceeds the documented entitlements or usage limits, Microsoft might suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
   
-### **Banner Notifications**
+### Banner notifications
 
-Additionally, a notification banner appears in **Dataverse Only** tenants in the **Power Platform admin center, Power Apps, Power Automate, Power Pages, and D365 apps** when any of the three storage capacities (database, file, or log) has less than 15% remaining or exceeds the allocated capacity ([Storage overage example scenarios](https://github.com/MicrosoftDocs/power-platform-pr/edit/main/power-platform/admin/capacity-storage.md#example-storage-capacity-scenarios-and-overage-enforcement)). The banner remains visible as long as it is not dismissed and the tenant continues to meet the banner visibility criteria. If a user dismisses the banner and the tenant's remaining storage capacity is still below 15%, the banner will reappear after 7 days. These banner notifications are visible to tenant admins and system admins.
+A notification banner appears in **Dataverse only** tenants in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and Dynamics 365 apps when any of the three storage capacities (database, file, or log) has less than 15 percent remaining or exceeds the allocated capacity. For more infromation, see [Example storage capacity scenarios and overage enforcement](#example-storage-capacity-scenarios-and-overage-enforcement). The banner remains visible as long as it's not dismissed and the tenant continues to meet the banner visibility criteria. If a user dismisses the banner and the tenant's remaining storage capacity is still below 15 percent, the banner reappears after 7 days. These banner notifications are visible to [tenant admins](#for-tenant-admins) and [system admins](#for-system-admins).
 
-**For Tenant Admins:**
+#### For tenant admins
 
-  The banner displays two call-to-action buttons:
+The banner displays two call-to-action buttons:
 
-   - Buy more capacity — Takes you directly to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?LinkId=2364302) where you can purchase additional storage capacity.[Learn how to add more Dataverse capacity to your tenant](https://learn.microsoft.com/en-us/power-platform/admin/add-storage). 
-   - Manage capacity — Takes you to the [Licensing page in the Power Platform admin center](https://go.microsoft.com/fwlink/?LinkId=2364104) where you can view capacity consumption by type (database, log, file) and by environment. From there, you can:
-      - Request a [capacity extension](https://learn.microsoft.com/en-us/power-platform/admin/extend-capacity)
-      - [Set up a Pay-as-you-go plan](https://learn.microsoft.com/en-us/power-platform/admin/pay-as-you-go-set-up) to be billed automatically through Azure
-      - [Free up storage](https://learn.microsoft.com/en-us/power-platform/admin/free-storage-space) from environments
-      - [Delete enviornments](https://learn.microsoft.com/en-us/power-platform/admin/delete-environment) to recover storage.
+- **Buy more capacity**: Takes you directly to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?LinkId=2364302) where you can purchase additional storage capacity. [Learn how to add more Dataverse capacity to your tenant](add-storage.md). 
+- **Manage capacity**: Takes you to the [Licensing page in the Power Platform admin center](https://go.microsoft.com/fwlink/?LinkId=2364104) where you can view capacity consumption by type (database, log, file) and by environment. From there, you can:
+    - Request a [capacity extension](extend-capacity.md).
+    - [Set up a pay-as-you-go plan](pay-as-you-go-set-up.md) to be billed automatically through Azure.
+    - [Free up storage](https://learn.microsoft.com/en-us/power-platform/admin/free-storage-space) for environments.
+    - [Delete enviornments](delete-environment.md) to recover storage.
 
- **For System Admins:**
+ #### For system admins
 
-  The banner displays one call-to-action button:
-
-   - Manage environment — Takes you to your [environments in Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments) where you can free up storage to optimize capacity usage. If freeing up storage does not resolve your capacity concerns, reach out to your IT department or tenant admin to purchase additional storage. [Learn to free up storage](https://learn.microsoft.com/en-us/power-platform/admin/free-storage-space) from enviornments.
-
+The banner displays one call-to-action button: **Manage environment**, which takes you to your [environments in Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments) where you can free up storage to optimize capacity usage. If freeing up storage doesn't resolve your capacity concerns, reach out to your IT department or tenant admin to purchase additional storage. [Learn to free up storage space](free-storage-space) for enviornments.
 
 ## Example storage capacity scenarios and overage enforcement
 
