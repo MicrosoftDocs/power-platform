@@ -31,14 +31,15 @@ IP-based cookie binding is available only for [Managed Environments](managed-env
      
 1.  Select **Save**.
 
-## Check cookie binding status on an environment 
+## Turn on cookie binding for an environment 
 
-1. To check whether cookie binding is enabled for an environment or not, go to privacy + Security  
-   Sign in to Power Platform admin center. 
-2. Select Manage > Environments > Settings > Privacy + Security. 
-3. Under IP address settings > select Enable IP address-based cookie binding and toggle it to ON. 
-4. If cookie binding is already enabled, you can check the flag here. it will show as enabled.
-   Cookie binding can also be enabled from here. 
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as an administrator.
+1. In the navigation pane, select **Manage**.
+1. In the **Manage** pane, select **Environments**.
+1. On the **Environments** page, select an environment.
+1. Select **Settings** in the command bar. The **Settings** page is displayed.
+1. Select **Product** > **Privacy + Security**.
+1. Find the **IP address settings** heading. Turn the **Enable IP address-based cookie binding** option **On**.
 
 ## How cookie binding uses your IP address to work
 
