@@ -1,11 +1,11 @@
 ---
 title: Safeguarding Dataverse sessions with IP cookie binding
 description: Discover methods for using IP-based cookie binding to stop cookie replay, ensuring secure sessions in Dataverse against unauthorized access by internet service providers.
-ms.date: 11/20/2025
+ms.date: 05/26/2025
 ms.topic: how-to
-author: ritesp
+author: shpradha
 ms.reviewer: sericks
-ms.author: ritesp
+ms.author: shpradha
 ms.subservice: admin
 search.audienceType: 
   - admin
