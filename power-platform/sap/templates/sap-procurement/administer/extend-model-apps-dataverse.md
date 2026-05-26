@@ -5,17 +5,12 @@ author: tverhasselt
 ms.author: thoverh
 contributors:
   - EllenWehrle
-  - robinsonshields
-  - microsoft-george
-  - jongilman88
   - galitskyd
   - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/06/2023
+ms.date: 05/19/2023
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates

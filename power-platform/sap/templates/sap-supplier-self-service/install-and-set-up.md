@@ -7,7 +7,7 @@ contributor:
 ms.author: sandhan
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/27/2025
+ms.date: 05/20/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.service: power-platform
@@ -23,7 +23,7 @@ The SAP solutions are enterprise-ready and require a [centralized team](/power-p
 
 ## Prerequisites
 
-Before you install and set up the SAP Supplier Self Service template, you need to ensure that SAP is integrated with Power Platform and that the SAP Procurement template is installed and set up in its own environment.
+Before you install and set up the SAP Supplier Self Service template, ensure that SAP is integrated with Power Platform and that the SAP Procurement template is installed and set up in its own environment.
 
 Take these steps to integrate SAP with Power Platform:
 
@@ -37,8 +37,8 @@ Take these steps to install and set up the SAP Procurement template:
 - [Install and set up the SAP Procurement solution](/power-platform/enterprise-templates/finance/sap-procurement/administer/install).
 - [Configure environment variables](/power-platform/enterprise-templates/finance/sap-procurement/administer/configure-environment-variables).
 - [Set up connections for SAP and Dataverse](/power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-connections).
-- [Set up SAP List of Values](/power-platform/enterprise-templates/finance/sap-procurement/administer/apply-seed-data#apply-saps-list-of-values). The SAP *List of Values* must be populated, otherwise the SAP Procurement and SAP Supplier Self Service solutions will not work properly.
-- Enable Javascript (JS) files as attachments in your environment. Follow steps for [**Setting blocked file extensions for attachments**](/dynamics365/customer-service/administer/enable-file-attachments#configure-file-size-limit-and-file-extensions) to ensure Supplier Self Service Portal solutions do not fail during import.
+- [Set up SAP List of Values](/power-platform/enterprise-templates/finance/sap-procurement/administer/apply-seed-data#apply-saps-list-of-values). The SAP *List of Values* must be populated, otherwise the SAP Procurement and SAP Supplier Self Service solutions don't work properly.
+- Enable JavaScript (JS) files as attachments in your environment. Follow steps for [**Setting blocked file extensions for attachments**](/dynamics365/customer-service/administer/enable-file-attachments#configure-file-size-limit-and-file-extensions) to ensure Supplier Self Service Portal solutions don't fail during import.
 
 ### More information
 
@@ -52,7 +52,7 @@ This section provides links to the SAP Supplier Self Service solution files and 
 
 You have the option to download either *managed* or *unmanaged* solution files.
 
-Whichever option you choose, be sure to download both **SAP Supplier Self Service** and **SAP Supplier Self Service Portal** solution files and then install **SAP Supplier Self Service** first.
+Whichever option you choose, be sure to download both **SAP Supplier Self Service** and **SAP Supplier Self Service Portal** solution files. Then, install **SAP Supplier Self Service** first.
 
 - Managed
   - [mpa_supplier_self_service_managed](https://aka.ms/mpa_supplier_self_service_managed)
@@ -61,34 +61,34 @@ Whichever option you choose, be sure to download both **SAP Supplier Self Servic
   - [mpa_supplier_self_service_unmanaged](https://aka.ms/mpa_supplier_self_service_unmanaged)
   - [SupplierSelfServicePortal_unmanaged](https://aka.ms/SupplierSelfServicePortal_unmanaged)
 
-Once you install both solutions, select **Publish all customizations**. Be sure to [set up connections for SAP and Dataverse](/power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-connections).
+After you install both solutions, select **Publish all customizations**. Be sure to [set up connections for SAP and Dataverse](/power-platform/enterprise-templates/finance/sap-procurement/administer/set-up-connections).
 
 > [!NOTE]
 > For the connector setup, use an SAP service-user account that is supported with the appropriate SAP licenses and permissions. All interactions corresponding to the operations done on the supplier website are done under this service-user context.
 
 > [!TIP]
 >
-> Go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site to log your questions or issues and get support for the SAP Procurement template.
+> To log your questions or issues and get support for the SAP Procurement template, go to the [Templates-for-Power-Platform](https://aka.ms/PowerPlatformTemplateSupport) GitHub project site.
 
-More information: [Managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions)
+For more information, see [Managed and unmanaged solutions](/power-platform/alm/solution-concepts-alm#managed-and-unmanaged-solutions).
 
 ## Activate the Supplier Self Service site
 
-Once you have successfully installed the SAP Supplier template, take these steps to set up the SAP Supplier Self Service solution in the same environment as SAP Procurement:
+After you install the SAP Supplier template, set up the SAP Supplier Self Service solution in the same environment as SAP Procurement:
 
 1. Open [Power Pages design studio](https://make.powerpages.microsoft.com) and select the appropriate environment.
 1. Go to **Inactive** sites.
 1. Reactivate **Supplier Self Service** site.
-1. Choose desired URL for the site and wait for the activation phase to complete.
+1. Choose the URL for the site and wait for the activation phase to complete.
 
 ## Activate and configure cloud flow steps
 
-Take these steps to ensure that flows are turned on and added to the site.
+Follow these steps to ensure that flows are turned on and added to the site.
 
-1. Go to [**Power Automate**](https://make.powerautomate.com/) and open solution **Supplier Self Service** and ensure all the flows are turned on.
+1. Go to [**Power Automate**](https://make.powerautomate.com/) and open solution **Supplier Self Service**. Make sure all the flows are turned on.
 1. Go to [**Power Pages design studio**](/power-pages/configure/design-build-overview) > **Setup**.
     1. Remove any flows that already appear to be added to the site.
-    2. Add these Power Automate flows to your *Supplier Self Service* site:
+    1. Add these Power Automate flows to your *Supplier Self Service* site:
         - **Power Pages CreateVendorInvoice**
         - **Power Pages ReadPurchaseOrder**
         - **Power Pages ReadPurchaseOrderList**

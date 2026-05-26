@@ -500,14 +500,10 @@
                   items:
                     - name: About data encryption
                       href: about-encryption.md
-                    - name: Manage the encryption key
-                      href: manage-encryption-key.md
                     - name: Manage your customer-managed encryption key
                       href: customer-managed-key.md
                     - name: Lock and unlock environments
                       href: cmk-lock-unlock.md
-                    - name: Migrate BYOK environments
-                      href: cmk-migrate-from-byok.md
                     - name: Encrypt column-level data
                       href: data-encryption.md
                 - name: Advanced connector policies (preview)

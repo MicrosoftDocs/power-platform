@@ -5,34 +5,31 @@ author: tverhasselt
 ms.author: thoverh
 contributors:
   - EllenWehrle
-  - jongilman88
   - galitskyd
   - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/27/2024
+ms.date: 05/19/2026
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
 ---
 
-# How cloud flows are developed and used
+# How to develop and use cloud flows
 
 Microsoft Power Platform integrates with SAP through a portfolio of preconfigured cloud flows that orchestrate a series of transformations and use the [SAP ERP (enterprise resource planning) connector](/connectors/saperp/).
 
-Each SAP object managed from a canvas app is mapped to a series of _search_, _create_, _read_, and _update_ flows. As an example, four cloud flows exist for vendor object:
+Each SAP object that you manage from a canvas app maps to a series of _search_, _create_, _read_, and _update_ flows. For example, the vendor object has four cloud flows:
 
-- **ReadVendor**: Read a single vendor based upon vendor number and key related information.
-- **ReadVendorList**: Search for a list of vendors based upon search criteria passed.
-- **CreateVendor**: Create a new vendor object with key-related information.
-- **UpdateVendor**: Update an existing vendor object and key-related information.
+- **ReadVendor**: Reads a single vendor based on the vendor number and key related information.
+- **ReadVendorList**: Searches for a list of vendors based on search criteria you provide.
+- **CreateVendor**: Creates a new vendor object with key-related information.
+- **UpdateVendor**: Updates an existing vendor object and key-related information.
 
 ## Extend cloud flows
 
-You can extend cloud flows according to your local business requirements. With the help of your SAP business analyst, you can add and map new fields to the SAP ERP connector and go back and forth to the apps through the JSON payloads.
+You can extend cloud flows to meet your local business requirements. With the help of your SAP business analyst, you can add and map new fields to the SAP ERP connector and go back and forth to the apps through the JSON payloads.
 
 Creating a new purchase requisition offers a typical transaction scenario between canvas apps, cloud flows, and SAP:
 
@@ -65,7 +62,7 @@ Creating a new purchase requisition offers a typical transaction scenario betwee
        );
    ~~~
 
-1. The app invokes the embedded _CreateRequisition_ flow using the _Run_ function and passing in the previously constructed JSON string.
+1. The app invokes the embedded _CreateRequisition_ flow by using the _Run_ function and passes in the previously constructed JSON string.
 
    ~~~power-fx
            Set(
@@ -75,9 +72,9 @@ Creating a new purchase requisition offers a typical transaction scenario betwee
    ~~~
 
 1. The _CreateRequisition_ flow receives the JSON string from the app via the _PowerApps(V2)_ trigger and uses a _Parse JSON_ action to decompose it.
-1. _Variables_ are set using the JSON information to allow for easier mapping into the SAP ERP connector calls.
-1. An SAP session is created using the [SAP ERP connector](/connectors/saperp/) and the business application programming interface (BAPI) calls are made using the parsed requisition JSON information stored in variables.
-1. SAP-generated errors are assessed and either a successful or error _HTTP Response_ is returned to the canvas app using a JSON payload.
+1. Set _Variables_ by using the JSON information to make it easier to map into the SAP ERP connector calls.
+1. Create an SAP session by using the [SAP ERP connector](/connectors/saperp/) and make the business application programming interface (BAPI) calls by using the parsed requisition JSON information stored in variables.
+1. Assess SAP-generated errors and return either a successful or error _HTTP Response_ to the canvas app by using a JSON payload.
 1. The canvas app uses the response information, specifically the _Status_ field, to notify the end user of success or failure and to determine the next processing steps.
 
 ~~~power-fx
@@ -108,11 +105,11 @@ More information:
 - [Get started with Power Automate](/power-automate/getting-started)
 - [Overview of cloud flows](/power-automate/overview-cloud)
 
-### Support multi-language deployments
+### Support mult-language deployments
 
-By default, the [SAP ERP connector](/connectors/saperp/) invokes the user's browser language to interact with SAP so the corresponding SAP language pack must be installed.
+By default, the [SAP ERP connector](/connectors/saperp/) uses the user's browser language to interact with SAP, so you need to install the corresponding SAP language pack.
 
-However, if you need to support multi-language and global deployments, you can override the user's browser language and default to a certain language. For example, a Power Apps user in Spain who has their browser language set to Spanish may need to interact with an SAP system that only has the English (EN) language pack installed. In this case, pass the two letter _**EN**_ _ISO 639-1_ code as part of the _Language_ property within the SAP connection string to avoid errors.
+However, if you need to support mult-language and global deployments, you can override the user's browser language and default to a certain language. For example, a Power Apps user in Spain who sets their browser language to Spanish might need to interact with an SAP system that only has the English (EN) language pack installed. In this case, pass the two-letter _**EN**_ _ISO 639-1_ code as part of the _Language_ property within the SAP connection string to avoid errors.
 
 > [!TIP]
 >
@@ -126,9 +123,9 @@ Each flow is designed with a _Try/Catch_ pair of scope operations. Inside the _T
 
 This error message is displayed in the _ErrorTable_ step of the _Catch_ operation, along with all errors generated during that run of the flow.
 
-All erroneous flows are recorded in the _SAP solution template error_ table. Each flow error shows the first error message generated by the flow along with other information.
+The _SAP solution template error_ table records all erroneous flows. Each flow error shows the first error message generated by the flow along with other information.
 
-Go to the _SAP Administrator_ app as described in the [Monitor errors](monitor-errors.md) article to see the errors displayed.
+To see the errors, go to the _SAP Administrator_ app as described in the [Monitor errors](monitor-errors.md) article.
 
 ### Next step
 
