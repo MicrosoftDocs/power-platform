@@ -33,8 +33,7 @@ The core components solution is required for the nurture components solution to 
 
 ## Set up Video hub components
 
-> [!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise the issues on GitHub](https://aka.ms/coe-starter-kit-issues) and [set up the inventory components manually](#set-up-the-video-hub-components-manually).
+You can set up the Video hub components using the Setup Wizard or manually.
 
 ### Set up the Video hub components using the Setup Wizard
 
@@ -144,8 +143,7 @@ Users of the **Video hub** canvas app create comments. Comments are moderated an
 
 ## Set up Training in a Day components
 
-> [!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise the issues on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the components [manually](#set-up-training-in-a-day-components-manually).
+You can set up Training in a Day components using the Setup Wizard or manually.
 
 ### Set up Training in a Day components using the Setup Wizard
 
@@ -199,8 +197,7 @@ Learn more: [Share an app from a production environment](faq.md#share-an-app-fro
 
 ## Set up Maker Assessment components
 
->[!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise the issues on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the components [manually](#set-up-maker-assessment-components-manually).
+You can set up the Maker Assessment components using the Setup Wizard or manually.
 
 ### Set up Maker Assessment components using the Setup Wizard
 
@@ -245,8 +242,7 @@ Learn more: [Share an app from a production environment](faq.md#share-an-app-fro
 >[!IMPORTANT]
 >The flows supporting this component processes post adaptive cards to users using the [Microsoft Teams](/connectors/teams/) connector. The ability to post adaptive cards in Teams isn't available in GCC, GCC High and DoD. These flows should remain turned off in these regions.
 
->[!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise the issues on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the components [manually](#set-up-pulse-feedback-survey-manually).
+You can set up the Pulse feedback survey using the Setup Wizard or manually.
 
 ### Set up Pulse feedback survey using the Setup Wizard
 
@@ -286,8 +282,7 @@ You can find the report later by going to [app.powerbi.com](https://app.powerbi.
 
 ## Set up template catalog components
 
->[!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise the issues on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the components manually.
+You can set up the Template catalog components using the Setup Wizard or manually.
 
 ### Set up Template catalog components using the Setup Wizard
 
@@ -341,4 +336,3 @@ Environment variables are used to store application and flow configuration data 
 | **Video hub** - Enable Comments | Enable or disable end users to leave comments on videos published via the **Video hub** app. Disabled by default. | No |
 | **Video hub** - Related Videos | Enable or disable showing related videos in the **Video hub**. Enabled by default. | Yes |
 
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

@@ -159,10 +159,6 @@ After you remove unmanaged layers, import the new solution version:
  
    :::image type="content" source="/power-platform/guidance/coe/media/coe-upgrade2.png" alt-text="Screenshot showing how to check that the end time for the solution import is not empty." lightbox="/power-platform/guidance/coe/media/coe-upgrade2.png":::
     
-1. If the [solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) indicates that the upgrade failed,  [raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
- 
-   :::image type="content" source="/power-platform/guidance/coe/media/coe-upgrade4.png" alt-text="Screenshot showing how to view solution operation error details." lightbox="/power-platform/guidance/coe/media/coe-upgrade4.png":::
- 
 1. After the solution import succeeds, open the **Center of Excellence - Core Components** solution.
 
 1. Open the **CoE Setup and Upgrade Wizard**.

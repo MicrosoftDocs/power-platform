@@ -104,7 +104,3 @@ You can store the client secret in plain text in the **Audit Logs - Client Secre
 1. Open the **Center of Excellence – Core Components** solution.
 1. Turn on the **Admin | Audit Logs | Update Data (V2)** flow. This flow updates the Power Apps table with information about the last launch. It also adds metadata to the audit log records.
 1. Turn on the **Admin | Audit Logs | Sync Audit Logs (V2)** flow. This flow runs on an hourly schedule and collects audit log events into the audit log table.
-
-## Provide feedback
-
-If you find a bug with the CoE Starter Kit, file a bug against the solution at [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).

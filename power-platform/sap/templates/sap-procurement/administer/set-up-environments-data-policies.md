@@ -1,21 +1,16 @@
 ---
 title: Set up environments and data policies
 description: Learn best practices for setting up environments and data policies to support the deployment of the SAP Procurement solutions.
-author: jongilman88
-ms.author: jongilman
+author: microsoft-dustin
+ms.author: drasener
 contributors:
   - EllenWehrle
-  - robinsonshields
-  - microsoft-george
-  - tverhasselt
+  - thoverh
   - galitskyd
-  - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
+ms.date: 05/19/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 06/13/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -25,7 +20,7 @@ ms.subservice: solution-templates
 
 A cohesive environment strategy supported by data policies enables your organization to protect your existing digital assets and securely deploy solutions.
 
-This article will help you and your team get started with:
+This article helps you and your team get started with:
 
 - Developing best-practice processes.
 - Establishing an environment strategy that supports application lifecycle management (ALM).
@@ -40,7 +35,7 @@ First, make certain that members of your team are assigned admin roles:
 - Microsoft Power Platform System admin
 - Dynamics 365 Global admin
 
-As an admin, please review [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation). You can also review [Use service admin roles to manage your tenant](/power-platform/admin/use-service-admin-role-manage-tenant), [Management and monitoring](/power-platform/admin/wp-management-monitoring), and [Working with the admin portals](/power-platform/admin/wp-work-with-admin-portals) to gain more insight on how your organization can best secure and manage an SAP + Power Platform deployment.
+As an admin, review [Administer Microsoft Power Platform](/power-platform/admin/admin-documentation). You can also review [Use service admin roles to manage your tenant](/power-platform/admin/use-service-admin-role-manage-tenant), [Management and monitoring](/power-platform/admin/wp-management-monitoring), and [Working with the admin portals](/power-platform/admin/wp-work-with-admin-portals) to gain more insight on how your organization can best secure and manage an SAP + Power Platform deployment.
 
 Next, review your organization's current Power Platform administration and governance practices with your team. Identify strengths and opportunities for improvement. This is also a good time to review [Microsoft Power Platform best practices](/power-platform/guidance/adoption/methodology).
 
