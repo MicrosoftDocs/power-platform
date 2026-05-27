@@ -49,7 +49,7 @@ The following table describes each macro region.
 \* Australia and India geographies have tax restrictions and need data residency alignment and accountability for compliance with local tax reporting rules and for auditability within jurisdiction.
 
 > [!NOTE]
-> Sovereign, Gov, Government Community Cloud (GCC), Government Community Cloud - High (GCC-H) aren't supported.
+> Sovereign clouds like the Government Community Cloud (GCC), Government Community Cloud - High (GCC-H), and Department of Defense (DoD) aren't supported.
 
 ## Geo-selection eligibility criteria
 Customers who meet the criteria can select a specific region during environment creation. Qualifying criteria include any one of the following characteristics:
