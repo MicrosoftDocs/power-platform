@@ -90,7 +90,6 @@ Most of these users are hidden from user views but they can be found by using th
 |# Sustainability Service Application|	sustainabiity-service@microsoft.com	| Application identity used by the sustainability microservices to perform operations on data	|Sustainability Service Application Role <br> Sustainability Service Application Role - Data Sync <br> Sustainability Service Application Role - Custom|
 |# sustainability-client|	sustainabiity-client@microsoft.com | Application identity used by sustainability plugins for authorization when invoking backend APIs |Sustainability Data Provider |
 
-
 ## The purpose of the system account?
 
 - The System user is a built-in user account that is used to allow customers to perform system updates via plug-ins.
