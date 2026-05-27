@@ -14,11 +14,11 @@ search.audienceType:
 ---
 # Regions overview 
 
-For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can create an environment in a different region than where your tenant resides. Local environments can provide quicker data access for users in that region. Be sure to read [A multi-environment deployment](multiple-online-environments-tenants.md#a-multi-environment-deployment) to understand the features of multiple environments and learn about [macro regions](https://learn.microsoft.com/en-us/power-platform/admin/new-datacenter-regions#macro-region).  
+For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can create an environment in a different region than where your tenant resides. Local environments can provide quicker data access for users in that region. Be sure to read [A multi-environment deployment](multiple-online-environments-tenants.md#a-multi-environment-deployment) to understand the features of multiple environments and learn about [macro regions](new-datacenter-regions.md#macro-region).  
 
 ## How do I find out where my app is deployed?
 
-Your app is deployed in the region that hosts the environment. If Macro region in enabled for your region, you can learn more about [macro regions](https://learn.microsoft.com/en-us/power-platform/admin/new-datacenter-regions#macro-region). For example, if your environment is created in the European Union (EU) and European Free Trade Association (EFTA), then your app is deployed in Europe data centers. Your data resides within EU and EFTA member states which are European Union Data Boundary (EUDB) regions.
+Your app is deployed in the region that hosts the environment. Learn more about [macro regions](new-datacenter-regions.md#macro-region). For example, if your environment is created in the European Union (EU) and European Free Trade Association (EFTA), then your app is deployed in European data centers. Your data resides within EU and EFTA member states which are European Union Data Boundary (EUDB) regions.
 
 ### Using Power Platform admin center
 If you're an administrator, you can determine the region of each environment in the Power Platform admin center.
