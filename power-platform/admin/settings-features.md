@@ -92,7 +92,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 > -   [Copilot](settings-features.md#copilot-preview)
 > -   [Dataverse Search:Turn on search indexing to support Dataverse intelligence (WorkIQ) in AI and agent experience](settings-features.md#search)
 > -   [Dataverse Search for records in Microsoft 365 apps](settings-features.md#search)
-> -   [Power apps application settings](https://learn.microsoft.com/power-apps/maker/model-driven-apps/add-microsoft-365-copilot#enable-microsoft-365-copilot-in-a-model-driven-app) are enabled. 
+> -   [Power apps application settings](https://learn.microsoft.com/power-apps/maker/model-driven-apps/add-microsoft-365-copilot#enable-microsoft-365-copilot-in-a-model-driven-app) 
 
 ## Dataverse Model Context Protocol
 
