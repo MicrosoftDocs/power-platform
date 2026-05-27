@@ -49,14 +49,14 @@ The following table describes each macro region.
 \* Australia and India geographies have tax restrictions and need data residency alignment and accountability for compliance with local tax reporting rules and for auditability within jurisdiction.
 
 > [!NOTE]
-> Sovereign, Gov, GCC, GCC-H are out of scope 
+> Sovereign, Gov, Government Coummunity Cloud (GCC), Government Community Cloud - High (GCC-H) aren't supported.
 
 ## Geo-selection eligibility criteria
-Customers who meet the criteria can select a specific region (region) during environment creation. Qualifying criteria include any one of the following characteristics:
+Customers who meet the criteria can select a specific region during environment creation. Qualifying criteria include any one of the following characteristics:
 
 -	[Advanced data residency](/microsoft-365/enterprise/advanced-data-residency) is enabled for Microsoft 365 in this tenant.
 -	High-deployment workloads, such as 100 or more paid Dynamics 365 licenses or 1 TB or more of Dataverse storage. 
--	Premium Dynamics 365 workloads, such as Finance Premium or Supply Chain Premium with 20 or more paid licenses.
+-	Premium Dynamics 365 workloads, such as Finance or Supply Chain Management with 20 or more paid licenses.
 -	Premium Power Platform workloads, such as Power Apps or Power Automate with 5,000 or more paid licenses.
 -	Specialized workloads, for example Contact Center. 
 
@@ -70,7 +70,7 @@ As tenants mature and begin to meet one of the geo-selection eligibility criteri
 -	The platform doesn't expand residency guarantees beyond contractual commitments. 
 
 ## Customer experience example
-Assume that a customer selects **Europe and UK** as the macro region. The platform then assigns a geo, such as Germany or Italy, based on capacity and availability. The customer can view the assigned region after provisioning.
+Assume that a customer selects **Europe and UK** as the macro region. The platform then assigns a geography, such as Germany or Italy, based on capacity and availability. The customer can view the assigned region after provisioning.
 
 If the customer requires region selection, such as France, they can qualify for premium criteria or engage with Microsoft support for exception handling. 
 
