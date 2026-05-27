@@ -87,7 +87,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Turn on Dataverse intelligence (Work IQ) for agents and AI experiences | When **On**, allows reusable business context [business skills](/power-apps/maker/data-platform/data-platform-business-skill-overview) to be used by your agents. | Off |
 
 > [!NOTE]
-> The **Allow data availability in Microsoft 365 Copilot** feature has a dependency that the following settings are turned on:
+> To use the **Allow data availability in Microsoft 365 Copilot** feature, the following settings must be turned on:
 > -  [Microsoft 365 admin center: Dataverse data available in Microsoft Copilot settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings)
 > -   [Copilot](settings-features.md#copilot-preview)
 > -   [Dataverse Search:Turn on search indexing to support Dataverse intelligence (WorkIQ) in AI and agent experience](settings-features.md#search)
