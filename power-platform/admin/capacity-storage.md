@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 05/26/2026
+ms.date: 05/27/2026
 ms.topic: concept-article
 author: amiyapatr 
 ms.subservice: admin
@@ -339,7 +339,7 @@ The banner displays two call-to-action buttons:
     - Request a [capacity extension](extend-capacity.md).
     - [Set up a pay-as-you-go plan](pay-as-you-go-set-up.md) to be billed automatically through Azure.
     - [Free up storage](https://learn.microsoft.com/en-us/power-platform/admin/free-storage-space) for environments.
-    - [Delete enviornments](delete-environment.md) to recover storage.
+    - [Delete environments](delete-environment.md) to recover storage.
 
  #### For system admins
 
