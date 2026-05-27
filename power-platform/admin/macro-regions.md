@@ -14,7 +14,7 @@ search.audienceType:
 ---
 
 # Power Platform and Dynamics 365 macro regions
-A macro region represents the data residency boundary that aligns with data residency laws for a given geography. This article lists the regions (georaphies/countries) available in a specific macro region.
+A macro region represents the data residency boundary that aligns with data residency laws for a given geography. This article lists the regions available in a specific macro region.
 
 The macro region enhancement to environment provisioning enables you to select a macro region during environment creation. This feature applies to public cloud only and is being introduced for tenants in the **Canada** region.
 
