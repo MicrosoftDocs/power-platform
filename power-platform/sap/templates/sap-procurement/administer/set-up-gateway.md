@@ -1,21 +1,16 @@
 ---
 title: Set up on-premises data gateway for SAP
 description: Learn how to set up an on-premises data gateway for SAP integration with Microsoft Power Platform.
-author: jongilman88
-ms.author: jongilman
+author: microsoft-dustin
+ms.author: drasener
 contributors:
   - EllenWehrle
-  - tverhasselt
-  - robinsonshields
-  - microsoft-george
+  - thoverh
   - galitskyd
-  - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
+ms.date: 05/19/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/19/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -31,7 +26,7 @@ The on-premises data gateway installation encompasses multiple components instal
 
 > [!NOTE]
 >
-> Each dedicated machine can only have one gateway installed on it. The same gateway can be used in [multiple environments](/power-platform/admin/multiple-online-environments-tenants#a-multi-environment-deployment) as long as the [gateway and environment regions](/power-platform/admin/regions-overview) match.
+> Each dedicated machine can only have one gateway installed on it. You can use the same gateway in [multiple environments](/power-platform/admin/multiple-online-environments-tenants#a-multi-environment-deployment) as long as the [gateway and environment regions](/power-platform/admin/regions-overview) match.
 
 ## Gateway setup steps
 
@@ -64,9 +59,9 @@ The on-premises data gateway installation encompasses multiple components instal
 
 You can [create on-premises data gateway clusters](/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster) to avoid single points of failure when accessing on-premises data resources, but it's important to understand how to configure gateway clusters when working with SAP.
 
-The gateway uses the SAP NCo 3.1 connector and it maintains an internal state of the connection to SAP. For example, if you have _Step A_ in a flow do something in SAP and _Step A_ uses _Gateway 1_ to make that call, then _Gateway 1_ knows about the changes you're trying to make.
+The gateway uses the SAP NCo 3.1 connector and it maintains an internal state of the connection to SAP. For example, if you have _Step A_ in a flow that does something in SAP and _Step A_ uses _Gateway 1_ to make that call, then _Gateway 1_ knows about the changes you're trying to make.
 
-Because the connector maintains an internal state of the connection to SAP, you want all your calls to be forced to the primary gateway in the cluster. A call is only directed to the second gateway when the primary gateway call fails. To support this scenario, **turn off random load balancing**.
+Because the connector maintains an internal state of the connection to SAP, you want all your calls to go to the primary gateway in the cluster. A call goes to the second gateway only when the primary gateway call fails. To support this scenario, **turn off random load balancing**.
 
 ### Turn off random load balancing
 
@@ -77,7 +72,8 @@ As an admin, ensure that an on-premises data gateway cluster set up with the SAP
 Assuming your gateways are already set up, take these steps:
 
 1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/home).
-1. Select **Data** on the left navigation pane.
+1. Select **Manage** in the navigation pane.
+1. In the **Manage** pane, select **Data (preview)** from the Data section.
 1. Select **On-premises data gateways** to see a list of gateways.
 1. Select the gateway cluster set up with the SAP NCo 3.1 connector.
 1. Select [**Settings**](/power-platform/admin/onpremises-data-gateway-management#settings).
@@ -88,7 +84,7 @@ Assuming your gateways are already set up, take these steps:
 >
 > Your role determines what features are available to you and what operations you can perform in the Power Platform admin center.
 >
-> You need to be a Microsoft Entra Global admin, Power BI Service admin, or a Gateway admin to have access to the [gateway management capabilities](/power-platform/admin/onpremises-data-gateway-management) that allow you to manage gateway details, settings, and users in the Power Platform admin center.
+> You need to be a Microsoft Entra Global admin, Power BI Service admin, or a Gateway admin to access the [gateway management capabilities](/power-platform/admin/onpremises-data-gateway-management) that allow you to manage gateway details, settings, and users in the Power Platform admin center.
 
 ## Related content
 
