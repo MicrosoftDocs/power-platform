@@ -338,12 +338,12 @@ The banner displays two call-to-action buttons:
 - **Manage capacity**: Takes you to the [Licensing page in the Power Platform admin center](https://go.microsoft.com/fwlink/?LinkId=2364104) where you can view capacity consumption by type (database, log, file) and by environment. From there, you can:
     - Request a [capacity extension](extend-capacity.md).
     - [Set up a pay-as-you-go plan](pay-as-you-go-set-up.md) to be billed automatically through Azure.
-    - [Free up storage](https://learn.microsoft.com/en-us/power-platform/admin/free-storage-space) for environments.
+    - [Free up storage](free-storage-space.md) for environments.
     - [Delete environments](delete-environment.md) to recover storage.
 
  #### For system admins
 
-The banner displays one call-to-action button: **Manage environment**, which takes you to your [environments in Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments) where you can free up storage to optimize capacity usage. If freeing up storage doesn't resolve your capacity concerns, reach out to your IT department or tenant admin to purchase additional storage. [Learn to free up storage space](free-storage-space) for enviornments.
+The banner displays one call-to-action button: **Manage environment**, which takes you to your [environments in Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments) where you can free up storage to optimize capacity usage. If freeing up storage doesn't resolve your capacity concerns, reach out to your IT department or tenant admin to purchase additional storage. [Learn to free up storage space](free-storage-space.md) for enviornments.
 
 ## Example storage capacity scenarios and overage enforcement
 
