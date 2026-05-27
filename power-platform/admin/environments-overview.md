@@ -27,7 +27,7 @@ A *Power Platform environment* is a space to store, manage, and share your organ
 
 ## Scope of environments
 
-Each environment is created under a Microsoft Entra tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that macro region geography. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location. Learn more about [macro region](https://learn.microsoft.com/en-us/power-platform/admin/new-datacenter-regions#macro-region)
+Each environment is created under a Microsoft Entra tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that macro region geography. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location. Learn more about [macro regions](new-datacenter-regions.md#macro-region).
 
 Every environment can have zero or one Microsoft Dataverse database, which provides storage for your apps and chatbots. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. More information: [Pricing info](pricing-billing-skus.md)
 
