@@ -5,7 +5,7 @@ author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
 ms.collection: get-started
-ms.date: 05/18/2026
+ms.date: 05/27/2026
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -13,11 +13,9 @@ search.audienceType:
 ---
 # Datacenter regions
 
-Microsoft Dynamics 365 and Microsoft Power Platform online services are being hosted in datacenters in more and more regions. After these services become available in a new region, the following apply:  
+Microsoft Dynamics 365 and Microsoft Power Platform online services are being hosted in datacenters in more and more regions. After these services become available in a new region, note that for new organizations, the datacenter is aligned with the macro region you selected during environment creation.    
   
-- For new organizations, the datacenter will be aligned with the macro region you selected during environment creation.    
-  
-For information about datacenter regions for Dynamics 365 and Power Platform, see [Product Availability by Geography](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport). Also, see [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location).  
+For information about datacenter regions for Dynamics 365 and Power Platform, see [Product Availability by Geography](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport) and [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location).  
   
 The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing).
 
