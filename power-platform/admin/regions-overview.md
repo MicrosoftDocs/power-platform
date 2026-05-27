@@ -5,7 +5,7 @@ author: sericks007
 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/30/2025
+ms.date: 05/27/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: sericks
