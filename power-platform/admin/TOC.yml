@@ -1226,6 +1226,8 @@
         - name: Datacenter regions
           href: new-datacenter-regions.md
           items:
+            - name: Power Platform and Dynamics 365 macro regions
+              href: macro-regions.md
             - name: Australia
               href: about-microsoft-cloud-australia.md
             - name: Canada
