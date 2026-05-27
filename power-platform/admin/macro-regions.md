@@ -27,7 +27,7 @@ Using a macro region provides the following capabilities:
 - You still control where your data resides at a regional level, ensuring alignment with business, compliance, and regulatory requirements.
 
 ## Expected changes in your provisioning experience with a macro region 
-- For a new tenant that doesn't yet meet [geo-selection eligibility](#geo-selection-eligibility-criteria) criteria, you only see the macro region&mdash;given that a macro region is supported for their geography&mdash;at the time of new environment creation. You don't see the individual regions.
+- For a new tenant that doesn't yet meet [geo-selection eligibility](#geo-selection-eligibility-criteria) criteria, you only see the macro region&mdash;given that a macro region is supported for their geography&mdash;at the time of _new_ environment creation. You don't see the individual regions. _New_ is associated with creation of the first Power Platform environment for the tenant.
 - Customers see their macro region and region in the environment properties and in the environment list. 
 - A macro region is a continental residency boundary, for example, the European Union Data Boundary (EUDB), while a region represents the country for deployment for clarity. 
 - The system automatically determines the region within that macro region geography by using capacity-based routing, performance, and availability. 
