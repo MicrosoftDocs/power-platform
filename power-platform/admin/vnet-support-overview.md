@@ -120,7 +120,7 @@ After confirming your environment's region, ensure your enterprise policy and Az
 | US Government | usgovtexas, usgovvirginia |
 
 > [!NOTE]
-> Support in the US Government Community Cloud (GCC) is currently only available for environments deployed in GCC High. Support for Department of Defense (DoD) and GCC environments isn't available.
+> Support in the U.S. government cloud environments is currently only available for environments deployed in GCC High or DOD. Support for GCC environments isn't available.
 
 ## Supported services
 
