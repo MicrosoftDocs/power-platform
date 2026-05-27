@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/14/2026
+ms.date: 05/27/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -87,8 +87,12 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Turn on Dataverse intelligence (Work IQ) for agents and AI experiences | When **On**, allows reusable business context [business skills](/power-apps/maker/data-platform/data-platform-business-skill-overview) to be used by your agents. | Off |
 
 > [!NOTE]
-> The **Allow data availability in Microsoft 365 Copilot** feature has a dependency that the [Microsoft 365 admin: Dataverse data available in Microsoft Copilot settings](https://learn.microsoft.com/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings), [Copilot](settings-features.md#copilot-preview), [Dataverse Search:Turn on search indexing to support Dataverse intelligence (WorkIQ) in AI and agent experience](settings-features.md#search), [Dataverse Search for records in Microsoft 365 apps](settings-features.md#search) and [Power apps application settings](https://learn.microsoft.com/power-apps/maker/model-driven-apps/add-microsoft-365-copilot#enable-microsoft-365-copilot-in-a-model-driven-app) are enabled. 
-
+> The **Allow data availability in Microsoft 365 Copilot** feature has a dependency that the following settings are turned on:
+> -  [Microsoft 365 admin center: Dataverse data available in Microsoft Copilot settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings)
+> -   [Copilot](settings-features.md#copilot-preview)
+> -   [Dataverse Search:Turn on search indexing to support Dataverse intelligence (WorkIQ) in AI and agent experience](settings-features.md#search)
+> -   [Dataverse Search for records in Microsoft 365 apps](settings-features.md#search)
+> -   [Power apps application settings](https://learn.microsoft.com/power-apps/maker/model-driven-apps/add-microsoft-365-copilot#enable-microsoft-365-copilot-in-a-model-driven-app) are enabled. 
 
 ## Dataverse Model Context Protocol
 
