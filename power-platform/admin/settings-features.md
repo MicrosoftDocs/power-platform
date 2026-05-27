@@ -88,11 +88,11 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 > [!NOTE]
 > To use the **Allow data availability in Microsoft 365 Copilot** feature, the following settings must be turned on:
-> - [Enable Microsoft 365 admin center Copilot Dataverse settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings)
+> - [Microsoft 365 admin center: Enable Microsoft 365 admin center Copilot Dataverse settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings)
 > - [Copilot](settings-features.md#copilot-preview)
 > - [Dataverse search: Turn on search indexing to support Dataverse intelligence (WorkIQ) in AI and agent experience](settings-features.md#search)
-> - [Dataverse search for records in Microsoft 365 apps](settings-features.md#search)
-> - [Power apps application settings](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot#enable-microsoft-365-copilot-in-a-model-driven-app) 
+> - [Dataverse search: Search for records in Microsoft 365 apps](settings-features.md#search)
+> - [Power Apps: Enable Microsoft 365 Copilot in a model-driven app](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot#enable-microsoft-365-copilot-in-a-model-driven-app) 
 
 ## Dataverse Model Context Protocol
 
