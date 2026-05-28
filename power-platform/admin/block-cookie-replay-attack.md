@@ -1,7 +1,7 @@
 ---
 title: Safeguarding Dataverse sessions with IP cookie binding
 description: Discover methods for using IP-based cookie binding to stop cookie replay, ensuring secure sessions in Dataverse against unauthorized access by internet service providers.
-ms.date: 05/26/2025
+ms.date: 05/8/2026
 ms.topic: how-to
 author: shpradha
 ms.reviewer: sericks
@@ -39,7 +39,9 @@ IP-based cookie binding is available only for [Managed Environments](managed-env
 1. On the **Environments** page, select an environment.
 1. Select **Settings** in the command bar. The **Settings** page is displayed.
 1. Select **Product** > **Privacy + Security**.
-1. Find the **IP address settings** heading. Turn the **Enable IP address-based cookie binding** option **On**.
+1. Find the **IP address settings** heading.
+1. Turn the **Enable IP address-based cookie binding** setting to **On**.
+1. Select **Save** to save your changes.
 
 ## How cookie binding uses your IP address to work
 
