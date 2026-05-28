@@ -182,6 +182,12 @@
                   href: business-continuity-disaster-recovery.md
                 - name: Edit environment properties
                   href: edit-properties-environment.md
+                - name: Use AI models in environments
+                  items:
+                    - name: Preview and experimental AI models
+                      href: preview-experimental-ai-models-rule.md
+                    - name: Allow external models
+                      href: allow-llm-generative-responses.md
                 - name: Administration mode
                   href: admin-mode.md
                 - name: Sandbox environment
@@ -1228,6 +1234,8 @@
         - name: Datacenter regions
           href: new-datacenter-regions.md
           items:
+            - name: Power Platform and Dynamics 365 macro regions
+              href: macro-regions.md
             - name: Australia
               href: about-microsoft-cloud-australia.md
             - name: Canada
