@@ -4,7 +4,7 @@ description: Sample Kusto Query Language (KQL) queries you can run against Power
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 05/25/2026
+ms.date: 05/28/2026
 ms.topic: concept-article
 ---
 
@@ -17,11 +17,8 @@ The following sample queries run against the **PowerPlatformResources** table in
 You can run any of these queries from the Azure Resource Graph interfaces. For step-by-step instructions, see the following quickstart guides:
 
 - [Run Resource Graph query using Azure portal](/azure/governance/resource-graph/first-query-portal)
-
 - [Run Resource Graph query using Azure CLI](/azure/governance/resource-graph/first-query-azurecli)
-
 - [Run Resource Graph query using Azure PowerShell](/azure/governance/resource-graph/first-query-powershell)
-
 - [Run Azure Resource Graph query using REST API](/azure/governance/resource-graph/first-query-rest-api?tabs=powershell)
 
 ## Counts and distribution
@@ -136,9 +133,9 @@ PowerPlatformResources
 | order by connectorCount asc
 ```
 
-### Find all resources using a specific connector
+### Find all resources that use a specific connector
 
-Replace `shared_sharepointonline` with the connector you want to search for. Useful for impact analysis when a connector has a known issue, is being deprecated, or requires new licensing.
+Replace `shared_sharepointonline` with the connector you want to search for. This query is useful for impact analysis when a connector has a known issue, is being deprecated, or requires new licensing.
 
 ```Kusto
 PowerPlatformResources
@@ -161,7 +158,7 @@ PowerPlatformResources
 
 ### Connector usage by environment
 
-Lists every connector used in every environment, with the count of distinct resources using it. Useful for understanding adoption patterns and informing DLP policy decisions.
+Lists every connector used in every environment, with the count of distinct resources that use it. This list is useful for understanding adoption patterns and informing DLP policy decisions.
 
 ```Kusto
 PowerPlatformResources

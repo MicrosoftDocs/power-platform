@@ -4,7 +4,7 @@ description: Learn about the resource types and fields available in Power Platfo
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 05/25/2026
+ms.date: 05/28/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 
@@ -18,7 +18,7 @@ For information about querying the table programmatically, see [Power Platform i
 
 ## Resource types
 
-Every record in the PowerPlatformResources table has a **type** field that identifies the resource type. The following table lists all supported types.
+Every record in the `PowerPlatformResources` table has a **type** field that identifies the resource type. The following table lists all supported types.
 
 | Display name | `type` value |
 |---|---|
@@ -35,7 +35,7 @@ Every record in the PowerPlatformResources table has a **type** field that ident
 
 ## Shared resource fields
 
-The following fields are available on all resource types in the PowerPlatformResources table.
+All resource types in the PowerPlatformResources table include the following fields.
 
 | User experience name | API field path | Data type | Description | Example | Status |
 |---|---|---|---|---|---|
@@ -51,7 +51,7 @@ The following fields are available on all resource types in the PowerPlatformRes
 
 ## Connector inventory (preview)
 
-Power Platform inventory captures the connectors and connector operations used by each resource. This data appears as a **Connectors** column across the Power Platform admin center inventory grids — the unified **Manage > Inventory** page and the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate** — and as the `properties.powerPlatformConnectors` array in programmatic queries.
+Power Platform inventory captures the connectors and connector operations used by each resource. This data appears as a **Connectors** column across the Power Platform admin center inventory grids. The unified **Manage > Inventory** page and the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate**, and as the `properties.powerPlatformConnectors` array in programmatic queries.
 
 The following resource types emit connector data: canvas apps, model-driven apps, cloud flows, agent flows, workflow agent flows, and Copilot Studio agents (including Microsoft 365 Copilot Agent Builder).
 
