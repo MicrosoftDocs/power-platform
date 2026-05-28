@@ -3,7 +3,7 @@ title: Preview and experimental AI models
 description: Learn how to use a new environment group rule about AI models.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/19/2026
+ms.date: 08/25/2025
 author: jekom1
 ms.author: jelenak
 ms.reviewer: sericks
