@@ -3,7 +3,7 @@ title: "Authentication Overview for Power Platform Playwright Samples"
 description: "Learn how Power Platform Playwright samples manage authentication across Power Apps and Dynamics 365 domains using storage state files. Explore credential providers and setup steps."
 author: deepakkamboj
 ms.author: dekamb
-ms.topic: conceptual
+ms.topic: article
 ms.date: 04/17/2026
 ms.reviewer: jdaly
 ---

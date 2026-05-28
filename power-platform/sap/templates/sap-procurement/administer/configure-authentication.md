@@ -1,21 +1,16 @@
 ---
 title: Configure authentication for SAP Procurement solutions
 description: Set up SSO for your Microsoft Power Platform users to streamline access management to SAP.
-author: jongilman88
-ms.author: jongilman
+author: microsoft-dustin
+ms.author: drasener
 contributors:
-  - microsoft-george
-  - robinsonshields 
   - EllenWehrle
   - tverhasselt
   - galitskyd
-  - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
+ms.date: 05/20/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/27/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -23,9 +18,9 @@ ms.subservice: solution-templates
 
 # Configure authentication for SAP Procurement solutions
 
-The [SAP ERP connector](/connectors/saperp/) is designed so multiple people can access and use an application at once; therefore, the connections aren't shared. The user credentials are provided in the connection, while other details required to connect to the SAP system (like server details and security configuration) are provided as part of the action.
+The [SAP ERP connector](/connectors/saperp/) supports multiple users accessing and using an application at the same time, so you don't share connections. You provide user credentials in the connection, and you provide other details required to connect to the SAP system, such as server details and security configuration, as part of the action.
 
-Enabling single sign-on (SSO) makes it easy to refresh data from SAP while adhering to user-level permissions configured in SAP. There are several ways you can set up SSO for streamlined identity and access management.
+When you enable single sign-on (SSO), you can easily refresh data from SAP while adhering to user-level permissions configured in SAP. Set up SSO in several ways for streamlined identity and access management.
 
 The SAP ERP connector supports the following authentication types:
 
@@ -36,7 +31,7 @@ The SAP ERP connector supports the following authentication types:
 | [Microsoft Entra ID authentication](/connectors/saperp/#azure-ad-integrated)    | Use Microsoft Entra ID to access SAP server. | Steps 1, 2, 3, 4     |
 
 > [!NOTE]
-> Specific administrative privileges are required to set up SSO in Microsoft Entra ID and SAP. Be sure to obtain the necessary admin privileges for each system before setting up SSO.
+> You need specific administrative privileges to set up SSO in Microsoft Entra ID and SAP. Make sure you have the necessary admin privileges for each system before setting up SSO.
 
 More information:
 
@@ -76,12 +71,12 @@ More information:
 
 To use SSO to access your SAP server, make sure:
 
-- You configure your SAP server for Kerberos SSO using **CommonCryptoLib** as its Secure Network Communication (SNC) library.
+- You configure your SAP server for Kerberos SSO by using **CommonCryptoLib** as its Secure Network Communication (SNC) library.
 - Your SNC name starts with _CN_.
 
 > [!IMPORTANT]
 >
-> Ensure that SAP Secure Login Client (SLC) isn't running on the computer the gateway is installed on. SLC caches Kerberos tickets in a way that can interfere with the gateway's ability to use Kerberos for SSO. For more information, review [SAP Note 2780475](https://support.sap.com/en/my-support/knowledge-base.html?anchorId=section_1391401241) (s-user required).
+> Ensure that SAP Secure Login Client (SLC) isn't running on the computer where you installed the gateway. SLC caches Kerberos tickets in a way that can interfere with the gateway's ability to use Kerberos for SSO. For more information, review [SAP Note 2780475](https://support.sap.com/en/my-support/knowledge-base.html?anchorId=section_1391401241) (s-user required).
 
 1. [Download](https://help.sap.com/docs/help/a76169f317b44b1e87bd0bd2573cba2b/6f6d555ceb0a4e2fb6d1376331f4d34c.html?version=SP6) 64-bit CommonCryptoLib (`sapcrypto.dll`) version 8.5.25 or later from the SAP Launchpad, and copy it to a folder on your gateway machine.
 
@@ -99,13 +94,13 @@ To use SSO to access your SAP server, make sure:
 
 More information: [Use Kerberos single sign-on for SSO to SAP BW using CommonCryptoLib](/power-bi/connect-data/service-gateway-sso-kerberos-sap-bw-commoncryptolib)
 
-## Step 3: Enable SAP SNC for Azure AD and Windows authentication
+## Step 3: Enable SAP SNC for Microsoft Entra ID and Windows authentication
 
-The SAP ERP connector supports Microsoft Entra ID, and Windows server AD authentication by enabling SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true). SNC is a software layer in the SAP system architecture that provides an interface to external security products so secure single sign-on to SAP environments can be established. The following property guidance helps with setup.
+The SAP ERP connector supports Microsoft Entra ID and Windows server AD authentication when you enable SAP's [Secure Network Communication (SNC)](https://help.sap.com/doc/saphelp_nw74/7.4.16/en-us/e6/56f466e99a11d1a5b00000e835363f/content.htm?no_cache=true). SNC is a software layer in the SAP system architecture that provides an interface to external security products so you can establish secure single sign-on to SAP environments. The following property guidance helps with setup.
 
 | Property | Description |
 |---------|---------|
-| Use SNC     |  Set to **Yes** if you want to enable SNC.       |
+| Use SNC     |  Set to **Yes** to enable SNC.       |
 | SNC library     |  The SNC library name or path relative to NCo installation location or absolute path. Examples are `sapcrypto.dll`, or `c:\sapcryptolib\sapcryptolib.dll`.      |
 | SNC SSO     | Specifies whether the connector uses the identity of the service or the end user credentials. Set to **On** to use the identity of the end user.   |
 | SNC Partner Name     | The name of the back-end SNC server. Example, `p:CN=SAPserver`. |
@@ -115,13 +110,13 @@ The SAP SNC name for the user must equal the user's Active Directory fully quali
 
 > [!NOTE]
 >
-> Microsoft Entra ID auth only—the _Active DirectorySAP Service Principal_ account must have AES 128 or AES 256 defined on the _msDS-SupportedEncryptionType_ attribute.
+> Microsoft Entra ID auth only - the _Active DirectorySAP Service Principal_ account must have AES 128 or AES 256 defined on the _msDS-SupportedEncryptionType_ attribute.
 
 ## Step 4: Set up SAP server and user accounts to allow actions
 
 Review [SAP Note 460089 - Minimum authorization profiles for external RFC programs](https://accounts.sap.com/) to learn more about the supported user-account types and the minimum required authorization for each action type, like remote function call (RFC), business application programming interface (BAPI), and intermediate document (IDOC).
 
-SAP user accounts need to access the `RFC_Metadata` function group and the respective function modules for the following operations:
+SAP user accounts need access to the `RFC_Metadata` function group and the respective function modules for the following operations:
 
 | Operations | Access to function modules  |
 |------------|-----------------------------|

@@ -3,7 +3,7 @@ title: Use core components
 description: Learn how CoE Starter Kit core components help Power Platform admins create a Center of Excellence (CoE), including sync resources and build apps to gain visibility into the environment.
 author: manuelap-msft
 ms.topic: concept-article
-ms.date: 04/20/2026
+ms.date: 05/18/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -389,6 +389,9 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 ### Environment Request apps
 
 Environment Request apps help you manage and streamline environment requests.
+
+> [!TIP]
+> Consider using the vibe experience in Power Apps to create custom apps. Use the prompt provided in [Environment and data policy management](env-mgmt.md#create-environment-management-components-using-power-apps-vibe) as an example.
 
 #### CoE Admin Environment Request
 

@@ -35,9 +35,6 @@ This app provides a guided step by step experience through the configuration ste
 
 :::image type="content" source="media/setupwizard-other.png" alt-text="Screenshot that shows the CoE Starter Kit Setup Wizard for other core components." lightbox="media/setupwizard-other.png":::
 
-> [!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the Inventory components manually.
-
 ## Set up other core components manually
 
 ### Update environment variables
@@ -75,4 +72,3 @@ This environment variable affects other components:
 
 You might need to [update environment variables](faq.md#update-environment-variables) after import.
 
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

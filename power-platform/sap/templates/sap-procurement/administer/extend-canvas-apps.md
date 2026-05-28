@@ -5,17 +5,12 @@ author: tverhasselt
 ms.author: thoverh
 contributors:
   - EllenWehrle
-  - robinsonshields
-  - microsoft-george
-  - jongilman88
   - galitskyd
   - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 10/26/2023
+ms.date: 05/19/2026
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -23,13 +18,13 @@ ms.subservice: solution-templates
 
 # Build a canvas app
 
-Power Apps is a high-productivity platform for business apps. You can create tailored, pixel-perfect apps with the power of a blank canvas in Power Apps Studio. To share with your users, render the app in the browser or embed in various containers such as Teams and SharePoint sites.
+Power Apps is a high-productivity platform for business apps. You can create tailored, pixel-perfect apps with the power of a blank canvas in Power Apps Studio. To share with your users, render the app in the browser or embed it in various containers such as Teams and SharePoint sites.
 
-The core end-user experiences for the SAP procurement template's solutions are built using canvas apps and can easily be extended to support your local business requirements. To get started, follow the patterns and best practices in this article.
+The core end-user experiences for the SAP procurement template's solutions are built by using canvas apps and can easily be extended to support your local business requirements. To get started, follow the patterns and best practices in this article.
 
 ## Follow best practices and standards
 
-All apps are developed using published best practices and standards. We recommend that you adopt the same or similar best practices and standards as you extend or create new apps.
+Develop all apps by using published best practices and standards. Adopt the same or similar best practices and standards as you extend or create new apps.
 
 | Standard | Comments | More information |
 | -------- | -------- | ---------------- |
@@ -41,11 +36,11 @@ All apps are developed using published best practices and standards. We recommen
 
 ## Global app color themes
 
-All apps follow a custom theme and can be changed according to your organization's preferred color scheme. A _global variable_ is set in the _App.OnStart_ properties across all of the apps. This variable is used by most color-related properties across all controls in the app. Changing the color global theme variable in one place will have an immediate effect across the app after running the _App.OnStart_ event.
+All apps follow a custom theme that you can change to match your organization's preferred color scheme. Set a _global variable_ in the _App.OnStart_ property for all the apps. Most color-related properties across all controls in the app use this variable. When you change the color global theme variable, the app immediately reflects the change after running the _App.OnStart_ event.
 
 > [!IMPORTANT]
 >
-> Although it's possible to change a variety of color palette properties, we recommend only changing the primary color property in the global theme variable.
+> Although you can change many color palette properties, change only the primary color property in the global theme variable.
 
 ~~~power-fx
     Set(
@@ -75,11 +70,11 @@ Add your corporate logo to the apps by first uploading your corporate logo image
 
 :::image type="content" source="media/extend-canvas-apps/add-corp-logo-.png" alt-text="Add your corporate logo to the app":::
 
-More information: [Using multimedia files in canvas apps](/power-apps/maker/canvas-apps/add-images-pictures-audio-video)
+For more information, see [Using multimedia files in canvas apps](/power-apps/maker/canvas-apps/add-images-pictures-audio-video).
 
 ## Localization and global app support
 
-All canvas apps by default have support for the English language. However, all apps are designed to be _localization ready_ and can be managed to support more languages. Control-width properties may need to be altered directly depending on languages chosen to deploy.
+All canvas apps support the English language by default. However, all apps are designed to be _localization ready_ and you can manage them to support more languages. You might need to change control-width properties directly depending on the languages you choose to deploy.
 
 ### String localization pattern
 
@@ -120,13 +115,13 @@ All canvas apps by default have support for the English language. However, all a
 
 > [!NOTE]
 >
-> Label and input control properties attempt to anticipate the width of the localized text value but may not always be successful given the complexities of that calculation. Thus, we recommend that you always test and make minor edits to the apps once localized strings and changes are made.
+> Label and input control properties attempt to anticipate the width of the localized text value but might not always be successful given the complexities of that calculation. Always test and make minor edits to the apps once localized strings and changes are made.
 
 > [!TIP]
 >
-> Additional languages can be added and supported by adding more values to the _ISO Language Code_ choice component contained in the SAP Base solution.
+> Add more values to the _ISO Language Code_ choice component contained in the SAP Base solution to support additional languages.
 
-The app queries the _SAP Localization_ Dataverse entity for strings that have been localized per the user's logged-in language and caches them locally in a collection.
+The app queries the _SAP Localization_ Dataverse entity for strings that are localized per the user's logged-in language and caches them locally in a collection.
 
 ~~~power-fx
         ClearCollect(
@@ -139,7 +134,7 @@ The app queries the _SAP Localization_ Dataverse entity for strings that have be
         )
 ~~~
 
-All text-related properties within various controls such as Text, HintText, Accessible Label, InputTextPlaceholder, NoSelectionText, and ToolTips have formulas that look first for an equivalent localized string. If it doesn't find the equivalent, it defaults to English, which is set in the _Text_ property within the _With_ block.
+All text-related properties within various controls such as Text, HintText, Accessible Label, InputTextPlaceholder, NoSelectionText, and ToolTips have formulas that look first for an equivalent localized string. If they don't find the equivalent, they default to English, which is set in the _Text_ property within the _With_ block.
 
 ~~~power-fx
   With(
@@ -176,20 +171,20 @@ Sort(
 
 ### Browser locale settings
 
-All number, date, and time fields in the canvas apps honor the user's browser locale settings by default. For example, a date displayed as _3/23/2023_ for a user using United States as their locale settings will show as _23.03.2023_ for a user using the Germany locale setting.
+All number, date, and time fields in the canvas apps honor the user's browser locale settings by default. For example, a date displayed as _3/23/2023_ for a user using United States as their locale settings shows as _23.03.2023_ for a user using the Germany locale setting.
 
 More information: [Build global support into canvas apps](/power-apps/maker/canvas-apps/global-apps)
 
 ## Components
 
-Components are a great way to simplify the app development and maintenance process and help improve performance.
+Components simplify the app development and maintenance process and help improve performance.
 
-For areas where there's a need for common user experience either internally or across apps, components are configured. Given limitations on component libraries to support things like access to app scope and embedded cloud flows, local components can be used in all of the apps that then can be imported to other apps.
+Use components to provide a common user experience either internally or across apps. Because of limitations on component libraries to support things like access to app scope and embedded cloud flows, use local components. You can use local components in all of your apps and import them to other apps.
 
-For example, the _VendorSearch_ component is used across all the apps that support procure-to-pay processes and it was primarily built within the SAP Vendor Management app and imported to be used within the other procure-to-pay apps.
+For example, the _VendorSearch_ component is used across all the apps that support procure-to-pay processes. You primarily build it within the SAP Vendor Management app and import it for use within the other procure-to-pay apps.
 
 > [!WARNING]
-> A negative consequence of using local app components versus component libraries is that if a change is determined, those changes need to be made across all the apps that have already imported that component.
+> A negative consequence of using local app components versus component libraries is that if you make a change, you need to make that change across all the apps that already imported that component.
 
 Common components used throughout the apps:
 
@@ -206,20 +201,20 @@ More information: [Canvas component overview](/power-apps/maker/canvas-apps/crea
 
 ## Additional SAP fields
 
-Every SAP implementation is different and it's fully expected that you'll add your own fields that support your business processes. Thus, ample screen space and design considerations were implemented to allow you to easily add the fields you need.
+Every SAP implementation is different, and you might need to add your own fields to support your business processes. The app provides ample screen space and design considerations so you can easily add the fields you need.
 
 ### Common control containers
 
-Most controls are contained within a container consisting of both label and input control. For example, the field to capture the name of the vendor within the SAP Vendor Management app consists of a Label and Text Input control as seen in the screenshot that follows. To add a new field, copy an existing container control and paste in the appropriate responsive component, updating the names, text, and ultimately mapped fields.
+Most controls are contained within a container that consists of both a label and an input control. For example, the field to capture the name of the vendor within the SAP Vendor Management app consists of a Label and Text Input control, as seen in the following screenshot. To add a new field, copy an existing container control and paste it in the appropriate responsive component. Then, update the names, text, and mapped fields.
 
 :::image type="content" source="media/extend-canvas-apps/container-control.png" alt-text="Work with container controls.":::
 
 > [!NOTE]
-> There are similar containers for other types of input controls like Comboboxes, Date Pickers, and Buttons.
+> Similar containers exist for other types of input controls, like ComboBoxes, Date Pickers, and Buttons.
 
 ### Responsive containers
 
-The apps are designed to be responsive to the tablet/desktop device type using vertical and horizontal container controls such as shown in the screenshot that follows. These containers are configured to have starting points for properties such as _height_, _width_, _LayoutMinHeight_, _LayoutMinWidth_, and _Wrap_. As you add more fields to these containers, ensure these properties are also updated to continue to handle the responsiveness appropriately.
+The apps are designed to be responsive to the tablet and desktop device types by using vertical and horizontal container controls, as shown in the following screenshot. These containers are configured to have starting points for properties such as _height_, _width_, _LayoutMinHeight_, _LayoutMinWidth_, and _Wrap_. As you add more fields to these containers, ensure you update these properties to keep the responsiveness working appropriately.
 
 :::image type="content" source="media/extend-canvas-apps/ex-horizontal-container.png" alt-text="Work with responsive containers.":::
 
@@ -227,11 +222,11 @@ More information: [Autolayout containers](/power-apps/maker/canvas-apps/build-re
 
 ## Connect with other data
 
-The power of canvas apps is that they can easily connect into one of several hundred other systems and applications securely using their native connector library.
+The power of canvas apps is that they can easily connect into one of several hundred other systems and applications securely by using their native connector library.
 
 For example, if your SAP Procurement purchase order process requires data from upstream presales opportunities that exist in a CRM to complete the process, you can use the [Salesforce](/connectors/salesforce/) or [Dataverse](/connectors/commondataserviceforapps/) connectors to integrate with Dynamics 365 so you can easily add that data to the SAP Purchase Order app by simply selecting a button.
 
-Additionally, if you have an internal proprietary system or a system with no native connector, you can work with your IT Team to create a custom connector that allows Power Apps to easily interface with that system through a supported API.
+If you have an internal proprietary system or a system with no native connector, you can work with your IT team to create a custom connector that allows Power Apps to easily interface with that system through a supported API.
 
 More information:
 
@@ -240,7 +235,7 @@ More information:
 
 ## App error handling
 
-All embedded flow calls evaluate a response status field sent back by the flows by default and handle by raising a message through the [Notify](/power-platform/power-fx/reference/function-showerror) function. To learn more, see [Error handling](extend-cloud-flows.md#error-handling).
+All embedded flow calls evaluate a response status field that the flows send back. They handle errors by raising a message through the [Notify](/power-platform/power-fx/reference/function-showerror) function. For more information, see [Error handling](extend-cloud-flows.md#error-handling).
 
 ~~~power-fx
 If(
@@ -262,7 +257,7 @@ Error(FirstError);
 )
 ~~~
 
-All unexpected exceptions generated by the app are handled in the _App.OnError_ property where a _SAP solution template error_ record is created before the error is rethrown and traced. Admins can view the error details and put triggers in place to be alerted on _app unhandled exceptions_ as seen in the [Monitor errors](monitor-errors.md) document.
+The app handles all unexpected exceptions in the _App.OnError_ property. The app creates a _SAP solution template error_ record before it rethrows and traces the error. Admins can view the error details and put triggers in place to be alerted on _app unhandled exceptions_ as seen in the [Monitor errors](monitor-errors.md) document.
 
 More information: [OnError property](/power-platform/power-fx/reference/object-app#onerror-property)
 

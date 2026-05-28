@@ -141,6 +141,3 @@ You can store the client secret in plain text in the **Audit Logs - Client Secre
  
 1. Turn on the **Admin | Audit Logs | Sync Audit Logs (V2)** flow. This flow runs on an hourly schedule and collects audit log events into the audit log table.
 
-## Provide feedback
-
-If you find an issue with the CoE Starter Kit, file a bug against the solution at [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).
