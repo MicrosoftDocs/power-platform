@@ -3,7 +3,7 @@ title: Power Platform environments overview
 description: Learn about Power Platform environments and how to use them.
 author: sericks007
 ms.topic: how-to
-ms.date: 05/27/2026
+ms.date: 05/28/2026
 ms.reviewer: sericks
 ms.subservice: admin
 ms.author: sericks
@@ -27,7 +27,7 @@ A *Power Platform environment* is a space to store, manage, and share your organ
 
 ## Scope of environments
 
-Each environment is created under a Microsoft Entra tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that macro region geography. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location. Learn more about [macro regions](new-datacenter-regions.md#macro-region).
+Each environment is created under a Microsoft Entra tenant, and its resources can only be accessed by users within that tenant. An environment is also bound to a geographic location, like the United States. When you create an app in an environment, that app is routed only to datacenters in that macro region geography. Any items that you create in that environment (including chatbots, connections, gateways, flows using Microsoft Power Automate, and more) are also bound to their environment's location. Learn more about [macro regions](macro-regions.md).
 
 Every environment can have zero or one Microsoft Dataverse database, which provides storage for your apps and chatbots. Whether you can create a database for your environment depends on the license you purchase for Power Apps and your permissions within that environment. For more information, see [Pricing info](pricing-billing-skus.md).
 
@@ -146,7 +146,8 @@ Depending on the environment type, the environment location varies.
 ### Preferred environment location
 
 If you want Teams environments and developer environments (created on sign-up) to be created in a location different from the tenant location, you can set the **Preferred environment location** for your tenant using the [Power Platform PowerShell commandlets](powerapps-powershell.md). This change doesn't update existing environments and applies to new environments created after the change only. These settings can be found under **Settings > PowerPlatform > Environments**.
-Please note, 'preferred environment' is preserved and honored with Macro region as well.  
+
+Note that the **Preferred environment location** is honored with macro regions, as well.  
 
 ```PowerShell
 $requestBody = [pscustomobject]@{
