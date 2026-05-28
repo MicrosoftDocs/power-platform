@@ -81,7 +81,7 @@ Audit data is retained for 90 days. You can do CDSV exports of the data allowing
 
 ## Dataverse data in Microsoft 365 Copilot
 
-Allowing Microsoft 365 Copilot and Microsoft 365 Copilot Chat to get Power Apps, Dynamics 365, and other business data improves the quality of Copilot responses by grounding them with live data from Dataverse.
+Allowing Microsoft 365 Copilot and Microsoft 365 Copilot Chat to get Power Apps, Dynamics 365, and other business data improves the quality of Copilot responses by using live data from Dataverse.
 
 Dataverse grounding in Microsoft 365 Copilot sends only minimal, derived search queries to Dataverse with all user and tenant identifiers removed. Enterprise data (documents, prompts, responses) remains within the Microsoft 365 boundary and is covered by the [Data Processing Addendum](https://www.microsoft.com/licensing/docs/documents/download/MicrosoftOnlineServicesDPA(WW)(English)(Dec9,2020)(CR).docx) and [Product Terms](https://www.microsoft.com/licensing/terms/en-US/productoffering/MicrosoftPowerPlatform/OL). Customers retain full admin control to disable Dataverse search with this [Enable Microsoft 365 admin center Copilot Dataverse settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings).
 
