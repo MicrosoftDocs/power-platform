@@ -3,7 +3,7 @@ title: Managed availability
 description: Learn how managed availability provides robust capabilities to ensure continuous uptime, seamless failover, and enterprise-grade resilience for mission-critical applications and AI workloads. 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/19/2025
+ms.date: 05/28/2026
 author: rashmansur
 ms.custom: NewPPAC
 ms.author: rashmim 
@@ -12,7 +12,9 @@ ms.subservice: admin
 search.audienceType: 
   - admin
 contributors:
-  - isaacwinoto 
+  - isaacwinoto
+  - shpradha
+
 ---
 
 # Managed availability
