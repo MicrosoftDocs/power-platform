@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 02/02/2026
+ms.date: 05/22/2026
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -25,7 +25,105 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of Power Automate export from Microsoft Visio
+
+Effective July 14, 2026, the Power Automate integration in the Visio desktop app is deprecated. This feature allowed users to export BPMN (Business Process Model and Notation) diagrams from Visio as cloud flows in Power Automate.
+
+Users on Current Channel might see this change as early as June 30, 2026. Monthly Enterprise Channel and Semi-Annual Enterprise Channel users will see the change starting July 14, 2026. Users on older builds of Microsoft 365 Apps will continue to see the feature until their apps are updated to a build released after the deprecation date. The feature will function on those older builds, but is no longer maintained or supported.
+
+### Why is this needed?
+
+This integration maintains low usage and hasn't kept pace with the capabilities available in Power Automate today. The Visio export path supports a limited subset of flow actions and connectors. [Power Automate](https://make.powerautomate.com) now provides a full-featured flow designer with hundreds of templates, Copilot-assisted flow creation, and over 1,500 connectors. Users who need to create automation flows will have a more complete experience working directly in Power Automate.
+
+### Impact
+
+After the deprecation date, the following Visio desktop features will no longer be available:
+
+- The **Export** button on the ribbon and Export pane
+- The **Show Flow Markup** button on the ribbon
+- Power Automate export options in Visio search results
+
+These features are removed from the UI. Users don't encounter an error or broken state; the entry points are hidden.
+
+#### What is *not* affected
+
+- All existing BPMN diagrams in Visio remain as-is. Nothing is deleted or modified.
+- All flows previously exported from Visio to Power Automate continue to run normally. No action is required for existing flows.
+- BPMN diagram templates remain available in Visio for process modeling.
+
+### Action required
+
+No action is required for existing flows or diagrams.
+
+Users who currently rely on the Visio-to-Power Automate export workflow should transition to creating flows directly in Power Automate.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Use the flow designer to build cloud flows with a visual editor.
+1. Explore [flow templates](https://make.powerautomate.com/templates) for common automation patterns.
+
+Learn more: [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow)
+
+## Deprecation of Test Engine
+
+Effective April 2026, Test Engine is deprecated. The documentation and GitHub repository are no longer maintained by Microsoft and will be removed in a future release.
+
+### Why is this needed?
+
+Test Engine has near-zero usage and failed to meet customer needs in an evolving AI landscape. The Power Fx implementation created unnecessary limitations that are avoided if using Playwright directly (Test Engine is built on Playwright). 
+
+### Replacement feature
+
+The [Power Platform Playwright samples](developer/playwright-samples/overview.md) guide the use of Playwright for Power Platform test automation. These practical examples resemble how Microsoft tests first-party applications internally, with best-practice guidance baked in. 
+
+## Deprecation of Editable Grid and Power Apps Read-Only Grid controls
+Effective March 2026, the Editable Grid control and the Power Apps Read-Only Grid control are deprecated in model-driven apps. These controls will continue to function until further notice, after which they are no longer supported. These controls will receive critical security fixes only and no new features.
+### Why is this needed?
+We are streamlining the grid experience in Power Apps to provide a modern, unified solution. The [Power Apps grid control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control) is the next evolution of grid control, built from the ground up with modern design standards, accessibility compliance, and comprehensive functionality.
+
+- **Editable Grid**: Based on older architecture that does not align with current Microsoft accessibility standards and has limited extensibility.
+- **Power Apps Read-Only Grid**: An interim solution that is no longer necessary, as the Power Apps grid control supports both read-only and editable capabilities in a single control.
+### Impact
+Makers who have configured apps to use the Editable Grid or Power Apps Read-Only Grid controls need to transition to the Power Apps grid control. Existing implementations will continue to work but only receive critical security fixes and no new features.
+### Replacement feature
+The [Power Apps grid control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control) is the recommended solution for all grid scenarios in model-driven apps. This modern control offers extensive capabilities including inline editing, infinite scrolling, nested grids, grouping, aggregation, enhanced filtering and sorting, and [many configurable properties](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#configure-the-power-apps-grid-control) to customize the experience for your needs.
+### Action required
+
+To ensure a smooth transition:
+1. **Identify affected apps**: Review your model-driven apps to identify views and subgrids using the deprecated controls.
+2. **Transition to Power Apps grid control**: [Add the control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#add-the-power-apps-grid-control-using-form-designer) to your forms, views, and subgrids.
+3. **Configure and test**: Customize the [control properties](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#configure-the-power-apps-grid-control) and validate the experience before publishing.
+
+## Deprecation of the Microsoft Power Automate for Excel add-in (AppSource)
+
+The [Microsoft Power Automate for Excel](https://marketplace.microsoft.com/en-us/product/office/wa104381701?tab=overview) add-in available through AppSource is deprecated. Users should switch to the native Power Automate integration available in the **Automate** tab of Excel.
+
+### Why is this needed?
+
+Excel now includes a built-in **Automate** tab that provides native Power Automate integration, removing the need for a separate add-in. The native experience offers a more seamless and reliable way to create and manage flows directly from Excel.
+
+### Impact
+
+If you currently rely on the Power Automate for Excel add-in from AppSource, you need to transition to the native **Automate** tab in Excel. The add-in is no longer supported.
+
+### Replacement feature
+
+Use the native Power Automate integration in the **Automate** tab of Excel. Learn more in [Use flows in Excel](/power-automate/flows-excel).
+
+The native experience is supported on:
+
+- Excel on the web
+- Excel on Windows desktop
+
+> [!NOTE]
+> If you use Office macOS desktop, you need to open the spreadsheet in Excel in the browser to access the **Automate** tab.
+
+If the **Automate** tab isn't visible in Excel, verify it's enabled:
+
+1. Select **Excel Options** > **Customize Ribbon** > **Main Tabs**.
+1. Make sure the **Automate** checkbox is selected.
+
 ## Removal of before-and-after field change values in audit events sent to Microsoft Purview
+
 Starting in May 2026, Dataverse will no longer include before-and-after field change values in the audit events that are sent to Microsoft Purview. Audit events will continue to flow to Purview; however, the detailed field-level value changes will be excluded.
 
 ### Why is this needed?
@@ -36,11 +134,11 @@ Removing detailed field-level values from Purview-bound audit events reduces the
 ### Impact
 If you have existing monitoring, alerting, or reporting solutions that depend on before-and-after field change values within Purview audit events, those solutions will stop working once this deprecation takes effect. Examples include:
 
--	Rules that compare old/new values for anomaly detection.
+-   Rules that compare old/new values for anomaly detection.
 
--	Data pipelines that analyze field-level deltas.
+-   Data pipelines that analyze field-level deltas.
 
--	Custom compliance checks running in Purview.
+-   Custom compliance checks running in Purview.
 
 These scenarios must be updated to avoid disruption.
 
@@ -48,33 +146,33 @@ These scenarios must be updated to avoid disruption.
 Update your monitoring or downstream workflows to retrieve detailed field-level audit information directly from Dataverse, not from Purview. Dataverse continues to store and expose before-and-after field changes through its native audit APIs and tables.
 
 ### More information
--	No changes are required if your solution uses Dataverse audit logs as the source of truth.
--	Purview continues receiving audit event metadata (such as who made changes, the date of the changes, and the tables affected), but field-level value changes will no longer be included.
+-   No changes are required if your solution uses Dataverse audit logs as the source of truth.
+-   Purview continues receiving audit event metadata (such as who made changes, the date of the changes, and the tables affected), but field-level value changes will no longer be included.
 
 ## Deprecation of Copilot chat in model-driven apps
 Starting January 2026, [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot) in environments not [enabled for Dynamics 365 apps](admin/create-environment.md#create-an-environment-with-a-database) will be deprecated. This feature was available as a preview feature in Power Apps.
 
 ### Why is this needed?
-We are unifying the chat experience across apps with [Microsoft 365 Copilot chat](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot), which is becoming the new standard in Power Apps. As Microsoft 365 Copilot chat gradually replaces [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot), makers will have the flexibility to use one or both chat experiences during the transition period.
+We are unifying the chat experience across apps with [Microsoft 365 Copilot](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot), which is becoming the new standard in Power Apps. As Microsoft 365 Copilot gradually replaces [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot), makers will have the flexibility to use one or both chat experiences during the transition period.
 
 ### Impact
-[Microsoft 365 Copilot chat](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot) is gradually replacing [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot).
+[Microsoft 365 Copilot](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot) is gradually replacing [Copilot chat in model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot).
 
 During the transition period, makers can enable either one or both chat experiences. When both options are available, the **Copilot** dropdown menu shows the following options:
-- **Chat** button opens [Microsoft 365 Copilot chat](/power-apps/user/use-microsoft-365-copilot-model-driven-apps).
+- **Chat** button opens [Microsoft 365 Copilot](/power-apps/user/use-microsoft-365-copilot-model-driven-apps).
 - **App Skills** button opens [Copilot chat in model-driven apps](/power-apps/user/use-copilot-model-driven-apps).
 
 ### Replacement feature
-[Microsoft 365 Copilot chat](/power-apps/user/use-microsoft-365-copilot-model-driven-apps) is now the recommended solution for natural language interactions in model-driven apps. To ensure a smooth transition and prevent any disruption when Copilot chat is retired, we recommend that you migrate to Microsoft 365 Copilot chat as soon as it becomes available in your environment. 
+[Microsoft 365 Copilot](/power-apps/user/use-microsoft-365-copilot-model-driven-apps) is now the recommended solution for natural language interactions in model-driven apps. To ensure a smooth transition and prevent any disruption when Copilot chat is retired, we recommend that you migrate to Microsoft 365 Copilot as soon as it becomes available in your environment. 
 
 ## Deprecation of the classic look for model-driven apps
-Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. All apps will use the modern, refreshed look by default.
+Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. This timing applies to all release channels, including the semi-annual channel. All apps will use the modern, refreshed look by default.
 
 ### Why is this needed?
 We are standardizing the experience across model-driven apps to deliver a consistent, accessible, and modern interface that ensures customers benefit from ongoing user experience improvements while unlocking AI-powered capabilities available only in the modern look.
 
 ### Impact
-There is no impact on app logic, data, or permissions. Existing apps will automatically display the modern look. The admin settings related to this feature will be removed.
+There is no impact on app logic, data, or permissions. Existing apps will automatically display the modern look across all release channels, including the semi-annual channel. The admin settings related to this feature will be removed.
 
 ### Replacement feature
 The modern, refreshed look is now the default experience for all model-driven apps. No action is required from makers or admins. For more information on this, see [Modern, refreshed look for model-driven apps](/power-apps/user/modern-fluent-design).
@@ -230,7 +328,7 @@ Effective June 1, 2025, customers will be unable to apply BYOK to production env
 
 If your migration to CMK isn't completed by January 6, 2026, your environment will automatically revert to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible.
 
-We recommend starting your transition to CMK (customer-managed keys) at your earliest convenience. For more information, go to [Manage your customer-managed encryption key](admin/customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](admin/cmk-migrate-from-byok.md).
+We recommend starting your transition to CMK (customer-managed keys). For more information, go to [Manage your customer-managed encryption key](admin/customer-managed-key.md).
 
 ## Deprecation of Organization Insights Dashboard
 

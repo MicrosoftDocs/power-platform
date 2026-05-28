@@ -3,7 +3,7 @@
   "info": {
     "title": "Microsoft Power Platform REST API - appmanagement",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
-    "version": "2022-03-01-preview"
+    "version": "2024-10-01"
   },
   "host": "api.powerplatform.com",
   "schemes": [
@@ -28,7 +28,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -56,7 +56,7 @@
           "Applications"
         ],
         "summary": "Get the list of application packages that are available for install.",
-        "description": "Get the list of available application packages that are relevant in the context of a target environment. The client can filter the application packages based on install state (NotInstalled, Installed, All) and any other response parameters utilizing standard OData capabilities.",
+        "description": "Lists available app packages for a target environment with OData filtering.",
         "operationId": "GetEnvironmentApplicationPackage",
         "produces": [
           "application/json"
@@ -92,7 +92,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -120,7 +120,7 @@
           "Applications"
         ],
         "summary": "Start the install of application package in target environment.",
-        "description": "Trigger the installation of an application package, based on the package unique name, to be installed into a target environment. The client can also include a custom payload when requesting installation of an application package.",
+        "description": "Installs an app package by unique name into a target environment.",
         "operationId": "InstallApplicationPackage",
         "consumes": [
           "application/json"
@@ -149,7 +149,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -188,7 +188,7 @@
           "Applications"
         ],
         "summary": "Get the polling status for a previously triggered installation.",
-        "description": "Get the polling status to check on the progress of a previously triggered installation based on the operation ID.",
+        "description": "Gets install progress for an operation by its operation ID.",
         "operationId": "GetApplicationPackageInstallStatus",
         "produces": [
           "application/json"
@@ -215,7 +215,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -257,7 +257,7 @@
       "properties": {
         "id": {
           "format": "uuid",
-          "description": "Available package ID or instance package ID, where both map to the application package ID",
+          "description": "Package or instance package ID that maps to the app package ID",
           "type": "string"
         },
         "uniqueName": {
@@ -321,7 +321,7 @@
         },
         "instancePackageId": {
           "format": "uuid",
-          "description": "Instance package ID that is used only for a retry of package installation (for example, a reinstall).",
+          "description": "Instance package ID used only for install retry (e.g., reinstall).",
           "type": "string"
         },
         "state": {

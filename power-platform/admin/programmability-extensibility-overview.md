@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/30/2025
+ms.date: 04/06/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -18,6 +18,8 @@ Power Platform admins often need to orchestrate and automate routine activities 
 
 > [!NOTE]
 > Microsoft shifted from a user experience-first to an API-first development model for Power Platform programmability. New capabilities are introduced in the API first, then quickly synchronized across all supported tools, reducing lag and ensuring consistency. For more background, go to [Power Platform API and SDKs: From UX-first to API-first](https://devblogs.microsoft.com/powerplatform/power-platform-api-and-sdks-from-ux-first-to-api-first/).
+
+:::image type="content" source="media/adminsdk-process.png" alt-text="Architecture diagram showing the Power Platform Admin SDK process and available programmability tools." lightbox="media/adminsdk-process.png":::
 
 ## Customer management plane vs customer data plane
 
@@ -43,9 +45,13 @@ Learn more about the REST API in the [REST API reference overview](/rest/api/pow
 
 The new [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2) is available for use in Power Automate and Logic Apps. It's a strongly typed representation of the Microsoft Power Platform API.
 
-### Power Platform Management SDK
+### Power Platform Management SDK for .NET
 
 The .NET SDK is distributed as a NuGet package named [Microsoft.PowerPlatform.Management](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/). The API reference is available through the .NET API browser. Learn more in [API: Power Platform management](/dotnet/api/?view=power-platform-latest&preserve-view=true).
+
+### Power Platform Management SDK for Python
+
+The Python SDK is distributed as a PyPI package named [powerplatform-management](https://pypi.org/project/powerplatform-management/). It's a strongly typed representation of the Microsoft Power Platform API for Python developers.
 
 ### Power Platform CLI
 

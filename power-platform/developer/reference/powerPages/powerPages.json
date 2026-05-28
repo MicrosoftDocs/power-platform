@@ -3,7 +3,7 @@
   "info": {
     "title": "Microsoft Power Platform REST API - powerpages",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
-    "version": "2022-03-01-preview"
+    "version": "2024-10-01"
   },
   "host": "api.powerplatform.com",
   "schemes": [
@@ -41,7 +41,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -92,7 +92,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -166,7 +166,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -234,7 +234,84 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted",
+            "headers": {
+              "Operation-Location": {
+                "description": "Location of a resource",
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/convertToProduction": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Convert a trial Power Pages website to production.",
+        "description": "Convert a trial website to a production website.",
+        "operationId": "ConvertTrialToProduction",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/ConvertTrialToProductionRequest"
+            }
           }
         ],
         "responses": {
@@ -303,7 +380,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -374,7 +451,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -442,7 +519,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -505,7 +582,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -587,7 +664,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -650,7 +727,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -716,7 +793,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -731,7 +808,89 @@
           "200": {
             "description": "Success",
             "schema": {
-              "$ref": "#/definitions/AllowedIpAddressesConfiguration"
+              "description": "List of allowed IP addresses after the operation",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/IpAddressEntity"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/removeAllowedIpAddresses": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Remove allowed IP addresses from a Power Pages website.",
+        "description": "Removes the specified IP addresses from the website's IP restriction allow list.",
+        "operationId": "RemoveAllowedIpAddresses",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/IpAddressConfiguration"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "description": "List of allowed IP addresses after the operation",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/IpAddressEntity"
+              }
             }
           },
           "400": {
@@ -787,7 +946,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -847,7 +1006,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -910,7 +1069,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -973,12 +1132,12 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
           "202": {
-            "description": "Accpeted"
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
@@ -1039,7 +1198,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1102,7 +1261,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1165,7 +1324,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           },
           {
             "in": "body",
@@ -1233,7 +1392,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1293,12 +1452,82 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
           "200": {
             "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/toggleAFDTrafficRouting": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Toggle AFD traffic routing for a Power Pages website.",
+        "description": "Toggles traffic routing between Azure Front Door and web apps for a portal. When enableAFD is true, enables the AFD endpoint and adds service tag restrictions to web apps. When false, removes service tags and disables the AFD endpoint.",
+        "operationId": "ToggleAFDTrafficRouting",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "enableAFD",
+            "description": "True to enable AFD routing, false to disable.",
+            "required": true,
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ToggleAFDTrafficRoutingResponse"
+            }
           },
           "400": {
             "description": "Bad Request",
@@ -1359,7 +1588,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1425,7 +1654,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -1486,7 +1715,7 @@
         },
         "selectedBaseLanguage": {
           "format": "int32",
-          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
+          "description": "Language ID - https://go.microsoft.com/fwlink/?linkid=2208135",
           "type": "integer"
         },
         "subdomain": {
@@ -1496,6 +1725,26 @@
         "websiteRecordId": {
           "description": "Dataverse record unique identifier (ID) of the website",
           "type": "string"
+        }
+      }
+    },
+    "ConvertTrialToProductionRequest": {
+      "type": "object",
+      "properties": {
+        "EnableCDN": {
+          "description": "Enable Content Delivery Network (CDN) for the website",
+          "default": false,
+          "type": "boolean"
+        },
+        "EnableWAF": {
+          "description": "Enable Web Application Firewall (WAF) for the website",
+          "default": false,
+          "type": "boolean"
+        },
+        "UseDynamics365PortalAddOnLicense": {
+          "description": "Use Dynamics 365 Portal Add-On License for the website",
+          "default": false,
+          "type": "boolean"
         }
       }
     },
@@ -1512,6 +1761,18 @@
           }
         },
         "@odata.nextLink": {
+          "type": "string"
+        }
+      }
+    },
+    "ToggleAFDTrafficRoutingResponse": {
+      "required": [
+        "message"
+      ],
+      "type": "object",
+      "properties": {
+        "message": {
+          "description": "Result message describing the outcome of the toggle operation.",
           "type": "string"
         }
       }
@@ -1608,7 +1869,7 @@
         },
         "selectedBaseLanguage": {
           "format": "int32",
-          "description": "Language unique identifier (ID) of the website - https://go.microsoft.com/fwlink/?linkid=2208135",
+          "description": "Language ID - https://go.microsoft.com/fwlink/?linkid=2208135",
           "type": "integer"
         },
         "customHostNames": {
@@ -2056,36 +2317,30 @@
         }
       }
     },
-    "AllowedIpAddressesConfiguration": {
+    "IpAddressEntity": {
+      "description": "Represents an IP address entry in the allow list",
       "type": "object",
       "properties": {
-        "AllowedIpAddresses": {
-          "type": "array",
-          "items": {
-            "type": "object",
-            "properties": {
-              "IpAddress": {
-                "description": "The IP address or CIDR range",
-                "type": "string"
-              },
-              "IpType": {
-                "$ref": "#/definitions/IpAddressType"
-              },
-              "TenantId": {
-                "format": "uuid",
-                "description": "The unique identifier of the tenant",
-                "type": "string"
-              },
-              "CreatedOn": {
-                "format": "date-time",
-                "description": "The creation timestamp of the IP address entry",
-                "type": "string"
-              },
-              "LastModifiedOn": {
-                "type": "string"
-              }
-            }
-          }
+        "IpAddress": {
+          "description": "The IP address or CIDR range",
+          "type": "string"
+        },
+        "IpType": {
+          "$ref": "#/definitions/IpAddressType"
+        },
+        "TenantId": {
+          "format": "uuid",
+          "description": "The unique identifier of the tenant",
+          "type": "string"
+        },
+        "CreatedOn": {
+          "format": "date-time",
+          "description": "The creation timestamp of the IP address entry",
+          "type": "string"
+        },
+        "LastModifiedOn": {
+          "description": "The last modification timestamp of the IP address entry",
+          "type": "string"
         }
       }
     },

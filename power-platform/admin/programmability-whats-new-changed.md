@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 11/19/2025
+ms.date: 04/06/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -16,10 +16,68 @@ search.audienceType:
 
 Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
 
+## February 2026
+
+| Item | Type | Description |
+|------|------|-------------|
+| List Environment Group Role Assignments | API | New endpoint: [List Environment Group Role Assignments (Preview)](/rest/api/power-platform/authorization/role-based-access-control/list-environment-group-role-assignments) |
+| Create Environment Group Role Assignment | API | New endpoint: [Create Environment Group Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/create-environment-group-role-assignment) |
+| Delete Environment Group Role Assignment | API | New endpoint: [Delete Environment Group Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/delete-environment-group-role-assignment) |
+| List Environment Role Assignments | API | New endpoint: [List Environment Role Assignments (Preview)](/rest/api/power-platform/authorization/role-based-access-control/list-environment-role-assignments) |
+| Create Environment Role Assignment | API | New endpoint: [Create Environment Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/create-environment-role-assignment) |
+| Delete Environment Role Assignment | API | New endpoint: [Delete Environment Role Assignment (Preview)](/rest/api/power-platform/authorization/role-based-access-control/delete-environment-role-assignment) |
+| List Connections | API | New endpoint: [List Connections](/rest/api/power-platform/connectivity/connections/list-connections) |
+| Reassign Copilot Agent | API | New endpoint: [Reassign Copilot Agent](/rest/api/power-platform/copilotstudio/bots/reassign-copilot-agent) |
+| Get Flow Run Actions for DSR | API | New endpoint: [Get Flow Run Actions for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flow-run-actions-for-dsr) |
+| Get Approvals for DSR | API | New endpoint: [Get Approvals for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-approvals) |
+| Delete Approval for DSR | API | New endpoint: [Delete Approval for DSR Compliance](/rest/api/power-platform/workflowsagent/dsr-compliance/delete-approval) |
+| Get Connections for DSR | API | New endpoint: [Get Connections for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-connections) |
+| Delete Connection for DSR | API | New endpoint: [Delete Connection for DSR Compliance](/rest/api/power-platform/workflowsagent/dsr-compliance/delete-connection) |
+| Get Conversation Transcripts for DSR | API | New endpoint: [Get Conversation Transcripts for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-conversation-transcripts-for-dsr) |
+| Get Flow Run Actions (Environment-Scoped) | API | New endpoint: [Get Flow Run Actions for DSR Export (Environment-Scoped)](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flow-run-actions-with-environment) |
+| Get Conversation Transcripts (Environment-Scoped) | API | New endpoint: [Get Conversation Transcripts for DSR Export (Environment-Scoped)](/rest/api/power-platform/workflowsagent/dsr-compliance/get-conversation-transcripts-with-environment) |
+| Get Flow Runs (Environment-Scoped) | API | New endpoint: [Get Flow Runs for DSR Export (Environment-Scoped)](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flow-runs-non-singleton) |
+| Get Run History Data (Environment-Scoped) | API | New endpoint: [Get Run History Data for DSR Export (Environment-Scoped)](/rest/api/power-platform/workflowsagent/dsr-compliance/get-run-history-data-non-singleton) |
+| Get Flows for DSR | API | New endpoint: [Get Flows for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flows) |
+| Delete Flow for DSR | API | New endpoint: [Delete Flow for DSR Compliance](/rest/api/power-platform/workflowsagent/dsr-compliance/delete-flow) |
+| Get Flow Runs for DSR | API | New endpoint: [Get Flow Runs for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flow-runs-singleton) |
+| Get Run History Data for DSR | API | New endpoint: [Get Run History Data for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-run-history-data) |
+| Get Prompts for DSR | API | New endpoint: [Get AI Model Prompts for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-prompts) |
+| Delete Prompt for DSR | API | New endpoint: [Delete AI Model Prompt for DSR Compliance](/rest/api/power-platform/workflowsagent/dsr-compliance/delete-prompt) |
+| Query Resources | Bug fixes | Various bug fixes for [Query Resources](/rest/api/power-platform/resourcequery/resource-query/query-resources) |
+| Enable Managed Environment | Bug fixes | Various bug fixes for [Enable Managed Environment](/rest/api/power-platform/environmentmanagement/environment-managed-governance/enable-managed-environment) |
+| Powerplatform-Management (Python) | SDK | [Monthly Release](https://pypi.org/project/powerplatform-management/2.0.3350.223/) |
+| Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3350.223) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
+
+## January 2026
+
+| Item | Type | Description |
+|------|------|-------------|
+| Delete Copilot Agent | API | New endpoint: [Delete Copilot Agent](/rest/api/power-platform/copilotstudio/bots/delete-copilot-agent) |
+| Get Finance and Operations Maintenance Settings | API | New endpoint: [Get Finance and Operations Maintenance Settings](/rest/api/power-platform/dynamics/finance-and-operations-maintenance-settings/get-fin-ops-maintenance-settings) |
+| Update Finance and Operations Maintenance Settings | API | New endpoint: [Update Finance and Operations Maintenance Settings](/rest/api/power-platform/dynamics/finance-and-operations-maintenance-settings/update-fin-ops-maintenance-settings) |
+| Get Rule Set | API | New endpoint: [Get Rule Set](/rest/api/power-platform/governance/rule-sets/get-rule-set) |
+| Create Rule Set | API | New endpoint: [Create Rule Set](/rest/api/power-platform/governance/rule-sets/create-rule-set) |
+| List Rule Sets For Tenant | API | New endpoint: [List Rule Sets For Tenant](/rest/api/power-platform/governance/rule-sets/get-rule-set-list-for-tenant) |
+| Update Rule Set | API | New endpoint: [Update Rule Set](/rest/api/power-platform/governance/rule-sets/update-rule-set) |
+| Delete Rule Set | API | New endpoint: [Delete Rule Set](/rest/api/power-platform/governance/rule-sets/delete-rule-set) |
+| Convert Trial To Production | API | New endpoint: [Convert Trial To Production](/rest/api/power-platform/powerpages/websites/convert-trial-to-production) |
+| Get User Per Flow Capacity Source | API | New endpoint: [Get User Per Flow Capacity Source](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source) |
+| Get User Per Flow Capacity Source Flow Context Summary | API | New endpoint: [Get User Per Flow Capacity Source Flow Context Summary](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source-flow-context-summary) |
+| Get User Per Flow Capacity Source Flow Context Summary For User ID | API | New endpoint: [Get User Per Flow Capacity Source Flow Context Summary For User ID](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source-flow-context-summary-for-user-id) |
+| Get User Per Flow Capacity Source Tenant Context Summary | API | New endpoint: [Get User Per Flow Capacity Source Tenant Context Summary](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source-tenant-context-summary) |
+| Get User Per Flow Capacity Source User Context Summary | API | New endpoint: [Get User Per Flow Capacity Source User Context Summary](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source-user-context-summary) |
+| Get User Per Flow Capacity Source User Context Summary For User ID | API | New endpoint: [Get User Per Flow Capacity Source User Context Summary For User ID](/rest/api/power-platform/licensing/user-per-flow-capacity-source/get-user-per-flow-capacity-source-user-context-summary-for-user-id) |
+| Powerplatform-Management (Python) | SDK | [Monthly Release](https://pypi.org/project/powerplatform-management/2.0.3317.207/) |
+| Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3317.207) |
+| Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/2.3.2) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
+
 ## October 2025
 | Item | Type | Description |
 |------|------|-------------|
-| Query Resources | API | New endpoint: [Query Resources](/rest/api/power-platform/resourcequery/resources/query-resources) |
+| Query Resources | API | New endpoint: [Query Resources](/rest/api/power-platform/resourcequery/resource-query/query-resources) |
 | Add Allowed IP Addresses | API | New endpoint: [Add Allowed IP Addresses](/rest/api/power-platform/powerpages/websites/add-allowed-ip-addresses) |
 | Create Environment Rule Based Assignment | Bug fixes | Various bug fixes for [Create Environment Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-environment-rule-based-assignment) |
 | Create Environment Group Rule Based Assignment | Bug fixes | Various bug fixes for [Create Environment Group Rule Based Assignment](/rest/api/power-platform/governance/rule-based-policies/create-enviornment-group-rule-based-assignment) |
@@ -110,9 +168,9 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 
 | Item | Type | Description |
 |------|------|-------------|
-| Get Bot Quarantine Status | API | New endpoint: [Get Bot Quarantine Status](/rest/api/power-platform/powervirtualagents/bots/get-bot-quarantine-status) |
-| Set Bot As Quarantined | API | New endpoint: [Set Bot As Quarantined](/rest/api/power-platform/powervirtualagents/bots/set-bot-as-quarantined) |
-| Set Bot As Unquarantined | API | New endpoint: [Set Bot As Unquarantined](/rest/api/power-platform/powervirtualagents/bots/set-bot-as-unquarantined) |
+| Get Bot Quarantine Status | API | New endpoint: [Get Bot Quarantine Status](/rest/api/power-platform/copilotstudio/bots/get-bot-quarantine-status) |
+| Set Bot As Quarantined | API | New endpoint: [Set Bot As Quarantined](/rest/api/power-platform/copilotstudio/bots/set-bot-as-quarantined) |
+| Set Bot As Unquarantined | API | New endpoint: [Set Bot As Unquarantined](/rest/api/power-platform/copilotstudio/bots/set-bot-as-unquarantined) |
 | Microsoft.PowerApps.CLI | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerApps.CLI/1.42.1#releasenotes-body-tab) |
 | Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
@@ -132,9 +190,9 @@ Learn about the latest changes and new capabilities for Power Platform API and a
 
 | Item | Type | Description |
 |------|------|-------------|
-| List Operations for Environment | API | New endpoint: [List Operations For Environment](/rest/api/power-platform/environmentmanagement/operations/list-operations-for-environment) |
-| Get Operation by ID | API | New endpoint: [Get Operation By ID](/rest/api/power-platform/environmentmanagement/operations/get-operation-by-id) |
-| Delete Environment by ID | API | New endpoint: [Delete Environment By ID](/rest/api/power-platform/environmentmanagement/environments/delete-environment-by-id) |
+| List Operations for Environment | API | New endpoint: [List Operations For Environment](/rest/api/power-platform/environmentmanagement/operation/get-operations-for-environment) |
+| Get Operation by ID | API | New endpoint: [Get Operation By ID](/rest/api/power-platform/environmentmanagement/operation/get-operation-by-id) |
+| Delete Environment by ID | API | New endpoint: [Delete Environment By ID](/rest/api/power-platform/environmentmanagement/environment-delete/delete-environment-by-id) |
 | Create Rule Based Policy | API | New endpoint: [Create Rule Based Policy](/rest/api/power-platform/governance/rule-based-policies/create-rule-based-policy) |
 | List Rule Based Policies | API | New endpoint: [List Rule Based Policies](/rest/api/power-platform/governance/rule-based-policies/list-rule-based-policies) |
 | Get Rule Based Policy by ID | API | New endpoint: [Get Rule Based Policy By ID](/rest/api/power-platform/governance/rule-based-policies/get-rule-based-policy-by-id) |

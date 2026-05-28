@@ -3,7 +3,7 @@
   "info": {
     "title": "Microsoft Power Platform REST API - powerautomate",
     "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
-    "version": "2022-03-01-preview"
+    "version": "2024-10-01"
   },
   "host": "api.powerplatform.com",
   "schemes": [
@@ -91,7 +91,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -182,7 +182,7 @@
           {
             "in": "query",
             "name": "isTrigger",
-            "description": "Indicates if the flow action is a trigger. Defaults to no filtering if not specified.",
+            "description": "Indicates if the action is a trigger. No filter if unset.",
             "type": "boolean"
           },
           {
@@ -200,7 +200,7 @@
           {
             "in": "query",
             "name": "exact",
-            "description": "Indicates whether exact matching should be used for `parameterName` and `parameterValue`.",
+            "description": "Use exact matching for parameterName and parameterValue.",
             "type": "boolean",
             "default": false
           },
@@ -210,7 +210,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -292,7 +292,7 @@
             "description": "The API version.",
             "required": true,
             "type": "string",
-            "default": "2022-03-01-preview"
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -591,7 +591,7 @@
           "type": "object",
           "properties": {
             "code": {
-              "description": "Error code indicating the type of failure (e.g., BadRequest, InternalServerError).",
+              "description": "Error code for the failure type (e.g., BadRequest).",
               "type": "string"
             },
             "message": {
@@ -623,7 +623,7 @@
       "type": "string"
     },
     "ModernFlowType": {
-      "description": "Indicates the modernflow type.",
+      "description": "Indicates the modern flow type.",
       "enum": [
         "PowerAutomateFlow",
         "AgentFlow"

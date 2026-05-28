@@ -3,13 +3,15 @@ title: Update the Center of Excellence (CoE) Starter Kit
 description: Learn how to upgrade, test, and manage new releases for the Power Platform Center of Excellence Starter Kit to keep your organization current.
 author: stjeffer
 ms.topic: how-to
-ms.date: 08/27/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: jhaskett-msft
 ---
 
 # Update the Center of Excellence (CoE) Starter Kit
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article helps you upgrade the CoE Starter Kit. It provides guidance on:
 
@@ -157,10 +159,6 @@ After you remove unmanaged layers, import the new solution version:
  
    :::image type="content" source="/power-platform/guidance/coe/media/coe-upgrade2.png" alt-text="Screenshot showing how to check that the end time for the solution import is not empty." lightbox="/power-platform/guidance/coe/media/coe-upgrade2.png":::
     
-1. If the [solution history](/power-apps/maker/data-platform/solution-history#view-solution-history) indicates that the upgrade failed,  [raise an issue](https://aka.ms/coe-starter-kit-issues) and [provide the solution operation error details](/powerapps/maker/data-platform/solution-history#view-solution-operation-error-details).
- 
-   :::image type="content" source="/power-platform/guidance/coe/media/coe-upgrade4.png" alt-text="Screenshot showing how to view solution operation error details." lightbox="/power-platform/guidance/coe/media/coe-upgrade4.png":::
- 
 1. After the solution import succeeds, open the **Center of Excellence - Core Components** solution.
 
 1. Open the **CoE Setup and Upgrade Wizard**.

@@ -14,6 +14,8 @@
       href: fusion-development.md
     - name: Test apps with Test Engine (preview)
       href: ../test-engine/index.yml
+    - name: Playwright samples
+      href: playwright-samples/toc.yml
     - name: ALM for developers
       href: /power-platform/alm/alm-for-developers
     - name: Publish your app on Marketplace

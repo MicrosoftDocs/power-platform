@@ -4,7 +4,7 @@ description: Learn how to export old LaunchPowerApp events from Microsoft Purvie
 author: pete-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/02/2024
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: petrip
 ms.reviewer: sericks
@@ -15,6 +15,8 @@ contributors:
 ---
 
 # Collect historic audit log events
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This solution collects app launches after they are configured, but it isn't set up to collect historic app launches. Depending on your [Microsoft 365 license](https://www.microsoft.com/licensing/docs), historic data is available for up to one year through the audit log in Microsoft Purview.
 
@@ -38,7 +40,3 @@ You can use one of the flows in the solution to manually load historic data into
     > If the file isn't loaded after you select **Import**, it might exceed the allowed content size for this trigger. Try to break the file into smaller files, each of which contains a maximum of 50,000 rows. Then run the flow once per file. The flow can be run for multiple files simultaneously.
 
 After the flow runs, the logs are included in your telemetry. If more recent launches are found, the *last launched* list for the apps is updated.
-
-## Provide feedback
-
-If you find a bug with the CoE Starter Kit, file a bug against the solution at [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).

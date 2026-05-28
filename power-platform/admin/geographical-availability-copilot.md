@@ -1,10 +1,10 @@
 ---
-title: Move data across regions for Copilots and generative AI features
+title: Move data across regions for Copilots, AI agents, and generative AI features
 description: Learn how to turn on data movement across regions for Copilots and generative AI features.
 author: mikferland-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/09/2025
+ms.date: 05/21/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: miferlan
@@ -34,10 +34,11 @@ ms.custom:
 ms.collection: 
     - bap-ai-copilot
 ms.contributors:
+  - lapeter
   - nitemp
 ---
 
-# Move data across regions for Copilots and generative AI features
+# Move data across regions for Copilots, AI agents, and generative AI features
 
 Copilots and generative AI features aren't available in all regions and languages. In some cases, even where there's some in region capacity, data may still have to move outside of the region for availability reasons or because certain features depend on other capacity or Microsoft services. For this reason and depending on where your environment is hosted and what features you use, you might need to allow data movement across regions to use Copilots and generative AI features. This article explains how to do that.
 
@@ -55,7 +56,7 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
 | United States | In region* | United States| 
-| Europe\**  | In EU Data Boundary | United States |
+| Europe\**  | In European Untion (EU) Data Boundary | United States |
 | France<br>Germany<br>Norway<br>Sweden<br>Switzerland\** | In EU Data Boundary | United States|
 | Brazil<br>Canada<br>Japan<br>Korea<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Asia<br>Singapore | In region* or United States | United States |
@@ -69,9 +70,9 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 
 Learn more about EU Data Boundary in [What is the EU Data Boundary?](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations).
 
-## Turn on data movement, Bing search, and Microsoft 365 services for Copilots and generative AI features
+## Turn on data movement, Bing search, Microsoft 365 services, and flex routing
 
-To turn on data movement across regions, Bing search, and Microsoft 365 services for Copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Power Platform administrator or Dynamics 365 administrator.
+To turn on data movement across regions, Bing search, Microsoft 365 services, and flex routing for Copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Power Platform administrator or Dynamics 365 administrator.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
@@ -108,6 +109,20 @@ To turn on data movement across regions, Bing search, and Microsoft 365 services
 
     > [!NOTE]
     > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Microsoft 365 services** checkbox.
+
+1. If your environment is in the European Union Data Boundary, the **Allow flex routing during periods of peak load** checkbox is displayed.
+
+    For tenants that are managed through the Microsoft 365 admin center, the default value of the **Allow flex routing during periods of peak load** setting in the Power Platform admin center is the same as the Microsoft 365 admin center toggle, unless the **Move data across regions** setting is turned off.
+
+    - Select the **Allow flex routing during periods of peak load** checkbox, if desired. This setting allows LLM inferencing and the storage of associated pseudonymized data to occur outside the EU Data Boundary during periods of peak demand.
+    - If you don’t want to allow flex routing, clear the **Allow flex routing during periods of peak load** checkbox, which results in all LLM inferencing occuring inside the EU Data Boundary, even during periods of peak demand.
+      - If the **Allow flex routing during periods of peak load** checkbox is visible but unavailable, it means either the feature is currently   turned off in the Microsoft 365 admin center or the **Move data across regions** setting isn't enabled in the Power Platform admin center.
+      - Flex routing is on by default for eligible tenants that were created after March 25, 2026. For eligible tenants that existed before March 25, 2026, please check the Message Center for more details on your tenant's default flex routing setting.
+    
+    > [!NOTE]
+    > - Flex routing lets customers in the European Union Data Boundary allow large language model (LLM) inferencing to occur outside the EU Data Boundary during periods of peak demand to help maintain a consistent Copilot experience. Inferencing is the processing step when an AI model executes the prompt to produce an output or response, such as summarizing content or answering a question.
+    > - No matter where LLM inferencing occurs, data is encrypted in transit and at rest. Data at rest continues to be stored inside the EU Data Boundary, except for limited pseudonymized data which may be stored outside the EU Data Boundary for security and operational purposes. For more information, see [Services that transfer a subset of Customer Data, pseudonymized personal data, or Professional Services Data out of the EU Data Boundary on an ongoing basis](/privacy/eudb/eu-data-boundary-ongoing-partial-transfers).
+    > - For more information, see [Flex routing (EU and EFTA)](https://go.microsoft.com/fwlink/?linkid=2356281).
 
 1. Select **Save**.
 

@@ -4,7 +4,7 @@ description: "This article discusses the integration of Dataverse with Git, focu
 author: caburk
 ms.subservice: alm
 ms.author: matp
-ms.date: 02/09/2026
+ms.date: 03/25/2026
 ms.custom: 
 ms.topic: install-set-up-deploy
 ms.reviewer: matp
@@ -27,7 +27,7 @@ As the team develops, customizations within an environment can be committed to G
    > A limited number of licenses are available in Azure DevOps in the Basic Plan of the service. Go to [Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/) for more information on pricing and licensing for Azure DevOps.
 
 - Azure DevOps Services permission for making commits and reading source files is required. Members of the Contributors security group have permission.
-- A Power Platform environment with Dataverse and the system administrator security role is required to connect to Git, which completes the initial binding of your environment or solution to a project in Azure DevOps.
+- A Power Platform environment with Dataverse and the system administrator security role is required to connect to Git or disconnect from Git, which completes the initial binding of your environment or solution to a project in Azure DevOps.
 
 ## Azure DevOps setup
 
@@ -55,6 +55,8 @@ Connecting to Git binds solutions in your environment to a specific location and
    > [!NOTE]
    > By design, the Default Solution and Common Data Service Default Solution can't be connected to Git. Use a custom solution for app and solution development.
 
+For information about connecting to Git using code see [Connect and disconnect Dataverse from a Git repository by using code](git-api.md).
+
 ### How to choose between environment and solution binding
 
 If you're not sure which binding strategy to use, environment binding is the recommended approach to get started with Git integration in Dataverse. Here are some key differences between environment and solution binding to help you decide which approach is right for you.
@@ -65,7 +67,7 @@ Environment binding is a single process for binding your entire Dataverse enviro
 
 #### Solution binding
 
-Solution binding can be used to source control multiple solutions within the same environment to separate branches or folders. Solution binding provides additional flexibility in your source files organization but requires more management on the part of the makers to onboard new solutions to source control. The system requires that there only be one location in source control for each and every solution object, which means that if you're going to choose to bind solutions to different source locations, the system doesn't allow you to have the same object in multiple solutions. For this reason, different solutions in an environment can not be bound to different repositories. 
+Solution binding can be used to source control multiple solutions within the same environment to separate branches or folders. Solution binding provides additional flexibility in your source files organization but requires more management on the part of the makers to onboard new solutions to source control. The system requires that there only be one location in source control for each and every solution object, which means that if you're going to choose to bind solutions to different source locations, the system doesn't allow you to have the same object in multiple solutions. For this reason, different solutions in an environment can not be bound to different repositories.
 
 #### Other considerations
 
@@ -91,6 +93,8 @@ Now you can view the changes made to the solution and can commit and push the ch
 
 Environments and solutions can be disconnected and then reconnected to different Git locations.
 With environment or solution binding, all solutions can be disconnected. With solution binding, you can also disconnect a specific solution.
+
+For information about disconnecting from Git using code see [Connect and disconnect Dataverse from a Git repository by using code](git-api.md).
 
 ### Disconnect all solutions
 

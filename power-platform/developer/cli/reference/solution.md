@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac solution
 
-Commands for working with Dataverse solution projects
+Commands for working with Dataverse solution projects.
 
 [!INCLUDE [solution-intro](includes/solution-intro.md)]
 
@@ -36,7 +36,7 @@ Commands for working with Dataverse solution projects
 |[pac solution import](#pac-solution-import)|Import the solution into Dataverse.|
 |[pac solution init](#pac-solution-init)|Initializes a directory with a new Dataverse solution project|
 |[pac solution list](#pac-solution-list)|List all Solutions from the current Dataverse organization|
-|[pac solution online-version](#pac-solution-online-version)|Sets version for solution loaded in Dataverse.|
+|[pac solution online-version](#pac-solution-online-version)|Gets or sets version for solution loaded in Dataverse.|
 |[pac solution pack](#pac-solution-pack)|Package solution components on local filesystem into solution.zip (SolutionPackager).|
 |[pac solution publish](#pac-solution-publish)|Publishes all customizations|
 |[pac solution sync](#pac-solution-sync)|Sync the current Dataverse solution project to the current state of the solution in your organization.|
@@ -173,6 +173,9 @@ Use one of these values:
 - `Singapore`
 - `Korea`
 - `Sweden`
+- `Italy`
+- `Poland`
+- `NewZealand`
 - `USGovernment`
 - `USGovernmentL4`
 - `USGovernmentL5DoD`
@@ -519,7 +522,7 @@ This parameter requires no value. It's a switch.
 
 ## pac solution online-version
 
-Sets version for solution loaded in Dataverse.
+Gets or sets version for solution loaded in Dataverse.
 
 [!INCLUDE [solution-online-version-intro](includes/solution-online-version-intro.md)]
 
@@ -530,16 +533,16 @@ Sets version for solution loaded in Dataverse.
 
 Name of the solution.
 
-#### `--solution-version` `-sv`
-
-Specify the solution version number.
-
 
 ### Optional Parameters for solution online-version
 
 #### `--environment` `-env`
 
 Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+#### `--solution-version` `-sv`
+
+Specify the solution version number. If omitted, the current online solution version is returned.
 
 [!INCLUDE [solution-online-version-remarks](includes/solution-online-version-remarks.md)]
 

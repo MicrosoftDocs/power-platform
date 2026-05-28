@@ -3,13 +3,15 @@ title: Set up inventory components
 description: Learn how to set up inventory components in the Power Platform Center of Excellence Starter Kit to sync, monitor, and manage Power Platform resources.
 author: manuelap-msft
 ms.topic: how-to
-ms.date: 08/28/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ---
 
 # Set up inventory components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article helps you set up the inventory components of the **Core** solution of the Center of Excellence (CoE) Starter Kit. The inventory is the heart of the CoE. Your Microsoft Power Platform journey is most beneficial when you understand your apps, flows, and makers, and can lay the foundation to monitor new apps and flows being created.
 
@@ -24,7 +26,6 @@ The flows and dataflows in this solution sync all your resources into tables. Th
 > [!NOTE]
 >
 > - If you try out [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) for inventory, we recommend that you don't depend on this feature and test it in a dedicated test environment first. Trying out this feature helps us validate that the feature is what you need and that we're not introducing unintended side effects.
-> - Your feedback is critical to this process. Post your feedback by [raising an issue on GitHub](https://github.com/microsoft/coe-starter-kit/issues/new?assignees=Jenefer-Monroe&labels=coe-starter-kit%2Cquestion&template=5-coe-starter-kit-question.yml&title=%5BCoE+Starter+Kit+-+QUESTION%5D+QUESTION).
 > - Setting up the inventory components by using [Data Export](setup.md#what-data-source-should-i-use-for-my-power-platform-inventory) is only supported through the [Setup Wizard](#set-up-the-inventory-components-by-using-the-setup-wizard). Manual setup instructions are available after the experimental preview.
 
 ## Import the Creator Kit and make connections
@@ -347,8 +348,6 @@ th, td {
 
 ```
 </details>
-
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]
 
 ## What's next?
 

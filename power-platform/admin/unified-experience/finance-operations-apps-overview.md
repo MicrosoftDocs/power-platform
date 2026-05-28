@@ -3,7 +3,7 @@ title: Overview of unified admin experience for finance and operations apps
 description: Overview of unified admin experiences for finance and operations apps customers in the Power Platform admin center.
 author: laneswenka
 ms.topic: overview
-ms.date: 11/06/2025
+ms.date: 04/03/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: sericks
@@ -21,6 +21,8 @@ As part of the unification of admin experiences of finance and operations apps w
 :::image type="content" source="media/one-admin-journey.png" alt-text="Screenshot of the unified admin experience for finance and operations apps.":::
 
 This article gives an overview to finance and operations apps administrators who are new to the Power Platform admin center. Learn some key differences between your prior admin center called Microsoft Dynamics 365 Lifecycle Services and the new experience. You can also browse more resources and articles that provide detailed information for common tasks.
+
+To understand the different unified environment types (UPE, USE, UDE), which applications are included in each ERP template, and regional availability, see [Unified environment types and templates](./unified-environment-types-and-templates.md).
 
 To learn more about the admin unification journey, see the [Power Platform admin center integration with Lifecycle Services (LCS) TechTalk](https://www.youtube.com/watch?v=HmJIuHhx3Hg).
 
@@ -80,7 +82,7 @@ The following table is a reference for each operation type and explains any nuan
 | Backup | Database export | Backup (custom or system-defined)| In Power Platform, a backup is kept in the cloud and never downloaded as a SQL `.bak` or `.bacpac` file. |
 | Restore | Point-in-time restore | Restore (custom or system-defined)| Not applicable |
 | Reset | Not applicable | Reset| This operation isn't yet implemented for environments where **Dynamics 365 Finance and Operations Provisioning App** is installed. |
-| Convert to production | Not applicable | Convert to production | This operation isn't yet implemented for environments where **Finance and Operations Provisioning App** is installed. |
+| Convert to production | Not applicable | Convert to production | Supported for unified environments. For a step-by-step guide, see [Tutorial: Convert a sandbox environment to production for finance and operations apps](./tutorial-convert-sandbox-to-production.md). |
 | Delete | Deallocate/delete | Delete | Restoring a deleted environment where **Dynamics 365 Finance and Operations Provisioning App** is installed, but isn't yet implemented. |
 
 ## Lifecycle Services features not implemented in the Power Platform admin center
@@ -104,6 +106,7 @@ The following table lists features from Lifecycle Services that aren't implement
 
 These continually updated scenario tutorials give a walkthrough for administrators in new experiences.
 
+- [Unified environment types and templates](./unified-environment-types-and-templates.md)
 - [Tutorial: Provision a new environment with an ERP-based template](./tutorial-deploy-new-environment-with-ERP-template.md)
 - [Tutorial: Copy a Lifecycle Services environment to a unified environment](./tutorial-copy-lifecycle-services-environment-unified-environment.md)
 - [Unified admin trials](admin-trials.md)

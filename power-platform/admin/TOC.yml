@@ -60,6 +60,10 @@
                       href: update-apps-to-unified-interface.md
                     - name: Enable the hybrid experience
                       href: enable-hybrid-experience.md
+            - name: Admin notifications and announcements (preview)
+              items:
+              - name: Overview (preview)
+                href: admin-notifications-announcements.md
         - name: Licensing
           items:
             - name: Overview
@@ -312,6 +316,10 @@
                       href: user-channel-override.md
                     - name: Plug-in steps
                       href: plug-ins.md
+                - name: Audit and logs
+                  items:
+                    - name: Monitor system jobs
+                      href: monitor-system-jobs.md
                 - name: Templates
                   items:
                     - name: Access team templates
@@ -438,8 +446,6 @@
               items:
                 - name: Automatic deletion of Power Platform environments
                   href: automatic-environment-cleanup.md
-                - name: Automatic deletion of inactive Dataverse for Teams environments
-                  href: inactive-teams-environment.md
                 - name: Tenant-to-tenant migrations
                   href: move-environment-tenant.md
                 - name: Geo-to-geo migrations
@@ -462,7 +468,7 @@
               href: monitoring/monitoring-overview.md
             - name: View event logs and error logs
               href: monitoring/logs.md
-            - name: Create alerts for your resources (preview)
+            - name: Create alerts for your resources
               href: monitoring/alerts.md
             - name: Metrics and recommendations
               items:
@@ -482,6 +488,8 @@
                   href: power-platform-inventory.md
                 - name: Power Platform inventory API
                   href: inventory-api.md
+                - name: Power Platform inventory schema reference
+                  href: inventory-schema.md
         - name: Copilot
           items:
             - name: Track, manage, and scale Copilot adoption
@@ -498,14 +506,10 @@
                   items:
                     - name: About data encryption
                       href: about-encryption.md
-                    - name: Manage the encryption key
-                      href: manage-encryption-key.md
                     - name: Manage your customer-managed encryption key
                       href: customer-managed-key.md
                     - name: Lock and unlock environments
                       href: cmk-lock-unlock.md
-                    - name: Migrate BYOK environments
-                      href: cmk-migrate-from-byok.md
                     - name: Encrypt column-level data
                       href: data-encryption.md
                 - name: Advanced connector policies (preview)
@@ -580,7 +584,7 @@
                       href: control-app-access-environment.md
                     - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
-                - name: Global Secure Access for agents (preview)
+                - name: Global Secure Access for agents
                   href: security/secure-web-ai-gateway-agents.md
                 - name: Role-based access control for Power Platform admin center (preview)
                   href: security/role-based-access-control.md
@@ -628,6 +632,8 @@
                   href: modernized-business-units-security.md
                 - name: Configure user security in an environment
                   href: database-security-configure.md
+                - name: Control guest access
+                  href: security/guest-access.md
                 - name: How access to records is determined
                   href: how-record-access-determined.md
                 - name: Email exfiltration controls for connectors
@@ -668,6 +674,8 @@
                   href: admin-view-user-licenses.md
                 - name: Create users
                   href: create-users.md
+                - name: Create Entra agent users (preview)
+                  href: agent-users.md
                 - name: Assign licenses
                   href: assign-licenses.md
                 - name: Assign security roles
@@ -872,6 +880,8 @@
                   href: programmability-tutorial-cross-tenant-reporting.md
                 - name: "Tutorial: Create, update, and list Environment Management Settings"
                   href: programmability-tutorial-environmentmanagement-settings.md
+                - name: "Tutorial: Assign roles to service principals (preview)"
+                  href: programmability-tutorial-rbac-role-assignment.md
             - name: PowerShell
               items:
                 - name: Getting started
@@ -956,7 +966,7 @@
               href: disable-delete-address-records.md
             - name: View and take action on bulk deletion jobs
               href: view-take-action-bulk-deletion-jobs.md
-            - name: Restore deleted table records (preview)
+            - name: Restore deleted table records
               href: restore-deleted-table-records.md
             - name: Remove user personal data
               href: remove-user-personal-data.md
@@ -1159,10 +1169,16 @@
           items:
             - name: Overview of unified admin experience for finance and operations apps
               href: unified-experience/finance-operations-apps-overview.md
+            - name: Unified environment types and templates
+              href: unified-experience/unified-environment-types-and-templates.md
             - name: Administration for partners and systems implementers
               href: unified-experience/partners-systems-implementers.md
             - name: Admin trials for finance and operations apps
               href: unified-experience/admin-trials.md
+            - name: Elastic compute for finance and operations apps
+              href: unified-experience/elastic-compute.md
+            - name: Unified admin user management (preview)
+              href: unified-experience/unified-admin-user-management.md
             - name: Tutorials
               items:
                 - name: "Tutorial: Provision a new environment with an ERP-based template"
@@ -1179,6 +1195,12 @@
                   href: unified-experience/tutorial-perform-transactionless-copy.md
                 - name: "Tutorial: Back up and restore unified environment"
                   href: unified-experience/tutorial-backup-restore-unified-environment.md
+                - name: "Tutorial: Schedule environment copy and automated data import using Azure DevOps"
+                  href: unified-experience/tutorial-scheduled-copy-with-data-import.md
+                - name: "Tutorial: Set up a nightly build pipeline for finance and operations apps using Azure DevOps"
+                  href: unified-experience/tutorial-build-pipeline-azure-devops.md
+                - name: "Tutorial: Set up a release pipeline for finance and operations apps using Azure DevOps"
+                  href: unified-experience/tutorial-release-pipeline-azure-devops.md
         - name: Performance tuning and optimization
           items:
             - name: Overview
@@ -1210,6 +1232,8 @@
         - name: Datacenter regions
           href: new-datacenter-regions.md
           items:
+            - name: Power Platform and Dynamics 365 macro regions
+              href: macro-regions.md
             - name: Australia
               href: about-microsoft-cloud-australia.md
             - name: Canada
@@ -1248,12 +1272,16 @@
               href: for-partners-delegated-administrator.md
         - name: Support
           items:
-            - name: Get Support
-              href: get-help-support.md
             - name: Support overview
               href: support-overview.md
+            - name: Get support
+              href: get-help-support.md
+            - name: Manage support requests
+              href: manage-support-requests.md
             - name: Use live chat with persistence
               href: live-chat-support.md
+            - name: Manage support requests
+              href: manage-support-requests.md
             - name: View known issues
               href: view-known-issues.md
             - name: View service health
@@ -1289,3 +1317,4 @@
           href: ../developer/index.yml
         - name: Guidance documentation
           href: ../guidance/index.yml
+

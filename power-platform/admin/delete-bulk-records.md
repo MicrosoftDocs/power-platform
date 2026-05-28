@@ -4,7 +4,7 @@ description: Learn what steps you need to take to remove a large amount of speci
 author: bhgoswam 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/24/2025
+ms.date: 03/30/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: bhgoswam
@@ -17,7 +17,7 @@ search.audienceType:
 
 The *bulk deletion* feature helps you delete data you no longer need so you can maintain data quality and manage the consumption of system storage.  
   
- For example, you can delete the following data in bulk:  
+For example, you can delete the following data in bulk:  
   
 - Stale data.  
 - Data that is irrelevant to the business.
@@ -46,15 +46,27 @@ To delete bulk data, take these steps:
 1. Expand **Data management**, then select **Bulk deletion**.
 1. Select **New** to run the **Bulk Deletion Wizard** to create a bulk deletion job with the records you want to delete.
 
+### Permanent deletion
+
+The Bulk Deletion Wizard includes a **Permanent deletion** checkbox. When selected, records deleted by the bulk delete job are permanently removed and can't be recovered. If [deleted record keeping](restore-deleted-table-records.md) is turned on for your environment, this option skips the step of moving data to deleted records tables, which results in faster job execution.
+
+Permanent deletion is useful when you need to:
+
+- Remove data that is no longer needed in the system, such as logs and activities that are irrelevant after a certain period.
+- Run bulk delete jobs faster, since skipping the step of moving data to deleted tables significantly improves job performance.
+
+> [!CAUTION]
+> Use the **Permanent deletion** option judiciously. Data deleted with this option is permanently lost and can't be restored. Ensure the data targeted by the bulk delete job is no longer needed before you select this checkbox.
+
 To learn how to implement bulk delete in code, go to [Delete data in bulk](/powerapps/developer/common-data-service/delete-data-bulk).
 
 ## Restore deleted records in Power Apps
 
 As a system administrator, you can retrieve deleted records within a specified time frame that you configure.
 
-You can learn more about how to restore deleted records using the recycle bin in [Turn on recycle bin](restore-deleted-table-records.md).
+You can learn more about how to restore deleted records using the deleted records feature in [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md).
 
-If the recycle bin isn't available, you can learn to [Back up and restore environments](backup-restore-environments.md).
+If the deleted records feature isn't turned on, you can learn to [Back up and restore environments](backup-restore-environments.md).
 
 ### Restore all records deleted by a bulk delete job
 
@@ -85,6 +97,42 @@ To restore deleted records, take these steps:
 8. The record view form opens. Select the link **Restore individual records using System Job** at the end of the form.
 9. The **Deleted Records** tab of the job is shown. Select one or more records you want to restore, then select **Restore** on the command bar.
 10. Select **OK** to confirm the action to restore.  
+
+## Error handling
+
+Errors encountered during a bulk delete job are visible under a **Run details** tab.
+
+If a job failed to run, open the latest completed job, and select the **Run details** tab to view all the errors that were encountered during the job.
+
+The top section clearly displays the following details:
+
+- Job status
+- Start time
+- End time
+- Number of records deleted
+- Number of records failed
+- Number of errors, if any
+
+A **Failed** status indicates that the job didn't start. Open the job to review failure reasons.
+
+## Solution-aware bulk deletion jobs
+
+Bulk delete jobs are solution-aware, so you can add them to a solution to make them portable across environments. This helps admins follow application lifecycle management (ALM) best practices and reduces the risk of misconfigurations.
+
+To add a bulk deletion job to a solution, go to the Power Apps maker portal, create or open a solution, and then follow these steps:
+
+1. Select **Add existing** > **More** > **Other** > **Data Life Cycle Config**.
+2. Select one or more bulk deletion jobs to add to the solution.
+
+The **Data Life Cycle Config** is used to include both archival and deletion policies in a solution.
+
+Exporting and importing solutions containing bulk deletion jobs works the same as with other solution components. For example, develop and test a bulk deletion job in a sandbox environment, validate it in preproduction, then import the solution into production.
+
+> [!NOTE]
+> - Only admins can create and import solutions containing bulk deletion jobs.
+> - Only bulk deletion jobs created in Power Platform environments can be solution-aware.
+> - Only job definitions are portable. Deleted data isn't included. 
+> - Imported bulk deletion jobs run immediately on import. Plan imports carefully.
 
 ### Related content
 
