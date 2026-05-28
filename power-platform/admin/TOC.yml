@@ -500,14 +500,10 @@
                   items:
                     - name: About data encryption
                       href: about-encryption.md
-                    - name: Manage the encryption key
-                      href: manage-encryption-key.md
                     - name: Manage your customer-managed encryption key
                       href: customer-managed-key.md
                     - name: Lock and unlock environments
                       href: cmk-lock-unlock.md
-                    - name: Migrate BYOK environments
-                      href: cmk-migrate-from-byok.md
                     - name: Encrypt column-level data
                       href: data-encryption.md
                 - name: Advanced connector policies (preview)
@@ -1230,6 +1226,8 @@
         - name: Datacenter regions
           href: new-datacenter-regions.md
           items:
+            - name: Power Platform and Dynamics 365 macro regions
+              href: macro-regions.md
             - name: Australia
               href: about-microsoft-cloud-australia.md
             - name: Canada

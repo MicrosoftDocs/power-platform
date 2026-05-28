@@ -1,19 +1,15 @@
 ---
 title: Use the SAP Vendor Invoice Management app
 description: Work with vendor invoices in SAP using the SAP Vendor Invoice Management app for Microsoft Power Platform.
-author: jongilman88
-ms.author: jongilman
+author: tverhasselt
+ms.author: thoverh
 contributors:
 - EllenWehrle
-- microsoft-george
-- robinsonshields
-- tverhasselt
-- ryanb58
 - Wrighttyler
 - shanep
 ms.reviewer: ellenwehrle
 ms.topic: get-started
-ms.date: 1/8/2024
+ms.date: 05/20/2026
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -35,7 +31,7 @@ You have three options for viewing a vendor invoice:
 
 ### Select a vendor invoice
 
-Select a recently viewed vendor invoice from *Recent Vendor Invoices* list to load onto the screen.
+Select a recently viewed vendor invoice from the *Recent Vendor Invoices* list to load it onto the screen.
 
 ### Search for vendor invoice
 

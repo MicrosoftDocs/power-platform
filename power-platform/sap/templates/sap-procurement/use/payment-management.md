@@ -1,19 +1,15 @@
 ---
 title: Use the SAP Vendor Payment management app
 description: Learn how you can search for and view SAP vendor payment data using Microsoft's SAP Vendor Payment Management app for Microsoft Power Platform.
-author: jongilman88
-ms.author: jongilman
+author: tverhasselt
+ms.author: thoverh
 contributors:
   - EllenWehrle
-  - microsoft-george
-  - robinsonshields
-  - tverhasselt
-  - ryanb58
   - Wrighttyler
   - shanep
 ms.reviewer: ellenwehrle
 ms.topic: get-started
-ms.date: 1/8/2024
+ms.date: 05/20/2026
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -21,43 +17,43 @@ ms.subservice: solution-templates
 
 # Get started using the SAP Vendor Payment management app
 
-The SAP Vendor Payment Management app is part of the SAP Procurement solution for Microsoft Power Platform. It allows you to search for and view a vendor payment quickly and easily.
+The SAP Vendor Payment Management app is part of the SAP Procurement solution for Microsoft Power Platform. It helps you quickly and easily search for and view a vendor payment.
 
 ## View a vendor payment
   
 You have three options for viewing a vendor payment:
 
 - Enter a known vendor payment number.
-- Select a vendor payment that you have interacted with.
+- Select a vendor payment that you interacted with.
 - Search for a vendor payment based on vendor and date range.
 
 ### Enter a vendor payment number
   
-If you know the vendor payment number of the document you want to view, you can type it in the _Search vendor payment number_ field and select **Search**. You can also optionally provide company code and fiscal year.
+If you know the vendor payment number of the document you want to view, type it in the _Search vendor payment number_ field and select **Search**. You can also optionally provide company code and fiscal year.
 
 ### Select a vendor payment
   
-You can select a recently viewed vendor payment from the _Recently searched payments_ list. Select a vendor from the list to load the data for that vendor payment.
+Select a recently viewed vendor payment from the _Recently searched payments_ list. Select a vendor from the list to load the data for that vendor payment.
   
 :::image type="content" source="media/payments/sap-procure-payments-ed.png" alt-text="Image of the Microsoft's SAP Procurement payment app for Power Platform.":::
   
 ### Search for vendor payment
   
-If you haven't interacted with the vendor payment, and you don't know the exact number, you can search for a vendor payment. Select **Search Payments** to open the vendor payment search screen.
+If you don't know the exact number and you didn't interact with the vendor payment, you can search for a vendor payment. Select **Search Payments** to open the vendor payment search screen.
 
-The vendor payment search screen allows you to search by any individual field or a combination of _Vendor_ and _Due date range_. If you don't know the Vendor Number you can select **Go to advanced search** and search for vendors by name and address.
+The vendor payment search screen allows you to search by any individual field or a combination of _Vendor_ and _Due date range_. If you don't know the Vendor Number, select **Go to advanced search** and search for vendors by name and address.
 
 1. Enter your selection criteria.
 1. Select **Search** to display your results.
-1. Select the _vendor payment_ you would like to display on the vendor payment overview screen.
+1. Select the _vendor payment_ you want to display on the vendor payment overview screen.
 
 ## Field mappings
 
 The table provides payment screen to function module field mappings.
 
-### Vendor Payment Mapping
+### Vendor payment mapping
 
-|     Area                    |     Table               |     Field             |     Display Name            |     Default value |
+|     Area                    |     Table               |     Field             |     Display name            |     Default value |
 | - | - | - | - | - |
 |     Header               |     BKPF                |     BELNR             |     Payment            |     |
 |     Header               |     BKPF                |     BUKRS             |     CompanyCode            |     |

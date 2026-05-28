@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/14/2026
+ms.date: 05/27/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -85,6 +85,14 @@ Make sure you have the System Administrator security role or equivalent permissi
 |---------|-------------|---------------|
 | Allow data availability in Microsoft 365 Copilot | When **On**, allows Dynamics 365 and Dataverse data to be available in Microsoft 365 Copilot Chat. | Off |
 | Turn on Dataverse intelligence (Work IQ) for agents and AI experiences | When **On**, allows reusable business context [business skills](/power-apps/maker/data-platform/data-platform-business-skill-overview) to be used by your agents. | Off |
+
+> [!NOTE]
+> To use the **Allow data availability in Microsoft 365 Copilot** feature, the following settings must be turned on:
+> - [Microsoft 365 admin center: Enable Microsoft 365 admin center Copilot Dataverse settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings)
+> - [Copilot](settings-features.md#copilot-preview)
+> - [Dataverse search: Turn on search indexing to support Dataverse intelligence (WorkIQ) in AI and agent experience](settings-features.md#search)
+> - [Dataverse search: Search for records in Microsoft 365 apps](settings-features.md#search)
+> - [Power Apps: Enable Microsoft 365 Copilot in a model-driven app](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot#enable-microsoft-365-copilot-in-a-model-driven-app) 
 
 ## Dataverse Model Context Protocol
 

@@ -1,19 +1,16 @@
 ---
 title: Set up connections for SAP solutions
 description: Learn how to set up and manage data connection information for SAP-related solution apps and flows and manage connection references.
-author: jongilman88
-ms.author: jongilman
+author: microsoft-dustin
+ms.author: drasener
 contributors:
   - EllenWehrle
   - thoverh
   - galitskyd
-  - microsoft-dustin
-  - ryanb58
-  - scottwoodallmsft
   - Wrighttyler
+ms.date: 05/19/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 09/10/2024
 ms.custom: bap-template
 ms.service: power-platform
 ms.subservice: solution-templates
@@ -23,13 +20,13 @@ ms.subservice: solution-templates
 
 Power Platform services use connectors, like [SAP ERP](/connectors/saperp/), to work with external data sources. A [Connector](/connectors/connectors) is a proxy or a wrapper around an application programming interface (API) that allows the underlying service to talk to Power Platform.
 
-[Solutions](/power-apps/maker/data-platform/solutions-overview) are used to transport apps and components from one environment to another or to apply a set of customizations to existing apps. Solutions are the mechanism for implementing [application lifecycle management (ALM)](/power-platform/alm/overview-alm) in Power Apps and Power Automate.
+Use [Solutions](/power-apps/maker/data-platform/solutions-overview) to transport apps and components from one environment to another or to apply a set of customizations to existing apps. Solutions are the mechanism for implementing [application lifecycle management (ALM)](/power-platform/alm/overview-alm) in Power Apps and Power Automate.
 
-More information: [Solution concepts](/power-platform/alm/solution-concepts-alm)
+For more information, see [Solution concepts](/power-platform/alm/solution-concepts-alm).
 
 The data source for the SAP Procurement solutions is your SAP system. Storing your system's SAP connection information in the solutions ensures that the SAP system connection information can be easily re-established when the solutions are migrated to different environments.
 
-When you import the solutions, you'll be prompted to create new connections or map existing connections.
+When you import the solutions, you're prompted to create new connections or map existing connections.
 
 ## Set up and manage connections
 

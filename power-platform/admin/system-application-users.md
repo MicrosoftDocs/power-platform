@@ -3,7 +3,7 @@ title: Special system users and application users
 description: Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/03/2025
+ms.date: 05/27/2026
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -87,6 +87,8 @@ Most of these users are hidden from user views but they can be found by using th
 | PowerAutomate-DesktopFlowAI | PowerAutomate-DesktopFlowAI@onmicrosoft.com | Service application to perform data integration between Dataverse and the Power Automate AI features | Desktop Flows AI Application User |
 | PowerAutomate-MachineProvisioning | PowerAutomate-MachineProvisioning@onmicrosoft.com | The user performs database operations during Hosted Machine and Hosted Machine Groups provisioning. | System Administrator |
 | Connector Management Service Backend | ConnectorManagementServiceBackend@onmicrosoft.com |To manage Microsoft Power Platform connectors within environments. | System admin |
+|# Sustainability Service Application|	sustainabiity-service@microsoft.com	| Application identity used by the sustainability microservices to perform operations on data.	|Sustainability Service Application Role <br> Sustainability Service Application Role - Data Sync <br> Sustainability Service Application Role - Custom|
+|# sustainability-client|	sustainabiity-client@microsoft.com | Application identity used by sustainability plugins for authorization when invoking backend APIs. |Sustainability Data Provider |
 
 ## The purpose of the system account?
 
