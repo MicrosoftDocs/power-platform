@@ -182,6 +182,12 @@
                   href: business-continuity-disaster-recovery.md
                 - name: Edit environment properties
                   href: edit-properties-environment.md
+                - name: Use AI models in environments
+                  items:
+                    - name: Preview and experimental AI models
+                      href: preview-experimental-ai-models-rule.md
+                    - name: Allow external models
+                      href: allow-llm-generative-responses.md
                 - name: Administration mode
                   href: admin-mode.md
                 - name: Sandbox environment
@@ -440,8 +446,6 @@
               items:
                 - name: Automatic deletion of Power Platform environments
                   href: automatic-environment-cleanup.md
-                - name: Automatic deletion of inactive Dataverse for Teams environments
-                  href: inactive-teams-environment.md
                 - name: Tenant-to-tenant migrations
                   href: move-environment-tenant.md
                 - name: Geo-to-geo migrations
@@ -486,9 +490,6 @@
                   href: inventory-api.md
                 - name: Power Platform inventory schema reference
                   href: inventory-schema.md
-                  items:
-                    - name: Copilot Studio agents schema
-                      href: inventory-schema-copilot-studio-agents.md
         - name: Copilot
           items:
             - name: Track, manage, and scale Copilot adoption
@@ -505,14 +506,10 @@
                   items:
                     - name: About data encryption
                       href: about-encryption.md
-                    - name: Manage the encryption key
-                      href: manage-encryption-key.md
                     - name: Manage your customer-managed encryption key
                       href: customer-managed-key.md
                     - name: Lock and unlock environments
                       href: cmk-lock-unlock.md
-                    - name: Migrate BYOK environments
-                      href: cmk-migrate-from-byok.md
                     - name: Encrypt column-level data
                       href: data-encryption.md
                 - name: Advanced connector policies (preview)
@@ -587,7 +584,7 @@
                       href: control-app-access-environment.md
                     - name: Commonly used Microsoft first-party services and portal apps
                       href: apps-to-allow.md
-                - name: Global Secure Access for agents (preview)
+                - name: Global Secure Access for agents
                   href: security/secure-web-ai-gateway-agents.md
                 - name: Role-based access control for Power Platform admin center (preview)
                   href: security/role-based-access-control.md
@@ -635,6 +632,8 @@
                   href: modernized-business-units-security.md
                 - name: Configure user security in an environment
                   href: database-security-configure.md
+                - name: Control guest access
+                  href: security/guest-access.md
                 - name: How access to records is determined
                   href: how-record-access-determined.md
                 - name: Email exfiltration controls for connectors
@@ -675,6 +674,8 @@
                   href: admin-view-user-licenses.md
                 - name: Create users
                   href: create-users.md
+                - name: Create Entra agent users (preview)
+                  href: agent-users.md
                 - name: Assign licenses
                   href: assign-licenses.md
                 - name: Assign security roles
@@ -1231,6 +1232,8 @@
         - name: Datacenter regions
           href: new-datacenter-regions.md
           items:
+            - name: Power Platform and Dynamics 365 macro regions
+              href: macro-regions.md
             - name: Australia
               href: about-microsoft-cloud-australia.md
             - name: Canada

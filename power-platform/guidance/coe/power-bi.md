@@ -4,14 +4,23 @@ description: Gain deep insights into your Microsoft Power Platform adoption with
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/28/2025
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ---
+
 # Gain insights into Power Platform adoption with the CoE Power BI dashboard
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+> [!TIP]
+> Find Power Platform admin center functionality related to monitoring resources in:
+>
+> - [Power Platform admin center inventory capabilities](../../admin/power-platform-inventory.md) to obtain a unified view of Power Platform resources across the organization including apps, flows, and agents.
+> - [Power Platform admin center Usage page](../../admin/usage.md) to track engagement and adoption across resources.
 
 As a Microsoft Power Platform admin, you need visibility into how your organization uses Power Apps and Power Automate. Insights into your adoption help you govern and secure the platform, identify patterns, and enable you to nurture your makers to accelerate adoption.
 

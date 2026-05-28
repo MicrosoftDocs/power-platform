@@ -1,19 +1,23 @@
 ---
-title: What's new in Microsoft Power Platform adoption guidance
-description: Power Platform adoption guidance delivers best practices, fresh insights, and real-world customer case studies. Learn how to drive success with the latest resources.
-#customer intent: As a Power Platform user, I want to stay updated on the latest Power Platform adoption guidance so that I can align my organization's strategy with current best practices.
+title: What's new in Microsoft Power Platform guidance
+description: Power Platform guidance delivers best practices, fresh insights, and real-world customer case studies. Learn how to drive success with the latest resources.
+#customer intent: As a Power Platform user, I want to stay updated on the latest Power Platform guidance so that I can align my organization's strategy with current best practices.
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/22/2026
+ms.date: 05/07/2026
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ---
 
-# What's new in Microsoft Power Platform adoption guidance
+# What's new in Microsoft Power Platform guidance
 
-The Microsoft Power Platform adoption guidance is developed collaboratively with customers, partners, and internal Microsoft teams. New and updated content is released based on new learnings and product changes. Use the new releases to validate and refine your Power Platform adoption approach.
+The Microsoft Power Platform guidance is developed collaboratively with customers, partners, and internal Microsoft teams. New and updated content is released based on new learnings and product changes. Use the new releases to validate and refine your Power Platform adoption approach.
+
+## May 2026
+
+The Power Platform Center of Excellence (CoE) Starter Kit is no longer actively maintained. Many of the governance, visibility, and best practice capabilities historically delivered through the CoE Starter Kit are now available natively in the [Power Platform admin center](../../admin/admin-documentation.md). In-product experiences like Inventory, Usage, Monitor, Actions, and Licensing give administrators real-time insights into resources, adoption, operational health, and governance. As Microsoft continues to invest in these built-in experiences, customers are encouraged to use the Power Platform admin center as the primary destination for managing and governing Power Platform at scale. Learn more in [Microsoft Power Platform Center of Excellence (CoE) Starter Kit transition to Power Platform admin center](../coe/starter-kit.md).
 
 ## April 2026
 
@@ -35,7 +39,7 @@ Launch of the [Microsoft Power Platform and Copilot Studio Architecture Center](
 
 ## May 2025
 
-Relaunch of the Power Platform adoption guidance.
+Relaunch of the [Power Platform adoption guidance](methodology.md).
 
 ## Customer case studies
 
@@ -44,6 +48,7 @@ Relaunch of the Power Platform adoption guidance.
 ### FY26 Q4
 
 - [Telecom provider mobilezone modernizes service delivery using Microsoft Copilot Studio](../case-studies/mobilezone-modernizes-service-delivery.md)
+- [Tiendas CUADRA delivers always-on customer service and product discovery with Copilot Studio](../case-studies/tiendas-cuadra-customer-service.md)
 
 ### FY26 Q3
 

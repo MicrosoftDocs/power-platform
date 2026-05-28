@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 02/08/2023
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -14,6 +14,8 @@ search.audienceType:
 ---
 
 # Set up other core components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article helps you set up the remaining components in the core solution, not related to [inventory](setup-core-components.md) and [environment request management](setup-environment-components.md). These components are related to **capacity alerting**, making apps discoverable in an **app catalog** and **welcoming new makers**.
 
@@ -32,9 +34,6 @@ This article helps you set up the remaining components in the core solution, not
 This app provides a guided step by step experience through the configuration steps.
 
 :::image type="content" source="media/setupwizard-other.png" alt-text="Screenshot that shows the CoE Starter Kit Setup Wizard for other core components." lightbox="media/setupwizard-other.png":::
-
-> [!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the Inventory components manually.
 
 ## Set up other core components manually
 
@@ -73,4 +72,3 @@ This environment variable affects other components:
 
 You might need to [update environment variables](faq.md#update-environment-variables) after import.
 
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

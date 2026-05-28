@@ -4,13 +4,14 @@ description: Learn about enhancements for Dataverse capacity-based storage that 
 author: ianceicys-msft
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 11/20/2025
+ms.date: 5/12/2026
 ms.subservice: admin
 ms.author: ashi
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
+- rijoshi1
 - ianceicys-msft
 - dasussMS
 ms.contributors:
@@ -55,7 +56,7 @@ Two versions of storage capacity reporting are available:
 
 ## What happens when my organization exceeds storage entitlements?
 
-If your organization exceeds its storage capacity, you receive email notifications that alert you to the over-capacity usage. For details about the new model for email notification, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For details about the legacy model for email notification, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner also appears in the Power Platform admin center when a tenant exceeds storage capacity. Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
+If your organization exceeds its storage capacity, you receive email notifications that alert you to the over-capacity usage. For details about the new model for email notification, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For details about the legacy model for email notification, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner appears in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and model-driven apps when any of the three storage capacities (database, file, or log) fall below 15 percent remaining or exceed the allocated capacity. Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
 
 The following admin operations aren't available when a tenant exceeds storage capacity entitlements:
 
@@ -123,6 +124,7 @@ You can manage capacity overages for environments by opting for pay-as-you-go, r
 
 | Date | Description |
 |------|-------------|
+| April 2026 |We made internal adjustments to how solution-aware tables and metadata are reported in Dataverse. This content now resides in file storage rather than the database tier. You may notice corresponding shifts between database and file storage as the classification updates internally. Overall storage usage remains unchanged, and the transition required no downtime or action from administrators or makers.|
 | April 2025 | We made internal adjustments to how Web Resources are stored in a Dataverse organization. Web Resources continue to be reported as file store, but you might see the size of *WebResourceBase* fluctuate as storage transitions internally. Dataverse doesn't expect storage to significantly increase for *WebResourceBase*, but it might temporarily drop as files transition. |
 | June 2022 | The new finance and operations storage capacity report gives you a way to visualize your organization's storage usage versus your entitlement. |
 | September 2021 | We provide included initial storage capacity for the default environment: 3-GB Dataverse database capacity, 3-GB Dataverse file capacity, and 1-GB Dataverse log capacity. Go to [The default environment](environments-overview.md#default-environment). |

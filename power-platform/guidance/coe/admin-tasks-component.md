@@ -1,11 +1,10 @@
 ---
-title: "Using the Power Platform administration planning component | Microsoft Docs"
+title: Use the Power Platform administration planning component
 description: "Get insights into the tasks and time involved in administering Power Platform."
 author: stjeffer
-
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/07/2022
+ms.date: 05/18/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: sericks
@@ -15,7 +14,12 @@ search.audienceType:
 
 # Use Microsoft Power Platform administration planning
 
-Behind the scenes, your IT and Center of Excellence team spends time configuring, managing and nurturing the adoption of Microsoft Power Platform. Understanding how that time is spent can help you plan who you need on your team and find the highest-impact opportunities to streamline the administrative effort.
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+> [!TIP]
+> Consider using the vibe experience in Power Apps to create a custom solution. Use the prompt provided in [Environment and data policy management](env-mgmt.md#create-environment-management-components-using-power-apps-vibe) as an example.
+
+Behind the scenes, your IT and Center of Excellence team spends time configuring, managing, and nurturing the adoption of Microsoft Power Platform. Understanding how that time is spent can help you plan who you need on your team and find the highest-impact opportunities to streamline the administrative effort.
 
 Microsoft Power Platform administration planning is designed to help you:
 
@@ -38,7 +42,7 @@ Each organization has unique requirements for governance and administration of M
 
 The solution is built on Microsoft Dataverse. Admin tasks are defined in a model-driven app, and insights are provided in a Power BI dashboard.
 
-You can start either by adding your own tasks or importing a set of example tasks from an Excel workbook that has been populated with some of the most common administration tasks, covering:
+You can start either by adding your own tasks or importing a set of example tasks from an Excel workbook populated with some of the most common administration tasks, covering:
 
 - AI Builder
 - Power Apps
@@ -53,7 +57,7 @@ To set up the component, go to [Set up the Microsoft Power Platform administrati
 
 The dashboard and insights this solution provides derive from admin task data that you interact with via the Admin Tasks app. Open the Admin Tasks app to manage the task list. Try to review task metadata frequently (monthly or quarterly), so that the dashboard accurately represents data.  
 
-The table below describes the fields used to define a task.
+This table describes the fields used to define a task.
 
 | Column | Value type | Description |
 |---|---|---|
@@ -100,7 +104,7 @@ This section of the report focuses on how many tasks are reactive ("ad-hoc"). Yo
 This section of the report aggregates duration for all tasks, grouped by task frequency, and provides insight into:
 
 - **Experience levels required**: Illustrates the experience required across all tasks, which can be useful in estimating training requirements for your existing team.
-- **Core admin persona** and **peripheral admin persona**:  Illustrates how many tasks are assigned to the different personas in your core administration team and how many tasks require other teams to complete. For example, creating an environment might require the Power Platform administrator and a Microsoft Entra administrator to create the environment and security groups for managing access.
+- **Core admin persona** and **peripheral admin persona**: Illustrates how many tasks are assigned to the different personas in your core administration team and how many tasks require other teams to complete. For example, creating an environment might require the Power Platform administrator and a Microsoft Entra administrator to create the environment and security groups for managing access.
 
 ### Task overview - categorization
 

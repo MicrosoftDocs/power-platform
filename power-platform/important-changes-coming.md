@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 02/27/2026
+ms.date: 05/22/2026
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -24,6 +24,44 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of Power Automate export from Microsoft Visio
+
+Effective July 14, 2026, the Power Automate integration in the Visio desktop app is deprecated. This feature allowed users to export BPMN (Business Process Model and Notation) diagrams from Visio as cloud flows in Power Automate.
+
+Users on Current Channel might see this change as early as June 30, 2026. Monthly Enterprise Channel and Semi-Annual Enterprise Channel users will see the change starting July 14, 2026. Users on older builds of Microsoft 365 Apps will continue to see the feature until their apps are updated to a build released after the deprecation date. The feature will function on those older builds, but is no longer maintained or supported.
+
+### Why is this needed?
+
+This integration maintains low usage and hasn't kept pace with the capabilities available in Power Automate today. The Visio export path supports a limited subset of flow actions and connectors. [Power Automate](https://make.powerautomate.com) now provides a full-featured flow designer with hundreds of templates, Copilot-assisted flow creation, and over 1,500 connectors. Users who need to create automation flows will have a more complete experience working directly in Power Automate.
+
+### Impact
+
+After the deprecation date, the following Visio desktop features will no longer be available:
+
+- The **Export** button on the ribbon and Export pane
+- The **Show Flow Markup** button on the ribbon
+- Power Automate export options in Visio search results
+
+These features are removed from the UI. Users don't encounter an error or broken state; the entry points are hidden.
+
+#### What is *not* affected
+
+- All existing BPMN diagrams in Visio remain as-is. Nothing is deleted or modified.
+- All flows previously exported from Visio to Power Automate continue to run normally. No action is required for existing flows.
+- BPMN diagram templates remain available in Visio for process modeling.
+
+### Action required
+
+No action is required for existing flows or diagrams.
+
+Users who currently rely on the Visio-to-Power Automate export workflow should transition to creating flows directly in Power Automate.
+
+1. Sign in to [Power Automate](https://make.powerautomate.com).
+1. Use the flow designer to build cloud flows with a visual editor.
+1. Explore [flow templates](https://make.powerautomate.com/templates) for common automation patterns.
+
+Learn more: [Create a cloud flow in Power Automate](/power-automate/get-started-logic-flow)
 
 ## Deprecation of Test Engine
 
@@ -128,13 +166,13 @@ During the transition period, makers can enable either one or both chat experien
 [Microsoft 365 Copilot](/power-apps/user/use-microsoft-365-copilot-model-driven-apps) is now the recommended solution for natural language interactions in model-driven apps. To ensure a smooth transition and prevent any disruption when Copilot chat is retired, we recommend that you migrate to Microsoft 365 Copilot as soon as it becomes available in your environment. 
 
 ## Deprecation of the classic look for model-driven apps
-Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. All apps will use the modern, refreshed look by default.
+Starting in April 2026, makers will no longer be able to switch to the classic look in model-driven apps. This timing applies to all release channels, including the semi-annual channel. All apps will use the modern, refreshed look by default.
 
 ### Why is this needed?
 We are standardizing the experience across model-driven apps to deliver a consistent, accessible, and modern interface that ensures customers benefit from ongoing user experience improvements while unlocking AI-powered capabilities available only in the modern look.
 
 ### Impact
-There is no impact on app logic, data, or permissions. Existing apps will automatically display the modern look. The admin settings related to this feature will be removed.
+There is no impact on app logic, data, or permissions. Existing apps will automatically display the modern look across all release channels, including the semi-annual channel. The admin settings related to this feature will be removed.
 
 ### Replacement feature
 The modern, refreshed look is now the default experience for all model-driven apps. No action is required from makers or admins. For more information on this, see [Modern, refreshed look for model-driven apps](/power-apps/user/modern-fluent-design).
@@ -290,7 +328,7 @@ Effective June 1, 2025, customers will be unable to apply BYOK to production env
 
 If your migration to CMK isn't completed by January 6, 2026, your environment will automatically revert to Microsoft-managed keys. While this ensures continuity of encryption, it limits the control and flexibility you currently enjoy with BYOK. To avoid disruption and take full advantage of the enhanced features and security offered by CMK, we strongly recommend beginning your migration process as soon as possible.
 
-We recommend starting your transition to CMK (customer-managed keys) at your earliest convenience. For more information, go to [Manage your customer-managed encryption key](admin/customer-managed-key.md) and [Migrate bring-your-own-key (BYOK) environments to customer-managed key](admin/cmk-migrate-from-byok.md).
+We recommend starting your transition to CMK (customer-managed keys). For more information, go to [Manage your customer-managed encryption key](admin/customer-managed-key.md).
 
 ## Deprecation of Organization Insights Dashboard
 
@@ -1103,4 +1141,3 @@ See [Important changes coming in Power Pages](/power-pages/important-changes-dep
 [Removed or deprecated features in Finance and Operations apps](/dynamics365/fin-ops-core/fin-ops/get-started/removed-deprecated-features-home-page)<br/>
 
 [!INCLUDE[footer-include](includes/footer-banner.md)]
-

@@ -69,6 +69,8 @@ landingContent:
             url: assign-security-roles.md
           - text: Add users to an environment
             url: add-users-to-environment.md
+          - text: Control guest access
+            url: security/guest-access.md
        - linkListType: learn
          links:
           - text: Get started with security roles in Dataverse
@@ -127,8 +129,8 @@ landingContent:
             url: data-encryption.md
       - linkListType: how-to-guide
         links:
-          - text: Manage encryption key
-            url: manage-encryption-key.md
+          - text: Manage your customer-managed encryption key
+            url: customer-managed-key.md
  
    # Card
   - title: Analytics

@@ -4,7 +4,7 @@ description: "Perform risk assessments and identify critical, orphaned, or unuse
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/06/2023
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -13,6 +13,16 @@ search.audienceType:
 ---
 
 # Govern with the CoE Power BI dashboard
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+> [!TIP]
+> Find governance related resources and Power Platform admin center functionality in:
+>
+> - [Monitor licenses and capacity](../adoption/cds-usage.md) to learn about Power Platform license consumption and capacity monitoring.
+> - [Power Platform admin center inventory capabilities](../../admin/power-platform-inventory.md) to obtain a unified view of Power Platform resources across the organization including apps, flows, and agents.
+> - [Power Platform admin center Usage page](../../admin/usage.md) to track engagement and adoption across resources.
+> - [Power Platform admin center Monitor area](../../admin/monitoring/monitoring-overview.md) to monitor operational health metrics.
 
 As an admin, you can use the insights you gather to drive action, such as performing risk assessments and identifying critical, orphaned, or unused resources. The pages in the **Govern** section enable you to drive action directly from within the Power BI report through an embedded app. The app can be used to grant yourself or others ownership of a resource, or delete it.
 

@@ -1,17 +1,23 @@
 ---
 title: Environment and data policy management
-description: Use Environment Management components in the core solution to automate and manage requests for development resources including data loss prevention or DLP policies.
+description: Use Environment Management components in the core solution to automate and manage requests for development resources including data loss prevention or data policies.
 author: denise-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/29/2025
+ms.date: 05/18/2026
 ms.subservice: guidance-toolkit
 ms.author: demora
 ms.reviewer: jhaskett-msft
 search.audienceType: 
   - admin
 ---
+
 # Environment and data policy management
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+> [!TIP]
+> Explore using the vibe experience in Power Apps to create a custom solution that manages requests for new environments and data policy changes in [Create Environment Management components using Power Apps vibe](#create-environment-management-components-using-power-apps-vibe).
 
 [Watch a walk-through](https://www.youtube.com/watch?v=16mspbGz1zA&list=PLi9EhCY4z99W5kzaPK1np6sv6AzMQDsXG) of how the environment and data policy request process works.
 
@@ -124,9 +130,9 @@ When the request is approved, the system creates the environment with the reques
 
 #### ⏳ Expiration
 
-If the environment has an expiration date, it's automatically deleted after the specified duration. Warning emails are sent to the admins weekly to remind them to save work in source control or other locations outside of the environment.
+An environment with an expiration date is automatically deleted after the specified duration. Warning emails are sent to the admins weekly to remind them to save work in source control or other locations outside of the environment.
 
-If no expiration is set, the environment won't be deleted automatically. The environment must be deleted manually in the Power Platform admin center.
+If no expiration is set, the environment is not deleted automatically. You must delete the environment manually in the Power Platform admin center.
 
 ## Data policy recommendation logic
 
@@ -136,11 +142,11 @@ The admin app uses the following logic to provide guidance on how to configure d
 
 This banner appears in the admin app when you view the request's details page.
 
-| Condition | No policies apply to the environment | Existing policies apply to the environment without including it in any policy’s environment list. | Environment will be added to policies upon approval. |
+| Condition | No policies apply to the environment | Existing policies apply to the environment without including it in any policy's environment list. | Environment is added to policies upon approval. |
 |-|-|-|-|
 | Unblocked |🟡 Connectors aren't blocked or restricted, but no policies protect the environment. Add the environment to at least one policy to prevent data loss.| 🟢 Connectors aren't blocked or restricted and the environment is covered by at least one existing policy. | 🟢 Connectors aren't blocked and the environment is added to selected policies when you approve the request.|
 | Blocked | -- | ⛔ Connectors blocked by original policy configurations. Add environment to existing policy environment lists or modify policies in the Power Platform admin center to unblock connectors. | ⛔ Connectors blocked by current policy configurations. Add environment to different policies or modify policies in the Power Platform admin center to unblock connectors. |
-| Restricted | -- | 🟡 Connectors restricted by original policy configurations. Add environment to existing policies’ environments lists or modify policies in the Power Platform admin center to unblock connectors. | 🟡 Connectors restricted by current policy configurations. Add environment to different policies or modify policies in the Power Platform admin center to unblock connectors. |
+| Restricted | -- | 🟡 Connectors restricted by original policy configurations. Add environment to existing policies' environments lists or modify policies in the Power Platform admin center to unblock connectors. | 🟡 Connectors restricted by current policy configurations. Add environment to different policies or modify policies in the Power Platform admin center to unblock connectors. |
 
 ### Decision matrix: Policy-level recommended actions
 
@@ -148,9 +154,9 @@ Use the following matrix for recommended actions based on the policy and the req
 
 | Impact | All environments | Exclude certain environments | Include multiple environments |
 |-|-|-|-|
-| Not blocked or restricted | No action needed.<br><br>Requested connectors aren't blocked by this policy. This type of policy covers this new environment once created, so no action is needed. | Add policy if the new environment isn't covered. If it's covered, no action needed. | Requested connectors aren't blocked by this policy if added to its environment list. Add to this policy’s list if this environment will be added to another "Exclude certain environments" policy list that is affecting the requested connectors. |
-| Blocked | Unblock allowed connectors in the policy’s definition in the Power Platform admin center. <br><br>⚠CAUTION: changing policies that affect "All environments" can potentially impact any canvas app and cloud flow in the tenant. Confirm impact in the DLP Editor tool.<br><br>If this policy's connector rules can't be changed, you can make an exception for this new environment by changing this policy to an "Exclude certain environments" type policy in the Power Platform admin center. Find or create a "Multiple environments" type policy that allows the requested connectors to add the environment to. Come back to this Environment Request Admin App record and add to the environments list of both policies. | Add to this policy or unblock the blocked connectors. <br><br>If there are no other policies covering the environment, add it to another existing or new "Multiple environments" policy that doesn't block the requested connectors.  | Don't add the new environment to this policy.<br><br>The environment only needs to be added to a "Multiple environments" type policy if it's not covered by other policies. For example, if there are no "All environment policies" and the environment is being excluded from all "Exclude except environments" type policies, no policies cover the environment.<br><br>If there are no better policies to add this environment to, consider updating this policy's connector groups, or create a new policy in the Power Platform admin center. |
-| Restricted | Put the restricted connectors in the same group in the policy’s definition in the Power Platform admin center. <br><br>⚠CAUTION: changing "All environments" type policies can potentially impact any canvas app and cloud flow in the tenant.<br><br>If this policy’s connector rules can't be changed, you can make an exception for this new environment by changing this policy to an "Exclude certain environments" type policy in the Power Platform admin center. Find or create a "Multiple environments" type policy that has the requested connectors in the same group. Come back to this Environment Creation Request Admin App record and add to the environments list of both policies. | Add the environment to this policy’s exception list.<br><br>If you add this to the exception list and there are no other policies covering the environment, add it to another "Multiple environments" policy that won't restrict the acceptable requested connector(s), or create another policy to cover the most critical security requirements.<br><br>Consider if acceptable requested connectors can be unrestricted by updating this policy in the Power Platform admin center. <br><br>Caution: Make sure other environments excluded from this policy won't be negatively impacted by this change. | Don't add the new environment to this policy.<br><br>The environment only needs to be added to a "Multiple environments" type policy if it's being excluded from an "Exclude except environments" type policy and there are no other policies that cover the environment.<br><br>If no existing policies work, consider if updating this policy to include the requested connectors in the same group is an option. Make sure the other environments included in the environment list won't be negatively impacted. Go to the Power Platform admin center to update policy rules. |
+| Not blocked or restricted | No action needed.<br><br>Requested connectors aren't blocked by this policy. This type of policy covers this new environment once created, so no action is needed. | Add policy if the new environment isn't covered. If it's covered, no action needed. | Requested connectors aren't blocked by this policy if added to its environment list. Add to this policy's list if this environment will be added to another "Exclude certain environments" policy list that's affecting the requested connectors. |
+| Blocked | Unblock allowed connectors in the policy's definition in the Power Platform admin center. <br><br>⚠CAUTION: changing policies that affect "All environments" can potentially impact any canvas app and cloud flow in the tenant. Confirm impact in the DLP Editor tool.<br><br>If this policy's connector rules can't be changed, you can make an exception for this new environment by changing this policy to an "Exclude certain environments" type policy in the Power Platform admin center. Find or create a "Multiple environments" type policy that allows the requested connectors to add the environment to. Come back to this Environment Request Admin App record and add to the environments list of both policies. | Add to this policy or unblock the blocked connectors. <br><br>If there are no other policies covering the environment, add it to another existing or new "Multiple environments" policy that doesn't block the requested connectors.  | Don't add the new environment to this policy.<br><br>The environment only needs to be added to a "Multiple environments" type policy if it's not covered by other policies. For example, if there are no "All environment policies" and the environment is being excluded from all "Exclude except environments" type policies, no policies cover the environment.<br><br>If there are no better policies to add this environment to, consider updating this policy's connector groups, or create a new policy in the Power Platform admin center. |
+| Restricted | Put the restricted connectors in the same group in the policy's definition in the Power Platform admin center. <br><br>⚠CAUTION: changing "All environments" type policies can potentially impact any canvas app and cloud flow in the tenant.<br><br>If this policy's connector rules can't be changed, you can make an exception for this new environment by changing this policy to an "Exclude certain environments" type policy in the Power Platform admin center. Find or create a "Multiple environments" type policy that has the requested connectors in the same group. Come back to this Environment Creation Request Admin App record and add to the environments list of both policies. | Add the environment to this policy's exception list.<br><br>If you add this to the exception list and there are no other policies covering the environment, add it to another "Multiple environments" policy that won't restrict the acceptable requested connector(s), or create another policy to cover the most critical security requirements.<br><br>Consider if acceptable requested connectors can be unrestricted by updating this policy in the Power Platform admin center. <br><br>Caution: Make sure other environments excluded from this policy won't be negatively affected by this change. | Don't add the new environment to this policy.<br><br>The environment only needs to be added to a "Multiple environments" type policy if it's being excluded from an "Exclude except environments" type policy and there are no other policies that cover the environment.<br><br>If no existing policies work, consider if updating this policy to include the requested connectors in the same group is an option. Make sure the other environments included in the environment list won't be negatively impacted. Go to the Power Platform admin center to update policy rules. |
 
 ## Developer: Request a data policy change
 
@@ -235,10 +241,67 @@ To view and respond to the DLP Policy Change Requests:
 
 1. To view the request in more detail, select one of the requests and select the **Details** action in the ribbon.
 
-1. To approve or deny a request, filter the status to “Pending” and select one of the requests. Only requests with pending status can be responded to in the app.
+1. To approve or deny a request, filter the status to "Pending" and select one of the requests. Only requests with pending status can be responded to in the app.
 
-1. Choose to “approve” or “reject” the selected request using the actions in the ribbon.
+1. Choose to "approve" or "reject" the selected request using the actions in the ribbon.
 
-    - If you approve a request, the app updates the status to “Approved.” This update triggers a flow that automatically applies the selected policy to the indicated environment. The flow also removes the environment from all other policies that have an “include” environment scope and adds the environment to all policies with an “exclude” environment scope. Make sure this behavior fits with your company’s security requirements before continuing. When the automation completes, the request status is set to “Fulfilled” and the record is deactivated.
+    - If you approve a request, the app updates the status to "Approved." This update triggers a flow that automatically applies the selected policy to the indicated environment. The flow also removes the environment from all other policies that have an "include" environment scope and adds the environment to all policies with an "exclude" environment scope. Make sure this behavior fits with your company's security requirements before continuing. When the automation completes, the request status is set to "Fulfilled" and the record is deactivated.
 
-    - If you reject the request, the app sets the status to “Rejected” and deactivates the record.
+    - If you reject the request, the app sets the status to "Rejected" and deactivates the record.
+
+## Create Environment Management components using Power Apps vibe
+
+You can create your own custom solutions using the [vibe experience in Power Apps](/power-apps/vibe/overview). For example, you can use this sample prompt to create an app that standardizes how makers request new environments and data policy changes and how admins review and approve them. Adapt the prompt to fit your organization's specific needs and processes.
+
+```agent-prompt
+Build an Environment Management app with two experiences: a Maker view and an Admin view.
+Maker View: 
+The maker experience allows developers and business users to submit two types of requests:
+1. Environment Creation Request
+   Show a multi-step form where makers can:
+   - Select connectors they need (multi-select list, such as SharePoint, Teams, SQL, Salesforce)
+   - Choose one or more environment administrators from a people picker
+   - Enter environment details: display name, region (dropdown), environment type (Sandbox, Production, Developer), and business purpose (text field)
+   - Toggle auto-cleanup on or off; if on, specify the number of days before auto-deletion
+   - Choose whether to provision a Dataverse database 
+     - If yes, select language, currency, and optionally a security group to restrict access
+   - Submit the request
+After submission, show a "My Pending Environment Requests" screen listing all submitted requests
+with status badges (Pending, Approved, Rejected, Fulfilled).
+2. Data Policy Change Request
+   Allow makers to request that an existing data policy be applied to one of their environments:
+   - Select a data policy from a list (only policies marked visible by an admin)
+   - Select a target environment (only environments where the maker is an admin)
+   - Enter a business justification
+   - Submit the request
+Show a "My Pending Policy Change Requests" view with status tracking.
+
+Admin View
+The admin experience has two main sections accessible from a left navigation panel:
+1. Environment Creation Requests
+    Default view is a list of all pending environment creation requests, filterable by status
+    When a request is selected, open a detail panel showing: 
+    - All maker-submitted information (name, region, type, purpose, connectors, admins, Dataverse configuration)
+    - A Policy Impact section with a color-coded matrix showing how existing data policies affect the requested connectors (green for unblocked, yellow for warning, red for blocked)
+    - A notes field for the admin to add comments
+   Actions include Approve or Reject:
+    - Approve creates the environment, grants admin access, and sets expiration if configured
+    - Reject marks the request as rejected and notifies the maker
+2. Policy Change Requests
+   List of pending data policy change requests, filterable by status (Pending, Approved, Rejected, Fulfilled)
+   Selecting a request opens details showing policy name, target environment, and the maker's justification
+   Actions include Approve or Reject 
+   - Approve applies the selected policy to the environment and marks the request as Fulfilled once complete
+
+Data Model
+Create the following tables:
+- Environment Requests: request ID, maker, display name, region, type, purpose, connectors (multi-select), admins, auto-cleanup toggle, cleanup days, provision Dataverse, language, currency, security group, status, admin notes
+- Policy Change Requests: request ID, maker, policy name, target environment, justification, status
+- Data Policies: policy name, description, connectors allowed, visibility flag (admin-controlled)
+
+Design
+- Use a clean, professional design with a top app bar showing the app name and current version number
+- Use color-coded status badges: blue for Pending, green for Approved or Fulfilled, red for Rejected
+- Allow navigation between Maker and Admin views via a role-based toggle or separate screens
+- Ensure the layout is mobile responsive
+```

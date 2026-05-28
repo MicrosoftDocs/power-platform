@@ -5,7 +5,7 @@ author: paulliew
 ms.author: paulliew
 ms.reviewer: sericks
 ms.topic: how-to
-ms.date: 03/30/2026
+ms.date: 05/18/2026
 ms.contributors:
   - samathur
   - kakazemi
@@ -18,6 +18,7 @@ contributors:
   - lauravasiliums
   - sericks007
   - syalandur24
+  - jordanchodak
 ms.custom:
   - template-how-to
   - sfi-image-nochange
@@ -44,7 +45,7 @@ These encryption key operations are available with customer-managed key (CMK):
 - Revert/remove environment’s CMK encryption to Microsoft-managed key.
 - Change key by creating a new enterprise policy, removing the environment from CMK and reapply CMK with new enterprise policy.
 - Lock CMK environments by revoking CMK key vault and/or key permissions.
-- Migrate [bring-your-own-key (BYOK)](cmk-migrate-from-byok.md) environments to CMK by applying CMK key.
+- Apply a CMK key.
 
 Currently, all your customer data stored *only* in the following apps and services can be encrypted with customer-managed key:
 ### Commercial cloud
@@ -78,6 +79,7 @@ Currently, all your customer data stored *only* in the following apps and servic
 > - Contact a representative for services not listed above for information about customer-managed key support.
 > - Nuance Conversational IVR and [maker welcome content](welcome-content.md) are excluded from customer-managed key encryption.
 > - The connection settings for connectors continue to be encrypted with a Microsoft-managed key.
+> - Power Platform environment settings continue to be encrypted with a Microsoft-managed key.
 > - The configured CMK doesn't encrypt the data sent from Copilot Studio as part of the Agent 365 security audit logging.
 > - Power Apps display names, descriptions, and connection metadata continue to be encrypted with a Microsoft-managed key.
 > - The download results link and other data produced by solution checker enforcement during a solution check continues to be encrypted with a Microsoft-managed key.
@@ -172,7 +174,7 @@ The Power Platform administrator manages customer-managed key tasks related to t
 1. Add the Power Platform environments to the enterprise policy to encrypt data with the customer-managed key. More information: [Add an environment to the enterprise policy to encrypt data](#add-an-environment-to-the-enterprise-policy-to-encrypt-data)
 1. Remove environments from enterprise policy to return encryption to Microsoft-managed key. More information: [Remove environments from policy to return to Microsoft managed key](#remove-environments-from-policy-to-return-to-microsoft-managed-key)
 1. Change the key by removing environments from the old enterprise policy and adding environments to a new enterprise policy. More information: [Create encryption key and grant access](#change-the-environments-encryption-key-with-a-new-enterprise-policy-and-key)
-1. Migrate from BYOK. If you're using the earlier self-managed encryption key feature, you can migrate your key to customer-managed key. Learn more in [Migrate bring-your-own-key environments to customer-managed key](cmk-migrate-from-byok.md).
+1. If you're using the earlier self-managed encryption key feature, you can migrate your key to customer-managed key. Learn more in [Manage your customer-managed encryption key](customer-managed-key.md).
 
 ## Create encryption key and grant access
 
