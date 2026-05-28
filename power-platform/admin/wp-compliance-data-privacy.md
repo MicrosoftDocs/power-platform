@@ -1,12 +1,12 @@
 ---
-title: "Compliance and data privacy  | MicrosoftDocs"
+title: Compliance and data privacy 
 description: Compliance and data privacy
-author: sericks007
+author: paulliew
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/29/2022
+ms.date: 05/28/2026
 ms.subservice: admin
-ms.author: sericks
+ms.author: paulliew
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
