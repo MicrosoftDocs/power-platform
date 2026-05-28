@@ -12,7 +12,7 @@ ms.author: sericks
 search.audienceType: 
   - admin
 ---
-# Regions overview 
+# Choose the region when setting up an environment
 
 For multinational companies with employees and customers distributed around the world, you can create and manage environments specific to your global regions. You can create an environment in a different region than where your tenant resides. Local environments can provide quicker data access for users in that region. Be sure to read [A multi-environment deployment](multiple-online-environments-tenants.md#a-multi-environment-deployment) to understand the features of multiple environments and learn about [macro regions](macro-regions.md).  
 
