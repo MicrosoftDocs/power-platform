@@ -85,6 +85,6 @@ Allowing Microsoft 365 Copilot and Microsoft 365 Copilot Chat to get Power Apps,
 
 Dataverse grounding in Microsoft 365 Copilot sends only minimal, derived search queries to Dataverse with all user and tenant identifiers removed. Enterprise data (documents, prompts, responses) remains within the Microsoft 365 boundary and is covered by the [Data Processing Addendum](https://www.microsoft.com/licensing/docs/documents/download/MicrosoftOnlineServicesDPA(WW)(English)(Dec9,2020)(CR).docx) and [Product Terms](https://www.microsoft.com/licensing/terms/en-US/productoffering/MicrosoftPowerPlatform/OL). Customers retain full admin control to disable Dataverse search with this [Enable Microsoft 365 admin center Copilot Dataverse settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings).
 
-For more information, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365/copilot/microsoft-365-copilot-privacy)
+For more information, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365/copilot/microsoft-365-copilot-privacy).
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
