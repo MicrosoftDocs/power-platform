@@ -4,13 +4,14 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/13/2026
+ms.date: 05/28/2026
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
+  - Grayson-Bishop
   - pvayner
   - matapg007
   - wifun
@@ -120,7 +121,7 @@ After confirming your environment's region, ensure your enterprise policy and Az
 | US Government | usgovtexas, usgovvirginia |
 
 > [!NOTE]
-> Support in the US Government Community Cloud (GCC) is currently only available for environments deployed in GCC High. Support for Department of Defense (DoD) and GCC environments isn't available.
+> Support in US government cloud environments is currently only available for environments deployed in Government Community Cloud – High (GCC High) or Department of Defense (DoD). Support for Government Community Cloud (GCC) environments isn't available.
 
 ## Supported services
 
