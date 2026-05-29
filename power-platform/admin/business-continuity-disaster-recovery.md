@@ -193,8 +193,8 @@ Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 ### Is Power Automate supported with self-service disaster recovery?
 
 As of October 2025:
-- Power Automate desktop flows are fully supported for failover and failback with self-service disaster recovery.
-- Power Automate cloud flows are now available in preview. Don't use features in preview with production workloads.
+- Power Automate desktop flows and cloud flows are supported for failover and failback with self-service disaster recovery. 
+- As we are working on performance optimizations, this feature requires opting in. Please [sign up here](https://aka.ms/PowerAutomate-SSDR-Opt-in)
 
 ### How can I find out where my data is being replicated? Can I change my secondary destination region?
 
