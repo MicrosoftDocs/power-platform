@@ -134,11 +134,6 @@ You can configure and enable virtual network support by using PowerShell scripts
     - Microsoft.Network
     - Microsoft.PowerPlatform
 
-1. Register the following feature in your subscription. For information about how to register a feature, see [Register preview feature
-](/azure/azure-resource-manager/management/preview-features?tabs=azure-portal#register-preview-feature).
-
-    - enterprisePoliciesPreview
-
 1. Create your virtual network and subnets by following the guidance at [Create a virtual network](/azure/virtual-network/tutorial-connect-virtual-networks?tabs=portal#create-a-virtual-network-and-an-azure-bastion-host).
 
     > [!NOTE]
