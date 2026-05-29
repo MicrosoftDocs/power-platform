@@ -11,7 +11,7 @@ contributors:
   - v-aangie
 ms.component: pa-admin
 ms.topic: faq
-ms.date: 04/01/2026
+ms.date: 05/29/2026
 ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -328,7 +328,7 @@ For flows with a Process license, you can [stack multiple Process licenses](#can
 
 Yes. Up to 10 Process licenses can be stacked on a single cloud flow to increase its daily action entitlement. Each Process license adds 250,000 actions per day. For example, assigning 3 Process licenses to one cloud flow provides 750,000 actions per day.
 
-Currently, each Process license must be directly assigned to the flow that uses it. To allow a child flow to consume capacity from its parent flow's Process license, assign a Process license to the child flow and enable **Allow process overage** on it. Flow groups (sharing a single pool of Process capacity across multiple related flows) and automatic capacity inheritance from parent flows are planned but not yet available.
+Currently, each Process license must be directly assigned to the flow that uses it, including child flows. Flow groups (sharing a single pool of Process capacity across multiple cloud flows) are planned but not yet supported. 
 
 > [!NOTE]
 > - The flow must be in a [solution](/power-automate/create-flow-solution) before a Process license can be assigned. To add an existing flow to a solution, go to **Solutions** > select a solution > **Add existing** > **Automation** > **Cloud flow**. Learn more in [Add an existing cloud flow to a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution).
