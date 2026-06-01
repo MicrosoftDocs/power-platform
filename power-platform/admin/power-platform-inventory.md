@@ -4,7 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents, apps,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: sericks
-ms.date: 03/27/2026
+ms.date: 05/28/2026
 ms.topic: concept-article
 contributors:
     - Grayson-Bishop
@@ -17,6 +17,8 @@ ai-usage: ai-assisted
 Power Platform inventory gives tenant administrators a unified view of all agents, apps, and flows built on Power Platform across their organization. Administrators can discover, search, filter, and sort these resources to streamline common administrative tasks.
 
 By using Power Platform inventory, you can easily complete the following tasks:
+
+- **Map connector usage (preview)**: Find which apps, flows, and agents use a given connector or operation. Use this information to scope DLP, audit Premium connector adoption, and plan ahead of deprecations, security issues, or licensing changes.
 
 - **Spot your champions**: Quickly identify who's creating the most resources so you can recognize, nurture, and empower your top innovators.
 
@@ -48,19 +50,19 @@ The Power Platform inventory includes:
 
 - **Fast updates**: Created, updated, or deleted resources appear within 15 minutes.
 
-- **Flexible filtering and sorting**: Filter and sort resources by any attribute, including environment groups.
+- **Flexible filtering and sorting**: Filter and sort resources by any attribute.
 
 - **Inventory count**: Instantly see the total number of items matching your criteria.
 
 - **Customizable columns**: Tailor your view by selecting which columns to display.
 
-- **Resource details**: Access detailed information for each resource.
-
 - **Download**: Export your inventory to Excel for further analysis.
+
+- **Connector visibility (preview)**: See which connectors and operations each resource uses, directly in the inventory grid.
 
 ## Access requirements
 
-To view the Power Platform inventory, you must hold one of the following tenant-wide administrative roles: [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) or [Dynamics 365 administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). If you don't have one of these roles, you can't access the inventory.
+To view the Power Platform inventory, you must have one of the following tenant-wide administrative roles: [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) or [Dynamics 365 administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). If you don't have one of these roles, you can't access the inventory.
 
 ## Where to access Power Platform inventory
 
@@ -111,12 +113,24 @@ Quickly search for keywords across all entries currently loaded in the inventory
 
 - Select a resource, and then select the **Details** option in the command bar.
 
-- Select the resource's display name to be redirected to its details page in the Copilot Studio, Power Apps, or Power Automate portal.
+- Select the resource's display name to go to its details page in the Copilot Studio, Power Apps, or Power Automate portal.
 
     > [!NOTE]
     > You need sufficient permission to access the resource details page. Without permission, you see a **This link is broken** error.
 
 - Select the environment name to view the environment details.
+
+## Connector inventory (preview)
+
+Power Platform inventory captures the connectors and connector operations used by each resource. In the Power Platform admin center, this data appears as a **Connectors** column across the inventory grids: the unified **Manage > Inventory** page as well as the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate**. You can query the same data through the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/), the [Power Platform inventory API](inventory-api.md), and [Azure Resource Graph](/azure/governance/resource-graph/overview).
+
+Connector inventory makes common admin workflows query-driven: identifying every resource affected by a deprecated connector, tracking Premium connector adoption for license decisions, scoping DLP policies to actual usage patterns, and reviewing a resource's full connector footprint during troubleshooting.
+
+**Supported resource types**: canvas apps, model-driven apps, cloud flows, agent flows, workflow agent flows, and Copilot Studio agents (including Microsoft 365 Copilot Agent Builder).
+
+For flows, the inventory additionally captures the trigger connector and trigger operation that initiate the flow.
+
+For the data shape and known limitations, see [Connector inventory (preview)](inventory-schema.md#connector-inventory-preview) in the schema reference.
 
 ## How Power Platform inventory relates to other Microsoft admin surfaces
 
@@ -126,7 +140,7 @@ Microsoft offers multiple admin surfaces that display agents, and you might noti
 
 The [Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps) shows agents that are **available to users in your tenant**. This view includes Microsoft first-party agents, third-party ISV agents, and org-created agents that you publish or share. Org-created agents in the Microsoft 365 admin center come from many authoring surfaces, including Teams Store Platform, Agent Toolkit, Foundry, Fabric, SharePoint, and more. It functions as a catalog of everything accessible to your employees.
 
-Power Platform inventory, by contrast, shows only agents that were **built on Power Platform**. This includes both published and draft agents created in Copilot Studio or Microsoft 365 Copilot Agent Builder. It does not include first-party Microsoft agents, ISV agents, or agents created on other Microsoft surfaces.
+Power Platform inventory, by contrast, shows only agents that were **built on Power Platform**. This includes both published and draft agents created in Copilot Studio or Microsoft 365 Copilot Agent Builder. It doesn't include first-party Microsoft agents, ISV agents, or agents created on other Microsoft surfaces.
 
 As a result, the agent counts between the two surfaces differ. The Microsoft 365 admin center includes agents your organization didn't build. Power Platform inventory might include agents that don't appear in the Microsoft 365 admin center if those agents are in draft form and not yet published.
 
@@ -175,120 +189,4 @@ If you're new to the Power Platform API, see [Getting Started with Power Platfor
 
 ### Azure Resource Graph
 
-You can programmatically query your Power Platform inventory by using Azure Resource Graph (ARG). You can access ARG queries through several Azure interfaces. For step-by-step instructions, see the following Azure Resource Graph quickstart guides:
-
-- [Run Resource Graph query using Azure portal](/azure/governance/resource-graph/first-query-portal)
-
-- [Run Resource Graph query using Azure CLI](/azure/governance/resource-graph/first-query-azurecli)
-
-- [Run Resource Graph query using Azure PowerShell](/azure/governance/resource-graph/first-query-powershell)
-
-- [Run Azure Resource Graph query using REST API](/azure/governance/resource-graph/first-query-rest-api?tabs=powershell)
-
-### Sample queries
-
-The following are example queries you can use with any of the Azure Resource Graph interfaces. All queries use the **PowerPlatformResources** table, which contains your organization's inventory data.
-
-#### Query: Total count of all resources
-
-```Kusto
-PowerPlatformResources
-| count
-```
-
-#### Query: Total counts by resource type
-
-```Kusto
-PowerPlatformResources
-| summarize resourceCount = count() by type
-| order by resourceCount
-```
-
-#### Query: Discover available fields for a resource type
-
-The inventory schema evolves over time as new data fields are added. Use this query to see all available fields for a specific resource type. This query is the recommended way to stay up to date with available data.
-
-```Kusto
-// Discover all available fields for Copilot Studio agents
-PowerPlatformResources
-| where type == "microsoft.copilotstudio/agents"
-| take 1
-// Parse the properties bag
-| extend properties = parse_json(properties)
-// Pack the base fields into a bag for expansion
-| extend baseFields = pack("id", id, "location", location, "name", name, "tenantId", tenantId, "type", type)
-| extend key = bag_keys(baseFields)
-| mv-expand key to typeof(string)
-| project FieldName = key, SampleValue = baseFields[key], Source = "base"
-// Union with the extended properties
-| union (
-    PowerPlatformResources
-    | where type == "microsoft.copilotstudio/agents"
-    | take 1
-    | extend properties = parse_json(properties)
-    | extend key = bag_keys(properties)
-    | mv-expand key to typeof(string)
-    | project FieldName = key, SampleValue = properties[key], Source = "properties"
-)
-// Sort base fields first, then properties
-| order by Source asc, FieldName asc
-```
-
-To discover fields for other resource types, replace the `type` filter value. For example:
-
-| Resource type | Type filter value |
-|---------------|-------------------|
-| Copilot Studio agents | `microsoft.copilotstudio/agents` |
-| Power Apps canvas apps | `microsoft.powerapps/canvasapps` |
-| Power Automate cloud flows | `microsoft.powerautomate/cloudflows` |
-
-> [!NOTE]
-> This query requires at least one resource of the specified type to exist in your tenant.
-
-#### Query: Counts by environment (inventory distribution across environments)
-
-```Kusto
-PowerPlatformResources
-| extend properties = parse_json(properties)
-| extend environmentId = tostring(properties.environmentId)
-| summarize resourceCount = count() by environmentId
-| order by resourceCount desc
-```
-
-#### Query: Counts by region (inventory distribution across regions)
-
-```Kusto
-PowerPlatformResources
-| summarize resourceCount = count() by location
-| order by resourceCount desc
-```
-
-#### Query: Top owners by item count
-
-```Kusto
-PowerPlatformResources
-| extend properties = parse_json(properties)
-| extend ownerId = tostring(properties.ownerId)
-| summarize resourceCount = count() by ownerId
-| order by resourceCount desc
-```
-
-#### Query: Finding a single agent in the tenant
-
-```Kusto
-PowerPlatformResources
-| where type == "microsoft.copilotstudio/agents"
-| where name == "[Enter the agent's ID]"
-```
-
-> [!TIP]
-> You can find the agent's ID in the Copilot Studio URL when viewing the agent, or in the **Name** column of the inventory table.
-
-#### Query: Items created in the past 24 hours
-
-```Kusto
-PowerPlatformResources
-| extend properties = parse_json(properties)
-| extend createdAt = todatetime(properties.createdAt)
-| where createdAt >= ago(24h)
-```
+You can programmatically query your Power Platform inventory by using Azure Resource Graph (ARG). For ready-to-run KQL queries that count resources, discover fields, look up specific resources, and analyze connector usage, see [Power Platform inventory sample queries](inventory-sample-queries.md).
