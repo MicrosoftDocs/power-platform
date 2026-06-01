@@ -188,8 +188,3 @@ While advanced connector policies offer robust capabilities, consider the follow
 - **Certified connectors only**: ACP currently supports certified connectors only. Custom connector and HTTP connector support are planned for a future date as a separate rule type.
 - **Virtual connectors**: ACP doesn't support virtual connectors and won't support them in the future. For migration paths, see [Virtual connector transition](#virtual-connector-transition).
 - **Managed Environments and nonblockable connectors**: In single environment mode, ACP works on both Managed Environments and non-Managed Environments so that all customers using classic data policies can migrate to ACP without extra cost. However, on non-Managed Environments, the nonblockable connectors remain nonblockable. On Managed Environments (single or environment group), you can block any connector or any action, including those that are nonblockable in classic data policies.
-
-## Provide feedback
-
-Are you trying out the new advanced connector policies? The product team would love your feedback! Join the Viva Engage network for keeping the conversation going under non-disclosure agreement:
-[Public Preview - Advanced Connector Policies](https://www.yammer.com/dynamicsaxfeedbackprograms/#/threads/inGroup?type=in_group&feedId=215134347264&view=all).
