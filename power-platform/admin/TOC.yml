@@ -570,6 +570,8 @@
               items:
                 - name: Identity and access management
                   href: security/identity-access-management.md
+                - name: Configure authentication controls in Power Platform (preview)
+                  href: security/configure-authentication-controls-for-agents.md
                 - name: IP firewall
                   href: ip-firewall.md
                 - name: Tenant isolation
