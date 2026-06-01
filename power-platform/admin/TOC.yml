@@ -514,7 +514,7 @@
                       href: cmk-lock-unlock.md
                     - name: Encrypt column-level data
                       href: data-encryption.md
-                - name: Advanced connector policies (preview)
+                - name: Advanced connector policies
                   href: advanced-connector-policies.md
                 - name: Data policies
                   items:
