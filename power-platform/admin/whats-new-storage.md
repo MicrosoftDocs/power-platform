@@ -1,13 +1,13 @@
 ---
 title: Dataverse capacity-based storage overview
 description: Learn about enhancements for Dataverse capacity-based storage that affect administrators.
-author: ianceicys-msft
+author: rijoshi1
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 5/12/2026
+ms.date: 5/27/2026
 ms.subservice: admin
-ms.author: ashi
-ms.reviewer: ellenwehrle
+ms.author: rijoshi
+ms.reviewer: sericks
 search.audienceType: 
   - admin
 contributors:
@@ -71,6 +71,7 @@ More information:
 
 - [Is there a database size restriction for backing-up or restoring an organization through the user interface or API?](backup-restore-environments.md#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api)
 - [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit).
+- [Banner notifications for storage usage](capacity-storage.md#banner-notifications) on Power platform admin center, power portals, and Dynamics 365 apps
 - For the legacy capacity storage model, go to [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario).
 - For the new capacity storage model, go to [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-and-overage-enforcement).
 
