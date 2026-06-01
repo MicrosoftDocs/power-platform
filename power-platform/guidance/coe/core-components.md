@@ -3,7 +3,7 @@ title: Use core components
 description: Learn how CoE Starter Kit core components help Power Platform admins create a Center of Excellence (CoE), including sync resources and build apps to gain visibility into the environment.
 author: manuelap-msft
 ms.topic: concept-article
-ms.date: 08/22/2025
+ms.date: 05/18/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -18,12 +18,17 @@ ms.custom:
 
 # Use core components
 
-The Center of Excellence (CoE) Starter Kit provides a set of core components to help you start building a Center of Excellence (CoE). The components sync your resources into tables and build administrative apps on top of them to help you get more visibility into the apps, flows, and makers in your environment. For example, the [Manage Permissions app](#manage-permissions) helps with administrative tasks related to permission management. 
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
-Learn how to get started in [Set up inventory components](setup-core-components.md). [Watch an overview](https://www.youtube.com/embed/l0kJQAeKthw) on how to use the core components solution. 
+> [!TIP]
+> Use the Power Platform admin center to monitor your inventory, resource usage, and operational health, and to govern your environments, including license consumption and storage capacity. Learn more in [Overview of the Power Platform admin center](../../admin/admin-documentation.md).
+
+The Center of Excellence (CoE) Starter Kit provides a set of core components to help you start building a Center of Excellence (CoE). The components sync your resources into tables and build administrative apps on top of them to help you get more visibility into the apps, flows, and makers in your environment. For example, the [Manage Permissions app](#manage-permissions) helps with administrative tasks related to permission management.
+
+Learn how to get started in [Set up inventory components](setup-core-components.md). [Watch an overview](https://www.youtube.com/embed/l0kJQAeKthw) on how to use the core components solution.
 
 > [!NOTE]
-> The core components solution contains assets relevant only to administrators. 
+> The core components solution contains assets relevant only to administrators.
 
 ## Inventory components
 
@@ -377,13 +382,16 @@ Follow the [setup instructions](setup-powerbi.md) to set up the Power BI dashboa
 | DLP Request \| Sync Policy to Dataverse (Child) | Instant | Called from other flows in this solution area | Takes the DLP Policy identifier as input (Dataverse record) and syncs the blocked connectors to the Dataverse policy row. |
 | DLP Request \| Sync Shared Policies | Scheduled | Daily | Runs daily to keep the Dataverse version of each DLP Policy marked as `"Is Shared" == True` updated with the real policy's blocked connectors.  |
 | Env Request \| Clean up | Schedule | Daily | Runs daily to delete environments with an associated expired **Request** record, to send warning emails to upcoming deletions, and to close out associated **Request** records where the environment is manually deleted from the admin center. |
-| Env Request \| Create approved environment | Automated | When an **Environment Creation Request**’s status is updated to an _Approved_ state | Provisions the environment and other resources identified in the request. |
-| Env Request \| Notify admin when a new request is submitted | Automated | When a new **Environment Creation Request** record’s status is updated by a user to a _Pending_ state | Sends an email to the admin alias with instructions on how to review the request. |
-| Env Request \| Notify requestor when rejected | Automated | When an **Environment Creation Request**’s status is updated to the _Rejected_ state | Sends an email notification to the requestor with the rejection status and reason, then changes the request to inactive. |
+| Env Request \| Create approved environment | Automated | When an **Environment Creation Request**'s status is updated to an _Approved_ state | Provisions the environment and other resources identified in the request. |
+| Env Request \| Notify admin when a new request is submitted | Automated | When a new **Environment Creation Request** record's status is updated by a user to a _Pending_ state | Sends an email to the admin alias with instructions on how to review the request. |
+| Env Request \| Notify requestor when rejected | Automated | When an **Environment Creation Request**'s status is updated to the _Rejected_ state | Sends an email notification to the requestor with the rejection status and reason, then changes the request to inactive. |
 
 ### Environment Request apps
 
 Environment Request apps help you manage and streamline environment requests.
+
+> [!TIP]
+> Consider using the vibe experience in Power Apps to create custom apps. Use the prompt provided in [Environment and data policy management](env-mgmt.md#create-environment-management-components-using-power-apps-vibe) as an example.
 
 #### CoE Admin Environment Request
 

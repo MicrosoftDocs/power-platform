@@ -5,7 +5,7 @@ author: manuelap-msft
 ms.service: power-platform
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/13/2024
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -16,7 +16,9 @@ ms.custom: sfi-image-nochange
 
 # Set up app quarantine components
 
-This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users who launch the app a message indicating they’re unable to access the app. This feature is currently only available for canvas apps. Learn more: [Manage app quarantine state](/power-platform/admin/admin-manage-apps#manage-app-quarantine-state)
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+This article will help you to set up the app quarantine components of the governance solution. A quarantined app will present end users who launch the app a message indicating they're unable to access the app. This feature is currently only available for canvas apps. Learn more: [Manage app quarantine state](/power-platform/admin/admin-manage-apps#manage-app-quarantine-state)
 
 >[!IMPORTANT]
 >This article assumes you have [installed the governance components solution](before-setup-gov.md), and you have your [environment set up](setup.md#create-your-environments) and are signed in with the [correct identity](setup.md#which-identity-should-i-use-to-install-the-coe-starter-kit).
@@ -28,9 +30,6 @@ This article will help you to set up the app quarantine components of the govern
 1. Open the **More features** page and select **Compliance process**.
 1. This app provides a guided step by step experience through the configuration steps.
      :::image type="content" source="media/setupwizard-compliance.png" alt-text="CoE Starter Kit Setup Wizard":::
-
->[!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, please [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and proceed with setting up the Inventory components manually.
 
 ## Set up the App quarantine components manually
 
@@ -81,5 +80,3 @@ Environment variables are used to store application and flow configuration data 
 | Name | Description | Default value |
 |------|---------------|------|
 | Quarantine Apps after x days of non-compliance | If using the Compliance flow for apps to gather compliance details from makers, specify whether you want to quarantine apps if they're not compliant and for how many days.  | 7 days |
-
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

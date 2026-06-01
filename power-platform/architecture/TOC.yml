@@ -71,40 +71,62 @@
       items:
         - name: Overview
           href: reference-architectures/index.md
-        - name: Streamline document processing with AI Builder
-          href: reference-architectures/ai-document-processing.md
-        - name: Perform predictive data analysis
-          href: reference-architectures/ai-predictive-data-analysis.md
-        - name: Integrate legacy data with Power Automate and SharePoint
-          href: reference-architectures/app-legacy-data-integration.md
-        - name: Use Dataverse background operations
-          href: reference-architectures/dataverse-background-operations.md
-        - name: Integrate Power Platform with SAP
-          href: reference-architectures/arch-pattern-sap.md
-        - name: Secure Power Platform access to resources
-          href: reference-architectures/secure-access-azure-resources.md
-        - name: ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
-          href: reference-architectures/app-integrate-lakehouse.md
-        - name: Use Dataverse as a data source for canvas apps
-          href: reference-architectures/dataverse-canvas-app.md
-        - name: Use REST APIs to extend functionality of canvas apps
-          href: reference-architectures/custom-connector-canvas.md
-        - name: Optimize performance of canvas apps requiring complex logic
-          href: reference-architectures/optimize-performance-canvas-apps.md
-        - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
-          href: reference-architectures/rpa-scale-operations.md
-        - name: Use SQL Server with canvas apps
-          href: reference-architectures/sqlserver-canvas-app.md
-        - name: Use complex relationships with Dataverse
-          href: reference-architectures/complex-relationships-dataverse.md
-        - name: Extract and analyze agent conversation transcripts
-          href: reference-architectures/analyze-agent-conversation-transcripts.md
-        - name: Implement a scalable notification system with Power Platform
-          href: reference-architectures/scalable-notification-system.md
-        - name: Use Copilot Studio agents in model-driven apps
-          href: reference-architectures/contextual-ai-model-driven-app.md
-        - name: Analyze and automate business data with Dataverse SDK for Python
-          href: reference-architectures/dataverse-sdk-for-python.md
+        - name: Apply AI and agent patterns
+          items:
+            - name: Streamline document processing with AI Builder
+              href: reference-architectures/ai-document-processing.md
+            - name: Perform predictive data analysis
+              href: reference-architectures/ai-predictive-data-analysis.md
+            - name: Extract and analyze agent conversation transcripts
+              href: reference-architectures/analyze-agent-conversation-transcripts.md
+            - name: Use Copilot Studio agents in model-driven apps
+              href: reference-architectures/contextual-ai-model-driven-app.md
+            - name: ​Automate vendor invoicing with Power Automate and AI Builder
+              href: reference-architectures/vendor-invoice-integration.md
+        - name: Manage data with Dataverse
+          items:
+            - name: Use complex relationships with Dataverse
+              href: reference-architectures/complex-relationships-dataverse.md
+            - name: Use Dataverse background operations
+              href: reference-architectures/dataverse-background-operations.md
+            - name: Analyze and automate business data with Dataverse SDK for Python
+              href: reference-architectures/dataverse-sdk-for-python.md
+            - name: Synchronize data across Dataverse environments
+              href: reference-architectures/sync-dataverse-data.md
+        - name: Integrate with external systems
+          items:
+            - name: Integrate legacy data with Power Automate and SharePoint
+              href: reference-architectures/app-legacy-data-integration.md
+            - name: Integrate Power Platform with SAP
+              href: reference-architectures/arch-pattern-sap.md
+            - name: ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
+              href: reference-architectures/app-integrate-lakehouse.md
+        - name: Build and extend apps
+          items:
+            - name: Use Dataverse as a data source for canvas apps
+              href: reference-architectures/dataverse-canvas-app.md
+            - name: Use SQL Server with canvas apps
+              href: reference-architectures/sqlserver-canvas-app.md
+            - name: Optimize performance of canvas apps requiring complex logic
+              href: reference-architectures/optimize-performance-canvas-apps.md
+            - name: Use REST APIs to extend functionality of canvas apps
+              href: reference-architectures/custom-connector-canvas.md
+            - name: Upload files to SharePoint with metadata from model‑driven apps
+              href: reference-architectures/custom-page-file-upload.md
+        - name: Automate business processes
+          items:
+            - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
+              href: reference-architectures/rpa-scale-operations.md
+            - name: Implement a scalable notification system with Power Platform
+              href: reference-architectures/scalable-notification-system.md
+            - name: Automate service order lifecycle and SLA governance
+              href: reference-architectures/service-order-process.md
+        - name: Secure, govern, and manage
+          items:
+            - name: Secure Power Platform access to resources
+              href: reference-architectures/secure-access-azure-resources.md
+            - name: Automate enterprise Power Platform ALM
+              href: reference-architectures/enterprise-power-platform-alm.md
     - name: Solution ideas
       items:
         - name: Overview

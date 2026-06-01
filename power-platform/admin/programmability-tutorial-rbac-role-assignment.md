@@ -5,11 +5,13 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/02/2026
+ms.date: 06/01/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType:
   - admin
+contributors:
+  - iscohen-microsoft
 ---
 
 # Tutorial: Assign roles to service principals (preview)
@@ -63,9 +65,10 @@ $TenantId = "YOUR_TENANT_ID"
 
 # Authenticate and obtain an access token
 Connect-AzAccount
-$AccessToken = Get-AzAccessToken -TenantId $TenantId -ResourceUrl "https://api.powerplatform.com/"
+$secureToken = (Get-AzAccessToken -TenantId $TenantId -ResourceUrl "https://api.powerplatform.com/").Token
+$AccessToken = [System.Net.NetworkCredential]::new("", $secureToken).Password
 
-$headers = @{ 'Authorization' = 'Bearer ' + $AccessToken.Token }
+$headers = @{ 'Authorization' = 'Bearer ' + $AccessToken }
 $headers.Add('Content-Type', 'application/json')
 
 # List all role definitions

@@ -4,7 +4,7 @@ description: "This article includes answers to commonly asked questions about Gi
 author: caburk
 ms.subservice: alm
 ms.author: caburk
-ms.date: 04/13/2026
+ms.date: 05/18/2026
 ms.custom: 
 ms.topic: faq
 ms.reviewer: tapanm
@@ -51,13 +51,11 @@ Yes. Import the solution to each additional environment and then connect to the 
 
 ## Why am I getting the error "Source Control Integration is not enabled for this environment?"
 
-This error occurs when your environment is encrypted using [Bring Your Own Key (BYOK)](../../admin/manage-encryption-key.md).
-
-BYOK isn’t compatible with elastic tables that are required for source code integration. More information: [Manage the encryption key](../../admin/manage-encryption-key.md)
+This error occurs when your environment is encrypted using Bring Your Own Key (BYOK), which has been deprecated.
 
 To enable source control integration, follow these steps:
 
-1. Migrate your environments encryption key to [customer-managed key (CMK)](../../admin/cmk-migrate-from-byok.md).
+1. [Manage your customer-managed encryption key](../../admin/customer-managed-key.md).
 1. [Reconnect](connecting-to-git.md) to source control and retry the operation.
 
 If your environment isn't encrypted with BYOK and you receive this error, contact [Microsoft Support](/power-platform/admin/get-help-support) for assistance.

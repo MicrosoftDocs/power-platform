@@ -4,7 +4,7 @@ description: Learn how to connect audit log sync flows to the audit log by using
 author: pete-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/15/2024
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: petrip
 ms.reviewer: sericks
@@ -16,6 +16,8 @@ contributors:
 ---
 
 # Collect audit logs using Microsoft Graph API
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 The audit log sync flows connect to the [Microsoft Audit Logs Graph API](/graph/api/security-auditcoreroot-post-auditlogqueries) to gather telemetry data, such as unique users and launches for apps. The flows use an HTTP action to access the API. In this article, you set up the app registration for the HTTP action and the environment variables that are needed to run the flows.
 
@@ -102,7 +104,3 @@ You can store the client secret in plain text in the **Audit Logs - Client Secre
 1. Open the **Center of Excellence – Core Components** solution.
 1. Turn on the **Admin | Audit Logs | Update Data (V2)** flow. This flow updates the Power Apps table with information about the last launch. It also adds metadata to the audit log records.
 1. Turn on the **Admin | Audit Logs | Sync Audit Logs (V2)** flow. This flow runs on an hourly schedule and collects audit log events into the audit log table.
-
-## Provide feedback
-
-If you find a bug with the CoE Starter Kit, file a bug against the solution at [aka.ms/coe-starter-kit-issues](https://aka.ms/coe-starter-kit-issues).

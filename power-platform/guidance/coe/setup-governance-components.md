@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/13/2024
+ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: sericks
@@ -14,6 +14,8 @@ search.audienceType:
 ---
 
 # Set up Developer Compliance components
+
+[!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
 
 This article helps you to set up the [Developer Compliance Center](example-processes.md) components of the **Core** and **Governance** solutions of the CoE Starter Kit.  
 
@@ -34,10 +36,8 @@ You can detect frequently used apps and chatbots in your tenant and request that
 1. Open the **More features** page and select **Compliance process**.
 
 This app guides you through the configuration steps.
-:::image type="content" source="media/setupwizard-compliance.png" alt-text="Screenshot that shows the CoE Starter Kit Setup Wizard compliance process." lightbox="media/setupwizard-compliance.png":::
 
-> [!NOTE]
-> The Setup Wizard is currently in preview. If you experience issues with the Setup Wizard, [raise them on GitHub](https://aka.ms/coe-starter-kit-issues) and set up the Inventory components manually.
+:::image type="content" source="media/setupwizard-compliance.png" alt-text="Screenshot that shows the CoE Starter Kit Setup Wizard compliance process." lightbox="media/setupwizard-compliance.png":::
 
 ## Set up the Developer Compliance request components manually
 
@@ -111,5 +111,3 @@ Environment variables are used to store application and flow configuration data 
 | Compliance – Apps – Number Launches Last 30 Days | If the app launched at least this many times in the last 30 days, makers are asked for a business justification. | 30 |
 | Compliance – Apps - Number Users Shared | If the app is shared with this many or more users, makers are asked for a business justification. | 20 |
 | Compliance – Chatbots – Number Launches | If the chatbot is launched this many or more times, makers are asked for a business justification. | 50 |
-
-[!INCLUDE[file-an-issue](../../includes/file-issue.md)]

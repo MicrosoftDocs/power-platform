@@ -10,13 +10,13 @@ ms.contributors:
   - reubenk
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 03/17/2026
+ms.date: 05/20/2026
 ms.service: power-platform
 ms.subservice: sap
 ---
 # Build integrated Power Platform applications as an SAP consultant
 
-As an SAP consultant, you can use Microsoft Power Platform to build applications that integrate seamlessly with SAP systems. You can create copilots, apps, workflows, and websites that enhance business processes by using SAP data.
+As an SAP consultant, use Microsoft Power Platform to build applications that integrate seamlessly with SAP systems. Create copilots, apps, workflows, and websites that enhance business processes by using SAP data.
 
 ## Microsoft Power Platform connectors
 
