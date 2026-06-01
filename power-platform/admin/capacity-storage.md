@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 05/27/2026
+ms.date: 06/01/2026
 ms.topic: concept-article
 author: amiyapatr 
 ms.subservice: admin
@@ -326,9 +326,9 @@ Your organization must have the right licenses for the storage you use:
 - If you use more than your documented entitlements or usage limits, you must buy more licenses.
 - If your storage consumption exceeds the documented entitlements or usage limits, Microsoft might suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
   
-### Banner notifications
+### Dataverse capacity banner notifications
 
-A notification banner appears in **Dataverse only** tenants in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and Dynamics 365 apps when any of the three storage capacities (database, file, or log) have less than 15 percent remaining or exceeds the allocated capacity. For more information, see [Example storage capacity scenarios and overage enforcement](#example-storage-capacity-scenarios-and-overage-enforcement). The banner remains visible as long as it's not dismissed and the tenant continues to meet the banner visibility criteria. If a user dismisses the banner and the tenant's remaining storage capacity is still below 15 percent, the banner reappears after 7 days. These banner notifications are visible to [tenant admins](#for-tenant-admins) and [system admins](#for-system-admins).
+A notification banner appears in **Dataverse only** tenants in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and Dynamics 365 apps when Dataverse total capacity (including database, file, or log) has less than 15 percent remaining or exceeds the allocated capacity. For more information, see [Example storage capacity scenarios and overage enforcement](#example-storage-capacity-scenarios-and-overage-enforcement). The banner remains visible as long as it's not dismissed and the tenant continues to meet the banner visibility criteria. If a user dismisses the banner and the tenant's remaining storage capacity is still below 15 percent, the banner reappears after seven days in Power Platform products, except model-driven apps. The banner reappears in model-driven apps whenever a user refreshes the screen. These banner notifications are visible to [tenant admins](#for-tenant-admins) and [system admins](#for-system-admins).
 
 #### For tenant admins
 
@@ -409,9 +409,9 @@ As part of moving file-type data such as "Annotation" and "Attachment" out from 
 
 ### Do indexes affect database storage usage?
 
-Database storage includes both the database rows and index files used to improve search performance. Indexes are created and optimized for peak performance. The system frequently updates them by analyzing data use patterns. No user action is needed to optimize the indexes, as all Dataverse stores have tuning enabled by default. A fluctuation in database storage can be represented by an increased or decreased number of indexes. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity. Common causes for an increase in index size are:
+Database storage includes both the database rows and index files that improve search performance. You create and optimize indexes for peak performance. The system frequently updates them by analyzing data use patterns. You don't need to take any action to optimize the indexes, as all Dataverse stores have tuning enabled by default. An increase or decrease in the number of indexes can cause a fluctuation in database storage. Dataverse is continually being tuned to increase efficiency and incorporate new technologies that improve user experience and optimize storage capacity. Common causes for an increase in index size include:
 
-- An organization makes use of new functionality. This functionality can be custom, out of the box, or part of an update or solution installation.
+- An organization uses new functionality. This functionality can be custom, out of the box, or part of an update or solution installation.
 - Data volume or complexity changes.
 - A change in usage patterns that indicates new indexes need reevaluation.
 
@@ -421,7 +421,7 @@ If you configure Quick Find lookups for data that's frequently used, this config
 - The volume of rows for the tables and columns.
 - The complexity of the database structure.
 
-Because an admin creates custom Quick Find lookups in the org, these indexes can be user-controlled. Admins can reduce some of the storage used by these custom indexes by taking the following action:
+Because an admin creates custom Quick Find lookups in the org, these indexes can be user-controlled. Admins can reduce some of the storage used by these custom indexes by taking the following actions:
 
 - Remove unneeded columns or tables.
 - Eliminate multiline text columns from inclusion.
@@ -507,7 +507,7 @@ Yes, tenant admins receive email notifications on a weekly basis if their organi
 
 ### Why am I no longer getting storage notifications?
 
-Capacity email notifications are sent weekly to tenant admins based on three different thresholds. If you're no longer getting storage notifications, check your admin role. It could also be the case that your organization is over the three predefined capacity thresholds. In that case, you don't receive an email notification.
+Tenant admins receive capacity email notifications weekly based on three different thresholds. If you're no longer getting storage notifications, check your admin role. It could also be the case that your organization is over the three predefined capacity thresholds. In that case, you don't receive an email notification.
 
 ### I'm an existing customer. Should I expect my file and log usage to change?
 
