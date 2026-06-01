@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery
 description: Microsoft provides business continuity and disaster recovery for production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 05/21/2026
+ms.date: 06/01/2026
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -193,8 +193,8 @@ Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 ### Is Power Automate supported with self-service disaster recovery?
 
 As of October 2025:
-- Power Automate is supported for failover and failback with self-service disaster recovery.
-- please [click here to opt in](https://aka.ms/PowerAutomate-SSDR-Opt-in)
+- Power Automate desktop flows and cloud flows are supported for failover and failback with self-service disaster recovery. 
+- As Microsoft works on performance optimizations, you must [sign-up for this feature](https://aka.ms/PowerAutomate-SSDR-Opt-in).
 
 ### How can I find out where my data is being replicated? Can I change my secondary destination region?
 
