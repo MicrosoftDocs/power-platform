@@ -5,11 +5,13 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 03/02/2026
+ms.date: 06/01/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType:
   - admin
+contributors:
+  - iscohen-microsoft
 ---
 
 # Tutorial: Assign roles to service principals (preview)
