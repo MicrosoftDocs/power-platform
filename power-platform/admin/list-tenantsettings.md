@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 01/10/2025
+ms.date: 05/28/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: laswenka
@@ -140,7 +140,7 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.champions.disableSkillsMatchInvitationReachout | Boolean | This setting isn't currently used by the platform but might be used in the future.|
 |powerPlatform.intelligence.disableCopilot | Boolean | Allow canvas editors and admins to get AI-powered answers to how-to questions. Currently in preview. Default value is false.|
 |powerPlatform.intelligence.enableOpenAiBotPublishing | Boolean | This setting isn't currently used by the platform but might be used in the future.|
-|powerPlatform.intelligence.disableCopilotFeedback | Boolean | When using Copilot in Power Apps, allow users to submit feedback to Microsoft. Default value is false.|
+|powerPlatform.intelligence.disableCopilotFeedback | Boolean | When using Copilot in Power Apps, allow users to submit feedback to Microsoft. Default value is false.<br><br>This flag name is inverted from its meaning. For example, when the flag is set to false, that means that Copilot feedback is not allowed.|
 |powerPlatform.intelligence.disableCopilotFeedbackMetadata | Boolean | When using Copilot in Power Apps, allow users to share their prompts, questions, and requests with Microsoft. Default value is true.|
 |powerPlatform.modelExperimentation.enableModelDataSharing | Boolean | Ability to allow Microsoft to read Power Automate Copilot AI feature customer data (inputs and outputs) and provide improved models. Default value is false.|
 |powerPlatform.modelExperimentation.disableDataLogging | Boolean | Ability to disable data logging and remove all data logged for Power Automate Copilot AI feature customer data (inputs and outputs). Default value is false.|
