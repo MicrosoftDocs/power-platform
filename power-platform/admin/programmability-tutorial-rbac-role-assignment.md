@@ -63,9 +63,10 @@ $TenantId = "YOUR_TENANT_ID"
 
 # Authenticate and obtain an access token
 Connect-AzAccount
-$AccessToken = Get-AzAccessToken -TenantId $TenantId -ResourceUrl "https://api.powerplatform.com/"
+$secureToken = (Get-AzAccessToken -TenantId $TenantId -ResourceUrl "https://api.powerplatform.com/").Token
+$AccessToken = [System.Net.NetworkCredential]::new("", $secureToken).Password
 
-$headers = @{ 'Authorization' = 'Bearer ' + $AccessToken.Token }
+$headers = @{ 'Authorization' = 'Bearer ' + $AccessToken }
 $headers.Add('Content-Type', 'application/json')
 
 # List all role definitions
