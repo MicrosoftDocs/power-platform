@@ -1,9 +1,9 @@
 ---
-title: Advanced connector policies (preview)
+title: Advanced connector policies
 description: Learn how to use Advanced connector policies to govern connector usage in Power Platform.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/07/2026
+ms.date: 06/01/2026
 author: laneswenka
 ms.author: laswenka
 ms.reviewer: sericks
@@ -15,11 +15,7 @@ search.audienceType:
   - admin
 ---
 
-# Advanced connector policies (preview)
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner.md)]
-
-## Overview
+# Advanced connector policies 
 
 Advanced connector policies (ACP) represent the next generation of securing connector usage within Power Platform. ACP provides a modern, flexible approach to managing [certified connectors](/power-platform/admin/dlp-connector-classification), replacing the Business/Non-Business/Blocked classification model in classic [data policies](wp-data-loss-prevention.md) with a strict allowlist that blocks all connectors by default.
 
@@ -35,8 +31,6 @@ By adopting advanced connector policies, administrators gain greater control and
 
 > [!IMPORTANT]
 > Advanced connector policies currently apply to **certified connectors only**. Custom connectors and HTTP connectors aren't yet supported. They're planned as a separate rule type in the future. For governing custom connectors and HTTP connectors today, continue using classic [data policies](prevent-data-loss.md).
-
-[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 ## Supported connector types
 
@@ -70,7 +64,7 @@ To configure an advanced connector policy for an environment group, complete the
 1. In the **Manage** pane, select **Environment groups**.
 1. In the **Environment groups** page, select the environment group where you want to apply the policy.
 1. The environment group's page is displayed. Select the **Rules** tab.
-1. Select **Advanced connector policies (preview)**. The **Advanced connector policies (preview)** pane is displayed.
+1. Select **Advanced connector policies**. The **Advanced connector policies** pane is displayed.
 1. Define the policy. Keep the following points in mind:
    - By default, the nonblockable connectors are preloaded as _allowed_.
    - To add new connectors, select **Add connectors** to choose from all certified connectors.
@@ -91,7 +85,7 @@ To configure an advanced connector policy for a single environment:
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Security**.
 1. In the **Security** pane, select **Data and privacy**.
-1. Select **Advanced connector policies (preview)**.
+1. Select **Advanced connector policies**.
 1. Define the policy by using the same connector allow and block controls as the environment group experience.
 1. Select **Save** to apply the policy.
 
