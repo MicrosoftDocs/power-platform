@@ -490,6 +490,8 @@
                   href: inventory-api.md
                 - name: Power Platform inventory schema reference
                   href: inventory-schema.md
+                - name: Power Platform inventory sample queries
+                  href: inventory-sample-queries.md
         - name: Copilot
           items:
             - name: Track, manage, and scale Copilot adoption
