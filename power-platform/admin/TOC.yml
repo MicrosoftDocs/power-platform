@@ -490,6 +490,8 @@
                   href: inventory-api.md
                 - name: Power Platform inventory schema reference
                   href: inventory-schema.md
+                - name: Power Platform inventory sample queries
+                  href: inventory-sample-queries.md
         - name: Copilot
           items:
             - name: Track, manage, and scale Copilot adoption
@@ -512,7 +514,7 @@
                       href: cmk-lock-unlock.md
                     - name: Encrypt column-level data
                       href: data-encryption.md
-                - name: Advanced connector policies (preview)
+                - name: Advanced connector policies
                   href: advanced-connector-policies.md
                 - name: Data policies
                   items:

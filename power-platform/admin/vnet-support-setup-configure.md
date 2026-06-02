@@ -3,7 +3,7 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/21/2026
+ms.date: 05/29/2026
 author: faix 
 ms.author: osfaixat 
 ms.reviewer: sericks
@@ -13,6 +13,8 @@ ms.custom:
   - NewPPAC
 search.audienceType: 
   - admin
+ms.contributors:
+  - pvayner
 contributors:
   - matapg007
   - wifun
@@ -131,11 +133,6 @@ You can configure and enable virtual network support by using PowerShell scripts
 
     - Microsoft.Network
     - Microsoft.PowerPlatform
-
-1. Register the following feature in your subscription. For information about how to register a feature, see [Register preview feature
-](/azure/azure-resource-manager/management/preview-features?tabs=azure-portal#register-preview-feature).
-
-    - enterprisePoliciesPreview
 
 1. Create your virtual network and subnets by following the guidance at [Create a virtual network](/azure/virtual-network/tutorial-connect-virtual-networks?tabs=portal#create-a-virtual-network-and-an-azure-bastion-host).
 
