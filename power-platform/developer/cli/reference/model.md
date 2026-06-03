@@ -68,7 +68,7 @@ This parameter requires no value. It's a switch.
 
 #### `--solution`
 
-Solution unique name to add the app to. Defaults to the active solution.
+Solution unique name to add the app to. Defaults to 'Default' if not specified.
 
 [!INCLUDE [model-create-remarks](includes/model-create-remarks.md)]
 
