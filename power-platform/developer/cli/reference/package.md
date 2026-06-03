@@ -208,6 +208,18 @@ Deploys package to Dataverse
 
 ### Optional Parameters for package deploy
 
+#### `--argument-file` `-af`
+
+Path to a JSON file matching the IncrementalSyncParameters (or ModuleSyncParameters) contract. Required for --db-sync Incremental.
+
+#### `--build-type` `-bt`
+
+How the package is applied. Allowed values: Full, Incremental, Delete. Default: Full. Used with --package-type erp.
+
+#### `--db-sync` `-ds`
+
+Database synchronization mode to run after deploy. Allowed values: None, Full, Module, Incremental. Default: None. Used with --package-type erp.
+
 #### `--environment` `-env`
 
 Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
@@ -222,9 +234,25 @@ This parameter requires no value. It's a switch.
 
 Log file path
 
+#### `--modules` `-m`
+
+Comma-separated list of module names to synchronize. Required when --db-sync is Module.
+
+#### `--outputDirectory` `-o`
+
+Solution-mode only: root folder containing .erp/xpp.json. Defaults to the current directory. When --package is omitted under --package-type erp, all models listed in .erp/xpp.json are deployed in dependency order.
+
 #### `--package` `-p`
 
 Path to a package dll or zip file with a package.
+
+#### `--package-type` `-pt`
+
+Target platform for deployment. Allowed values: dataverse, erp. Default: dataverse.
+
+#### `--release-type` `-rt`
+
+Package classification. Allowed values: Dev, Release. Default: Dev. Release packages force a full database sync on the server. Used with --package-type erp.
 
 #### `--settings` `-s`
 
@@ -235,6 +263,10 @@ Runtime Package Settings that are passed to the package that is being deployed. 
 #### `--solution` `-sz`
 
 Path to the Dataverse solution file. The file must be a compressed ZIP or CAB file.
+
+#### `--solution-root` `-sr`
+
+Solution-mode only: root folder containing .erp/xpp.json. Defaults to the current directory. When --package is omitted under --package-type erp, all models listed in .erp/xpp.json are deployed in dependency order.
 
 #### `--verbose` `-vdbg`
 
@@ -253,6 +285,14 @@ Initializes a directory with a new Dataverse package project
 
 ### Optional Parameters for package init
 
+#### `--layer` `-l`
+
+X++ layer. Allowed values: USR, CUS, VAR, SL1, SL2, SL3, BUS, HFX, GLS, DIS, ISV. Default: ISV.
+
+#### `--model` `-m`
+
+Name(s) of the X++ model(s) to scaffold. Accepts a single name or a comma-separated list (e.g. ModelA,ModelB). Required when --package-type is erp.
+
 #### `--outputDirectory` `-o`
 
 Output directory
@@ -260,6 +300,18 @@ Output directory
 #### `--package-name`
 
 Sets the default name of the package. Applies to the generation of ImportExtension.GetNameOfImport.
+
+#### `--package-type` `-pt`
+
+Type of package project to scaffold. Allowed values: dataverse, erp. Default: dataverse.
+
+#### `--publisher` `-pub`
+
+Publisher name written into the model descriptor. Default: Microsoft.
+
+#### `--source-root` `-sr`
+
+Source root path (relative to output directory) where models will live. Default: ./src.
 
 [!INCLUDE [package-init-remarks](includes/package-init-remarks.md)]
 
