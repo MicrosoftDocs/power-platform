@@ -59,6 +59,10 @@ Component type (for example, ServiceEndpoint, PluginAssembly, CopilotStudio)
 
 Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
+#### `--version` `-v`
+
+The managed identity version to use for FIC generation. Version 1 uses CN-based FIC paths; version 2 uses SHA256-hashed paths that support certificates with special characters. Defaults to the version stored on the managed identity record.
+
 [!INCLUDE [managed-identity-configure-fic-remarks](includes/managed-identity-configure-fic-remarks.md)]
 
 ## pac managed-identity create
@@ -177,6 +181,10 @@ Component type (for example, ServiceEndpoint, PluginAssembly, CopilotStudio)
 
 Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
 
+#### `--version` `-v`
+
+The managed identity version to use for FIC generation. Version 1 uses CN-based FIC paths; version 2 uses SHA256-hashed paths that support certificates with special characters. Defaults to the version stored on the managed identity record.
+
 [!INCLUDE [managed-identity-show-fic-remarks](includes/managed-identity-show-fic-remarks.md)]
 
 ## pac managed-identity update
@@ -255,6 +263,10 @@ Skip automatic federated identity credential configuration. When set, shows FIC 
 
 This parameter requires no value. It's a switch.
 
+#### `--target-version`
+
+Target version to upgrade to (e.g., 2). Performs all intermediate upgrades automatically. If not specified, upgrades by one version.
+
 [!INCLUDE [managed-identity-upgrade-version-remarks](includes/managed-identity-upgrade-version-remarks.md)]
 
 ## pac managed-identity verify-fic
@@ -280,6 +292,10 @@ Component type (for example, ServiceEndpoint, PluginAssembly, CopilotStudio)
 #### `--environment` `-env`
 
 Specifies the target Dataverse. The value may be a Guid or absolute https URL. When not specified, the active organization selected for the current auth profile will be used.
+
+#### `--version` `-v`
+
+The managed identity version to use for FIC generation. Version 1 uses CN-based FIC paths; version 2 uses SHA256-hashed paths that support certificates with special characters. Defaults to the version stored on the managed identity record.
 
 [!INCLUDE [managed-identity-verify-fic-remarks](includes/managed-identity-verify-fic-remarks.md)]
 
