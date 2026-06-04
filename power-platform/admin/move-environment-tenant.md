@@ -30,7 +30,7 @@ Be aware of the following considerations before starting a tenant-to-tenant migr
 * **Supported environment types**: Only production and sandbox environments are supported.
 * **Unsupported environment types**: Default, developer, trial, and Teams environments aren't supported. Government Community Cloud (GCC) to public clouds and vice versa are also not supported.
 * The following components aren't supported: Dynamics 365 Customer Voice, Omnichannel for Customer Service, and component library.
-* Specific steps required for Dynamics 365 Customer Insights - Journeys, Dynamics 365 Customer Insights - Data, Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio are called out in the premigration and post-migration steps.
+* Specific steps required for Dynamics 365 Customer Insights - Journeys, Dynamics 365 Customer Insights - Data, Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio. The steps are called out in the premigration and post-migration steps.
 * A Dataverse organization linked to a finance and operations organization can't be migrated to a different tenant.
 * You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
 * Once you create and configure users, you must [create a user mapping file](#create-a-user-mapping-file), which is described later in this article.
