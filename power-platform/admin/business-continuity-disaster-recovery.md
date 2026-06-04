@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery
 description: Microsoft provides business continuity and disaster recovery for production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 06/01/2026
+ms.date: 06/04/2026
 ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
@@ -195,6 +195,8 @@ Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 As of October 2025:
 - Power Automate desktop flows and cloud flows are supported for failover and failback with self-service disaster recovery. 
 - As Microsoft works on performance optimizations, you must [sign-up for this feature](https://aka.ms/PowerAutomate-SSDR-Opt-in).
+  - Power Automate environments enabled for self-service disaster recovery run on isolated runtime capacity. Most workloads shouldn't notice a difference, but high-volume, highly parallel, or latency-sensitive flows might take longer to start or have lower throughput. Validate business-critical workloads before enabling this feature.
+
 
 ### How can I find out where my data is being replicated? Can I change my secondary destination region?
 
@@ -203,6 +205,14 @@ Microsoft reserves the right to disclose the exact details of where your data re
 ### Is Field service supported for self-service disaster recovery?
 
 Field service now supports self-service disaster recovery. You can now manage work orders, scheduling, inventory, and customer communications in one unified platform. In a disaster, fail over your automated service workflows, orders, inventory, and dispatching to a remote region for business continuity.
+
+### Do I need to whitelist IP addresses for the secondary region?
+ 
+Yes. If you have configured any firewall rules or allow lists based on the outbound IP addresses of your Finance and Operations environment, you must also include the IP ranges for the secondary (paired) Azure region.
+ 
+During disaster recovery scenarios that require regional failover, outbound requests from the Application Object Server (AOS) can originate from the secondary region's IP ranges. Infrastructure hosting Microsoft-managed environments is registered under the `PowerPlatformPlex` Azure service tag. You should ensure your allow lists include the `PowerPlatformPlex` ranges for both your primary and secondary regions.
+ 
+For instructions on retrieving the current IP ranges, see [What are the outbound IP ranges for my Finance and Operations environment?](/dynamics365/fin-ops-core/dev-itpro/deployment/deploymentfaq#what-are-the-outbound-ip-ranges-for-my-finance-and-operations-environment).
 
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
@@ -213,6 +223,17 @@ To restore event delivery, you must recreate or reconfigure the affected Busines
 - Delete existing endpoint definitions and recreate them with the same configuration
 - Validate event delivery before resuming normal operations
 For detailed steps, see [Manage Business Events endpoints](/dynamics365/fin-ops-core/dev-itpro/business-events/managing-business-event-endpoints).
+
+#### Fabric link limitation
+During self-service disaster recovery (SSDR) failover, Fabric Link and data synchronization are generally preserved without requiring full reinitialization. However, the Microsoft-managed data lake backing Fabric Link does not currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric Link synchronization and access can be interrupted until the primary region becomes available again. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
+ 
+In long-running failover scenarios or extended operation in a secondary region, customers might also encounter regional capacity constraints if the Fabric Link is manually reconfigured. To restore Fabric Link functionality or ensure a healthy operational state after failover, you need to:
+- Remove affected tables from the Fabric Link configuration
+- If the entire link is affected, unlink the Fabric connection from the environment
+- Recreate the Fabric Link using the standard setup flow
+For detailed steps, see [Create a Link to Fabric](/power-apps/maker/data-platform/fabric-link-to-data-platform#create-a-link-to-fabric).
+ 
+We are currently actively improving Fabric Link failover support to ensure configuration settings are fully preserved across SSDR failover scenarios, eliminating the need for manual validation or reconfiguration.
 
 #### Other limitations
 
