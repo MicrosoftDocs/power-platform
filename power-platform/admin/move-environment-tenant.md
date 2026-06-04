@@ -465,7 +465,7 @@ Complete the following steps for each website in the environment.
 
 ### Post-migration process for Customer Insights
 Dynamics 365 Customer Insights - Journeys (CI-J) requires post-migration steps to restore functionality in the destination tenant. 
-For the complete procedure, see [Migrate Dynamics 365 Customer Insights - Journeys between tenants](/dynamics365/customer-insights/journeys/tenant-to-tenant#customer-insights---journeys-app-status-after-migration).
+Learn more in [Migrate Dynamics 365 Customer Insights - Journeys between tenants](/dynamics365/customer-insights/journeys/tenant-to-tenant#customer-insights---journeys-app-status-after-migration).
 
 After you complete all of the preceding steps and the migration, you can validate the environment in the target tenant. Later, you can delete the source environment in the Power Platform admin center.
 
