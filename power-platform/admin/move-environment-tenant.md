@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 04/06/2026
+ms.date: 06/04/2026
 ms.topic: concept-article
 author: gakulka 
 contributors:
@@ -29,8 +29,8 @@ Be aware of the following considerations before starting a tenant-to-tenant migr
 
 * **Supported environment types**: Only production and sandbox environments are supported.
 * **Unsupported environment types**: Default, developer, trial, and Teams environments aren't supported. Government Community Cloud (GCC) to public clouds and vice versa are also not supported.
-* The following components aren't supported: Dynamics 365 Customer Voice, Omnichannel for Customer Service, component library, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Customer Insights - Data.
-* Specific steps required for Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio are called out in the premigration and post-migration steps.
+* The following components aren't supported: Dynamics 365 Customer Voice, Omnichannel for Customer Service, and component library.
+* Specific steps required for Dynamics 365 Customer Insights - Journeys, Dynamics 365 Customer Insights - Data, Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio are called out in the premigration and post-migration steps.
 * A Dataverse organization linked to a finance and operations organization can't be migrated to a different tenant.
 * You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
 * Once you create and configure users, you must [create a user mapping file](#create-a-user-mapping-file), which is described later in this article.
@@ -462,6 +462,10 @@ Complete the following steps for each website in the environment.
 1. Sign in to the environment.
 1. Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
 1. Provision the website with the same portal type and language.
+
+### Post-migration process for Customer Insights
+Dynamics 365 Customer Insights - Journeys (CI-J) requires post-migration steps to restore functionality in the destination tenant. 
+For the complete procedure, see [Migrate Dynamics 365 Customer Insights - Journeys between tenants](/dynamics365/customer-insights/journeys/tenant-to-tenant#customer-insights---journeys-app-status-after-migration).
 
 After you complete all of the preceding steps and the migration, you can validate the environment in the target tenant. Later, you can delete the source environment in the Power Platform admin center.
 
