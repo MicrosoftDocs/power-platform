@@ -225,15 +225,16 @@ To restore event delivery, you must recreate or reconfigure the affected Busines
 For detailed steps, see [Manage Business Events endpoints](/dynamics365/fin-ops-core/dev-itpro/business-events/managing-business-event-endpoints).
 
 #### Fabric link limitation
-During self-service disaster recovery (SSDR) failover, Fabric Link and data synchronization are generally preserved without requiring full reinitialization. However, the Microsoft-managed data lake backing Fabric Link doesn't currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric Link synchronization and access can be interrupted until the primary region becomes available again. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
+
+During a self-service disaster recovery (SSDR) failover, Fabric link and data synchronization are generally preserved without requiring full reinitialization. However, the Microsoft-managed data lake backing Fabric link doesn't currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric link synchronization and access can be interrupted until the primary region becomes available again. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
  
-In long-running failover scenarios or extended operation in a secondary region, you might also encounter regional capacity constraints if you manually reconfigure the Fabric Link. To restore Fabric Link functionality or ensure a healthy operational state after failover, you need to:
-- Remove affected tables from the Fabric Link configuration
-- If the entire link is affected, unlink the Fabric connection from the environment
-- Recreate the Fabric Link using the standard setup flow
-For detailed steps, see [Create a Link to Fabric](/power-apps/maker/data-platform/fabric-link-to-data-platform#create-a-link-to-fabric).
+In long-running failover scenarios or extended operation in a secondary region, you might also encounter regional capacity constraints if you manually reconfigure the Fabric link. To restore Fabric link functionality or ensure a healthy operational state after failover, you need to:
+
+- Remove affected tables from the Fabric link configuration.
+- If the entire link is affected, unlink the Fabric connection from the environment.
+- Recreate the Fabric link using the standard setup flow. Follow detailed steps, in [Create a link to Fabric](/power-apps/maker/data-platform/fabric-link-to-data-platform#create-a-link-to-fabric).
  
-Microsoft is actively improving Fabric Link failover support to ensure configuration settings are fully preserved across SSDR failover scenarios, eliminating the need for manual validation or reconfiguration.
+Microsoft is actively improving Fabric link failover support to ensure configuration settings are fully preserved across SSDR failover scenarios, eliminating the need for manual validation or reconfiguration.
 
 #### Other limitations
 
