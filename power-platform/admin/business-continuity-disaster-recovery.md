@@ -2,8 +2,8 @@
 title: Business continuity and disaster recovery
 description: Microsoft provides business continuity and disaster recovery for production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 06/01/2026
-ms.reviewer: sericks
+ms.date: 06/05/2026
+ms.reviewer: ellenwehrle
 ms.topic: concept-article
 ms.subservice: admin
 ms.author: shpradha
@@ -130,7 +130,7 @@ Perform disaster recovery drills or an emergency response before a real disaster
 
 ### Why use self-service disaster recovery?
 
-Super storms, natural calamities, and unforeseen political uncertainties that have the potential to bring an entire region down are becoming more common. To minimize the impact of a disaster that brings an entire region down, maintain an asynchronous copy in a remote region. You might also want to maintain a copy in a remote region for compliance audits. 
+Super storms, natural calamities, and unforeseen political uncertainties that can bring down an entire region are becoming more common. To minimize the impact of a disaster that brings down an entire region, maintain an asynchronous copy in a remote region. You might also want to maintain a copy in a remote region for compliance audits. 
 
 Self-service disaster recovery gives you control to fail over to a secondary region with the push of a button and fail back with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and fail back to the secondary region to test a real compliance drill. Run drills with a copy of the production environment to avoid any downtime.
 
@@ -147,7 +147,7 @@ With the implementation of [availability zones](/azure/reliability/availability-
 - Capacity charges are based on the storage consumption of the environment's paired secondary region for database, file, and log storage types.
 - Capacity consumption is reflected in the familiar licensing experience within the Power Platform admin center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
 
-For example, suppose a user has 10-GB capacity consumption in the primary location. When self-service disaster recovery is turned on, a copy of data is created in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. If you exceed your available free storage or available entitlements, a pay-as-you-go plan actively starts billing.
+For example, suppose you have 10 GB of capacity consumption in the primary location. When you turn on self-service disaster recovery, you create a copy of the data in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. If you exceed your available free storage or available entitlements, a pay-as-you-go plan actively starts billing.
   
 ### How does billing work for self-service disaster recovery?
 
@@ -166,7 +166,7 @@ Self-service disaster recovery depends on Azure region pairs. Regions that don't
 As of November 2025, Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for self-service disaster recovery. 
 
 > [!Note]
-> Brazil and South Africa don't have self-service disaster recovery because their regional pairs are in heavily constrained regions. Adding supported regions is influenced by impact, opportunity, and resource constraints. United Arab Emirates has self-service disaster recovery, but continues to be capacity-constrained, which has impacted its general availability.
+> Brazil and South Africa don't have self-service disaster recovery because their regional pairs are in heavily constrained regions. Adding supported regions is influenced by impact, opportunity, and resource constraints. United Arab Emirates has self-service disaster recovery, but continues to be capacity-constrained, which impacts its general availability.
 
 ### What should I know about the capacity experience?
 
@@ -195,6 +195,8 @@ Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 As of October 2025:
 - Power Automate desktop flows and cloud flows are supported for failover and failback with self-service disaster recovery. 
 - As Microsoft works on performance optimizations, you must [sign-up for this feature](https://aka.ms/PowerAutomate-SSDR-Opt-in).
+  - Power Automate environments enabled for self-service disaster recovery run on isolated runtime capacity. Most workloads shouldn't notice a difference, but high-volume, highly parallel, or latency-sensitive flows might take longer to start or have lower throughput. Validate business-critical workloads before enabling this feature.
+
 
 ### How can I find out where my data is being replicated? Can I change my secondary destination region?
 
@@ -203,6 +205,14 @@ Microsoft reserves the right to disclose the exact details of where your data re
 ### Is Field service supported for self-service disaster recovery?
 
 Field service now supports self-service disaster recovery. You can now manage work orders, scheduling, inventory, and customer communications in one unified platform. In a disaster, fail over your automated service workflows, orders, inventory, and dispatching to a remote region for business continuity.
+
+### Do I need to allow list IP addresses for the secondary region?
+ 
+Yes. If you have configured any firewall rules or allow lists based on the outbound IP addresses of your Finance and Operations environment, you must also include the IP ranges for the secondary (paired) Azure region.
+ 
+During disaster recovery scenarios that require regional failover, outbound requests from the Application Object Server (AOS) can originate from the secondary region's IP ranges. Infrastructure hosting Microsoft-managed environments is registered under the `PowerPlatformPlex` Azure service tag. Ensure your allow lists include the `PowerPlatformPlex` ranges for both your primary and secondary regions.
+ 
+For instructions on retrieving the current IP ranges, see [What are the outbound IP ranges for my Finance and Operations environment?](/dynamics365/fin-ops-core/dev-itpro/deployment/deploymentfaq#what-are-the-outbound-ip-ranges-for-my-finance-and-operations-environment).
 
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
@@ -213,6 +223,18 @@ To restore event delivery, you must recreate or reconfigure the affected Busines
 - Delete existing endpoint definitions and recreate them with the same configuration
 - Validate event delivery before resuming normal operations
 For detailed steps, see [Manage Business Events endpoints](/dynamics365/fin-ops-core/dev-itpro/business-events/managing-business-event-endpoints).
+
+#### Fabric link limitation
+
+During a self-service disaster recovery (SSDR) failover, Fabric link and data synchronization are generally preserved without requiring full reinitialization. However, the Microsoft-managed data lake backing Fabric link doesn't currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric link synchronization and access can be interrupted until the primary region becomes available again. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
+ 
+In long-running failover scenarios or extended operation in a secondary region, you might also encounter regional capacity constraints if you manually reconfigure the Fabric link. To restore Fabric link functionality or ensure a healthy operational state after failover, you need to:
+
+- Remove affected tables from the Fabric link configuration.
+- If the entire link is affected, unlink the Fabric connection from the environment.
+- Recreate the Fabric link using the standard setup flow. Follow detailed steps, in [Create a link to Fabric](/power-apps/maker/data-platform/fabric-link-to-data-platform#create-a-link-to-fabric).
+ 
+Microsoft is actively improving Fabric link failover support to ensure configuration settings are fully preserved across SSDR failover scenarios, eliminating the need for manual validation or reconfiguration.
 
 #### Other limitations
 
@@ -225,4 +247,4 @@ For detailed steps, see [Manage Business Events endpoints](/dynamics365/fin-ops-
 - Connectors might have recovery problems when dependent on external systems, like SharePoint, SQL server, or third-party applications.
 - For Dynamics 365 Sales, analytics, reporting, and functions dependent on automation, such as sales forecasting, are unavailable.
 - Finance and operations products are supported in preview.
-- AI Builder may see latency impact.
+- AI Builder might see latency impact.
