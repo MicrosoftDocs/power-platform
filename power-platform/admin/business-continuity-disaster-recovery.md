@@ -3,7 +3,7 @@ title: Business continuity and disaster recovery
 description: Microsoft provides business continuity and disaster recovery for production environments if there's a region-wide Azure outage. 
 author: shpradha
 ms.date: 06/05/2026
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.topic: concept-article
 ms.subservice: admin
 ms.author: shpradha
