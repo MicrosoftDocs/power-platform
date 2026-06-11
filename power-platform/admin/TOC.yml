@@ -216,6 +216,8 @@
                       href: environment-groups.md
                     - name: Rules for environment groups
                       href: environment-groups-rules.md
+                    - name: Environment group rules gallery (preview)
+                      href: environment-group-rules-gallery.md
                     - name: Rules
                       items:
                         - name: Preview and experimental AI models rule
