@@ -2,8 +2,8 @@
 title: Business continuity and disaster recovery
 description: Microsoft provides business continuity and disaster recovery for production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 06/05/2026
-ms.reviewer: ellenwehrle
+ms.date: 06/11/2026
+ms.reviewer: sericks
 ms.topic: concept-article
 ms.subservice: admin
 ms.author: shpradha
@@ -11,7 +11,7 @@ ms.custom: NewPPAC
 search.audienceType: 
  - admin
 contributors:
- - rashmansur
+ - shpradha
  - isaacwinoto
  - himakurada
  - jasunil
@@ -144,16 +144,13 @@ With the implementation of [availability zones](/azure/reliability/availability-
 ### What are the costs associated with using self-service disaster recovery?
 
 - The selected environment must be a [Managed Environment](managed-environment-licensing.md). This environment is a premium license tier. 
-- Capacity charges are based on the storage consumption of the environment's paired secondary region for database, file, and log storage types.
-- Capacity consumption is reflected in the familiar licensing experience within the Power Platform admin center. Learn more in [View usage and billing information](/power-platform/admin/pay-as-you-go-usage-costs).
-
-For example, suppose you have 10 GB of capacity consumption in the primary location. When you turn on self-service disaster recovery, you create a copy of the data in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. If you exceed your available free storage or available entitlements, a pay-as-you-go plan actively starts billing.
+- Prepaid storage consumed for the secondary region is the cost incurred.
+  
+  For example, suppose you have 10 GB of capacity consumption in the primary location. When you turn on self-service disaster recovery, you create a copy of the data in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. If you exceed your available free storage or available entitlements, a pay-as-you-go plan actively starts billing.
   
 ### How does billing work for self-service disaster recovery?
 
-- If you configure your environment to draw capacity from your tenant's Dataverse capacity entitlement, the system consumes the entitled capacity first. You still need a pay-as-you-go billing plan to avoid capacity overages.
-- The pay-as-you-go plan generates multiple warnings at various thresholds to ensure that you're well-informed and can take appropriate action to avoid pay-as-you-go charges.  
-- Admins can allocate capacity to the environment, after which the pay-as-you-go plan is billed.
+A pay-as-you-go billing plan has been removed as a mandatory requirement. The system checks for available free capacity in your tenant. All pooled Dataverse entitlements at the tenant-level can be counted towards secondary storage enablement. Various overage initiatives are being evaluated. Overage management is out side of self-service disaster recovery management scope.
 
 ### Can I switch regions during a regional outage?
 
@@ -193,10 +190,12 @@ Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
 ### Is Power Automate supported with self-service disaster recovery?
 
 As of October 2025:
-- Power Automate desktop flows and cloud flows are supported for failover and failback with self-service disaster recovery. 
-- As Microsoft works on performance optimizations, you must [sign-up for this feature](https://aka.ms/PowerAutomate-SSDR-Opt-in).
-  - Power Automate environments enabled for self-service disaster recovery run on isolated runtime capacity. Most workloads shouldn't notice a difference, but high-volume, highly parallel, or latency-sensitive flows might take longer to start or have lower throughput. Validate business-critical workloads before enabling this feature.
+- Power Automate desktop flows and cloud flows are supported for failover and failback with self-service disaster recovery with known performance limitations.
 
+  > [!NOTE]
+  > Power Automate environments enabled for self-service disaster recovery run on isolated, runtime capacity. Most workloads shouldn't notice a difference, but high-volume, highly parallel, or latency-sensitive flows might take longer to start or have lower throughput. Validate business-critical workloads before enabling this feature.
+  
+- As Microsoft works on performance optimizations, you must [sign-up for this feature to opt-in](https://aka.ms/PowerAutomate-SSDR-Opt-in).
 
 ### How can I find out where my data is being replicated? Can I change my secondary destination region?
 
@@ -226,7 +225,7 @@ For detailed steps, see [Manage Business Events endpoints](/dynamics365/fin-ops-
 
 #### Fabric link limitation
 
-During a self-service disaster recovery (SSDR) failover, Fabric link and data synchronization are generally preserved without requiring full reinitialization. However, the Microsoft-managed data lake backing Fabric link doesn't currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric link synchronization and access can be interrupted until the primary region becomes available again. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
+During a self-service disaster recovery (SSDR) failover, Fabric link and data synchronization are preserved without requiring full reinitialization. However, the Microsoft-managed data lake backing Fabric link doesn't currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric link synchronization and access can be interrupted until the primary region becomes available again. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
  
 In long-running failover scenarios or extended operation in a secondary region, you might also encounter regional capacity constraints if you manually reconfigure the Fabric link. To restore Fabric link functionality or ensure a healthy operational state after failover, you need to:
 
