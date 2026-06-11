@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 05/06/2026
+ms.date: 06/11/2026
 ---
 
 # Power Automate reference architectures and solution ideas
@@ -43,6 +43,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Reduce infrastructure challenges with hosted RPA in Power Automate​**](../reference-architectures/rpa-scale-operations.md) | Use hosted RPA to reduce the time and effort needed to procure, set up, operationalize, and maintain infrastructure for robotic process automations. |
 | [**Automate vendor invoice processing with Power Automate and AI Builder**](../reference-architectures/vendor-invoice-integration.md) | Learn how to automate vendor invoice ingestion by extracting and validating XML invoice data using Power Automate and AI Builder. |
 | [**Automate service order lifecycle and SLA governance with Power Platform**](../reference-architectures/service-order-process.md) | Learn how to design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |
+| [**Automate bill copy requests with Power Platform**](../reference-architectures/automate-bill-copy-requests.md) | Learn how to automate the processing of bill copy requests using Power Platform components, including Power Automate, Power Apps, Dataverse, and Power BI. |
 
 ## Solution ideas
 

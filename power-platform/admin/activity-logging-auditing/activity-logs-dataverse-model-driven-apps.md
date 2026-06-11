@@ -3,7 +3,7 @@ title: View Microsoft Dataverse and model-driven app activity logs in Microsoft 
 description: Learn how to access Dataverse and model-driven app activity logs in Microsoft Purview and explore what activities you can view.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/03/2026
+ms.date: 06/11/2026
 author: grbarker
 contributors:
   - paulliew
@@ -106,7 +106,7 @@ The customer engagement apps schema contains fields specific to customer engagem
 |`Fields`     |:::no-loc text="Edm.String":::          |No         |JSON of Key Value pair reflecting the values that were created or updated         |
 |`Id`     |:::no-loc text="Edm.String":::          |No         |Entity name in customer engagement apps        |
 |`Query`     |:::no-loc text="Edm.String":::         |No         |The Filter query parameters used while executing the FetchXML          |
-|`QueryResults`     |:::no-loc text="Edm.String":::         |No         |One or multiple unique records returned by the Retrieve and Retrieve Multiple SDK message call     |
+|`QueryResults`     |:::no-loc text="Edm.String":::         |No         |One or multiple unique records returned by the Retrieve and Retrieve Multiple SDK message call. This field might not be populated for all operations.     |
 |`ServiceContextId`     |:::no-loc text="Edm.Guid":::         |No         |The unique ID associated with service context          |
 |`ServiceContextIdType`     |:::no-loc text="Edm.String":::         |No         |Application defined token to define context use          |
 |`ServiceName`     |:::no-loc text="Edm.String":::         |No         |Name of the Service generating the log          |
@@ -184,22 +184,7 @@ The following entries are examples of activity logs.
 |  `QueryResults`   |                                                         N/A                                                         |
 |     `ItemURL`     | `https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=00aa00aa-bb11-cc22-dd33-44ee44ee44ee` |
 
-### Example 2 – Logs generated when user sees Account records in a grid (Export to Microsoft Excel logs are like this)
-
-|Schema Name  |Value  |
-|---------|---------|
-|`ID`     |`ef83f463-b92f-455e-97a6-2060a47efe33`          |
-|`UserKey`     |`10033XXXA49AXXXX`           |
-|`ClientIP`     |`131.107.XXX.XX`          |
-|`Operation`     |`RetrieveMultiple`           |
-|`Date`     |`3/2/2018 11:25:56 PM`          |
-|`EntityId`     |N/A         |
-|`EntityName`     |`Account`          |
-|`Query`     |`\<filter type="and">\<condition column="ownerid" operator="eq-userid" />\<condition column="statecode" operator="eq" value="0" />\</filter>`         |
-|`QueryResults`     |`00aa00aa-bb11-cc22-dd33-44ee44ee44ee`, `dc136b61-6c1e-e811-a952-000d3a732d76`        |
-|`ItemURL`     |N/A        |
-
-### Example 3 – List of messages logged when user converts a lead to opportunity
+### Example 2 – List of messages logged when user converts a lead to an opportunity
 
 |ID  |EntityID  |EntityName  |Operation |
 |---------|---------|---------|---------|
@@ -212,7 +197,7 @@ The following entries are examples of activity logs.
 ## Known issues
 
 - Office has a 3-KB limit for each audit record. Therefore, in some cases, a single record from customer engagement apps needs to split into multiple records in Office. You can use the `CorrelationId` field to retrieve the set of split records for a given source record. Operations that are likely to require splitting include `RetrieveMultiple` and `ExportToExcel`.
-- Some operations need more processing to retrieve all relevant data. For example, the system processes `RetrieveMultiple` and `ExportToExcel` to extract the list of records that are retrieved or exported. However, not all relevant operations are yet processed. For example, `ExportToWord` is currently logged as single operation with no other details about what was exported.
+- Some operations need more processing to retrieve all relevant data. For example, `RetrieveMultiple` and `ExportToExcel` don't reliably include individual record identifiers in the `QueryResults` field. Record-level access tracking for these operations isn't currently supported. Additionally, `ExportToWord` is currently logged as a single operation with no other details about what was exported.
 - In future releases, the system disables logging for operations deemed unnecessary based on a review of the logs. For example, some operations originate from automated system activity rather than user actions.
 - In some record instances, the `EntityName` value appears as `Unknown`. These records aren't related to any specific entity related operation and came in blank from CRM. They all have the entity ID, `0000000-0000-0000-0000-000000000000`.
 
