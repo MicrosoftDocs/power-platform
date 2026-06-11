@@ -85,23 +85,23 @@ The system can handle thousands of daily notifications without performance degra
 
 [!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
-## Security
+### Security
 
 The system integrates security throughout by using Microsoft Entra ID for identity and Dataverse roles to restrict access to appointments and notifications. Power Apps users authenticate by using Microsoft Entra ID, ensuring that all interactions with Dataverse are authorized and logged. Azure Functions use managed identities to securely interact with Dataverse, Service Bus, and Key Vault without storing credentials in code or configuration files.
 
-Store sensitive credentials, such as SendGrid and Twilio keys, only in Azure Key Vault and access them through managed identities. You can further secure communication between Azure services by using private endpoints and virtual networks, reducing exposure to the public internet. All message exchanges between the system’s components adhere to encrypted communication standards to protect data at rest and in transit.
+Store sensitive credentials, such as SendGrid and Twilio keys, only in Azure Key Vault and access them through managed identities. You can further secure communication between Azure services by using private endpoints and virtual networks, reducing exposure to the public internet. All message exchanges between the system's components adhere to encrypted communication standards to protect data at rest and in transit.
 
-## Operational Excellence
+### Operational Excellence
 
 You achieve operational excellence through continuous monitoring, observability, and automated alerting. Application Insights collects detailed telemetry from the Azure Functions, including execution times, failures, retries, and performance metrics. Azure Monitor tracks the health of Azure Service Bus queues, identifying potential bottlenecks or backlogs. Dead-letter queues provide a mechanism for capturing and troubleshooting messages that fail to process after multiple attempts.
 
 Administrators can configure alerts to notify them of failures related to message processing, provider outages, or abnormal queue growth. Dataverse maintains an audit trail within the Notification table, allowing administrators to track the lifecycle of each notification. Because Azure Functions are stateless and scale automatically, the system can respond to sudden increases in message volume without manual intervention, ensuring consistent performance and uptime.
 
-## Performance Efficiency
+### Performance Efficiency
 
 The architecture is optimized for high performance and scalability. Azure Service Bus enables efficient handling of scheduled notifications without the overhead that Power Automate-based delays would introduce. The separation of scheduling and delivery into separate Functions allows each component to scale independently based on demand. The Delivery Function benefits from automatic scaling, allowing it to process spikes in outbound messages without impacting user-facing systems.
 
-Additionally, using managed identities and caching strategies for provider authentication reduces latency during message delivery. The system minimizes unnecessary storage overhead by only keeping essential metadata in Dataverse and supporting archival strategies for older notifications. By combining Power Platform capabilities with Azure’s scalable messaging infrastructure, the system ensures rapid, efficient, and cost-effective notification delivery at enterprise scale.
+Additionally, using managed identities and caching strategies for provider authentication reduces latency during message delivery. The system minimizes unnecessary storage overhead by only keeping essential metadata in Dataverse and supporting archival strategies for older notifications. By combining Power Platform capabilities with Azure's scalable messaging infrastructure, the system ensures rapid, efficient, and cost-effective notification delivery at enterprise scale.
 
 ## Contributor
 

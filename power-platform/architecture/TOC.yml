@@ -121,6 +121,8 @@
               href: reference-architectures/scalable-notification-system.md
             - name: Automate service order lifecycle and SLA governance
               href: reference-architectures/service-order-process.md
+            - name: Automate bill copy requests with Power Platform
+              href: reference-architectures/automate-bill-copy-requests.md
         - name: Secure, govern, and manage
           items:
             - name: Secure Power Platform access to resources
