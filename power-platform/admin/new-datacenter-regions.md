@@ -5,7 +5,7 @@ author: sericks007
 ms.component: pa-admin
 ms.topic: concept-article
 ms.collection: get-started
-ms.date: 05/27/2026
+ms.date: 06/12/2026
 ms.subservice: admin
 ms.author: sericks
 search.audienceType: 
@@ -41,6 +41,7 @@ The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 
 | CHN           | crm.dynamics.cn | 
 | NOR           | crm19.dynamics.com |
 | SGP           | crm20.dynamics.com |
+| SWE           | crm22.dynamics.com |
 | KOR           | crm21.dynamics.com |
 
 ## Macro region 
