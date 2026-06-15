@@ -1,13 +1,13 @@
 ---
 title: Set up Power Platform managed identity for Dataverse plug-ins or plug-in packages
-description: Learn how to set up Power Platform managed identity for Dataverse plug-ins or plug-in packages.
+description: Learn how to set up Power Platform managed identity (version 2) for Dataverse plug-ins or plug-in packages.
 author: apurvghai
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/10/2025
+ms.date: 06/15/2026
 ms.subservice: admin
 ms.author: apurvgh
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
@@ -18,7 +18,17 @@ contributors:
 
 # Set up Power Platform managed identity for Dataverse plug-ins or plug-in packages
 
-Power Platform managed identity allows Dataverse plug-ins or plug-in packages to connect with Azure resources to support managed identity without the need for credentials. This article helps you set up managed identity in your Power Platform environments.
+When you use Power Platform managed identity, Dataverse plug-ins or plug-in packages can connect to Azure resources without managing credentials. This article describes the **recommended (version 2)** setup, which builds the federated identity credential (FIC) from a hash of the certificate's full Distinguished Name (DN).
+
+> [!NOTE]
+> Use Power Platform managed identity version 2 for all new and existing plug-ins. If you maintain a plug-in that still uses the version 1 (CN-based) format, see [Set up managed identity version 1](set-up-managed-identity-version-1.md). To move an existing plug-in to version 2, see [Upgrade to version 2](#upgrade-to-version-2).
+
+## Why version 2
+
+Version 2 produces a fixed-length, ASCII-only subject identifier, so it works with any certificate name. Version 1 fails on certain certificate names (CNs):
+
+- **Non-ASCII characters** in the CN (for example, accented letters) → `AADSTS70050: The Federated Managed Identity path is not properly formatted`.
+- **Commas** in the CN (for example, `CN=Contoso, Inc.`) → `AADSTS700213: No matching federated identity record found`.
 
 ## Prerequisites
 
@@ -32,116 +42,261 @@ Power Platform managed identity allows Dataverse plug-ins or plug-in packages to
 
 ## Set up managed identity
 
-To configure Power Platform managed identity for Dataverse plug-ins or plug-in packages, complete the following steps.
-
 1. Create a new app registration or user-assigned managed identity.
-1. Configure federated identity credentials.
-1. Create and register Dataverse plug-ins or plug-in packages.  
-   Be sure to build the plug-in assembly and register the plug-in or plug-in package.
-1. Create a managed identity record in Dataverse.
-1. Grant access to the Azure resources to the application or user-assigned managed identity (UAMI).
-1. Validate the plug-in integration.
+1. Build, sign, and register the plug-in.
+1. Configure the federated identity credential.
+1. Create the managed identity record in Dataverse.
+1. Grant access to the Azure resource.
+1. Validate the integration.
 
-## Create a new app registration or user-assigned managed identity
+### Step 1: Create an app registration or user-assigned managed identity
 
-You can create either user-assigned managed identity or an application in Microsoft Entra ID based on the following scenarios.
+Create either a user-assigned managed identity or an application in Microsoft Entra ID:
 
-- If you want an app identity associated with the plug-in that connects to Azure resources, such as Azure Key Vault, use [application registration](/entra/identity-platform/howto-create-service-principal-portal). With app identity, you can apply Azure policies on the plug-in accessing Azure resources.
-- If you want a service principal to access Azure resources, such as Azure Key Vault, you can provision [user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity).
-
-> [!NOTE]
-> Be sure to capture the following IDs, as you use them in later steps.  
-> - Application (client) ID  
-> - Tenant ID
-
-## Configure federated identity credentials
-
-To configure managed identity, open the user-assigned managed identity or Microsoft Entra ID application in the Azure portal that you created in the previous section.
-
-1. Go to the [Azure portal](https://portal.azure.com/).
-1. Navigate to **Microsoft Entra ID**.
-1. Select **App registrations**.
-1. Open the app you created in [Set up managed identity](#set-up-managed-identity).
-1. Navigate to **Certificates & secrets**.
-1. Select the **Federated credentials** tab and select **Add credential**.
-1. Select issuer as **Other issuer**.
-1. Enter the following information:
-
-### Issuer  
-Use the tenant's v2.0 issuer:
-```
-https://login.microsoftonline.com/{tenantID}/v2.0
-```
-### Example
-```
-https://login.microsoftonline.com/5f8a1a9f-2e1a-415f-b10c-84c3736a21b9/v2.0
-```
-
-### Type  
-Choose **Explicit subject identifier**.
-
-### Subject identifier  
-Choose the format that matches your certificate type:
-
-- **Self-signed certificate (development only):**
-  ```
-  /eid1/c/pub/t/{encodedTenantId}/a/qzXoWDkuqUa3l6zM5mM0Rw/n/plugin/e/{environmentId}/h/{hash}
-  ```
-
-- **Trusted issuer certificate (recommended for production):**
-  ```
-  /eid1/c/pub/t/{encodedTenantId}/a/qzXoWDkuqUa3l6zM5mM0Rw/n/plugin/e/{environmentId}/i/{issuer}/s/{certificateSubject}
-  ```
-
-### Segment reference
-
-| Segment | Description | 
-|---------|---------------|
-| eid1 | Identity format version |
-| c/pub | Cloud code for public cloud, Government Community Cloud (GCC), and first release station in GCC. |
-| t/{encodedTenantId} | Tenant ID   |
-| a/qzXoWDkuqUa3l6zM5mM0Rw/ | Internal use only. Don't modify. |
-| n/plugin | Plug-in component |
-| e/{environmentId} | Environment ID |
-| h/{hash} | SHA‑256 of certificate (self-signed only)  |
-| i/{issuer}<br>s/{certificateSubject} | Trusted-issuer details |
-
-## Generate self-signed certificate
-
-Every plug-in must have a verifiable identity, and the signing certificate acts as the plug-in’s unique fingerprint. The following code is a sample PowerShell snippet you can use to generate a self-signed certificate for development or testing scenarios. For reference, you can follow from [example 3](/powershell/module/pki/new-selfsignedcertificate#example-3).
-
- ```PowerShell
-  $params = @{
-      Type = 'Custom'
-      Subject = 'E=admin@contoso.com,CN=Contoso'
-      TextExtension = @(
-          '2.5.29.37={text}1.3.6.1.5.5.7.3.4',
-          '2.5.29.17={text}email=admin@contoso.com' )
-      KeyAlgorithm = 'RSA'
-      KeyLength = 2048
-      SmimeCapabilities = $true
-      CertStoreLocation = 'Cert:\CurrentUser\My'
-  }
-  New-SelfSignedCertificate @params
- ```
+- For an app identity associated with the plug-in (so you can apply Azure policies), use [application registration](/entra/identity-platform/howto-create-service-principal-portal).
+- For a service principal, provision a [user-assigned managed identity](/entra/identity/managed-identities-azure-resources/how-manage-user-assigned-managed-identities?pivots=identity-mi-methods-azp#create-a-user-assigned-managed-identity).
 
 > [!NOTE]
-> **Encoding for `{encodedTenantId}`**  
-> 1. Convert **GUID → Hex**.  
-> 2. Convert **Hex → Base64URL** (not standard Base64).  
->
-> **Self-signed hash**  
-> - Compute **SHA-256** over the **.cer**. If you have a **.pfx**, export a **.cer** first:
->   ```powershell
->   CertUtil -hashfile <CertificateFilePath> SHA256
->
->   $cert = Get-PfxCertificate -FilePath "path	o\your.pfx"
->   $cert.RawData | Set-Content -Encoding Byte -Path "extracted.cer"
->   ```
+> Capture the **Application (client) ID** and **Tenant ID** — you use them in later steps.
 
-## Specialized Azure cloud environments
+### Step 2: Build, sign, and register the plug-in
 
-Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deploying outside public cloud, GCC, and first release station in GCC:
+1. [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) in Visual Studio. Use the tenant ID from step 1 and a scope like `https://{OrgName}.crm*.dynamics.com/.default`. Use [IManagedIdentityService](/dotnet/api/microsoft.xrm.sdk.imanagedidentityservice?view=dataverse-sdk-latest&preserve-view=true) to request a token:
+
+   ```csharp
+   string AcquireToken(IEnumerable<string> scopes);
+   ```
+
+1. Sign the plug-in with your certificate.
+
+   Plug-in package (NuGet):
+
+   ```PowerShell
+   nuget sign YourPlugin.nupkg `
+     -CertificatePath MyCert.pfx `
+     -CertificatePassword "MyPassword" `
+     -Timestamper http://timestamp.digicert.com
+   ```
+
+   Plug-in assembly (SignTool):
+
+   ```PowerShell
+   signtool sign /f MyCert.pfx /p MyPassword /t http://timestamp.digicert.com /fd SHA256 MyAssembly.dll
+   ```
+
+1. [Register the plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in#register-plug-in) using the [plug-in registration tool](/power-apps/developer/data-platform/download-tools-nuget).
+
+> [!NOTE]
+> Use a self-signed certificate only for development or testing. Don't use self-signed certificates in production. To create one, see [Generate a self-signed certificate](#generate-a-self-signed-certificate).
+
+### Step 3: Configure the federated identity credential
+
+In the [Azure portal](https://portal.azure.com/), open your app or user-assigned managed identity (UAMI), go to **Certificates & secrets** > **Federated credentials** > **Add credential**, and select **Other issuer**. Then enter:
+
+- **Issuer** — `https://login.microsoftonline.com/{tenantID}/v2.0`
+- **Type** — **Explicit subject identifier**
+- **Subject identifier** — use the format for your certificate type:
+
+  - Trusted issuer certificate (production):
+
+    ```
+    /eid1/c/pub/t/{encodedTenantId}/a/qzXoWDkuqUa3l6zM5mM0Rw/n/plugin/e/{environmentId}/i/{issuerHash}/s/{subjectHash}
+    ```
+
+  - Self-signed certificate (development only):
+
+    ```
+    /eid1/c/pub/t/{encodedTenantId}/a/qzXoWDkuqUa3l6zM5mM0Rw/n/plugin/e/{environmentId}/h/{hash}
+    ```
+
+  **Segment reference**
+
+  | Segment | Description |
+  |---|---|
+  | `eid1` | Identity format version |
+  | `c/pub` | Cloud code for public cloud, GCC, and first release station in GCC |
+  | `t/{encodedTenantId}` | Tenant ID. See [Get the encoded tenant ID](#get-the-encoded-tenant-id) |
+  | `a/qzXoWDkuqUa3l6zM5mM0Rw/` | Internal use only. Don't modify |
+  | `n/plugin` | Plug-in component |
+  | `e/{environmentId}` | Environment ID |
+  | `i/{issuerHash}` `s/{subjectHash}` | SHA-256 Base64URL hash of the full issuer/subject DN. See [Compute the issuer and subject hashes](#compute-the-issuer-and-subject-hashes) |
+  | `h/{hash}` | SHA-256 of the certificate (self-signed only) |
+
+#### Compute the issuer and subject hashes
+
+Take the SHA-256 hash of the full issuer and subject DN strings as they appear on the certificate, and encode each as URL-safe Base64. Get the DN strings with:
+
+```powershell
+$cert = Get-PfxCertificate -FilePath "path\to\your.pfx"
+Write-Host "Issuer:  $($cert.Issuer)"
+Write-Host "Subject: $($cert.Subject)"
+```
+
+Compute the hashes (PowerShell):
+
+```powershell
+function Get-Sha256Base64Url {
+    param([string]$InputString)
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($InputString)
+    $sha256 = [System.Security.Cryptography.SHA256]::Create()
+    $hash = $sha256.ComputeHash($bytes)
+    $base64 = [Convert]::ToBase64String($hash)
+    return $base64.Replace('+', '-').Replace('/', '_').TrimEnd('=')
+}
+
+$issuerHash = Get-Sha256Base64Url -InputString "<full issuer DN string>"
+$subjectHash = Get-Sha256Base64Url -InputString "<full subject DN string>"
+Write-Host "Issuer Hash:  $issuerHash"
+Write-Host "Subject Hash: $subjectHash"
+```
+
+Or in C#:
+
+```csharp
+using System.Security.Cryptography;
+using System.Text;
+
+static string ComputeSha256Base64Url(string input)
+{
+    using var sha256 = SHA256.Create();
+    byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(input));
+    return Convert.ToBase64String(hashBytes)
+        .Replace('+', '-')
+        .Replace('/', '_')
+        .TrimEnd('=');
+}
+```
+
+The output is a 43-character string containing only `A-Z`, `a-z`, `0-9`, `-`, and `_`.
+
+> [!IMPORTANT]
+> Use the exact DN string the runtime uses (the .NET `X509Certificate2.Issuer` and `X509Certificate2.Subject` properties). A differently formatted DN won't match and fails with `AADSTS700213`.
+
+> [!NOTE]
+> For deployments outside public cloud, set cloud-specific values. See [Specialized Azure cloud environments](#specialized-azure-cloud-environments).
+
+### Step 4: Create the managed identity record in Dataverse
+
+Send an HTTP POST request by using a REST client. For version 2, set `version` to `2`.
+
+```js
+POST https://<<orgURL>>/api/data/v9.0/managedidentities
+```
+
+```json
+{
+  "applicationid": "<<appId>>",
+  "managedidentityid": "<<anyGuid>>",
+  "credentialsource": 2,
+  "subjectscope": 1,
+  "tenantid": "<<tenantId>>",
+  "version": 2
+}
+```
+
+Then, bind the plug-in assembly (or package) to the record:
+
+```js
+PATCH https://<<orgURL>>/api/data/v9.0/pluginassemblies(<<PluginAssemblyId>>)
+```
+
+```json
+{
+  "managedidentityid@odata.bind": "/managedidentities(<<ManagedIdentityGuid>>)"
+}
+```
+
+For a plug-in package, use `pluginpackages(<<PluginPackageId>>)` instead.
+
+### Step 5: Grant access to the Azure resource
+
+Grant the application or user-assigned managed identity access to the Azure resource it needs, such as Azure Key Vault.
+
+### Step 6: Validate the integration
+
+Trigger the plug-in and confirm it acquires a token and reaches the Azure resource without separate credentials.
+
+## Upgrade to version 2
+
+If you have a plug-in on version 0 or version 1, you can move it to version 2 without rebuilding or re-registering the plug-in.
+
+### Option 1: Power Platform CLI
+
+> [!NOTE]
+> The CLI managed identity verbs don't work on Linux-based operating systems or with user-assigned managed identity (UAMI). If the CLI doesn't work for your certificate, use [Option 2: Manual](#option-2-manual).
+
+1. Install **Power Platform CLI version 2.8.1 or later**. See [Install Microsoft Power Platform CLI](/power-platform/developer/cli/introduction?tabs=windows).
+1. Create an authentication profile: `pac auth create`
+1. Check the current version: `pac managed-identity show-fic --environment <orgUrl> --component-type PluginAssembly --component-id <pluginAssemblyId> --version 2`
+1. Upgrade: `pac managed-identity upgrade-version --environment <orgUrl> --component-type PluginAssembly --component-id <pluginAssemblyId> --target-version 2 --confirm`
+1. Trigger the plug-in to validate.
+
+### Option 2: Manual
+
+1. Compute the version 2 issuer and subject hashes. See [Compute the issuer and subject hashes](#compute-the-issuer-and-subject-hashes).
+1. Add a new FIC with the version 2 subject identifier format (Step 3).
+1. Update the managed identity record to version 2:
+
+   ```js
+   PATCH https://<<orgURL>>/api/data/v9.0/managedidentities(<<ManagedIdentityId>>)
+   ```
+
+   ```json
+   { "version": 2 }
+   ```
+
+1. Trigger the plug-in and verify token acquisition succeeds.
+1. Remove the old version 1 FIC.
+
+> [!NOTE]
+> Version 0 is deprecated. CLI support for generating the version 2 FIC is in progress.
+
+## Reference
+
+### Get the encoded tenant ID
+
+The encoded tenant ID is the tenant GUID converted to bytes and encoded as **Base64URL** (not standard Base64):
+
+```powershell
+$tenantId = "<your-tenant-guid>"
+$tenantGuid = [System.Guid]::Parse($tenantId)
+$tenantBytes = $tenantGuid.ToByteArray()
+$base64 = [System.Convert]::ToBase64String($tenantBytes)
+$encodedTenantId = $base64.Replace('+', '-').Replace('/', '_').TrimEnd('=')
+$encodedTenantId
+```
+
+### Generate a self-signed certificate
+
+For development or testing only:
+
+```PowerShell
+$params = @{
+    Type = 'Custom'
+    Subject = 'E=admin@contoso.com,CN=Contoso'
+    TextExtension = @(
+        '2.5.29.37={text}1.3.6.1.5.5.7.3.4',
+        '2.5.29.17={text}email=admin@contoso.com' )
+    KeyAlgorithm = 'RSA'
+    KeyLength = 2048
+    SmimeCapabilities = $true
+    CertStoreLocation = 'Cert:\CurrentUser\My'
+}
+New-SelfSignedCertificate @params
+```
+
+Compute the self-signed `{hash}` (SHA-256 over the `.cer`; export from a `.pfx` first if needed):
+
+```powershell
+CertUtil -hashfile <CertificateFilePath> SHA256
+
+$cert = Get-PfxCertificate -FilePath "path\to\your.pfx"
+$cert.RawData | Set-Content -Encoding Byte -Path "extracted.cer"
+```
+
+### Specialized Azure cloud environments
+
+Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deploying outside public cloud, GCC, and first release station in GCC.
 
 | Cloud | Audience | Issuer URL | Subject prefix |
 | --- | --- | --- | --- |
@@ -151,123 +306,24 @@ Set **Audience**, **Issuer URL**, and **Subject prefix** explicitly when deployi
 | US Secure (USSec) | `api://AzureADTokenExchangeUSSec` | `https://login.microsoftonline.scloud` | `/eid1/c/usn` |
 
 > [!NOTE]
-> The **Audience** value is **case-sensitive** and must match exactly.  
-> For public cloud, GCC, and first release station in GCC (and other non‑listed clouds), defaults are:  
-> Audience `api://AzureADTokenExchange`, Issuer `https://login.microsoftonline.com`, Subject prefix `/eid1/c/pub`.
-
-## Create and register Dataverse plug-ins or plug-in packages
-
-### Build plug-in assembly
-
-- [Create a plug-in](/power-apps/developer/data-platform/write-plug-in?tabs=pluginbase) using Visual Studio. While building the plug-in, use the tenant ID from [Create a new app registration or user-assigned managed identity](#create-a-new-app-registration-or-user-assigned-managed-identity) and scopes as organization URL like `https://{OrgName}.crm*.dynamics.com/.default` or even more granular scopes.
-
-- Use [IManagedIdentityService](/dotnet/api/microsoft.xrm.sdk.imanagedidentityservice?view=dataverse-sdk-latest&preserve-view=true) and acquire a token method to request a token with given scope.  
-
-  Method signature:
-
-  ```csharp
-  string AcquireToken(IEnumerable<string> scopes);
-  ```
-
-## Packaging and signing
-
- ### Signing a plug-in package
-
- If you're building a plug-in package, use the [NuGet Sign CLI](/nuget/reference/cli-reference/cli-ref-sign) to generate a package from either a .nuspec or a .csproj file. After generating the package, sign it with your certificate.
-
- ```PowerShell
-  nuget sign YourPlugin.nupkg `
-    -CertificatePath MyCert.pfx `
-    -CertificatePassword "MyPassword" `
-    -Timestamper http://timestamp.digicert.com
- ```
-
- ### Signing a plug-in assembly
- If you're registering a plug-in (assembly), sign the DLL with a certificate by using [SignTool.exe](/dotnet/framework/tools/signtool-exe) (Sign Tool).
-
- ```PowerShell
- signtool sign /f MyCert.pfx /p MyPassword /t http://timestamp.digicert.com /fd SHA256 MyAssembly.dll
- ```
-
- You can optionally add timestamping by providing the URL of an RFC 3161‑compliant timestamp server.
-
-> [!NOTE]
-> Use a self‑signed certificate only for development or testing purposes. Don't use self‑signed certificates in production environments.
-
-#### Register the plug-in
-
-- Install the plug-in registration tool if you don't already have it on your machine. For more information, see [Dataverse development tools](/power-apps/developer/data-platform/download-tools-nuget).
-
-- Register the plug-in. For more information, see [Register plug-in](/power-apps/developer/data-platform/tutorial-write-plug-in#register-plug-in).
-
-## Create managed identity record in Dataverse
-
-To provision a managed identity record in Dataverse, complete the following steps.
-
-1. Create a managed identity by sending an HTTP POST request with a REST client (such as Insomnia). Use a URL and request body in the following format.
-  
-   ```js
-   POST https://<<orgURL>>/api/data/v9.0/managedidentities
-   ```
-   Be sure to replace **orgURL** with the URL of the organization.
-   
-1. Ensure that **credentialsource** is set to **2** in the payload, **subjectscope** is set to **1** for environment-specific scenarios, and **version** is set to 1 in the payload.
-
-   **Sample payload**
-   ```json
-   {
-     "applicationid": "<<appId>>", //Application Id, or ClientId, or User Managed Identity
-     "managedidentityid": "<<anyGuid>>",
-     "credentialsource": 2, // Managed client
-     "subjectscope": 1, //Environment Scope
-     "tenantid": "<<tenantId>>", //Entra Tenant Id
-     "version": 1
-   }
-   ```
-
-1. Update your plug‑in package or plug‑in assembly record by issuing an HTTP PATCH request to associate it with the managed identity created in step 1.
-
-   **Plug-in assembly**  
-   ```js
-   PATCH https://<<orgURL>>/api/data/v9.0/pluginassemblies(<<PluginAssemblyId>>)
-   ```
-
-   **Plug-in package**  
-   ```js
-   PATCH https://<<orgURL>>/api/data/v9.0/pluginpackages(<<PluginPackageId>>)
-   ```
-
-   **Sample payload**
-   ```json
-   {
-     "managedidentityid@odata.bind": "/managedidentities(<<ManagedIdentityGuid>>)"
-   }
-   ```
-
-   Be sure to replace **orgURL**, **PluginAssemblyId** (or **PluginPackageId**), and **ManagedIdentityGuid** with your values.
-
-## Grant access to the Azure resources to application or user-assigned managed identity
-
-If you need to give access to an application ID to access Azure resources, such as Azure Key Vault, grant access to the application or user-assigned managed identity to that resource.
-
-## Validate the plug-in integration
-
-Verify that your plug-in can securely request access to Azure resources that support managed identity, eliminating the need for separate credentials.
+> The **Audience** value is case-sensitive. For public cloud, GCC, and first release station in GCC, the defaults are Audience `api://AzureADTokenExchange`, Issuer `https://login.microsoftonline.com`, Subject prefix `/eid1/c/pub`.
 
 ## Frequently asked questions (FAQs)
 
-### How do I resolve this error?
+### How do I resolve AADSTS700213: No matching federated identity record found?
 
-If you receive the following error:<br>
-**Getting Error – A configuration issue is preventing authentication.**<br>
-**AADSTS700213: No matching federated identity record found**<br>
+The subject identifier computed at runtime doesn't match any FIC on the app. Check that:
 
-Complete the following steps to resolve the issue:
-   1. Ensure the FIC is correctly configured and saved.  
-   1. Verify that the issuer/subject matches the format specified earlier.
+1. You configured and saved the FIC.
+1. The issuer and subject match the format in [Step 3](#step-3-configure-the-federated-identity-credential). You can also find the expected format in the error stack.
+1. The record `version` is `2` and the FIC uses the version 2 hash format.
+1. The hash is computed from the runtime's DN string (`X509Certificate2.Issuer` / `X509Certificate2.Subject`).
+1. The issuer is `https://login.microsoftonline.com/{tenantId}/v2.0` and the audience is `api://AzureADTokenExchange` (case-sensitive).
 
-      You can also find the expected format in the error stack.
+### How do I resolve AADSTS70050: The Federated Managed Identity path is not properly formatted?
+
+The subject identifier contains characters the identity provider doesn't accept — most often non-ASCII characters in the certificate CN under version 1. Version 2 produces an ASCII-only subject identifier and resolves this error.
 
 ### How do I resolve the "Unable to reach or connect to Power Platform" error?
 
-Refer to [Power Platform URLs and IP address ranges](online-requirements.md) to ensure Power Platform endpoints are reachable and allowlisted.
+To ensure Power Platform endpoints are reachable and allowlisted, see [Power Platform URLs and IP address ranges](online-requirements.md).
