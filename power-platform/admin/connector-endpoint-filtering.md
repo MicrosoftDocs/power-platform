@@ -3,7 +3,7 @@ title: Connector endpoint filtering (preview)
 description: Learn how to configure connector endpoint filtering in data policies to control app, flow, and chatbot connections.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/19/2025
+ms.date: 06/15/2026
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -108,35 +108,35 @@ After you save your connector endpoint filtering rules and the data policy where
             Write-Host "App is already Granular data policy compliant: " $app.AppName 
         }
     }
-    ``` 
+    ```
 
-## Endpoint input formats and examples 
+## Endpoint input formats and examples
 
-Each connector defines an endpoint differently, and some endpoints can be in multiple formats. Therefore, you must enter endpoints in all possible formats to block makers from using them when creating apps and flows. Admins can enter the full endpoint name or use pattern matching with the wildcard character (`*`) to create an endpoint filtering rule. These rules are entered and presented in an ordered list of endpoint patterns, meaning that they're evaluated in ascending order by number. The last rule for any given connector is always `*` Allow or `*` Deny. Allow is the default, which can be changed to Deny. 
+Each connector defines an endpoint differently, and some endpoints can be in multiple formats. Therefore, you must enter endpoints in all possible formats to block makers from using them when creating apps and flows. Admins can enter the full endpoint name or use pattern matching with the wildcard character (`*`) to create an endpoint filtering rule. These rules are entered and presented in an ordered list of endpoint patterns, meaning that they're evaluated in ascending order by number. The last rule for any given connector is always `*` Allow or `*` Deny. Allow is the default, which can be changed to Deny.
 
-The following guidance describes how to enter connector endpoints while creating rules to allow or deny them. 
+The following guidance describes how to enter connector endpoints while creating rules to allow or deny them.
 
 ### SQL Server
 
-List SQL Server connection endpoints in `<Server_name, database_name>` format. A few things to keep in mind: 
+List SQL Server connection endpoints in `<Server_name, database_name>` format. A few things to keep in mind:
 
 - Makers can enter the server name in various formats. To address an endpoint, enter it in all possible formats. For example, on-premises instances can be in `<machine_name\named_instance, database_name>` or `<IP address, custom port, database_name>` format. In this case, you have to apply allow or block rules in both formats for an endpoint. For example:
-  - Block `WS12875676\Servername1,MktingDB` 
+  - Block `WS12875676\Servername1,MktingDB`
   - Block `11.22.33.444,1401,MktingDB`
 
-- No special logic handles relative addresses like `localhost`. Therefore, if you block `*localhost*`, it blocks makers from using any endpoints by using `localhost` as part of the SQL Server endpoint. However, it doesn't stop them from accessing the endpoint by using the absolute address, unless the absolute address has also been blocked by the admin. 
+- No special logic handles relative addresses like `localhost`. Therefore, if you block `*localhost*`, it blocks makers from using any endpoints by using `localhost` as part of the SQL Server endpoint. However, it doesn't stop them from accessing the endpoint by using the absolute address, unless the absolute address has also been blocked by the admin.
 
-Here are some examples: 
+Here are some examples:
 
-- Allow only Azure SQL Server instances: 
-  1. Allow `*.database.windows.net*` 
+- Allow only Azure SQL Server instances:
+  1. Allow `*.database.windows.net*`
   2. Deny `*`
 
-- Allow only a specific IP range: (The IP addresses that aren't allowed can still be entered by the maker in `<machine_name\named_instance>` format.) 
-  1. Allow `11.22.33*` 
+- Allow only a specific IP range: (The IP addresses that aren't allowed can still be entered by the maker in `<machine_name\named_instance>` format.)
+  1. Allow `11.22.33*`
   2. Deny `*`
 
-### Dataverse 
+### Dataverse
 
 Dataverse endpoints are represented by the [organization ID](determine-org-id-name.md), such as 00aa00aa-bb11-cc22-dd33-44ee44ee44ee. Note that only the regular Dataverse connector is currently in scope for endpoint filtering. Dataverse dynamics and Dataverse current connectors aren't in scope. Also, the local instance of Dataverse (also known as the current environment) can never be blocked for use within an environment. This means makers can always access the Dataverse current environment within any given environment. 
 
@@ -146,19 +146,20 @@ Therefore, a rule that says:
 2. Deny `*`
 
 Actually means:
+
 1. Allow `Dataverse current environment`
 2. Allow `00aa00aa-bb11-cc22-dd33-44ee44ee44ee`
 3. Deny `*`
 
 Allow `Dataverse current environment` is always implicitly the first rule in the Dataverse endpoint filtering list for any given environment.
 
-### Azure Blob Storage 
+### Azure Blob Storage
 
-Azure Blob Storage endpoints use the Azure storage account name. 
+Azure Blob Storage endpoints use the Azure storage account name.
 
-### SMTP 
+### SMTP
 
-SMTP endpoints are represented in `<SMTP server address, port number>` format. 
+SMTP endpoints are represented in `<SMTP server address, port number>` format.
 
 Here is an example scenario:
 
@@ -186,9 +187,9 @@ This feature lets you control the web pages a desktop flow accesses in Power Aut
 
 Here is an example scenario:
 
-Allow access to all web pages except for the URL `https://www.microsoft.com/` and any URL or web page containing the string `powerplatform`.
+Allow access to all web pages except for the URL `https://www.contoso.com/` and any URL or web page containing the string `powerplatform`.
 
-1. Deny `https://www.microsoft.com/`
+1. Deny `https://www.contoso.com/`
 1. Deny `*powerplatform*`
 1. Allow `*`
 
@@ -206,6 +207,7 @@ Endpoint filtering rules don't apply to variables or dynamically-bound endpoints
 - When **Deny \*** is used: All dynamic values are blocked by default, ensuring stricter enforcement.
 
 > [!NOTE]
+>
 > - Endpoint filtering isn't enforced if the relevant attributes (**Process** or **Name**) aren't part of the selector.
 > - Endpoint filtering isn't supported for certain Windows operating system UI elements, including desktop icons, taskbar buttons, and components within the **Start** menu.
 
@@ -214,6 +216,20 @@ Here is an example scenario. To allow access to all applications and screens, ex
 1. Deny `Calculator`
 1. Deny `*Java*`
 1. Allow `*`
+
+### HTTP
+
+This feature lets you control the endpoints that a desktop flow can access when using HTTP actions in Power Automate for desktop. Endpoints are defined using URL format, and you can use wildcards for flexible matching of dynamic URLs.
+
+Validation occurs at runtime when an HTTP action is executed. If the requested endpoint violates the defined filtering rules, the action is blocked and the flow fails with a policy violation.
+
+Endpoint filtering rules are evaluated in order, based on the allow and deny patterns configured in the data loss prevention (DLP) policy.
+
+Example scenario: Allow access to all endpoints except for the URL `https://www.contoso.com/` and any URL containing the string `powerplatform`.
+
+1. Deny `https://www.contoso.com/`
+2. Deny `powerplatform`
+3. Allow `*`
 
 ## PowerShell support for endpoint filtering
 
@@ -239,46 +255,50 @@ $ConnectorConfigurations = @{
     }
   ) 
 }
-``` 
+```
 
 **Notes**
--    The last rule for each connector must always apply to URL `*` to ensure that all URLs are covered by the rules.
--    The order property of the rules for each connector must use numbers 1 to N, where N is the number of rules for that connector.
+
+- The last rule for each connector must always apply to URL `*` to ensure that all URLs are covered by the rules.
+- The order property of the rules for each connector must use numbers 1 to N, where N is the number of rules for that connector.
 
 **Retrieve existing connector configurations for a data policy**
 
 ```powershell
 Get-PowerAppDlpPolicyConnectorConfigurations 
-``` 
+```
 
 **Create connector configurations for a data policy**
 
 ```powershell
 New-PowerAppDlpPolicyConnectorConfigurations
-``` 
+```
 
 **Update connector configurations for a data policy**
 
 ```powershell
 Set-PowerAppDlpPolicyConnectorConfigurations
-``` 
+```
 
 **Example**
 
 Goal:
 
 For the SQL Server connector:
-  -    Deny database "testdatabase" of server "myservername.database.windows.net"
-  -    Allow all other databases of server "myservername.database.windows.net"
-  -    Deny all other servers
+
+- Deny database "testdatabase" of server "myservername.database.windows.net"
+- Allow all other databases of server "myservername.database.windows.net"
+- Deny all other servers
 
 For the SMTP connector:
-  -    Allow Gmail (server address: smtp.gmail.com, port: 587)
-  -    Deny all other addresses
+
+- Allow Gmail (server address: smtp.gmail.com, port: 587)
+- Deny all other addresses
 
 For the HTTP connector:
-  -    Allow endpoints `https://mywebsite.com/allowedPath1` and `https://mywebsite.com/allowedPath2` 
-  -    Deny all other URLs
+
+- Allow endpoints `https://mywebsite.com/allowedPath1` and `https://mywebsite.com/allowedPath2`
+- Deny all other URLs
 
 > [!NOTE]
 > In the following cmdlet, *PolicyName* refers to the unique GUID. Retrieve the data policy GUID by running the **Get-DlpPolicy** cmdlet.
