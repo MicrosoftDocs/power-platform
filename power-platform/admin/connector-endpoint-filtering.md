@@ -221,7 +221,7 @@ Here is an example scenario. To allow access to all applications and screens, ex
 
 This feature lets you control the endpoints that a desktop flow can access when using HTTP actions in Power Automate for desktop. Endpoints are defined using URL format, and you can use wildcards for flexible matching of dynamic URLs.
 
-Validation occurs at runtime when an HTTP action is executed. If the requested endpoint violates the defined filtering rules, the action is blocked and the flow fails with a policy violation.
+If the requested endpoint violates the defined filtering rules, the action is blocked and the flow fails with a policy violation.
 
 Endpoint filtering rules are evaluated in order, based on the allow and deny patterns configured in the data loss prevention (DLP) policy.
 
