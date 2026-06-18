@@ -21,7 +21,7 @@ This article explains how to implement continuous integration and deployment (CI
 ## Install or update the latest build tools
 
 1. Sign into the Power Platform admin center and select the environment you want to work in. In the **Organization Settings > Extensions** menu, locate and install the “Dynamics 365 Finance and Operations Tools” shared extension.
-1. Add a **Create Deployable Package** task in your build pipeline, and ensure it contains task version 1. Ensure **Add Licenses to Deployable Package** has task version 1.
+1. Add a **Create Deployable Package** task in your build pipeline, and ensure it contains task version 3. Ensure **Add Licenses to Deployable Package** has task version 1.
 1. Locate and install the Power Platform Build Tools extension from **Organization Settings > Extensions > Browse Marketplace**.
 1. Download the X++ NuGet packages with the required version and add them to your artifact feed. For details on this step refer to [Build automation that uses Microsoft-hosted agents and Azure Pipelines - Finance & Operations](/dynamics365/fin-ops-core/dev-itpro/dev-tools/hosted-build-automation).
 
@@ -31,7 +31,7 @@ The process for building your solution remains same, and can be based on preexis
 
 :::image type="content" source="../media/unified-experience/pipelines-build-solution.png" alt-text="Image of Build a Solution in Azure DevOps.":::
 
-1. To generate a Power Platform unified package, add your version 1 task to **Create Deployable Package**. Check the box for **Create Power Platform Unified Package**. Add the package platform and application versions used to build the solution, and provide the path for the deployable package location.
+1. To generate a Power Platform unified package, add your version 3 task to **Create Deployable Package**. Check the box for **Create Power Platform Unified Package**. Add the package platform and application versions used to build the solution, and provide the path for the deployable package location. Optionally add comma separated list of X++ modules to delete.
 Optionally, you can choose to generate a separate Lifecycle Services format package.
 
     :::image type="content" source="../media/unified-experience/pipelines-create-deployable-package.png" alt-text="Image of Create Deployable Package in Azure DevOps.":::
