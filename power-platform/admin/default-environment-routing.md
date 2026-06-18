@@ -16,6 +16,26 @@ search.audienceType:
 # Environment routing
 
 Environment routing is a premium governance feature. This feature allows Power Platform admins to automatically direct new or existing makers into their own personal developer environments when they visit [Copilot Studio](https://copilotstudio.microsoft.com), [Power Apps](https://make.powerapps.com/), [Power Automate](https://make.powerautomate.com), or Power Automate for desktop. Environment routing offers makers a personal, safe space to build with Microsoft Dataverse without the fear of others accessing their apps or data.<br/><br/>
+
+> [!IMPORTANT]
+> Below are Microsoft managed apps related changes to the environment routing feature.
+> - Environment routing is enabled automatically for Microsoft managed apps in all tenants. This cannot be changed at this time.
+>   - Tenants without any routing configuration will notice Managed apps selected by default. Admins are required to enable environment routing for other products manually.
+>   - Tenants that enabled routing for any of the Power Platform or Copilot Studio will notice Managed apps selected in addition to their prior selection.
+>   - Makers in tenants with routing enabled for managed apps alone will not be routed to their personal developer enviornments when they visit Power Apps, Power Automate, or Copilot Studio maker surfaces. They can continue to build in default or other environments where they have maker permissions.
+> - A new routing rule is added automatically to route all makers in the tenant to their own personal developer environments.
+>   - Tenants without any routing rules will notice a single routing rule that routes _Everyone_ in the tenant to their personal developer environments. A new _Default Environment Group_ is also created automatically, and managed apps specific rules are applied to this group, to route all these personal developer environments.
+>   - New routing rule is not added to tenants with routing rules. Note that some makers in these tenants may not be able build managed apps and an admin should create a new "Everyone" routing rule to ensure makers do not end up building managed apps in the default or other environments.
+>   - Admins cannot delete routing rule that routes _Everyone_ to an environment group. Only one routing rule is allowed to target _Everyone_. Tenants with multiple routing rules targeting _Everyone_ will be required to clean up the configuration before making any changes to the routing rules.
+>   - Routing rule targeting _Everyone_ must be the last rule in the priority. Any tenants with routing rule configuration that placed a routing rule targeting _Everyone_ above a security group is required to adjust the priority before making any further changes.
+>   - New routing rules cannot be created without selecting an environment group.
+> - Makers using Managed apps using the CLI or any other maker surfaces will be routed automatically to their personal developer environments.
+>   - The personal developer environments created for managed apps will be managed environments by default.
+>   - Makers who do not create Power Apps, Power Automate, or Copilot Studio resources in these personal developer environments will not require premium licenses to those products. Auto claim will not be applicable in this scenario.
+>   - Makers who create Power Apps, Power Automate, or Copilot Studio in their personal developer environment created using managed apps, by explictly selecting this environment in the environment picker or routed to this environment automatically due to the routing configuration done by the admin, will require premium licenses as required to be compliant with managed environments. Auto claim will be applicable in this scenario.
+>   - Personal developer environments created for managed apps will not have Dataverse. Makers or admins can manually add Dataverse to these environments from the Power Platform Admin Center.
+>   - Dataverse is automatically added to the personal developer environments created for managed apps when the maker visits Power Apps, Power Automate, or Copilot Studio maker surfaces and explictly selects this environment in the environment picker or routed to this environment automatically due to the routing configuration done by the admin.
+
 In this video, check out what's new with environment routing in the Power Platform admin center.<br/><br/>
 > [!VIDEO 4e944970-757a-4c21-9349-83bf52672583]
 
