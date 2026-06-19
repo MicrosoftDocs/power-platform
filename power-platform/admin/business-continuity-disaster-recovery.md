@@ -118,7 +118,7 @@ To check data replication latency at any time, select **Disaster Recovery**, and
 
 ## Recovery point and recovery time objectives with business continuity and disaster recovery
 
-Power Platform and Dataverse are designed with high availability built into every region. Within a region, the platform targets approximately near zero RPO (recovery point objective) and a recovery time of under five minutes across availability zones and data centers within a region. For cross-region resiliency, Microsoft provides self-service disaster recovery, which gives customers full visibility and control over the failover process. In this model, typical replication lag is under 15 minutes (often under five minutes), and the platform is designed to complete failover within minutes once initiated. 
+Power Platform and Dataverse are designed with high availability built into every region. Within a region, the platform targets approximately near zero RPO (recovery point objective) and a recovery time of under five minutes across availability zones and data centers within a region. For cross-region resiliency, Microsoft provides self-service disaster recovery, which gives customers full visibility and control over the failover process. In this model, typical replication lag is under 15 minutes (often under five minutes), and the platform is designed to complete failover within minutes once initiated. Dynamics 365 uses the same Azure SQL Database business continuity capabilities described in the [Business continuity in Azure SQL Database](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql) public documentation.
 
 Because customers retain control of when and whether to trigger a cross-region failover, Microsoft doesn't publish a  cross-region RTO commitment. Customers can monitor real-time replication lag directly in the Power Platform admin center to inform their own recovery decisions. It's important to note that when Power Platform solutions connect to external systems&mdash;such as SQL Server, REST APIs, or other third-party services&mdash;the RPO of those integrations are governed by the availability and recovery capabilities of the respective target systems, and fall outside the scope of Power Platform's resiliency commitments. 
 
@@ -234,6 +234,15 @@ In long-running failover scenarios or extended operation in a secondary region, 
 - Recreate the Fabric link using the standard setup flow. Follow detailed steps, in [Create a link to Fabric](/power-apps/maker/data-platform/fabric-link-to-data-platform#create-a-link-to-fabric).
  
 Microsoft is actively improving Fabric link failover support to ensure configuration settings are fully preserved across SSDR failover scenarios, eliminating the need for manual validation or reconfiguration.
+
+#### Synapse link limitation
+Self-service disaster recovery (SSDR) does not currently provide full support for Synapse Link configurations. In the event of a regional outage, Synapse Link is not automatically recovered as part of the SSDR process. To restore Synapse Link connectivity after a failover or recovery operation, we recommend manually unlinking and relinking your Synapse Link connection.
+
+#### Environment servicing limitation
+Servicing actions, such as code deployments for Dynamics 365 Finance and Operations environments cannot be performed while the environment is operating from the secondary region. To apply code updates or run deployments, you must first switch back to the primary region.
+
+#### Commerce Scale Units limitation
+Commerce Scale Units (CSU) failover is not currently supported as part of self-service disaster recovery (SSDR). During an SSDR failover event, CSU components are not automatically failed over or replicated to the secondary region. If your environment relies on CSU and you experience an outage or a CSU resynchronisation is required following a failover, please raise a support request and provide details of the impact so the support team can assist.
 
 #### Other limitations
 
