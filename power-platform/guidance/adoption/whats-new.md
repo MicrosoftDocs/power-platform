@@ -86,5 +86,5 @@ Learn what's new in:
 
 - [Power Platform and Copilot Studio Architecture Center](../../architecture/whats-new.md)
 - [Microsoft Copilot Studio guidance](/microsoft-copilot-studio/guidance/whats-new)
-- [Architecting agent solutions: Principles and patterns](/microsoft-copilot-studio/guidance/architecture/whats-new)
+- [Architecting agent solutions: Principles and patterns](/agents/architecture/whats-new)
 - [Power Platform Well-Architected](../../well-architected/whats-new.md)
