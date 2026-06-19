@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 03/27/2026
+ms.date: 06/12/2026
 ---
 
 # Copilot Studio reference architectures and solution ideas
@@ -26,7 +26,7 @@ Understanding Copilot Studio design and implementation concepts and exploring so
 
 | Pillar | Description |
 | --- | --- |
-| [**Architect**](/microsoft-copilot-studio/guidance/architecture/overview) | Use principles and patterns of the Architecting agent solutions framework to develop secure and reliable agents. |
+| [**Architect**](/agents/architecture/) | Use principles and patterns of the Architecting agent solutions framework to develop secure and reliable agents. |
 | [**Plan**](/microsoft-copilot-studio/guidance/plan-overview) | Define the project vision, scope, success measures, risks, team roles, and technical readiness to ensure a solid foundation before building your agent. |
 | [**Implement**](/microsoft-copilot-studio/guidance/implement-overview) | Build, integrate, and publish your agent using best practices for topics, tools, orchestration, channels, and solution configuration. |
 | Adopt | Adopt an [agentic AI maturity model for successful adoption](/microsoft-copilot-studio/guidance/maturity-model-overview) and [build thriving Copilot Studio communities](/microsoft-copilot-studio/guidance/community-framework-overview). Review [real-world transformation stories](/microsoft-copilot-studio/guidance/adoption-case-studies) that demonstrate how customers are using Copilot Studio to create innovative solutions. |
@@ -61,7 +61,7 @@ Understanding Copilot Studio design and implementation concepts and exploring so
 
 - [Copilot Studio documentation](/microsoft-copilot-studio/)
 - [Copilot Studio guidance](/microsoft-copilot-studio/guidance/)
-- [Architecting agent solutions: Principles and patterns](/microsoft-copilot-studio/guidance/architecture/)
+- [Agents hub](/agents/)
 - [Copilot Studio implementation guide](https://aka.ms/CopilotStudioImplementationGuide) (PDF)
 - [Copilot Studio resources](https://aka.ms/CopilotStudio/resources)
 - [Introduction to Microsoft Power Platform for developers](../../developer/get-started.md)

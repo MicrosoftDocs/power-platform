@@ -12,7 +12,7 @@ metadata:
   author: manuelap-msft
   ms.author: mapichle
   ms.reviewer: jhaskett-msft
-  ms.date: 05/19/2026
+  ms.date: 06/12/2026
 
 highlightedContent:
 # itemType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
@@ -75,7 +75,7 @@ productDirectory:
 additionalContent:
   # Supports up to 3 sections
   sections:
-    - title: Related guidance centers
+    - title: Related guidance
       summary: Guidance for individual Power Platform components # < 160 chars (optional)
       items:
         # Cards with links style
@@ -128,10 +128,21 @@ additionalContent:
               url: /microsoft-copilot-studio/guidance/generative-mode-guidance
             - text: Testing conversational agents
               url: /microsoft-copilot-studio/guidance/conversational-agents-performance-testing
-            - text: "Architecting agent solutions: Principles and patterns"
-              url: /microsoft-copilot-studio/guidance/architecture/
+            - text: Copilot Studio and agent samples
+              url: /microsoft-copilot-studio/guidance/agent-samples
             - text: More...
               url: /microsoft-copilot-studio/guidance
+        # Card
+        - title: Agents hub
+          links:
+            - text: "Architecting agent solutions: Principles and patterns"
+              url: /agents/architecture/
+            - text: Design guidelines for agents
+              url: /agents/design-guidelines/overview
+            - text: Agentic AI adoption maturity model
+              url: /agents/adoption-maturity-model/
+            - text: Design and operationalize agent evaluation
+              url: /agents/agent-evaluation/
     - title: Build your skills with Microsoft Learn training
       summary: Learning paths and modules to help you build your skills with Microsoft Power Platform.
       items:
