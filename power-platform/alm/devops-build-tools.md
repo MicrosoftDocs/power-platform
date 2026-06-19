@@ -22,7 +22,7 @@ to apps built on Microsoft Power Platform. These tasks include:
   - Canvas apps
   - Model-driven apps
   - UI flows
-  - Virtual agents
+  - Agents
   - AI Builder models
   - Connectors between development environments and source control
 - Generating build artifacts
