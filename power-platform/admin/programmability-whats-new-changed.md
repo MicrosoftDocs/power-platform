@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: sericks
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 04/06/2026
+ms.date: 06/22/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -14,7 +14,47 @@ search.audienceType:
 
 # Programmability and extensibility - what's new or changed
 
-Learn about the latest changes and new capabilities for Power Platform API and admin SDKs.
+Learn about the latest changes and new capabilities for Power Platform APIs and admin SDKs.
+
+## April 2026
+
+| Item | Type | Description |
+|------|------|-------------|
+| Provision New Environment | API | New endpoint: [Provision New Environment](/rest/api/power-platform/environmentmanagement/environment-provisioning/provision-new-environment) |
+| Link Dataverse | API | New endpoint: [Link Dataverse](/rest/api/power-platform/environmentmanagement/environment-provisioning/link-dataverse) |
+| Get Supported Locations | API | New endpoint: [Get Supported Locations](/rest/api/power-platform/environmentmanagement/environment-provisioning/get-supported-locations) |
+| Get Provisioning Currencies | API | New endpoint: [Get Provisioning Currencies](/rest/api/power-platform/environmentmanagement/environment-provisioning/get-provisioning-currencies) |
+| Get Provisioning Languages | API | New endpoint: [Get Provisioning Languages](/rest/api/power-platform/environmentmanagement/environment-provisioning/get-provisioning-languages) |
+| Get Provisioning Templates | API | New endpoint: [Get Provisioning Templates](/rest/api/power-platform/environmentmanagement/environment-provisioning/get-provisioning-templates) |
+| List Maker Evaluation Test Runs | API | New endpoint: [List Maker Evaluation Test Runs](/rest/api/power-platform/copilotstudio/bots/list-maker-evaluation-test-runs) |
+| Get Maker Evaluation Test Run | API | New endpoint: [Get Maker Evaluation Test Run](/rest/api/power-platform/copilotstudio/bots/get-maker-evaluation-test-run) |
+| Download Maker Evaluation Snapshot | API | New endpoint: [Download Maker Evaluation Snapshot](/rest/api/power-platform/copilotstudio/bots/download-maker-evaluation-snapshot) |
+| List Maker Evaluation Test Sets | API | New endpoint: [List Maker Evaluation Test Sets](/rest/api/power-platform/copilotstudio/bots/list-maker-evaluation-test-sets) |
+| Get Maker Evaluation Test Set | API | New endpoint: [Get Maker Evaluation Test Set](/rest/api/power-platform/copilotstudio/bots/get-maker-evaluation-test-set) |
+| Run Maker Evaluation Test Set | API | New endpoint: [Run Maker Evaluation Test Set](/rest/api/power-platform/copilotstudio/bots/run-maker-evaluation-test-set) |
+| Patch Rule Based Policy | API | New endpoint: [Patch Rule Based Policy](/rest/api/power-platform/governance/rule-based-policies/patch-rule-based-policy) |
+| Remove Rule From Rule Based Policy | API | New endpoint: [Remove Rule From Rule Based Policy](/rest/api/power-platform/governance/rule-based-policies/remove-rule-from-rule-based-policy) |
+| Remove Allowed IP Addresses | API | New endpoint: [Remove Allowed IP Addresses](/rest/api/power-platform/powerpages/websites/remove-allowed-ip-addresses) |
+| Toggle AFD Traffic Routing | API | New endpoint: [Toggle AFD Traffic Routing](/rest/api/power-platform/powerpages/websites/toggle-afd-traffic-routing) |
+| Enable Managed Environment | Bug fixes | Various bug fixes for [Enable Managed Environment](/rest/api/power-platform/environmentmanagement/environment-managed-governance/enable-managed-environment) |
+| List Billing Policies | Bug fixes | Various bug fixes for [List Billing Policies](/rest/api/power-platform/licensing/billing-policy/list-billing-policies) |
+| Get Websites | Bug fixes | Various bug fixes for [Get Websites](/rest/api/power-platform/powerpages/websites/get-websites) |
+| Query Resources | Bug fixes | Various bug fixes for [Query Resources](/rest/api/power-platform/resourcequery/resource-query/query-resources) |
+| Powerplatform-Management (Python) | SDK | [Monthly Release](https://pypi.org/project/powerplatform-management/2.0.3399.248/) |
+| Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3399.248) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
+
+## March 2026
+
+| Item | Type | Description |
+|------|------|-------------|
+| Get Connections for DSR | Bug fixes | Various bug fixes for [Get Connections for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-connections) |
+| Delete Connection for DSR | Bug fixes | Various bug fixes for [Delete Connection for DSR Compliance](/rest/api/power-platform/workflowsagent/dsr-compliance/delete-connection) |
+| Reassign Copilot Agent | Bug fixes | Various bug fixes for [Reassign Copilot Agent](/rest/api/power-platform/copilotstudio/bots/reassign-copilot-agent) |
+| Query Resources | Bug fixes | Various bug fixes for [Query Resources](/rest/api/power-platform/resourcequery/resource-query/query-resources) |
+| Powerplatform-Management (Python) | SDK | [Monthly Release](https://pypi.org/project/powerplatform-management/2.0.3390.235/) |
+| Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3390.235) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
 ## February 2026
 
