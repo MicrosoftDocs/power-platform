@@ -34,7 +34,7 @@ When a request is made to Dataverse, the request IP address is evaluated in real
 
 ## Prerequisites
 
-- The IP firewall is a feature of [Managed Environments](managed-environment-overview.md).
+- The IP firewall is a feature of [managed environments](managed-environment-overview.md).
 - You must have a Power Platform admin role to enable or disable the IP firewall.
 
 ## Enable the IP firewall
@@ -210,7 +210,7 @@ OData-Version: 4.0
 
 ## Licensing requirements for IP firewall
 
-The IP firewall is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+The IP firewall is only enforced on environments that are activated for managed environments. Managed environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [managed environment licensing](managed-environment-licensing.md) with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 In addition, access to using IP firewall for Dataverse requires users in the environments where the IP firewall is enforced to have one of these subscriptions:
 
@@ -238,7 +238,7 @@ IP firewall protection works in real time. Since the feature works at the networ
 
 ### Is this feature enabled by default in all environments?
 
-The IP firewall isn't enabled by default. The Power Platform administrator needs to enable it for Managed Environments.
+The IP firewall isn't enabled by default. The Power Platform administrator needs to enable it for managed environments.
 
 ### What is audit-only mode?
 
@@ -246,7 +246,7 @@ In audit-only mode, the IP firewall identifies the IP addresses that are making 
 
 ### Is this feature available in all the environments?
 
-The IP firewall is available for [Managed Environments](managed-environment-overview.md) only.
+The IP firewall is available for [managed environments](managed-environment-overview.md) only.
 
 ### Is there a limit on the number of IP addresses that I can add in the IP address text box?
 

@@ -43,9 +43,9 @@ To access the **Security** > **Overview** page, you must have Microsoft Entra ID
 > [!NOTE]
 > - Only tenant administrators can access the scorecard and recommendations on the **Security** > **Overview** page.
 > - Only tenant administrators can convert an environment to a managed type.
-> - On every security page, features that apply to Managed Environments are marked with the following meter symbol:
+> - On every security page, features that apply to managed environments are marked with the following meter symbol:
 >
->     :::image type="content" source="media/managed-environments-icon.png" alt-text="Symbol that indicates that a Managed Environment is required.":::
+>     :::image type="content" source="media/managed-environments-icon.png" alt-text="Symbol that indicates that a managed environment is required.":::
 
 ## Security score (preview)
 
@@ -73,7 +73,7 @@ The security score is calculated based on the security features that are turned 
 
     (*Your score* &divide; *Total possible score*) &times; 100
 
-For example, your tenant has 10 environments, five Managed Environments and five non-Managed Environments. The following features are configured:
+For example, your tenant has 10 environments, five managed environments and five non-managed environments. The following features are configured:
 
 - **IP firewall**: Turned on in two of the 10 environments (2 points).
 - **Tenant isolation**: Turned on in all 10 environments (10 points).
@@ -83,8 +83,8 @@ In this case, your total score is 2 &plus; 10 &plus; 5 = 17, and the total possi
 
 > [!IMPORTANT]
 > - The security score is updated every 24 hours. Therefore, any action that is taken might take up to 24 hours to reflect the updated score.
-> - The score calculation considers all environments, both Managed Environments and non-Managed Environments.
-> - If there are no Managed Environments that you can take action on in the recommendation pane, no environments are listed.
+> - The score calculation considers all environments, both managed environments and non-managed environments.
+> - If there are no managed environments that you can take action on in the recommendation pane, no environments are listed.
 
 ## Turn on environment management to unlock full security benefits
 
@@ -111,7 +111,7 @@ The system generates various recommendations, based on common best practices tha
 - Administrators are guided through an intuitive experience where they take relevant actions on environments, based on specific recommendations.
 - Each recommendation shows the potential increase to the overall security score.
 
-Although the recommendations span all environments, you can act on them only in Managed Environments. If non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
+Although the recommendations span all environments, you can act on them only in managed environments. If non-managed environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
 
 ## Conditions that trigger feature recommendations
 
@@ -121,7 +121,7 @@ The following table outlines the conditions that trigger specific feature recomm
 |---------|-------|-----------------------------------------|
 | Administrator privileges | Environment | Environments that have more than 10 administrators |
 | Auditing | Environment | Environments where auditing is turned off |
-| Customer Lockbox | Tenant | Tenants where Customer Lockbox is turned on, but that have no Managed Environments |
+| Customer Lockbox | Tenant | Tenants where Customer Lockbox is turned on, but that have no managed environments |
 | Client application access control | Environment | Environments where auditing is turned on and client application access control isn't configured |
 | Data policy | Tenant | No tenant-level policy is set. |
 | Environments Azure Virtual Network | Environment | Environments that have no Virtual Network policy |
@@ -134,7 +134,7 @@ The following table outlines the conditions that trigger specific feature recomm
 
 ## Manage proactive policies for governance and security
 
-Several security features are available to help secure your tenant. For some of these features, a Managed Environment is a prerequisite. Therefore, before you can configure such a feature, you're asked to convert the environment to a managed type if it isn't one.
+Several security features are available to help secure your tenant. For some of these features, a managed environment is a prerequisite. Therefore, before you can configure such a feature, you're asked to convert the environment to a managed type if it isn't one.
 
 Use the following links to view and manage proactive policies for governance and security:
 
@@ -205,7 +205,7 @@ The security score is calculated based on the security features that are turned 
 
 ### Why don't all environments appear in the recommended action?
 
-Although the recommendations span all environments, you can act on them only in Managed Environments. If non-Managed Environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
+Although the recommendations span all environments, you can act on them only in managed environments. If non-managed environments, you can turn on recommended features by opening the **Settings** page, finding the required feature, and turning it on for those environments.
 
 ### Can customers modify the recommendations based on their needs?
 

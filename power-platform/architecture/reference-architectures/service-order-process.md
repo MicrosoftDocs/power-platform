@@ -264,7 +264,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 - Grant SharePoint permissions through built-in integration with Dataverse and model-driven applications.
 
-- Deploy the application in a [Managed Environment](/power-platform/admin/managed-environment-overview) and define a specific data policy for it.
+- Deploy the application in a [managed environment](/power-platform/admin/managed-environment-overview) and define a specific data policy for it.
 
 - Use Dataverse audit logging to detect data anomalies.
 
@@ -274,7 +274,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 
 ### Operational Excellence
 
-- Define an environment strategy to ensure operational excellence. Set up development, testing, and production environments, and configure them as [Managed Environments](/power-platform/admin/managed-environment-overview) where appropriate.
+- Define an environment strategy to ensure operational excellence. Set up development, testing, and production environments, and configure them as [managed environments](/power-platform/admin/managed-environment-overview) where appropriate.
 
 - Implement a solution strategy:
 
@@ -323,7 +323,7 @@ This approach significantly reduces turnaround time and removes the need for dev
 - [Dataverse documentation](/power-apps/maker/data-platform/)
 - [Manage group teams](/power-platform/admin/manage-group-teams)
 - [Use Excel and Word templates](/power-apps/maker/model-driven-apps/templates-overview)
-- [Managed Environments overview](/power-platform/admin/managed-environment-overview)
+- [Managed environments overview](/power-platform/admin/managed-environment-overview)
 
 ## Contributors
 

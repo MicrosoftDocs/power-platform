@@ -30,7 +30,7 @@ This article covers how to enable Customer Lockbox and how lockbox requests are 
 
 ## Summary
 
-You can enable Customer Lockbox for your data sources within your tenant. Enabling Customer Lockbox enforces the policy only for environments that are activated for [Managed Environments](managed-environment-enable.md). Power Platform administrators can enable the lockbox policy.
+You can enable Customer Lockbox for your data sources within your tenant. Enabling Customer Lockbox enforces the policy only for environments that are activated for [managed environments](managed-environment-enable.md). Power Platform administrators can enable the lockbox policy.
 
 For more information, see [Enable the lockbox policy](#enable-the-lockbox-policy).
 
@@ -68,7 +68,7 @@ Power Platform and Dynamics 365 applications and services store customer data in
 
 ## Enable the lockbox policy
 
-Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. Enabling the tenant level policy applies only to environments that are activated for [Managed Environments](managed-environment-enable.md). It can take up to 24 hours for all data sources and all environments to implement Customer Lockbox.
+Power Platform administrators can create or update the lockbox policy in the Power Platform admin center. Enabling the tenant level policy applies only to environments that are activated for [managed environments](managed-environment-enable.md). It can take up to 24 hours for all data sources and all environments to implement Customer Lockbox.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.
@@ -142,7 +142,7 @@ By default, the audit logs are preserved for a duration of one year. You need a 
 
 ## Licensing requirements for Customer Lockbox
 
-Customer Lockbox policy is enforced only on environments that are activated for Managed Environments. Managed Environments is included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+Customer Lockbox policy is enforced only on environments that are activated for managed environments. Managed environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. To learn more about managed environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 In addition, access to Customer Lockbox for Microsoft Power Platform and Dynamics 365 requires users in the environments where the Lockbox policy is enforced to have any of these subscriptions:
 

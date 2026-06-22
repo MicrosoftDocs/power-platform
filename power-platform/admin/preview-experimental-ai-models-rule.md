@@ -31,7 +31,7 @@ AI innovation moves at a rapid pace, and each AI model has different strengths a
 If your environment is part of an [environment group](environment-groups.md), you can govern preview and experimental AI model use through the [**Preview and experimental AI models** environment group rule](environment-groups-rules.md).
 
 > [!Note]
-> If your environment is part of an [environment group](environment-groups.md), it must be a Managed Environment.
+> If your environment is part of an [environment group](environment-groups.md), it must be a managed environment.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 2. In the navigation pane, select **Manage**.

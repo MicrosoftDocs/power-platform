@@ -143,7 +143,7 @@ With the implementation of [availability zones](/azure/reliability/availability-
  
 ### What are the costs associated with using self-service disaster recovery?
 
-- The selected environment must be a [Managed Environment](managed-environment-licensing.md). This environment is a premium license tier. 
+- The selected environment must be a [managed environment](managed-environment-licensing.md). This environment is a premium license tier. 
 - Prepaid storage consumed for the secondary region is the cost incurred.
   
   For example, suppose you have 10 GB of capacity consumption in the primary location. When you turn on self-service disaster recovery, you create a copy of the data in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. If you exceed your available free storage or available entitlements, a pay-as-you-go plan actively starts billing.

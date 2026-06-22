@@ -172,9 +172,9 @@ Since developer environments aren't intended to support production scenarios, ap
 
 No. You can't use the Power Apps Developer Plan to launch premium apps that aren't in a Developer environment. You need a valid Power Apps premium entitlement. [Learn more about Power Apps plans](../admin/signup-for-powerapps-admin.md#choosing-the-right-plan).
 
-### Are Managed Environment use rights included in the Developer Plan?
+### Are managed environment use rights included in the Developer Plan?
 
-Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. In other words, users&mdash;including makers running their own apps or flows&mdash;need a premium license in addition to the developer plan to run their assets in a managed, developer environment.
+Managed environment isn't included as an entitlement in the Developer Plan when users run their assets. In other words, users&mdash;including makers running their own apps or flows&mdash;need a premium license in addition to the developer plan to run their assets in a managed, developer environment.
 
 ### Are Dynamics 365 apps available in a developer environment?
 

@@ -230,7 +230,7 @@ This vision guides ongoing enhancements, ensuring the agent evolves alongside ci
 - [Use entities and slot filling in agents](/microsoft-copilot-studio/advanced-entities-slot-filling)
 - [Natural language understanding (NLU) overview](/microsoft-copilot-studio/nlu-overview)
 - [Intent recognition and entity extraction options for your intelligent application workloads](/power-platform/well-architected/intelligent-application/language)
-- [Managed Environments overview](/power-platform/admin/managed-environment-overview)
+- [Managed environments overview](/power-platform/admin/managed-environment-overview)
 - [Create and manage solutions in Copilot Studio](/microsoft-copilot-studio/authoring-solutions-overview)
 - [Key concepts for analytics in Copilot Studio](/microsoft-copilot-studio/analytics-overview)
 - [Add a public website as a knowledge source](/microsoft-copilot-studio/knowledge-add-public-website)

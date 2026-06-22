@@ -119,13 +119,13 @@ To simplify license management for administrators, auto-claim policies are enabl
 
 **Tenants with new Power Automate premium license**: Starting February 2024, tenants with a new Power Automate premium license have a new auto-claim license policy in the Microsoft 365 admin center for Power Automate. This policy ensures that users who need a Power Automate premium license receive it automatically, if the license is available in your tenant. By default, this policy is applied across all environments.
 
-**Tenants with Managed Environments**: Starting April 2024, tenants using managed environments have a new auto-claim license policy in the Microsoft 365 admin center for Power Automate. This policy ensures that users who need a Power Automate premium or per-user plan (legacy) license receive it automatically, if the license is available in your tenant. By default, this policy is applied to users in managed environments. However, admins can also choose to extend this policy to apply to standard environments in the Power Platform admin center.
+**Tenants with managed environments**: Starting April 2024, tenants using managed environments have a new auto-claim license policy in the Microsoft 365 admin center for Power Automate. This policy ensures that users who need a Power Automate premium or per-user plan (legacy) license receive it automatically, if the license is available in your tenant. By default, this policy is applied to users in managed environments. However, admins can also choose to extend this policy to apply to standard environments in the Power Platform admin center.
 
 ### Can administrators update the policy?
 
 Yes, administrators can manage the policy in the Microsoft 365 admin center just like any other auto-claim policy. Administrators can disable the policy, delete it, and view reports on which users were assigned licenses.
 
-In the Power Platform admin center, administrators can decide whether the policy should apply to Managed Environments only or all environments.
+In the Power Platform admin center, administrators can decide whether the policy should apply to managed environments only or all environments.
 
 1. Sign in to [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.

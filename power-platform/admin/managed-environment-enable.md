@@ -1,6 +1,6 @@
 ---
-title: Enable Managed Environments
-description: Learn how to enable Managed Environments for Power Platform in the admin center or PowerShell.
+title: Enable managed environments
+description: Learn how to enable managed environments for Power Platform in the admin center or PowerShell.
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 8/28/2025
@@ -20,22 +20,22 @@ ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ---
-# Enable Managed Environments
+# Enable managed environments
 
-Admins enable, disable, and edit Managed Environments in the Power Platform admin center. Admins can also use PowerShell to disable Managed Environments. This article explains the permissions you need to manage environments and the steps to get started in the Microsoft Power Platform admin center or with PowerShell.
+Admins enable, disable, and edit managed environments in the Power Platform admin center. Admins can also use PowerShell to disable managed environments. This article explains the permissions you need to manage environments and the steps to get started in the Microsoft Power Platform admin center or with PowerShell.
 
 ## Permissions
 
-To enable or edit Managed Environments, you need the Power Platform Administrator or Dynamics 365 Administrator role in Microsoft Entra ID. You can learn more about these roles in [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
+To enable or edit managed environments, you need the Power Platform Administrator or Dynamics 365 Administrator role in Microsoft Entra ID. You can learn more about these roles in [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
-- Any user with permission to view environment details can see the Managed Environments property for an environment.
-- Users with the Delegated Admin role or the Environment Admin security role can't change the Managed Environments property in an environment.
+- Any user with permission to view environment details can see the managed environments property for an environment.
+- Users with the Delegated Admin role or the Environment Admin security role can't change the managed environments property in an environment.
 
 > [!IMPORTANT]
-> - The Managed Environments property must be the same in the source and destination before you can start to copy and restore environment lifecycle operations.
-> - Dataverse is required to use Managed Environments in an environment type.
+> - The managed environments property must be the same in the source and destination before you can start to copy and restore environment lifecycle operations.
+> - Dataverse is required to use managed environments in an environment type.
 
-## Enable or edit Managed Environments in the admin center
+## Enable or edit managed environments in the admin center
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
@@ -45,9 +45,9 @@ To enable or edit Managed Environments, you need the Power Platform Administrato
 
 1. Configure the settings, and then select **Enable** or **Save**.
 
-## Enable Managed Environments using PowerShell
+## Enable managed environments using PowerShell
 
-Admins can also use PowerShell to enable Managed Environments. The following PowerShell script enables it for a single environment.
+Admins can also use PowerShell to enable managed environments. The following PowerShell script enables it for a single environment.
 
 ```powershell
 $GovernanceConfiguration = [pscustomobject] @{ 
@@ -60,23 +60,23 @@ $GovernanceConfiguration = [pscustomobject] @{
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentID> -UpdatedGovernanceConfiguration $GovernanceConfiguration 
 ```
 
-## Copy Managed Environment settings using PowerShell
+## Copy managed environment settings using PowerShell
 
-Admins can use PowerShell to copy settings from one Managed Environment to another environment. If the target environment isn't a Managed Environment, copying settings also enables it as a Managed Environment.
+Admins can use PowerShell to copy settings from one managed environment to another environment. If the target environment isn't a managed environment, copying settings also enables it as a managed environment.
 
 ```powershell
-#Get settings from the source Managed Environment
+#Get settings from the source managed environment
 $sourceEnvironment = Get-AdminPowerAppEnvironment -EnvironmentName <SourceEnvironmentId>
 
-# Copy the settings from the source Managed Environment above to the target environment
+# Copy the settings from the source managed environment above to the target environment
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <TargetEnvironmentId> -UpdatedGovernanceConfiguration $sourceEnvironment.Internal.properties.governanceConfiguration
 ```
 
-## Disable Managed Environments using PowerShell
+## Disable managed environments using PowerShell
 
-Admins can use PowerShell to remove the Managed Environments property from an environment. Before you disable Managed Environments, make sure none of the Managed Environments capabilities are in use.
+Admins can use PowerShell to remove the managed environments property from an environment. Before you disable managed environments, make sure none of the managed environments capabilities are in use.
 
-Here's an example PowerShell script that calls the API to set the Managed Environments property:
+Here's an example PowerShell script that calls the API to set the managed environments property:
 
 ```powershell
 $UpdatedGovernanceConfiguration = [pscustomobject]@{
@@ -87,7 +87,7 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 
 ### Related content
 
-- [Managed Environments overview](managed-environment-overview.md)
+- [Managed environments overview](managed-environment-overview.md)
 - [Usage insights](managed-environment-usage-insights.md)
 - [Limit sharing](managed-environment-sharing-limits.md)
 - [Data policies](managed-environment-data-policies.md)

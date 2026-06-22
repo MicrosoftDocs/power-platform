@@ -23,4 +23,4 @@ Auditing log changes are made to customer records in an environment that has a D
 
 ## Customer Lockbox
 
-The Customer Lockbox feature applies only to Managed Environments. Customer Lockbox provides an interface where customers can review and approve (or reject) data access requests on those rare occasions when access to customer data is required. It's used when a Microsoft engineer must access customer data in response to either a customer-initiated support ticket or an issue that Microsoft identified. Learn more in [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](../about-lockbox.md).
+The Customer Lockbox feature applies only to managed environments. Customer Lockbox provides an interface where customers can review and approve (or reject) data access requests on those rare occasions when access to customer data is required. It's used when a Microsoft engineer must access customer data in response to either a customer-initiated support ticket or an issue that Microsoft identified. Learn more in [Securely access customer data using Customer Lockbox in Power Platform and Dynamics 365](../about-lockbox.md).

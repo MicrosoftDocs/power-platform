@@ -1,6 +1,6 @@
 ---
 title: Enable maker welcome content
-description: Enable welcome content for makers for Managed Environments.
+description: Enable welcome content for makers for managed environments.
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 9/18/2025
@@ -24,7 +24,7 @@ contributors:
 
 # Enable maker welcome content
 
-In Managed Environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com), [Power Automate](https://make.powerautomate.com), and [Copilot Studio](https://copilotstudio.microsoft.com). When you add your own help content, it replaces the default Power Apps first-time help experience for makers. 
+In managed environments, admins can provide customized welcome content to help their makers get started with [Power Apps](https://make.powerapps.com), [Power Automate](https://make.powerautomate.com), and [Copilot Studio](https://copilotstudio.microsoft.com). When you add your own help content, it replaces the default Power Apps first-time help experience for makers. 
 
 > [!VIDEO d378c495-3d91-4ba1-8646-aa335620d868]
 

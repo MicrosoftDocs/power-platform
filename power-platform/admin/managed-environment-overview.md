@@ -1,6 +1,6 @@
 ---
-title: Managed Environments overview 
-description: Use Managed Environments to view and control your Dynamics 365 applications with less effort.
+title: Managed environments overview 
+description: Use managed environments to view and control your Dynamics 365 applications with less effort.
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 02/23/2026
@@ -19,15 +19,15 @@ search.audienceType:
   - admin
 ---
 
-# Managed Environments overview 
+# Managed environments overview 
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2206011 and 2211534 -->
 
-Managed Environments is a suite of premium capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use Managed Environments with any type of environment. Certain features can be configured upon enabling a Managed Environment. Once an environment is managed, it unlocks more features across the Power Platform. 
+Managed environments are a suite of premium capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. Admins can use managed environments with any type of environment. Certain features can be configured upon enabling a managed environment. Once an environment is managed, it unlocks more features across the Power Platform. 
 
-[Learn how to use Managed Environments](managed-environment-enable.md).
+[Learn how to use managed environments](managed-environment-enable.md).
 
-A Managed Environment encompasses, but isn't limited to, the following features: 
+A managed environment encompasses, but isn't limited to, the following features: 
 
 - [Environment groups](environment-groups.md)
 - [Limit sharing](managed-environment-sharing-limits.md)
@@ -52,13 +52,13 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 - [Create and manage masking rules](create-manage-masking-rules.md)
 
 > [!NOTE]
-> Managed Environments is included as an entitlement with standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses. Trial licenses can be used to license users in Managed Environments, with the restrictions specific to these types of licenses. To learn more about Managed Environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+> Managed environments are included as an entitlement with standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses. Trial licenses can be used to license users in managed environments, with the restrictions specific to these types of licenses. To learn more about managed environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 >
-> Managed Environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [Power Apps Developer Plan Guide: Features and Benefits](../developer/plan.md).
+> Managed environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about managed environments and the Developer Plan, see [Power Apps Developer Plan Guide: Features and Benefits](../developer/plan.md).
 
 ## Related content
 
-- [Enable Managed Environments](managed-environment-enable.md)   
+- [Enable managed environments](managed-environment-enable.md)   
 - [Usage insights](managed-environment-usage-insights.md)  
 - [Limit sharing](managed-environment-sharing-limits.md)  
 - [Data policies](managed-environment-data-policies.md)
@@ -66,6 +66,6 @@ A Managed Environment encompasses, but isn't limited to, the following features:
 - [View license consumption (preview)](view-license-consumption-issues.md) 
 - [Tenant settings](tenant-settings.md)
 - [Default environment routing](default-environment-routing.md)
-- [Considerations for using Managed Environments](../guidance/adoption/reactive-governance.md#considerations-for-using-managed-environments)
+- [Considerations for using managed environments](../guidance/adoption/reactive-governance.md#considerations-for-using-managed-environments)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

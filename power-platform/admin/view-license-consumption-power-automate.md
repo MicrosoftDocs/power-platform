@@ -75,7 +75,7 @@ The **Environments** tab on the **Licenses** page displays licensing information
 | License type | The type of license—Dynamics 365, Microsoft 365, Power Automate per flow, per user, pay-as-you-go, trial, or developer—the actual license is mapped to. |
 | Active users | The number of unique users who executed flows in the environment at least once in the last 30 days. |
 | Unique flow count | The number of unique flows executed in the environment at least once in the last 30 days. |
-| Recommended actions | Actions to consider to convert the environment to a Managed Environment. |
+| Recommended actions | Actions to consider to convert the environment to a managed environment. |
 | **Usage details for a license type** | Select a license type in the **Power Automate licensing** section to view a list of the users who are consuming a specific license type. |
 | Email | The email ID or UPN of the user who executed flows in the selected environment. Select a user to see a list of all the flows executed by the user in the selected environment. |
 | Flow name | Name of the flow executed, which links to the flow detail page. |

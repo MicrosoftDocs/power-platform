@@ -29,7 +29,7 @@ Power Automate telemetry flows into two tables on Application Insights – **Req
 | **Dependencies** | Contains *cloud flow triggers* and *cloud flow actions* |
 
 > [!NOTE]
-> This feature is turned on and supported for Managed Environments only.
+> This feature is turned on and supported for managed environments only.
 
 While Application Insights capabilities can be used for comprehensive monitoring of your applications, including custom diagnostics, and performance monitoring, this article focuses on how to use the existing features within Application Insights to create monitoring and alerting capabilities for your automation. To learn about how to open and work with Application Insights dashboard, see [Application Insights Overview dashboard](/azure/azure-monitor/app/overview-dashboard).
 

@@ -105,9 +105,9 @@ The environment's administrators and the user who created the environment receiv
 
 A warning message appears on the **Environments** list page and **Environment** page when an environment is disabled.
 
-### Timeline for unused developer environments that are *Managed Environments*
+### Timeline for unused developer environments that are *managed environments*
 
-Personal developer environments that are Managed Environments use a 60-day inactivity threshold instead of 30 days. After 60 days of inactivity, the environment's administrators and the user who created the environment receive email notifications according to the schedule described in the following table.
+Personal developer environments that are managed environments use a 60-day inactivity threshold instead of 30 days. After 60 days of inactivity, the environment's administrators and the user who created the environment receive email notifications according to the schedule described in the following table.
 
 | State of environment | What to expect |
 | --- | --- |

@@ -35,7 +35,7 @@ Benefits of availability zones:
 A typical replication lag of up to 15 minutes (but often under 5 minutes) is observed. The platform is designed to complete failover in under 5 minutes for Dynamics 365 CE and under 30 minutes for F&O once initiated. Because customers retain control of when and whether to trigger a cross-region failover, Microsoft doesn't publish a contractual cross-region RTO. However, customers can monitor real-time replication lag directly in the Power Platform Admin Center (PPAC) to inform their own recovery decisions. It's also important to note that when Power Platform solutions connect to external systems - such as SQL Server, REST APIs, or other third-party services - the RTO and RPO of those integrations are governed by the availability and recovery capabilities of the respective target systems, and fall outside the scope of Power Platform's resiliency commitments.
 
 ## Automated backups and self-serve disaster recovery
-Environments with databases benefit from automated backups that you can restore to any system backup from the past seven days (extendable to 28 days for production Managed Environments). 
+Environments with databases benefit from automated backups that you can restore to any system backup from the past seven days (extendable to 28 days for production managed environments). 
 
 Self-serve disaster recovery allows organizations to:
 - Define and test cross-region failover strategies directly from the Power Platform admin center.
@@ -48,7 +48,7 @@ Self-serve disaster recovery also supports disaster recovery drills and failback
 
 ## Related content
 - [Business continuity and disaster recovery](business-continuity-disaster-recovery.md)
-- [Managed Environments overview](managed-environment-overview.md)
+- [Managed environments overview](managed-environment-overview.md)
 
 
 

@@ -808,9 +808,9 @@ Yes, you can use the finance and operations apps connector to build canvas apps 
 
 ## Power Platform security and governance licensing requirements
 
-### Managed Environments
+### Managed environments
 
-Managed Environments is included as an entitlement with:
+Managed environments are included as an entitlement with:
 
 - Power Apps Premium
 - Power Apps per app
@@ -824,13 +824,13 @@ Managed Environments is included as an entitlement with:
 - Power Pages Anonymous Users and
 - Dynamics 365 Premium, Enterprise and Team Members licenses.
 
-For more information, see [Managed Environments Licensing](/power-platform/admin/managed-environment-licensing).
+For more information, see [managed environments Licensing](/power-platform/admin/managed-environment-licensing).
 
 ### Advanced security and governance
 
 #### Customer Managed Key (CMK)
 
-Customer Managed Key policy will only be enforced in environments that are activated for Managed Environments. Users in the environment are required to have one of these subscriptions:
+Customer Managed Key policy will only be enforced in environments that are activated for managed environments. Users in the environment are required to have one of these subscriptions:
 
 - Microsoft 365 or Office 365 A5/E5/G5
 - Microsoft 365 A5/E5/F5/G5 Compliance
@@ -841,7 +841,7 @@ For more information, see [Licensing requirements for Customer Managed Key](/pow
 
 #### Customer Lockbox
 
-Enabling Customer Lockbox enforces the policy only for environments that are activated for Managed Environments. Users in the environment where the Lockbox policy is enforced are required to have any of these subscriptions:
+Enabling Customer Lockbox enforces the policy only for environments that are activated for managed environments. Users in the environment where the Lockbox policy is enforced are required to have any of these subscriptions:
 
 - Microsoft 365 or Office 365 A5/E5/G5
 - Microsoft 365 A5/E5/F5/G5 Compliance
@@ -855,7 +855,7 @@ For more information, see [Licensing requirements for Customer Lockbox](/power-p
 
 #### Azure Virtual Network (vNet)
 
-To enable Virtual Network support for Power Platform, environments must be Managed Environments. In addition, access to using Virtual Network support for Power platform requires users in the environments where the Virtual Network is enabled to have one of these subscriptions:
+To enable Virtual Network support for Power Platform, environments must be managed environments. In addition, access to using Virtual Network support for Power platform requires users in the environments where the Virtual Network is enabled to have one of these subscriptions:
 
 - Microsoft 365 or Office 365 A5/E5/G5
 - Microsoft 365 A5/E5/F5/G5 Compliance

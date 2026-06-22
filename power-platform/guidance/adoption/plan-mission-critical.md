@@ -82,7 +82,7 @@ Environments designated for production workloads are replicated synchronously ac
 
 Environments that have a database are [automatically backed up and can be restored](/power-platform/admin/backup-restore-environments) to any selected system backup in the last seven days. These backups include all the data, configurations, and customizations within the environment. In addition to automatic backups, administrators can also create manual backups at any time. Manual backups are useful before making significant changes or updates to the environment.
 
-You can extend the backup retention period from seven to 28 days for production [Managed Environments](/power-platform/admin/managed-environment-overview). Learn more in [Back up and restore environments](/power-platform/admin/backup-restore-environments).
+You can extend the backup retention period from seven to 28 days for production [managed environments](/power-platform/admin/managed-environment-overview). Learn more in [Back up and restore environments](/power-platform/admin/backup-restore-environments).
 
 ## Next step
 

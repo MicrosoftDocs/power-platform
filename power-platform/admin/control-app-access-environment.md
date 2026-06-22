@@ -79,9 +79,9 @@ There are two Power Platform related service admin roles you can assign to provi
 - Power Platform admin
 - Dynamics 365 admin
 
-### Verify that your environment is a Managed Environment
+### Verify that your environment is a managed environment
 
-Your environment must be a Managed Environment. Learn more in [Managed Environment overview](managed-environment-overview.md).
+Your environment must be a managed environment. Learn more in [managed environment overview](managed-environment-overview.md).
 
 ### Turn on auditing in the environment
 

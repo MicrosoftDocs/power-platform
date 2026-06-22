@@ -1,6 +1,6 @@
 ---
 title: Environment groups
-description: Learn how to organize your Managed Environments into groups and govern them in bulk.
+description: Learn how to organize your managed environments into groups and govern them in bulk.
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 07/28/2025
@@ -25,7 +25,7 @@ Think of an environment group as a "folder" for your environments. Administrator
 
 > [!NOTE]
 >
-> - Environment groups can only contain Managed Environments.
+> - Environment groups can only contain managed environments.
 > - Each environment can belong to only one group, and groups can't overlap or be nested.
 > - Environments in a group can span different regions and types as long as each is managed.
 > - Environments can be transferred between groups by removing them from one and adding them to another.
@@ -85,7 +85,7 @@ After a few moments, the new group appears in your Environment groups list. At t
 
 ## Configure the rules for your environment group
 
-After you create the environment group, Power Platform tenant administrators can immediately add Managed Environments or configure the group's rules. Both approaches work, but keep in mind that only published rules are enforced across environments. 
+After you create the environment group, Power Platform tenant administrators can immediately add managed environments or configure the group's rules. Both approaches work, but keep in mind that only published rules are enforced across environments. 
 
 1. Sign in to [Power Platform Admin center](https://admin.powerplatform.microsoft.com/) as a [Power Platform tenant administrator](use-service-admin-role-manage-tenant.md).
 1. Select **Manage** in the navigation pane.
@@ -115,7 +115,7 @@ One powerful way to use environment groups is in combination with default enviro
 1. Under the **Environment group** section, choose the group you want your new developer environments to be created in.
 1. Select **Save**.
 
-Going forward, whenever a new maker triggers the creation of a personal developer environment, the platform automatically creates their environment inside the specified group. The environment comes preconfigured as a Managed Environment with all the group’s rules already applied from the start. The maker doesn't need to choose an environment or set anything up. The maker is routed directly into a governed space that IT has predefined. Admins gain peace of mind knowing that even automatically created environments follow organizational policies, and makers get a ready-to-use environment without needing to worry about configuration.
+Going forward, whenever a new maker triggers the creation of a personal developer environment, the platform automatically creates their environment inside the specified group. The environment comes preconfigured as a managed environment with all the group’s rules already applied from the start. The maker doesn't need to choose an environment or set anything up. The maker is routed directly into a governed space that IT has predefined. Admins gain peace of mind knowing that even automatically created environments follow organizational policies, and makers get a ready-to-use environment without needing to worry about configuration.
 
 > [!NOTE]
 > If an environment group is selected for routing but later you decide to change it, you can update the Environment routing settings to point new environments to a different group. Existing developer environments remain in whichever group they were originally placed, unless moved manually.
@@ -146,7 +146,7 @@ When manually creating a new environment, you can choose to place it into a grou
 1. Enter the other details.
 1. Select **Save**.
 
-By selecting a group here, the environment is created as a Managed Environment within that group, automatically inheriting the group's rules upon creation. If no group is selected, the environment is created outside of any group. You can always add it to a group later.
+By selecting a group here, the environment is created as a managed environment within that group, automatically inheriting the group's rules upon creation. If no group is selected, the environment is created outside of any group. You can always add it to a group later.
 
 ## Remove an environment from your environment group
 
@@ -177,7 +177,7 @@ If you've published any of the following rules within your environment group, th
 
 ## Related content
 
-[Managed Environments overview](managed-environment-overview.md) <br>
+[Managed environments overview](managed-environment-overview.md) <br>
 [Usage insights](managed-environment-usage-insights.md) <br>
 [Limit sharing](managed-environment-sharing-limits.md) <br>
 [Data policies](managed-environment-data-policies.md) <br>

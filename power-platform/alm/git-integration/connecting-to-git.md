@@ -20,7 +20,7 @@ As the team develops, customizations within an environment can be committed to G
 
 ## Prerequisites for Git integration with Dataverse
 
-- Dataverse Git integration is a feature of [Managed Environments](../../admin/managed-environment-overview.md). Development and target environments must be enabled as Managed Environments.
+- Dataverse Git integration is a feature of [managed environments](../../admin/managed-environment-overview.md). Development and target environments must be enabled as managed environments.
 - An Azure DevOps subscription and licenses for users who interact with source control are required when connecting your Dataverse environment to Git.
 
    > [!NOTE]
@@ -43,7 +43,7 @@ Make sure that all users who are making changes in your environment have access 
 
 Connecting to Git binds solutions in your environment to a specific location and branch within the Azure DevOps repository. You can bind your environment to a project using either environment or solution binding. To learn more about the differences between environment and solution binding, go to [How to choose between environment and solution binding](#how-to-choose-between-environment-and-solution-binding).
 
-1. Enable all development and target environments as Managed Environments within the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Enable all development and target environments as managed environments within the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. Sign in to [Power Apps](https://make.powerapps.com) (or [Copilot Studio](https://copilotstudio.microsoft.com), [Power Automate](https://make.powerautomate.com), [Power Pages](https://make.powerpages.microsoft.com)) and then go to **Solutions**.
 1. On the **Solutions** page, or the **Source control** page within a custom unmanaged solution, select **Connect to Git**.
 1. Select either [**Environment**](#environment-binding) or [**Solution**](#solution-binding) from the connection type options, and select your Azure DevOps organization and project.

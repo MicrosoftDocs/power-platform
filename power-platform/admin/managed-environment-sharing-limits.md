@@ -1,6 +1,6 @@
 ---
 title: Limit sharing 
-description: Limit how broadly makers can share canvas apps and solution-aware cloud flows in your Managed Environments.
+description: Limit how broadly makers can share canvas apps and solution-aware cloud flows in your managed environments.
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 03/02/2026
@@ -23,7 +23,7 @@ ms.custom:
 
 <!-- https://go.microsoft.com/fwlink/?linkid=2194484 and 2211538 -->
 
-In Managed Environments, admins can limit how broadly users can share canvas apps, flows, and agents. 
+In managed environments, admins can limit how broadly users can share canvas apps, flows, and agents. 
 
 To configure these rules:
 
@@ -85,12 +85,12 @@ Here's a PowerShell script that prevents canvas apps from being shared with secu
 # Retrieve the environment
 $environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
 
-# Update the Managed Environment settings
+# Update the managed environment settings
 $governanceConfiguration = $environment.Internal.properties.governanceConfiguration
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'limitSharingMode' -Value "excludeSharingToSecurityGroups" -Force
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'maxLimitUserSharing' -Value "20" -Force
 
-# Save the updated Managed Environment settings
+# Save the updated managed environment settings
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 
@@ -100,11 +100,11 @@ Here's a PowerShell script that turns off sharing for solution-aware cloud flows
 # Retrieve the environment
 $environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
 
-# Update the Managed Environment settings
+# Update the managed environment settings
 $governanceConfiguration = $environment.Internal.properties.governanceConfiguration
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'solutionCloudFlows-limitSharingMode' -Value "disableSharing" -Force
 
-# Save the updated Managed Environment settings
+# Save the updated managed environment settings
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 
@@ -114,11 +114,11 @@ Here's a PowerShell script that prevents agents from being shared with security 
 # Retrieve the environment
 $environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
 
-# Update the Managed Environment settings
+# Update the managed environment settings
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'bot-limitSharingMode' -Value "ExcludeSharingToSecurityGroups" -Force
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'bot-maxLimitUserSharing' -Value "20" -Force
 
-# Save the updated Managed Environment settings
+# Save the updated managed environment settings
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 
@@ -128,11 +128,11 @@ Here's a PowerShell script that turns off the ability to share your agents with 
 # Retrieve the environment
 $environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
 
-# Update the Managed Environment settings
+# Update the managed environment settings
 $governanceConfiguration = $environment.Internal.properties.governanceConfiguration
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'bot-authoringSharingDisabled' -Value True -Force
 
-# Save the updated Managed Environment settings
+# Save the updated managed environment settings
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 Set 'bot-authoringSharingDisabled' to False to enable sharing with individuals as Editors. 
@@ -145,12 +145,12 @@ Here's a PowerShell script that removes the canvas app sharing limits.
 # Retrieve the environment
 $environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
 
-# Update the Managed Environment settings
+# Update the managed environment settings
 $governanceConfiguration = $environment.Internal.properties.governanceConfiguration
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'limitSharingMode' -Value "noLimit" -Force
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'maxLimitUserSharing' -Value "-1" -Force
 
-# Save the updated Managed Environment settings
+# Save the updated managed environment settings
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 
@@ -160,11 +160,11 @@ To remove sharing limits for solution-aware cloud flows, run the following scrip
 # Retrieve the environment
 $environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
 
-# Update the Managed Environment settings
+# Update the managed environment settings
 $governanceConfiguration = $environment.Internal.properties.governanceConfiguration
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'solutionCloudFlows-limitSharingMode' -Value "noLimit" -Force
 
-# Save the updated Managed Environment settings
+# Save the updated managed environment settings
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 
@@ -174,11 +174,11 @@ To remove limits on sharing your agent with security groups or individuals as Vi
 # Retrieve the environment
 $environment = Get-AdminPowerAppEnvironment -EnvironmentName <EnvironmentId>
 
-# Update the Managed Environment settings
+# Update the managed environment settings
 $governanceConfiguration = $environment.Internal.properties.governanceConfiguration
 $governanceConfiguration.settings.extendedSettings | Add-Member -MemberType NoteProperty -Name 'bot-limitSharingMode' -Value "noLimit" -Force
 
-# Save the updated Managed Environment settings
+# Save the updated managed environment settings
 Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <EnvironmentId> -UpdatedGovernanceConfiguration $governanceConfiguration
 ```
 
@@ -186,8 +186,8 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 If you specify governance, error message content to appear in error messages, it's included in the error message displayed to users. Learn more in [PowerShell governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).
 
 ### Related content
-[Managed Environments overview](managed-environment-overview.md) <br />
-[Enable Managed Environments](managed-environment-enable.md)  <br />
+[Managed environments overview](managed-environment-overview.md) <br />
+[Enable managed environments](managed-environment-enable.md)  <br />
 [Usage insights](managed-environment-usage-insights.md)  <br />
 [Data policies](managed-environment-data-policies.md) <br />
 [Licensing](managed-environment-licensing.md) <br />

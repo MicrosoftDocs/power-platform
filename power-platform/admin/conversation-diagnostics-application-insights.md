@@ -31,7 +31,7 @@ You can then use the conversation lifecycle events data from Customer Service in
 
 ## Prerequisites
 
-- Your environment must be a Managed Environment.
+- Your environment must be a managed environment.
 - You must have a Power Apps, Power Automate, or a Dynamics 365 license with premium use rights.
 
 ## Pricing
@@ -56,7 +56,7 @@ Before you perform a data export, create a connection between your Dynamics 365 
     - Select **Dynamics Customer Service**.
     - Select **Next**.
 
-1.  Select the environment from which you'd like to export the data, and then select **Next**. You can export data from a [Managed Environment](managed-environment-enable.md) only.
+1.  Select the environment from which you'd like to export the data, and then select **Next**. You can export data from a [managed environment](managed-environment-enable.md) only.
 
 1. Specify the **Subscription**, **Resource group**, and the **Application Insights** instance. Then select **Next**.
 

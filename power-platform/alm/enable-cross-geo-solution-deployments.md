@@ -20,7 +20,7 @@ Administrators can enable solution deployments via pipelines across geographical
   > [!IMPORTANT]
   > This setting enables data to be shared across geographical regions within in your tenant. <!-- Is there a link for more info about this risk? -->
 - All environments used in pipelines must have a Microsoft Dataverse database.
-- All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
+- All target environments used in a pipeline must be enabled as [managed environments](../admin/managed-environment-overview.md).
 
 ## Accessing and enabling the cross-geo setting for pipelines
 

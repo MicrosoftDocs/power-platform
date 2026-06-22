@@ -20,7 +20,7 @@ Keep the following principles in mind:
 
 -	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the **Monitor** area is evaluated every 24 hours after the newest 24-hour aggregates are produced. An alert rule does an on-demand evaluation upon its creation.
 - Alert rules are alerts that admins create to monitor their resources. You can edit, delete, and turn an alert rule on or off. You can place alert rules on an environment and a specific resource.
-- A _triggered alert_ occurs when one or more of the resources that an alert rule monitors pass specific thresholds that the admin defines when configuring the alert rule. You can select the triggered alert to learn what resources triggered the alert rule, and get recommendations for how to improve the resources if it's in a Managed Environment. 
+- A _triggered alert_ occurs when one or more of the resources that an alert rule monitors pass specific thresholds that the admin defines when configuring the alert rule. You can select the triggered alert to learn what resources triggered the alert rule, and get recommendations for how to improve the resources if it's in a managed environment. 
 
 ## When to use alerts
 - Teams and admins use alerts to find resources that are used more than expected. For example, an admin creates an alert to know if apps in the default environment exceed 50 launches a day.
@@ -29,7 +29,7 @@ Keep the following principles in mind:
 
 ## Prerequisites
 -	You must be a tenant administrator or an environment administrator to access alerts. 
--	You can only place alerts on a Managed Environment.
+-	You can only place alerts on a managed environment.
 -	You must be using the [new and improved Power Platform admin center](/power-platform/admin/new-admin-center).
 
 ## Create an alert on an environment
@@ -63,7 +63,7 @@ You can create an alert to monitor a specific resource, such as a specific canva
 1. In the navigation pane, select **Monitor**.
 1. In the **Monitor** pane, select the product where your resource is located. For example, if you select **Power Apps**, you see a list of canvas apps for which you can create alerts.
 1. Find your resource, and select it to open a resource pane, which has more detailed metric information.
-1. In the upper-right corner of the pane, you see a link labeled **+ New alert rule** if the resource is in a Managed Environment.
+1. In the upper-right corner of the pane, you see a link labeled **+ New alert rule** if the resource is in a managed environment.
    
     :::image type="content" source="media/new-resource-alert.png" alt-text="Select the '+ New Alert Rule' link." lightbox="media/new-resource-alert.png":::
    
@@ -116,7 +116,7 @@ Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.co
 
 The **Triggered custom alerts** card shows you the state of your triggered custom alerts in your tenant. These alerts are ones that you define. The visual in this card breaks down your triggered custom alerts by severity level, and the **Top priorities** section below calls out which of your alerts triggered most recently. Select one of those custom alerts to see which items triggered it. 
 
-The **Triggered alerts for high-use items** card on the right shows you which of your predefined alerts triggered. Similarly, the visual at the top of the card shows a breakdown of triggered predefined alerts by product type. Select one of the alerts in the **Top alerts from Microsoft** section to view which resources triggered that predefined alert. For example, you can select the **High-use cloud flows have a success rate under 90%** predefined alert and see all the high-use cloud flows in your tenant that triggered this alert, regardless of whether the flow is in a Managed Environment or not. Like the triggered custom alert experience, selecting a specific flow in that list displays a pane that shows you how each metric for that flow has trended over time. 
+The **Triggered alerts for high-use items** card on the right shows you which of your predefined alerts triggered. Similarly, the visual at the top of the card shows a breakdown of triggered predefined alerts by product type. Select one of the alerts in the **Top alerts from Microsoft** section to view which resources triggered that predefined alert. For example, you can select the **High-use cloud flows have a success rate under 90%** predefined alert and see all the high-use cloud flows in your tenant that triggered this alert, regardless of whether the flow is in a managed environment or not. Like the triggered custom alert experience, selecting a specific flow in that list displays a pane that shows you how each metric for that flow has trended over time. 
 
 You can also see a list of your predefined alerts and view their details in the **Alerts** section of **Monitor**. Select **Alerts** and scroll to the bottom of the page to view the predefined alerts. Microsoft authors predefined alerts. 
 
@@ -135,7 +135,7 @@ A _triggered alert_ is an instance when one or more resources meet the rule's co
 You must be a **Tenant administrator** or an **Environment administrator** to create and manage alerts.
 
 ### What environments are supported?
-All environment types, such as production, sandbox, trial, and developer environment types are supported, but they must be a Managed Environment. You select the environment in the **ID** field after setting the **Scope** field to **Environment**. 
+All environment types, such as production, sandbox, trial, and developer environment types are supported, but they must be a managed environment. You select the environment in the **ID** field after setting the **Scope** field to **Environment**. 
 
 ### Where do I manage my created alerts?
 Go to Power Platform admin center and select **Monitor** > **Alerts** and manage existing rules on the **Alert rules** tab.
@@ -147,7 +147,7 @@ The data in this column shows when the alert rule last ran. Alerts run every 24 
 The **Severity**, such as **Low**, **Medium**, or **High** is a classification label for triage and reporting. It doesn't change evaluation frequency or email notification behavior. 
 
 ### Do alerts work on the default environment?
-Yes, **if** your default environment is a **Managed Environment**. Managed Environments are the only environments that support alerts. 
+Yes, **if** your default environment is a **managed environment**. Managed environments are the only environments that support alerts. 
 
 ### Can I disable predefined alerts?
 At the moment, you can't disable predefined alerts. Support for this capability is coming soon.

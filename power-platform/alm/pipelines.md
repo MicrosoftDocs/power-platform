@@ -89,10 +89,10 @@ No. Solutions are exported as soon as a deployment request is submitted (when th
 
 ### Are standalone licenses required to use pipelines?
 
-- Developer environments aren't required to be Managed Environments. They can be used for development and testing with the developer plan.
-- The pipelines host should be a production environment, but the pipelines host doesn't have to be a Managed Environment.
-- All other environments used in pipelines must be enabled as Managed Environments.
-- Licenses granting premium use rights are required for all Managed Environments.
+- Developer environments aren't required to be managed environments. They can be used for development and testing with the developer plan.
+- The pipelines host should be a production environment, but the pipelines host doesn't have to be a managed environment.
+- All other environments used in pipelines must be enabled as managed environments.
+- Licenses granting premium use rights are required for all managed environments.
 
 A common setup example:
 
@@ -103,16 +103,16 @@ A common setup example:
 | QA | Developer | No |
 | Production | Production | Yes |
 
-### Can I ensure pipeline targets are Managed Environments?
+### Can I ensure pipeline targets are managed environments?
 
-Yes. Tenant admins can automatically convert pipeline target environments to Managed Environments, ensuring compliance with Microsoft standards.
-To enable an environment as a Managed Environment, go to the Power Platform admin center **Deployments** > **Settings**. Turn on the automatic managed environment setting for each pipeline host.
+Yes. Tenant admins can automatically convert pipeline target environments to managed environments, ensuring compliance with Microsoft standards.
+To enable an environment as a managed environment, go to the Power Platform admin center **Deployments** > **Settings**. Turn on the automatic managed environment setting for each pipeline host.
 
  > [!IMPORTANT]
- > Starting February 2026, Microsoft will start enabling Managed Environments for any pipeline target environments that aren’t already enabled. Customers will be notified via Microsoft 365 Message center.
- > We recommend you review and enable Managed Environments for all pipeline targets now. You can do this manually now or set it to occur automatically:
+ > Starting February 2026, Microsoft will start enabling managed environments for any pipeline target environments that aren't already enabled. Customers will be notified via Microsoft 365 Message center.
+ > We recommend you review and enable managed environments for all pipeline targets now. You can do this manually now or set it to occur automatically:
 >
-> - **Manually:** Go to enable [Managed Environments](../admin/managed-environment-enable.md).
+> - **Manually:** Go to enable [managed environments](../admin/managed-environment-enable.md).
 > - **Automatically:** Configure the setting for new pipelines as described above.
 
 ### Can I configure approvals for deployments?

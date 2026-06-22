@@ -28,7 +28,7 @@ The following recommendations relate to apps:
 
 ### Protect high-value apps with premium security and governance policies
 
-This recommendation lists apps that are potentially high-value (used by over 100 users each month) and are currently hosted in the default environment. Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a Managed Environment, you can also take advantage of various premium security and governance capabilities, such as [Customer Managed Keys](customer-managed-key.md) and [Solution Checker enforcement](managed-environment-solution-checker.md), to protect these apps. Alternatively, you can set the default environment as a [Managed Environment](managed-environment-overview.md) to use premium security and governance capabilities for all resources.
+This recommendation lists apps that are potentially high-value (used by over 100 users each month) and are currently hosted in the default environment. Apps that don't follow a proper application lifecycle management are prone to business continuity risks. By moving these high-value apps out of the default environment to a managed environment, you can also take advantage of various premium security and governance capabilities, such as [Customer Managed Keys](customer-managed-key.md) and [Solution Checker enforcement](managed-environment-solution-checker.md), to protect these apps. Alternatively, you can set the default environment as a [managed environment](managed-environment-overview.md) to use premium security and governance capabilities for all resources.
 
 > [!IMPORTANT]
 >
@@ -37,7 +37,7 @@ This recommendation lists apps that are potentially high-value (used by over 100
 
 - **Severity**: High
 - **Refresh Frequency**: Weekly
-- **Managed Environments only**: No
+- **Managed environments only**: No
 
 ### Follow Application Lifecycle Management (ALM) best practices for high value apps
 
@@ -53,7 +53,7 @@ This recommendation lists apps that are potentially high-value (used by over 100
 
 ### Maintain tenant hygiene by cleaning up unused apps
 
-This recommendation lists apps in all Managed Environments within your Power Platform tenant that aren't used in the last 60 days. It's important that unused and unnecessary resources be removed periodically, to reduce the risk of exposure of your resources and to maintain proper hygiene of the tenant.
+This recommendation lists apps in all managed environments within your Power Platform tenant that aren't used in the last 60 days. It's important that unused and unnecessary resources be removed periodically, to reduce the risk of exposure of your resources and to maintain proper hygiene of the tenant.
 
 > [!IMPORTANT]
 > Unused or unnecessary resources should be removed periodically to:

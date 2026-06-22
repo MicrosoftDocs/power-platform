@@ -38,7 +38,7 @@ Tools should provide the following functions:
 
 In some cases, one tool or a suite of tools might provide several functions. Ensure that you understand the capabilities of your tools and their limitations so that they meet your requirements across functions.
 
-Determine if you should invest in premium features of the platform or premium versions of tools. Consider the time and effort of developing your own solutions compared to features that the premium tools provide. Consider one-time costs versus recurring costs. In most cases, off-the-shelf tools provide higher value to your team. For example, [Managed Environment](/power-platform/admin/managed-environment-overview) capabilities offer out-of-the-box features to set a maker onboarding message or to limit sharing proactively. Building these features yourself requires development and ongoing maintenance effort that might prove more costly than investing in premium capabilities.
+Determine if you should invest in premium features of the platform or premium versions of tools. Consider the time and effort of developing your own solutions compared to features that the premium tools provide. Consider one-time costs versus recurring costs. In most cases, off-the-shelf tools provide higher value to your team. For example, [managed environment](/power-platform/admin/managed-environment-overview) capabilities offer out-of-the-box features to set a maker onboarding message or to limit sharing proactively. Building these features yourself requires development and ongoing maintenance effort that might prove more costly than investing in premium capabilities.
 
 Use AI tools when practical. AI tools can help with code development, reviews, and optimization.
 

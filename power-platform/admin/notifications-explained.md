@@ -38,7 +38,7 @@ The [Service health dashboard](/office365/enterprise/view-service-health) shows 
 
 Service health communications in the Microsoft 365 admin center are limited to specific admin roles. [Assign admin roles](/microsoft-365/admin/add-users/assign-admin-roles?view=o365-worldwide&preserve-view=true) that have permission to view service health, and review them regularly to stay current about the latest service health information.
 
-Sometimes, Microsoft might have to notify you about issues that are occurring in your Managed Environment, when action by an admin or user in your organization is required to fix those issues. These communications appear in the **Issues in your environment that require action** section of the **Service health** page. [Learn about Microsoft 365 monitoring](/microsoft-365/enterprise/microsoft-365-monitoring?view=o365-worldwide&preserve-view=true).
+Sometimes, Microsoft might have to notify you about issues that are occurring in your managed environment, when action by an admin or user in your organization is required to fix those issues. These communications appear in the **Issues in your environment that require action** section of the **Service health** page. [Learn about Microsoft 365 monitoring](/microsoft-365/enterprise/microsoft-365-monitoring?view=o365-worldwide&preserve-view=true).
 
 ## Service health in the Power Platform admin center
 

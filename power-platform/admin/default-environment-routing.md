@@ -25,12 +25,12 @@ When the **Environment routing** setting is enabled in [Power Platform admin cen
   
 When the feature is turned on, the selected maker type (that is, new or existing makers), are directed into their own, personal developer environment. If the maker has access to one or more existing developer environments that aren't owned by them, they're routed to a new developer environment.
 
-Dataverse is available in developer environments, and these environments are [Managed Environments](managed-environment-overview.md) with the admin settings preconfigured according to the assigned environment group rules. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
+Dataverse is available in developer environments, and these environments are [managed environments](managed-environment-overview.md) with the admin settings preconfigured according to the assigned environment group rules. Admins no longer need to worry that their makers are working in the default environment, where their work can conflict with others.
 
 > [!IMPORTANT]
 >
 > - By default, all developer environments created through environment routing are managed.
-> - Managed Environments isn't included as an entitlement in the Developer Plan when users run their assets. For more information about Managed Environments and the Developer Plan, see [Power Apps Developer Plan Guide: Features and Benefits](../developer/plan.md).
+> - Managed environments aren't included as an entitlement in the Developer Plan when users run their assets. For more information about managed environments and the Developer Plan, see [Power Apps Developer Plan Guide: Features and Benefits](../developer/plan.md).
 > - **Non-managed** developer environments are **unaffected** by this feature. Learn more about the developer environment and developer plan in [Power Apps Developer Plan Guide: Features and Benefits](../developer/plan.md).
 
 ## Multi-rule environment routing
@@ -43,7 +43,7 @@ This capability builds on the original environment routing feature, which routed
 - Consistent policy enforcement across environments.
 - Reduced risk of conflicts in shared or default environments.
 
-All routed environments are Managed Environments, meaning they inherit standardized policies like data retention, AI features, and application lifecycle management (ALM) settings defined by the admin through environment groups.
+All routed environments are managed environments, meaning they inherit standardized policies like data retention, AI features, and application lifecycle management (ALM) settings defined by the admin through environment groups.
 
 ## Prerequisites
 
@@ -51,7 +51,7 @@ Environment routing is a tenant-level admin setting. Understand that:
 
 - Only Power Platform admins can enable environment routing.
 
-- It requires the use of Managed Environments, since all of the newly created environments are managed. Users in a _managed_ developer environment must have premium licenses to run Power Platform assets.
+- It requires the use of managed environments, since all of the newly created environments are managed. Users in a _managed_ developer environment must have premium licenses to run Power Platform assets.
 
 - A personal developer environment is automatically created for new or existing makers (depending on the configured user type) when accessing a supported product's maker portal.
 
@@ -147,7 +147,7 @@ For more information about using PowerShell in Power Apps, see the [Overview](/p
 
 ### Are the developer environments managed?
 
-Yes, all the newly created developer environments are Managed Environments by default.
+Yes, all the newly created developer environments are managed environments by default.
 
 ### What environment types are created when environment routing is enabled?
 
@@ -173,9 +173,9 @@ If the creation of the developer environment fails, makers are automatically rou
 
 No specific data policies are assigned to the developer environment. The developer environment inherits existing, tenant-level data policies.
 
-### What are the preconfigured Managed Environments settings for the newly created developer environments?
+### What are the preconfigured managed environments settings for the newly created developer environments?
 
-All developer environments have the following Managed Environments settings preconfigured:
+All developer environments have the following managed environments settings preconfigured:
 
 - **Sharing limits**: Set to exclude sharing with security groups, and preconfigured to share with five individuals.
 

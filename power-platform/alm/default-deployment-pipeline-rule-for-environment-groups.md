@@ -19,10 +19,10 @@ The default deployment pipeline rule for environment groups is designed to mitig
 - The Power Platform Pipelines package must be installed in at least one environment and you must have a [pipelines host](set-up-pipelines.md) configured.
 - At least one pipeline must be configured in the desired pipelines host.
 - All environments used in pipelines must have a Microsoft Dataverse database.
-- All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
+- All target environments used in a pipeline must be enabled as [managed environments](../admin/managed-environment-overview.md).
 
 > [!IMPORTANT]
-  > Source and target environments used in the default pipelines are automatically enabled as Managed Environments. 
+  > Source and target environments used in the default pipelines are automatically enabled as managed environments. 
 
 For more information about environment group rules, go to [environment group rules](../admin/environment-groups.md#rules).
 
@@ -47,7 +47,7 @@ The default deployment pipeline rule is now configured for development and sandb
 ## Related content
 
 - [Environment Groups](../admin/environment-groups.md)
-- [Managed Environments](../admin/managed-environment-overview.md)
+- [Managed environments](../admin/managed-environment-overview.md)
 - [Set up pipelines in Power Platform](set-up-pipelines.md)
 - [Extend pipelines in Power Platform](extend-pipelines.md)
 - [Run pipelines in Power Platform](run-pipeline.md)

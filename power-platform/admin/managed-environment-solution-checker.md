@@ -1,5 +1,5 @@
 ---
-title: Solution checker enforcement in Managed Environments
+title: Solution checker enforcement in managed environments
 description: Learn about using solution checker enforcement to automatically prevent security and reliability validations during solution import.
 ms.topic: concept-article
 ms.date: 11/24/2025
@@ -16,15 +16,15 @@ contributors:
 
 ---
 
-# Solution checker enforcement in Managed Environments
+# Solution checker enforcement in managed environments
 
 The solution checker is a powerful tool that performs a comprehensive static analysis of your solution objects against a set of best practice rules. By using solution checker, you can quickly identify problematic patterns in solution components and receive detailed reports that highlight issues, affected components, and provide links to documentation on how to resolve each issue.
 
-Administrators can use solution checker to enforce checks to identify problematic patterns on solutions when the solution is imported in the Managed Environment.
+Administrators can use solution checker to enforce checks to identify problematic patterns on solutions when the solution is imported in the managed environment.
 
 ## Solution checker settings
 
-When you turn on solution checker for a Managed Environment, there are different levels to choose from that are enforced during solution import.
+When you turn on solution checker for a managed environment, there are different levels to choose from that are enforced during solution import.
 
 | Setting | Description |
 | --- | --- |
@@ -36,9 +36,9 @@ For more information on what to do when encountering a warn or block, see the [t
 
 For more information about solution checker and the list of rules used, go to [Solution checker overview](/power-apps/maker/data-platform/use-powerapps-checker).
 
-## Turn on solution checker in a Managed Environment
+## Turn on solution checker in a managed environment
 
-To turn on solution checker enforcement for your Managed Environment:
+To turn on solution checker enforcement for your managed environment:
 
 1. Sign in to the [Power Platform admin center](https://aka.ms/ppac).
 1. In the navigation pane, select **Manage**.
@@ -81,7 +81,7 @@ You can use PowerShell to turn on solution checker enforcement. These functions 
 
 ### Turn on solution checker enforcement in block mode
 
-Here's an example PowerShell script that turns on solution checker enforcement in block mode. After you run it, the slider shows block mode in the **Solution checker** section of the Managed Environments settings.
+Here's an example PowerShell script that turns on solution checker enforcement in block mode. After you run it, the slider shows block mode in the **Solution checker** section of the managed environments settings.
 
 ```powershell
 SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level block
@@ -89,7 +89,7 @@ SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-855
 
 ### Turn on solution checker enforcement in warn mode
 
-Here's an example PowerShell script that turns on solution checker enforcement in warn mode. After you run it, the slider shows warn mode in the **Solution checker** section of the Managed Environments settings.
+Here's an example PowerShell script that turns on solution checker enforcement in warn mode. After you run it, the slider shows warn mode in the **Solution checker** section of the managed environments settings.
 
 ```powershell
 SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level warn
@@ -97,7 +97,7 @@ SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-855
 
 ### Turn off solution checker enforcement
 
-Here's an example PowerShell script that turns off solution checker enforcement. After you run it, the slider shows **Off** in the **Solution checker** section of the Managed Environments settings.
+Here's an example PowerShell script that turns off solution checker enforcement. After you run it, the slider shows **Off** in the **Solution checker** section of the managed environments settings.
 
 ```powershell
 SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level none
@@ -105,7 +105,7 @@ SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-855
 
 ### Set rule exclusions
 
-Here's an example PowerShell script that turns on solution checker enforcement in block mode and adds rule exclusions. After you run it, the slider shows block mode in the **Solution checker** section of the Managed Environments settings, and the rule exclusions are set.
+Here's an example PowerShell script that turns on solution checker enforcement in block mode and adds rule exclusions. After you run it, the slider shows block mode in the **Solution checker** section of the managed environments settings, and the rule exclusions are set.
 
 ```powershell
 SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-8558-4c4e-b459-a51b3beafdb4 -Level none -RuleExclusions "web-use-async,web-use-offline"
@@ -113,8 +113,8 @@ SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-855
 
 ### Related content
 
-[Managed Environments overview](managed-environment-overview.md) <br />
+[Managed environments overview](managed-environment-overview.md) <br />
 [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions)  <br />
-[Solution checker enforcement in Managed Environments blocks or warns on import](/troubleshoot/power-platform/power-apps/manage-apps-and-solutions/solution-checker-enforcement-import-issues)
+[Solution checker enforcement in managed environments blocks or warns on import](/troubleshoot/power-platform/power-apps/manage-apps-and-solutions/solution-checker-enforcement-import-issues)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

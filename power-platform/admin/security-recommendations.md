@@ -30,7 +30,7 @@ The following recommendations relate to apps:
 
 ### Assign valid owners to apps to mitigate business continuity risks
 
-This type of recommendation lists apps in all the Managed Environments within your Power Platform tenant that don't have a valid owner. Currently, this list contains apps active in the last 90 days.
+This type of recommendation lists apps in all the managed environments within your Power Platform tenant that don't have a valid owner. Currently, this list contains apps active in the last 90 days.
 
 > [!IMPORTANT]
 > Resources with valid owners can make necessary changes or support users when an issue arises. If an app doesn't have a valid owner, it might be a business continuity risk.
@@ -67,7 +67,7 @@ With multiple co-owners of an app, admins can promote one of the co-owners to ow
 
 ### Secure high-value applications that are shared with ‘Everyone’, including guest users
 
-This recommendation lists apps in all Managed Environments within your Power Platform tenant that are actively used and shared with **Everyone** in your Microsoft Entra tenant.
+This recommendation lists apps in all managed environments within your Power Platform tenant that are actively used and shared with **Everyone** in your Microsoft Entra tenant.
 
 > [!IMPORTANT]
 >

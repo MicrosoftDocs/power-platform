@@ -20,7 +20,7 @@ Pipelines are available to all who navigate to the pipelines page for the first 
   > [!NOTE]
   > Default environments, Teams environments, and environments without a Microsoft Dataverse store can't be used as target environments for personal pipelines.
 - All environments used in pipelines must have a Dataverse database.
-- All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
+- All target environments used in a pipeline must be enabled as [managed environments](../admin/managed-environment-overview.md).
 
 ## Current limitations with personal pipelines using the platform host
 
