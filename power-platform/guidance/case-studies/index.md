@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview
-ms.date: 04/27/2026
+ms.date: 06/22/2026
 ---
 
 # Real-world case studies
@@ -43,6 +43,7 @@ Each case study provides an in-depth look at how organizations build application
 | [Dunaway streamlines city code research with Copilot Studio](dunaway-streamlines-city-code-research.md) | Covers how Dunaway transformed compliance workflows with a conversational AI agent that delivers instant, accurate regulatory answers. |
 | [Epiq streamlines employee onboarding](streamline-employee-onboarding.md) | Covers how Epiq streamlines employee onboarding with Power Automate, Microsoft Dataverse, and AI Builder. |
 | [EY automates payment processing](global-finance.md) | Covers how the Global Finance team at Ernst & Young used Power Automate, AI Builder, and Dataverse to automate customer payment processing. |
+| [Grupo Bimbo standardizes global audit processes with Copilot Studio](grupo-bimbo-global-audit.md) | Covers how Grupo Bimbo uses Copilot Studio to standardize audit planning and execution across a global internal audit team. |
 | [Holland America Line transforms customer experience with Copilot Studio](holland-america-customer-experience.md) | Covers how Holland America Line used Copilot Studio to create a sophisticated virtual agent to create a virtual concierge for their website. |
 | [John Cockerill streamlines enterprise business processes](engineering-time-tracking.md) | Covers how international engineering company John Cockerill uses Power Platform to develop enterprise apps. |
 | [La Trobe University supercharges academic productivity with AI and Copilot Studio](latrobe-supercharges.md) | Covers how La Trobe University enhances academic productivity and support services with AI and Copilot Studio. |
