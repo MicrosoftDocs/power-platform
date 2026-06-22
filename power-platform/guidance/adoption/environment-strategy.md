@@ -31,7 +31,7 @@ While many perspectives are available for managing Power Platform environments, 
 
 Many organizations start their Power Platform journey with personal productivity apps and automations built and running in a shared central environment called the _default environment_. These resources often use only the basic capabilities included with Microsoft 365 and don't use the full capabilities of Power Platform. As this initial adoption accelerates, Microsoft provides organizations with an on-ramp to an environment strategy for enterprise scale adoption of the full Power Platform capabilities. These premium governance capabilities become available when users have a premium Power Platform (Power Apps, Power Automate, Microsoft Copilot Studio, and Dynamics 365) license. The [Power Platform adoption maturity model](/power-platform/guidance/adoption/maturity-model-details) provides more insights to help organizations define their roadmap to achieve enterprise scale adoption beyond their environment strategy. This approach can help organizations mature from basic personal productivity to enterprise-scale adoption of Power Platform.
 
-Power Platform administrative, governance, and security features allow organizations to adopt and manage Power Platform for enterprise productivity and enterprise app usage at scale. Using Managed Environments activates a set of premium capabilities that enable greater visibility and control and reduce the manual effort to administer and secure environments. Using these capabilities, you can ensure consistent application of your governance and security policies. Admins can transition into an enterprise-scale, environment strategy using these capabilities. Spending less time and effort on the administration helps reduce the overall total cost of ownership (TCO) of the platform as your organization scales usage.
+Power Platform administrative, governance, and security features allow organizations to adopt and manage Power Platform for enterprise productivity and enterprise app usage at scale. Using managed environments activates a set of premium capabilities that enable greater visibility and control and reduce the manual effort to administer and secure environments. Using these capabilities, you can ensure consistent application of your governance and security policies. Admins can transition into an enterprise-scale, environment strategy using these capabilities. Spending less time and effort on the administration helps reduce the overall total cost of ownership (TCO) of the platform as your organization scales usage.
 
 A key element of the transition to enterprise scale is to enhance the shared, central environment strategy for makers by making it easier for them to use personal, development environments. In a shared, central environment strategy, makers build, use, and share apps in the default environment. This strategy can result in lack of isolation and makers encroaching on each other. Imagine if everyone in the company shared a single OneDrive folder for all their documents. Instead, use environment features to guide makers to their own, personal environment where they can safely build their apps protected from makers working on unrelated assets, with simplified governance for admins. Coworkers can be added as more makers to these environments to collaborate on building solutions.
 
@@ -52,7 +52,7 @@ Establish your environment strategy using the recommended environment capabiliti
 [Environments](/power-platform/admin/environments-overview) are a building block for Power Platform administration, governance, and security. A complete feature overview is out of the scope of this article; however, this section highlights the features that support implementation of an environment strategy at enterprise scale.
 
 - [**Types of environments**](#types-of-environments) describes the different uses of environments as part of your strategy.
-- [**Managed Environments**](#managed-environments) provides a set of premium capabilities that make environments easier to manage at scale.
+- [**Managed environments**](#managed-environments) provide a set of premium capabilities that make environments easier to manage at scale.
 - **[License auto-claim](#license-auto-claim)** simplifies license assignment by allowing users to claim Power Apps per user licenses when they're needed, instead of requiring an admin to identify users who need licenses in advance.
 - [**Environment groups and rules**](#environment-groups-and-rules) explains how to manage environments as groups and apply rules to groups to automate consistent governance policies.
 - [**Default environment routing**](#default-environment-routing) automatically moves makers away from creating resources in the default environment to their own personal environment.
@@ -68,7 +68,7 @@ The following table describes the types of environments you can create, their ch
 | **Type**                      | **Characteristics and uses**                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Default                       | The environment that comes with every tenant. Many Microsoft 365 experiences use this environment for customizations and automations. This environment isn't intended for long-term or permanent work beyond the Microsoft 365 personal, productivity scenarios.             |
-| Production                    | This environment is intended to be used for permanent work in an organization. Production [Managed Environments](/power-platform/admin/managed-environment-overview) support extended back-up retention from seven days to up to 28 days.       |
+| Production                    | This environment is intended to be used for permanent work in an organization. Production [managed environments](/power-platform/admin/managed-environment-overview) support extended back-up retention from seven days to up to 28 days.       |
 | Sandbox                       | These nonproduction environments support environment actions like copy and reset. Sandboxes are best used for testing and ALM build environments.                          |
 | Developer                     | These special environments are intended as makers' personal development workspaces, which isolate low-code assets from users and other makers. Makers can have up to three developer environments. They don't count against your tenant capacity. Developer environments that haven't been used for 90 days are automatically turned off and then removed from your tenant if the owner doesn't respond to notifications. Dynamics 365 apps aren't available in developer environments. |
 | Trial                         | These environments are intended to support short-term testing and proofs of concept. They're limited to one per user. Trial environments are automatically removed from your tenant after a short period of time.   |
@@ -77,11 +77,11 @@ The following table describes the types of environments you can create, their ch
 
 When creating an overall tenant environment strategy, consider the different types to support your recommendations.
 
-### Managed Environments
+### Managed environments
 
-Environments have a base set of features and characteristics depending on the environment type. Managed Environments expand on the base features to provide a suite of premium capabilities that allow admins to more easily manage Power Platform at scale with more control, less effort, and more insights. These capabilities are unlocked when you set an environment as managed.
+Environments have a base set of features and characteristics depending on the environment type. Managed environments expand on the base features to provide a suite of premium capabilities that allow admins to more easily manage Power Platform at scale with more control, less effort, and more insights. These capabilities are unlocked when you set an environment as managed.
 
-The following table lists the features of Managed Environments that are available, as of this writing. New features are added often, so check the [documentation](/power-platform/admin/managed-environment-overview) for the latest list. Although all the features can help you build an environment strategy, the features in italics are more relevant for the strategy that's outlined in this article.
+The following table lists the features of managed environments that are available, as of this writing. New features are added often, so check the [documentation](/power-platform/admin/managed-environment-overview) for the latest list. Although all the features can help you build an environment strategy, the features in italics are more relevant for the strategy that's outlined in this article.
 
 | **More visibility** | **More control** | **Less effort** |
 |-------------------------|-------------------------|-------------------------|
@@ -95,7 +95,7 @@ After a policy is configured, any user in the organization who needs an individu
 
 - If a user without a standalone Power Apps license launches an app that demands a premium license, the system automatically assigns the user a Power Apps per user license.
 
-- If a user without a standalone Power Apps license launches an app in a Managed Environment, the system automatically assigns the user a Power Apps per user license.
+- If a user without a standalone Power Apps license launches an app in a managed environment, the system automatically assigns the user a Power Apps per user license.
 
 Similarly, after a policy is configured, any user in the organization who needs an individual Power Automate license is automatically granted one under the following conditions:
 
@@ -103,7 +103,7 @@ Similarly, after a policy is configured, any user in the organization who needs 
 
 - The user requests a Power Automate premium license.
 
-We recommend configuring license auto-claim if your environment strategy includes Managed Environments. Users of apps and flows encounter the least amount of licensing friction, and you only consume licenses for users who are actively running apps or using Power Automate.
+We recommend configuring license auto-claim if your environment strategy includes managed environments. Users of apps and flows encounter the least amount of licensing friction, and you only consume licenses for users who are actively running apps or using Power Automate.
 
 ### Environment groups and rules
 
@@ -172,7 +172,7 @@ Here are some suggestions for how your organization might use the welcome messag
 
 The default environment is often the most restricted, with data policies and sharing controls. Create a welcome message that warns your makers about restrictions and possible limitations, and include a link to your organization's policy website or document.
 
-For example, you might want to inform makers to use the default environment only for solutions that are related to Microsoft 365 applications, avoid using production applications in the default environment, and to share their canvas apps only with a limited number of individuals. The following example shows how to create such a message in Managed Environments settings:
+For example, you might want to inform makers to use the default environment only for solutions that are related to Microsoft 365 applications, avoid using production applications in the default environment, and to share their canvas apps only with a limited number of individuals. The following example shows how to create such a message in managed environments settings:
 
 :::image type="content" source="media/mae/maker-welcome-default-markdown.png" alt-text="Screenshot of Maker welcome content settings in Power Apps.":::
 
@@ -701,13 +701,13 @@ Microsoft considers itself "Customer Zero" because it internally adopts Power Pl
 - Over 250,000 applications and over 300,000 flows
 - Over 20,000 environments
 
-Microsoft is shifting from its prior environment strategy to one using the latest Power Platform governance features, including Managed Environments, environment groups, and rules.
+Microsoft is shifting from its prior environment strategy to one using the latest Power Platform governance features, including managed environments, environment groups, and rules.
 
 As part of the enhanced strategy Microsoft plans to group together scenarios based on development type, organizational ownership, and risk level. Because so much is being built across the company, it's hard to focus on every possible scenario and to customize for each use case. Given the scale of innovation and change, automation is required, together with as many out-of-the-box controls as possible.
 
 Microsoft is structuring its Power Platform environments into three broad categories that cover seven use cases, reflecting varying degrees of risk and control: personal productivity, team collaboration, and enterprise development.
 
-- **Personal productivity**: For users who just want to build an app or flow for themselves, without collaborating with others. These users are routed to personal development environments. These locked-down environments use Managed Environment features, including restricting sharing and controlling other actions. Connectors and actions in these environments are heavily restricted. These environments are the least risky. Using locked-down personal environments allows users to avoid the more rigorous compliance process required to build personal productivity apps and flows.
+- **Personal productivity**: For users who just want to build an app or flow for themselves, without collaborating with others. These users are routed to personal development environments. These locked-down environments use managed environment features, including restricting sharing and controlling other actions. Connectors and actions in these environments are heavily restricted. These environments are the least risky. Using locked-down personal environments allows users to avoid the more rigorous compliance process required to build personal productivity apps and flows.
 
 - **Team collaboration**: For users who are building tooling, automation, and processes for their team. For this scenario, Microsoft recommends using Dataverse for Teams environments. Lifecycle, access management, and data labeling are controlled at the Microsoft 365 group-level, eliminating the need to spend time managing these users from a Power Platform governance perspective. This level of use is the next step up in the risk spectrum.
 

@@ -26,7 +26,7 @@ Review [Power Platform licensing](/power-platform/admin/pricing-billing-skus) an
 - Power Apps, Power Automate, and Power BI premium [licensing](https://www.microsoft.com/licensing/default) supports setting up and using an on-premises data gateway with premium applications, flows, and connectors (SAP ERP and Dataverse).
 - The admins, developers, and functional business users who work with SAP solutions all need standalone licenses.
 - The admin who's setting up the on-premises data gateway needs a [Power BI license](/power-bi/fundamentals/service-features-license-type).
-- [Managed Environments](/power-platform/admin/managed-environment-licensing) is included in premium standalone licensing but is not included in the [Developer Plan](/power-platform/developer/plan).
+- [Managed environments](/power-platform/admin/managed-environment-licensing) are included in premium standalone licensing but are not included in the [Developer Plan](/power-platform/developer/plan).
 - Admins can [view Power Apps and Power Automate consumption](/power-platform/admin/view-license-consumption-issues) in the Power Platform admin center.
 
 ## SAP subscription

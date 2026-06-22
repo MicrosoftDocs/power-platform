@@ -1,7 +1,7 @@
 ---
-title: Daimler Truck transforms policy management with Power Apps, Dataverse, and Managed Environments
-description: Discover how Daimler Truck modernized policy management using Power Apps, Dataverse, and Managed Environments to enhance efficiency and collaboration.
-#customer intent: As a business decision maker, I want to evaluate the benefits of using Power Apps, Dataverse, and Managed Environments for policy management so that I can improve operational efficiency and reduce costs.
+title: Daimler Truck transforms policy management with Power Apps, Dataverse, and managed environments
+description: Discover how Daimler Truck modernized policy management using Power Apps, Dataverse, and managed environments to enhance efficiency and collaboration.
+#customer intent: As a business decision maker, I want to evaluate the benefits of using Power Apps, Dataverse, and managed environments for policy management so that I can improve operational efficiency and reduce costs.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -14,7 +14,7 @@ ms.custom:
   - ai-seo-date:08/12/2025
 ---
 
-# Daimler Truck transforms policy management with Power Apps, Dataverse, and Managed Environments
+# Daimler Truck transforms policy management with Power Apps, Dataverse, and managed environments
 
 [Daimler Truck](https://www.daimlertruck.com), one of the world's largest commercial vehicle manufacturers, is modernizing policy management with Microsoft Power Platform.
 
@@ -78,15 +78,15 @@ For policy updates, the app streamlines processes by enabling minor revisions wi
 
 ### Governance
 
-Governance is a key focus area. Daimler Truck has established a specialized global delivery team to drive operational maturity with Power Platform Managed Environments. The organization has cultivated a thriving low-code ecosystem, with over 8,000 makers driving innovation and 1,400 active apps in production.
+Governance is a key focus area. Daimler Truck has established a specialized global delivery team to drive operational maturity with Power Platform managed environments. The organization has cultivated a thriving low-code ecosystem, with over 8,000 makers driving innovation and 1,400 active apps in production.
 
-The company launched the Policy Navigator app and activated over 4,000 Power Platform Managed Environments to ensure they use the latest capabilities to help keep their tenant secure.
+The company launched the Policy Navigator app and activated over 4,000 Power Platform managed environments to ensure they use the latest capabilities to help keep their tenant secure.
 
 ## Key takeaways
 
 Operational efficiency has improved significantly, simplifying policy access and saving valuable time and resources across the organization. The app has also facilitated collaboration among Daimler Truck's globally distributed teams responsible for corporate policies and works agreements. Transitioning from the former system to a low-code solution has also optimized costs and reinforced the company's commitment to technology-driven transformation.
 
-This case study demonstrates the potential of using Power Apps, Dataverse, and Managed Environments to build a policy exploration and administration application. It also shows how organizations can scale their impact by enabling hundreds of employees to create their own low-code applications to increase productivity. Using a model-driven application as the backend and a canvas app as the frontend is a creative approach that unlocks many possibilities.
+This case study demonstrates the potential of using Power Apps, Dataverse, and managed environments to build a policy exploration and administration application. It also shows how organizations can scale their impact by enabling hundreds of employees to create their own low-code applications to increase productivity. Using a model-driven application as the backend and a canvas app as the frontend is a creative approach that unlocks many possibilities.
 
 Here are some key takeaways:
 
@@ -113,4 +113,4 @@ Daimler Truck's Power Platform journey demonstrates its commitment to using cutt
   - [What are model-driven apps in Power Apps?](/power-apps/maker/model-driven-apps/model-driven-app-overview)
 - [What is Microsoft Dataverse?](/power-apps/maker/data-platform/data-platform-intro)
   - [Get started using Dataverse](/training/paths/get-started-cds/) (training)
-- [Managed Environments overview](/power-platform/admin/managed-environment-overview)
+- [Managed environments overview](/power-platform/admin/managed-environment-overview)

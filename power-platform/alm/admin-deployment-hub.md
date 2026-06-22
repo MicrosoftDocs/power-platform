@@ -56,14 +56,14 @@ The **Run history** view shows all deployment activity managed by the selected p
 
 > [!IMPORTANT]
 >
-> - All target environments used in a pipeline must be enabled as [Managed Environments](../admin/managed-environment-overview.md).
-> - Tenant admins can enable automatic conversion of pipelines environments to [Managed Environments](../admin/managed-environment-overview.md).
+> - All target environments used in a pipeline must be enabled as [managed environments](../admin/managed-environment-overview.md).
+> - Tenant admins can enable automatic conversion of pipelines environments to [managed environments](../admin/managed-environment-overview.md).
 
 ### Manage deployment settings
 
 Admins can manage these **Settings** within the selected pipelines host (settings are managed separately for each host):
 
-- **Enable automatic conversion of pipelines environments to [Managed Environments](../admin/managed-environment-overview.md)**. This ensures pipelines environments meet Microsoft compliance standards automatically. When makers deploy to this environment, it gets automatically converted to a Managed Environment.
+- **Enable automatic conversion of pipelines environments to [managed environments](../admin/managed-environment-overview.md)**. This ensures pipelines environments meet Microsoft compliance standards automatically. When makers deploy to this environment, it gets automatically converted to a managed environment.
 - **[Solution deployments across regions](enable-cross-geo-solution-deployments.md)**: Admins can opt in to allow deployments between environments in different geographic locations. For example, when the host and production environments are in North America but the development environment is in India.
 
    > [!IMPORTANT]
@@ -86,29 +86,29 @@ A dedicated **Failed deployments** view helps admins quickly identify and troubl
 
 ## FAQ
 
-### Are Managed Environments required for deployment pipelines, and what does this mean for my organization?
+### Are managed environments required for deployment pipelines, and what does this mean for my organization?
 
-Yes. All target environments used in Power Platform deployment pipelines have always been required to be Managed Environments for compliant usage. This requirement helps your organization benefit from enhanced governance, improved security, and streamlined license management.
+Yes. All target environments used in Power Platform deployment pipelines have always been required to be managed environments for compliant usage. This requirement helps your organization benefit from enhanced governance, improved security, and streamlined license management.
 
-### How can I ensure pipelines targets are Managed Environments automatically?
+### How can I ensure pipelines targets are managed environments automatically?
 
-Tenant admins (Power Platform and Dynamics 365 admins) can enable a setting that automatically converts pipelines target environments to Managed Environments, ensuring compliance with Microsoft standards. Managed Environments are then enabled on the target during the next deployment.
+Tenant admins (Power Platform and Dynamics 365 admins) can enable a setting that automatically converts pipelines target environments to managed environments, ensuring compliance with Microsoft standards. Managed environments are then enabled on the target during the next deployment.
 
 To enable the setting, go to the Power Platform admin center **Deployments** > **Settings**. Turn on the automatic managed environment setting for each pipeline host.
 
-### Why did I receive Message Center notification “Power Platform – Automatic enablement of Managed Environments for Deployment Pipelines”?
+### Why did I receive Message Center notification “Power Platform – Automatic enablement of managed environments for Deployment Pipelines”?
 
 You receive a notification when you have environments that aren't managed and are target of a pipeline and used for deployment in the last six months. 
 The notification lists specific environments that need action.
 
 > [!IMPORTANT]
 >
-> - Starting February 2026, Microsoft starts enabling Managed Environments for any pipeline target environments that aren’t already enabled.
-> - We recommend that you review and enable Managed Environments for all pipeline targets now or set it to occur automatically.
+> - Starting February 2026, Microsoft starts enabling managed environments for any pipeline target environments that aren’t already enabled.
+> - We recommend that you review and enable managed environments for all pipeline targets now or set it to occur automatically.
 
-### How do I verify pipelines target environments requiring Managed Environments?
+### How do I verify pipelines target environments requiring managed environments?
 
-Go to the Power Platform admin center **Deployments** > **Pipelines** > **Run History**. Then select a host and change the filter to **Last 180 days**. If multiple hosts exist, review deployments in each. Environments listed under **Target** require Managed Environments.
+Go to the Power Platform admin center **Deployments** > **Pipelines** > **Run History**. Then select a host and change the filter to **Last 180 days**. If multiple hosts exist, review deployments in each. Environments listed under **Target** require managed environments.
 
  > [!NOTE]
  > Additional run history information and the ability to export data and generate reports is available within the [Deployment Pipelines Configuration app](custom-host-pipelines.md).
@@ -118,7 +118,7 @@ Go to the Power Platform admin center **Deployments** > **Pipelines** > **Run Hi
 There's no expected disruption for end users or their applications because of this automatic enablement. The changes focus on environment governance and compliance, so your users and apps continue to function as usual.
 
  > [!IMPORTANT]
- > Managed Environments come with an [autoclaim policy](../admin/auto-claim-licensing.md), which is applied automatically. The autoclaim policy ensures users who access apps in Managed Environments automatically receive the necessary licenses. Ensure you have appropriate license capacity in the tenant to utilize autoclaim.
+ > Managed environments come with an [autoclaim policy](../admin/auto-claim-licensing.md), which is applied automatically. The autoclaim policy ensures users who access apps in managed environments automatically receive the necessary licenses. Ensure you have appropriate license capacity in the tenant to utilize autoclaim.
 
 ### Will Microsoft enable unmanaged pipelines target environments in February 2026 if the automatic enablement setting is turned off? 
 

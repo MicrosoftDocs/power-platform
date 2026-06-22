@@ -53,29 +53,29 @@ The primary two roles in governance are:
 
 The Platform users consist of citizen developers, who build the apps, and the local expert teams, who evaluate the apps and provide feedback and improvements. The local expert teams coach the citizen developers and approve the apps when they are ready for release.
 
-The citizen developers build the apps in Managed Environments. The process involves generating ideas in the development-test environments, staging the apps during evaluation and refinement, and then deploying the apps in the production environment. The environments are prepared and delivered by the Platform producers, who define the services and ensure scalability in a CoE.
+The citizen developers build the apps in managed environments. The process involves generating ideas in the development-test environments, staging the apps during evaluation and refinement, and then deploying the apps in the production environment. The environments are prepared and delivered by the Platform producers, who define the services and ensure scalability in a CoE.
 
 ## Governance strategy
 
 To create its citizen developer governance model, DB Group completed the following steps:
 
 - **Form a CoE** to define, deliver, and scale Microsoft Power Platform governance.
-- **Create Managed Environments at scale**, so that citizen developers can generate their ideas in development-test environments, refine their apps in staging, and deploy their apps in production environments.
+- **Create managed environments at scale**, so that citizen developers can generate their ideas in development-test environments, refine their apps in staging, and deploy their apps in production environments.
 - **Train citizen developers** and the additional roles at scale.
 
 ### Form a CoE
 
 DB formed a CoE to define, deliver, and scale Power Platform governance.
 
-The Platform producers build the connectors for the various technologies and data, define specific components and features, build the functional blueprints, and design the templates. When the app environments are fully prepared, the Platform producers deliver the service to the Managed Environments, where the citizen developers can build their apps at scale.
+The Platform producers build the connectors for the various technologies and data, define specific components and features, build the functional blueprints, and design the templates. When the app environments are fully prepared, the Platform producers deliver the service to the managed environments, where the citizen developers can build their apps at scale.
 
 The CoE team uses the [Power Platform Center of Excellence starter kit](/power-platform/guidance/coe/starter-kit) as the foundation to develop its own governance features. To ensure consistency across apps, the team provisioned various [Power Apps](https://www.microsoft.com/power-platform/products/power-apps) templates with DB user experience (UX) style guides. Both citizen developers and professional developers use these templates as a starting point for their DB Power Apps development.
 
-### Create Managed Environments at scale
+### Create managed environments at scale
 
 The citizen developers generate ideas and build the apps in their development-test environments. When a concept is proven, they stage the app while it's evaluated by the local expert teams for business criticality and value, risk management, data protection, security, and so on. After the app is approved, it's deployed in a production environment.
 
-To drive its strategy for governance at scale, DB has used Managed Environments since the capabilities were introduced in 2022. These capabilities include customized [welcome content](/power-platform/admin/welcome-content) that greets makers as soon as they sign in to Power Apps. This welcome content includes the latest internal policies for each environment. Additionally, admins can organize large numbers of environments into [environment groups](/power-platform/admin/environment-groups) and then apply specific rules across those groups.
+To drive its strategy for governance at scale, DB has used managed environments since the capabilities were introduced in 2022. These capabilities include customized [welcome content](/power-platform/admin/welcome-content) that greets makers as soon as they sign in to Power Apps. This welcome content includes the latest internal policies for each environment. Additionally, admins can organize large numbers of environments into [environment groups](/power-platform/admin/environment-groups) and then apply specific rules across those groups.
 
 ### Train citizen developers
 
@@ -126,7 +126,7 @@ Here are some key takeaways for IT professionals who are seeking to implement a 
 
 - **Identify the use case** that affects business productivity and customer success.
 - **Build the CoE** to ensure quality deployments and also nurture and educate employees as part of the citizen developer community.
-- **Create and scale Managed Environments** to design, build, test, and release the applications. As part of this effort:
+- **Create and scale managed environments** to design, build, test, and release the applications. As part of this effort:
 
   - [Customize welcome content](/power-platform/admin/welcome-content).
   - [Add environment groups and rules](/power-platform/admin/environment-groups).
@@ -148,7 +148,7 @@ DB's citizen developer program continues to expand as interest and enthusiasm in
 ## Related information
 
 - [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](/power-platform/guidance/coe/starter-kit)
-- [Managed Environments overview](/power-platform/admin/managed-environment-overview)
+- [Managed environments overview](/power-platform/admin/managed-environment-overview)
 
   - [Environment groups](/power-platform/admin/environment-groups)
   - [Enable maker welcome content](/power-platform/admin/welcome-content)

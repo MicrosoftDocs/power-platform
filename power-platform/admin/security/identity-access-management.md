@@ -21,7 +21,7 @@ Ensure that only authorized users can access sensitive data in items across your
 
 ## IP firewall
 
-The IP firewall feature in Microsoft Power Platform is a security control that applies only to Managed Environments with Dataverse. It provides a critical layer of security by controlling inbound traffic to Power Platform environments. Administrators can use this feature to define and enforce IP-based access controls. In this way, they can ensure that only authorized IP addresses can access the Power Platform environment. By using IP firewall, organizations can mitigate risks that are associated with unauthorized access and data breaches, and therefore enhance the overall security of their Power Platform deployments. To learn more, see [IP firewall in Power Platform environments](../ip-firewall.md).
+The IP firewall feature in Microsoft Power Platform is a security control that applies only to managed environments with Dataverse. It provides a critical layer of security by controlling inbound traffic to Power Platform environments. Administrators can use this feature to define and enforce IP-based access controls. In this way, they can ensure that only authorized IP addresses can access the Power Platform environment. By using IP firewall, organizations can mitigate risks that are associated with unauthorized access and data breaches, and therefore enhance the overall security of their Power Platform deployments. To learn more, see [IP firewall in Power Platform environments](../ip-firewall.md).
 
 ## Tenant isolation
 
@@ -29,7 +29,7 @@ By using tenant isolation, Power Platform administrators can govern the movement
 
 ## IP address-based cookie binding
 
-The IP address-based cookie binding feature applies only to Managed Environments with Dataverse. It prevents session hijacking exploits in Dataverse through IP address-based cookie binding. To learn more, see [Safeguarding Dataverse sessions with IP cookie binding](../block-cookie-replay-attack.md).
+The IP address-based cookie binding feature applies only to managed environments with Dataverse. It prevents session hijacking exploits in Dataverse through IP address-based cookie binding. To learn more, see [Safeguarding Dataverse sessions with IP cookie binding](../block-cookie-replay-attack.md).
 
 ## Environment security groups
 
@@ -37,11 +37,11 @@ Use security groups to help control which licensed users can access environments
 
 ## Manage sharing
 
-The manage sharing feature applies only to Managed Environments. By using sharing, administrators can control what their makers can share, and which other individual users and security groups they can share it with. Examples of things that makers might share include canvas apps, cloud flows, and agents. This feature ensures that sensitive information is available only to authorized users. Therefore, it reduces the risk of data breaches and misuse. To learn more, see [Limit sharing](../managed-environment-sharing-limits.md).
+The manage sharing feature applies only to managed environments. By using sharing, administrators can control what their makers can share, and which other individual users and security groups they can share it with. Examples of things that makers might share include canvas apps, cloud flows, and agents. This feature ensures that sensitive information is available only to authorized users. Therefore, it reduces the risk of data breaches and misuse. To learn more, see [Limit sharing](../managed-environment-sharing-limits.md).
 
 ## App access control (preview)
 
-The app access control feature applies only to Managed Environments. It prevents data exfiltration by controlling which apps are allowed and blocked in each environment. To learn more, see [Control which apps are allowed in your environment](/power-platform/admin/control-app-access-environment).
+The app access control feature applies only to managed environments. It prevents data exfiltration by controlling which apps are allowed and blocked in each environment. To learn more, see [Control which apps are allowed in your environment](/power-platform/admin/control-app-access-environment).
 
 ## Guest access 
 
@@ -53,7 +53,7 @@ To ensure data security and compliance in the Power Platform ecosystem, minimize
 
 [!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
-The administrator privileges feature applies only to Managed Environments. By limiting the number of users who have high-privileged, administrative roles in Microsoft Entra ID and Microsoft Power Platform, you can improve the security score of your tenant. Use this feature to review users who have those privileged roles, review the user list, and remove users who should no longer have privileged access. To learn more, see [Overview of the Power Platform admin center](../admin-documentation.md).
+The administrator privileges feature applies only to managed environments. By limiting the number of users who have high-privileged, administrative roles in Microsoft Entra ID and Microsoft Power Platform, you can improve the security score of your tenant. Use this feature to review users who have those privileged roles, review the user list, and remove users who should no longer have privileged access. To learn more, see [Overview of the Power Platform admin center](../admin-documentation.md).
 
 ### Users with administrative privileges
 

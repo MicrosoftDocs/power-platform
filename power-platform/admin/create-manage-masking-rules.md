@@ -30,7 +30,7 @@ Data masking helps protect sensitive information during customer interactions an
 
 ## Prerequisite
 
-The environment must be a [Managed Environments](managed-environment-overview.md) in order to [add a masking rule to a secured column](create-manage-masking-rules.md#add-a-masking-rule-to-a-secured-column). 
+The environment must be a [managed environments](managed-environment-overview.md) in order to [add a masking rule to a secured column](create-manage-masking-rules.md#add-a-masking-rule-to-a-secured-column). 
 
 ## Create masking rules
 

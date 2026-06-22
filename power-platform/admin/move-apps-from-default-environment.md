@@ -1,6 +1,6 @@
 ---
 title: Move apps from the default environment (preview)
-description: The new recommendation in the Power Platform admin center helps administrators move apps from the default environment to designated Managed Environments to improve compliance and security. 
+description: The new recommendation in the Power Platform admin center helps administrators move apps from the default environment to designated managed environments to improve compliance and security. 
 author: sidhartg
 ms.component: pa-admin
 ms.topic: concept-article
@@ -18,7 +18,7 @@ search.audienceType:
 
 Makers often use the default environment in Power Platform as a shared space to create apps, agents, and flows. However, they might not use adequate governance controls to manage these resources efficiently. Over time, this approach can lead to clutter, unmanaged resources, and security risks. 
 
-This new recommendation in the Power Platform admin center helps administrators move apps from the default environment to designated Managed Environments. This process ensures compliance, security, and better organization.
+This new recommendation in the Power Platform admin center helps administrators move apps from the default environment to designated managed environments. This process ensures compliance, security, and better organization.
 
 > [!NOTE]
 > - This is a preview feature.
@@ -39,7 +39,7 @@ This new recommendation in the Power Platform admin center helps administrators 
 
 - System administrator or tenant-level administrator permissions.
 - Access to the Power Platform admin center.
-- Managed Environments configured as the destination.
+- Managed environments configured as the destination.
 
 ## Move apps
 
@@ -89,7 +89,7 @@ You can move apps by using one of the following methods:
 1.  Loop through the apps and run the **Migrate to Managed Environment** action using:
 
     - **Recommendation name:** Secure high-value apps with premium governance.
-    - **Action name:** Migrates an application to a Managed Environment.
+    - **Action name:** Migrates an application to a managed environment.
     - **API version:** 2022-03-01-preview.
     - **Parameters:** Example to use in a for-each action:
 
@@ -110,6 +110,6 @@ You can move apps by using one of the following methods:
 
 ## Next steps
 
-- Learn more about [Managed Environments](managed-environment-overview.md).
+- Learn more about [managed environments](managed-environment-overview.md).
 - Explore [Environment routing](default-environment-routing.md).
 

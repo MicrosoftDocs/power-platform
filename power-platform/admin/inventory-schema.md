@@ -218,7 +218,7 @@ For more information about environments, see [Environments overview](environment
 | API field path | Data type | Description | Example | Status |
 |---|---|---|---|---|
 | `properties.environmentType` | string | The type of environment: Production, Default, Sandbox, Trial, Developer, or Dataverse for Teams. | `Production` | Generally available |
-| `properties.isManaged` | boolean | Whether the environment is a [Managed Environment](managed-environment-overview.md). | `true` | Generally available |
+| `properties.isManaged` | boolean | Whether the environment is a [managed environment](managed-environment-overview.md). | `true` | Generally available |
 | `properties.environmentGroup` | string | The name of the environment group, if assigned. | `Finance` | Generally available |
 | `properties.environmentGroupId` | string | The identifier of the environment group, if assigned. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.lastModifiedAt` | datetime | The date and time the environment was last modified. | `2026-01-15T10:30:00Z` | Generally available |

@@ -204,11 +204,11 @@
                   href: language-collations.md
                 - name: Change the base currency
                   href: change-base-currency-environment.md
-            - name: Managed Environments
+            - name: Managed environments
               items:
                 - name: Overview
                   href: managed-environment-overview.md
-                - name: Enable Managed Environments
+                - name: Enable managed environments
                   href: managed-environment-enable.md
                 - name: Environment groups and rules
                   items:
@@ -520,7 +520,7 @@
                   href: advanced-connector-policies.md
                 - name: Data policies
                   items:
-                    - name: Data policies for Managed Environments
+                    - name: Data policies for managed environments
                       href: managed-environment-data-policies.md
                     - name: Data policies
                       href: wp-data-loss-prevention.md

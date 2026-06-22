@@ -85,7 +85,7 @@ Learn about the latest changes and new capabilities for Power Platform APIs and 
 | Get Prompts for DSR | API | New endpoint: [Get AI Model Prompts for DSR Export](/rest/api/power-platform/workflowsagent/dsr-compliance/get-prompts) |
 | Delete Prompt for DSR | API | New endpoint: [Delete AI Model Prompt for DSR Compliance](/rest/api/power-platform/workflowsagent/dsr-compliance/delete-prompt) |
 | Query Resources | Bug fixes | Various bug fixes for [Query Resources](/rest/api/power-platform/resourcequery/resource-query/query-resources) |
-| Enable Managed Environment | Bug fixes | Various bug fixes for [Enable Managed Environment](/rest/api/power-platform/environmentmanagement/environment-managed-governance/enable-managed-environment) |
+| Enable managed environment | Bug fixes | Various bug fixes for [Enable managed environment](/rest/api/power-platform/environmentmanagement/environment-managed-governance/enable-managed-environment) |
 | Powerplatform-Management (Python) | SDK | [Monthly Release](https://pypi.org/project/powerplatform-management/2.0.3350.223/) |
 | Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3350.223) |
 | Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
@@ -177,8 +177,8 @@ Learn about the latest changes and new capabilities for Power Platform APIs and 
 
 | Item | Type | Description |
 |------|------|-------------|
-| Enable Managed Environment | API | New endpoint: [Enable Managed Environment (Preview)](/rest/api/power-platform/environmentmanagement/environment-managed-governance/enable-managed-environment) |
-| Disable Managed Environment | API | New endpoint: [Disable Managed Environment (Preview)](/rest/api/power-platform/environmentmanagement/environment-managed-governance/disable-managed-environment) |
+| Enable managed environment | API | New endpoint: [Enable managed environment (Preview)](/rest/api/power-platform/environmentmanagement/environment-managed-governance/enable-managed-environment) |
+| Disable managed environment | API | New endpoint: [Disable managed environment (Preview)](/rest/api/power-platform/environmentmanagement/environment-managed-governance/disable-managed-environment) |
 | List Connectors | API | New endpoint: [List Connectors](/rest/api/power-platform/connectivity/connectors/list-connectors) |
 | Get Connector by ID | API | New endpoint: [Get Connector by ID](/rest/api/power-platform/connectivity/connectors/get-connector-by-id) |
 | Microsoft.PowerPlatform.Management | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3147.171#readme-body-tab) |

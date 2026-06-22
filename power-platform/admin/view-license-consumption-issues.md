@@ -108,10 +108,10 @@ Use the **Download Reports** button near the top of the page to export detailed 
 
 By using these exports, you can find users who are assigned licenses but aren't using them to launch apps.
 
-- **Users requiring licenses in Managed Environments**: See users that launched apps in Managed Environments without an appropriate license. For more information, see [Managed Environment Licensing requirements](managed-environment-licensing.md).
+- **Users requiring licenses in Managed Environments**: See users that launched apps in managed environments without an appropriate license. For more information, see [managed environment Licensing requirements](managed-environment-licensing.md).
 
 > [!NOTE]
-> - The report lists users that have accessed at least one app in any Managed Environment without an appropriate license.
+> - The report lists users that have accessed at least one app in any managed environment without an appropriate license.
 > - The report shows a list of unique users based on their app launch activity in the selected month. The report excludes users who didn't launch an app in the selected month.
 > - If a user was assigned an appropriate license but hasn't launched any app since then, they'll continue to show in the report until they next launch an app.
 > - The report includes details on the specific users, the environments they operate in, and the applications they use.

@@ -31,11 +31,11 @@ The event logs that are used to calculate metrics are available for review and d
 
 - [Tenant-level analytics](../tenant-level-analytics.md) must be turned on to make data available for Monitor experiences.
 - You must be assigned to the [system administrator role of the environment](../manage-high-privileged-admin-roles.md#self-elevate-to-the-system-administrator-role) to view the name of resources that belong to the environment.
-- **Optional**: A [Managed Environment](../managed-environment-overview.md) is required to view Monitor recommendations.
+- **Optional**: A [managed environment](../managed-environment-overview.md) is required to view Monitor recommendations.
 
 The availability of Monitor health metrics, logs, and recommendations in the Power Platform admin center depends on tenant and environment settings.
 
-| Are tenant-level analytics turned on? | Is the environment a Managed Environment? | Are health metrics available? | Are logs available? | Are recommendations available? |
+| Are tenant-level analytics turned on? | Is the environment a managed environment? | Are health metrics available? | Are logs available? | Are recommendations available? |
 |---|---|---|---|---|
 | Yes | Yes| Yes | Yes | Yes |
 | Yes | No | Yes | Yes | No |

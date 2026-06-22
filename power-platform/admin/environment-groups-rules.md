@@ -1,6 +1,6 @@
 ---
 title: Rules for environment groups
-description: Learn how to govern your Managed Environments with rules in bulk.
+description: Learn how to govern your managed environments with rules in bulk.
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 04/07/2026

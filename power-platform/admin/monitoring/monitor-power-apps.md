@@ -107,7 +107,7 @@ Set-AdminPowerAppEnvironmentMakerAnalyticsSettings -EnvironmentName
 
 In addition to the tenant-level analytics setting, the environment-level **Analytics data available to Makers** setting must be turned on. The availability of monitoring health metrics, logs, and recommendations in maker monitoring experiences is based on tenant and environment settings.
 
-| Are tenant-level analytics turned on? | Is analytics data available to makers? | Is the environment a Managed Environment? | Are operational health metrics available? | Are logs available? | Are recommendations available? |
+| Are tenant-level analytics turned on? | Is analytics data available to makers? | Is the environment a managed environment? | Are operational health metrics available? | Are logs available? | Are recommendations available? |
 |---|---|---|---|---|---|
 | Yes | Yes | Yes | Yes | Yes | Yes |
 | Yes | Yes | No | Yes | Yes | No |

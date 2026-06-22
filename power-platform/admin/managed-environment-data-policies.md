@@ -1,6 +1,6 @@
 ---
-title: Data policies for Managed Environments
-description: View the data policies that are in effect in your Managed Environments.
+title: Data policies for managed environments
+description: View the data policies that are in effect in your managed environments.
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 11/20/2025
@@ -21,9 +21,9 @@ search.audienceType:
   - admin
 ---
 
-# Data policies for Managed Environments
+# Data policies for managed environments
 
-With Managed Environments, admins can easily identify all the data policies that are applied to an environment. Data policies define the consumer connectors that data can be shared with. They make sure that data is managed in a uniform manner across your organization. They also prevent important business data from being accidentally published to connectors like social media sites. For more information about data policies, go to [Data loss prevention policies](wp-data-loss-prevention.md).
+With managed environments, admins can easily identify all the data policies that are applied to an environment. Data policies define the consumer connectors that data can be shared with. They make sure that data is managed in a uniform manner across your organization. They also prevent important business data from being accidentally published to connectors like social media sites. For more information about data policies, go to [Data loss prevention policies](wp-data-loss-prevention.md).
 
 ## View a managed environment's data policies
 
@@ -50,8 +50,8 @@ With Managed Environments, admins can easily identify all the data policies that
 
 ### Related content
 
-[Managed Environments overview](managed-environment-overview.md)  <br />
-[Enable Managed Environments](managed-environment-enable.md)  <br />
+[Managed environments overview](managed-environment-overview.md)  <br />
+[Enable managed environments](managed-environment-enable.md)  <br />
 [Usage insights](managed-environment-usage-insights.md)  <br />
 [Limit sharing](managed-environment-sharing-limits.md)  <br />
 [Licensing](managed-environment-licensing.md)  <br />

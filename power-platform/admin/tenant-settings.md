@@ -59,7 +59,7 @@ The following settings apply to all environments within your tenant.
 |[Copilot help assistance in Power Automate via Bing](/power-automate/desktop-flows/copilot-in-power-automate-for-desktop)| Allows the Copilot-enhanced help feature within Power Automate to enhance answers on product documentation through Bing Search.|
 |[Copilot in Power Apps (preview)](/power-apps/maker/canvas-apps/ai-overview)|Enables Copilot preview features for users who make apps. |
 |[Copilot Studio authors (preview)](/microsoft-copilot-studio/billing-licensing)| Enables the selection of a security group that might use Copilot Studio.|
-|[Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy)*   | Enables the Customer Lockbox policy for Managed Environments.        |
+|[Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy)*   | Enables the Customer Lockbox policy for managed environments.        |
 |[Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features](../transparency-note-copilot-data-sharing.md) | Enables Microsoft to capture and human review inputs, outputs, telemetry from Dynamics 365 Copilot and Power Platform Copilot AI features to build, improve, and validate Microsoft's machine leaning models, features, services, and related systems. <br/> By default, this setting is disabled. |
 |[Desktop flow actions in data policies](/power-automate/prevent-data-loss#data-loss-prevention-for-desktop-flows-preview)| When enabled, desktop flow action groups are visible when creating or editing data policies.|
 |[Developer environment assignments](control-environment-creation.md)   | Controls who can create and manage developer environments.  |
@@ -75,8 +75,8 @@ The following settings apply to all environments within your tenant.
 |Tenant capacity summary view | Controls who can view the tenant capacity summary page: either only tenant admins or both tenant and environment admins. |
 |Tenant licensing summary view| Controls who can view the tenant licensing summary.|
 |[Trial environment assignments](control-environment-creation.md)       | Controls who can create and manage trial environments.|
-|[Weekly digest](managed-environment-usage-insights.md)*     | Manages more recipients for the weekly digest email for Managed Environments.  |
+|[Weekly digest](managed-environment-usage-insights.md)*     | Manages more recipients for the weekly digest email for managed environments.  |
 
-*This setting applies only to Managed Environments.
+*This setting applies only to managed environments.
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

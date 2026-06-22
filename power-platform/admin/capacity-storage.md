@@ -248,7 +248,7 @@ In the **Top environments consuming storage** tile, select **See all environment
 - Overage status if capacity is allocated to the environment
 - Whether capacity is preallocated to the environment
 - Environment type
-- Managed Environment status
+- Managed environment status
 - Pay-as-you-go plan linkage status
 - Ability to draw capacity from available tenant pool
 - Database, file, and log consumption

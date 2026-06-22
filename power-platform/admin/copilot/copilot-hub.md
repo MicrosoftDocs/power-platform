@@ -39,7 +39,7 @@ The **Settings** page displays settings grouped by product. Some settings span a
 
 ### Control who can use AI features in model-driven apps
 
-Admins can define who within an environment can use Copilot capabilities in model-driven apps&mdash;either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments activated for [Managed Environments](../managed-environment-enable.md), with a subset of Copilot features adhering to it. Review the following table to learn which capabilities adhere to this configuration.
+Admins can define who within an environment can use Copilot capabilities in model-driven apps&mdash;either by explicitly allowing specific users or allowing all users except a defined exclusion list. This capability is currently in preview and is only for environments activated for [managed environments](../managed-environment-enable.md), with a subset of Copilot features adhering to it. Review the following table to learn which capabilities adhere to this configuration.
 
 | Product | Feature |
 |---------|---------|

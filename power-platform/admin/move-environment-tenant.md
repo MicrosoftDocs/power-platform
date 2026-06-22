@@ -238,7 +238,7 @@ After the move operation completes:
 - The source tenant keeps the environment but without the Dataverse organization.
 - The process creates a new environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
 - Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
-- Managed Environment needs to be re-enabled in destination tenant. The destination tenant should have the required license to enable the Managed Environment.
+- The managed environment needs to be re-enabled in destination tenant. The destination tenant should have the required license to enable the managed environment.
 - Environment settings that aren't copied over must be updated by customers post-move.
 - The generative AI feature is at the environment-level and has default values.
 
@@ -415,7 +415,7 @@ After moving environments to another tenant:
 -	The source environment doesn't include Dataverse.
 -	Users not in the mapping file aren't migrated or mapped after migration.
 - Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
-- A Managed Environment needs to be re-enabled in the destination tenant. The destination tenant should have the required license to enable the Managed Environment.
+- A managed environment needs to be re-enabled in the destination tenant. The destination tenant should have the required license to enable the managed environment.
 - Environment settings that aren't copied over must be updated by customers post-move.
 - The generative AI feature is at the environment-level and has default values.
 

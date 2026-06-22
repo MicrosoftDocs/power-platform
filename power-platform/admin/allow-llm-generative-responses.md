@@ -49,7 +49,7 @@ To enable external models, complete these steps:
 If your environment is part of an [environment group](environment-groups.md), you can govern use of external models through the [External models environment group rule](environment-groups-rules.md).
 
 > [!Note]
-> If your environment is part of an [environment group](environment-groups.md), it must be a Managed Environment.
+> If your environment is part of an [environment group](environment-groups.md), it must be a managed environment.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
 1. In the navigation pane, select **Manage**.

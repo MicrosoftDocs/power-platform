@@ -31,7 +31,7 @@ Administering the catalog includes the following tasks:
 - [Edit user access](#edit-user-access)
 
 > [!IMPORTANT]
-> You need a Managed Environment in order to submit items to the catalog. You can however install catalog items from any environment. More information: [Managed Environments overview](managed-environment-overview.md)
+> You need a managed environment in order to submit items to the catalog. You can however install catalog items from any environment. More information: [Managed environments overview](managed-environment-overview.md)
 
 ## Access controls
 

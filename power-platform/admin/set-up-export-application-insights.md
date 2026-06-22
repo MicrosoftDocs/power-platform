@@ -31,7 +31,7 @@ Learn how to set up data export from the Power Platform admin center to Applicat
    - The Application Insights integration requires local authentication to be used for proper operation.
 
    > [!NOTE]
-   > This feature is turned on and supported for Managed Environments only.
+   > This feature is turned on and supported for managed environments only.
 
 - To configure telemetry export, you need administrative privileges. This includes being assigned to the Power Platform administrator or Dynamics 365 administrator role at the tenant-level in Microsoft Entra ID, **and** by being assigned to the environment administrator or system administrator role within the Dataverse environment. Without these permissions, the integration doesn't work.
   

@@ -32,7 +32,7 @@ By using Azure virtual network support for Power Platform, you can integrate Pow
 ## Prerequisites
 
 > [!NOTE]
-> To enable virtual network support for Power Platform, environments must be [Managed Environments](managed-environment-overview.md).
+> To enable virtual network support for Power Platform, environments must be [managed environments](managed-environment-overview.md).
 
 - **Review your Power Platform resources**: Check your apps, flows, and plug-in code to ensure they connect over your virtual network. They shouldn't call endpoints over the public internet. If your components need to connect to public endpoints, ensure your firewall or network configuration allows such calls. Learn more in [Considerations to enable virtual network support for Power Platform environment](vnet-support-overview.md#considerations-to-enable-virtual-network-support-for-power-platform-environment) and in the [Frequently asked questions](vnet-support-overview.md#frequently-asked-questions).
 

@@ -125,44 +125,44 @@ A Power Platform CoE manages Power Platform administration, nurturing, and opera
 
 ## How to use the CoE Starter Kit alongside Power Platform admin center
 
-Managed Environments and tenant-level analytics assist with administrative tasks, such as managing Power Platform at scale and providing insights into usage and inventory.
+Managed environments and tenant-level analytics assist with administrative tasks, such as managing Power Platform at scale and providing insights into usage and inventory.
 
-### Managed Environments for Power Platform
+### Managed environments for Power Platform
 
-[Managed Environments](/power-platform/admin/managed-environment-overview) is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights. The capabilities are available out of the box from within the Power Platform admin center. Managed Environment capabilities can be used standalone, or alongside capabilities of the CoE Starter Kit to administer and govern your Power Platform adoption.
+[Managed environments](/power-platform/admin/managed-environment-overview) are a suite of capabilities that allow admins to manage Power Platform at scale with more control, less effort, and more insights. The capabilities are available out of the box from within the Power Platform admin center. Managed environment capabilities can be used standalone, or alongside capabilities of the CoE Starter Kit to administer and govern your Power Platform adoption.
 
-The CoE Starter Kit encourages experimentation and innovation with an open-source, low-code model influenced by customer feedback. Managed Environments will replace certain features in the CoE Starter Kit eventually. As the evolution of Managed Environments continues, new experiments and innovations will be added to the CoE Starter Kit to gauge interest.
+The CoE Starter Kit encourages experimentation and innovation with an open-source, low-code model influenced by customer feedback. Managed environments will replace certain features in the CoE Starter Kit eventually. As the evolution of managed environments continues, new experiments and innovations will be added to the CoE Starter Kit to gauge interest.
 
-Start with the out-of-the-box capabilities in Power Platform admin center and Managed Environments. These capabilities are robust and fully supported. If you need more capabilities to govern your tenant, check if features in the CoE Starter Kit complement what you get out of the box.
+Start with the out-of-the-box capabilities in Power Platform admin center and managed environments. These capabilities are robust and fully supported. If you need more capabilities to govern your tenant, check if features in the CoE Starter Kit complement what you get out of the box.
 
 #### Individual features
 
-Consider the individual features of Managed Environments to see how they compare to what's in the CoE Starter Kit.
+Consider the individual features of managed environments to see how they compare to what's in the CoE Starter Kit.
 
 - **[Maker welcome content](/power-platform/admin/welcome-content)**
 
-  In Managed Environments, admins can provide customized welcome content to help their makers get started with Power Apps. When welcome content is enabled, makers signing in to Power Apps are greeted with customized getting-started information.
+  In managed environments, admins can provide customized welcome content to help their makers get started with Power Apps. When welcome content is enabled, makers signing in to Power Apps are greeted with customized getting-started information.
   
-  A similar concept in the CoE Starter Kit is the [welcome email](core-components.md), which is sent to new makers only after they create an app, flow, or agent for the first time. Makers may get necessary information only after they create their first resource, whereas the Managed Environments feature shows them information when they sign in to Power Apps.
+  A similar concept in the CoE Starter Kit is the [welcome email](core-components.md), which is sent to new makers only after they create an app, flow, or agent for the first time. Makers may get necessary information only after they create their first resource, whereas the managed environments feature shows them information when they sign in to Power Apps.
 
 - **[Weekly digest](/power-platform/admin/managed-environment-weekly-digests)**
 
   The CoE Starter Kit doesn't have a weekly digest for admins. Instead, admins self-serve information through the [Power BI dashboard](/power-platform/guidance/coe/power-bi). Inactive apps and flows are highlighted in the Weekly digest email. In the CoE Starter Kit, a similar goal is achieved with the [inactivity notification process](governance-components.md#inactivity-processes), which notifies makers of their inactive resources and asks for approval to delete them.
   
-  One main goal of Managed Environments and the CoE Starter Kit is to provide insights that help admins take action. The CoE kit offers more capabilities that reduce the admin's burden of managing inactive resources. For example, it directs resource management to the maker, making the owner responsible for their own resources.
+  One main goal of managed environments and the CoE Starter Kit is to provide insights that help admins take action. The CoE kit offers more capabilities that reduce the admin's burden of managing inactive resources. For example, it directs resource management to the maker, making the owner responsible for their own resources.
 
 - **[Limit sharing](/power-platform/admin/managed-environment-sharing-limits)**
 
-  The CoE Starter Kit doesn't limit sharing on resources. Proactive governance is only possible through Managed Environments.
+  The CoE Starter Kit doesn't limit sharing on resources. Proactive governance is only possible through managed environments.
 
   The [Compliance process](governance-components.md) in the CoE Starter Kit offers a reactive way to identify highly shared resources. This process identifies highly shared resources and asks makers to provide additional information, enabling admins to make better support solutions. For example, admins might choose to move resources to a dedicated environment. With the Power BI dashboard, admins can also identify highly shared resources.
 
 - **[Data policies](/power-platform/admin/managed-environment-data-policies)**
 
-  Managed Environments allows you to see what data policies apply to the environment. The [DLP Editor](core-components.md#dlp-impact-analysis), part of the CoE Starter Kit, also shows you data policies that are applied to an environment, and the impact of data policies on existing apps and flows in that environment.
+  Managed environments allow you to see what data policies apply to the environment. The [DLP Editor](core-components.md#dlp-impact-analysis), part of the CoE Starter Kit, also shows you data policies that are applied to an environment, and the impact of data policies on existing apps and flows in that environment.
 
 > [!NOTE]
-> The CoE Starter Kit offers capabilities that aren't yet met with Managed Environments, such as bulk updating permissions, cleaning up abandoned resources, surveying makers, and calculating the ROI of ideas.
+> The CoE Starter Kit offers capabilities that aren't yet met with managed environments, such as bulk updating permissions, cleaning up abandoned resources, surveying makers, and calculating the ROI of ideas.
 
 ### Tenant-level analytics
 

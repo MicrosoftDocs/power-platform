@@ -107,7 +107,7 @@ To simplify the key management tasks, the tasks are broken down into three main 
 
 ## Licensing requirements for customer-managed key
 
-Customer-managed key policy is only enforced on environments that are activated for Managed Environments. Managed Environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [Managed Environment licensing](managed-environment-licensing.md), with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
+Customer-managed key policy is only enforced on environments that are activated for managed environments. Managed environments are included as an entitlement in standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses that give premium usage rights. Learn more about [managed environment licensing](managed-environment-licensing.md), with the [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 
 In addition, access to using customer-managed key for Microsoft Power Platform and Dynamics 365 requires users in the environments where the encryption key policy is enforced to have one of these subscriptions:
 
@@ -274,8 +274,8 @@ You can either create a [new key vault and establish a private link connection](
 1. Create a Power Platform enterprise policy. More information: [Create enterprise policy](#create-enterprise-policy)
 1. Grant enterprise policy permissions to access the key vault. More information: [Grant enterprise policy permissions to access key vault](#grant-enterprise-policy-permissions-to-access-key-vault)
 1. Grant Power Platform and Dynamics 365 administrators permission to read the enterprise policy. More information: [Grant the Power Platform admin privilege to read enterprise policy](#grant-the-power-platform-admin-privilege-to-read-enterprise-policy)
-1. Power Platform admin center admin selects the environment to encrypt and enable Managed environment. More information: [Enable Managed environment to be added to the enterprise policy](#enable-managed-environment-to-be-added-to-the-enterprise-policy)
-1. Power Platform admin center admin adds the Managed environment to the enterprise policy. More information: [Add an environment to the enterprise policy to encrypt data](#add-an-environment-to-the-enterprise-policy-to-encrypt-data)
+1. Power Platform admin center admin selects the environment to encrypt and enable managed environment. More information: [Enable managed environment to be added to the enterprise policy](#enable-managed-environment-to-be-added-to-the-enterprise-policy)
+1. Power Platform admin center admin adds the managed environment to the enterprise policy. More information: [Add an environment to the enterprise policy to encrypt data](#add-an-environment-to-the-enterprise-policy-to-encrypt-data)
 
 ### Enable the Power Platform enterprise policies service for your Azure subscription
 
@@ -420,7 +420,7 @@ To manage the environment's encryption, you need the following permission:
 
 The key vault admin notifies the Power Platform admin that an encryption key and an enterprise policy were created and provides the enterprise policy to the Power Platform admin. To enable the customer-managed key, the Power Platform admin assigns their environments to the enterprise policy. Once the environment is assigned and saved, Dataverse initiates the encryption process to set all the environment data, and encrypt it with the customer-managed key.
 
-### Enable Managed environment to be added to the enterprise policy
+### Enable managed environment to be added to the enterprise policy
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com).
 1. In the navigation pane, select **Manage**.
@@ -451,7 +451,7 @@ The key vault admin notifies the Power Platform admin that an encryption key and
 > - The operation might not complete and if it fails, your data continues to be encrypted with Microsoft-managed key. You can rerun the **Add environments** operation again.
 
 > [!NOTE]
-> You can only add environments that are enabled as Managed Environments. Trial and Teams environment types can't be added to the enterprise policy.
+> You can only add environments that are enabled as managed environments. Trial and Teams environment types can't be added to the enterprise policy.
 
 ### Remove environments from policy to return to Microsoft-managed key
 

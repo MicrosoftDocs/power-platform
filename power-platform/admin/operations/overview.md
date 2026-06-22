@@ -51,12 +51,12 @@ Empower teams to quickly detect, triage, and respond to issues but also minimize
 
 Seamlessly protect and recover data through a range of flexible backup and retention capabilities.
 
-- **Extended backup retention**: Backup retention for production Managed Environments can be extended from seven to 28 days. Learn more in [Back up and restore environments](../backup-restore-environments.md).
+- **Extended backup retention**: Backup retention for production managed environments can be extended from seven to 28 days. Learn more in [Back up and restore environments](../backup-restore-environments.md).
 - **Recycle bin for table records**: Users can restore records that were deleted from tables in various deletion scenarios during a configurable time frame. The recycle bin feature ensures that data recovery is available when it's needed. Learn more in [Restore deleted Microsoft Dataverse table records](/power-platform/admin/restore-deleted-table-records).
 - **Long-term retention**: Use long-term retention policies on tables to retain parent data and associated child data as a set for compliance and auditing purposes. This data includes activities, emails, and attachments. Learn more in [Enable a table for long term retention](/power-apps/maker/data-platform/data-retention-set#enable-a-table-for-long-term-retention).
 - **Self-serve disaster recovery**: Self-serve disaster recovery is now available in the early preview. Admin can use this feature to conduct a disaster recovery drill or perform real-time "emergency response" failover and failback. To learn more and participate in the early preview, fill in the [signup form](https://forms.office.com/r/35NJ8vriFf).
 
 ## Related information
 
-- [Managed Environments overview](../managed-environment-overview.md)
+- [Managed environments overview](../managed-environment-overview.md)
 - [Security page overview](../security/security-overview.md)

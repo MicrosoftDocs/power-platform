@@ -60,7 +60,7 @@ The graphs visualize:
 - The number of resources per environment
 - The number of environments by type
 - Top environment creators
-- The number of Managed Environments
+- The number of managed environments
 
 The filters allow you to drill down and analyze specific environment types, maker trends, and changes over time.
 

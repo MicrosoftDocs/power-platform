@@ -141,4 +141,4 @@ Regularly review and refine governance practices to ensure they remain effective
 - [Microsoft Power Platform security and governance documentation](../../admin/security.yml)
 - [What's the role of a Power Platform administrator?](../../admin/overview-role-powerapps-admin.md)
 - [Role-based security roles](../../admin/database-security.md)
-- [Managed Environments overview](../../admin/managed-environment-overview.md)
+- [Managed environments overview](../../admin/managed-environment-overview.md)

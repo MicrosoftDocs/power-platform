@@ -33,7 +33,7 @@ You need a Power Platform environment with the necessary permissions to connect 
 
 You need an Azure DevOps subscription and licenses for users who interact with source control. These users need **Basic** access level in the Azure DevOps organization and access to contribute to the project and repository.
 
-Development and target environments must be enabled as Managed Environments.
+Development and target environments must be enabled as managed environments.
 
 ## What other Git providers are supported?
 
@@ -41,7 +41,7 @@ Azure DevOps Git repositories are currently the only Git provider supported. Thi
 
 ## What licenses do I need to use Git integration with Dataverse?
 
-All users within the environment must meet license requirements for [Managed Environments](../../admin/managed-environment-overview.md). Managed Environments is required regardless of environment type.
+All users within the environment must meet license requirements for [managed environments](../../admin/managed-environment-overview.md). Managed environments are required regardless of environment type.
 
 Developers using source code integration also need an Azure DevOps license to gain access to the repository. For more information, go to [Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
 

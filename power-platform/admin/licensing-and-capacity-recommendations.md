@@ -46,11 +46,11 @@ This recommendation lists the number of pending license requests in your tenant.
 - **Refresh Frequency**: Weekly  
 - **Managed environments only**: Yes  
 
-### Users are out of compliance in Managed Environments — Action required
+### Users are out of compliance in managed environments — Action required
 
-This recommendation lists users in Managed Environments that use apps without required licenses. Every user running an app in a Managed Environment must have a Power Apps Premium license or a qualifying license that includes premium Power Apps usage rights. Starting June 2026, users without appropriate licenses receive in-app compliance notifications. For more information, see [Managed Environments licensing compliance FAQ](managed-environment-licensing.md#faq).
+This recommendation lists users in managed environments that use apps without required licenses. Every user running an app in a managed environment must have a Power Apps Premium license or a qualifying license that includes premium Power Apps usage rights. Starting June 2026, users without appropriate licenses receive in-app compliance notifications. For more information, see [managed environments licensing compliance FAQ](managed-environment-licensing.md#faq).
 
-The list shows usage in the last 90 days calculated from the refresh date shown in the recommendation. The recommendation provides the following actions you can take as an admin to review and assign licenses to users in Managed Environments:
+The list shows usage in the last 90 days calculated from the refresh date shown in the recommendation. The recommendation provides the following actions you can take as an admin to review and assign licenses to users in managed environments:
 
 1. **Download License Report** - This option takes you directly to the **Download Report** panel in the Power Apps Licensing, with the report **Users requiring licenses in Managed Environments** selected. You should download and review this detailed report that provides the app, environment, and license information for users in managed environments without required licenses.
 
