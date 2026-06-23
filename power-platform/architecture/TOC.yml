@@ -159,6 +159,8 @@
           href: solution-ideas/agent-donor-management.md
         - name: Learning management app using Microsoft Learn content
           href: solution-ideas/app-learning-management.md
+        - name: Manage healthcare stakeholder engagement with Power Platform
+          href: solution-ideas/healthcare-engagement.md
     - name: Power Platform products
       items:
         - name: Power Apps

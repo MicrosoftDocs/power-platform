@@ -5,7 +5,7 @@ author: manuelap-msft
 #customer intent: As a business decision maker, I want to explore solution ideas for Power Platform and Copilot Studio so that I can address various business needs and gain inspiration.
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 02/04/2026
+ms.date: 06/22/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -37,3 +37,4 @@ Solution ideas are practical examples that showcase the versatility and power of
 | [**​​Streamline customer service with a customer support assistance agent**​](customer-support-agent.md) | Streamline customer support by building a Microsoft Copilot Studio conversational agent that integrates Dynamics 365, Dataverse, and SharePoint. |
 | [**​Improve the new hire experience with a smart onboarding agent**](onboarding-agent.md) | Create a conversational onboarding agent in Copilot Studio that automates the new hire onboarding process. |
 | [**AI-enabled donor management solution**](agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
+| [**Manage healthcare stakeholder engagement with Power Platform**](healthcare-engagement.md) | Learn how to build a centralized platform for managing Healthcare Professional (HCP), Healthcare Organization (HCO), and patient engagements and events using Power Platform. |
