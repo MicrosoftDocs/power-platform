@@ -133,34 +133,46 @@
       items:
         - name: Overview
           href: solution-ideas/index.md
-        - name: Healthcare Patient Support Agent
-          href: solution-ideas/agent-healthcare-patient-support.md
-        - name: Property rental reservation portal
-          href: solution-ideas/agent-rental-portal.md
-        - name: Revolutionize vehicle inspections with EVVIE
-          href: solution-ideas/app-evvie.md
-        - name: Custom contact center solution with Copilot Studio
-          href: solution-ideas/agent-custom-contact-center.md
-        - name: Travel concierge using generative AI with Copilot Studio
-          href: solution-ideas/agent-travel-customer.md
-        - name: Ticket management system with Copilot Studio agents
-          href: solution-ideas/agent-ticket-and-refund.md
-        - name: Automate bug reporting with Auto Triage AI Agent
-          href: solution-ideas/auto-ai-triage.md
-        - name: Intelligent cardiac triage and scheduling
-          href: solution-ideas/cardio-triage-agent.md
-        - name: ​​Build anomaly detection with Copilot Studio and Fabric​
-          href: solution-ideas/agent-anomaly-detection.md
-        - name: ​​Streamline customer service with a customer support assistance agent​
-          href: solution-ideas/customer-support-agent.md
-        - name: ​Improve the new hire experience with an onboarding agent
-          href: solution-ideas/onboarding-agent.md
-        - name: AI-enabled donor management solution
-          href: solution-ideas/agent-donor-management.md
-        - name: Learning management app using Microsoft Learn content
-          href: solution-ideas/app-learning-management.md
-        - name: Manage healthcare stakeholder engagement with Power Platform
-          href: solution-ideas/healthcare-engagement.md
+        - name: Healthcare
+          items:
+            - name: Healthcare Patient Support Agent
+              href: solution-ideas/agent-healthcare-patient-support.md
+            - name: Intelligent cardiac triage and scheduling
+              href: solution-ideas/cardio-triage-agent.md
+            - name: Manage healthcare stakeholder engagement
+              href: solution-ideas/healthcare-engagement.md
+        - name: Customer service
+          items:
+            - name: Custom contact center solution with Copilot Studio
+              href: solution-ideas/agent-custom-contact-center.md
+            - name: Travel concierge using generative AI with Copilot Studio
+              href: solution-ideas/agent-travel-customer.md
+            - name: Ticket management system with Copilot Studio agents
+              href: solution-ideas/agent-ticket-and-refund.md
+            - name: Streamline customer service with a customer support assistance agent
+              href: solution-ideas/customer-support-agent.md
+        - name: Operations
+          items:
+            - name: Property rental reservation portal
+              href: solution-ideas/agent-rental-portal.md
+            - name: Revolutionize vehicle inspections with EVVIE
+              href: solution-ideas/app-evvie.md
+        - name: Finance
+          items:
+            - name: Build anomaly detection with Copilot Studio and Fabric
+              href: solution-ideas/agent-anomaly-detection.md
+        - name: Information technology
+          items:
+            - name: Automate bug reporting with Auto Triage AI Agent
+              href: solution-ideas/auto-ai-triage.md
+        - name: Human resources and nonprofit
+          items:
+            - name: Improve the new hire experience with an onboarding agent
+              href: solution-ideas/onboarding-agent.md
+            - name: AI-enabled donor management solution
+              href: solution-ideas/agent-donor-management.md
+            - name: Learning management app using Microsoft Learn content
+              href: solution-ideas/app-learning-management.md
     - name: Power Platform products
       items:
         - name: Power Apps
