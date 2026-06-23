@@ -5,8 +5,9 @@ author: swatimadhukargit
 ms.subservice: alm
 ms.author: swatim
 ms.custom: ""
-ms.date: 02/23/2026
+ms.date: 06/23/2026
 ms.reviewer: "matp"
+ms.contributors: yehong
 ms.topic: "article"
 search.audienceType: 
   - maker
@@ -52,7 +53,7 @@ If you must use one of the below apps or features in an environment where block 
 |Field Service Mobile     |  Install of geofencing solution doesn't work. <br />Update doesn't work when relationships created during initial install are deleted.        |
 |Resource Scheduling      | Enable of scheduling table and selection option to auto create relationships doesn't work.        |
 |Sales Accelerator     |  Enabling Sales Accelerator or modifying settings, enabling leads data hygiene, creating or editing sequences, configuring work assignment, creating or editing segments, don't work.        |
-|Dataflows      | Creation of a new dataflow, republish an existing dataflow, change refresh settings, change incremental refresh, and importing dataflows don't work.          |
+|Dataflows      | Creation of a new dataflow, refresh or republish an existing dataflow, change refresh settings, change incremental refresh, and importing dataflows don't work.          |
 |Dynamics 365 Customer Insights - Journeys (real-time journeys)  |  Journeys can't be created and published.  <br /> Engagement assets such as triggers can't be created and published.  <br />Channel assets such as emails, forms, SMS, and push notifications can't be created and published.  |
 | Omnichannel  | Install or upgrade don't work.      |
 |Service Level Agreement (SLA)  | Activation, deactivation, and editing of service level agreement doesn't work.|
