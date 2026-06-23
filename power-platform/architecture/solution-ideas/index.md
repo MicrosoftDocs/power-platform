@@ -5,7 +5,7 @@ author: manuelap-msft
 #customer intent: As a business decision maker, I want to explore solution ideas for Power Platform and Copilot Studio so that I can address various business needs and gain inspiration.
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 02/04/2026
+ms.date: 06/23/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -23,17 +23,51 @@ ms.custom:
 
 Solution ideas are practical examples that showcase the versatility and power of Power Platform in addressing various business needs. These ideas can serve as inspiration and guidance for creating effective solutions that are tailored to your organization's specific needs.
 
+Browse solution ideas categorized by industry or use case. Each solution idea includes an architecture diagram, key components, scenario details, and design considerations. Most also include a step-by-step workflow.
+
+> [!TIP]
+> Solution ideas are listed by product under the "Power Platform products" node in the table of contents.
+
+## Healthcare
+
 | Title | Description |
 | --- | --- |
-| [**Healthcare Patient Support Agent**](agent-healthcare-patient-support.md) | Streamlines patient interactions and reduces administrative burdens for healthcare providers. |
-| [**Property rental portal with AI-driven search and payment processing**](agent-rental-portal.md) | Integrates various components to provide a robust and user-friendly experience for both users and administrators, from browsing and reserving listings to managing payments and generating reports. |
-| [**Revolutionize vehicle inspections with EVVIE**](app-evvie.md) | Using generative AI and Power Platform, EVVIE revolutionizes the vehicle inspection process, saving valuable time and enhancing accuracy. |
-| [**Custom contact center solution with Copilot Studio agent**](agent-custom-contact-center.md) | Enhance customer service efficiency through integrated platforms and technologies. |
-| [**Travel concierge using generative AI with Copilot Studio**](agent-travel-customer.md) | Employ AI-driven solutions to enhance customer interactions and streamline information access. |
-| [**Ticket management system with Copilot Studio agents**](agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
-| [**Automate software bug reporting process with Auto Triage AI Agent**](auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
-| [**Intelligent cardiac triage and scheduling with Power Platform**](cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
-| [**​Build anomaly detection with Copilot Studio and Fabric​**](agent-anomaly-detection.md) | Automate fraud detection by identifying duplicate invoices, suspicious vendor activity, and policy violations, using Microsoft Copilot Studio and Fabric. |
-| [**​​Streamline customer service with a customer support assistance agent**​](customer-support-agent.md) | Streamline customer support by building a Microsoft Copilot Studio conversational agent that integrates Dynamics 365, Dataverse, and SharePoint. |
-| [**​Improve the new hire experience with a smart onboarding agent**](onboarding-agent.md) | Create a conversational onboarding agent in Copilot Studio that automates the new hire onboarding process. |
-| [**AI-enabled donor management solution**](agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
+| **[Healthcare Patient Support Agent](agent-healthcare-patient-support.md)** | Streamlines patient interactions and reduces administrative burdens for healthcare providers. |
+| **[Intelligent cardiac triage and scheduling with Power Platform](cardio-triage-agent.md)** | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
+| **[Manage healthcare stakeholder engagement with Power Platform](healthcare-engagement.md)** | Learn how to build a centralized platform for managing Healthcare Professional (HCP), Healthcare Organization (HCO), and patient engagements and events. |
+
+## Customer service
+
+| Title | Description |
+| --- | --- |
+| **[Custom contact center solution with Copilot Studio agent](agent-custom-contact-center.md)** | Enhance customer service efficiency through integrated platforms and technologies. |
+| **[Travel concierge using generative AI with Copilot Studio](agent-travel-customer.md)** | Employ AI-driven solutions to enhance customer interactions and streamline information access. |
+| **[Ticket management system with Copilot Studio agents](agent-ticket-and-refund.md)** | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
+| **[Streamline customer service with a customer support assistance agent](customer-support-agent.md)** | Streamline customer support by building a Microsoft Copilot Studio conversational agent that integrates Dynamics 365, Dataverse, and SharePoint. |
+
+## Operations
+
+| Title | Description |
+| --- | --- |
+| **[Property rental portal with AI-driven search and payment processing](agent-rental-portal.md)** | Integrates various components to provide a robust and user-friendly experience for both users and administrators, from browsing and reserving listings to managing payments and generating reports. |
+| **[Revolutionize vehicle inspections with EVVIE](app-evvie.md)** | Using generative AI and Power Platform, EVVIE revolutionizes the vehicle inspection process, saving valuable time and enhancing accuracy. |
+
+## Finance
+
+| Title | Description |
+| --- | --- |
+| **[Build anomaly detection with Copilot Studio and Fabric](agent-anomaly-detection.md)** | Automate fraud detection by identifying duplicate invoices, suspicious vendor activity, and policy violations, using Microsoft Copilot Studio and Fabric. |
+
+## Information technology
+
+| Title | Description |
+| --- | --- |
+| **[Automate software bug reporting process with Auto Triage AI Agent](auto-ai-triage.md)** | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
+
+## Human resources and nonprofit
+
+| Title | Description |
+| --- | --- |
+| **[Improve the new hire experience with a smart onboarding agent](onboarding-agent.md)** | Create a conversational onboarding agent in Copilot Studio that automates the new hire onboarding process. |
+| **[AI-enabled donor management solution](agent-donor-management.md)** | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
+| **[Learning management app using Microsoft Learn content](app-learning-management.md)** | Learn how to design a learning management solution using Microsoft Power Platform and Microsoft Learn content to enhance trainer and learner experiences. |
