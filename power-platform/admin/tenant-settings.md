@@ -3,7 +3,7 @@ title: Tenant settings
 description: Review and configure tenant-level settings linked from this page.
 author: amiyapatr-zz
 ms.topic: overview
-ms.date: 11/14/2025
+ms.date: 06/23/2026
 ms.update-cycle: 180-days
 ms.author: ampatra
 ms.reviewer: sericks
@@ -15,6 +15,7 @@ contributors:
 ms.collection: 
   - bap-ai-copilot
 ms.contributors:
+  - cwanja-msft
   - abhijp
   - sericks
   - syalandur    
@@ -58,7 +59,7 @@ The following settings apply to all environments within your tenant.
 | Catalog Assignments  | Controls who can create and manage assignments.     |
 |[Copilot help assistance in Power Automate via Bing](/power-automate/desktop-flows/copilot-in-power-automate-for-desktop)| Allows the Copilot-enhanced help feature within Power Automate to enhance answers on product documentation through Bing Search.|
 |[Copilot in Power Apps (preview)](/power-apps/maker/canvas-apps/ai-overview)|Enables Copilot preview features for users who make apps. |
-|[Copilot Studio authors (preview)](/microsoft-copilot-studio/billing-licensing)| Enables the selection of a security group that might use Copilot Studio.|
+|[Copilot Studio authors](/microsoft-copilot-studio/billing-licensing)| Enables the selection of a security group that might use Copilot Studio.|
 |[Customer Lockbox](about-lockbox.md#enable-the-lockbox-policy)*   | Enables the Customer Lockbox policy for managed environments.        |
 |[Data sharing for Dynamics 365 Copilot and Power Platform Copilot AI Features](../transparency-note-copilot-data-sharing.md) | Enables Microsoft to capture and human review inputs, outputs, telemetry from Dynamics 365 Copilot and Power Platform Copilot AI features to build, improve, and validate Microsoft's machine leaning models, features, services, and related systems. <br/> By default, this setting is disabled. |
 |[Desktop flow actions in data policies](/power-automate/prevent-data-loss#data-loss-prevention-for-desktop-flows-preview)| When enabled, desktop flow action groups are visible when creating or editing data policies.|
