@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 06/11/2026
+ms.date: 06/23/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -40,6 +40,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 | --- | --- |
 | **[Analyze and automate business data with Dataverse SDK for Python](dataverse-sdk-for-python.md)** | Learn how the Dataverse SDK for Python empowers developers and data scientists to analyze, automate, and innovate with enterprise-grade data. |
 | **[Synchronize data across Dataverse environments using Power Platform](sync-dataverse-data.md)** | Learn how to manage master data across two Dataverse environments using Power Automate cloud flows and Power Platform dataflows. |
+| **[Integrate Dataverse with enterprise data in Microsoft Fabric using a medallion architecture](enterprise-data-fabric-dataverse.md)** | Learn how to integrate Dataverse with enterprise data in Microsoft Fabric to build a governed analytics platform using a bronze, silver, gold medallion approach. |
 | **[Use complex relationships with Microsoft Dataverse](complex-relationships-dataverse.md)** | Learn how to model complex data relationships in Microsoft Dataverse to design effective business applications. |
 | **[Use Dataverse background operations](dataverse-background-operations.md)** | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 

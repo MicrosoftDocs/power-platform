@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 06/22/2026
+ms.date: 06/23/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -27,6 +27,7 @@ New in [Solution ideas](solution-ideas/index.md):
 New in [Reference architectures](reference-architectures/index.md):
 
 - [Automate bill copy requests with Power Platform](reference-architectures/automate-bill-copy-requests.md)
+- [Integrate Dataverse with enterprise data in Microsoft Fabric using a medallion architecture](reference-architectures/enterprise-data-fabric-dataverse.md)
 
 ## May 2026
 
