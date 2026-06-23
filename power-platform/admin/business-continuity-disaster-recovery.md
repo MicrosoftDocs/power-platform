@@ -2,8 +2,8 @@
 title: Business continuity and disaster recovery
 description: Microsoft provides business continuity and disaster recovery for production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 06/11/2026
-ms.reviewer: sericks
+ms.date: 06/22/2026
+ms.reviewer: ellenwehrle
 ms.topic: concept-article
 ms.subservice: admin
 ms.author: shpradha
@@ -18,6 +18,9 @@ contributors:
 ---
 
 # Business continuity and disaster recovery
+
+> [!NOTE]
+> As of June 22, 2026, Self-Service Disaster Recovery (SSDR) is also available for Finance & Operations (F&O) applications. SSDR enables organizations to maintain an asynchronous secondary copy of their production environment in a paired Azure region and perform self-service failover, failback, and disaster recovery testing.
 
 Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, make sure the plan lists stakeholders, processes, and specific steps.
 
@@ -118,7 +121,7 @@ To check data replication latency at any time, select **Disaster Recovery**, and
 
 ## Recovery point and recovery time objectives with business continuity and disaster recovery
 
-Power Platform and Dataverse are designed with high availability built into every region. Within a region, the platform targets approximately near zero RPO (recovery point objective) and a recovery time of under five minutes across availability zones and data centers within a region. For cross-region resiliency, Microsoft provides self-service disaster recovery, which gives customers full visibility and control over the failover process. In this model, typical replication lag is under 15 minutes (often under five minutes), and the platform is designed to complete failover within minutes once initiated. Dynamics 365 uses the same Azure SQL Database business continuity capabilities described in the [Business continuity in Azure SQL Database](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview?view=azuresql) public documentation.
+Power Platform and Dataverse are designed with high availability built into every region. Within a region, the platform targets approximately near zero RPO (recovery point objective) and a recovery time of under five minutes across availability zones and data centers within a region. For cross-region resiliency, Microsoft provides self-service disaster recovery, which gives customers full visibility and control over the failover process. In this model, typical replication lag is under 15 minutes (often under five minutes), and the platform is designed to complete failover within minutes once initiated. Dynamics 365 uses the same Azure SQL Database business continuity capabilities described in the [Business continuity in Azure SQL Database](/azure/azure-sql/database/business-continuity-high-availability-disaster-recover-hadr-overview) public documentation.
 
 Because customers retain control of when and whether to trigger a cross-region failover, Microsoft doesn't publish a  cross-region RTO commitment. Customers can monitor real-time replication lag directly in the Power Platform admin center to inform their own recovery decisions. It's important to note that when Power Platform solutions connect to external systems&mdash;such as SQL Server, REST APIs, or other third-party services&mdash;the RPO of those integrations are governed by the availability and recovery capabilities of the respective target systems, and fall outside the scope of Power Platform's resiliency commitments. 
 
@@ -254,5 +257,4 @@ Commerce Scale Units (CSU) failover is not currently supported as part of self-s
 - Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
 - Connectors might have recovery problems when dependent on external systems, like SharePoint, SQL server, or third-party applications.
 - For Dynamics 365 Sales, analytics, reporting, and functions dependent on automation, such as sales forecasting, are unavailable.
-- Finance and operations products are supported in preview.
 - AI Builder might see latency impact.

@@ -8,13 +8,14 @@ ms.reviewer: sericks
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 6/4/2025
+ms.date: 6/22/2026
 ms.contributors:
   - paulliew
   - pmantha
   - sericks
   - syalandur
 contributors:
+  - dasussMS
   - paulliew
   - praveenmantha
   - sericks007
@@ -148,15 +149,6 @@ The manager hierarchy is easily created by using the manager relationship on the
   
    :::image type="content" source="../admin/media/hierachy-security-enabled-users.png" alt-text="Screenshot that shows enabled users with assigned positions.":::
 
-## Edit and update multiple levels of records for direct reports
-
-By default, managers can update records for their direct reports and records for individuals who report to their direct reports. Essentailly, you can update records that are three levels deep. You can change the default setting by completing the following steps.
-
- 1. Install the [OrganizationSettingsEditor tool](environment-database-settings.md#install-the-organizationsettingseditor-tool).
- 1. Edit the **HierarchyLevelForHierarchyFeature** setting.
- 2. Enter the number of direct level depth. For example, enter 5.
- 3. Select **Update**.
-
 ## Include or exclude records owned by direct report with the disabled user status
 
 > [!VIDEO 3d49a8e0-9ab5-43be-bc86-4ee1b59ff855]
@@ -191,8 +183,6 @@ Managers can see their disabled status direct report's records for environments 
   
 - Use hierarchy security models with other, existing security models for more complex scenarios. Avoid creating a large number of business units. Instead, create fewer business units and add hierarchy security.
 
-- Keep the **HierarchyLevelForHierarchyFeature** number to its lowest number of direct level depth as required by your business requirements to allow managers to update their direct reports' records.  
-  
 ### See also
 
  [Security in Microsoft Dataverse](wp-security.md) <br>
