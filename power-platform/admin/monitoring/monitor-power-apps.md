@@ -4,7 +4,7 @@ description: Learn more about the metrics and recommendations for Power Apps.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/08/2026
+ms.date: 06/22/2026
 ms.custom: NewPPAC
 author: arjunmayur
 ms.author: arjunmayur
@@ -113,4 +113,8 @@ In addition to the tenant-level analytics setting, the environment-level **Analy
 | Yes | Yes | No | Yes | Yes | No |
 | Yes | No | Not applicable | No | No | No |
 | No | Not applicable | Not applicable | No | No |No |
+
+### Why can't I see metrics for my canvas apps that are used on mobile devices?
+
+Only web player sessions for canvas apps provide telemetry. Canvas apps used on mobile devices don't send telemetry information to the **Monitor** area of the Power Platform admin center.
 
