@@ -33,7 +33,7 @@ To enable or edit managed environments, you need the Power Platform Administrato
 
 > [!IMPORTANT]
 > - The managed environments property must be the same in the source and destination before you can start to copy and restore environment lifecycle operations.
-> - Dataverse is required to use managed environments in an environment type.
+> - Dataverse is required to use managed environments for Production, Sandbox, or Trial environment types. Developer environments don't require Dataverse to enable managed environment.
 
 ## Enable or edit managed environments in the admin center
 
