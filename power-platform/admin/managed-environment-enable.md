@@ -3,13 +3,14 @@ title: Enable managed environments
 description: Learn how to enable managed environments for Power Platform in the admin center or PowerShell.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 8/28/2025
+ms.date: 06/24/2026
 author: mikferland-msft
 ms.author: miferlan
 ms.contributors: 
   - ellenwehrle
   - syalandur
 contributors:
+  - sidhartg
   - akadrno
   - miferland-msft
   - ellenwehrle
@@ -33,7 +34,7 @@ To enable or edit managed environments, you need the Power Platform Administrato
 
 > [!IMPORTANT]
 > - The managed environments property must be the same in the source and destination before you can start to copy and restore environment lifecycle operations.
-> - Dataverse is required to use managed environments in an environment type.
+> - Dataverse is required to use managed environments for production, sandbox, or trial environment types. Developer environments don't require Dataverse to enable managed environments.
 
 ## Enable or edit managed environments in the admin center
 
