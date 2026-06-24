@@ -6,7 +6,7 @@ author: rranjit83
 ms.author: rranjit
 ms.reviewer: jhaskett-msft
 ms.topic: best-practice
-ms.date: 05/14/2025
+ms.date: 06/23/2026
 ms.custom: bap-template
 ms.subservice: guidance
 contributors:
@@ -16,13 +16,13 @@ contributors:
 
 # Manage and govern the default Power Platform environment
 
-Every employee in an organization that uses the Power Platform has access to the [default environment](/power-platform/admin/environments-overview#default-environment). As a Power Platform admin, you should consider and implement ways to manage the default environment. Your Center of Excellence (CoE) teams can gather information using the CoE Starter Kit, PowerShell cmdlets, and Power Platform admin connectors to understand what's happening in your organization's environments. 
+Every employee in an organization that uses the Power Platform has access to the [default environment](/power-platform/admin/environments-overview#default-environment). As a Power Platform admin, consider and implement ways to manage the default environment. Your Center of Excellence (CoE) teams can gather information using the CoE Starter Kit, PowerShell cmdlets, and Power Platform admin connectors to understand what's happening in your organization's environments. 
 
 This article provides some best practices for using the data you gather from these sources to manage your default environment.
 
 ## Enable managed environments
 
-Maintain robust security and governance by making use of managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limiting user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, and use the [actions page](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
+Maintain robust security and governance by using managed environment features in the default environment. Managed environment features provide advanced capabilities, such as monitoring, compliance, and security controls that are important for protecting your data. By enabling this feature, you can configure [sharing limits](/power-platform/admin/managed-environment-sharing-limits), gain more [usage insights](/power-platform/admin/managed-environment-usage-insights), [limit user access to Microsoft Dataverse](/power-platform/admin/ip-firewall) from only allowed IP locations, and use the [actions page](/power-platform/admin/power-platform-advisor) to get personalized recommendations to optimize the environment. Evaluate the current managed environments features and stay up to date with the product roadmap to maintain a secure, compliant, and well-governed default environment.
 
 ## Track connectors
 
@@ -40,7 +40,7 @@ To maintain environment hygiene, establish processes and procedures to clean up 
 
 Use the [actions page](../../admin/power-platform-advisor.md) to view recommendations for apps without valid owners and apps that haven't been used in the last 60 days. You can take action for each recommendation in the recommendation pane, or you can use the [Power Platform for Admin V2 connector](/connectors/powerplatformadminv2/) to automate tasks.
 
-Our recommendation is to use the [actions page](../../admin/power-platform-advisor.md). For more custom processes, evaluate the [CoE Starter Kit](../coe/overview.md) to [set up clean-up for orphaned objects](../coe/setup-orphan-components.md) and [set up inactivity processes](../coe/setup-archive-components.md). You can use these processes as-is or modify them to suit the needs of your organization.
+Use the [actions page](../../admin/power-platform-advisor.md). For more custom processes, evaluate the [CoE Starter Kit](../coe/overview.md) to [set up clean-up for orphaned objects](../coe/setup-orphan-components.md) and [set up inactivity processes](../coe/setup-archive-components.md). You can use these processes as-is or modify them to suit the needs of your organization.
 
 ## Discover highly used apps and flows
 
@@ -69,7 +69,7 @@ When 10 or more employees use a personal productivity app or flow, the Power Pla
 | **Requires ALM**                    | Yes                        | Shared or Dedicated |
 |                                     | No                         | Default             |
 
-[Proactively set sharing limits](../../admin/managed-environment-sharing-limits.md) to control how broadly users can share canvas apps, flows, and agents to avoid over-sharing of resources.
+To avoid over-sharing resources, [proactively set sharing limits](../../admin/managed-environment-sharing-limits.md) to control how broadly users can share canvas apps, flows, and agents.
 
 For a reactive approach, use the compliance process in the CoE Starter Kit to track app sharing and usage. Use it as-is or modify it to suit the needs of your organization. Learn more about the [app auditing process](../coe/example-processes.md). This process occurs only after sharing is complete.  
 
@@ -77,7 +77,7 @@ For a reactive approach, use the compliance process in the CoE Starter Kit to tr
 
 Use [solutions](/power-apps/developer/data-platform/introduction-solutions) to package and deploy your applications, flows, and tables from one environment to another. 
 
-Fusion teams can use the following process to package the solution components, deploy it to a target environment, and delete it from the default environment:
+Fusion teams can use the following process to package the solution components, deploy them to a target environment, and delete them from the default environment:
 
 1. Create a solution and add the app and all its dependent apps, flows, and tables.
 1. Export the solution from the default environment and import it in a different environment.
@@ -93,7 +93,7 @@ Fusion teams can use the following process to package the solution components, d
 Power Platform admins can quarantine canvas apps. In the default environment, you might want to quarantine an app when:
 
 - You want to disable it temporarily while it's reviewed.
-- It's been shared with many users and must be disabled.
+- It's shared with many users and must be disabled.
 - It's being upgraded or moved to a different environment.
 
 Makers can edit a quarantined app, but users can't play it. Remove the quarantine to restore access for shared users. Only admins can change an app's quarantine state.
@@ -120,7 +120,7 @@ Three PowerShell cmdlets manage app quarantines:
 
 ## Designate a SharePoint form environment
 
-Power Platform is tightly integrated with the rest of the Microsoft enterprise ecosystem. This integration allows any maker to build important automations and applications for themselves or their teams. One of the most powerful integrations is between SharePoint and Power Platform.
+Power Platform tightly integrates with the rest of the Microsoft enterprise ecosystem. This integration allows any maker to build important automations and applications for themselves or their teams. One of the most powerful integrations is between SharePoint and Power Platform.
 
 Makers can easily [create or customize a SharePoint form using Power Apps](/power-apps/maker/canvas-apps/customize-list-form). When a maker creates a custom SharePoint form in SharePoint, it creates a canvas app in the default environment. To avoid cluttering the default environment with these apps, create a separate environment to store custom SharePoint forms. This practice allows Power Platform admins to separate SharePoint forms from the general productivity apps in the default environment.
 
@@ -146,7 +146,7 @@ Keep these key points in mind:
 
 ## Back up and restore the default environment
 
-Like every other environment type (sandbox, production, developer), the default environment is archived automatically. However, you can request a restore for the default environment. If you need to restore a backup, contact Microsoft Support. They can restore your environment data to a [support environment](../../admin/support-environment.md). Once that restore is complete, you can view and export data as needed. Keep in mind that restoring the default environment might also restore unused or orphaned apps and flows removed during cleanup.  
+Like every other environment type (sandbox, production, developer), the default environment is backed up automatically. Power Platform admins can use the Power Platform admin center to restore a system backup from the default environment to a developer environment. Once that restore is complete, you can view and export data as needed. Keep in mind that restoring the default environment might also restore unused or orphaned apps and flows removed during cleanup.
 
 Learn more: [Back up and restore environments](../../admin/backup-restore-environments.md)
 
@@ -158,4 +158,3 @@ Learn more: [Back up and restore environments](../../admin/backup-restore-enviro
 - [Power Automate for Admins - Connectors](/connectors/microsoftflowforadmins/)
 - [Power Apps for Admins - Connectors](/connectors/powerappsforadmins/)
 - [Get started with PowerShell for Power Platform Administrators](../../admin/powershell-getting-started.md)
-- [Support environments and consent to access customer data](../../admin/support-environment.md)
