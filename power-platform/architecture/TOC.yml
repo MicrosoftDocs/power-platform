@@ -89,6 +89,8 @@
               href: reference-architectures/dataverse-sdk-for-python.md
             - name: Synchronize data across Dataverse environments
               href: reference-architectures/sync-dataverse-data.md
+            - name: Integrate Dataverse with enterprise data in Microsoft Fabric using a medallion architecture
+              href: reference-architectures/enterprise-data-fabric-dataverse.md
             - name: Use complex relationships with Dataverse
               href: reference-architectures/complex-relationships-dataverse.md
             - name: Use Dataverse background operations

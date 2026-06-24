@@ -7,7 +7,8 @@ ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview
-ms.date: 06/22/2026
+ms.date: 06/23/2026
+ai-usage: ai-assisted
 ---
 
 # Grupo Bimbo standardizes global audit processes with Copilot Studio
@@ -87,6 +88,10 @@ It provides consistent guidance on audit processes, required notifications, repo
 The following image shows how Audit Assist provides standardized audit communication templates within Microsoft 365 Copilot. This example uses sample content for illustration.
 
 :::image type="content" source="media/grupo-bimbo-global-audit/audit-assist-agent.png" alt-text="Screenshot of the Audit Assist agent in Microsoft 365 Copilot displaying a standardized audit start email template with placeholders for scope and dates." lightbox="media/grupo-bimbo-global-audit/audit-assist-agent.png":::
+
+This image shows how Audit Assist helps auditors retrieve approved reporting guidance:
+
+:::image type="content" source="media/grupo-bimbo-global-audit/audit-assist-agent-prompt.png" alt-text="Screenshot of Audit Assist in Microsoft 365 Copilot displaying audit reporting guidelines and responsibilities." lightbox="media/grupo-bimbo-global-audit/audit-assist-agent-prompt.png":::
 
 ## Implementation approach
 
