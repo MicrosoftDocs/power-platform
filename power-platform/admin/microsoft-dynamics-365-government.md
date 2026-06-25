@@ -58,13 +58,15 @@ Select Dynamics 365 US Government products are available to qualified government
 |Dynamics 365 Customer Service Enterprise and Professional     | Dynamics 365 Customer Service Enterprise and Professional        | Dynamics 365 Customer Service Enterprise and Professional         |
 |Dynamics 365 Customer Voice   |     |         |
 |Dynamics 365 Field Service      | Dynamics 365 Field Service         | Dynamics 365 Field Service          |
-|Dynamics 365 Finance     | Dynamics 365 Finance     | Dynamics 365 Finance        |
+|Dynamics 365 Finance     | Dynamics 365 Finance     | Dynamics 365 Finance - Pending IL5 Approval        |
 |Dynamics 365 Guides |   |   |
 |Dynamics 365 Contact Center    |     |         |
+|Dynamics 365 Human Resources     |      |         |
 |Dynamics 365 Project Service Automation     | Dynamics 365 Project Service Automation         | Dynamics 365 Project Service Automation        |
+|Dynamics 365 Project Operations     |      |         |
 |Dynamics 365 Remote Assist on HoloLens or HoloLens 2 | Dynamics 365 Remote Assist on HoloLens or HoloLens 2 |   |
 |Dynamics 365 Sales Enterprise and Professional     |Dynamics 365 Sales Enterprise and Professional         |Dynamics 365 Sales Enterprise and Professional         |
-|Dynamics 365 Supply Chain Management | Dynamics 365 Supply Chain Management   | Dynamics 365 Supply Chain Management   |
+|Dynamics 365 Supply Chain Management | Dynamics 365 Supply Chain Management   | Dynamics 365 Supply Chain Management - Pending IL5 Approval   |
 
 ### Subscription Availability
 
