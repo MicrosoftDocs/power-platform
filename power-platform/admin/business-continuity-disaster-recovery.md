@@ -216,6 +216,10 @@ During disaster recovery scenarios that require regional failover, outbound requ
  
 For instructions on retrieving the current IP ranges, see [What are the outbound IP ranges for my Finance and Operations environment?](/dynamics365/fin-ops-core/dev-itpro/deployment/deploymentfaq#what-are-the-outbound-ip-ranges-for-my-finance-and-operations-environment).
 
+### Can I enable SSDR on a sandbox environment in Dynamics 365 Finance & Operations?
+
+No. Self-Service Disaster Recovery (SSDR) for Dynamics 365 Finance & Operations is only supported on live production environments at this time. All sandbox tiers — including Tier 2, Tier 3, Tier 4, and Tier 5 — are not eligible for SSDR enrolment. If your environment is not eligible for SSDR, the disaster recovery option will not appear in the Power Platform Admin Center.
+
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
 #### Business Events limitation
@@ -228,7 +232,7 @@ For detailed steps, see [Manage Business Events endpoints](/dynamics365/fin-ops-
 
 #### Fabric link limitation
 
-During a self-service disaster recovery (SSDR) failover, Fabric link and data synchronization are preserved without requiring full reinitialization. However, the Microsoft-managed data lake backing Fabric link doesn't currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric link synchronization and access can be interrupted until the primary region becomes available again. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
+During a self-service disaster recovery (SSDR) failover, the Microsoft-managed data lake backing Fabric link doesn't currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric link synchronization and access can be interrupted until the primary region becomes available again. Fabric link does not currently provide a service level objective (SLO) for recovery time objective (RTO) or recovery point objective (RPO) during SSDR failover scenarios. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
  
 In long-running failover scenarios or extended operation in a secondary region, you might also encounter regional capacity constraints if you manually reconfigure the Fabric link. To restore Fabric link functionality or ensure a healthy operational state after failover, you need to:
 
@@ -246,6 +250,9 @@ Servicing actions, such as code deployments for Dynamics 365 Finance and Operati
 
 #### Commerce Scale Units limitation
 Commerce Scale Units (CSU) failover is not currently supported as part of self-service disaster recovery (SSDR). During an SSDR failover event, CSU components are not automatically failed over or replicated to the secondary region. If your environment relies on CSU and you experience an outage or a CSU resynchronisation is required following a failover, please raise a support request and provide details of the impact so the support team can assist.
+
+#### Long-Term Data Retention (LTDR) limitation
+Long-term data retention (LTDR) data is preserved during self-service disaster recovery (SSDR) failover, as it is stored independently from the primary environment. However, archival processes may require validation or restart post-failover, and customers may observe a delay in newly archived data becoming available until workflows are re-established.
 
 #### Other limitations
 

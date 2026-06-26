@@ -52,8 +52,8 @@ Learn how to set up data export from the Power Platform admin center to Applicat
 
 1. On the **Data export** page, select the **App Insights** tab. Then select **New data export**.
 
-1. Provide a friendly name of the export package to identify the Azure Application Insights instance. Then select the specific data type you would like to export, such as **Dataverse diagnostics and performance** or **Power Automate**.
-   
+1. Provide a friendly name of the export package to identify the Azure Application Insights instance. Then select the specific data type you would like to export, such as **Dataverse diagnostics and performance**, **Power Automate**, or **Copilot Studio**.
+
    If you select **Power Automate**, select whether to export cloud flow runs, triggers, or actions.
 
 1. Select one or more filters that allow you to view specific, filtered data.
@@ -69,7 +69,8 @@ Learn how to set up data export from the Power Platform admin center to Applicat
 
    The data export connection should now be set up. Within the next 24 hours, data starts being exported to your Application Insights environment.
 
-### Troubleshooting for missing telemetry 
+### Troubleshooting for missing telemetry
+
 If no data appears in Application Insights within 24 hours of setup, verify the following:
 
 - The integration was configured by a user with the required permissions. Learn more in the [Prerequisites](#prerequisites).
