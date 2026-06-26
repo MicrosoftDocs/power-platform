@@ -12,7 +12,7 @@
           href: create-developer-environment.md
     - name: Fusion development
       href: fusion-development.md
-    - name: Test apps with Test Engine (preview)
+    - name: Test apps with Test Engine (deprecated)
       href: ../test-engine/index.yml
     - name: Playwright samples
       href: playwright-samples/toc.yml
