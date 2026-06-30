@@ -68,6 +68,8 @@ Logging takes place at the SDK layer, which means a single action can trigger mu
 
 > [!NOTE]
 > [Column-level secured fields](../field-level-security.md) are sent to Purview activity logging with an asterisk (*).
+>
+> The details of each column's before-and-after values for CRUD activites are not sent to Purview activity logging to prevent data leaks.
 
 ## Base schema
 
