@@ -3,8 +3,10 @@ title: Access audit data with Azure Synapse Link and Power BI
 description: Configure Azure Synapse Link to access Microsoft Dataverse audit tables and then use Power BI for deep insights.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 01/29/2024
-author: paulliew 
+ms.date: 07/01/2026
+author: paulliew
+contributors:
+ - NatuvaHiranmai
 ms.subservice: admin
 ms.author: paulliew 
 ms.reviewer: matp 
@@ -23,6 +25,11 @@ Microsoft Dataverse auditing is supported on all custom and most customizable ta
 - An Azure subscription with admin permissions to create resource groups, workspace, and other Azure assets. More information: [Create an Azure Synapse Link for Dataverse with your Azure Synapse Workspace](/power-apps/maker/data-platform/azure-synapse-link-synapse#prerequisites)
 - You must have the Dataverse system administrator security role.
 - Power BI.
+
+## Considerations
+
+> [!IMPORTANT]
+> Azure Synapse Link doesn't support synchronizing audit tables that contain more than 100 million records.
 
 ## Tasks to complete
 
