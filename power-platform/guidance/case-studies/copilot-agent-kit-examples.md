@@ -12,7 +12,7 @@ ms.topic: overview
 
 # Copilot Agent Kit real-world examples
 
-[Copilot Agent Kit](/microsoft-copilot-studio/guidance/kit-overview) (formerly known as *Copilot Studio Kit*) extends [Microsoft Copilot Studio](https://aka.ms/CopilotStudio) with capabilities for productivity, governance, testing, and analytics. It helps organizations scale agents while maintaining control and consistency. Copilot Studio, [Power Platform admin center](/power-platform/admin/admin-documentation), and [Microsoft Agent 365](/microsoft-agent-365/) already cover many core needs, and Microsoft keeps adding new capabilities. As organizations expand their use of agents, however, new governance, monitoring, and operational challenges arise.
+[Copilot Agent Kit](/microsoft-copilot-studio/guidance/kit-overview) (formerly known as *Copilot Studio Kit*) extends [Microsoft Copilot Studio](https://aka.ms/CopilotStudio) with capabilities for productivity, governance, testing, and analytics. It helps organizations scale agents while maintaining control and consistency. [Copilot Studio](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio), [Power Platform admin center](/power-platform/admin/admin-documentation), and [Microsoft Agent 365](/microsoft-agent-365/) already cover many core needs, and Microsoft keeps adding new capabilities. As organizations expand their use of agents, however, new governance, monitoring, and operational challenges arise.
 
 Copilot Agent Kit was created to respond to these real-world needs. It often introduces practical capabilities early, based on what teams experience in production. This case study shows how organizations use the kit to improve visibility, monitor performance, and refine their agents.
 
@@ -98,7 +98,7 @@ By filtering transcripts with low CSAT scores, the team focuses on conversations
 > — *Mohamed Arhab, Solution Architect, IT Department of the City of Montréal*
 
 > [!NOTE]
-> The City of Montréal used these insights to refine its website content and agent design. Improvements included optimizing content structure, improving indexation, standardizing content practices across web teams, and refining custom topics based on real-world language used by citizens. Learn more in: [The City of Montréal enhances citizen engagement with Copilot Studio](/power-platform/guidance/case-studies/city-montreal-citizen-engagement).
+> The City of Montréal used these insights to refine its website content and agent design. Improvements included optimizing content structure, improving indexation, standardizing content practices across web teams, and refining custom topics based on real-world language used by citizens. Learn more in [The City of Montréal enhances citizen engagement with Copilot Studio](/power-platform/guidance/case-studies/city-montreal-citizen-engagement).
 
 ### Other customer experiences
 

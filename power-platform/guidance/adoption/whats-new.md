@@ -5,7 +5,7 @@ description: Power Platform guidance delivers best practices, fresh insights, an
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/22/2026
+ms.date: 07/06/2026
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -50,6 +50,7 @@ Relaunch of the [Power Platform adoption guidance](methodology.md).
 - [Telecom provider mobilezone modernizes service delivery using Microsoft Copilot Studio](../case-studies/mobilezone-modernizes-service-delivery.md)
 - [Tiendas CUADRA delivers always-on customer service and product discovery with Copilot Studio](../case-studies/tiendas-cuadra-customer-service.md)
 - [Grupo Bimbo standardizes global audit processes with Copilot Studio](../case-studies/grupo-bimbo-global-audit.md)
+- [Copilot Agent Kit real-world examples](../case-studies/copilot-agent-kit-examples.md)
 
 ### FY26 Q3
 
