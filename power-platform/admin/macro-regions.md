@@ -1,6 +1,6 @@
 ---
-title: Power Platform and Dynamics 365 macro regions
-description: Macro region represents the data residency boundary aligning with data residency laws for a given geography. Learn more about the countries available in a specific macro region.
+title: Power Platform and Dynamics 365 macro region geography
+description: Macro region represents the data residency boundary aligning with data residency laws for a given geography. Learn more about the countries available in a specific macro region geography.
 author: shpradha
 ms.component: pa-admin
 ms.topic: concept-article
@@ -13,7 +13,7 @@ search.audienceType:
   - admin
 ---
 
-# Power Platform and Dynamics 365 macro regions
+# Power Platform and Dynamics 365 macro region geographies
 
 A macro region geography represents the data residency boundary that aligns with data residency laws for a given geography. This article lists the regions available in a specific macro region geography.
 
@@ -27,7 +27,7 @@ Using a macro region geography provides the following capabilities:
 - Microsoft can continuously optimize backend infrastructure, ensuring you benefit from ongoing investments in new regions, capacity, and resiliency.
 - You still control where your data resides at a geography level, ensuring alignment with business, compliance, and regulatory requirements, example (EUDB)[https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn].
 
-## Expected changes in your provisioning experience with a macro region
+## Expected changes in your provisioning experience with a macro region geography
 
 - When creating a new environment, if the tenant doesn't yet meet the [geo-selection eligibility](#geo-selection-eligibility-criteria) criteria, customers see the list of macro region geographies and individual datacenter regions are not displayed.
 - Customers can see their macro region geography and data location (datacenter region) in the environment properties and in the environment list. 
@@ -37,7 +37,7 @@ Using a macro region geography provides the following capabilities:
 
 ## Macro region geography
 
-The following table describes each macro region.
+The following table describes each macro region geography:
 
 | # | Macro region geography          | Regions                 | Description                                               |
 |---|---------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -69,7 +69,7 @@ This criterion ensures customers with residency requirements can continue operat
 
 ## Customer experience example
 
-- A customer selects “Europe & UK” as their Macro Region. 
+- A customer selects "Europe & UK" as their macro region geography. 
 - The platform assigns a region (e.g., Germany, or Italy) based on capacity & availability.  
 - The customer can view the assigned datacenter region within the macro region geography after provisioning.  
 
