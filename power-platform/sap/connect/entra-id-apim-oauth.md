@@ -5,7 +5,6 @@ author: haowusky
 ms.author: hawu1
 contributors:
   - tverhasselt
-  - galitskyd
   - microsoft-dustin
   - Wrighttyler
   - EllenWehrle
