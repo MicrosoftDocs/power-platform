@@ -240,6 +240,105 @@
         }
       }
     },
+    "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/connectorConsentBypass": {
+      "get": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "Get Connector Consent Bypass.",
+        "description": "Get the admin connector consent bypass setting for a bot.",
+        "operationId": "GetConnectorConsentBypass",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "$ref": "#/definitions/ConnectorConsentBypassResponse"
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Bots"
+        ],
+        "summary": "Set Connector Consent Bypass.",
+        "description": "Set the admin connector consent bypass setting for a bot.",
+        "operationId": "SetConnectorConsentBypass",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "BotId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/SetAdminConsentBypassRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "schema": {
+              "$ref": "#/definitions/ConnectorConsentBypassResponse"
+            }
+          }
+        }
+      }
+    },
     "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/makerevaluation/testruns": {
       "get": {
         "tags": [
@@ -609,7 +708,17 @@
         }
       }
     },
-    "Connection": {
+    "ConnectorConsentBypassResponse": {
+      "description": "The admin connector consent bypass setting for a bot.",
+      "type": "object",
+      "properties": {
+        "adminConsentBypass": {
+          "description": "Indicates whether admin connector consent bypass is enabled for the bot.",
+          "type": "boolean"
+        }
+      }
+    },
+    "MakerEvaluationConnection": {
       "description": "A connector and its associated user connection for a maker evaluation run.",
       "required": [
         "connectionId",
@@ -830,6 +939,19 @@
         }
       }
     },
+    "SetAdminConsentBypassRequest": {
+      "description": "Request body for setting the admin connector consent bypass setting for a bot.",
+      "required": [
+        "adminConsentBypass"
+      ],
+      "type": "object",
+      "properties": {
+        "adminConsentBypass": {
+          "description": "Indicates whether to enable admin connector consent bypass for the bot.",
+          "type": "boolean"
+        }
+      }
+    },
     "StateCode": {
       "description": "The state of an evaluation run describing the currently active stage.",
       "enum": [
@@ -1025,7 +1147,7 @@
           "description": "A list of connections.",
           "type": "array",
           "items": {
-            "$ref": "#/definitions/Connection"
+            "$ref": "#/definitions/MakerEvaluationConnection"
           }
         }
       }
