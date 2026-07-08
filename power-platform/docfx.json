@@ -83,7 +83,8 @@
             "admin/**/*.md": "admin",
             "developer/**/*.md": "developer",
             "well-architected/**/*.md": "well-architected",
-            "test-engine/**/*.md": "developer"
+            "test-engine/**/*.md": "developer",
+            "sap/**/*.md": "sap"
          },
          "search.app": {
             "power-fx/**/*.md": [
