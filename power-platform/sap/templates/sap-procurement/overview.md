@@ -5,7 +5,6 @@ author: tverhasselt
 ms.author: thoverh
 contributors:
   - EllenWehrle
-  - galitskyd
   - Wrighttyler
   - shanep
 ms.reviewer: ellenwehrle

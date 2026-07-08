@@ -6,7 +6,6 @@ ms.author: hawu1
 contributors:
 - EllenWehrle
 - tverhasselt
-- galitskyd
 - microsoft-dustin
 - Wrighttyler
 ms.reviewer: ellenwehrle
@@ -28,12 +27,12 @@ The [SAP ERP connector](/connectors/saperp/) supports all SAP versions from R/3 
 
 ### What licensing do I need to integrate SAP with Power Platform?
 
-At a minimum, you need the following for each user:
+At a minimum, you need the following licenses for each user:
 
 - A Power Apps Premium license
 - An SAP indirect named user license
 
-If you already have SAP direct named user licenses, you can use these licenses with Power Apps. It's worth noting, however, that SAP indirect named user licenses cost less than direct named user licenses.
+If you already have SAP direct named user licenses, you can use these licenses with Power Apps. However, SAP indirect named user licenses cost less than direct named user licenses.
 
 ### Does this integration work with other SAP core products like BW, SRM, and CRM?
 
@@ -41,11 +40,11 @@ Yes, Power Platform's SAP ERP connector works with any SAP product that runs on 
 
 ### How can I connect to SAP's other products that came through acquisitions?
 
-For products such as Ariba, Concur, and any other SAP product that doesn't run on the NetWeaver stack, you can use our custom REST and SOAP connectors.
+For products such as Ariba, Concur, and any other SAP product that doesn't run on the NetWeaver stack, use custom REST and SOAP connectors.
 
-### If I integrate Power Platform with SAP ECC and then upgrade to S/4HANA, will my integrations break?
+### If I integrate Power Platform with SAP ECC and then upgrade to S/4HANA, do my integrations break?
 
-No, hundreds of customers upgrade from SAP ECC to S/4HANA without any problems. Some of the core data models change in S/4HANA (customer, vendor, financial posting), but the prebuilt Power Automate flows account for these data model changes. Additionally, SAP ensures their published APIs are carried over to new versions.
+No, hundreds of customers upgrade from SAP ECC to S/4HANA without any problems. Some of the core data models change in S/4HANA, such as customer, vendor, and financial posting data models, but the prebuilt Power Automate flows account for these data model changes. Additionally, SAP ensures that published APIs are available in new versions.
 
 ## Data and integration
 
@@ -67,7 +66,7 @@ Yes, the SAP ERP connector can read custom tables by using the action, _Read SAP
 
 ### What if SAP doesn't provide an API for a data object?
 
-In this case, consider these options:
+Consider these options:
 
 - [Intermediate Document (IDoc)](https://help.sap.com/docs/SAP_S4HANA_ON-PREMISE/7b24a64d9d0941bda1afa753263d9e39/3854b753128eb44ce10000000a174cb4.html) – Power Automate provides a generic API that can synchronously invoke an IDoc for any object type.
 - [Batch input](https://help.sap.com/doc/saphelp_snc70/7.0/en-US/69/c250274ba111d189750000e8322d00/content.htm?no_cache=true#:~:text=Batch%20input%20is%20one%20of%20the%20primary%20ways,legacy%20system%20into%20a%20newly%20installed%20SAP%20system.) – Power Automate has a generic API that can synchronously process a batch input recording.
@@ -82,7 +81,7 @@ The SAP ERP connector runs on SAP's API layer, which typically provides better s
 
 No, typically the bottleneck is in the SAP system itself. You can configure the number of concurrent API threads to match the session limits on your SAP servers. You can also arrange [clusters](/data-integration/gateway/service-gateway-install#add-another-gateway-to-create-a-cluster) for the on-premises data gateway.
 
-### Can Power Automate flows be used by other applications like Dynamics CRM?
+### Can other applications like Dynamics CRM use Power Automate flows?
 
 Yes, your own custom applications or any software capable of REST integration can trigger the Power Automate flows that integrate with SAP.
 
@@ -102,7 +101,7 @@ Power Automate can attach files to objects in SAP by using [Generic Object Servi
 
 ### How does authentication work with SAP?
 
-The Power Platform supports multiple authentication methods for SAP:
+Power Platform supports multiple authentication methods for SAP:
 
 1. Username and password - the app prompts users for their SAP username and password on the canvas app screen in Power Apps, and sends these credentials to SAP.
 1. [Set up Microsoft Entra ID with Kerberos for SSO](../connect/entra-id-kerberos.md).
@@ -177,7 +176,7 @@ The prebuilt canvas app on SAP can transact against your SAP system immediately.
 
 ### Can I build mobile canvas apps on top of SAP?
 
-You can use Power Apps to build canvas apps for mobile devices. You can also build native canvas apps on Power Platform.
+Use Power Apps to build canvas apps for mobile devices. You can also build native canvas apps on Power Platform.
 
 ### Can Fiori apps coexist with Power Apps?
 

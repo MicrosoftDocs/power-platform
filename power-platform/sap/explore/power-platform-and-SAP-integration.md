@@ -7,11 +7,10 @@ contributors:
 - haowusky
 - tverhasselt
 - EllenWehrle
-- dgalitsky
 - edlehman
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 05/19/2026
+ms.date: 07/01/2026
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As a business decision maker or an administrator, I want to learn about Power Platform integration with SAP so I can discover how to integrate and streamline my organization's SAP data and workflows with other system data in Power Platform to give my organization's users a better work experience that leads to saved time, fewer mistakes, and improved data quality and insights.
@@ -21,7 +20,7 @@ ms.subservice: sap
 
 [Microsoft Power Platform](/power-platform/) integration with SAP unlocks the full potential of your SAP data. By using Power Platform and SAP connectors, including [SAP ERP](/connectors/saperp) and [SAP OData](/odata/overview), you can securely access and operate on your SAP data.
 
-Discover how to enhance your SAP business processes by using Power Platform. You can transform how you view and work with your SAP data by designing and building your own custom [applications](/power-apps/powerapps-overview), [cloud flows](/power-automate/overview-cloud), and [agents](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) that work with your SAP data. Whether you're looking to enhance customer experiences, optimize operations, or gain deeper insights into your business, Power Platform provides the tools you need to integrate and automate your digital ecosystem.
+Discover how to enhance your SAP business processes by using Power Platform. You can transform how you view and work with your SAP data by designing and building your own custom [applications](/power-apps/powerapps-overview), [cloud flows](/power-automate/overview-cloud), [websites](/power-pages/introduction), and [agents](/microsoft-copilot-studio/fundamentals-what-is-copilot-studio) that work with your SAP data. Whether you're looking to enhance customer experiences, optimize operations, or gain deeper insights into your business, Power Platform provides the tools you need to integrate and automate your digital ecosystem.
 
 :::image type="content" source="media/power-platform-and-SAP-integration/flex-design.png" alt-text="Power Platform Connectors for SAP integrates Power Platform and SAP products":::
 
