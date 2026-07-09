@@ -3,8 +3,8 @@ title: Power Platform inventory
 description: Learn how to get a comprehensive, unified view of all agents, apps, and flows across your organization in Power Platform.
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: sericks
-ms.date: 05/28/2026
+ms.reviewer: ellenwehrle
+ms.date: 07/09/2026
 ms.topic: concept-article
 contributors:
     - Grayson-Bishop
@@ -32,7 +32,7 @@ By using Power Platform inventory, you can easily complete the following tasks:
 
 ## Supported resource types
 
-The Power Platform inventory includes:
+The Power Platform inventory includes the following resource types:
 
 - **Agents:** All agents created in Copilot Studio, and all agents created in Microsoft 365 Copilot Agent Builder.
 
@@ -45,6 +45,8 @@ The Power Platform inventory includes:
 - **Environment groups:** All environment groups in your tenant.
 
 ## Key features
+
+The Power Platform inventory includes the following key features:
 
 - **Unified inventory**: Centralized view of all resources.
 
@@ -62,7 +64,28 @@ The Power Platform inventory includes:
 
 ## Access requirements
 
-To view the Power Platform inventory, you must have one of the following tenant-wide administrative roles: [Power Platform administrator](use-service-admin-role-manage-tenant.md#power-platform-administrator) or [Dynamics 365 administrator](use-service-admin-role-manage-tenant.md#dynamics-365-administrator). If you don't have one of these roles, you can't access the inventory.
+To view the Power Platform inventory, you must hold one of the supported Microsoft Entra roles. What you can see in the Power Platform admin center depends on your role: most roles have full visibility into all resources, while the AI roles are scoped to AI-related resources only.
+
+| Role | What they can see |
+|---|---|
+| Global administrator | All inventory resources |
+| Power Platform administrator | All inventory resources |
+| Dynamics 365 administrator | All inventory resources |
+| Global reader | All inventory resources |
+| AI administrator | Agents, agentic apps, agent flows, environments, and environment groups only |
+| AI reader | Agents, agentic apps, agent flows, environments, and environment groups only |
+
+The AI administrator and AI reader roles are scoped to AI-related resources only. They can see:
+
+- **Agents** from Microsoft 365 Copilot and Copilot Studio
+- **Agentic apps**, including vibe apps, code apps, and App Builder apps
+- **Agent flows** from Copilot Studio and workflow agent flows from Microsoft 365 Copilot
+- **Environments** and **environment groups**
+
+Canvas apps, model-driven apps, and cloud flows are out of scope for the AI administrator and AI reader roles.
+
+> [!NOTE]
+> These roles are Microsoft Entra roles, which are different from [built-in Power Platform roles](security/role-based-access-control.md#built-in-power-platform-roles). The built-in Power Platform roles for role-based access control (RBAC) aren't supported for Power Platform inventory access.
 
 ## Where to access Power Platform inventory
 
@@ -168,6 +191,8 @@ As a result, the agent counts between the two surfaces differ. The Microsoft 365
 - **_Modified on_ and _Last modified by_ columns**: These columns don't work for agents and show the **–** (dash) character.
 
 - **_Owner_ column**: This column for cloud flows and agent flows currently shows the user who created the flow. It doesn't update when the owner changes.
+
+- **Workflow agent flows have no environment information**: Starting April 2026, workflows created by Microsoft 365 Copilot's Workflows agent are stored in a single, hidden Power Platform environment that's automatically provisioned and managed by the platform (one per tenant). Because this environment isn't visible in the Power Platform admin center environment list or any Maker portal, these workflow agent flows appear in inventory without environment information. For details, see [Microsoft 365 Copilot workflows environment for Workflows agents](/microsoft-365/copilot/workflows-environment-workflows-agents#environment-provisioning).
 
 - **Un-published model-driven apps:** Only published, model-driven apps are captured.
   
