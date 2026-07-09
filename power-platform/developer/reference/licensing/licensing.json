@@ -952,7 +952,7 @@
           "404": {
             "description": "Not Found",
             "schema": {
-              "$ref": "#/definitions/ProblemDetails"
+              "$ref": "#/definitions/LicensingProblemDetails"
             }
           }
         }
@@ -1005,7 +1005,7 @@
           "404": {
             "description": "Not Found",
             "schema": {
-              "$ref": "#/definitions/ProblemDetails"
+              "$ref": "#/definitions/LicensingProblemDetails"
             }
           }
         }
@@ -1044,7 +1044,7 @@
           "404": {
             "description": "Not Found",
             "schema": {
-              "$ref": "#/definitions/ProblemDetails"
+              "$ref": "#/definitions/LicensingProblemDetails"
             }
           }
         }
@@ -2042,14 +2042,14 @@
           "type": "string"
         },
         "createdBy": {
-          "$ref": "#/definitions/Principal"
+          "$ref": "#/definitions/LicensingPrincipal"
         },
         "lastModifiedOn": {
           "format": "date-time",
           "type": "string"
         },
         "lastModifiedBy": {
-          "$ref": "#/definitions/Principal"
+          "$ref": "#/definitions/LicensingPrincipal"
         }
       },
       "additionalProperties": false
@@ -2404,14 +2404,14 @@
           "type": "string"
         },
         "createdBy": {
-          "$ref": "#/definitions/Principal"
+          "$ref": "#/definitions/LicensingPrincipal"
         },
         "lastModifiedOn": {
           "format": "date-time",
           "type": "string"
         },
         "lastModifiedBy": {
-          "$ref": "#/definitions/Principal"
+          "$ref": "#/definitions/LicensingPrincipal"
         }
       },
       "additionalProperties": false
@@ -2554,7 +2554,7 @@
       ],
       "type": "string"
     },
-    "Principal": {
+    "LicensingPrincipal": {
       "type": "object",
       "properties": {
         "id": {
@@ -2575,7 +2575,7 @@
       ],
       "type": "string"
     },
-    "ProblemDetails": {
+    "LicensingProblemDetails": {
       "type": "object",
       "properties": {
         "type": {
