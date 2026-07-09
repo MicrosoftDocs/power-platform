@@ -56,7 +56,7 @@ Learn more about [recommendations for continuous integration](/power-platform/we
 
 Thorough testing is essential to identify and resolve issues before deployment. Implement automated testing for unit tests, integration tests, and end-to-end tests to ensure comprehensive coverage. Additionally, conduct user acceptance testing (UAT) to validate that the application meets business requirements and user expectations.
 
-Learn more about [Test Engine](/power-apps/developer/test-engine/overview).
+Learn more about [Power Platform Playwright samples](../../developer/playwright-samples/overview.md).
 
 ## Automate deployments
 
