@@ -3,8 +3,8 @@ title: Power Platform inventory schema reference
 description: Learn about the resource types and fields available in Power Platform inventory, including shared properties, environment fields, and resource-type-specific fields.
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: sericks
-ms.date: 05/28/2026
+ms.reviewer: ellenwehrle
+ms.date: 07/09/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 
@@ -98,6 +98,7 @@ For flows (cloud flows, agent flows, and workflow agent flows), the inventory ad
 ### Known limitations
 
 - **Tabular connectors don't report operations.** Connectors bound as data sources (such as SharePoint, Dataverse, SQL Server, and Excel Online) appear in `powerPlatformConnectors` but emit an empty `operations` array.
+- **Built-in actions aren't captured.** Built-in actions from Power Automate, such as the HTTP built-in action, Control actions, and Data operations, aren't connectors and don't appear in `powerPlatformConnectors`. This difference often causes confusion: a flow that calls an external service through the HTTP built-in action shows no connector for that call.
 - **Code apps, vibe apps, and App Builder apps aren't covered.** Only the resource types listed in this section emit connector data.
 - **Model-driven apps rarely report connectors.** Model-driven apps rarely call connectors directly. Connector data only appears when a canvas page is embedded in a model-driven app, and that page's connector usage is captured on the canvas page record itself.
 - **No connector display names or tier data.** This release exposes connector IDs and operation IDs only. Display names, tiers (Standard/Premium), and publisher information aren't included.

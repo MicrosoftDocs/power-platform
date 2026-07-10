@@ -35,7 +35,7 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac help](help.md)|Show help for the Microsoft Power Platform CLI.|
 |[pac managed-identity](managed-identity.md)|Commands for managing Managed Identity records for Dataverse components.|
 |[pac model](model.md)|Commands for working with model-driven apps.|
-|[pac modelbuilder](modelbuilder.md)|(Deprecated) Code Generator for Dataverse APIs and Tables.|
+|[pac modelbuilder](modelbuilder.md)|Code Generator for Dataverse APIs and Tables.|
 |[pac package](package.md)|Commands for working with Dataverse package projects.|
 |[pac pages](pages.md)|Commands for working with Power Pages website.|
 |[pac pcf](pcf.md)|Commands for working with Power Apps component framework projects.|
