@@ -15,7 +15,7 @@ contributors:
   - miferland-msft
   - ellenwehrle
   - syalandur24
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 

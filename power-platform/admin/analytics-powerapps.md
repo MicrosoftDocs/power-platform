@@ -6,8 +6,8 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 03/19/2026
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:

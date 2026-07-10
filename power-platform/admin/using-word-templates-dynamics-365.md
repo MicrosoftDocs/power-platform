@@ -8,7 +8,7 @@ author: chrisgarty
 ms.subservice: admin
 ms.custom: NewPPac
 ms.author: cgarty
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 contributors: 
     - lavanyakr01
     - sriharibs-msft

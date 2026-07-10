@@ -9,7 +9,7 @@ author: isaacwinoto
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: isaacwinoto
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -63,7 +63,7 @@ Learn how to set up data export from the Power Platform admin center to Applicat
 1. Select the Azure subscription, resource group, and Application Insights environment that you're exporting data _to_. Select **Next**.
 
     > [!NOTE]
-    > Confirm that you have **Contributor** or **Owner** access to the Azure Application Insights resource you intend to use. If you don’t, ask an Azure administrator to grant you access, or create a new Application Insights instance that you own. Typically, one production environment or tenant maps to one Application Insights environment.
+    > Confirm that you have **Contributor** or **Owner** access to the Azure Application Insights resource you intend to use. If you don't, ask an Azure administrator to grant you access, or create a new Application Insights instance that you own. Typically, one production environment or tenant maps to one Application Insights environment.
 
 1. Review the details that you entered for the new export package, and then select **Create** to set up the data export connection. 
 

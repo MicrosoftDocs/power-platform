@@ -8,7 +8,7 @@ ms.date: 01/23/2026
 ms.subservice: admin
 ms.author: swatim
 contributor: ellenwehrle 
-ms.reviewer: sericks 
+ms.reviewer: ellenwehrle 
 search.audienceType: 
   - admin
 ---

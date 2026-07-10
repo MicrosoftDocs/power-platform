@@ -2,12 +2,12 @@
 title: Support for Microsoft Power Platform and Dynamics 365 apps
 description: Learn more about support options for Microsoft Power Platform and Dynamics 365 apps.
 ms.date: 07/31/2025
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.topic: overview
 ms.custom: admin-security
 ms.collection: get-started
-author: sericks007
-ms.author: sericks
+author: EllenWehrle
+ms.author: ellenwehrle
 ms.contributors:
   - mmaasjo
 ---

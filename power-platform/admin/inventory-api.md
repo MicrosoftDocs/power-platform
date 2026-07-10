@@ -3,7 +3,7 @@ title: Power Platform inventory API
 description: Learn how to get a comprehensive, unified view of all agents and apps across your organization in Power Platform with the inventory API.
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.date: 03/27/2026
 ms.topic: concept-article
 ai-usage: ai-assisted

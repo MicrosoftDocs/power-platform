@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 10/23/2025
 author: arjunmayur
 ms.author: arjunmayur
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:

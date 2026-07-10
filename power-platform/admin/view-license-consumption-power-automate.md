@@ -3,7 +3,7 @@ title: View license consumption for Power Automate (preview)
 description: Learn how to view your organization's Power Automate license consumption and find potential license issues. 
 author: amiyapatr-zz
 ms.date: 12/04/2025
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.topic: concept-article
 ms.subservice: admin
 ms.author: ampatra

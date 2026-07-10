@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 03/04/2026
 ms.subservice: admin
 ms.author: ampatra
-ms.reviewer: sericks 
+ms.reviewer: ellenwehrle 
 contributors:
   - kenseongtan
   - ShawnNandiMSFT

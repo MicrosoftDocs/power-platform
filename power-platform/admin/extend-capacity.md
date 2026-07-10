@@ -4,7 +4,7 @@ description: Learn about extending Microsoft Dataverse storage capacity.
 author: ianceicys-msft
 ms.subservice: admin
 ms.author: ceian
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.custom: admin-security
 ms.component: pa-admin
 ms.topic: how-to

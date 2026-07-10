@@ -4,10 +4,10 @@ description: "Download a report for a list of active users in your tenant."
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 08/05/2020
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 search.audienceType: 
   - admin

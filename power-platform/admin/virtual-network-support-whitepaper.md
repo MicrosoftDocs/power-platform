@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 03/03/2026
 ms.subservice: admin
 ms.author: osfaixat
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType:
   - admin
 ms.custom:

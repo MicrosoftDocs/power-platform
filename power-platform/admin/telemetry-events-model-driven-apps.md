@@ -5,10 +5,10 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/06/2022
-author: Zeffin
+author: EllenWehrle
 ms.subservice: admin
-ms.author: johnev
-ms.reviewer: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
@@ -68,10 +68,10 @@ The **pageViews** table attributes include:
 - **hostType**: Browser/MobileApplication/Embedded
 - **isBoot**: Is this the first load of a session?
 - **loadType**
-  -	0: First visit to a particular page type (for example, the first visit to a form).
-  -	1: First visit to a particular configuration (for example, the first visit to an account form).
-  -	2: First visit to a particular record (for example, the first visit to account record A2).
-  -	3: This exact URL has been visited previously.
+  -    0: First visit to a particular page type (for example, the first visit to a form).
+  -    1: First visit to a particular configuration (for example, the first visit to an account form).
+  -    2: First visit to a particular record (for example, the first visit to account record A2).
+  -    3: This exact URL has been visited previously.
 - **navigationOrigin**: The type of page where the user navigated from.
 - **networkConnectivityState**: Whether the device has a connection.
 - **pageName**: The type of page load.
@@ -154,7 +154,7 @@ dependencies
 |azure-logic-apps     |  Azure Logic Apps       |
 |PowerApps     | Power Apps        |
 |Microsoft Office Excel     | Office Excel        |
-|Portals	     |  Portals       |
+|Portals         |  Portals       |
 |DynamicsDataIntegration     | Dynamics Data Integration       |
 |XrmToolBox.exe     | XrmToolBox        |
 |PluginRegistration     | Plugin Registration        |

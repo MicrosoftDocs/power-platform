@@ -1,13 +1,13 @@
 ---
 title: View usage and billing for pay-as-you-go plan 
 description: Aggregated billing information is available in the Azure portal, and detailed usage drill-downs are available in the Power Platform admin center.
-author: Kavishi
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 01/14/2025
 ms.subservice: admin
-ms.author: kaagar
-ms.reviewer: sericks 
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle 
 contributors:
   - amiyapatr-zz
   - ShawnNandiMSFT

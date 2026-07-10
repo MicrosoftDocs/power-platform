@@ -2,7 +2,7 @@
 title: Administration for partners and systems implementers
 description: This article provides an overview and explains key differences between the Power Platform admin center and Lifecycle Services.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 08/11/2025

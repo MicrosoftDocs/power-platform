@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 03/26/2026
 ms.subservice: admin
 ms.author: ceian 
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 contributors:
   - DanaMartens
   - IanCeicys

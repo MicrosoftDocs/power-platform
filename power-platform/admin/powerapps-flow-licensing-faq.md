@@ -11,7 +11,7 @@ contributors:
   - sandhangitms
 ms.subservice: admin
 ms.author: cgarty
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.contributors:
   - jessechen
   - v-kgallagher
