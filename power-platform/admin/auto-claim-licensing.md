@@ -23,6 +23,9 @@ As an administrator, you traditionally assign licenses to users _manually_. [Aut
 
 You can create and manage these auto-claim policies in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
 
+> [!NOTE]
+> Auto-claim policies aren't supported in US Sovereign Clouds (GCC, GCC-H, DOD).
+
 ## Create an auto-claim policy for Power Apps licenses
 
 Use the following information to establish an auto-claim policy for Power Apps.
