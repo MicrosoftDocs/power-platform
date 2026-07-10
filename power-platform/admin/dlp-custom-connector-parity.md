@@ -6,7 +6,7 @@ ms.date: 11/05/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: sericks
+ms.reviewer: mkaur
 contributors:
   - mikferland-msft
   - mihaelablendea

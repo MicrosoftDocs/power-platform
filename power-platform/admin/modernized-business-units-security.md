@@ -6,7 +6,7 @@ ms.topic: concept-article
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.custom: "admin-security"
 search.audienceType: 
   - admin

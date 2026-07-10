@@ -4,7 +4,7 @@ description: Copy a security role
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 12/09/2025

@@ -6,7 +6,7 @@ ms.date: 09/02/2025
 ms.subservice: guidance-toolkit
 author: jenschristianschroder
 ms.author: jeschro
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.custom: bap-template
 ---
 

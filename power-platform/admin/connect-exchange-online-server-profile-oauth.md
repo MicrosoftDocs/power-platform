@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.date: 01/23/2025
 author: gattimassimo 
 ms.author: magatti
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange

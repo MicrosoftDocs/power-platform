@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 03/21/2025
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 contriubutors:

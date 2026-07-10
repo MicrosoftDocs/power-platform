@@ -7,7 +7,7 @@ ms.date: 11/19/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.contributors:
   - lsuresh
 contributors:

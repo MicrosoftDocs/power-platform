@@ -4,7 +4,7 @@ description: Learn about privacy compliance
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 contributors:
   - mayadumesh
   - NHelgren

@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.date: 06/01/2026
 author: laneswenka
 ms.author: laswenka
-ms.reviewer: sericks
+ms.reviewer: mkaur
 contributors:
   - laneswenka
 ms.subservice: admin

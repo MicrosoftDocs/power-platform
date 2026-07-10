@@ -4,7 +4,7 @@ description: Learn how to opt in to early access updates for Power Platform.
 author: paulda64
 ms.subservice: admin
 ms.author: paulda
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.topic: how-to
 ms.date: 03/06/2026
 search.audienceType: 

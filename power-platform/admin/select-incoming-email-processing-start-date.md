@@ -6,8 +6,8 @@ ms.component: pa-admin
 ms.topic: overview
 ms.date: 06/07/2024
 ms.subservice: admin
-ms.author: rahulmital 
-ms.reviewer: sericks
+ms.author: mkaur 
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 ---
