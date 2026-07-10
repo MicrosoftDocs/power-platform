@@ -10,7 +10,7 @@ ms.reviewer: jdaly
 
 # Migrate from Power Apps Test Engine
 
-Power Apps Test Engine uses YAML-based test definitions that run against a specialized test host. Power Platform Playwright samples use TypeScript and the standard Playwright test runner, giving you access to the full Playwright API, ecosystem tooling, and CI/CD integrations.
+Power Apps Test Engine used YAML-based test definitions that run against a specialized test host. Power Platform Playwright samples use TypeScript and the standard Playwright test runner, giving you access to the full Playwright API, ecosystem tooling, and CI/CD integrations.
 
 This guide maps Test Engine concepts to their Playwright equivalents and walks through a concrete migration example.
 

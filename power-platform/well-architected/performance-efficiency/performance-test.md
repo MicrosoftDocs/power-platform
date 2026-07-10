@@ -223,7 +223,7 @@ Here are some key practices:
 
 **Perform the tests**: [Azure Pipelines](/azure/devops/pipelines/get-started/what-is-azure-pipelines) makes it possible for you to integrate performance testing into your CI/CD (continuous integration/continuous delivery) pipeline. You can incorporate load testing as a step in your pipeline to validate the performance and scalability of your applications.
 
-[Power Apps Test Engine](/power-apps/developer/test-engine/overview) is a component within the Power Platform CLI that you can use to test standalone canvas apps in Power Apps.
+You can use [Power Platform Playwright samples](../../developer/playwright-samples/overview.md) to test all types of Power Apps.
 
 [Azure Test Plans](/azure/devops/test/overview) is an easy-to-use, browser-based test management solution that provides all the capabilities required for planned manual testing, user acceptance testing, exploratory testing, and gathering feedback from stakeholders.
 

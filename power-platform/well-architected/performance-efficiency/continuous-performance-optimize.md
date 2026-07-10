@@ -57,7 +57,7 @@ Critical user and system flows are the most important and high-priority processe
 
 Automation can eliminate repetitive and time-consuming manual processes, allowing them to be performed efficiently. Automation reduces the chances of human error and ensures consistency in running optimization tasks. By automating these tasks, you can also free up people to focus on more complex activities and activities that add value. You can apply automation to various tasks, such as performance testing, deployment, and monitoring.
 
-- _Automated performance testing_: Use automated performance testing tools like Selenium to simulate different workloads and scenarios. [Power Apps Test Engine](/power-apps/developer/test-engine/overview) is a component within the Power Platform CLI that you can use to test standalone canvas apps in Power Apps.
+- _Automated performance testing_: Use automated performance testing tools like Selenium to simulate different workloads and scenarios. You can use [Power Platform Playwright samples](../../developer/playwright-samples/overview.md) to test all types of Power Apps.
 
 - _Automated deployment_: Implement automated deployment processes to ensure consistent and error-free deployments. Use CI/CD (continuous integration/continuous delivery) tools to automate the deployment process. These tools can help you identify performance bottlenecks as you use them to test against endpoints, check HTTP statuses, and even validate data quality and variations.
 

@@ -74,5 +74,5 @@ landingContent:
             url: /power-apps/maker/canvas-apps/create-performant-apps-overview
           - text: Integration with Application Insights
             url: /power-platform/admin/overview-integration-application-insights
-          - text: Power Apps Test Engine
-            url: /power-apps/developer/test-engine/overview
+          - text: Power Platform Playwright samples
+            url: /power-platform/developer/playwright-samples/overview

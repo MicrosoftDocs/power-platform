@@ -21,7 +21,6 @@ Microsoft Power Platform provides various tools for developers to extend platfor
 |[Visual Studio connected service](visual-studio-connected-service.md) ||Add Power Platform as a connected service in Visual Studio to create a custom connector.|
 |[ALM developer tools](tools-alm.md) | | ALM developer tools for Power Platform enables developers to create and manage projects related to testing, deployment, maintenance, and governance of solutions. |
 |[Dataverse developer tools](tools-dataverse.md) | | Dataverse developer tools enable developers to extend data platform capabilities in Power Platform. |
-|[Power Apps Test Engine (preview)](/power-apps/developer/test-engine/overview) | [link](https://github.com/microsoft/PowerApps-TestEngine/releases) | Power Apps Test Engine is an open source project that provides developers with an automated testing platform for canvas apps. |
 
 
 

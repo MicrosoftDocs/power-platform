@@ -2022,6 +2022,146 @@
       "source_path": "power-platform/admin/inactive-teams-environment.md",
       "redirect_url": "/power-platform/admin/automatic-environment-cleanup",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/index.yml",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/overview.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/ai-authoring.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/ai-evaluation.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/ai-mcp.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/ai-overview.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/alm.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/authentication.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/authentication-guide.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/authentication-security.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/canvas-application.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/dataverse.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/extensibility.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/feature-lifecycle.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/features.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/filerestrictions.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/migration-guide.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/model-driven-application.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/module-functions-reference.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/playwright.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/powerfx.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/powerfx-csharp.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/powerfx-functions.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/powerfx-namespaces.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/providers.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/samples.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/simulation.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/test-engine/yaml.md",
+      "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
+      "redirect_document_id": false
     }
   ]
 }
