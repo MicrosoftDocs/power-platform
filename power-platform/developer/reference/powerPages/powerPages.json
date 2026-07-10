@@ -268,6 +268,237 @@
         }
       }
     },
+    "/powerpages/environments/{environmentId}/websites/{id}/certificates": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Upload a certificate for a website.",
+        "description": "Validates and uploads an SSL or managed certificate for the specified website. The certificate file and password must be provided as multipart form data.",
+        "operationId": "UploadCertificate",
+        "consumes": [
+          "multipart/form-data"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "certType",
+            "description": "The type of certificate (e.g., SSL, MANAGED).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "formData",
+            "name": "file",
+            "description": "The certificate file (.pfx).",
+            "type": "file",
+            "x-ms-summary": "Certificate File"
+          },
+          {
+            "in": "formData",
+            "name": "password",
+            "description": "The certificate password.",
+            "type": "string",
+            "x-ms-summary": "Password"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "description": "The thumbprint of the uploaded certificate.",
+              "type": "string"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Get certificates associated with a website.",
+        "description": "Returns the list of certificates associated with the specified website, filtered by certificate type.",
+        "operationId": "GetCertificatesByPortal",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "certType",
+            "description": "The type of certificate to retrieve. Allowed values: SSL, MANAGED.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/CertificateDTO"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Delete a certificate associated with a website.",
+        "description": "Deletes the certificate identified by the given thumbprint and type from the website.",
+        "operationId": "DeleteCertificateByPortal",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "thumbprint",
+            "description": "The thumbprint of the certificate to delete.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "certType",
+            "description": "The type of certificate (e.g., SSL, MANAGED).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
     "/powerpages/environments/{environmentId}/websites/{id}/convertToProduction": {
       "post": {
         "tags": [
@@ -394,6 +625,203 @@
         "responses": {
           "202": {
             "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/customDomain": {
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "List custom host names for a website.",
+        "description": "Returns the list of custom host names configured for the specified website.",
+        "operationId": "ListHostNamesForPortal",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "description": "A custom host name configured for the website.",
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Add a custom domain to a website.",
+        "description": "Adds the specified custom host name to the website.",
+        "operationId": "CreateCustomDomain",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "customDomain",
+            "description": "The custom host name to add to the website.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Delete a custom domain from a website.",
+        "description": "Removes the specified custom host name from the website and cleans up associated SSL bindings and Azure Front Door (AFD) configuration.",
+        "operationId": "DeleteHostNameForPortal",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "hostName",
+            "description": "The custom host name to remove from the website.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -759,6 +1187,71 @@
       }
     },
     "/powerpages/environments/{environmentId}/websites/{id}/ipaddressrules": {
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Get allowed IP addresses for a Power Pages website.",
+        "description": "Returns the list of IP addresses in the website's IP restriction allow list.",
+        "operationId": "GetAllowedIpAddresses",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "description": "List of allowed IP addresses.",
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/IpAddressEntity"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      },
       "post": {
         "tags": [
           "Websites"
@@ -805,15 +1298,8 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "description": "List of allowed IP addresses after the operation",
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/IpAddressEntity"
-              }
-            }
+          "204": {
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -883,15 +1369,8 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "description": "List of allowed IP addresses after the operation",
-              "type": "array",
-              "items": {
-                "$ref": "#/definitions/IpAddressEntity"
-              }
-            }
+          "204": {
+            "description": "Success"
           },
           "400": {
             "description": "Bad Request",
@@ -1333,6 +1812,223 @@
             "schema": {
               "$ref": "#/definitions/PortalDataModelDto"
             }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/sslBindings": {
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "List SSL bindings for a website by hostname.",
+        "description": "Returns the SSL bindings (certificate thumbprints) associated with the specified hostname on the website.",
+        "operationId": "ListSslBindingsByThumbprints",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "hostName",
+            "description": "The custom domain hostname to filter SSL bindings by.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/SslBindingThumbprintDTO"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Add an SSL binding to a website.",
+        "description": "Binds the specified certificate thumbprint to the custom domain hostname of the website.",
+        "operationId": "AddSslBindingByPortal",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "thumbprint",
+            "description": "The thumbprint of the certificate to bind.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "hostName",
+            "description": "The custom domain hostname to bind the certificate to.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Delete SSL binding for a website by certificate thumbprint.",
+        "description": "Removes the SSL binding for the specified hostname and certificate thumbprint from the website.",
+        "operationId": "DeleteSslBindingByThumbprint",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "hostName",
+            "description": "The custom domain hostname whose SSL binding will be removed.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "thumbprint",
+            "description": "The thumbprint of the certificate to unbind.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
           }
         ],
         "responses": {
@@ -2303,16 +2999,7 @@
         "IpAddresses": {
           "type": "array",
           "items": {
-            "type": "object",
-            "properties": {
-              "IpAddress": {
-                "description": "The IP address or CIDR range",
-                "type": "string"
-              },
-              "IpAddressType": {
-                "$ref": "#/definitions/IpAddressType"
-              }
-            }
+            "$ref": "#/definitions/IpAddressEntity"
           }
         }
       }
@@ -2322,25 +3009,11 @@
       "type": "object",
       "properties": {
         "IpAddress": {
-          "description": "The IP address or CIDR range",
+          "description": "The IP address or CIDR range (e.g., \"208.130.0.0/16\")",
           "type": "string"
         },
-        "IpType": {
+        "IpAddressType": {
           "$ref": "#/definitions/IpAddressType"
-        },
-        "TenantId": {
-          "format": "uuid",
-          "description": "The unique identifier of the tenant",
-          "type": "string"
-        },
-        "CreatedOn": {
-          "format": "date-time",
-          "description": "The creation timestamp of the IP address entry",
-          "type": "string"
-        },
-        "LastModifiedOn": {
-          "description": "The last modification timestamp of the IP address entry",
-          "type": "string"
         }
       }
     },
@@ -2509,6 +3182,45 @@
           "items": {
             "type": "string"
           }
+        }
+      }
+    },
+    "SslBindingThumbprintDTO": {
+      "type": "object",
+      "properties": {
+        "Name": {
+          "description": "The custom hostname the SSL binding is associated with.",
+          "type": "string"
+        },
+        "Thumbprint": {
+          "description": "The certificate thumbprint bound to the hostname.",
+          "type": "string"
+        }
+      }
+    },
+    "CertificateDTO": {
+      "type": "object",
+      "properties": {
+        "SubjectName": {
+          "description": "The subject name of the certificate.",
+          "type": "string"
+        },
+        "ExpirationDate": {
+          "format": "date-time",
+          "description": "The expiration date of the certificate.",
+          "type": "string"
+        },
+        "Thumbprint": {
+          "description": "The thumbprint of the certificate.",
+          "type": "string"
+        },
+        "Location": {
+          "description": "The Azure region where the certificate is stored.",
+          "type": "string"
+        },
+        "Type": {
+          "description": "The type of the certificate (e.g., SSL, MANAGED, AZURE_MANAGED).",
+          "type": "string"
         }
       }
     }

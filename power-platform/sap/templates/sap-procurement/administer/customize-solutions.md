@@ -4,7 +4,6 @@ description: Learn how to customize the SAP Procurement template's solutions to 
 author: tverhasselt
 ms.author: thoverh
 contributors:
-  - galitskyd
   - microsoft-dustin
   - Wrighttyler
 ms.reviewer: ellenwehrle

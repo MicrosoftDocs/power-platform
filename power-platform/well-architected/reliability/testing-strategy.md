@@ -142,7 +142,7 @@ Integrate the following recommendations and considerations to optimize your chao
 
 You can use [static results in Power Automate](/azure/logic-apps/test-logic-apps-mock-data-static-results?tabs=consumption#set-up-mock-outputs-on-an-action) to return a fixed result to test your workload.
 
-[Power Apps Test Engine](/power-platform/test-engine/) is a Power Platform CLI component that you can use to test standalone canvas apps in Power Apps.
+You can use [Power Platform Playwright samples](../../developer/playwright-samples/overview.md) to test all types of Power Apps.
 
 [Azure Test Plans](/azure/devops/test/overview) is an easy-to-use, browser-based test management solution that provides all the capabilities required for planned manual testing, user acceptance testing, exploratory testing, and gathering feedback from stakeholders.
 

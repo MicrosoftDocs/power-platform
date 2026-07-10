@@ -2,12 +2,13 @@
 title: "How managed solutions are merged in Power Platform" 
 description: "To avoid multiple installed solutions from interfering with one another, follow best practices while constructing a solution." 
 ms.custom: ""
-ms.date: 02/04/2025
+ms.date: 07/08/2026
 ms.reviewer: ""
 ms.topic: concept-article
 author: "caburke" 
 ms.subservice: alm
-ms.author: "matp" 
+ms.author: "matp"
+contributors: dasussMS
 search.audienceType: 
   - maker
   - developer
@@ -63,14 +64,25 @@ Each new choice column option is initialized with an integer value assigned that
   
 A managed solution usually updates or adds options for choice columns that are already in the environment, for example, the Category or Industry choice columns for an account. When a managed solution modifies the options available in a choice column, all the options defined in the managed solution are available in the environment. When the managed solution is uninstalled, the options in the choice column are returned to their original state.  
 
-## Merge security role privileges
+## Security role privilege updates
 
-When a security role is imported from a managed solution into an environment, all the manually added privileges of that security role are removed. However, the modified privileges of the security role where the privilege level was changed, for example from basic to global scope or vice versa, remain.
+How security role privileges are updated when you import a managed solution depends on whether the role is a predefined (out-of-the-box) security role or a custom security role.
+
+### Merge behavior for predefined security roles
+
+When you import a [predefined security role](/power-platform/admin/database-security#predefined-security-roles) from a managed solution into an environment, the import process removes all manually added privileges from that security role. However, the import process keeps the modified privileges of the security role where you changed the privilege level, such as changing from basic to global scope or vice versa.
 
 > [!TIP]
-> Use the same custom solution to manage updating security roles. If you use a new custom solution to update a security role that was previously updated in another solution, some of the privilege updates won't be applied.
->
 > Don't use a custom solution to modify [predefined security roles](/power-platform/admin/database-security#predefined-security-roles). These updates are removed when the predefined roles are updated by the system. Create a copy of the predefined role and manage the copied role in your custom solution.
+
+### Replace behavior for custom security roles
+
+Custom security role updates are always considered a replace operation, not a merge. This behavior is by design.
+
+When you import a custom security role from a managed solution into an environment, the import process replaces the privileges of the existing role with the privileges defined by the imported solution. The import process doesn't preserve any privileges that you previously added or modified outside of that solution.
+
+> [!TIP]
+> Use the same custom solution to manage updating custom security roles. If you use a new custom solution to update a custom security role that was previously updated in another solution, some of the privilege updates won't be applied.
 
 ### See also  
 

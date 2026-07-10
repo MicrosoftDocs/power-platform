@@ -1415,6 +1415,67 @@
         "x-AccessControl.Permission": "EnvironmentManagement.Copy.Write"
       }
     },
+    "/environmentmanagement/environments/{targetEnvironmentId}/operations/{operationId}": {
+      "get": {
+        "tags": [
+          "Operation"
+        ],
+        "summary": "Gets the status of an environment-scoped lifecycle operation (Preview).",
+        "description": "Gets the status of an environment lifecycle operation scoped under a specific environment, enabling environment-level authorization on the operation lookup.",
+        "operationId": "GetEnvironmentOperationByID",
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "targetEnvironmentId",
+            "description": "The ID of the target environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "operationId",
+            "description": "The ID of the operation.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/OperationExecutionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{targetEnvironmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Operation.Read"
+      }
+    },
     "/environmentmanagement/environments/{targetEnvironmentId}/Restore": {
       "post": {
         "tags": [
@@ -1466,7 +1527,7 @@
             "name": "body",
             "description": "The request body.",
             "schema": {
-              "$ref": "#/definitions/EnvironmentRestoreRequest"
+              "$ref": "#/definitions/RestoreRequest"
             }
           }
         ],
@@ -2410,7 +2471,7 @@
           "type": "string"
         },
         "errors": {
-          "$ref": "#/definitions/ErrorResponse"
+          "$ref": "#/definitions/EnvironmentServiceErrorResponse"
         },
         "nextLink": {
           "format": "uri",
@@ -2549,7 +2610,7 @@
       },
       "additionalProperties": false
     },
-    "ErrorResponse": {
+    "EnvironmentServiceErrorResponse": {
       "type": "object",
       "properties": {
         "code": {
@@ -2579,7 +2640,7 @@
           }
         },
         "errors": {
-          "$ref": "#/definitions/ErrorResponse"
+          "$ref": "#/definitions/EnvironmentServiceErrorResponse"
         },
         "nextLink": {
           "format": "uri",
@@ -2662,6 +2723,20 @@
         }
       }
     },
+    "EnvironmentPrincipal": {
+      "description": "Represents a principal (user or application).",
+      "type": "object",
+      "properties": {
+        "id": {
+          "description": "The principal ID.",
+          "type": "string"
+        },
+        "type": {
+          "description": "The principal type.",
+          "type": "string"
+        }
+      }
+    },
     "EnvironmentResponse": {
       "type": "object",
       "properties": {
@@ -2698,10 +2773,10 @@
           "type": "string"
         },
         "createdBy": {
-          "$ref": "#/definitions/Principal"
+          "$ref": "#/definitions/EnvironmentPrincipal"
         },
         "createdFor": {
-          "$ref": "#/definitions/Principal"
+          "$ref": "#/definitions/EnvironmentPrincipal"
         },
         "createdDateTime": {
           "format": "date-time",
@@ -2773,6 +2848,10 @@
         },
         "enterprisePolicies": {
           "$ref": "#/definitions/EnterprisePolicies"
+        },
+        "scenarioName": {
+          "description": "The scenario name associated with the environment (e.g., singleton scenario type).",
+          "type": "string"
         }
       }
     },
@@ -2837,7 +2916,7 @@
         },
         "extensions": {
           "type": "object",
-          "additionalProperties": {},
+          "additionalProperties": { },
           "readOnly": true
         }
       },
@@ -2858,6 +2937,47 @@
       },
       "additionalProperties": false
     },
+    "EnvironmentGroup": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "parentGroupId": {
+          "format": "uuid",
+          "type": "string"
+        },
+        "childrenGroupIds": {
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "createdTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "createdBy": {
+          "$ref": "#/definitions/Principal"
+        },
+        "lastModifiedTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "lastModifiedBy": {
+          "$ref": "#/definitions/Principal"
+        }
+      },
+      "additionalProperties": false
+    },
     "ValidationResponse": {
       "description": "Represents the response for validation of an operation.",
       "type": "object",
@@ -2874,6 +2994,10 @@
       "properties": {
         "userId": {
           "description": "The ID of the user.",
+          "type": "string"
+        },
+        "type": {
+          "description": "The type of the user identity (e.g., User).",
           "type": "string"
         },
         "displayName": {
@@ -2902,6 +3026,18 @@
       },
       "additionalProperties": false
     },
+    "StepExecutionStatus": {
+      "description": "The execution status of a step within a stage.",
+      "enum": [
+        "Succeeded",
+        "Failed",
+        "Skipped",
+        "Postponed",
+        "InProgress",
+        "NotStarted"
+      ],
+      "type": "string"
+    },
     "StateChangeRequest": {
       "description": "Represents a request to change the state of an environment.",
       "type": "object",
@@ -2909,6 +3045,33 @@
         "reason": {
           "description": "The reason of this state change.",
           "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "StageStatus": {
+      "description": "The stage status of an operation.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The name of stage.",
+          "type": "string"
+        },
+        "status": {
+          "$ref": "#/definitions/StepExecutionStatus"
+        },
+        "startTime": {
+          "format": "date-time",
+          "description": "The start time of stage.",
+          "type": "string"
+        },
+        "endTime": {
+          "format": "date-time",
+          "description": "The end time of stage.",
+          "type": "string"
+        },
+        "errorDetail": {
+          "$ref": "#/definitions/ErrorInfo"
         }
       },
       "additionalProperties": false
@@ -2921,7 +3084,7 @@
           "description": "Gets or sets the response's object"
         },
         "errors": {
-          "$ref": "#/definitions/ErrorResponse"
+          "$ref": "#/definitions/EnvironmentServiceErrorResponse"
         },
         "nextLink": {
           "format": "uri",
@@ -2939,30 +3102,44 @@
       },
       "additionalProperties": false
     },
-    "StageStatus": {
-      "description": "The stage status of an operation.",
+    "RestoreRequestOptions": {
+      "description": "Optional inputs for a restore request.",
       "type": "object",
       "properties": {
-        "name": {
-          "description": "The name of stage.",
+        "environmentNameToOverride": {
+          "description": "Environment name to override on the target environment.",
           "type": "string"
         },
-        "status": {
-          "description": "The status of stage.",
+        "securityGroupIdToOverride": {
+          "description": "Security group ID to override on the target environment.",
           "type": "string"
         },
-        "startTime": {
+        "skipAuditData": {
+          "description": "A value indicating whether to skip audit data during the restore process.",
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "RestoreRequest": {
+      "description": "Request model for restoring an environment to a previous backup.",
+      "required": [
+        "restorePointDateTime",
+        "sourceEnvironmentId"
+      ],
+      "type": "object",
+      "properties": {
+        "restorePointDateTime": {
           "format": "date-time",
-          "description": "The start time of stage.",
+          "description": "Date and time of the restore point, with timezone offset per RFC 3339 (e.g., 2025-04-30T12:34:56+02:00).",
           "type": "string"
         },
-        "endTime": {
-          "format": "date-time",
-          "description": "The end time of stage.",
+        "sourceEnvironmentId": {
+          "description": "The ID of the source environment from which the backup will be restored.",
           "type": "string"
         },
-        "errorDetail": {
-          "$ref": "#/definitions/ErrorInfo"
+        "restoreOptions": {
+          "$ref": "#/definitions/RestoreRequestOptions"
         }
       },
       "additionalProperties": false
@@ -3107,47 +3284,6 @@
       },
       "additionalProperties": false
     },
-    "EnvironmentGroup": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "displayName": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "parentGroupId": {
-          "format": "uuid",
-          "type": "string"
-        },
-        "childrenGroupIds": {
-          "type": "array",
-          "items": {
-            "format": "uuid",
-            "type": "string"
-          }
-        },
-        "createdTime": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "createdBy": {
-          "$ref": "#/definitions/Principal"
-        },
-        "lastModifiedTime": {
-          "format": "date-time",
-          "type": "string"
-        },
-        "lastModifiedBy": {
-          "$ref": "#/definitions/Principal"
-        }
-      },
-      "additionalProperties": false
-    },
     "Identity": {
       "type": "object",
       "properties": {
@@ -3165,14 +3301,11 @@
     },
     "ForceFailoverRequest": {
       "description": "Request model for force failover operation on an environment.",
-      "required": [
-        "lastSyncTime"
-      ],
       "type": "object",
       "properties": {
         "lastSyncTime": {
           "format": "date-time",
-          "description": "Last sync time used for the force failover operation.",
+          "description": "The last sync time used to perform the force failover operation. Optional; if null or omitted, the service will fail over to the latest available sync point.",
           "type": "string"
         }
       },
@@ -3190,11 +3323,26 @@
           "description": "The detailed error.",
           "type": "object",
           "additionalProperties": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+            "$ref": "#/definitions/ErrorEntry"
           }
+        }
+      },
+      "additionalProperties": false
+    },
+    "ErrorEntry": {
+      "description": "Represents the error detail for a single entry in an error dictionary.",
+      "type": "object",
+      "properties": {
+        "errorMessages": {
+          "description": "The error messages describing what is wrong.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "suggestedValue": {
+          "description": "A suggested or accepted value that would resolve the error.",
+          "type": "string"
         }
       },
       "additionalProperties": false
@@ -3256,30 +3404,6 @@
         "Platform"
       ],
       "type": "string"
-    },
-    "EnvironmentRestoreRequest": {
-      "description": "Request model for restoring an environment to a previous backup.",
-      "required": [
-        "restorePointDateTime",
-        "sourceEnvironmentId"
-      ],
-      "type": "object",
-      "properties": {
-        "restorePointDateTime": {
-          "format": "date-time",
-          "description": "Restore point date-time with timezone offset per RFC 3339.",
-          "type": "string"
-        },
-        "skipAuditData": {
-          "description": "A value indicating whether to skip audit data during the restore process.",
-          "type": "boolean"
-        },
-        "sourceEnvironmentId": {
-          "description": "The ID of the source environment from which the backup will be restored from.",
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
     },
     "EnvironmentPagedCollection": {
       "type": "object",
@@ -3447,7 +3571,7 @@
       "properties": {
         "baseLanguage": {
           "format": "int32",
-          "description": "The base language code (for example, 1033 for English).",
+          "description": "The base language code (e.g., 1033 for English).",
           "type": "integer"
         },
         "currency": {
@@ -3470,8 +3594,7 @@
         },
         "templateMetadata": {
           "description": "A JSON object payload customized for the selected templates.",
-          "type": "object",
-          "additionalProperties": true
+          "type": "object"
         }
       },
       "additionalProperties": false
@@ -3510,7 +3633,7 @@
       "type": "object",
       "properties": {
         "code": {
-          "description": "The currency code (for example, USD).",
+          "description": "The currency code (e.g., USD).",
           "type": "string"
         },
         "name": {
@@ -3534,7 +3657,7 @@
       "type": "object",
       "properties": {
         "category": {
-          "description": "The cluster category (for example, FirstRelease).",
+          "description": "The cluster category (e.g., FirstRelease).",
           "type": "string"
         }
       },
@@ -3576,7 +3699,7 @@
           "type": "string"
         },
         "databaseType": {
-          "description": "The type of database to create (for example, CommonDataService).",
+          "description": "The type of database to create (e.g., CommonDataService).",
           "type": "string"
         },
         "usedBy": {

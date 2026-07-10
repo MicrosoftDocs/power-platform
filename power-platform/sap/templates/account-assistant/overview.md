@@ -7,7 +7,6 @@ contributors:
   - haowusky
   - hidasa
   - tverhasselt
-  - galitskyd
   - Wrighttyler
   - EllenWehrle
   - MartinPankraz

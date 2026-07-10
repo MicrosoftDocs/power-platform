@@ -1,8 +1,8 @@
 ---
 title: Get started with the SAP OData connector
 description: Learn about the SAP OData connector and its connection options so you can connect and extend your SAP data in Microsoft Power Platform .
-author: galitskyd
-ms.author: dgalitsky
+author: haowusky
+ms.author: hawu1
 contributors:
   - edlehman
   - EllenWehrle

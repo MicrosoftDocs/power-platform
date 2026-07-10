@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery
 description: Microsoft provides business continuity and disaster recovery for production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 06/22/2026
+ms.date: 07/02/2026
 ms.reviewer: ellenwehrle
 ms.topic: concept-article
 ms.subservice: admin
@@ -96,7 +96,7 @@ You might also want to turn on disaster recovery for other events, like:
 
 ## Disaster recovery drills
 
-Your company might have disaster recovery drills documented as a requirement in your internal business continuity plans. Some industries and companies might be required by government regulations to perform audits on their business continuity disaster recovery capabilities. In these cases, you can run a disaster recovery drill on an environment. A disaster recovery drill lets you do self-service disaster recovery without losing any data. The duration of the failover action can be slightly longer while all remaining data is replicated to the secondary region.
+Your company might document disaster recovery drills as a requirement in its internal business continuity plans. Some industries and companies are subject to government regulations that require audits on their business continuity and disaster recovery capabilities. In these cases, run a disaster recovery drill on an environment. A disaster recovery drill lets you do self-service disaster recovery without losing any data. The duration of the failover action can be slightly longer while all remaining data is replicated to the secondary region.
 
 Run drills on a copy of a production environment, since this process involves downtime when failing over to remote region that can last for minutes. For example, you might want to copy a production environment to a sandbox environment and then change the type from sandbox to production.
 
@@ -146,14 +146,14 @@ With the implementation of [availability zones](/azure/reliability/availability-
  
 ### What are the costs associated with using self-service disaster recovery?
 
-- The selected environment must be a [managed environment](managed-environment-licensing.md). This environment is a premium license tier. 
-- Prepaid storage consumed for the secondary region is the cost incurred.
+- You must select a [managed environment](managed-environment-licensing.md). This environment requires a premium license tier. 
+- You pay for the prepaid storage consumed in the secondary region.
   
   For example, suppose you have 10 GB of capacity consumption in the primary location. When you turn on self-service disaster recovery, you create a copy of the data in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. If you exceed your available free storage or available entitlements, a pay-as-you-go plan actively starts billing.
   
 ### How does billing work for self-service disaster recovery?
 
-A pay-as-you-go billing plan has been removed as a mandatory requirement. The system checks for available free capacity in your tenant. All pooled Dataverse entitlements at the tenant-level can be counted towards secondary storage enablement. Various overage initiatives are being evaluated. Overage management is out side of self-service disaster recovery management scope.
+A pay-as-you-go billing plan is no longer a mandatory requirement. The system checks for available free capacity in your tenant. All pooled Dataverse entitlements at the tenant-level count towards secondary storage enablement. Microsoft is evaluating various overage initiatives. Overage management is outside of self-service disaster recovery management scope.
 
 ### Can I switch regions during a regional outage?
 
@@ -176,7 +176,7 @@ As of November 2025, Austria East, Belgium Central, Chile Central, Indonesia Cen
 
 ### How do I disable self-service disaster recovery?
 
-To disable self-service disaster recovery, go to the *disaster recovery pane* in Power platform admin center and uncheck the **Turn on disaster recovery** checkbox.
+To disable self-service disaster recovery, go to the *disaster recovery pane* in Power Platform admin center and uncheck the **Turn on disaster recovery** checkbox.
 
 ### What happens when I disable self-service disaster recovery?
 
@@ -188,12 +188,12 @@ No, you can't disable self-service disaster recovery while the environment is in
 
 ### Are Power Apps and Power Pages supported with self-service disaster recovery?
 
-Yes, self-service disaster recovery is supported for Power Apps and Power Pages.
+Yes, self-service disaster recovery supports Power Apps and Power Pages.
 
 ### Is Power Automate supported with self-service disaster recovery?
 
 As of October 2025:
-- Power Automate desktop flows and cloud flows are supported for failover and failback with self-service disaster recovery with known performance limitations.
+- Power Automate desktop flows and cloud flows support failover and failback with self-service disaster recovery but have known performance limitations.
 
   > [!NOTE]
   > Power Automate environments enabled for self-service disaster recovery run on isolated, runtime capacity. Most workloads shouldn't notice a difference, but high-volume, highly parallel, or latency-sensitive flows might take longer to start or have lower throughput. Validate business-critical workloads before enabling this feature.
@@ -210,11 +210,24 @@ Field service now supports self-service disaster recovery. You can now manage wo
 
 ### Do I need to allow list IP addresses for the secondary region?
  
-Yes. If you have configured any firewall rules or allow lists based on the outbound IP addresses of your Finance and Operations environment, you must also include the IP ranges for the secondary (paired) Azure region.
+Yes. If you configure any firewall rules or allow lists based on the outbound IP addresses of your Finance and Operations environment, you must also include the IP ranges for the secondary (paired) Azure region.
  
 During disaster recovery scenarios that require regional failover, outbound requests from the Application Object Server (AOS) can originate from the secondary region's IP ranges. Infrastructure hosting Microsoft-managed environments is registered under the `PowerPlatformPlex` Azure service tag. Ensure your allow lists include the `PowerPlatformPlex` ranges for both your primary and secondary regions.
  
 For instructions on retrieving the current IP ranges, see [What are the outbound IP ranges for my Finance and Operations environment?](/dynamics365/fin-ops-core/dev-itpro/deployment/deploymentfaq#what-are-the-outbound-ip-ranges-for-my-finance-and-operations-environment).
+
+### Can I enable SSDR on a sandbox environment in Dynamics 365 Finance & Operations?
+
+No. Only live production environments support Self-Service Disaster Recovery (SSDR) for Dynamics 365 Finance & Operations at this time. All sandbox tiers&mdash;including Tier 2, Tier 3, Tier 4, and Tier 5&mdash;aren't eligible for SSDR enrolment. If your environment isn't eligible for SSDR, the disaster recovery option won't appear in the Power Platform Admin Center.
+
+### Can I enable SSDR only for select applications on my environment (ex. Dynamics 365 Finance & Operations only)?
+No. SSDR is turned on at the environment level and can't be configured for individual applications. SSDR creates and maintains a secondary copy for Dataverse, providing disaster recovery coverage for all supported Dynamics 365 Customer Engagement (CE) applications in the environment, such as Dynamics 365 Sales, Field Service, and Contact Center.
+
+Dynamics 365 Finance & Operations (F&O) applications are linked with Microsoft Dataverse through the Power Platform integration. Hence, linked F&O applications are covered by SSDR. If your F&O application isn't linked to your environment, follow [this link](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) to enable the integration.
+
+### How can SSDR be enabled for Dynamics 365 Finance & Operations applications that aren't integrated with Power Platform?
+
+Dynamics 365 Finance & Operations (F&O) applications must be integrated with Microsoft Dataverse through Power Platform integration to use SSDR. If your F&O application isn't linked to your environment, follow [this link](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) to enable the integration.
 
 ### Are there any known limitations during a region-wide outage that self-service disaster recovery can't mitigate?
 
@@ -228,7 +241,7 @@ For detailed steps, see [Manage Business Events endpoints](/dynamics365/fin-ops-
 
 #### Fabric link limitation
 
-During a self-service disaster recovery (SSDR) failover, Fabric link and data synchronization are preserved without requiring full reinitialization. However, the Microsoft-managed data lake backing Fabric link doesn't currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric link synchronization and access can be interrupted until the primary region becomes available again. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
+During a self-service disaster recovery (SSDR) failover, the Microsoft-managed data lake backing Fabric link doesn't currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric link synchronization and access can be interrupted until the primary region becomes available again. Fabric link does not currently provide a service level objective (SLO) for recovery time objective (RTO) or recovery point objective (RPO) during SSDR failover scenarios. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
  
 In long-running failover scenarios or extended operation in a secondary region, you might also encounter regional capacity constraints if you manually reconfigure the Fabric link. To restore Fabric link functionality or ensure a healthy operational state after failover, you need to:
 
@@ -242,10 +255,13 @@ Microsoft is actively improving Fabric link failover support to ensure configura
 Self-service disaster recovery (SSDR) does not currently provide full support for Synapse Link configurations. In the event of a regional outage, Synapse Link is not automatically recovered as part of the SSDR process. To restore Synapse Link connectivity after a failover or recovery operation, we recommend manually unlinking and relinking your Synapse Link connection.
 
 #### Environment servicing limitation
-Servicing actions, such as code deployments for Dynamics 365 Finance and Operations environments cannot be performed while the environment is operating from the secondary region. To apply code updates or run deployments, you must first switch back to the primary region.
+Servicing actions, such as code deployments for Dynamics 365 Finance and Operations environments can't be performed while the environment is operating from the secondary region. To apply code updates or run deployments, you must first switch back to the primary region.
 
 #### Commerce Scale Units limitation
-Commerce Scale Units (CSU) failover is not currently supported as part of self-service disaster recovery (SSDR). During an SSDR failover event, CSU components are not automatically failed over or replicated to the secondary region. If your environment relies on CSU and you experience an outage or a CSU resynchronisation is required following a failover, please raise a support request and provide details of the impact so the support team can assist.
+Commerce Scale Units (CSU) failover isn't currently supported as part of self-service disaster recovery (SSDR). During an SSDR failover event, CSU components aren't automatically failed over or replicated to the secondary region. If your environment relies on CSU and you experience an outage or a CSU resynchronisation is required following a failover, raise a support request and provide details of the impact so the support team can assist.
+
+#### Long-Term Data Retention (LTDR) limitation
+Long-term data retention (LTDR) data is preserved during self-service disaster recovery (SSDR) failover, as it's stored independently from the primary environment. However, archival processes might require validation or restart post-failover, and customers might observe a delay in newly archived data becoming available until workflows are re-established.
 
 #### Other limitations
 

@@ -4,10 +4,10 @@ description: Move your environment in a single tenant from one region to another
 author: matapg007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/11/2025
+ms.date: 06/26/2026
 ms.subservice: admin
 ms.author: matgupta 
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 contributors: 
     - faix
     - amiyapatr-zz
@@ -180,7 +180,7 @@ You should follow the above steps before and after geo-to-geo migration. The fol
 
 |   |    Before the move   |  During the move | After the move |
 |-----|------|---|----|
-| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager works with you to request a move and schedule it. | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but might take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend. | Notification and support <br /><br /> You are alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your environment migrates, you can perform the post migration steps. |
+| **What Microsoft does** | Notification <br /><br /> Your support representative or Account Manager works with you to request a move and schedule it. Depending on the amount of data, the move may be scheduled up to one week in advance of the cut-over date and time. When the move is scheduled but yet to run, the environment remains accessible. Certain environment lifecycle operations like Copy, Restore, etc. may be unavailable until the migration is completed.  | Cut-over <br /><br /> Cut-over times for each service depend on the number of users and the amount of data. This step can take 1 to 6 hours for smaller organizations, but might take up to 48 hours for large organizations. The cut-over is done during the evening or over a weekend. | Notification and support <br /><br /> You are alerted by email or telephone when your environment is migrated to the new datacenter.<br /><br /> After your environment migrates, you can perform the post migration steps. |
 
 We adhere to the terms of the [Microsoft Online Services Service Level Agreement](https://go.microsoft.com/fwlink/p/?LinkID=523897) for all moves.
 

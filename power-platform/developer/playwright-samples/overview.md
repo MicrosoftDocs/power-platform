@@ -14,9 +14,6 @@ ms.reviewer: jdaly
 
 [Power Platform Playwright samples](https://github.com/microsoft/power-platform-playwright-samples) is an open-source repository that provides a framework that lets you write reliable, maintainable end-to-end tests for all Power Platform app types. Built on [Microsoft Playwright](https://playwright.dev), it provides a Page Object Model (POM) pattern, built-in authentication helpers, and reusable components designed specifically for the Power Platform runtime.
 
-> [!NOTE]
-> This framework is the recommended Playwright-native alternative to [Power Apps Test Engine](/power-platform/test-engine/overview) for teams that prefer TypeScript, full IDE integration, and direct Playwright API access.
-
 ## Key capabilities of Power Platform Playwright samples
 
 Power Platform Playwright samples provides these features:
@@ -81,5 +78,4 @@ Use Power Platform Playwright samples when you need:
 ## See also
 
 - [Playwright documentation](https://playwright.dev/docs/intro)
-- [Power Apps Test Engine overview](/power-platform/test-engine/overview)
 - [Migrate from Power Apps Test Engine](migration-guide.md)

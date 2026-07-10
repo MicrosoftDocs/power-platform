@@ -6,7 +6,6 @@ ms.author: drasener
 contributors:
   - EllenWehrle
   - tverhasselt
-  - galitskyd
   - Wrighttyler
 ms.date: 05/20/2026
 ms.reviewer: ellenwehrle

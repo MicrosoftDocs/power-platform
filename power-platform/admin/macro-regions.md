@@ -1,41 +1,43 @@
 ---
-title: Power Platform and Dynamics 365 macro regions
-description: Macro region represents the data residency boundary aligning with data residency laws for a given geography. Learn more about the countries available in a specific macro region.
+title: Power Platform and Dynamics 365 macro region geography
+description: Macro region represents the data residency boundary aligning with data residency laws for a given geography. Learn more about the countries available in a specific macro region geography.
 author: shpradha
 ms.component: pa-admin
 ms.topic: concept-article
 ms.collection: get-started
-ms.date: 05/27/2026
+ms.date: 07/02/2026
 ms.subservice: admin
 ms.author: shpradha
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
 
-# Power Platform and Dynamics 365 macro regions
-A macro region represents the data residency boundary that aligns with data residency laws for a given geography. This article lists the regions available in a specific macro region.
+# Power Platform and Dynamics 365 macro region geographies
 
-The macro region enhancement to environment provisioning enables you to select a macro region during environment creation. This feature applies to public cloud only and is being introduced for tenants in the **Canada** region.
+A macro region geography represents the data residency boundary that aligns with data residency laws for a given geography. This article lists the regions available in a specific macro region geography.
 
-Customers select a macro region, such as North America, Europe, or Asia-Pacific instead of a specific geography. The platform then automatically assigns the optimal region within the selected macro region based on capacity, availability, and performance considerations. This approach helps ensure a more scalable, resilient, and performant experience for all customers while continuing to respect data residency commitments. The intelligent region selection ensures environments are placed in regions with optimal capacity and health, improving uptime and responsiveness.
+The macro region enhancement to environment provisioning enables you to select a macro region geography during environment creation. This feature applies to public cloud only and is being rolled out globally. At this point it has been implemented for Canada, & Norway.
 
-Using a macro region provides the following capabilities:
+As an admin, you can select a macro region geography, such as North America, Europe, or Asia-Pacific instead of a specific [datacenter region](/power-platform/admin/new-datacenter-regions). The platform then automatically assigns the optimal [datacenter region](/power-platform/admin/new-datacenter-regions) within the selected macro region geography based on capacity, availability, and performance considerations. This approach helps ensure a more scalable, resilient, and performant experience for all customers while continuing to respect data residency commitments. The intelligent region selection ensures environments are placed in regions with optimal capacity and health, improving uptime and responsiveness.
+
+Using a macro region geography provides the following capabilities:
 - As your workloads grow, the platform dynamically places environments in geographies best suited to handle demand at scale, without manual intervention.
-- You no longer need to evaluate and select individual geographies, simplifying environment creation while still maintaining regional control.
+- You no longer need to evaluate and select individual [datacenter region](/power-platform/admin/new-datacenter-regions) , simplifying environment creation while still maintaining regional control and alignment with data residency laws.
 - Microsoft can continuously optimize backend infrastructure, ensuring you benefit from ongoing investments in new regions, capacity, and resiliency.
-- You still control where your data resides at a regional level, ensuring alignment with business, compliance, and regulatory requirements.
+- You still control where your data resides at a geography level, ensuring alignment with business, compliance, and regulatory requirements, example (EUDB)[https://learn.microsoft.com/en-us/privacy/eudb/eu-data-boundary-learn].
 
-## Expected changes in your provisioning experience with a macro region 
-- For a new tenant that doesn't yet meet [geo-selection eligibility](#geo-selection-eligibility-criteria) criteria, you only see the macro region&mdash;given that a macro region is supported for the geography&mdash;at the time of _new_ environment creation. You don't see the individual regions. _New_ is associated with creation of the first Power Platform environment for the tenant.
-- Customers see their macro region and region in the environment properties and in the environment list. 
-- A macro region is a continental residency boundary, for example, the European Union Data Boundary (EUDB), while a region represents the country for deployment for clarity. 
+## Expected changes in your provisioning experience with a macro region geography
+
+- When creating a new environment, if the tenant doesn't yet meet the [geo-selection eligibility](#geo-selection-eligibility-criteria) criteria, customers see the list of macro region geographies and individual datacenter regions are not displayed.
+- Customers can see their macro region geography and data location (datacenter region) in the environment properties and in the environment list. 
+- A macro region geography is a continental residency boundary, for example, the European Union Data Boundary (EUDB), while a region represents the country of deployment for clarity. 
 - The system automatically determines the region within that macro region geography by using capacity-based routing, performance, and availability. 
-- Customers continue to see their data location (region) transparently after provisioning.
-- Existing tenants remain unchanged and retain their current region selection capabilities.
+- 
 
 ## Macro region geography
-The following table describes each macro region.
+
+The following table describes each macro region geography:
 
 | # | Macro region geography          | Regions                 | Description                                               |
 |---|---------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------|
@@ -52,35 +54,38 @@ The following table describes each macro region.
 > Sovereign clouds like the Government Community Cloud (GCC), Government Community Cloud - High (GCC-H), and Department of Defense (DoD) aren't supported.
 
 ## Geo-selection eligibility criteria
-Customers who meet the criteria can select a specific region during environment creation. Qualifying criteria include any one of the following characteristics:
 
--	[Advanced data residency](/microsoft-365/enterprise/advanced-data-residency) is enabled for Microsoft 365 in this tenant.
--	High-deployment workloads, such as 100 or more paid Dynamics 365 licenses or 1 TB or more of Dataverse storage. 
--	Premium Dynamics 365 workloads, such as Finance or Supply Chain Management with 20 or more paid licenses.
--	Premium Power Platform workloads, such as Power Apps or Power Automate with 5,000 or more paid licenses.
--	Specialized workloads, for example Contact Center. 
+Customers who meet the following criterion can select a specific [datacenter region](/power-platform/admin/new-datacenter-regions) within a macro region geography when creating a new environment:
 
-This criteria ensures customers with region control requirements for regional residency can continue operating with full flexibility.
+- [Advanced data residency](/microsoft-365/enterprise/advanced-data-residency) is enabled for all Microsoft 365 seats in this tenant.
 
-As tenants mature and begin to meet one of the geo-selection eligibility criteria, the auto Upgrade Enablement feature enables the ability at the tenant-level to select a specific region during environment creation going forward. 
+This criterion ensures customers with residency requirements can continue operating with full flexibility. Note that the [Advanced data residency](/microsoft-365/enterprise/advanced-data-residency) (ADR) SKU applies only to Microsoft 365 and must be enabled for all Microsoft 365 seats in the tenant to qualify for Dynamics 365 and Power Platform geo-location access during new environment creation as well. ADR provides a contractual commitment that specified Microsoft 365 customer data is stored at rest only within the customer’s designated local country or region datacenters, aligned with product terms and country-specific availability.
 
 ## Data residency and compliance
--	Data always resides within the selected macro region boundary. 
+
+-	Data always resides within the selected macro region geography boundary. 
 -	Where applicable, compliance constructs, such as the EUDB, are preserved and clearly communicated. 
 -	The platform doesn't expand residency guarantees beyond contractual commitments. 
 
 ## Customer experience example
-Assume that a customer selects **Europe and UK** as the macro region. The platform then assigns a geography, such as Germany or Italy, based on capacity and availability. The customer can view the assigned region after provisioning.
 
-If the customer requires region selection, such as France, they can qualify for premium criteria or engage with Microsoft support for exception handling. 
+- A customer selects "Europe & UK" as their macro region geography. 
+- The platform assigns a region (e.g., Germany, or Italy) based on capacity & availability.  
+- The customer can view the assigned datacenter region within the macro region geography after provisioning.  
 
-## Continuity for existing customers 
-There's no impact to existing environments or tenants. Existing customers retain current region selections and continue to have access to geo-based provisioning like they always have, ensuring a non-disruptive rollout while enabling a modern provisioning model for future environments.
+If customer has [Advanced data residency](/microsoft-365/enterprise/advanced-data-residency) (ADR) SKU enabled for 100% of their M365 seats in that tenant:  
+
+- This tenant qualifies for geo selection enablement on D365 and power Platform as well and will see list of Power Platform and Dynamics 365 datacenter regions to select from, during environment creation. 
+- Learn more about [Advanced data residency](/microsoft-365/enterprise/advanced-data-residency) (ADR) if customer requires data center region selection ability for their usecase (e.g., France). 
+
+## Continuity for Customers with existing environments  
+
+As of the date of the announcement, Microsoft does not anticipate impacts to existing environments, which continue to have geo-based provisioning. These geo location settings are the result of technical [capacity, resources, performance, scale] constraints and could be subject to future adjustments to the extent that these are caused by circumstances beyond anyone's reasonable control.
   
 ## Related content
+
 - [Advanced Data Residency](/microsoft-365/enterprise/advanced-data-residency)
 - [Products by region](https://azure.microsoft.com/regions/services/)
 - [Datacenter regions](new-datacenter-regions.md)
-
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
