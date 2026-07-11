@@ -2,7 +2,7 @@
 title: Programmability and Extensibility - Authentication
 description: Overview of Microsoft Entra setup for calling Power Platform API and other platform programmability tools.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.topic: reference
 ms.date: 03/09/2026
 ms.subservice: admin

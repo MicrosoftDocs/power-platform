@@ -2,7 +2,7 @@
 title: "Tutorial: Create a daily capacity report | Microsoft Docs"
 description: This tutorial demonstrates how to use the Power Platform API to create a daily capacity report.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/03/2025

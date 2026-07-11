@@ -3,7 +3,7 @@ title: Manage Copilot Studio credits and capacity
 description: Learn how to manage Copilot Studio credits and capacity.
 author: amiyapatr-zz
 ms.date: 03/16/2026
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
 ms.author: ampatra

@@ -2,7 +2,7 @@
 title: Programmability and extensibility
 description: Overview of available programmable tools for Microsoft Power Platform administrators
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 04/06/2026

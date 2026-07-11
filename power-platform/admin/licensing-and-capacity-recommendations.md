@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 05/08/2026
 ms.subservice: admin
 ms.author: sidhartg
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.contributors:
   - DanaMartens
   - sandhangitms

@@ -1,14 +1,14 @@
 ---
 title: FAQ for optional data sharing for Copilot AI features in Dynamics 365 and Power Platform
 description: This FAQ describes the optional data sharing setting for Copilot AI features in Dynamics 365 and Power Platform and how Microsoft responsibly uses your data.
-author: sericks007 
+author: EllenWehrle 
 ms.date: 01/22/2025
 ms.update-cycle: 180-days
 ms.custom: 
   - responsible-ai-faqs
 ms.topic: faq
 ms.author: svnielse
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.collection: 
     - bap-ai-copilot
 ms.contributors:

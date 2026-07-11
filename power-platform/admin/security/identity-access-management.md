@@ -8,7 +8,7 @@ ms.date: 03/09/2026
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 contributors:

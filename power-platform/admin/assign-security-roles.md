@@ -2,7 +2,7 @@
 title: Assign security roles 
 description: Learn about assigning security roles to a user.
 author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.subservice: admin
 ms.author: paulliew
 ms.component: pa-admin

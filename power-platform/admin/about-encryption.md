@@ -4,7 +4,7 @@ description: Learn about data encryption in Microsoft Dataverse.
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 contributors:
   - paulliew
   - denise-msft

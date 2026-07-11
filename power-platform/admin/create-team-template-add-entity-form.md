@@ -4,7 +4,7 @@ description: Create a team template and add to an entity form
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.custom: "admin-security"
 
 ms.component: pa-admin

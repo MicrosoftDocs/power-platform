@@ -8,7 +8,7 @@ ms.date: 05/21/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: miferlan
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType:
   - admin
 contributors:

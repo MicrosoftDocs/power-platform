@@ -2,7 +2,7 @@
 title: Programmability and extensibility - What's new or changed 
 description: Learn about the latest changes and new capabilities for the Power Platform API and admin SDKs.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 06/22/2026

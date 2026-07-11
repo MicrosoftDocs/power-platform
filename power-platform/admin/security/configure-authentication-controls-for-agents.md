@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.collection: bap-ai-copilot
 author: mikerapid
 ms.author: mobajemu
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.date: 06/11/2026
 
 ---

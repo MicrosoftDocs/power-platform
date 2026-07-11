@@ -7,7 +7,7 @@ ms.date: 07/15/2025
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 ms.custom:

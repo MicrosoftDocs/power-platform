@@ -7,7 +7,7 @@ ms.topic: troubleshooting-known-issue
 ms.date: 03/10/2026
 ms.subservice: admin
 ms.author: mamali 
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.contributors:
   - lsuresh
 contributors:

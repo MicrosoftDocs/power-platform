@@ -10,7 +10,7 @@ ms.custom:
   - NewPPAC
   - admin-security
 ms.author: alaug
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 ---

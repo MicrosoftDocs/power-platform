@@ -4,7 +4,7 @@ description: Configure your servers to meet TLS 1.3/1.2 requirements with the la
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 12/02/2024

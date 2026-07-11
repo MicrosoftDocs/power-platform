@@ -5,7 +5,7 @@ ms.topic: concept-article
 ms.date: 11/24/2025
 author: sidhartg
 ms.author: sidhartg
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 ms.custom: 
 search.audienceType:

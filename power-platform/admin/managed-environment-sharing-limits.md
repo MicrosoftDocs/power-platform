@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.date: 03/02/2026
 author: mikferland-msft 
 ms.author: miferlan
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 search.audienceType: 
   - admin

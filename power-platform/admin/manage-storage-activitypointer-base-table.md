@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 08/01/2024
 ms.subservice: admin
 ms.author: ceian
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 contributors:
 - shilpr
 - sarmathi

@@ -4,7 +4,7 @@ description: This article explains how to delete unlicensed or Microsoft Entra g
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 ms.topic: concept-article
 ms.date: 11/18/2025

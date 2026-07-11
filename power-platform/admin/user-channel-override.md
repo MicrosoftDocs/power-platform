@@ -6,7 +6,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 10/03/2025
 ms.subservice: admin
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.author: aorth
 ms.contributors:
   - aorth

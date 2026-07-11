@@ -7,7 +7,7 @@ ms.date: 01/26/2026
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.contributors:
   - lsuresh
 contributors:
