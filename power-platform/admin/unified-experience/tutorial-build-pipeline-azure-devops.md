@@ -2,7 +2,7 @@
 title: "Tutorial: Set up a nightly build pipeline for finance and operations apps using Azure DevOps"
 description: This tutorial demonstrates how to create an Azure DevOps build pipeline that compiles X++ code, generates a Power Platform unified package, and optionally includes Dataverse solutions.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/24/2026

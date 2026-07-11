@@ -3,7 +3,7 @@ title: Audit security roles
 description: Learn how to audit security roles to better understand changes made to them in Power Platform.
 author: sericks007
 ms.author: pmantha
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to

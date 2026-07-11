@@ -2,7 +2,7 @@
 title: Programmability and Extensibility - Authentication (legacy)
 description: Overview of authentication for Power Platform programmability tools
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 
 ms.component: pa-admin
 ms.topic: reference

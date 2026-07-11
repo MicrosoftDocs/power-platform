@@ -4,7 +4,7 @@ description: Learn how to use hierarchy security to control access.
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: concept-article

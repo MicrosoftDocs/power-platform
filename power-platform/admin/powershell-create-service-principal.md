@@ -2,7 +2,7 @@
 title: Creating a service principal application using PowerShell | Microsoft Docs
 description: PowerShell for Power Platform Administrators and service principal authentication
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 05/30/2023

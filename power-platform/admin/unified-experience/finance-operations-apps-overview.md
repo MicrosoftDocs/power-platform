@@ -6,7 +6,7 @@ ms.topic: overview
 ms.date: 04/03/2026
 ms.subservice: admin
 ms.author: laswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.custom: sfi-image-nochange
 contributors:
   - aarsh-msft

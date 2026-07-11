@@ -7,7 +7,7 @@ ms.date: 12/14/2020
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.custom: "admin-security"
 search.audienceType: 
   - admin

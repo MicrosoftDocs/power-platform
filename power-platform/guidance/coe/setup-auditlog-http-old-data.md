@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: petrip
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 contributors:

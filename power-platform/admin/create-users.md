@@ -2,7 +2,7 @@
 title: Create users 
 description: Learn about creating users.
 author: sericks007
-ms.reviewer: sericks007
+ms.reviewer: mkaur
 ms.subservice: admin
 ms.author: sericks
 ms.component: pa-admin

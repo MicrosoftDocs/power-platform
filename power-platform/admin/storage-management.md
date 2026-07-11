@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 05/30/2025
 ms.subservice: admin
 ms.author: ritesp
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---

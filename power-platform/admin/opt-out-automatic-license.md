@@ -4,7 +4,7 @@ description: Turn off automatically adding and removing user security roles base
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/28/2021

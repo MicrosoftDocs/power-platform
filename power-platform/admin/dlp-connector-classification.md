@@ -7,7 +7,7 @@ ms.date: 04/07/2026
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: sericks
+ms.reviewer: mkaur
 contributors:
   - laneswenka 
   - mikferland-msft

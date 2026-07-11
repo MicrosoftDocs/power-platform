@@ -3,7 +3,7 @@ title: Power Apps licensing FAQs
 description: Learn about common questions and answers for licensing and plan options.
 author: amchern
 ms.date: 01/24/2025
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.topic: faq
 ms.subservice: 
 ms.author: amchern

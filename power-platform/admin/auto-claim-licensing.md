@@ -3,7 +3,7 @@ title: Auto-claim policies for Power Apps licenses
 description: Learn how to assign Power Apps licenses through auto-claim policies.
 author: amiyapatr-zz
 ms.date: 02/21/2025
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.topic: concept-article
 ms.subservice: admin
 ms.author: ampatra
@@ -22,6 +22,9 @@ As an administrator, you traditionally assign licenses to users _manually_. [Aut
 - If a user without a standalone Power Apps license launches an app within a managed environment, the user is automatically granted a Power Apps per user license.
 
 You can create and manage these auto-claim policies in the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/p/?linkid=2024339).
+
+> [!NOTE]
+> Auto-claim policies aren't supported in US Sovereign Clouds (GCC, GCC-H, DOD).
 
 ## Create an auto-claim policy for Power Apps licenses
 

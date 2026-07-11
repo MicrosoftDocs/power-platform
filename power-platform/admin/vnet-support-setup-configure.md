@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.date: 05/29/2026
 author: faix 
 ms.author: osfaixat 
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 ms.custom: 
   - admin-security

@@ -7,7 +7,7 @@ ms.date: 08/12/2021
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 ---
@@ -180,7 +180,7 @@ Changing default synchronization filter logic can change row synchronization sig
 
 - Applying filter conditions to an advanced find filter will show the rows being synchronized for the current user. This is important to know when troubleshooting filter conditions that don't work correctly.
 
-- Activity parties and their party types shouldn't be changed, because they're tied to values in Exchange. A good example is the Owner participation type, which has nothing to do with row ownership. For a breakdown of Activity Party SDK values, go to [ActivityParty TableType](/dynamics365/customer-engagement/web-api/activityparty?view=dynamics-ce-odata-9).
+- Activity parties and their party types shouldn't be changed, because they're tied to values in Exchange. A good example is the Owner participation type, which has nothing to do with row ownership. For a breakdown of Activity Party SDK values, go to [ActivityParty TableType](/dynamics365/customer-engagement/web-api/activityparty).
 
 - The best approach to applying more restrictive filter criteria is to add a custom field to the table being modified, and add the field as a condition for synchronization. A common modification is to add the **Sync This Record** Boolean field to the contact table, and set the contact table synchronization filter criteria to require that this field be set to **yes** or **true**.
 

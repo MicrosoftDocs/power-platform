@@ -1,12 +1,12 @@
 ---
 title: View intelligent recommendations about licensing
 description: View intelligent recommendations about who in your organization would benefit from having a Power Apps license.
-author: sericks007
+author: EllenWehrle
 ms.topic: overview
 ms.date: 11/20/2025
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 contributors:
 - sidhartg 
 - zadesa 

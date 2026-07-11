@@ -7,7 +7,7 @@ ms.date: 03/25/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 contributors:
   - JimDaly
 ms.custom: "admin-security"

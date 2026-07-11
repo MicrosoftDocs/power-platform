@@ -1,10 +1,10 @@
 ---
 title: Add more Microsoft Dataverse capacity for your tenant
 description: Learn about adding Microsoft Dataverse storage capacity.
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: how-to

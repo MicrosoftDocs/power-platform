@@ -7,7 +7,7 @@ ms.assetid:
 author: mihaelablendea
 ms.subservice: admin
 ms.author: mihaelab
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 contributors:

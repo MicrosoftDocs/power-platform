@@ -3,7 +3,7 @@ title: View license consumption for Power Apps (preview)
 description: Learn how to view your organization's Power Apps license consumption and find potential license issues. 
 author: amiyapatr-zz
 ms.date: 04/01/2026
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.topic: concept-article
 ms.subservice: admin
 ms.author: ampatra

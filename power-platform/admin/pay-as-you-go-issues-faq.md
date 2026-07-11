@@ -1,13 +1,13 @@
 ---
 title: Issues and FAQs about pay-as-you-go plans 
 description: This article addresses known issues about pay-as-you-go plans and provides answers to frequently asked questions.
-author: Kavishi
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: faq
 ms.date: 12/02/2024
 ms.subservice: admin
-ms.author: kaagar 
-ms.reviewer: sericks
+ms.author: ellenwehrle 
+ms.reviewer: ellenwehrle
 contributors:
   - amiyapatr-zz 
   - ShawnNandiMSFT
@@ -97,21 +97,21 @@ You can use Microsoft Cost Management and alerting capabilities to manage spendi
 Starting December 2024, you can use add-ons in a pay-as-you-go environment. Overages for both Dataverse and Power Platform requests, if any, are charged through an Azure subscription in a pay-as-you-go environment.
 
 ### What storage model does the Dataverse capacity meter use?
-All environments enabled for pay-as-you-go use the [new Dataverse storage model](capacity-storage.md)  that has three separate categories of storage usage. If a tenant is still on the [legacy storage model](legacy-capacity-storage.md), the tenant’s storage model status won't change when an environment is enabled for pay-as-you-go.
+All environments enabled for pay-as-you-go use the [new Dataverse storage model](capacity-storage.md)  that has three separate categories of storage usage. If a tenant is still on the [legacy storage model](legacy-capacity-storage.md), the tenant's storage model status won't change when an environment is enabled for pay-as-you-go.
 
 ### Are customers running flows in the context of a Dynamics 365 App charged for the Power Automate pay-as-you-go meters?  
 
-Charges depend on whether a flow is in the context or out of the context of a Dynamics 365 app, and the flow user/owner’s Dynamics 365 license.  
+Charges depend on whether a flow is in the context or out of the context of a Dynamics 365 app, and the flow user/owner's Dynamics 365 license.  
 
-Flows that run outside the context of the Dynamics 365 application are charged for the Power Automate pay-as-you-go meters, regardless of the flow owner/user’s Dynamics 365 license.  
+Flows that run outside the context of the Dynamics 365 application are charged for the Power Automate pay-as-you-go meters, regardless of the flow owner/user's Dynamics 365 license.  
 
 Flows that run in the context of the Dynamics 365 application are charged for the Power Automate pay-as-you-go meters. But note the following:  
 
 During the preview of the Power Automate pay-as-you-go meter (which starts on July 19, 2022), the following criteria is used to establish a flow is running in the context of a Dynamics 365 App:  
 
-- If it’s an instant flow, the user running the flow has a Dynamics 365 Enterprise, Professional, or Team member license.
+- If it's an instant flow, the user running the flow has a Dynamics 365 Enterprise, Professional, or Team member license.
 
-- If it’s an automated or scheduled flow, the owner of the flow has a Dynamics 365 Enterprise, Professional, or Team member license.
+- If it's an automated or scheduled flow, the owner of the flow has a Dynamics 365 Enterprise, Professional, or Team member license.
 
 These criteria change to align with our licensing guide when we reach general availability of the Power Automate pay-as-you-go meters.  
 

@@ -4,7 +4,7 @@ description: Learn about how security roles control access to databases and reso
 ms.subservice: admin
 ms.author: paulliew
 author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 contributors:
   - hamenon-ms
   - shahzorkhan123

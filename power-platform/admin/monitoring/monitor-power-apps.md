@@ -8,7 +8,7 @@ ms.date: 06/22/2026
 ms.custom: NewPPAC
 author: arjunmayur
 ms.author: arjunmayur
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:

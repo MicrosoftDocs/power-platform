@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.date: 11/25/2025
 ms.subservice: admin
 ms.author: laswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 
 ---
 
