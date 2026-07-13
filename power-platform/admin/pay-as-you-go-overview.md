@@ -7,7 +7,7 @@ ms.topic: overview
 ms.date: 05/29/2025
 ms.subservice: admin
 ms.author: ampatra
-ms.reviewer: sericks 
+ms.reviewer: ellenwehrle 
 contributors:
   - ShawnNandiMSFT
 search.audienceType: 

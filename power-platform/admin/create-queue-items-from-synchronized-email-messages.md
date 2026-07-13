@@ -6,7 +6,7 @@ ms.topic: how-to
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.custom: "admin-security"
 search.audienceType: 
   - admin

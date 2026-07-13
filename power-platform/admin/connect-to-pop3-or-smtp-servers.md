@@ -7,7 +7,7 @@ ms.date: 12/11/2025
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: sericks
+ms.reviewer: mkaur
 contributor: ellenwehrle
 search.audienceType: 
   - admin

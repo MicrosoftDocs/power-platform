@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.date: 04/07/2026
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: sericks
+ms.reviewer: mkaur
 contributors:
   - mikferland-msft
   - mihaelablendea

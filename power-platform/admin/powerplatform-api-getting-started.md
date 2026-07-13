@@ -2,7 +2,7 @@
 title: Programmability and extensibility - Power Platform API - Getting started
 description: Getting started with Power Platform API
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
 ms.collection: get-started

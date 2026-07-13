@@ -7,8 +7,8 @@ ms.topic: concept-article
 ms.date: 12/12/2022
 author: Zeffin
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange

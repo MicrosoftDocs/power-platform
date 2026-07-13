@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 09/02/2025
 ms.subservice: admin
 ms.author: aorth
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-ga-nochange

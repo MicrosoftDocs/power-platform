@@ -8,7 +8,7 @@ ms.date: 05/05/2026
 ms.update-cycle: 180-days
 author: mihaelablendea
 ms.author: mihaelab
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 ms.collection: bap-ai-copilot

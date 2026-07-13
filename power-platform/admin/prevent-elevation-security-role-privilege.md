@@ -4,7 +4,7 @@ description: Learn how to create an administrative user and prevent elevation of
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: how-to

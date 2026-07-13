@@ -3,7 +3,7 @@ title: Manage your customer-managed encryption key
 description: Learn how to manage your encryption key. 
 author: paulliew
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.topic: how-to
 ms.date: 05/18/2026
 ms.contributors:

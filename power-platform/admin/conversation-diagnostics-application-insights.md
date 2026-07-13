@@ -5,10 +5,10 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 11/28/2025
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.contributors:

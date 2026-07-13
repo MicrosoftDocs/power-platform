@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 05/15/2026
 ms.subservice: admin
 ms.author: johhar
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.contributors:

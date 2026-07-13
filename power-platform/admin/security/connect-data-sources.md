@@ -9,7 +9,7 @@ ms.collection: get-started
 author: rashmansur
 ms.subservice: admin
 ms.author: rashmim 
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 contributors:

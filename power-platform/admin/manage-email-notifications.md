@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 1/30/2025
 ms.subservice: admin
 ms.author: kacortez
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 ---

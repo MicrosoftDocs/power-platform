@@ -5,10 +5,10 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 08/13/2024
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange

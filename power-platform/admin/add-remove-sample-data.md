@@ -1,13 +1,13 @@
 ---
 title: "Add or remove sample data  | MicrosoftDocs"
 description: Add or remove sample data
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 9/1/2025
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.contributors:
   - sericks
   - syalandur

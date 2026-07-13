@@ -2,7 +2,7 @@
 title: Responding to DSR requests for Microsoft Dataverse customer data | Microsoft Docs
 description: Walkthrough of how to respond to DSR requests for Microsoft Dataverse customer data
 author: sericks007
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/20/2025

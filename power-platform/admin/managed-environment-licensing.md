@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.date: 05/13/2026
 author: mihaelablendea
 ms.author: mihaelab
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 ms.custom: "admin-security"
 ms.contributors:

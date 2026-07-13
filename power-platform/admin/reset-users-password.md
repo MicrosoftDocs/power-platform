@@ -4,7 +4,7 @@ description: "If a user loses a Power Platform password, certain administrators 
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.custom: "admin-security"
 
 ms.component: pa-admin

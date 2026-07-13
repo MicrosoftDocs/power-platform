@@ -2,7 +2,7 @@
 title: Creating a service principal application using API
 description: Learn about Power Platform API and service principal authentication.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 11/26/2024

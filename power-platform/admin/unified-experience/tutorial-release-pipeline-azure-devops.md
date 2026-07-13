@@ -2,7 +2,7 @@
 title: "Tutorial: Set up a release pipeline for finance and operations apps using Azure DevOps"
 description: This tutorial demonstrates how to create a multi-stage Azure DevOps release pipeline that deploys a Power Platform unified package through test, pre-production, and production environments with approval gates.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/24/2026

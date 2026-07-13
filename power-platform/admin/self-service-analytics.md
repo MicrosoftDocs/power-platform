@@ -5,9 +5,9 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 07/31/2025
 ms.subservice: admin
-author: sericks007
-ms.author: sericks
-ms.reviewer: sericks
+author: EllenWehrle
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 contributors:
   - Zeffin
   - Mattp123

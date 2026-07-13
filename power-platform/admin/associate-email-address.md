@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 11/05/2025
 ms.subservice: admin
 ms.author: debrau
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 contributors:

@@ -2,7 +2,7 @@
 title: "Tutorial: Assign roles to service principals (preview) | Microsoft Docs"
 description: Learn how to use the Power Platform Authorization API and management SDKs to assign RBAC roles to service principals at the tenant scope.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 06/01/2026

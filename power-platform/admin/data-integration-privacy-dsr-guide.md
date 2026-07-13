@@ -7,7 +7,7 @@ ms.component: cds
 ms.date: 05/20/2018
 ms.subservice: admin
 ms.author: nhelgren
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange

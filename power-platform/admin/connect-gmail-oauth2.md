@@ -7,7 +7,7 @@ ms.date: 05/16/2025
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: sericks
+ms.reviewer: mkaur
 contributors:
 - yingchin
 - EllenWehrle

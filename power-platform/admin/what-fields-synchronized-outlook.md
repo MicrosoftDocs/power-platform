@@ -6,8 +6,8 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 03/21/2025
 ms.subservice: admin
-ms.author: rahulmital
-ms.reviewer: sericks
+ms.author: mkaur
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 contributors:

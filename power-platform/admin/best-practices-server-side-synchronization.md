@@ -6,8 +6,8 @@ ms.topic: best-practice
 ms.date: 01/14/2025
 author: rahulmital
 ms.subservice: admin
-ms.author: rahulmital
-ms.reviewer: sericks
+ms.author: mkaur
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 ---

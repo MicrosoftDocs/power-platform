@@ -4,7 +4,7 @@ description: Learn how to create security roles and edit the privileges associat
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.custom:
 - DevRelAdv
 - "admin-security"

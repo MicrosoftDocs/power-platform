@@ -4,7 +4,7 @@ description: Learn how to manage application users from the Power Platform admin
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/03/2026

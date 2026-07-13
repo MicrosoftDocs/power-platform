@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 09/20/2023
 ms.subservice: admin
 ms.author: paulliew 
-ms.reviewer: sericks 
+ms.reviewer: mkaur
 contributors:
 - igorantunesms 
 search.audienceType: 

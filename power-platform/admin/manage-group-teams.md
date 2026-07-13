@@ -7,7 +7,7 @@ ms.date: 07/15/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.custom: NewPPAC
 ms.contributors:
   - lsuresh

@@ -9,7 +9,7 @@ ms.custom:
 author: sericks007
 ms.subservice: admin
 ms.author: sericks
-ms.reviewer: sericks
+ms.reviewer: mkaur
 ms.contributors: JesseParsons
 search.audienceType: 
   - admin
