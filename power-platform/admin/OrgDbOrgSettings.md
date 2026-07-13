@@ -4,10 +4,10 @@ description: This topic covers the default options available in OrgDBOrgSettings
 author: DerekBraunMSFT
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/19/2025
+ms.date: 07/13/2026
 ms.subservice: admin
 ms.author: debrau
-ms.reviewer: sericks
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 ---
