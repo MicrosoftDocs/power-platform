@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 05/05/2026
 ms.subservice: admin
 ms.author: macarrer
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 ms.contributors:

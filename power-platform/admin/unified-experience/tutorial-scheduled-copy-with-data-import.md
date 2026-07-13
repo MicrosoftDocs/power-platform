@@ -2,7 +2,7 @@
 title: "Tutorial: Schedule environment copy and automated data import using Azure DevOps"
 description: This tutorial demonstrates how to schedule a production-to-sandbox environment copy using Azure DevOps pipelines with Power Platform Build Tools, and automatically import a finance and operations data package after the copy completes.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 04/06/2026

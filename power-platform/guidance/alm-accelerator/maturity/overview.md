@@ -4,7 +4,7 @@ description: Learn how to apply the Power Platform adoption maturity model to ev
 keywords: 
 author: Grant-Archibald-MS
 ms.author: grarchib
-ms.reviewer: sericks
+ms.reviewer: edoyle
 manager: pladhani
 ms.custom: bap-template
 ms.date: 04/10/2023

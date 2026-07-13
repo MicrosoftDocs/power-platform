@@ -8,7 +8,7 @@ ms.date: 05/08/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: jasonhuang
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 contributors:

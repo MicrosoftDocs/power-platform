@@ -6,7 +6,7 @@ ms.topic: overview
 ms.date: 06/23/2026
 ms.update-cycle: 180-days
 ms.author: ampatra
-ms.reviewer: sericks
+ms.reviewer: smurkute
 contributors:
   - kenseongtan 
   - marcelbf

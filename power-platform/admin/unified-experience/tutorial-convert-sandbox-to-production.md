@@ -6,7 +6,7 @@ ms.topic: overview
 ms.date: 11/06/2025
 ms.subservice: admin
 ms.author: laswenka
-ms.reviewer: sericks
+ms.reviewer: smurkute
 
 ---
 

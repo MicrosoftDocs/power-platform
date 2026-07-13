@@ -4,7 +4,7 @@ description: Learn how to configure users' access to resources in a Microsoft en
 ms.subservice: admin
 ms.author: paulliew
 author: paulliew
-ms.reviewer: sericks
+ms.reviewer: smurkute
 contributors:
   - hamenon-ms
   - shahzorkhan123

@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 11/19/2025
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 ---

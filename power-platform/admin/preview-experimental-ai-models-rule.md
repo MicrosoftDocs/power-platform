@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.date: 08/25/2025
 author: jekom1
 ms.author: jelenak
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.subservice: admin
 search.audienceType: 
   - admin

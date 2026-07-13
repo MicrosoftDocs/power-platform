@@ -6,7 +6,7 @@ ms.date: 05/22/2023
 ms.subservice: guidance-toolkit
 author: alvarezskinner
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: edoyle
 ms.custom: bap-template
 ---
 

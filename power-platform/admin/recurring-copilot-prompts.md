@@ -5,9 +5,9 @@ ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/17/2025
-author: sericks007
-ms.author: sericks
-ms.reviewer: sericks
+author: shwetamurkute
+ms.author: smurkute
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 ms.contributors:

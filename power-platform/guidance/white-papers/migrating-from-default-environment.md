@@ -7,7 +7,7 @@ ms.date: 08/23/2023
 ms.subservice: guidance
 author: ravi-chada
 ms.author: ravichada
-ms.reviewer: sericks
+ms.reviewer: edoyle
 ms.custom: bap-template
 contributors:
     - RobStand

@@ -3,7 +3,7 @@ title: Power Platform inventory sample queries
 description: Sample Kusto Query Language (KQL) queries you can run against Power Platform inventory data in Azure Resource Graph, including queries for resource counts, field discovery, resource lookups, and connector usage.
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.date: 05/28/2026
 ms.topic: concept-article
 ---

@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 11/20/2025
 ms.subservice: admin
 ms.author: nhelgren
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 ms.contributors:

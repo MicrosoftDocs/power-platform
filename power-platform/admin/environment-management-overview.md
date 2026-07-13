@@ -7,7 +7,7 @@ ms.date: 04/04/2025
 author: praveenmantha
 ms.custom: NewPPAC
 ms.author: pmantha 
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.subservice: admin
 search.audienceType: 
   - admin

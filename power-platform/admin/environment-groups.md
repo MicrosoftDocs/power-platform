@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.date: 07/28/2025
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.subservice: admin
 ms.custom: NewPPAC
 search.audienceType: 

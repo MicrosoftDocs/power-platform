@@ -4,7 +4,7 @@ description: This article covers the various levels and methods of user deletion
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.topic: how-to
 ms.date: 06/04/2025
 ms.contributors:

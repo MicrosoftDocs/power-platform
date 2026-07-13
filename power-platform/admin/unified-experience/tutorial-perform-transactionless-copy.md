@@ -2,7 +2,7 @@
 title: "Tutorial: Perform a transaction-less copy between environments"
 description: This tutorial demonstrates how to perform a transaction-less copy between unified environments.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 04/01/2025

@@ -8,7 +8,7 @@ ms.subservice: admin
 ms.custom: NewPPAC
 author: ChrisGarty
 ms.author: cgarty
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 ---

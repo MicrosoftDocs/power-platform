@@ -1,10 +1,10 @@
 ---
 title: Add users to an environment automatically or manually
 description: Learn about adding users to an environment and how the process differs when it has a Dataverse database. Use security groups to restrict access or add specific users. 
-author: sericks007
+author: shwetamurkute
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: smurkute
+ms.reviewer: smurkute
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 12/12/2025

@@ -7,7 +7,7 @@ ms.subservice: guidance-toolkit
 author: alvarezskinner
 manager: devkeydet
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: edoyle
 ms.custom:
   - bap-template
   - sfi-image-nochange
