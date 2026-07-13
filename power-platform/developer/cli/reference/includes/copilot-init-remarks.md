@@ -1,8 +1,8 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
-
 ### Remarks
 
-Add remarks here...
-
--->
+- **The project directory must be empty.** `init` doesn't scaffold over existing files, so point `--project-dir` to a new or empty folder.
+- **Schema name derivation.** When you omit `--schema-name`, the agent schema name is built as `{publisher-prefix}_{sanitized-name}`. Pass `--schema-name` to set it explicitly; the value is used as-is.
+- **Bootstrap works for both authoring modes.** `init --environment` bootstraps a live agent in one step for the default classic mode and for `--authoring-mode cli-copilot`. As an alternative for a CliCopilot agent, you can scaffold locally (no `--environment`), then run [`pac copilot pack`](#pac-copilot-pack) followed by [`pac solution import`](../solution.md#pac-solution-import) to deploy it yourself.
+- **Bootstrap creates server-side objects.** In bootstrap mode, `init` imports a solution and creates the agent in the target environment. If an agent with the same schema name already exists, `init` stops and points you to [`pac copilot clone`](#pac-copilot-clone) to connect to the existing agent instead.
+- **A brand-new environment can be slow to accept the first import.** A freshly created environment might take a minute or two to warm up. An early bootstrap can fail with "Async operations are currently disabled for this organization." Wait a moment and run it again.
+- `--template` (`default` or `minimal`) applies to the classic authoring mode only.
