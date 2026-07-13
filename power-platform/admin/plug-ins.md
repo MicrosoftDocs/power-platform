@@ -2,9 +2,9 @@
 title: View information about plug-in steps
 description: Learn how to view information about plug-ins.
 ms.subservice: admin
-author: sericks007
-ms.author: sericks
-ms.reviewer: sericks
+author: shwetamurkute
+ms.author: smurkute
+ms.reviewer: smurkute
 ms.custom:
   - "admin-security"
   - bap-template

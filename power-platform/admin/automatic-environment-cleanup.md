@@ -7,7 +7,7 @@ ms.date: 05/15/2026
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 ms.custom: bap-template

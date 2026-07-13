@@ -5,7 +5,7 @@ services: powerapps
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.contributors:
   - pmantha
   - paulliew

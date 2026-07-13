@@ -4,7 +4,7 @@ description: This article shows how to delete stub users from an environment in 
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.custom: "admin-security"
 ms.topic: concept-article
 ms.date: 11/19/2025

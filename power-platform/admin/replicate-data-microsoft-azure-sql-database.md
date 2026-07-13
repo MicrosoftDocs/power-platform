@@ -7,7 +7,7 @@ ms.date: 03/20/2023
 ms.subservice: admin
 ms.author: nhelgren
 author: NHelgren
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 contributors:

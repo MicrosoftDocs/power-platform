@@ -9,7 +9,7 @@ ms.collection: get-started
 author: alaug 
 ms.subservice: admin
 ms.author: alaug 
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 ---

@@ -6,8 +6,8 @@ ms.topic: concept-article
 ms.date: 10/30/2023
 author: Zeffin
 ms.subservice: admin
-ms.author: johnev
-ms.reviewer: sericks
+ms.author: smurkute
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 ---

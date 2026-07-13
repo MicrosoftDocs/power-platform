@@ -7,7 +7,7 @@ ms.date: 09/30/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: sericks 
+ms.reviewer: smurkute
 contributors:
   - swylezol
   - Paulliew

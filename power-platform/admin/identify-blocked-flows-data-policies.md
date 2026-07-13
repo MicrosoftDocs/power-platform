@@ -7,7 +7,7 @@ ms.date: 03/12/2025
 ms.subservice: admin
 author: laneswenka
 ms.author: laswenka
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.custom: "admin-security"
 search.audienceType: 
   - admin

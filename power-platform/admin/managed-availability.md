@@ -7,7 +7,7 @@ ms.date: 05/28/2026
 author: rashmansur
 ms.custom: NewPPAC
 ms.author: rashmim 
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.subservice: admin
 search.audienceType: 
   - admin

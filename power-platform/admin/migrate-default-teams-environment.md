@@ -4,9 +4,9 @@ description: The article provides information about how to migrate the default e
 ms.topic: upgrade-and-migration-article
 ms.date: 11/24/2025
 ms.subservice: admin
-author: sericks007
-ms.author: sericks
-ms.reviewer: sericks007
+author: shwetamurkute
+ms.author: smurkute
+ms.reviewer: smurkute
 ---
 
 # Migrate default and Dataverse for Teams environments

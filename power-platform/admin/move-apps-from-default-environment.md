@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 02/02/2026
 ms.subservice: admin
 ms.author: sidhartg
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType:
   - admin
 ---

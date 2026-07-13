@@ -4,10 +4,10 @@ description: View tenant-level analytics in various reports.
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/02/2025
-author: sericks007
+author: shwetamurkute
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: smurkute
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 contributors:

@@ -3,8 +3,8 @@ title: Use service admin roles to manage your tenant
 description: Use service admin roles to manage your tenant 
 author: srpoduri 
 ms.subservice: admin
-ms.author: sericks 
-ms.reviewer: sericks
+ms.author: smurkute
+ms.reviewer: smurkute
 ms.component: pa-admin
 contributors:
 - JesseParsons 

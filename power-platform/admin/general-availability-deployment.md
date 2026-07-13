@@ -4,7 +4,7 @@ description: Learn about general availability deployment.
 author: paulda64
 ms.subservice: admin
 ms.author: paulda 
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 02/20/2026

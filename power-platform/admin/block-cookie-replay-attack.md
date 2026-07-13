@@ -4,7 +4,7 @@ description: Discover methods for using IP-based cookie binding to stop cookie r
 ms.date: 05/8/2026
 ms.topic: how-to
 author: shpradha
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.author: shpradha
 ms.subservice: admin
 search.audienceType: 
