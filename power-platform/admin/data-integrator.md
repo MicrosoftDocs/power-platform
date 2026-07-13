@@ -7,7 +7,7 @@ ms.date: 09/25/2025
 ms.subservice: admin
 ms.author: nhelgren
 author: NHelgren
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.contributors:
   - lsuresh
 contributors:

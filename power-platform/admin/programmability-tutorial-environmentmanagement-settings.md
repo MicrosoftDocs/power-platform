@@ -2,7 +2,7 @@
 title: Create, update, and list Environment Management Settings
 description: Learn how to use programmability tools to create, update, and list Environment Management Settings.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 09/12/2024

@@ -7,7 +7,7 @@ ms.date: 11/26/2025
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: sericks
+ms.reviewer: smurkute
 contributors:
    - MichaelPDuda-Microsoft
 

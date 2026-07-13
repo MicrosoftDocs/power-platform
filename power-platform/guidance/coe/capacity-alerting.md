@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 04/21/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: edoyle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange

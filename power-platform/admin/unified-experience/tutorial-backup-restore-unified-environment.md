@@ -2,7 +2,7 @@
 title: "Tutorial: Backup and restore unified environments"
 description: This tutorial demonstrates how to backup and restore unified environments.
 author: tapa
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 03/28/2025

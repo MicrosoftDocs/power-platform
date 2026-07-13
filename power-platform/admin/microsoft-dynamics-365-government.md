@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 12/09/2025
 ms.subservice: admin
 ms.author: macarrer
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 contibutors:

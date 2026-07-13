@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 09/18/2025
 ms.subservice: admin
 ms.author: abhijanand
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 ---

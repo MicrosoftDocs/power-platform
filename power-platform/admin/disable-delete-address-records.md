@@ -1,13 +1,13 @@
 ---
 title: Set address record settings
 description: Learn how to prevent the creation of empty address records and allow users to delete address data.
-author: sericks 
+author: shwetamurkute
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 10/1/2025
 ms.subservice: admin
-ms.author: kamanick
-ms.reviewer: sericks
+ms.author: smurkute
+ms.reviewer: smurkute
 ms.contributors:
   - sericks
   - syalandur

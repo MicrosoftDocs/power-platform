@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 11/20/2025
 ms.subservice: admin
 ms.author: lapepin
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 contributors:

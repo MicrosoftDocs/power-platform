@@ -7,7 +7,7 @@ ms.date: 04/10/2023
 ms.subservice: guidance-toolkit
 author: rajeevpentyala
 ms.author: grarchib
-ms.reviewer: sericks
+ms.reviewer: edoyle
 ms.custom: bap-template
 ---
 

@@ -2,7 +2,7 @@
 title: "Tutorial: Copy a Lifecycle Services environment to a unified environment  | Microsoft Docs"
 description: This tutorial demonstrates how to perform environment copy with respect to unified environments.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 04/10/2026

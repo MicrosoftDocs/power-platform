@@ -6,8 +6,8 @@ ms.topic: how-to
 ms.date: 03/30/2022
 ms.subservice: admin
 author: Zeffin
-ms.author: johnev
-ms.reviewer: sericks
+ms.author: smurkute
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 ---

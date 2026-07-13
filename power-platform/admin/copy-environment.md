@@ -13,7 +13,7 @@ ms.contributors:
 - matgputa
 - ellenwehrle
 - syalandur
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.custom: sfi-image-nochange
 ---
 # Copy an environment

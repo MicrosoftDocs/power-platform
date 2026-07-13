@@ -3,7 +3,7 @@ title: Branching and environment strategy (Deprecated)
 description: Learn about the default environment and branching strategy that ALM Accelerator for Power Platform employs to help you get started with ALM quickly.
 author: mikefactorial
 ms.author: rusant
-ms.reviewer: sericks
+ms.reviewer: edoyle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/10/2023

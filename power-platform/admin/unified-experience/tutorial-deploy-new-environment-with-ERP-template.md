@@ -2,7 +2,7 @@
 title: "Tutorial: Provision a new environment with an ERP-based template  | Microsoft Docs"
 description: This tutorial demonstrates how to use the Power Platform to Provision an environment with finance and operations apps installed.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 02/02/2026

@@ -6,7 +6,7 @@ ms.date: 05/22/2023
 ms.subservice: guidance-toolkit
 author: mikefactorial
 ms.author: rusant
-ms.reviewer: sericks
+ms.reviewer: edoyle
 ms.custom: bap-template
 ---
 

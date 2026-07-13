@@ -6,8 +6,8 @@ ms.topic: concept-article
 ms.date: 10/30/2025
 author: Zeffin
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: sericks
+ms.author: smurkute
+ms.reviewer: smurkute
 contributor: mikferland-msft
 search.audienceType: 
   - admin

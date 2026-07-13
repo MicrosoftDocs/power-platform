@@ -16,7 +16,7 @@ ms.contributors:
   - gakulka
 ms.subservice: admin
 ms.author: gakulka
-ms.reviewer: sericks
+ms.reviewer: smurkute
 search.audienceType: 
   - admin
 ---

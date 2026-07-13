@@ -2,7 +2,7 @@
 title: "Tutorial: Install an application to a target environment | Microsoft Docs"
 description: This tutorial demonstrates how to use the Power Platform API to install an application in an environment context.
 author: laneswenka
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 03/07/2025

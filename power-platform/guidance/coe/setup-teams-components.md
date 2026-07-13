@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 05/15/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
-ms.reviewer: sericks
+ms.reviewer: edoyle
 search.audienceType: 
   - admin
 ---

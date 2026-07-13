@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.date: 04/07/2026
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: sericks
+ms.reviewer: smurkute
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
