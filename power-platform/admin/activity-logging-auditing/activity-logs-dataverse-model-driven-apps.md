@@ -3,7 +3,7 @@ title: View Microsoft Dataverse and model-driven app activity logs in Microsoft 
 description: Learn how to access Dataverse and model-driven app activity logs in Microsoft Purview and explore what activities you can view.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 06/11/2026
+ms.date: 07/14/2026
 author: grbarker
 contributors:
   - paulliew
@@ -169,24 +169,7 @@ Use the prefix to categorize each request.
 
 ## Example generated logs
 
-The following entries are examples of activity logs.
-
-### Example 1 – Logs generated when user reads an Account record
-
-| Schema Name |                                                      Value                                                      |
-|-----------------|---------------------------------------------------------------------------------------------------------------------|
-|       `ID`        |                                        `50e01c88-2e43-4005-8be8-9ceb172e2e90`                                         |
-|     `UserKey`     |                                                  `10033XXXA49AXXXX`                                                   |
-|    `ClientIP`     |                                                   `131.107.XXX.XX`                                                    |
-|    `Operation`    |                                                      `Retrieve`                                                       |
-|      `Date`       |                                                `3/2/2018 11:25:56 PM`                                                 |
-|    `EntityId`     |                                        `00aa00aa-bb11-cc22-dd33-44ee44ee44ee`                                         |
-|   `EntityName`    |                                                       `Account`                                                       |
-|      `Query`      |                                                         N/A                                                         |
-|  `QueryResults`   |                                                         N/A                                                         |
-|     `ItemURL`     | `https://orgname.onmicrosoft.com/main.aspx?etn=account&pagetype=entityrecord&id=00aa00aa-bb11-cc22-dd33-44ee44ee44ee` |
-
-### Example 2 – List of messages logged when user converts a lead to an opportunity
+The following example shows a list of messages logged when a user converts a lead to an opportunity.
 
 |ID  |EntityID  |EntityName  |Operation |
 |---------|---------|---------|---------|
