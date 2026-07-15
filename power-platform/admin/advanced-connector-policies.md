@@ -3,7 +3,7 @@ title: Advanced connector policies
 description: Learn how to use Advanced connector policies to govern connector usage in Power Platform.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/01/2026
+ms.date: 07/15/2026
 author: laneswenka
 ms.author: laswenka
 ms.reviewer: mkaur
@@ -17,7 +17,7 @@ search.audienceType:
 
 # Advanced connector policies 
 
-Advanced connector policies (ACP) represent the next generation of securing connector usage within Power Platform. ACP provides a modern, flexible approach to managing [certified connectors](/power-platform/admin/dlp-connector-classification), replacing the Business/Non-Business/Blocked classification model in classic [data policies](wp-data-loss-prevention.md) with a strict allowlist that blocks all connectors by default.
+Advanced connector policies (ACP) provide the next generation of securing connector usage within Power Platform. ACP offers a modern, flexible approach to managing [certified connectors](/power-platform/admin/dlp-connector-classification). It replaces the Business, Non-Business, and Blocked classification model in classic [data policies](wp-data-loss-prevention.md) with a strict allowlist that blocks all connectors by default.
 
 Key principles of advanced connector policies:
 
@@ -31,6 +31,15 @@ By adopting advanced connector policies, administrators gain greater control and
 
 > [!IMPORTANT]
 > Advanced connector policies currently apply to **certified connectors only**. Custom connectors and HTTP connectors aren't yet supported. They're planned as a separate rule type in the future. For governing custom connectors and HTTP connectors today, continue using classic [data policies](prevent-data-loss.md).
+
+## Enforcement modes
+
+When you enable ACP, you choose how it works alongside your existing classic [data policies](wp-data-loss-prevention.md). Two modes are available:
+
+- **Mixed mode (default)**: ACP runs alongside classic data policies, and the most restrictive settings from both are enforced. This mode is the starting state when you first enable ACP and is recommended while you migrate. For details, see [Data policy mixed mode](#data-policy-mixed-mode).
+- **ACP-only mode**: ACP becomes the sole policy evaluator. Classic data policies are ignored but not deleted for the affected scope. Choose this mode after you fully migrate connector governance to ACP. For details, see [ACP-only mode](#acp-only-mode).
+
+Set the mode independently on an environment group or a single environment.
 
 ## Supported connector types
 
@@ -54,6 +63,9 @@ Virtual connectors are governance-only constructs in classic data policies that 
 ## Configure an advanced connector policy
 
 You can configure advanced connector policies at the environment group level for bulk deployment or directly on individual environments for targeted governance.
+
+> [!IMPORTANT]
+> ACP enforces a strict allowlist as soon as you save it (single environment) or publish it (environment group): every connector that isn't explicitly allowed is blocked. Before you enable ACP at scale, review and curate the allowed connectors for the scope first. To validate policy behavior without immediately blocking makers, keep your classic data policies in place and start in [mixed mode](#data-policy-mixed-mode) rather than [ACP-only mode](#acp-only-mode).
 
 ### Environment group configuration
 
@@ -92,7 +104,7 @@ To configure an advanced connector policy for a single environment:
 :::image type="content" source="media/acp-single-environment.png" alt-text="Configuring an advanced connector policy on a single environment." lightbox="media/acp-single-environment.png":::
 
 > [!NOTE]
-> Each environment supports a maximum of one effective advanced connector policy. This policy is either directly configured on the environment or inherited from an environment group. If you remove an environment from an environment group, it retains its last known ACP configuration from the group. You can then adjust the policy individually on that environment.
+> Each environment supports a maximum of one effective advanced connector policy. This policy is either directly configured on the environment or inherited from an environment group. Removing a rule from a group - including an advanced connector policy - doesn't automatically remove that rule from the individual environments in the group. The same rule applies when you remove an environment from a group: the affected environments keep their last known ACP configuration rather than reverting automatically. This behavior is intentional, because it prevents an enforcement gap where connectors would otherwise become unexpectedly unblocked. To remove enforcement, go to each affected environment and remove the policy directly, or automate the removal at scale by using the [Power Platform API](/rest/api/power-platform/governance/rule-based-policies).
 
 ### Policy status
 
@@ -101,6 +113,9 @@ A **Status** property is displayed at the top of every advanced connector policy
 ### Remove a rule
 
 Advanced connector policies include a **Remove rule** button for both environment groups and single environments. When you select this button, you disable ACP entirely for that scope and remove the policy enforcement.
+
+> [!IMPORTANT]
+> Removing a rule at the environment group scope stops the group from managing that rule, but it doesn't remove the rule from environments that already inherited it - including an advanced connector policy. Those environments retain their last applied ACP configuration. To fully remove enforcement, remove the rule on each affected environment individually, or use the [Power Platform API](/rest/api/power-platform/governance/rule-based-policies) to remove it across many environments at scale.
 
 > [!TIP]
 > Previously, you could disable ACP only through the API or by adding all connectors as allowed, which wasn't an intuitive experience. The **Remove rule** button provides a straightforward way to disable ACP when needed.
@@ -127,6 +142,17 @@ Within advanced connector policies, administrators can see MCP servers listed al
 
 :::image type="content" source="media/block-mcp.png" alt-text="Block MCP server in advanced connector policies.":::
 
+## Data policy mixed mode
+
+Advanced connector policies can run in mixed mode alongside classic data policies. This approach allows you to complement configurations so that data policies can achieve action control and endpoint filtering until such time as those features are native to ACP. In addition, you can use ACP to block any connector that isn't possible in classic data policies.
+
+Mixed mode is the default state when you first enable ACP: classic data policies continue to be evaluated alongside your new advanced connector policy until you switch to ACP-only mode.
+
+At runtime, when a connector operation is invoked, it queries the effective policy for the current hosting environment. This query includes a combined policy that merges the most restrictive settings from both classic data policies and ACP to provide full enforcement.
+
+> [!TIP]
+> Mixed mode is useful during migration from classic data policies to ACP. Once your organization fully adopts ACP, consider enabling [ACP-only mode](#acp-only-mode) to simplify your governance posture and eliminate the dual-evaluation complexity.
+
 ## ACP-only mode
 
 ACP-only mode allows administrators to skip classic data policy evaluation entirely and rely solely on advanced connector policies for connector governance. You can enable this mode at both the environment group level and the single environment level.
@@ -150,15 +176,6 @@ You can configure ACP-only mode:
 
 - **On an environment group**: Under the environment group's **Rules** tab, enable the **Advanced connector policies only** rule. This setting applies to all environments in the group.
 - **On a single environment**: Under the environment's **Security** > **Data and privacy** settings, enable the **Advanced connector policies only** option. This setting applies to that environment only.
-
-## Data policy mixed mode
-
-Advanced connector policies can run in mixed mode alongside classic data policies. This approach allows you to complement configurations so that data policies can achieve action control and endpoint filtering until such time as those features are native to ACP. In addition, you can use ACP to block any connector that isn't possible in classic data policies.
-
-At runtime, when a connector operation is invoked, it queries the effective policy for the current hosting environment. This query includes a combined policy that merges the most restrictive settings from both classic data policies and ACP to provide full enforcement.
-
-> [!TIP]
-> Mixed mode is useful during migration from classic data policies to ACP. Once your organization fully adopts ACP, consider enabling [ACP-only mode](#acp-only-mode) to simplify your governance posture and eliminate the dual-evaluation complexity.
 
 ## Design-time enforcement
 
