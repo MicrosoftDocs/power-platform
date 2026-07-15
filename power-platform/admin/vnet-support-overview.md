@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 05/28/2026
 ms.subservice: admin
 ms.author: osfaixat
-ms.reviewer: ellenwehrle
+ms.reviewer: mkaur
 search.audienceType: 
   - admin
 contributors:

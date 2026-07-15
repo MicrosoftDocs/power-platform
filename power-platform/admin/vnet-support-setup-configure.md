@@ -3,10 +3,10 @@ title: Set up virtual network support for Power Platform
 description: Learn how to set up Azure virtual network support for Power Platform.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/29/2026
+ms.date: 07/15/2026
 author: faix 
 ms.author: osfaixat 
-ms.reviewer: ellenwehrle
+ms.reviewer: mkaur
 ms.subservice: admin
 ms.custom: 
   - admin-security
@@ -15,6 +15,7 @@ search.audienceType:
   - admin
 ms.contributors:
   - pvayner
+  - angelva
 contributors:
   - matapg007
   - wifun
@@ -67,9 +68,12 @@ You can configure and enable virtual network support by using PowerShell scripts
 1. Create the enterprise policy.
 1. Configure your Power Platform environment.
 
+> [!NOTE] 
+> The initial setup causes disruptions and could cause a 30-minute window of unavailability as connections are initialized for subnet delegated for supported workloads.
+
 ::: zone pivot="powershell"
 
-### Setup with PowerShell
+### PowerShell setup
 
 1. Install and load the Microsoft.PowerPlatform.EnterprisePolicies module.
 
@@ -289,3 +293,4 @@ You can configure and enable virtual network support by using PowerShell scripts
 - [Quickstart: Use the Azure portal to create a virtual network](/azure/virtual-network/quick-create-portal)
 - [Use plug-ins to extend business processes](/power-apps/developer/data-platform/plug-ins)
 - [Troubleshoot Virtual Network issues](/troubleshoot/power-platform/administration/virtual-network)
+- [What is subnet delegation?](/azure/virtual-network/subnet-delegation-overview)
