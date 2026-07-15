@@ -63,8 +63,6 @@ Most geographies have region pairs separated by at least 300 miles when possible
 Self-service disaster recovery is a Power Platform infrastructure capability that lets you replicate your environment across long distances and start environment failover between regions yourself.
 You usually have multiple environments of different types in your tenant. This capability is available only for production environments.
 
-To turn on self-service disaster recovery, make sure your environment is managed and linked to a [pay-as-you-go billing plan](pay-as-you-go-overview.md).
-
 ## Allow virtual network pairing for self-service disaster recovery in Dynamics 365
 
 If you deploy your Dynamics 365 environment within a virtual network and plan to use self-service disaster recovery, you need to configure a **virtual network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a virtual network pair, disaster recovery operations fail because network connectivity between regions can't be established.

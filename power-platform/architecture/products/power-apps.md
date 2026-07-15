@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 06/22/2026
+ms.date: 07/14/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -51,6 +51,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Perform predictive data analysis using Dataverse, Fabric, and Azure AI services**](../reference-architectures/ai-predictive-data-analysis.md) | Learn best practices for data ingestion, model training, and visualization that help you build robust predictive models and gain actionable insights. |
 | [**​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | [**Integrate Power Platform with SAP for data management**](../reference-architectures/arch-pattern-sap.md) | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
+| [**Integrate Outlook and SAP with Power Apps**](../reference-architectures/outlook-canvas-app.md) | Learn how to extend Outlook using a Power Apps canvas app to interact with SAP CRM and SAP S/4HANA data directly from Outlook. |
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | [**Secure Power Platform access to resources inside your virtual network**](../reference-architectures/secure-access-azure-resources.md) | Use Microsoft Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. |
 | [**Use REST APIs to extend the functionality of canvas apps**](../reference-architectures/custom-connector-canvas.md) | When working with complex algorithms or multiple data sources, shift the logic from the canvas app to a RESTful API to keep formulas in your Power Apps canvas apps simple and move more complex functionality to the server. |
