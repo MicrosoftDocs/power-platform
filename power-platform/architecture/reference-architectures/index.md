@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 06/23/2026
+ms.date: 07/14/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -51,6 +51,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 | **[Integrate legacy data with Power Automate and SharePoint](../reference-architectures/app-legacy-data-integration.md)** | Streamline the process of integrating legacy data with modern platforms. |
 | **[​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables](app-integrate-lakehouse.md)** | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | **[Integrate Power Platform with SAP](arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
+| **[Integrate Outlook and SAP with Power Apps](outlook-canvas-app.md)** | Learn how to extend Outlook using a Power Apps canvas app to interact with SAP CRM and SAP S/4HANA data directly from Outlook. |
 
 ## Build and extend apps
 

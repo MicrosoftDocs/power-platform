@@ -103,6 +103,8 @@
               href: reference-architectures/app-integrate-lakehouse.md
             - name: Integrate Power Platform with SAP
               href: reference-architectures/arch-pattern-sap.md
+            - name: Integrate Outlook and SAP with Power Apps
+              href: reference-architectures/outlook-canvas-app.md
         - name: Build and extend apps
           items:
             - name: Optimize performance of canvas apps requiring complex logic

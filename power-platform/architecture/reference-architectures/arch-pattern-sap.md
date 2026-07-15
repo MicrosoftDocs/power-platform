@@ -5,7 +5,7 @@ description: Integrate Microsoft Power Platform with SAP for seamless data manag
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 04/17/2025
+ms.date: 07/14/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
@@ -140,6 +140,7 @@ Power Platform and SAP:
 
 - [What is Microsoft Power Platform integration with SAP?](/power-platform/sap/explore/power-platform-and-sap-integration)
 - [What are the Microsoft Power Platform and SAP connection options?](/power-platform/sap/connect/connect-power-platform-and-sap)
+- [Integrate Outlook and SAP with Power Apps](outlook-canvas-app.md)
 - [Microsoft Power Platform security and governance documentation](/power-platform/admin/security)
 - [SAP + Power Platform white paper](/power-platform/sap/explore/white-paper)
 - [SAP and Microsoft Power Platform architecture workflow](/azure/cloud-adoption-framework/scenarios/sap/sap-power-platform-architecture-workflow)
