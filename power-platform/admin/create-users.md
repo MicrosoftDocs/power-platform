@@ -1,10 +1,10 @@
 ---
 title: Create users 
 description: Learn about creating users.
-author: sericks007
+author: paulliew
 ms.reviewer: mkaur
 ms.subservice: admin
-ms.author: sericks
+ms.author: paulliew
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/28/2026
@@ -67,6 +67,14 @@ Identified by the presence of ApplicationId attribute in the system user record.
 - Can't access Microsoft Dataverse web interface or admin portals.
 - Can only access Dataverse via SDK/API calls.
 - There's a maximum limit of seven non-interactive users per instance.
+
+### Non-licensed users
+
+- Microsoft Entra ID users who don't have a Dynamics 365 or Power Apps license assigned.
+- Created in Dataverse when they are added in Dataverse activities in ToLine, ccLine, or bccline. 
+- Created with a user status of **Disabled**. 
+- Can't access Microsoft Dataverse web applications, Power Apps, or Power Platform admin portals.
+- Can be converted to regular user when a Dynamics 365 or Power Apps license is assigned.
 
 ### Support user
 
