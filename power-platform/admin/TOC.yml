@@ -892,6 +892,8 @@
                   href: programmability-tutorial-environmentmanagement-settings.md
                 - name: "Tutorial: Assign roles to service principals (preview)"
                   href: programmability-tutorial-rbac-role-assignment.md
+                - name: "Tutorial: Manage advanced connector policies programmatically"
+                  href: programmability-tutorial-manage-advanced-connector-policies.md
             - name: PowerShell
               items:
                 - name: Getting started
