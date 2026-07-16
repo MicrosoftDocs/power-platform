@@ -134,6 +134,8 @@ Based on customer feedback, the management experience is drastically simplified 
 
 Advanced connector policies are available as part of environment groups and rules, as well as on individual environments. The [Power Platform API](/rest/api/power-platform/environmentmanagement/environment-groups) provides publicly documented APIs so you can build automated scenarios such as creating new policies, updating policies, and moving environments into groups for management at scale.
 
+For a step-by-step walkthrough with PowerShell, C#, and Python examples, see [Tutorial: Manage advanced connector policies programmatically](programmability-tutorial-manage-advanced-connector-policies.md).
+
 ## Model Context Protocol (MCP) server management
 
 Advanced connector policies support visibility and management of Model Context Protocol (MCP) servers. MCP servers are special connector endpoints that expose MCP-enabled APIs and tooling capabilities within Power Platform.
