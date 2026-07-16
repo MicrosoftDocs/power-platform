@@ -142,7 +142,7 @@ The following sections describe the mechanisms you can use to manage transient f
 
 Power Automate includes a feature to retry an action if it fails. Configure this on a per-action level. [Learn about reducing risk and planning for error handling in a Power Automate project](/power-automate/guidance/planning/reducing-risk). Power Automate also offers actions to return custom errors and data to the calling app or flow.
 
-Some transient flows can be caused by throughput and request limits. Learn about the [limits of automated, scheduled, and instant flows](/power-automate/limits-and-config) and [request limits and allocations](/power-platform/admin/api-request-limits-allocations).
+Some transient faults can be caused by throughput and request limits. Learn about the [limits of automated, scheduled, and instant flows](/power-automate/limits-and-config) and [request limits and allocations](/power-platform/admin/api-request-limits-allocations).
 
 [Configure error and exception handling in cloud flows](/training/modules/error-handling/) by using scopes and run-after settings.
 
