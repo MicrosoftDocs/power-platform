@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to track and monitor the oper
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/06/2026
+ms.date: 07/17/2026
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: ellenwehrle
@@ -69,6 +69,15 @@ You can create an alert to monitor a specific resource, such as a specific canva
    
 1. Select the **+ New alert rule** link to create an alert. The admin center autofills the information for **Product**, **Product type**, **Scope**, **Environment**, and **Resource** so you can create an alert on that specific resource.
 1. Provide the **Alert rule name**, **Metric**, **Operator**, **Threshold Value**, **Severity**, and **Notification type** as documented in [Create an alert on an environment](#create-an-alert-on-an-environment).
+1. For resource-scoped alerts, you can configure a **Data review period**, which specifies how far back the alert evaluates data. The options for the data review period are:
+    - **24 hours**: The alert looks at data from the last 24 hours.
+    - **1 hour**: The alert looks at data from the last hour and enables hourly aggregation for the metric.
+   
+   In the resource panel of the item, you can view charts for both 24-hour and 1-hour aggregations on an item's metric if an alert was configured with the 1-hour data review period on that metric for that app. For example, if you configured an alert with a 1-hour data review period on an app's **Time to Interactive** metric, you could see 24-hour and 1-hour aggregations on the chart for the **Time to Interactive** metric for that app. Use the **Review period** list above the chart to switch between views.
+   
+   > [!NOTE]
+   > Currently, the **Data review period** is in preview and is only available for code apps.
+   
 1. Select **Save**.
 
 After you create your alert, the system runs an on-demand evaluation and scans all the applicable resources under its scope.

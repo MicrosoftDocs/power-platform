@@ -20,6 +20,7 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
 > [!NOTE]
 > - You can place sandbox, production, or trial (subscription-based) environments in administration mode.  
 > - Processes that use code, such as plug-ins or custom workflow assemblies, continue to be processed by the Microsoft Dataverse platform when administration mode is enabled and background operations are disabled.
+> - When you enable administration mode and disable background operations, scheduled (recurrence) Power Automate cloud flows continue to run because they run in the Power Automate service rather than as Dataverse asynchronous operations. Flows that use a Dataverse trigger (for example, **When a row is added, modified, or deleted**) don't fire while background operations are disabled.
 > - System Customizers need to sign in to the environment directly through the URL, as the environment in administration mode doesn't appear to System Customizers in the Environments page of the Power Platform admin center.
   
  On the **Settings** panel, you can set the following:  
@@ -27,7 +28,7 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
 |Setting|Description|  
 |-------------|-----------------|  
 |Administration mode | Select to enable administration mode for the selected sandbox, production, or trial (subscription-based) environment. Only System Administrators or System Customizers will be able to sign in to the selected sandbox or production environment.|  
-|Background operations (optional) | Select to disable all asynchronous operations (see [Asynchronous service](/powerapps/developer/common-data-service/asynchronous-service)) such as workflows and synchronization with Exchange. Emails aren't sent and server-side synchronization for appointments, contacts, and tasks are disabled. **Note:**  Administration mode must be enabled to disable background operations.|  
+|Background operations (optional) | Select to disable all Dataverse asynchronous operations (see [Asynchronous service](/powerapps/developer/common-data-service/asynchronous-service)) such as workflows and synchronization with Exchange. Emails aren't sent and server-side synchronization for appointments, contacts, and tasks are disabled. Scheduled Power Automate cloud flows aren't Dataverse asynchronous operations and continue to run. **Note:**  You must enable administration mode to disable background operations.|
   
 ## Set administration mode  
 
