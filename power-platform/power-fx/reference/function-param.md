@@ -158,7 +158,6 @@ The following keywords are reserved (regardless of case) for internal use, and s
 - correlationid
 - debug
 - delegatelaunchurl
-- delegatelaunchurl
 - disablepreviewredirect
 - embedderorigin
 - enableonbehalfof
