@@ -11,7 +11,7 @@ contributors:
   - kenseongtan
 ms.subservice: admin
 ms.topic: concept-article
-ms.date: 03/30/2026
+ms.date: 07/17/2026
 ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -39,7 +39,7 @@ A Power Automate Process license can be allocated to a machine or to a cloud flo
 |Machine allocation|Allocated to a machine, it becomes an unattended bot<sup>2</sup>. Each unattended bot on a machine entitles the machine to carry one unattended desktop flow run at a time.<br><br>Machines can be manually allocated unattended bots or be set to auto-allocate themselves when required by a run in unattended mode. Any unattended bot allocation (manual or automatic) on a machine remains until a manual de-allocation occurs. To prevent a machine from auto-allocating itself Process capacity, disable its auto-allocation setting.<br><br>A cloud flow targeting a machine with unattended bots is automatically covered by the machine's bots and has the flow association capability. It's entitled to 250,000 actions per day (nonstackable). Those cloud flows have their plan automatically switch to "Process plan inherited from machine".<br><br>Learn more in [Allocate Process capacity to a machine](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-machine).|
 |Utilization management|You can visualize and manage all Process licenses allocated to cloud flows and machines within an environment using the [Process capacity utilization](/power-automate/desktop-flows/capacity-utilization-process) page<sup>3</sup>.|
 
-<sup>1</sup> Process capacity allocation to cloud flows, including stacking of multiple Process licenses, is available in all regions. Currently, each flow that needs Process capacity must have a Process license directly assigned. Flow groups (sharing a single pool of Process capacity across related flows) and automatic capacity inheritance from parent flows are planned.<br/><br/>
+<sup>1</sup> Process capacity allocation to cloud flows, including stacking of multiple Process licenses, is available in all regions. You can also assign a Process license to a [flow group](/power-automate/flow-groups) to share 250,000 actions per day across up to 25 cloud flows (child flows must be explicitly added to the group). Automatic capacity inheritance from parent to child flows isn't available. Each flow that needs Process capacity must be directly assigned a license or added to a flow group.<br/><br/>
 <sup>2</sup> Depending on its OS, each machine can support a maximum number of unattended bots (equal to the maximum number of Windows sessions the machine can concurrently open).<br/><br/>
 <sup>3</sup> Breakdown of detailed cloud flow allocations in the process capacity utilization page isn't available yet.
 
