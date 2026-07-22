@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 06/22/2026
+ms.date: 07/21/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -15,6 +15,35 @@ search.audienceType:
 # Programmability and extensibility - what's new or changed
 
 Learn about the latest changes and new capabilities for Power Platform APIs and admin SDKs.
+
+## June 2026
+
+| Item | Type | Description |
+|------|------|-------------|
+| Get Connector Consent Bypass | API | New endpoint: [Get Connector Consent Bypass](/rest/api/power-platform/copilotstudio/bots/get-connector-consent-bypass) |
+| Set Connector Consent Bypass | API | New endpoint: [Set Connector Consent Bypass](/rest/api/power-platform/copilotstudio/bots/set-connector-consent-bypass) |
+| Powerplatform-Management (Python) | SDK | [Monthly Release](https://pypi.org/project/powerplatform-management/2.0.3474.290/) |
+| Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3474.290) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
+
+## May 2026
+
+| Item | Type | Description |
+|------|------|-------------|
+| Upload Certificate | API | New endpoint: [Upload Certificate](/rest/api/power-platform/powerpages/websites/upload-certificate) |
+| Get Certificates By Portal | API | New endpoint: [Get Certificates By Portal](/rest/api/power-platform/powerpages/websites/get-certificates-by-portal) |
+| Delete Certificate By Portal | API | New endpoint: [Delete Certificate By Portal](/rest/api/power-platform/powerpages/websites/delete-certificate-by-portal) |
+| List Host Names For Portal | API | New endpoint: [List Host Names For Portal](/rest/api/power-platform/powerpages/websites/list-host-names-for-portal) |
+| Create Custom Domain | API | New endpoint: [Create Custom Domain](/rest/api/power-platform/powerpages/websites/create-custom-domain) |
+| Delete Host Name For Portal | API | New endpoint: [Delete Host Name For Portal](/rest/api/power-platform/powerpages/websites/delete-host-name-for-portal) |
+| Get Allowed IP Addresses | API | New endpoint: [Get Allowed IP Addresses](/rest/api/power-platform/powerpages/websites/get-allowed-ip-addresses) |
+| List SSL Bindings By Thumbprints | API | New endpoint: [List SSL Bindings By Thumbprints](/rest/api/power-platform/powerpages/websites/list-ssl-bindings-by-thumbprints) |
+| Add SSL Binding By Portal | API | New endpoint: [Add SSL Binding By Portal](/rest/api/power-platform/powerpages/websites/add-ssl-binding-by-portal) |
+| Delete SSL Binding By Thumbprint | API | New endpoint: [Delete SSL Binding By Thumbprint](/rest/api/power-platform/powerpages/websites/delete-ssl-binding-by-thumbprint) |
+| Get Environment Operation By ID | API | New endpoint: [Get Environment Operation By ID (Preview)](/rest/api/power-platform/environmentmanagement/operation/get-environment-operation-by-id) |
+| Powerplatform-Management (Python) | SDK | [Monthly Release](https://pypi.org/project/powerplatform-management/2.0.3474.290/) |
+| Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3474.290) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
 ## April 2026
 
