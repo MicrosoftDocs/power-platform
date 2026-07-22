@@ -55,7 +55,10 @@ The **Search** function finds records in a table that contain a string in one of
 **Filter**(Table*, *Formula1* [, *Formula2\*, ... ] )
 
 - _Table_ - Required. Table to search.
-- _Formula(s)_ - Required. The formula by which each record of the table is evaluated. The function returns all records that result in **true**. You can reference columns within the table. If you supply more than one formula, the results of all formulas are combined with the **[And](function-logicals.md)** function.
+- _Formula(s)_ - Required. The formula by which each record of the table is evaluated. The function returns all records that result in **true**. You can reference columns within the table. For Dataverse data sources, a formula can be the name of a Dataverse view. If you supply more than one formula, the results of all formulas are combined with the **[And](function-logicals.md)** function.
+
+> [!NOTE]
+> Dataverse views can be created which return additional columns from related tables. However, Power Apps only returns those columns which are known to be part of the specified Dataverse data source.
 
 **Search**(Table*, *SearchString*, *Column1* [, *Column2\*, ... ] )
 
