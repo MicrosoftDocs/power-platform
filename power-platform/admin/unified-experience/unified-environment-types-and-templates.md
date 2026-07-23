@@ -64,6 +64,9 @@ The key characteristics of UDE environments include:
 > [!IMPORTANT]
 > UDE isn't the same as the Power Platform developer environment type. The Power Platform *Developer* environment type doesn't support any Dynamics 365 workload today. It provides only a limited Dataverse schema that supports low-code artifacts such as canvas apps, flows, and agents. UDE uses the *Sandbox* environment type with developer tooling enabled, which includes the full Dataverse schema and the finance and operations runtime.
 
+> [!Note]
+> An environment provisioned as a unified sandbox environment (USE) can not be converted to a unified developer environment (UDE)
+
 ### Summary of unified environment types
 
 | Unified environment type | Abbreviation | Power Platform environment type | Elastic compute | Typical use |
