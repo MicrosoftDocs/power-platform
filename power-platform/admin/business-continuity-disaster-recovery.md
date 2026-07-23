@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery
 description: Microsoft provides business continuity and disaster recovery for production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 07/02/2026
+ms.date: 07/23/2026
 ms.reviewer: ellenwehrle
 ms.topic: concept-article
 ms.subservice: admin
@@ -145,9 +145,9 @@ With the implementation of [availability zones](/azure/reliability/availability-
 ### What are the costs associated with using self-service disaster recovery?
 
 - You must select a [managed environment](managed-environment-licensing.md). This environment requires a premium license tier. 
-- You pay for the prepaid storage consumed in the secondary region.
+- For secondary regions, your prepaid free storage/free Dataverse entitlements is used.
   
-  For example, suppose you have 10 GB of capacity consumption in the primary location. When you turn on self-service disaster recovery, you create a copy of the data in the remote secondary region and this copy consumes another 10 GB. You can pay for this 10 GB in the secondary region through storage entitlements. If you exceed your available free storage or available entitlements, a pay-as-you-go plan actively starts billing.
+  For example, suppose you have 10 GB of capacity consumption in the primary location. When you turn on self-service disaster recovery, you create a copy of the data in the remote secondary region and this copy consumes another 10 GB. For secondary region, this 10 GB storage is used from your existing entitlements. 
   
 ### How does billing work for self-service disaster recovery?
 
