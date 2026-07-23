@@ -56,7 +56,7 @@ The following table lists the regions where your Power Platform or Dynamics 365 
 | Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
 |-------------------------|-------------------------|-------------------------|
 | United States | In region* | United States| 
-| Europe\**  | In European Untion (EU) Data Boundary | United States |
+| Europe\**  | In European Union (EU) Data Boundary | United States |
 | France<br>Germany<br>Norway<br>Sweden<br>Switzerland\** | In EU Data Boundary | United States|
 | Brazil<br>Canada<br>Japan<br>Korea<br>South Africa<br>United Arab Emirates | United States | United States| 
 | Asia<br>Singapore | In region* or United States | United States |
