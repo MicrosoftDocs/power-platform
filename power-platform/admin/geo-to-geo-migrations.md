@@ -4,7 +4,7 @@ description: Move your environment in a single tenant from one region to another
 author: matapg007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/26/2026
+ms.date: 07/23/2026
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: ellenwehrle
@@ -14,6 +14,7 @@ contributors:
     - brsova
     - LaurentPepin
     - bfok123
+    -hlferrei
 search.audienceType: 
   - admin
 ---
@@ -36,7 +37,7 @@ The Geo Migration feature allows customers to move their environments in a singl
 
 | Supported | Not supported |
 |-------------------------|-------------------------|
-| <ul></br><li>Migrating production environment</li></br><li>Migrating sandbox environment</li></br></ul> | <ul></br><li>Migrating default environment</li></br><li>Migrating Dataverse for Teams environment</li></br><li>Migrating trial environment</li></br><li>Migrating demo environment</li></br><li>Migrating developer environment</li></br><li>Migrating environment from GCC to another geo or from another geo to GCC</li></ul> |
+| <ul></br><li>Migrating production environment</li></br><li>Migrating sandbox environment</li></br></ul> | <ul></br><li>Migrating default environment</li></br><li>Migrating Dataverse for Teams environment</li></br><li>Migrating trial environment</li></br><li>Migrating demo environment</li></br><li>Migrating developer environment</li></br><li>Migrating environment from GCC to another geo or from another geo to GCC</li></br><li>Migrating unified environments</li></ul> |
 
 ## Impact of migrating
 - Backups for the environment undergoing geo-to-geo migration are no longer available.
