@@ -4,7 +4,7 @@ description: Move your environment in a single tenant from one region to another
 author: matapg007
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/26/2026
+ms.date: 07/23/2026
 ms.subservice: admin
 ms.author: matgupta 
 ms.reviewer: ellenwehrle
