@@ -2,7 +2,7 @@
 title: "Frequently asked questions"
 description: "FAQs for the Power Platform unified developer experience."
 author: pvillads
-ms.date: 06/06/2024
+ms.date: 07/23/2026
 ms.topic: faq
 ms.reviewer: pehecke
 ms.author: pvillads
