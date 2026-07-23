@@ -37,7 +37,7 @@ We currently don't have the capability to provision or update the environment to
 
 ### Can I convert a Unified Sandbox Environment (USE) to a Unified Developer Environment (UDE), or vice versa?
 
-No. After an environment is provisioned, its type can't be changed. A Unified Sandbox Environment (USE) can't be changed to a Unified Developer Environment (UDE), and a Unified Developer Environment (UDE) can't be changed to a Unified Sandbox Environment (USE).
+No. After you provision an environment, its type can't be changed. A Unified Sandbox Environment (USE) can't be changed to a Unified Developer Environment (UDE), and a Unified Developer Environment (UDE) can't be changed to a Unified Sandbox Environment (USE).
 
 If you require a different environment type, create a new environment with the desired type.
 
