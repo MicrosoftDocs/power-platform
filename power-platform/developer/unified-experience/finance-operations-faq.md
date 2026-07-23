@@ -35,6 +35,12 @@ Error message:
 
 We currently don't have the capability to provision or update the environment to a specific runtime update or version. Support for versions is planned, but until enabled, we suggest using the environment copy feature to get your unified development environment on the same version as the sandbox or production environments. [Copy a Lifecycle Services environment to a unified environments](../../admin/unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md)
 
+### Can I convert a Unified Sandbox Environment (USE) to a Unified Developer Environment (UDE), or vice versa?
+
+No. After an environment is provisioned, its type can't be changed. A Unified Sandbox Environment (USE) can't be converted to a Unified Developer Environment (UDE), and a Unified Developer Environment (UDE) can't be converted to a Unified Sandbox Environment (USE).
+
+If you require a different environment type, create a new environment with the desired type.
+
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
 ### Can I watch a presentation and demos covering core developer scenarios
