@@ -3,10 +3,10 @@ title: Unified environment types and templates for finance and operations apps
 description: Learn about unified production (UPE), sandbox (USE), and developer (UDE) environments, Dynamics 365 ERP templates, and regional availability for finance and operations apps in Power Platform.
 author: laneswenka
 ms.topic: concept-article
-ms.date: 04/06/2026
+ms.date: 07/23/2026
 ms.subservice: admin
 ms.author: laswenka
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 
 ---
 
