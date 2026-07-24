@@ -2,7 +2,7 @@
 title: "Frequently asked questions"
 description: "FAQs for the Power Platform unified developer experience."
 author: pvillads
-ms.date: 06/06/2024
+ms.date: 07/23/2026
 ms.topic: faq
 ms.reviewer: pehecke
 ms.author: pvillads
@@ -34,6 +34,12 @@ Error message:
 ### How can I provision or update my unified environment to a specific finance and operations version
 
 We currently don't have the capability to provision or update the environment to a specific runtime update or version. Support for versions is planned, but until enabled, we suggest using the environment copy feature to get your unified development environment on the same version as the sandbox or production environments. [Copy a Lifecycle Services environment to a unified environments](../../admin/unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md)
+
+### Can I convert a Unified Sandbox Environment (USE) to a Unified Developer Environment (UDE), or vice versa?
+
+No. After you provision an environment, its type can't be changed. A Unified Sandbox Environment (USE) can't be changed to a Unified Developer Environment (UDE), and a Unified Developer Environment (UDE) can't be changed to a Unified Sandbox Environment (USE).
+
+If you require a different environment type, create a new environment with the desired type.
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
