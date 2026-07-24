@@ -3,10 +3,10 @@ title: Unified environment types and templates for finance and operations apps
 description: Learn about unified production (UPE), sandbox (USE), and developer (UDE) environments, Dynamics 365 ERP templates, and regional availability for finance and operations apps in Power Platform.
 author: laneswenka
 ms.topic: concept-article
-ms.date: 04/06/2026
+ms.date: 07/23/2026
 ms.subservice: admin
 ms.author: laswenka
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 
 ---
 
@@ -63,6 +63,9 @@ The key characteristics of UDE environments include:
 
 > [!IMPORTANT]
 > UDE isn't the same as the Power Platform developer environment type. The Power Platform *Developer* environment type doesn't support any Dynamics 365 workload today. It provides only a limited Dataverse schema that supports low-code artifacts such as canvas apps, flows, and agents. UDE uses the *Sandbox* environment type with developer tooling enabled, which includes the full Dataverse schema and the finance and operations runtime.
+
+> [!NOTE]
+> When you provision an environment as a unified sandbox environment (USE), you **can't** change it to a unified developer environment (UDE) and vice versa.
 
 ### Summary of unified environment types
 
