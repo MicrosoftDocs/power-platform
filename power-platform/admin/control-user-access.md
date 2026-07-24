@@ -127,7 +127,7 @@ Or, purchase and assign per-app passes: [About Power Apps per app plans](about-p
     The security group is associated with the environment.
 
 > [!NOTE]
-> Power Apps can be shared with users outside of the security group associated with the environment but the users need to be members of the security group to run apps. If you're a user who isn't in the security group and you try to run apps, you see this error message: "You can't open apps in this environment. You aren't a member of the environment's security group." If your Power Platform admin has [set governance details](powerapps-powershell.md) for your organization, you see a governance contact that you may reach out to for security group membership.
+> Canvass apps can be shared with users outside of the security group associated with the environment but the users need to be members of the security group to run the apps. If you're a user who isn't in the security group and you try to run the shared apps, you see this error message: "You can't open apps in this environment. You aren't a member of the environment's security group." If your Power Platform admin has [set governance details](powerapps-powershell.md) for your organization, you see a governance contact that you may reach out to for security group membership.
 
 ### Related content
 
