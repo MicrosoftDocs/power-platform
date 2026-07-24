@@ -1,23 +1,19 @@
 ---
-title: Environment group rules gallery (preview)
+title: Environment group rules gallery
 description: Learn about the Power Platform admin center rules gallery and how to use it manage rules for your environment groups.
 #customer intent: As an admin, I want to use the rules gallery for environment groups so that I can more easily see existing rules and set up new rules for specific groups of environments.
 author: praveenmantha
 ms.author: pmantha
 ms.reviewer: ellenwehrle
-ms.date: 05/27/2026
+ms.date: 07/21/2026
 ms.topic: concept-article
 ---
 
-# Environment group rules gallery (preview)
-
-[!INCLUDE [preview disclaimer](../includes/cc-preview-features-definition.md)]
+# Environment group rules gallery 
 
 The environment group rules gallery is a centralized, authoritative catalog in the Power Platform admin center that contains all governance and compliance rules applicable to Power Platform environments. Instead of managing every available rule in a single, monolithic view&mdash;regardless of whether it's actively enforced&mdash;the rules gallery allows administrators to selectively apply only the necessary rules to specific environment groups.
 
 All other rules remain available in the gallery repository, streamlining governance operations and reducing administrative overhead. The rules gallery integrates with environment groups, allowing consistent governance rules to be applied across multiple environments at once.
-
-This article describes the rules gallery as part of a Private Preview release. It outlines what the feature offers, how it's accessed, and the considerations that apply during evaluation.
 
 ## Manage governance rules in a centralized gallery
 
@@ -37,7 +33,7 @@ Access the rules gallery through *Environment Groups* in the Power Platform admi
 
 There are no special prerequisites for accessing the rules gallery. Any administrator with access to Environment Groups can use this feature without additional configuration.
 
-## Rule lifecycle in an environment group (preview)
+## Rule lifecycle in an environment group
 
 Rules in the rules gallery move through a lifecycle of being added to an environment group, configured, applied for enforcement, and eventually removed if no longer needed.
 
@@ -70,14 +66,14 @@ You can add and apply all rules by using their default configurations, except fo
 
 ## Known limitations
 
-As this is a public preview, some limitations apply:
+These limitations apply:
 
 - Copilot GSA settings, default deployment pipeline, and maker welcome content rules require individual configuration before you can apply them.
 - When you select multiple rules in the gallery, you can't configure them at selection time. You must add rules first and then configure them individually if you need to change default values.
 - You can add and apply rules in bulk, but you must remove them individually.
 - The numeric indicator that shows the number of applied rules in an environment group might experience a brief delay before refreshing after new rules are applied.
 
-The product team will document additional known issues as the preview progresses.
+The product team is aware of these limitations and is actively working to address them in future releases.
 
 ## Frequently asked questions
 
