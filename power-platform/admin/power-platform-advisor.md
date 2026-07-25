@@ -133,7 +133,7 @@ While building cloud flows or PowerShell scripts using the connector, you can ge
 
 ### Action history
 
-Action history shows all actions you take manually from the actions page page and actions you run using the automated actions in the Power Platform for Admin v2 connector. Power Platform admins can view actions taken by them or other admins (both tenant-level admins and environment/system admins), whereas environment admins can only view the history of their own actions.
+Action history shows all actions you take manually from the actions page and actions you run using the automated actions in the Power Platform for Admin v2 connector. Power Platform admins can view actions taken by them or other admins (both tenant-level admins and environment/system admins), whereas environment admins can only view the history of their own actions.
 
 ### Snooze recommendations
 
