@@ -41,7 +41,7 @@ When a Power Platform service is embedded in SharePoint, Power BI, or Teams, the
 
 ### Related articles
 
-[Security in Microsoft Power Platform](./overview.md)
+[Security in Microsoft Power Platform](./security-overview.md)
 [Connecting and authenticating to data sources](./connect-data-sources.md)  
 [Data storage in Power Platform](./data-storage.md)  
 [Power Platform security FAQs](./faqs.md)  
