@@ -25,6 +25,63 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
+## Deprecation of the Power Automate mobile app
+
+Effective August 31, 2026, the Power Automate mobile app for iOS and Android is deprecated. Microsoft removes the app from the Apple App Store and Google Play Store and it no longer receives updates or support.
+
+Existing cloud flows aren't affected. Automated, scheduled, and instant flows continue to run normally.
+
+### Why is this change needed?
+
+A small share of Power Automate users use the Power Automate mobile app. Its main scenarios (approvals, flow monitoring, and running flows) are available through Microsoft Teams, the Power Automate web portal, and Power Apps mobile. The [Approvals app in Microsoft Teams](/power-automate/teams/native-approvals-in-teams) provides a more complete mobile approvals experience, the [Power Automate portal](https://make.powerautomate.com) works in mobile browsers for flow management, and [Power Apps mobile](/power-apps/mobile/run-powerapps-on-mobile) supports running instant flows from Power Apps.
+
+### Impact
+
+After the deprecation date:
+
+- Microsoft removes the Power Automate mobile app from the App Store and Google Play.
+- The app no longer receives updates and isn't supported.
+- The app no longer receives push notifications sent to it (through the "Send me a mobile notification" action). The action itself isn't removed, but notifications have no destination unless the flow is updated.
+- The iOS and Android home-screen widget ("run a flow") no longer functions.
+
+#### What *isn't* affected
+
+- All existing cloud flows continue to run. No flows are modified or disabled.
+- The "Send me a mobile notification" action remains available in the flow designer. Makers can replace it at their convenience.
+- Approvals functionality is unaffected. Approvals continue to work through Teams, Outlook actionable messages, and the Power Automate portal.
+
+### Action required
+
+**For users (flow runners and approvers)**:
+
+| What you use the app for | Recommended alternative |
+|---|---|
+| Approvals (view, respond, track) | [Approvals app in Microsoft Teams](/power-automate/teams/native-approvals-in-teams) |
+| View and manage your flows | [Power Automate portal](https://make.powerautomate.com) (works in mobile browsers) |
+| Run instant/button flows | Power Automate portal, or run from a Power App in [Power Apps mobile](/power-apps/mobile/run-powerapps-on-mobile) |
+| Receive push notifications | Ask the flow owner to update the flow to notify via Teams or email |
+
+**For makers (flow authors)**:
+
+- Replace **Send me a mobile notification** actions with [Post message in a chat or channel](/power-automate/teams/send-a-message-in-teams) (Teams) or [Send an email](/connectors/office365/#send-an-email-(v2)) actions.
+
+**For IT admins**:
+
+- Ensure the Approvals app in Microsoft Teams isn't blocked by your organization's Teams app permission policies.
+- Communicate the deprecation timeline to affected users.
+
+### Known limitations of alternatives
+
+- **Home-screen widget**: The iOS and Android widget to run a flow from the home screen has no direct equivalent. Users can pin a Power App to their home screen as a partial workaround.
+- **Push notifications on flow failure**: These require the maker to add an explicit Teams or email notification action in the flow (using a "Run after" configuration on the preceding action set to "has failed").
+- **Flow editing on mobile**: The Power Automate designer isn't optimized for small screens. Complex editing is best done on a desktop or tablet.
+
+### Related announcements
+
+- [Approvals in Microsoft Teams](/power-automate/teams/native-approvals-in-teams)
+- [Power Automate portal](https://make.powerautomate.com)
+- [Power Apps mobile](/power-apps/mobile/run-powerapps-on-mobile)
+
 ## Deprecation of Power Automate export from Microsoft Visio
 
 Effective July 14, 2026, the Power Automate integration in the Visio desktop app is deprecated. This feature allowed users to export BPMN (Business Process Model and Notation) diagrams from Visio as cloud flows in Power Automate.
@@ -77,25 +134,29 @@ The [Power Platform Playwright samples](developer/playwright-samples/overview.md
 
 ## Deprecation of Editable Grid and Power Apps Read-Only Grid controls
 Effective March 2026, the Editable Grid control and the Power Apps Read-Only Grid control are deprecated in model-driven apps. These controls will continue to function until further notice, after which they are no longer supported. These controls will receive critical security fixes only and no new features.
+
 ### Why is this needed?
 We are streamlining the grid experience in Power Apps to provide a modern, unified solution. The [Power Apps grid control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control) is the next evolution of grid control, built from the ground up with modern design standards, accessibility compliance, and comprehensive functionality.
 
 - **Editable Grid**: Based on older architecture that does not align with current Microsoft accessibility standards and has limited extensibility.
 - **Power Apps Read-Only Grid**: An interim solution that is no longer necessary, as the Power Apps grid control supports both read-only and editable capabilities in a single control.
+- 
 ### Impact
 Makers who have configured apps to use the Editable Grid or Power Apps Read-Only Grid controls need to transition to the Power Apps grid control. Existing implementations will continue to work but only receive critical security fixes and no new features.
+
 ### Replacement feature
 The [Power Apps grid control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control) is the recommended solution for all grid scenarios in model-driven apps. This modern control offers extensive capabilities including inline editing, infinite scrolling, nested grids, grouping, aggregation, enhanced filtering and sorting, and [many configurable properties](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#configure-the-power-apps-grid-control) to customize the experience for your needs.
+
 ### Action required
 
 To ensure a smooth transition:
 1. **Identify affected apps**: Review your model-driven apps to identify views and subgrids using the deprecated controls.
-2. **Transition to Power Apps grid control**: [Add the control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#add-the-power-apps-grid-control-using-form-designer) to your forms, views, and subgrids.
-3. **Configure and test**: Customize the [control properties](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#configure-the-power-apps-grid-control) and validate the experience before publishing.
+1. **Transition to Power Apps grid control**: [Add the control](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#add-the-power-apps-grid-control-using-form-designer) to your forms, views, and subgrids.
+1. **Configure and test**: Customize the [control properties](/power-apps/maker/model-driven-apps/the-power-apps-grid-control#configure-the-power-apps-grid-control) and validate the experience before publishing.
 
 ## Deprecation of the Microsoft Power Automate for Excel add-in (AppSource)
 
-The [Microsoft Power Automate for Excel](https://marketplace.microsoft.com/en-us/product/office/wa104381701?tab=overview) add-in available through AppSource is deprecated. Users should switch to the native Power Automate integration available in the **Automate** tab of Excel.
+The Microsoft Power Automate for Excel add-in available through AppSource is deprecated. Users should switch to the native Power Automate integration available in the **Automate** tab of Excel.
 
 ### Why is this needed?
 
