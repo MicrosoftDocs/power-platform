@@ -101,7 +101,7 @@ When turn this option **On**, a search box appears at the top of every page in m
 
 > [!NOTE]
 > - You can't turn off Dataverse global search for individual apps.
-> - When Dataverse global search search is set to **On**, [quick find search](/powerapps/user/quick-find) (formerly known as _categorized search_) becomes unavailable.
+> - When Dataverse global search is set to **On**, [quick find search](/powerapps/user/quick-find) (formerly known as _categorized search_) becomes unavailable.
 > - Dataverse search must be turned on to support lifecycle operations such as create, delete, backup, recover, copy, and reset.
 > - Dataverse search must be manually set to **On** in required environments to support copying lifecycle operations between environments.
 
