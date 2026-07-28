@@ -1,6 +1,6 @@
 ---
 title: Use Power Platform CLI without installing it
-description: Learn how to to use the Power Platform CLI with the dotnet tool exec or dnx command so that you don't need to install it.
+description: Learn how to use the Power Platform CLI with the dotnet tool exec or dnx command so that you don't need to install it.
 ms.author: anpetroc
 author: anpetroc
 ms.reviewer: jdaly

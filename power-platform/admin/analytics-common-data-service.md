@@ -128,7 +128,7 @@ The Active users dashboard shows you how many [!INCLUDE[pn_dyn_365](../includes/
 
  This dashboard helps you monitor and troubleshoot workflows.
 
-:::image type="content" source="media/analytics-common-data-service/organization-insights-system-jobs-section.png" alt-text="Image of the the Dataverse analytics system jobs metrics page." lightbox="media/analytics-common-data-service/organization-insights-system-jobs-section.png":::
+:::image type="content" source="media/analytics-common-data-service/organization-insights-system-jobs-section.png" alt-text="Image of the Dataverse analytics system jobs metrics page." lightbox="media/analytics-common-data-service/organization-insights-system-jobs-section.png":::
 
 ### System jobs dashboard details
 
@@ -195,7 +195,7 @@ This dashboard helps you monitor and troubleshoot API calls.
 |  API Success Rate   | This chart shows the API success rate as percentage of total API calls made in the environment with a Dataverse database over a specified time. |
 | Top API by Failures |  This chart shows top-10 failing API calls in the environment with a Dataverse database over a specified time.  |
 |   Total API Calls   | This chart shows total number of API calls made in the environment with a Dataverse database over a specified time.     |
-|    Most Used API    | This chart shows top-10 most executed API calls in the environment with a Dataverse database database. Adding the individual counts provide the total of the top-10 API calls. This is not be the same as the all-up Total API Calls metric.       |
+|    Most Used API    | This chart shows top-10 most executed API calls in the environment with a Dataverse database. Adding the individual counts provide the total of the top-10 API calls. This is not be the same as the all-up Total API Calls metric.       |
 |      API Calls      | This chart shows the number of API calls made over time in the environment with a Dataverse database over a specified time. Adding up the individual counts equals the Total API Calls count.  |
 |      API peak call rate      | This chart shows capacity consumption relative to the API call limit. More information: [API peak call rate report](#api-peak-call-rate-report-preview)   |
 

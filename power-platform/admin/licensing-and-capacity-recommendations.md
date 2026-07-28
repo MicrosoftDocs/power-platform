@@ -21,7 +21,7 @@ ms.custom:
 
 # View licensing and capacity recommendations
 
-The [actions page](power-platform-advisor.md) in the Power Platform admin center helps you optimize and manage licensing and capacity for your Power Platform tenant with actionable recommendations. These recommendations highlight ways to improve resource allocation, governance, and cost efficiency. To see your recommendations on the the actions page, go to the [Power Platform admin center](https://admin.preview.powerplatform.microsoft.com) and select **Actions**.
+The [actions page](power-platform-advisor.md) in the Power Platform admin center helps you optimize and manage licensing and capacity for your Power Platform tenant with actionable recommendations. These recommendations highlight ways to improve resource allocation, governance, and cost efficiency. To see your recommendations on the actions page, go to the [Power Platform admin center](https://admin.preview.powerplatform.microsoft.com) and select **Actions**.
 
 The following information highlights recommendations that pertain to licenses and capacity, including the severity of the recommendation, refresh frequency, and whether the recommendation applies to managed environments only.
 
