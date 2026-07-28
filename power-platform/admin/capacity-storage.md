@@ -266,6 +266,33 @@ In the **Usage per storage type** tile, you can view the consumption of your dat
 
 In the **Consumption per table** section, you can view the amount of storage consumed by each Dataverse table. To see table consumption for a specific storage type, select **Database**, **File**, or **Log** in the **Usage per storage type** tile. Select the table name for the consumption trend, with the option to track daily usage trends, for up to the past three months.
 
+### Dataverse storage advisor (preview)
+
+[!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+
+Dataverse storage advisor analyzes table-level storage consumption and recommends data that you can clean up to reduce storage usage. The advisor surfaces these recommendations directly in the **Licensing** > **Dataverse** capacity view, so you can act on them without leaving the Power Platform admin center.
+
+> [!NOTE]
+> Dataverse storage advisor is being rolled out gradually and might not be available in your environment yet. When it's available, recommendations appear only for environments that have storage that can be cleaned up.
+
+When recommendations are available, the advisor adds the following experiences:
+
+- **Storage recommendation banner**: A banner appears above the capacity details that estimates how much space the advisor can help you reclaim&mdash;for example, *Storage advisor has action plans to clean up space and manage the environment*. Select the banner to open the **Dataverse storage advisor** panel.
+
+- **Clean up column**: The **Consumption per table** grid includes a **Clean up** column that shows the estimated space the advisor recommends cleaning up for each table. The environment list in the **Manage capacity** experience shows a similar **Cleanup** value so you can compare opportunities across environments.
+
+- **Free up storage space**: The **Dataverse storage advisor** panel includes a **Free up storage space** section that lists per-table cleanup recommendations. For each recommended table, you can review the **Cleanable data** and preview the records that match the cleanup criteria. These records are moved to long-term retention when you act on the recommendation, which keeps them available for audit or compliance needs while freeing up active Dataverse storage and improving performance.
+
+#### Act on a storage recommendation
+
+From a storage recommendation, you can choose how to reclaim space:
+
+- **Create an archival policy**: Turn a recommendation into a long-term retention archival policy that moves inactive data out of active storage. For more information, see [Storage management in Dataverse and finance and operations apps](storage-management.md).
+- **Bulk delete data**: Remove obsolete or unnecessary data through a bulk delete operation to free up storage capacity. Bulk delete permanently removes data and can't be undone.
+- **Manage capacity**: Adjust capacity allocation for the environment from the same view.
+
+The table trends panel also shows **Cleanup recommendations** with curated Microsoft Learn articles to help you manage a table's growth. For more ways to reduce storage, see [Free up storage space](free-storage-space.md).
+
 ### Dataverse search consumption and reporting
 
 In addition to database and file storage, Dataverse search includes the indexes that power different experiences. These indexes support search and generative AI across structured or tabular data and unstructured data stored in Dataverse, such as files.
