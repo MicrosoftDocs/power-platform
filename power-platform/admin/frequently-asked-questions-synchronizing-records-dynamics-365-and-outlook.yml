@@ -44,7 +44,7 @@ sections:
       - question: |
           Where can I find information on troubleshooting server-side synchronization issues?  
         answer: |
-           You can find information on troubleshooting and known issues here: [Troubleshooting and things to know about server-side synchronization](../admin/troubleshooting-monitoring-server-side-synchronization.md).  
+           You can find information on troubleshooting and known issues here: [Troubleshooting and things to know about server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization).  
             
       - question: |
           Do security permissions affect synchronization?  

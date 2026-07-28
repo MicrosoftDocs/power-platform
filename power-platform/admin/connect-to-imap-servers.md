@@ -164,7 +164,7 @@ To see configuration test results, look at the **Incoming Email Status**, **Outg
 You can find information about recurring issues and other troubleshooting information in the following topics:
 
 - [Test configuration of mailboxes](connect-exchange-online.md#test-the-configuration-of-mailboxes).
-- [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md).
+- [Troubleshooting and monitoring server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization).
 
 ## Test email configurations  
 
@@ -194,7 +194,7 @@ Customizations or email configurations in Power Apps can only use these ports.
 
 ### See also
 
-[Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md) <br />
+[Troubleshooting and monitoring server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization) <br />
 [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx) <br />
 [Set up server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)
 
