@@ -138,7 +138,7 @@ For environments with no Dataverse database, a user who has the Environment Admi
 
 ## Assign security roles to users in an environment that has a Dataverse database
 
-Security roles can be assigned to individual users, [owner teams](manage-teams.md#types-of-teams), and [Microsoft Entra group teams](manage-group-teams.md). Before you assign a role to a user, [verify the user's account is added to and enabled in the environment](troubleshooting-user-needs-read-write-access-organization.md).
+Security roles can be assigned to individual users, [owner teams](manage-teams.md#types-of-teams), and [Microsoft Entra group teams](manage-group-teams.md). Before you assign a role to a user, [verify the user's account is added to and enabled in the environment](/troubleshoot/power-platform/dataverse/environment-app-access/troubleshooting-user-needs-read-write-access-organization).
 
 In general, a security role can only be assigned to users whose accounts are enabled in the environment. To assign a security role to a user account disabled in the environment, turn on **allowRoleAssignmentOnDisabledUsers** in OrgDBOrgSettings.
 
