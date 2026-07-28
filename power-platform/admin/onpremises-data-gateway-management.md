@@ -183,6 +183,20 @@ If a person who doesn't have access to install gateways tries to install one, th
 > [!div class="mx-imgBorder"] 
 > ![Error message.](media/manage-gateway-error-message.png "Error message")
 
+## Remove gateways for tenant migration
+
+If you have gateways in your home (default) region or target region, clean them up fully before [tenant migration](/power-bi/support/service-admin-region-move). Note that you must delete all gateways on both your home and target regions, so any applications using these gateways will lose access to these gateways until they are restored post-migration. Follow these steps to clean up your gateways:
+
+1. Select the region drop-down to see the gateway regions, and select your home (default) region. Remove all gateways in this region using the **Remove** action.
+
+> [!div class="mx-imgBorder"] 
+> ![Home region selected.](media/home-region-gateways.png "Home region selected")
+
+3. Select the region drop-down, and select your target region. Remove all gateways in this region.
+
+> [!div class="mx-imgBorder"] 
+> ![Target region selected.](media/target-region-gateways.png "Target region selected")
+
 ### Related content
 
 [On-premises data gateway](/data-integration/gateway/service-gateway-onprem)<br/>
