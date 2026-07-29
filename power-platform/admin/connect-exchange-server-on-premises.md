@@ -188,7 +188,7 @@ When you test the email configuration, an asynchronous job runs in the backgroun
 
 ### See also
 
-- [Troubleshooting and monitoring server-side synchronization](troubleshooting-monitoring-server-side-synchronization.md)
+- [Troubleshooting and monitoring server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization)
 - [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx)
 - [Server-side synchronization](server-side-synchronization.md)
 - [Autodiscover service](https://technet.microsoft.com/library/bb124251\(v=exchg.150\).aspx)
