@@ -1014,6 +1014,8 @@
               href: /dynamics365/customer-engagement/outlook-app/deploy-dynamics-365-app-for-outlook
             - name: Enable accessible email flow
               href: deploy-email-unified-interface.md
+            - name: Configure sensitivity labels for emails
+              href: configure-email-sensitivity.md
             - name: Server-side synchronization
               items:
                 - name: About server-side sync
