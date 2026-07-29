@@ -3,7 +3,7 @@ title: Licensing
 description: Learn about licensing managed environments.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/13/2026
+ms.date: 07/28/2026
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: ellenwehrle
@@ -17,13 +17,12 @@ contributors:
 - Funken1766
 - mihaelablendea
 - mikferland-msft
-- sericks007
 - Greggbarker-MS
 ---
 
 # Licensing
 
-Power Apps Premium, Power Automate Premium, Microsoft Copilot Studio, Copilot Studio for Microsoft 365 Copilot (only for features related to Copilot Studio), Power Pages, Dynamics 365 Premium, Enterprise, Team Members, and Dynamics 365 Customer Insights licenses include managed environments as an entitlement. Pay-as-you-go meters for Power Apps per app, Power Pages, and Copilot Studio also qualify. When you activate managed environments in an environment, all active usage requires one of these standalone licenses or pay-as-you-go meters. For example:
+Managed environments are included as an entitlement in the following licenses: Power Apps Premium, Power Automate Premium, Microsoft Copilot Studio, Copilot Studio for Microsoft 365 Copilot (only for features related to Copilot Studio), Power Pages, Dynamics 365 Premium, Enterprise, Team Members, and Dynamics 365 Customer Insights. Pay-as-you-go meters for Power Apps per app, Power Pages, and Copilot Studio also qualify. When you activate managed environments in an environment, all active usage requires one of these standalone licenses or pay-as-you-go meters. For example:
 
 - Every user running an app in a managed environment must have one of the following licenses: a Power Apps Premium, a Power Automate Premium license, or a Dynamics 365 Enterprise license that gives premium Power Apps usage rights *. If you use capacity-based licenses, a managed environment must have Power Apps per app plans such as app passes allocated to it. Use of Power Apps capabilities included with Dynamics 365 Pro licenses must be only within the context of the licensed Dynamics 365 application.
 
@@ -72,8 +71,19 @@ Licensing requirements for managed environments are detailed in this content. Fo
 
 #### What do end users experience?
 
-If end users open a Power App in a managed environment without an appropriate license, they see an in-app notification. The notification informs users that the app is in a managed environment and that they need to get an appropriate license from their administrator to continue using the app. Users can request a license directly from the notification.
+If end users open a Power App in a managed environment without an appropriate license, they see an in-app notification. The notification informs users that the app is in a managed environment and that they need to get an appropriate license from their administrator to continue using the app. Users can request a license directly from the notification. 
 
+**Notification message and states:**
+
+1. **Informational**: "This app requires a valid Power Apps license. Request a license from your admin"  
+<img width="1228" height="67" alt="Shows informational notification message" src="https://github.com/user-attachments/assets/145caeff-8590-439d-bf0e-f9d07eecc7cf" />  If the user doesn't get an appropriate license, the notification promotes to next state after 7 days.
+
+1. **Warning**: "This app requires a valid Power Apps license. Request a license from your admin"  
+<img width="1223" height="80" alt="Shows warning notification message" src="https://github.com/user-attachments/assets/a702a2d9-d9c0-461e-8439-ab86a676261e" />  If the user doesn't get an appropriate license, the notification promotes to next state after 7 days.
+
+1. **Error**: "Action required: This app requires a valid Power Apps license. Request a license from your admin for continued access"  
+<img width="1223" height="78" alt="Shows error notification message" src="https://github.com/user-attachments/assets/fe174d17-39f9-407d-8ecc-162731ff0706" />  The notification remains in this state until the user gets an appropriate license to use the app in a managed environment 
+ 
 #### What happens when a user requests a license?
 
 When a user selects **Request License**, the request goes to the tenant administrator. Administrators can review and act on these requests in:
