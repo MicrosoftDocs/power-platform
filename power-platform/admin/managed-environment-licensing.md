@@ -3,7 +3,7 @@ title: Licensing
 description: Learn about licensing managed environments.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/28/2026
+ms.date: 07/29/2026
 author: mihaelablendea
 ms.author: mihaelab
 ms.reviewer: ellenwehrle
@@ -75,14 +75,17 @@ If end users open a Power App in a managed environment without an appropriate li
 
 **Notification message and states:**
 
-1. **Informational**: "This app requires a valid Power Apps license. Request a license from your admin"  
-<img width="1228" height="67" alt="Shows informational notification message" src="https://github.com/user-attachments/assets/145caeff-8590-439d-bf0e-f9d07eecc7cf" />  If the user doesn't get an appropriate license, the notification promotes to next state after 7 days.
+1. **Informational**: "This app requires a valid Power Apps license. Request a license from your admin." 
+:::image type="content" source="media/managed-environment-licensing/informational-license-message.png" alt-text="Shows informational notification message."::: 
+If the user doesn't get an appropriate license, the notification promotes to next state after 7 days.
 
-1. **Warning**: "This app requires a valid Power Apps license. Request a license from your admin"  
-<img width="1223" height="80" alt="Shows warning notification message" src="https://github.com/user-attachments/assets/a702a2d9-d9c0-461e-8439-ab86a676261e" />  If the user doesn't get an appropriate license, the notification promotes to next state after 7 days.
+1. **Warning**: "This app requires a valid Power Apps license. Request a license from your admin." 
+:::image type="content" source="media/managed-environment-licensing/warning-license-message.png" alt-text="Shows warning notification message."::: 
+If the user doesn't get an appropriate license, the notification promotes to next state after 7 days.
 
-1. **Error**: "Action required: This app requires a valid Power Apps license. Request a license from your admin for continued access"  
-<img width="1223" height="78" alt="Shows error notification message" src="https://github.com/user-attachments/assets/fe174d17-39f9-407d-8ecc-162731ff0706" />  The notification remains in this state until the user gets an appropriate license to use the app in a managed environment 
+1. **Error**: "Action required: This app requires a valid Power Apps license. Request a license from your admin for continued access."  
+:::image type="content" source="media/managed-environment-licensing/error-license-message.png" alt-text="Shows error notification message.":::
+ The notification remains in this state until the user gets an appropriate license to use the app in a managed environment.
  
 #### What happens when a user requests a license?
 
