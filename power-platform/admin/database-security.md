@@ -42,7 +42,7 @@ Microsoft Power Platform uses different types of roles at different scopes. Unde
 > [!IMPORTANT]
 > Tenant-level admin roles such as **Power Platform administrator** and **Dynamics 365 administrator** are assigned in the Microsoft 365 admin center and grant administrative access across environments. However, these roles don't automatically grant Dataverse data access. To work with data in a Dataverse environment, a tenant admin must also be assigned the **System Administrator** Dataverse security role in that specific environment. Learn more in [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md).
 
-Use this article to understand built-in roles and how they apply to different environment types. To assign roles, see [Configure user security in an environment](database-security-configure.md). If users encounter access errors, see [Troubleshoot user access problems](troubleshooting-user-needs-read-write-access-organization.md).
+Use this article to understand built-in roles and how they apply to different environment types. To assign roles, see [Configure user security in an environment](database-security-configure.md). If users encounter access errors, see [Troubleshoot user access problems](/troubleshoot/power-platform/dataverse/environment-app-access/troubleshooting-user-needs-read-write-access-organization).
 
 ## Predefined security roles
 
@@ -151,7 +151,7 @@ The following table describes common security role issues and how to resolve the
 | Can't assign or modify security roles | Only users with the System Administrator role or a tenant-level admin role can manage security role assignments. | Contact your organization's System Administrator or Microsoft 365 admin to request role changes. Learn more in [Configure user security in an environment](database-security-configure.md). |
 | Can't copy a security role | The security role is a predefined role that can't be edited or copied, or you don't have sufficient privileges. | Verify that you have the System Administrator role. Some predefined roles can't be copied. Try [creating a custom security role](security-roles-privileges.md) instead. |
 
-If these steps don't resolve your issue, see [Troubleshoot user access problems](troubleshooting-user-needs-read-write-access-organization.md) for more scenarios. If you need access changes, contact the appropriate admin:
+If these steps don't resolve your issue, see [Troubleshoot user access problems](/troubleshoot/power-platform/dataverse/environment-app-access/troubleshooting-user-needs-read-write-access-organization) for more scenarios. If you need access changes, contact the appropriate admin:
 
 - **Environment access**: Contact the environment admin or a user with the System Administrator role in that environment.
 - **Dataverse table or app access**: Contact a System Administrator in that environment to assign or update your security role.
@@ -163,7 +163,7 @@ If these steps don't resolve your issue, see [Troubleshoot user access problems]
 - [Security roles and privileges](security-roles-privileges.md)  
 - [How access to a record is determined](how-record-access-determined.md)
 - [Configure user security in an environment](database-security-configure.md)
-- [Troubleshoot user access problems](troubleshooting-user-needs-read-write-access-organization.md)
+- [Troubleshoot user access problems](/troubleshoot/power-platform/dataverse/environment-app-access/troubleshooting-user-needs-read-write-access-organization)
 - [Use service admin roles to manage your tenant](use-service-admin-role-manage-tenant.md)
 - [Security concepts in Microsoft Dataverse](/power-platform/admin/wp-security-cds)
 

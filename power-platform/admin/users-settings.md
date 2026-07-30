@@ -29,7 +29,7 @@ Manage user settings in the Power Platform admin center.
 
    | Option | Description | For more information |
    | ------- | ----------- | -------------------- |
-   | Run diagnostics | Access diagnostics on a user in an environment. | [User diagnostics](troubleshooting-user-needs-read-write-access-organization.md#user-diagnostics) |
+   | Run diagnostics | Access diagnostics on a user in an environment. | [User diagnostics](/troubleshoot/power-platform/dataverse/environment-app-access/troubleshooting-user-needs-read-write-access-organization#run-user-diagnostics) |
    | Manage security roles | Assign security roles to users to control access to data, using access levels and permissions.| [Assign a security role to a user](assign-security-roles.md) |
    | Refresh user | Resync the **User** page from Microsoft Entra ID. | |
    | Change position | Assign a position to a user. | [Hierarchy security to control access](hierarchy-security.md) |
