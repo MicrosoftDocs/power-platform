@@ -81,7 +81,7 @@ If you're editing `mcp.json` file manually, MCP server registration should look 
       "type": "stdio",
       "command": "dnx",
       "args": ["Microsoft.PowerApps.CLI.Tool", "--yes", "copilot", "mcp", "--run"]
-    },
+    }
   }
 }
 ```
