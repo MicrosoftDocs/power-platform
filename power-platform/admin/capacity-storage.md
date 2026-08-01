@@ -287,7 +287,7 @@ When recommendations are available, the advisor adds the following experiences:
 
 From a storage recommendation, you can choose how to reclaim space:
 
-- **Create an archival policy**: Turn a recommendation into a long-term retention archival policy that moves inactive data out of active storage. For more information, see [Long term retention policies](powerapps-docs/maker/data-platform/data-retention-overview.md).
+- **Create an archival policy**: Turn a recommendation into a long-term retention archival policy that moves inactive data out of active storage. For more information, see [Long term retention policies](power-apps/maker/data-platform/data-retention-overview).
 - **Bulk delete data**: Remove obsolete or unnecessary data through a bulk delete operation to free up storage capacity, see [Bulk deletion](delete-bulk-records.md).
 - **Manage capacity**: Adjust capacity allocation for the environment from the same view.
 

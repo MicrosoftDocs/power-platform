@@ -11,7 +11,7 @@ contributors:
   - v-aangie
 ms.component: pa-admin
 ms.topic: faq
-ms.date: 06/02/2026
+ms.date: 07/31/2026
 ms.author: matow
 ms.reviewer: angieandrews
 search.audienceType: 
@@ -24,7 +24,7 @@ Here are some frequently asked questions about Power Automate standalone license
 
 ## How do Power Automate license plans work for flow runs?
 
-If a cloud flow has a Process license assigned, then it can access premium connectors, has the highest action limits, and always uses the Process license limits, regardless of who runs the flow.
+If you assign a Process license to a cloud flow, the flow can access premium connectors and has a dedicated 250,000-action daily entitlement per Process license. The flow always uses the Process license limits, regardless of who runs the flow.
 
 If a flow runs under a user license, the action limit depends on the license context. Automated and scheduled flows use the flow owner's license context. Instant flows (button, Power Apps) use the invoking user's license context. Action limits are applied per context&mdash;if a user has multiple licenses, each flow gets the limit for the context it runs in, not a combined total. Learn more in [What happens to my action limits if I have multiple plans?](#what-happens-to-my-action-limits-if-i-have-multiple-plans)
 
@@ -40,7 +40,7 @@ The Premium user plan is intended for a human user to support the broad adoption
 
 The Process license is intended for core enterprise process automations that are typically automated back-end activities (not run manually by a person). For example, every organization needs processes for invoice processing or HR onboarding that are mandatory to the normal operation of the business. These processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, an invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they're all handling an invoice through multiple steps to closure.
 
-By obtaining a Process license, organizations ensure that all the flows within the business process are appropriately licensed. This enables the deployment and management of interconnected flows as a cohesive unit, facilitating application lifecycle management (ALM) and optimized performance.
+You can assign a Process license directly to one solution-aware cloud flow or to a [flow group](/power-automate/flow-groups). A flow group lets up to 25 solution-aware cloud flows share one Process license. You must explicitly add every parent and child flow that should use the group's capacity.
 
 You need a Process license if your flow meets **one of the following criteria**:
 
@@ -61,7 +61,7 @@ You need a Process license if your flow meets **one of the following criteria**:
 
 - Your process only needs DPA (digital process automation): how many core business processes do you want to automate?
 
-  Purchase one Process license for every core business process. Some examples of core business processes are invoice processing or human resources (HR) onboarding. All cloud flows related to the same business process are included in the license.
+  Purchase one Process license for every core business process. Some examples of core business processes are invoice processing or human resources (HR) onboarding. To share the license across related cloud flows, add up to 25 solution-aware flows to a [flow group](/power-automate/flow-groups). Flows aren't automatically covered just because they're part of the same business process.
 
 - Your flow exceeds 250,000 actions per day: how many Process licenses does it need?
 
@@ -77,11 +77,11 @@ In the following screenshot, all cloud flows are covered by one Process license,
 
 ### My DPA process has multiple cloud flows. Do I need multiple Process licenses?
 
-Core business processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, the invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they're all handling an invoice through multiple steps to closure. You only need one Process license for a core business process. This encourages microservices architecture best practices where flows can be small with fine-grained functionality resulting in better maintainability.
+Core business processes can vary in size and complexity, ranging from small-scale initiatives to large-scale endeavors spanning multiple flows interconnected by shared data sources. For example, the invoice processing process has multiple flows handling an invoice from creation through approvals to payment. All the flows are part of one business process as they're all handling an invoice through multiple steps to closure. One Process license can cover a core business process when its flows fit within one eligible flow group and its shared 250,000-action daily entitlement.
 
-Currently, each cloud flow that needs Process capacity must have a Process license directly assigned to it. To allow a child flow to consume capacity from its parent flow's Process license, assign a Process license to the child flow and enable **Allow process overage** on it.
+You can assign one Process license to a [flow group](/power-automate/flow-groups) and share its 250,000 actions per day across up to 25 solution-aware cloud flows. Add every flow that should use the shared capacity to the group. Parent and child flows are separate group members, and adding a parent flow doesn't automatically add or license its child flows.
 
-Flow groups (sharing a single pool of Process capacity across multiple related flows) and automatic capacity inheritance from parent flows are planned but not yet available. Once available, you can assign a single Process license to the main flow and have child flows and associated flows share its action entitlement.
+If one flow needs more than 250,000 actions per day, assign Process licenses directly to that flow instead. You can stack up to 10 Process licenses on an individual flow, but you can't stack licenses on a flow group.
 
 ### My solution has multiple processes. Do I need multiple Process licenses?
 
@@ -104,16 +104,16 @@ To find out what type (automated/manual/scheduled) of flow you have, select a fl
 
 - If the flow is in context of Power Apps or Dynamics 365 apps, and is an automated flow, the flow must be associated to the app created using Power Apps or a Dynamics 365 app and the owner needs Power Apps Premium license, or a Dynamics 365 license.
 - If the flow is in context of a Power Apps or Dynamics 365 app, and is an instant flow, every user running the flow needs a Power Apps Premium license, or a Dynamics 365 license.
-- If a parent flow calls a child flow, the child flow leverages the context from the parent flow. For example, if the following criteria are met, it uses the parent flow owner's license:
+- If a parent flow and child flow use a user license context, the child flow leverages the context from the parent flow. For example, if the following criteria are met, it uses the parent flow owner's license:
     - If the parent flow is an automated flow, and
     - The child flow uses premium connectors, and
     - The child flow doesn't have a Process license. If the child flow has a Process license, it uses the Process license and not the parent flow's license.
 
-During the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period), the parent flow license isn't inherited by the child flow. The child flow uses the owner's license. However, after the transition period ends, only the parent flow license (owner's license/parent flow's Process license) will be used, unless the child flow has a Process license.
+These user license context rules don't cause a child flow to inherit Process capacity from its parent. To use Process capacity, directly assign a Process license to the child flow or explicitly add it to the same flow group as the parent.
 
 ### We have three environments (development, test, and production) to align with best practices and we need flows in several environments. Do we need to buy a Process license for every environment?
 
-Each flow exists in a specific environment. This means if a flow is imported into a different environment, each instance is a separate flow and needs a separate license. The flow with the Process license and its child flows, and all the flows that are associated are treated as one process and one Process license covers the usage of all of them in one environment.
+Each flow exists in a specific environment. If you import a flow into another environment, each instance is a separate flow. Flow groups and Process capacity assignments are also environment-specific. In every target environment, create or verify the flow group, explicitly add each parent and child flow that should share capacity, and assign a Process license to the group. You need sufficient Process licenses for each environment where the flows run under a Process plan.
 
 ### We have three environments (development, test, and production) to align with best practices and we need flows in several environments. Do we need to buy a Premium license for every environment?
 
@@ -181,7 +181,7 @@ Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a mi
 request
 For unattended RPA, previously customers needed to buy a per flow license for the cloud flow and an unattended RPA add-on. Now they can purchase a Process license for every RPA session on a machine. All the cloud flows invoking desktop flows on the machine are included as part of the Process license.
 
-For cloud flows, one per flow license entitles the flow with the license and its child flows. One Process license entitles the flow with the license, its child flows, and any flows that are associated. Per flow had a minimum of five packs to be purchased to get started. There's no minimum purchase quantity requirement for Process license.
+For cloud flows, the legacy per-flow license entitled the licensed flow and its child flows. A Process license assigned directly to a cloud flow doesn't automatically cover its child flows. This allocation model is different from assigning Process capacity to a machine, where eligible cloud flows can inherit a Process plan from the machine. To share one Process license across cloud flows, explicitly add up to 25 solution-aware parent and child flows to a [flow group](/power-automate/flow-groups).
 
 ### How is Power Automate Premium license different from Power Automate per user with attended RPA license?
 
@@ -220,13 +220,13 @@ Consider the following cloud flow where every email attachment is saved into One
 
 - If you share an automated/scheduled flow with another user and then that user triggers the same flow, it uses the limit of the original owner and not the new user's limit. But if the user then leverages the flow to make their own new flow, then that new user becomes the owner of the new flow and that flow uses the new user's limit.
 
-- If a parent flow calls a child flow, the child flow uses the parent flow's limit. For example, if the parent flow is an automated flow, the child flow uses the parent flow creator/owner's limit.
+- If a parent flow and child flow use a user license context, the child flow uses the parent flow's limit. For example, if the parent flow is an automated flow, the child flow uses the parent flow creator or owner's limit.
 
 - If the parent flow is a manual flow, the child flow uses the limit of the parent flow's invoking user.
 
 - If the child flow has a Process / Per-flow license, it uses the Process / Per-flow limit and not the parent flow's limit.
 
-- If a flow has a Process license, currently each child flow that needs to use Process capacity must also have a Process license directly assigned to it (with **Allow process overage** enabled). Automatic capacity inheritance from parent flows and flow groups for sharing capacity across related flows are planned but not yet available.
+- A child flow doesn't inherit Process capacity from its parent. To use Process capacity, directly assign a Process license to the child flow or explicitly add it to the same [flow group](/power-automate/flow-groups) as the parent. Each parent and child flow counts separately toward the 25-flow group limit.
 
 ### As a maker, what tools do I have to analyze my usage?
 
@@ -328,7 +328,7 @@ For flows with a Process license, you can [stack multiple Process licenses](#can
 
 Yes. Up to 10 Process licenses can be stacked on a single cloud flow to increase its daily action entitlement. Each Process license adds 250,000 actions per day. For example, assigning 3 Process licenses to one cloud flow provides 750,000 actions per day.
 
-Currently, each Process license must be directly assigned to the flow that uses it, including child flows. Flow groups (sharing a single pool of Process capacity across multiple cloud flows) are planned but not yet supported.
+Alternatively, assign one Process license to a [flow group](/power-automate/flow-groups) to share 250,000 actions per day across up to 25 solution-aware cloud flows. You must explicitly add every parent and child flow that should use the shared capacity. Child flows don't inherit Process capacity from their parent. Stacking isn't available for flow groups.
 
 > [!NOTE]
 > - The flow must be in a [solution](/power-automate/create-flow-solution) before a Process license can be assigned. To add an existing flow to a solution, go to **Solutions** > select a solution > **Add existing** > **Automation** > **Cloud flow**. Learn more in [Add an existing cloud flow to a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution).
@@ -661,7 +661,9 @@ Everyone who invokes the flow needs a Premium license because it's an instant fl
 
 ### I have a child flow that has premium connectors and it's invoked by multiple parent flows that don't have premium connectors. Do all parent flows need to be licensed, or is licensing the child flow enough?
 
-You can either license the parent flow or license the child flow with a Process license. However, if the parent flow also has a premium connector, the parent flow owner must have a Premium license or the parent flow must have the Process license.
+You can assign a Process license directly to the child flow. The parent flows don't need Process licenses only because they call the licensed child flow. However, if a parent flow also uses a premium connector, its owner must have a Premium license or you must assign Process capacity to that parent flow.
+
+A Process license assigned to a parent flow doesn't automatically cover its child flows. To share Process capacity instead of licensing each flow directly, explicitly add the parent and child flows to the same [flow group](/power-automate/flow-groups).
 
 My flow uses connections from multiple users. Do I need to license all of them?
 Who needs a license is independent from whose connections are used in the flow. Automated or scheduled flows always run under the owner's license and manual flows or apps always run under the user who triggers the flow.
