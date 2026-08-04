@@ -1,7 +1,7 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 11/25/2025
+ms.date: 08/03/2026
 ms.service: power-platform
 ms.topic: concept-article
 ms.custom: 
@@ -14,6 +14,7 @@ search.audienceType:
   - admin
 contributors: 
 - alaug
+- shpradha
 ms.contributors:
 - alaug
 - nyarbrough
@@ -21,15 +22,17 @@ ms.contributors:
 ---
 # Data storage and governance in Power Platform
 
-Power Platform processes both **personal data** and **customer data**. Learn more about personal data and customer data at the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
+Power Platform processes both **personal data** and **customer data**. To learn more about personal data and customer data, see the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
 
 ## Data residency
 
-A Microsoft Entra tenant stores information relevant to an organization and its security. When a Microsoft Entra tenant signs up for Power Platform services, the tenant's selected country or region maps to the most suitable Azure geography where a Power Platform deployment exists. Power Platform stores customer data in the tenant's assigned Azure geography, or *home geo*, unless organizations deploy services in multiple regions.
+A Microsoft Entra tenant stores information relevant to an organization and its security. When a Microsoft Entra tenant signs up for Power Platform services, the tenant's selected macro region maps to the most suitable Azure macro region geography where a Power Platform deployment exists. Power Platform stores customer data in the tenant's assigned Azure macro region geography, or *home geo*, unless organizations deploy services in multiple regions. A macro region geography represents the data residency boundary that aligns with data residency laws for a given geography. To learn about the regions available in a specific macro region geography, see [Power Platform and Dynamics 365 macro region geography](../macro-regions.md).
 
-Some organizations have a global presence. For example, a business might be headquartered in the United States but does business in Australia. It may need certain Power Platform data to be stored in Australia to comply with local regulations. When Power Platform services are deployed in more than one Azure geography, it's referred to as a *multi-geo* deployment. In this case, only metadata related to the environment is stored in the home geo. All metadata and product data in that environment is stored in the remote geo.
+As an admin, you can select a macro region geography, such as North America, Europe, or Asia-Pacific instead of a specific datacenter region. The platform then automatically assigns the optimal datacenter region within the selected macro region geography based on capacity, availability, and performance considerations. This approach helps ensure a more scalable, resilient, and performant experience for all customers while continuing to respect data residency commitments. The intelligent region selection ensures environments are placed in regions with optimal capacity and health, improving uptime and responsiveness. 
 
-Power Platform services are available in certain Azure geographies. For more information about where Power Platform services are available, where your data is stored and replicated to for resiliency, and how it's used, go to [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Commitments about the location of customer data at rest are in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31). Microsoft also provides data centers for [sovereign entities](../regions-overview.md).
+Some organizations have a global presence. For example, a business might be headquartered in the United States but does business in Australia. It might need certain Power Platform data to be stored in Australia to comply with local regulations. When Power Platform services are deployed in more than one Azure geography, it's referred to as a *multi-geo* deployment. In this case, only metadata related to the environment is stored in the home macro geo. All metadata and product data of that environment is stored in the remote macro geo.
+
+Power Platform services are available in certain Azure geographies. For more information about where Power Platform services are available, where your data is stored and replicated to for resiliency, and how it's used, go to the [Microsoft Trust Center](https://www.microsoft.com/trustcenter). Commitments about the location of customer data at rest are in the Data Processing Terms of the [Microsoft Online Services Terms](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=31). Microsoft also provides data centers for [sovereign entities](../regions-overview.md).
 
 ## Data handling
 
@@ -37,7 +40,7 @@ This section outlines how Power Platform stores, processes, and transfers custom
 
 ### Data at rest
 
-Unless otherwise stated in documentation, customer data remains in its original source (for example, Dataverse or SharePoint). Power Platform apps are stored in Azure Storage as part of an environment. Mobile app data is encrypted and stored in SQL Express. In most cases, apps use Azure Storage to persist Power Platform service data and Azure SQL Database to persist service metadata. Data that's entered by app users is stored in the respective data source for the service, such as Dataverse.
+Unless otherwise stated in documentation, customer data remains in its original source (for example, Dataverse or SharePoint). Power Platform apps are stored in Azure Storage as part of an environment. Mobile app data is encrypted and stored in SQL Express. In most cases, apps use Azure Storage to persist Power Platform service data and Azure SQL Database to persist service metadata. Data that app users enter is stored in the respective data source for the service, such as Dataverse.
 
 Power Platform encrypts all persisted data by default using Microsoft-managed keys. Customer data stored in Azure SQL Database is fully encrypted using Azure SQL's Transparent Data Encryption (TDE) technology. Customer data stored in Azure Blob storage is encrypted using Azure Storage Encryption.
 
@@ -47,17 +50,17 @@ Data is in processing when it's being used as part of an interactive scenario, o
 
 ### Data in transit
 
-Power Platform encrypts all incoming HTTP traffic using TLS 1.2 or higher. Requests that try to use TLS 1.1 or lower are rejected.
+Power Platform encrypts all incoming HTTP traffic by using TLS 1.2 or higher. The platform rejects requests that try to use TLS 1.1 or lower.
 
 ## Advanced security features
 
-Some of Power Platform's advanced security features might have specific licensing requirements.
+Some of Power Platform's advanced security features require specific licenses.
 
 ### Service tags
 
 A service tag is a group of IP address prefixes from a specific Azure service. You can use service tags to define network access controls on Network Security Groups or Azure Firewall.
 
-Service tags help to minimize the complexity of frequent updates to network security rules. You can use service tags in place of specific IP addresses when you create security rules that, for example, allow or deny traffic for the corresponding service.
+Service tags help minimize the complexity of frequent updates to network security rules. Use service tags instead of specific IP addresses when you create security rules that, for example, allow or deny traffic for the corresponding service.
 
 Microsoft manages the address prefixes in the service tag and automatically updates it as addresses change. For more information, see [Azure IP Ranges and Service Tags - Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519).
 
@@ -72,13 +75,13 @@ Power Platform includes extensive [data policy features](../prevent-data-loss.md
 
 This feature set is tenant-specific functionality that restricts Storage Shared Access Signature (SAS) tokens and is controlled through a menu in the [Power Platform admin center](https://admin.powerplatform.microsoft.com). This setting restricts who, based on IP (IPv4 and IPv6) can use enterprise SAS tokens.
 
-These settings can be found in an environment’s **Privacy + Security** settings in the admin center. You must turn on the **Enable IP address based Storage Shared Access Signature (SAS) rule** option.
+You can find these settings in an environment's **Privacy + Security** settings in the admin center. Turn on the **Enable IP address based Storage Shared Access Signature (SAS) rule** option.
 
 Admins can choose one of these four options for this setting:
 
 | Option | Setting                 | Description                                                                                                                    |
 |--------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------|
-| 1      | IP Binding Only         | This restricts SAS keys to the requester’s IP.                                                                             |
+| 1      | IP Binding Only         | This setting restricts SAS keys to the requester's IP.                                                                             |
 | 2      | IP Firewall Only        | This restricts using SAS keys to only work within an admin specified range.                                                |
 | 3      | IP Binding and Firewall | This restricts using SAS keys to work within an admin-specified range and only to the requestor's IP.                      |
 | 4      | IP Binding or Firewall  | Allows SAS keys to be used within the specified range. If the request comes from outside the range, IP Binding is applied. |
@@ -92,6 +95,7 @@ Admins can choose one of these four options for this setting:
 > Options 2 and 4 work as intended.
 
 #### Products enforcing IP Binding when enabled:
+
 - Dataverse
 - Power Automate
 - Custom Connectors
@@ -99,7 +103,7 @@ Admins can choose one of these four options for this setting:
 
 #### Impact on the user experience
 
-- **When a user, who doesn't meet an environment’s IP address restrictions, opens an app**: Users get an error message citing a generic IP issue.
+- **When a user, who doesn't meet an environment's IP address restrictions, opens an app**: Users get an error message citing a generic IP issue.
 
 - **When a user, who does meet the IP address restrictions, opens an app**: The following events occur:
 
@@ -107,34 +111,37 @@ Admins can choose one of these four options for this setting:
   - More significantly, due to the IP validation that this security setting uses, some functionality may perform slower than if it was turned off.
 
 #### Update settings programatically
+
 Admins can use automation to set and update both the IP binding versus firewall setting, the IP range that is allow-listed, and the **Logging** toggle. Learn more in [Tutorial: Create, update, and list Environment Management Settings](../programmability-tutorial-environmentmanagement-settings.md).
 
 ### Logging of SAS calls
+
 This setting lets all SAS calls within Power Platform be logged into Purview. This logging shows the relevant metadata for all creation and usage events and can be enabled independently of the above SAS IP restrictions. Power Platform services are currently onboarding SAS calls in 2024.
 
 | Field name                                   | Field description                                                                                              |
 |----------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-| response.status_message                      | Informing if the event was successful or not: SASSuccess or SASAuthorizationError.                             |
-| response.status_code                         | Informing if the event was successful or not: 200, 401, or 500.                                                |
-| ip_binding_mode                              | IP binding mode set by a tenant admin, if turned on. Applies to SAS creation events only.                        |
-| admin_provided_ip_ranges                     | IP ranges set by a tenant admin, if any. Applies to SAS creation events only.                                  |
-| computed_ip_filters                          | Final set of IP filters bound to SAS URIs based on IP binding mode and the ranges set by a tenant admin. Applies to both SAS creation and usage events.                              |
-| analytics.resource.sas.uri                   | The data that was attempting to be accessed or created.                                                        |
-| enduser.ip_address                           | The public IP of the caller.                                                                                   |
-| analytics.resource.sas.operation_id          | The unique identifier from the creation event. Searching by this shows all usage and creation events related to the SAS calls from the creation event. Mapped to the “x-ms-sas-operation-id” response header.                                                                                 |
-| request.service_request_id                   | Unique identifier from the request or response and can be used to look up a single record. Mapped to the “x-ms-service-request-id” response header.     |
-| version                                      | Version of this log schema.                                                                                    |
-| type                                         | Generic response.                                                                                              |
-| analytics.activity.name                      | The type of activity this event was: Creation or Usage.                                                        |
-| analytics.activity.id                        | Unique ID of the record in Purview.                                                                            |
-| analytics.resource.organization.id           | Org ID                                                                                                         |
-| analytics.resource.environment.id            | Environment ID                                                                                                 |
-| analytics.resource.tenant.id                 | Tenant ID                                                                                                      |
-| enduser.id                                   | The GUID from Microsoft Entra ID of the creator from the creation event.                                       |
-| enduser.principal_name                       | The UPN/email address of the creator. For usage events this is a generic response: “system@powerplatform”.     |
-| enduser.role                                 | Generic response: **Regular** for creation events and **System** for usage events.                             |
+| `response.status_message`                      | Indicates if the event was successful or not: SASSuccess or SASAuthorizationError.                             |
+| `response.status_code`                         | Indicates if the event was successful or not: 200, 401, or 500.                                                |
+| `ip_binding_mode`                              | IP binding mode set by a tenant admin, if turned on. Applies to SAS creation events only.                        |
+| `admin_provided_ip_ranges`                     | IP ranges set by a tenant admin, if any. Applies to SAS creation events only.                                  |
+| `computed_ip_filters`                          | Final set of IP filters bound to SAS URIs based on IP binding mode and the ranges set by a tenant admin. Applies to both SAS creation and usage events.                              |
+| `analytics.resource.sas.uri`                   | The data that was attempting to be accessed or created.                                                        |
+| `enduser.ip_address`                           | The public IP of the caller.                                                                                   |
+| `analytics.resource.sas.operation_id`          | The unique identifier from the creation event. Searching by this shows all usage and creation events related to the SAS calls from the creation event. Mapped to the `x-ms-sas-operation-id` response header.                                                                                 |
+| `request.service_request_id`                   | Unique identifier from the request or response and can be used to look up a single record. Mapped to the `x-ms-service-request-id` response header.     |
+| `version`                                      | Version of this log schema.                                                                                    |
+| `type`                                         | Generic response.                                                                                              |
+| `analytics.activity.name`                      | The type of activity this event was: Creation or Usage.                                                        |
+| `analytics.activity.id`                        | Unique ID of the record in Purview.                                                                            |
+| `analytics.resource.organization.id`           | Org ID                                                                                                         |
+| `analytics.resource.environment.id`            | Environment ID                                                                                                 |
+| `analytics.resource.tenant.id`                 | Tenant ID                                                                                                      |
+| `enduser.id`                                   | The GUID from Microsoft Entra ID of the creator from the creation event.                                       |
+| `enduser.principal_name`                       | The UPN/email address of the creator. For usage events this is a generic response: "system@powerplatform".     |
+| `enduser.role`                                 | Generic response: **Regular** for creation events and **System** for usage events.                             |
 
 ### Turn on Purview audit logging
+
 In order for the logs to show in your Purview instance, you must first opt into it for each environment that you want logs for. This setting can be updated in the Power Platform admin center by a **tenant admin**.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with tenant admin credentials.
@@ -146,6 +153,7 @@ In order for the logs to show in your Purview instance, you must first opt into 
 1. Under **Storage Shared Access Signature (SAS) Security Settings (Preview)**, turn on the **Enable SAS Logging in Purview** feature.
 
 ## Search audit logs
+
 Tenant admins can use Purview to view audit logs emitted for SAS operations, and can self-diagnose errors that may be returned in IP validation issues. Purview logs are the most reliable solution.
 
 Use the following steps to diagnose issues or better understand SAS usage patterns within your tenant.
@@ -154,16 +162,16 @@ Use the following steps to diagnose issues or better understand SAS usage patter
 1. Go to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) and log in with tenant admin credentials.
 1. In the left navigation pane, select **Audit**. If this option isn't available to you, it means the logged-in user doesn't have admin access to query audit logs.
 1. Select the date and time range in UTC to search for logs. For example, when a 403 Forbidden error with an **unauthorized_caller** error code was returned.
-1. From the **Activities - friendly names** dropdown list, search for **Power Platform storage operations** and select **Created SAS URI** and **Used SAS URI**.
+1. From the `Activities - friendly names` dropdown list, search for **Power Platform storage operations** and select **Created SAS URI** and **Used SAS URI**.
 1. Specify a keyword in **Keyword Search**. See [Get started with search](/purview/audit-search?tabs=compliance-portal#get-started-with-search) in the Purview documentation to learn more about this field. You may use a value from any of the fields described in the table above depending on your scenario, but below are the recommended fields to search on (in order of preference):
-    - The value of **x-ms-service-request-id** response header. This filters the results to one SAS URI Creation event or one SAS URI usage event, depending on which request type the header is from. It's useful when investigating a 403 Forbidden error returned to the user. It can also be used to grab the **powerplatform.analytics.resource.sas.operation_id** value.
-    - The value of **x-ms-sas-operation-id** response header. This filters the results to one SAS URI creation event and one or more usage events for that SAS URI depending on how many times it was accessed. It maps to the **powerplatform.analytics.resource.sas.operation_id** field.
+    - The value of `x-ms-service-request-id` response header. This value filters the results to one SAS URI creation event or one SAS URI usage event, depending on which request type the header is from. It's useful when investigating a 403 Forbidden error returned to the user. You can also use it to grab the `powerplatform.analytics.resource.sas.operation_id` value.
+    - The value of `x-ms-sas-operation-id` response header. This value filters the results to one SAS URI creation event and one or more usage events for that SAS URI depending on how many times it was accessed. It maps to the `powerplatform.analytics.resource.sas.operation_id` field.
     - Full or partial SAS URI, minus the signature. This might return many SAS URI creations and many SAS URI usage events, because it's possible for the same URI to be requested for generation as many times, as needed.
     - Caller IP address. Returns all creation and usage events for that IP.
     - Environment ID. This might return a large set of data that can span across many different offerings of Power Platform, so avoid if possible or consider narrowing down the search window.
 
     > [!WARNING]
-    > We don't recommend searching for User Principal Name or Object ID because those are only propagated to creation events, not usage events.
+    > Don't search for User Principal Name or Object ID because those values only propagate to creation events, not usage events.
 
 1. Select **Search** and wait for results to appear.
 
