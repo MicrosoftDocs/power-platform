@@ -1,19 +1,20 @@
 ---
 title: Power Platform URLs and IP address ranges 
 description: Provides information about URLs and IP addresses to be added to the allow list to use Power Platform services.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/08/2025
+ms.date: 08/03/2026
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 contributors:
   - maustinjones
   - v-jlandrum 
   - shazichuanshuo 
   - garrettm-msft
   - nanivijay
-  - nnyarbro 
+  - nnyarbro
+  - neeranelli
 ms.contributors:
   - sakarale
   - viotti 
@@ -77,6 +78,7 @@ Add the following URLs to the allow list to use Dynamics 365 apps such as Dynami
 | https://dynamics.microsoft.com |    |
 | https://*.api.powerplatform.com, https://\*.powerplatform.com, https://\*.api.powerplatformusercontent.com, and https://\*.powerplatformusercontent.com  | Required for Power Platform API connectivity and used internally by Microsoft products and admin automation scenarios as described in [Programmability and extensibility overview](programmability-extensibility-overview.md). |
 | https://api.admin.powerplatform.microsoft.com | Required to call Power Platform admin center service in public cloud.|
+| `https://mem.gfx.ms` | Service endpoint for application to service communication. |
 
 > [!IMPORTANT]
 > - If you're a government cloud customer, go to [Dynamics 365 US Government URLs](microsoft-dynamics-365-government.md#dynamics-365-us-government-urls) 
