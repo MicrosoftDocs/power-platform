@@ -17,7 +17,7 @@ ms.custom:
 
 Use these settings to customize the privacy and security of the Dataverse environments that are associated with Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation.
 
-Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
 To adjust the settings in the Power Platform admin center for an environment, follow these steps:
 
@@ -47,7 +47,7 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 | Set custom session timeout | Default: Off. Select **On** to specify values different from the default values. |
 | Enter maximum session length | After the time you set is reached, users must reauthenticate to customer engagement apps. |
 | How long before the session expires do you want to show a timeout warning? | After the time you set is reached, users receive an expiration warning. |
-| **Inactivity timeout** | [Inactivity timeout](user-session-management.md#inactivity-timeout) |
+| **Inactivity timeout** | [Inactivity timeout](user-session-management.md#inactivity-timeout-management) |
 | Set inactivity timeout | Default: Off. Enable to automatically sign out a user. |
 | **Enable sharing** |  Default: Off. Select **On** to allow users to share read-only links to records with other users from this environment. |
 | **Content security policy** | [Content security policy](content-security-policy.md) |
@@ -58,7 +58,7 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 
 ## Replace the privacy statement for the organization
 
- By default, the Microsoft privacy statement is always shown to users who have an administrator role but not to other business users. As an administrator, you can specify a link to your organization's privacy statement, which is then shown to other users in your organization. However, any user who has the System Administrator security role always see the Microsoft privacy statement, not the organization's.
+ By default, users with an administrator role see the Microsoft privacy statement, but other business users don't. As an administrator, you can specify a link to your organization's privacy statement, which you show to other users in your organization. However, any user with the System Administrator security role always sees the Microsoft privacy statement, not the organization's.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
@@ -74,7 +74,7 @@ To adjust the settings in the Power Platform admin center for an environment, fo
 
  When errors occur in the product, it sends data about the problem to Microsoft. This error report allows customer engagement apps to track and address errors relating to Dynamics 365. You can help Microsoft improve products and services when you allow the system to send error reports.
 
- By default, individual users have a measure of control over whether to send error reports to Microsoft. As an administrator, you can override their preferences and set error reporting preferences for the entire organization. You can prevent users from making changes in how errors are reported and change the default behavior for error reporting,
+ By default, individual users have a measure of control over whether to send error reports to Microsoft. As an administrator, you can override their preferences and set error reporting preferences for the entire organization. You can prevent users from making changes in how errors are reported and change the default behavior for error reporting.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
