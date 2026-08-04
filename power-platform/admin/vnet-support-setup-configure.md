@@ -69,7 +69,7 @@ You can configure and enable virtual network support by using PowerShell scripts
 1. Configure your Power Platform environment.
 
 > [!NOTE] 
-> The initial setup causes disruptions and could cause a 30-minute window of unavailability as connections are initialized for subnet delegated for supported workloads.
+> Enabling or disabling subnet delegation causes disruptions and can lead to up to a 30-minute window of unavailability or instability as connections initialize for the subnet delegated for supported workloads.
 
 ::: zone pivot="powershell"
 
