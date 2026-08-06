@@ -1,10 +1,10 @@
 ---
 title: Install Power Platform CLI with .NET Tool
-description: Instructions to install, update, and uninstall Power Platform CLI with .NET Tool
-ms.author: marcsc
-author: devkeydet
+description: Install Power Platform CLI with .NET Tool on Windows, Linux, or macOS. Follow these steps to install, update, or uninstall the CLI.
+ms.author: laswenka
+author: laneswenka
 ms.reviewer: jdaly
-ms.date: 02/14/2024
+ms.date: 08/04/2026
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
@@ -13,14 +13,14 @@ contributors:
 - JimDaly
 ms.custom: bap-template
 ---
-# Install Power Platform CLI with .NET Tool
+# Install Power Platform CLI with .NET tool
 
-**Applies to:** :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Windows :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: Linux   :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" border="false"::: macOS
+**Applies to:** :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" alt-text="Screenshot of a checkmark indicating operating system support."::: Windows :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" alt-text="Screenshot of a checkmark indicating operating system support."::: Linux   :::image type="icon" source="../../power-fx/reference/media/yes-icon.svg" alt-text="Screenshot of a checkmark indicating operating system support."::: macOS
 
-You can install, update, and uninstall the Power Platform CLI using [.NET tool commands](/dotnet/core/tools/global-tools).
+Learn how to install, update, and uninstall Power Platform CLI by using [.NET tool commands](/dotnet/core/tools/global-tools). This user-specific global installation lets you invoke the CLI from any directory.
 
 > [!NOTE]
-> An internet connection is required for install and update. Power Platform CLI with .NET Tool is installed and updated from this NuGet package: [Microsoft.PowerApps.CLI.Tool](https://www.nuget.org/packages/Microsoft.PowerApps.CLI.tool)
+> You need an internet connection to install and update. The Power Platform CLI with .NET Tool installs and updates from this NuGet package: [Microsoft.PowerApps.CLI.Tool](https://www.nuget.org/packages/Microsoft.PowerApps.CLI.tool)
 
 
 
@@ -42,7 +42,7 @@ You must have .NET installed. (.NET 10.0 is recommended.)
 
 ---
 
-## Install
+## Install Power Platform CLI
 
 Install Power Platform CLI by using the [dotnet tool install](/dotnet/core/tools/dotnet-tool-install) command:
 
@@ -50,7 +50,7 @@ Install Power Platform CLI by using the [dotnet tool install](/dotnet/core/tools
 dotnet tool install --global Microsoft.PowerApps.CLI.Tool
 ```
 
-## Update
+## Update Power Platform CLI
 
 Update Power Platform CLI by using the [dotnet tool update](/dotnet/core/tools/dotnet-tool-update) command:
 
@@ -58,11 +58,11 @@ Update Power Platform CLI by using the [dotnet tool update](/dotnet/core/tools/d
 dotnet tool update --global Microsoft.PowerApps.CLI.Tool
 ```
 > [!NOTE]
-> All updates for Power Platform CLI require internet connection to access the latest Nuget package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
+> All updates for Power Platform CLI require an internet connection to access the latest NuGet package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
 >
 > 
 
-## Uninstall
+## Uninstall Power Platform CLI
 
 Uninstall Power Platform CLI by using the [dotnet tool uninstall](/dotnet/core/tools/dotnet-tool-uninstall) command:
 
@@ -79,7 +79,7 @@ The default location for a tool's executable file depends on the operating syste
 | Linux/macOS | `$HOME/.dotnet/tools`         |
 | Windows     | `%USERPROFILE%\.dotnet\tools` |
 
-This location is added to the user's path when the SDK is first run. So global tools can be invoked from any directory without specifying the tool location.
+When you first run the SDK, it adds this location to your path. So you can invoke global tools from any directory without specifying the tool location.
 
 Tool access is user-specific, not machine global. A global tool is only available to the user that installed the tool.
 

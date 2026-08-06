@@ -1,10 +1,10 @@
 ---
-title: Tables in Microsoft Power Fx | Microsoft Docs
-description: Reference information about working with tables, columns, and records in Microsoft Power Fx
+title: "Microsoft Power Fx Tables: Records, Columns, and Formulas"
+description: Explore Microsoft Power Fx tables, records, fields, and columns, and learn how to use formulas to shape and manipulate tabular data.
 author: gregli-msft
 ms.topic: concept-article
 ms.reviewer: jdaly
-ms.date: 3/22/2024
+ms.date: 08/04/2026
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
@@ -15,12 +15,12 @@ contributors:
   - gregli
 ms.custom: sfi-ropc-nochange
 ---
-# Tables
+# Microsoft Power Fx tables
 
 > [!NOTE]
-> Microsoft Power Fx is the new name for the canvas apps formula language.  These articles are work in progress as we extract the language from canvas apps, integrate it with other Microsoft Power Platform products, and make it available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.   
+> Microsoft Power Fx is the new name for the canvas apps formula language.  These articles are work in progress as Microsoft extracts the language from canvas apps, integrates it with other Microsoft Power Platform products, and makes it available as open source.  Start with the [Microsoft Power Fx Overview](overview.md) for an introduction to the language.   
 
-In Microsoft Power Fx, you can write a formula that accesses information in Microsoft Excel, SharePoint, SQL Server, and several other sources that store data in records and tables. To work most effectively with this kind of data, review the concepts that underlie these structures.
+Microsoft Power Fx tables organize data into records, fields, and columns from sources such as Microsoft Excel, SharePoint, and SQL Server. Learn these structures to write formulas that access, shape, and manipulate tabular data effectively.
 
 * A record contains one or more categories of information about a person, a place, or a thing. For example, a record might contain the name, the email address, and the phone number of a single customer. Other tools refer to a record as a "row" or an "item."
 * A table holds one or more records that contain the same categories of information. For example, a table might contain the names, the email addresses, and the phone numbers of 50 customers.
@@ -32,10 +32,10 @@ You can build a variety of formulas that take the name of a table as an argument
 
 ## Elements of a table
 
-![Elements of table.](media/tables/elements-of-a-table.png "Elements of table")
+:::image type="content" source="media/tables/elements-of-a-table.png" alt-text="Screenshot of records, fields, and columns that form a table.":::
 
 ### Records
-Each record contains at least one category of information for a person, a place, or a thing. The example above shows a record for each product (**Chocolate**, **Bread**, and **Water**) and a column for each category of information (**Price**, **Quantity on Hand**, and **Quantity on Order**).
+Each record contains at least one category of information for a person, a place, or a thing. The example earlier shows a record for each product (**Chocolate**, **Bread**, and **Water**) and a column for each category of information (**Price**, **Quantity on Hand**, and **Quantity on Order**).
 
 In a formula, you can refer to a record by itself, outside of a table's context, by using curly braces. For example, this record **{ Name: "Strawberries", Price: 7.99 }** isn't associated with a table. Note that field names, such as **Name** and **Price** in that example, aren't enclosed in double quotation marks.
 
@@ -47,7 +47,7 @@ Just as with a control, you refer to a field of a record by using the **.** [ope
 A field can contain another record or table, as the example for the **[GroupBy](reference/function-groupby.md)** function shows. You can nest as many levels of records and tables as you want.
 
 ### Columns
-A column refers to the same field for one or more records in a table. In the above example, each product has a price field, and that price is in the same column for all products.  The above table has four columns, shown horizontally across the top:
+A column refers to the same field for one or more records in a table. In the preceding example, each product has a price field, and that price is in the same column for all products.  The preceding table has four columns, shown horizontally across the top:
 
 * **Name**
 * **Price**
@@ -56,9 +56,9 @@ A column refers to the same field for one or more records in a table. In the abo
 
 The column's name reflects the fields in that column.
 
-All values within a column are of the same data type. In the above example, the "Quantity on Hand" column always contains a number and can't contain a string, such as "12 units," for one record.  The value of any field may also be *blank*.  
+All values within a column are of the same data type. In the preceding example, the "Quantity on Hand" column always contains a number and can't contain a string, such as "12 units," for one record.  The value of any field may also be *blank*.  
 
-You may have referred to columns as "fields" in other tools.
+You might have referred to columns as "fields" in other tools.
 
 ### Table
 A table comprises one or more records, each with multiple fields that have consistent names across the records.
@@ -87,7 +87,7 @@ Just as with numbers, formulas that involve tables and records are automatically
 
 ## Table functions and control properties
 
-Consider the **Lower** function. If the variable **welcome** contains the text string **"Hello, World"**, the formula **Lower( welcome )** returns **"hello, world"**.  This function doesn't, in any way, change the value in that variable. **Lower** is a pure function in that it only processes input and produces output. That's all; it has no side effects. All functions in Excel and most functions in Power Fx are pure functions, which allow the workbook or the app to be recalculated automatically.
+Consider the **Lower** function. If the variable **welcome** contains the text string **"Hello, World"**, the formula **Lower( welcome )** returns **"hello, world"**.  This function doesn't change the value in that variable. **Lower** is a pure function in that it only processes input and produces output. That's all; it has no side effects. All functions in Excel and most functions in Power Fx are pure functions, which allow the workbook or the app to be recalculated automatically.
 
 Power Fx offers a set of functions that operate on tables in the same manner. These functions take tables as input and filter, sort, transform, reduce, and summarize entire tables of data. In fact, **Lower** and many other functions that typically take a single value can also take a single-column table as input.
 
@@ -101,9 +101,9 @@ Other functions are specifically designed to modify data and have side effects. 
 
 ## Record scope
 
-Some functions operate by evaluating a formula across all the records of a table individually. The formula's result is used in various ways:
+Some functions work by evaluating a formula across all the records of a table, one record at a time. The formula's result is used in different ways:
 
-* **AddColumns** - Formula provides the value of the added field.
+* **AddColumns** - Formula provides the value for the new column.
 * **Average**, **Max**, **Min**, **Sum**, **StdevP**, **VarP** - Formula provides the value to aggregate.
 * **Filter**, **Lookup** - Formula determines if the record should be included in the output.
 * **Concat** - Formula determines the strings to concatenate together.
@@ -116,7 +116,7 @@ Inside these formulas, you can reference the fields of the record being processe
 
 For example, take a table of **Products** placed in a global variable:
 
-![Tables requested.](media/tables/requested.png "Tables requested")
+:::image type="content" source="media/tables/requested.png" alt-text="Screenshot of the Products table with requested and available quantities.":::
 
 ```power-fx
 Set( Products,
@@ -129,15 +129,15 @@ Set( Products,
 )
 ```
 
-To determine whether any of any of these products had more requested than is available:
+To determine whether any of these products have more requested than is available:
 
 `Filter( Products, 'Quantity Requested' > 'Quantity Available' )`
 
 The first argument to **Filter** is the table of records to operate on, and the second argument is a formula.  **Filter** creates a record scope for evaluating this formula in which the fields of each record are available, in this case **Product**, **Quantity Requested**, and **Quantity Available**.  The result of the comparison determines if each record should be included in the result of the function:
 
-![Tables needed.](media/tables/needed.png "Tabled needed")
+:::image type="content" source="media/tables/needed.png" alt-text="Screenshot of a filtered Products table where requested quantity exceeds available quantity.":::
 
-Adding to this example, we can calculate how much of each product to order:
+Adding to this example, you can calculate how much of each product to order:
 
 ```power-fx
 AddColumns( 
@@ -146,11 +146,11 @@ AddColumns(
 )
 ```
 
-Here we are adding a calculated column to the result. **AddColumns** has its own record scope that it uses to calculate the difference between what has been requested and what is available.
+Here you add a calculated column to the result. **AddColumns** has its own record scope that it uses to calculate the difference between what is requested and what is available.
 
-![Add columns.](media/tables/toorder.png "Add columns")
+:::image type="content" source="media/tables/toorder.png" alt-text="Screenshot of the Products table after adding the Quantity To Order calculated column.":::
 
-Finally, we can reduce the result table to just the columns that we want:
+Finally, you can reduce the result table to just the columns that you want:
 
 ```power-fx
 ShowColumns(
@@ -163,30 +163,30 @@ ShowColumns(
 )
 ```
 
-![To order only.](media/tables/toorderonly.png "To order only")
+:::image type="content" source="media/tables/toorderonly.png" alt-text="Screenshot of the result table with only Product and Quantity To Order columns.":::
 
-Note that in the above, we used double quotes (") in some places and single quotes (') in other places.  Single quotes are required when referencing the value of an object, such as a field or table, in which the name of the object contains a space.  Double quotes are used when we are not referencing the value of an object but instead talking about it, especially in situations in which the object does not yet exist, as in the case of **AddColumns**.
+Note that in the preceding examples, you use double quotes (") in some places and single quotes (') in other places.  Single quotes are required when referencing the value of an object, such as a field or table, if the name of the object contains a space.  Use double quotes when you're not referencing the value of an object but instead talking about it, especially in situations where the object doesn't yet exist, as in the case of **AddColumns**.
 
 ## Disambiguation
 
-Field names added with the record scope override the same names from elsewhere in the app.  When this happens, you can still access values from outside the record scope with the [**@** disambiguation](operators.md) operator:
+Field names that you add with the record scope override the same names from elsewhere in the app. When this override happens, you can still access values from outside the record scope by using the [**@** disambiguation](operators.md) operator:
 
-* To access values from nested record scopes, use the **@** operator with the name of the table being operated upon using this pattern:<br>_Table_**[@**_FieldName_**]**
+* To access values from nested record scopes, use the **@** operator with the name of the table you're operating on, following this pattern:<br>_Table_**[@**_FieldName_**]**
 * To access global values, such as data sources, collections, and context variables, use the pattern **[@**_ObjectName_**]** (without a table designation).
 
-If the table being operated upon is an expression, such as **Filter(** _Table_**,** ... **)**, then the disambiguation operator cannot be used.  Only the innermost record scope can access fields from this table expression, by not using the disambiguation operator.
+If the table you're operating on is an expression, such as **Filter(** _Table_**,** ... **)**, you can't use the disambiguation operator. Only the innermost record scope can access fields from this table expression by not using the disambiguation operator.
 
-For example, imagine having a collection **X**:
+For example, imagine you have a collection **X**:
 
-![X value.](media/tables/X.png "X value")
+:::image type="content" source="media/tables/X.png" alt-text="Screenshot of the X collection containing the values 1 and 2.":::
 
-You can create this collection with **ClearCollect( X, \[1, 2\] )**.
+You can create this collection by using **ClearCollect( X, \[1, 2\] )**.
 
 And another collection **Y**:
 
-![Y value.](media/tables/Y.png "Y value")
+:::image type="content" source="media/tables/Y.png" alt-text="Screenshot of the Y collection containing the values A and B.":::
 
-You can create this collection with **ClearCollect( Y, ["A", "B"] )**.
+You can create this collection by using **ClearCollect( Y, ["A", "B"] )**.
 
 In addition, define a context variable named **Value** with this formula: **UpdateContext( {Value: "!"} )**
 
@@ -205,13 +205,13 @@ Ungroup(
 
 produces this table:
 
-![XY value.](media/tables/XY.png "XY value")
+:::image type="content" source="media/tables/XY.png" alt-text="Screenshot of the nested ForAll result combining X, Y, and global Value entries.":::
 
-What is going on here?  The outermost **ForAll** function defines a record scope for **X**, allowing access to the **Value** field of each record as it is processed.  It can be accessed by simply using the word **Value** or by using **X[@Value]**.
+What's going on here? The outermost **ForAll** function defines a record scope for **X**, so you can access the **Value** field of each record as it processes. You can access it by simply using the word **Value** or by using **X[@Value]**.
 
-The innermost **ForAll** function defines another record scope for **Y**.  Since this table also has a **Value** field defined, using **Value** here refers to the field in **Y**'s record and no longer the one from **X**.  Here, to access **X**'s **Value** field, we must use the longer version with the disambiguation operator.
+The innermost **ForAll** function defines another record scope for **Y**. Since this table also has a **Value** field defined, using **Value** here refers to the field in **Y**'s record and no longer the one from **X**. To access **X**'s **Value** field, you must use the longer version with the disambiguation operator.
 
-Since **Y** is the innermost record scope, accessing fields of this table do not require disambiguation, allowing us to use this formula with the same result:
+Since **Y** is the innermost record scope, accessing fields of this table doesn't require disambiguation, so you can use this formula with the same result:
 
 ```power-fx
 Ungroup(
@@ -224,7 +224,7 @@ Ungroup(
 )
 ```
 
-All the **ForAll** record scopes override the global scope. The **Value** context variable we defined isn't available by name without the disambiguation operator. To access this value, use **[@Value]**.
+All the **ForAll** record scopes override the global scope. The **Value** context variable you defined isn't available by name without the disambiguation operator. To access this value, use **[@Value]**.
 
 **Ungroup** flattens the result because nested **ForAll** functions result in a nested result table.
 
@@ -238,7 +238,7 @@ ShowColumns( Products, "Product" )
 
 This formula produces this single-column table:
 
-![Single column.](media/tables/single-column.png "Single column")
+:::image type="content" source="media/tables/single-column.png" alt-text="Screenshot of a single-column table containing Product values.":::
 
 For a shorter alternative, specify *Table.Column*, which extracts the single-column table of just *Column* from *Table*. For example, this formula produces exactly the same result as using **ShowColumns**.
 
@@ -262,16 +262,16 @@ You can nest records by nesting curly braces, as this example shows:
 
 Enclose each column name that contains a special character, such as a space or a colon, in single quotes.  To use a single quote within a column name, double it.
 
-Note that the value in the **Price** column doesn't include a currency symbol, such as a dollar sign. That formatting will be applied when the value is displayed.  
+Note that the value in the **Price** column doesn't include a currency symbol, such as a dollar sign. That formatting is applied when the value is displayed.  
 
 ## Inline tables
 You can create a table by using the **[Table](reference/function-table.md)** function and a set of records. You can express the table at the start of this topic by using this formula:
 
 ```power-fx
 Table( 
-	{ Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 },
-	{ Name: "Bread", Price: 4.95, 'Quantity on Hand': 34, 'Quantity on Order': 0 },
-	{ Name: "Water", Price: 4.95, 'Quantity on Hand': 10, 'Quantity on Order': 0 } 
+   { Name: "Chocolate", Price: 3.95, 'Quantity on Hand': 12, 'Quantity on Order': 10 },
+   { Name: "Bread", Price: 4.95, 'Quantity on Hand': 34, 'Quantity on Order': 0 },
+   { Name: "Water", Price: 4.95, 'Quantity on Hand': 10, 'Quantity on Order': 0 } 
 )
 ```
 
@@ -279,10 +279,10 @@ You can also nest tables:
 
 ```power-fx
 Table( 
-	{ Name: "Chocolate", 
-	  'Quantity History': Table( { Quarter: "Q1", OnHand: 10, OnOrder: 10 },
-	                             { Quarter: "Q2", OnHand: 18, OnOrder: 0 } ) 
-	}
+   { Name: "Chocolate", 
+     'Quantity History': Table( { Quarter: "Q1", OnHand: 10, OnOrder: 10 },
+                                { Quarter: "Q2", OnHand: 18, OnOrder: 0 } ) 
+   }
 )
 ```
 
@@ -291,5 +291,5 @@ You can create single-column tables by specifying values in square brackets. The
 
 For example, `[ 1, 2, 3, 4 ]` is equivalent to `Table( { Value: 1 }, { Value: 2 }, { Value: 3 }, { Value: 4 } )` and returns this table:
 
-![Inline table.](media/tables/inline-table.png "Inline table")
+:::image type="content" source="media/tables/inline-table.png" alt-text="Screenshot of an inline Value table containing the numbers 1 through 4.":::
 
