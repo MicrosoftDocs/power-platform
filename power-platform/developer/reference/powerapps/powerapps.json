@@ -524,7 +524,7 @@
           "x-ms-summary": "Dependencies"
         },
         "dependents": {
-          "description": "List of dependant connectors for the connector",
+          "description": "List of dependent connectors for the connector",
           "type": "array",
           "items": {
             "type": "string"
@@ -532,7 +532,7 @@
           "x-ms-summary": "Dependents"
         },
         "isOnPremiseConnection": {
-          "description": "Flag indicates on premise data gateway",
+          "description": "Flag indicates on-premises data gateway",
           "type": "boolean",
           "x-ms-summary": "Is on premise connection"
         },

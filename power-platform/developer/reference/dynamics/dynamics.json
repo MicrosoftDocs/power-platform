@@ -156,6 +156,311 @@
           }
         }
       }
+    },
+    "/dynamics/environments/{environmentId}/finopsproperties": {
+      "get": {
+        "tags": [
+          "FinanceAndOperationsProperties"
+        ],
+        "summary": "Get Finance and Operations environment properties.",
+        "description": "Retrieves Finance and Operations environment properties such as AOS counts, deployment type, and demo dataset.",
+        "operationId": "GetFinOpsProperties",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The unique identifier of the environment.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved Finance and Operations properties.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsPropertiesResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          }
+        }
+      }
+    },
+    "/dynamics/environments/{environmentId}/finopsversions": {
+      "get": {
+        "tags": [
+          "FinanceAndOperationsVersions"
+        ],
+        "summary": "Get available Finance and Operations versions.",
+        "description": "Retrieves the list of Finance and Operations application versions available for an environment.",
+        "operationId": "GetFinOpsVersions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The unique identifier of the environment.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved available Finance and Operations versions.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsVersionsResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          }
+        }
+      }
+    },
+    "/dynamics/environments/{environmentId}/finopsversions/{version}/apply": {
+      "post": {
+        "tags": [
+          "FinanceAndOperationsVersions"
+        ],
+        "summary": "Apply a Finance and Operations version.",
+        "description": "Applies the specified Finance and Operations application version to an environment as a long-running operation.",
+        "operationId": "ApplyFinOpsVersion",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The unique identifier of the environment.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "path",
+            "name": "version",
+            "description": "The Finance and Operations application version to apply (for example, 10.0.47.5).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "The apply version operation was accepted and is being processed.",
+            "schema": {
+              "$ref": "#/definitions/ApplyFinOpsVersionAcceptedResponse"
+            },
+            "headers": {
+              "Location": {
+                "description": "The relative URI to poll for operation status.",
+                "type": "string"
+              },
+              "Retry-After": {
+                "description": "The recommended delay in seconds before polling for status.",
+                "type": "integer",
+                "format": "int32"
+              }
+            }
+          },
+          "204": {
+            "description": "No update was required because the environment is already at or above the requested version."
+          },
+          "400": {
+            "description": "Bad Request.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          }
+        }
+      }
+    },
+    "/dynamics/environments/{environmentId}/operationerrors": {
+      "get": {
+        "tags": [
+          "FinanceAndOperationsOperationErrors"
+        ],
+        "summary": "Get Finance and Operations operation errors.",
+        "description": "Retrieves recent operation errors for a Finance and Operations environment.",
+        "operationId": "GetFinOpsOperationErrors",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The unique identifier of the environment.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "maxResults",
+            "description": "The maximum number of operation errors to return. Defaults to twenty (20) and is capped at one thousand (1000).",
+            "type": "integer",
+            "format": "int32",
+            "default": 20
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successfully retrieved Finance and Operations operation errors.",
+            "schema": {
+              "$ref": "#/definitions/OperationErrorsResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "403": {
+            "description": "Forbidden.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "404": {
+            "description": "Not Found.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          },
+          "500": {
+            "description": "Internal Server Error.",
+            "schema": {
+              "$ref": "#/definitions/FinOpsErrorResponse"
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -248,6 +553,156 @@
               "example": "The request was invalid"
             }
           }
+        }
+      }
+    },
+    "FinOpsDeploymentCategory": {
+      "description": "The deployment category of a Finance and Operations environment.",
+      "enum": [
+        "UnifiedDeveloper",
+        "UnifiedSandbox",
+        "UnifiedProduction",
+        "LCSSandbox",
+        "LCSProduction",
+        "Trial",
+        "Unknown"
+      ],
+      "type": "string",
+      "example": "UnifiedSandbox"
+    },
+    "FinOpsPropertiesResponse": {
+      "description": "Finance and Operations environment properties response.",
+      "type": "object",
+      "properties": {
+        "appId": {
+          "description": "The Finance and Operations environment ID (AppId).",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000003"
+        },
+        "maxAOSCount": {
+          "description": "The maximum number of interactive AOS instances configured for the environment.",
+          "type": "string",
+          "example": "2"
+        },
+        "lastObservedAOSCount": {
+          "format": "int32",
+          "description": "The last observed interactive AOS instance count.",
+          "type": "integer",
+          "example": 2
+        },
+        "maxBatchAOSCount": {
+          "description": "The maximum number of batch (non-interactive) AOS instances configured for the environment.",
+          "type": "string",
+          "example": "1"
+        },
+        "lastObservedBatchAOSCount": {
+          "format": "int32",
+          "description": "The last observed batch (non-interactive) AOS instance count.",
+          "type": "integer",
+          "example": 1
+        },
+        "deploymentType": {
+          "$ref": "#/definitions/FinOpsDeploymentCategory"
+        },
+        "demoDataset": {
+          "description": "The demo dataset name for the environment.",
+          "type": "string"
+        }
+      }
+    },
+    "OperationErrorItem": {
+      "description": "A single Finance and Operations operation error.",
+      "type": "object",
+      "properties": {
+        "operationType": {
+          "description": "The operation type.",
+          "type": "string",
+          "example": "UpdateImage"
+        },
+        "correlationId": {
+          "description": "The correlation ID.",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000004"
+        },
+        "failedActionName": {
+          "description": "The name of the failed action.",
+          "type": "string"
+        },
+        "errorCode": {
+          "description": "The error code.",
+          "type": "string"
+        },
+        "errorMessage": {
+          "description": "The customer-friendly error message.",
+          "type": "string"
+        },
+        "failedAt": {
+          "format": "date-time",
+          "description": "The timestamp when the operation failed.",
+          "type": "string"
+        }
+      }
+    },
+    "OperationErrorsResponse": {
+      "description": "Response containing operation errors for an environment.",
+      "type": "object",
+      "properties": {
+        "environmentId": {
+          "description": "The environment ID.",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000002"
+        },
+        "errors": {
+          "description": "The list of operation errors.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/OperationErrorItem"
+          }
+        }
+      }
+    },
+    "FinOpsAppVersion": {
+      "description": "A Finance and Operations application version.",
+      "type": "object",
+      "properties": {
+        "version": {
+          "description": "The application version.",
+          "type": "string",
+          "example": "10.0.47.5"
+        },
+        "releaseStage": {
+          "description": "The release stage of the version.",
+          "type": "string",
+          "example": "GA"
+        }
+      }
+    },
+    "FinOpsVersionsResponse": {
+      "description": "Finance and Operations available versions response.",
+      "type": "object",
+      "properties": {
+        "availableVersions": {
+          "description": "The list of available Finance and Operations application versions.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/FinOpsAppVersion"
+          }
+        }
+      }
+    },
+    "ApplyFinOpsVersionAcceptedResponse": {
+      "description": "Accepted response for a long-running apply version operation.",
+      "type": "object",
+      "properties": {
+        "resourceId": {
+          "description": "The identifier of the environment resource the operation applies to.",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000002"
+        },
+        "operationId": {
+          "description": "The identifier of the long-running operation to poll for status.",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000005"
         }
       }
     }
