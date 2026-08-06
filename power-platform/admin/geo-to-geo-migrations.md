@@ -14,7 +14,7 @@ contributors:
     - brsova
     - LaurentPepin
     - bfok123
-    -hlferrei
+    - hlferrei
 search.audienceType: 
   - admin
 ---
@@ -147,8 +147,11 @@ Cloud flows can exist outside of solutions. In order to retain cloud flows, they
 ### Dynamics 365 applications
 If you use any of the following Dynamics 365 apps, you need to take the following actions to retain functionality after geo-to-geo migration.
 
+#### Dynamics 365 Contact Center
+
+Follow the steps in [Post-move updates](/dynamics365/contact-center/implement/restore-environment#post-move-updates) after moving the contact center from one geo to another.
+
 #### Dataverse Accelerator
-##### After geo-to-geo migration
 Uninstall the app using [PAC CLI](../developer/cli/introduction.md) with these commands:
 ```
 pac solution delete --solution-name msdyn_DataverseAcceleratorApp --environment <environment URL>
@@ -159,15 +162,16 @@ pac solution delete --solution-name DataverseAccelerator_Anchor --environment <e
 After uninstallation, [reinstall the app](/power-apps/maker/data-platform/dataverse-accelerator/dataverse-accelerator#install-the-dataverse-accelerator) through the Power Platform admin center.
 
 #### Project for the web
-##### After geo-to-geo migration
+
 Project for the web is reprovisioned automatically when navigating to [Get started with Project](https://project.microsoft.com/). Your existing plans still remain intact.
 
 #### Dynamics 365 marketing application (Customer Insights - Journeys)
-##### Before geo-to-geo migration
-Uninstall the Dynamics 365 marketing application using the following guide: [Uninstall Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/uninstall).
 
-##### After geo-to-geo migration
-[Reinstall the Dynamics 365 marketing app](/dynamics365/customer-insights/journeys/setup) through the Power Platform admin center.
+Before geo-to-geo migration, uninstall the Dynamics 365 marketing application by using the following guide: [Uninstall Dynamics 365 Marketing](/dynamics365/customer-insights/journeys/uninstall).
+
+After geo-to-geo migration, [reinstall the Dynamics 365 marketing app](/dynamics365/customer-insights/journeys/setup) through the Power Platform admin center.
+
+
 
 ### Desktop applications
 If you use any of the following Power Platform desktop applications, take the following actions to retain functionality after geo-to-geo migration.
