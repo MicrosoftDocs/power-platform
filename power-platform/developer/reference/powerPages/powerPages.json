@@ -783,7 +783,7 @@
           "Websites"
         ],
         "summary": "Delete a custom domain from a website.",
-        "description": "Removes the specified custom host name from the website and cleans up associated SSL bindings and Azure Front Door (AFD) configuration.",
+        "description": "Removes the specified custom host name from the website and cleans up associated SSL bindings and AFD configuration.",
         "operationId": "DeleteHostNameForPortal",
         "produces": [
           "application/json"
@@ -1225,7 +1225,7 @@
           "200": {
             "description": "Success",
             "schema": {
-              "description": "List of allowed IP addresses.",
+              "description": "List of allowed IP addresses",
               "type": "array",
               "items": {
                 "$ref": "#/definitions/IpAddressEntity"
@@ -1616,7 +1616,7 @@
         ],
         "responses": {
           "202": {
-            "description": "Accepted"
+            "description": "Accpeted"
           },
           "400": {
             "description": "Bad Request",
@@ -2377,6 +2377,80 @@
           }
         }
       }
+    },
+    "/powerpages/environments/{environmentId}/websites/{id}/updateWafPolicySettings": {
+      "put": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Update web application firewall policy settings on a Power Pages website.",
+        "description": "Updates policy-level web application firewall settings (enforcement mode and JavaScript/CAPTCHA challenge cookie lifetimes) on the given website. Only the fields provided in the request body are applied; omitted fields are left unchanged.",
+        "operationId": "UpdateWafPolicySettings",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "id",
+            "description": "Website unique identifier (ID).",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/WebApplicationFirewallPolicySettings"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/WebApplicationFirewallPolicySettings"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -2672,7 +2746,7 @@
       }
     },
     "WebApplicationFirewallStatus": {
-      "description": "Web application firewall status",
+      "description": "Web application firewall status.",
       "enum": [
         "None",
         "Creating",
@@ -2684,7 +2758,7 @@
       "type": "string"
     },
     "WafRuleAction": {
-      "description": "Action to take for the rule",
+      "description": "Action to take for the rule.",
       "enum": [
         "Allow",
         "Block",
@@ -2694,7 +2768,7 @@
       "type": "string"
     },
     "WafRuleType": {
-      "description": "WAF rule type",
+      "description": "WAF rule type.",
       "enum": [
         "MatchRule",
         "RateLimitRule"
@@ -2702,7 +2776,7 @@
       "type": "string"
     },
     "IpAddressType": {
-      "description": "The type of the IP address",
+      "description": "The type of the IP address.",
       "enum": [
         "IPv4",
         "IPv6"
@@ -2799,10 +2873,34 @@
       }
     },
     "customRules": {
-      "description": "List of custom rule names",
+      "description": "List of custom rule names.",
       "type": "array",
       "items": {
         "type": "string"
+      }
+    },
+    "WebApplicationFirewallPolicySettings": {
+      "description": "Policy-level web application firewall settings. All properties are optional; only the properties provided are applied, and any omitted property is left unchanged.",
+      "type": "object",
+      "properties": {
+        "mode": {
+          "description": "Web application firewall enforcement mode. Prevention blocks matching requests; Detection only logs them.",
+          "enum": [
+            "Prevention",
+            "Detection"
+          ],
+          "type": "string"
+        },
+        "javascriptChallengeExpirationInMinutes": {
+          "format": "int32",
+          "description": "JavaScript challenge cookie validity lifetime in minutes. The accepted range is validated by Azure Front Door.",
+          "type": "integer"
+        },
+        "captchaExpirationInMinutes": {
+          "format": "int32",
+          "description": "CAPTCHA challenge cookie validity lifetime in minutes. The accepted range is validated by Azure Front Door.",
+          "type": "integer"
+        }
       }
     },
     "WebApplicationFirewallRules": {
@@ -3005,7 +3103,7 @@
       }
     },
     "IpAddressEntity": {
-      "description": "Represents an IP address entry in the allow list",
+      "description": "Represents an IP address entry in the allow list.",
       "type": "object",
       "properties": {
         "IpAddress": {

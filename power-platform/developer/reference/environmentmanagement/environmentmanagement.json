@@ -287,7 +287,7 @@
         "tags": [
           "EnvironmentBackup"
         ],
-        "summary": "Creates a backup of the specified environment (Preview).",
+        "summary": "Creates a backup of the specified environment.",
         "description": "Creates a backup of the specified environment.",
         "operationId": "CreateEnvironmentBackup",
         "consumes": [
@@ -304,7 +304,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
@@ -337,6 +337,21 @@
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
@@ -346,7 +361,7 @@
         "tags": [
           "EnvironmentBackup"
         ],
-        "summary": "Gets the backups for the specified environment (Preview).",
+        "summary": "Gets the list of backups for the specified environment.",
         "description": "Gets the backups for the specified environment.",
         "operationId": "GetEnvironmentBackups",
         "produces": [
@@ -358,7 +373,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
@@ -384,11 +399,17 @@
               "$ref": "#/definitions/ValidationResponse"
             }
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
           "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ValidationResponse"
-            }
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
@@ -400,19 +421,17 @@
         "tags": [
           "EnvironmentBackup"
         ],
-        "summary": "Deletes the specified backup (Preview).",
+        "summary": "Deletes the specified backup.",
         "description": "Deletes the specified backup.",
         "operationId": "DeleteEnvironmentBackup",
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
@@ -442,8 +461,23 @@
               "$ref": "#/definitions/ValidationResponse"
             }
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
           "404": {
             "description": "Not Found"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
@@ -455,7 +489,7 @@
         "tags": [
           "Failover"
         ],
-        "summary": "Gets business continuity snapshot for environment (Preview).",
+        "summary": "Gets the full business continuity state snapshot for the specified environment.",
         "description": "Gets business continuity snapshot including LastSyncTime.",
         "operationId": "GetBusinessContinuityStateFullSnapshot",
         "produces": [
@@ -467,7 +501,7 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
@@ -493,53 +527,52 @@
               "$ref": "#/definitions/ValidationResponse"
             }
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
           "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ValidationResponse"
-            }
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
         "x-AccessControl.Permission": "EnvironmentManagement.Failover.Read"
       }
     },
-    "/environmentmanagement/environments/{environmentId}/Disable": {
+    "/environmentmanagement/environments/{environmentId}/disableDisasterRecovery": {
       "post": {
         "tags": [
-          "EnvironmentState"
+          "Failover"
         ],
-        "summary": "Disables the specified environment (Preview).",
-        "description": "Disables the specified environment.",
-        "operationId": "DisableEnvironment",
-        "consumes": [
-          "application/json",
-          "text/json",
-          "application/*+json"
-        ],
+        "summary": "Disables disaster recovery on the specified environment.",
+        "description": "Disables disaster recovery on the specified environment.",
+        "operationId": "DisableDisasterRecovery",
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -549,14 +582,6 @@
             "required": true,
             "type": "string",
             "default": "2024-10-01"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "The request body.",
-            "schema": {
-              "$ref": "#/definitions/StateChangeRequest"
-            }
           }
         ],
         "responses": {
@@ -568,66 +593,21 @@
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
-          }
-        },
-        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
-        "x-AccessControl.Permission": "EnvironmentManagement.State.Write"
-      }
-    },
-    "/environmentmanagement/environments/{environmentId}/disableDisasterRecovery": {
-      "post": {
-        "tags": [
-          "Failover"
-        ],
-        "summary": "Disables disaster recovery on the specified environment (Preview).",
-        "description": "Disables disaster recovery on the specified environment.",
-        "operationId": "DisableDisasterRecovery",
-        "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "description": "The ID of Environment.",
-            "required": true,
-            "type": "string"
           },
-          {
-            "in": "query",
-            "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
-            "type": "boolean"
+          "401": {
+            "description": "Unauthorized"
           },
-          {
-            "in": "query",
-            "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2024-10-01"
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Created",
-            "schema": {
-              "$ref": "#/definitions/OperationExecutionResult"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
+          "403": {
+            "description": "Forbidden"
           },
           "409": {
-            "description": "Conflict"
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
@@ -639,32 +619,30 @@
         "tags": [
           "Failover"
         ],
-        "summary": "Performs DR Drill for the specified environment (Preview).",
+        "summary": "Performs DR Drill for the specified environment.",
         "description": "Performs DR Drill for the specified environment.",
         "operationId": "PerformDRDrill",
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -674,79 +652,6 @@
             "required": true,
             "type": "string",
             "default": "2024-10-01"
-          }
-        ],
-        "responses": {
-          "201": {
-            "description": "Created",
-            "schema": {
-              "$ref": "#/definitions/OperationExecutionResult"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "409": {
-            "description": "Conflict"
-          }
-        },
-        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
-        "x-AccessControl.Permission": "EnvironmentManagement.Failover.Write"
-      }
-    },
-    "/environmentmanagement/environments/{environmentId}/Enable": {
-      "post": {
-        "tags": [
-          "EnvironmentState"
-        ],
-        "summary": "Enables the specified environment (Preview).",
-        "description": "Enables the specified environment.",
-        "operationId": "EnableEnvironment",
-        "consumes": [
-          "application/json",
-          "text/json",
-          "application/*+json"
-        ],
-        "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "parameters": [
-          {
-            "in": "path",
-            "name": "environmentId",
-            "description": "The ID of Environment.",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
-            "type": "boolean"
-          },
-          {
-            "in": "query",
-            "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
-            "type": "string"
-          },
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2024-10-01"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "The request body.",
-            "schema": {
-              "$ref": "#/definitions/StateChangeRequest"
-            }
           }
         ],
         "responses": {
@@ -758,10 +663,25 @@
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
-        "x-AccessControl.Permission": "EnvironmentManagement.State.Write"
+        "x-AccessControl.Permission": "EnvironmentManagement.Failover.Write"
       }
     },
     "/environmentmanagement/environments/{environmentId}/enableDisasterRecovery": {
@@ -769,32 +689,30 @@
         "tags": [
           "Failover"
         ],
-        "summary": "Enables disaster recovery on the specified environment (Preview).",
+        "summary": "Enables disaster recovery on the specified environment.",
         "description": "Enables disaster recovery on the specified environment.",
         "operationId": "EnableDisasterRecovery",
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -807,17 +725,99 @@
           }
         ],
         "responses": {
-          "201": {
-            "description": "Created",
-            "schema": {
-              "$ref": "#/definitions/OperationExecutionResult"
-            }
+          "202": {
+            "description": "Accepted"
           },
           "400": {
-            "description": "Bad Request"
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
           },
           "409": {
-            "description": "Conflict"
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Failover.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/failback": {
+      "post": {
+        "tags": [
+          "Failover"
+        ],
+        "summary": "Performs failback for the specified environment.",
+        "description": "Performs failback for the specified environment, switching it back from its current (paired) region to its original primary region. This is the inverse of force failover.",
+        "operationId": "PerformFailback",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of the environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
@@ -829,7 +829,7 @@
         "tags": [
           "Failover"
         ],
-        "summary": "Force failover for the specified environment (Preview).",
+        "summary": "Performs force failover for the specified environment.",
         "description": "Fails over environment to its paired region as of LastSyncTime.",
         "operationId": "PerformForceFailover",
         "consumes": [
@@ -838,28 +838,26 @@
           "application/*+json"
         ],
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -880,54 +878,64 @@
           }
         ],
         "responses": {
-          "201": {
-            "description": "Created",
-            "schema": {
-              "$ref": "#/definitions/OperationExecutionResult"
-            }
+          "202": {
+            "description": "Accepted"
           },
           "400": {
-            "description": "Bad Request"
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
           },
           "409": {
-            "description": "Conflict"
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
         "x-AccessControl.Permission": "EnvironmentManagement.Failover.Write"
       }
     },
-    "/environmentmanagement/environments/{environmentId}/governancesetting/disablemanaged": {
+    "/environmentmanagement/environments/{environmentId}/governanceSetting/disableManaged": {
       "post": {
         "tags": [
           "EnvironmentManagedGovernance"
         ],
-        "summary": "Disables managed governance for the specified environment (Preview).",
+        "summary": "Disables managed governance for the specified environment.",
         "description": "Disables managed governance for the specified environment.",
         "operationId": "DisableManagedEnvironment",
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -940,54 +948,64 @@
           }
         ],
         "responses": {
-          "201": {
-            "description": "Created",
-            "schema": {
-              "$ref": "#/definitions/OperationExecutionResult"
-            }
+          "202": {
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
         "x-AccessControl.Permission": "EnvironmentManagement.ManageGovernance.Write"
       }
     },
-    "/environmentmanagement/environments/{environmentId}/governancesetting/enablemanaged": {
+    "/environmentmanagement/environments/{environmentId}/governanceSetting/enableManaged": {
       "post": {
         "tags": [
           "EnvironmentManagedGovernance"
         ],
-        "summary": "Enables managed governance for the specified environment (Preview).",
+        "summary": "Enables managed governance for the specified environment.",
         "description": "Enables managed governance for the specified environment.",
         "operationId": "EnableManagedEnvironment",
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1000,17 +1018,29 @@
           }
         ],
         "responses": {
-          "201": {
-            "description": "Created",
-            "schema": {
-              "$ref": "#/definitions/OperationExecutionResult"
-            }
+          "202": {
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
@@ -1022,8 +1052,8 @@
         "tags": [
           "ModifyEnvironmentSku"
         ],
-        "summary": "Modifies sku for the specified environment (Preview).",
-        "description": "Modifies sku for the specified environment.",
+        "summary": "Modifies SKU for the specified environment.",
+        "description": "Modifies SKU for the specified environment.",
         "operationId": "ModifyEnvironmentSku",
         "consumes": [
           "application/json",
@@ -1031,28 +1061,26 @@
           "application/*+json"
         ],
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1073,17 +1101,29 @@
           }
         ],
         "responses": {
-          "201": {
-            "description": "Created",
-            "schema": {
-              "$ref": "#/definitions/OperationExecutionResult"
-            }
+          "202": {
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
@@ -1095,7 +1135,7 @@
         "tags": [
           "Operation"
         ],
-        "summary": "Lists the environment lifecycle operations for a specific environment (Preview).",
+        "summary": "Gets the list of environment lifecycle operations for a specific environment.",
         "description": "Lists the environment lifecycle operations for a specific environment.",
         "operationId": "GetOperationsForEnvironment",
         "produces": [
@@ -1107,20 +1147,20 @@
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "limit",
-            "description": "The limit.",
+            "description": "The maximum number of records to return per request. Must be a positive integer; a server default applies if omitted.",
             "type": "string"
           },
           {
             "in": "query",
             "name": "continuationToken",
-            "description": "The continuation token.",
+            "description": "An opaque token returned by a previous response, used to fetch the next page of results. Omit to retrieve the first page.",
             "type": "string"
           },
           {
@@ -1145,11 +1185,17 @@
               "$ref": "#/definitions/ValidationResponse"
             }
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
           "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ValidationResponse"
-            }
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
@@ -1161,32 +1207,30 @@
         "tags": [
           "EnvironmentRecover"
         ],
-        "summary": "Recover the deleted environment (Preview).",
+        "summary": "Recovers the deleted environment.",
         "description": "Recover the deleted environment.",
         "operationId": "RecoverEnvironment",
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment that will be recovered.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1207,10 +1251,108 @@
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
         "x-AccessControl.Permission": "EnvironmentManagement.Recover.Write"
+      }
+    },
+    "/environmentmanagement/environments/{environmentId}/reset": {
+      "post": {
+        "tags": [
+          "EnvironmentReset"
+        ],
+        "summary": "Resets the environment.",
+        "description": "Resets the specified environment.",
+        "operationId": "ResetEnvironment",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of the environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "ValidateOnly",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "type": "boolean"
+          },
+          {
+            "in": "query",
+            "name": "ValidateProperties",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The reset request specifying the settings to reset the environment to.",
+            "schema": {
+              "$ref": "#/definitions/ResetRequest"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted"
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        },
+        "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
+        "x-AccessControl.Permission": "EnvironmentManagement.Reset.Write"
       }
     },
     "/environmentmanagement/environments/{sourceEnvironmentId}/copyCandidates": {
@@ -1218,7 +1360,7 @@
         "tags": [
           "EnvironmentCopy"
         ],
-        "summary": "Gets copy target candidate environments (Preview).",
+        "summary": "Gets the list of environments that can be copied as the target environment.",
         "description": "Gets the list of environments that can be copied as the target environment.",
         "operationId": "GetEnvironmentCopyCandidates",
         "produces": [
@@ -1230,20 +1372,20 @@
           {
             "in": "path",
             "name": "sourceEnvironmentId",
-            "description": "The source environment ID.",
+            "description": "The ID of the source environment to copy from.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1268,11 +1410,17 @@
               "$ref": "#/definitions/ValidationResponse"
             }
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
           "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ValidationResponse"
-            }
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
@@ -1284,7 +1432,7 @@
         "tags": [
           "EnvironmentRestore"
         ],
-        "summary": "Gets restore candidate environments (Preview).",
+        "summary": "Gets the list of restore candidates for the specified environment.",
         "description": "Gets the list of restore candidates when restore from the specified environment.",
         "operationId": "GetRestoreCandidates",
         "produces": [
@@ -1296,20 +1444,20 @@
           {
             "in": "path",
             "name": "sourceEnvironmentId",
-            "description": "The environment ID of restore from.",
+            "description": "The ID of the source environment to restore from.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1334,11 +1482,17 @@
               "$ref": "#/definitions/ValidationResponse"
             }
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
           "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ValidationResponse"
-            }
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
@@ -1350,7 +1504,7 @@
         "tags": [
           "EnvironmentCopy"
         ],
-        "summary": "Copy the environment from the specified source to the target (Preview).",
+        "summary": "Copy the environment from the specified source to the target.",
         "description": "Copy the environment from the specified source to the target.",
         "operationId": "CopyEnvironment",
         "consumes": [
@@ -1359,28 +1513,26 @@
           "application/*+json"
         ],
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "targetEnvironmentId",
-            "description": "The target environment will be overwritten.",
+            "description": "The ID of the target environment that will be overwritten.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1409,6 +1561,21 @@
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
@@ -1420,7 +1587,7 @@
         "tags": [
           "Operation"
         ],
-        "summary": "Gets the status of an environment-scoped lifecycle operation (Preview).",
+        "summary": "Gets the status of a lifecycle operation scoped to a specific environment.",
         "description": "Gets the status of an environment lifecycle operation scoped under a specific environment, enabling environment-level authorization on the operation lookup.",
         "operationId": "GetEnvironmentOperationByID",
         "produces": [
@@ -1465,23 +1632,29 @@
               "$ref": "#/definitions/ValidationResponse"
             }
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
           "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ValidationResponse"
-            }
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{targetEnvironmentId}",
         "x-AccessControl.Permission": "EnvironmentManagement.Operation.Read"
       }
     },
-    "/environmentmanagement/environments/{targetEnvironmentId}/Restore": {
+    "/environmentmanagement/environments/{targetEnvironmentId}/restore": {
       "post": {
         "tags": [
           "EnvironmentRestore"
         ],
-        "summary": "Restores the specified environment to a previous backup (Preview).",
+        "summary": "Restores the specified environment to a previous backup.",
         "description": "Restores the specified environment to a previous backup.",
         "operationId": "RestoreEnvironment",
         "consumes": [
@@ -1490,28 +1663,26 @@
           "application/*+json"
         ],
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "targetEnvironmentId",
-            "description": "The target environment ID.",
+            "description": "The ID of the target environment that will be overwritten.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1525,7 +1696,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "The request body.",
+            "description": "The environment restore request.",
             "schema": {
               "$ref": "#/definitions/RestoreRequest"
             }
@@ -1540,6 +1711,21 @@
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
@@ -1551,7 +1737,7 @@
         "tags": [
           "Operation"
         ],
-        "summary": "Gets the status of an environment lifecycle operation (Preview).",
+        "summary": "Gets the status of an environment lifecycle operation.",
         "description": "Gets the status of an environment lifecycle operation.",
         "operationId": "GetOperationByID",
         "produces": [
@@ -1563,7 +1749,7 @@
           {
             "in": "path",
             "name": "operationId",
-            "description": "The operation ID.",
+            "description": "The ID of the operation.",
             "required": true,
             "type": "string"
           },
@@ -1589,18 +1775,24 @@
               "$ref": "#/definitions/ValidationResponse"
             }
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
           "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ValidationResponse"
-            }
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
         "x-AccessControl.Permission": "EnvironmentManagement.Operation.Read"
       }
     },
-    "/environmentmanagement/provisioning/create": {
+    "/environmentmanagement/provisioning/environments": {
       "post": {
         "tags": [
           "EnvironmentProvisioning"
@@ -1651,6 +1843,21 @@
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
@@ -1671,15 +1878,13 @@
           "application/*+json"
         ],
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The environment ID to link Dataverse to.",
+            "description": "The ID of the environment to link Dataverse to.",
             "required": true,
             "type": "string"
           },
@@ -1702,16 +1907,28 @@
         ],
         "responses": {
           "202": {
-            "description": "Accepted",
-            "schema": {
-              "$ref": "#/definitions/OperationExecutionResult"
-            }
+            "description": "Accepted"
           },
           "400": {
             "description": "Bad Request",
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
@@ -1745,7 +1962,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/LocationPagedCollection"
+              "$ref": "#/definitions/ProvisioningLocations"
             }
           },
           "400": {
@@ -1754,11 +1971,17 @@
               "$ref": "#/definitions/ValidationResponse"
             }
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
           "404": {
-            "description": "Not Found",
-            "schema": {
-              "$ref": "#/definitions/ValidationResponse"
-            }
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
@@ -1770,7 +1993,7 @@
         "tags": [
           "EnvironmentProvisioning"
         ],
-        "summary": "Retrieves available currencies for environment provisioning in a location.",
+        "summary": "Gets the list of available currencies for provisioning in a location.",
         "description": "Retrieves available currencies for environment provisioning in a location.",
         "operationId": "GetProvisioningCurrencies",
         "produces": [
@@ -1799,7 +2022,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/EnvironmentCurrencyPagedCollection"
+              "$ref": "#/definitions/EnvironmentCurrencyResourceCollection"
             }
           },
           "400": {
@@ -1807,6 +2030,18 @@
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
@@ -1818,7 +2053,7 @@
         "tags": [
           "EnvironmentProvisioning"
         ],
-        "summary": "Retrieves available languages for environment provisioning in a location.",
+        "summary": "Gets the list of available languages for provisioning in a location.",
         "description": "Retrieves available languages for environment provisioning in a location.",
         "operationId": "GetProvisioningLanguages",
         "produces": [
@@ -1847,7 +2082,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/EnvironmentLanguagePagedCollection"
+              "$ref": "#/definitions/EnvironmentLanguageResourceCollection"
             }
           },
           "400": {
@@ -1855,6 +2090,18 @@
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
@@ -1866,7 +2113,7 @@
         "tags": [
           "EnvironmentProvisioning"
         ],
-        "summary": "Retrieves available templates for environment provisioning in a location.",
+        "summary": "Gets the list of available templates for provisioning in a location.",
         "description": "Retrieves available templates for environment provisioning in a location.",
         "operationId": "GetProvisioningTemplates",
         "produces": [
@@ -1895,7 +2142,7 @@
           "200": {
             "description": "OK",
             "schema": {
-              "$ref": "#/definitions/EnvironmentTemplatePagedCollection"
+              "$ref": "#/definitions/EnvironmentTemplateResourceCollection"
             }
           },
           "400": {
@@ -1903,6 +2150,18 @@
             "schema": {
               "$ref": "#/definitions/ValidationResponse"
             }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}",
@@ -2405,32 +2664,30 @@
         "tags": [
           "EnvironmentDelete"
         ],
-        "summary": "Deletes the specified environment by ID (Preview).",
+        "summary": "Deletes the specified environment by ID.",
         "description": "Deletes the specified environment by ID.",
         "operationId": "DeleteEnvironmentByID",
         "produces": [
-          "text/plain",
-          "application/json",
-          "text/json"
+          "application/json"
         ],
         "parameters": [
           {
             "in": "path",
             "name": "environmentId",
-            "description": "The ID of Environment.",
+            "description": "The ID of the environment.",
             "required": true,
             "type": "string"
           },
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "If true, validates the request without executing it.",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "Comma-separated property names to validate with ValidateOnly.",
+            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -2452,8 +2709,23 @@
               "$ref": "#/definitions/ValidationResponse"
             }
           },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
           "404": {
             "description": "Not Found"
+          },
+          "409": {
+            "description": "Conflict",
+            "schema": {
+              "$ref": "#/definitions/ValidationResponse"
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
           }
         },
         "x-AccessControl.Scope": "/tenants/{tenantId}/environments/{environmentId}",
@@ -2850,7 +3122,7 @@
           "$ref": "#/definitions/EnterprisePolicies"
         },
         "scenarioName": {
-          "description": "The scenario name associated with the environment (e.g., singleton scenario type).",
+          "description": "The scenario name associated with the environment (for example, singleton scenario type).",
           "type": "string"
         }
       }
@@ -2916,7 +3188,7 @@
         },
         "extensions": {
           "type": "object",
-          "additionalProperties": { },
+          "additionalProperties": {},
           "readOnly": true
         }
       },
@@ -2983,7 +3255,7 @@
       "type": "object",
       "properties": {
         "errorDetail": {
-          "$ref": "#/definitions/ErrorInfo"
+          "$ref": "#/definitions/OperationErrorDetail"
         }
       },
       "additionalProperties": false
@@ -2997,7 +3269,7 @@
           "type": "string"
         },
         "type": {
-          "description": "The type of the user identity (e.g., User).",
+          "description": "The type of the user identity (for example, User).",
           "type": "string"
         },
         "displayName": {
@@ -3012,12 +3284,14 @@
       "additionalProperties": false
     },
     "TemplateAvailability": {
+      "description": "Availability of a template for a specific environment SKU.",
       "type": "object",
       "properties": {
         "environmentSku": {
           "$ref": "#/definitions/EnvironmentSku"
         },
         "isDisabled": {
+          "description": "Whether the template is disabled for this SKU.",
           "type": "boolean"
         },
         "disabledReason": {
@@ -3027,7 +3301,7 @@
       "additionalProperties": false
     },
     "StepExecutionStatus": {
-      "description": "The execution status of a step within a stage.",
+      "description": "The execution status of an operation stage.",
       "enum": [
         "Succeeded",
         "Failed",
@@ -3038,23 +3312,12 @@
       ],
       "type": "string"
     },
-    "StateChangeRequest": {
-      "description": "Represents a request to change the state of an environment.",
-      "type": "object",
-      "properties": {
-        "reason": {
-          "description": "The reason of this state change.",
-          "type": "string"
-        }
-      },
-      "additionalProperties": false
-    },
     "StageStatus": {
-      "description": "The stage status of an operation.",
+      "description": "The status of a single stage of an operation.",
       "type": "object",
       "properties": {
         "name": {
-          "description": "The name of stage.",
+          "description": "The name of the stage.",
           "type": "string"
         },
         "status": {
@@ -3062,16 +3325,58 @@
         },
         "startTime": {
           "format": "date-time",
-          "description": "The start time of stage.",
+          "description": "The start time of the stage.",
           "type": "string"
         },
         "endTime": {
           "format": "date-time",
-          "description": "The end time of stage.",
+          "description": "The end time of the stage.",
           "type": "string"
         },
         "errorDetail": {
-          "$ref": "#/definitions/ErrorInfo"
+          "$ref": "#/definitions/OperationErrorDetail"
+        }
+      },
+      "additionalProperties": false
+    },
+    "RestoreRequestOptions": {
+      "description": "Optional inputs for restore request.",
+      "type": "object",
+      "properties": {
+        "environmentNameToOverride": {
+          "description": "Environment name to override on target environment.",
+          "type": "string"
+        },
+        "securityGroupIdToOverride": {
+          "description": "Security group ID to override on target environment.",
+          "type": "string"
+        },
+        "skipAuditData": {
+          "description": "Boolean flag to skip audit data during restore.",
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "RestoreRequest": {
+      "description": "Request model for restoring an environment to a previous backup.",
+      "required": [
+        "restorePointDateTime",
+        "sourceEnvironmentId"
+      ],
+      "type": "object",
+      "properties": {
+        "restorePointDateTime": {
+          "format": "date-time",
+          "description": "The point in time to restore the environment to. Must include a timezone offset per RFC 3339 (for example, 2025-04-30T12:34:56+02:00).",
+          "type": "string"
+        },
+        "sourceEnvironmentId": {
+          "description": "The ID of the source environment from which the backup will be restored.",
+          "type": "string"
+        },
+        "restoreOptions": {
+          "$ref": "#/definitions/RestoreRequestOptions"
         }
       },
       "additionalProperties": false
@@ -3102,44 +3407,40 @@
       },
       "additionalProperties": false
     },
-    "RestoreRequestOptions": {
-      "description": "Optional inputs for a restore request.",
+    "ResetRequest": {
+      "description": "Request model for resetting an environment.",
       "type": "object",
       "properties": {
-        "environmentNameToOverride": {
-          "description": "Environment name to override on the target environment.",
+        "baseLanguageCode": {
+          "format": "int32",
+          "description": "The base language code (for example, 1033 for English) for the environment to reset to.",
+          "type": "integer"
+        },
+        "currency": {
+          "$ref": "#/definitions/EnvironmentRequestCurrency"
+        },
+        "displayName": {
+          "description": "The display name for the environment to reset to.",
           "type": "string"
         },
-        "securityGroupIdToOverride": {
-          "description": "Security group ID to override on the target environment.",
+        "domainName": {
+          "description": "Domain name for the environment to reset to.",
           "type": "string"
         },
-        "skipAuditData": {
-          "description": "A value indicating whether to skip audit data during the restore process.",
-          "type": "boolean"
-        }
-      },
-      "additionalProperties": false
-    },
-    "RestoreRequest": {
-      "description": "Request model for restoring an environment to a previous backup.",
-      "required": [
-        "restorePointDateTime",
-        "sourceEnvironmentId"
-      ],
-      "type": "object",
-      "properties": {
-        "restorePointDateTime": {
-          "format": "date-time",
-          "description": "Date and time of the restore point, with timezone offset per RFC 3339 (e.g., 2025-04-30T12:34:56+02:00).",
+        "description": {
+          "description": "An optional description for the environment to reset to.",
           "type": "string"
         },
-        "sourceEnvironmentId": {
-          "description": "The ID of the source environment from which the backup will be restored.",
+        "securityGroupId": {
+          "description": "Security group ID for the environment to reset to.",
           "type": "string"
         },
-        "restoreOptions": {
-          "$ref": "#/definitions/RestoreRequestOptions"
+        "templates": {
+          "description": "Templates to apply for the environment after reset.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
         }
       },
       "additionalProperties": false
@@ -3147,7 +3448,6 @@
     "ProtectionLevel": {
       "description": "The environment governance protection level.",
       "enum": [
-        "NotSpecified",
         "Basic",
         "Standard"
       ],
@@ -3182,7 +3482,7 @@
       "additionalProperties": false
     },
     "OperationExecutionResult": {
-      "description": "Represents the result of an operation execution.",
+      "description": "The result of an environment lifecycle operation.",
       "type": "object",
       "properties": {
         "name": {
@@ -3213,10 +3513,10 @@
           "$ref": "#/definitions/UserIdentity"
         },
         "errorDetail": {
-          "$ref": "#/definitions/ErrorInfo"
+          "$ref": "#/definitions/OperationErrorDetail"
         },
         "stageStatuses": {
-          "description": "The list of State statuses associated with the operation.",
+          "description": "Per-stage progress of the operation.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/StageStatus"
@@ -3226,7 +3526,7 @@
       "additionalProperties": false
     },
     "ModifyEnvironmentSkuRequest": {
-      "description": "Represents request to change the sku of an environment.",
+      "description": "Request model for changing the SKU of an environment.",
       "required": [
         "environmentSku"
       ],
@@ -3238,20 +3538,56 @@
       },
       "additionalProperties": false
     },
-    "LocationPagedCollection": {
+    "ProvisioningLocations": {
+      "description": "Response envelope for the list-provisioning-locations endpoint. Surfaces the list of locations at the top level alongside tenant-scoped provisioning metadata.",
       "type": "object",
       "properties": {
         "collection": {
+          "description": "The list of provisioning locations available to the tenant.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/Location"
           }
         },
-        "continuationToken": {
+        "locationSelectionMode": {
+          "$ref": "#/definitions/LocationSelectionMode"
+        },
+        "macroRegions": {
+          "description": "The list of macro regions available to the tenant.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MacroRegion"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "MacroRegion": {
+      "description": "Represents a macro region that groups one or more provisioning locations.",
+      "type": "object",
+      "properties": {
+        "macroRegionId": {
+          "description": "The macro region identifier.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "The display name of the macro region.",
+          "type": "string"
+        },
+        "dataResidencyNote": {
+          "description": "The data residency note shown to customers for this macro region.",
           "type": "string"
         }
       },
       "additionalProperties": false
+    },
+    "LocationSelectionMode": {
+      "description": "Describes how a tenant selects a provisioning location. Returned alongside the supported locations to tell callers whether to pick a specific location or a macro region.",
+      "enum": [
+        "Region",
+        "MacroRegion"
+      ],
+      "type": "string"
     },
     "Location": {
       "description": "Represents a location/geo for environment provisioning.",
@@ -3280,21 +3616,10 @@
         "canProvisionDatabase": {
           "description": "Whether database provisioning is allowed.",
           "type": "boolean"
-        }
-      },
-      "additionalProperties": false
-    },
-    "Identity": {
-      "type": "object",
-      "properties": {
-        "id": {
-          "type": "string"
         },
-        "displayName": {
-          "type": "string"
-        },
-        "tenantId": {
-          "type": "string"
+        "hasFirstReleaseIslandAvailableForProvisioning": {
+          "description": "Whether a first-release island is available for provisioning in this location.",
+          "type": "boolean"
         }
       },
       "additionalProperties": false
@@ -3305,36 +3630,36 @@
       "properties": {
         "lastSyncTime": {
           "format": "date-time",
-          "description": "The last sync time used to perform the force failover operation. Optional; if null or omitted, the service will fail over to the latest available sync point.",
+          "description": "The sync time to fail over to. Optional: if null or omitted, fails over to the latest available sync point.",
           "type": "string"
         }
       },
       "additionalProperties": false
     },
-    "ErrorInfo": {
-      "description": "Represents error information for an operation.",
+    "OperationErrorDetail": {
+      "description": "Structured error detail for a failed request.",
       "type": "object",
       "properties": {
         "code": {
-          "description": "The error Code.",
+          "description": "The error code.",
           "type": "string"
         },
         "fieldErrors": {
-          "description": "The detailed error.",
+          "description": "Per-field error detail, keyed by field name.",
           "type": "object",
           "additionalProperties": {
-            "$ref": "#/definitions/ErrorEntry"
+            "$ref": "#/definitions/FieldError"
           }
         }
       },
       "additionalProperties": false
     },
-    "ErrorEntry": {
-      "description": "Represents the error detail for a single entry in an error dictionary.",
+    "FieldError": {
+      "description": "The error detail for a single field.",
       "type": "object",
       "properties": {
         "errorMessages": {
-          "description": "The error messages describing what is wrong.",
+          "description": "The error messages describing what is wrong with the field.",
           "type": "array",
           "items": {
             "type": "string"
@@ -3347,7 +3672,8 @@
       },
       "additionalProperties": false
     },
-    "EnvironmentTemplatePagedCollection": {
+    "EnvironmentTemplateResourceCollection": {
+      "description": "A non-paginated collection of resources returned in full (no continuation token). Used for finite reference lists where partial results would be incorrect.",
       "type": "object",
       "properties": {
         "collection": {
@@ -3355,29 +3681,32 @@
           "items": {
             "$ref": "#/definitions/EnvironmentTemplate"
           }
-        },
-        "continuationToken": {
-          "type": "string"
         }
       },
       "additionalProperties": false
     },
     "EnvironmentTemplate": {
+      "description": "Represents a template available for environment provisioning.",
       "type": "object",
       "properties": {
         "name": {
+          "description": "The template name (identifier).",
           "type": "string"
         },
         "displayName": {
+          "description": "The template name, localized for display.",
           "type": "string"
         },
         "isCustomerEngagement": {
+          "description": "Whether the template is a Customer Engagement template.",
           "type": "boolean"
         },
         "isSupportedForResetOperation": {
+          "description": "Whether this template is supported for the reset operation.",
           "type": "boolean"
         },
         "availability": {
+          "description": "The per-SKU availability of this template.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/TemplateAvailability"
@@ -3389,7 +3718,6 @@
     "EnvironmentSku": {
       "description": "The environment SKU.",
       "enum": [
-        "NotSpecified",
         "Standard",
         "Premium",
         "Developer",
@@ -3420,7 +3748,8 @@
       },
       "additionalProperties": false
     },
-    "EnvironmentLanguagePagedCollection": {
+    "EnvironmentLanguageResourceCollection": {
+      "description": "A non-paginated collection of resources returned in full (no continuation token). Used for finite reference lists where partial results would be incorrect.",
       "type": "object",
       "properties": {
         "collection": {
@@ -3428,30 +3757,32 @@
           "items": {
             "$ref": "#/definitions/EnvironmentLanguage"
           }
-        },
-        "continuationToken": {
-          "type": "string"
         }
       },
       "additionalProperties": false
     },
     "EnvironmentLanguage": {
+      "description": "Represents a language available for environment provisioning.",
       "type": "object",
       "properties": {
         "localeId": {
           "format": "int32",
+          "description": "The locale identifier (LCID, for example, 1033 for English).",
           "type": "integer"
         },
         "localizedName": {
+          "description": "The language name, localized for display.",
           "type": "string"
         },
         "isTenantDefault": {
+          "description": "Whether this is the tenant's default language.",
           "type": "boolean"
         }
       },
       "additionalProperties": false
     },
-    "EnvironmentCurrencyPagedCollection": {
+    "EnvironmentCurrencyResourceCollection": {
+      "description": "A non-paginated collection of resources returned in full (no continuation token). Used for finite reference lists where partial results would be incorrect.",
       "type": "object",
       "properties": {
         "collection": {
@@ -3459,23 +3790,24 @@
           "items": {
             "$ref": "#/definitions/EnvironmentCurrency"
           }
-        },
-        "continuationToken": {
-          "type": "string"
         }
       },
       "additionalProperties": false
     },
     "EnvironmentCurrency": {
+      "description": "Represents a currency available for environment provisioning.",
       "type": "object",
       "properties": {
         "code": {
+          "description": "The currency code (for example, \"USD\").",
           "type": "string"
         },
         "symbol": {
+          "description": "The currency symbol (for example, \"$\").",
           "type": "string"
         },
         "isTenantDefault": {
+          "description": "Whether this is the tenant's default currency.",
           "type": "boolean"
         }
       },
@@ -3497,11 +3829,12 @@
       "additionalProperties": false
     },
     "EnvironmentBackup": {
+      "description": "Represents an environment backup.",
       "type": "object",
       "properties": {
         "backupPointDateTime": {
           "format": "date-time",
-          "description": "The backup point date time. Set when backup is created.",
+          "description": "The backup point date time.",
           "type": "string"
         },
         "label": {
@@ -3510,21 +3843,21 @@
         },
         "backupExpiryDateTime": {
           "format": "date-time",
-          "description": "Backup expiry date time based on retention period in days.",
+          "description": "The backup expiry date time.",
           "type": "string"
         },
         "id": {
-          "description": "Environment backup ID. Auto-generated GUID if null.",
+          "description": "The identifier of the environment backup.",
           "type": "string"
         },
         "createdBy": {
-          "$ref": "#/definitions/Identity"
+          "$ref": "#/definitions/UserIdentity"
         }
       },
       "additionalProperties": false
     },
     "Environment": {
-      "description": "Power platform Environment",
+      "description": "Power Platform environment.",
       "type": "object",
       "properties": {
         "environmentId": {
@@ -3536,19 +3869,22 @@
           "type": "string"
         },
         "dataverseOrganizationUrl": {
-          "description": "Dataverse organization Url of the environment.",
+          "description": "Dataverse organization URL of the environment.",
           "type": "string"
         }
       },
       "additionalProperties": false
     },
     "DisabledReason": {
+      "description": "Explains why a template is unavailable for a given SKU.",
       "type": "object",
       "properties": {
         "code": {
+          "description": "The reason code.",
           "type": "string"
         },
         "message": {
+          "description": "The reason message.",
           "type": "string"
         }
       },
@@ -3569,13 +3905,13 @@
       "description": "Metadata for the linked Dataverse environment.",
       "type": "object",
       "properties": {
-        "baseLanguage": {
+        "baseLanguageCode": {
           "format": "int32",
-          "description": "The base language code (e.g., 1033 for English).",
+          "description": "The base language code (for example, 1033 for English).",
           "type": "integer"
         },
         "currency": {
-          "$ref": "#/definitions/CreateEnvironmentRequestCurrency"
+          "$ref": "#/definitions/EnvironmentRequestCurrency"
         },
         "templates": {
           "description": "The templates to apply.",
@@ -3628,12 +3964,12 @@
       },
       "additionalProperties": false
     },
-    "CreateEnvironmentRequestCurrency": {
-      "description": "Currency settings for environment provisioning.",
+    "EnvironmentRequestCurrency": {
+      "description": "Currency settings for an environment.",
       "type": "object",
       "properties": {
         "code": {
-          "description": "The currency code (e.g., USD).",
+          "description": "The currency code (for example, USD).",
           "type": "string"
         },
         "name": {
@@ -3657,7 +3993,7 @@
       "type": "object",
       "properties": {
         "category": {
-          "description": "The cluster category (e.g., FirstRelease).",
+          "description": "The cluster category. Eg: FirstRelease.",
           "type": "string"
         }
       },
@@ -3683,7 +4019,11 @@
       "type": "object",
       "properties": {
         "location": {
-          "description": "The location where the environment will be provisioned.",
+          "description": "The location where the environment will be provisioned. Mutually exclusive with MacroRegion.",
+          "type": "string"
+        },
+        "macroRegion": {
+          "description": "The macro region where the environment will be provisioned.",
           "type": "string"
         },
         "displayName": {
@@ -3699,7 +4039,7 @@
           "type": "string"
         },
         "databaseType": {
-          "description": "The type of database to create (e.g., CommonDataService).",
+          "description": "The type of database to create (for example, CommonDataService).",
           "type": "string"
         },
         "usedBy": {
@@ -3769,14 +4109,14 @@
           "type": "boolean"
         },
         "executeAdvancedCopyForFinanceAndOperations": {
-          "description": "Boolean flag to execute advanced copy for Finance and Operation data.",
+          "description": "Boolean flag to execute advanced copy for Finance and Operations data.",
           "type": "boolean"
         }
       },
       "additionalProperties": false
     },
     "CopyRequest": {
-      "description": "Represents request to copy to a target environment from source environment.",
+      "description": "Request model for copying an environment.",
       "required": [
         "copyType",
         "sourceEnvironmentId"
@@ -3797,10 +4137,12 @@
       "additionalProperties": false
     },
     "BusinessContinuityStateFullSnapshot": {
+      "description": "Business-continuity (disaster-recovery) state snapshot for an environment.",
       "type": "object",
       "properties": {
         "lastSyncTime": {
           "format": "date-time",
+          "description": "The last time the environment's business-continuity state was synced.",
           "type": "string"
         }
       },

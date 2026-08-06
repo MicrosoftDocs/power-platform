@@ -15,7 +15,7 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "Create rule based policy.",
+        "summary": "Create rule-based policy.",
         "description": "Creates a rule-based policy with rule sets and metadata.",
         "operationId": "CreateRuleBasedPolicy",
         "consumes": [
@@ -67,8 +67,8 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "List rule based policies.",
-        "description": "List rule based policies available in the tenant.",
+        "summary": "List rule-based policies.",
+        "description": "List rule-based policies available in the tenant.",
         "operationId": "ListRuleBasedPolicies",
         "produces": [
           "application/json"
@@ -110,7 +110,7 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "Get rule based policy by ID.",
+        "summary": "Get rule-based policy by ID.",
         "description": "Gets policy details by ID including rule sets and metadata.",
         "operationId": "GetRuleBasedPolicyByID",
         "produces": [
@@ -158,7 +158,7 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "Update rule based policy by ID.",
+        "summary": "Update rule-based policy by ID.",
         "description": "Updates a policy by ID including rule sets and metadata.",
         "operationId": "UpdateRuleBasedPolicyByID",
         "consumes": [
@@ -217,7 +217,7 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "Patch rule based policy.",
+        "summary": "Patch rule-based policy.",
         "description": "Allows adding or updating one or more rule sets to an existing policy.",
         "operationId": "PatchRuleBasedPolicy",
         "consumes": [
@@ -278,7 +278,7 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "List rule based policy assignments for a specific policy.",
+        "summary": "List rule-based policy assignments for a specific policy.",
         "description": "Lists rule assignments for a policy with rule set details.",
         "operationId": "ListRuleAssignmentsByPolicyId",
         "produces": [
@@ -335,7 +335,7 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "Create environment group rule based assignment.",
+        "summary": "Create environment group rule-based assignment.",
         "description": "Creates a rule-based policy assignment for an environment group.",
         "operationId": "CreateEnviornmentGroupRuleBasedAssignment",
         "consumes": [
@@ -409,7 +409,7 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "Create environment rule based assignment.",
+        "summary": "Create environment rule-based assignment.",
         "description": "Creates a rule-based policy assignment for an environment.",
         "operationId": "CreateEnvironmentRuleBasedAssignment",
         "consumes": [
@@ -544,7 +544,7 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "List rule based policy assignments.",
+        "summary": "List rule-based policy assignments.",
         "description": "Lists rule assignments for a tenant with rule set details.",
         "operationId": "ListRuleAssignments",
         "produces": [
@@ -594,7 +594,7 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "List rule based policy assignments for a specific environment group.",
+        "summary": "List rule-based policy assignments for a specific environment group.",
         "description": "Lists rule assignments for an environment group.",
         "operationId": "ListRuleAssignmentsByEnvironmentGroupId",
         "produces": [
@@ -651,7 +651,7 @@
         "tags": [
           "RuleBasedPolicies"
         ],
-        "summary": "List rule based policy assignments for a specific environment.",
+        "summary": "List rule-based policy assignments for a specific environment.",
         "description": "Lists rule assignments for a specific environment.",
         "operationId": "ListRuleAssignmentsByEnvironmentId",
         "produces": [
@@ -1320,7 +1320,7 @@
           "description": "The inputs for the rule set, which may vary based on the rule.",
           "type": "object",
           "example": {
-            "AllowedConnectorList": [ ],
+            "AllowedConnectorList": [],
             "tsg": ""
           }
         }
@@ -1335,7 +1335,7 @@
       "type": "object",
       "properties": {
         "resourceId": {
-          "description": "Resource Id ex. the environment group id.",
+          "description": "Resource ID; for example, the environment group ID.",
           "type": "string"
         },
         "resourceType": {
