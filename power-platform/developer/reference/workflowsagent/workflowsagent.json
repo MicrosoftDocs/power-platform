@@ -1593,7 +1593,7 @@
       "type": "object",
       "properties": {
         "role": {
-          "description": "Role of the message sender (e.g. user, assistant, system, tool).",
+          "description": "Role of the message sender (e.g., user, assistant, system, tool).",
           "type": "string"
         },
         "content": {
@@ -1630,7 +1630,7 @@
           "type": "string"
         },
         "finishReason": {
-          "description": "Reason the completion finished (e.g. stop, tool_calls).",
+          "description": "Reason the completion finished (e.g., stop, tool_calls).",
           "type": "string"
         },
         "toolCalls": {

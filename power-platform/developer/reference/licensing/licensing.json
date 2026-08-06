@@ -10,6 +10,1102 @@
     "https"
   ],
   "paths": {
+    "/licensing/allocationsV2": {
+      "put": {
+        "tags": [
+          "Allocation"
+        ],
+        "summary": "Set the allocations for the scope.",
+        "operationId": "PutAllocationsV2",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "Request body containing allocation data.",
+            "schema": {
+              "$ref": "#/definitions/AllocationPutRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/NeptuneOperationResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/licensing/allocationsV2/availability": {
+      "get": {
+        "tags": [
+          "Allocation"
+        ],
+        "summary": "Get the entitlements available to be allocated for the scope.",
+        "operationId": "GetAllocationsAvailabilityV2",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "$filter",
+            "description": "OData filter expression.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AllocationAvailabilityResponseModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/licensing/allocationsV2/entitlements/reserved": {
+      "get": {
+        "tags": [
+          "Allocation"
+        ],
+        "summary": "Get the reserved entitlements for the scope.",
+        "operationId": "GetManyEntitlementsReservedV2",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "$filter",
+            "description": "OData filter expression.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/EntitlementReservedResponseModel"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/licensing/entitlements/{entitlementId}": {
+      "get": {
+        "tags": [
+          "Entitlement"
+        ],
+        "summary": "Get the entitlement details for the tenant.",
+        "operationId": "GetEntitlement",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entitlementId",
+            "description": "The entitlement ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/TenantEntitlementResponseModel"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/entitlements/{entitlementId}/environments/{environmentId}/resources": {
+      "get": {
+        "tags": [
+          "EntitlementInsight"
+        ],
+        "summary": "Get environment resource entitlement snapshots for an entitlement.",
+        "operationId": "GetEnvironmentResources",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entitlementId",
+            "description": "The entitlement ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "fromDate",
+            "description": "The start date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "toDate",
+            "description": "The end date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "searchRequest",
+            "description": "Search request for filtering the resources.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "includeFields",
+            "description": "Comma separated additional fields to include in the response.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "orderbyConsumed",
+            "description": "Order by consumed date time if specified.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for pagination.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/EnvironmentEntitlementSnapshotResponseModelPagedResponse"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/entitlements/{entitlementId}/licenses": {
+      "get": {
+        "tags": [
+          "EntitlementInsight"
+        ],
+        "summary": "Get the license trends for the tenant for the specified entitlement.",
+        "operationId": "GetTenantLicenseTrends",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entitlementId",
+            "description": "The entitlement ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "fromDate",
+            "description": "The start date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "toDate",
+            "description": "The end date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$top",
+            "description": "The maximum number of records to return.",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "query",
+            "name": "$filter",
+            "description": "OData filter expression.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/TenantEntitlementLicenseTrendResponseModelPagedResponse"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/entitlements/{entitlementId}/resources": {
+      "get": {
+        "tags": [
+          "EntitlementInsight"
+        ],
+        "summary": "Get tenant resources for an entitlement across all environments.",
+        "operationId": "GetTenantResourcesAcrossEnvironments",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entitlementId",
+            "description": "The entitlement ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "fromDate",
+            "description": "The start date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "toDate",
+            "description": "The end date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "pageSize",
+            "description": "Maximum number of environments to fan out to per page.",
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Opaque continuation token returned by the previous page, or null for the first page.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/TenantEnvironmentResourceSnapshotResponseModelPagedResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/entitlements/{entitlementId}/resources/{resourceId}/users": {
+      "get": {
+        "tags": [
+          "EntitlementInsight"
+        ],
+        "summary": "Get tenant user consumption by entitlement and resource ID.",
+        "operationId": "GetTenantUserConsumptionByResource",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entitlementId",
+            "description": "The entitlement ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "resourceId",
+            "description": "The resource ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "fromDate",
+            "description": "The start date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "toDate",
+            "description": "The end date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "pageSize",
+            "description": "The page size for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 100
+          },
+          {
+            "in": "query",
+            "name": "searchRequest",
+            "description": "Search request for filtering.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for pagination.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/TenantUserResponseModelPagedResponse"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/entitlements/{entitlementId}/resourceThresholds": {
+      "get": {
+        "tags": [
+          "ResourceThreshold"
+        ],
+        "summary": "Get all resource thresholds for the specified entitlement.",
+        "operationId": "GetAllResourceThresholds",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entitlementId",
+            "description": "The entitlement ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ResourceThresholdModel"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/licensing/entitlements/{entitlementId}/users": {
+      "get": {
+        "tags": [
+          "EntitlementInsight"
+        ],
+        "summary": "Get the list of tenant users entitlement snapshot for the specified entitlement.",
+        "operationId": "GetTenantUsers",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entitlementId",
+            "description": "The entitlement ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "fromDate",
+            "description": "The start date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "toDate",
+            "description": "The end date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "pageSize",
+            "description": "The page size for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 100
+          },
+          {
+            "in": "query",
+            "name": "searchRequest",
+            "description": "Search request for filtering the users.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "orderbyConsumed",
+            "description": "Order by consumed field.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for pagination.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/TenantUserResponseModelPagedResponse"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/entitlements/{entitlementId}/users/{userId}/resources": {
+      "get": {
+        "tags": [
+          "EntitlementInsight"
+        ],
+        "summary": "Get resource consumption by entitlement and user ID.",
+        "operationId": "GetTenantResourceConsumptionByUser",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "entitlementId",
+            "description": "The entitlement ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "userId",
+            "description": "The user ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "fromDate",
+            "description": "The start date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "toDate",
+            "description": "The end date (inclusive) of the query range.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "pageSize",
+            "description": "The page size for pagination.",
+            "type": "integer",
+            "format": "int32",
+            "default": 100
+          },
+          {
+            "in": "query",
+            "name": "searchRequest",
+            "description": "Search request for filtering.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "Continuation token for pagination.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/TenantResourceResponseModelPagedResponse"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/environments/{environmentId}/entitlements": {
+      "get": {
+        "tags": [
+          "Entitlement"
+        ],
+        "summary": "Get the entitlements for the tenant by environment.",
+        "operationId": "GetManyEnvironmentEntitlements",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "$filter",
+            "description": "OData filter expression.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/EnvironmentEntitlementResponseModel"
+              }
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/environments/{environmentId}/entitlements/{entitlementId}/resources/{resourceId}/threshold": {
+      "put": {
+        "tags": [
+          "ResourceThreshold"
+        ],
+        "summary": "Create or update the resource threshold for an environment resource.",
+        "operationId": "UpsertResourceThreshold",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "entitlementId",
+            "description": "The entitlement ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "resourceId",
+            "description": "The resource ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The resource threshold configuration.",
+            "schema": {
+              "$ref": "#/definitions/ResourceThresholdRequestModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ResourceThresholdModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          }
+        }
+      }
+    },
+    "/licensing/FinOpsLicensing/GetLicenseSummaryV2": {
+      "get": {
+        "tags": [
+          "FinOpsLicensing"
+        ],
+        "summary": "Get FinOps license summary (V2) for the tenant.",
+        "operationId": "GetFinOpsLicenseSummaryV2",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/FinOpsLicenseSummaryV2Response"
+            }
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/allocationsByEnvironment": {
+      "get": {
+        "tags": [
+          "AllocationsByEnvironment"
+        ],
+        "summary": "Get currency allocations and enforcement rules for all environments.",
+        "operationId": "ListAllocationsByEnvironment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/AllocationByEnvironmentModel"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      },
+      "patch": {
+        "tags": [
+          "AllocationsByEnvironment"
+        ],
+        "summary": "Update currency allocations and enforcement rules for an environment.",
+        "operationId": "UpdateAllocationsByEnvironment",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The environment currency allocations and enforcement rules to apply.",
+            "schema": {
+              "$ref": "#/definitions/AllocationByEnvironmentModel"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AllocationByEnvironmentModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
+    "/licensing/allocationsByEnvironment/{environmentId}": {
+      "get": {
+        "tags": [
+          "AllocationsByEnvironment"
+        ],
+        "summary": "Get currency allocations and enforcement rules for an environment.",
+        "operationId": "GetAllocationsByEnvironment",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AllocationByEnvironmentModel"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
     "/licensing/billingPolicies": {
       "get": {
         "tags": [
@@ -1744,6 +2840,1256 @@
     }
   },
   "definitions": {
+    "TenantEntitlementResponseModel": {
+      "description": "Represents an entitlement and its capacity, pay-as-you-go and licensed policy details for a tenant.",
+      "type": "object",
+      "properties": {
+        "entitlementId": {
+          "description": "The entitlement ID.",
+          "type": "string"
+        },
+        "productCategories": {
+          "description": "The entitlement product categories (e.g., D365Apps, Dataverse, Power Apps, Power Automate).",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductCategory"
+          }
+        },
+        "entitlement": {
+          "$ref": "#/definitions/TenantEntitlementDetailServiceModel"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantEntitlementDetailServiceModel": {
+      "type": "object",
+      "properties": {
+        "unit": {
+          "$ref": "#/definitions/EntitlementUnit"
+        },
+        "capacity": {
+          "$ref": "#/definitions/CapacityEntitlementModel"
+        },
+        "payGo": {
+          "$ref": "#/definitions/CatalogPayGoEntitlementModel"
+        },
+        "licensedPolicy": {
+          "$ref": "#/definitions/LicensedPolicyModel"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CapacityEntitlementModel": {
+      "type": "object",
+      "properties": {
+        "entitled": {
+          "$ref": "#/definitions/EntitlementEntitledModel"
+        },
+        "consumed": {
+          "$ref": "#/definitions/EntitlementConsumedModel"
+        },
+        "unit": {
+          "$ref": "#/definitions/EntitlementUnit"
+        },
+        "allocated": {
+          "$ref": "#/definitions/EntitlementAllocationModelV2"
+        },
+        "availableQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "status": {
+          "$ref": "#/definitions/OverageStatus"
+        },
+        "licenses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CapacityLicenseModel"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "CatalogPayGoEntitlementModel": {
+      "type": "object",
+      "properties": {
+        "entitled": {
+          "$ref": "#/definitions/EntitlementEntitledModel"
+        },
+        "consumed": {
+          "$ref": "#/definitions/EntitlementConsumedModel"
+        }
+      },
+      "additionalProperties": false
+    },
+    "LicensedPolicyModel": {
+      "type": "object",
+      "properties": {
+        "entitled": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EntitlementEntitledModel": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "format": "double",
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EntitlementConsumedModel": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "format": "double",
+          "type": "number"
+        },
+        "consumptionType": {
+          "$ref": "#/definitions/EntitlementConsumptionType"
+        },
+        "lastUpdatedOn": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "writeOff": {
+          "format": "double",
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EntitlementAllocationModelV2": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "format": "double",
+          "type": "number"
+        },
+        "autoAllocated": {
+          "format": "double",
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CapacityLicenseModel": {
+      "type": "object",
+      "properties": {
+        "skuId": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "licenseQuantity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "entitled": {
+          "$ref": "#/definitions/EntitlementEntitledModel"
+        },
+        "licenseTier": {
+          "$ref": "#/definitions/LicenseTier"
+        },
+        "licenseStatus": {
+          "type": "string"
+        },
+        "nextLifecycleStatus": {
+          "type": "string"
+        },
+        "nextLifecycleDate": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "licenseId": {
+          "type": "string"
+        },
+        "licenseSource": {
+          "$ref": "#/definitions/LicenseSource"
+        },
+        "isUnlimited": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentEntitlementSnapshotResponseModel": {
+      "type": "object",
+      "properties": {
+        "resources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentResourceEntitlementSnapshotResponseModel"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentResourceEntitlementSnapshotResponseModel": {
+      "type": "object",
+      "properties": {
+        "resourceId": {
+          "description": "The resource ID.",
+          "type": "string"
+        },
+        "consumed": {
+          "format": "double",
+          "description": "The consumed value.",
+          "type": "number"
+        },
+        "unit": {
+          "$ref": "#/definitions/EntitlementUnit"
+        },
+        "lastRefreshedDate": {
+          "format": "date-time",
+          "description": "The last refreshed date.",
+          "type": "string"
+        },
+        "metadata": {
+          "description": "Additional metadata such as Feature, ProductName and nonBillableConsumed for MCSMessages.",
+          "type": "object"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantEnvironmentResourceSnapshotResponseModel": {
+      "description": "Per-resource snapshot for a tenant-scoped, all-environments listing.",
+      "type": "object",
+      "properties": {
+        "resourceId": {
+          "description": "The resource ID.",
+          "type": "string"
+        },
+        "consumed": {
+          "format": "double",
+          "description": "The consumed value.",
+          "type": "number"
+        },
+        "unit": {
+          "$ref": "#/definitions/EntitlementUnit"
+        },
+        "lastRefreshedDate": {
+          "format": "date-time",
+          "description": "The last refreshed date.",
+          "type": "string"
+        },
+        "metadata": {
+          "description": "Additional metadata such as Feature, ProductName and nonBillableConsumed for MCSMessages.",
+          "type": "object"
+        },
+        "environmentId": {
+          "description": "The environment this resource belongs to.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantEntitlementLicenseTrendResponseModel": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "licenseModelType": {
+          "$ref": "#/definitions/LicenseModelType"
+        },
+        "licenses": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TenantEntitlementLicenseModel"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantEntitlementLicenseModel": {
+      "type": "object",
+      "properties": {
+        "licenseId": {
+          "type": "string"
+        },
+        "skuId": {
+          "type": "string"
+        },
+        "productName": {
+          "type": "string"
+        },
+        "licenseQuantity": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "entitled": {
+          "format": "double",
+          "type": "number"
+        },
+        "licenseTier": {
+          "$ref": "#/definitions/LicenseTier"
+        },
+        "licenseStatus": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantUserResponseModel": {
+      "type": "object",
+      "properties": {
+        "users": {
+          "description": "The list of users associated with the tenant.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TenantCapacityConsumptionUserSnapshotResponseModel"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantCapacityConsumptionUserSnapshotResponseModel": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "environmentId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "consumed": {
+          "format": "double",
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "metadata": {
+          "type": "object"
+        },
+        "asOfDate": {
+          "format": "date-time",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantResourceResponseModel": {
+      "type": "object",
+      "properties": {
+        "resources": {
+          "description": "The list of resources associated with the tenant.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TenantCapacityConsumptionSnapshotResponseModel"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantCapacityConsumptionSnapshotResponseModel": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "environmentId": {
+          "type": "string"
+        },
+        "resourceId": {
+          "type": "string"
+        },
+        "consumed": {
+          "format": "double",
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "metadata": {
+          "type": "object"
+        },
+        "asOfDate": {
+          "format": "date-time",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "AllocationAvailabilityResponseModel": {
+      "description": "Allocation availability response model.",
+      "type": "object",
+      "properties": {
+        "scope": {
+          "$ref": "#/definitions/ScopeModel"
+        },
+        "entitlementAllocationsAvailable": {
+          "description": "Availability of the entitlements for the scope.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EntitlementAllocationAvailabilityModel"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "EntitlementAllocationAvailabilityModel": {
+      "type": "object",
+      "properties": {
+        "entitlementId": {
+          "type": "string"
+        },
+        "availableQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "unit": {
+          "$ref": "#/definitions/EntitlementUnit"
+        }
+      },
+      "additionalProperties": false
+    },
+    "AllocationPutRequestModel": {
+      "description": "Allocation put request model.",
+      "type": "object",
+      "properties": {
+        "scope": {
+          "$ref": "#/definitions/ScopeModel"
+        },
+        "allocatedEntitlements": {
+          "description": "Allocated entitlements.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EntitlementAllocationModel"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "EntitlementAllocationModel": {
+      "type": "object",
+      "properties": {
+        "allocation": {
+          "$ref": "#/definitions/AllocationModel"
+        },
+        "entitlementId": {
+          "type": "string"
+        },
+        "enforcementRules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AllocationEnforcementRule"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "AllocationModel": {
+      "type": "object",
+      "properties": {
+        "quantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "autoAllocated": {
+          "format": "double",
+          "type": "number"
+        },
+        "unit": {
+          "$ref": "#/definitions/EntitlementUnit"
+        }
+      },
+      "additionalProperties": false
+    },
+    "AllocationEnforcementRule": {
+      "type": "object",
+      "properties": {
+        "ruleType": {
+          "$ref": "#/definitions/AllocationEnforcementRuleTypes"
+        },
+        "enabled": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ScopeModel": {
+      "type": "object",
+      "properties": {
+        "tenantId": {
+          "type": "string"
+        },
+        "environmentGroupId": {
+          "type": "string"
+        },
+        "environmentId": {
+          "type": "string"
+        },
+        "resourceId": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        },
+        "userGroupId": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ResourceThresholdModel": {
+      "type": "object",
+      "properties": {
+        "resourceId": {
+          "description": "Unique identifier for the resource.",
+          "type": "string"
+        },
+        "entitlementId": {
+          "description": "Entitlement ID associated with the resource.",
+          "type": "string"
+        },
+        "environmentId": {
+          "description": "Unique identifier for the environment associated with the resource.",
+          "type": "string"
+        },
+        "stopResource": {
+          "description": "Indicates whether the user has selected to stop the resource explicitly or not. If 'true' the resource is in a disabled state.",
+          "type": "boolean"
+        },
+        "limit": {
+          "format": "double",
+          "description": "The limit set for the resource consumption.",
+          "type": "number"
+        },
+        "stopIfOverCapacity": {
+          "description": "Indicates whether to stop consuming the capacity if the resource exceeds its limit.",
+          "type": "boolean"
+        },
+        "notifyIfOverCapacity": {
+          "description": "Indicates whether to notify when the resource consumption reaches its notification threshold.",
+          "type": "boolean"
+        },
+        "notificationThreshold": {
+          "format": "int32",
+          "description": "The threshold percentage for sending notifications about resource consumption.",
+          "type": "integer"
+        },
+        "resourceConsumption": {
+          "format": "double",
+          "description": "Current consumption of the resource.",
+          "type": "number"
+        },
+        "createdOn": {
+          "format": "date-time",
+          "description": "The UTC date and time when the resource threshold configuration was first created.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ResourceThresholdRequestModel": {
+      "type": "object",
+      "properties": {
+        "stopResource": {
+          "type": "boolean"
+        },
+        "limit": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "stopIfOverCapacity": {
+          "type": "boolean"
+        },
+        "notifyIfOverCapacity": {
+          "type": "boolean"
+        },
+        "notificationThreshold": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "resourceConsumption": {
+          "format": "double",
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FinOpsLicenseSummaryV2Response": {
+      "type": "object",
+      "properties": {
+        "lastReportRefreshTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "tenantId": {
+          "type": "string"
+        },
+        "allUsersCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "usersWithoutLicensesCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "underLicensedUsersCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "overLicensedUsersCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "licensesConsumption": {
+          "$ref": "#/definitions/FinOpsLicensesConsumption"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FinOpsLicensesConsumption": {
+      "type": "object",
+      "properties": {
+        "supplyChainManagement": {
+          "$ref": "#/definitions/FinOpsProductLicenseConsumption"
+        },
+        "finance": {
+          "$ref": "#/definitions/FinOpsProductLicenseConsumption"
+        },
+        "commerce": {
+          "$ref": "#/definitions/FinOpsProductLicenseConsumption"
+        },
+        "projectOperations": {
+          "$ref": "#/definitions/FinOpsProductLicenseConsumption"
+        },
+        "humanResources": {
+          "$ref": "#/definitions/FinOpsProductLicenseConsumption"
+        },
+        "operations": {
+          "$ref": "#/definitions/FinOpsOperationsLicenseConsumption"
+        },
+        "activity": {
+          "$ref": "#/definitions/FinOpsSimpleLicenseConsumption"
+        },
+        "teamMember": {
+          "$ref": "#/definitions/FinOpsSimpleLicenseConsumption"
+        },
+        "selfService": {
+          "$ref": "#/definitions/FinOpsSimpleLicenseConsumption"
+        },
+        "supplyChainManagementOrFinanceOrCommerce": {
+          "$ref": "#/definitions/FinOpsSupplyChainManagementOrFinanceOrCommerceLicenseConsumption"
+        },
+        "projectOperationsOrHumanResources": {
+          "$ref": "#/definitions/FinOpsProjectOperationsOrHumanResourcesLicenseConsumption"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FinOpsProductLicenseConsumption": {
+      "type": "object",
+      "properties": {
+        "licenseRequirements": {
+          "$ref": "#/definitions/FinOpsLicenseRequirements"
+        },
+        "baseConsumption": {
+          "$ref": "#/definitions/FinOpsBaseLicenseConsumption"
+        },
+        "attachConsumption": {
+          "$ref": "#/definitions/FinOpsAttachLicenseConsumption"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FinOpsSimpleLicenseConsumption": {
+      "type": "object",
+      "properties": {
+        "licenseRequirements": {
+          "$ref": "#/definitions/FinOpsLicenseRequirements"
+        },
+        "baseConsumption": {
+          "$ref": "#/definitions/FinOpsBaseLicenseConsumption"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FinOpsOperationsLicenseConsumption": {
+      "type": "object",
+      "properties": {
+        "licenseRequirements": {
+          "$ref": "#/definitions/FinOpsLicenseRequirements"
+        },
+        "baseConsumption": {
+          "$ref": "#/definitions/FinOpsBaseLicenseConsumption"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FinOpsSupplyChainManagementOrFinanceOrCommerceLicenseConsumption": {
+      "type": "object",
+      "properties": {
+        "licenseRequirements": {
+          "$ref": "#/definitions/FinOpsLicenseRequirements"
+        },
+        "supplyChainManagementConsumption": {
+          "$ref": "#/definitions/FinOpsBaseLicenseConsumption"
+        },
+        "financeConsumption": {
+          "$ref": "#/definitions/FinOpsBaseLicenseConsumption"
+        },
+        "commerceConsumption": {
+          "$ref": "#/definitions/FinOpsBaseLicenseConsumption"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FinOpsProjectOperationsOrHumanResourcesLicenseConsumption": {
+      "type": "object",
+      "properties": {
+        "licenseRequirements": {
+          "$ref": "#/definitions/FinOpsLicenseRequirements"
+        },
+        "projectOperationsConsumption": {
+          "$ref": "#/definitions/FinOpsBaseLicenseConsumption"
+        },
+        "humanResourcesConsumption": {
+          "$ref": "#/definitions/FinOpsBaseLicenseConsumption"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FinOpsLicenseRequirements": {
+      "type": "object",
+      "properties": {
+        "usersNeedingLicenseCount": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FinOpsBaseLicenseConsumption": {
+      "type": "object",
+      "properties": {
+        "purchasedBaseUnassignedCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "purchasedBaseAssignedCount": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FinOpsAttachLicenseConsumption": {
+      "type": "object",
+      "properties": {
+        "purchasedAttachUnassignedCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "purchasedAttachAssignedCount": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "NeptuneOperationResult": {
+      "description": "The result of a Neptune operation.",
+      "type": "object",
+      "properties": {
+        "statusCode": {
+          "format": "int32",
+          "description": "The HTTP status code of the operation result.",
+          "type": "integer"
+        },
+        "isErrorResult": {
+          "description": "Indicates whether the operation result represents an error.",
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EntitlementReservedResponseModel": {
+      "description": "The reserved allocation for an entitlement within a scope.",
+      "type": "object",
+      "properties": {
+        "reserved": {
+          "$ref": "#/definitions/ReservedModel"
+        },
+        "entitlementId": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ReservedModel": {
+      "description": "The reserved quantity and unit for an entitlement.",
+      "type": "object",
+      "properties": {
+        "quantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "unit": {
+          "$ref": "#/definitions/EntitlementUnit"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentEntitlementResponseModel": {
+      "description": "An entitlement and its capacity/pay-as-you-go details scoped to a single environment, including environment metadata.",
+      "type": "object",
+      "properties": {
+        "entitlementId": {
+          "description": "The entitlement ID.",
+          "type": "string"
+        },
+        "productCategories": {
+          "description": "The entitlement product categories (e.g., D365Apps, Dataverse, Power Apps, Power Automate).",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/ProductCategory"
+          }
+        },
+        "environmentId": {
+          "description": "The environment ID.",
+          "type": "string"
+        },
+        "environmentType": {
+          "$ref": "#/definitions/EnvironmentType"
+        },
+        "environmentName": {
+          "description": "The environment name.",
+          "type": "string"
+        },
+        "isManagedEnvironment": {
+          "description": "Indicates whether the environment is a managed environment.",
+          "type": "boolean"
+        },
+        "location": {
+          "description": "The geographic location of the environment.",
+          "type": "string"
+        },
+        "scenario": {
+          "$ref": "#/definitions/EnvironmentScenario"
+        },
+        "disasterRecoveryState": {
+          "$ref": "#/definitions/EnvironmentDisasterRecoveryState"
+        },
+        "disasterRecoveryLocation": {
+          "$ref": "#/definitions/EnvironmentDisasterRecoveryLocation"
+        },
+        "entitlement": {
+          "$ref": "#/definitions/EnvironmentEntitlementDetailServiceModel"
+        },
+        "addons": {
+          "description": "The BAP addons attached to the environment.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentAddonResponseModel"
+          }
+        },
+        "permissions": {
+          "description": "The BAP permissions on the environment.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentPermissionResponseModel"
+          }
+        },
+        "cleanupOpportunitySize": {
+          "format": "int64",
+          "description": "The total storage in bytes that could be reclaimed.",
+          "type": "integer"
+        },
+        "recommendationCount": {
+          "format": "int32",
+          "description": "The number of active cleanup recommendations.",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentEntitlementDetailServiceModel": {
+      "description": "The entitlement capacity and pay-as-you-go details for an environment-scoped entitlement.",
+      "type": "object",
+      "properties": {
+        "unit": {
+          "$ref": "#/definitions/EntitlementUnit"
+        },
+        "capacity": {
+          "$ref": "#/definitions/EnvironmentCapacityEntitlementModel"
+        },
+        "payGo": {
+          "$ref": "#/definitions/CatalogPayGoEntitlementModel"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentCapacityEntitlementModel": {
+      "description": "The capacity entitlement for an environment scope.",
+      "type": "object",
+      "properties": {
+        "allocated": {
+          "$ref": "#/definitions/EntitlementAllocationModelV2"
+        },
+        "enforcementRules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AllocationEnforcementRule"
+          }
+        },
+        "consumed": {
+          "$ref": "#/definitions/EntitlementConsumedModel"
+        },
+        "availableQuantity": {
+          "format": "double",
+          "type": "number"
+        },
+        "status": {
+          "$ref": "#/definitions/OverageStatus"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentAddonResponseModel": {
+      "description": "A BAP addon attached to an environment.",
+      "type": "object",
+      "properties": {
+        "addonType": {
+          "$ref": "#/definitions/CurrencyType"
+        },
+        "allocated": {
+          "format": "double",
+          "type": "number"
+        },
+        "addonUnit": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentPermissionResponseModel": {
+      "description": "A BAP permission on an environment.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "displayName": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnvironmentType": {
+      "description": "The type of the environment.",
+      "enum": [
+        "None",
+        "Production",
+        "Sandbox",
+        "Support",
+        "Preview",
+        "Trial",
+        "Default",
+        "Developer",
+        "SubscriptionBasedTrial",
+        "Teams",
+        "NotSpecified",
+        "Platform"
+      ],
+      "type": "string"
+    },
+    "EnvironmentScenario": {
+      "description": "The scenario of the environment.",
+      "enum": [
+        "None",
+        "OfficeAi",
+        "M365CopilotChat",
+        "M365CompliantContainer"
+      ],
+      "type": "string"
+    },
+    "EnvironmentDisasterRecoveryState": {
+      "description": "The disaster recovery state of the environment.",
+      "enum": [
+        "NotSpecified",
+        "Enabled",
+        "Ready",
+        "Disabled",
+        "Unavailable"
+      ],
+      "type": "string"
+    },
+    "EnvironmentDisasterRecoveryLocation": {
+      "description": "The disaster recovery location of the environment.",
+      "enum": [
+        "NotSpecified",
+        "NearCopy",
+        "FarCopy"
+      ],
+      "type": "string"
+    },
+    "CurrencyType": {
+      "description": "The currency (capacity) type for an addon.",
+      "enum": [
+        "None",
+        "AppPass",
+        "AI",
+        "PortalLogins",
+        "PortalViews",
+        "PerFlowPlan",
+        "ApiCalls",
+        "VAConversations",
+        "AppPassForTeams",
+        "PAUnattendedRPA",
+        "PowerPagesAuthenticated",
+        "PowerPagesAnonymous",
+        "PAHostedRPA",
+        "Invoice",
+        "PortalAddOns",
+        "PowerAutomatePerProcess",
+        "MCSSessions",
+        "MCSMessages",
+        "SCMessages",
+        "ProcessMiningDataStorage",
+        "W365APAYGO",
+        "Internal_AI_BC",
+        "Internal_ISV_DataverseUserSync",
+        "Internal_AI_TemporaryCapacity",
+        "Internal_OmniChannelRecordRouting",
+        "Internal_OmniChannelVoice",
+        "Internal_OmniChannelLiveChat",
+        "Internal_OmniChannelDigitalMessaging",
+        "PowerPagesMigration_PortalAddOns_Authenticated",
+        "PowerPagesMigration_PortalAddOns_Anonymous",
+        "PowerPagesMigration_PortalLogins",
+        "PowerPagesMigration_PortalViews",
+        "MCSMessagesStandard",
+        "MCSMessagesGenAI",
+        "MCSMessagesUnbillable",
+        "TenantM365Copilot"
+      ],
+      "type": "string"
+    },
+    "EnvironmentEntitlementSnapshotResponseModelPagedResponse": {
+      "description": "A paged response with a continuation token.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnvironmentEntitlementSnapshotResponseModel"
+          }
+        },
+        "@odata.count": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        },
+        "continuationtoken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantEnvironmentResourceSnapshotResponseModelPagedResponse": {
+      "description": "A paged response with a continuation token.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TenantEnvironmentResourceSnapshotResponseModel"
+          }
+        },
+        "@odata.count": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        },
+        "continuationtoken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantEntitlementLicenseTrendResponseModelPagedResponse": {
+      "description": "A paged response with a continuation token.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TenantEntitlementLicenseTrendResponseModel"
+          }
+        },
+        "@odata.count": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        },
+        "continuationtoken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantUserResponseModelPagedResponse": {
+      "description": "A paged response with a continuation token.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TenantUserResponseModel"
+          }
+        },
+        "@odata.count": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        },
+        "continuationtoken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TenantResourceResponseModelPagedResponse": {
+      "description": "A paged response with a continuation token.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/TenantResourceResponseModel"
+          }
+        },
+        "@odata.count": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "@odata.nextLink": {
+          "type": "string"
+        },
+        "continuationtoken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ProductCategory": {
+      "description": "The product category associated with an entitlement.",
+      "enum": [
+        "NotSpecified",
+        "D365Apps",
+        "Dataverse",
+        "Fno",
+        "PowerApps",
+        "PowerAutomate",
+        "PowerPages",
+        "PowerVirtualAgent",
+        "CopilotStudio",
+        "PowerPlatform",
+        "Project",
+        "W365",
+        "D365CustomerInsights",
+        "D365ContactCenter",
+        "Teams",
+        "CloudForSustainability",
+        "CoWork",
+        "M365",
+        "ManagedApps"
+      ],
+      "type": "string"
+    },
+    "EntitlementUnit": {
+      "description": "The unit of measure for an entitlement.",
+      "enum": [
+        "NotSpecified",
+        "MB",
+        "Count",
+        "Hour"
+      ],
+      "type": "string"
+    },
+    "EntitlementConsumptionType": {
+      "description": "The consumption type for an entitlement.",
+      "enum": [
+        "NotSpecified",
+        "Snapshot",
+        "MonthToDate"
+      ],
+      "type": "string"
+    },
+    "OverageStatus": {
+      "description": "The overage status of an entitled capacity.",
+      "enum": [
+        "NotSpecified",
+        "WithinCapacity",
+        "Overage",
+        "CoveredOverage"
+      ],
+      "type": "string"
+    },
+    "LicenseTier": {
+      "description": "The tier of a license.",
+      "enum": [
+        "NotSpecified",
+        "Paid",
+        "Trial",
+        "Internal"
+      ],
+      "type": "string"
+    },
+    "LicenseSource": {
+      "description": "The source of a license.",
+      "enum": [
+        "NotSpecified",
+        "CommerceService",
+        "AppSource",
+        "Internal",
+        "PayAsYouGo"
+      ],
+      "type": "string"
+    },
+    "LicenseModelType": {
+      "description": "The license model type.",
+      "enum": [
+        "NotSpecified",
+        "Usl",
+        "Capacity",
+        "PayGo",
+        "TenantLicense"
+      ],
+      "type": "string"
+    },
+    "AllocationEnforcementRuleTypes": {
+      "description": "The type of an allocation enforcement rule.",
+      "enum": [
+        "NotSpecified",
+        "Alert",
+        "PayGo",
+        "TenantPool",
+        "Deny",
+        "Throttle"
+      ],
+      "type": "string"
+    },
     "AllocationsByEnvironmentPatchRequestModelV1": {
       "type": "object",
       "properties": {
@@ -1922,7 +4268,7 @@
       "properties": {
         "subscriptionId": {
           "format": "uuid",
-          "description": "The tenant subscription Id.",
+          "description": "The tenant subscription ID.",
           "type": "string",
           "example": {
             "subscriptionId": "00000000-0000-0000-0000-000000000000"
@@ -2243,6 +4589,69 @@
         }
       },
       "additionalProperties": false
+    },
+    "AllocationByEnvironmentModel": {
+      "description": "The currency allocations and enforcement rules for an environment.",
+      "type": "object",
+      "properties": {
+        "environmentId": {
+          "description": "The environment ID.",
+          "type": "string",
+          "example": "00000000-0000-0000-0000-000000000000"
+        },
+        "currencyAllocations": {
+          "description": "The per-currency allocations, including enforcement rules such as TenantPool that can be enabled or disabled.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CurrencyAllocationModel"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "CurrencyAllocationModel": {
+      "type": "object",
+      "properties": {
+        "currencyType": {
+          "$ref": "#/definitions/ExternalCurrencyType"
+        },
+        "allocated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "autoAllocated": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "enforcementRules": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EnforcementRule"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnforcementRule": {
+      "type": "object",
+      "properties": {
+        "ruleType": {
+          "$ref": "#/definitions/EnforcementRuleTypes"
+        },
+        "enabled": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EnforcementRuleTypes": {
+      "enum": [
+        "Alert",
+        "PayGo",
+        "TenantPool",
+        "Deny"
+      ],
+      "type": "string"
     },
     "GetTemporaryCurrencyEntitlementCountResponseModel": {
       "type": "object",
@@ -2595,7 +5004,7 @@
           "type": "string"
         }
       },
-      "additionalProperties": { }
+      "additionalProperties": {}
     },
     "StorageWarningThresholds": {
       "type": "object",

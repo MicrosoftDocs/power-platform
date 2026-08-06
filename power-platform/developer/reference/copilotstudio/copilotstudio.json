@@ -10,6 +10,67 @@
     "https"
   ],
   "paths": {
+    "/copilotstudio/environments/{EnvironmentId}/agents/{AgentId}/channels/{ChannelName}/download": {
+      "get": {
+        "tags": [
+          "Agent Channels"
+        ],
+        "summary": "Download agent channel manifest.",
+        "description": "Downloads the channel manifest package for the specified agent and channel as a zip file. Currently only the \"M365\" channel is supported.",
+        "operationId": "DownloadAgentChannelManifest",
+        "produces": [
+          "application/zip"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "EnvironmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "AgentId",
+            "description": "The bot ID.",
+            "required": true,
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "path",
+            "name": "ChannelName",
+            "description": "The channel name. Currently only \"M365\" is supported.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "includeAgentSchema",
+            "description": "Whether to include the agent schema in the downloaded manifest package.",
+            "type": "boolean",
+            "default": false
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The channel manifest package as a downloadable zip file.",
+            "schema": {
+              "format": "binary",
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
     "/copilotstudio/environments/{EnvironmentId}/bots/{BotId}/api/botAdminOperations": {
       "delete": {
         "tags": [
@@ -110,7 +171,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Get Bot Quarantine Status.",
+        "summary": "Get bot quarantine status.",
         "description": "Retrieve the quarantine status of a bot.",
         "operationId": "GetBotQuarantineStatus",
         "produces": [
@@ -155,7 +216,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Set Bot as Quarantined.",
+        "summary": "Set bot as quarantined.",
         "description": "Set the quarantine status of a bot to true.",
         "operationId": "SetBotAsQuarantined",
         "produces": [
@@ -200,7 +261,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Set Bot as Unquarantined.",
+        "summary": "Set bot as unquarantined.",
         "description": "Set the quarantine status of a bot to false.",
         "operationId": "SetBotAsUnquarantined",
         "produces": [
@@ -245,7 +306,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Get Connector Consent Bypass.",
+        "summary": "Get connector consent bypass.",
         "description": "Get the admin connector consent bypass setting for a bot.",
         "operationId": "GetConnectorConsentBypass",
         "produces": [
@@ -288,7 +349,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Set Connector Consent Bypass.",
+        "summary": "Set connector consent bypass.",
         "description": "Set the admin connector consent bypass setting for a bot.",
         "operationId": "SetConnectorConsentBypass",
         "consumes": [
@@ -344,7 +405,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "List Maker Evaluation Test Runs.",
+        "summary": "List maker evaluation test runs.",
         "description": "List all maker evaluation test runs for a bot.",
         "operationId": "ListMakerEvaluationTestRuns",
         "produces": [
@@ -389,7 +450,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Get Maker Evaluation Test Run by ID.",
+        "summary": "Get maker evaluation test run by ID.",
         "description": "Get the status and results of a specific maker evaluation test run.",
         "operationId": "GetMakerEvaluationTestRun",
         "produces": [
@@ -442,7 +503,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Download Maker Evaluation Snapshot.",
+        "summary": "Download maker evaluation snapshot.",
         "description": "Download the bot content snapshot associated with a specific maker evaluation test run as a ZIP file.",
         "operationId": "DownloadMakerEvaluationSnapshot",
         "produces": [
@@ -505,7 +566,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "List Maker Evaluation Test Sets.",
+        "summary": "List maker evaluation test sets.",
         "description": "Retrieves the list of test sets for a bot in a specified environment.",
         "operationId": "ListMakerEvaluationTestSets",
         "produces": [
@@ -550,7 +611,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Get Maker Evaluation Test Set by ID.",
+        "summary": "Get maker evaluation test set by ID.",
         "description": "Get a specific test set for maker evaluation of a bot.",
         "operationId": "GetMakerEvaluationTestSet",
         "produces": [
@@ -602,7 +663,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Run Maker Evaluation Test Set.",
+        "summary": "Run maker evaluation test set.",
         "description": "Trigger a maker evaluation test run for a specific test set.",
         "operationId": "RunMakerEvaluationTestSet",
         "consumes": [

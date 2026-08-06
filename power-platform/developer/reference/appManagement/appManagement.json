@@ -240,7 +240,7 @@
   },
   "definitions": {
     "ApplicationInstallState": {
-      "description": "Application install state for application packages",
+      "description": "Application install state for application packages.",
       "enum": [
         "All",
         "Installed",
@@ -372,7 +372,7 @@
       "additionalProperties": false
     },
     "ApplicationVisibility": {
-      "description": "Application visibility",
+      "description": "Application visibility.",
       "enum": [
         "None",
         "CrmAdminCenter",
@@ -383,7 +383,7 @@
       "type": "string"
     },
     "CatalogVisibility": {
-      "description": "Catalog visibility for the application",
+      "description": "Catalog visibility for the application.",
       "enum": [
         "None",
         "AdminCenter",
@@ -480,7 +480,7 @@
           "type": "string"
         },
         "learnMoreUrl": {
-          "description": "Learn more url for the application",
+          "description": "Learn more URL for the application",
           "type": "string"
         },
         "termsOfServiceBlobUris": {
@@ -577,7 +577,7 @@
       "type": "string"
     },
     "InstancePackageState": {
-      "description": "State of the instance package",
+      "description": "State of the instance package.",
       "enum": [
         "None",
         "Installed",
@@ -663,7 +663,7 @@
       "additionalProperties": false
     },
     "TpsInstallRequestPayload": {
-      "description": "Payload to be sent during installation of the package",
+      "description": "Payload to be sent during installation of the package.",
       "type": "object",
       "properties": {
         "payloadValue": {

@@ -424,7 +424,7 @@
   },
   "definitions": {
     "AdvisorActionRequest": {
-      "description": "The request with details to carry out an action on resource(s)",
+      "description": "The request with details to carry out an action on resource(s).",
       "required": [
         "scenario",
         "actionParameters"
@@ -493,7 +493,7 @@
       }
     },
     "AdvisorActionResponse": {
-      "description": "The response for action performed on resources",
+      "description": "The response for action performed on resources.",
       "type": "object",
       "properties": {
         "results": {
@@ -505,7 +505,7 @@
       }
     },
     "AdvisorActionResult": {
-      "description": "The result of an action performed on a resource",
+      "description": "The result of an action performed on a resource.",
       "type": "object",
       "properties": {
         "resourceId": {
@@ -537,7 +537,7 @@
       }
     },
     "AdvisorRecommendation": {
-      "description": "Information for a recommendation",
+      "description": "Information for a recommendation.",
       "type": "object",
       "properties": {
         "scenario": {
@@ -552,7 +552,7 @@
       }
     },
     "AdvisorRecommendationDetails": {
-      "description": "Details for a recommendation",
+      "description": "Details for a recommendation.",
       "type": "object",
       "properties": {
         "resourceCount": {
@@ -576,7 +576,7 @@
       }
     },
     "AdvisorRecommendationIEnumerableResponseWithContinuation": {
-      "description": "Paged list of recommendations",
+      "description": "Paged list of recommendations.",
       "type": "object",
       "properties": {
         "value": {
@@ -594,7 +594,7 @@
       }
     },
     "AdvisorRecommendationResource": {
-      "description": "Details of a resource included in a recommendation",
+      "description": "Details of a resource included in a recommendation.",
       "type": "object",
       "properties": {
         "resourceName": {
@@ -668,7 +668,7 @@
       }
     },
     "AdvisorRecommendationResourceIEnumerableResponseWithContinuation": {
-      "description": "Paged list of recommendation resources",
+      "description": "Paged list of recommendation resources.",
       "type": "object",
       "properties": {
         "value": {
@@ -686,14 +686,14 @@
       }
     },
     "IEnumerableAdvisorScenario": {
-      "description": "List of recommendation scenarios",
+      "description": "List of recommendation scenarios.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/AdvisorScenario"
       }
     },
     "AdvisorScenario": {
-      "description": "The recommendation scenario",
+      "description": "The recommendation scenario.",
       "type": "object",
       "properties": {
         "scenario": {
@@ -709,14 +709,14 @@
       }
     },
     "IEnumerableAdvisorAction": {
-      "description": "List of scenario actions",
+      "description": "List of scenario actions.",
       "type": "array",
       "items": {
         "$ref": "#/definitions/AdvisorAction"
       }
     },
     "AdvisorAction": {
-      "description": "The allowed action",
+      "description": "The allowed action.",
       "type": "object",
       "properties": {
         "actionType": {
