@@ -4,10 +4,9 @@ description: Learn about the resource types and fields available in Power Platfo
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 07/09/2026
+ms.date: 08/06/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
-
 ---
 
 # Power Platform inventory schema reference
@@ -30,6 +29,7 @@ Every record in the `PowerPlatformResources` table has a **type** field that ide
 | Agent flows | `microsoft.powerautomate/agentflows` |
 | Workflow agent flows | `microsoft.powerautomate/m365agentflows` |
 | Copilot Studio agents | `microsoft.copilotstudio/agents` |
+| Connectors | `microsoft.powerplatformconnector/connectors` |
 | Environments | `microsoft.powerplatform/environments` |
 | Environment groups | `microsoft.powerplatform/environmentgroups` |
 
@@ -51,7 +51,10 @@ All resource types in the PowerPlatformResources table include the following fie
 
 ## Connector inventory (preview)
 
-Power Platform inventory captures the connectors and connector operations used by each resource. This data appears as a **Connectors** column across the Power Platform admin center inventory grids. The unified **Manage > Inventory** page and the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate**, and as the `properties.powerPlatformConnectors` array in programmatic queries.
+Power Platform inventory represents connectors in two related ways:
+
+- **Connectors used by resources**: the connectors and operations that each app, flow, or agent uses, captured as the `properties.powerPlatformConnectors` array. This data also appears as a **Connectors** column across the Power Platform admin center inventory grids: the unified **Manage** > **Inventory** page and the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate**.
+- **Connectors as a resource type**: each connector available in your tenant is also its own inventory record, under the `microsoft.powerplatformconnector/connectors` resource type. For its fields, see [Connectors as a resource type](#connectors-as-a-resource-type).
 
 The following resource types emit connector data: canvas apps, model-driven apps, cloud flows, agent flows, workflow agent flows, and Copilot Studio agents (including Microsoft 365 Copilot Agent Builder).
 
@@ -95,6 +98,27 @@ For flows (cloud flows, agent flows, and workflow agent flows), the inventory ad
 > [!NOTE]
 > Copilot Studio agents emit additional per-operation metadata that reflects how agents use connectors as tools or knowledge sources. For details, see [Microsoft Copilot Studio Agent inventory schema](/microsoft-copilot-studio/admin-agent-inventory#connector-properties).
 
+### Connectors as a resource type
+
+Power Platform inventory not only captures connector usage on individual resources but also includes connectors as a resource type, `microsoft.powerplatformconnector/connectors`. Each record represents a connector available in your tenant and lists the operations it exposes, along with publisher and tier metadata.
+
+> [!NOTE]
+> Connectors are catalog entities rather than resources created in an environment, so they're an exception to the [shared resource fields](#shared-resource-fields). The **Created on**, **Created by**, and **Location** fields, and owner and environment information, don't apply to connectors. Only **Item name** (`properties.displayName`), **Item type** (`type`), and **Item ID** (`name`) apply.
+
+| API field path | Data type | Description | Example | Status |
+|---|---|---|---|---|
+| `properties.connectorId` | string | The identifier of the connector. | `shared_sharepointonline` | Preview |
+| `properties.description` | string | A description of the connector. | `SharePoint helps organizations share and collaborate with colleagues, partners, and customers.` | Preview |
+| `properties.publisher` | string | The publisher of the connector. | `Microsoft` | Preview |
+| `properties.tier` | string | The licensing tier of the connector, such as `Standard` or `Premium`. | `Standard` | Preview |
+| `properties.releaseTag` | string | The release stage of the connector, such as `Production` or `Preview`. | `Production` | Preview |
+| `properties.isDeprecated` | boolean | Whether the connector is deprecated. | `false` | Preview |
+| `properties.operations` | array | The operations that the connector exposes. | See following rows. | Preview |
+| `properties.operations[].operationId` | string | The identifier of the operation. | `GetItems` | Preview |
+| `properties.operations[].displayName` | string | The display name of the operation. | `Get items` | Preview |
+| `properties.operations[].description` | string | A description of the operation. | `Gets items from a SharePoint list.` | Preview |
+| `properties.operations[].method` | string | The HTTP method of the operation. | `GET` | Preview |
+
 ### Known limitations
 
 - **Tabular connectors don't report operations.** Connectors bound as data sources (such as SharePoint, Dataverse, SQL Server, and Excel Online) appear in `powerPlatformConnectors` but emit an empty `operations` array.
@@ -114,9 +138,6 @@ For flows (cloud flows, agent flows, and workflow agent flows), the inventory ad
 | `properties.isQuarantined` | boolean | Whether the app is quarantined. | `false` | Generally available |
 | `properties.powerPlatformConnectors` | array | The connectors and operations used by the app. See [Connector inventory (preview)](#connector-inventory-preview). | See section. | Preview |
 
-> [!NOTE]
-> The `properties.isQuarantined` field is available through the API but isn't yet shown in the Power Platform admin center inventory experience.
-
 ## Model-driven apps
 
 | API field path | Data type | Description | Example | Status |
@@ -129,9 +150,6 @@ For flows (cloud flows, agent flows, and workflow agent flows), the inventory ad
 | `properties.appModuleId` | string | The Dataverse app module ID. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.logicalName` | string | The Dataverse logical name of the app. | `contoso_expensereport` | Generally available |
 | `properties.powerPlatformConnectors` | array | The connectors and operations used by the app. See [Connector inventory (preview)](#connector-inventory-preview). | See section. | Preview |
-
-> [!NOTE]
-> The `properties.isQuarantined` field is available through the API but isn't yet shown in the Power Platform admin center inventory experience.
 
 > [!NOTE]
 > The `properties.powerPlatformConnectors` field rarely returns data for model-driven apps, because model-driven apps don't use connectors directly. Connectors used by embedded canvas pages are captured on the canvas page record instead.
@@ -150,9 +168,6 @@ For flows (cloud flows, agent flows, and workflow agent flows), the inventory ad
 > [!NOTE]
 > The subtype values correspond to [code apps](/power-apps/developer/code-apps/overview) and [vibe apps](/power-apps/vibe/overview), respectively.
 
-> [!NOTE]
-> The `properties.isQuarantined` field is available through the API but isn't yet shown in the Power Platform admin center inventory experience.
-
 ## App Builder apps
 
 For more information, see [App Builder](https://www.microsoft.com/power-platform/topics/app-builder).
@@ -165,9 +180,6 @@ For more information, see [App Builder](https://www.microsoft.com/power-platform
 | `properties.lastModifiedBy` | string | The object ID of the user who last modified the app. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.isQuarantined` | boolean | Whether the app is quarantined. | `false` | Generally available |
 | `properties.subType` | string | The subtype of the app. Currently `appBuilderApp`. | `appBuilderApp` | Generally available |
-
-> [!NOTE]
-> The `properties.isQuarantined` field is available through the API but isn't yet shown in the Power Platform admin center inventory experience.
 
 ## Cloud flows
 
