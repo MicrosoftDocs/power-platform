@@ -25,6 +25,7 @@ You can use the **Copy** option in the Microsoft Power Platform admin center to 
 > - The target environment will be listed in the **Select environment to overwrite** drop-down. If you don't see an environment, that means you can't overwrite it. For example, you can't overwrite production environments so you won't see any environments of type production.  
 >   :::image type="content" source="media/copy-environment/copy-environment-no-target.png" alt-text="No target for copying environment.":::
 > - You can only copy to an environment in the same tenant and region.
+> - The target environment cannot be a managed environment
 > - If an environment is [enabled for Virtual Network support](vnet-support-overview.md), you can only copy to an environment in the same enterprise policy.
 > - Components that have not been added to a solution (including canvas apps, flows, custom connectors, and connections) might not be part of the copy. You should validate your apps post copy.
 > - For each canvas App only up to 20 of the most recent revisions will be copied over.
