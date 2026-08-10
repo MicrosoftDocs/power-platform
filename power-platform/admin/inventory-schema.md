@@ -4,7 +4,7 @@ description: Learn about the resource types and fields available in Power Platfo
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 08/06/2026
+ms.date: 08/10/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -223,6 +223,10 @@ For more information, see [App Builder](https://www.microsoft.com/power-platform
 ## Copilot Studio agents
 
 Copilot Studio agents have a rich set of properties beyond the shared fields, including core, identity, and configuration properties. For the full schema, see [Microsoft Copilot Studio Agent inventory schema](/microsoft-copilot-studio/admin-agent-inventory).
+
+| API field path | Data type | Description | Example |
+|---|---|---|---|
+| `properties.isCLIAgent` | boolean | Whether the agent was created through the GitHub Copilot harness. | `true` |
 
 ## Environments
 
