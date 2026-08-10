@@ -4,7 +4,7 @@ description: Learn how to streamline Power Platform development and releases by 
 #customer intent: As a developer, I want to integrate Dataverse environments with Git so that I can manage source control and enable collaborative development.
 author: carcla
 ms.author: v-caclaesson
-ms.date: 05/19/2026
+ms.date: 08/07/2026
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.reviewer: jhaskett-msft
@@ -17,7 +17,7 @@ As Power Platform adoption scales, organizations often struggle to maintain a co
 This reference architecture addresses these challenges by combining native Dataverse Git integration with pipelines in Power Platform, Azure DevOps governance, and AI-assisted release notes generation to create a repeatable enterprise application lifecycle management (ALM) pattern.
 
 > [!TIP]  
-> This article provides an example scenario and a generalized example architecture to illustrate how to use Dataverse Git integration, pipelines in Power Platform, and Copilot Studio to automate deployments and generate relates notes. The architecture example can be modified for many different scenarios and industries.
+> This article provides an example scenario and a generalized example architecture to illustrate how to use Dataverse Git integration, pipelines in Power Platform, and Copilot Studio to automate deployments and generate release notes. The architecture example can be modified for many different scenarios and industries.
 
 ## Architecture diagram
 
@@ -43,7 +43,7 @@ Makers and developers use one of several Dataverse development environments to m
 
 ### Test and validation workflow
 
-1. From the main branch, use a [custom pipeline host](../../alm/custom-host-pipelines.md) to promote the packaged solution into the test environment directly from the source code in the main branch by using the [Source Control deployment type](../../alm/git-integration/source-control-operations.md).
+1. Synchronize changes from the main branch back to the primary development environment. Use pipelines in Power Platform to promote the solution from the primary development environment to the test environment.
 
 1. Use the test environment for technical validation, integration checks, and smoke testing.
 
