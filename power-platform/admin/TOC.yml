@@ -216,7 +216,7 @@
                       href: environment-groups.md
                     - name: Rules for environment groups
                       href: environment-groups-rules.md
-                    - name: Environment group rules gallery (preview)
+                    - name: Environment group rules gallery
                       href: environment-group-rules-gallery.md
                     - name: Rules
                       items:
