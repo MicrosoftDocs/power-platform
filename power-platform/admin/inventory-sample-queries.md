@@ -3,8 +3,8 @@ title: Power Platform inventory sample queries
 description: Sample Kusto Query Language (KQL) queries you can run against Power Platform inventory data in Azure Resource Graph, including queries for resource counts, field discovery, resource lookups, and connector usage.
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: smurkute
-ms.date: 05/28/2026
+ms.reviewer: ellenwehrle
+ms.date: 08/10/2026
 ms.topic: concept-article
 ---
 
@@ -78,6 +78,25 @@ PowerPlatformResources
 
 > [!TIP]
 > You can find the agent's ID in the Copilot Studio URL when viewing the agent, or in the **Name** column of the inventory table.
+
+### Identify GitHub Copilot harness agents
+
+GitHub Copilot harness agents appear in Power Platform inventory alongside other Copilot Studio agents. Filter on `properties.isCLIAgent` to identify harness-created agents across environments.
+
+```Kusto
+PowerPlatformResources
+| where type == "microsoft.copilotstudio/agents"
+| extend properties = parse_json(properties)
+| where tobool(properties.isCLIAgent) == true
+| project agentName = tostring(properties.displayName),
+    agentId = name,
+    environmentId = tostring(properties.environmentId),
+    createdBy = tostring(properties.createdBy),
+    createdIn = tostring(properties.createdIn),
+    createdAt = todatetime(properties.createdAt),
+    isCLIAgent = tobool(properties.isCLIAgent)
+| order by createdAt desc
+```
 
 ### Items created in the past 24 hours
 
