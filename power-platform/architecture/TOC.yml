@@ -97,6 +97,8 @@
               href: reference-architectures/dataverse-background-operations.md
         - name: Integrate with external systems
           items:
+            - name: Integrate Dynamics 365 finance and operations apps with Power Platform
+              href: reference-architectures/finance-and-operations-dataverse.md
             - name: Integrate legacy data with Power Automate and SharePoint
               href: reference-architectures/app-legacy-data-integration.md
             - name: ​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables
