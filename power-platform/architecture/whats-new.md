@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 07/14/2026
+ms.date: 08/11/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -17,6 +17,12 @@ ms.custom:
 # What's new in the Power Platform and Copilot Studio Architecture Center
 
 Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
+
+## August 2026
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Integrate Dynamics 365 finance and operations apps with Power Platform](reference-architectures/finance-and-operations-dataverse.md)
 
 ## July 2026
 
