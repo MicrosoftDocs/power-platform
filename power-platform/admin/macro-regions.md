@@ -17,7 +17,7 @@ search.audienceType:
 
 A macro region geography represents the data residency boundary that aligns with data residency laws for a given geography. This article lists the regions available in a specific macro region geography.
 
-The macro region enhancement to environment provisioning enables you to select a macro region geography during environment creation. This feature applies to public cloud only and is being rolled out globally. At this point, it's implemented for Canada, Norway, Switzerland, and France.
+The macro region enhancement to environment provisioning enables you to select a macro region geography during environment creation. This feature applies to public cloud only and is rolling out globally. At this time, it’s available in select geographies.
 
 As an admin, you can select a macro region geography, such as North America, Europe, or Asia-Pacific instead of a specific [datacenter region](/power-platform/admin/new-datacenter-regions). The platform then automatically assigns the optimal [datacenter region](/power-platform/admin/new-datacenter-regions) within the selected macro region geography based on capacity, availability, and performance considerations. This approach helps ensure a more scalable, resilient, and performant experience for all customers while continuing to respect data residency commitments. The intelligent region selection ensures environments are placed in regions with optimal capacity and health, improving uptime and responsiveness.
 
