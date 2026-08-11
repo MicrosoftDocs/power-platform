@@ -129,7 +129,7 @@ If an answer seems unclear or incomplete, engineers can escalate the conversatio
 
 ## Implementation approach
 
-The team initially built a knowledge ingestion pipeline by using Microsoft Excel, Power Automate, SharePoint, and Dataverse. By using the Copilot Studio Kit feature [SharePoint synchronization](/microsoft-copilot-studio/guidance/kit-file-synchronization), the team brought documents from SharePoint into Dataverse as Copilot Studio knowledge documents. To further improve response accuracy and retrieval quality, the team later replaced Dataverse with an Azure AI Search index.
+The team initially built a knowledge ingestion pipeline by using Microsoft Excel, Power Automate, SharePoint, and Dataverse. By using the Copilot Agent Kit (formerly known as *Copilot Studio Kit*) feature [SharePoint synchronization](/microsoft-copilot-studio/guidance/kit-file-synchronization), the team brought documents from SharePoint into Dataverse as Copilot Studio knowledge documents. To further improve response accuracy and retrieval quality, the team later replaced Dataverse with an Azure AI Search index.
 
 With the Dataverse approach, Atlas used multiple Copilot Studio topics, one for each city. During ingestion, each document was placed into the appropriate city topic, which kept the knowledge base organized and improved retrieval accuracy. After moving to Azure AI Search, the team consolidated everything into a single Copilot Studio topic and achieved knowledge isolation through index filtering instead of topic separation.
 
@@ -185,7 +185,7 @@ The Dunaway team shares three key takeaways:
 
 ## Looking ahead
 
-Dunaway plans to expand Atlas's capabilities, including adding tools that automatically check drawings against city codes to support QA/QC workflows. Atlas currently supports document‑related work in roughly half of Dunaway's cities, and its coverage continues to expand to encompass all of them. The team uses Copilot Studio Kit for monitoring and plans to deepen that usage, with [conversation transcript analysis](/microsoft-copilot-studio/guidance/kit-conversation-analyzer) as one of the next focus areas.
+Dunaway plans to expand Atlas's capabilities, including adding tools that automatically check drawings against city codes to support QA/QC workflows. Atlas currently supports document‑related work in roughly half of Dunaway's cities, and its coverage continues to expand to encompass all of them. The team uses Copilot Agent Kit for monitoring and plans to deepen that usage, with [conversation transcript analysis](/microsoft-copilot-studio/guidance/kit-conversation-analyzer) as one of the next focus areas.
 
 Beyond Atlas, the team launched DAVE, the Dunaway AI Virtual Expert, a company‑wide conversational agent that brings HR, IT, and accounting support into a single experience. Employees can get answers, complete forms, and submit support requests in one place, reducing IT tickets by 80 percent. DAVE has quickly become part of the culture, embraced by teams as a true colleague.
 
@@ -198,6 +198,6 @@ Beyond Atlas, the team launched DAVE, the Dunaway AI Virtual Expert, a company�
 - [Quickstart: Create and deploy an agent](/microsoft-copilot-studio/fundamentals-get-started)
 - [Using Adaptive Cards in Copilot Studio](/microsoft-copilot-studio/adaptive-cards-overview)
 - [Microsoft Copilot Studio guidance documentation](/microsoft-copilot-studio/guidance/)
-- [Copilot Studio Kit overview](/microsoft-copilot-studio/guidance/kit-overview)
+- [Copilot Agent Kit overview](/microsoft-copilot-studio/guidance/kit-overview)
 - [What is Azure Functions?](/azure/azure-functions/functions-overview)
 - [What is Azure AI Search?](/azure/search/search-what-is-azure-search)

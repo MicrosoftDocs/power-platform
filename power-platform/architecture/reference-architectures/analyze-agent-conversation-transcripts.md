@@ -5,21 +5,21 @@ description: Learn how to extract and analyze agent conversation transcripts wit
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: example-scenario
-ms.date: 12/05/2025
+ms.date: 07/17/2026
 ms.author: pubehera
 ms.reviewer: jhaskett-msft
 ---  
 
 # Extract and analyze agent conversation transcripts
 
-Extracting and analyzing agent conversation transcripts can help organizations gain valuable insights into user interactions, improve agent performance, and enhance customer satisfaction. 
+Extracting and analyzing agent conversation transcripts helps organizations gain valuable insights into user interactions, improve agent performance, and enhance customer satisfaction.
 
 This architecture demonstrates how to automatically capture, analyze, and visualize information from agent conversation transcripts. By using advanced AI algorithms supported by structured prompts, the system efficiently processes conversational data, extracts critical insights, and enhances decision-making. It also provides a comprehensive overview of the extracted data for better strategic planning.
 
 > [!TIP]
-> You can find a sample implementation of this feature in the [Copilot Studio Kit](/microsoft-copilot-studio/guidance/kit-overview). The Conversation Analyzer feature in the Copilot Studio Kit analyzes conversation transcripts and finds the desired actionable insights.
+> You can find a sample implementation of this feature in the [Copilot Agent Kit](/microsoft-copilot-studio/guidance/kit-overview). The Conversation Analyzer feature in the Copilot Agent Kit analyzes conversation transcripts and finds the desired actionable insights.
 >
-> Learn more: [Analyze conversation transcripts with Copilot Studio Kit (preview)](/microsoft-copilot-studio/guidance/kit-conversation-analyzer)
+> Learn more: [Analyze conversation transcripts with Copilot Agent Kit](/microsoft-copilot-studio/guidance/kit-conversation-analyzer)
 
 ## Architecture diagram
 

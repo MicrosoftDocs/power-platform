@@ -32,7 +32,7 @@ Understanding Copilot Studio design and implementation concepts and exploring so
 | Adopt | Adopt an [agentic AI maturity model for successful adoption](/microsoft-copilot-studio/guidance/maturity-model-overview) and [build thriving Copilot Studio communities](/microsoft-copilot-studio/guidance/community-framework-overview). Review [real-world transformation stories](/microsoft-copilot-studio/guidance/adoption-case-studies) that demonstrate how customers are using Copilot Studio to create innovative solutions. |
 | [**Manage**](/microsoft-copilot-studio/guidance/sec-gov-intro) | Govern, secure, and operate agents at scale through environment controls, data policies, access management, monitoring, and compliance processes. |
 | [**Improve**](/microsoft-copilot-studio/guidance/improve-overview) | Continuously optimize agent performance using analytics, key performance indicators (KPIs), user feedback, and iterative refinement to increase quality and business impact. |
-| Extend | Expand agent capabilities and integrations with [Copilot Studio Kit](/microsoft-copilot-studio/guidance/kit-overview) and SDKs like the [Microsoft 365 Agents SDK](/microsoft-365-copilot/extensibility/m365-agents-sdk) and the [Microsoft Agent 365 SDK](/microsoft-agent-365/developer/). |
+| Extend | Expand agent capabilities and integrations by using [Copilot Agent Kit](/microsoft-copilot-studio/guidance/kit-overview) and SDKs like the [Microsoft 365 Agents SDK](/microsoft-365-copilot/extensibility/m365-agents-sdk) and the [Microsoft Agent 365 SDK](/microsoft-agent-365/developer/). |
 
 ## Reference architectures
 

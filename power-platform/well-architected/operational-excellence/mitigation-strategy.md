@@ -4,7 +4,7 @@ description: Learn how to design a standardized strategy for handling deployment
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 08/15/2025
+ms.date: 07/17/2026
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -130,7 +130,7 @@ The [Deployment page](/power-platform/alm/admin-deployment-hub) in the Power Pla
 
 [Automate tests with Azure Pipelines](/power-apps/maker/canvas-apps/test-studio-classic-pipeline-editor).
 
-Use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) to configure agents and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the agent responses are evaluated against expected results.
+Use the [Copilot Agent Kit](/microsoft-copilot-studio/guidance/kit-overview) to configure agents and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the agent responses are evaluated against expected results.
 
 [Environment variables in solutions](/power-apps/maker/data-platform/environmentvariables) store the parameter keys and values, which then serve as input to other application objects. Separating the parameters from the consuming objects allows you to change the values within the same environment or when you migrate solutions to other environments.
 

@@ -4,7 +4,7 @@ description: Learn how to establish a reliability testing strategy that tests re
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 08/18/2025
+ms.date: 07/17/2026
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -148,7 +148,7 @@ You can use [Power Platform Playwright samples](../../developer/playwright-sampl
 
 If your workload includes Azure resources, you can use [Azure Chaos Studio](https://azure.microsoft.com/services/chaos-studio), a managed service that uses chaos engineering to help you measure, understand, and improve your cloud application and service resilience.
 
-If your workload includes a Microsoft Copilot Studio agent, you can use the [Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) to configure agents and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the agent responses are evaluated against expected results.
+If your workload includes a Microsoft Copilot Studio agent, you can use the [Copilot Agent Kit](/microsoft-copilot-studio/guidance/kit-overview) to configure agents and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the agent responses are evaluated against expected results.
 
 ## Related information
 

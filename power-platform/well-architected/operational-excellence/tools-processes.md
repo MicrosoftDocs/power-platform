@@ -4,7 +4,7 @@ description: Learn how to standardize your tools and processes and optimize your
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
-ms.date: 08/15/2025
+ms.date: 07/17/2026
 ms.subservice: well-architected
 ms.topic: concept-article
 ---
@@ -124,7 +124,7 @@ The [Deployment page](/power-platform/alm/admin-deployment-hub) in the Power Pla
 
 [Power CAT Code Review Tool](https://marketplace.microsoft.com/en-us/product/dynamics-365/microsoftpowercatarch.powercattools?tab=Overview) allows you to perform code reviews.
 
-[Power CAT Copilot Studio Kit](https://github.com/microsoft/Power-CAT-Copilot-Studio-Kit) allows you to configure agents and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the agent responses are evaluated against expected results.
+[Copilot Agent Kit](/microsoft-copilot-studio/guidance/kit-overview) allows you to configure agents and tests. By running individual tests against the Copilot Studio APIs (Direct Line), the agent responses are evaluated against expected results.
 
 [Microsoft Power Platform CLI](/power-platform/developer/cli/introduction) (PAC CLI) is a command-line tool that supports the import and export of Power Platform solutions, and packing to and unpacking from Power Platform solutions source files. PAC CLI is available as a [standalone command-line tool](https://aka.ms/PowerAppsCLI) or as an [extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=microsoft-IsvExpTools.powerplatform-vscode).
 
