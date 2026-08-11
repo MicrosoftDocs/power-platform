@@ -896,6 +896,8 @@
                   href: programmability-tutorial-rbac-role-assignment.md
                 - name: "Tutorial: Manage advanced connector policies programmatically"
                   href: programmability-tutorial-manage-advanced-connector-policies.md
+                - name: "Tutorial: Manage Copilot credit allocations programmatically"
+                  href: programmability-tutorial-manage-copilot-credit-allocations.md
             - name: PowerShell
               items:
                 - name: Getting started
