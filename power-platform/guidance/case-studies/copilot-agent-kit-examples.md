@@ -156,9 +156,9 @@ New releases are announced [on GitHub](https://github.com/microsoft/Power-CAT-Co
 
 **Copilot Agent Kit**
 
-- [Copilot Studio Kit overview](/microsoft-copilot-studio/guidance/kit-overview)
-- [Copilot Studio Kit prerequisites](/microsoft-copilot-studio/guidance/kit-prerequisites)
-- [Install Copilot Studio Kit](/microsoft-copilot-studio/guidance/kit-install)
+- [Copilot Agent Kit overview](/microsoft-copilot-studio/guidance/kit-overview)
+- [Copilot Agent Kit prerequisites](/microsoft-copilot-studio/guidance/kit-prerequisites)
+- [Install Copilot Agent Kit](/microsoft-copilot-studio/guidance/kit-install)
 
 **Copilot Studio**
 

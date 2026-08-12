@@ -11,7 +11,7 @@ metadata:
   ms.topic: landing-page # Required
   author: manuelap-msft #Required; your GitHub user alias, with correct capitalization.
   ms.author: mapichle #Required; microsoft alias of author; optional team alias.
-  ms.date: 10/27/2025
+  ms.date: 07/17/2026
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | tutorial | overview | quickstart | reference | sample | tutorial | video | whats-new
 
@@ -55,16 +55,16 @@ landingContent:
              text: Install the ALM Accelerator
            - url: /power-platform/guidance/alm-accelerator/new-maker-experience
              text: Use the ALM Accelerator
-  - title: Copilot Studio Kit
+  - title: Copilot Agent Kit
     linkLists:
       - linkListType: overview
         links:
            - url: /microsoft-copilot-studio/guidance/kit-overview
-             text: What is the Copilot Studio Kit
+             text: What is the Copilot Agent Kit
            - url: /microsoft-copilot-studio/guidance/kit-test-capabilities
-             text: What's in the Copilot Studio Kit
+             text: What's in the Copilot Agent Kit
            - url: /microsoft-copilot-studio/guidance/kit-prerequisites
-             text: Set up and configure Copilot Studio Kit
+             text: Set up and configure Copilot Agent Kit
            - url: /microsoft-copilot-studio/guidance/kit-run-tests
-             text: Use Copilot Studio Kit to run tests
+             text: Use Copilot Agent Kit to run tests
   
