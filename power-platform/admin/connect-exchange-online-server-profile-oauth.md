@@ -66,6 +66,46 @@ To allow your app to have access to Exchange Online, you need to grant **Office 
 
 5. In the confirmation dialog, select **Yes**.
 
+6. Whitelist the application with Exchange web services & configure Graph permissions.
+
+   [Exchange Online is retiring EWS service](https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361) in phases. Starting October 2026, only the traffic from [whitelisted tenants](https://techcommunity.microsoft.com/blog/exchange/introducing-ewsallowedappids-preparing-for-the-final-phase-of-ews-retirement/4529471) is allowed. EWS service is completely retired by April 2027.
+
+   Power platform is transitioning support for Cross Tenant email sync functionality from EWS to Graph by April 2027. Customers need to configure the following to ensure service continuity and smooth transition during this phase.
+
+   - **Whitelist Tenant with EWS**. Please follow these [instructions.](https://techcommunity.microsoft.com/blog/exchange/introducing-ewsallowedappids-preparing-for-the-final-phase-of-ews-retirement/4529471)
+
+
+   - **Configure permissions for Graph API**
+
+     (Please do this for **all applications created for cross-tenant email sync.** Some customers have multiple applications configured.)
+
+      - If you want to configure the permissions via Powershell, please use [This Script](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/ServerSideSync/Grant-SssGraphApplicationPermissions.ps1). This needs to be executed by Global Administrator.
+
+      - Or, If you want to Configure permissions manually on Azure portal.
+         1. Select **API permissions** &gt; **Add a permission**.
+
+         2. Select the **MS Graph**.
+
+         3. Select **Application Permissions**.
+
+         4. Search and add the following permissions.
+
+            | Permission |
+            | --- |
+            | Mail.ReadWrite |
+            | Mail.Send |
+            | MailboxSettings.ReadWrite |
+            | Calendars.ReadWrite |
+            | Contacts.ReadWrite |
+            | Tasks.ReadWrite.All |
+            | MailboxConfigItem.ReadWrite |
+            | Chat.Read.All |
+            | OnlineMeetings.ReadWrite.All |
+            | CallRecords.Read.All |
+
+         5. On the **Configured permissions** screen, select **Grant admin consent for *tenant name***.
+
+
 ## Email server profile for Exchange Online with authentication type Oauth (Cross Tenant)
 
 To [create an email server profile for Exchange Online that uses Oauth (Cross Tenant) authentication](connect-exchange-online.md#create-an-email-server-profile-for-exchange-online), you need to collect the following information from the Azure portal:
