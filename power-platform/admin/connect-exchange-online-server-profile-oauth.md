@@ -68,9 +68,7 @@ To allow your app to have access to Exchange Online, you need to grant **Office 
 
 6. Allowlist the application with Exchange web services & configure Graph permissions.
 
-   [Exchange Online is retiring EWS service](https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361) in phases. Starting October 2026, only the traffic from [Allowlisted tenants](https://techcommunity.microsoft.com/blog/exchange/introducing-ewsallowedappids-preparing-for-the-final-phase-of-ews-retirement/4529471) is allowed. EWS service is completely retired by April 2027.
-
-   Power platform is transitioning support for Cross Tenant email sync functionality from EWS to Graph by April 2027. Customers need to configure the following to ensure service continuity and smooth transition during this phase.
+   [Exchange Online is retiring EWS service](https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361) in phases. Starting October 2026, only the traffic from [Allowlisted tenants](https://techcommunity.microsoft.com/blog/exchange/introducing-ewsallowedappids-preparing-for-the-final-phase-of-ews-retirement/4529471) is allowed. EWS service is completely retired by April 2027. Power platform is transitioning support for Cross Tenant email sync functionality from EWS to Graph by April 2027. Customers need to configure the following to ensure service continuity and smooth transition during this phase.
 
    - **Allowlist the Tenant with EWS**. Please follow these [instructions.](https://techcommunity.microsoft.com/blog/exchange/introducing-ewsallowedappids-preparing-for-the-final-phase-of-ews-retirement/4529471)
 
