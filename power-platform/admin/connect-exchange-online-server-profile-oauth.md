@@ -79,7 +79,7 @@ To allow your app to have access to Exchange Online, you need to grant **Office 
 
       - If you want to configure the permissions via Powershell, please use [This Script](https://github.com/microsoft/PowerApps-Samples/blob/master/powershell/ServerSideSync/Grant-SssGraphApplicationPermissions.ps1). This needs to be executed by Global Administrator.
 
-      - Or, If you want to Configure permissions manually on Azure portal.
+      - Or, If you want to Configure permissions manually on Azure portal, please do the following.
          1. Select **API permissions** &gt; **Add a permission**.
 
          2. Select the **MS Graph**.
