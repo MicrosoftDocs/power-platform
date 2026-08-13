@@ -583,5 +583,3 @@ View [Subscription Tracking Deleted Object Table](subscription-tracking-deleted-
 ### Related content
 
 - [Dataverse storage capacity](capacity-storage.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

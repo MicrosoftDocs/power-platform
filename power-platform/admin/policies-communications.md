@@ -2,7 +2,7 @@
 title: Policies and communications for Power Platform and Dynamics 365 Services
 description: Learn more about policies and communications for incidents provided for Microsoft 365 services.
 author: kacortez
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 03/30/2026
@@ -153,8 +153,4 @@ Because of the critical nature of service notifications and communications, ther
 - Sign up for email notifications for new incidents that affect your tenant and status changes for an active incident.
 - Download and install the [Microsoft 365 Admin mobile app](https://products.office.com/business/manage-office-365-admin-app) on your mobile device to view service updates and incident notifications. 
 - Connect directly to our service communications using an externally accessible [Service Communication API](/office/office-365-management-api/office-365-service-communications-api-reference).
-- [Track your message center tasks](/office365/planner/track-message-center-tasks-planner) in Planner. 
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- [Track your message center tasks](/office365/planner/track-message-center-tasks-planner) in Planner.

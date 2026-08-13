@@ -1,12 +1,13 @@
 ---
 title: "System Settings Previews tab"
 description: Legacy System Settings Previews tab in Power Platform.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/11/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -50,6 +51,3 @@ Use the settings on this page to enable preview features in customer engagement 
 
 ### See also
 [What are Preview features and how do I enable them?](what-are-preview-features-how-do-i-enable-them.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

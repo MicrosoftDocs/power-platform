@@ -1,14 +1,14 @@
 ---
 title: "Create templates for email  | MicrosoftDocs"
 description: Create templates for email
-author: sericks007
+author: EllenWehrle
 contributor: yingchin
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/02/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -86,6 +86,4 @@ On the **New Email Template** form:
 > - If you use an email template as a signature in another template, insert the signature template first. Otherwise, the Subject line is  overwritten.  
 > - If you need to back up your templates, or export them for use in a different implementation, you can export them as part of exporting customizations. More information: [Export your customizations as a solution](/powerapps/maker/model-driven-apps/distribute-model-driven-app).  
   
-### See also  
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+### See also

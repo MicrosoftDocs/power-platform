@@ -140,5 +140,3 @@ You can manage capacity overages for environments by opting for pay-as-you-go, r
 [Dataverse storage capacity](capacity-storage.md)<br>
 [Free up storage space](free-storage-space.md)<br>
 [Delete and recover environments](delete-environment.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

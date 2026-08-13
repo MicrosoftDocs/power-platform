@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 02/10/2026
 ms.subservice: admin
 ms.author: amchern
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType:
   - admin
 contributors:

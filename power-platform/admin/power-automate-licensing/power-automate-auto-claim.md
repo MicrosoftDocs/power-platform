@@ -5,6 +5,7 @@ author: kenseongtan
 ms.topic: concept-article
 ms.subservice: admin
 ms.author: kenseongtan
+ms.reviewer: ellenwehrle
 contributors:
   - yiannismavridis
   - kenseongtan

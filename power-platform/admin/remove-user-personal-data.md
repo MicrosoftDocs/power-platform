@@ -1,13 +1,13 @@
 ---
 title: "Remove user personal data  | MicrosoftDocs"
 description: Remove user personal data
-author: sericks007
-
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/24/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-ga-nochange
@@ -60,6 +60,3 @@ You can also update the data for a disabled user using the Web API or SDK for .N
 
 ### See also
 [Analyze and share your data with Excel templates](analyze-your-data-with-excel-templates.md)<br/>
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

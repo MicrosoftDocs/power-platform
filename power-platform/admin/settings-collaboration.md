@@ -1,13 +1,13 @@
 ---
 title: Manage collaboration settings
 description: Learn how to use collaboration settings to adjust how collaboration features work in Power Platform.
-author: shwetamurkute
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 10/10/2025
 ms.subservice: admin
-ms.author: smurkute
-ms.reviewer: smurkute
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType:
   - admin
 search.app:
@@ -65,4 +65,3 @@ Make sure you have the System Administrator security role or equivalent permissi
 |---------|-------------|---------------|
 | Enable app level security roles for canvas apps. | When a maker shares a canvas app, they can create and grant app level security roles directly in the sharing dialog box. Makers with the system admin security role assign specific security roles for the shared app. The assigned app-level security roles show in the admin center [security roles settings](/power-platform/admin/security-roles-privileges), with the following naming structure: Canvas app + app name + role name + app ID | Off
 | Enable plan level security roles for plan designer. | When a maker shares a plan, they can create and grant plan-level security roles directly in the sharing dialog box. Makers with the system admin security role assign specific security roles for the shared plan. The assigned plan-level security roles show in the admin center [security roles settings](/power-platform/admin/security-roles-privileges), with the following naming structure:  Plan + plan name + role name + plan ID | Off |
-

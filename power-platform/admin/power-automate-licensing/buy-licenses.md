@@ -1,11 +1,12 @@
 ---
 title: Buy Power Automate licenses
 description: Buy Power Automate licenses.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 06/18/2025
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.contributors:
   - lsuresh
 contributors:
@@ -311,5 +312,3 @@ Yes.
    :::image type="content" source="../media/power-automate-licensing/maker-request-to-admin.png" alt-text="Screenshot that shows a license request form to be sent to an admin." lightbox="../media/power-automate-licensing/maker-request-to-admin.png":::
 
 1. Admins can see your request in the Microsoft 365 admin center and assign a license to you.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

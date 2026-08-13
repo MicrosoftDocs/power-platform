@@ -85,6 +85,3 @@ No. To remove rule enforcement, you must remove the rule from the group and send
 
 **How quickly do rule changes take effect?**
 Rule changes take a few minutes for backend propagation.
-
-
-

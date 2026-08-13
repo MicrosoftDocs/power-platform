@@ -1,12 +1,13 @@
 ---
 title: View self-service storage capacity
 description: View self-service storage capacity
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/25/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -39,5 +40,3 @@ You see all licenses purchased by users in the tenant. You can filter or search 
 You see the license and capacity information for the licenses you purchased.
 
   :::image type="content" source="media/capacity-from-licenses-user.png" alt-text="User view.":::
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

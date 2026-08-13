@@ -1,14 +1,15 @@
 ---
 title: Choose the region when setting up an environment
 description: Learn about the factors in selecting a region when creating a new environment in Microsoft Power Platform admin center.
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/28/2026
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -59,5 +60,3 @@ For optimal performance, if your users are in Europe, create and use the environ
 
 > [!NOTE]
 > On-premises data gateways aren't available in the India region.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

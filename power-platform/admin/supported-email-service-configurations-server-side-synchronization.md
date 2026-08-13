@@ -7,7 +7,7 @@ ms.date: 06/23/2022
 author: gattimassimo 
 ms.subservice: admin
 ms.author: magatti
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -70,6 +70,3 @@ Customers can connect to a Microsoft Exchange online deployment hosted in a diff
 ### See also  
  [Server-side synchronization](server-side-synchronization.md)   
  [Set up server-side synchronization of email, appointments, contacts, and tasks](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

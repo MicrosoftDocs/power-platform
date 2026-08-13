@@ -5,10 +5,10 @@ description: Create forward mailboxes or edit mailboxes
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/19/2025
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: mkaur
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -63,9 +63,4 @@ Check your security role:
    |   Appointments, Contacts, and Tasks Status    |                                                                                                              Show the result of the synchronization of appointments, contacts, and tasks. The various statuses can be:<br /><br /> -   Not Run. The synchronization has not been tested for this mailbox.<br />-   Success. Appointments, contacts, and tasks can be synchronized for this mailbox.<br />-   Failure. Appointments, contacts, and tasks can’t be synchronized for this mailbox.                                                                                                               |
    |           Mailbox Test Completed On           |                                                                                                                                                                                                                                                      This field shows the date and time when the email configuration was tested for this mailbox record.                                                                                                                                                                                                                                                      |
 
-4. Select **Save** or **Save & Close**.  
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+4. Select **Save** or **Save & Close**.

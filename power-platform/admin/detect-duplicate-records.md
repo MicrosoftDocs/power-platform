@@ -1,12 +1,13 @@
 ---
 title: "Use Microsoft Dataverse to detect duplicate records and merge  | MicrosoftDocs"
 description: About detecting and merging duplicate records.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 03/01/2023
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
@@ -101,6 +102,3 @@ Follow the instructions from the [Resolve duplicates when creating or updating r
 [Set up duplicate detection rules](set-up-duplicate-detection-rules-keep-data-clean.md)  
 [Run system jobs to detect duplicates](run-bulk-system-jobs-detect-duplicate-records.md)  
 [Delete bulk records](../admin/delete-bulk-records.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

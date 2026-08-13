@@ -7,7 +7,7 @@ ms.date: 05/18/2026
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom:

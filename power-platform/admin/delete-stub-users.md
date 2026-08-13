@@ -4,7 +4,7 @@ description: This article shows how to delete stub users from an environment in 
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 ms.topic: concept-article
 ms.date: 11/19/2025
@@ -115,5 +115,3 @@ To permanently delete stub users, the stub users must first be soft deleted. The
 ### See also
 
 [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide&preserve-view=true) <br />
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

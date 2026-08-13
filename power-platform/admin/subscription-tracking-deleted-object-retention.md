@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 01/19/2024
 ms.subservice: admin
 ms.author: ceian
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
 - shilpr
 - sarmathi
@@ -26,5 +26,3 @@ In January 2024, the default retention for entries added to the **dbo.Subscripti
 
 #### See also
 [Dataverse storage capacity](capacity-storage.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

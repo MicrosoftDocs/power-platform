@@ -13,7 +13,7 @@ ms.component: pa-admin
 ms.topic: faq
 ms.date: 07/31/2026
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -667,5 +667,3 @@ A Process license assigned to a parent flow doesn't automatically cover its chil
 
 My flow uses connections from multiple users. Do I need to license all of them?
 Who needs a license is independent from whose connections are used in the flow. Automated or scheduled flows always run under the owner's license and manual flows or apps always run under the user who triggers the flow.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

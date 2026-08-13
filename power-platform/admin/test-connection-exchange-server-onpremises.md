@@ -7,7 +7,7 @@ ms.date: 05/13/2021
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange

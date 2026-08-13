@@ -236,6 +236,3 @@ For more documentation covering the installed Insights applications and the "–
 [What's new in storage](whats-new-storage.md) <br />
 [Free up storage space](free-storage-space.md) <br />
 [Capacity add-ons](capacity-add-on.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

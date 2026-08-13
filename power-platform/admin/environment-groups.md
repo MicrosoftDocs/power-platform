@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.date: 07/28/2025
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 ms.custom: NewPPAC
 search.audienceType: 
@@ -184,5 +184,3 @@ If you've published any of the following rules within your environment group, th
 [Licensing](managed-environment-licensing.md) <br>
 [View license consumption (preview)](view-license-consumption-issues.md) <br>
 [Tenant settings](tenant-settings.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,6 +8,7 @@ ms.topic: how-to
 ms.date: 09/11/2020
 ms.subservice: admin
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -43,7 +44,4 @@ The report displays a table with test and benchmark information. Of particular i
 - Make sure you aren't using legacy form rendering, which can make forms take significantly longer to load. [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [System Settings dialog box - General tab](system-settings-dialog-box-general-tab.md)  
   
 ### See also  
- [Performance tuning and optimization](../admin/performance-tuning-and-optimization.md)   
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Performance tuning and optimization](../admin/performance-tuning-and-optimization.md)

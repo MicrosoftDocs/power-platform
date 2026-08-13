@@ -31,4 +31,3 @@ Administrators can add and remove the appropriate roles to users through the Pow
 
 ## Does this impact the "Default" environment too?
 For the "Default" environment, Environment Maker and Basic User roles will continue to be automatically assigned to users even after opt-out.
-

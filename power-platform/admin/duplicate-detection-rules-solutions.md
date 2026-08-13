@@ -1,13 +1,13 @@
 ---
 title: "Create and manage duplicate detection rules using solutions"
 description: "Learn about how you can create and manage duplicate detection rules using solutions."
-author: shwetamurkute
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/19/2025
 ms.subservice: admin
-ms.author: smurkute
-ms.reviewer: smurkute
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ---
 # Create and manage duplicate detection rules using solutions
 
@@ -144,5 +144,3 @@ To add new rule conditions or delete existing rule conditions by importing a sol
     1. Select **Settings** > **Data management** > **Duplicate detection rules**.
 
     1. You'll see your rule in unpublished state. Open the rule definition to verify if it contains all the rule condition changes you made earlier. Publish the rule to use it.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

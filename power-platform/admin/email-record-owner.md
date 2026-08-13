@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 4/2/2022
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -23,6 +23,3 @@ When server-side sync or App for Outlook synchronizes an email message to Dynami
 If the related owner can't be found in the recipient list, the system attempts to resolve the sender of the email to a known contact, account, or lead. If the resolution is successful and the owner of the resolved record is an eligible owner that is also on the recipient list; only then the user is set as owner of the email. 
 
 4. If the second-best owner isn’t found, then the system uses the first eligible owner. If the system can't find an eligible owner based on the associated email owner or the owner of the sender record, the system will pick the first eligible owner in the current recipient list.
-
-
- 

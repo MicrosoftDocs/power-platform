@@ -1,12 +1,13 @@
 ---
 title: "System Settings Customization tab"
 description: Legacy System Settings Customization tab in Power Platform.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/11/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -47,6 +48,3 @@ Use the tab to set preferences for plug-in and workflow tracing and also the use
   
 ### See also  
  [Debug a plug-in](/powerapps/developer/common-data-service/debug-plug-in)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

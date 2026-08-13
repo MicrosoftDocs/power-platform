@@ -6,8 +6,8 @@ ms.topic: best-practice
 ms.date: 01/14/2025
 author: rahulmital
 ms.subservice: admin
-ms.author: mkaur
-ms.reviewer: mkaur
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -83,7 +83,7 @@ Make the following settings for each user mailbox.
 
 A single Exchange mailbox (email address) can only synchronize with a single Dataverse mailbox row in a single Dataverse instance. When you Test and Enable a mailbox row in a Dataverse instance, that instance and mailbox row link to the corresponding Exchange mailbox. From that point forward, only that Dataverse instance and mailbox row can synchronize with the Exchange mailbox. If a mailbox row in any other Dataverse instance was previously configured to use the same Exchange mailbox (email address), the row automatically turns off for synchronization in that instance.
 
-To ensure an admin doesn’t inadvertently Test and Enable a mailbox row in a nonproduction instance linked to an Exchange mailbox, set the synchronization method for nonproduction instances to None.
+To ensure an admin doesn't inadvertently Test and Enable a mailbox row in a nonproduction instance linked to an Exchange mailbox, set the synchronization method for nonproduction instances to None.
 
 ### Set the synchronization method to none
 
@@ -99,7 +99,4 @@ To set the synchronization method to none for nonproduction environments:
 ### See also
 
 [Server-side synchronization](../admin/server-side-synchronization.md)  
-[Troubleshooting server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization)   
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Troubleshooting server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization)

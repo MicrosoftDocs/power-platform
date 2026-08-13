@@ -1,13 +1,14 @@
 ---
 title: "Download a template for data import | MicrosoftDocs"
 description: Download a template for data import
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/19/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -30,7 +31,3 @@ These settings can be accessed in the Microsoft Power Platform admin center. TO 
 ### Related content
 [Import data (all record types) from multiple sources](import-data-all-record-types.md) <br />
 [Import data](/powerapps/developer/common-data-service/import-data)
- 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,13 +1,13 @@
 ---
 title: Early release cycle environments
 description: Learn about how you can create and manage early release cycle environments.
-author: sericks007
+author: EllenWehrle
 contributor: puneet-singh1
 ms.topic: overview
 ms.date: 12/03/2025
 ms.reviewer: ellenwehrle
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 
 ---
 # Early release cycle environments

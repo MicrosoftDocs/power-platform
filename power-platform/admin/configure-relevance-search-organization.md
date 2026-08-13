@@ -8,7 +8,7 @@ ms.date: 05/08/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: jasonhuang
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -348,5 +348,3 @@ For all FAQs about Dataverse search, go to [Frequently asked questions about Dat
 - [Configure facets and filters](/power-apps/user/facets-and-filters)
 - [Frequently asked questions about Dataverse search](/powerapps/user/relevance-faq)
 - [Dynamics 365 results in Microsoft Search](/microsoftsearch/manage-dynamics365)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

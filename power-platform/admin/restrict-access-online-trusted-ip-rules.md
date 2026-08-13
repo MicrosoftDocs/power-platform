@@ -7,7 +7,7 @@ ms.date: 03/26/2026
 author: paulliew
 ms.subservice: admin
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -67,6 +67,3 @@ Block access by location is set using Microsoft Entra ID (AD) Conditional Access
 - [How to set Microsoft Entra device-based conditional access policy for access control to Microsoft Entra connected applications](/azure/active-directory/conditional-access/require-managed-devices) <br />
 - [Conditional Access docs](/azure/active-directory/conditional-access/) <br />
 - [Restrict access with Conditional access for finance and operations apps](https://github.com/microsoft/Dynamics-365-FastTrack-Implementation-Assets/blob/master/CloudSecurity/ConditionalAccess/readme.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

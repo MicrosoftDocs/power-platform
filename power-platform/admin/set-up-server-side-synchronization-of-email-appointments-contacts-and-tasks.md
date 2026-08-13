@@ -7,7 +7,7 @@ ms.date: 01/21/2022
 author: DanaMartens 
 ms.subservice: admin
 ms.author: dmartens 
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -34,7 +34,4 @@ Choose one of the following scenarios to configure server-side synchronization f
 
 ### See also  
 [Server-side synchronization](../admin/server-side-synchronization.md) 
-[Troubleshooting server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization)   
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Troubleshooting server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization)

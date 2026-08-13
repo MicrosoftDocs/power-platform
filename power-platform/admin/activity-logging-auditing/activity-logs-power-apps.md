@@ -10,7 +10,7 @@ ms.author: grbarker
 contributors:
   - amchern 
   - EllenWehrle 
-ms.reviewer: ellenwehrle 
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -166,5 +166,3 @@ Schemas define which Power Apps fields are sent to the Microsoft Purview complia
 - [Microsoft Purview](/purview/)
 - [Microsoft Purview portal](https://purview.microsoft.com/home)
 - [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

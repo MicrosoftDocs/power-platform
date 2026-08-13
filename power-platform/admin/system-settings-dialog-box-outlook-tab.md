@@ -1,12 +1,13 @@
 ---
 title: "System Settings Outlook tab"
 description: Legacy System Settings Outlook tab in Power Platform.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/11/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -48,7 +49,3 @@ Use the settings on this page to configure how [!INCLUDE[pn_MS_Outlook_Short](..
 |                                                 Minimum time between address book synchronizations                                                 |                               Default: 1 hour. The local address book is synchronized with customer engagement apps on the specified interval.                               |
 |                                              **Set whether users see customer engagement apps message**                                              |                                                                                                                                                                                                                 |
 |         Users see “Get [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)]” option displayed in the message bar          |                                 Default: Yes. If Yes, the **Get Dynamics 365 for Outlook** button is displayed.                                  |
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

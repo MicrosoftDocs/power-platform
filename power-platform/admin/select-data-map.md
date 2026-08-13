@@ -1,9 +1,10 @@
 ---
 title: "Select a data map"
 description: Select a data map
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 
 ms.component: pa-admin
 ms.topic: how-to
@@ -41,8 +42,4 @@ The following tables help you decide which data map to use.
 | **Data Maps for Microsoft Outlook Business Contact Manager**  | **When to Use**    |
 | For Microsoft Outlook 2010 with Business Contact Manager | Use this map when your import file contains data from Microsoft Outlook 2010 with Business Contact Manager. |
 |  **Custom Maps** (optional)   | **When to Use**    |  
-|  Custom maps   |   If available, custom data maps created for your organization are listed here.   |  
-  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+|  Custom maps   |   If available, custom data maps created for your organization are listed here.   |

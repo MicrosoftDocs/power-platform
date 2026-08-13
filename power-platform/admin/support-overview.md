@@ -125,4 +125,3 @@ In scenarios where a problem isn't able to be reproduced in a standard nonmodifi
 - If a new error occurs after installing a hotfix or trying some suggestions from the original incident, it's treated as a new error and hence needs a new support incident.
 
 - If a case has been closed three or more months, submit a new support incident.
-

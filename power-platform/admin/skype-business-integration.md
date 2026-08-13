@@ -1,13 +1,14 @@
 ---
 title: "Skype for Business and Skype integration  | MicrosoftDocs"
 description: Skype for Business and Skype integration
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 11/24/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -88,6 +89,3 @@ If your organization uses [!INCLUDE[pn_skype_for_business](../includes/pn-skype-
 ### See also  
  [Set up model-driven apps in Dynamics 365 to use Skype or Skype for Business](../admin/set-up-skype-or-skype-for-business.md)   
  [Requirements](online-requirements.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

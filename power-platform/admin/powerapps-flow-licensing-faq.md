@@ -865,5 +865,3 @@ To enable Virtual Network support for Power Platform, environments must be manag
 - Organization must have an Azure subscription with permissions to create a virtual network, subnet, and the enterprise policy resources.
 
 For more information, see Set up [Virtual Network support for Power Platform](/power-platform/admin/vnet-support-setup-configure).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

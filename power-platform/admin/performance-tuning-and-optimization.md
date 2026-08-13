@@ -8,6 +8,7 @@ ms.topic: overview
 ms.date: 09/08/2020
 ms.subservice: admin
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -27,8 +28,3 @@ Example operations that require intensive database transactions include:
 
 ### See also
 [Verify network capacity and throughput for clients](verify-network-capacity-throughput-clients.md) <br />
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

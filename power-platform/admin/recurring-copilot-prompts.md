@@ -5,20 +5,18 @@ ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/17/2025
-author: shwetamurkute
-ms.author: smurkute
-ms.reviewer: smurkute
+author: EllenWehrle
+ms.author: saraje
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
-ms.contributors:
-  - saraje
 ---
 
 # Microsoft 365 environment for recurring Copilot prompts 
 
 A Microsoft 365 environment that is a Power Platform production environment is automatically created when users in your tenant first use a recurring Copilot feature. This environment supports runtime operations required by features like scheduled prompts, Teams AI workflows, and more. It's provisioned and governed differently than typical environments.
 
-This article provides details about the environment’s characteristics, behavior, permissions, and limitations to help Power Platform and Microsoft 365 administrators understand and manage the environment appropriately.
+This article provides details about the environment's characteristics, behavior, permissions, and limitations to help Power Platform and Microsoft 365 administrators understand and manage the environment appropriately.
 
 ## Environment provisioning
 
@@ -76,15 +74,11 @@ The user must be assigned a Microsoft 365 Copilot license with the Microsoft Cop
 ### Can the environment be deleted?
 Yes. Admins can delete the Microsoft 365 environment through the Power Platform admin center. However, if recurring Copilot prompts are used again, the environment is automatically recreated.
 
-### Does this environment consume storage from my tenant’s entitlement?
-No. Storage used by this environment is excluded from your tenant’s capacity calculations and doesn't appear on capacity pages.
+### Does this environment consume storage from my tenant's entitlement?
+No. Storage used by this environment is excluded from your tenant's capacity calculations and doesn't appear on capacity pages.
 
 ### Can I apply custom DLP policies to this environment?
 No. This environment is governed by a fixed DLP policy, and tenant or environment-level policies don't apply to this environment.
 
 ### Can users create custom apps, flows, or bots in this environment?
 No. All app, flow, and connection creation are blocked by default. Only runtime operations by Microsoft-owned apps are permitted.
-
-
-
-

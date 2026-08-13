@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.date: 09/30/2021
 author: DanaMartens
 ms.author: dmartens
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -117,4 +117,4 @@ Before you [create an email server profile](connect-exchange-server-on-premises.
 - Key Vault Uri: The URI of the Key Vault used for certificate storage. 
 - Key Vault KeyName: The certificate name used in Key Vault. 
 - KeyVault Application Id: The app ID of the KV-App used by Dynamics to retrieve the certificate from Key Vault.
-- KeyVault Client Secret: The client secret for the KV-App used by Dynamics 365. 
+- KeyVault Client Secret: The client secret for the KV-App used by Dynamics 365.

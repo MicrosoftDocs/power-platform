@@ -1,8 +1,8 @@
 ---
 title: Responding to DSR requests for Microsoft Dataverse customer data | Microsoft Docs
 description: Walkthrough of how to respond to DSR requests for Microsoft Dataverse customer data
-author: sericks007
-ms.reviewer: mkaur
+author: paulliew
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/20/2025
@@ -380,7 +380,3 @@ From [Power Apps](https://make.powerapps.com), do the following:
 9. Select **Search**, and then select and open the Excel spreadsheet that you updated.
 
 10. Select **Import**.
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Requests limits and allocations
 description: Power Platform requests limits and allocations
-author: sericks007
+author: EllenWehrle
 contributors:
   - amiyapatr-zz
   - samathur
@@ -15,7 +15,7 @@ ms.topic: concept-article
 ms.date: 03/30/2026
 ms.subservice: admin
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
@@ -306,5 +306,3 @@ No. Non-Microsoft data integration tools are subject to the exact same limits as
 
 - [Dataverse API limits overview](/powerapps/maker/common-data-service/api-limits-overview)
 - [Power Automate limits and configuration](/power-automate/limits-and-config)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

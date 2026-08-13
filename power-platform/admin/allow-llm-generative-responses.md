@@ -71,5 +71,3 @@ The following exclusions apply:
 - xAI models within Copilot Studio are currently available for US tenants only. 
 - FedRAMP isn't achieved for Anthropic or xAI models in Copilot Studio. If your organization requires FedRAMP before use, consult with your authorization official to determine if use of Anthropic models is allowed.
 - Payment Card Industry (PCI) Data Security Standard (DSS) isn't applicable to Anthropic or xAI models within Copilot Studio to store, process, or transmit payment and cardholder data.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

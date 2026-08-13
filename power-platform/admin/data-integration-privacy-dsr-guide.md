@@ -7,7 +7,7 @@ ms.component: cds
 ms.date: 05/20/2018
 ms.subservice: admin
 ms.author: nhelgren
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
@@ -75,6 +75,3 @@ To export templates, users can navigate to the templates tab and click on the el
 To export connection sets, users can navigate to the connection set tab and click on the ellipses next to the connection set, and then select the export option:
 
 ![Export connection sets by clicking on the ellipsis.](./media/data-integration-privacy-dsr/connsets-exp.png)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

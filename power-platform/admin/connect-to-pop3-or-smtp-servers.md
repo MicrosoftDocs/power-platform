@@ -7,7 +7,7 @@ ms.date: 12/11/2025
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributor: ellenwehrle
 search.audienceType: 
   - admin
@@ -184,5 +184,3 @@ Customizations or email configurations in Power Apps US Government can only use 
 [Troubleshooting and monitoring server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization) <br />
 [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx) <br />
 [Microsoft Power Apps US Government](powerapps-us-government.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

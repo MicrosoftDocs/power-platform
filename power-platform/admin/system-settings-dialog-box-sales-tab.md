@@ -1,12 +1,13 @@
 ---
 title: "System Settings Sales tab"
 description: Legacy System Settings Sales tab in Power Platform.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/11/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -65,7 +66,4 @@ Use the settings on this page to configure system-level settings for the sales a
  [Set up a discount list](/dynamics365/sales-enterprise/set-up-discount-list)   
  [Set up product bundles to sell multiple items together](/dynamics365/sales-enterprise/create-product-bundles-sell-multiple-items-together)   
  [Use properties to describe a product](/dynamics365/sales-enterprise/use-properties-describe-product)  
- [Administrator and Sales Manager Guide](/dynamics365/sales-enterprise/admin-guide)  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Administrator and Sales Manager Guide](/dynamics365/sales-enterprise/admin-guide)

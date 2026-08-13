@@ -1,13 +1,14 @@
 ---
 title: "Use Power BI  | MicrosoftDocs"
 description: Use Power BI
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/25/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -44,7 +45,3 @@ Though you administer Power BI from the [Power BI admin portal](https://app.powe
 ### See also  
 [Use Power BI with Dataverse data](/powerapps/maker/common-data-service/use-powerbi-with-cds) 
 [Administer Power BI](about-powerbi-guide.md)
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

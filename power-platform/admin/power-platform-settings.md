@@ -1,12 +1,13 @@
 ---
 title: "View and manage settings for Microsoft Power Platform"
 description: "Configure settings for Microsoft Power Platform, including governance, themes, notifications, password, and contact preferences."
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/06/2022
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom:
@@ -33,10 +34,3 @@ The [Power Platform administrator role](use-service-admin-role-manage-tenant.md#
 |**Notifications** | By default, Microsoft 365 apps will ping you when new mail arrives and when it's time for a reminder--with a pop up or with a sound. You can change these settings at any time. |
 |**Password**     | Change the password for all of your Microsoft 365 apps and services.        |
 |**Contact preferences**    | Change contact preferences such as email and phone preferences.         |
-
-
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -7,7 +7,7 @@ ms.date: 03/25/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
   - JimDaly
 ms.custom: "admin-security"
@@ -83,6 +83,3 @@ Users not defined in the previously created column security profiles lack access
 
 [Column-level security to control access](field-level-security.md)   
 [Hierarchy security](hierarchy-security.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,7 +8,7 @@ ms.date: 01/23/2026
 ms.subservice: admin
 ms.author: swatim
 contributor: ellenwehrle 
-ms.reviewer: ellenwehrle 
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -134,5 +134,3 @@ Currently, exceeding storage entitlements doesn't affect the availability of the
 ### We have multiple Lifecycle Services projects in our tenant with each having its own production and sandbox environment. How does storage reporting work in this case?
 
 Storage reporting covers usage at the tenant and environment level. All environments in all Lifecycle Services projects on the tenant are included in storage reporting.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,9 +4,9 @@ description: The article provides information about how to migrate the default e
 ms.topic: upgrade-and-migration-article
 ms.date: 11/24/2025
 ms.subservice: admin
-author: shwetamurkute
-ms.author: smurkute
-ms.reviewer: smurkute
+author: EllenWehrle
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ---
 
 # Migrate default and Dataverse for Teams environments
@@ -66,5 +66,3 @@ After the default environment migration, you may add a Dataverse database to the
 ## Migrate Dataverse for Teams environment
 
 Migrating Dataverse for Teams type environments between geographical regions is typically not supported. There are certain conditions that Microsoft support would make an exception and help moving Dataverse for Teams to a different geographical region. Although some of the considerations described above for the default environment also applies to Dataverse for Teams environment, the process is different. For Teams a geo-to-geo move is performed by Microsoft support. More information: [Geo to geo migrations](geo-to-geo-migrations.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

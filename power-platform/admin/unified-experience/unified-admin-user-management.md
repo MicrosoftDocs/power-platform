@@ -157,6 +157,3 @@ If you delete the current provisioning admin or revoke the System Administrator 
 **Guidance**
 
 Before you make these changes in Dataverse, make sure the environment has at least three admins. If the action has already been performed and the provisioning admin is stuck, add another admin in Dataverse. After the change is reflected in Finance and Operations, use **Make Environment Admin** on the **Users** page.
-
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

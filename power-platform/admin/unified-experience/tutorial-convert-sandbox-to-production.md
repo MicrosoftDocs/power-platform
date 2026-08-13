@@ -6,7 +6,7 @@ ms.topic: overview
 ms.date: 11/06/2025
 ms.subservice: admin
 ms.author: laswenka
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 
 ---
 
@@ -50,4 +50,3 @@ Use the conversion process when your organization is ready to transition from pr
 - **Rollback:** This procedure is bidirectional; reverting a production environment back to sandbox follows the same steps as above.
 - **Customizations:** Existing customizations, X++ code, and Dataverse solutions are preserved. No reinstallation or redeployment is required.
 - **Timing:** Allow for variable timing (up to two hours). Actual conversion duration depends on tenant load and regional capacity at the time of conversion.
-

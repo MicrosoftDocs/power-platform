@@ -1,10 +1,10 @@
 ---
 title: "Grant users access in customer engagement apps and Power Apps"
 description: "Learn to create users, assign licenses, and set administrative roles in Microsoft 365 admin center. Assign security roles in Dynamics 365 apps."
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: mkaur
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 ms.collection: get-started
 ms.component: pa-admin
@@ -60,5 +60,3 @@ In Power Apps, populate the service with your organization’s data, including u
  [Plan for deployment and administration](../admin/plan-for-deployment-and-administration.md)
  [Import data (all record types)](../admin/import-data-all-record-types.md)
  [Video: Administer application users, security roles, teams, and users in the Power Platform admin center](https://learn-video.azurefd.net/vod/player?id=5799c67e-f283-4cbd-aafa-bc38a3f53276)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

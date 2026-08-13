@@ -4,7 +4,7 @@ description: "Learn how to administer the catalog for Power Platform. Administer
 author: isaacwinoto
 ms.author: isaacwinoto
 ms.date: 11/20/2025
-ms.reviewer: matp
+ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
 search.audienceType:
@@ -250,4 +250,3 @@ More information: [Assign a security role to a user](../admin/assign-security-ro
 ### See also
 
 [Catalog in Power Platform for developers](../developer/catalog/overview.md)
-

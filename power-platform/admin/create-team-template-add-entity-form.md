@@ -4,7 +4,7 @@ description: Create a team template and add to an entity form
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 
 ms.component: pa-admin
@@ -151,5 +151,3 @@ You can now export your team template and import it into a different environment
 1. [Export your team template solution](/power-apps/maker/data-platform/export-solutions).
 1. Download the solution .zip file.
 1. [Import your team template .zip file solution](/power-apps/maker/data-platform/import-update-export-solutions).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

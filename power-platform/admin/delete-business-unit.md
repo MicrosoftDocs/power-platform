@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 11/19/2025
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -62,6 +62,3 @@ You can delete a business unit to completely remove it. To delete a business uni
 
 ### See also  
  [Assign a business unit a different parent business](../admin/assign-business-unit-different-parent.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

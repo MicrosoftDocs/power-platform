@@ -1,13 +1,14 @@
 ---
 title: "Manage product catalog configuration   | MicrosoftDocs"
 description: Manage product catalog configuration 
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: derekkwan
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -82,6 +83,3 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 ### See also  
 [Manage configuration data](manage-configuration-data.md)   <br />
 [Product catalog entities](manage-product-catalog-configuration.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

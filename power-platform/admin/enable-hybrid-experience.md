@@ -1,12 +1,13 @@
 ---
 title: "Enable the hybrid experience  | MicrosoftDocs"
 description: Some features are not yet present in Unified Interface but can be enabled for display as legacy dialogs in Unified Interface through the hybrid experience.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 02/27/2024
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -54,6 +55,3 @@ If you disable the hybrid experience, these commands are not available in the co
 
 ### See also  
  [Unified Interface](about-unified-interface.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

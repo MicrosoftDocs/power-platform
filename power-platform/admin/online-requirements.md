@@ -7,6 +7,7 @@ ms.topic: concept-article
 ms.date: 08/03/2026
 ms.subservice: admin
 ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 contributors:
   - maustinjones
   - v-jlandrum 
@@ -139,7 +140,3 @@ Dataverse exposes ports *1433* and *5558* to expose the [Dataverse Tabular Data 
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 
  [Work with requirements as a solution architect for Power Platform and Dynamics 365](/training/modules/work-with-requirements/index)
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

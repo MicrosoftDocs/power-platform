@@ -141,5 +141,3 @@ Yes. Administrators can review their managed environment users and assign licens
 [Data policies](managed-environment-data-policies.md)  <br />
 [View license consumption (preview)](view-license-consumption-issues.md) <br />
 [Tenant settings](tenant-settings.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

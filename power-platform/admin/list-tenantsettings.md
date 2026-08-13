@@ -146,6 +146,3 @@ The response is always a **200 OK** response, unless you aren't correctly authen
 |powerPlatform.modelExperimentation.disableDataLogging | Boolean | Ability to disable data logging and remove all data logged for Power Automate Copilot AI feature customer data (inputs and outputs). Default value is false.|
 |powerPlatform.catalogSettings.powerCatalogAudienceSetting | Enum |This setting is reserved for future use. No enforcement is driven by this setting at the current time.|
 |powerPlatform.gccCommercialSettings.disableGccCommercialAccess | Boolean |Turning on this setting allows connections to resources in Azure commercial that operate and send data outside the Power Platform US Government compliance boundary. This is specifically used to allow access to commercial resources from GCC cloud versions of Power Platform Connectors.|
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

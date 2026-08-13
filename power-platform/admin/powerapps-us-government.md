@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 05/05/2026
 ms.subservice: admin
 ms.author: macarrer
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.contributors:
@@ -262,6 +262,3 @@ More information: [Contact Technical Support](get-help-support.md)
 ### Related content
 [Microsoft Power Automate US Government](/power-automate/us-govt) <br />
 [Dynamics 365 US Government](./microsoft-dynamics-365-government.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

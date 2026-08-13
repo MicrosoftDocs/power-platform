@@ -7,7 +7,7 @@ ms.date: 04/07/2026
 author: laneswenka
 ms.subservice: admin
 ms.author: laswenka
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -91,5 +91,3 @@ The time it takes to effectively implement data policies varies from customer to
 - [Manage data policies](prevent-data-loss.md)
 - [Data policies for Power Automate](/power-automate/prevent-data-loss)
 - [Advanced connector policies](./advanced-connector-policies.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

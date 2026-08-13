@@ -72,7 +72,3 @@ Dataverse includes all the requests made on the server. You'll be able to see ho
 
 > [!NOTE]
 > Application Insights telemetry is designed to provide broad and reliable visibility into your application behavior. However, due to sampling and pipeline-specific constraints, some signals may not be captured. Minor data gaps are expected and do not indicate a system issue.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
-
-

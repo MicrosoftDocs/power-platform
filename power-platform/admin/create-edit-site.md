@@ -1,13 +1,14 @@
 ---
 title: "Create or edit site entries to provide location details"
 description: "Learn how to create or edit the details about a site in Advanced Settings, including street address, phone number, and time zone."
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -40,6 +41,3 @@ You can create a new site to add an office location or other facility where serv
 ### See also  
  [Create or edit business units](../admin/create-edit-business-units.md)   
  [Add resources to a site](../admin/add-resources-site.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

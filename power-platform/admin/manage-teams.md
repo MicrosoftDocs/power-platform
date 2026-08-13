@@ -7,7 +7,7 @@ ms.date: 07/15/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.contributors:
   - paulliew
   - sericks
@@ -229,5 +229,3 @@ See [Change the business unit for a team](create-edit-business-units.md#change-t
  [Add teams or users to a column security profile to control access](field-level-security.md#add-teams-or-users-to-a-column-security-profile-to-control-access)
  [About team templates](about-team-templates.md)
  [Entity relationship behavior](/powerapps/maker/common-data-service/create-edit-entity-relationships#entity-relationship-behavior)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

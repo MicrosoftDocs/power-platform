@@ -4,7 +4,7 @@ description: Learn how to control access to data and resources with security rol
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.custom: bap-template, NEWPPAC
 ms.topic: concept-article
 ms.date: 12/09/2025

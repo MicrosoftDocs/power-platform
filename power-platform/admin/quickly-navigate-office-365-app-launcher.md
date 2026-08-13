@@ -1,13 +1,14 @@
 ---
 title: "Quickly navigate apps with the Microsoft 365 app launcher"
 description: "Learn how to use the Microsoft 365 app launcher to quickly move between Microsoft Dynamics 365 and Microsoft 365 apps." 
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 10/26/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -26,11 +27,4 @@ For other navigation information, including the new app switcher, see:
 - [Basic navigation in a model-driven app](/powerapps/user/navigation)
 
 ## Your business apps have moved
-The home for business applications across Dynamics 365 and Microsoft Power Platform has moved from [https://home.dynamics.com](https://home.dynamics.com) to [office.com](https://office.com/apps). 
-
-
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+The home for business applications across Dynamics 365 and Microsoft Power Platform has moved from [https://home.dynamics.com](https://home.dynamics.com) to [office.com](https://office.com/apps).

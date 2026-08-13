@@ -1,13 +1,13 @@
 ---
 title: Responding to Data Subject Rights (DSR) requests to delete customer data | Microsoft Docs
 description: Walkthrough of how to respond to Data Subject Rights (DSR) requests to delete Power Apps customer data.
-author: sericks007
-ms.reviewer: paulliew
+author: EllenWehrle
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 10/03/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 search.audienceType: 
   - admin
 contributors: 
@@ -438,5 +438,3 @@ If you're a member of an unmanaged tenant, then you need to follow these steps t
 2. Select **Close account** and follow the instructions to delete your account from your Microsoft Entra tenant.
 
     :::image type="content" source="./media/powerapps-gdpr-delete-dsr/close-account.png" alt-text="Select Close account.":::
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

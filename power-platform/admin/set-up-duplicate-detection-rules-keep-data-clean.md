@@ -1,13 +1,14 @@
 ---
 title: Set up duplicate detection rules to keep your data clean  
 description: Set up duplicate detection rules to keep your data clean.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ---
 
 # Set up duplicate detection rules to keep your data clean
@@ -78,5 +79,3 @@ To maintain the integrity of your data, it's a good idea to have rules in place 
  [Run bulk system jobs to detect duplicate records](../admin/run-bulk-system-jobs-detect-duplicate-records.md)<br />
  [Merge duplicate records for accounts, contacts, or leads](/powerapps/user/merge-duplicate-records)<br />
  [Developer's Guide: Duplicate Rule entities](/powerapps/developer/common-data-service/duplicaterule-entities)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

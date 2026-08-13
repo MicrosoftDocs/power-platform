@@ -1,13 +1,13 @@
 ---
 title: Create or edit business units 
 description: Learn how to create or edit business units 
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/21/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -165,5 +165,3 @@ Once this action is chosen, all relevant records of the **source Business Unit**
 
 - [Delete a business unit](delete-business-unit.md)
 - [Assign a business unit a different parent business](assign-business-unit-different-parent.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

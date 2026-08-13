@@ -5,10 +5,10 @@ description: Manage user account synchronization
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 01/21/2021
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: mkaur
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -74,6 +74,3 @@ Review the following resources to equip you to make the right decision for your 
    Your URL should look like: https://<em>contoso</em>.crm.dynamics.com?whr=`<http://sts1.fabrikam.com/adfs/services/trust>`  
   
    Send this URL to your users and encourage them to bookmark it.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

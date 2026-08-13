@@ -7,7 +7,7 @@ ms.date: 05/03/2024
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
   - mikferland-msft
   - mihaelablendea
@@ -66,9 +66,4 @@ When all three policies are applied together to the same environment, the net re
 | -E2-, -E4-, -E5- | Group 7 | NULL |
 | -E2-, -E4-, -E6- | Group 8 | Adobe Sign, Azure Blob storage, Box |
 
-To summarize, an app or flow can only use connectors from these individual groups at any given time, and it can't mix connectors across the eight different groups. From the examples above, note that multiple data policies applied to an environment will fragment your connector space in complicated ways. Therefore, we highly recommended that you apply a minimum number of data policies to any given environment. 
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+To summarize, an app or flow can only use connectors from these individual groups at any given time, and it can't mix connectors across the eight different groups. From the examples above, note that multiple data policies applied to an environment will fragment your connector space in complicated ways. Therefore, we highly recommended that you apply a minimum number of data policies to any given environment.

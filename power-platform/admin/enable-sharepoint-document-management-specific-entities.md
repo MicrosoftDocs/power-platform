@@ -43,6 +43,3 @@ Enable document management for specific entities to store related records in Sha
 ### See also  
  [Edit existing SharePoint site records](../admin/edit-existing-sharepoint-site-records.md)   
  [Set up SharePoint integration](set-up-sharepoint-integration.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

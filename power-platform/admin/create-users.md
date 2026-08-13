@@ -2,7 +2,7 @@
 title: Create users 
 description: Learn about creating users.
 author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 ms.author: paulliew
 ms.component: pa-admin
@@ -543,5 +543,3 @@ Assigning a Microsoft Entra security group to the environment is a best practice
 [Get started with security roles in Dataverse](/training/modules/get-started-security-roles/) <br />
 [Assign a security role to a user](assign-security-roles.md) <br />
 [Opt-out of automatic license-based user roles management](opt-out-automatic-license.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -7,7 +7,7 @@ ms.date: 12/11/2025
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors: ellenwehrle
 search.audienceType:
 - admin
@@ -197,5 +197,3 @@ Customizations or email configurations in Power Apps can only use these ports.
 [Troubleshooting and monitoring server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization) <br />
 [Test mail flow with the Remote Connectivity Analyzer](https://technet.microsoft.com/library/dn305950\(v=exchg.150\).aspx) <br />
 [Set up server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

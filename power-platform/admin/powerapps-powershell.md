@@ -1,19 +1,19 @@
 ---
 title: PowerShell support for Power Apps and Power Automate
 description: Learn about the PowerShell cmdlets and get a tutorial of how to install and run them.
-author: sericks007
+author: EllenWehrle
 contributors:
   - brsova
   - samathur
   - taiki-yoshida 
   - ChrisGarty
   - v-aangie
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
 ms.date: 02/25/2026
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
@@ -745,5 +745,3 @@ If you have comments, suggestions, or questions, post them on the [Administering
 - [Get started using the Power Apps admin module.](/powershell/powerapps/get-started-powerapps-admin) <br>
 - [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell) <br>
 - [Preview: Programmability and extensibility overview](programmability-extensibility-overview.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

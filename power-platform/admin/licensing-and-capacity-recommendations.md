@@ -106,4 +106,4 @@ The following recommendations relate to capacity:
 
 - **Severity**: Medium  
 - **Refresh Frequency**: Weekly  
-- **Managed environments only**: Yes  
+- **Managed environments only**: Yes

@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 03/21/2025
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contriubutors:
@@ -47,7 +47,4 @@ You can use the **Set Personal Options** dialog box in customer engagement apps 
   
 ### See also  
  [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)   
- [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)   
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)

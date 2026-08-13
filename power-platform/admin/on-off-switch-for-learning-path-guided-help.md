@@ -1,12 +1,13 @@
 ---
 title: "On-off switch for Learning Path (guided help) "
 description: On-off switch for Learning Path (guided help) in Power Apps.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/15/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -44,8 +45,4 @@ This setting changes access to Learning Path for an entire organization.
 [!INCLUDE[cc_privacy_learning_path](../includes/cc-privacy-learning-path.md)]
   
 ### See also  
- [Create guided help (Learning Path) for your app](/powerapps/maker/model-driven-apps/create-guided-help-learning-path)   
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Create guided help (Learning Path) for your app](/powerapps/maker/model-driven-apps/create-guided-help-learning-path)

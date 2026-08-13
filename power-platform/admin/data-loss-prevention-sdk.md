@@ -4,10 +4,10 @@ description: Learn about the capabilities of the Microsoft Power Platform data p
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 03/08/2021
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: mkaur
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -53,5 +53,3 @@ This sample calls data policy APIs in Microsoft.PowerApps.Administration.PowerSh
 ## How this sample works
 
 This sample provides some data policy scenarios about how to call data policy APIs for your reference. You can run the sample and see the result.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

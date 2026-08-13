@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.date: 02/03/2025
 ms.subservice: admin
 ms.author: yingchin
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -32,4 +33,3 @@ To turn off the Power Platform Environment Settings app for an environment, foll
 1. Select **Settings**.
 1. Expand **Product**, and then select **Features**.
 1. Set the **Advanced Settings redirection** toggle to **Off**.
-

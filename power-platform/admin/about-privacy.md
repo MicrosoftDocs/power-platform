@@ -4,7 +4,7 @@ description: Learn about privacy compliance
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
   - mayadumesh
   - NHelgren
@@ -23,6 +23,4 @@ search.audienceType:
 ### See also
 [Microsoft privacy and GDPR resources](https://www.microsoft.com/trust-center/privacy/resources) <br />
 [GDPR FAQs](/compliance/regulatory/gdpr#gdpr-faqs) <br />
-[Get Started: Support for GDPR Accountability](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted) 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Get Started: Support for GDPR Accountability](https://servicetrust.microsoft.com/ViewPage/GDPRGetStarted)

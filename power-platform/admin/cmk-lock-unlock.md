@@ -3,7 +3,7 @@ title: Lock and unlock environments through key vault access
 description: Learn how to lock and unlock self-managed key environments
 author: paulliew
 ms.author: paulliew
-ms.reviewer: matp
+ms.reviewer: ellenwehrle
 ms.topic: how-to 
 ms.date: 07/14/2025
 ms.custom: template-how-to

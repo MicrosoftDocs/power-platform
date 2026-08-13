@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 12/09/2025
 ms.subservice: admin
 ms.author: alaug
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -178,5 +178,3 @@ Remove-AdminPowerAppConditionalAccessAuthenticationContextIds –EnvironmentName
 ### Related content
 
 [Power Apps admin PowerShell support](powerapps-powershell.md#power-apps-commands)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

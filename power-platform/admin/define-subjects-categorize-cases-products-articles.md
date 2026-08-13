@@ -2,12 +2,12 @@
 title: "Define subjects to categorize cases, products, and articles"
 description: "Learn to create and edit subjects to categorize service cases, knowledge base articles, products, and sales literature in customer engagement apps."
 author: shubhadaj
-
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: shujoshi
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -57,7 +57,4 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
   
 4. Select **OK**.  
   
-### See also 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+### See also

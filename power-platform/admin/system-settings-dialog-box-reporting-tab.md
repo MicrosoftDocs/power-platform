@@ -1,12 +1,13 @@
 ---
 title: "System Settings Reporting tab"
 description: Legacy System Settings Reporting tab in Power Platform.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/11/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -45,5 +46,3 @@ Use the settings on this page to configure the reporting settings for model-driv
 
  [Use Power BI](/powerapps/user/find-admin)
  [System Settings dialog box - General tab](../admin/system-settings-dialog-box-general-tab.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

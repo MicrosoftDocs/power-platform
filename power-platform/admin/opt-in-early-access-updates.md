@@ -4,7 +4,7 @@ description: Learn how to opt in to early access updates for Power Platform.
 author: paulda64
 ms.subservice: admin
 ms.author: paulda
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 03/06/2026
 search.audienceType: 
@@ -234,5 +234,3 @@ Create a [support ticket](https://dynamics.microsoft.com/support/). Include the 
 [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule)<br />
 [Dynamics 365 and Microsoft Power Platform Release Plans](/dynamics365/release-plans/)<br />
 [Policies and communications](policies-communications.md)
-  
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

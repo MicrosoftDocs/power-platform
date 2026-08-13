@@ -117,4 +117,3 @@ In addition to the tenant-level analytics setting, the environment-level **Analy
 ### Why can't I see metrics for my canvas apps that are used on mobile devices?
 
 Only web player sessions for canvas apps provide telemetry. Canvas apps used on mobile devices don't send telemetry information to the **Monitor** area of the Power Platform admin center.
-

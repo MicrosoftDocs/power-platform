@@ -4,7 +4,7 @@ description: Discover methods for using IP-based cookie binding to stop cookie r
 ms.date: 05/8/2026
 ms.topic: how-to
 author: shpradha
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.author: shpradha
 ms.subservice: admin
 search.audienceType: 
@@ -86,5 +86,3 @@ The feature evaluates the cookie in real time, except for the initial request th
 ### Is this feature enabled by default in all environments?
 
 The cookie IP binding feature is disabled by default. Administrators must enable it in the Power Platform admin center.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

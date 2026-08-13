@@ -1,14 +1,14 @@
 ---
 title: Find your environment and organization IDs and organization name
 description: If you need to find your Power Platform environment and organization IDs and organization name for any reason, this article explains how to find this information.
-author: sericks007
+author: EllenWehrle
 contributors: yingchin
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 12/12/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -44,5 +44,3 @@ To find your organization name, take these steps:
 
 > [!NOTE]
 > The organization name comes from the domain name when you provision the environment. You can't change the organization name by using the [Business Unit](create-edit-business-units.md) form but you can change it by using the [Web API](/dynamics365/customer-engagement/web-api/businessunit).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

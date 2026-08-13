@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.date: 12/10/2025
 ms.subservice: admin
 ms.author: debrau
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -118,5 +119,3 @@ To disable the special **Tracked to Dynamics 365** Outlook category, you need to
 3. Disabling the OrgDBOrgSetting will remove the category **Tracked to Dynamics 365** on all Exchange mailboxes of the organization which have server-side synchronization enabled in about 15 minutes.
 
 You can also use [this tool](https://github.com/seanmcne/OrgDbOrgSettings/releases/) to edit the OrgDBOrgSetting **TrackCategorizedItems**.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

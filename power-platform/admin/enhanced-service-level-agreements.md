@@ -1,13 +1,14 @@
 ---
 title: "Enhanced service level agreements  | MicrosoftDocs"
 description: Enhanced service level agreements
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -50,6 +51,3 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
   
 ### See also  
  [Enable languages](../admin/enable-languages.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

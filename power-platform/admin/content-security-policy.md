@@ -300,5 +300,3 @@ async function disableCSP() {
     console.log('Successfully disabled CSP!')
 }
 ```
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

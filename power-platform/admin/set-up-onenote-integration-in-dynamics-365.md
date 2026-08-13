@@ -1,12 +1,13 @@
 ---
 title: Set up OneNote integration
 description: Learn how to integrate OneNote with customer engagement apps
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/25/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -161,6 +162,3 @@ User A opens a OneNote note in Dynamics 365 Customer Engagement (on-premises) an
 ### See also
 
 [Turn on server-based SharePoint integration](set-up-sharepoint-integration.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

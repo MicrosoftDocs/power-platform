@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 09/18/2025
 ms.subservice: admin
 ms.author: abhijanand
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -39,6 +39,3 @@ The following table lists the services that support Power Platform managed ident
 
 ## Next steps
 [Set up managed identity for Power Platform - Dataverse plugins](set-up-managed-identity.md)
-
-
-

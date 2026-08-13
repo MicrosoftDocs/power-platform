@@ -8,6 +8,7 @@ ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
 ms.author: shujoshi
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -65,5 +66,3 @@ Article templates help you create new articles for your organization's knowledge
   
 ### See also  
  [eBook: Use KB articles to help your customers](https://go.microsoft.com/fwlink/p/?LinkId=394983)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,13 +1,14 @@
 ---
 title: "Partners: Get credit when your customers subscribe to Dynamics 365"
 description: "As a Microsoft Dynamics 365 partner, learn how to help your customers sign up for a trial subscription, customize it, and set yourself as the partner of record."
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/30/2017
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -158,6 +159,3 @@ If your customer wants to disable your access to the subscription, they must com
 1. Sign in to the [!INCLUDE[pn_Online_Subscription](../includes/pn-online-subscription.md)] with the [!INCLUDE[pn_Windows_Live_ID](../includes/pn-windows-live-id.md)] you use for the billing administrator at your company.  
   
 2. Follow the steps in [Create users](create-users.md) to disable the user from the partner company.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

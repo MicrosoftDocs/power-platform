@@ -11,7 +11,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/30/2024
 ms.author: samathur
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -54,4 +54,3 @@ Dynamics 365 and Power Apps licenses include a limited set of Power Automate cap
 ## Identify flows that need Premium licenses to avoid interruptions due to enforcement
 
 Admins can execute the licensing [report](../view-license-consumption-issues.md) to identify flows and take necessary actions. This report is refreshed at a 48-hour delay.
-

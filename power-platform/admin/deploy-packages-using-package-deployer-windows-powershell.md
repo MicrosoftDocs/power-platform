@@ -3,7 +3,7 @@ title: "Deploy packages using Package Deployer and Windows PowerShell | Microsof
 description: Learn about deploying packages using Package Deployer and Windows PowerShell.
 ms.custom: 
 ms.date: 08/12/2021
-ms.reviewer: 
+ms.reviewer: ellenwehrle
 ms.topic: install-set-up-deploy
 ms.assetid: 27676d3a-d35c-4452-9ff3-bcdadd943bef
 caps.latest.revision: 36
@@ -142,6 +142,3 @@ The Package Deployer tool also provides [!INCLUDE[pn_PowerShell](../includes/pn-
  
 ### See also  
  [Create packages for the CRM Package Deployer](/dynamics365/customerengagement/on-premises/developer/create-packages-package-deployer)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

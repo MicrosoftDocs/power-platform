@@ -1,7 +1,7 @@
 ---
 title: Administrator analytics and reports for Microsoft Power Apps
 description: Admins can view Microsoft Power Apps analytics in the Power Platform admin center, including reports on environment-level usage, errors, and service performance.
-author: Zeffin
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 03/19/2026
@@ -104,5 +104,3 @@ Some fields, such as the creator's email address and the app or flow display nam
 [Tenant-level analytics (default)](tenant-level-analytics.md) <br />
 [Tenant-level Analytics for Power Apps (preview)](powerapps-analytics-reports.md) <br />
 [Set up Microsoft Power Platform self-service analytics to export inventory and usage data](self-service-analytics.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

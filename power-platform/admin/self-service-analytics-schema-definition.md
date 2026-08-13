@@ -11,7 +11,7 @@ contributors:
   - v-aangie
   - Zeffin
 ms.author: cgarty
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -225,6 +225,3 @@ The following tables detail the schema definitions of the data. Metadata are con
 
 - [Create a storage account](/azure/storage/common/storage-account-create) <br />
 - [Set up Power Platform self-service analytics to export Power Apps inventory and usage data](self-service-analytics.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,13 +1,14 @@
 ---
 title: "Run bulk system jobs to detect duplicate records  | MicrosoftDocs"
 description: Run bulk system jobs to detect duplicate records
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/25/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -62,6 +63,3 @@ To maintain the integrity of system data, you should check for duplicates regula
  [Turn duplicate detection rules on or off for the whole organization](../admin/turn-duplicate-detection-rules-off-whole-organization.md)   
  [View and take action on bulk deletion jobs](../admin/view-take-action-bulk-deletion-jobs.md)   
  [Detect duplicate data](detect-duplicate-data.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

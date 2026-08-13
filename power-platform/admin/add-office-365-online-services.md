@@ -1,12 +1,13 @@
 ---
 title: "Add Microsoft 365 Online services  | MicrosoftDocs"
 description: Add Microsoft 365 Online services
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 09/04/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -18,8 +19,4 @@ Integrating [!INCLUDE[pn_MS_Office_365](../includes/pn-ms-office-365.md)] with c
  The following topics provide information on how to integrate [!INCLUDE[pn_Exchange_Online](../includes/pn-exchange-online.md)], [!INCLUDE[pn_sharepoint_online](../includes/pn-sharepoint-online.md)], and [!INCLUDE[pn_skype](../includes/pn-skype.md)] into customer engagement apps.  
   
 > [!NOTE]
-> [!INCLUDE[cc_Office365PlanRequirement](../includes/cc-office365planrequirement.md)]  
- 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+> [!INCLUDE[cc_Office365PlanRequirement](../includes/cc-office365planrequirement.md)]

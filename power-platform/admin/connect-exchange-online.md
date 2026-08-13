@@ -4,9 +4,9 @@ description: Learn what you need to do to get Exchange ready and connect to Exch
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/27/2025
-author: sericks007 
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 ms.contributors:
   - yingchin
   - sericks
@@ -364,5 +364,3 @@ Set-CrmRecord -conn $conn -CrmRecord $emailserverprofile
 
 [Troubleshooting and monitoring server-side synchronization](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization) <br />
 [Test mail flow by validating your connectors](/exchange/mail-flow-best-practices/test-mail-flow)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

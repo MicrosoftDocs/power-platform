@@ -57,6 +57,3 @@ With managed environments, admins can easily identify all the data policies that
 [Licensing](managed-environment-licensing.md)  <br />
 [View license consumption (preview)](view-license-consumption-issues.md) <br />
 [Tenant settings](tenant-settings.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

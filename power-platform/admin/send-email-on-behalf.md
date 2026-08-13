@@ -4,10 +4,10 @@ description: Set up users to send an outgoing email by updating the From field t
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 04/27/2021
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: mkaur
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---

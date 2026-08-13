@@ -1,12 +1,13 @@
 ---
 title: "Track Outlook email by moving it to a tracked Exchange folder | MicrosoftDocs"
 description: Track Outlook email by moving it to a tracked Exchange folder
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/11/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
@@ -93,6 +94,3 @@ To see folder tracking in action, see the video [Folder Level Tracking in CRM On
 ### See also  
  [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)<br />
  [Configure folder-level tracking](../admin/configure-outlook-exchange-folder-level-tracking.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

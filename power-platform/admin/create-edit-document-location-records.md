@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.date: 09/10/2025
 ms.subservice: admin
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -67,9 +68,4 @@ To store documents for records, the document libraries or folders must be in pla
 5. Choose **Save and Close**.  -->
   
 > [!NOTE]
->  To activate or deactivate a document location, on the **Document Locations** page, select the document location record, and choose **Activate** or **Deactivate**.  
-  
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+>  To activate or deactivate a document location, on the **Document Locations** page, select the document location record, and choose **Activate** or **Deactivate**.

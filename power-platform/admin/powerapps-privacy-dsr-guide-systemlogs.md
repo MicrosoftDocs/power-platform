@@ -1,13 +1,13 @@
 ---
 title: Responding to DSR requests for system-generated logs in Power Apps, Power Automate, and Microsoft Dataverse 
 description: Walkthrough of how to respond to DSR requests for system-generated logs in Power Apps, Power Automate, and Microsoft Dataverse
-author: sericks007
-ms.reviewer: paulliew
+author: EllenWehrle
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 12/09/2024
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -110,6 +110,3 @@ To determine whether or not you're a user of a managed or unmanaged tenant, perf
    ```
 
 3. Otherwise, you belong to a managed tenant.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

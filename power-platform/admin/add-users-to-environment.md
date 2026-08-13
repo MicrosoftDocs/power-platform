@@ -1,10 +1,10 @@
 ---
 title: Add users to an environment automatically or manually
 description: Learn about adding users to an environment and how the process differs when it has a Dataverse database. Use security groups to restrict access or add specific users. 
-author: shwetamurkute
+author: EllenWehrle
 ms.subservice: admin
-ms.author: smurkute
-ms.reviewer: smurkute
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 12/12/2025
@@ -64,5 +64,3 @@ On the **Users** page, you can do the following tasks:
 - On the **Users** page, select **Refresh** to update the list and see the added user.
 
 - After you add a user to the environment, [assign a security role to the user](database-security.md) to define their access to resources.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
