@@ -1,7 +1,7 @@
 ---
-title: Continuous access evaluation (preview)
+title: Continuous access evaluation
 description: Learn how continuous access evaluation in Microsoft Power Platform enforces changes to user access and tenant policy in near real time.
-ms.date: 03/11/2026
+ms.date: 08/10/2026
 ms.topic: overview
 author: ritesp
 ms.author: ritesp
@@ -16,14 +16,12 @@ contributors:
   - alaug 
 ---
 
-# Continuous access evaluation (preview)
-
-[This article is prerelease documentation and is subject to change.]
+# Continuous access evaluation
 
 OAuth 2.0 authentication traditionally relies on access token expiration to revoke a user's access to modern cloud services. Users whose access rights have been terminated still have access to resources until the access token expires&mdash;for Power Platform, as long as an hour, by default. With continuous access evaluation, however, Power Platform services such as Dataverse continuously evaluate a user's [critical events](/azure/active-directory/conditional-access/concept-continuous-access-evaluation#critical-event-evaluation) and network location changes. They proactively terminate active user sessions, or require reauthentication, and enforce tenant policy changes in near real time instead of waiting for an access token to expire.
 
 > [!NOTE]
-> **Rollout status**: Deployment began in January 2026 and is rolling out in phases. Availability expands over subsequent phases as scenarios are validated across supported clients, network topologies, and conditional access configurations. There are no more steps to enable this capability; it becomes active when the rollout reaches your organization
+> **Availability**: Continuous access evaluation is generally available for Microsoft Dataverse in Power Platform public cloud environments. Rollout to sovereign clouds begins in August 2026 and is anticipated to be complete by mid-September 2026. Until the rollout reaches your environment, continuous access evaluation isn't enforced there. There are no steps to enable this capability. It becomes active when the rollout reaches your organization.
 
 ## Key benefits
 
@@ -61,5 +59,3 @@ Continuous access evaluation supports two types of events:
 Power Platform clients that allow continuous access evaluation support *claim challenges*. A claim challenge is a redirect of a user's session to Microsoft Entra ID reauthentication when a continuous access evaluation-enabled service like Dataverse rejects a cached user token. Dynamics 365 Sales, Customer Service, Field Service, Marketing, Project Service Automation, and Power Apps support continuous access evaluation claims. Power Apps canvas apps don't support continous access evaluation in embedded experiences. 
 
 For clients that don't support continuous access evaluation, the access token lifetime remains the same as configured or set to the default value.
-
-To allow continuous access evaluation in your Power Platform Dataverse environment, reach out to your Microsoft contact or Microsoft Support.
