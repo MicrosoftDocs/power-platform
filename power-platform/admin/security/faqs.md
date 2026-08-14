@@ -6,10 +6,10 @@ ms.service: power-platform
 ms.topic: faq
 ms.custom: 
   - "admin-security"
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: mkaur
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.contributors: JesseParsons
 search.audienceType: 
   - admin

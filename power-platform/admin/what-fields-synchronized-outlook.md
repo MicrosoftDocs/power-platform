@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 03/21/2025
 ms.subservice: admin
 ms.author: mkaur
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -210,8 +210,4 @@ Administrators can set whether a sync occurs and the sync direction for customer
   
 2. **Regarding:** When you do a **Set Regarding**, the Regarding field in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] is replaced by the name of the regarding object from customer engagement apps. Until you sync, the **Set Regarding** action in [!INCLUDE[pn_crm_for_outlook_short](../includes/pn-crm-for-outlook-short.md)] and in customer engagement apps shouldn't change the Regarding field in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)].  
   
-3. **Start Date:** When a task is created and tracked in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)], the system assigns the task a reminder time. Reminder information isn't synced from [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] to customer engagement apps. However, when a task has Due Time set, it will be synchronized to Reminder Time in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)].  
-  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+3. **Start Date:** When a task is created and tracked in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)], the system assigns the task a reminder time. Reminder information isn't synced from [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)] to customer engagement apps. However, when a task has Due Time set, it will be synchronized to Reminder Time in [!INCLUDE[pn_Outlook_short](../includes/pn-outlook-short.md)].

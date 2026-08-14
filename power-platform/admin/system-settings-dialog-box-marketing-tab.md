@@ -1,12 +1,13 @@
 ---
 title: "System Settings Marketing tab"
 description: Legacy System Settings Marketing tab in Power Platform.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/11/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -44,7 +45,3 @@ Use the settings on this page to configure marketing settings for customer engag
 |                          Set "Do Not Send Marketing Material" option when unsubscribe email is received                           |                         Default: No. If Yes, when an unsubscribe email is received, the preference setting for the account, contact, or lead from the marketing list gets updated automatically to not send marketing materials.                         |
 |                                      Send acknowledgement to customers when they unsubscribe                                      |                                                 If the previous setting **Set "Do Not Send Marketing Material"** is Yes, you can use this setting to send a response to customers when they unsubscribe.                                                 |
 |                                                Template for Acknowledgement Email                                                 |                                                              If the two previous settings are Yes, you must specify an email template to use to respond to customers when they unsubscribe.                                                              |
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

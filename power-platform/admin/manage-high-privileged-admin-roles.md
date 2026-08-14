@@ -1,9 +1,9 @@
 ---
 title: Use Entra Privileged Identity Management in Power Platform admin center to manage high-privileged admin roles 
 description: Use Microsoft Entra Privileged Identity Management to manage high-privileged admin roles.
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 contributor: yingchin
 ms.reviewer: ellenwehrle
 ms.component: pa-admin

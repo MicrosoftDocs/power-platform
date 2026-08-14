@@ -89,5 +89,3 @@ A common cause of missing telemetry is insufficient permissions during setup.
 1. Select the export package you want to delete and select **Delete export**.
 
    You can set up a new connection whenever you decide to restart the data export.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

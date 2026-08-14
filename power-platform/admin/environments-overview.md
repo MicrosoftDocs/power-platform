@@ -1,12 +1,12 @@
 ---
 title: Power Platform environments overview
 description: Learn about Power Platform environments and how to use them.
-author: shwetamurkute
+author: EllenWehrle
 ms.topic: how-to
 ms.date: 05/28/2026
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.subservice: admin
-ms.author: smurkute
+ms.author: ellenwehrle
 contributors:
   - marcelbf
 ms.contributors:
@@ -190,5 +190,3 @@ To see the environment history:
 >
 > - Some actions such as Edit shows the edit as an action but not details of the action.
 > - Once an environment is deleted, environment history is also deleted. So, it might not be possible to know who deleted an environment after it's been hard deleted.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

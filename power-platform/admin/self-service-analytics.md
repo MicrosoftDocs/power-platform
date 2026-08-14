@@ -109,5 +109,3 @@ When setting up the first data export to your organization's data lake, Microsof
 [Create custom dashboards by using Power Platform inventory and usage data](build-custom-reports.md)
 
 [Azure Data Lake Storage](https://azure.microsoft.com/solutions/data-lake/)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

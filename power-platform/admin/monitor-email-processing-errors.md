@@ -1,12 +1,13 @@
 ---
 title: "Monitor email processing errors  | MicrosoftDocs"
 description: Monitor email processing errors
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 11/24/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -45,7 +46,4 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 > [!NOTE]
 >  If you don't wish to get alerts, you can disable them from the [System Settings dialog box – Email tab](system-settings-dialog-box-email-tab.md) by clearing the check boxes for alerts.  
 
-### See also  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+### See also

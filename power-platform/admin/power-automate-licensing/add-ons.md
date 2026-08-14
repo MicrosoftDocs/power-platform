@@ -10,7 +10,7 @@ contributors:
   - cvassallo
   - samathur
   - v-aangie
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -161,5 +161,3 @@ Get Power Automate pricing details at [Power Automate pricing](https://powerauto
 Data volume continues to grow exponentially, as businesses advance their digital transformation journey and bring data together across their organization. Modern business applications need to support new business scenarios, manage new data types, and help organizations with the increasing complexity of compliance mandates. 
 
 To support the growing needs of today's organizations, Dataverse storage capacity add-ons can support scaling of Power Automate operations. Learn more in [How to add storage capacity to Power Platform](/power-platform/admin/add-storage).
-
-

@@ -7,7 +7,7 @@ ms.date: 09/24/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
   - mikferland-msft
   - ellenwehrle
@@ -141,5 +141,3 @@ Set-PowerAppDlpConnectorBlockingPolicy -TenantId "aaaabbbb-0000-cccc-1111-dddd22
 ```powershell
 Get-PowerAppDlpConnectorBlockingPolicy -TenantId "aaaabbbb-0000-cccc-1111-dddd2222eeee" -PolicyId "1aaaaaa1-2bb2-3cc3-4dd4-5eeeeeeeeee5"
 ```
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

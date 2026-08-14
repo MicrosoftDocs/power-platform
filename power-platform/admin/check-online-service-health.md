@@ -56,5 +56,3 @@ Learn more about Message center in [Track new and changed features in the Micros
 
 [View service health](view-service-health.md)<br>
 [Microsoft Dataverse analytics](analytics-common-data-service.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

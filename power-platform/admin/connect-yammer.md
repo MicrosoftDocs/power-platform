@@ -1,13 +1,14 @@
 ---
 title: "Connect to Yammer to allow integration with Dynamics 365 apps"
 description: "Learn how to integrate Yammer with customer engagement apps to enable newsfeeds and conversations within app dashboards."
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/20/2024
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -127,6 +128,3 @@ search.audienceType:
   
 ### See also  
  [Visit the Yammer website](https://go.microsoft.com/fwlink/p/?LinkID=272440)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

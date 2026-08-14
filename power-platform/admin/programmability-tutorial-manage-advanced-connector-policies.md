@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.date: 07/14/2026
 author: laneswenka
 ms.author: laswenka
-ms.reviewer: sericks
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 search.audienceType:
   - admin

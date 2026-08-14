@@ -8,12 +8,12 @@ searchScope:
   - "Power Platform"  
 ms.custom:
  - dyn365-hub
-author: shwetamurkute
+author: EllenWehrle
 contributors:
   - v-jlandrum 
   - sbasi19
   - v-aangie
-ms.author: smurkute
+ms.author: ellenwehrle
 ms.reviewer: smurkute
 ---
 # Important changes (deprecations) coming in Power Platform

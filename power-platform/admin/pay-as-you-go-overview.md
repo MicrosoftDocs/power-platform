@@ -7,7 +7,7 @@ ms.topic: overview
 ms.date: 05/29/2025
 ms.subservice: admin
 ms.author: ampatra
-ms.reviewer: ellenwehrle 
+ms.reviewer: ellenwehrle
 contributors:
   - ShawnNandiMSFT
 search.audienceType: 
@@ -66,9 +66,3 @@ Billing policies provide flexible options for organizations that are looking to 
 ## Next step
 
 [Pay-as-you-go meters](pay-as-you-go-meters.md)
-
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

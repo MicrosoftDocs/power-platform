@@ -1,13 +1,14 @@
 ---
 title: "Import data (all record types)  | MicrosoftDocs"
 description: Import data (all record types) 
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/08/2020
 ms.subservice: admin
-ms.author: sericks 
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -45,6 +46,3 @@ There are several ways to import data:
   
 ### See also  
  [Detect duplicate data](detect-duplicate-data.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

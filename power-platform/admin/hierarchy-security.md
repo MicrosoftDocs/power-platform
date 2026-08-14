@@ -4,7 +4,7 @@ description: Learn how to use hierarchy security to control access.
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: concept-article
@@ -187,5 +187,3 @@ Managers can see their disabled status direct report's records for environments 
 
  [Security in Microsoft Dataverse](wp-security.md) <br>
  [Query and visualize hierarchical data](/dynamics365/customer-engagement/customize/query-visualize-hierarchical-data)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

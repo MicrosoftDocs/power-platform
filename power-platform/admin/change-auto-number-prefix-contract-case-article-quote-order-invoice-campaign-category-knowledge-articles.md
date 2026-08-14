@@ -1,13 +1,14 @@
 ---
 title: "Change auto-numbering prefixes for contracts, cases, articles, quotes, orders, invoices, campaigns, categories, and knowledge articles  | MicrosoftDocs"
 description: Change auto-numbering prefixes for contracts, cases, articles, quotes, orders, invoices, campaigns, categories, and knowledge articles
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/20/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -51,6 +52,3 @@ Make sure you have the System Administrator or System Customizer security role o
   
 ### See also  
  [Use solutions for your customizations](/dynamics365/customer-engagement/customize/use-solutions-for-your-customizations)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

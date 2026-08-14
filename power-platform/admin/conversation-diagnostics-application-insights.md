@@ -72,4 +72,4 @@ You can use the **Export** option to export the logs and combine this data withÂ
 
 ### Related content
 
-[Configure conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics)  
+[Configure conversation diagnostics](/dynamics365/customer-service/administer/configure-conversation-diagnostics)

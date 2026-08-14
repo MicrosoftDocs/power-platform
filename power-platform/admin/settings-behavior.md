@@ -1,13 +1,14 @@
 ---
 title: Manage behavior settings 
 description: View and manage behavior settings for Microsoft Dataverse.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks 
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -71,5 +72,3 @@ Make sure you have the System Administrator security role or equivalent permissi
 |--------------|-----------------|-----|  
 |Minimum number of characters to trigger typeahead search  | Enter the minimum number of characters that trigger an automatic typeahead search in a lookup field in model-driven apps. <br><br>This setting can be used to improve lookup performance, particularly when the underlying environment database has huge amounts of data.  | Field is empty by default. |
 | Delay between character inputs that trigger a search | Enter the delay interval in milliseconds that is introduced in lookups before a search is executed. <br><br> This can be used to improve lookup performance, particularly when the underlying environment database has huge amounts of data.   | 250 ms|
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

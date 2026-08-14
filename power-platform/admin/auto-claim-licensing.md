@@ -134,6 +134,3 @@ Set-AzureADUserLicense -ObjectId $LicensedUser.ObjectId -AssignedLicenses $Licen
 Add-AzureADGroupMember -ObjectId $LicensedGroup.ObjectId -RefObjectId $LicensedUser.ObjectId
 
 ```
-
-
-

@@ -2,7 +2,7 @@
 title: Assign security roles 
 description: Learn about assigning security roles to a user.
 author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 ms.author: paulliew
 ms.component: pa-admin
@@ -114,6 +114,3 @@ Go to **Environments** > [select an environment] > **Settings** > **Users + Perm
 
 ### Related information
 [Get started with security roles in Dataverse](/training/modules/get-started-security-roles/)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

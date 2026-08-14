@@ -1,14 +1,15 @@
 ---
 title: "Access Dynamics 365 login and Office apps"
 description: "There are two main ways to log in and access your Microsoft Dynamics 365 and Office apps. Troubleshoot issues using the Support and Recovery Assistant."
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.collection: get-started
 ms.date: 11/14/2022
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -42,9 +43,4 @@ For other ways to access Dynamics 365 and Office apps, see [Quickly navigate wit
 The home for business applications across Dynamics 365 and Microsoft Power Platform has moved from [https://home.dynamics.com](https://home.dynamics.com) to [office.com](https://office.com/apps).
 
 ### See also  
- [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md)   
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Quickly navigate with the Office app launcher and the Dynamics 365 home page](../admin/quickly-navigate-office-365-app-launcher.md)

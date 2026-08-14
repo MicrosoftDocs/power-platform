@@ -1,10 +1,11 @@
 ---
 title: "Try Power Platform apps for free | MicrosoftDocs"
 description: Try Power Platform apps (Power Apps, Power Automate, Power BI, Power Pages, and Microsoft Copilot Studio) for free before you buy  
-author: sericks007
+author: EllenWehrle
 ms.topic: concept-article
 ms.date: 02/07/2024
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 
 ---
 # Try Power Platform apps for free
@@ -23,5 +24,3 @@ You can explore all Power Platform apps for free by signing up for trial license
 > You can sign up for a 30-day free trial of customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service) by visiting <https://trials.dynamics.com>, and selecting the appropriate app.
 >
 > For detailed information about signing up, purchasing or using individual customer engagement apps, see the respective app's documentation at [Dynamics 365 documentation](/dynamics365/).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

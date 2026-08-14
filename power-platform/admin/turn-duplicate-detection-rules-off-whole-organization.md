@@ -1,13 +1,14 @@
 ---
 title: "Turn duplicate detection rules on or off for the whole organization  | MicrosoftDocs"
 description: Turn duplicate detection rules on or off for the whole organization 
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/25/2025
 ms.subservice: admin
-ms.author: sericks 
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -55,8 +56,4 @@ Make sure you have the System Administrator, System Customizer, Sales Manager, V
 ### See also  
 [Set up duplicate detection rules to keep your data clean](set-up-duplicate-detection-rules-keep-data-clean.md) <br />
 [Run bulk system jobs to detect duplicate records](run-bulk-system-jobs-detect-duplicate-records.md) <br />
-[Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml) 
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)

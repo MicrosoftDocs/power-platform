@@ -1,13 +1,13 @@
 ---
 title: Manage Microsoft Dataverse settings 
 description: View and manage Microsoft Dataverse settings.
-author: sericks007
+author: EllenWehrle
 contributor: yingchin
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/16/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -64,7 +64,3 @@ To open settings for legacy web client apps, select the arrow next to the app na
 
 ### See also
 [Get started with Customer Service admin center](/dynamics365/customer-service/cs-admin-center)
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

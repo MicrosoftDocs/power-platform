@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 09/20/2023
 ms.subservice: admin
 ms.author: paulliew 
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
 - igorantunesms 
 search.audienceType: 
@@ -81,9 +81,3 @@ To learn whether user access was granted because of POA, see [Determine why a us
 
 ### See also
 [Dataverse storage capacity](capacity-storage.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
-
-
-

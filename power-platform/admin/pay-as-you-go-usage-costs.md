@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 01/14/2025
 ms.subservice: admin
 ms.author: ellenwehrle
-ms.reviewer: ellenwehrle 
+ms.reviewer: ellenwehrle
 contributors:
   - amiyapatr-zz
   - ShawnNandiMSFT
@@ -85,7 +85,3 @@ Azure Cost Management provides options to set budgets for Azure resources and sp
 ## Next step
 
 [Known issues and frequently asked questions](pay-as-you-go-issues-faq.md)
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

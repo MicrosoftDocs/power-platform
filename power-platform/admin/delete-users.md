@@ -4,7 +4,7 @@ description: This article covers the various levels and methods of user deletion
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 06/04/2025
 ms.contributors:
@@ -342,5 +342,3 @@ If you enabled Dataverse auditing in the environment and in the **User** table, 
 [Delete unlicensed or removed Microsoft Entra group members](delete-unlicensed-or-removed-microsoft-entra-group-users.md)
 [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide&preserve-view=true) <br />
 [Troubleshooting: Common user access issues](/troubleshoot/power-platform/dataverse/environment-app-access/troubleshooting-user-needs-read-write-access-organization) <br />
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

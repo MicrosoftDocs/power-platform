@@ -1,12 +1,13 @@
 ---
 title: "About Microsoft Cloud Australia  | MicrosoftDocs"
 description: About Microsoft Cloud Australia
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/20/2022
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -211,6 +212,3 @@ Services deployed in the Australia East Region will replicate data to the Austra
 ### See also  
  [Office 365 and Dynamics CRM Online now available from datacenters in Australia](https://blogs.office.com/2015/03/30/office-365-and-dynamics-crm-online-now-available-from-datacenters-in-australia/)    
  [New datacenter regions](new-datacenter-regions.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

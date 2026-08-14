@@ -1,12 +1,13 @@
 ---
 title: "Manage email tracking settings  | MicrosoftDocs"
 description: View and manage email tracking settings for Microsoft Dataverse.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/03/2024
 ms.subservice: admin
-ms.author: sericks 
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.contributors:
@@ -44,7 +45,4 @@ Make sure you have the System Administrator or System Customizer security role o
 > |**Folder-level tracking**||  
 > |Use folder-level tracking for Exchange folders (server-side synchronization must be enabled)|Default: On. Users can set up [!INCLUDE[pn_Exchange](../includes/pn-exchange.md)] tracking folders, and then move messages to those folders to track them automatically on virtually any device. More information: [Track Outlook email by moving it to a tracked Exchange folder](track-outlook-email-by-moving-it-tracked-exchange-folder.md)<br /><br /> Folder-level tracking provides 100% tracking accuracy. To use folder-level tracking:<br /><br /> -   Select **On**.<br />-   Your organization must synchronize email through server-side synchronization. More information: [Set up server-side synchronization](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)|  
 > |**Tracking between people**| |
-> |Track emails sent between Dynamics 365 users as two activities|Default: On. Select this option to create two email activities between [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] users, one for the sender and one for the recipient.| 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+> |Track emails sent between Dynamics 365 users as two activities|Default: On. Select this option to create two email activities between [!INCLUDE[pn_crm_shortest](../includes/pn-crm-shortest.md)] users, one for the sender and one for the recipient.|

@@ -1,13 +1,14 @@
 ---
 title: "Set up Skype or Skype for Business  | MicrosoftDocs"
 description: Set up Skype or Skype for Business 
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/09/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -63,6 +64,3 @@ When you use [!INCLUDE[pn_skype_for_business](../includes/pn-skype-for-business.
 ### See also 
  [Skype for Business and Skype integration](skype-business-integration.md)   
  [Skype for Business help](https://support.office.com/skype-for-business)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

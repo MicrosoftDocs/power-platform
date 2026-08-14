@@ -7,7 +7,7 @@ ms.date: 04/03/2026
 author: grbarker
 ms.subservice: admin
 ms.author: grbarker
-ms.reviewer: ellenwehrle 
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.contributors:
@@ -355,5 +355,3 @@ Here's an example payload of metadata that you can expect from one of the events
 - [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Office 365 Management Activity API schema](/en-us/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype)
 - [Detailed properties in the audit log](/purview/audit-log-detailed-properties)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

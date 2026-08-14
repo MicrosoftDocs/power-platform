@@ -8,7 +8,7 @@ ms.subservice: admin
 ms.custom: NewPPAC
 author: ChrisGarty
 ms.author: cgarty
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -41,5 +41,3 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
 1. Turn the **Administration mode** property to **Enabled**.
 1. Optionally, you can set **Background operations**.
 1. Select **Save**.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

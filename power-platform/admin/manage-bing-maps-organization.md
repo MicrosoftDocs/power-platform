@@ -1,13 +1,14 @@
 ---
 title: "Manage Bing Maps for your organizations  | MicrosoftDocs"
 description: Manage Bing Maps for your organization
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date:  11/20/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -72,7 +73,4 @@ Even if a language is supported, you may not be able to view maps for certain re
 ## Privacy notice
 [!INCLUDE[cc_privacy_crm_bing_maps](../includes/cc-privacy-crm-bing-maps.md)]
   
-### See also  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+### See also

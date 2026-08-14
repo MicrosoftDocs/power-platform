@@ -33,7 +33,3 @@ The following table shows the default security roles or other permissions that a
 ### Related content
  [Manage Your Documents](../admin/manage-documents-using-sharepoint.md) <br /> 
 [Validate and fix SharePoint site URLs](/troubleshoot/power-platform/power-apps/integrate-products/troubleshoot-set-up-sharepoint-online#validate-and-fix-sharepoint-site-urls)
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

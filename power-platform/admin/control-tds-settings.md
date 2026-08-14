@@ -1,9 +1,9 @@
 ---
 title: Control access of the TDS endpoint 
 description: Learn how to control user access with the TDS endpoint settings in Power Platform.
-author: sericks007
+author: EllenWehrle
 ms.author: paulliew
-ms.reviewer: matp
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.subservice: admin
 ms.topic: how-to

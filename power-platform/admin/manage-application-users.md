@@ -4,7 +4,7 @@ description: Learn how to manage application users from the Power Platform admin
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/03/2026
@@ -138,5 +138,3 @@ In each of your environments, there's a set of [system-provided application user
 1. Select an application user.
 1. Select **Details** from the command bar to view details of the platform, application user.
 1. Select **Close** to return to the application user list.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

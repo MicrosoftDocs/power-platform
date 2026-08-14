@@ -1,13 +1,13 @@
 ---
-title: "Use performance insights"
-description: "Learn how use performance insights to improve app performance"
+title: Use performance insights
+description: Learn how use performance insights to improve app performance.
 author: Mattp123
-
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 08/12/2021
 ms.subservice: admin
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -19,5 +19,3 @@ Performance insights are a self-service tool for enterprise app makers that anal
  [Performance tuning and optimization](../admin/performance-tuning-and-optimization.md)
 
 [Debug a model-driven app with Monitor](/powerapps/maker/monitor-modelapps)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

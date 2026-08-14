@@ -1,13 +1,14 @@
 ---
 title: "Detect duplicate data with match codes and rules"
 description: "Learn about duplicate detection rules for data, including match codes, and their limitations for Dynamics 365 records."
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: article
 ms.date: 10/16/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -52,6 +53,3 @@ A duplicate detection job runs in the background while you do other things in th
  [Set up duplicate detection rules](set-up-duplicate-detection-rules-keep-data-clean.md)   
  [Run system jobs to detect duplicates](run-bulk-system-jobs-detect-duplicate-records.md)   
  [Delete bulk records](../admin/delete-bulk-records.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

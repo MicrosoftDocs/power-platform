@@ -4,10 +4,10 @@ description: Learn how Power Apps and Power Automate are made widely available t
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 04/07/2026
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: angieandrews
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.custom: 
   - "admin-security"
   - NewPPAC
@@ -197,6 +197,3 @@ The export can take a while for tenants with a large number of Power Platform us
 
 - [Use best practices to secure and govern Power Automate environments](/training/paths/best-practices-environments/) <br />
 - [Microsoft Power Platform Center of Excellence (CoE) Starter Kit](../guidance/coe/starter-kit.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

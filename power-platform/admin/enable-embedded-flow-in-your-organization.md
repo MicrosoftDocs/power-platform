@@ -1,13 +1,13 @@
 ---
 title: Enable Power Automate integration to automate processes  | MicrosoftDocs
 description: Enable Power Automate integration to automate processes
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 03/26/2026
 ms.subservice: admin
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -88,6 +88,3 @@ To enable Power Automate integration in your organization, follow these steps.
 - [Recommendations for conditional access and multifactor authentication](/troubleshoot/power-platform/power-automate/administration/conditional-access-and-multi-factor-authentication-in-flow)
 - [Conditional Access: Target resources
 ](/entra/identity/conditional-access/concept-conditional-access-cloud-apps?tabs=powershell)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

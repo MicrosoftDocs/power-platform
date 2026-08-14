@@ -1,12 +1,13 @@
 ---
 title: "Management and monitoring  | MicrosoftDocs"
 description: About management and monitoring.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 07/12/2022
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -38,6 +39,3 @@ The [Center of Excellence Starter Kit](../guidance/coe/starter-kit.md) offers a 
 [Dataverse analytics](analytics-common-data-service.md)<br />
 [Admin Analytics for Microsoft Power Automate](analytics-flow.md)<br />
 [Admin Analytics for Power Apps](analytics-powerapps.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

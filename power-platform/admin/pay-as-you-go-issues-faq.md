@@ -171,6 +171,4 @@ Their user number can be different due to several reasons like they count usage 
 - External analytics provider collects data by posting to certain domains that can be different from the domain of the website. If the requests to external analytic provider domains are blocked by end users network, those users aren't counted. 
 - Typical external analytics providers don't account for AJAX requests by default. AJAX requests aren't counted in their page views. 
 - External analytics providers count all users irrespective of the http status of the request. However, we won't count a user as active user if all the request made by the user returns either http 3xx, 4xx, or 5xx status code. 
-- External analytics providers won't exclude special pages which are excluded in the official count. 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- External analytics providers won't exclude special pages which are excluded in the official count.

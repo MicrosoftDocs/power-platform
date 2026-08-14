@@ -1,12 +1,13 @@
 ---
 title: Power Platform and Dynamics 365 apps operated by 21Vianet in China
 description: This article provides information about Microsoft Power Platform and Dynamics 365 apps that are operated by 21Vianet in China.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 12/05/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.contributors:
   - arjunmayur
   - macarrer
@@ -121,5 +122,3 @@ Follow your established support request procedure to raise any additional questi
 - [OSPT (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
 - [Azure China 21Vianet](/azure/china/china-welcome)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

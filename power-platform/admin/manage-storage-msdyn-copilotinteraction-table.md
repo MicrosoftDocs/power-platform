@@ -53,5 +53,3 @@ Admins can also set the data retention policy to purge the `msdyn_copilotinterac
 - [Opt out from using Copilot features](/dynamics365/customer-service/administer/configure-copilot-features#opt-out-from-using-copilot-features)
 - [FAQ for Copilot in Customer Service](/dynamics365/customer-service/administer/faq-copilot-features)
 - [Dataverse capacity-based storage details](capacity-storage.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

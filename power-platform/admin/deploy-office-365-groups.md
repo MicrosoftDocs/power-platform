@@ -1,13 +1,14 @@
 ---
 title: "Deploy Microsoft 365 groups  | MicrosoftDocs"
 description: Deploy Microsoft 365 groups
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: install-set-up-deploy
 ms.date: 11/19/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -145,9 +146,4 @@ You're now ready to use Microsoft 365 Groups. See [Collaborate with your colleag
 ### See also  
  [Collaborate with your colleagues using Microsoft 365 groups](/dynamics365/customerengagement/on-premises/basics/collaborate-with-colleagues-using-office-365-groups)   
  [CRM Blog: Dynamics CRM Online connector for Microsoft 365 groups](https://blogs.msdn.microsoft.com/crm/2016/04/01/dynamics-crm-online-connector-for-office-365-groups/)   
- [Set up customer engagement apps to use Exchange Online](connect-exchange-online.md)   
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Set up customer engagement apps to use Exchange Online](connect-exchange-online.md)

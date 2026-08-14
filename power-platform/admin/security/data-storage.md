@@ -9,7 +9,7 @@ ms.custom:
 author: royshea
 ms.subservice: admin
 ms.author: royshea 
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors: 

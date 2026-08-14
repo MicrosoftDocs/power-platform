@@ -1,13 +1,14 @@
 ---
 title: "Customize regional options  | MicrosoftDocs"
 description: Customize regional options
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/28/2023
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -45,9 +46,4 @@ Make sure you have the System Administrator or System Customizer security role o
   
    - Select the **Date** tab to set the type of calendar, first day of the week, first week of the year, formats for long and short dates, and whether or not to show week numbers in [calendar view](/powerapps/user/calendar-view).  
   
-7. Select **Apply** to apply the changes and continue working in the dialog box, or select **OK** to save the changes and close the dialog box.  
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+7. Select **Apply** to apply the changes and continue working in the dialog box, or select **OK** to save the changes and close the dialog box.

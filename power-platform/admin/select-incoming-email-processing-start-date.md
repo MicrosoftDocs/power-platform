@@ -7,7 +7,7 @@ ms.topic: overview
 ms.date: 06/07/2024
 ms.subservice: admin
 ms.author: mkaur 
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -27,5 +27,3 @@ The selected date and time set the **ProcessEmailReceivedAfter** column on the m
 
 ## Implications of using past dates
 Setting a past date may create a large backlog of emails to process, which may delay the synchronization of recent emails. The processing time of emails can also be impacted by the number of synchronous customizations that are executed during the email creation process in Dataverse. Learn more: [Server-side synchronization frequency](server-side-synchronization.md#server-side-synchronization-frequency).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

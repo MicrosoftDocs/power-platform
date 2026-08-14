@@ -1,12 +1,13 @@
 ---
 title: "Integrate (synchronize) your email system  | MicrosoftDocs"
 description: Integrate (synchronize) your email system
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 09/08/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -57,12 +58,4 @@ One of the main reasons people use customer engagement apps (Dynamics 365 Sales,
  [Microsoft Dynamics CRM: How it works documentation ](https://www.microsoft.com/download/details.aspx?id=48718) 
  [Integrate your email system using server-side synchronization](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
  [Troubleshooting and monitoring server-side synchronization issues](/troubleshoot/power-platform/dataverse/email-exchange-synchronization/troubleshooting-monitoring-server-side-synchronization)   
- [Deploy Dynamics 365 App for Outlook](/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook)   
-
- 
- 
- 
- 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Deploy Dynamics 365 App for Outlook](/dynamics365/outlook-app/deploy-dynamics-365-app-for-outlook)

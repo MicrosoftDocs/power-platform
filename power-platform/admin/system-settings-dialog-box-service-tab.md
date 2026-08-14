@@ -1,12 +1,13 @@
 ---
 title: "System Settings Service tab | MicrosoftDocs"
 description: System Settings Service tab 
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/15/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.contributors:
@@ -45,7 +46,4 @@ Use this tab to set preferences for customer service, such as service level agre
 
   
 ### See also  
-[Learn the basics of the Customer Service Hub](/dynamics365/customer-service/customer-service-hub-user-guide-basics) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Learn the basics of the Customer Service Hub](/dynamics365/customer-service/customer-service-hub-user-guide-basics)

@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 04/27/2026
 ms.subservice: admin
 ms.author: rijoshi
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:

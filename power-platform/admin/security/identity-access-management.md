@@ -8,7 +8,7 @@ ms.date: 03/09/2026
 ms.custom: NewPPAC
 author: matapg007
 ms.author: matgupta
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -111,5 +111,3 @@ The **Agent access channels** feature is a modernized framework of the existing 
 | Allowed| Allowed | Allowed|
 
 We recommend that all customers move toward using the **Agent access channels** settings in the Power Platform admin center to leverage the capability of groups and rules.
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -15,7 +15,6 @@ contributors:
   - elijohnson-ms
   - iscohen-microsoft
   - yingchin
-  - sericks
 ms.custom:
   - NewPPAC
   - sfi-image-nochange
@@ -353,5 +352,3 @@ The restore process, especially for environments with large amounts of data, is 
 - Restoration of an environment requires **1 GB of available capacity**. Learn more in [Is there a database size restriction for backing up or restoring an organization through the user interface or API?](#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api).
 - Backup and restore operations work only with source and target environments that have Dataverse. Learn more in [Add a Microsoft Dataverse database](create-database.md).
 - If you don't have enough storage, go to [Add Microsoft Dataverse storage capacity](add-storage.md) to request more storage.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

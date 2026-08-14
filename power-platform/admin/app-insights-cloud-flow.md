@@ -8,7 +8,7 @@ ms.date: 01/16/2025
 author: samathur
 ms.subservice: admin
 ms.author: samathur
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:

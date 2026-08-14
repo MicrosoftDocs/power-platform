@@ -5,7 +5,7 @@ ms.date: 08/10/2026
 ms.topic: overview
 author: ritesp
 ms.author: ritesp
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.subservice: admin
 search.audienceType: 

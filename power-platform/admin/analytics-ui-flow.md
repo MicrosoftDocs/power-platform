@@ -1,7 +1,7 @@
 ---
 title: View analytics for Power Automate desktop flows | Microsoft Docs
 description: Learn about trends, usage patterns, and more analytics for desktop flows in the Power Platform admin center.
-author: Zeffin
+author: EllenWehrle
 ms.topic: how-to
 ms.date: 12/04/2025
 ms.subservice: admin
@@ -82,5 +82,3 @@ Some fields, such as the creator's email address and the app or flow display nam
 ## Related content
 
 - Run [desktop flows](/power-automate/desktop-flows/run-desktop-flow).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

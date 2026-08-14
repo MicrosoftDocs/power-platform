@@ -73,6 +73,3 @@ Follow these steps for [Unified Interface](about-unified-interface.md) apps.
    - **Remove Sample Data**, and then select **Close**.  
    - **Install Sample Data**, and then select **Close**.  
    - To close the screen without making changes, just select **Close**.
-  
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

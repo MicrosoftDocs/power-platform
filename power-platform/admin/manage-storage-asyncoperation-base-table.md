@@ -223,5 +223,3 @@ For asynchronous workflows, we recommend selecting the **Automatically delete co
 - [Activities data model and storage](/power-apps/developer/data-platform/activities-data-model-storage)
 
 - [Dataverse storage capacity](capacity-storage.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

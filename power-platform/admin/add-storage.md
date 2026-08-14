@@ -73,4 +73,3 @@ Follow these steps to access the Capacity page:
 1. In the **Manage** pane, select **Environments**, and then select an environment.
 1. In the navigation pane, select **Licensing**.
 1. Under **Licensing**, select **Capacity add-ons**.
-

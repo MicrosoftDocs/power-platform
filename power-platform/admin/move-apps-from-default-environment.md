@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 02/02/2026
 ms.subservice: admin
 ms.author: sidhartg
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType:
   - admin
 ---
@@ -112,4 +112,3 @@ You can move apps by using one of the following methods:
 
 - Learn more about [managed environments](managed-environment-overview.md).
 - Explore [Environment routing](default-environment-routing.md).
-

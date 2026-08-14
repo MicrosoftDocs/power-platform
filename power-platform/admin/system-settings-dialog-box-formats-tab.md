@@ -1,12 +1,13 @@
 ---
 title: "System Settings Formats tab"
 description: Legacy System Settings Formats tab in Power Platform.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/11/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -41,6 +42,3 @@ You can control how customer engagement apps (Dynamics 365 Sales, Dynamics 365 C
   
 ### See also  
  [Customize regional options (admins)](../admin/customize-regional-options-admins.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

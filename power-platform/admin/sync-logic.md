@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 10/14/2025
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -283,7 +283,3 @@ By default, tasks that are created in Dynamics 365 for Outlook don't sync with D
 - [Address synchronization for contacts](/dynamics365/outlook-addin/admin-guide/configure-synchronization-appointments-contacts-tasks#address-synchronization-for-contacts)
 - [Integrate your email system](/power-platform/admin/integrate-synchronize-your-email-system)
 - [Which fields can be synchronized between Dynamics 365 apps and Outlook?](/dynamics365/outlook-addin/admin-guide/which-fields-synchronized)
-
-
-
-

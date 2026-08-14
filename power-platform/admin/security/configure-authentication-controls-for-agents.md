@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.collection: bap-ai-copilot
 author: mikerapid
 ms.author: mobajemu
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.date: 06/11/2026
 
 ---
@@ -66,4 +66,3 @@ When you select [**Require Entra authentication**](/microsoft-copilot-studio/con
 ### Allow all supported authentication methods
 
 When you select **Allow all supported authentication methods**, users can configure their agents to support all authentication methods (authenticate with Microsoft, manual authentication with Microsoft Entra ID, and manual authentication with Generic OAuth 2). This configuration blocks no authentication and anonymous access. Choose this option when authentication is required, but your organization wants to support both Microsoft Entra ID and Generic OAuth 2 in manual authentication scenarios.
-

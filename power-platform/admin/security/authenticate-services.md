@@ -5,10 +5,10 @@ ms.date: 02/14/2022
 ms.service: power-platform
 ms.topic: how-to
 ms.collection: get-started
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: mkaur
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom:

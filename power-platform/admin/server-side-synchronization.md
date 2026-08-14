@@ -4,10 +4,10 @@ description: Server-side synchronization provides direct apps-to-email server sy
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 03/14/2024
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: mkaur
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -94,6 +94,3 @@ If the mailbox is enabled for appointments, contacts, and tasks and incoming ema
 
  [Set up server-side synchronization of email, appointments, contacts, and tasks](../admin/set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)   
  [Synchronizing data with Outlook or Exchange FAQ](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

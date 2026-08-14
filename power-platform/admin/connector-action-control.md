@@ -187,5 +187,3 @@ $ConnectorConfigurations = @{
 }
 New-PowerAppDlpPolicyConnectorConfigurations -TenantId $TenantId -PolicyName $PolicyName -NewDlpPolicyConnectorConfigurations $ConnectorConfigurations
 ```
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

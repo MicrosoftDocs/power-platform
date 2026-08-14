@@ -1,13 +1,14 @@
 ---
 title: "Update your apps to Unified Interface  | MicrosoftDocs"
 description: Update your apps to Unified Interface
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 10/09/2019
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -45,8 +46,3 @@ The following are recommended ways to update to Unified Interface based on how t
 ## Apps obtained from an ISV or any other third party publisher
 
 - Contact the ISV (Independent Software Vendor) or the third party app publisher and get a new version that updates the apps to Unified Interface.
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

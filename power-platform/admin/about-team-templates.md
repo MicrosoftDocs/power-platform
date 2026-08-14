@@ -5,10 +5,10 @@ description: "Learn how to use team templates in Microsoft Power Platform to all
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 01/11/2021
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: mkaur
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -33,8 +33,4 @@ For information about how to create a team template, enable a table for system-m
   
 ### See also  
  [Create a team template and add to a table form](create-team-template-add-entity-form.md)   
- [Manage teams](manage-teams.md)    
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Manage teams](manage-teams.md)

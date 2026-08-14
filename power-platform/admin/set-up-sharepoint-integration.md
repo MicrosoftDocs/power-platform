@@ -8,6 +8,7 @@ ms.topic: concept-article
 ms.date: 09/28/2020
 ms.subservice: admin
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -33,6 +34,3 @@ With SharePoint you can store and manage documents in the context of a record on
  [Permissions required for document management tasks](../admin/permissions-required-document-management-tasks.md)   <br />
  [Validate and fix SharePoint site URLs](/troubleshoot/power-platform/power-apps/integrate-products/troubleshoot-set-up-sharepoint-online#validate-and-fix-sharepoint-site-urls) <br />
  [Enable SharePoint document management for specific entities](enable-sharepoint-document-management-specific-entities.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

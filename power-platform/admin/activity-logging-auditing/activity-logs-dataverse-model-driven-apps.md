@@ -12,7 +12,7 @@ contributors:
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: grbarker
-ms.reviewer: ellenwehrle 
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -193,5 +193,3 @@ The following example shows a list of messages logged when a user converts a lea
 - [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
 - [Manage Dataverse auditing](/admin/manage-dataverse-auditing.md)
 - [Auditing overview](/power-apps/developer/data-platform/auditing/overview)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

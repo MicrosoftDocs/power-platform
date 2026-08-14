@@ -6,7 +6,7 @@ ms.date: 04/03/2026
 author: EllenWehrle
 ms.subservice: admin
 ms.author: grbarker
-ms.reviewer: ellenwehrle 
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -101,5 +101,3 @@ This table lists some of the activities you can monitor in Power Pages audit log
 - [Microsoft Purview](/purview/)
 - [Microsoft Purview portal](https://purview.microsoft.com/home)
 - [Auditing solutions in Microsoft Purview](/purview/audit-solutions-overview)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

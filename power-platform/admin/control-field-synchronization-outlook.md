@@ -1,12 +1,13 @@
 ---
 title: "Control field synchronization with Outlook  | MicrosoftDocs"
 description: Control field synchronization with Outlook
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -56,7 +57,4 @@ Best practice is to review the security settings for these security methods to e
   
 [!INCLUDE[proc_more_information](../includes/proc-more-information.md)] [How field security affects synchronization between customer engagement apps and Outlook](../admin/how-field-security-affects-synchronization-between-outlook.md) and [Security concepts](../admin/wp-security-cds.md)  
   
-### See also  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+### See also

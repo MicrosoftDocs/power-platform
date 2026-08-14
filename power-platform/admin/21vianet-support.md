@@ -1,13 +1,14 @@
 ---
 title: "Support for Power Platform and Dynamics 365 apps - operated by 21Vianet in China  | MicrosoftDocs"
 description: Provides information about the support for Power Platform and Dynamics 365 apps ((Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Project Service Automation) that are operated by 21Vianet in China 
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 02/23/2022
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -70,6 +71,3 @@ For details about purchasing Premier support, contact your Microsoft Account tea
 - [OSPT of Dynamics 365 (世纪互联在线服务的服务级别协议)](https://www.21vbluecloud.com/ostpt/)
 - [Azure Docs (in Chinese)](https://docs.azure.cn/zh-cn/)
 - [Azure China 21Vianet](/azure/china/china-welcome)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

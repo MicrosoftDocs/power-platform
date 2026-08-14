@@ -4,10 +4,10 @@ description: View tenant-level analytics for Power Apps.
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 10/30/2025
-author: Zeffin
+author: EllenWehrle
 ms.subservice: admin
-ms.author: smurkute
-ms.reviewer: smurkute
+ms.author: miferlan
+ms.reviewer: ellenwehrle
 contributor: mikferland-msft
 search.audienceType: 
   - admin
@@ -137,5 +137,3 @@ For more information on downloading data from the tenant level reports, see [Exp
 ### See also
 
 [Tenant-level analytics](tenant-level-analytics.md) <br />
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

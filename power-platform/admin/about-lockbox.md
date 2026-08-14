@@ -8,7 +8,7 @@ ms.date: 05/05/2026
 ms.update-cycle: 180-days
 author: mihaelablendea
 ms.author: mihaelab
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.collection: bap-ai-copilot
@@ -168,5 +168,3 @@ In addition, access to Customer Lockbox for Microsoft Power Platform and Dynamic
 ## Known issues
 
 - Tenant-to-tenant migration isn't supported when Customer Lockbox is enabled. You must disable Customer Lockbox to move an environment to another tenant. You can re-enable Customer Lockbox once the migration is completed.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

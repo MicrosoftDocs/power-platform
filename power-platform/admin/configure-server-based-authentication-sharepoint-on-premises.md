@@ -396,6 +396,3 @@ $wellKnownApp.Update()
 ### Related content
 - [Troubleshooting server-based authentication](../admin/troubleshooting-server-based-authentication.md)   
 - [Set up SharePoint integration with customer engagement apps](../admin/set-up-sharepoint-integration.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -185,6 +185,3 @@ Yes! Follow these best practices:
 
 ### How many alert rules can I turn on at one time?
 A tenant can have 50 alert rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you reach the maximum.
-
-
-

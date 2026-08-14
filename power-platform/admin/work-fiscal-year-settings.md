@@ -1,12 +1,13 @@
 ---
 title: "Work with fiscal year settings  | MicrosoftDocs"
 description: Work with fiscal year settings
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 06/09/2022
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -45,9 +46,4 @@ You can set the fiscal year period, and how it's displayed, for your organizatio
   
    - In the **Display As** drop-down list, select how you want the fiscal year abbreviation and the year to appear.  
   
-5. Select **OK**.  
-  
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+5. Select **OK**.

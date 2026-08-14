@@ -4,10 +4,10 @@ description: When would I want to use this check box?
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/11/2020
-author: shwetamurkute
+author: EllenWehrle
 ms.subservice: admin
-ms.author: smurkute
-ms.reviewer: smurkute
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -39,6 +39,3 @@ search.audienceType:
   
 ### See also  
  [Set up server-side synchronization of email, appointments, contacts, and tasks](set-up-server-side-synchronization-of-email-appointments-contacts-and-tasks.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

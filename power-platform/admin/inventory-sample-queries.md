@@ -205,5 +205,3 @@ PowerPlatformResources
 - [Power Platform inventory API](inventory-api.md)
 - [Azure Resource Graph overview](/azure/governance/resource-graph/overview)
 - [Kusto Query Language (KQL) overview](/azure/data-explorer/kusto/query/)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

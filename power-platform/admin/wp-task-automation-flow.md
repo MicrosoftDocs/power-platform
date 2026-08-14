@@ -1,13 +1,14 @@
 ---
 title: "Automation of tasks with Power Automate  | MicrosoftDocs"
 description: Automation of tasks with Power Automate 
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 03/12/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -35,8 +36,3 @@ One of the unique things about Power Automate is you can use it to manage itself
 > ![List new connectors.](media/list-new-flow-connectors.png "List new connectors")
 
 If you want to try building it yourself, here is a good walkthrough of creating the flow from scratch: https://flow.microsoft.com/blog/new-flow-connector-notifications/
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

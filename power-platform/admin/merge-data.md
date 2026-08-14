@@ -1,13 +1,14 @@
 ---
 title: "Merge data | MicrosoftDocs"
 description: Merge data
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/04/2019
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -168,7 +169,3 @@ You can use the OrgDBOrgSettings tool to change database settings that govern de
 - GrantSharedAccessForMergeToSubordinateOwner
 
 For more information, see [Environment database settings](environment-database-settings.md).
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

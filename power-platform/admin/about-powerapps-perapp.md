@@ -213,5 +213,3 @@ Yes. If a user account is disabled in an environment, there are three different 
 
 ### Power Automate capabilities included with Per App plans
 A Power Apps Per App plan assignment doesn't give user the ability to create or own Power Automate flows that user Premium features. Creating and owning flows using Premium features requires assignment of a Power Apps Per User or Power Automate Per User license. This requirement doesn't apply for flows [associated to an app](/power-platform/admin/powerapps-powershell#associate-in-context-flows-to-an-app).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -7,7 +7,7 @@ ms.date: 05/03/2024
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
   - mikferland-msft
   - mihaelablendea
@@ -60,6 +60,4 @@ Power Automate uses the [Microsoft Dataverse](/connectors/commondataserviceforap
 
 ## Providing an admin contact and reference link in data policy error messages
 
-Power Platform data policy runtime enforcement experiences can include an admin contact and a link to governance reference material. The admin contact and reference link can be set using the PowerShell for [Governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands). 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Power Platform data policy runtime enforcement experiences can include an admin contact and a link to governance reference material. The admin contact and reference link can be set using the PowerShell for [Governance error message content commands](powerapps-powershell.md#governance-error-message-content-commands).

@@ -1,13 +1,14 @@
 ---
 title: Manage Power Automate flows | Microsoft Docs
 description: How to manage Power Automate flows created in your organization
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/29/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom:
@@ -49,6 +50,3 @@ Choose your desired **action** for the selected flow.
 |**Share**     | Share the flow with others.        |
 |**Disable** or **Enable**    | Disable or enable the flow.        |
 |**Delete**     | Delete the flow.       |
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

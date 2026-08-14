@@ -50,6 +50,3 @@ For example, if you type _copilot_ into the search bar, discovery agent finds ap
 ## Limitations
 - The discovery agent doesn't support dynamic content searches for users, groups, and environments. This functionality is planned for future updates.
 - Search results may vary depending on the context and phrasing of the query. Users are encouraged to use clear and specific language for optimal results.
-
-
-

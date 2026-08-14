@@ -258,5 +258,3 @@ For more information, see [Environment groups](environment-groups.md).
 - [Environment groups](environment-groups.md)
 - [Azure Resource Graph overview](/azure/governance/resource-graph/overview)
 - [Kusto Query Language (KQL) overview](/azure/data-explorer/kusto/query/)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

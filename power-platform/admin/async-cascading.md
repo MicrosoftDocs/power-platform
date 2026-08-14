@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 11/20/2025
 ms.subservice: admin
 ms.author: nhelgren
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.contributors:
@@ -130,6 +130,3 @@ The Cascade Merge operation grants access to the new owner of the subordinate ta
 ### See also
 
 [Table relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

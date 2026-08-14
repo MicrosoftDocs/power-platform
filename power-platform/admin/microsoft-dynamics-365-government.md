@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 12/09/2025
 ms.subservice: admin
 ms.author: macarrer
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contibutors:
@@ -260,8 +260,3 @@ Effective March 2, 2020, the regional Discovery Service will be deprecated. More
 [Power Platform URLs and IP address ranges](online-requirements.md)<br />
 [Power Apps US Government](./powerapps-us-government.md)<br />
 [Power Automate US Government](/power-automate/us-govt)
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

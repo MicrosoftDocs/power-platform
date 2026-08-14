@@ -7,7 +7,7 @@ ms.date: 03/12/2025
 author: akadrno
 ms.custom: NewPPAC
 ms.author: kauguillard 
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 search.audienceType: 
   - admin
@@ -59,7 +59,3 @@ Managed governance in the Power Platform provides a structured framework to ensu
 
 ## Learn more
 By using these features, organizations can establish a robust governance framework that supports their strategic goals and operational needs.
-
-
-
-

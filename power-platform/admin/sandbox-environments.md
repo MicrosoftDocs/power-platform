@@ -1,14 +1,14 @@
 ---
 title: "Sandbox environments  | MicrosoftDocs"
 description: Manage sandbox environments.
-author: sericks007
+author: EllenWehrle
 contributors: yingchin
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/21/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -88,5 +88,3 @@ If you find yourself in a situation where you need to reset an environment, take
 > System Customizers need to sign in to the environment directly through the URL as the environment in administration mode does not appear to System Customizers in the Environments page of the Power Platform admin center.
 
 Learn more about [Administration mode](admin-mode.md).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

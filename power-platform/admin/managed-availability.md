@@ -7,7 +7,7 @@ ms.date: 05/28/2026
 author: rashmansur
 ms.custom: NewPPAC
 ms.author: rashmim 
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 search.audienceType: 
   - admin
@@ -49,7 +49,3 @@ Self-serve disaster recovery also supports disaster recovery drills and failback
 ## Related content
 - [Business continuity and disaster recovery](business-continuity-disaster-recovery.md)
 - [Managed environments overview](managed-environment-overview.md)
-
-
-
-

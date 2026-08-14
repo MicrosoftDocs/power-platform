@@ -13,7 +13,7 @@ ms.contributors:
 - matgputa
 - ellenwehrle
 - syalandur
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.custom: sfi-image-nochange
 ---
 # Copy an environment
@@ -300,5 +300,3 @@ Action items:
 [What's new about storage](whats-new-storage.md) <br />
 [New Microsoft Dataverse storage capacity](capacity-storage.md) <br />
 [Legacy storage capacity](legacy-capacity-storage.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

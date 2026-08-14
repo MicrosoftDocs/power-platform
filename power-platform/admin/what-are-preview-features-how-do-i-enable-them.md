@@ -1,11 +1,12 @@
 ---
 title: Enable preview features to get early access
 description: Learn how to enable preview features in Power Platform that have limited functionality to get early access and provide feedback.
-author: sericks007
+author: EllenWehrle
 ms.topic: how-to
 ms.date: 08/01/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.contributors:
     - sericks
     - syalandur
@@ -79,5 +80,3 @@ If you'd like to provide feedback, offer suggestions, or report issues for a pre
 - [Power Pages ideas](https://aka.ms/powerpagesideas)
 - [Microsoft Copilot Studio ideas](https://aka.ms/powervirtualagentideas)
 - [Power Platform governance and administration ideas](https://experience.dynamics.com/ideas/categories/?forum=1afbfe0a-5439-ea11-a813-000d3a579c35&forumName=Power%20Platform%20Governance%20and%20Administration)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -7,7 +7,7 @@ ms.date: 11/19/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.contributors:
   - lsuresh
 contributors:
@@ -144,5 +144,3 @@ The column values in the before-and-after audit change events show as "*" in the
 [Column-level security example](column-level-security-example.md)  
 [Hierarchy security](hierarchy-security.md)  
 [Column-level security with code](/power-apps/developer/data-platform/column-level-security)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

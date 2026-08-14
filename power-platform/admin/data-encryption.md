@@ -7,7 +7,7 @@ ms.date: 01/21/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
   - paulliew
   - denisem-msft
@@ -62,6 +62,3 @@ Make sure you have the System Administrator permission to update the setting.
  [FIPS 140 Evaluation](/windows/security/threat-protection/fips-140-validation)   
  [Manage Your Data](add-remove-sample-data.md)   
  [Manage configuration data](manage-configuration-data.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Create and manage environments in the Power Platform admin center | Microsoft Docs
 description: Learn how to create and manage environments in the Power Platform admin center.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/06/2026
@@ -260,5 +260,3 @@ You can determine which users will have access and visibility to these apps usin
 
 [Dataverse storage capacity](capacity-storage.md) <br>
 [Control user access to environments: security groups and licenses](control-user-access.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

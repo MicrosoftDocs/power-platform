@@ -1,13 +1,14 @@
 ---
 title: "About Microsoft Cloud India  | MicrosoftDocs"
 description: About Microsoft Cloud India
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 02/23/2022
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -118,6 +119,3 @@ search.audienceType:
 ### See also  
  [Announcing the availability of Office 365 from local datacenters in India](https://blogs.office.com/2015/10/11/announcing-the-availability-of-office-365-from-local-datacenters-in-india/)   
  [New datacenter regions](new-datacenter-regions.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

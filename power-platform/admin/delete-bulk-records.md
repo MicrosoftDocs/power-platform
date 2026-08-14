@@ -138,5 +138,3 @@ Exporting and importing solutions containing bulk deletion jobs works the same a
 
 - [Add or remove sample data](add-remove-sample-data.md)
 - [Enhance security by encrypting your column-level sensitive data](data-encryption.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

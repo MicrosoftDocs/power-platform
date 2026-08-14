@@ -1,12 +1,13 @@
 ---
 title: "Recover database space by deleting audit logs  | MicrosoftDocs"
 description: Learn how to delete audit logs to recover database space.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/25/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -91,5 +92,3 @@ OData-Version: 4.0
 
 [Manage Dataverse auditing](manage-dataverse-auditing.md)<br />
 [Dataverse developer guide: Delete audit data](/power-apps/developer/data-platform/auditing/delete-audit-data)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,13 +1,14 @@
 ---
 title: "Work with mail merge templates  | MicrosoftDocs"
 description: Work with mail merge templates 
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/18/2021
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -59,7 +60,3 @@ After creating a mail merge template, follow these steps to use it.
 1. Select **Advanced Find** and select the customers to send an email.
 1. Select **Mail Merge**, choose the **Personal mail merge template**, and then select **Download**.
 1. Open the downloaded file in Microsoft Word and go through the steps.
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

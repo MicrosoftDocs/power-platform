@@ -7,6 +7,7 @@ ms.topic: concept-article
 ms.subservice: admin
 ms.date: 09/10/2020
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-ga-nochange
@@ -47,5 +48,3 @@ Server-based [!INCLUDE[pn_SharePoint_short](../includes/pn-sharepoint-short.md)]
 ### See also  
 
 [SharePoint, OneNote, and OneDrive integration with Microsoft Dataverse](/power-apps/maker/data-platform/sharepoint-onedrive-onenote-intro)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

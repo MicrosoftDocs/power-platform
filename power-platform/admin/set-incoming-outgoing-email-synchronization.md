@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 11/24/2025
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -77,6 +77,3 @@ For help finding the right combination of settings for your organization, go to 
 ### See also
 
  [Forward mailbox vs. individual mailboxes](../admin/forward-mailbox-vs-individual-mailboxes.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

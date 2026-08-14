@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.date: 09/10/2025
 ms.subservice: admin
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -85,8 +86,4 @@ Store documents related to your records in [!INCLUDE[pn_ms_SharePoint_long](../i
   
 ### See also
 
-[Set up SharePoint integration](set-up-sharepoint-integration.md)   
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+[Set up SharePoint integration](set-up-sharepoint-integration.md)

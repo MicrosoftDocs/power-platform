@@ -1,14 +1,15 @@
 ---
 title: Change environment type 
 description: Change the environment type
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/01/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -30,5 +31,3 @@ Make sure you have the System Administrator or Environment Admin role credential
 1. In the command bar, select **Convert to production** or **Convert to sandbox**.
 1. Select **Continue**.
 1. On the confirmation page, select **OK**.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,12 +1,13 @@
 ---
 title: "Enable improved duplicate detection  | MicrosoftDocs"
 description: About how to enable improved duplicate detection.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/13/2021
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -18,7 +19,3 @@ search.audienceType:
 
 ### See also
 [What happens when duplicates are found while qualifying leads?](/dynamics365/sales-enterprise/qualify-lead-convert-opportunity-sales#what-happens-when-duplicates-are-found-while-qualifying-leads)
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
