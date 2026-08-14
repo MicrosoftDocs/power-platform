@@ -1,8 +1,8 @@
 ---
 title: Manage costs for agents powered by the GitHub Copilot harness
 description: Learn how to control and monitor Copilot Credit consumption for agents powered by the GitHub Copilot harness.
-author: EllenWehrle
-ms.date: 08/11/2026
+author: gmosleymsft
+ms.date: 08/14/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
@@ -59,6 +59,9 @@ Use a combination of environment-level and agent-level controls. An agent-level 
 | Set an agent-level monthly limit. | You want to prevent one agent from consuming an excessive amount of capacity. | Configure notifications and stop usage when the agent reaches its limit. |
 | Apply allocations programmatically. | You need to configure many environments consistently or manage allocations through an administrative process. | Automation requires appropriate permissions, validation, and an owner responsible for maintaining it. |
 | Set up pay-as-you-go with Azure budgets and alerts. | An environment uses pay-as-you-go billing and you need subscription-level cost visibility. | Azure budgets and alerts send notifications but don't stop Copilot Studio consumption. |
+
+> [!NOTE]
+> Environment-level allocation and *drawing from tenant capacity* leverage credits from prepaid capacity packs. You can use the Copilot Credit Pre-Purchase Plan (P3) through assigning a [pay-as-you-go](pay-as-you-go-overview.md) billing plan under Capacity overages that you [configure in Azure](/azure/cost-management-billing/reservations/copilot-credit-p3).
 
 ## Contain prepaid consumption for an environment
 
