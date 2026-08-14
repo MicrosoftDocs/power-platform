@@ -75,6 +75,9 @@ You accrue PPRs to your tenant in three ways:
 | Per-user license accrual | 5,000 PPRs per license | Each assigned user license contributes to the tenant's total PPR pool. |
 | Add-on packs | 50,000 PPRs per pack | Purchased from the [Microsoft 365 admin center](https://admin.microsoft.com). |
 
+> [!NOTE]
+> Several license types grant Power Platform Requests, including Power Apps Premium, Dynamics 365 customer engagement apps, and Dynamics 365 finance and operations apps. All PPRs accrue at the tenant level into a single shared pool, which both Dataverse and finance and operations apps draw from to determine the scale of the underlying infrastructure.
+
 ### Minimum and maximum AOS
 
 Every sandbox and production environment is provisioned with a minimum of two AOS instances (one interactive, one batch) regardless of available PPRs. This configuration ensures the environment is functional and provides basic redundancy. The maximum is 80 AOS instances (40 interactive, 40 batch).
@@ -101,6 +104,85 @@ If the PPRs formula yields fewer than two AOS instances, the environment receive
 If your license-based PPRs don't provide enough AOS capacity, you can purchase add-on packs of 50,000 PPRs each from the [Microsoft 365 admin center](https://admin.microsoft.com). For example, a customer with 20 licenses (600,000 PPRs) could purchase 40 add-on packs (two million PPRs) to reach 2,600,000 total PPRs&mdash;enough for two more AOS instances, which combined with the two AOS minimum gives four AOS instances total. This would be added as a maximum allowed number of AOS instances to every environment created now and in the future. The number of environments is limited by having available storage.
 
 These totals determine the compute capacity available for elastic scaling across all finance and operations environments in the tenant.
+
+### Check your tenant's AOS capacity by using PowerShell
+
+You can read your tenant's current Power Platform Requests entitlement and translate it into AOS capacity programmatically by using the [Power Platform API](/rest/api/power-platform/). The `licensing/tenantCapacity` operation returns the Power Platform Requests capacity (represented as the `ApiCallCount` capacity type), including the license sources that accrue PPRs. The following script prints the license sources, the PPR accrual formula, and where your tenant sits on the two-to-80 AOS scale.
+
+This script requires the [MSAL.PS](https://www.powershellgallery.com/packages/MSAL.PS) module and an [app registration configured for the Power Platform API](../programmability-authentication-v2.md). Replace the client and tenant ID placeholders with your own values.
+
+```powershell
+#Requires -Modules MSAL.PS
+
+$ClientId  = "<application (client) ID of your app registration>"
+$TenantId  = "<directory (tenant) ID>"
+
+$PprPerAos = 650000
+$MinAos    = 2
+$MaxAos    = 80
+$ApiBase   = "https://api.powerplatform.com"
+$ApiVer    = "2024-10-01"
+
+function Get-AosCount([double]$ppr) {
+    $raw = [math]::Floor($ppr / $PprPerAos)
+    return [math]::Max($MinAos, [math]::Min($MaxAos, $raw))
+}
+
+function Show-AosGauge([int]$current) {
+    $width = 46
+    $pos = [int]([math]::Round((($current - $MinAos) / ($MaxAos - $MinAos)) * ($width - 1)))
+    $bar = -join (0..($width - 1) | ForEach-Object {
+        if ($_ -lt $pos) { "=" } elseif ($_ -eq $pos) { "O" } else { "-" } })
+    Write-Host ("  {0,2} [" -f $MinAos) -NoNewline
+    Write-Host $bar -ForegroundColor Cyan -NoNewline
+    Write-Host ("] {0}     you are here: {1} AOS" -f $MaxAos, $current) -ForegroundColor Yellow
+}
+
+# Sign in interactively and request a token for the Power Platform API
+Import-Module MSAL.PS
+$auth = Get-MsalToken -ClientId $ClientId -TenantId $TenantId -Scope "$ApiBase/.default" -Interactive
+$headers = @{ Authorization = "Bearer $($auth.AccessToken)" }
+
+# Retrieve tenant capacity and isolate the Power Platform Requests (ApiCallCount) entitlement
+$capacity = Invoke-RestMethod -Method Get -Uri "$ApiBase/licensing/tenantCapacity?api-version=$ApiVer" -Headers $headers
+$ppr = $capacity.tenantCapacities | Where-Object { $_.capacityType -eq "ApiCallCount" } | Select-Object -First 1
+if (-not $ppr) { Write-Host "No Power Platform Requests capacity found for this tenant." -ForegroundColor Red; return }
+
+$granted = [double]$ppr.totalCapacity
+
+# Build a row per license source (Base = one per tenant, highest applies; Incremental = per seat)
+$rows = foreach ($ent in $ppr.capacityEntitlements) {
+    $type = if ($ent.capacitySubType -like "*Incremental") { "Incremental" } else { "Base" }
+    foreach ($lic in $ent.licenses) {
+        $seats = [int]$lic.paid.enabled + [int]$lic.trial.enabled
+        $perSeat = if ($seats -gt 0 -and $type -eq "Incremental") { [double]$lic.totalCapacity / $seats } else { $null }
+        [pscustomobject]@{
+            Source     = if ([string]::IsNullOrWhiteSpace($lic.displayName)) { $lic.entitlementCode } else { $lic.displayName }
+            Code       = $lic.entitlementCode
+            GrantType  = $type
+            Seats      = $seats
+            PerSeatPPR = if ($perSeat) { "{0:N0}" -f $perSeat } else { "-" }
+            PPRs       = "{0:N0}" -f [double]$lic.totalCapacity
+        }
+    }
+}
+
+$currentAos = Get-AosCount $granted
+$pprToNextAos = if ($currentAos -lt $MaxAos) { (($currentAos + 1) * $PprPerAos) - $granted } else { 0 }
+
+Write-Host "`n  License sources accruing Power Platform Requests" -ForegroundColor Cyan
+$rows | Format-Table Source, Code, GrantType, Seats, PerSeatPPR, PPRs -AutoSize
+
+Write-Host "  Total PPRs granted : $("{0:N0}" -f $granted)" -ForegroundColor Green
+Write-Host "  AOS formula        : floor(PPR / $("{0:N0}" -f $PprPerAos)), min $MinAos, max $MaxAos"
+Write-Host "  AOS from your PPRs  : $currentAos" -ForegroundColor Yellow
+Write-Host "  Platform maximum    : $MaxAos AOS ($("{0:N0}" -f ($MaxAos * $PprPerAos)) PPRs)"
+if ($pprToNextAos -gt 0) { Write-Host "  PPRs to next AOS    : $("{0:N0}" -f $pprToNextAos)" }
+Write-Host ""
+Show-AosGauge $currentAos
+```
+
+The script applies the same formula described earlier: each AOS instance requires 650,000 PPRs, with a floor of two and a ceiling of 80 AOS instances. If your granted PPRs divide to fewer than two AOS, the environment still receives the two-AOS minimum; if they divide to more than 80, the tenant is capped at 80. The platform maximum of 80 AOS corresponds to 52,000,000 PPRs (650,000 &times; 80).
 
 ### PPRs serve two purposes
 
