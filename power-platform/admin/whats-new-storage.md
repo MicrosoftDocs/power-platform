@@ -56,9 +56,9 @@ Two versions of storage capacity reporting are available:
 
 ## What happens when my organization exceeds storage entitlements?
 
-If your organization exceeds its storage capacity, you receive email notifications that alert you to the over-capacity usage. For details about the new model for email notification, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For details about the legacy model for email notification, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner appears in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and model-driven apps when any of the three storage capacities (database, file, or log) fall below 15 percent remaining or exceed the allocated capacity. Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
+If your organization exceeds its storage capacity, you receive email notifications that alert you to the over-capacity usage. For details about the new model for email notification, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For details about the legacy model for email notification, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner appears in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and model-driven apps when any of the three storage capacities (database, file, or log) fall below 15 percent remaining or exceed the allocated capacity after [cross-capacity type borrowing](capacity-storage.md#how-are-storage-overages-calculated). 
 
-The following admin operations aren't available when a tenant exceeds storage capacity entitlements:
+The following admin environment lifecycle operations aren't available when a tenant exceeds storage capacity entitlements:
 
 - Create new environment (requires minimum 1-GB capacity available)
 - Copy an environment (requires minimum 1-GB capacity available)
@@ -66,6 +66,8 @@ The following admin operations aren't available when a tenant exceeds storage ca
 - Convert a trial environment to paid (requires minimum 1-GB capacity available)
 - Recover an environment (requires minimum 1-GB capacity available)
 - Add Dataverse database to an environment
+
+Environment lifecycle operations, however, are evaluated differently. Operations such as creating, copying, restoring, or recovering environments require sufficient capacity in the underlying storage capacity types and are validated against the **available capacity** of those capacity types, rather than the tenant's effective capacity position after cross capacity-type borrowing. As a result, administrators might receive notifications based on effective capacity after borrowing, while certain environment lifecycle operations can still be unavailable if the required Database, Log, or File capacity isn't available to support the operation.
 
 More information:
 
