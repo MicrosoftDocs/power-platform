@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 07/21/2026
+ms.date: 08/12/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -15,6 +15,40 @@ search.audienceType:
 # Programmability and extensibility - what's new or changed
 
 Learn about the latest changes and new capabilities for Power Platform APIs and admin SDKs.
+
+## July 2026
+
+| Item | Type | Description |
+|------|------|-------------|
+| Download Agent Channel Manifest | API | New endpoint: [Download Agent Channel Manifest](/rest/api/power-platform/copilotstudio/agent-channels/download-agent-channel-manifest) |
+| Get Fin Ops Properties | API | New endpoint: [Get Fin Ops Properties](/rest/api/power-platform/dynamics/finance-and-operations-properties/get-fin-ops-properties) |
+| Get Fin Ops Versions | API | New endpoint: [Get Fin Ops Versions](/rest/api/power-platform/dynamics/finance-and-operations-versions/get-fin-ops-versions) |
+| Apply Fin Ops Version | API | New endpoint: [Apply Fin Ops Version](/rest/api/power-platform/dynamics/finance-and-operations-versions/apply-fin-ops-version) |
+| Get Fin Ops Operation Errors | API | New endpoint: [Get Fin Ops Operation Errors](/rest/api/power-platform/dynamics/finance-and-operations-operation-errors/get-fin-ops-operation-errors) |
+| Perform Failback | API | New endpoint: [Perform Failback](/rest/api/power-platform/environmentmanagement/failover/perform-failback) |
+| Reset Environment | API | New endpoint: [Reset Environment](/rest/api/power-platform/environmentmanagement/environment-reset/reset-environment) |
+| Get Fin Ops License Summary V2 | API | New endpoint: [Get Fin Ops License Summary V2](/rest/api/power-platform/licensing/fin-ops-licensing/get-fin-ops-license-summary-v2) |
+| List Allocations By Environment | API | New endpoint: [List Allocations By Environment](/rest/api/power-platform/licensing/allocations-by-environment/list-allocations-by-environment) |
+| Update Allocations By Environment | API | New endpoint: [Update Allocations By Environment](/rest/api/power-platform/licensing/allocations-by-environment/update-allocations-by-environment) |
+| Get Allocations By Environment | API | New endpoint: [Get Allocations By Environment](/rest/api/power-platform/licensing/allocations-by-environment/get-allocations-by-environment) |
+| Put Allocations V2 | API | New endpoint: [Put Allocations V2](/rest/api/power-platform/licensing/allocation/put-allocations-v2) |
+| Get Allocations Availability V2 | API | New endpoint: [Get Allocations Availability V2](/rest/api/power-platform/licensing/allocation/get-allocations-availability-v2) |
+| Get Many Entitlements Reserved V2 | API | New endpoint: [Get Many Entitlements Reserved V2](/rest/api/power-platform/licensing/allocation/get-many-entitlements-reserved-v2) |
+| Get Entitlement | API | New endpoint: [Get Entitlement](/rest/api/power-platform/licensing/entitlement/get-entitlement) |
+| Get Environment Resources | API | New endpoint: [Get Environment Resources](/rest/api/power-platform/licensing/entitlement-insight/get-environment-resources) |
+| Get Tenant License Trends | API | New endpoint: [Get Tenant License Trends](/rest/api/power-platform/licensing/entitlement-insight/get-tenant-license-trends) |
+| Get All Resource Thresholds | API | New endpoint: [Get All Resource Thresholds](/rest/api/power-platform/licensing/resource-threshold/get-all-resource-thresholds) |
+| Get Tenant Resources Across Environments | API | New endpoint: [Get Tenant Resources Across Environments](/rest/api/power-platform/licensing/entitlement-insight/get-tenant-resources-across-environments) |
+| Get Tenant User Consumption By Resource | API | New endpoint: [Get Tenant User Consumption By Resource](/rest/api/power-platform/licensing/entitlement-insight/get-tenant-user-consumption-by-resource) |
+| Get Tenant Users | API | New endpoint: [Get Tenant Users](/rest/api/power-platform/licensing/entitlement-insight/get-tenant-users) |
+| Get Tenant Resource Consumption By User | API | New endpoint: [Get Tenant Resource Consumption By User](/rest/api/power-platform/licensing/entitlement-insight/get-tenant-resource-consumption-by-user) |
+| Get Many Environment Entitlements | API | New endpoint: [Get Many Environment Entitlements](/rest/api/power-platform/licensing/entitlement/get-many-environment-entitlements) |
+| Upsert Resource Threshold | API | New endpoint: [Upsert Resource Threshold](/rest/api/power-platform/licensing/resource-threshold/upsert-resource-threshold) |
+| Update Waf Policy Settings | API | New endpoint: [Update Waf Policy Settings](/rest/api/power-platform/powerpages/websites/update-waf-policy-settings) |
+| Provision New Environment | Bug fixes | Various bug fixes for [Provision New Environment](/rest/api/power-platform/environmentmanagement/environment-provisioning/provision-new-environment) |
+| Powerplatform-Management (Python) | SDK | [Monthly Release](https://pypi.org/project/powerplatform-management/2.0.3503.299/) |
+| Microsoft.PowerPlatform.Management (C#) | SDK | [Monthly release](https://www.nuget.org/packages/Microsoft.PowerPlatform.Management/2.0.3503.299) |
+| Power Platform for Admins V2 | Connector | [Monthly release](/connectors/powerplatformadminv2/) |
 
 ## June 2026
 
