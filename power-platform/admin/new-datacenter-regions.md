@@ -43,6 +43,7 @@ The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 
 | SGP           | crm20.dynamics.com |
 | SWE           | crm22.dynamics.com |
 | KOR           | crm21.dynamics.com |
+| SWE           | crm22.dynamics.com |
 
 ## Macro region 
 A [macro region](macro-regions.md) represents the data residency boundary aligning with data residency laws for the given geography. Learn more about the countries available in a specific macro region. 
