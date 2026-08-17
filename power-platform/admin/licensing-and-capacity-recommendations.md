@@ -4,13 +4,14 @@ description: Learn how the actions page in Power Platform admin center helps adm
 author: sidhartg
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/08/2026
+ms.date: 08/17/2026
 ms.subservice: admin
 ms.author: sidhartg
 ms.reviewer: ellenwehrle
 ms.contributors:
   - DanaMartens
   - sandhangitms
+  - smurkute
 search.audienceType:
   - admin
 ms.custom:
@@ -62,7 +63,7 @@ The list shows usage in the last 90 days calculated from the refresh date shown 
 
 ### Review and assign capacity to avoid degraded performance
 
-This recommendation identifies environments where capacity consumption is nearing or exceeding the assigned limits. To prevent performance degradation, review the affected environments and allocate more capacity as needed. Select an environment to manage and adjust capacity assignments accordingly.
+This recommendation identifies environments where capacity consumption is nearing or exceeding the assigned limits. High capacity consumption can degrade performance and block some operations. Review the affected environments and [assign more capacity](/power-pages/admin/capacity-management) as needed. Select an environment to manage and adjust its capacity assignments.
 
 - **Severity**: High
 - **Refresh frequency**: Daily
