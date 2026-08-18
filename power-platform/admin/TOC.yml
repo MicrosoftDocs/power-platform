@@ -78,8 +78,8 @@
                   href: /power-pages/admin/capacity-management
                 - name: View license consumption for finance and operations apps
                   href: view-license-consumption-finops-apps.md
-                - name: Manage Copilot Studio credits and capacity
-                  href: manage-copilot-studio-messages-capacity.md
+                - name: Manage Copilot Credits and capacity for Copilot Studio
+                  href: manage-copilot-studio-copilot-credits-capacity.md
                 - name: Manage costs for agents powered by the GitHub Copilot harness
                   href: manage-usage-github-copilot-harness.md
                 - name: View intelligent recommendations about licensing
@@ -898,7 +898,7 @@
                   href: programmability-tutorial-rbac-role-assignment.md
                 - name: "Tutorial: Manage advanced connector policies programmatically"
                   href: programmability-tutorial-manage-advanced-connector-policies.md
-                - name: "Tutorial: Manage Copilot credit allocations programmatically"
+                - name: "Tutorial: Manage Copilot Credit allocations programmatically"
                   href: programmability-tutorial-manage-copilot-credit-allocations.md
             - name: PowerShell
               items:

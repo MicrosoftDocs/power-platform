@@ -78,7 +78,7 @@ To contain prepaid consumption, allocate a defined amount of Copilot Credits to 
 
 When you clear this option, the environment doesn't draw from unallocated prepaid capacity in the tenant after it consumes its allocation. If the environment is linked to a pay-as-you-go billing plan, usage can continue through the linked Azure subscription.
 
-For complete capacity management instructions, see [Manage Copilot Studio credits and capacity](manage-copilot-studio-messages-capacity.md#manage-capacity).
+For complete capacity management instructions, see [Manage Copilot Credits and capacity for Copilot Studio](manage-copilot-studio-copilot-credits-capacity.md#manage-capacity).
 
 > [!NOTE]
 > When an environment has no available Copilot Credits, experiences that require credits can stop working. This limitation can affect both makers and end users. For more information, see [Enforcement policy for agents consuming Copilot Credits](/microsoft-copilot-studio/agents-experience/enforcement-policy-credits).
@@ -97,7 +97,7 @@ Use an agent-level limit when you need more granular control than the environmen
 
 :::image type="content" source="media/manage-usage-github-copilot-harness/agent-monthly-limit.png" alt-text="Screenshot of managing agent capacity by setting a monthly limit in Power Platform admin center." lightbox="media/manage-usage-github-copilot-harness/agent-monthly-limit.png":::
 
-Review agent limits regularly and adjust them based on expected business demand. For more information, see [Manage monthly consumption limits for Copilot Studio agents](manage-copilot-studio-messages-capacity.md#manage-monthly-consumption-limits-for-copilot-studio-agents).
+Review agent limits regularly and adjust them based on expected business demand. For more information, see [Manage monthly consumption limits for Copilot Studio agents](manage-copilot-studio-copilot-credits-capacity.md#manage-monthly-consumption-limits-for-copilot-studio-agents).
 
 ## Manage allocations across many environments
 
@@ -110,7 +110,7 @@ Automated allocation is useful when you:
 - Configure capacity as part of an environment provisioning process.
 - Periodically reconcile new or changed environments.
 
-For authentication requirements and PowerShell, C#, and Python examples, see [Manage Copilot credit allocations programmatically](programmability-tutorial-manage-copilot-credit-allocations.md).
+For authentication requirements and PowerShell, C#, and Python examples, see [Manage Copilot Credits allocations programmatically](programmability-tutorial-manage-copilot-credit-allocations.md).
 
 ## Manage pay-as-you-go costs
 
@@ -139,7 +139,7 @@ Review environment and agent consumption together. A tenant-level total alone mi
 
 Discrete costs aren't attributed to individual makers or end users. Copilot Studio usage is billed at the environment and agent level, not at the user level. Use permissions to control who builds and runs agents, and use environment and agent limits to contain consumption.
 
-For information about the available views, see [Manage Copilot Studio credits and capacity](manage-copilot-studio-messages-capacity.md).
+For information about the available views, see [Manage Copilot Credits and capacity for Copilot Studio](manage-copilot-studio-copilot-credits-capacity.md).
 
 ## Identify and count agents created through the GitHub Copilot harness
 
@@ -195,6 +195,6 @@ Before that date:
 
 - [Overview of billing for agents powered by the GitHub Copilot harness](/microsoft-copilot-studio/agents-experience/billing-credit-overview)
 - [Purchase and manage Copilot Credits](/microsoft-copilot-studio/agents-experience/billing-manage-buy-credits)
-- [Manage Copilot Studio credits and capacity](manage-copilot-studio-messages-capacity.md)
-- [Manage Copilot credit allocations programmatically](programmability-tutorial-manage-copilot-credit-allocations.md)
+- [Manage Copilot Credits and capacity for Copilot Studio](manage-copilot-studio-copilot-credits-capacity.md)
+- [Manage Copilot Credits allocations programmatically](programmability-tutorial-manage-copilot-credit-allocations.md)
 - [Power Platform inventory](power-platform-inventory.md)
