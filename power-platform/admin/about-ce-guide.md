@@ -1,12 +1,13 @@
 ---
 title: "Administer customer engagement apps in Dynamics 365  | MicrosoftDocs"
 description: Administer customer engagement apps
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 11/20/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -25,5 +26,3 @@ For example, many of these admin settings in the legacy web client...
 ![Environment settings.](media/environment-settings-green.png)
 
 Use links on this page to manage organization-wide settings. App-specific settings remain in the respective apps, and you access them through the respective app settings. For more information about managing environment settings in the Power Platform admin center, see [Manage environment settings](admin-settings.md).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

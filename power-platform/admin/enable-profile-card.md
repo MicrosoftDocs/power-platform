@@ -1,13 +1,14 @@
 ---
 title: "Enable viewing profile cards  | MicrosoftDocs"
 description: Enable viewing profile cards 
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -46,11 +47,3 @@ The following settings/environment are required for profile cards to be enabled 
 > ![Enable users to view contact cards.](media/enable-users-view-contact-cards.png "Enable users to view contact cards")
 
 For information on how to use profile cards, see [View the profile card for a contact or user](/powerapps/user/profile-cards).
-
-
-
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

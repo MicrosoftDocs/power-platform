@@ -7,7 +7,7 @@ ms.date: 04/04/2025
 author: praveenmantha
 ms.custom: NewPPAC
 ms.author: pmantha 
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 search.audienceType: 
   - admin
@@ -67,8 +67,3 @@ Managed availability includes:
 
 - Increased resiliency with Azure availability zones
 - Automated backups and self-serve disaster recovery
-
-  
-
-
-

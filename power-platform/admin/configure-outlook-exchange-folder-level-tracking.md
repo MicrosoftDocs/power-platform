@@ -1,12 +1,13 @@
 ---
 title: "Configure Outlook or Exchange folder-level tracking  | MicrosoftDocs"
 description: Configure Outlook or Exchange folder-level tracking 
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/04/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -43,7 +44,4 @@ Once you've enabled folder-level tracking, users will need to configure folder-t
 - Folder-level tracking for queue mailboxes is not supported.  
   
 ### See also  
- [System Settings dialog box - Email tab](system-settings-dialog-box-email-tab.md)   
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [System Settings dialog box - Email tab](system-settings-dialog-box-email-tab.md)

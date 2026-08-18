@@ -7,7 +7,7 @@ ms.date: 04/08/2026
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.contributors:
   - lsuresh
 contributors:
@@ -474,6 +474,3 @@ Access Power Platform activity log data in Microsoft Purview to analyze and repo
 ### Related content
 
 [Auditing overview](/power-apps/developer/data-platform/auditing-overview)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

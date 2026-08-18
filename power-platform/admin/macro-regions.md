@@ -121,5 +121,3 @@ Plan for the possibility that unforeseen circumstances might place environments 
 - [Advanced Data Residency](/microsoft-365/enterprise/advanced-data-residency)
 - [Products by region](https://azure.microsoft.com/regions/services/)
 - [Datacenter regions](new-datacenter-regions.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

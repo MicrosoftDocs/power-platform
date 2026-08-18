@@ -41,5 +41,3 @@ As a result, the agent counts between the two surfaces differ. The Microsoft 365
 - [Power Platform inventory](power-platform-inventory.md)
 - [Power Platform inventory schema reference](inventory-schema.md)
 - [Manage Copilot agents in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

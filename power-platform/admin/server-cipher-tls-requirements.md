@@ -4,7 +4,7 @@ description: Configure your servers to meet TLS 1.3/1.2 requirements with the la
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 12/02/2024
@@ -100,5 +100,3 @@ Wildcard SSL/TLS certificates are by design since hundreds of organization URLs 
 [Cipher Suites in TLS/SSL (Schannel SSP)](/windows/win32/secauthn/cipher-suites-in-schannel)  <br />
 [Manage Transport Layer Security (TLS)](/windows-server/security/tls/manage-tls)  <br />
 [IETF Datatracker](https://datatracker.ietf.org/) for TLS standards. <br />
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

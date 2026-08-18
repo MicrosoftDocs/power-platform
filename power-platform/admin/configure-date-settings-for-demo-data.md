@@ -1,13 +1,14 @@
 ---
 title: "Configure date settings for demo data  | MicrosoftDocs"
 description: Configure date settings for demo data 
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/20/2017
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -80,6 +81,3 @@ You can set the values of datetime fields to automatically move forward by a spe
 [Modify a schema](modify-configuration-data-schema.md) <br />
 [Manage your configuration data](manage-configuration-data.md) <br />
 [Import configuration data](import-configuration-data.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

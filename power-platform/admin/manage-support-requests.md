@@ -98,4 +98,3 @@ You can edit some details about a support request in the Power Platform admin ce
 When you have made your changes, select **Save** at the bottom of the pane. To cancel any changes or close the pane, either select the **X** at the top-right of the pane, or select **Cancel** at the bottom of the pane.
 
 :::image type="content" source="media/edit-support-request.png" alt-text="Screenshot of the Edit support request panel showing editable fields and Save and Cancel buttons.":::
-

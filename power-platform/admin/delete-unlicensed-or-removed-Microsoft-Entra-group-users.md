@@ -103,5 +103,3 @@ To permanently delete unlicensed or removed Microsoft Entra group users, the use
 ### See also
 
 [Delete a user from your organization](/microsoft-365/admin/add-users/delete-a-user?view=o365-worldwide&preserve-view=true) <br />
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

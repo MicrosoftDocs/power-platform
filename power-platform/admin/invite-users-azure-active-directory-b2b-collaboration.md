@@ -4,10 +4,10 @@ description: Invite users with Microsoft Entra B2B collaboration.
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 10/14/2024
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
-ms.reviewer: mkaur
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -160,8 +160,3 @@ After the B2B guest users are given the required permissions to create and edit 
 [Microsoft Entra cross-tenant access overview](/azure/active-directory/external-identities/cross-tenant-access-overview) <br /> 
 [Restrict cross-tenant inbound and outbound access](cross-tenant-restrictions.md) <br /> 
 [Share a canvas app with guest users](/powerapps/maker/canvas-apps/share-app-guests)
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -8,6 +8,7 @@ ms.topic: concept-article
 ms.date: 09/04/2018
 ms.subservice: admin
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -63,9 +64,3 @@ Write-Host "Appointment RTE updated value: " $organizationEntity.appointmentrich
 
 ## See also
 [Create or edit an appointment](/dynamics365/customerengagement/on-premises/basics/create-edit-appointment)
-
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

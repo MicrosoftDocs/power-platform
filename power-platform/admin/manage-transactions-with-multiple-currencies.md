@@ -1,13 +1,14 @@
 ---
 title: "Manage transactions with multiple currencies  | MicrosoftDocs"
 description: Manage transactions with multiple currencies
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/25/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -66,7 +67,4 @@ Currencies determine the prices for products in the product catalog and the cost
 >  You can't delete currencies that are in use by other records; you can only deactivate them. Deactivating currency records doesn't remove the currency information stored in existing records, such as opportunities or orders. However, you won't be able to select the deactivated currency for new transactions.  
 
 ### See also  
- [System Settings dialog box - General tab](system-settings-dialog-box-general-tab.md)   
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [System Settings dialog box - General tab](system-settings-dialog-box-general-tab.md)

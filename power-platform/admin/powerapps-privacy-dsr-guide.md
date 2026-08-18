@@ -1,13 +1,13 @@
 ---
 title: Responding to Data Subject Rights (DSR) requests for Power Apps customer data
 description: Walkthough of how to respond to Data Subject Rights (DSR) requests for Power Apps customer data to support privacy compliance.
-author: sericks007
-ms.reviewer: paulliew
+author: EllenWehrle
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 12/09/2024
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -126,6 +126,3 @@ The "right to erasure" by the removal of personal data from an organization's cu
 Power Apps allows users to build line-of-business applications that are a critical part of your organization's day-to-day operations. When a user leaves your organization, you will need to manually review and determine whether to delete certain data and resources that they have created. Other customer data will be automatically deleted whenever the user's account is deleted from Microsoft Entra ID.
 
 See [Responding to Data Subject Rights (DSR) requests to delete Power Apps customer data](powerapps-privacy-delete-dsr.md) for details.
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

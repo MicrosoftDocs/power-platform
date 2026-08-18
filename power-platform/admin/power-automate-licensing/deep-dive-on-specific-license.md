@@ -13,7 +13,7 @@ ms.subservice: admin
 ms.topic: concept-article
 ms.date: 07/17/2026
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-ga-nochange

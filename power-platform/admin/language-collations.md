@@ -8,7 +8,7 @@ ms.topic: concept-article
 author: "NHelgren"
 ms.subservice: admin
 ms.author: nhelgren
-ms.reviewer: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - maker
 ---
@@ -91,6 +91,3 @@ A language includes the following information:
 
 ### See also
 [Environments overview](environments-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

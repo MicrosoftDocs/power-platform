@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 03/04/2026
 ms.subservice: admin
 ms.author: ampatra
-ms.reviewer: ellenwehrle 
+ms.reviewer: ellenwehrle
 contributors:
   - kenseongtan
   - ShawnNandiMSFT
@@ -302,11 +302,3 @@ Example pricing
 ## Next step
 
 [Set up pay-as-you-go](pay-as-you-go-set-up.md)
-
-
-
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

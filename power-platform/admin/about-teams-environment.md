@@ -336,5 +336,3 @@ For example, you can specify a default policy for all environments except Teams 
 [Microsoft Copilot Studio and Teams](/power-virtual-agents/teams/fundamentals-what-is-power-virtual-agents-teams)<br />
 [Manage your apps in the Microsoft Teams admin center](/MicrosoftTeams/manage-apps) <br />
 [Get started with Microsoft Dataverse for Teams](/training/modules/get-started-dataverse-teams/)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

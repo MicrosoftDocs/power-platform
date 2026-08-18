@@ -1,13 +1,13 @@
 ---
 title: "Assign a business unit a different parent business"
 description: "Learn how to change the parent business for a business unit and its child business units."
-author: sericks007
-
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/20/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -36,6 +36,3 @@ You can assign a different parent business to a business unit to accommodate cha
 ### See also  
  [Control Data Access](../admin/security-roles-privileges.md)   
  [Create or edit a site](../admin/create-edit-site.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

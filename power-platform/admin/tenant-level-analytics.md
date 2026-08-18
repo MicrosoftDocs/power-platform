@@ -4,10 +4,10 @@ description: View tenant-level analytics in various reports.
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/02/2025
-author: shwetamurkute
+author: EllenWehrle
 ms.subservice: admin
-ms.author: smurkute
-ms.reviewer: smurkute
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -91,5 +91,3 @@ The Power Platform admin center tenant-level views are available in all supporte
 ### Related content
 [Tenant-level analytics for Power Apps](powerapps-analytics-reports.md) <br />
 [Tenant-level analytics for Power Automate](power-automate-analytics-reports.md) <br />
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

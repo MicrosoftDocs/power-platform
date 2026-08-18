@@ -9,7 +9,7 @@ ms.subservice: admin
 ms.topic: how-to
 ms.date: 04/03/2023
 ms.author: prkoduku
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -61,5 +61,3 @@ The admin will be notified of incoming licensing requests on the Microsoft 365 H
     :::image type="content" source="../media/power-automate-licensing/custom.png" alt-text="Screenshot of an organization's custom process screen.":::
 
 To learn more about how to manage all license requests and settings, go to [Manage self-service license requests](/microsoft-365/commerce/licenses/manage-license-requests).
-
- 

@@ -170,9 +170,3 @@ As soon as you take either action above, the environment ceases to be pay-as-you
 ## Next step
 
 [View usage and billing information](pay-as-you-go-usage-costs.md)
-
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

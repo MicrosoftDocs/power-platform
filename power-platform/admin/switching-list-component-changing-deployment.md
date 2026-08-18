@@ -7,6 +7,7 @@ ms.topic: how-to
 ms.date: 08/25/2021
 ms.subservice: admin
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -81,7 +82,4 @@ If the **Enable Server-Based SharePoint Integration** icon doesn't appear in the
 
 
 ### See also
-[Set up SharePoint integration](../admin/set-up-sharepoint-integration.md) 
-  
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
-
+[Set up SharePoint integration](../admin/set-up-sharepoint-integration.md)

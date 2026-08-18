@@ -6,7 +6,7 @@ ms.topic: concept-article
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.contributors:
     - paulliew
     - sericks
@@ -191,6 +191,3 @@ Security is a complex article and is best accomplished as a joint effort between
 ### See also
 [Configure environment security](database-security.md)<br/>
 [Security roles and privileges](security-roles-privileges.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

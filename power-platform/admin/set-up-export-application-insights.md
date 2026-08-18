@@ -36,9 +36,9 @@ Learn how to set up data export from the Power Platform admin center to Applicat
 - To configure telemetry export, you need administrative privileges. This includes being assigned to the Power Platform administrator or Dynamics 365 administrator role at the tenant-level in Microsoft Entra ID, **and** by being assigned to the environment administrator or system administrator role within the Dataverse environment. Without these permissions, the integration doesn't work.
   
     > [!IMPORTANT] 
-    > The Application Insights exporting functionality for Power Automate and Dynamics 365 Customer Service is in public preview in all public sovereign geos.  Power Automate and Dynamics 365 Customer Service functionality in public preview isn't available in Government Community Cloud (GCC) or Government Community Cloud - High (GCC High) sovereign clouds.
+    > The Application Insights exporting functionality for Power Automate and Dynamics 365 Customer Service is in public preview in all public sovereign geos.  Power Automate and Dynamics 365 Customer Service functionality in public preview isn't available in Government Community Cloud (GCC), Government Community Cloud - High (GCC High), or 21Vianet (China) sovereign clouds. 
     >
-    >
+    > 
     > For GCC customers that need to configure integration to Application Insights in Azure Government environments, enter a [support request](support-overview.md).
 
     > [!NOTE]
@@ -89,5 +89,3 @@ A common cause of missing telemetry is insufficient permissions during setup.
 1. Select the export package you want to delete and select **Delete export**.
 
    You can set up a new connection whenever you decide to restart the data export.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -225,4 +225,3 @@ You can copy the license summary to your clipboard by selecting the **Summarize*
 - [Prepare for finance and operations apps user license validation](/dynamics365/fin-ops-core/dev-itpro/sysadmin/prepare-for-user-validation)
 - [Security governance FAQ](https://go.microsoft.com/fwlink/?linkid=2319108)  
 - [Assign Microsoft 365 licenses to user accounts with PowerShell](/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell)
-

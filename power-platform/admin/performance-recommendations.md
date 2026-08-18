@@ -59,4 +59,4 @@ This recommendation lists production websites that don't have Content Delivery N
 
 - **Severity**: High
 - **Refresh frequency**: Daily
-- **Managed environments only**: Yes  
+- **Managed environments only**: Yes

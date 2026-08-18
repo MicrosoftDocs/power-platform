@@ -4,9 +4,9 @@ description: Enable welcome content for makers for managed environments.
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 9/18/2025
-author: shwetamurkute
-ms.author: smurkute
-ms.reviewer: smurkute
+author: EllenWehrle
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 

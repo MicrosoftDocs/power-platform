@@ -7,7 +7,7 @@ ms.date: 04/07/2026
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
   - laneswenka 
   - mikferland-msft
@@ -149,5 +149,3 @@ Any new services that you add to apps are placed in the designated default group
 
 - [Power Platform data policies](/power-platform/admin/wp-data-loss-prevention)
 - [Data policies for Power Automate](/power-automate/prevent-data-loss)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

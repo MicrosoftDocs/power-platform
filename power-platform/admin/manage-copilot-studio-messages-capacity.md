@@ -149,4 +149,3 @@ Pay-as-you-go plans provide these benefits:
 
 ### If I use the pay-as-you-go plan, can I grant my users access to Copilot Studio?
 Yes, you can manage access to Copilot Studio. In the Power Platform admin center, go to **Settings** and update the **Copilot Author** setting. Assign a security group, and only members of that group have access to Copilot Studio.
-

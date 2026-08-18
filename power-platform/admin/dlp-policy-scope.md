@@ -7,7 +7,7 @@ ms.date: 11/19/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
   - mikferland-msft
   - mihaelablendea
@@ -44,10 +44,4 @@ Environment admins can define environment-level data policies for one environmen
 
 As is true of tenant admins with tenant-level policies, environment admins can define more than one environment-level policy for their environment.
 
-Even though environment admins might manage more than one environment, they can't include more than one environment in the environment-level policy. They must define individual environment-level policies for each environment that they manage. 
-
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Even though environment admins might manage more than one environment, they can't include more than one environment in the environment-level policy. They must define individual environment-level policies for each environment that they manage.

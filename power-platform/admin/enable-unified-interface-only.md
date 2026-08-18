@@ -1,13 +1,14 @@
 ---
 title: "Enable Unified Interface Only  | MicrosoftDocs"
 description: Enable Unified Interface Only
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 03/29/2024
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -166,6 +167,3 @@ If there are issues with Unified Interface, [please let us know](./get-help-supp
 ### How does it impact my Unified Service Desk deployment?
 
 To learn about the impact of Unified Service Desk, see [Impact of Unified Interface Only availability with Unified Service Desk](/dynamics365/customer-engagement/unified-service-desk/admin/unified-service-desk-system-requirements#impact-of-unified-interface-only-availability-with-unified-service-desk).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

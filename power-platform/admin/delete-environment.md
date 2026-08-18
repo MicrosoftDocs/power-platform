@@ -1,19 +1,17 @@
 ---
 title: Delete an environment in Power Platform admin center
 description: Learn how to delete or remove an environment to recover storage space.
-author: shwetamurkute
-ms.reviewer: smurkute
+author: EllenWehrle
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/19/2025
 ms.subservice: admin
-ms.author: smurkute
+ms.author: ellenwehrle
 ms.custom: NewPPAC
 contributors:
-- sericks007
 - syalandur24
 ms.contributors:
-- sericks
 - syalandur
 search.audienceType: 
   - admin
@@ -53,9 +51,3 @@ You can delete an environment to recover storage space and to remove Personally 
 [Environments overview](environments-overview.md) <br />
 [Microsoft.PowerApps.Administration.PowerShell](/powershell/module/microsoft.powerapps.administration.powershell/) <br />
 [Licensing overview for Power Platform](pricing-billing-skus.md)
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
-
-

@@ -1,12 +1,13 @@
 ---
 title: Reset an environment to delete and reprovision
 description: Learn how to reset a Power Platform environment if you want to create a new project, free up storage space, or delete personal information.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/24/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -54,5 +55,3 @@ The reset process starts.
 
 > [!div class="mx-imgBorder"]
 > ![Reset environment status.](media/reset-environment-status.png "Reset environment status")
-  
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn about enhancements for Dataverse capacity-based storage that 
 author: rijoshi1
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 5/27/2026
+ms.date: 08/17/2026
 ms.subservice: admin
 ms.author: rijoshi
 ms.reviewer: ellenwehrle
@@ -30,13 +30,13 @@ Key enhancements to the admin experience for the Microsoft Power Platform admin 
 
 These features are rolling out now, so check back if your user experience varies from the following content.
 
-## Updates to storage reporting
+## Storage reporting optimization
 
-In April 2019, we introduced Microsoft Dataverse capacity storage that's optimized for relational data (database), attachments (file), and audit logs (log). New customers of Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation) receive a tenant-wide default entitlement for each of these three storage types. They also receive more per-user subscription license entitlements. You can purchase more storage in 1-GB increments. Existing customers aren't affected until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
+Since 2019, Microsoft Dataverse capacity storage is optimized for relational data (database), attachments (file), and audit logs (log). You receive a tenant-wide default entitlement for each of these three storage types as a customer of Power Apps, Power Automate, and customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Marketing, and Dynamics 365 Project Service Automation). You also receive more per-user subscription license entitlements. You can purchase more storage in 1-GB increments. Existing customers aren't affected until the end of their current Power Apps or Dynamics 365 subscription, when renewal is required.
 
 :::image type="content" source="media/storage-model-evolution.png" alt-text="Evolution of data management":::
 
-Some of the benefits of this change include:
+Some of the benefits of this optimization include:
 
 - Scalability with purpose-built storage management solutions.
 - The ability to enable new business scenarios.
@@ -45,7 +45,8 @@ Some of the benefits of this change include:
 - More default and full user entitlements.
 - Flexibility to create new environments.
 
-Following the introduction of Dataverse capacity, we updated our capacity report to show database, file, and log entitlement for all our customers. This change in reporting isn't visible to those who are still on the legacy licensing storage model.
+> [!NOTE]
+> If you're still on the legacy licensing storage model, you can't see the newer, optimized capacity report.
 
 ### Two versions of storage reporting
 
@@ -56,9 +57,12 @@ Two versions of storage capacity reporting are available:
 
 ## What happens when my organization exceeds storage entitlements?
 
-If your organization exceeds its storage capacity, you receive email notifications that alert you to the over-capacity usage. For details about the new model for email notification, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For details about the legacy model for email notification, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner appears in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and model-driven apps when any of the three storage capacities (database, file, or log) fall below 15 percent remaining or exceed the allocated capacity. Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
+If your organization exceeds its storage capacity, you receive email notifications that alert you to the over-capacity usage. For details about the new model for email notification, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For details about the legacy model for email notification, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner appears in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and model-driven apps when any of the three storage capacities (database, file, or log) have less than 15% or exceed the allocated capacity after [cross-capacity type borrowing](capacity-storage.md#how-storage-overages-are-calculated) is applied. 
 
-The following admin operations aren't available when a tenant exceeds storage capacity entitlements:
+Environment lifecycle operations, such as creating, copying, restoring, recovering, or converting environments, are evaluated differently than storage notifications and overage status. While notifications and overage status are based on the tenant's effective capacity position after cross-capacity type borrowing, these operations require sufficient available capacity in the underlying Database, File, or Log capacity types. As a result, some environment lifecycle operations might be unavailable when the required capacity type doesn't have sufficient available capacity, even if the tenant's overall capacity position remains within entitlement limits after borrowing. 
+
+
+The following administrative environment lifecycle operations aren't available when the required storage capacity isn't available to support the operation:
 
 - Create new environment (requires minimum 1-GB capacity available)
 - Copy an environment (requires minimum 1-GB capacity available)
@@ -66,6 +70,7 @@ The following admin operations aren't available when a tenant exceeds storage ca
 - Convert a trial environment to paid (requires minimum 1-GB capacity available)
 - Recover an environment (requires minimum 1-GB capacity available)
 - Add Dataverse database to an environment
+
 
 More information:
 
@@ -86,7 +91,7 @@ If the storage consumption goes over the entitled limit, manage the excess consu
 
 ## Manage overages
 
-You can manage capacity overages for environments by opting for pay-as-you-go, reallocating capacity from within your tenant, or increasing entitled capacity. You can also request a capacity extension after 80% overall consumption, up to three times in the last 365 days and after the expiry of an existing extension to manage overages. By enabling a tenant capacity extension, you have 45 days to reduce capacity usage and purchase more capacity.
+You can manage capacity overages for environments by choosing pay-as-you-go, reallocating capacity from within your tenant, or increasing entitled capacity. You can also request a capacity extension after 80% overall consumption, up to three times in the last 365 days and after the expiry of an existing extension to manage overages. By enabling a tenant capacity extension, you have 45 days to reduce capacity usage and purchase more capacity.
 
 ### Manage capacity
 
@@ -125,7 +130,7 @@ You can manage capacity overages for environments by opting for pay-as-you-go, r
 
 | Date | Description |
 |------|-------------|
-| April 2026 |We made internal adjustments to how solution-aware tables and metadata are reported in Dataverse. This content now resides in file storage rather than the database tier. You may notice corresponding shifts between database and file storage as the classification updates internally. Overall storage usage remains unchanged, and the transition required no downtime or action from administrators or makers.|
+| April 2026 |We made internal adjustments to how solution-aware tables and metadata are reported in Dataverse. This content now resides in file storage rather than the database tier. You might notice corresponding shifts between database and file storage as the classification updates internally. Overall storage usage remains unchanged, and the transition required no downtime or action from administrators or makers.|
 | April 2025 | We made internal adjustments to how Web Resources are stored in a Dataverse organization. Web Resources continue to be reported as file store, but you might see the size of *WebResourceBase* fluctuate as storage transitions internally. Dataverse doesn't expect storage to significantly increase for *WebResourceBase*, but it might temporarily drop as files transition. |
 | June 2022 | The new finance and operations storage capacity report gives you a way to visualize your organization's storage usage versus your entitlement. |
 | September 2021 | We provide included initial storage capacity for the default environment: 3-GB Dataverse database capacity, 3-GB Dataverse file capacity, and 1-GB Dataverse log capacity. Go to [The default environment](environments-overview.md#default-environment). |
@@ -140,5 +145,3 @@ You can manage capacity overages for environments by opting for pay-as-you-go, r
 [Dataverse storage capacity](capacity-storage.md)<br>
 [Free up storage space](free-storage-space.md)<br>
 [Delete and recover environments](delete-environment.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

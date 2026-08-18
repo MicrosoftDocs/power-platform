@@ -1,13 +1,14 @@
 ---
 title: "Regional and language options for your environment | MicrosoftDocs"
 description: Set regional and language options for your environment 
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 04/24/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks 
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -63,8 +64,3 @@ You see each language pack installed in your environment, with a check box to th
 ## Select the language to display the user interface and Help  
 
  Each user selects the language to display in an app. See [Languages tab options](/powerapps/user/set-personal-options#languages-tab-options).
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

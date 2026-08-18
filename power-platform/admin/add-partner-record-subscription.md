@@ -42,8 +42,4 @@ You can choose to work with a designated Microsoft partner who can provide the s
 4. Enter the Partner Network ID, and then select **Add**.
   
 ### See also  
- [Add, change, or delete a subscription advisor partner](https://support.office.com/article/Add-change-or-delete-a-subscription-advisor-partner-f86e8177-936e-491e-9024-44dea2b296ff)   
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Add, change, or delete a subscription advisor partner](https://support.office.com/article/Add-change-or-delete-a-subscription-advisor-partner-f86e8177-936e-491e-9024-44dea2b296ff)

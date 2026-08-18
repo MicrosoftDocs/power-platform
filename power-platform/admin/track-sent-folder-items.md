@@ -7,7 +7,7 @@ ms.date: 09/15/2021
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -38,8 +38,3 @@ An administrator can configure the [OrgDBOrgSettings](OrgDbOrgSettings.md) **Aut
  
   > [!div class="mx-imgBorder"] 
   > ![Screenshot of Personal Options for tracking email](media/set-personal-options-track-email.png "Email tracking setting")
-
-
-
- 
-

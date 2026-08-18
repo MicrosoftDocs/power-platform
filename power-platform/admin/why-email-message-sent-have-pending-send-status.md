@@ -1,12 +1,13 @@
 ---
 title: Why does the email message I sent have a Pending Send status?
 description: Learn why an email message I sent has a *Pending Send* status and how to resolve. 
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 11/25/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -30,5 +31,3 @@ If you create an email message in customer engagement apps (Dynamics 365 Sales, 
 ## See also
 
  [Integrate your email system](../admin/integrate-synchronize-your-email-system.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

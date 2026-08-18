@@ -6,7 +6,7 @@ ms.date: 02/05/2025
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
   - laneswenka
   - mikferland-msft
@@ -42,8 +42,6 @@ Power Apps treats [Dataverse native](/power-apps/maker/canvas-apps/data-platform
 - There's no support for cross checking the modules that are used between a desktop flow and all its child desktop flows. This will be supported when [Data policy for desktop flows](/power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview) is generally available.
 - There's no support for the "Set default group" for newly added desktop flow modules. This will be supported when [Data policy for desktop flows](/power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview) is generally available.
 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
 
 ### Related content
 [Data policy for desktop flows](/power-automate/prevent-data-loss#data-loss-prevention-dlp-for-desktop-flows-preview)

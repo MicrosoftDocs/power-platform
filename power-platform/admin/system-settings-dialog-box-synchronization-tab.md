@@ -1,12 +1,13 @@
 ---
 title: "System SettingsSynchronization tab"
 description: System Settings Synchronization tab in Power Platform.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 09/15/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -56,7 +57,4 @@ Use the settings on this page to determine how data is synchronized between cust
   
 ### See also  
  [Choose the records to synchronize between customer engagement apps and Outlook or Exchange](choose-records-synchronize-dynamics-365-outlook-exchange.md)   
- [Control field synchronization between customer engagement apps and Outlook or Exchange](control-field-synchronization-outlook.md)   
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Control field synchronization between customer engagement apps and Outlook or Exchange](control-field-synchronization-outlook.md)

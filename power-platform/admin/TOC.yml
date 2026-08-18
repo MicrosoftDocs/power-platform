@@ -80,6 +80,8 @@
                   href: view-license-consumption-finops-apps.md
                 - name: Manage Copilot Studio credits and capacity
                   href: manage-copilot-studio-messages-capacity.md
+                - name: Manage costs for agents powered by the GitHub Copilot harness
+                  href: manage-usage-github-copilot-harness.md
                 - name: View intelligent recommendations about licensing
                   href: get-recommendations-licensing.md
                 - name: Administer without a license

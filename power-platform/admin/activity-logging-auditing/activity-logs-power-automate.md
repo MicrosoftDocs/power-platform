@@ -105,5 +105,3 @@ To track flow execution at runtime, use these tools:
 - [Set up Application Insights with Power Automate](/power-platform/admin/app-insights-cloud-flow)
 - [Manage cloud flow run records in Dataverse](/power-automate/dataverse/cloud-flow-run-metadata)
 - [Power Automate analytics](/power-platform/admin/analytics-flow)
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

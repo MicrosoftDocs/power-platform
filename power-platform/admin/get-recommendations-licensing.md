@@ -51,6 +51,4 @@ Complete the following steps to assign Power Apps premium licenses to users.
 8. Select the license you want to assign to the users. Click **Assign**.
 
 ## View recently assigned licenses
-Near the bottom of the page, admins can see the history of license assignment, including a summary of users who were assigned licenses and the date of assignment.   
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Near the bottom of the page, admins can see the history of license assignment, including a summary of users who were assigned licenses and the date of assignment.

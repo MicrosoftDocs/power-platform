@@ -1,12 +1,13 @@
 ---
 title: "Enable accessible email flow | MicrosoftDocs"
-description: Enable accessible email flow
-author: sericks007
+description: Learn how to enable accessible email flow.
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/04/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -69,7 +70,3 @@ Here, you can read and manage your emails in the Email in Unified Interface app.
 ### See also
 
 [Accessibility for people with disabilities](/dynamics365/customerengagement/on-premises/basics/accessibility-people-with-disabilities)<br/>
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

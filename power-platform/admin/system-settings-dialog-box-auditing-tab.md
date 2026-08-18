@@ -7,6 +7,7 @@ ms.topic: concept-article
 ms.date: 09/10/2025
 ms.subservice: admin
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -54,5 +55,3 @@ Specify to audit specific areas of the product, as described in the following ta
 ### See also
 
 [Dataverse developer guide: Configure auditing](/power-apps/developer/data-platform/auditing/configure)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -7,7 +7,7 @@ ms.date: 03/20/2023
 ms.subservice: admin
 ms.author: nhelgren
 author: NHelgren
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -651,6 +651,3 @@ Exporting attachments such as documentbody on *Annotation* table is not supporte
  [Entity relationships overview](/powerapps/maker/common-data-service/create-edit-entity-relationships)<br />
  [Data Export Service](/powerapps/developer/common-data-service/data-export-service) <br />
  [Team Blog: Introduction to Data Export Service](https://blogs.msdn.microsoft.com/crm/2017/04/11/introduction-to-dynamics-365-data-export-service/)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

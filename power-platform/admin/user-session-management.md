@@ -131,5 +131,3 @@ Customer engagement apps use Microsoft Entra ID as the identity provider. To sec
 
 - Require users to reauthenticate by signing in with their credentials after they sign out within the application. 
 - Prevent users from sharing credentials to access customer engagement apps by validating the user access token to ensure that the identity provider grants access to the same user who is accessing the apps.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

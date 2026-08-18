@@ -547,5 +547,3 @@ The API returns a [`ResourceQueryResult`](/dotnet/api/azure.resourcemanager.reso
   ]
 }
 ```
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

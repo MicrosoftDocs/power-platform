@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 07/13/2026
 ms.subservice: admin
 ms.author: debrau
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---

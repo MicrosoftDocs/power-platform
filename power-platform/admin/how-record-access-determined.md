@@ -7,7 +7,7 @@ ms.date: 07/15/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.custom: 
   - admin-security
   - NewPPAC
@@ -120,6 +120,3 @@ There are two environment database settings to configure to use the **Who has ac
 [Create users](create-users.md) <br />
 [Create or edit a security role to manage access](create-edit-security-role.md) <br />
 [Video: Check Access feature](https://youtu.be/rigZ1FvrgSY)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

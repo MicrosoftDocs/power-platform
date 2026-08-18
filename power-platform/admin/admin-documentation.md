@@ -1,11 +1,11 @@
 ---
 title: Overview of the Power Platform admin center
 description: The Power Platform admin center is a unified portal for administrators to manage environments and settings.
-author: sericks007
+author: EllenWehrle
 ms.topic: overview
 ms.date: 11/19/2025
-ms.author: sericks
-ms.reviewer: ellenWehrle
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ms.custom: NewPPAC
 
 ---
@@ -74,5 +74,3 @@ Complete administrative functions on each of the Power Platform admin center pag
 ### Related content
 
 [Training: Microsoft Power Platform Fundamentals](/training/paths/power-plat-fundamentals)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

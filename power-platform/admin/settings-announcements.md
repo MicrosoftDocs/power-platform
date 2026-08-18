@@ -1,13 +1,14 @@
 ---
 title: "Broadcast announcements to an entire organization  | MicrosoftDocs"
 description: About broadcast announcements to an entire organization 
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 11/25/2025
 ms.subservice: admin
-ms.author: sericks 
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -76,5 +77,3 @@ Make the announcements available to other users in your organization by using we
 1. In the **Upload File** box, choose **Browse** and select the `announcementsondashboard.htm` file that you created earlier.
 1. Select **Save**.
 1. Add this new web resource to any existing or new dashboard.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -135,4 +135,4 @@ The **Environments** tab within the **Licensing** area for Power Apps helps admi
 
 Power Platform admins and Dynamics 365 admins can access the summary view and environment view, and they can allocate app passes.
 
-Environment admins can access the environment view. Tenant admins can also allow environment admins to access the summary view by updating the **Tenant licensing summary view** setting in Power Platform settings. 
+Environment admins can access the environment view. Tenant admins can also allow environment admins to access the summary view by updating the **Tenant licensing summary view** setting in Power Platform settings.

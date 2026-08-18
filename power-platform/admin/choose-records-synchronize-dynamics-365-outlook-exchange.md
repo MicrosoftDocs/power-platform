@@ -1,12 +1,13 @@
 ---
 title: "Choose the records to synchronize between customer engagement apps and Exchange   | MicrosoftDocs"
 description: Choose the records to synchronize between customer engagement apps and Exchange 
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 02/09/2022
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -70,8 +71,4 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
    ![Sync filters dialog box showing grouped criteria.](media/sync-filters-group-criteria.png "Sync filters dialog box showing grouped criteria")  
   
 ### See also  
- [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml) 
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Frequently asked questions about synchronizing records between customer engagement apps and Microsoft Outlook](frequently-asked-questions-synchronizing-records-dynamics-365-and-outlook.yml)

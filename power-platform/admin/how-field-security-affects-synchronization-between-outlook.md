@@ -1,12 +1,13 @@
 ---
 title: "How field security affects synchronization between customer engagement apps and Outlook  | MicrosoftDocs"
 description: How field security affects synchronization between customer engagement apps and Outlook 
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 02/17/2021
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -103,6 +104,3 @@ Securing a field with field-level security can impact synchronization between cu
   
 ### See also  
  [Field-level security](../admin/field-level-security.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

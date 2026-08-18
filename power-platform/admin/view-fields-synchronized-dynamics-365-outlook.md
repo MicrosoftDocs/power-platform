@@ -1,12 +1,13 @@
 ---
 title: "View the fields that are synchronized between customer engagement apps and Outlook  | MicrosoftDocs"
 description: View the fields that are synchronized between customer engagement apps and Outlook
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/11/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -54,6 +55,3 @@ In [!INCLUDE[pn_crm_2015_outlook](../includes/pn-crm-2015-outlook.md)] or later,
  [What fields can be synchronized between customer engagement apps and Outlook or Exchange?](what-fields-synchronized-outlook.md)   
  [Control field synchronization between customer engagement apps and Outlook or Exchange (admins)](control-field-synchronization-outlook.md)   
  [How security affects synchronization between customer engagement apps and Outlook or Exchange](how-field-security-affects-synchronization-between-outlook.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

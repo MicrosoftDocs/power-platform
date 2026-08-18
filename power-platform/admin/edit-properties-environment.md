@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 11/20/2025
 ms.subservice: admin
 ms.author: lapepin
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -87,5 +87,3 @@ Administrators can edit properties of an environment, such as the friendly name,
   
 ### See also
 [Control user access to environments: security groups and licenses](control-user-access.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

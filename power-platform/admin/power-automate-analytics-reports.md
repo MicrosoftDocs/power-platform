@@ -4,10 +4,10 @@ description: View Tenant-level analytics for Power Automate.
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 10/30/2023
-author: Zeffin
+author: EllenWehrle
 ms.subservice: admin
-ms.author: smurkute
-ms.reviewer: smurkute
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -111,7 +111,7 @@ The Power Automate Inventory report offers a complete catalog of Cloud flows dis
 
 |Level  |Filter  |Description  |
 |---------|---------|---------|
-|App     | Last opened         | Used to filter results based on ‘Last run’ date         |
+|App     | Last opened         | Used to filter results based on 'Last run' date         |
 |Environment     | Name        | Friendly name used to identify a given environment        |
 |     | Type        | Type of environments to include in the current view         |
 |     | Region         | Global regions hosting environments          |
@@ -128,7 +128,3 @@ For more information on downloading data from the tenant level reports, see [Exp
 
 ### See also
 [Tenant-level analytics](tenant-level-analytics.md)
-
-
- 
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

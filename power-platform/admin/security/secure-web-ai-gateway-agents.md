@@ -290,5 +290,3 @@ The following connectors currently support secure web and AI gateway Copilot Stu
 :::row-end:::
 
 For more information about individual connectors, see [Connector reference overview](/connectors/connector-reference/).
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

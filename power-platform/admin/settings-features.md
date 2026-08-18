@@ -1,14 +1,14 @@
 ---
 title: Manage feature settings
 description: Learn how to manage feature settings to adjust how features appear and function in Power Platform.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/27/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 contributors:
     - paulliew

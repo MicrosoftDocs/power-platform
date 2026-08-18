@@ -7,6 +7,7 @@ ms.topic: concept-article
 ms.date: 09/11/2025
 ms.subservice: admin
 ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -92,7 +93,4 @@ Use the settings on this page to change general system-level settings like prefe
 
 ### See also  
  [Manage auto-save](/powerapps/maker/model-driven-apps/manage-auto-save)   
- [Customize the Help experience](/powerapps/maker/model-driven-apps/manage-auto-save)   
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [Customize the Help experience](/powerapps/maker/model-driven-apps/manage-auto-save)

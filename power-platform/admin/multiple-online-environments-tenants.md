@@ -3,17 +3,17 @@ title: "Considerations for choosing multiple environments or tenants"
 description: "Learn about options and use cases for choosing multiple environments or tenants in your subscription, including a multi-tenant deployment." 
 ms.custom: ""
 ms.date: 09/30/2022
-ms.reviewer: ""
+ms.reviewer: ellenwehrle
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: concept-article
 applies_to: 
   - "Dynamics 365 (online)"
-author: sericks007
+author: EllenWehrle
 ms.assetid: 
 caps.latest.revision: 63
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -145,6 +145,3 @@ The customer engagement apps (Dynamics 365 Sales, Dynamics 365 Customer Service,
 ### See also
 [Blog: What is a tenant?](https://powerbi.microsoft.com/blog/what-is-a-tenant/) <br />
 [Environments overview](environments-overview.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

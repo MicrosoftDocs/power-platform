@@ -1,13 +1,13 @@
 ---
 title: Purchase Power Apps for your organization | Microsoft Docs
 description: Provides information about how to purchase Power Apps plans.
-author: shwetamurkute
-ms.reviewer: smurkute
+author: EllenWehrle
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/29/2025
 ms.subservice: admin
-ms.author: smurkute
+ms.author: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -70,9 +70,3 @@ See [About Power Apps per app plans](about-powerapps-perapp.md).
 ## Power Apps pay-as-you-go plan
  
 Pay-as-you-go is a new way to pay for Power Apps using an Azure subscription which allows you to get started with building and sharing apps without any license commitment or up-front purchasing.  See [Preview: Pay-as-you-go plan](pay-as-you-go-overview.md).
-
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

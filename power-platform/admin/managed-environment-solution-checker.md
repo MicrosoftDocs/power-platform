@@ -116,5 +116,3 @@ SetManagedEnvironmentSolutionCheckerEnforcementLevel -EnvironmentId 8d996ece-855
 [Managed environments overview](managed-environment-overview.md) <br />
 [Import solutions](/power-apps/maker/data-platform/import-update-export-solutions)  <br />
 [Solution checker enforcement in managed environments blocks or warns on import](/troubleshoot/power-platform/power-apps/manage-apps-and-solutions/solution-checker-enforcement-import-issues)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

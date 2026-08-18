@@ -5,9 +5,9 @@ ms.component: pa-admin
 ms.topic: how-to
 ms.date: 03/30/2022
 ms.subservice: admin
-author: Zeffin
-ms.author: smurkute
-ms.reviewer: smurkute
+author: EllenWehrle
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -71,5 +71,3 @@ The data mode uses the extensible Common Data Model schema to describe the table
 
 [Create a storage account](/azure/storage/common/storage-account-create) <br />
 [Set up Power Platform self-service analytics to export Power Apps inventory and usage data](self-service-analytics.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -16,7 +16,7 @@ ms.contributors:
   - gakulka
 ms.subservice: admin
 ms.author: gakulka
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -504,16 +504,3 @@ The source tenant’s Dynamics 365 or Power Platform admin must submit a request
 
 #### Is there a self-serve UI option?
 Yes. After the `TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}` is approved in the target tenant, a UI option to move the environment is available in the environment page.
-
-
-
-
-
-
-
-
-
-
-
-
-

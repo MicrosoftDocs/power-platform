@@ -7,7 +7,7 @@ ms.date: 05/27/2026
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.custom: admin-security
 search.audienceType: 
   - admin
@@ -115,5 +115,3 @@ Most of these users are hidden from user views but they can be found by using th
 - The application user is a built-in user account that is used to perform integration and system back-end service to support a particular feature.  
 - Since these are built-in user accounts, they shouldn't be updated. The security roles that are assigned to these accounts shouldn't be updated either. This is to prevent any service outages.  
 - These users don't consume any service licenses.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

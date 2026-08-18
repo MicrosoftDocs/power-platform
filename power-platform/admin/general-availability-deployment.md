@@ -4,7 +4,7 @@ description: Learn about general availability deployment.
 author: paulda64
 ms.subservice: admin
 ms.author: paulda 
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 02/20/2026
@@ -87,5 +87,3 @@ Learn more about early access updates in [Opt in to early access updates](opt-in
 [Dynamics 365 release schedule](/dynamics365/get-started/release-schedule) <br />
 [Dynamics 365 and Power Platform Release Plans](/dynamics365/release-plans/) <br />
 [Policies and communications](policies-communications.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

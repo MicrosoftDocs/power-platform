@@ -8,6 +8,7 @@ ms.topic: concept-article
 ms.date: 09/08/2020
 ms.subservice: admin
 ms.author: matp
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -34,6 +35,3 @@ Administrators set up document management, specify permissions for managing task
   
 ## See also
 [SharePoint Document Management software requirements](sharepoint-document-management-software-requirements.md) <br />
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

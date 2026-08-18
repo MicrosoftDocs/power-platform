@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 05/05/2025
 ms.subservice: admin
 ms.author: aorth
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType:
   - admin
 ms.custom:

@@ -5,9 +5,9 @@ ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 11/17/2025
-author: shwetamurkute
-ms.author: smurkute
-ms.reviewer: smurkute
+author: EllenWehrle
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.contributors:
@@ -109,6 +109,3 @@ To validate which users would get updated to the new AppID, use the following Fe
 If the application ID isn't available, contact Microsoft support.
 
 If there are compliance requirements related to the **ModifiedBy** and **CreatedBy** fields in Dataverse audit logs, note that changes associated with the new AppID apply to all records created or modified on or after September 10, 2025.
-
-
-

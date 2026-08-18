@@ -7,7 +7,7 @@ ms.date: 05/16/2025
 author: DanaMartens
 ms.subservice: admin
 ms.author: dmartens
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
 - yingchin
 - EllenWehrle
@@ -142,7 +142,3 @@ Select **Test & Enable Mailbox** to test the mailbox configured in step 6.
 
 > [!div class="mx-imgBorder"] 
 > ![Screenshot of the Test & Enable Mailbox command.](media/gmail-oauth-test-enable-mailbox.png "Test and enable mailbox")
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

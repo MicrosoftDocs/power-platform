@@ -3,7 +3,7 @@ title: Change the base currency of a Dataverse environment in Power Platform
 description: Learn how to change the base currency of a Dataverse environment in Microsoft Power Platform.
 author: sanjeevgoyal
 ms.date: 06/18/2024
-ms.reviewer: matp
+ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
 ms.author: sanjeevgoyal
@@ -106,5 +106,3 @@ If you notice performance issues during conversion, you can pause the conversion
 
 > [!NOTE]
 > Rollup column jobs (that is, calculate and mass calculate jobs) are automatically stopped and disabled during base currency conversion. This behavior prevents blocking and speeds up the conversion process. After base currency conversion is completed, rollup jobs are automatically enabled and triggered to recalculate rollup values and ensure that they are up to date.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

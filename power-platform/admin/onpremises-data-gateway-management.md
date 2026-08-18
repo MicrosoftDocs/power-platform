@@ -189,6 +189,3 @@ If you have gateways in your home (default) region or target region, clean them 
 
 [On-premises data gateway](/data-integration/gateway/service-gateway-onprem)<br/>
 [Connecting to on-premises data sources with On-premises Data Gateway](/azure/analysis-services/analysis-services-gateway)<br/>
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -50,6 +50,4 @@ Starting October 31, this message will appear for users trying to access Dynamic
 > **Alert** <br />
 > Unsupported browser. This website is no longer supported in this version of Microsoft Edge. Try using the latest Edge version. 
 
-Administrators wanting to block Internet Explorer for users earlier can request this through support. 
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+Administrators wanting to block Internet Explorer for users earlier can request this through support.

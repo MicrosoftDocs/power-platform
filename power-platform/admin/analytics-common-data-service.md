@@ -1,11 +1,11 @@
 ---
 title: View and download Dataverse analytics
 description: Access Dataverse analytics from the Power Platform admin center to view and download metrics such as active users, API calls, and executions.
-author: sericks007 
+author: EllenWehrle
 ms.topic: how-to
 ms.date: 06/02/2025
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 ms.contriutors:
  - yingchin
@@ -340,5 +340,3 @@ You can view data for different environment and date-time ranges. Take these ste
 1. Select **Apply** to save the changes. All Dataverse analytics reports are available using this selection process.
 
 :::image type="content" source="media/analytics-common-data-service/organization-insights-change-filters-apply.png" alt-text="Shows the filters panel appear when the Change filters button is selected on the Dataverse analytics page." lightbox="media/analytics-common-data-service/organization-insights-change-filters.png":::
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

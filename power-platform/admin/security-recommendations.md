@@ -7,9 +7,10 @@ ms.topic: concept-article
 ms.date: 05/28/2025
 ms.subservice: admin
 ms.author: sidhartg
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.contributors:
   - DanaMartens
+  - smurkute
 search.audienceType:
   - admin
 ms.custom:
@@ -104,6 +105,17 @@ This recommendation lists production websites with SSL certificates that are exp
 - **Severity**: High  
 - **Refresh frequency**: Daily  
 - **Managed environments only**: Yes  
+
+### Ensure uninterrupted access to your websites by renewing their authentication key
+
+This recommendation lists sites with authentication keys that are expired or will expire within 90 days. Power Pages uses the authentication key to connect to the Dataverse environment. If the key expires, the website becomes inaccessible to end users. Review the websites and [renew the authentication key](/power-pages/admin/manage-auth-key) as needed.
+
+> [!NOTE]
+> Once you take action, it can take up to one day for the sites to be removed from the list.
+
+- **Severity**: High  
+- **Refresh frequency**: Daily  
+- **Managed environments only**: Yes 
 
 ## Tenant settings
 

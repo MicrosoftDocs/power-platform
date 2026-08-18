@@ -113,5 +113,3 @@ Example prompt:
 1. Open Teams.
 1. Open Copilot.
 1. Ask Copilot to create a meeting agenda for /Adatum Corporation, including a summary of closed opportunities and a discussion topic to review the list open opportunities.
-
-

@@ -4,7 +4,7 @@ description: Copy a security role
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 12/09/2025
@@ -60,5 +60,3 @@ Some features in Power Apps (make.powerapps.com), like [data workspace](/power-p
 [Security roles](../admin/security-roles-privileges.md)
 [Field-level security](../admin/field-level-security.md)
 [Prevent elevation of security role privilege](prevent-elevation-security-role-privilege.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

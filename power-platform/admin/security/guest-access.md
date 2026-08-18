@@ -73,5 +73,3 @@ You can also configure guest access by using the Power Platform CLI, which is us
 
 **List settings example:**
 `pac env list-settings --environment "your-environment-url" --filter "guest"`
-
-[!INCLUDE[footer-include](../../includes/footer-banner.md)]

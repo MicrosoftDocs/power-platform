@@ -4,7 +4,7 @@ description: Learn about data encryption in Microsoft Dataverse.
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
   - paulliew
   - denise-msft
@@ -57,9 +57,3 @@ Protocols and technologies examples include:
 - Transport Layer Security/Secure Sockets Layer (TLS/SSL), which uses symmetric cryptography based on a shared secret to encrypt communications as they travel over the network.
 - Internet Protocol Security (IPsec), an industry-standard set of protocols used to provide authentication, integrity, and confidentiality of data at the IP packet level as it’s transferred across the network.
 - Advanced Encryption Standard (AES)-256, the National Institute of Standards and Technology (NIST) specification for a symmetric key data encryption that was adopted by the US government to replace Data Encryption Standard (DES) and RSA 2048 public key encryption technology.
-
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

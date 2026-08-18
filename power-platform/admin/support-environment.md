@@ -2,20 +2,20 @@
 title: Support environments and consent to access customer data
 description: Understand why Microsoft Support may need your consent to access your customer data and create a support environment in your tenant to resolve an issue.
 ms.date: 12/22/2025
-ms.reviewer: "yinkafatona"
+ms.reviewer: ellenwehrle
 ms.suite: ""
 ms.tgt_pltfrm: ""
 ms.topic: how-to
 applies_to: 
   - "Dynamics 365 (online)"
-author: sericks007
+author: EllenWehrle
 contributors:
   - davidme-ms
   - saukuma
 ms.assetid: 
 caps.latest.revision: 63
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom:
@@ -109,5 +109,3 @@ A support environment can be either [a minimal or a full copy](#what-doe
 ### How long does a support environment stay in my tenant?
 
 A support environment expires in seven days or when the ticket is resolved. System admins can delete the support environment at any time.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

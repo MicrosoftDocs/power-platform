@@ -7,11 +7,9 @@ ms.topic: concept-article
 author: EllenWehrle
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: ellenwehrle
+ms.author: laneswenka
 search.audienceType: 
   - admin
-ms.contributors:
-- laneswenka
 ---
 # Capacity add-ons
 
@@ -86,5 +84,3 @@ The following admins will be able to allocate add-on capacity in the Power Platf
 
 [About Power Apps per app plans](about-powerapps-perapp.md)
 [AI Builder consumption report](/ai-builder/administer-consumption-report)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

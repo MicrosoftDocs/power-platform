@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 06/30/2026
+ms.date: 08/17/2026
 ms.topic: concept-article
 author: amiyapatr 
 ms.subservice: admin
@@ -55,7 +55,7 @@ To check whether you have any of these licenses, sign in to the Microsoft 365 ad
 
 ## Verifying your Microsoft Dataverse capacity-based storage model
 
-To view the Capacity add-ons summary page, you need one of the following roles:
+To view the **Capacity add-ons** summary page, you need one of the following roles:
 
 - Tenant administrator
 - Power Platform administrator
@@ -67,13 +67,13 @@ Follow these steps to verify that you have the Microsoft Dataverse capacity-base
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
-1. On the Licensing pane, select **Capacity add-ons** to go to the Capacity add-ons summary page where you can see your tenant's storage, add-ons, and Microsoft Power Platform requests.
+1. On the **Licensing** pane, select **Capacity add-ons** to go to the **Capacity add-ons** summary page where you can see your tenant's storage, add-ons, and Microsoft Power Platform requests.
 
 Learn more in [Dataverse capacity-based storage overview](whats-new-storage.md).
 
 ## Capacity page details
 
-The tabs **Summary**, **Dataverse**, **Microsoft Teams**, **Add-ons**, and **Trial** are available on the Capacity add-ons page.
+The tabs **Summary**, **Dataverse**, **Microsoft Teams**, **Add-ons**, and **Trial** are available on the **Capacity add-ons** page.
 
 ### Summary tab
 
@@ -137,7 +137,7 @@ This table highlights some of the features you can see on the Dataverse page.
 
 |Feature  |Description  |
 |---------|---------|
-|Download     | Select **Download** above the list of environments to download an Excel .csv file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
+|Download     | Select **Download** above the list of environments to download an Excel .csv file with high-level storage information for each environment that the signed-in admin can see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by environment name and environment type.         |
 |Details  | Select the **Details** button (:::image type="icon" source="media/storage-data-details-button.png" border="false":::) to see  an environment-level detailed view of where your organization is using capacity, in addition to the three types of capacity consumption.   |
 | Default environment tip | The calculated storage usage in this view only displays what is **above** the default environment's included capacity. Tool tips indicate how to view actual usage in the **Details** section. |
@@ -177,7 +177,7 @@ On the Capacity page, select **Microsoft Teams**. This tab shows the capacity st
 
 |Feature  |Description  |
 |---------|---------|
-|Download     | Select **Download** above the list of environments to download an Excel .csv file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
+|Download     | Select **Download** above the list of environments to download an Excel .csv file with high-level storage information for each environment that the signed-in admin can see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by environment name and environment type.         |
 
 ### Add-ons tab
@@ -193,7 +193,7 @@ On the Capacity page, select **Trial**. This tab shows the capacity storage used
 
 |Feature  |Description  |
 |---------|---------|
-|Download     | Select **Download** above the list of environments to download an Excel .csv file with high-level storage information for each environment that the signed-in admin has permission to see in the Power Platform admin center.        |
+|Download     | Select **Download** above the list of environments to download an Excel .csv file with high-level storage information for each environment that the signed-in admin can see in the Power Platform admin center.        |
 |Search     | Use **Search** to search by environment name and environment type.         |
 
 ## Dataverse page in Licenses
@@ -260,7 +260,7 @@ In the **Top environments consuming storage** tile, select **See all environment
 
 #### Usage per storage type tile
 
-In the **Usage per storage type** tile, you can view the consumption of your database, log, and file storage. This section displays your prepaid allocated capacity, if any, along with the corresponding usage. Additionally, it indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan.
+In the **Usage per storage type** tile, you can view the consumption of your database, log, and file storage. This section displays your prepaid allocated capacity, if any, along with the corresponding usage. It also indicates if any part of your Dataverse usage is billed under a pay-as-you-go plan.
 
 #### Consumption per table
 
@@ -270,18 +270,18 @@ In the **Consumption per table** section, you can view the amount of storage con
 
 [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
 
-Dataverse storage advisor analyzes table-level storage consumption and recommends data that you can clean up to reduce storage usage. The advisor surfaces these recommendations directly in the **Licensing** > **Dataverse** capacity view, so you can act on them without leaving the Power Platform admin center.
+Dataverse storage advisor analyzes table-level storage consumption and recommends data you can clean up to reduce storage usage. The advisor surfaces these recommendations directly in the **Licensing** > **Dataverse** capacity view, so you can act on them without leaving the Power Platform admin center.
 
 > [!NOTE]
-> Dataverse storage advisor is being rolled out gradually and might not be available in your environment yet. When it's available, recommendations appear only for environments that have storage that can be cleaned up.
+> Dataverse storage advisor is rolling out gradually and might not be available in your environment yet. When it's available, recommendations appear only for environments that have storage you can clean up.
 
 When recommendations are available, the advisor adds the following experiences:
 
-- **Storage recommendation banner**: A banner appears above the capacity details that estimates how much space the advisor can help you reclaim&mdash;for example, *Storage advisor has action plans to clean up space and manage the environment*. Select the banner to open the **Dataverse storage advisor** panel.
+- **Storage recommendation banner**: A banner appears above the capacity details that estimates how much space the advisor can help you reclaim&mdash;for example, *Storage advisor has action plans to clean up space and manage the environment*. Select the banner to open the **Dataverse storage advisor** pane.
 
 - **Clean up column**: The **Consumption per table** grid includes a **Clean up** column that shows the estimated space the advisor recommends cleaning up for each table. The environment list in the **Manage capacity** experience shows a similar **Cleanup** value so you can compare opportunities across environments.
 
-- **Free up storage space**: The **Dataverse storage advisor** panel includes a **Free up storage space** section that lists per-table cleanup recommendations. For each recommended table, you can review the **Cleanable data** and preview the records that match the cleanup criteria. These records are moved to long-term retention when you act on the recommendation, which keeps them available for audit or compliance needs while freeing up active Dataverse storage and improving performance.
+- **Free up storage space**: The **Dataverse storage advisor** pane includes a **Free up storage space** section that lists per-table cleanup recommendations. For each recommended table, you can review the **Cleanable data** and preview the records that match the cleanup criteria. These records are moved to long-term retention when you act on the recommendation, which keeps them available for audit or compliance needs while freeing up active Dataverse storage and improving performance.
 
 #### Act on a storage recommendation
 
@@ -291,7 +291,7 @@ From a storage recommendation, you can choose how to reclaim space:
 - **Bulk delete data**: Remove obsolete or unnecessary data through a bulk delete operation to free up storage capacity, see [Bulk deletion](delete-bulk-records.md).
 - **Manage capacity**: Adjust capacity allocation for the environment from the same view.
 
-The table trends panel also shows **Cleanup recommendations** with curated Microsoft Learn articles to help you manage a table's growth. For more ways to reduce storage, see [Free up storage space](free-storage-space.md).
+The table trends pane also shows **Cleanup recommendations** with curated Microsoft Learn articles to help you manage a table's growth. For more ways to reduce storage, see [Free up storage space](free-storage-space.md).
 
 ### Dataverse search consumption and reporting
 
@@ -317,7 +317,7 @@ When you select the **Dataverse** tab, you can allocate capacity to a specific e
 1. On the **Summary** page, select **Manage capacity**.
 1. Select the environment for which you want to allocate capacity.
 1. In the **Manage capacity** panel, view the currently allocated and consumed capacity for the environment.
-1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Make sure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
+1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
 1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (database, log, or file) reaches a set percentage of the allocated capacity.
 1. Select **Save** to apply the changes.
 
@@ -332,7 +332,11 @@ When an environment's capacity consumption exceeds the preallocated capacity, yo
 
 Microsoft is making changes for what happens when an organization's storage capacity is close to or exceeds the capacity entitled or purchased through add-ons.
 
-Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15 percent of space available. Another warning notification that admin operations could be impacted is sent when any of the three storage capacities have less than 5 percent of space available. The final tier of notification triggers when the tenant is "in overage" (storage usage exceeds capacity entitlements), which alerts the admin that the following operations aren't available until the overage is resolved:
+Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15% of capacity available after cross capacity-type borrowing is applied. Another warning notification that admin operations could be impacted is sent when any of the three storage capacities have less than 5% of capacity available. The final tier of notification triggers when the tenant exceeds the allocated capacity after [cross capacity-type borrowing](#how-storage-overages-are-calculated) is applied. 
+
+Environment lifecycle operations, such as creating, copying, restoring, recovering, or converting environments, are evaluated differently from storage notifications and overage status. While notifications and overage status are based on the tenant's effective capacity position after cross-capacity type borrowing, these operations require sufficient available capacity in the underlying Database, File, or Log capacity types. As a result, some environment lifecycle operations may be unavailable when the required capacity type does not have sufficient available capacity, even if the tenant's overall capacity position remains within entitlement limits after borrowing. 
+
+The following administrative environment lifecycle operations aren't available when the required storage capacity isn't available to support the operation:
 
 - Create a new environment (requires minimum 1-GB capacity available)
 - Copy an environment
@@ -341,8 +345,9 @@ Notifications for capacity approaching storage limits are triggered when any of 
 - Recover an environment (requires minimum 1-GB capacity available)
 - Add Dataverse database to an environment
 
+
 > [!NOTE]
-> The storage-driven capacity model calculation of these thresholds also considers the overflow usage allowed in the storage-driven model. For example, extra database capacity can be used to cover log and file overuse and extra log capacity can be used to cover file overuse. Therefore, overflow usage is taken into consideration to reduce the number of emails a tenant admin receives.
+> The storage-driven capacity model calculation of these thresholds also considers the [cross capacity-type borrowing](#how-storage-overages-are-calculated) /overflow usage allowed in the storage-driven model. For example, extra database capacity can be used to cover log and file overuse and extra log capacity can be used to cover file overuse. Therefore, [cross capacity-type borrowing](#how-storage-overages-are-calculated) is taken into consideration to reduce the number of emails a tenant admin receives.
 
 Tenant admins, Power Platform admins, and Dynamics 365 admins receive these notifications on a weekly basis. At this time, there's no option for a customer to opt out of these notifications or delegate these notifications to someone else. All admin types listed earlier automatically receive these notifications.
 
@@ -355,7 +360,7 @@ Your organization must have the right licenses for the storage you use:
   
 ### Dataverse capacity banner notifications
 
-A notification banner appears in **Dataverse only** tenants in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and Dynamics 365 apps when Dataverse total capacity (including database, file, or log) has less than 15 percent remaining or exceeds the allocated capacity. For more information, see [Example storage capacity scenarios and overage enforcement](#example-storage-capacity-scenarios-and-overage-enforcement). The banner remains visible as long as it's not dismissed and the tenant continues to meet the banner visibility criteria. If a user dismisses the banner and the tenant's remaining storage capacity is still below 15 percent, the banner reappears after seven days in Power Platform products, except model-driven apps. The banner reappears in model-driven apps whenever a user refreshes the screen. These banner notifications are visible to [tenant admins](#for-tenant-admins) and [system admins](#for-system-admins).
+A notification banner appears in **Dataverse-only** tenants across the Power Platform admin center, Power Apps, Power Automate, Power Pages, and Dynamics 365 apps when any Dataverse storage capacity type (database, file, or log) has less than 15% remaining capacity or exceeds capacity after [cross capacity-type borrowing](#how-storage-overages-are-calculated) has been applied. For more information, see [Example storage capacity scenarios and overage enforcement](#example-storage-capacity-scenarios-and-overage-enforcement). The banner remains visible as long as you don't dismiss it and the tenant continues to meet the banner visibility criteria. If a user dismisses the banner and the tenant's remaining storage capacity is still below 15 percent, the banner reappears after seven days in Power Platform products, except model-driven apps. The banner reappears in model-driven apps whenever a user refreshes the screen. These banner notifications are visible to [tenant admins](#for-tenant-admins) and [system admins](#for-system-admins).
 
 #### For tenant admins
 
@@ -372,9 +377,31 @@ The banner displays two call-to-action buttons:
 
 The banner displays one call-to-action button: **Manage environment**, which takes you to your [environments in Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments) where you can free up storage to optimize capacity usage. If freeing up storage doesn't resolve your capacity concerns, reach out to your IT department or tenant admin to purchase more storage. [Learn to free up storage space](free-storage-space.md) for environments.
 
+## How storage overages are calculated
+
+Storage overages are calculated by comparing your organization's combined Dataverse and Finance & Operations (F&O) storage usage against its total entitled storage capacity. To determine whether a tenant is in overage, Microsoft first combines storage entitlements and consumption across Dataverse and Finance & Operations for each capacity type separately: Database, Log, and File. It then applies eligible cross capacity-type borrowing. This process ensures that available capacity is used as efficiently as possible before an overage is identified.
+
+**Cross capacity-type borrowing** allows unused capacity from a higher-value storage type to offset excess usage in a lower-value storage type. Capacity can flow only from Database to File, and never in the opposite direction: Database → Log → File. 
+
+| Capacity type | Can borrow from  |
+|---------|---------|
+| **Database**     | None      |
+| **Log**     | Database |
+| **File**  | Log, then Database  |
+
+For example:
+
+- Database capacity can be used to offset Log or File overages.
+- Log capacity can be used to offset File overages.
+- File capacity can't be used to offset Database or Log overages.
+- Database overages can't be offset because Database is the highest-value storage type.
+
+A tenant is considered to be in storage overage only after all eligible cross capacity-type borrowing has been applied and one or more storage types still exceed their effective available capacity. If borrowing fully offsets any deficits, the tenant isn't considered to be in overage, even if an individual storage type initially exceeded its allocated entitlement.
+
+
 ## Example storage capacity scenarios and overage enforcement
 
-Stay within the limits for your entitled capacity for database, log, and file storage. If you use more capacity than you're entitled to, buy more capacity or free up some space. However, if you overuse database, log, or file capacity, review the following scenarios to understand when enforcement applies.
+Stay within the limits for your entitled capacity for database, log, and file storage. If you use more capacity than you're entitled to, free up some space or buy more capacity. However, if you overuse database, log, or file capacity, review the following scenarios to understand when environment lifecycle operation restrictions apply.
 
 ### Scenario 1: Database storage is over capacity, overage enforcement
 
@@ -590,5 +617,3 @@ No, admins can select specific environments to allocate capacity.
 - [Automatic tuning in Azure SQL Database](/azure/sql-database/sql-database-automatic-tuning)
 - [What's new in storage](whats-new-storage.md)
 - [Free up storage space](free-storage-space.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

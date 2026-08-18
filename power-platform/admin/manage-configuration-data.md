@@ -1,13 +1,14 @@
 ---
 title: "Move configuration data across organizations  | MicrosoftDocs"
 description: Move configuration data across organizations
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 11/21/2023
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -77,6 +78,3 @@ The Configuration Migration tool is available as a [NuGet package](https://www.n
 [Modify a configuration data schema](modify-configuration-data-schema.md)<br /> 
 [Import configuration data](import-configuration-data.md)<br /> 
 [Manage product catalog configuration](../admin/manage-product-catalog-configuration.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

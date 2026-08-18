@@ -1,14 +1,14 @@
 ---
 title: "Create and share data analysis Excel templates"
 description: "Excel templates provide powerful ways to analyze and present your data. Learn tips for creating new templates, exporting data, and following best practices."
-author: sericks007
+author: EllenWehrle
 contributor: yingchin
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 05/16/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -312,5 +312,3 @@ If your [!INCLUDE[pn_microsoft_excel](../includes/pn-microsoft-excel.md)] templa
 
 - [Download a template for data import](../admin/download-template-data-import.md)
 - [Using Word templates](../admin/using-word-templates-dynamics-365.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

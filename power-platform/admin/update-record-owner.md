@@ -7,7 +7,7 @@ ms.date: 11/26/2025
 ms.subservice: admin
 author: paulliew
 ms.author: paulliew
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 contributors:
    - MichaelPDuda-Microsoft
 
@@ -53,5 +53,3 @@ To reassign all records from one user to yourself, a team, or another user, use 
 
 > [!NOTE]
 > This process moves all records owned by the selected user or team regardless of state. This also unpublishes any workflows that you assign to another user. Before the assigned workflows can be used, the new owner must publish them again.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -4,7 +4,7 @@ description: Learn how to create an administrative user and prevent elevation of
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 ms.component: pa-admin
 ms.topic: how-to
@@ -70,5 +70,3 @@ The following steps describe a method to create a new custom security role with 
 ### See also
 
 [Global and Service administrators can administer without a license](global-service-administrators-can-administer-without-license.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: Enable and make available OneDrive for Business (online)
 description: Learn about OneDrive for Business licensing and other requirements, and how to enable it in your environment and control access in apps.
-author: sericks007
+author: EllenWehrle
 contributors: 
   - yingchin
 ms.component: pa-admin
@@ -9,7 +9,7 @@ ms.topic: how-to
 ms.date: 05/29/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -74,5 +74,3 @@ You can toggle availability of [!INCLUDE[pn_onedrive](../includes/pn-onedrive.md
 
  [Enable OneDrive for Business (on-premises)](connect-onedrive-business.md)
  [What is OneDrive for Business?](https://support.office.com/article/What-is-OneDrive-for-Business-187f90af-056f-47c0-9656-cc0ddca7fdc2)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

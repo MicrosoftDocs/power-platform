@@ -7,7 +7,7 @@ ms.date: 07/15/2025
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.custom: NewPPAC
 ms.contributors:
   - lsuresh
@@ -230,7 +230,3 @@ When the Microsoft Entra group is deleted from the Azure.portal, all members are
 [Video: Microsoft Entra group membership](https://youtu.be/GW2Rz53BX6o) <br />
 [Create a basic group and add members using Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal) <br />
 [Quickstart: View your organization's groups and members in Microsoft Entra ID](/azure/active-directory/fundamentals/active-directory-groups-view-azure-portal)
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

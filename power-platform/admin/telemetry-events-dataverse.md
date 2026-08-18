@@ -5,7 +5,7 @@ services: powerapps
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 12/12/2022
-author: Zeffin
+author: EllenWehrle
 ms.subservice: admin
 ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
@@ -227,8 +227,3 @@ Dataverse returns x-ms-service-requestId in the header response to all requests.
 union *
 | where operation_ParentId contains <requestId> 
 ```
-
-
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -88,5 +88,3 @@ The following admin operations aren't available when a tenant exceeds storage ca
 - [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit)
 - Legacy capacity storage model: [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario)
 - New capacity storage model: [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-and-overage-enforcement)
-
-

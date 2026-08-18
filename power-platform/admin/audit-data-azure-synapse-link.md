@@ -9,7 +9,7 @@ contributors:
  - NatuvaHiranmai
 ms.subservice: admin
 ms.author: paulliew 
-ms.reviewer: matp 
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange

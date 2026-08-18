@@ -4,7 +4,7 @@ description: There are two types of Power Platform trial environments. Decide wh
 author: meeramahabala
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: concept-article
@@ -204,5 +204,3 @@ Trial (standard) environments with no activity in the environment databases for 
 [Licensing overview](pricing-billing-skus.md) <br />
 [Block trial licenses commands](powerapps-powershell.md#block-trial-licenses-commands) <br />
 [Control who can create and manage environments in the Power Platform admin center](control-environment-creation.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

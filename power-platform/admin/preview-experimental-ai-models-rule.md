@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.date: 08/25/2025
 author: jekom1
 ms.author: jelenak
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.subservice: admin
 search.audienceType: 
   - admin
@@ -50,4 +50,3 @@ Learn more about the effects that the **Preview and experimental AI models** set
 ## Effects of the setting on Power Platform
 
 Learn more about the effects that the **Preview and experimental AI models** setting has on Power Automate and Power Apps in [Enable or disable preview features or models](/ai-builder/administer#enable-or-disable-preview-features-or-models).
-

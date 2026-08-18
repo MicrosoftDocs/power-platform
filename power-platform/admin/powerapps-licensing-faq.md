@@ -73,5 +73,3 @@ Creating and managing Power Apps doesn't require a license, so users are able to
 
 ### I can play an app that uses Dataverse inside Teams in a Dataverse for Teams environment. But when I try to play the same app standalone, I get a prompt message. Why?
 If you only have an Office-seeded license, and the app uses Dataverse for Teams, it can only be used when embedded within Teams.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

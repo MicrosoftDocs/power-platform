@@ -2,13 +2,14 @@
 title: Add a Microsoft Dataverse database
 description: Walkthrough of how to add a Microsoft Dataverse database.
 services: powerapps
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/29/2025
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -68,6 +69,3 @@ To create a database, you must be an administrator in the selected environment, 
 
 ## Privacy notice
 With the Microsoft Power Apps Common Data Model we collect and store custom table and column names in our diagnostic systems.  We use this knowledge to improve the Common Data Model for our customers. The table and column names that Creators create help us understand scenarios that are common across the Microsoft Power Apps community and ascertain gaps in the service’s standard table coverage, such as schemas related to organizations. The data in the database tables associated with these tables isn't accessed or used by Microsoft or replicated outside of the region in which the database is provisioned. Note, however, the custom table and column names may be replicated across regions and are deleted in accordance with our data retention policies. Microsoft is committed to your privacy as described further in our [Trust Center](https://www.microsoft.com/trustcenter/Privacy/default.aspx).
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

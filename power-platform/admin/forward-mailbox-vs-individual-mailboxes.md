@@ -1,12 +1,13 @@
 ---
 title: "Forward mailbox vs. individual mailboxes   | MicrosoftDocs"
 description: Forward mailbox vs. individual mailboxes 
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/29/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -23,13 +24,13 @@ Forward mailbox functionality in Server-Side Synchronization was initially made 
 
 However, using forward mailboxes as a long term solution is no longer recommended due to the following reasons:
 
--	**Performance**: Forward Mailboxes are designed to process all e-mails for multiple mailboxes in your organization. When Server Side Sync processes a forward mailbox, all of the received emails that have arrived in the forward mailbox since the last synchronization cycle are processed by a single backend server node. As a result, each synchronization cycle may take longer to complete, which can delay the rate at which emails are delivered into the system. 
+- **Performance**: Forward Mailboxes are designed to process all e-mails for multiple mailboxes in your organization. When Server Side Sync processes a forward mailbox, all of the received emails that have arrived in the forward mailbox since the last synchronization cycle are processed by a single backend server node. As a result, each synchronization cycle may take longer to complete, which can delay the rate at which emails are delivered into the system. 
 When using individual mailboxes, each mailbox is evenly distributed across multiple backend servers and threads, which achieves much higher scalability and ensures that each mailbox can be processed in a more timely fashion.
 
--	**Throttling limits**: Email service throttling limits, such as those imposed by Exchange or POP services, are more likely to be hit. Throttling limits are defined at the mailbox level. Since a forward mailbox handles email for multiple mailboxes, this requires a higher load of traffic on the email service to synchronize emails from all forwarding parties, which may subject the forward mailbox to throttling.
+- **Throttling limits**: Email service throttling limits, such as those imposed by Exchange or POP services, are more likely to be hit. Throttling limits are defined at the mailbox level. Since a forward mailbox handles email for multiple mailboxes, this requires a higher load of traffic on the email service to synchronize emails from all forwarding parties, which may subject the forward mailbox to throttling.
 When using individual mailboxes, throttling limits are much less likely to be encountered as throttling limits are enforced on a per mailbox basis. 
 
--	**Fault tolerance**: Since forward mailboxes were designed to synchronize emails for multiple users or queues, this can potentially introduce a single point of failure should the mailbox experience connectivity or runtime errors. As a result, these errors may potentially block or significantly delay incoming email message synchronization for multiple users or queues. Business critical support queues or other high priority Dynamics 365 mailboxes should not be configured for Forward Mailbox for this reason.
+- **Fault tolerance**: Since forward mailboxes were designed to synchronize emails for multiple users or queues, this can potentially introduce a single point of failure should the mailbox experience connectivity or runtime errors. As a result, these errors may potentially block or significantly delay incoming email message synchronization for multiple users or queues. Business critical support queues or other high priority Dynamics 365 mailboxes should not be configured for Forward Mailbox for this reason.
 When using individual mailboxes, each mailbox is processed independently. As a result, any connectivity or runtime errors will only affect the specific mailbox. 
 
 For the above reasons, forward mailboxes are supported, but not recommended, and should be avoided for new setup. Customers that have an existing Forward Mailbox configuration are encouraged to migrate to individual mailboxes to have the best and most reliable email synchronization experience.
@@ -49,7 +50,4 @@ For the above reasons, forward mailboxes are supported, but not recommended, and
   
 3. Customer engagement apps (by using server-side synchronization or Email Router) retrieve the message from the forward mailbox and creates the appropriate records.  
   
-### See also  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+### See also

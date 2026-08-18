@@ -5,7 +5,7 @@ services: powerapps
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.contributors:
   - pmantha
   - paulliew
@@ -132,5 +132,3 @@ Or, purchase and assign per-app passes: [About Power Apps per app plans](about-p
 ### Related content
 
 [Create users](create-users.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

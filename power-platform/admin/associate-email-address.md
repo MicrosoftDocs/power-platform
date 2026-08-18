@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 11/05/2025
 ms.subservice: admin
 ms.author: debrau
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
@@ -48,4 +48,3 @@ You can manually resolve an unresolved email address to a specified row. If you 
 ## Appointment attendee resolution
 
 When appointments are manually tracked using the App for Outlook or Copilot for Sales, the system resolves each attendee email address to a single row using the same priority order as the [Email sender resolution](#email-sender-resolution) logic.
-

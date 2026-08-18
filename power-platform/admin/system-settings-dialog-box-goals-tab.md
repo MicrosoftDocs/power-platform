@@ -1,12 +1,13 @@
 ---
 title: "System Settings Goals tab"
 description: Legacy System Settings Goals tab in Power Platform.
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: admin
 ms.date: 09/11/2025
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -42,6 +43,3 @@ Set the duration and frequency of the automatic rollup of goals. These settings 
 ### See also  
  [Administrator and Sales Manager Guide](/dynamics365/sales-enterprise/admin-guide)  
  [Progress Against Goals report](/dynamics365/customerengagement/on-premises/basics/sales-insights-reports#progress-against-goals-report)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

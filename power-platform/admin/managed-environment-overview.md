@@ -67,5 +67,3 @@ A managed environment encompasses, but isn't limited to, the following features:
 - [Tenant settings](tenant-settings.md)
 - [Default environment routing](default-environment-routing.md)
 - [Considerations for using managed environments](../guidance/adoption/reactive-governance.md#considerations-for-using-managed-environments)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

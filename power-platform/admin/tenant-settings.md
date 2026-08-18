@@ -6,7 +6,7 @@ ms.topic: overview
 ms.date: 06/23/2026
 ms.update-cycle: 180-days
 ms.author: ampatra
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 contributors:
   - kenseongtan 
   - marcelbf
@@ -79,5 +79,3 @@ The following settings apply to all environments within your tenant.
 |[Weekly digest](managed-environment-usage-insights.md)*     | Manages more recipients for the weekly digest email for managed environments.  |
 
 *This setting applies only to managed environments.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

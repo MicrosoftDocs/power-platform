@@ -1,13 +1,14 @@
 ---
 title: "Create a schema to export configuration data  | MicrosoftDocs"
 description: Create a schema to export configuration data
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 09/04/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -120,6 +121,3 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
  [Modify a schema](modify-configuration-data-schema.md) <br />
  [Manage your configuration data](manage-configuration-data.md) <br /> 
  [Import configuration data](import-configuration-data.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

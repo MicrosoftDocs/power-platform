@@ -79,23 +79,24 @@ PowerPlatformResources
 > [!TIP]
 > You can find the agent's ID in the Copilot Studio URL when viewing the agent, or in the **Name** column of the inventory table.
 
-### Identify GitHub Copilot harness agents
+### Count agents by harness
 
-GitHub Copilot harness agents appear in Power Platform inventory alongside other Copilot Studio agents. Filter on `properties.isCLIAgent` to identify harness-created agents across environments.
+Shows a breakdown of agents created with the GitHub Copilot harness, Copilot Chat harness, or Standard harness.
 
 ```Kusto
 PowerPlatformResources
 | where type == "microsoft.copilotstudio/agents"
 | extend properties = parse_json(properties)
-| where tobool(properties.isCLIAgent) == true
-| project agentName = tostring(properties.displayName),
-    agentId = name,
-    environmentId = tostring(properties.environmentId),
-    createdBy = tostring(properties.createdBy),
-    createdIn = tostring(properties.createdIn),
-    createdAt = todatetime(properties.createdAt),
-    isCLIAgent = tobool(properties.isCLIAgent)
-| order by createdAt desc
+| extend
+    isCLIAgent = tobool(properties.isCLIAgent),
+    model = tostring(properties.model),
+    createdIn = tostring(properties.createdIn)
+| extend harness = case(
+    isCLIAgent == true, "GitHub Copilot",
+    model =~ "Microsoft 365 Copilot" or createdIn =~ "Microsoft 365 Copilot Agent Builder", "Copilot Chat",
+    "Standard")
+| summarize agentCount = count() by harness
+| order by agentCount desc
 ```
 
 ### Items created in the past 24 hours
@@ -204,5 +205,3 @@ PowerPlatformResources
 - [Power Platform inventory API](inventory-api.md)
 - [Azure Resource Graph overview](/azure/governance/resource-graph/overview)
 - [Kusto Query Language (KQL) overview](/azure/data-explorer/kusto/query/)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

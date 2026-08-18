@@ -7,7 +7,7 @@ ms.date: 09/25/2025
 ms.subservice: admin
 ms.author: nhelgren
 author: NHelgren
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
 ms.contributors:
   - lsuresh
 contributors:
@@ -385,4 +385,3 @@ Ensure indexes are defined for integration keys.
 ## Related content
 
 [Data Integrator Updates – New features with an intuitive user interface providing a fluent experience](https://powerapps.microsoft.com/blog/data-integrator-updates-new-features-with-an-intuitive-user-interface-providing-a-fluent-experience/).
-

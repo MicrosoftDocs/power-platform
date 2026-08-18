@@ -7,7 +7,7 @@ ms.date: 12/14/2020
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
@@ -71,6 +71,3 @@ Admins can also use other exception capabilities in Exchange mail rules to exemp
 
 > [!div class="mx-imgBorder"] 
 > ![Block outbound forwards exception list.](media/block-outbound-forwards-exception-list85.png "Block outbound forwards exception list")
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -5,9 +5,10 @@ description: About Unified Interface
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 10/20/2021
-author: sericks007
+author: EllenWehrle
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -108,6 +109,3 @@ Follow these steps to make all the out-of-the-box actions available and entities
 
 ### See also
 [Overview of building model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

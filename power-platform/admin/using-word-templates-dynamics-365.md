@@ -310,5 +310,3 @@ Content in right-to-left (RTL) languages might have some formatting problems in 
 [Analyze your data with Excel templates](../admin/analyze-your-data-with-excel-templates.md)
 
 [Troubleshooting Word templates](troubleshoot-word-templates-dynamics-365.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

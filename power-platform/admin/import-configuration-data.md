@@ -1,13 +1,14 @@
 ---
 title: "Import configuration data  | MicrosoftDocs"
 description: Import configuration data
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 03/26/2020
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -41,6 +42,3 @@ Download the Configuration Migration Tool. The Configuration Migration tool is a
   
 ### See also  
  [Manage your configuration data using the Configuration Migration tool](manage-configuration-data.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

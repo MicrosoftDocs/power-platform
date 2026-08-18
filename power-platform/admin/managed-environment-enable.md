@@ -95,5 +95,3 @@ Set-AdminPowerAppEnvironmentGovernanceConfiguration -EnvironmentName <Environmen
 - [Licensing](managed-environment-licensing.md)
 - [View license consumption (preview)](view-license-consumption-issues.md)
 - [Tenant settings](tenant-settings.md)
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

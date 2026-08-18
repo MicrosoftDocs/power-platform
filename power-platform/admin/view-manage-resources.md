@@ -1,12 +1,13 @@
 ---
 title: "Resource overview | MicrosoftDocs"
 description: About resources
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: overview
 ms.date: 06/23/2022
 ms.subservice: admin
-ms.author: sericks 
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -23,7 +24,4 @@ See the following topics:
 - [Manage Dynamics 365 apps](manage-apps.md)
 - [Manage Power Apps](admin-manage-apps.md)
 - [Manage Power Automate flows](manage-power-automate.md)
-- [Portal administration with Power Platform admin center](/powerapps/maker/portals/admin/power-platform-admin-center) 
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+- [Portal administration with Power Platform admin center](/powerapps/maker/portals/admin/power-platform-admin-center)

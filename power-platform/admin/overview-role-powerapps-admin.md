@@ -1,11 +1,12 @@
 ---
 title: Overview of the role of a Power Platform administrator
 description: "Get started on the adoption journey by learning about the role of a Microsoft Power Platform administrator."
-author: sericks007
+author: EllenWehrle
 ms.topic: overview
 ms.date: 06/20/2023
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 ---
 
 # What's the role of a Power Platform administrator?
@@ -24,6 +25,3 @@ To get you started administering Power Platform:
 * Learn about [Power Platform environments](environments-overview.md)
 * Learn about [security in Power Platform](security/security-overview.md)
 * Learn about various [analytics and reporting options](analytics-common-data-service.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

@@ -1,7 +1,7 @@
 ---
 title: View analytics for Power Automate cloud flows
 description: Admins can view Microsoft Power Automate analytics in the Power Platform admin center, including reports on run data of flows, flows created, usage, and errors.
-author: Zeffin 
+author: EllenWehrle
 ms.topic: how-to
 ms.date: 11/18/2025
 ms.subservice: admin
@@ -114,5 +114,3 @@ To view reports in another environment:
 - **Exported reports**: Some fields, such as creator’s email address and flow display name, may appear blank in exported reports because these values are resolved at runtime.
 - **Visualization expansion**: When expanding visualizations, certain details&mdash;such as flow display name, environment display name, or user information&mdash;may appear as raw identifiers instead of friendly names.
 - This feature is not available in government and sovereign clouds at the moment.
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

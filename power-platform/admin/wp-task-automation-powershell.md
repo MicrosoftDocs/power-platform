@@ -67,6 +67,3 @@ That would produce the following detailed information:
 
 > [!div class="mx-imgBorder"] 
 > ![User PowerShell to get environment app number details.](media/powershell-get-environment-details-number-apps.png "User PowerShell to get environment app number details")
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

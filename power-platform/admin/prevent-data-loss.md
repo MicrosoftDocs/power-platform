@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.date: 04/07/2026
 author: mikferland-msft
 ms.author: miferlan
-ms.reviewer: mkaur
+ms.reviewer: ellenwehrle
 contributors:
   - mikferland-msft
   - mihaelablendea
@@ -358,6 +358,3 @@ See [data policies policy commands](powerapps-powershell.md#data-policy-commands
 [Data policies](wp-data-loss-prevention.md) <br />
 [data policies policy commands](powerapps-powershell.md#data-policy-commands) <br />
 [Power Platform data policies SDK](data-loss-prevention-sdk.md)
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

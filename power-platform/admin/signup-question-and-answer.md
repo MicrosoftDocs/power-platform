@@ -1,13 +1,14 @@
 ---
 title: Manage Power Apps licenses in your organization | Microsoft Docs
 description: Explore the guidelines for granting and managing user access for Power Apps in your Microsoft 365 tenant.
-author: sericks007
+author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
 ms.date: 04/16/2024
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-ga-nochange
@@ -150,5 +151,3 @@ If you want all users to be in the same tenant regardless of their email address
 
 > [!IMPORTANT]
 > There's no supported automated mechanism to move users across tenants once they have been created. To learn about adding domains to a single Microsoft 365 tenant, see [Add a domain to Microsoft 365](https://support.office.com/article/Add-your-users-and-domain-to-Office-365-ffdb2216-330d-4d73-832b-3e31bcb5b2a7).
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]

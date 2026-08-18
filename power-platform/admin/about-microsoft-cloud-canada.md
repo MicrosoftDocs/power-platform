@@ -1,12 +1,13 @@
 ---
 title: "About Microsoft Cloud Canada  | MicrosoftDocs"
 description: About Microsoft Cloud Canada
-author: sericks007
+author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 02/23/2022
 ms.subservice: admin
-ms.author: sericks
+ms.author: ellenwehrle
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -114,7 +115,4 @@ search.audienceType:
   
 ### See also  
  [Office 365 datacenters now available in Canada](https://blogs.office.com/2016/05/10/office-365-datacenters-now-available-in-canada/)<br />
- [New datacenter regions](new-datacenter-regions.md)  
-
-
-[!INCLUDE[footer-include](../includes/footer-banner.md)]
+ [New datacenter regions](new-datacenter-regions.md)
