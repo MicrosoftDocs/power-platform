@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 08/14/2026
+ms.date: 08/17/2026
 ms.topic: concept-article
 author: amiyapatr 
 ms.subservice: admin
@@ -332,7 +332,11 @@ When an environment's capacity consumption exceeds the preallocated capacity, yo
 
 Microsoft is making changes for what happens when an organization's storage capacity is close to or exceeds the capacity entitled or purchased through add-ons.
 
-Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15 percent of space available after cross capacity-type borrowing is applied. Another warning notification that admin operations could be impacted is sent when any of the three storage capacities have less than 5 percent of space available. The final tier of notification triggers when the tenant is "in overage" (storage usage exceeds capacity entitlements after [cross capacity-type borrowing](#how-storage-overages-are-calculated)) which alerts the admin that the following environment lifecycle operations aren't available until the overage is resolved.
+Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15% of capacity available after cross capacity-type borrowing is applied. Another warning notification that admin operations could be impacted is sent when any of the three storage capacities have less than 5% of capacity available. The final tier of notification triggers when the tenant exceeds the allocated capacity after [cross capacity-type borrowing](#how-storage-overages-are-calculated) is applied. 
+
+Environment lifecycle operations, such as creating, copying, restoring, recovering, or converting environments, are evaluated differently from storage notifications and overage status. While notifications and overage status are based on the tenant's effective capacity position after cross-capacity type borrowing, these operations require sufficient available capacity in the underlying Database, File, or Log capacity types. As a result, some environment lifecycle operations may be unavailable when the required capacity type does not have sufficient available capacity, even if the tenant's overall capacity position remains within entitlement limits after borrowing. 
+
+The following administrative environment lifecycle operations aren't available when the required storage capacity isn't available to support the operation:
 
 - Create a new environment (requires minimum 1-GB capacity available)
 - Copy an environment
@@ -341,7 +345,6 @@ Notifications for capacity approaching storage limits are triggered when any of 
 - Recover an environment (requires minimum 1-GB capacity available)
 - Add Dataverse database to an environment
 
-Environment lifecycle operations, however, are evaluated differently. Operations such as creating, copying, restoring, or recovering environments require sufficient capacity in the underlying storage capacity types and are validated against the **available capacity** of those capacity types, rather than the tenant's effective capacity position after cross capacity-type borrowing. As a result, administrators might receive notifications based on effective capacity after borrowing, while certain environment lifecycle operations can still be unavailable if the required Database, Log, or File capacity isn't available to support the operation.
 
 > [!NOTE]
 > The storage-driven capacity model calculation of these thresholds also considers the [cross capacity-type borrowing](#how-storage-overages-are-calculated) /overflow usage allowed in the storage-driven model. For example, extra database capacity can be used to cover log and file overuse and extra log capacity can be used to cover file overuse. Therefore, [cross capacity-type borrowing](#how-storage-overages-are-calculated) is taken into consideration to reduce the number of emails a tenant admin receives.
