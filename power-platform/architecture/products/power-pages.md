@@ -43,7 +43,7 @@ Understanding Power Pages architecture concepts and exploring solution ideas can
 | [**Healthcare Patient Support Agent**](../solution-ideas/agent-healthcare-patient-support.md) | Streamline patient interactions and reduce administrative burdens for healthcare providers. |
 | [**AI-enabled donor management solution**](../solution-ideas/agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
 | [**Learning management app using Microsoft Learn content**](../solution-ideas/app-learning-management.md) | Design a learning management solution using Microsoft Power Platform and Microsoft Learn content to enhance trainer and learner experiences. |
-| [**Manage healthcare stakeholder engagement with Power Platform**](../solution-ideas/healthcare-engagement.md) | Learn how to build a centralized platform for managing Healthcare Professional (HCP), Healthcare Organization (HCO), and patient engagements and events using Power Platform. |
+| [**Manage healthcare stakeholder engagement with Power Platform**](../solution-ideas/healthcare-engagement.md) | Build a centralized platform for managing Healthcare Professional (HCP), Healthcare Organization (HCO), and patient engagements and events by using Power Platform. |
 
 ## Related resources
 

@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 07/14/2026
+ms.date: 08/18/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -51,17 +51,18 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Perform predictive data analysis using Dataverse, Fabric, and Azure AI services**](../reference-architectures/ai-predictive-data-analysis.md) | Learn best practices for data ingestion, model training, and visualization that help you build robust predictive models and gain actionable insights. |
 | [**​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | [**Integrate Power Platform with SAP for data management**](../reference-architectures/arch-pattern-sap.md) | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
-| [**Integrate Outlook and SAP with Power Apps**](../reference-architectures/outlook-canvas-app.md) | Learn how to extend Outlook using a Power Apps canvas app to interact with SAP CRM and SAP S/4HANA data directly from Outlook. |
+| [**Integrate Outlook and SAP with Power Apps**](../reference-architectures/outlook-canvas-app.md) | Extend Outlook using a Power Apps canvas app to interact with SAP CRM and SAP S/4HANA data directly from Outlook. |
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | [**Secure Power Platform access to resources inside your virtual network**](../reference-architectures/secure-access-azure-resources.md) | Use Microsoft Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. |
 | [**Use REST APIs to extend the functionality of canvas apps**](../reference-architectures/custom-connector-canvas.md) | When working with complex algorithms or multiple data sources, shift the logic from the canvas app to a RESTful API to keep formulas in your Power Apps canvas apps simple and move more complex functionality to the server. |
-| [**Use Dataverse as a data source for canvas apps​**](../reference-architectures/dataverse-canvas-app.md) | Learn how creating a Power Apps application that uses Dataverse as a data source helps build a more custom user experience. |
-| [**Use SQL Server with canvas apps​**](../reference-architectures/sqlserver-canvas-app.md) | Learn how to build and publish an enterprise-grade canvas app using SQL Server as a data source. |
-| [**Implement a scalable notification system with Power Platform**](../reference-architectures/scalable-notification-system.md) | Learn how to implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
-| [**Optimize the performance of canvas apps that require complex business logic**](../reference-architectures/optimize-performance-canvas-apps.md) | Learn how to optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
-| [**Use Copilot Studio agents in model-driven apps**](../reference-architectures/contextual-ai-model-driven-app.md) | Learn how to integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
-| [**Upload files to SharePoint with metadata from model-driven apps**](../reference-architectures/custom-page-file-upload.md) | Learn how to use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
-| [**Automate service order lifecycle and SLA governance with Power Platform**](../reference-architectures/service-order-process.md) | Learn how to design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |
+| [**Use Dataverse as a data source for canvas apps​**](../reference-architectures/dataverse-canvas-app.md) | Create a Power Apps application that uses Dataverse as a data source helps build a more custom user experience. |
+| [**Use SQL Server with canvas apps​**](../reference-architectures/sqlserver-canvas-app.md) | Build and publish an enterprise-grade canvas app using SQL Server as a data source. |
+| [**Implement a scalable notification system with Power Platform**](../reference-architectures/scalable-notification-system.md) | Implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
+| [**Optimize the performance of canvas apps that require complex business logic**](../reference-architectures/optimize-performance-canvas-apps.md) | Optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
+| [**Use Copilot Studio agents in model-driven apps**](../reference-architectures/contextual-ai-model-driven-app.md) | Integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
+| [**Upload files to SharePoint with metadata from model-driven apps**](../reference-architectures/custom-page-file-upload.md) | Use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
+| [**Automate service order lifecycle and SLA governance with Power Platform**](../reference-architectures/service-order-process.md) | Design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |
+| [**Connect Power Apps to a centralized data warehouse with Dataverse virtual tables**](../reference-architectures/power-apps-virtual-tables.md) | Connect to a centralized data warehouse through Dataverse virtual tables to use consolidated enterprise data alongside operational records stored in Dataverse. |
 
 ## Solution ideas
 
@@ -73,7 +74,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
 | [**AI-enabled donor management solution**](../solution-ideas/agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
 | [**Learning management app using Microsoft Learn content**](../solution-ideas/app-learning-management.md) | Design a learning management solution using Microsoft Power Platform and Microsoft Learn content to enhance trainer and learner experiences. |
-| [**Manage healthcare stakeholder engagement with Power Platform**](../solution-ideas/healthcare-engagement.md) | Learn how to build a centralized platform for managing Healthcare Professional (HCP), Healthcare Organization (HCO), and patient engagements and events using Power Platform. |
+| [**Manage healthcare stakeholder engagement with Power Platform**](../solution-ideas/healthcare-engagement.md) | Build a centralized platform for managing Healthcare Professional (HCP), Healthcare Organization (HCO), and patient engagements and events by using Power Platform. |
 
 ## Related resources
 

@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 08/10/2026
+ms.date: 08/18/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -58,6 +58,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 
 | Title | Description |
 | --- | --- |
+| **[Connect Power Apps to a centralized data warehouse with Dataverse virtual tables](power-apps-virtual-tables.md)** | Connect Power Apps to a centralized data warehouse through Dataverse virtual tables, enabling business processes to use consolidated enterprise data alongside operational records stored in Dataverse. |
 | **[Optimize the performance of canvas apps that require complex business logic](optimize-performance-canvas-apps.md)** | Optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
 | **[Upload files to SharePoint with metadata from model-driven apps](custom-page-file-upload.md)** | Use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
 | **[Use Dataverse as a data source for canvas apps​](dataverse-canvas-app.md)** | Create a Power Apps application that uses Dataverse as a data source to enable building a more custom user experience. |
