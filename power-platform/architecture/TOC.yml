@@ -109,6 +109,8 @@
               href: reference-architectures/outlook-canvas-app.md
         - name: Build and extend apps
           items:
+            - name: Connect Power Apps to a centralized data warehouse with Dataverse virtual tables
+              href: reference-architectures/power-apps-virtual-tables.md
             - name: Optimize performance of canvas apps requiring complex logic
               href: reference-architectures/optimize-performance-canvas-apps.md
             - name: Upload files to SharePoint with metadata from model‑driven apps

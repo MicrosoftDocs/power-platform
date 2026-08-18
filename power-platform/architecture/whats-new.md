@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 08/11/2026
+ms.date: 08/18/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -22,6 +22,7 @@ Get the latest info about what's new and what's changed in the Power Platform an
 
 New in [Reference architectures](reference-architectures/index.md):
 
+- [Connect Power Apps to a centralized data warehouse with Dataverse virtual tables](reference-architectures/power-apps-virtual-tables.md)
 - [Integrate Dynamics 365 finance and operations apps with Power Platform](reference-architectures/finance-and-operations-dataverse.md)
 
 ## July 2026
