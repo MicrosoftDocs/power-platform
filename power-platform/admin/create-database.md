@@ -36,7 +36,7 @@ There are various ways to add or create a database:
 1. In the **Add Dataverse** web part, click **+ Add Dataverse**.
 
 > [!NOTE]
-> The **Add a Dataverse data store** option is turned off by default for developer environments. You can include Dataverse to developer environments while creating the environment by turning this setting on, or by adding Dataverse later from the Environment details page. This is the default configuration while creating a standard developer environment or while creating it as a managed environment.
+> **Add a Dataverse data store** option is turned off by default for developer environments. You can include Dataverse to developer environments while creating the environment by turning this setting on, or by adding Dataverse later from the Environment details page. This is the default configuration while creating a standard developer environment or while creating it as a managed environment.
 
 In the **Add Dataverse** side pane, enter the following information, then select **Add** to apply the changes.
 
