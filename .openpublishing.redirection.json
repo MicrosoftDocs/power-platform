@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/manage-copilot-studio-messages-capacity.md",
+      "redirect_url": "/power-platform/admin/manage-copilot-studio-copilot-credits-capacity",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/cmk-migrate-from-byok.md",
       "redirect_url": "power-platform/admin/customer-managed-key",
       "redirect_document_id": "false"
@@ -2165,4 +2170,3 @@
     }
   ]
 }
-

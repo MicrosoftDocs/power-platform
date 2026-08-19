@@ -1,8 +1,8 @@
 ---
-title: Manage Copilot Studio credits and capacity 
-description: Learn how to manage Copilot Studio credits and capacity.
+title: Manage Copilot Credits and capacity for Copilot Studio
+description: Learn how to manage Copilot Credits and capacity for Copilot Studio.
 author: amiyapatr-zz
-ms.date: 08/03/2026
+ms.date: 08/14/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
@@ -16,7 +16,7 @@ contributors:
 
 ---
 
-# Manage Copilot Studio credits and capacity 
+# Manage Copilot Credits and capacity for Copilot Studio
 
 > [!IMPORTANT]
 > Microsoft Copilot Studio is a multi-harness platform. The Power Platform admin center (PPAC) provides a unified capacity management experience across all Copilot Studio harnesses, including Copilot Chat, Standard, and GitHub Copilot. Administrators can view capacity and consumption data at the agent and environment level in PPAC. 
@@ -32,7 +32,7 @@ The Microsoft Copilot Studio capacity management experience in the Power Platfor
 
 The licensing summary view shows usage of both prepaid and session-based capacity units.
 
-When you purchase a Copilot Studio license, you get a specified number of billed Copilot credits pooled across the tenant. You must assign these credits to an environment to enable Copilot Studio features for agents in that environment.
+When you purchase a Copilot Studio license, you get a specified number of billed Copilot Credits pooled across the tenant. You must assign these credits to an environment to enable Copilot Studio features for agents in that environment.
 
 Capacity management features help administrators allocate prepurchased capacity across environments within the tenant, based on the anticipated usage of Copilot agents in each environment. The **Capacity summary** section of the page includes daily consumption data at the environment level for up to three months, which helps you determine appropriate capacity needs.
 
@@ -48,7 +48,7 @@ This card displays the count of active billing plans with the Copilot Studio met
 #### Prepaid capacity
 The **Prepaid capacity** card shows the number of prepaid capacity units that you purchased, assigned, and consumed. These units can be either session-based or Copilot credit capacity units. The card provides a link to manage each type.
 
-### Copilot credits capacity tab
+### Copilot Credits capacity tab
 
 The **Copilot credit capacity** tab displays the following cards:
 
@@ -61,7 +61,7 @@ The **Copilot credit capacity** tab displays the following cards:
 - **Copilot credit usage by environment**: Highlights the top environments based on Copilot Studio credit usage.
 
 ## View credit capacity consumed per environment
-The **Environments** tab provides details on the Copilot Studio credit capacity consumed per environment, including the number of Copilot credits deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
+The **Environments** tab provides details on the Copilot Studio credit capacity consumed per environment, including the number of Copilot Credits deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
@@ -73,9 +73,9 @@ The **Environments** tab provides details on the Copilot Studio credit capacity 
 
 To view Copilot Studio capacity consumed for Microsoft 365 Copilot Chat, select the **Microsoft 365 Copilot Chat** environment on the environment selection page. 
  
-View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **Copilot credits capacity** tab:
+View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **Copilot Credits capacity** tab:
 
-- **Capacity consumption by product**: This tile provides a product-focused summary of Copilot credits consumed, showing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
+- **Capacity consumption by product**: This tile provides a product-focused summary of Copilot Credits consumed, showing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
 
 - **Copilot credit consumption details**: The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus nonbillable credits.
 
@@ -96,9 +96,9 @@ Capacity allocation can be managed in the Power Platform admin center.
 
    -or-
 
-   - Under the **Copilot Studio** heading, select **Manage Copilot credits** or **Manage sessions**.
+   - Under the **Copilot Studio** heading, select **Manage Copilot Credits** or **Manage sessions**.
 
-In the allocation panel, select an environment and specify the number of Copilot credits to allocate in the **Copilot credits** textbox.
+In the allocation panel, select an environment and specify the number of Copilot Credits to allocate in the **Copilot Credits** textbox.
 
 ### Overage management
 When consumption exceeds the preallocated capacity, you can choose to draw capacity from the available capacity in the tenant or opt to bill overages to a linked pay-as-you-go plan.
