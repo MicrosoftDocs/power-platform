@@ -4,7 +4,7 @@ description: "Learn about what build tool tasks are available plus some examples
 author: marcelbf
 ms.author: marcelbf
 ms.subservice: alm
-ms.date: 06/26/2025
+ms.date: 08/19/2026
 ms.reviewer: pehecke
 ms.topic: how-to
 search.audienceType: 
@@ -14,21 +14,21 @@ ms.custom: sfi-ropc-nochange
 
 # Microsoft Power Platform Build Tools tasks
 
-The available build tasks are described in the following sections. Afterwards, we showcase some example Azure Pipelines making use of these tasks. For information about the build tools and how to download them, see [Microsoft Power Platform Build Tools for Azure Pipelines](devops-build-tools.md).
+The following sections describe the available build tasks. Afterwards, we showcase some example Azure Pipelines that use these tasks. For information about the build tools and how to download them, see [Microsoft Power Platform Build Tools for Azure Pipelines](devops-build-tools.md).
 
 ## Helper task
 
-The available helper tasks are described next.
+The following sections describe the available helper tasks.
 
 ### Power Platform Tool Installer
 
-This task is required to be added once before any other Power Platform Build Tools tasks in build and
-release pipelines. This task installs a set of Power Platform&ndash;specific tools required
+Add this task once before any other Power Platform Build Tools tasks in build and
+release pipelines. This task installs a set of Power Platform–specific tools required
 by the agent to run the Microsoft Power Platform build tasks. This task doesn't require any
 more configuration when added. This task contains parameters for the specific versions
-of each of the tools that are being installed.
+of each of the tools that it installs.
 
-To stay up to date with the tool versions over time, make sure these parameters correspond
+To stay up to date with the tool versions, ensure these parameters correspond
 to the versions of the tools that are required for the pipeline to run properly.
 
 #### YAML snippet (Installer)
@@ -60,8 +60,8 @@ to the versions of the tools that are required for the pipeline to run properly.
 
 | Parameters    | Description   |
 |---------------|---------------|
-| `DefaultVersion`<br/>Use default tool versions | Set to **true** to use the default version of all tools, otherwise **false**. Required (and **false**) when any tool versions are specified. |
-| `AddToolsToPath`<br/>Add Tools To Path | Adds the pac cli to the `PATH` environment variable. Enables you to use pac cli from script tasks without needing to set up the path manually. |
+| `DefaultVersion`<br/>Use default tool versions | Set to **true** to use the default version of all tools, otherwise **false**. Required (and **false**) when you specify any tool versions. |
+| `AddToolsToPath`<br/>Add Tools To Path | Adds the pac CLI to the `PATH` environment variable. You can use pac CLI from script tasks without needing to set up the path manually. |
 | `PowerAppsAdminVersion`<br/>`XrmToolingPackageDeploymentVersion`<br/>`MicrosoftPowerAppsCheckerVersion`<br/>`CrmSdkCoreToolsVersion`<br/>Tool version | The specific version of the tool to use. |
 
 ### Power Platform WhoAmI
@@ -95,8 +95,8 @@ Verifies a Power Platform environment service connection by connecting and makin
 
 | Parameters    | Description   |
 |---------------|---------------|
-| `authenticationType`<br/>Type of authentication | (Optional) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
-| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `authenticationType`<br/>Type of authentication | (Optional) Specify either **PowerPlatformEnvironment** for a username/password connection or **PowerPlatformSPN** for a Service Principal/client secret connection. For more information, see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
+| `PowerPlatformEnvironment`<br/>Power Platform environment URL | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. For more information, see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment) |
 | `PowerPlatformSPN`<br/>Power Platform Service Principal | The service endpoint for the environment to connect to. Defined under **Service Connections** in **Project Settings**. |
 
 ## Quality check
@@ -107,7 +107,7 @@ In the next section are the available tasks for checking the quality of a soluti
 
 This task runs a static analysis check on your solutions
 against a set of best-practice rules to identify any problematic patterns that
-you might inadvertently introduced when building your solution.
+you might inadvertently introduce when building your solution.
 
 #### YAML snippet (Checker)
 
@@ -140,23 +140,23 @@ you might inadvertently introduced when building your solution.
 
 | Parameters         | Description      |
 |--------------------|------------------|
-| `PowerPlatformSPN`<br/>Service Connection | (Required) A connection to a licensed Microsoft Power Platform environment is required to use the Power Platform checker. Service connections are defined in **Service Connections** under **Project Settings** using the **Power Platform** connection type. More information: see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment)<p/>Note: Service Principal and username/password authentication methods are available for the checker task. For more information on how to configure service principals to be used with this task, see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
+| `PowerPlatformSPN`<br/>Service Connection | (Required) To use the Power Platform checker, you need a connection to a licensed Microsoft Power Platform environment. Define service connections in **Service Connections** under **Project Settings** using the **Power Platform** connection type. For more information, see `BuildTools.EnvironmentUrl` under [Power Platform Create Environment](#power-platform-create-environment).<p/>Note: The checker task supports Service Principal and username/password authentication methods. For more information about configuring service principals for this task, see [Configure service principal connections for Power Platform environments](devops-build-tools.md#configure-service-connections-using-a-service-principal). |
 | `UseDefaultPACheckerEndpoint`<br/>Use default Power Platform Checker endpoint | By default (**true**), the geographic location of the checker service uses the same geography as the environment you connect to. |
-| `CustomPACheckerEndpoint`<br/>Custom PAC checker endpoint | Required when `UseDefaultPACheckerEndpoint` is **false**. You may specify another geo to use, for example `https://japan.api.advisor.powerapps.com.` For a list of available geographies, see [Use the Power Platform Checker API](/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography). |
-| `FileLocation`<br/>Location of files to analyze       | Required when referencing a file from a shared access signature (SAS) URL `sasUriFile`.<p/>Note: It's important to reference an exported solution file and not the unpacked source files in your repository. Both managed and unmanaged solution files can be analyzed. |
-| `FilesToAnalyzeSasUri`<br/>SAS files to analyze | Required when `FileLocation` is set to `sasUriFile`. Enter the SAS URI. You can add more than one SAS URI through a comma (,) or semi-colon (;) separated list. |
-| `FilesToAnalyze`<br/>Local files to analyze | Required when SAS files aren't analyzed. Specify the path and file name of the zip files to analyze. Wildcards can be used. For example, enter \*\*\\*.zip for all zip files in all subfolders. |
-| `FilesToExclude`<br/>Local files to exclude | Specify the names of files to be excluded from the analysis. If more than one, provide through a comma (,) or semi-colon (;) separated list. This list can include a full file name or a name with leading or trailing wildcards, such as *jquery or form.js |
-| `RulesToOverride`<br/>Rules to override | A JSON array containing rules and levels to override. Accepted values for OverrideLevel are: Critical, High, Medium, Low, Informational. Example: [{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}] |
-| `RuleSet`<br/>Rule set | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This rule set is the same one that is run from the Power Apps [maker portal](https://make.powerapps.com).</li><li>Marketplace: The extended rule set that is used to certify an application before it can be published to [Marketplace](https://marketplace.microsoft.com/).</li></ul>    |
-| `ErrorLevel`<br/>Error Level | Combined with the error, threshold parameter defines the severity of errors and warnings that are allowed. Supported threshold values are \<level>IssueCount where level=Critical, High, Medium, Low, and Informational. |
+| `CustomPACheckerEndpoint`<br/>Custom PAC checker endpoint | Required when `UseDefaultPACheckerEndpoint` is **false**. Specify another geography to use, for example `https://japan.api.advisor.powerapps.com.` For a list of available geographies, see [Use the Power Platform Checker API](/powerapps/developer/common-data-service/checker/webapi/overview#determine-a-geography). |
+| `FileLocation`<br/>Location of files to analyze       | Required when referencing a file from a shared access signature (SAS) URL `sasUriFile`.<p/>Note: Reference an exported solution file and not the unpacked source files in your repository. You can analyze both managed and unmanaged solution files. |
+| `FilesToAnalyzeSasUri`<br/>SAS files to analyze | Required when `FileLocation` is set to `sasUriFile`. Enter the SAS URI. You can add more than one SAS URI through a comma (,) or semicolon (;) separated list. |
+| `FilesToAnalyze`<br/>Local files to analyze | Required when SAS files aren't analyzed. Specify the path and file name of the zip files to analyze. You can use wildcards. For example, enter \*\*\\*.zip for all zip files in all subfolders. |
+| `FilesToExclude`<br/>Local files to exclude | Specify the names of files to exclude from the analysis. If you specify more than one file, use a comma (,) or semicolon (;) separated list. This list can include a full file name or a name with leading or trailing wildcards, such as *jquery or form.js. |
+| `RulesToOverride`<br/>Rules to override | A JSON array containing rules and levels to override. Accepted values for `OverrideLevel` are: Critical, High, Medium, Low, Informational. Example: `[{"Id":"meta-remove-dup-reg","OverrideLevel":"Medium"},{"Id":"il-avoid-specialized-update-ops","OverrideLevel":"Medium"}]` |
+| `RuleSet`<br/>Rule set | (Required) Specify which rule set to apply. The following two rule sets are available:<ul><li> Solution checker: This rule set is the same one that runs from the Power Apps [maker portal](https://make.powerapps.com).</li><li>Marketplace: The extended rule set that is used to certify an application before it can be published to [Marketplace](https://marketplace.microsoft.com/).</li></ul>    |
+| `ErrorLevel`<br/>Error Level | Combined with the error threshold parameter, this value defines the severity of errors and warnings that are allowed. Supported threshold values are \<level>IssueCount where level=Critical, High, Medium, Low, and Informational. |
 | `ErrorThreshold`<br/>Error threshold | Defines the number of errors (>=0) of a specified level that are allowed for the checker to pass the solutions being checked. |
-| `FailOnPowerAppsCheckerAnalysisError`<br/>Fail on error | When **true**, fail if the Power Apps Checker analysis is returned as Failed or FinishedWithErrors. |
+| `FailOnPowerAppsCheckerAnalysisError`<br/>Fail on error | When **true**, fail if the Power Apps Checker analysis returns as Failed or FinishedWithErrors. |
 | `ArtifactDestinationName`<br/>DevOps artifact name | Specify the Azure Artifacts name for the checker .sarif file. |
 
 ## Solution tasks
 
-This set of tasks can automate solution actions. The environment tasks outlined later in this section that create, copy, or restore an environment overwrite the service connections with the newly created environments. These tasks make it possible to perform solution tasks against environments that are created on demand.
+This set of tasks automates solution actions. The environment tasks outlined later in this section that create, copy, or restore an environment overwrite the service connections with the newly created environments. By using these tasks, you can perform solution tasks against environments that you create on demand.
 
 ### Power Platform Import Solution
 

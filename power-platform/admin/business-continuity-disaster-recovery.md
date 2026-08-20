@@ -2,7 +2,7 @@
 title: Business continuity and disaster recovery
 description: Microsoft provides business continuity and disaster recovery for production environments if there's a region-wide Azure outage. 
 author: shpradha
-ms.date: 07/23/2026
+ms.date: 08/20/2026
 ms.reviewer: ellenwehrle
 ms.topic: concept-article
 ms.subservice: admin
@@ -22,7 +22,7 @@ contributors:
 > [!NOTE]
 > As of June 22, 2026, Self-Service Disaster Recovery (SSDR) is also available for Finance & Operations (F&O) applications. SSDR enables organizations to maintain an asynchronous secondary copy of their production environment in a paired Azure region and perform self-service failover, failback, and disaster recovery testing.
 
-Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, make sure the plan lists stakeholders, processes, and specific steps.
+Businesses expect their applications and customer data to be protected and resilient during unavoidable outages and disruptions. It's important to document a business continuity plan that minimizes the effects of outages. To recover and resume operations, ensure the plan lists stakeholders, processes, and specific steps.
 
 Microsoft provides business continuity and disaster recovery capabilities to all [production type environments](environments-overview.md) in Dynamics 365 and Power Platform software as a service (SaaS) applications. This article describes how Microsoft keeps your production data resilient during outages.
 
@@ -55,7 +55,7 @@ A limited number of customers in certain regions are transitioning to the improv
 
 Availability zones are far enough apart to reduce the chance of an outage affecting more than one zone, but close enough to maintain low-latency connections to other availability zones. Availability zones are typically separated by several kilometers and are usually within 100 kilometers.
 
-Customers who need greater distance within a geography can use self-service disaster recovery to keep a copy in a secondary region. With this feature, customers control failover operations and run disaster recovery drills as described in the following section.
+Customers who need greater distance within a geography can use self-service disaster recovery to keep a copy in a secondary region. By using this feature, customers control failover operations and run disaster recovery drills as described in the following section.
 
 ## Cross-region self-service disaster recovery
 
@@ -63,9 +63,9 @@ Most geographies have region pairs separated by at least 300 miles when possible
 Self-service disaster recovery is a Power Platform infrastructure capability that lets you replicate your environment across long distances and start environment failover between regions yourself.
 You usually have multiple environments of different types in your tenant. This capability is available only for production environments.
 
-## Allow virtual network pairing for self-service disaster recovery in Dynamics 365
+## Allow virtual network (VNet) pairing for self-service disaster recovery in Dynamics 365
 
-If you deploy your Dynamics 365 environment within a virtual network and plan to use self-service disaster recovery, you need to configure a **virtual network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a virtual network pair, disaster recovery operations fail because network connectivity between regions can't be established.
+If you deploy your Dynamics 365 environment within a virtual network and plan to use self-service disaster recovery, you need to configure a **virtual network pair**. This pairing ensures that your primary and secondary environments can communicate securely during failover and failback operations. Without a virtual network pair, disaster recovery operations fail because network connectivity between regions can't be established. Test and validate failover and failback to ensure VNet is configured as desired.
 
 For setup instructions, go to [Set up virtual network support for Power Platform](vnet-support-setup-configure.md).
 
@@ -123,9 +123,6 @@ Power Platform and Dataverse are designed with high availability built into ever
 
 Because customers retain control of when and whether to trigger a cross-region failover, Microsoft doesn't publish a  cross-region RTO commitment. Customers can monitor real-time replication lag directly in the Power Platform admin center to inform their own recovery decisions. It's important to note that when Power Platform solutions connect to external systems&mdash;such as SQL Server, REST APIs, or other third-party services&mdash;the RPO of those integrations are governed by the availability and recovery capabilities of the respective target systems, and fall outside the scope of Power Platform's resiliency commitments. 
 
-## Document your business continuity plan
-
-Perform disaster recovery drills or an emergency response before a real disaster strikes, so you can document all steps required for any integration points that are external to Power Platform. Your company is then more prepared for recovery if there's a real disaster.
 
 ## Frequently asked questions (FAQs)
 
@@ -144,14 +141,14 @@ With the implementation of [availability zones](/azure/reliability/availability-
  
 ### What are the costs associated with using self-service disaster recovery?
 
-- You must select a [managed environment](managed-environment-licensing.md). This environment requires a premium license tier. 
-- For secondary regions, your prepaid free storage/free Dataverse entitlements is used.
+- You must select a [managed environment](managed-environment-licensing.md). This environment requires a premium license tier. Most D365 license flavors are enabled for 'managed' by default.
+- For secondary regions, your prepaid free storage and free Dataverse entitlements are used.
   
-  For example, suppose you have 10 GB of capacity consumption in the primary location. When you turn on self-service disaster recovery, you create a copy of the data in the remote secondary region and this copy consumes another 10 GB. For secondary region, this 10 GB storage is used from your existing entitlements. 
+  For example, suppose you have 10 GB of capacity consumption in the primary location. When you turn on self-service disaster recovery, you create a copy of the data in the remote secondary region and this copy consumes another 10 GB. For the secondary region, this 10 GB storage comes from your existing entitlements. 
   
 ### How does billing work for self-service disaster recovery?
 
-A pay-as-you-go billing plan is no longer a mandatory requirement. The system checks for available free capacity in your tenant. All pooled Dataverse entitlements at the tenant-level count towards secondary storage enablement. Microsoft is evaluating various overage initiatives. Overage management is outside of self-service disaster recovery management scope.
+A pay-as-you-go billing plan is no longer a mandatory requirement. The system checks for available free capacity in your tenant. All pooled Dataverse entitlements at the tenant level count towards secondary storage enablement. Microsoft is evaluating various overage initiatives. Overage management is outside of self-service disaster recovery management scope.
 
 ### Can I switch regions during a regional outage?
 
@@ -159,11 +156,11 @@ If there's a regional outage, the system supports failover only to the designate
 
 ### Is my region supported for self-service disaster recovery?
 
-Self-service disaster recovery depends on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. For more information, go to [Azure supported regions](/azure/reliability/regions-list). 
+Self-service disaster recovery depends on Azure region pairs. Regions that don't have a regional Azure pair aren't supported. Learn more in [Azure supported regions](/azure/reliability/regions-list). 
 
 As of November 2025, Austria East, Belgium Central, Chile Central, Indonesia Central, Israel Central, Italy North, Malaysia West, Mexico Central, New Zealand North, and Poland Central are single regions and aren't supported for self-service disaster recovery. 
 
-> [!Note]
+> [!NOTE]
 > Brazil and South Africa don't have self-service disaster recovery because their regional pairs are in heavily constrained regions. Adding supported regions is influenced by impact, opportunity, and resource constraints. United Arab Emirates has self-service disaster recovery, but continues to be capacity-constrained, which impacts its general availability.
 
 ### What should I know about the capacity experience?
@@ -200,11 +197,11 @@ As of October 2025:
 
 ### How can I find out where my data is being replicated? Can I change my secondary destination region?
 
-Microsoft reserves the right to disclose the exact details of where your data resides for security reasons. If your data needs to be moved or replicated, Microsoft considers various high availability and resiliency scenarios. You can be assured that your data at rest respects geographical boundaries and abides by legislated residency laws. Even if self-service disaster recovery isn't turned on, Microsoft reserves the right to replicate, move, and relocate the data within a region for high availability and operational needs. The location of customer data within a geography (for example, _APAC_) isn't disclosed and may change based on Azure capacity constraints.
+For security reasons, Microsoft doesn't disclose the exact details of where your data resides. If your data needs to be moved or replicated, Microsoft considers various high availability and resiliency scenarios. Your data at rest respects geographical boundaries and abides by legislated residency laws. Even if you don't turn on self-service disaster recovery, Microsoft reserves the right to replicate, move, and relocate the data within a region for high availability and operational needs. The location of customer data within a geography (for example, _APAC_) isn't disclosed and might change based on Azure capacity constraints.
 
-### Is Field service supported for self-service disaster recovery?
+### Is Field Service supported for self-service disaster recovery?
 
-Field service now supports self-service disaster recovery. You can now manage work orders, scheduling, inventory, and customer communications in one unified platform. In a disaster, fail over your automated service workflows, orders, inventory, and dispatching to a remote region for business continuity.
+Field Service now supports self-service disaster recovery. You can now manage work orders, scheduling, inventory, and customer communications in one unified platform. In a disaster, fail over your automated service workflows, orders, inventory, and dispatching to a remote region for business continuity.
 
 ### Do I need to allow list IP addresses for the secondary region?
  
@@ -216,7 +213,7 @@ For instructions on retrieving the current IP ranges, see [What are the outbound
 
 ### Can I enable SSDR on a sandbox environment in Dynamics 365 Finance & Operations?
 
-No. Only live production environments support Self-Service Disaster Recovery (SSDR) for Dynamics 365 Finance & Operations at this time. All sandbox tiers&mdash;including Tier 2, Tier 3, Tier 4, and Tier 5&mdash;aren't eligible for SSDR enrolment. If your environment isn't eligible for SSDR, the disaster recovery option won't appear in the Power Platform Admin Center.
+No. Only live production environments support Self-Service Disaster Recovery (SSDR) for Dynamics 365 Finance & Operations at this time. All sandbox tiers&mdash;including Tier 2, Tier 3, Tier 4, and Tier 5&mdash;aren't eligible for SSDR enrollment. If your environment isn't eligible for SSDR, the disaster recovery option won't appear in the Power Platform admin center.
 
 ### Can I enable SSDR only for select applications on my environment (ex. Dynamics 365 Finance & Operations only)?
 No. SSDR is turned on at the environment level and can't be configured for individual applications. SSDR creates and maintains a secondary copy for Dataverse, providing disaster recovery coverage for all supported Dynamics 365 Customer Engagement (CE) applications in the environment, such as Dynamics 365 Sales, Field Service, and Contact Center.
@@ -231,44 +228,85 @@ Dynamics 365 Finance & Operations (F&O) applications must be integrated with Mic
 
 #### Business Events limitation
 
-After a self-service disaster recovery failover to a secondary region or a Finance & Operations database refresh, existing Business Event endpoints stop delivering events to their configured endpoints (ex. webhooks, Azure Service Bus, or Event Grid). This stop occurs because the underlying Finance & Operations database change breaks the linkage between Finance & Operations and the corresponding Dataverse endpoint registrations. As a result, events continue to be generated but aren't dispatched until the endpoint configuration is revalidated.
+After a self-service disaster recovery failover to a secondary region or a Finance & Operations database refresh, existing Business Event endpoints stop delivering events to their configured endpoints (such as webhooks, Azure Service Bus, or Event Grid). This stop occurs because the underlying Finance & Operations database change breaks the linkage between Finance & Operations and the corresponding Dataverse endpoint registrations. As a result, events continue to be generated but aren't dispatched until the endpoint configuration is revalidated.
 To restore event delivery, you must recreate or reconfigure the affected Business Events endpoints:
-- Delete existing endpoint definitions and recreate them with the same configuration
-- Validate event delivery before resuming normal operations
+- Delete existing endpoint definitions and recreate them with the same configuration.
+- Validate event delivery before resuming normal operations.
 For detailed steps, see [Manage Business Events endpoints](/dynamics365/fin-ops-core/dev-itpro/business-events/managing-business-event-endpoints).
 
 #### Fabric link limitation
 
-During a self-service disaster recovery (SSDR) failover, the Microsoft-managed data lake backing Fabric link doesn't currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric link synchronization and access can be interrupted until the primary region becomes available again. Fabric link does not currently provide a service level objective (SLO) for recovery time objective (RTO) or recovery point objective (RPO) during SSDR failover scenarios. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
+During a self-service disaster recovery (SSDR) failover, the Microsoft-managed data lake backing Fabric link doesn't currently fail over with the Dataverse environment. As a result, if the primary region becomes unavailable during a regional outage, Fabric link synchronization and access can be interrupted until the primary region becomes available again. Fabric link doesn't currently provide a service level objective (SLO) for recovery time objective (RTO) or recovery point objective (RPO) during SSDR failover scenarios. In some scenarios, certain configuration settings (such as feature enablement flags) might not be fully retained across failover, which can result in partial feature inconsistencies even though the underlying Fabric workspace remains available.
  
 In long-running failover scenarios or extended operation in a secondary region, you might also encounter regional capacity constraints if you manually reconfigure the Fabric link. To restore Fabric link functionality or ensure a healthy operational state after failover, you need to:
 
 - Remove affected tables from the Fabric link configuration.
 - If the entire link is affected, unlink the Fabric connection from the environment.
-- Recreate the Fabric link using the standard setup flow. Follow detailed steps, in [Create a link to Fabric](/power-apps/maker/data-platform/fabric-link-to-data-platform#create-a-link-to-fabric).
+- Recreate the Fabric link using the standard setup flow. Follow detailed steps in [Create a link to Fabric](/power-apps/maker/data-platform/fabric-link-to-data-platform#create-a-link-to-fabric).
  
 Microsoft is actively improving Fabric link failover support to ensure configuration settings are fully preserved across SSDR failover scenarios, eliminating the need for manual validation or reconfiguration.
 
 #### Synapse link limitation
-Self-service disaster recovery (SSDR) does not currently provide full support for Synapse Link configurations. In the event of a regional outage, Synapse Link is not automatically recovered as part of the SSDR process. To restore Synapse Link connectivity after a failover or recovery operation, we recommend manually unlinking and relinking your Synapse Link connection.
+Self-service disaster recovery (SSDR) does not currently provide full support for Synapse Link configurations. In the event of a regional outage, Synapse Link isn't automatically recovered as part of the SSDR process. To restore Synapse Link connectivity after a failover or recovery operation, we recommend manually unlinking and relinking your Synapse Link connection.
 
 #### Environment servicing limitation
-Servicing actions, such as code deployments for Dynamics 365 Finance and Operations environments can't be performed while the environment is operating from the secondary region. To apply code updates or run deployments, you must first switch back to the primary region.
+You can't perform servicing actions, such as code deployments for Dynamics 365 Finance and Operations environments while the environment is operating from the secondary region. To apply code updates or run deployments, you must first switch back to the primary region.
 
 #### Commerce Scale Units limitation
-Commerce Scale Units (CSU) failover isn't currently supported as part of self-service disaster recovery (SSDR). During an SSDR failover event, CSU components aren't automatically failed over or replicated to the secondary region. If your environment relies on CSU and you experience an outage or a CSU resynchronisation is required following a failover, raise a support request and provide details of the impact so the support team can assist.
+Commerce Scale Units (CSU) failover isn't currently supported as part of self-service disaster recovery (SSDR). During an SSDR failover event, CSU components aren't automatically failed over or replicated to the secondary region. If your environment relies on CSU and you experience an outage or a CSU resynchronization is required following a failover, raise a support request and provide details of the impact so the support team can assist.
 
 #### Long-Term Data Retention (LTDR) limitation
 Long-term data retention (LTDR) data is preserved during self-service disaster recovery (SSDR) failover, as it's stored independently from the primary environment. However, archival processes might require validation or restart post-failover, and customers might observe a delay in newly archived data becoming available until workflows are re-established.
 
 #### Other limitations
 
+- Power Automate performance limitations are captured in a separate FAQ question.
 - Copilot Studio conversation runtime requests fail until Microsoft restores the service in the primary region. Custom agents successfully fail over and fail back since they're saved on Dataverse.
 - In Dynamics 365, analytics and automation in sales observe latency impact. Relationship analytics KPIs aren't computed and new models for scoring aren't created during an outage.  
--  In Dynamics 365 Customer Insights - Data, real-time updates are impacted. It doesn't support self-service disaster recovery today.
--  In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, or Knowledge Base articles work. Case knowledge base access in customer service is unavailable.
+- In Dynamics 365 Customer Insights - Data, real-time updates are impacted. It doesn't support self-service disaster recovery today.
+- In Dynamics 365 Customer service, basic scenarios that are 100% dependent on Dataverse, such as case creation, or Knowledge Base articles work. Case knowledge base access in customer service is unavailable.
 - Dynamics 365 Project Operations features aren't yet supported.
 - Data lake failover has known issues. Self-service disaster recovery isn't supported yet.
 - Connectors might have recovery problems when dependent on external systems, like SharePoint, SQL server, or third-party applications.
 - For Dynamics 365 Sales, analytics, reporting, and functions dependent on automation, such as sales forecasting, are unavailable.
 - AI Builder might see latency impact.
+
+### What are the known gaps between real disaster recovery and a SSDR DR drill?
+The DR drill validates the SSDR platform capability and operational readiness, but it can't perfectly replicate a real regional outage because the primary production region stays healthy during testing. An emergency DR drill helps you validate the failover and failback time without any data loss. You should validate any connectors that use hard-coded to primary region endpoints for failover and failback. 
+
+### Do you have any prescriptive disaster recovery testing that you recommend?
+Microsoft doesn't currently publish a prescriptive disaster recovery test checklist that all customers must follow. However, you should validate both the Dataverse platform failover and your broader application ecosystem as part of your business continuity plan. 
+
+Typical validation activities include:
+#### Platform validation
+- Execute an SSDR disaster recovery drill (failover and failback).
+- Validate user access, authentication, security roles, and application functionality after failover.
+- Confirm business-critical Dynamics 365 workloads are operational.
+- Verify expected RTO and RPO objectives for the environment.
+#### Integration validation
+- Validate all Azure integrations and external APIs.
+- Test custom plugins, custom code, and middleware dependencies.
+- Verify Power Automate flows function as expected.
+- Validate Copilot (custom and [Dynamics 365 Contact Center agents](/dynamics365/contact-center/administer/overview-contact-center-agents) should fail over).
+- Validate Power Apps workloads that depend on Dataverse.
+- Validate all third-party plugins and mission-critical connectors in the ecosystem.
+- Validate failover readiness: Confirm the environment can use the corresponding subnet in the disaster recovery (DR) region after SSDR failover. Validate connectors work as expected.
+For more information, see [VNet documentation](/power-platform/admin/vnet-support-setup-configure).
+- Validate failback readiness: Confirm the environment can use the corresponding subnet in the disaster recovery region after self-service disaster recovery failback. Validate connectors work as expected.
+#### Reporting and analytics validation
+- Refresh and validate Synapse Link and data lake connections where applicable.
+- Validate downstream reporting and analytics workloads.
+- Confirm data pipelines continue to operate as expected.
+#### Operational readiness validation
+- Validate monitoring, alerting, and incident response procedures.
+- Confirm runbooks and escalation processes.
+- Ensure application owners understand failover and failback processes.
+- Conduct periodic compliance disaster recovery drills (for example, quarterly recommended).
+#### Document your business continuity plan
+- Perform disaster recovery drills or an emergency response before a real disaster strikes, so you can document all steps required for any integration points that are external to Power Platform. Your company is then more prepared for recovery if there's a real disaster.
+#### Support links
+- There's a guidance document available at [Build a disaster recovery plan - Power Platform | Microsoft Learn](/power-platform/guidance/adoption/plan-disaster-recovery).
+- Review the reliability recommendations at [Power Platform Reliability | Microsoft Learn](/power-platform/well-architected/reliability/).
+- Design a disaster recovery strategy recommendation for Power Platform workloads at [Disaster Recovery Power Platform | Microsoft Learn](/power-platform/well-architected/reliability/disaster-recovery).
+
+

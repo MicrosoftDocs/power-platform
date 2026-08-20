@@ -2,7 +2,7 @@
 title: Manage costs for agents powered by the GitHub Copilot harness
 description: Learn how to control and monitor Copilot Credit consumption for agents powered by the GitHub Copilot harness.
 author: gmosleymsft
-ms.date: 08/14/2026
+ms.date: 08/19/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
@@ -145,13 +145,23 @@ For information about the available views, see [Manage Copilot Credits and capac
 
 You can see a breakdown of agents created through the GitHub Copilot harness in Power Platform inventory.
 
-Use the `properties.isCLIAgent` field to identify these agents through:
+### Use the Harness column in the Power Platform admin center
 
-- Azure Resource Graph
-- Power Platform API
-- Power Platform for Admins V2 connector
+The fastest way to identify these agents is the **Harness** column in the agent inventory.
 
-For a ready-to-run Azure Resource Graph query, see [Count agents by harness](inventory-sample-queries.md#count-agents-by-harness). For the field definition, see [Copilot Studio agents in the inventory schema](inventory-schema.md#copilot-studio-agents).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage** > **Copilot Studio**.
+1. Filter the **Harness** column to **GitHub Copilot**.
+
+The column shows which harness each agent is built with: **GitHub Copilot**, **Standard**, or **Copilot Chat**. Only agents with the **GitHub Copilot** value use consumption-based billing for all activity.
+
+For more information, see [Harness](/microsoft-copilot-studio/admin-agent-inventory#harness) in the Copilot Studio agent inventory schema.
+
+### Query the inventory programmatically
+
+**Harness** is currently a user interface column only.
+
+For ready-to-run queries and instructions for running them, see [Count agents by harness](inventory-sample-queries.md#count-agents-by-harness) and [List agents with their harness](inventory-sample-queries.md#list-agents-with-their-harness).
 
 ## Coordinate capacity across admin centers
 
