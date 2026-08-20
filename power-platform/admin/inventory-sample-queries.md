@@ -4,7 +4,7 @@ description: Sample Kusto Query Language (KQL) queries you can run against Power
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 08/10/2026
+ms.date: 08/19/2026
 ms.topic: concept-article
 ---
 
@@ -83,6 +83,8 @@ PowerPlatformResources
 
 Shows a breakdown of agents created with the GitHub Copilot harness, Copilot Chat harness, or Standard harness.
 
+You can see an agent's harness in the **Harness** column in the Power Platform admin center, under **Manage** > **Copilot Studio**. That column is a user interface column only. Harness isn't yet returned as agent metadata, so this query derives it from the fields the inventory returns: `properties.isCLIAgent`, `properties.model`, and `properties.createdIn`. When the `properties.harness` field becomes available, you can query it directly instead. For the field definitions, see [Microsoft Copilot Studio Agent inventory schema](/microsoft-copilot-studio/admin-agent-inventory).
+
 ```Kusto
 PowerPlatformResources
 | where type == "microsoft.copilotstudio/agents"
@@ -97,6 +99,32 @@ PowerPlatformResources
     "Standard")
 | summarize agentCount = count() by harness
 | order by agentCount desc
+```
+
+### List agents with their harness
+
+Returns one row per agent with its harness, so you can find and act on individual agents rather than only counting them. Uncomment the `where` line to return only the agents built with the GitHub Copilot harness.
+
+```Kusto
+PowerPlatformResources
+| where type == "microsoft.copilotstudio/agents"
+| extend properties = parse_json(properties)
+| extend
+    isCLIAgent = tobool(properties.isCLIAgent),
+    model = tostring(properties.model),
+    createdIn = tostring(properties.createdIn)
+| extend harness = case(
+    isCLIAgent == true, "GitHub Copilot",
+    model =~ "Microsoft 365 Copilot" or createdIn =~ "Microsoft 365 Copilot Agent Builder", "Copilot Chat",
+    "Standard")
+//| where harness == "GitHub Copilot"
+| project agentName = tostring(properties.displayName),
+          agentId = name,
+          harness,
+          environmentId = tostring(properties.environmentId),
+          ownerId = tostring(properties.ownerId),
+          createdAt = todatetime(properties.createdAt)
+| order by harness asc, createdAt desc
 ```
 
 ### Items created in the past 24 hours
