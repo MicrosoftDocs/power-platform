@@ -5,7 +5,7 @@ keywords:
 author: devkeydet
 ms.subservice: alm
 ms.author: marcsc
-ms.date: 07/08/2024
+ms.date: 08/19/2026
 ms.reviewer: pehecke
 ms.topic: article
 search.audienceType: 
@@ -17,7 +17,7 @@ ms.custom:
 
 # GitHub Actions for Microsoft Power Platform
 
-[GitHub Actions](https://docs.github.com/en/actions/about-github-actions) enable developers to build automated software development lifecycle workflows. With [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions), you can create workflows in your repository to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Microsoft Power Platform.
+[GitHub Actions](https://docs.github.com/en/actions/about-github-actions) enable developers to build automated software development lifecycle workflows. By using [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions), you can create workflows in your repository to build, test, package, release, and deploy apps; perform automation; and manage bots and other components built on Microsoft Power Platform.
 
 GitHub Actions for Microsoft Power Platform include the following capabilities:
 
@@ -25,19 +25,19 @@ GitHub Actions for Microsoft Power Platform include the following capabilities:
 
 - Deploying to downstream environments.
 
-- Provisioning or de-provisioning environments
+- Provisioning or deprovisioning environments.
 
 - Performing static analysis checks against solutions by using [Power Apps solution checker](/powerapps/maker/data-platform/use-powerapps-checker).
 
 You can use GitHub Actions for Microsoft Power Platform along with any other available GitHub Actions to compose your build and release workflows. Workflows that teams commonly put in place include provisioning development environments, exporting from a development environment to source control, generating builds, and releasing apps.
-GitHub Actions for Microsoft Power Platform are available at <https://github.com/marketplace/actions/powerplatform-actions>.
+You can find GitHub Actions for Microsoft Power Platform at <https://github.com/marketplace/actions/powerplatform-actions>.
 
 > [!IMPORTANT]
-> GitHub Actions for Microsoft Power Platform are supported only for a Microsoft Dataverse environment with a database. More information: [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database)
+> GitHub Actions for Microsoft Power Platform support only a Microsoft Dataverse environment with a database. For more information, see [Create an environment with a database](../admin/create-environment.md#create-an-environment-with-a-database).
 
 ## Key concepts
 
-GitHub Actions enable you to create custom software development lifecycle workflows directly in your GitHub repository. For an overview of GitHub Actions and core concepts, review the following articles:
+By using GitHub Actions, you can create custom software development lifecycle workflows directly in your GitHub repository. For an overview of GitHub Actions and core concepts, see the following articles:
 
 - [About GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions)
 
@@ -74,13 +74,13 @@ To interact with a Dataverse environment, a secret must be created that enables 
 
 ## Available runners
 
-GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows agents and Linux agents.
+GitHub Actions for Microsoft Power Platform can run on both Windows agents and Linux agents.
 
 ## Frequently asked questions
 
 ***How do I get started with GitHub Actions?***
 
-*[Tutorial: Get started with GitHub Actions](./tutorials/github-actions-start.md) is available right now for you try out. The tutorials show how to use service principal authentication and standard username/password authentication.*
+*[Tutorial: Get started with GitHub Actions](./tutorials/github-actions-start.md) is available for you to try out. The tutorials show how to use service principal authentication and standard username/password authentication.*
 
 ***How do I get GitHub Actions for Microsoft Power Platform working in my repository?***
 
@@ -94,11 +94,11 @@ GitHub Actions for Microsoft Power Platform can run on both Microsoft Windows ag
 
 ***Can I include flow and canvas apps?***
 
-*Yes, flows and canvas apps are solution-aware, so if these components are added to your solution they can participate in the lifecycle of your app. However, some steps still require manual configuration, which will be addressed later this year when we introduce environment variables and connectors. For a list of current limitations, go to [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
+*Yes, flows and canvas apps are solution-aware, so if you add these components to your solution they can participate in the lifecycle of your app. However, some steps still require manual configuration, which will be addressed later this year when we introduce environment variables and connectors. For a list of current limitations, go to [Known limitations](/powerapps/maker/common-data-service/use-solution-explorer#known-limitations).*
 
 ***How much does GitHub Actions for Microsoft Power Platform cost?***
 
-*GitHub Actions are available at no cost. However, a valid GitHub subscription is required to use the actions on GitHub. To get started, 2,000 action minutes/month are available for free. More information: [GitHub pricing](https://github.com/pricing/)*
+*GitHub Actions are available at no cost. However, you need a valid GitHub subscription to use the actions on GitHub. To get started, you get 2,000 action minutes per month for free. For more information, see [GitHub pricing](https://github.com/pricing/).*
 
 ***Can I use GitHub Actions for Microsoft Power Platform with Power Pages?***
 
