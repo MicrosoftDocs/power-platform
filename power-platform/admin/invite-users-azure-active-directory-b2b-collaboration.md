@@ -3,24 +3,23 @@ title: Invite users with Microsoft Entra B2B collaboration
 description: Invite users with Microsoft Entra B2B collaboration.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/14/2024
-author: EllenWehrle
+ms.date: 08/20/2026
+author: praneetk2704
 ms.subservice: admin
-ms.author: ellenwehrle
+ms.author: kumarpraneet
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
   - alaug
   - tapanm-msft
-  - sericks
 ms.custom:
   - "admin-security"
   - sfi-image-nochange
 ---
 # Invite users with Microsoft Entra B2B collaboration
 
-You can invite other users to access your environment. A user with the [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator) role can do this through the [Azure portal](https://portal.azure.com). Learn more at [Add guest users to the directory](/entra/external-id/add-users-administrator#add-guest-users-to-the-directory). Invited users can access your environment using their own login credentials once a license and a security role are assigned to them. The use of the apps created using Power Apps, customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Operations), and finance and operations apps are granted. You don’t need to create a new user account and temporary password for these invited users in your own [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant.  
+You can invite other users to access your environment. A user with the [User Administrator](/entra/identity/role-based-access-control/permissions-reference#user-administrator) role can do this through the [Azure portal](https://portal.azure.com). Learn more at [Add guest users to the directory](/entra/external-id/add-users-administrator#add-guest-users-to-the-directory). Invited users can access your environment by using their own authentication credentials once you assign them a license and a security role. You grant access to use the apps you created by using Power Apps, customer engagement apps (such as Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, Dynamics 365 Customer Insights - Journeys, and Dynamics 365 Project Operations), and finance and operations apps. You don't need to create a new user account and temporary password for these invited users in your own [!INCLUDE[pn_Office_365](../includes/pn-office-365.md)] tenant.  
   
 ## Requirements  
   
@@ -28,12 +27,13 @@ You can invite other users to access your environment. A user with the [User Adm
   
 - To bulk- invite users, get the latest [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)][!INCLUDE[pn_PowerShell_short](../includes/pn-powershell-short.md)] which can be downloaded from the [PowerShell module's release page](https://www.powershellgallery.com/packages/AzureADPreview/2.0.0.98).  
   
-## Incompatibilities  
+## Incompatibilities
+ 
  The following features aren't supported for B2B invited users.  
   
 1. [!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] client  
   
-     Invited users won't be able to use the [!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] client to log into the host tenant’s environment.  
+     Invited users can't use the [!INCLUDE[pn_unified_service_desk](../includes/pn-unified-service-desk.md)] client to sign in to the host tenant's environment.  
   
 2. [!INCLUDE[pn_crm_app_for_outlook_short](../includes/pn-crm-app-for-outlook-short.md)]  
   
@@ -47,7 +47,8 @@ You can invite other users to access your environment. A user with the [User Adm
    
    Invited users won't be able to use Dynamics 365 Customer Voice. You must create a new user in your tenant and then provide access to the new user.
    
-## Invite a user  
+## Invite a user
+ 
  You can add users to through [!INCLUDE[pn_azure_active_directory](../includes/pn-azure-active-directory.md)] B2B user collaboration. Users with sufficient access such as user admins can use the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal to invite B2B collaboration users to the directory, to any security group, or to any application.  
   
  Admins can use one of the following methods to invite B2B users to their environment:  
@@ -77,8 +78,9 @@ You can invite other users to access your environment. A user with the [User Adm
 > [!NOTE]
 > Until you add a license to the user account, the user doesn't have access to customer engagement apps. Follow the steps below to add a license through the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
   
-## Update user’s name and usage location  
- To assign a license, the invited user’s **Usage location** must be specified. Admins can update the invited user’s profile on the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
+## Update user's name and usage location
+ 
+ To assign a license, you must specify the invited user's **Usage location**. Admins can update the invited user's profile on the [!INCLUDE[pn_azure_shortest](../includes/pn-azure-shortest.md)] portal.  
   
 1. Go  to **Microsoft Entra** > **Users and groups** > **All users**. If you don't see the newly created user, refresh the page.  
   
@@ -90,7 +92,8 @@ You can invite other users to access your environment. A user with the [User Adm
   
 4. Click **Save**, and then close the Profile blade.  
   
-## Assign invited users a license and security role  
+## Assign invited users a license and security role
+
  Assign your invited users a license and security role so the user can use customer engagement apps.  
   
 1. Go  to **Microsoft Entra** > **Users and groups** > **All users**. If you don't see the newly created user, refresh the page.  
@@ -111,8 +114,9 @@ You can invite other users to access your environment. A user with the [User Adm
   
    Next, assign the invited users with appropriate security roles for the environment so they can access it. See [Create users](create-users.md).  
   
-## Notify your invited users  
- To complete the user invitation, notify your invited users and provide them with the URL for the environment they're invited to (for example, https://contoso.crm.dynamics.com).  
+## Notify your invited users
+
+To complete the user invitation, notify your invited users and provide them with the URL for the environment they're invited to (for example, https://contoso.crm.dynamics.com).  
  
 ## Power Apps support for B2B guest maker
 
@@ -147,9 +151,10 @@ After the B2B guest users are given the required permissions to create and edit 
 5. **Optional**: Assign a security role that allows B2B guest users to perform solution import and export.  
 
 ### Known limitations
+
 1. To sign in to make.powerapps.com via Azure B2B, a user is required to sign in to a Microsoft Entra tenant. Microsoft Accounts (for example user@outlook.com, user@live.com, user@hotmail.com) can't directly sign in to https://make.powerapps.com.
 2. If the Azure B2B maker is expected to build an app that uses Dataverse or build apps in a solution, they need a license with Dataverse use rights assigned to them in the resource tenant.
-3. B2B makers are currently not supported across sovereign cloud boundaries. For example, a B2B guest from a commercial tenant can't make apps in a GCC tenant. The same is applicable for GCC to GCC High, commercial to China cloud, and so on.
+3. B2B makers aren't currently supported across sovereign cloud boundaries. For example, a B2B guest from a commercial tenant can't make apps in a GCC tenant. The same rule applies for GCC to GCC High, commercial to China cloud, and so on. This boundary also means a guest's licenses and service plans are evaluated only in the resource tenant. Licenses assigned in the guest's home tenant in a different cloud aren't inherited or applied.
 
 ### Related content
 [Microsoft Entra B2B Collaboration is Generally Available!](https://blogs.technet.microsoft.com/enterprisemobility/2017/04/12/azure-ad-b2b-collaboration-is-generally-available/)  
