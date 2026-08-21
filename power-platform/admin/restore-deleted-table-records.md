@@ -64,7 +64,7 @@ To restore deleted records from the Power Platform Environment Settings app:
 
 1. Sign in to the Power Platform environment as a user with the system administrator security role.
 1. Select the **Power Platform Environment Settings** app, or select **Settings** > **Advanced Settings**.
-1. Go to **System** > **Data management** > **Deleted Records**.
+1. Go to **System** > **Data management** > **View Deleted Records**.
 1. View all the deleted records from all tables.
 1. Select one or more records to restore, and then select **Restore** on the command bar.
 1. Select **OK** to confirm the restoration.
