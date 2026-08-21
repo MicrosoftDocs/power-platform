@@ -86,9 +86,6 @@ Power Platform supports VNet for both Dataverse plugins and [connectors](#suppor
 - Use [Azure File Storage](/connectors/azurefile/) to securely connect to private, endpoint-enabled Azure file storage.
 - Use [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/) to securely fetch resources over virtual networks from various web services, authenticated by Microsoft Entra ID or from an on-premises web service.
 
-> [!IMPORTANT]
-> Only one of the HTTP connectors - [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/) - is supported by VNET Injection. [HTTP with Microsoft Entra ID](/connectors/webcontentsv2/) and standard HTTP connector is not supported.
-
 ### Limitations
 
 - [Dataverse low-code plugins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
@@ -136,6 +133,9 @@ The following table lists the services that support Azure subnet delegation for 
 | Dataverse | [Dataverse plugins](/power-apps/developer/data-platform/plug-ins) | Generally available |
 | Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li><li>[HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)</li></ul> | Generally available |
 | Connectors | <ul><li>[Snowflake](/connectors/snowflakev2/)</li><li>[Databricks](/connectors/databricks/)</li><li>[AI search](/microsoft-copilot-studio/knowledge-azure-ai-search)</li></ul> | Generally available |
+
+> [!IMPORTANT]
+> Only one of the HTTP connectors - [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/) - is supported by VNET Injection. [HTTP with Microsoft Entra ID](/connectors/webcontentsv2/) and the standard HTTP connector are not supported.
 
 ## Supported environments
 
