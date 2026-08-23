@@ -7,8 +7,8 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jhaskett-msft
-ms.date: 05/14/2025
+ms.reviewer: edoyle
+ms.date: 08/22/2026
 ---
 
 # Power Platform governance overview and strategy
