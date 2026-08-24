@@ -4,7 +4,7 @@ description: "This article discusses the integration of Dataverse with Git, focu
 author: caburk
 ms.subservice: alm
 ms.author: caburk
-ms.date: 04/21/2025
+ms.date: 08/19/2026
 ms.topic: how-to
 ms.reviewer: tapanm
 ms.collection: 
@@ -42,13 +42,15 @@ If an object was deleted in Git, you're prompted to either remove the object fro
 
 To commit the changes to source control, switch to the **Changes** tab and review the changes. Select **Commit** from the top menu, enter a comment about your commit, and then select **Commit** again.
 
-Once your changes are committed, you can either navigate directly to Azure DevOps to view your commit or select the commit number provided on the information bar item that notifies you of your successful commit.
+After you commit your changes, you can either go directly to your Git provider to view your commit or select the commit number on the information bar item that notifies you of your successful commit.
 
 > [!NOTE]
 > It's a best practice to resolve your conflicts first, then pull any changes from source code into your environment, validate your application is still functional and operating as designed, and then commit your changes to source control. This practice ensures that source code commits are of the best quality.
 
 ### Next steps
 
-[Git integration setup](/power-platform/alm/git-integration/connecting-to-git)  
+- [Connect Dataverse Git integration to a Git provider](connecting-to-git.md)
+- [Connect Dataverse Git integration to Azure DevOps](connecting-to-azure-devops.md)
+- [Connect Dataverse Git integration to GitHub](connecting-to-github.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -80,6 +80,11 @@
           items:
             - name: Connect to Git
               href: git-integration/connecting-to-git.md
+              items:
+                - name: Connect to Azure DevOps
+                  href: git-integration/connecting-to-azure-devops.md
+                - name: Connect to GitHub (preview)
+                  href: git-integration/connecting-to-github.md
             - name: Source control operations
               href: git-integration/source-control-operations.md
             - name: Source control canvas apps
