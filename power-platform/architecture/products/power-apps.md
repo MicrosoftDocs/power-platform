@@ -47,7 +47,6 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 
 | Title | Description |
 | --- | --- |
-| [**Streamline document processing with AI Builder**](../reference-architectures/ai-document-processing.md) | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. |
 | [**Perform predictive data analysis using Dataverse, Fabric, and Azure AI services**](../reference-architectures/ai-predictive-data-analysis.md) | Learn best practices for data ingestion, model training, and visualization that help you build robust predictive models and gain actionable insights. |
 | [**​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | [**Integrate Power Platform with SAP for data management**](../reference-architectures/arch-pattern-sap.md) | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |

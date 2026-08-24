@@ -2167,6 +2167,11 @@
       "source_path": "power-platform/test-engine/yaml.md",
       "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/architecture/reference-architectures/ai-document-processing.md",
+      "redirect_url": "/ai-builder/overview",
+      "redirect_document_id": false
     }
   ]
 }

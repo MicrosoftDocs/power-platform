@@ -31,7 +31,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 | **[Automate vendor invoice processing with Power Automate and AI Builder](vendor-invoice-integration.md)** | Automate vendor invoice ingestion by extracting and validating XML invoice data using Power Automate and AI Builder. |
 | **[Extract and analyze agent conversation transcripts](analyze-agent-conversation-transcripts.md)** | Extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
 | **[Perform predictive data analysis with Dataverse, Fabric, and Azure AI services](ai-predictive-data-analysis.md)** | Perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI and learn best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. |
-| **[Streamline document processing with AI Builder](ai-document-processing.md)** | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. |
+
 | **[Use Copilot Studio agents in model-driven apps](contextual-ai-model-driven-app.md)** | Integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
 
 ## Manage data with Dataverse
