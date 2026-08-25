@@ -133,6 +133,8 @@
           items:
             - name: Automate enterprise Power Platform ALM
               href: reference-architectures/enterprise-power-platform-alm.md
+            - name: Manage SharePoint document visibility in Dataverse solutions
+              href: reference-architectures/sharepoint-dataverse-security.md
             - name: Secure Power Platform access to resources
               href: reference-architectures/secure-access-azure-resources.md
     - name: Solution ideas
