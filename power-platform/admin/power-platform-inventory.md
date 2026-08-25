@@ -4,7 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents, apps,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 08/06/2026
+ms.date: 08/25/2026
 ms.topic: concept-article
 contributors:
     - Grayson-Bishop
@@ -33,11 +33,11 @@ By using Power Platform inventory, you can easily complete the following tasks:
 
 The Power Platform inventory includes the following resource types:
 
-- **Agents**: All agents created in Copilot Studio, and all agents created in Microsoft 365 Copilot Agent Builder.
+- **Agents**: All agents you create in Copilot Studio, and all agents you create in Microsoft 365 Copilot Agent Builder.
 
-- **Apps**: All apps created in Power Apps (canvas, model-driven, code, and vibe) and in Microsoft 365 Copilot's App Builder agent.
+- **Apps**: All apps you create in Power Apps (canvas, model-driven, code, and vibe) and in Microsoft 365 Copilot's App Builder agent.
 
-- **Flows**: All agent flows created in Copilot Studio, all cloud flows created in Power Automate, and all workflows created in Microsoft 365 Copilot's Workflows agent.
+- **Flows**: All agent flows you create in Copilot Studio, all cloud flows you create in Power Automate, and all workflows you create in Microsoft 365 Copilot's Workflows agent.
 
 - **Connectors (preview)**: All connectors available in your tenant, including the operations each connector exposes and its publisher and tier.
 
@@ -92,7 +92,7 @@ Canvas apps, model-driven apps, and cloud flows are out of scope for the AI admi
 
 You can access Power Platform inventory through multiple interfaces and APIs. By using these options, you can integrate inventory data into your workflows and tools of choice. The following sections list the primary ways to access inventory data.
 
-### The Power Platform admin center user interface
+### Power Platform admin center user interface
 
 - **Manage** > **Inventory**: The main inventory page provides a unified view of all resources across your tenant.
 
@@ -150,7 +150,7 @@ The inventory table provides the option to display more columns to help you bett
 
 ## View resource details
 
-You can open a resource's details panel in two ways:
+Open a resource details panel in two ways:
 
 - Select a resource, and then select **Details** in the command bar.
 - Select the resource's name. Resource names are always hyperlinked and open the details panel.
@@ -172,7 +172,7 @@ Beyond viewing inventory data, you can act on individual resources directly from
 
 ## Export your inventory
 
-You can export your inventory data for reporting, analysis, or integration with other tools.
+Export your inventory data for reporting, analysis, or integration with other tools.
 
 - **Download to CSV**: Select **Download** in the command bar to export your inventory to a CSV file. The export includes your entire inventory, not just the resources currently loaded in the grid.
 
@@ -180,7 +180,7 @@ You can export your inventory data for reporting, analysis, or integration with 
 
 ## Connector inventory (preview)
 
-Power Platform inventory captures the connectors and connector operations used by each resource. In the Power Platform admin center, this data appears as a **Connectors** column across the inventory grids: the unified **Manage > Inventory** page as well as the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate**. You can query the same data through the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/), the [Power Platform inventory API](inventory-api.md), and [Azure Resource Graph](/azure/governance/resource-graph/overview).
+Power Platform inventory captures the connectors and connector operations used by each resource. In the Power Platform admin center, this data appears as a **Connectors** column across the inventory grids: the unified **Manage** > **Inventory** page as well as the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate**. You can query the same data through the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/), the [Power Platform inventory API](inventory-api.md), and [Azure Resource Graph](/azure/governance/resource-graph/overview).
 
 Connector inventory makes common admin workflows query-driven: identifying every resource affected by a deprecated connector, tracking Premium connector adoption for license decisions, scoping DLP policies to actual usage patterns, and reviewing a resource's full connector footprint during troubleshooting.
 
@@ -189,6 +189,38 @@ Connector inventory makes common admin workflows query-driven: identifying every
 For flows, the inventory additionally captures the trigger connector and trigger operation that initiate the flow.
 
 For the data shape and known limitations, see [Connector inventory (preview)](inventory-schema.md#connector-inventory-preview) in the schema reference.
+
+## Sovereign clouds
+
+Power Platform inventory is available in the US Government Community Cloud (GCC), GCC High, and DoD.
+
+### Resource type availability
+
+The following table shows which resource types are included in the Power Platform inventory in each cloud.
+
+| Resource type | GCC | GCC High | DoD |
+|---|---|---|---|
+| Canvas apps | Yes | Yes | Yes |
+| Model-driven apps | Yes | Yes | Yes |
+| Code apps | Yes | Yes | Yes |
+| Cloud flows | Yes | Yes | Yes |
+| Environments | Yes | Yes | Yes |
+| Environment groups | Yes | Yes | Yes |
+| Agents with the Standard harness | Yes | Yes | No |
+| Agents with the GitHub Copilot harness | No | No | No |
+| Agents with the Copilot Chat harness | No | No | No |
+| Agent flows | Yes | Yes | No |
+| Agents created in Microsoft 365 Copilot Agent Builder | No | No | No |
+| Apps created in Microsoft 365 Copilot's App Builder agent | No | No | No |
+| Workflows created in Microsoft 365 Copilot's Workflows agent | No | No | No |
+| Vibe apps | No | No | No |
+| Connectors | No | No | No |
+
+Except for connectors, every **No** in this table means that resource type isn't available in that cloud today.
+
+### Other sovereign clouds
+
+Power Platform inventory isn't currently available in 21Vianet (China) or air-gapped environments.
 
 ## Known limitations
 
@@ -202,7 +234,7 @@ For the data shape and known limitations, see [Connector inventory (preview)](in
 
 - **_Owner_ column**: Model-driven apps don't have an owner. Dataverse has no concept of ownership for model-driven apps; access is governed exclusively by licensing and environment-level permissions. As a result, the **Owner** column doesn't apply to model-driven apps.
 
-- **Un-published apps**: Only published, model-driven apps are captured.
+- **Unpublished apps**: Only published model-driven apps are captured.
 
 - **Preinstalled apps in the default environment**: The default environment comes with three preinstalled model-driven apps: Power Platform Environment Settings, Power Pages Management, and Solution Health Hub. These apps don't appear in the inventory initially unless you edit and republish them.
 
@@ -218,4 +250,6 @@ For the data shape and known limitations, see [Connector inventory (preview)](in
 
 - **Multi-factor authentication (MFA) requirements for Azure Resource Manager**: Power Platform inventory needs access to Azure Resource Manager to get resource information. If your organization requires MFA through conditional access policies for Azure Resource Manager, inventory might not load. To fix this problem, work with your Entra ID administrator to include the Power Platform admin center application (client ID: `00b46ad5-e4ae-43ac-a878-281fc03d0839`) and the **Microsoft Azure Management** resource in your MFA conditional access policy.
 
-- **Sovereign cloud**: [Power Platform inventory](power-platform-inventory.md) isn't currently available in the US Government Community Cloud (GCC, GCC-High, and DoD), 21Vianet (China), or Air Gapped environments.
+### Sovereign clouds
+
+- **Connectors**: Connector inventory isn't available in GCC, GCC High, or DoD.

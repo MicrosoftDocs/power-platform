@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 08/18/2026
+ms.date: 08/25/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -60,6 +60,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Optimize the performance of canvas apps that require complex business logic**](../reference-architectures/optimize-performance-canvas-apps.md) | Optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
 | [**Use Copilot Studio agents in model-driven apps**](../reference-architectures/contextual-ai-model-driven-app.md) | Integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
 | [**Upload files to SharePoint with metadata from model-driven apps**](../reference-architectures/custom-page-file-upload.md) | Use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
+| [**Manage SharePoint document visibility in Dataverse solutions**](../reference-architectures/sharepoint-dataverse-security.md) | Reduce the risk of oversharing SharePoint documents associated with Dataverse records while preserving native document management capabilities. |
 | [**Automate service order lifecycle and SLA governance with Power Platform**](../reference-architectures/service-order-process.md) | Design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |
 | [**Connect Power Apps to a centralized data warehouse with Dataverse virtual tables**](../reference-architectures/power-apps-virtual-tables.md) | Connect to a centralized data warehouse through Dataverse virtual tables to use consolidated enterprise data alongside operational records stored in Dataverse. |
 
