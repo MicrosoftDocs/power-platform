@@ -79,8 +79,6 @@
               href: reference-architectures/analyze-agent-conversation-transcripts.md
             - name: Perform predictive data analysis
               href: reference-architectures/ai-predictive-data-analysis.md
-            - name: Streamline document processing with AI Builder
-              href: reference-architectures/ai-document-processing.md
             - name: Use Copilot Studio agents in model-driven apps
               href: reference-architectures/contextual-ai-model-driven-app.md
         - name: Manage data with Dataverse

@@ -36,7 +36,6 @@ Understanding reference architectures and exploring solution ideas can help you 
 
 | Title | Description |
 | --- | --- |
-| [**Streamline document processing with AI Builder**](../reference-architectures/ai-document-processing.md) | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. |
 | [**Perform predictive data analysis using Dataverse, Fabric, and Azure AI services**](../reference-architectures/ai-predictive-data-analysis.md) | Learn best practices for data ingestion, model training, and visualization that help you build robust predictive models and gain actionable insights. |
 | [**Integrate legacy data with Power Automate and SharePoint**](../reference-architectures/app-legacy-data-integration.md) | Streamline the process of integrating legacy data with modern platforms. |
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |

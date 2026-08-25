@@ -11,9 +11,9 @@ metadata:
   ms.subservice: guidance
   ms.topic: hub-page
   ms.collection: collection
-  author: jhaskett-msft
-  ms.author: jhaskett
-  ms.date: 05/14/2025
+  author: erikadoyle
+  ms.author: edoyle
+  ms.date: 08/21/2026
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -160,10 +160,6 @@ additionalContent:
           links:
             - text: Power Apps coding guidelines
               url: /power-apps/guidance/coding-guidelines/overview
-            - text: Power Apps patterns
-              url: /power-apps/guidance/patterns/overview
-            - text: Planning a Power Apps project
-              url: /power-apps/guidance/planning/introduction
             - text: Collaborating and co-developing apps
               url: /power-apps/guidance/co-develop/overview
             - text: More...
@@ -173,8 +169,6 @@ additionalContent:
           links:
             - text: Power Automate coding guidelines
               url: /power-automate/guidance/coding-guidelines/
-            - text: Plan a Power Automate project
-              url: /power-automate/guidance/planning/introduction
             - text: RPA with SAP
               url: /power-automate/guidance/rpa-sap-playbook/introduction
             - text: Automation Kit
@@ -193,14 +187,14 @@ additionalContent:
         # Card
         - title: Microsoft Copilot Studio guidance
           links:
-            - text: Topics best practices
-              url: /power-virtual-agents/guidance/topics-overview
-            - text: Trigger phrases best practices
-              url: /power-virtual-agents/guidance/trigger-phrases-best-practices
-            - text: Measuring chatbot engagement
-              url: /power-virtual-agents/guidance/measuring-engagement
+            - text: Create and edit topics
+              url: /microsoft-copilot-studio/authoring-create-edit-topics
+            - text: Design effective trigger phrases
+              url: /microsoft-copilot-studio/guidance/trigger-phrases-best-practices
+            - text: Measuring agent engagement
+              url: /microsoft-copilot-studio/guidance/measuring-engagement
             - text: More...
-              url: /power-virtual-agents/guidance
+              url: /microsoft-copilot-studio/guidance
         - title: Power Platform Well-Architected guidance
           links:
             - text: What is Power Platform Well-Architected?
@@ -241,8 +235,8 @@ additionalContent:
           summary: Design, host, and administer secure, modern, and low-code business websites.
           url: /power-pages
         - title: Microsoft Copilot Studio docs
-          summary: Create powerful bots using a guided, no-code graphical interface without the need for data scientists or developers.
-          url: /power-virtual-agents
+          summary: Create AI-driven agents and workflows using a guided, no-code graphical interface without the need for data scientists or developers.
+          url: /microsoft-copilot-studio
         - title: Power Platform admin docs
           summary: Use Power Platform admin center to manage environments, security, features, and settings for Power Platform components.
           url: /power-platform/admin
