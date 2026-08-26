@@ -1,18 +1,18 @@
 ### YamlMime:Hub
 
 title: Microsoft Power Platform documentation # < 60 chars
-summary: Discover how to make the most of Microsoft Power Platform products with online training courses, docs, and videos covering product capabilities and how-to guides. Learn how to quickly and easily build AI-driven agents with Copilot Studio, custom apps using Power Apps, automate workflows to improve business productivity using Power Automate, analyze data for insights using Power BI, and rapidly design, configure, and publish modern websites using Power Pages.
+summary: Explore documentation, training, and videos for Microsoft Power Platform. Learn how to build and manage agents, apps, automations, analytics, and websites, and how to govern and extend your solutions.
 # brand: aspnet | azure | dotnet | dynamics | m365 | office | sql | windows | visual-studio | xamarin
 brand: dynamics
 
 metadata:
   title: Official Microsoft Power Platform documentation # Required; page title displayed in search results. Include the brand. < 60 chars.
-  description: Use Microsoft Power Platform to analyze data, build AI-driven agents and custom apps, automate workflows, build websites with Copilot Studio, Power BI, Power Apps, Power Automate, and Power Pages. # Required; article description that is displayed in search results. < 160 chars.
+  description: Explore Microsoft Power Platform documentation for building, managing, and governing agents, apps, automations, analytics, and websites. # Required; article description that is displayed in search results. < 160 chars.
 
   ms.topic: hub-page # Required
   author: tapanm-MSFT #Required; your GitHub user alias, with correct capitalization.
   ms.author: tapanm #Required; microsoft alias of author; optional team alias.
-  ms.date: 05/29/2025 #Required; mm/dd/yyyy format.
+  ms.date: 08/25/2026 #Required; mm/dd/yyyy format.
   hide_bc: false
 
 highlightedContent:
@@ -37,11 +37,11 @@ highlightedContent:
 
 productDirectory:
   title: Power Platform products # < 60 chars (Optional; Remove if not applicable.)
-  summary: Use Microsoft Power Platform to build AI-driven agents using Copilot Studio, apps using Power Apps, automate tasks using Power Automate, analyze data using Power BI, and create websites using Power Pages. # < 160 chars (Optional; Remove if not applicable.)
+  summary: Build agents and workflows with Copilot Studio, apps with Power Apps, automations with Power Automate, analytics with Power BI, and websites with Power Pages. # < 160 chars (Optional; Remove if not applicable.)
   items:
   - title: Copilot Studio
     imageSrc: "media/hub-page/copilot-studio.svg"
-    summary: Learn how to extend or create your own AI-driven copilot experiences.
+    summary: Build and manage AI-powered agents and workflows that connect to your organization's data and systems.
     links:
     - url: /microsoft-copilot-studio
       text: Copilot Studio documentation
@@ -51,7 +51,7 @@ productDirectory:
       text: Copilot Studio videos
   - title: Power Apps
     imageSrc: "media/hub-page/power-apps.svg"
-    summary: Learn how to quickly build modern low-code apps for business challenges in your organization.
+    summary: Build and manage low-code business apps that connect to Microsoft Dataverse and other data sources.
     links:
     - url: /power-apps
       text: Power Apps documentation
@@ -61,7 +61,7 @@ productDirectory:
       text: Power Apps videos
   - title: Power Automate
     imageSrc: "media/hub-page/power-automate.svg"
-    summary: Learn how to create flows quickly using low-code platform to automate business tasks and workflows.
+    summary: Automate repetitive tasks and business processes with cloud flows, desktop flows, and process mining.
     links:
       - url: /power-automate
         text: Power Automate documentation
@@ -71,7 +71,7 @@ productDirectory:
         text: Power Automate videos
   - title: Power BI
     imageSrc: "media/hub-page/power-bi.svg"
-    summary: Learn how to get expert information and answers to address your needs.
+    summary: Connect to, model, visualize, and share data to turn it into actionable insights.
     links:
     - url: /power-bi
       text: Power BI documentation
@@ -81,7 +81,7 @@ productDirectory:
       text: Power BI videos
   - title: Power Pages
     imageSrc: "media/hub-page/power-pages.svg"
-    summary: Learn how to create, host, customize, extend, and administer modern external-facing business websites.
+    summary: Create, manage, and secure external-facing business websites with low-code tools.
     links:
     - url: /power-pages
       text: Power Pages documentation
@@ -92,7 +92,7 @@ productDirectory:
     
 tools:
   title: Power Platform capabilities 
-  summary: "Enhance apps and business processes with AI Builder, connect to a variety of data sources through Connectors, use Copilot and generative AI capabilities to boost productivity, use powerful data service to quickly build enterprise-grade apps with Dataverse, and use low-code strongly-typed declarative and functional language with Power Fx."  
+  summary: "Extend your solutions with AI Builder, connectors, Copilot and generative AI, Microsoft Dataverse, and the low-code Power Fx language."
   items:
     # Card
   - title: AI Builder
@@ -116,38 +116,39 @@ additionalContent:
       items:
         # Card
         - title: Administration
-          summary: "Learn about how to administer using Power Platform admin center"
+          summary: "Manage environments, security, governance, resources, and settings in the Power Platform admin center."
           url: ./admin/index.yml
         # Card        
         - title: Application lifecycle management (ALM) guide
-          summary: "Learn how to implement ALM using Power Platform products and services"
+          summary: "Plan and implement application lifecycle management across Power Platform products and services."
           url: ./alm/index.yml
         # Card
         - title: Guidance
-          summary: "Use the Power Platform guidance center for adoption best practices, Center of Excellence (CoE) kit, white papers, and more"
+          summary: "Explore adoption and governance best practices, the Center of Excellence (CoE) Starter Kit, white papers, and more."
           url: ./guidance/index.yml        
         # Card
         - title: Extend and develop
-          summary: "Learn about developing apps and services in Power Platform using code"
+          summary: "Extend Power Platform with code, APIs, connectors, and developer tools."
           url: ./developer/index.yml
         # Card
         - title: Architecture Center
-          summary: "Guidance for architecting solutions with Power Platform and Copilot Studio using established patterns and best practices"
+          summary: "Design Power Platform and Copilot Studio solutions using established patterns and best practices."
           url: ./architecture/index.yml
         # Card
         - title: Well-Architected
-          summary: "Guiding principles, strategies, and tools to help make informed decisions about the design, planning, and implementation of Power Platform workloads"
+          summary: "Apply design principles, strategies, and tools to improve Power Platform workloads."
           url: ./well-architected/index.yml        
     - title: Related products and capabilities
       items:      
         # Card
         - title: Dynamics 365
-          summary: "The next generation of CRM and ERP applications"
+          summary: "Build and run connected customer relationship management (CRM) and enterprise resource planning (ERP) applications."
           url: /dynamics365
         # Card
         - title: Microsoft Azure
-          summary: "Ever-expanding set of cloud computing services to help your organization meet its business challenges"
+          summary: "Build, deploy, and manage solutions with cloud services for computing, data, AI, and more."
           url: /azure
-
-
-
+        # Card
+        - title: Microsoft 365 admin center
+          summary: "Set up and manage users, licenses, domains, subscriptions, services, and settings for Microsoft 365."
+          url: https://learn.microsoft.com/microsoft-365/admin/?view=o365-worldwide
