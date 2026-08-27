@@ -20,6 +20,8 @@ The organization serves 28 million customers through a wide range of channels, i
 >
 > — *Vickie Evans, Engineering Lead for the Center of Excellence at Lloyds Banking Group*
 
+Read the full story: [Lloyds Banking Group enhances the customer experience with Microsoft Power Apps](https://www.microsoft.com/customers/story/21551-lloyds-banking-group-microsoft-power-platform)
+
 ## Challenges
 
 According to the UK census, 9 percent of the population doesn't speak English as their first language, and 161,000 people lack English skills.

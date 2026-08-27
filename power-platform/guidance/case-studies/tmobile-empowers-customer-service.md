@@ -14,6 +14,8 @@ ms.date: 08/08/2025
 
 In this case study, you learn how [T-Mobile](https://www.t-mobile.com/our-story) empowers customer service representatives (CSRs) with the PromoGenius app, built using Power Apps, and Copilot Studio. T-Mobile leads the U.S. wireless industry and operates the second largest network in the country. The company serves more than 130 million customers. The PromoGenius app brings information from different sources together in one place, so CSRs can use natural language queries to get answers quickly.
 
+Read the full story: [T-Mobile drives more effective customer conversations with Microsoft Power Apps and Copilot Studio](https://www.microsoft.com/customers/story/23087-t-mobile-usa-microsoft-copilot-studio)
+
 ## Challenges
 
 T-Mobile frontline retail employees need instant access to promotional offers and other key sales information. They need data about new devices, discounts, trade-in offers, and technical details about devices.

@@ -18,6 +18,8 @@ As digital sales increased, Tiendas CUADRA needed to respond to customers faster
 
 In this case study, you learn how Tiendas CUADRA uses Copilot Studio, Power Automate, and Dynamics 365 to deliver scalable, always‑on customer service while preserving a personalized brand experience. You also discover how the solution evolved from customer support automation into intelligent product discovery.
 
+Read the full story: [Tiendas Cuadra reinvents customer service with a virtual assistant built on Microsoft Copilot Studio](https://www.microsoft.com/customers/story/26459-tiendas-cuadra-microsoft-copilot-studio)
+
 ## Business challenges
 
 Tiendas CUADRA operates an omnichannel customer service model that includes phone, website chat, email, social media, and WhatsApp. As digital commerce grew, customer expectations changed. Customers wanted immediate answers about order tracking, product availability, promotions, and delivery timelines, regardless of the time of day.
