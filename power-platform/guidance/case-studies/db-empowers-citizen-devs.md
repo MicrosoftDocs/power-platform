@@ -26,6 +26,8 @@ For example, a mobile app targets 8,440 track repairs, saving three minutes per 
 >
 > — *Thomas Czierpke, Head of Adoption and Change Management*
 
+Read the full story: [Deutsche Bahn's community of citizen developers drives innovation at scale with Power Platform](https://www.microsoft.com/customers/story/1786920477700146284-deutsche-bahn-power-apps-travel-and-transportation-en-germany)
+
 ## Case study
 
 In this technical case study, you learn how:

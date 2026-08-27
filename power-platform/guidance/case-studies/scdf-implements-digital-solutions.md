@@ -18,6 +18,8 @@ Partnering closely with HTX (Home Team Science and Technology Agency), the statu
 
 In this case study, you learn how SCDF empowers its workforce through different apps and how the NEXA agent enhances operations and continuous learning.
 
+Read the full story: [Singapore Civil Defence Force and HTX boost operational efficiency with Microsoft Power Platform](https://www.microsoft.com/customers/story/18717-singapore-civil-defence-force-microsoft-365)
+
 ## Business challenges
 
 SCDF previously relied on manual processes for tasks such as duty roster management and vehicle maintenance. These processes were time-consuming and reduced their frontliners' operational efficiency. Traditional IT projects took years to deliver solutions, which was far too long for a frontline organization that depends on timely and reliable digital solutions.

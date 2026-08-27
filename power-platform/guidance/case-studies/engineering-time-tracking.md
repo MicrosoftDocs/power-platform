@@ -17,6 +17,8 @@ After a recent major digitization effort, which included rolling out Microsoft 3
 
 Today, more than 30 Power Platform solutions make processes like ordering company cars, creating customer contracts, and hiring temporary workers more efficient. "Power Platform enabled us to create bespoke applications that meet the specific demands of each business unit," says Debroux. "These applications are key to our successful digital transformation, ensuring that every part of our organization benefits from innovation, no matter how unique their needs."
 
+Read the full story: [John Cockerill builds enterprise apps with SAP integration using Power Platform](https://www.microsoft.com/customers/story/18756-john-cockerill-power-apps)
+
 ## Delivering business value, not just lines of code
 
 At John Cockerill, a team of 15 business analysts, product owners, UX/UI designers&mdash;and just four developers&mdash;builds enterprise solutions on Power Platform. The small development team's pro developer experience keeps build quality high. "We were early adopters of Azure DevOps services and automated deployments using the [ALM Accelerator for Power Platform](/power-platform/guidance/alm-accelerator/overview), and we're progressively transitioning to native pipelines," says Gilles Meyer, Lead Architect on John Cockerill's Power Platform development team.
