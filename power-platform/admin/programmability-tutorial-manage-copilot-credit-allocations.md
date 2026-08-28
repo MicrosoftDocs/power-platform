@@ -3,11 +3,12 @@ title: Manage Copilot Credits allocations programmatically
 description: Learn how to view available Copilot Credits, allocate them to environments, and control whether an environment draws from tenant capacity by using the Power Platform API and the administration (Admin) SDKs for PowerShell, C#, and Python.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/14/2026
+ms.date: 08/28/2026
 author: laneswenka
 ms.author: laswenka
 ms.reviewer: ellenwehrle
 ms.subservice: admin
+ai-usage: ai-assisted
 search.audienceType:
   - admin
 ---
@@ -29,6 +30,9 @@ In this tutorial, learn how to:
 Copilot Credits are represented by the entitlement ID `MCSMessages` and are managed through the `licensing/allocationsV2` operations of the Power Platform API. The `allocationsV2/availability` operation reports how much capacity is available to allocate, and the `allocationsV2` operation writes an environment's allocation. All programmatic examples in this article use API version `2024-10-01`.
 
 Each environment allocation carries a set of *enforcement rules* that determine what happens when the environment consumes its allocated credits. The **Draw from the available capacity in my tenant** option in the admin center maps to the `TenantPool` enforcement rule: when it's enabled, the environment continues to draw from unallocated tenant capacity after its own allocation is exhausted; when it's disabled, the environment is capped at its allocation.
+
+> [!WARNING]
+> If a published [environment group rule](environment-groups.md#rules) governs **Draw from the available capacity in my tenant**, you can't override the setting for an individual environment. Updates through the Power Platform admin center, Power Platform API, or administration SDKs are rejected with the `TenantPoolLockedByPolicy` error. Change and republish the rule for the environment group, or [remove the environment from the group](environment-groups.md#remove-an-environment-from-your-environment-group) to manage the setting independently. After removal, the environment retains the value last applied by the group, but the setting becomes editable. For more information about available group rules, see [Rules for environment groups](environment-groups-rules.md).
 
 ## Prerequisites
 
