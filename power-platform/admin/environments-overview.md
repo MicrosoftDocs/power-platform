@@ -147,7 +147,8 @@ Depending on the environment type, the environment location varies.
 
 If you want Teams environments and developer environments (created on sign-up) to be created in a location different from the tenant location, you can set the **Preferred environment location** for your tenant using the [Power Platform PowerShell commandlets](powerapps-powershell.md). This change doesn't update existing environments and applies to new environments created after the change only. These settings can be found under **Settings > PowerPlatform > Environments**.
 
-Note that the **Preferred environment location** is honored with macro regions, as well.  
+> [!IMPORTANT]
+> The **Preferred environment location** works with macro regions only if ADR (advanced data residency for M365) is enabled on this tenant. Learn more in [Power Platform and Dynamics 365 macro region geography](/power-platform/admin/macro-regions).
 
 ```PowerShell
 $requestBody = [pscustomobject]@{

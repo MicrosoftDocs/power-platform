@@ -584,7 +584,7 @@
                   href: cross-tenant-restrictions.md
                 - name: IP address-based cookie binding
                   href: block-cookie-replay-attack.md
-                - name: Control user access to environments with security groups
+                - name: Control environment access with security groups
                   href: control-user-access.md
                 - name: Limit sharing
                   href: managed-environment-sharing-limits.md

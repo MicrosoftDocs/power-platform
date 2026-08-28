@@ -3,7 +3,7 @@ title: Administration mode
 description: Administration mode
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/04/2025
+ms.date: 08/28/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 author: ChrisGarty
@@ -22,6 +22,7 @@ You can set a sandbox, production, or trial (subscription-based) environment in 
 > - Processes that use code, such as plug-ins or custom workflow assemblies, continue to be processed by the Microsoft Dataverse platform when administration mode is enabled and background operations are disabled.
 > - When you enable administration mode and disable background operations, scheduled (recurrence) Power Automate cloud flows continue to run because they run in the Power Automate service rather than as Dataverse asynchronous operations. Flows that use a Dataverse trigger (for example, **When a row is added, modified, or deleted**) don't fire while background operations are disabled.
 > - System Customizers need to sign in to the environment directly through the URL, as the environment in administration mode doesn't appear to System Customizers in the Environments page of the Power Platform admin center.
+> - For an OnlineDev unified developer environment (UDE) for finance and operations apps, package deployment can be used while a environment is in administration mode. For details, see [Deploy packages to a unified developer environment in administration mode](../developer/unified-experience/finance-operations-deploy-admin-mode.md).
   
  On the **Settings** panel, you can set the following:  
   
