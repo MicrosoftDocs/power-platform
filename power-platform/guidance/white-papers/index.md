@@ -4,7 +4,7 @@ description: Explore in-depth Power Platform white papers to make informed decis
 #customer intent: As a decision-maker, I want to explore Power Platform white papers so that I can make informed decisions about its implementation and use.
 author: robstand
 ms.author: rstand
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ms.subservice: guidance
 ms.topic: overview
 ms.date: 04/22/2026
@@ -21,7 +21,6 @@ White papers provide in-depth information, solutions, and recommendations to hel
 | Whitepaper | Description | Date |
 | --- | --- | --- |
 | [Administering and governing the Power Platform for Enterprise](https://aka.ms/PowerPlatformAdministrationandGovernance) | This whitepaper provides comprehensive guidance for IT and platform administrators on planning, securing, governing, monitoring, and operating Microsoft Power Platform deployments at enterprise scale. | April 2026 |
-| [Migrating apps and flows from the default environment](migrating-from-default-environment.md) |This technical white paper outlines considerations and best practices for migrating apps and flows from the default environment. | August 2023 |
 
 ## Related information
 

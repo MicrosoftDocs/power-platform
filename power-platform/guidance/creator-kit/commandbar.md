@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 11/02/2022
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: tapanm
+ms.reviewer: edoyle
 search.audienceType: 
   - maker
 contributors:
@@ -50,7 +50,7 @@ Each item uses the following schema to visualize data in the component.
 | `ItemVisible` | Set to false if the option is not visible. |
 | `ItemChecked` | Set to true if the option is checked (e.g. split buttons in a command bar). |
 | `ItemSplit` | Set to true if the option can be clicked and used as a drop down flyout menu. |
-| `ItemIconName` | The Fluent UI icon to use (see [Fluent UI Icons](https://uifabricicons.azurewebsites.net/)) |
+| `ItemIconName` | The Fluent UI icon to use (see [Fluent UI Icons](https://fluent2.microsoft.design/iconography)) |
 | `ItemIconColor` | The color to render the icon as (e.g. named, rgb or hex value). |
 | `ItemIconOnly` | Do not show the text label - only the icon. |
 | `ItemOverflow` | Set to true for overflow behavior |

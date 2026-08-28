@@ -7,7 +7,7 @@ ms.date: 08/27/2025
 ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.topic: upgrade-and-migration-article
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType:
   - admin
 ---

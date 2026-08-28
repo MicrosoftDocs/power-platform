@@ -6,7 +6,7 @@ ms.date: 07/29/2025
 ms.subservice: guidance-toolkit
 author: rsantos00
 ms.author: rusant
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ms.custom: bap-template
 ---
 

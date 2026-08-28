@@ -7,7 +7,7 @@ ms.component: pa-admin
 ms.topic: best-practice
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ms.date: 09/02/2025
 ---
 

@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 05/01/2023
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: tapanm
+ms.reviewer: edoyle
 search.audienceType: 
   - maker
 contributors:
@@ -55,7 +55,7 @@ The `DetailsList` code component allows using the [Fluent UI `DetailsList` compo
 
 #### `Items` properties
 
-These attributes must be available in the data source to enable the related functionality. The Power Fx formula [AddColumns()]() can be used to append these values to the original data source.
+These attributes must be available in the data source to enable the related functionality. The Power Fx formula [AddColumns()](../../power-fx/reference/function-table-shaping.md) can be used to append these values to the original data source.
 
 | Property | Description |
 | -------- | ----------- |

@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: stjeffer
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ---
 
 # Establish license assignment strategies

@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 05/16/2022
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: tapanm
+ms.reviewer: edoyle
 search.audienceType: 
   - maker
 contributors:
@@ -30,7 +30,7 @@ For a list of icons, go to [Fluent UI icons](https://developer.microsoft.com/flu
 
 | Property | Description |
 | -------- | ----------- |
-| `ItemIconName` | The Fluent UI icon to use (see [Fluent UI Icons](https://uifabricicons.azurewebsites.net/)) |
+| `ItemIconName` | The Fluent UI icon to use (see [Fluent UI Icons](https://fluent2.microsoft.design/iconography)) |
 | `IconType` | Renders the icon as types `Action button`, `Icon button`, or `Icon only` |
 | `IconSize` | The size of the icon (pixels) |
 | `Text` | Text displayed (works for type `Action button`) |

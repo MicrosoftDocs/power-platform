@@ -7,7 +7,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/14/2025
 ms.author: rstand
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ms.custom: bap-template
 ms.subservice: guidance
 contributors:

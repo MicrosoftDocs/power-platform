@@ -7,7 +7,7 @@ ms.topic: best-practice
 ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType:
   - admin
 ms.custom:
