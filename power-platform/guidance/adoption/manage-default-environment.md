@@ -4,7 +4,7 @@ description: Learn best practices for managing default Power Platform environmen
 #customer intent: As a Power Platform admin, I want to manage the default environment effectively so that I can maintain security and compliance, optimize resource usage, and ensure business continuity.
 author: rranjit83
 ms.author: rranjit
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ms.topic: best-practice
 ms.date: 06/23/2026
 ms.custom: bap-template

@@ -6,7 +6,7 @@ ms.date: 08/18/2025
 ms.subservice: guidance-toolkit
 author: rajeevpentyala
 ms.author: grarchib
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ms.custom:
   - bap-template
   - sfi-image-nochange

@@ -5,7 +5,7 @@ keywords:
 author: Grant-Archibald-MS
 ms.author: grarchib
 manager: pladhani
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ms.custom:
   - bap-template
   - ai-gen-docs-bap

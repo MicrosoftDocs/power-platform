@@ -7,7 +7,7 @@ ms.date: 08/27/2025
 ms.update-cycle: 3650-days
 ms.topic: how-to
 ms.subservice: guidance-toolkit
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType:
   - admin
 ms.custom:

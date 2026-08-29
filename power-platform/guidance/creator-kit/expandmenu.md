@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 05/16/2022
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: tapanm
+ms.reviewer: edoyle
 search.audienceType: 
   - maker
 contributors:
@@ -49,7 +49,7 @@ This canvas component mimics the style and *limited* behavior of the [Fluent UI 
 | Property | Description |
 | -------- | ----------- |
 | `Label` | The text to display in the menu item. |
-| `Icon` | [Fluent UI Icon](https://uifabricicons.azurewebsites.net/) by name |
+| `Icon` | [Fluent UI Icon](https://fluent2.microsoft.design/iconography) by name |
 | `Screen` | App screen that the item will navigate to when selected. |
 
 Example `Items` property:

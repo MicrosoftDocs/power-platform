@@ -4,7 +4,7 @@ description: Learn how to secure the default Power Platform environment while ma
 #customer intent: As a Power Platform admin, I want to secure the default environment so that I can maintain accessibility for makers' personal productivity needs.  
 author: rranjit83
 ms.author: rranjit
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ms.topic: how-to
 ms.date: 08/26/2026
 ms.subservice: guidance

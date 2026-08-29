@@ -7,7 +7,7 @@ ms.topic: overview
 ms.date: 04/21/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description

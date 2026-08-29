@@ -6,7 +6,7 @@ ms.topic: concept-article
 ms.date: 05/18/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType:
   - admin
 ms.custom:

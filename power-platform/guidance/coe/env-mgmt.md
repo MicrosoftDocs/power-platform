@@ -7,7 +7,7 @@ ms.topic: how-to
 ms.date: 05/18/2026
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType: 
   - admin
 ---

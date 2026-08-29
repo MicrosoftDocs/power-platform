@@ -7,7 +7,7 @@ ms.date: 08/28/2025
 ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.topic: install-set-up-deploy
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType:
   - admin
 ---

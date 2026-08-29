@@ -2,7 +2,7 @@
 title: Manage costs for agents powered by the GitHub Copilot harness
 description: Learn how to control and monitor Copilot Credit consumption for agents powered by the GitHub Copilot harness.
 author: gmosleymsft
-ms.date: 08/19/2026
+ms.date: 08/28/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
@@ -111,6 +111,12 @@ Automated allocation is useful when you:
 - Periodically reconcile new or changed environments.
 
 For authentication requirements and PowerShell, C#, and Python examples, see [Manage Copilot Credits allocations programmatically](programmability-tutorial-manage-copilot-credit-allocations.md).
+
+Use the **Cost controls - Draw from tenant credit pool** [environment groups](/power-platform/admin/environment-groups) rule to control whether environments in a group can use unallocated Copilot Credits from the tenant pool. When enabled, an environment can draw from the tenant pool after it exhausts its allocation or when no allocation is set.
+
+For eligible Copilot Studio environments, **Draw from the available capacity in my tenant** is selected by default when no allocation configuration exists. Clear this option to cap prepaid consumption at the environment's allocation. If the environment has no allocation, it can't consume prepaid capacity from the tenant pool. Usage can still continue through a linked pay-as-you-go billing plan.
+
+When you publish a rule, it governs every environment in the group. The environment-level setting becomes read-only in the Power Platform admin center, and programmatic requests can't override it. To retain environment-level control, don't publish the rule for that group, or remove the environment from the group. After removal, the environment retains the last value applied by the group, but the setting becomes editable.
 
 ## Manage pay-as-you-go costs
 

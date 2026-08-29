@@ -2,13 +2,13 @@
 title: Overview of Success Hub
 description: Learn how Success Hub empowers organizations to digitize efficiently with shared data, governance, and integration using Microsoft Power Platform.
 #customer intent: As a business decision maker, I want to compare the Success Hub co-development model with other approaches so that I can choose the best strategy for my team.  
-author: kathyos
+author: manuelap-msft 
+ms.author: mapichle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/14/2025
 ms.subservice: guidance
-ms.author: kathyos
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType:
   - admin
 ms.custom:
