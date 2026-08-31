@@ -60,7 +60,7 @@ Please note:
 - Macro region geography #6 is geared toward Asia pacific.
 
 > [!NOTE]
-> Sovereign clouds like the Government Community Cloud (GCC), Government Community Cloud – High (GCC-H), and Department of Defense (DoD) remain unchanged and are excluded from Macro region strategy.
+> Sovereign clouds like the Government Community Cloud (GCC), Government Community Cloud – High (GCC-H), and Department of Defense (DoD) remain unchanged and are excluded from macro region strategy.
 
 ## Datacenter region selection eligibility criteria
 
@@ -68,15 +68,15 @@ Please note:
 
 - [Advanced data residency](/microsoft-365/enterprise/advanced-data-residency) for all Microsoft 365 seats in your tenant.
 
-  The Advanced data residency (ADR) SKU applies only to Microsoft 365. To qualify for Dynamics 365 and Power Platform datacenter region access during new environment creation, enable it for all Microsoft 365 seats in the tenant.    
+The Advanced data residency (ADR) SKU applies only to Microsoft 365. To qualify for Dynamics 365 and Power Platform datacenter region access during new environment creation, enable it for all Microsoft 365 seats in the tenant.    
 
 ## Data residency and compliance
 
-- Data always resides within the selected macro region geography boundary. If you're a customer who meets ADR criteria, your D365 and Power Platform data is stored at rest within your selected datacenter region.  
+- Data always resides within the selected macro region geography boundary. If you're a customer who meets ADR criteria, your Dynamics 365 and Power Platform data is stored at rest within your selected datacenter region.  
 - If you need EUDB, select the macro region, **European Union (EU) and European Free Trade Association (EFTA)**. This selection ensures your data at rest is in the EUDB boundary. Learn more about EUDB [here](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations).
 - Australia and India geographies might be subject to tax restrictions and might need data residency alignment and accountability for compliance with local tax reporting rules and for auditability within a jurisdiction. To keep your data at rest in Australia and India, learn more about acquiring ADR to make an informed decision for your business.
 - The platform doesn't expand residency guarantees beyond contractual commitments. Macro-region selection defines Microsoft's service-placement and data-residency boundary for the environment. Don't interpret macro-regions as legal, regulatory, tax, or compliance-defined areas, and don't view them as determinative of customer's obligations.
-- [EUDB](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations) is a Microsoft contractual data-boundary commitment, not the same thing as a legal jurisdiction such as the EEA/GDPR perimeter. The current EUDB documentation describes EUDB as a geographically defined boundary within which Microsoft commits to store and process Customer Data and personal data for Microsoft enterprise online services, including Azure, Dynamics 365, Power Platform, and Microsoft 365, subject to documented exceptions.
+- [EUDB](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations) is a Microsoft contractual data-boundary commitment, not the same thing as a legal jurisdiction such as the EEA/GDPR perimeter. The current EUDB documentation describes EUDB as a geographically defined boundary within which Microsoft commits to store and process customer data and personal data for Microsoft enterprise online services, including Azure, Dynamics 365, Power Platform, and Microsoft 365, subject to documented exceptions.
 
 ## Data residency experience examples
 
@@ -100,21 +100,42 @@ As of the date of the announcement, Microsoft doesn't anticipate impacts to exis
   
 ## FAQ
 
-#### Virtual network configurations
+#### How do you connect a Power Platform environment in one region to resources hosted in another region?
 
-To connect a Power Platform environment in one region to resources hosted in another region, create a VNet in the Power Platform environment's associated region and use [VNet peering](vnet-support-overview.md#how-can-a-power-platform-environment-in-one-region-connect-to-resources-hosted-in-another-region) to bridge to the separate-region VNet. 
+Create a virtual network (VNet) in the Power Platform environment's associated region and use [VNet peering](vnet-support-overview.md#how-can-a-power-platform-environment-in-one-region-connect-to-resources-hosted-in-another-region) to bridge to the separate-region VNet. 
 Consider region-selection needs upfront if you have existing Azure VNets, private endpoints, or hub/spoke network topology.
   
-1. If you have ADR, you have full control on environment's datacenter region placement and get to create a Vnet first.
-1. If you don't have ADR and don't intend to get ADR, kindly provision the environment first and provision the VNET after.
+- If you have ADR, you have full control on environment's datacenter region placement and get to create a VNet first.
+- If you don't have ADR and don't intend to get ADR, provision the environment first and provision the VNet after.
 
-#### Datacenter region placement considerations within a macro region
+#### Today, customers can allow list the regional URLs and IP ranges for their selected datacenter region. Without ADR, however, an Asia-Pacific environment can be assigned to any datacenter region within that macro region. In that case, must customers allow list every possible datacenter region in Asia-Pacific?
+
+They can allow list the region assigned after provisioning.
+
+#### What are the datacenter region placement considerations within a macro region?
 
 A capacity- and availability-based algorithm selects the most suitable datacenter region during provisioning. This region serves as the default datacenter region for that macro region, for that tenant, for the foreseeable period of time. If capacity or other conditions become constrained, the algorithm makes an assessment and shifts provisioning of new environment for that tenant to another datacenter region within the macro region to maintain optimal performance.
-For example, for a tenant, if France is selected by the algorithm as the datacenter region during the first environment creation for Europe & UK macro region, then subsequent environments provisioned for that tenant in Europe & UK macro region are also provisioned in France unless France experiences capacity or other constraints. 
+
+For example, for a tenant, if the algorithm selects France as the datacenter region during the first environment creation for Europe & UK macro region, then subsequent environments provisioned for that tenant in Europe & UK macro region are also provisioned in France unless France experiences capacity or other constraints.
+
+Let's take the example of a tenant t1, which decides to create one environment in each macro region. Say, in NAM, the new environment gets created in Canada. With this, Canada is registered as the affinity geo for NAM macro. Next environment in that macro will follow affinity and go to the same geo–-Canada. Now customer decides to create another environment in another macro region, say, The Americas. Let's say the new environment gets created in Brazil. With this, Brazil is now registered as the affinity geo for The Americas macro. So, if T1 continues to create an environment in every macro, the first environment created determines and sets the affinity geo for that macro.
 
 Plan for the possibility that unforeseen circumstances might place environments created under a broad macro-region geography in different datacenter regions within that macro region. This placement can affect Azure network alignment, VNet integration design, latency expectations, and customer legal review. Consider getting ADR if you require deterministic datacenter region placement.
 
+#### Can Dynamics 365 customers enable ADR on their tenants for any azure regions in the world? 
+
+All Dynamics 365 and Power Platform customers located in any of the 17 datacenter regions are eligible to enable ADR for any of the 28 Go-Local regions. When you enable ADR, it makes a data-at-rest promise to keep your Microsoft 365 select workloads in the associated Go Local. These 28 regions have a perfect overlap with Dynamics 365 datacenter regions. Please note, there are three Azure regions, Belgium, Finland, and Greece, that do not currently have a corresponding Go-Local region support and therefore cannot enable ADR for Microsoft 365 data at rest support. However, if the customer needs to enable ADR for Dynamics 365 data-at-rest geo-location access and data-at-rest commitment, please escalate to Dynamics 365 support for *Need ADR for unsupported Azure region for D365 macro region*.
+
+#### If I don't have ADR, does this mean my test, dev, and production environments could be split into three different macro regions now? 
+
+Once you attach to a datacenter region inside the selected macro region geography in the first provisioning, Microsoft follows the placement affinity logic to place them together. Microsoft reserves the right to react in unforeseen circumstances.  
+
+
+#### Is ADR making a data-at-rest promise for the D365 datacenter region selected as geo location for my environment? I don't see D365 supported in D365 documentation? 
+
+Please note, ADR is not making any data-at-rest commitments for Dynamics 365. ADR provides data-at-rest promise for select Microsoft 365 products to the associated Go-Local region.   
+
+The data-at-rest promise for Dynamics 365/Power Platform is coming from the Dynamics 365/Power Platform product aligned with product terms. For all those Microsoft customers who already have ADR for Microsoft 365, they automatically qualify for Dynamics 365 data location access at environment creation, and the product term promise applies to keep customer's data at rest in the Dynamics 365/Power Platform datacenter region associated with the environment. If a customer buys ADR for 100% of Microsoft 365 seats in the tenant––Dynamics 365/Power Platform is making the data-at-rest commitment by allowing data center region access for geo location at environment creation and ensuring customer's data at rest will go to the selected data center region and stay there, aligned with product terms.
 
 ## Related content
 
