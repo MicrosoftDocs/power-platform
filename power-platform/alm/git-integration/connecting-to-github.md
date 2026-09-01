@@ -4,7 +4,7 @@ description: "Learn how to configure Dataverse Git integration with GitHub by cr
 author: caburk
 ms.subservice: alm
 ms.author: caburk
-ms.date: 08/19/2026
+ms.date: 09/01/2026
 ms.custom:
 ms.topic: how-to
 ms.reviewer: matp
@@ -16,7 +16,7 @@ ms.collection:
 
 To connect a Dataverse environment or solution to GitHub, create a GitHub app, store the app private key in Azure Key Vault, create a Power Platform GitHub connection, and then connect from the source control experience in your solution.
 
-You can access solutions from Power Apps, Power Automate, Power Pages, and Copilot Studio.
+You can connect to GitHub integration preview from the solutions experience at https://make.preview.powerapps.com, https://make.preview.powerautomate.com, https://copilotstudio.preview.microsoft.com, or https://make.preview.powerpages.microsoft.com.
 
 > [!IMPORTANT]
 >
@@ -85,14 +85,17 @@ You can access solutions from Power Apps, Power Automate, Power Pages, and Copil
 
    :::image type="content" source="media/azure-key-vault-import-key.png" alt-text="Screenshot of importing a key into Azure Key Vault." lightbox="media/azure-key-vault-import-key.png":::
 
+> [!NOTE]
+> When you connect subsequent Dataverse environments to GitHub, you don't need to repeat the preceding GitHub app and Azure Key Vault setup steps. You can reuse the same GitHub app across multiple repositories and the same Azure Key Vault configuration across multiple environments.
+
 ## Create a GitHub connection
 
 Create an OAuth connection by using your personal GitHub account. This connection verifies that you have admin access to the target repository during setup. At runtime, the GitHub app handles communication with GitHub, so individual users don't need to create GitHub connections.
 
 > [!NOTE]
-> You can't use GitHub connections when you enable virtual network (VNET) support for the Dataverse environment. Use a GitHub personal access token (PAT) instead.
+> Alternatively, you can use a GitHub personal access token (PAT) instead of a GitHub connection. Use a PAT when virtual network (VNET) support is enabled for the Dataverse environment or when GitHub connections can't be created.
 
-1. Go to the [Power Apps maker portal](https://make.powerapps.com/), and then select **Connections**.
+1. Go to [Power Apps preview](https://make.preview.powerapps.com/), and then select **Connections**.
 1. Select **New connection**.
 1. Search for and select the **GitHub** standard connector.
 
@@ -109,7 +112,7 @@ After you create the connection, open it. Note the connection ID from the URL in
 The connection ID appears in the URL when you view the connection details, as shown in the following example:
 
 ```text
-https://make.powerapps.com/.../connections/shared_github/{connectionId}/details
+https://make.preview.powerapps.com/.../connections/shared_github/{connectionId}/details
 ```
 
 :::image type="content" source="media/power-apps-github-connection-id.png" alt-text="Screenshot of a Power Apps GitHub connection details page showing the connection ID in the URL." lightbox="media/power-apps-github-connection-id.png":::
@@ -124,7 +127,7 @@ For more information, see [Enabling OAuth app access restrictions](https://docs.
 
 ## Connect to GitHub from a solution
 
-1. Create a new unmanaged solution or select an existing custom unmanaged solution.
+1. Go to [Power Apps preview](https://make.preview.powerapps.com/), then create a new unmanaged solution or select an existing custom unmanaged solution.
 1. On the **Source control** page, select **Connect**.
 1. In the **Connect to Git** pane, select **GitHub**.
 
