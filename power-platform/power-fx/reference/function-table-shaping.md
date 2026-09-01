@@ -78,7 +78,7 @@ If you use **AddColumns** in this manner, **Filter** must make separate calls to
 **AddColumns**( _TableOrRecord_, _ColumnName1_, _Formula1_ [, *ColumnName2*, *Formula2*, ... ] )
 
 - _TableOrRecord_ - Required. Table or record to operate on.
-- _ColumnName(s)_ - Required. Names of the columns to add. 
+- _ColumnName(s)_ - Required. Names of the columns to add. Donot use quotes else you will get "Expected identifier name" error.
 - _Formula(s)_ - Required. Formulas to evaluate for each record. The result is added as the value of the corresponding new column. You can reference other columns of the table or record in this formula.
 
 **DropColumns**( _TableOrRecord_, _ColumnName1_ [, *ColumnName2*, ... ] )
