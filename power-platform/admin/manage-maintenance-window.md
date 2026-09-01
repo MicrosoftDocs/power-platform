@@ -6,7 +6,7 @@ ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/24/2025
+ms.date: 08/31/2026
 search.audienceType: 
   - admin
 ---
@@ -20,7 +20,7 @@ Microsoft regularly performs updates and maintenance on customer engagement apps
 > - Maintenance can be conducted any day, so the maintenance window is a time within the day when these updates could be delivered.
 > - Only database and application updates are delivered in this maintenance window. Platform updates continue to execute based on [region-specific times](policies-communications.md#maintenance-timeline).
 > - It might take up to 48 hours for the maintenance window settings to take effect.
-> - There's no downtime or performance degradation during the maintenance window.
+> - Maintenance is scheduled to minimize disruption, but service performance can vary during the maintenance window.
 
 To view or update the maintenance window for a specific environment based on your business preferences, follow these steps:
 
