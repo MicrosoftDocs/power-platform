@@ -30,7 +30,6 @@ Key capabilities include:
 > [!NOTE]
 > This feature applies only to cloud-hosted Dynamics 365 Finance and Operations environments that are connected to Microsoft Entra ID and the Power Platform admin center.
 > It isn't supported for on-premises deployments. License consumption reporting, user license validation, and related licensing insights described in this article aren't available for on-premises Finance and Operations environments.
-> For on-premises usage report, see [Security Governance License Usage Summary](/dynamics365/fin-ops-core/fin-ops/sysadmin/security-gov-license-usage-summary).
 
 ## Access user license consumption reporting
 

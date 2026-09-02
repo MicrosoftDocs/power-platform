@@ -8,11 +8,10 @@ ms.date: 08/03/2026
 ms.subservice: admin
 ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
+ai-usage: ai-assisted
 contributors:
   - maustinjones
-  - v-jlandrum 
-  - shazichuanshuo 
-  - garrettm-msft
+  - v-jlandrum  
   - nanivijay
   - nnyarbro
   - neeranelli
@@ -108,6 +107,9 @@ Add the IP address values for the following service tags.
 
 The service tags also have a regional scope to define the IP addresses required per Azure datacenter region. For example, to find out the required IP address values for accessing services in the **Australia** region, use the [Azure IP Ranges and Service Tags – Public Cloud](https://www.microsoft.com/download/details.aspx?id=56519) file, and search for `AzureCloud.Australia`. 
 
+> [!IMPORTANT]
+> Don't rely on an individual environment's currently resolved IP addresses to allow list firewalls, because those addresses can change over time. Instead, allow the IP ranges published for the applicable Azure service tags, and refresh your allow list regularly from the service tag files. For the ports to open alongside these IP ranges, see [Ports](#ports).
+
 If you're using *Power Platform connectors*, see the complete list of required IP addresses in [Connectors docs](/connectors/common/outbound-ip-addresses#power-platform).
 
 > [!NOTE]
@@ -115,11 +117,11 @@ If you're using *Power Platform connectors*, see the complete list of required I
 
 ### IPv6 support in Microsoft Power Platform and Dynamics 365
 
-Starting April 2024, IPv6 network connectivity is supported on Power Platform and Dynamics 365 products and services. If your organization's network doesn't support IPv6 yet, this doesn’t impact your ability to connect to Power Platform and Dynamics 365 services on current prevalent IPv4 connectivity. Microsoft continues to support both IPv4 and IPv6 protocols for Power Platform products and services.
+Since April 2024, Power Platform and Dynamics 365 products and services support IPv6 network connectivity. If your organization's network doesn't support IPv6 yet, this change doesn’t impact your ability to connect to Power Platform and Dynamics 365 services on current prevalent IPv4 connectivity. Microsoft continues to support both IPv4 and IPv6 protocols for Power Platform products and services.
 
 #### What is changing?
 
-In December 2023, we published Power Platform IPv6 address ranges in Azure service tags with plans to introduce IPv6 support for Power Platform products and services. Starting from April 2024, selective Power Platform service endpoints start resolving to both IPv4 and IPv6 addresses with the goal to eventually enable IPv6 on all Power Platform and Dynamics 365 endpoints. If your organization network is configured to consume cloud services on IPv6, and clients prefer IPv6 over IPv4, your connections to Power Platform services happen using IPv6 protocol. Additionally, if you configured the endpoints owned by you in Power Platform and Dynamics 365 and such endpoints announce support for IPv6 connectivity (by DNS names resolving to IPv6 AAAA address), Power Platform and Dynamics 365 services start connecting to your endpoints using IPv6 protocol.  
+In December 2023, Microsoft published Power Platform IPv6 address ranges in Azure service tags with plans to introduce IPv6 support for Power Platform products and services. Starting from April 2024, selective Power Platform service endpoints start resolving to both IPv4 and IPv6 addresses with the goal to eventually enable IPv6 on all Power Platform and Dynamics 365 endpoints. If your organization network is configured to consume cloud services on IPv6, and clients prefer IPv6 over IPv4, your connections to Power Platform services happen using IPv6 protocol. Additionally, if you configured the endpoints owned by you in Power Platform and Dynamics 365 and such endpoints announce support for IPv6 connectivity (by DNS names resolving to IPv6 AAAA address), Power Platform and Dynamics 365 services start connecting to your endpoints using IPv6 protocol.  
 
 #### How can my organization be ready for this change?
 
@@ -135,7 +137,7 @@ More resources for IPv6 support:
 
 ## Ports
 
-Dataverse exposes ports *1433* and *5558* to expose the [Dataverse Tabular Data Stream](/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50). 
+Dataverse exposes ports *1433* and *5558* to expose the [Dataverse Tabular Data Stream](/openspecs/windows_protocols/ms-tds/893fcc7e-8a39-4b3c-815a-773b7b982c50). For Dataverse Tabular Data Stream connectivity, allow ports 1433 and 5558 together with the applicable IP ranges described in [IP addresses required](#ip-addresses-required).
 
 ### See also  
  [Plan for Deployment and Administration](../admin/plan-for-deployment-and-administration.md)  <br /> 

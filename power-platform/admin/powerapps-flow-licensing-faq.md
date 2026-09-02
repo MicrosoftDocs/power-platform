@@ -2,7 +2,7 @@
 title: Power Platform licensing FAQs
 description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: faq
-ms.date: 12/05/2025
+ms.date: 08/14/2026
 author: chrisgarty
 contributors:
   - Antoine2F
@@ -628,11 +628,9 @@ To find other frequently asked questions about credit management, go to [AI Buil
 
 ### How is AI Builder licensed?
 
-AI Builder is consuming AI Builder credits, or Copilot credits, depending on the context. You need such capacity available in your environment to run AI Builder features.  
+AI Builder consumes either AI Builder credits or Copilot Credits, depending on the context. You need to have this capacity available in your environment to run AI Builder features.
 
-In Power Apps or Power Automate cloud flows, AI Builder features consume AI Builder credits first, then, when absent or exhausted, try to consume Copilot credits.  
 
-In the context of Copilot Studio agents, or agent flows, AI Builder features always consume Copilot credits.
 
 For more information, go to the following resources:
 
@@ -642,7 +640,7 @@ For more information, go to the following resources:
 
 ### How is AI Builder capacity enforced?
 
-Whether using AI Builder credits, or Copilot credits, capacity is enforced on a monthly basis. Purchase capacity for the peak utilization monthly period.
+Whether you use AI Builder credits or Copilot Credits, capacity is enforced on a monthly basis. Purchase capacity for the peak utilization monthly period.
 
 - To learn more about AI Builder credit management and enforcement, go to [AI Builder licensing](https://go.microsoft.com/fwlink/?linkid=2239022).
 - For general information about how to allocate capacity to your environment, go to [Capacity add-ons](capacity-add-on.md).
@@ -651,11 +649,11 @@ Whether using AI Builder credits, or Copilot credits, capacity is enforced on a 
 
 Yes. AI Builder capacity can be added to the P1 and P2 plans for Power Apps and Power Automate for customers who haven't yet transitioned to the new Power Apps and Power Automate plans.
 
-### What are AI Builder credits and Copilot credits? How do they work?
+### What are AI Builder credits and Copilot Credits? How do they work?
 
 AI Builder includes several model types, including custom and prebuilt. For a full list, go to [Model types](/ai-builder/model-types#model-types).
 
-AI models consume AI Builder credits, or Copilot credits when they're used in an app, flow, or agent, or they're scheduled to periodically run. The amount of capacity consumed varies based on the AI model and the size and complexity of the data set.  
+AI models consume AI Builder credits, or Copilot Credits when they're used in an app, flow, or agent, or they're scheduled to periodically run. The amount of capacity consumed varies based on the AI model and the size and complexity of the data set.
 
 The currency depends on the context.
 

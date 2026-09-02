@@ -2,7 +2,7 @@
 title: "Workflow to write, deploy, debug, and troubleshoot X++ code across multiple environments"
 description: "Learn how to work over time with multiple unified development environments, ISV modules, and troubleshooting as you go."
 author: pathaku
-ms.date: 06/11/2024
+ms.date: 08/28/2026
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pathaku
@@ -89,6 +89,12 @@ Locate ModelUtil.exe inside the bin folder and run it from the command line to s
 >
 > Solution: Ensure/recreate the original package making sure that only one version of each model is present in the package at location  <OriginalPackage.zip>/AOSService/Packages/files/<model.version>.
 
+## Deploy packages while the environment is in administration mode
+
+The OnlineDev/UDE environment supports package deployment (code-only) in [administration mode](../../admin/admin-mode.md). This recovery path skips database synchronization. You can deploy a package with a fix before retrying to exit administration mode.
+
+For more information, see [Deploy packages to a unified developer environment in administration mode](finance-operations-deploy-admin-mode.md).
+
 ## Troubleshoot deployment or DBSync failures
 
 The package deployment could fail in various stages including DB sync, for various reasons including developer bugs. A link to download operation logs is available in the Visual Studio output pane. It's downloaded if there were failures, or if you enable the setting in **Tools> Options> Power Platform Tools**.
@@ -120,6 +126,7 @@ The logs are also written to Microsoft.PowerPlatformVSExtension*.log files in C:
 
 [Unified Development Experience for Finance and Operations | Dynamics 365 FastTrack Tech Talk](https://www.youtube.com/watch?v=OuEZ1rXkpYY)  
 [Write, deploy, and debug X++ code](finance-operations-debug.md)  
+[Deploy packages to a unified developer environment in administration mode](finance-operations-deploy-admin-mode.md)  
 [Unit testing in the unified developer experience](finance-operations-testing.md)  
 [Create and manage environments in the Power Platform admin center](/power-platform/admin/create-environment)  
 [Manage Dynamics 365 apps](../../admin/manage-apps.md)

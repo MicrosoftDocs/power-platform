@@ -2,7 +2,7 @@
 title: Manage costs for agents powered by the GitHub Copilot harness
 description: Learn how to control and monitor Copilot Credit consumption for agents powered by the GitHub Copilot harness.
 author: gmosleymsft
-ms.date: 08/14/2026
+ms.date: 08/28/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
@@ -78,7 +78,7 @@ To contain prepaid consumption, allocate a defined amount of Copilot Credits to 
 
 When you clear this option, the environment doesn't draw from unallocated prepaid capacity in the tenant after it consumes its allocation. If the environment is linked to a pay-as-you-go billing plan, usage can continue through the linked Azure subscription.
 
-For complete capacity management instructions, see [Manage Copilot Studio credits and capacity](manage-copilot-studio-messages-capacity.md#manage-capacity).
+For complete capacity management instructions, see [Manage Copilot Credits and capacity for Copilot Studio](manage-copilot-studio-copilot-credits-capacity.md#manage-capacity).
 
 > [!NOTE]
 > When an environment has no available Copilot Credits, experiences that require credits can stop working. This limitation can affect both makers and end users. For more information, see [Enforcement policy for agents consuming Copilot Credits](/microsoft-copilot-studio/agents-experience/enforcement-policy-credits).
@@ -97,7 +97,7 @@ Use an agent-level limit when you need more granular control than the environmen
 
 :::image type="content" source="media/manage-usage-github-copilot-harness/agent-monthly-limit.png" alt-text="Screenshot of managing agent capacity by setting a monthly limit in Power Platform admin center." lightbox="media/manage-usage-github-copilot-harness/agent-monthly-limit.png":::
 
-Review agent limits regularly and adjust them based on expected business demand. For more information, see [Manage monthly consumption limits for Copilot Studio agents](manage-copilot-studio-messages-capacity.md#manage-monthly-consumption-limits-for-copilot-studio-agents).
+Review agent limits regularly and adjust them based on expected business demand. For more information, see [Manage monthly consumption limits for Copilot Studio agents](manage-copilot-studio-copilot-credits-capacity.md#manage-monthly-consumption-limits-for-copilot-studio-agents).
 
 ## Manage allocations across many environments
 
@@ -110,7 +110,13 @@ Automated allocation is useful when you:
 - Configure capacity as part of an environment provisioning process.
 - Periodically reconcile new or changed environments.
 
-For authentication requirements and PowerShell, C#, and Python examples, see [Manage Copilot credit allocations programmatically](programmability-tutorial-manage-copilot-credit-allocations.md).
+For authentication requirements and PowerShell, C#, and Python examples, see [Manage Copilot Credits allocations programmatically](programmability-tutorial-manage-copilot-credit-allocations.md).
+
+Use the **Cost controls - Draw from tenant credit pool** [environment groups](/power-platform/admin/environment-groups) rule to control whether environments in a group can use unallocated Copilot Credits from the tenant pool. When enabled, an environment can draw from the tenant pool after it exhausts its allocation or when no allocation is set.
+
+For eligible Copilot Studio environments, **Draw from the available capacity in my tenant** is selected by default when no allocation configuration exists. Clear this option to cap prepaid consumption at the environment's allocation. If the environment has no allocation, it can't consume prepaid capacity from the tenant pool. Usage can still continue through a linked pay-as-you-go billing plan.
+
+When you publish a rule, it governs every environment in the group. The environment-level setting becomes read-only in the Power Platform admin center, and programmatic requests can't override it. To retain environment-level control, don't publish the rule for that group, or remove the environment from the group. After removal, the environment retains the last value applied by the group, but the setting becomes editable.
 
 ## Manage pay-as-you-go costs
 
@@ -139,19 +145,29 @@ Review environment and agent consumption together. A tenant-level total alone mi
 
 Discrete costs aren't attributed to individual makers or end users. Copilot Studio usage is billed at the environment and agent level, not at the user level. Use permissions to control who builds and runs agents, and use environment and agent limits to contain consumption.
 
-For information about the available views, see [Manage Copilot Studio credits and capacity](manage-copilot-studio-messages-capacity.md).
+For information about the available views, see [Manage Copilot Credits and capacity for Copilot Studio](manage-copilot-studio-copilot-credits-capacity.md).
 
 ## Identify and count agents created through the GitHub Copilot harness
 
 You can see a breakdown of agents created through the GitHub Copilot harness in Power Platform inventory.
 
-Use the `properties.isCLIAgent` field to identify these agents through:
+### Use the Harness column in the Power Platform admin center
 
-- Azure Resource Graph
-- Power Platform API
-- Power Platform for Admins V2 connector
+The fastest way to identify these agents is the **Harness** column in the agent inventory.
 
-For a ready-to-run Azure Resource Graph query, see [Count agents by harness](inventory-sample-queries.md#count-agents-by-harness). For the field definition, see [Copilot Studio agents in the inventory schema](inventory-schema.md#copilot-studio-agents).
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. In the navigation pane, select **Manage** > **Copilot Studio**.
+1. Filter the **Harness** column to **GitHub Copilot**.
+
+The column shows which harness each agent is built with: **GitHub Copilot**, **Standard**, or **Copilot Chat**. Only agents with the **GitHub Copilot** value use consumption-based billing for all activity.
+
+For more information, see [Harness](/microsoft-copilot-studio/admin-agent-inventory#harness) in the Copilot Studio agent inventory schema.
+
+### Query the inventory programmatically
+
+**Harness** is currently a user interface column only.
+
+For ready-to-run queries and instructions for running them, see [Count agents by harness](inventory-sample-queries.md#count-agents-by-harness) and [List agents with their harness](inventory-sample-queries.md#list-agents-with-their-harness).
 
 ## Coordinate capacity across admin centers
 
@@ -195,6 +211,6 @@ Before that date:
 
 - [Overview of billing for agents powered by the GitHub Copilot harness](/microsoft-copilot-studio/agents-experience/billing-credit-overview)
 - [Purchase and manage Copilot Credits](/microsoft-copilot-studio/agents-experience/billing-manage-buy-credits)
-- [Manage Copilot Studio credits and capacity](manage-copilot-studio-messages-capacity.md)
-- [Manage Copilot credit allocations programmatically](programmability-tutorial-manage-copilot-credit-allocations.md)
+- [Manage Copilot Credits and capacity for Copilot Studio](manage-copilot-studio-copilot-credits-capacity.md)
+- [Manage Copilot Credits allocations programmatically](programmability-tutorial-manage-copilot-credit-allocations.md)
 - [Power Platform inventory](power-platform-inventory.md)

@@ -19,6 +19,8 @@ The internal audit team includes more than 100 auditors working across multiple 
 
 To address these challenges, Grupo Bimbo built two AI-powered agents using Microsoft Copilot Studio. This case study shows how Grupo Bimbo uses the Comatrix and Audit Assist agents to standardize audit workflows, help auditors work more efficiently, and scale expertise across a global audit team.
 
+Read the full story: [Grupo Bimbo cuts audit times by 20% with agents built in Microsoft Copilot Studio, deployed through Microsoft 365 Copilot](https://www.microsoft.com/customers/story/26762-grupo-bimbo-microsoft-365-copilot)
+
 ## Business challenges
 
 Grupo Bimbo's auditors relied heavily on manual searches in SharePoint to find audit methodologies, templates, and procedural guidance. Although documentation was centralized, locating the correct and most up-to-date information often took significant time and effort. Auditors also found it difficult to confirm whether they were using the latest approved templates and procedures, which led to rework when outdated formats were discovered late in the audit process.

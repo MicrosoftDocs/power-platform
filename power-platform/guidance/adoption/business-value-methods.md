@@ -16,7 +16,7 @@ ms.component: pa-admin
 ms.topic: concept-article
 ms.date: 05/14/2025
 ms.subservice: guidance
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType:
   - admin
 ms.custom:

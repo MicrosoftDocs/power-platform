@@ -137,36 +137,11 @@ Depending on the environment type, the environment location varies.
 |Type  |Location information  |
 |---------|---------|
 |Production  |Set by user at creation time. |
-|Default   |Set to the tenant home location. To modify this, see [Preferred environment location](#preferred-environment-location).|
+|Default   |Set to the tenant home location.|
 |Sandbox  |Set by user at creation time. |
 |Trial    |Set by user at creation time. |
-|Developer |If created through the admin portal, the location can be specified during creation. If created during [sign-up](/powerapps/maker/developer-plan), it's set to tenant home location. To modify, see [Preferred environment location](#preferred-environment-location).  |
-|Microsoft Dataverse for Teams |Set to the tenant home location. To modify this, see [Preferred environment location](#preferred-environment-location). |
-
-### Preferred environment location
-
-If you want Teams environments and developer environments (created on sign-up) to be created in a location different from the tenant location, you can set the **Preferred environment location** for your tenant using the [Power Platform PowerShell commandlets](powerapps-powershell.md). This change doesn't update existing environments and applies to new environments created after the change only. These settings can be found under **Settings > PowerPlatform > Environments**.
-
-Note that the **Preferred environment location** is honored with macro regions, as well.  
-
-```PowerShell
-$requestBody = [pscustomobject]@{
-powerPlatform = [pscustomobject]@{
-environments = [pscustomobject]@{
-preferredEnvironmentLocation = "unitedstates"
-}
-}
-}
-Set-TenantSettings -RequestBody $requestBody
-```
-If you have an [Office 365 multi-geo tenant ](/microsoft-365/enterprise/microsoft-365-multi-geo?view=o365-worldwide&preserve-view=true), you must set **settings.powerPlatform.powerApps.environments.disablePreferredDataLocationForTeamsEnvironment** to **true** for the **Preferred environment location** value to be used.
-
-```PowerShell
-$settings = Get-TenantSettings 
-$settings.powerPlatform.environments.disablePreferredDataLocationForTeamsEnvironment = $true
-Set-TenantSettings -RequestBody $settings
-```
-Updating this value updates the default location that is populated in the Power Platform admin center create environment experience.
+|Developer |If you create the environment through the admin portal, you can specify the location during creation. If you create the environment during [sign-up](/powerapps/maker/developer-plan), it's set to tenant home location.|
+|Microsoft Dataverse for Teams |Set to the tenant home location.  |
 
 ### Environment history
 

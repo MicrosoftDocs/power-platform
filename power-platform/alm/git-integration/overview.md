@@ -15,9 +15,9 @@ ms.contributors:
 
 # Overview of Git integration in Power Platform
 
-Source control integration allows development teams to sync solutions and solution objects across one or more Microsoft Dataverse environments using an Azure DevOps Git repository. The source control integration functionality is available natively within the solutions experiences, ensuring citizen developers, code-first developers, and administrators can benefit from version control, change tracking, and seamless team collaboration across different tools and environments. Git integration is intended to be used with developer environments and not in your test or production environments where deployments can be made using builds to create solution artifacts and pipelines in Power Platform to deploy.
+Source control integration enables development teams to sync solutions and solution objects across one or more Microsoft Dataverse environments by using a supported Git provider, such as Azure DevOps or GitHub. The solutions experiences natively provide the source control integration functionality, so citizen developers, code-first developers, and administrators can all benefit from version control, change tracking, and seamless team collaboration across different tools and environments. Use Git integration with developer environments, not in your test or production environments. Use builds to create solution artifacts and pipelines in Power Platform to deploy.
 
-In this article, you find some of the key concepts and benefits to using Git-enabled source control with your Dataverse environments and solutions. For information about Git in Azure DevOps, go to [Azure DevOps Git repository](/azure/devops/repos/get-started/what-is-repos).
+This article explains some of the key concepts and benefits of using Git-enabled source control with your Dataverse environments and solutions. For information about Git in Azure DevOps, see [Azure DevOps Git repository](/azure/devops/repos/get-started/what-is-repos). For information about GitHub repositories, see [About repositories](https://docs.github.com/repositories/creating-and-managing-repositories/about-repositories).
 
 :::image type="content" source="media/GitIntegrationFlow.png" alt-text="Makers in their environments can make changes to an unmanaged solution and commit to Git before deploying with pipelines" lightbox="media/GitIntegrationFlow.png":::
 
@@ -63,6 +63,8 @@ The recommended approach is to build code-first objects as part of a solution bu
 
 ## Next steps
 
-[Dataverse Git integration setup](/power-platform/alm/git-integration/connecting-to-git)  
+- [Connect Dataverse Git integration to a Git provider](connecting-to-git.md)
+- [Connect Dataverse Git integration to Azure DevOps](connecting-to-azure-devops.md)
+- [Connect Dataverse Git integration to GitHub](connecting-to-github.md)
 
 [!INCLUDE[footer-include](../../includes/footer-banner.md)]

@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType: 
   - admin
 ms.custom: sfi-ga-nochange

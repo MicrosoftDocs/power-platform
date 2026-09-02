@@ -6,7 +6,7 @@ ms.topic: how-to
 ms.date: 04/20/2026
 ms.subservice: guidance-toolkit
 ms.author: conorto
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ---
 
 # Extend and customize CoE Starter Kit components

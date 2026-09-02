@@ -20,6 +20,8 @@ To streamline this work, Dunaway built a Microsoft Copilot Studio conversational
 
 This case study highlights how an AI-powered agent, called Atlas, provides a faster, more reliable way to access critical information, allowing teams to focus on design quality and delivering exceptional client service.
 
+Read the full story: [Dunaway automation and productivity with Microsoft Power Platform and Copilot Studio](https://www.microsoft.com/customers/story/25879-dunaway-microsoft-copilot-studio)
+
 ## Business challenges
 
 Dunaway's engineers spent more than 10,000 hours each year manually searching, viewing, and interpreting regulatory documents across all the cities in which they operate. The volume and complexity of city, county, and state codes made the work slow and difficult.

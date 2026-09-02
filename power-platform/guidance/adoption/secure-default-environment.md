@@ -4,9 +4,9 @@ description: Learn how to secure the default Power Platform environment while ma
 #customer intent: As a Power Platform admin, I want to secure the default environment so that I can maintain accessibility for makers' personal productivity needs.  
 author: rranjit83
 ms.author: rranjit
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ms.topic: how-to
-ms.date: 05/14/2025
+ms.date: 08/26/2026
 ms.subservice: guidance
 contributors:
   - arjunmayur
@@ -127,6 +127,17 @@ Use the following PowerShell cmdlets to customize the [governance policy message
 |---------|---------|
 | Set-PowerAppDlpErrorSettings | Set governance message |
 | Set-PowerAppDlpErrorSettings | Update governance message |
+
+### Create a data policy for the default environment
+
+If the default environment is a [managed environment](../../admin/managed-environment-enable.md), prevent agents, apps, and flows from calling any service:
+
+- **Scope**: Default environment only.
+- **Business**: Empty.
+- **Non-Business**: Empty.
+- **Blocked**: All connectors. Blocking all connectors is available via [advanced connector policies (ACP)](../../admin/advanced-connector-policies.md). Learn more in [Advanced connector policies – Known limitations](../../admin/advanced-connector-policies.md#known-limitations).
+
+If you can't enable managed environments for the default environment, follow the other recommendations in this section: [block new connectors](#block-new-connectors-in-the-default-environment), [limit makers to prebuilt connectors](#limit-makers-to-prebuilt-connectors), and [limit custom connectors](#limit-custom-connectors).
 
 ### Block new connectors in the default environment
 

@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/manage-copilot-studio-messages-capacity.md",
+      "redirect_url": "/power-platform/admin/manage-copilot-studio-copilot-credits-capacity",
+      "redirect_document_id": "false"
+    },
+    {
       "source_path": "power-platform/admin/cmk-migrate-from-byok.md",
       "redirect_url": "power-platform/admin/customer-managed-key",
       "redirect_document_id": "false"
@@ -2162,7 +2167,16 @@
       "source_path": "power-platform/test-engine/yaml.md",
       "redirect_url": "/power-platform/important-changes-coming#deprecation-of-test-engine",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/architecture/reference-architectures/ai-document-processing.md",
+      "redirect_url": "/ai-builder/overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/guidance/white-papers/migrating-from-default-environment.md",
+      "redirect_url": "/power-platform/admin/move-apps-from-default-environment",
+      "redirect_document_id": false
     }
   ]
 }
-

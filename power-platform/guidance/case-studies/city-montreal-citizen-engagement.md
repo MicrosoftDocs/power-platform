@@ -22,6 +22,8 @@ In this case study, you learn:
 - How to extend analytics beyond Microsoft Copilot Studio
 - How Copilot Studio supports connected communities
 
+Read the full story: [City of Montréal supports citizens with a virtual agent built using Microsoft Copilot Studio](https://www.microsoft.com/customers/story/25186-city-of-montreal-agents)
+
 ## Challenges
 
 The City of Montréal is committed to providing citizens with fast, efficient access to information and support services. Residents rely on timely, relevant information delivered through multiple channels, including the public website and call center. The website averages over 50,000 visitors a day. With over 40,000 pages of content, finding the right information can be challenging.

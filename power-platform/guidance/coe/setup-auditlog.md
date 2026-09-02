@@ -8,7 +8,7 @@ ms.date: 04/20/2026
 ms.update-cycle: 3650-days
 ms.subservice: guidance-toolkit
 ms.author: mapichle
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange

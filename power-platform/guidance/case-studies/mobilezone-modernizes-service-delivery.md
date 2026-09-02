@@ -18,6 +18,8 @@ The transformation centered on building two AI agents using Microsoft Copilot St
 
 This case study highlights how mobilezone designed and built two Copilot Studio agents while establishing a repeatable architecture for future AI agents.
 
+Read the full story: [mobilezone switches on an agentic transformation with Microsoft Copilot Studio](https://www.microsoft.com/customers/story/26389-mobilezone-dynamics-365-customer-service)
+
 ## Business challenges
 
 Leadership at mobilezone faced growing pressure on both their customer service channels and internal IT support processes. On the customer side, rising inquiry volumes exposed the limits of its legacy website chatbot, which struggled with multilingual support, delivered inconsistent answers, and lacked integration with Dynamics 365. As a result, it couldn't provide accurate product or pricing information, leading to frequent escalations to an external contact center and higher costs.

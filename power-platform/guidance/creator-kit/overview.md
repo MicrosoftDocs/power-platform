@@ -7,7 +7,7 @@ ms.topic: overview
 ms.date: 08/12/2024
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: tapanm
+ms.reviewer: edoyle
 search.audienceType: 
   - maker
 contributors:
@@ -63,7 +63,7 @@ If you face issues with:
 
 - **Using the kit components**, [report your issue](https://aka.ms/Creator-Kit-Issues) (requires GitHub account)
 
-- **Features in Microsoft Power Platform**, use your standard channel to contact Microsoft Support. See guidance on contacting support for [admins]() and [makers](https://powerapps.microsoft.com/en-us/support/).
+- **Features in Microsoft Power Platform**, use your standard channel to contact Microsoft Support. See guidance on contacting support for [admins](../../admin/get-help-support.md) and [makers](https://powerapps.microsoft.com/en-us/support/).
 
 If you are not sure if you're experiencing an issue with the Creator Kit or the platform, [report the issue on the GitHub](https://aka.ms/Creator-Kit-Issues) first and our team will triage the issue.
 

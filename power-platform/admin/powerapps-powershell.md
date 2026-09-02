@@ -345,7 +345,7 @@ Get-AdminPowerAppSharepointFormEnvironment 
 This command returns the `EnvironmentName` for the environment currently designated for newly created SharePoint custom forms. If an environment has never been designated, the default environment is returned.
 
 ```powershell
-Set-AdminPowerAppSharepointFormEnvironment -EnvironmentName 'EnvironmentName' 
+Set-AdminPowerAppSharepointFormEnvironment -EnvironmentName 'EnvironmentName'
 ```
 
 This command designates the environment newly created SharePoint custom forms save to, instead of the default environment. Existing custom forms don't automatically migrate to the newly designated environment. Only production environment can be designated for SharePoint custom forms.  

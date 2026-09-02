@@ -8,7 +8,7 @@ ms.topic: how-to
 ms.date: 05/14/2025
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType:
   - admin
 ms.custom:
@@ -132,10 +132,6 @@ If you get an error message telling you the PowerShell script can't be loaded as
 ### My tenant uses SharePoint vanity URLs
 
 Some organizations use vanity URLs. If you're one of those organizations, make sure to hard code the URLs in the `$adminURL` and `$newSiteURL` variables of the scripts. This step ensures the script connects to the correct tenant and site.
-
-### Still experiencing issues?
-
-If you continue to face issues with the setup, have questions, or would like to raise feature requests, report your issues to [aka.ms/pphub-issues](https://aka.ms/pphub-issues).
 
 ## Modify existing content
 

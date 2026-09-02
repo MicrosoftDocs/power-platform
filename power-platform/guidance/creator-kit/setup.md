@@ -7,7 +7,7 @@ ms.topic: install-set-up-deploy
 ms.date: 05/16/2022
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: tapanm
+ms.reviewer: edoyle
 search.audienceType: 
   - maker
 contributors:

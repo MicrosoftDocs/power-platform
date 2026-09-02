@@ -79,8 +79,6 @@
               href: reference-architectures/analyze-agent-conversation-transcripts.md
             - name: Perform predictive data analysis
               href: reference-architectures/ai-predictive-data-analysis.md
-            - name: Streamline document processing with AI Builder
-              href: reference-architectures/ai-document-processing.md
             - name: Use Copilot Studio agents in model-driven apps
               href: reference-architectures/contextual-ai-model-driven-app.md
         - name: Manage data with Dataverse
@@ -109,6 +107,8 @@
               href: reference-architectures/outlook-canvas-app.md
         - name: Build and extend apps
           items:
+            - name: Connect Power Apps to a centralized data warehouse with Dataverse virtual tables
+              href: reference-architectures/power-apps-virtual-tables.md
             - name: Optimize performance of canvas apps requiring complex logic
               href: reference-architectures/optimize-performance-canvas-apps.md
             - name: Upload files to SharePoint with metadata from model‑driven apps
@@ -133,6 +133,8 @@
           items:
             - name: Automate enterprise Power Platform ALM
               href: reference-architectures/enterprise-power-platform-alm.md
+            - name: Manage SharePoint document visibility in Dataverse solutions
+              href: reference-architectures/sharepoint-dataverse-security.md
             - name: Secure Power Platform access to resources
               href: reference-architectures/secure-access-azure-resources.md
     - name: Solution ideas

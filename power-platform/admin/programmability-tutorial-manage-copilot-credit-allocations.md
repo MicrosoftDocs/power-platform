@@ -1,34 +1,38 @@
 ---
-title: Manage Copilot credit allocations programmatically
-description: Learn how to view available Copilot credits, allocate them to environments, and control whether an environment draws from tenant capacity by using the Power Platform API and the administration (Admin) SDKs for PowerShell, C#, and Python.
+title: Manage Copilot Credits allocations programmatically
+description: Learn how to view available Copilot Credits, allocate them to environments, and control whether an environment draws from tenant capacity by using the Power Platform API and the administration (Admin) SDKs for PowerShell, C#, and Python.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/11/2026
+ms.date: 08/28/2026
 author: laneswenka
 ms.author: laswenka
 ms.reviewer: ellenwehrle
 ms.subservice: admin
+ai-usage: ai-assisted
 search.audienceType:
   - admin
 ---
 
-# Tutorial: Manage Copilot credit allocations programmatically
+# Tutorial: Manage Copilot Credits allocations programmatically
 
-Copilot credits fund agent and Copilot usage that you build with Copilot Studio across your Power Platform environments. As an administrator, you allocate credits to the environments that need them and decide what happens when an environment runs out of its allocated credits. In addition to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) experience, you can manage Copilot credit allocations with code by using the [Power Platform API](/rest/api/power-platform/) and the administration (Admin) SDKs. Automating credit allocation is useful when you distribute capacity across many environments, standardize overage behavior, or manage allocations as part of a deployment pipeline.
+Copilot Credits fund agent and Copilot usage that you build with Copilot Studio across your Power Platform environments. As an administrator, you allocate credits to the environments that need them and decide what happens when an environment runs out of its allocated credits. In addition to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) experience, you can manage Copilot credit allocations with code by using the [Power Platform API](/rest/api/power-platform/) and the administration (Admin) SDKs. Automating credit allocation is useful when you distribute capacity across many environments, standardize overage behavior, or manage allocations as part of a deployment pipeline.
 
 In this tutorial, learn how to:
 
 > [!div class="checklist"]
 >
-> - Manage Copilot credits in the Power Platform admin center.
+> - Manage Copilot Credits in the Power Platform admin center.
 > - Authenticate by using Power Platform API.
-> - View the Copilot credits available to allocate.
-> - Allocate Copilot credits to an environment.
+> - View the Copilot Credits available to allocate.
+> - Allocate Copilot Credits to an environment.
 > - Control whether an environment draws from tenant capacity.
 
-Copilot credits are represented by the entitlement ID `MCSMessages` and are managed through the `licensing/allocationsV2` operations of the Power Platform API. The `allocationsV2/availability` operation reports how much capacity is available to allocate, and the `allocationsV2` operation writes an environment's allocation. All programmatic examples in this article use API version `2024-10-01`.
+Copilot Credits are represented by the entitlement ID `MCSMessages` and are managed through the `licensing/allocationsV2` operations of the Power Platform API. The `allocationsV2/availability` operation reports how much capacity is available to allocate, and the `allocationsV2` operation writes an environment's allocation. All programmatic examples in this article use API version `2024-10-01`.
 
 Each environment allocation carries a set of *enforcement rules* that determine what happens when the environment consumes its allocated credits. The **Draw from the available capacity in my tenant** option in the admin center maps to the `TenantPool` enforcement rule: when it's enabled, the environment continues to draw from unallocated tenant capacity after its own allocation is exhausted; when it's disabled, the environment is capped at its allocation.
+
+> [!WARNING]
+> If a published [environment group rule](environment-groups.md#rules) governs **Draw from the available capacity in my tenant**, you can't override the setting for an individual environment. Updates through the Power Platform admin center, Power Platform API, or administration SDKs are rejected with the `TenantPoolLockedByPolicy` error. Change and republish the rule for the environment group, or [remove the environment from the group](environment-groups.md#remove-an-environment-from-your-environment-group) to manage the setting independently. After removal, the environment retains the value last applied by the group, but the setting becomes editable. For more information about available group rules, see [Rules for environment groups](environment-groups-rules.md).
 
 ## Prerequisites
 
@@ -62,7 +66,7 @@ This section shows the same end-to-end flow—check what's available, allocate c
 
    :::image type="content" source="media/programmability-manage-copilot-credits-select-environment.png" alt-text="Screenshot of the Manage capacity pane with an environment selected from the list.":::
 
-1. Under **Allocate capacity**, enter the number of Copilot credits to allocate to the environment. The pane shows how many credits are consumed, how many are already allocated, and how many are available to be allocated from your tenant.
+1. Under **Allocate capacity**, enter the number of Copilot Credits to allocate to the environment. The pane shows how many credits are consumed, how many are already allocated, and how many are available to be allocated from your tenant.
 
 1. Under **Capacity overages**, select or clear **Draw from the available capacity in my tenant** to control what happens when the environment exhausts its allocation:
 
@@ -75,7 +79,7 @@ This section shows the same end-to-end flow—check what's available, allocate c
 
 # [PowerShell](#tab/powershell)
 
-The following example signs in interactively as the current user, reads the Copilot credits available to allocate, allocates credits to an environment, and turns off **Draw from the available capacity in my tenant** so the environment is capped at its allocation.
+The following example signs in interactively as the current user, reads the Copilot Credits available to allocate, allocates credits to an environment, and turns off **Draw from the available capacity in my tenant** so the environment is capped at its allocation.
 
 ```powershell
 # Requires the MSAL.PS module: Install-Module MSAL.PS -Scope CurrentUser
@@ -91,7 +95,7 @@ $apiVersion    = "2024-10-01"
 $auth = Get-MsalToken -ClientId $clientId -TenantId $tenantId -Scope "https://api.powerplatform.com/.default" -Interactive
 $headers = @{ Authorization = "Bearer $($auth.AccessToken)" }
 
-# 1. View the Copilot credits available to allocate for the environment
+# 1. View the Copilot Credits available to allocate for the environment
 $filter = [uri]::EscapeDataString("environmentId eq '$environmentId' and EntitlementId in ('MCSMessages')")
 $availability = Invoke-RestMethod -Method Get `
     -Uri "$apiBaseUrl/licensing/allocationsV2/availability?api-version=$apiVersion&`$filter=$filter" `
@@ -99,7 +103,7 @@ $availability = Invoke-RestMethod -Method Get `
 $availability.entitlementAllocationsAvailable |
     ForEach-Object { Write-Host "$($_.entitlementId): $($_.availableQuantity) available" }
 
-# 2. Allocate Copilot credits to the environment and turn off tenant capacity draw
+# 2. Allocate Copilot Credits to the environment and turn off tenant capacity draw
 $allocationBody = @{
     scope = @{ environmentId = $environmentId }
     allocatedEntitlements = @(
@@ -123,7 +127,7 @@ Write-Host "Updated Copilot credit allocation for environment $environmentId"
 
 # [C#](#tab/csharp)
 
-The following example signs in interactively by using your app registration's client ID, reads the Copilot credits available to allocate, allocates credits to an environment, and turns off **Draw from the available capacity in my tenant** so the environment is capped at its allocation.
+The following example signs in interactively by using your app registration's client ID, reads the Copilot Credits available to allocate, allocates credits to an environment, and turns off **Draw from the available capacity in my tenant** so the environment is capped at its allocation.
 
 ```csharp
 using Microsoft.PowerPlatform.Management;
@@ -137,7 +141,7 @@ var client = factory.Create("YOUR_CLIENT_ID");
 var environmentId = "<environment ID>";
 var apiVersion = "2024-10-01";
 
-// 1. View the Copilot credits available to allocate for the environment
+// 1. View the Copilot Credits available to allocate for the environment
 var availability = await client.Licensing.AllocationsV2.Availability.GetAsync(config =>
 {
     config.QueryParameters.ApiVersion = apiVersion;
@@ -150,7 +154,7 @@ foreach (var entitlement in availability.EntitlementAllocationsAvailable)
     Console.WriteLine($"{entitlement.EntitlementId}: {entitlement.AvailableQuantity} available");
 }
 
-// 2. Allocate Copilot credits to the environment and turn off tenant capacity draw
+// 2. Allocate Copilot Credits to the environment and turn off tenant capacity draw
 var request = new AllocationPutRequestModel
 {
     Scope = new ScopeModel { EnvironmentId = environmentId },
@@ -183,7 +187,7 @@ Console.WriteLine($"Updated Copilot credit allocation for environment {environme
 
 # [Python](#tab/python)
 
-The following example signs in interactively by using your app registration's client ID, reads the Copilot credits available to allocate, allocates credits to an environment, and turns off **Draw from the available capacity in my tenant** so the environment is capped at its allocation.
+The following example signs in interactively by using your app registration's client ID, reads the Copilot Credits available to allocate, allocates credits to an environment, and turns off **Draw from the available capacity in my tenant** so the environment is capped at its allocation.
 
 ```python
 import asyncio
@@ -213,7 +217,7 @@ API_VERSION = "2024-10-01"
 
 
 async def manage_copilot_credits(client: ServiceClientBase, environment_id: str):
-    # 1. View the Copilot credits available to allocate for the environment
+    # 1. View the Copilot Credits available to allocate for the environment
     query_params = AvailabilityRequestBuilder.AvailabilityRequestBuilderGetQueryParameters(
         api_version=API_VERSION,
         filter=f"environmentId eq '{environment_id}' and EntitlementId in (MCSMessages)",
@@ -224,7 +228,7 @@ async def manage_copilot_credits(client: ServiceClientBase, environment_id: str)
     for entitlement in availability.entitlement_allocations_available:
         print(f"{entitlement.entitlement_id}: {entitlement.available_quantity} available")
 
-    # 2. Allocate Copilot credits to the environment and turn off tenant capacity draw
+    # 2. Allocate Copilot Credits to the environment and turn off tenant capacity draw
     # Disable TenantPool so the environment is capped at its allocation.
     # Set enabled = True to let the environment draw from tenant capacity.
     tenant_pool_rule = AllocationEnforcementRule()

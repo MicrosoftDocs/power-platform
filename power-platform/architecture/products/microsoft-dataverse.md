@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 08/11/2026
+ms.date: 08/25/2026
 ---
 
 # Microsoft Dataverse reference architectures and solution ideas
@@ -36,9 +36,9 @@ Understanding reference architectures and exploring solution ideas can help you 
 
 | Title | Description |
 | --- | --- |
-| [**Streamline document processing with AI Builder**](../reference-architectures/ai-document-processing.md) | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. |
 | [**Perform predictive data analysis using Dataverse, Fabric, and Azure AI services**](../reference-architectures/ai-predictive-data-analysis.md) | Learn best practices for data ingestion, model training, and visualization that help you build robust predictive models and gain actionable insights. |
 | [**Integrate legacy data with Power Automate and SharePoint**](../reference-architectures/app-legacy-data-integration.md) | Streamline the process of integrating legacy data with modern platforms. |
+| [**Manage SharePoint document visibility in Dataverse solutions**](../reference-architectures/sharepoint-dataverse-security.md) | Reduce the risk of oversharing SharePoint documents associated with Dataverse records while preserving native document management capabilities. |
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | [**Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | [**Use Dataverse as a data source for canvas apps**](../reference-architectures/dataverse-canvas-app.md) | Create a Power Apps canvas app that uses Dataverse as a data source helps build a more custom user experience. |
@@ -50,8 +50,9 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Synchronize data across Dataverse environments using Power Platform**](../reference-architectures/sync-dataverse-data.md) | Manage master data across two Dataverse environments using Power Automate cloud flows and Power Platform dataflows. |
 | [**Automate service order lifecycle and SLA governance with Power Platform**](../reference-architectures/service-order-process.md) | Design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |
 | [**Automate deployments with Dataverse Git integration and pipelines in Power Platform**](../reference-architectures/enterprise-power-platform-alm.md) | Streamline Power Platform development and releases by integrating Dataverse Git, pipelines in Power Platform, and AI-assisted governance. |
-| [**Integrate Dataverse with enterprise data in Microsoft Fabric using a medallion architecture**](../reference-architectures/enterprise-data-fabric-dataverse.md)** | Integrate Dataverse with enterprise data in Microsoft Fabric to build a governed analytics platform using a bronze, silver, gold medallion approach. |
+| [**Integrate Dataverse with enterprise data in Microsoft Fabric using a medallion architecture**](../reference-architectures/enterprise-data-fabric-dataverse.md) | Integrate Dataverse with enterprise data in Microsoft Fabric to build a governed analytics platform using a bronze, silver, gold medallion approach. |
 | [**Integrate finance and operations data with Dataverse**](../reference-architectures/finance-and-operations-dataverse.md) | Integrate Dynamics 365 finance and operations apps with Power Platform and Azure services to support engineer-to-order estimation, customer-specific pricing, quoting, and production planning. |
+| [**Connect Power Apps to a centralized data warehouse with Dataverse virtual tables**](../reference-architectures/power-apps-virtual-tables.md) | Connect Power Apps to a centralized data warehouse through Dataverse virtual tables to use consolidated enterprise data alongside operational records stored in Dataverse. |
 
 ## Solution ideas
 

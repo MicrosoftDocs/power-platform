@@ -21,6 +21,8 @@ Ajith Haripaul, EY Global Controlling Transformation Leader, challenged members 
 
 Given their previous experience, they felt that increasing the percentage of automatically matched and cleared payments from 30% to 80% globally was an achievable goal.
 
+Read the full story: [EY transforms its global finance operations with innovative apps and AI-driven agents using Power Platform](https://www.microsoft.com/customers/story/25760-ey-global-services-limited-microsoft-power-platform)
+
 ## Implementation approach
 
 After brainstorming how to solve the problem, the project team identified five key technical requirements for the solution, all of which could be addressed using Power Platform capabilities.

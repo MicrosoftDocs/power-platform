@@ -2,13 +2,13 @@
 title: Digitizing the Digital Transformation Platform at Microsoft
 description: Explore the Success Hub co-development model, enabling scalable app development while maintaining governance and collaboration across teams.
 #customer intent: As a business decision maker, I want to understand how Microsoft digitizes app development so that I can apply similar strategies to my organization.  
-author: kathyos
+author: manuelap-msft 
+ms.author: mapichle
 ms.component: pa-admin
 ms.topic: article
 ms.date: 05/14/2025
 ms.subservice: guidance
-ms.author: kathyos
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 search.audienceType:
   - admin
 ms.custom:

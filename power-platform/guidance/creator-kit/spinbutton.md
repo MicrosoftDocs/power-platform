@@ -7,7 +7,7 @@ ms.topic: concept-article
 ms.date: 01/30/2023
 ms.subservice: guidance-toolkit
 ms.author: demora
-ms.reviewer: tapanm
+ms.reviewer: edoyle
 search.audienceType: 
   - maker
 contributors:

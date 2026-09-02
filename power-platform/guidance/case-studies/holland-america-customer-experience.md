@@ -28,6 +28,8 @@ A chatbot typically directs customers to web pages, where they must complete for
 >
 > — *Scott Pettit, Senior Director of E-Commerce, Holland America Line*
 
+Read the full story: [Holland America Line sees signs of more informed purchasing with Copilot Studio agent](https://www.microsoft.com/customers/story/23524-holland-america-line-microsoft-copilot-studio)
+
 ## Solution
 
 The company's goals were to simplify the global customer journey, make the experience more self-service, provide generative AI assistance, connect to the cruise search API, and ensure all-hours availability.

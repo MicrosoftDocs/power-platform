@@ -237,7 +237,7 @@ Check that the `solutions/<name>/` folder exists and that all paths in `solution
 
 ## Relationship to Dataverse Git integration
 
-The YAML source control format is the canonical format used by [Dataverse Git integration](git-integration/overview.md). When makers commit solutions from Power Apps, the files written to Azure DevOps use this format. Code-first developers can work with the same repository using the CLI tools described here.
+The YAML source control format is the canonical format used by [Dataverse Git integration](git-integration/overview.md). When makers commit solutions from Power Apps, the files written to the Git provider use this format. Code-first developers can work with the same repository using the CLI tools described here.
 
 For information about connecting environments to Git, see [Dataverse Git integration setup](git-integration/connecting-to-git.md).
 
@@ -245,8 +245,8 @@ For information about connecting environments to Git, see [Dataverse Git integra
 
 - [SolutionPackager tool](solution-packager-tool.md)
 - [Source control with solution files](use-source-control-solution-files.md)
-- [pac solution pack](../developer/cli/reference/solution.md#pac-solution-pack)
-- [pac solution unpack](../developer/cli/reference/solution.md#pac-solution-unpack)
+- [pac solution pack](/power-platform/developer/cli/reference/solution#pac-solution-pack)
+- [pac solution unpack](/power-platform/developer/cli/reference/solution#pac-solution-unpack)
 - [Dataverse Git integration overview](git-integration/overview.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]

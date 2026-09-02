@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 08/10/2026
+ms.date: 08/25/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -31,7 +31,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 | **[Automate vendor invoice processing with Power Automate and AI Builder](vendor-invoice-integration.md)** | Automate vendor invoice ingestion by extracting and validating XML invoice data using Power Automate and AI Builder. |
 | **[Extract and analyze agent conversation transcripts](analyze-agent-conversation-transcripts.md)** | Extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
 | **[Perform predictive data analysis with Dataverse, Fabric, and Azure AI services](ai-predictive-data-analysis.md)** | Perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI and learn best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. |
-| **[Streamline document processing with AI Builder](ai-document-processing.md)** | Streamline document processing and automate data extraction from various documents such as forms, invoices, and purchase orders. |
+
 | **[Use Copilot Studio agents in model-driven apps](contextual-ai-model-driven-app.md)** | Integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
 
 ## Manage data with Dataverse
@@ -58,6 +58,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 
 | Title | Description |
 | --- | --- |
+| **[Connect Power Apps to a centralized data warehouse with Dataverse virtual tables](power-apps-virtual-tables.md)** | Connect Power Apps to a centralized data warehouse through Dataverse virtual tables, enabling business processes to use consolidated enterprise data alongside operational records stored in Dataverse. |
 | **[Optimize the performance of canvas apps that require complex business logic](optimize-performance-canvas-apps.md)** | Optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
 | **[Upload files to SharePoint with metadata from model-driven apps](custom-page-file-upload.md)** | Use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
 | **[Use Dataverse as a data source for canvas apps​](dataverse-canvas-app.md)** | Create a Power Apps application that uses Dataverse as a data source to enable building a more custom user experience. |
@@ -78,4 +79,5 @@ Browse reference architectures categorized by common design decisions. Each refe
 | Title | Description |
 | --- | --- |
 | **[Automate deployments with Dataverse Git integration and pipelines in Power Platform](enterprise-power-platform-alm.md)** | Streamline Power Platform development and releases by integrating Dataverse Git, pipelines in Power Platform, and AI-assisted governance. |
+| **[Manage SharePoint document visibility in Dataverse solutions](sharepoint-dataverse-security.md)** | Reduce the risk of oversharing SharePoint documents associated with Dataverse records while preserving native document management capabilities. |
 | **[Secure Power Platform access to resources inside your virtual network](secure-access-azure-resources.md)** | Use Microsoft Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. |

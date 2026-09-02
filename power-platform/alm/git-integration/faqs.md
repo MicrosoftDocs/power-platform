@@ -4,7 +4,7 @@ description: "This article includes answers to commonly asked questions about Gi
 author: caburk
 ms.subservice: alm
 ms.author: caburk
-ms.date: 05/18/2026
+ms.date: 08/18/2026
 ms.custom: 
 ms.topic: faq
 ms.reviewer: tapanm
@@ -29,21 +29,20 @@ Developer tools currently provide more flexibility for code-first developers.
 
 ## What are the prerequisites for using Git integration?
 
-You need a Power Platform environment with the necessary permissions to connect to Azure DevOps and bind your environment to a project in Azure DevOps. It requires a system administrator role in the Dataverse environment to bind to Git.  
+You need a Power Platform environment with the necessary permissions to connect to a supported Git provider. You need a system administrator role in the Dataverse environment to bind to Git. You also need provider-specific permissions. For Azure DevOps, users who interact with source control need an Azure DevOps subscription, **Basic** access level, and access to contribute to the project and repository. For GitHub, you need access to the target repository and the ability to install or approve the GitHub App. You must enable development and target environments as managed environments.
 
-You need an Azure DevOps subscription and licenses for users who interact with source control. These users need **Basic** access level in the Azure DevOps organization and access to contribute to the project and repository.
 
 Development and target environments must be enabled as managed environments.
 
 ## What other Git providers are supported?
 
-Azure DevOps Git repositories are currently the only Git provider supported. This capability uses the Git provider model so that others might be supported later.
+Azure DevOps and GitHub repositories are supported.
 
 ## What licenses do I need to use Git integration with Dataverse?
 
 All users within the environment must meet license requirements for [managed environments](../../admin/managed-environment-overview.md). Managed environments are required regardless of environment type.
 
-Developers using source code integration also need an Azure DevOps license to gain access to the repository. For more information, go to [Azure DevOps Services](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/)
+Developers who use source code integration also need access to the connected repository. For Azure DevOps licensing information, see [Azure DevOps Services pricing details](https://azure.microsoft.com/pricing/details/devops/azure-devops-services/). For GitHub, use your organization's GitHub licensing and repository access model.
 
 ## Can developers collaborate on a solution while working in different development environments?
 
@@ -62,7 +61,7 @@ If your environment isn't encrypted with BYOK and you receive this error, contac
 
 ## Why am I getting the message "Failed to retrieve the default branch for the selected repository. Choose a default branch to allow creating new branches?"
 
-Make sure that your Azure DevOps Git repo is initialized. New projects and repos by default have an uninitialized repository, and you have to manually initialize the repo to create the default branch.
+Ensure that your Git repository is initialized and has a default branch. New Azure DevOps projects and repositories are uninitialized by default, and you must manually initialize the repository to create the default branch.
 
 ## Do I integrate my dev, test, and prod environments with source code and use branch merging to push configuration to another environment?
 
@@ -70,7 +69,7 @@ This feature is designed to only have your unmanaged solutions in development en
 
 ## How do I work with branches?
 
-The feature currently works with a single branch that you specify when you bind the environment or solutions to your repository. You can disconnect and reconnect to different branches as well as use Azure DevOps for pull requests (PRs), merging, and other advanced Git operations.
+This feature works with a single branch that you specify when you bind the environment or solutions to your repository. You can disconnect and reconnect to different branches and use your Git provider for pull requests (PRs), merging, and other advanced Git operations.
 
 For example, you can connect your development to a developer branch, PR the changes into a feature branch, then disconnect your solution and reconnect to the feature branch to pull the latest changes into an environment.
 
@@ -94,7 +93,7 @@ This structure is required when you manually pack the folder back into a `.zip` 
 
 ## How can I build and deploy a solution from source code?
 
-Microsoft tools can now build the YAML solution format. It's recommended to use the [Power Platform CLI](../../developer/cli/introduction.md) [`pack`](../../developer/cli/reference/solution.md#pac-solution-pack) command. The [`unpack`](../../developer/cli/reference/solution.md#pac-solution-unpack), [`clone`](../../developer/cli/reference/solution.md#pac-solution-clone), and [`sync`](../../developer/cli/reference/solution.md#pac-solution-sync) commands don't currently support YAML format. 
+Microsoft tools can now build the YAML solution format. Use the [Power Platform CLI](../../developer/cli/introduction.md) [`pack`](../../developer/cli/reference/solution.md#pac-solution-pack) command. The [`unpack`](../../developer/cli/reference/solution.md#pac-solution-unpack), [`clone`](../../developer/cli/reference/solution.md#pac-solution-clone), and [`sync`](../../developer/cli/reference/solution.md#pac-solution-sync) commands don't currently support YAML format.
 
 ## How do I develop with code-first objects where I don't want my compiled binaries checked into source code?
 
@@ -124,9 +123,9 @@ There is no tenant or environment level setting to prevent connecting to Git. Ho
 
 ## Can I commit large solutions?
 
-Yes. You can commit large solutions using Git integration. However, Azure DevOps enforces a 17‑MB limit per individual file during a commit operation.
+Yes. You can commit large solutions by using Git integration. File limits depend on the connected Git provider. Azure DevOps enforces a 17-MB limit per individual file during a commit operation.
 
-Most solutions consist of many files. Some individual files—such as Canvas app artifacts, plug‑in assemblies, or other binary‑heavy components—may approach or exceed this limit. Although Azure DevOps supports files up to 25 MB, files are base64‑encoded during the commit process, which effectively reduces the supported size to approximately 17 MB.
+Most solutions consist of many files. Some individual files, such as Canvas app artifacts, plug-in assemblies, or other binary-heavy components, might approach or exceed this limit. Although Azure DevOps supports files up to 25 MB, files are base64-encoded during the commit process, which effectively reduces the supported size to approximately 17 MB.
 
 To handle large solutions, the system automatically:
 
@@ -134,7 +133,7 @@ To handle large solutions, the system automatically:
 - Commits each batch separately
 - Squash‑merges the commits so the Git history remains clean
 
-If a single file within a solution exceeds the 17‑MB limit, the commit may still fail. This is most commonly seen with large Canvas apps, large plug‑in assemblies, PCF control bundles, or other binary‑heavy components.
+If a single file within a solution exceeds the provider limit, the commit may still fail. This is most commonly seen with large Canvas apps, large plug-in assemblies, PCF control bundles, or other binary-heavy components.
 
 If you encounter commit failures due to file size, consider reducing the size of the affected component by removing unused resources or splitting large Canvas apps into smaller components or libraries.
 
@@ -156,25 +155,29 @@ Yes.
 
 ## Can I automatically deploy changes pushed to Git?
 
-Yes, you can trigger an automated build and release with Azure Pipelines or GitHub Actions. The [Power Platform CLI](../../developer/cli/introduction.md) [`pack`](../../developer/cli/reference/solution.md#pac-solution-pack) command builds the solution artifact that's imported to other environments. Alternatively, you can use pipelines in Power Platform or the Power Platform CLI pac pipeline command to deploy.
+Yes, you can trigger an automated build and release with Azure Pipelines or GitHub Actions. The [Power Platform CLI](/power-platform/developer/cli/introduction) [`pack`](/power-platform/developer/cli/reference/solution#pac-solution-pack) command builds the solution artifact that's imported to other environments. Alternatively, you can use pipelines in Power Platform or the Power Platform CLI pac pipeline command to deploy.
 
-## Can I connect environments located in a different geo than the ADO repo?
+## Can I connect environments located in a different geography than the Azure DevOps repository?
 
-Consent is needed when the environment is in a different geography than the ADO repo. A message and consent are shown when connecting.
+For Azure DevOps, consent is needed when the environment is in a different geography than the repository. A message and consent are shown when connecting.
 
-## Does Git integration support cross tenant (x-tenant) workloads? For example, if the Power Platform / Dataverse environment is in a different tenant than Azure DevOps. 
+## Does Git integration support cross-tenant workloads?
 
-Not currently. 
+Not currently.
 
 ## Does Git integration support security scanning?
-You can integrate your scanning tool of choice into your Azure DevOps tooling. 
 
+You can integrate your scanning tool of choice into your Git provider tooling.
 
 ### Related content
 
 [Overview of Dataverse Git integration](overview.md)
 
-[Dataverse Git integration setup](connecting-to-git.md)
+[Connect Dataverse Git integration to a Git provider](connecting-to-git.md)
+
+[Connect Dataverse Git integration to Azure DevOps](connecting-to-azure-devops.md)
+
+[Connect Dataverse Git integration to GitHub](connecting-to-github.md)
 
 [Source control repository operations](source-control-operations.md)
 

@@ -18,6 +18,8 @@ To modernize this workflow, Concentrix built a large-scale automation solution u
 
 This case study highlights how Concentrix transformed a manual, time-consuming process into a scalable, intelligent, and efficient operation, now achieving an average extraction accuracy of 96 percent.
 
+Read the full story: [Concentrix innovates with intelligent document processing at scale using Power Platform and AI Hub](https://www.microsoft.com/customers/story/26378-concentrix-microsoft-power-platform)
+
 ## Business challenges
 
 Processing invoices required extensive manual effort. Each state works with its own set of vendors, resulting in hundreds of invoice layouts, leading to constant exceptions and significant time spent determining how to process each one.

@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.date: 07/06/2026
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: jhaskett-msft
+ms.reviewer: edoyle
 ---
 
 # What's new in Microsoft Power Platform guidance
