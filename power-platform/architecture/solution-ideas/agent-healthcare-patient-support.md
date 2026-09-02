@@ -123,7 +123,7 @@ Principal authors:
 
 - [Power Platform Well-Architected](/power-platform/well-architected)
 - [Azure Synapse Analytics](/azure/synapse-analytics/)
-- [Microsoft Responsible AI practices](https://www.microsoft.com/en-in/ai/responsible-ai)
+- [Microsoft Responsible AI practices](https://www.microsoft.com/ai/responsible-ai)
 - [Set up and configure a patient access portal](/dynamics365/industry/healthcare/configure-portals?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json)
 - [Patient access: Provide access for personalized care | Microsoft Cloud for Healthcare](/dynamics365/industry/healthcare/use-patient-access#patient-portal)
 - [Overview of Dataverse healthcare APIs](/dynamics365/industry/healthcare/dataverse-healthcare-apis-overview?toc=%2Findustry%2Fhealthcare%2Ftoc.json&bc=%2Findustry%2Fbreadcrumb%2Ftoc.json#dataverse-healthcare-apis)
