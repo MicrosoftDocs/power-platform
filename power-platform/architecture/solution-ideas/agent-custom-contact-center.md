@@ -88,7 +88,7 @@ The solution described in this article includes the following components.
 This use case illustrates how a national banking company enhances customer experience by improving customer service, information access, and conversation processes through faster information retrieval for their employees.
 
 > [!NOTE]
-> This solution idea is inspired by ABN AMRO Bank, which used Copilot Studio to create customer and employee agents that support more than 2 million text conversations and 1.5 million voice conversations every year and provide easier access to internal resources. Learn more in [ABN AMRO Bank migrates to Microsoft Copilot Studio to support over 3.5 million customer conversations](https://www.microsoft.com/customers/story/19754-abn-amro-bank-microsoft-copilot-studio#asset_idabn-amro-bank-customer-experience-architecture).
+> This solution idea is inspired by ABN AMRO Bank, which used Copilot Studio to create customer and employee agents that support more than 2 million text conversations and 1.5 million voice conversations every year and provide easier access to internal resources. Learn more in [ABN AMRO Bank migrates to Microsoft Copilot Studio to support over 3.5 million customer conversations](https://www.microsoft.com/en/customers/story/19754-abn-amro-bank-microsoft-copilot-studio#asset_idabn-amro-bank-customer-experience-architecture).
 
 ### Business problem
 

@@ -132,7 +132,7 @@ The solution described in this article includes the following components.
 This use case is based on a travel company's approach to improving their customer experience with customer service, information, and conversion processes.
 
 > [!NOTE]
-> This solution idea is inspired by Holland America Line, which developed a virtual agent using Microsoft Copilot Studio that acts as a digital concierge on its website to support customers and travel advisors. Learn more in [Holland America Line sees early signs of more informed purchasing using Microsoft Copilot Studio](https://www.microsoft.com/customers/story/19787-holland-america-dataverse).
+> This solution idea is inspired by Holland America Line, which developed a virtual agent using Microsoft Copilot Studio that acts as a digital concierge on its website to support customers and travel advisors. Learn more in [Holland America Line sees early signs of more informed purchasing using Microsoft Copilot Studio](https://www.microsoft.com/en/customers/story/19787-holland-america-dataverse).
 
 ### Business problem
 
