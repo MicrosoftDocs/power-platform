@@ -73,6 +73,8 @@
           href: reference-architectures/index.md
         - name: Apply AI and agent patterns
           items:
+            - name: Automate procurement order matching with Copilot Studio and SAP
+              href: reference-architectures/order-acknowledgment-validation.md
             - name: ​Automate vendor invoicing with Power Automate and AI Builder
               href: reference-architectures/vendor-invoice-integration.md
             - name: Extract and analyze agent conversation transcripts

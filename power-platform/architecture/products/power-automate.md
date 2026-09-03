@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 06/22/2026
+ms.date: 09/03/2026
 ---
 
 # Power Automate reference architectures and solution ideas
@@ -35,6 +35,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 
 | Title | Description |
 | --- | --- |
+| [**Automate procurement order acknowledgment matching with Copilot Studio and SAP**](../reference-architectures/order-acknowledgment-validation.md) | Use a multi-agent architecture to compare supplier order acknowledgments with purchase orders in SAP, automatically confirm matches, and escalate exceptions for review. |
 | [**Integrate legacy data with Power Automate and SharePoint**](../reference-architectures/app-legacy-data-integration.md) | Streamline the process of integrating legacy data with modern platforms. |
 | [**​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | [**Integrate Power Platform with SAP for data management**](../reference-architectures/arch-pattern-sap.md) | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
