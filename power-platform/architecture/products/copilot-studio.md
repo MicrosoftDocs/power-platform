@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 06/12/2026
+ms.date: 09/03/2026
 ---
 
 # Copilot Studio reference architectures and solution ideas
@@ -38,6 +38,7 @@ Understanding Copilot Studio design and implementation concepts and exploring so
 
 | Title | Description |
 | --- | --- |
+| [**Automate procurement order acknowledgment matching with Copilot Studio and SAP**](../reference-architectures/order-acknowledgment-validation.md) | Use a multi-agent architecture to compare supplier order acknowledgments with purchase orders in SAP, automatically confirm matches, and escalate exceptions for review. |
 | [**Extract and analyze agent conversation transcripts**](../reference-architectures/analyze-agent-conversation-transcripts.md) | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
 | [**Use Copilot Studio agents in model-driven apps**](../reference-architectures/contextual-ai-model-driven-app.md) | Learn how to integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
 
