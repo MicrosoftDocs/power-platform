@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 08/25/2026
+ms.date: 09/03/2026
 ---
 
 # Microsoft Dataverse reference architectures and solution ideas
@@ -36,6 +36,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 
 | Title | Description |
 | --- | --- |
+| [**Automate procurement order acknowledgment matching with Copilot Studio and SAP**](../reference-architectures/order-acknowledgment-validation.md) | Use a multi-agent architecture to compare supplier order acknowledgments with purchase orders in SAP, automatically confirm matches, and escalate exceptions for review. |
 | [**Perform predictive data analysis using Dataverse, Fabric, and Azure AI services**](../reference-architectures/ai-predictive-data-analysis.md) | Learn best practices for data ingestion, model training, and visualization that help you build robust predictive models and gain actionable insights. |
 | [**Integrate legacy data with Power Automate and SharePoint**](../reference-architectures/app-legacy-data-integration.md) | Streamline the process of integrating legacy data with modern platforms. |
 | [**Manage SharePoint document visibility in Dataverse solutions**](../reference-architectures/sharepoint-dataverse-security.md) | Reduce the risk of oversharing SharePoint documents associated with Dataverse records while preserving native document management capabilities. |
