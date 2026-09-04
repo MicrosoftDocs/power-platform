@@ -172,16 +172,17 @@ If a person who doesn't have access to install gateways tries to install one, th
 
 :::image type="content" source="media/manage-gateway-error-message.png" alt-text="Error message.":::
 
-## Remove gateways for tenant migration
+## Delete gateways before tenant migration
 
-If you have gateways in your home (default) region or target region, clean them up fully before [tenant migration](/power-bi/support/service-admin-region-move). You must delete all gateways on both your home and target regions, so any applications that use these gateways lose access to these gateways until they're restored after migration. Follow these steps to clean up your gateways:
+If you have gateways in your home (default) region or target region, delete all gateways in both regions before [tenant migration](/power-bi/support/service-admin-region-move). Applications that depend on these gateways can't access their data sources after the gateways are deleted. After migration, re-create and configure the gateways to restore application access. Follow these steps to delete the gateways:
 
-1. Select the region drop-down to see the gateway regions, and select your home (default) region. Remove all gateways in this region by using the **Remove** action.
+1. Select the region drop-down to see the list of gateway regions. Then, select your **home (default) region**. Turn on **Tenant administration**. Remove all gateways in this region. For each region, hover over the row corresponding to the region, select the three dots ("More actions"), and select **Delete**.
 
 
 :::image type="content" source="media/home-region-gateways.png" alt-text="Home region selected.":::
 
-1. Select the region drop-down, and select your target region. Remove all gateways in this region.
+1. Select the region drop-down. Then, select your **target region**. Keep **Tenant administration** on. Remove all gateways in this region.
+
 
 :::image type="content" source="media/target-region-gateways.png" alt-text="Target region selected.":::
 
