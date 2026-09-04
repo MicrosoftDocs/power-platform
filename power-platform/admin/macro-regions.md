@@ -5,7 +5,7 @@ author: shpradha
 ms.component: pa-admin
 ms.topic: concept-article
 ms.collection: get-started
-ms.date: 07/15/2026
+ms.date: 09/03/2026
 ms.subservice: admin
 ms.author: shpradha
 ms.reviewer: ellenwehrle
@@ -19,7 +19,7 @@ A macro region geography represents the data residency boundary that aligns with
 
 The macro region enhancement to environment provisioning enables you to select a macro region geography during environment creation. This feature applies to public cloud only and is rolling out globally. At this time, it’s available in select geographies.
 
-As an admin, you can select a macro region geography, such as North America, Europe, or Asia-Pacific instead of a specific [datacenter region](/power-platform/admin/new-datacenter-regions). The platform then automatically assigns the optimal [datacenter region](/power-platform/admin/new-datacenter-regions) within the selected macro region geography based on capacity, availability, and performance considerations. This approach helps ensure a more scalable, resilient, and performant experience for all customers while continuing to respect data residency commitments. The intelligent region selection ensures environments are placed in regions with optimal capacity and health, improving uptime and responsiveness.
+As an admin, you can select a macro region geography, such as North America, Europe, or Asia-Pacific instead of a specific [datacenter region](/power-platform/admin/new-datacenter-regions). The platform then automatically assigns the optimal [datacenter region](/power-platform/admin/new-datacenter-regions) within the selected macro region geography based on capacity, product availability, and performance considerations. This approach helps ensure a more scalable, resilient, and performant experience for all customers while continuing to respect data residency commitments. The intelligent region selection ensures environments are placed in regions with optimal capacity and health, improving uptime and responsiveness.
 
 Using a macro region geography provides the following capabilities:
 
@@ -33,7 +33,7 @@ Using a macro region geography provides the following capabilities:
 - When creating a new environment, if the tenant doesn't yet meet the [datacenter region selection eligibility criteria](#datacenter-region-selection-eligibility-criteria), you see the list of macro region geographies. The portal doesn't display individual datacenter regions.
 - You can see your macro region geography and data location (datacenter region) in the environment properties and in the environment list. 
 - A macro region geography is a continental residency boundary and could include one or more continents and geographies, such as Europe, UK, Middle East, and Africa, while a region represents the datacenter region of deployment. 
-- The system automatically determines the region within that macro region geography by using capacity-based routing, performance, and availability. 
+- The system automatically determines the region within that macro region geography by using capacity-based routing, performance, and product availability. 
 
 ## Macro region geography
 
@@ -84,7 +84,7 @@ If a customer **doesn't have** [advanced data residency](/microsoft-365/enterpri
 
 1. The customer can see and can select from a list of **macro regions geographies** when they create an environment.
 1. The customer selects *Europe & UK* as their macro region geography. 
-1. The platform assigns a region (for example, Germany or Italy) based on capacity and availability.  
+1. The platform assigns a region (for example, Germany or Italy) based on capacity and product availability.  
 1. The customer can view the assigned datacenter region within the macro region geography after provisioning.  
 
 If a customer **does have** [advanced data residency](/microsoft-365/enterprise/advanced-data-residency) (ADR) SKU turned on for 100% of their Microsoft 365 seats in that tenant, they qualify for datacenter region selection for Dynamics 365 and Power Platform:  
@@ -114,7 +114,7 @@ They can allow list the region assigned after provisioning.
 
 #### What are the datacenter region placement considerations within a macro region?
 
-A capacity- and availability-based algorithm selects the most suitable datacenter region during provisioning. This region serves as the default datacenter region for that macro region, for that tenant, for the foreseeable period of time. If capacity or other conditions become constrained, the algorithm makes an assessment and shifts provisioning of new environment for that tenant to another datacenter region within the macro region to maintain optimal performance.
+A capacity- and product availability-based algorithm selects the most suitable datacenter region during provisioning. This region serves as the default datacenter region for that macro region, for that tenant, for the foreseeable period of time. If capacity or other conditions become constrained, the algorithm makes an assessment and shifts provisioning of new environment for that tenant to another datacenter region within the macro region to maintain optimal performance.
 
 For example, for a tenant, if the algorithm selects France as the datacenter region during the first environment creation for Europe & UK macro region, then subsequent environments provisioned for that tenant in Europe & UK macro region are also provisioned in France unless France experiences capacity or other constraints.
 

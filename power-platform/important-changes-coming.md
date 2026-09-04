@@ -41,13 +41,12 @@ After the deprecation date:
 
 - Microsoft removes the Power Automate mobile app from the App Store and Google Play.
 - The app no longer receives updates and isn't supported.
-- The app no longer receives push notifications sent to it (through the "Send me a mobile notification" action). The action itself isn't removed, but notifications have no destination unless the flow is updated.
+- The app no longer receives push notifications sent to it (through the "Send me a mobile notification" action).
 - The iOS and Android home-screen widget ("run a flow") no longer functions.
 
 #### What *isn't* affected
 
 - All existing cloud flows continue to run. No flows are modified or disabled.
-- The "Send me a mobile notification" action remains available in the flow designer. Makers can replace it at their convenience.
 - Approvals functionality is unaffected. Approvals continue to work through Teams, Outlook actionable messages, and the Power Automate portal.
 
 ### Action required
