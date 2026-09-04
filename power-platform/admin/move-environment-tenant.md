@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 06/04/2026
+ms.date: 09/04/2026
 ms.topic: concept-article
 author: gakulka 
 contributors:
@@ -10,7 +10,8 @@ contributors:
   - brsova
   - ImadYanni
   - bevans 
-  - LaurentPepin 
+  - LaurentPepin
+  - udmehta 
 ms.contributors:
   - ralinga
   - gakulka
@@ -46,6 +47,9 @@ Complete the following prerequisites before you start the migration process:
   * Assign licenses.
 * You must have admin privileges with Power Platform or Dynamics 365 to perform the migration.
 * The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For more information, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
+
+> [!TIP]
+> Before you migrate a production environment, we recommend that you do a test migration first. [Copy](copy-environment.md) the production environment to a newly created sandbox environment, and then migrate that sandbox environment to the destination tenant. A test migration helps you validate the preparation steps and understand what to expect before you migrate production.
 
 ## Preparation process
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages before the migration. You also must create a user-mapping file.
@@ -419,6 +423,9 @@ After moving environments to another tenant:
 - Environment settings that aren't copied over must be updated by customers post-move.
 - The generative AI feature is at the environment-level and has default values.
 
+> [!WARNING]
+> Once the move is complete, [assign the **System Administrator** role](assign-security-roles.md) in the destination environment to the administrators who validate the migration. Since security groups are not migrated, an administrator who was not included in the user-mapping file will see the environment as completely empty. This is a permissions issue, not data loss. Confirm the role assignment before opening a support request.
+
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages.
 
 ### Post-migration process for Power Automate
@@ -501,6 +508,10 @@ If the mapped user (mentioned in the user-mapping file) has a mailbox in the des
 #### How do I initiate a migration?
 
 The source tenant’s Dynamics 365 or Power Platform admin must submit a request by using PowerShell commands with the environment name, ID, and tenant ID. Refer to the commands earlier in this article.
+
+#### How long will the migration take?
+
+The time a migration takes depends on the number of users in the user-mapping file. A migration that doesn't appear to be making progress hasn't necessarily failed. Please allow up to 24 hours for the migration to finish.
 
 #### Is there a self-serve UI option?
 Yes. After the `TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}` is approved in the target tenant, a UI option to move the environment is available in the environment page.

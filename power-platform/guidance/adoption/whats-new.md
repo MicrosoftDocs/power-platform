@@ -5,7 +5,7 @@ description: Power Platform guidance delivers best practices, fresh insights, an
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/06/2026
+ms.date: 09/04/2026
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: edoyle
@@ -44,6 +44,10 @@ Relaunch of the [Power Platform adoption guidance](methodology.md).
 ## Customer case studies
 
 [Real-world customer case studies](../case-studies/index.md) provide an in-depth look at how organizations use Power Platform and Copilot Studio to drive digital transformation. Case studies are added regularly. This list highlights articles added over the past year.
+
+### FY27 Q1
+
+- [COSMO CONSULT improves sales operations and data quality by using Copilot Studio agents](../case-studies/cosmo-consult-improves-sales-operations.md)
 
 ### FY26 Q4
 

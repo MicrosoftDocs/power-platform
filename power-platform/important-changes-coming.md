@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 05/22/2026
+ms.date: 09/04/2026
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -23,7 +23,30 @@ The announcements and deprecations described in this article apply to Power Apps
 For deprecation information of other products, see [Other deprecation articles](#other-deprecation-articles) later in this article.
 
 > [!IMPORTANT]
-> "Deprecated" means we intend to remove the feature or capability from a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability will no longer work. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+> "Deprecated" means Microsoft intends to remove the feature or capability in a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability no longer works. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of help chatbot in Power Automate maker portal
+
+Effective September 9, 2026, Microsoft is removing the Power Virtual Agents (PVA) help chatbot in the Power Automate maker portal from all pages. This chatbot appears in the lower-left corner. Makers can use it to ask questions about Power Automate.
+
+### Why is this change needed?
+
+The PVA help chatbot is a legacy support experience that's outdated and rarely maintained. Power Automate provides a more reliable support experience through the **Help** (?) menu in the upper-right corner of every maker portal page. Removing the chatbot simplifies the portal and consolidates help and support options in one location.
+
+### Impact
+
+Beginning September 9, 2026:
+
+- The PVA help chatbot no longer appears in the lower-left corner of Power Automate maker portal pages.
+- Makers can no longer use the chatbot to ask Power Automate questions.
+- The **Help** (?) menu remains available in the upper-right corner.
+- Makers can continue to access help resources and create support requests from the **Help** (?) menu.
+
+This change doesn't affect cloud flows, desktop flows, connectors, or other Power Automate functionality.
+
+### Action required
+
+No administrative action is required. Inform users who currently rely on the chatbot that they should use the Help (?) menu in the upper-right corner of the Power Automate maker portal for help and support. Update any internal documentation or training materials that direct users to the PVA help chatbot.
 
 ## Deprecation of the Power Automate mobile app
 
