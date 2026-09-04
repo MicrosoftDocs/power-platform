@@ -4,14 +4,15 @@ description: How to manage apps created using Power Apps in your organization.
 author: alaug
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 12/09/2025
+ms.date: 09/4/2026
 ms.subservice: admin
 ms.author: alaug
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
-  - akadrno 
+  - akadrno
+  - jordanchodak
 ms.custom:
   - NewPPAC
   - sfi-image-nochange
@@ -105,6 +106,7 @@ The following table reflects quarantine support:
 | Power Apps type  | Quarantine support   |
 |------------------|----------------------|
 | Canvas app       | Generally Available  |
+| Code app         | Generally Available  |
 | Model-driven app | Not supported yet    |
 
 ### Quarantine an app
@@ -154,7 +156,8 @@ The following table reflects conditional access on granular apps support:
 
 | Power Apps type  | Conditional access on individual apps support |
 |------------------|---------------------------------------------|
-| Canvas app       | Preview availability                        |
+| Canvas app       | Generally available                         |
+| Code app         | Generally available                         |
 | Model-driven app | Not supported                               |
 
 ### Add conditional access authentication context IDs to an app
