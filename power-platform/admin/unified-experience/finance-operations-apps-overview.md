@@ -140,6 +140,10 @@ View the templates that allow you to deploy: [Tutorial: Provision a new environm
 
 You can access the database in developer environments. Learn more in [Request credentials to product database](../../developer/unified-experience/finance-operations-product-db-access.md).
 
+#### How are proactive quality updates scheduled for unified environments?
+
+There is no difference in how proactive quality updates (PQUs) are scheduled for finance and operations environments, regardless of whether the environment is unified or managed through Lifecycle Services. For more information, see [Release schedule for proactive quality updates](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule).
+
 ### Related articles
 
 - [Unified developer experience for finance and operations apps](../../developer/unified-experience/finance-operations-dev-overview.md)
