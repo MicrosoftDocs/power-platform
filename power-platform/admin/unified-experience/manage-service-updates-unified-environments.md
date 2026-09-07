@@ -36,11 +36,13 @@ The weekday setting is currently available on the **Maintenance window settings*
 
 #### Maintenance window settings
 
-:::image type="content" source="media/service-updates-maintenance-settings-weekdays.png" alt-text="Screenshot of the weekday selection on the Maintenance window settings page.":::
+:::image type="content" source="media/maintenance-settings-selection.png" alt-text="Screenshot of the Maintenance window settings selection on Settings Page.":::
 
-<!-- Add a screenshot of weekday selection on the finance and operations properties card. -->
+:::image type="content" source="media/maintenance-settings-day-selection.png" alt-text="Screenshot of the weekday selection on the Maintenance window settings page.":::
 
-:::image type="content" source="media/service-updates-properties-card-weekdays.png" alt-text="Screenshot of the weekday selection on the finance and operations properties card.":::
+#### Finance and Operations details card
+
+:::image type="content" source="media/maintenance-settings-fno-details-weekday-selection.png" alt-text="Screenshot of the weekday selection on the finance and operations details card.":::
 
 ### Cadence Selection
 
@@ -49,9 +51,13 @@ The maintenance window cadence determines whether a production environment recei
 - **Every update**: The environment receives the next available service update.
 - **Every other update**: The environment skips the next service update and receives the following service update.
 
-<!-- Add a screenshot of the maintenance window cadence setting. -->
+#### Maintenance window settings
 
-:::image type="content" source="media/service-updates-maintenance-cadence.png" alt-text="Screenshot of the maintenance window cadence setting.":::
+:::image type="content" source="media/maintenance-settings-cadence-selection.png" alt-text="Screenshot of the maintenance window cadence setting.":::
+
+#### Finance and Operations details card
+
+:::image type="content" source="media/maintenance-settings-fno-details-cadence-selection.png" alt-text="Screenshot of the cadence selection on the finance and operations details card.":::
 
 For example, consider an environment that's running version 10.0.47:
 
@@ -66,4 +72,6 @@ If the environment is configured for **Every other update** and the scheduled ro
 
 Before Microsoft applies a service update to a production environment, the update is applied to at least one sandbox environment in the same tenant. This process gives you an opportunity to validate the update against your business processes and customizations before the production update.
 
-Sandbox environments are generally scheduled to receive a service update 10–15 days before production environments. The exact timing is subject to the maintenance windows selected for the environments. Review the [service update schedule](/dynamics365/fin-ops-core/dev-itpro/get-started/service-update-unified-schedule) to determine the expected sandbox and production rollout dates.
+Sandbox environments are generally scheduled to receive a service update 10–15 days before production environments. Before the production update, a validation check confirms that at least one sandbox environment in the tenant received the same update at least five days earlier. The exact timing remains subject to the maintenance windows selected for the environments.
+
+Review the [service update schedule](/dynamics365/fin-ops-core/dev-itpro/get-started/service-update-unified-schedule) to determine the expected sandbox and production rollout dates.
