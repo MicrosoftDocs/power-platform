@@ -16,7 +16,7 @@ Microsoft regularly delivers service updates to unified finance and operations e
 
 Microsoft publishes the rollout schedule for each service update in [Release schedule for service updates (unified environments)](/dynamics365/fin-ops-core/dev-itpro/get-started/service-update-unified-schedule). The schedule identifies when sandbox and production environments in each station are expected to receive the update.
 
-Microsoft also sends a notification through the [Microsoft 365 Message center](/microsoft-365/admin/manage/message-center?view=o365-worldwide) at least one week before the scheduled rollout begins.
+Microsoft also sends a notification through the [Microsoft 365 Message center](/microsoft-365/admin/manage/message-center) at least one week before the scheduled rollout begins.
 
 > [!NOTE]
 > The published [service update schedule](/dynamics365/fin-ops-core/dev-itpro/get-started/service-update-unified-schedule) is the primary source for rollout dates and schedule changes.
@@ -42,7 +42,7 @@ The weekday setting is currently available on the **Maintenance window settings*
 
 #### Finance and Operations details card
 
-:::image type="content" source="media/maintenance-settings-fno-details-weekday-selection.png" alt-text="Screenshot of the weekday selection on the finance and operations details card.":::
+:::image type="content" source="media/maintenance-settings-finance-operations-details-weekday-selection.png" alt-text="Screenshot of the weekday selection on the finance and operations details card.":::
 
 ### Cadence Selection
 
@@ -57,7 +57,7 @@ The maintenance window cadence determines whether a production environment recei
 
 #### Finance and Operations details card
 
-:::image type="content" source="media/maintenance-settings-fno-details-cadence-selection.png" alt-text="Screenshot of the cadence selection on the finance and operations details card.":::
+:::image type="content" source="media/maintenance-settings-finance-operations-details-cadence-selection.png" alt-text="Screenshot of the cadence selection on the finance and operations details card.":::
 
 For example, consider an environment that's running version 10.0.47:
 
