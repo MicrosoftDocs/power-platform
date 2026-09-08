@@ -258,6 +258,8 @@
                   href: environment-database-settings.md
                 - name: Environment routing
                   href: default-environment-routing.md
+                - name: Environment routing for apps
+                  href: apps-default-environment-routing.md   
                 - name: Product
                   items:
                     - name: Behavior
