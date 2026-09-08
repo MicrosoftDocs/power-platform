@@ -45,5 +45,5 @@ This article explains what environment routing for apps means for your tenant an
 
 ## Related information
 
-[Apps overview for admins (preview)](/microsoft-365/admin/manage/apps/index.md)
+[Apps overview for admins (preview)](https://go.microsoft.com/fwlink/?LinkId=2371660)
 
