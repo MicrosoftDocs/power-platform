@@ -22,6 +22,7 @@ Get the latest info about what's new and what's changed in the Power Platform an
 
 New in [Reference architectures](reference-architectures/index.md):
 
+- [Migrate legacy meetings to Microsoft Teams with a conversational agent](reference-architectures/migrate-legacy-meetings.md)
 - [Automate procurement order acknowledgment matching with Copilot Studio and SAP](reference-architectures/order-acknowledgment-validation.md)
 
 ## August 2026
