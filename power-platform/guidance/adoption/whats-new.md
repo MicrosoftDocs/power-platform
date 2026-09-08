@@ -5,10 +5,10 @@ description: Power Platform guidance delivers best practices, fresh insights, an
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/04/2026
+ms.date: 09/08/2026
 ms.subservice: guidance
 ms.author: mapichle
-ms.reviewer: edoyle
+ms.reviewer: jhaskett
 ---
 
 # What's new in Microsoft Power Platform guidance
@@ -47,6 +47,7 @@ Relaunch of the [Power Platform adoption guidance](methodology.md).
 
 ### FY27 Q1
 
+- [Coca-Cola Andina improves HR support for frontline workers with Copilot Studio](../case-studies/coca-cola-andina-hr-support.md)
 - [COSMO CONSULT improves sales operations and data quality by using Copilot Studio agents](../case-studies/cosmo-consult-improves-sales-operations.md)
 
 ### FY26 Q4

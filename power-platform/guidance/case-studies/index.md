@@ -7,7 +7,7 @@ ms.author: rstand
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview
-ms.date: 09/04/2026
+ms.date: 09/08/2026
 ---
 
 # Real-world case studies
@@ -36,6 +36,7 @@ Each case study provides an in-depth look at how organizations build application
 | [AECOM simplifies project onboarding with Power Platform, Azure, and Microsoft Fabric](aecom-streamlined-onboarding.md) | Covers how AECOM streamlined project onboarding using Power Platform, Microsoft Azure, and Microsoft Fabric. |
 | [Cineplex automates business processes](automate-business-processes.md) | Covers how Cineplex automates business processes with generative AI and Power Automate. |
 | [The City of Montréal enhances citizen engagement with Copilot Studio](city-montreal-citizen-engagement.md) | This case study covers how the City of Montréal uses AI and Copilot Studio to enhance citizen engagement, improve information access, and strengthen citizen connections. |
+| [Coca-Cola Andina improves HR support for frontline workers with Copilot Studio](coca-cola-andina-hr-support.md) | This case study covers how Coca-Cola Andina uses Copilot Studio to give employees faster answers while reducing the need for manual HR support. |
 | [Concentrix modernizes invoice processing with Power Platform and AI](concentrix-invoice-processing.md) | This case study covers how Concentrix uses Power Platform and AI to automate invoice processing, improving data extraction accuracy and streamlining operations. |
 | [Copilot Agent Kit real-world examples](copilot-agent-kit-examples.md) | Covers real-world examples of how organizations use Copilot Agent Kit to improve visibility, monitor performance, and refine their agents. |
 | [COSMO CONSULT improves sales operations and data quality by using Copilot Studio agents](cosmo-consult-improves-sales-operations.md) | Covers how COSMO CONSULT uses Copilot Studio and Dynamics 365 to improve data quality and streamline sales operations. |
