@@ -2,7 +2,7 @@
 title: "Request credentials to access D365 product database"
 description: "Learn how to request credentials to access D365 product database just in time."
 author: pathaku
-ms.date: 06/06/2024
+ms.date: 09/10/2026
 ms.topic: how-to
 ms.reviewer: pehecke
 ms.author: pathaku
@@ -15,7 +15,11 @@ ms.custom: sfi-image-nochange
 A developer at times benefits from read/write access to the product database. We enable you to request credentials just in time, right from within Visual Studio.
 As explained in [Write, deploy, and debug X++ code](finance-operations-debug.md), the business data is hosted in the cloud.
 
-This feature applies only to unified development environments. The developer needs to have the system administrator (sysAdmin) in the environment.
+
+This feature applies to unified development environments (UDEs) and unified sandbox environments (USEs). The user must have the system administrator (sysAdmin) role in the environment.
+
+> [!NOTE]
+> Write permissions for a USE differ from those for a UDE. In a USE, write access is limited to the `db_datawriter` database role.
 
 To request credentials for database access, follow these steps:
 

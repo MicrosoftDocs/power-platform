@@ -3,7 +3,7 @@ title: Overview of unified admin experience for finance and operations apps
 description: Overview of unified admin experiences for finance and operations apps customers in the Power Platform admin center.
 author: laneswenka
 ms.topic: overview
-ms.date: 04/03/2026
+ms.date: 09/10/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: ellenwehrle
@@ -139,6 +139,10 @@ View the templates that allow you to deploy: [Tutorial: Provision a new environm
 #### How do I access SQL for these environments?
 
 You can access the database in developer environments. Learn more in [Request credentials to product database](../../developer/unified-experience/finance-operations-product-db-access.md).
+
+#### How are proactive quality updates scheduled for unified environments?
+
+There's no difference in how proactive quality updates (PQUs) are scheduled for finance and operations environments, regardless of whether the environment is unified or managed through Lifecycle Services. For more information, see [Release schedule for proactive quality updates](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule).
 
 ### Related articles
 
