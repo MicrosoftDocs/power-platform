@@ -8,9 +8,10 @@ ms.reviewer: ellenwehrle
 contributors:
   - hamenon-ms
   - shahzorkhan123
+  - dasussMS
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/01/2026
+ms.date: 09/10/2026
 search.audienceType: 
   - admin
 ms.collection:
@@ -84,7 +85,6 @@ The following list provides the predefined security roles in an environment that
 - Service Writer 
 - Support User
 - System Administrator
-- System Customizer 
 - Website App Owner
 - Website Owner
 
