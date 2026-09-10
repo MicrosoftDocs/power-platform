@@ -3,7 +3,7 @@ title: Advanced connector policies
 description: Learn how to use Advanced connector policies to govern connector usage in Power Platform.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/15/2026
+ms.date: 09/09/2026
 author: laneswenka
 ms.author: laswenka
 ms.reviewer: ellenwehrle
@@ -207,3 +207,4 @@ While advanced connector policies offer robust capabilities, consider the follow
 - **Certified connectors only**: ACP currently supports certified connectors only. Custom connector and HTTP connector support are planned for a future date as a separate rule type.
 - **Virtual connectors**: ACP doesn't support virtual connectors and won't support them in the future. For migration paths, see [Virtual connector transition](#virtual-connector-transition).
 - **Managed environments and nonblockable connectors**: In single environment mode, ACP works on both managed environments and non-managed environments so that all customers using classic data policies can migrate to ACP without extra cost. However, on non-managed environments, the nonblockable connectors remain nonblockable. On managed environments (single or environment group), you can block any connector or any action, including those that are nonblockable in classic data policies.
+- **Allowed connector count**: The **Allowed (n)** summary can be greater than the number of connectors displayed in the allow list. The summary counts every connector resource ID stored in the policy, but the allow list displays only IDs that resolve to connectors in the current certified connector catalog. A retired connector or an invalid connector ID added programmatically can cause this difference. To reconcile the count, use the [Power Platform API](/rest/api/power-platform/governance/rule-based-policies) to retrieve the policy, remove entries from `ConnectorManagement.inputs.AllowedConnectorList` that don't resolve to a current certified connector, and update the policy.
