@@ -270,6 +270,7 @@ Environment URL or ID of the target environment.
 
 #### `--type` `-t`
 
+Type of environment copy to perform with the admin copy command.
 
 Use one of these values:
 
@@ -303,6 +304,10 @@ Use one of these values:
 
 ### Optional Parameters for admin create
 
+#### `--app-version` `-av`
+
+(Preview) Pin the application version to a specific build (e.g. 10.0.43). Consumed by Finance & Operations or Project Operations templates only; ignored otherwise.
+
 #### `--async` `-a`
 
 Optional boolean argument to run pac verbs asynchronously, defaults to false.
@@ -319,6 +324,24 @@ The domain name is part of the environment URL. If domain name is already in use
 
 **Note**: Only characters within the ranges [A - Z], [a - z], [0 - 9], or '-' are allowed. The first and last character can't be the '-' character. Consecutive '-' characters aren't allowed.
 
+#### `--enable-demo-data` `-edd`
+
+(Preview) Install demo data in the environment. Consumed by Finance & Operations or Project Operations templates only; ignored otherwise.
+
+This parameter requires no value. It's a switch.
+
+#### `--enable-dev-tools` `-edt`
+
+(Preview) Enable developer tooling (X++ development tools) for the environment. Consumed by Finance & Operations or Project Operations templates only; ignored otherwise. Use 'pac admin list-app-templates' to discover available templates.
+
+This parameter requires no value. It's a switch.
+
+#### `--enable-test-modules` `-etm`
+
+(Preview) Install F&O test modules in the environment. Consumed by Finance & Operations or Project Operations templates only; ignored otherwise.
+
+This parameter requires no value. It's a switch.
+
 #### `--input-file` `-if`
 
 The verb arguments to be passed in a .json input file. For example: {"name" : "contoso"}. The arguments passed through command-line will take precedence over arguments from the .json input file.
@@ -327,6 +350,10 @@ The verb arguments to be passed in a .json input file. For example: {"name" : "c
 
 Sets the language used for your environment. [defaults to English]
 
+#### `--macro-region`
+
+Sets the environment's macro-region ID. Currently known IDs: asia-pacific, emea, eu-efta, europe-uk, north-america, the-americas.
+
 #### `--max-async-wait-time` `-wt`
 
 Max asynchronous wait time in minutes. The default value is 60 minutes.
@@ -334,6 +361,10 @@ Max asynchronous wait time in minutes. The default value is 60 minutes.
 #### `--name` `-n`
 
 Sets the name of the environment.
+
+#### `--platform-version` `-pv`
+
+(Preview) Pin the platform version (e.g. 7.0.7256). Requires --app-version. Consumed by Finance & Operations or Project Operations templates only; ignored otherwise.
 
 #### `--region` `-r`
 

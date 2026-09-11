@@ -17,7 +17,7 @@ Use the include files to add additional content to this topic.
 -->
 # pac code
 
-(Preview) Commands to manage your Code apps.
+(Preview) Commands to manage your code apps. For the latest features and improvements, use the npm-based Power Apps CLI instead. Learn more at https://aka.ms/pacodeapps.
 
 [!INCLUDE [code-intro](includes/code-intro.md)]
 

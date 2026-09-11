@@ -104,11 +104,20 @@
               - name: pac admin
                 href: cli\reference\admin.md
                 no-loc: true
+              - name: pac analytics
+                href: cli\reference\analytics.md
+                no-loc: true
               - name: pac application
                 href: cli\reference\application.md
                 no-loc: true
+              - name: pac app-management
+                href: cli\reference\app-management.md
+                no-loc: true
               - name: pac auth
                 href: cli\reference\auth.md
+                no-loc: true
+              - name: pac authorization
+                href: cli\reference\authorization.md
                 no-loc: true
               - name: pac canvas
                 href: cli\reference\canvas.md
@@ -122,20 +131,38 @@
               - name: pac connection
                 href: cli\reference\connection.md
                 no-loc: true
+              - name: pac connectivity
+                href: cli\reference\connectivity.md
+                no-loc: true
               - name: pac connector
                 href: cli\reference\connector.md
                 no-loc: true
               - name: pac copilot
                 href: cli\reference\copilot.md
                 no-loc: true
+              - name: pac copilot-studio
+                href: cli\reference\copilot-studio.md
+                no-loc: true
               - name: pac data
                 href: cli\reference\data.md
+                no-loc: true
+              - name: pac dynamics
+                href: cli\reference\dynamics.md
                 no-loc: true
               - name: pac env
                 href: cli\reference\env.md
                 no-loc: true
+              - name: pac environment-management
+                href: cli\reference\environment-management.md
+                no-loc: true
+              - name: pac governance
+                href: cli\reference\governance.md
+                no-loc: true
               - name: pac help
                 href: cli\reference\help.md
+                no-loc: true
+              - name: pac licensing
+                href: cli\reference\licensing.md
                 no-loc: true
               - name: pac managed-identity
                 href: cli\reference\managed-identity.md
@@ -161,8 +188,20 @@
               - name: pac plugin
                 href: cli\reference\plugin.md
                 no-loc: true
+              - name: pac power-apps
+                href: cli\reference\power-apps.md
+                no-loc: true
+              - name: pac power-automate
+                href: cli\reference\power-automate.md
+                no-loc: true
               - name: pac power-fx
                 href: cli\reference\power-fx.md
+                no-loc: true
+              - name: pac power-pages
+                href: cli\reference\power-pages.md
+                no-loc: true
+              - name: pac resource-query
+                href: cli\reference\resource-query.md
                 no-loc: true
               - name: pac solution
                 href: cli\reference\solution.md
@@ -170,11 +209,14 @@
               - name: pac telemetry
                 href: cli\reference\telemetry.md
                 no-loc: true
-              - name: pac test
-                href: cli\reference\test.md
-                no-loc: true
               - name: pac tool
                 href: cli\reference\tool.md
+                no-loc: true
+              - name: pac user-management
+                href: cli\reference\user-management.md
+                no-loc: true
+              - name: pac workflows-agent
+                href: cli\reference\workflows-agent.md
                 no-loc: true
         - name: Power Platform Tools for Visual Studio
           items:
