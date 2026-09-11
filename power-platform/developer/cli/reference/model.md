@@ -394,6 +394,10 @@ Path to the file containing the page code.
 
 ### Optional Parameters for model genpage upload
 
+#### `--actions`
+
+Path to a JSON file with Dataverse Custom API (action/function) bindings to persist in the page's config.json under actionBindings.
+
 #### `--add-to-sitemap`
 
 Add the page to the app's sitemap navigation.
