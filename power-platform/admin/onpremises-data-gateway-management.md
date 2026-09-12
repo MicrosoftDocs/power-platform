@@ -3,7 +3,7 @@ title: View and manage on-premises data gateways
 description: View and manage on-premises gateways. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 08/04/2026
+ms.date: 09/10/2026
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
@@ -13,6 +13,7 @@ ms.contributors:
 contributors:
   - charls-msft
   - lavanyapg
+  - avermams
 search.audienceType: 
   - admin
 ms.custom:
@@ -176,12 +177,12 @@ If a person who doesn't have access to install gateways tries to install one, th
 
 If you have gateways in your home (default) region or target region, delete all gateways in both regions before [tenant migration](/power-bi/support/service-admin-region-move). Applications that depend on these gateways can't access their data sources after the gateways are deleted. After migration, re-create and configure the gateways to restore application access. Follow these steps to delete the gateways:
 
-1. Select the region drop-down to see the list of gateway regions. Then, select your **home (default) region**. Turn on **Tenant administration**. Remove all gateways in this region. For each region, hover over the row corresponding to the region, select the three dots ("More actions"), and select **Delete**.
+1. Select the region drop-down to see the list of gateway regions. Then, select your **home (default) region**. Turn on **Tenant administration**. Remove all gateways in this region. For each active gateway, hover over the row corresponding to the gateway, select the three dots (*More actions*), and select **Delete**. To permanently delete soft-deleted gateways, select **Deleted gateways (Preview)**. For each gateway under **Deleted clusters**, select **Permanently delete**.
 
 
 :::image type="content" source="media/home-region-gateways.png" alt-text="Home region selected.":::
 
-1. Select the region drop-down. Then, select your **target region**. Keep **Tenant administration** on. Remove all gateways in this region.
+1. Select the region drop-down. Then, select your **target region**. Keep **Tenant administration** on. Remove all active and soft-deleted gateways in this region.
 
 
 :::image type="content" source="media/target-region-gateways.png" alt-text="Target region selected.":::
