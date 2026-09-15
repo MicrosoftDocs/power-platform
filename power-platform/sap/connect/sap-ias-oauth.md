@@ -14,6 +14,7 @@ ms.topic: how-to
 ms.date: 09/14/2026
 ms.service: power-platform
 ms.subservice: sap
+ai-usage: ai-assisted
 # Customer intent: As an administrator, I want to set up OAuth 2.0 authentication for the SAP OData connector so users can sign in with their own identity provider and access SAP data using single sign-on (SSO).
 ---
 
@@ -62,65 +63,47 @@ This section lists *named values* to make the examples easier to follow. These v
 You enable users to access SAP data through Power Platform by using OAuth 2.0 and interactive sign-in. The process involves:
 
 1. Registering an OAuth 2.0 client application in your identity provider (SAP IAS).
-1. (Optional) Federating sign-in from SAP IAS to Microsoft Entra ID so users authenticate with their corporate account.
-1. Whitelisting the connector's redirect URI on the OAuth 2.0 client application.
-1. Creating the connection in Power Platform by using the **OAuth 2.0** authentication method.
+2. Adding the connector's redirect URI to the allowed redirect URIs on the OAuth 2.0 client application.
+3. Creating the connection in Power Platform by using the **OAuth 2.0** authentication method.
 
-In short, you register the client, whitelist the redirect URI, and enter the identity provider's endpoints and credentials in the connection.
+In short, you register the client, add the redirect URI to the allowlist, and enter the identity provider's endpoints and credentials in the connection.
 
 ## Step 1: Register an OAuth 2.0 client application in SAP Cloud Identity Services
 
 Register an application in SAP IAS that represents the SAP OData connector. As an SAP Cloud Identity Services administrator, take these steps in the [SAP Cloud Identity Services administration console](https://help.sap.com/docs/identity-authentication/identity-authentication/get-started):
 
 1. Sign in to the administration console at `https://\<tenant\>.accounts.ondemand.com/admin`.
-1. Go to **Applications & Resources** > **Applications**.
-1. Select **Create**, enter a name (for example, *Power Platform SAP OData*), and select **Save**.
+2. Go to **Applications & Resources** > **Applications**.
+3. Select **Create**, enter a name (for example, *Power Platform SAP OData*), and select **Save**.
 
 ## Step 2: Configure client authentication and grant types
 
 Configure the application as a confidential client with a secret, and enable the grant types the authorization code flow requires. In the application you created in [Step 1](#step-1-register-an-oauth-20-client-application-in-sap-cloud-identity-services):
 
 1. Under **Application APIs**, select **Client Authentication**.
-1. Confirm that **Enable Public Client Flows** is **off**. A confidential client authenticates by using a secret.
-1. Under **Secrets**, select **Add**, enter a description, and select the **openid** scope. Save the generated **Client ID** as `Client ID` and the generated secret as `Client secret` in the [*named values* table](#named-values).
+2. Confirm that **Enable Public Client Flows** is **off**. A confidential client authenticates by using a secret.
+3. Under **Secrets**, select **Add**, enter a description, and select the **openid** scope. Save the generated **Client ID** as `Client ID` and the generated secret as `Client secret` in the [*named values* table](#named-values).
+4. Under **Grant Types**, enable **Authorization Code** and **Refresh Token**. Don't enforce PKCE (Proof Key for Code Exchange), because the connector uses a confidential client.
 
-    > [!TIP]
-    > If the generated secret contains characters such as `=`, `/`, `.`, `+`, or `:`, regenerate it until you get a value that doesn't, or verify that you copy and paste the full value exactly. Special characters can be mishandled during the token exchange and cause authentication to fail.
-
-1. Under **Grant Types**, enable **Authorization Code** and **Refresh Token**. Don't enforce PKCE (Proof Key for Code Exchange), because the connector uses a confidential client.
-
-## Step 3: (Optional) Federate sign-in to Microsoft Entra ID
-
-If you want users to sign in with their Microsoft Entra ID (corporate) account, configure Microsoft Entra ID as a corporate identity provider in SAP IAS. SAP IAS then federates the interactive sign-in to Microsoft Entra ID during the authorization code flow.
-
-1. In the SAP Cloud Identity Services administration console, go to **Identity Providers** > **Corporate Identity Providers**.
-1. Create or select a corporate identity provider and configure the trust with Microsoft Entra ID (SAML 2.0 or OpenID Connect).
-1. Assign the corporate identity provider to the application you created in [Step 1](#step-1-register-an-oauth-20-client-application-in-sap-cloud-identity-services).
-
-For detailed steps, see [SAP: Configure a corporate identity provider](https://help.sap.com/docs/identity-authentication/identity-authentication/configure-corporate-identity-providers) and [Microsoft Entra ID SSO integration with SAP Cloud Identity Services](/entra/identity/saas-apps/sap-cloud-platform-identity-authentication-tutorial).
-
-> [!NOTE]
-> This federation is configured between SAP IAS and Microsoft Entra ID. It doesn't use the connector's redirect URI.
-
-## Step 4: Get the connector redirect URI and whitelist it
+## Step 3: Get the connector redirect URI and add it to the allowlist
 
 The connector uses a standard Power Platform per-connector consent (callback) URL as its OAuth redirect URI. You must register this exact URI on the OAuth 2.0 client application so the identity provider returns the authorization code to Power Platform.
 
 1. The redirect URI has the form `https://global.consent.azure-apim.net/redirect/sapodata`. Confirm the exact value for your cloud on the connection's sign-in page or on the connector's security page. Save it as `Redirect URI` in the [*named values* table](#named-values).
-1. In the SAP IAS application, go to **Single Sign-On** > **OpenID Connect Configuration** (or the application's **Redirect URIs** setting), add the `Redirect URI`, and save.
+2. In the SAP IAS application, go to **Single Sign-On** > **OpenID Connect Configuration** (or the application's **Redirect URIs** setting), add the `Redirect URI`, and save.
 
 > [!IMPORTANT]
 > The redirect URI must match **exactly**, including scheme, host, and path, with no trailing slash or extra path segments. A mismatch causes the token exchange to fail and the connection to report that it isn't authenticated.
 
-## Step 5: Create the connection in Power Platform
+## Step 4: Create the connection in Power Platform
 
 Create a connection that uses the **OAuth 2.0** authentication method.
 
 1. Open **Power Automate** or **Power Apps** in your browser.
-1. Create a new manual-trigger **flow** (Power Automate) or add a data connection (Power Apps).
-1. Add an **SAP OData** action and select **Sign in** to create a new connection.
-1. Select **OAuth 2.0** as the authentication type.
-1. Enter the following values from the [*named values* table](#named-values):
+2. Create a new manual-trigger **flow** (Power Automate) or add a data connection (Power Apps).
+3. Add an **SAP OData** action and select **Sign in** to create a new connection.
+4. Select **OAuth 2.0** as the authentication type.
+5. Enter the following values from the [*named values* table](#named-values):
 
     - **OData Base URI**: `OData Base URI`
     - **OAuth authorization URL**: `Authorization URL`
@@ -128,22 +111,22 @@ Create a connection that uses the **OAuth 2.0** authentication method.
     - **OAuth client ID**: `Client ID`
     - **OAuth client secret**: `Client secret`
 
-1. Select **Sign in**. Complete the interactive sign-in as the user you want to authorize. If SAP IAS federates to Microsoft Entra ID, you sign in with your Microsoft Entra ID account.
+6. Select **Sign in**. Complete the interactive sign-in as the user you want to authorize. If SAP IAS federates to Microsoft Entra ID, you sign in with your Microsoft Entra ID account.
 
 > [!TIP]
 > To sign in as a specific user rather than reusing the current Power Platform user, use a private or incognito browser window when you create the connection.
 
-## Step 6: Test the connection
+## Step 5: Test the connection
 
 1. In your **flow**, select the **SAP OData** action.
-1. Choose an **Entity** from the *dropdown* to test.
-1. Save your **flow**.
-1. Run your **flow** to test the connection.
-1. Verify the *run history* for successful authentication and data retrieval.
+2. Choose an **Entity** from the *dropdown* to test.
+3. Save your **flow**.
+4. Run your **flow** to test the connection.
+5. Verify the *run history* for successful authentication and data retrieval.
 
 > [!TIP]
 >
-> - If the connection reports that it isn't authenticated, confirm that the redirect URI is whitelisted exactly, that the client secret was entered in full, and that the OAuth client is configured as a confidential client with the authorization code and refresh token grant types enabled.
+> - If the connection reports that it isn't authenticated, confirm that the redirect URI is added to the allowlist exactly, that the client secret was entered in full, and that the OAuth client is configured as a confidential client with the authorization code and refresh token grant types enabled.
 > - If the **Entity** dropdown doesn't populate, recheck your connection parameters and the OAuth 2.0 client configuration in your identity provider.
 
 ## Related content
