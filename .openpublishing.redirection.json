@@ -2174,6 +2174,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "power-platform/architecture/contribute.md",
+      "redirect_url": "/power-platform/architecture/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "power-platform/guidance/white-papers/migrating-from-default-environment.md",
       "redirect_url": "/power-platform/admin/move-apps-from-default-environment",
       "redirect_document_id": false
