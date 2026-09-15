@@ -197,8 +197,6 @@
           href: products/microsoft-dataverse.md
         - name: Copilot Studio
           href: products/copilot-studio.md
-    - name: index.yml
-      href: index.yml.md
     - name: Related documentation
       items:
         - name: Power Platform icons
