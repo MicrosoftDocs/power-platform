@@ -129,10 +129,6 @@ New solution ideas:
 - [Automate software bug reporting with the Auto Triage AI Agent](solution-ideas/auto-ai-triage.md)
 - [Intelligent cardiac triage and scheduling with Power Platform](solution-ideas/cardio-triage-agent.md)
 
-Other updates:
-
-- [Contributors guide](contribute.md) for external contributions
-
 ## April 2025
 
 Welcome to the initial launch of the Power Platform and Copilot Studio Architecture Center.
