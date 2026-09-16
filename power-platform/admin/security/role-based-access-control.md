@@ -5,7 +5,7 @@ author: laneswenka
 manager: zoraz
 ms.subervice: admin
 ms.topic: overview
-ms.date: 03/09/2026
+ms.date: 09/15/2026
 ms.author: laswenka
 ms.reviewer: ellenwehrle
 
@@ -26,6 +26,8 @@ With Power Platform RBAC, administrators can:
 - Assign permissions at various levels: organization (tenant), environment groups, and individual environments.
 
 RBAC operates at the Power Platform API layer, representing administrative control over resources, while Dataverse continues to provide its own foundational RBAC for business data within environments.
+
+For the current list of Power Platform API endpoints that support RBAC, see [Known limitations in the programmability and extensibility overview](../programmability-extensibility-overview.md#known-limitations).
 
 > [!NOTE]
 > Currently, RBAC is focused on broadening service principal and managed identity support across Power Platform API and the various management SDKs. Read-only as well as read and write permissions assigned at scopes lower than the whole tenant for the Power Platform admin center user experience are on the roadmap but aren't yet finished.

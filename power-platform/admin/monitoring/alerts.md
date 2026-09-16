@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to track and monitor the oper
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/17/2026
+ms.date: 09/15/2026
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: ellenwehrle
@@ -172,6 +172,9 @@ No, predefined alerts don't send any notification. You need to go into **Monitor
 
 ### Can I customize predefined alerts?
 No, Microsoft preconfigures these alerts. For customization, create custom alerts. 
+
+### Can I create alerts to monitor *Time to Interactive* or *Time to Full load* on specific screens for canvas or code apps?
+No, when you create an alert on a canvas or code app and select **Time to Interactive (TTI)** or **Time to Full load (TTFL)** as the metric, it only monitors the TTI or TTFL of the *start screen* for that app. You cannot select a specific screen of an app when configuring an alert. 
 
 ### Any tips or best practices?
 Yes! Follow these best practices:
