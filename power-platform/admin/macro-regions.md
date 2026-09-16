@@ -5,7 +5,7 @@ author: shpradha
 ms.component: pa-admin
 ms.topic: concept-article
 ms.collection: get-started
-ms.date: 09/03/2026
+ms.date: 09/16/2026
 ms.subservice: admin
 ms.author: shpradha
 ms.reviewer: ellenwehrle
@@ -17,7 +17,7 @@ search.audienceType:
 
 A macro region geography represents the data residency boundary that aligns with data residency laws for a given geography. This article lists the regions available in a specific macro region geography.
 
-The macro region enhancement to environment provisioning enables you to select a macro region geography during environment creation. This feature applies to public cloud only and is rolling out globally. At this time, it’s available in select geographies.
+The macro region enhancement to environment provisioning enables you to select a macro region geography during environment creation. This feature applies to public cloud only and is rolling out globally. At this time, it's available in select geographies.
 
 As an admin, you can select a macro region geography, such as North America, Europe, or Asia-Pacific instead of a specific [datacenter region](/power-platform/admin/new-datacenter-regions). The platform then automatically assigns the optimal [datacenter region](/power-platform/admin/new-datacenter-regions) within the selected macro region geography based on capacity, product availability, and performance considerations. This approach helps ensure a more scalable, resilient, and performant experience for all customers while continuing to respect data residency commitments. The intelligent region selection ensures environments are placed in regions with optimal capacity and health, improving uptime and responsiveness.
 
@@ -96,7 +96,7 @@ If the customer doesn't have advanced data residency (ADR) and requires datacent
 
 ## Continuity for customers with existing environments  
 
-As of the date of the announcement, Microsoft doesn't anticipate impacts to existing environments, which continue to retain the selected datacenter region.  This is subject to future adjustments due to technical [capacity, performance, compute] constraints and changing circumstances beyond reasonable control. 
+As of the date of the announcement, Microsoft doesn't anticipate impacts to existing environments, which continue to retain their selected datacenter region. Microsoft continually manages its global infrastructure to maintain service reliability, performance, and capacity. Should future circumstances arise requiring changes that could affect existing environments, ADR licensing governs region choice. Microsoft remains committed to keeping you informed in advance of any developments that could affect service delivery.
   
 ## FAQ
 
