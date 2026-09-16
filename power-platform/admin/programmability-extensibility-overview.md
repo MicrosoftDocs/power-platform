@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 04/06/2026
+ms.date: 09/15/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -68,3 +68,11 @@ Regardless of which tool you choose, review these articles to get started:
 - [What's new or changed](./programmability-whats-new-changed.md)
 - [Versioning and support](programmability-versioning-support.md)
 - [Authentication](programmability-authentication-v2.md)
+
+## Known limitations
+
+- **Role-based access control:** [Role-based access control in the Power Platform admin center](https://aka.ms/PPAC-RBAC) is currently supported only by the following Power Platform API endpoints:
+  - All [Power Pages endpoints](/rest/api/power-platform/powerpages/websites).
+  - All environment management endpoints except [List Environments for User](/rest/api/power-platform/environmentmanagement/environments/list-environments-for-user) and [Get Environment by ID for User](/rest/api/power-platform/environmentmanagement/environments/get-environment-by-id-for-user).
+  - All governance endpoints except the [cross-tenant connection report endpoints](/rest/api/power-platform/governance/cross-tenant-connection-reports), which provide tenant isolation reports.
+- **Sovereign cloud availability:** Environment management endpoints for lifecycle operations such as copy, backup, restore, and failover became generally available in the public cloud in August 2026. These endpoints are scheduled to become available in sovereign clouds on December 1, 2026.
