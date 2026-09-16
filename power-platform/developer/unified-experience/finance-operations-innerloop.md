@@ -74,7 +74,7 @@ Proceed by adding a new reference in **Folders for reference metadata** by click
 
 Licenses can be directly included and deployed by placing them in the __License (with _two_ underscores) folder in the model, at the same level as your bin folder. This license is verified and applied when you deploy the package.
 
-As an example, if you want to add a license file **licenseFile01** for Module01 present at E:\ISVModules\Module01, create a child folder E:\ISVModules\Module01\__License and place the file in it as E:\ISVModules\Module01\__License\licenseFile01. Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is required for the applied license to take effect.
+As an example, if you want to add a license file **licenseFile01** for Module01 present at E:\ISVModules\Module01, create a child folder E:\ISVModules\Module01\\__License and place the file in it as E:\ISVModules\Module01\\__License\licenseFile01. Additionally, a **Full DB Sync** from the Dynamics 365 menu in **Extensions** is required for the applied license to take effect.
 
 Learn more at [Independent software vendor (ISV) licensing](/dynamics365/fin-ops-core/dev-itpro/dev-tools/isv-licensing)
 
