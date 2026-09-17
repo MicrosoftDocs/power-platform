@@ -5,9 +5,11 @@ author: laneswenka
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 04/10/2026
+ms.date: 09/17/2026
 ms.subservice: admin
 ms.author: laswenka
+ms.contributors:
+  - prbhansali
 search.audienceType: 
   - admin
 contributors:
@@ -142,5 +144,5 @@ The following table describes each parameter in the copy request.
 | Power Platform admin center: Unified sandbox environment       | Power Platform admin center:  Unified production environment                             | No                      |
 | Power Platform admin center: Unified production environment    | Power Platform admin center:  Unified sandbox environment                                | Yes                     |
 
-### If the target environment isn't managed in the Power Platform admin center
-If the target environment isn't managed in the Power Platform admin center, the copy operation copies only Dataverse data, not finance and operations data.
+### If the target environment's finance and operations app is still linked to Lifecycle Services
+If the target environment's finance and operations app is linked to Lifecycle Services (LCS) instead of being managed natively through the Power Platform admin center, the copy operation copies only Dataverse data, not finance and operations data.
