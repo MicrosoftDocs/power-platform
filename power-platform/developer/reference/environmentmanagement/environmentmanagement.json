@@ -566,13 +566,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -636,13 +636,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -706,13 +706,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -776,13 +776,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -851,13 +851,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -929,13 +929,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -999,13 +999,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1074,13 +1074,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1224,13 +1224,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1299,13 +1299,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1379,13 +1379,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1451,13 +1451,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1526,13 +1526,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -1676,13 +1676,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -2681,13 +2681,13 @@
           {
             "in": "query",
             "name": "ValidateOnly",
-            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields. If validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
+            "description": "When true, validates the request without executing it. Use with validateProperties to validate only specific fields; if validateProperties is empty, the entire request is validated. Defaults to false (validate and execute).",
             "type": "boolean"
           },
           {
             "in": "query",
             "name": "ValidateProperties",
-            "description": "A comma-separated list of property names to validate (for example, \"property1,property2\"). Applies only when validateOnly is true.",
+            "description": "A comma-separated list of property names to validate (e.g. \"property1,property2\"). Applies only when validateOnly is true.",
             "type": "string"
           },
           {
@@ -3122,7 +3122,7 @@
           "$ref": "#/definitions/EnterprisePolicies"
         },
         "scenarioName": {
-          "description": "The scenario name associated with the environment (for example, singleton scenario type).",
+          "description": "The scenario name associated with the environment (e.g. singleton scenario type).",
           "type": "string"
         }
       }
@@ -3188,7 +3188,7 @@
         },
         "extensions": {
           "type": "object",
-          "additionalProperties": {},
+          "additionalProperties": { },
           "readOnly": true
         }
       },
@@ -3269,7 +3269,7 @@
           "type": "string"
         },
         "type": {
-          "description": "The type of the user identity (for example, User).",
+          "description": "The type of the user identity (e.g., User).",
           "type": "string"
         },
         "displayName": {
@@ -3368,7 +3368,7 @@
       "properties": {
         "restorePointDateTime": {
           "format": "date-time",
-          "description": "The point in time to restore the environment to. Must include a timezone offset per RFC 3339 (for example, 2025-04-30T12:34:56+02:00).",
+          "description": "The point in time to restore the environment to. Must include a timezone offset per RFC 3339 (e.g., 2025-04-30T12:34:56+02:00).",
           "type": "string"
         },
         "sourceEnvironmentId": {
@@ -3413,7 +3413,7 @@
       "properties": {
         "baseLanguageCode": {
           "format": "int32",
-          "description": "The base language code (for example, 1033 for English) for the environment to reset to.",
+          "description": "The base language code (e.g., 1033 for English) for the environment to reset to.",
           "type": "integer"
         },
         "currency": {
@@ -3767,7 +3767,7 @@
       "properties": {
         "localeId": {
           "format": "int32",
-          "description": "The locale identifier (LCID, for example, 1033 for English).",
+          "description": "The locale identifier (LCID, e.g. 1033 for English).",
           "type": "integer"
         },
         "localizedName": {
@@ -3799,11 +3799,11 @@
       "type": "object",
       "properties": {
         "code": {
-          "description": "The currency code (for example, \"USD\").",
+          "description": "The currency code (e.g. \"USD\").",
           "type": "string"
         },
         "symbol": {
-          "description": "The currency symbol (for example, \"$\").",
+          "description": "The currency symbol (e.g. \"$\").",
           "type": "string"
         },
         "isTenantDefault": {
@@ -3907,7 +3907,7 @@
       "properties": {
         "baseLanguageCode": {
           "format": "int32",
-          "description": "The base language code (for example, 1033 for English).",
+          "description": "The base language code (e.g., 1033 for English).",
           "type": "integer"
         },
         "currency": {
@@ -3969,7 +3969,7 @@
       "type": "object",
       "properties": {
         "code": {
-          "description": "The currency code (for example, USD).",
+          "description": "The currency code (e.g., USD).",
           "type": "string"
         },
         "name": {
@@ -4039,7 +4039,7 @@
           "type": "string"
         },
         "databaseType": {
-          "description": "The type of database to create (for example, CommonDataService).",
+          "description": "The type of database to create (e.g., CommonDataService). CommonDataService requires either location or macroRegion, linkedEnvironmentMetadata.baseLanguageCode, and linkedEnvironmentMetadata.currency.code.",
           "type": "string"
         },
         "usedBy": {

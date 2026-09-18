@@ -15,7 +15,7 @@
         "tags": [
           "Agent Channels"
         ],
-        "summary": "Download agent channel manifest.",
+        "summary": "Download Agent Channel Manifest.",
         "description": "Downloads the channel manifest package for the specified agent and channel as a zip file. Currently only the \"M365\" channel is supported.",
         "operationId": "DownloadAgentChannelManifest",
         "produces": [
@@ -171,7 +171,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Get bot quarantine status.",
+        "summary": "Get Bot Quarantine Status.",
         "description": "Retrieve the quarantine status of a bot.",
         "operationId": "GetBotQuarantineStatus",
         "produces": [
@@ -216,7 +216,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Set bot as quarantined.",
+        "summary": "Set Bot as Quarantined.",
         "description": "Set the quarantine status of a bot to true.",
         "operationId": "SetBotAsQuarantined",
         "produces": [
@@ -261,7 +261,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Set bot as unquarantined.",
+        "summary": "Set Bot as Unquarantined.",
         "description": "Set the quarantine status of a bot to false.",
         "operationId": "SetBotAsUnquarantined",
         "produces": [
@@ -306,7 +306,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Get connector consent bypass.",
+        "summary": "Get Connector Consent Bypass.",
         "description": "Get the admin connector consent bypass setting for a bot.",
         "operationId": "GetConnectorConsentBypass",
         "produces": [
@@ -349,7 +349,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Set connector consent bypass.",
+        "summary": "Set Connector Consent Bypass.",
         "description": "Set the admin connector consent bypass setting for a bot.",
         "operationId": "SetConnectorConsentBypass",
         "consumes": [
@@ -405,7 +405,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "List maker evaluation test runs.",
+        "summary": "List Maker Evaluation Test Runs.",
         "description": "List all maker evaluation test runs for a bot.",
         "operationId": "ListMakerEvaluationTestRuns",
         "produces": [
@@ -450,7 +450,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Get maker evaluation test run by ID.",
+        "summary": "Get Maker Evaluation Test Run by ID.",
         "description": "Get the status and results of a specific maker evaluation test run.",
         "operationId": "GetMakerEvaluationTestRun",
         "produces": [
@@ -503,7 +503,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Download maker evaluation snapshot.",
+        "summary": "Download Maker Evaluation Snapshot.",
         "description": "Download the bot content snapshot associated with a specific maker evaluation test run as a ZIP file.",
         "operationId": "DownloadMakerEvaluationSnapshot",
         "produces": [
@@ -566,7 +566,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "List maker evaluation test sets.",
+        "summary": "List Maker Evaluation Test Sets.",
         "description": "Retrieves the list of test sets for a bot in a specified environment.",
         "operationId": "ListMakerEvaluationTestSets",
         "produces": [
@@ -611,7 +611,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Get maker evaluation test set by ID.",
+        "summary": "Get Maker Evaluation Test Set by ID.",
         "description": "Get a specific test set for maker evaluation of a bot.",
         "operationId": "GetMakerEvaluationTestSet",
         "produces": [
@@ -663,7 +663,7 @@
         "tags": [
           "Bots"
         ],
-        "summary": "Run maker evaluation test set.",
+        "summary": "Run Maker Evaluation Test Set.",
         "description": "Trigger a maker evaluation test run for a specific test set.",
         "operationId": "RunMakerEvaluationTestSet",
         "consumes": [
