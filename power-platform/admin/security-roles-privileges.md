@@ -126,6 +126,7 @@ The following table describes the levels of access. For organization-owned table
 | Parent: Child Business Unit | Users can access records in their business unit and all business units subordinate to it.<br/>Users with this access automatically have business unit and user access.<br/>Because this level gives access to information throughout the business unit and subordinate business units, it should be restricted to match the organization's data security plan. This level of access is reserved for managers with authority over the business units. |
 | Business Unit | Users can access records in their business unit.<br/>Users with business unit access automatically have user access.<br/>Because this access level gives access to information throughout the business unit, it should be restricted to match the organization's data security plan. This level of access is reserved for managers with authority over the business unit. |
 | User | Users can access records they own, objects that are shared with the organization, objects that are shared with them, and objects that are shared with a team that they're a member of.<br/>This level of access is typical for sales and service representatives. |
+| Record Filter | Users are granted access when the filter criteria are met, see [Filtered record ownership](filtered-view-record-ownership.md). |
 | None | No access is allowed. |
 
 For each table, select the appropriate type for each privilege. Select **Save** when you're finished.
