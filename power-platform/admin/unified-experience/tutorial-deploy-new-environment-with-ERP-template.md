@@ -5,11 +5,12 @@ author: laneswenka
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 02/02/2026
+ms.date: 09/17/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.contributors:
   - lsuresh
+  - prbhansali
 contributors:
   - lavanyapg
 search.audienceType: 
@@ -108,6 +109,9 @@ You can provision a new environment with finance and operations apps preinstalle
     ```powershell
     New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
     ```
+
+> [!NOTE]
+> Depending on tenant eligibility and rollout state, some new-environment requests require a macro region geography. If this PowerShell command returns `MacroRegionRequired` (`macroRegion must be specified for this request`), use the [Provision New Environment API](/rest/api/power-platform/environmentmanagement/environment-provisioning/provision-new-environment) and set `macroRegion` in the request body, because the legacy `Microsoft.PowerApps.Administration.PowerShell` module doesn't expose a Macro Region parameter.
 
 > [!IMPORTANT]
 > If you require the user interface (UI), follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). You can't currently use the UI to create new developer-focused sandbox and production environments that have finance and operations apps.

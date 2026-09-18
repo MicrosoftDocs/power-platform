@@ -133,6 +133,8 @@
               href: reference-architectures/scalable-notification-system.md
             - name: Reduce infrastructure challenges with Hosted RPA in Power Automate​
               href: reference-architectures/rpa-scale-operations.md
+            - name: Secure intelligent document processing with Azure VNet support
+              href: reference-architectures/secure-document-automation.md
         - name: Secure, govern, and manage
           items:
             - name: Automate enterprise Power Platform ALM
