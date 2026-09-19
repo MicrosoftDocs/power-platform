@@ -4620,8 +4620,8 @@
           "type": "integer"
         },
         "autoAllocated": {
-          "format": "int32",
-          "type": "integer"
+          "format": "double",
+          "type": "number"
         },
         "enforcementRules": {
           "type": "array",

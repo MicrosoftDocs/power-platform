@@ -10,6 +10,286 @@
     "https"
   ],
   "paths": {
+    "/powerpages/environments/{environmentId}/exceptions/affectedSites": {
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Lists the websites affected by an exception scenario for a tenant.",
+        "description": "Lists the websites in the tenant affected by an exception scenario, with each site's existing grant state, so an admin can review and select sites before granting.",
+        "operationId": "GetAffectedSites",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "exceptionType",
+            "description": "The exception scenario discriminator, e.g. \"WebApiStarRetirement\".",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "WebApiStarRetirement"
+            ]
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/AffectedSitesResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/exceptions/grant": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Grants an admin exception for one or more Power Pages websites in a tenant.",
+        "description": "Grants a break-glass admin exception (one-time per website and exception type) across one or more websites in the tenant. Gating, validation, and audit/state writes are synchronous; application-setting propagation is queued asynchronously.",
+        "operationId": "GrantException",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/GrantExceptionRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/GrantExceptionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/exceptions/list": {
+      "get": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Lists the admin exceptions for a tenant.",
+        "description": "Lists the tenant's exception state rows (optionally filtered by exception type) with the derived lifecycle status.",
+        "operationId": "GetExceptions",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "exceptionType",
+            "description": "Optional exception scenario discriminator to filter by, e.g. \"WebApiStarRetirement\".",
+            "type": "string",
+            "enum": [
+              "WebApiStarRetirement"
+            ]
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/ExceptionView"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
+    "/powerpages/environments/{environmentId}/exceptions/revoke": {
+      "post": {
+        "tags": [
+          "Websites"
+        ],
+        "summary": "Revokes an admin exception for one or more Power Pages websites in a tenant.",
+        "description": "Revokes a previously granted admin exception across one or more websites in the tenant. Each exception state row is force-expired and asynchronous application-setting revert is queued.",
+        "operationId": "RevokeException",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The environment ID.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/RevokeExceptionRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/RevokeExceptionResult"
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "401": {
+            "description": "Unauthorized",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          },
+          "404": {
+            "description": "Not Found",
+            "schema": {
+              "$ref": "#/definitions/ErrorMessage"
+            }
+          }
+        }
+      }
+    },
     "/powerpages/environments/{environmentId}/websites": {
       "get": {
         "tags": [
@@ -2454,6 +2734,32 @@
     }
   },
   "definitions": {
+    "WebsiteTemplateName": {
+      "description": "Website template name. Supported templates, their display names, and template type:\n\n| Template | Display Name | Template Type |\n| --- | --- | --- |\n| `StarterLayout1` | Starter Layout 1 | Power Pages |\n| `StarterLayout2` | Starter Layout 2 | Power Pages |\n| `StarterLayout3` | Starter Layout 3 | Power Pages |\n| `StarterLayout4` | Starter Layout 4 | Power Pages |\n| `StarterLayout5` | Starter Layout 5 | Power Pages |\n| `BlankPage` | Blank Page | Power Pages |\n| `BookMeetings` | Schedule and Manage Meetings | Power Pages |\n| `DefaultPortalTemplate` | Starter Layout 1 | Power Pages |\n| `PowerPortals_ProgramRegistration` | Program Registration | Power Pages |\n| `PowerPortals_BookMeeting` | Schedule and Manage Meetings | Power Pages |\n| `FAQ` | Frequently Asked Questions | Power Pages |\n| `ProgramRegistration` | Program Registration | Power Pages |\n| `BuildingPermit` | Application Processing | Power Pages |\n| `Community` | Community | Dynamics 365 |\n| `EventPortal` | Event Portal | Dynamics 365 |\n| `CustomerSelfServicePortal` | Customer Self Service Portal | Dynamics 365 |\n| `EmployeeSelfServicePortal` | Employee Self Service Portal | Dynamics 365 |\n| `PartnerPortal` | Partner Portal | Dynamics 365 |\n| `CustomerPortal` | Customer Portal | Dynamics 365 |\n| `FieldService` | Field Service | Dynamics 365 |\n",
+      "enum": [
+        "StarterLayout1",
+        "StarterLayout2",
+        "StarterLayout3",
+        "StarterLayout4",
+        "StarterLayout5",
+        "BlankPage",
+        "BookMeetings",
+        "FAQ",
+        "ProgramRegistration",
+        "BuildingPermit",
+        "Community",
+        "EventPortal",
+        "CustomerSelfServicePortal",
+        "EmployeeSelfServicePortal",
+        "PartnerPortal",
+        "CustomerPortal",
+        "FieldService",
+        "DefaultPortalTemplate",
+        "PowerPortals_ProgramRegistration",
+        "PowerPortals_BookMeeting"
+      ],
+      "type": "string"
+    },
     "NewWebsiteRequest": {
       "required": [
         "name",
@@ -2475,13 +2781,7 @@
           "type": "string"
         },
         "templateName": {
-          "description": "Website template name",
-          "enum": [
-            "DefaultPortalTemplate",
-            "PowerPortals_ProgramRegistration",
-            "PowerPortals_BookMeeting"
-          ],
-          "type": "string"
+          "$ref": "#/definitions/WebsiteTemplateName"
         },
         "selectedBaseLanguage": {
           "format": "int32",
@@ -2547,6 +2847,199 @@
         }
       }
     },
+    "ExceptionType": {
+      "description": "Exception scenario discriminator identifying which admin exception (\"break-glass\") scenario a grant, revoke, or query targets.",
+      "enum": [
+        "WebApiStarRetirement"
+      ],
+      "type": "string"
+    },
+    "GrantExceptionRequest": {
+      "type": "object",
+      "properties": {
+        "portalIds": {
+          "description": "Websites the exception should be applied to (deduplicated server-side).",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exceptionType": {
+          "$ref": "#/definitions/ExceptionType"
+        },
+        "riskAcknowledged": {
+          "description": "Whether the admin explicitly acknowledged the risk. Must be true to proceed.",
+          "type": "boolean"
+        }
+      }
+    },
+    "RevokeExceptionRequest": {
+      "type": "object",
+      "properties": {
+        "portalIds": {
+          "description": "Websites whose exception should be revoked (deduplicated server-side).",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "exceptionType": {
+          "$ref": "#/definitions/ExceptionType"
+        }
+      }
+    },
+    "PortalExceptionResult": {
+      "type": "object",
+      "properties": {
+        "portalId": {
+          "description": "Website unique identifier (ID).",
+          "type": "string"
+        },
+        "status": {
+          "description": "Per-website outcome status, e.g. \"Granted\", \"Accepted\", \"AlreadyGranted\", \"NotApplicable\", \"Failed\", \"Revoked\", \"AlreadyRevoked\".",
+          "type": "string"
+        },
+        "message": {
+          "description": "Optional human-readable detail (populated for non-granted outcomes).",
+          "type": "string"
+        }
+      }
+    },
+    "GrantExceptionResult": {
+      "type": "object",
+      "properties": {
+        "exceptionId": {
+          "description": "Id of the audit record created for this grant request.",
+          "type": "string"
+        },
+        "propagationOrchestrationId": {
+          "description": "Optional orchestration instance id for queued application-setting propagation.",
+          "type": "string"
+        },
+        "exceptionType": {
+          "$ref": "#/definitions/ExceptionType"
+        },
+        "expirationDate": {
+          "format": "date-time",
+          "description": "Effective UTC expiry applied to every accepted website in this request.",
+          "type": "string"
+        },
+        "portals": {
+          "description": "Per-website outcomes.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PortalExceptionResult"
+          }
+        }
+      }
+    },
+    "RevokeExceptionResult": {
+      "type": "object",
+      "properties": {
+        "auditId": {
+          "description": "Id of the audit record created for this revoke request.",
+          "type": "string"
+        },
+        "propagationOrchestrationId": {
+          "description": "Optional orchestration instance id for the queued application-setting revert propagation.",
+          "type": "string"
+        },
+        "exceptionType": {
+          "$ref": "#/definitions/ExceptionType"
+        },
+        "portals": {
+          "description": "Per-website outcomes.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PortalExceptionResult"
+          }
+        }
+      }
+    },
+    "ExceptionView": {
+      "type": "object",
+      "properties": {
+        "portalId": {
+          "description": "Website unique identifier (ID).",
+          "type": "string"
+        },
+        "exceptionType": {
+          "$ref": "#/definitions/ExceptionType"
+        },
+        "status": {
+          "description": "Derived lifecycle status of the exception.",
+          "type": "string"
+        },
+        "created": {
+          "format": "date-time",
+          "description": "UTC time the exception was created.",
+          "type": "string"
+        },
+        "expirationDate": {
+          "format": "date-time",
+          "description": "UTC expiry of the exception.",
+          "type": "string"
+        }
+      }
+    },
+    "AffectedSite": {
+      "type": "object",
+      "properties": {
+        "portalId": {
+          "description": "Website unique identifier (ID).",
+          "type": "string"
+        },
+        "portalName": {
+          "description": "Friendly website name (may be null when not resolvable).",
+          "type": "string"
+        },
+        "portalUrl": {
+          "description": "Website URL (may be null when not resolvable).",
+          "type": "string"
+        },
+        "siteType": {
+          "description": "Site type (\"Production\" or \"Trial\").",
+          "type": "string"
+        },
+        "ppacUrl": {
+          "description": "Deep link to this website's settings page in the Power Platform admin center (may be null when the base URL is not configured).",
+          "type": "string"
+        },
+        "detail": {
+          "description": "Scenario-specific detail of why the website is affected.",
+          "type": "string"
+        },
+        "grantStatus": {
+          "description": "Existing grant state for this website and exception type (\"None\" when no grant exists, otherwise the derived lifecycle status).",
+          "type": "string"
+        },
+        "expirationDate": {
+          "format": "date-time",
+          "description": "Expiry of the existing grant, when one exists (null otherwise).",
+          "type": "string"
+        }
+      }
+    },
+    "AffectedSitesResult": {
+      "type": "object",
+      "properties": {
+        "exceptionType": {
+          "$ref": "#/definitions/ExceptionType"
+        },
+        "totalCount": {
+          "format": "int32",
+          "description": "Number of affected sites.",
+          "type": "integer"
+        },
+        "sites": {
+          "description": "The affected websites.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AffectedSite"
+          }
+        }
+      }
+    },
     "ErrorMessage": {
       "type": "object",
       "properties": {
@@ -2605,13 +3098,7 @@
           "type": "string"
         },
         "templateName": {
-          "description": "Website template name",
-          "enum": [
-            "DefaultPortalTemplate",
-            "PowerPortals_ProgramRegistration",
-            "PowerPortals_BookMeeting"
-          ],
-          "type": "string"
+          "$ref": "#/definitions/WebsiteTemplateName"
         },
         "websiteUrl": {
           "description": "Website URL",
@@ -2735,18 +3222,18 @@
     },
     "PortalDataModelDto": {
       "required": [
-        "dataModelVersionValue"
+        "isNewDataModel"
       ],
       "type": "object",
       "properties": {
-        "dataModelVersionValue": {
-          "description": "value of data model version for IsNewDataModel",
+        "isNewDataModel": {
+          "description": "Whether the portal uses the enhanced data model.",
           "type": "boolean"
         }
       }
     },
     "WebApplicationFirewallStatus": {
-      "description": "Web application firewall status.",
+      "description": "Web application firewall status",
       "enum": [
         "None",
         "Creating",
@@ -2758,7 +3245,7 @@
       "type": "string"
     },
     "WafRuleAction": {
-      "description": "Action to take for the rule.",
+      "description": "Action to take for the rule",
       "enum": [
         "Allow",
         "Block",
@@ -2768,7 +3255,7 @@
       "type": "string"
     },
     "WafRuleType": {
-      "description": "WAF rule type.",
+      "description": "WAF rule type",
       "enum": [
         "MatchRule",
         "RateLimitRule"
@@ -2776,7 +3263,7 @@
       "type": "string"
     },
     "IpAddressType": {
-      "description": "The type of the IP address.",
+      "description": "The type of the IP address",
       "enum": [
         "IPv4",
         "IPv6"
@@ -2873,7 +3360,7 @@
       }
     },
     "customRules": {
-      "description": "List of custom rule names.",
+      "description": "List of custom rule names",
       "type": "array",
       "items": {
         "type": "string"
@@ -3103,7 +3590,7 @@
       }
     },
     "IpAddressEntity": {
-      "description": "Represents an IP address entry in the allow list.",
+      "description": "Represents an IP address entry in the allow list",
       "type": "object",
       "properties": {
         "IpAddress": {

@@ -107,6 +107,67 @@
         "x-ms-summary": "Execute recommendation action."
       }
     },
+    "/analytics/advisor/chat/messages": {
+      "post": {
+        "tags": [
+          "Advisor Chat"
+        ],
+        "summary": "Send an advisor chat message.",
+        "description": "Sends a message to the advisor chat agent and returns the agent response. Supply the conversation ID returned by a previous turn to continue a multi-turn conversation.",
+        "operationId": "SendAdvisorChatMessage",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The chat message request containing the user message.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/AdvisorChatMessageRequest"
+            },
+            "x-ms-adminsdk-frontloadasparameter": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AdvisorChatMessageResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        },
+        "x-ms-summary": "Send an advisor chat message.",
+        "x-ms-visibility": "internal"
+      }
+    },
     "/analytics/advisorRecommendations": {
       "get": {
         "tags": [
@@ -424,7 +485,7 @@
   },
   "definitions": {
     "AdvisorActionRequest": {
-      "description": "The request with details to carry out an action on resource(s).",
+      "description": "The request with details to carry out an action on resource(s)",
       "required": [
         "scenario",
         "actionParameters"
@@ -493,7 +554,7 @@
       }
     },
     "AdvisorActionResponse": {
-      "description": "The response for action performed on resources.",
+      "description": "The response for action performed on resources",
       "type": "object",
       "properties": {
         "results": {
@@ -505,7 +566,7 @@
       }
     },
     "AdvisorActionResult": {
-      "description": "The result of an action performed on a resource.",
+      "description": "The result of an action performed on a resource",
       "type": "object",
       "properties": {
         "resourceId": {
@@ -537,7 +598,7 @@
       }
     },
     "AdvisorRecommendation": {
-      "description": "Information for a recommendation.",
+      "description": "Information for a recommendation",
       "type": "object",
       "properties": {
         "scenario": {
@@ -552,7 +613,7 @@
       }
     },
     "AdvisorRecommendationDetails": {
-      "description": "Details for a recommendation.",
+      "description": "Details for a recommendation",
       "type": "object",
       "properties": {
         "resourceCount": {
@@ -576,7 +637,7 @@
       }
     },
     "AdvisorRecommendationIEnumerableResponseWithContinuation": {
-      "description": "Paged list of recommendations.",
+      "description": "Paged list of recommendations",
       "type": "object",
       "properties": {
         "value": {
@@ -594,7 +655,7 @@
       }
     },
     "AdvisorRecommendationResource": {
-      "description": "Details of a resource included in a recommendation.",
+      "description": "Details of a resource included in a recommendation",
       "type": "object",
       "properties": {
         "resourceName": {
@@ -668,7 +729,7 @@
       }
     },
     "AdvisorRecommendationResourceIEnumerableResponseWithContinuation": {
-      "description": "Paged list of recommendation resources.",
+      "description": "Paged list of recommendation resources",
       "type": "object",
       "properties": {
         "value": {
@@ -686,14 +747,14 @@
       }
     },
     "IEnumerableAdvisorScenario": {
-      "description": "List of recommendation scenarios.",
+      "description": "List of recommendation scenarios",
       "type": "array",
       "items": {
         "$ref": "#/definitions/AdvisorScenario"
       }
     },
     "AdvisorScenario": {
-      "description": "The recommendation scenario.",
+      "description": "The recommendation scenario",
       "type": "object",
       "properties": {
         "scenario": {
@@ -709,14 +770,14 @@
       }
     },
     "IEnumerableAdvisorAction": {
-      "description": "List of scenario actions.",
+      "description": "List of scenario actions",
       "type": "array",
       "items": {
         "$ref": "#/definitions/AdvisorAction"
       }
     },
     "AdvisorAction": {
-      "description": "The allowed action.",
+      "description": "The allowed action",
       "type": "object",
       "properties": {
         "actionType": {
@@ -728,6 +789,53 @@
           "description": "Action display name",
           "type": "string",
           "x-ms-summary": "Action name"
+        }
+      }
+    },
+    "AdvisorChatMessageRequest": {
+      "description": "The request to send a message to the advisor chat agent",
+      "required": [
+        "message"
+      ],
+      "type": "object",
+      "properties": {
+        "message": {
+          "description": "The user message to send to the advisor chat agent",
+          "type": "string",
+          "x-ms-summary": "Message"
+        },
+        "conversationId": {
+          "description": "The conversation ID for multi-turn chat. Omit to start a new conversation",
+          "type": "string",
+          "x-ms-summary": "Conversation ID"
+        }
+      }
+    },
+    "AdvisorChatMessageResponse": {
+      "description": "The response from the advisor chat agent",
+      "type": "object",
+      "properties": {
+        "message": {
+          "description": "The agent response message",
+          "type": "string",
+          "x-ms-summary": "Message"
+        },
+        "role": {
+          "description": "The role of the message author, always 'assistant'",
+          "type": "string",
+          "example": "assistant",
+          "x-ms-summary": "Role"
+        },
+        "executionTimeMs": {
+          "format": "int64",
+          "description": "The time taken to produce the response, in milliseconds",
+          "type": "integer",
+          "x-ms-summary": "Execution time (ms)"
+        },
+        "conversationId": {
+          "description": "The conversation ID to supply on the next turn to continue the conversation",
+          "type": "string",
+          "x-ms-summary": "Conversation ID"
         }
       }
     }

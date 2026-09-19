@@ -408,7 +408,7 @@
           {
             "in": "query",
             "name": "maxResults",
-            "description": "The maximum number of operation errors to return. Defaults to twenty (20) and is capped at one thousand (1000).",
+            "description": "The maximum number of operation errors to return. Defaults to 20 and is capped at 1000.",
             "type": "integer",
             "format": "int32",
             "default": 20
