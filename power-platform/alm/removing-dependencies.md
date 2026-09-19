@@ -63,7 +63,7 @@ Uninstalling Solution 1 causes a component deletion because it's the only layer 
 
 - Uninstalling Solution 3 doesn't cause a component deletion. Only that layer is removed.
 - Uninstalling Solution 2 doesn't cause a component deletion. Only that layer is removed.
-- Uninstalling Solution 1 doesn't cause a component deletion, because in this case there's another solution from the same publisher (Publisher A = Publisher C). The platform removes the layer from Solution 1 and replaces it with the layer from Solution 3.
+- Uninstalling Solution 1 doesn't cause a component deletion, because in this case there's another solution from the same publisher (Publisher A). The platform removes the layer from Solution 1 and replaces it with the layer from Solution 3.
 
 #### Scenario 4: Uninstall solution layers in an unmanaged customization
 
