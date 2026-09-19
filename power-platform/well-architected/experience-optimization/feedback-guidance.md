@@ -62,7 +62,7 @@ In-app notifications can be pushed to a centralized user notifications hub for [
 
 Consider using the Power Apps notification connector to [send push notifications](/power-apps/maker/canvas-apps/add-notifications) to devices with the Power Apps mobile app installed.
 
-Implement universal help panels using a [side pane](/power-platform/guidance/creator-kit/panel) in canvas apps or as a [custom page side dialog](/power-apps/developer/model-driven-apps/clientapi/navigate-to-custom-page-examples#open-as-a-side-dialog) in model-driven apps.
+Implement universal help panels using a [side pane](/power-platform/guidance/creator-kit/panel) in canvas apps, or in model-driven apps as [help panes](/power-apps/maker/data-platform/create-custom-help-pages), or a [custom page side dialog](/power-apps/developer/model-driven-apps/clientapi/navigate-to-custom-page-examples#open-as-a-side-dialog).
 
 Use the [info button modern control](/power-apps/maker/canvas-apps/controls/modern-controls/modern-control-info-button) to provide inline contextual information in canvas apps.
 
