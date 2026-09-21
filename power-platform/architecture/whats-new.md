@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 09/03/2026
+ms.date: 09/18/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -22,6 +22,7 @@ Get the latest info about what's new and what's changed in the Power Platform an
 
 New in [Reference architectures](reference-architectures/index.md):
 
+- [Secure intelligent document processing with Azure Virtual Network support](reference-architectures/secure-document-automation.md)
 - [Migrate legacy meetings to Microsoft Teams with a conversational agent](reference-architectures/migrate-legacy-meetings.md)
 - [Automate procurement order acknowledgment matching with Copilot Studio and SAP](reference-architectures/order-acknowledgment-validation.md)
 
