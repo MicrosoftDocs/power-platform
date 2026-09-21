@@ -5,12 +5,14 @@ author: shpradha
 ms.component: pa-admin
 ms.topic: concept-article
 ms.collection: get-started
-ms.date: 09/16/2026
+ms.date: 09/21/2026
 ms.subservice: admin
-ms.author: shpradha
+ms.author: joelsch
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
+ms.contributors:
+ - joelsch
 ---
 
 # Power Platform and Dynamics 365 macro region geography
@@ -72,7 +74,8 @@ The Advanced data residency (ADR) SKU applies only to Microsoft 365. To qualify 
 
 ## Data residency and compliance
 
-- Data always resides within the selected macro region geography boundary. If you're a customer who meets ADR criteria, your Dynamics 365 and Power Platform data is stored at rest within your selected datacenter region.  
+- Data always resides within the selected macro region geography boundary. If you're a customer who meets ADR criteria, your Dynamics 365 and Power Platform data is stored at rest within your selected datacenter region.
+- If specific regulatory, certification, or compliance requirements necessitate hosting data in a particular region, you may purchase ADR to enable individual region selection.
 - If you need EUDB, select the macro region, **European Union (EU) and European Free Trade Association (EFTA)**. This selection ensures your data at rest is in the EUDB boundary. Learn more about EUDB [here](/privacy/eudb/eu-data-boundary-learn#eu-data-boundary-countries-and-datacenter-locations).
 - Australia and India geographies might be subject to tax restrictions and might need data residency alignment and accountability for compliance with local tax reporting rules and for auditability within a jurisdiction. To keep your data at rest in Australia and India, learn more about acquiring ADR to make an informed decision for your business.
 - The platform doesn't expand residency guarantees beyond contractual commitments. Macro-region selection defines Microsoft's service-placement and data-residency boundary for the environment. Don't interpret macro-regions as legal, regulatory, tax, or compliance-defined areas, and don't view them as determinative of customer's obligations.
