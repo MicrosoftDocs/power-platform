@@ -2,11 +2,14 @@
 title: Manage Copilot Credits and capacity for Copilot Studio
 description: Learn how to manage Copilot Credits and capacity for Copilot Studio.
 author: amiyapatr-zz
-ms.date: 08/14/2026
+ms.date: 09/18/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
 ms.author: ampatra
+ms.contributors:
+ - surenmalik
+ - venpe
 ms.custom: bap-template, NewPPAC
 ai-usage: ai-assisted
 search.audienceType: 
@@ -50,7 +53,7 @@ The **Prepaid capacity** card shows the number of prepaid capacity units that yo
 
 ### Copilot Credits capacity tab
 
-The **Copilot credit capacity** tab displays the following cards:
+The **Copilot Credit capacity** tab displays the following cards:
 
 - **Capacity consumption by product**: This card shows a product-focused view of Copilot Studio credit units consumed. It details the number of units deducted from prepaid capacity packs and pay-as-you-go units.
 
@@ -60,27 +63,65 @@ The **Copilot credit capacity** tab displays the following cards:
 
 - **Copilot credit usage by environment**: Highlights the top environments based on Copilot Studio credit usage.
 
+### Download consumption reports
+
+Download consumption reports to investigate unexpected credit usage without opening a support request. From the **Summary** tab, you can download reports that organize consumption by environment, agent, or user.
+
+:::image type="content" source="media/manage-copilot-studio-copilot-credits-capacity/copilot-download-report.png" alt-text="Access Copilot Studio environment, agent, and user reports.":::
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. On the navigation pane, select **Licensing**.
+1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
+1. Select the **Summary** tab.
+1. Select **Download report**.
+1. Select the download type you need: environment, agent, or user.
+1. Download the report.
+
+Start with the environment report to identify where consumption occurs. Then use the agent or user report to narrow the investigation.
+
+:::image type="content" source="media/manage-copilot-studio-copilot-credits-capacity/copilot-environment-report.png" alt-text="Download  an environment-level report first.":::
+
 ## View credit capacity consumed per environment
+
 The **Environments** tab provides details on the Copilot Studio credit capacity consumed per environment, including the number of Copilot Credits deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
 1. In the **Licensing** pane, under **Products**, select **Copilot Studio**.
-1. Select the **Environments** tab.
-1. Select the **Select environment** button.
-1. The **Select an environment** pane is displayed.
-1. Select the environment you want to use and select the **Select** button.
-
-To view Copilot Studio capacity consumed for Microsoft 365 Copilot Chat, select the **Microsoft 365 Copilot Chat** environment on the environment selection page. 
+1. Select the **Environments** tab to see a list of your environments.
+1. Search for and select the environment you want to use and select the **Select** (or **Reset**) button.
  
 View the Copilot Studio capacity consumed within that environment. The following cards are displayed on the **Copilot Credits capacity** tab:
 
 - **Capacity consumption by product**: This tile provides a product-focused summary of Copilot Credits consumed, showing the number of units deducted from prepaid capacity packs and/or pay-as-you-go units.
 
-- **Copilot credit consumption details**: The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus nonbillable credits.
+- **Copilot Credit consumption details**: The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus nonbillable credits.
 
 > [!TIP]
 > To monitor credit consumption for agent flows, look for the **Agent flow actions** feature in the **Copilot credit consumption details** grid. When prepaid capacity is exhausted, new agent flow runs are blocked while the parent agent continues to function for non-flow interactions. Flow authors also see a design-time warning in the Copilot Studio designer. To resolve enforcement, reallocate capacity, purchase more credits, or [enable pay-as-you-go billing](#overage-management). For more information, see [Agent flow enforcement](/microsoft-copilot-studio/requirements-messages-management#agent-flow-enforcement).
+
+### Download detailed Copilot consumption for an environment
+
+Use the detailed report to identify the agent, product, feature, channel, model, knowledge source, or tool associated with an environment's credit consumption.
+
+1. On the **Environments** tab, select an environment.
+1. On the **Copilot Credits capacity** tab, locate the **Copilot credit consumption details** grid.
+1. Select **Download** to open the *Download Copilot Credits report* pane where you select the report timeframe, can update the report's name, and then select **Start**.
+
+:::image type="content" source="media/manage-copilot-studio-copilot-credits-capacity/copilot-credits-report.png" alt-text="Select Start to generate your downloaded report.":::
+
+In the report, use these columns to investigate consumption:
+
+| Column | How to use it |
+| --- | --- |
+| **Agent name** | Identify the agent that generated the activity. |
+| **Product / AI feature** | Identify the product and feature that used Copilot Credits. |
+| **Channel** | Determine where the activity originated. |
+| **LLM model** | Identify the language model used for the activity. |
+| **Knowledge sources / Tool used** | Identify the knowledge source or tool involved in the activity. |
+| **Billed credits / Non-billed credits** | Compare activity that deducted credits with activity that didn't deduct credits. |
+
+Filter or sort the report to isolate unexpected usage. For example, start with billed credits, and then group the results by agent and AI feature to identify the main source of consumption.
 
 ## Manage capacity
 
@@ -101,7 +142,15 @@ Capacity allocation can be managed in the Power Platform admin center.
 In the allocation panel, select an environment and specify the number of Copilot Credits to allocate in the **Copilot Credits** textbox.
 
 ### Overage management
-When consumption exceeds the preallocated capacity, you can choose to draw capacity from the available capacity in the tenant or opt to bill overages to a linked pay-as-you-go plan.
+
+Under **Capacity overages**, choose how an environment can continue using Copilot Credits after it exhausts its allocated capacity:
+
+- Select **Draw from the available capacity in my tenant** to let the environment use unallocated prepaid capacity from the tenant pool.
+- Select **Bill to my pay-as-you-go billing plan** to let the environment continue usage through the selected billing plan.
+
+For eligible Copilot Studio environments that don't have an allocation configuration, **Draw from the available capacity in my tenant** is selected by default.
+
+Selecting an overage option doesn't consume credits by itself. Copilot Credits are consumed only when users or agents perform billable activities. If no overage source is enabled, the environment can consume only its allocated prepaid credits. Experiences that require credits can stop working after that allocation is exhausted.
 
 :::image type="content" source="media/overage-management.png" alt-text="Select how you want to manage when capacity reaches zero in this environment.":::
 

@@ -3,16 +3,16 @@ title: Column-level security
 description: Overview of column-level security using an example.
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 11/19/2025
+ms.date: 09/21/2026
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: ellenwehrle
 ms.contributors:
   - lsuresh
+  - vmirapur
 contributors:
   - fafuxa-ms
-  - srpoduri
   - lavanyapg
 ms.custom: "admin-security"
 search.audienceType: 
@@ -127,7 +127,7 @@ Whether the **Enable column security** checkbox is enabled depends on the value 
 
 ## Best practices
 
-When a [calculated column](/power-apps/maker/data-platform/define-calculated-fields) includes a column that is secured, data might be displayed in the calculated column to users that don't have permission to the secured column. Both the original column and the calculated column should be secured.
+When a [calculated column](/power-apps/maker/data-platform/define-calculated-fields) or [prompt column](/power-apps/maker/data-platform/prompt-column) includes a column that is secured, data might be displayed in the calculated or prompt column to users that don't have permission to the secured column. Both the original column and the calculated or prompt column should be secured.
 
 _Composite columns_ include data from multiple columns. For example, the [`contact` table](/power-apps/developer/data-platform/reference/entities/contact) [`fullname`](/power-apps/developer/data-platform/reference/entities/contact#BKMK_FullName) and [`address1_composite`](/power-apps/developer/data-platform/reference/entities/contact#BKMK_Address1_Composite) columns are composite columns. To completely secure data included in composite columns, you must secure and configure the appropriate column security profiles on multiple columns for the table. For example, to completely secure the `address1_composite` column, you need to secure all of these the columns that begin with `address1_` in both the [contact](/power-apps/developer/data-platform/reference/entities/contact) and [address (`customeraddress`)](/power-apps/developer/data-platform/reference/entities/customeraddress) tables.
 
