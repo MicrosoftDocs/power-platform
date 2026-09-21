@@ -90,10 +90,11 @@ Power Platform supports VNet for both Dataverse plugins and [connectors](#suppor
 
 - [Dataverse low-code plugins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
 - You use copy, backup, and restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center) on virtual network-supported Power Platform environments. You can perform the restore operation within the same virtual network, and across different environments, provided they're connected to the same virtual network. Additionally, the restore operation is permissible from environments that don't support virtual networks to those that do.
+- Using [On-Premises Data Gateway](/power-platform/admin/wp-onpremises-gateway) in combination with VNET Injection is not supported. Some connectors, including [SQL Server](/connectors/sql/), may fail spontaneously if their connection can't be resolved via the configured Azure VNET.
 
 ## Supported regions
 
-Before creating your virtual network and enterprise policy, validate your Power Platform environment's region to ensure it's in a supported region. Use the `Get-EnvironmentRegion` cmdlet from the [subnet diagnostics PowerShell module](/troubleshoot/power-platform/administration/virtual-network#use-the-diagnostics-powershell-module) to retrieve your environment's region information.
+Before creating your virtual network and enterprise policy, validate that your Power Platform environment is in a supported region. Use the `Get-EnvironmentRegion` cmdlet from the [subnet diagnostics PowerShell module](/troubleshoot/power-platform/administration/virtual-network#use-the-diagnostics-powershell-module) to retrieve your environment's region information.
 
 After confirming your environment's region, ensure you configure your enterprise policy and Azure resources in the corresponding supported Azure regions. For example, if your Power Platform environment is in the United Kingdom, then your virtual network and subnets must be in the **uksouth** and **ukwest** Azure regions. If a Power Platform region has more than two available region pairs, you must use the specific region pair that matches your environment's region. For example, if `Get-EnvironmentRegion` returns **westus** for your environment, then your virtual network and subnets must be in **eastus** and **westus**.
 
@@ -132,6 +133,9 @@ The following table lists the services that support Azure subnet delegation for 
 | Dataverse | [Dataverse plugins](/power-apps/developer/data-platform/plug-ins) | Generally available |
 | Connectors | <ul><li>[SQL Server](/connectors/sql/)</li><li>[Azure SQL Data Warehouse](/connectors/sqldw/)</li><li>[Azure Queues](/connectors/azurequeues/)</li><li>[Custom connectors](/connectors/custom-connectors/)</li><li>[Azure Key Vault](/connectors/keyvault/)</li><li>[Azure File Storage](/connectors/azurefile/)</li><li>[Azure Blob Storage](/connectors/azureblob/)</li><li>[HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/)</li></ul> | Generally available |
 | Connectors | <ul><li>[Snowflake](/connectors/snowflakev2/)</li><li>[Databricks](/connectors/databricks/)</li><li>[AI search](/microsoft-copilot-studio/knowledge-azure-ai-search)</li></ul> | Generally available |
+
+> [!IMPORTANT]
+> Only one of the HTTP connectors - [HTTP with Microsoft Entra ID (preauthorized)](/connectors/webcontents/) - is supported by VNET Injection. [HTTP with Microsoft Entra ID](/connectors/webcontentsv2/) and the standard HTTP connector are not supported.
 
 ## Supported environments
 
