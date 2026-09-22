@@ -11,7 +11,7 @@ contributors:
   - v-aangie
 ms.component: pa-admin
 ms.topic: faq
-ms.date: 08/14/2026
+ms.date: 09/22/2026
 ms.author: matow
 ms.reviewer: ellenwehrle
 search.audienceType: 
@@ -112,13 +112,12 @@ To find out what type (automated/manual/scheduled) of flow you have, select a fl
 
 These user license context rules don't cause a child flow to inherit Process capacity from its parent. To use Process capacity, directly assign a Process license to the child flow or explicitly add it to the same flow group as the parent.
 
-### We have three environments (development, test, and production) to align with best practices and we need flows in several environments. Do we need to buy a Process license for every environment?
+### Do we need licenses for every environment?
 
-Each flow exists in a specific environment. If you import a flow into another environment, each instance is a separate flow. Flow groups and Process capacity assignments are also environment-specific. In every target environment, create or verify the flow group, explicitly add each parent and child flow that should share capacity, and assign a Process license to the group. You need sufficient Process licenses for each environment where the flows run under a Process plan.
+It depends on the license type:
 
-### We have three environments (development, test, and production) to align with best practices and we need flows in several environments. Do we need to buy a Premium license for every environment?
-
-The Power Automate Premium license is a user level license. All user level licenses (Power Automate Premium, Microsoft 365, Dynamics 365) are tenant level licenses. The user can use the flow in all environments without having to buy a separate license.
+- **Process licenses are environment-specific.** Each flow exists in a specific environment, and importing a flow into another environment creates a separate flow. Flow groups and Process capacity assignments are environment-specific too. In every target environment, create or verify the flow group, explicitly add each parent and child flow that should share capacity, and assign a Process license to the group.
+- **User licenses aren't.** Power Automate Premium, Microsoft 365, and Dynamics 365 are user licenses assigned at the tenant level. A licensed user can run flows in all environments without buying a separate license.
 
 ### Can a Power Automate Hosted Process license be used as a Power Automate Process license?
 
@@ -170,16 +169,17 @@ Windows 11 users can try desktop flows in attended RPA for personal productivity
 
 Windows 11 users can search for "Power Automate" in the Windows search bar. The Power Automate app for the desktop downloads automatically and then launches the first time you select its icon.
 
+For a comparison with other seeded licenses, see the [capability comparison table](#which-capabilities-are-included-with-seeded-licenses).
+
 ### Can Windows 10 and Windows Server 2016 users use Power Automate for desktop?
 
 Yes, they can use Power Automate for desktop and have usage rights for it, but they need to download it from the download center.
 
 ## Legacy license questions
 
-Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a minimum purchase of 5 licenses) and the Power Automate unattended RPA add-on ($150 per bot/month and required licensing prerequisites) will be removed from the pricing page. They'll be removed from the price list on February 1, 2024. Power Automate process, an all-encompassing license that's easier to manage, licenses a single "automation" bot that can be used for unattended robotic process automation (unattended RPA), or cloud flows using digital process automation (DPA) and can be accessed by unlimited users in the organization. Power Automate Process is priced at $150 per bot/month.
+The Power Automate per-flow plan and the Power Automate unattended RPA add-on were removed from the price list on February 1, 2024. Existing per-flow licenses continue to work, but you can't buy more, stack them on a single flow, or share them across a [flow group](/power-automate/flow-groups). The Process license replaces both: it covers unattended robotic process automation (unattended RPA) and cloud flows, can be accessed by unlimited users, can be stacked, and can be assigned to a flow group.
 
-### How is Process license different from per flow license
-### How is Process license different from per flow license request?
+### How is a Process license different from a per-flow license?
 For unattended RPA, previously customers needed to buy a per flow license for the cloud flow and an unattended RPA add-on. Now they can purchase a Process license for every RPA session on a machine. All the cloud flows invoking desktop flows on the machine are included as part of the Process license.
 
 For cloud flows, neither a legacy per-flow license nor a Process license assigned directly to a flow automatically covers its child flows. This allocation model is different from assigning Process capacity to a machine, where eligible cloud flows can inherit a Process plan from the machine. To share one Process license across cloud flows, add up to 25 solution-aware parent and child flows to a [flow group](/power-automate/flow-groups).
@@ -405,37 +405,16 @@ Here are some frequently asked questions about using Power Automate with an Offi
 
 Select Office 365 licenses include limited Power Automate use rights, so you can customize and extend Office 365 for personal productivity scenarios. For enterprise scenarios, Office recommends the [Premium license](types.md#user-licenses).
 
-Office 365 licenses include the following Power Automate capabilities.
-
-- Create and execute automated, scheduled, and button flows.
-- Access to standard connectors.
-- 6,000 [actions per day](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate). 10,000 actions per day during [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period).
-
-The following Power Automate capabilities aren't included.
-
-- Access to premium connectors (except in Dataverse for Teams environments). Learn more about [Dataverse for Teams capabilities](../pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses).
-- Business process flows within app context.
-- Custom connectors within app context.
-- On-premises gateways within app context.
-- Robotic process automation (RPA).
-- AI Builder.
-
 The following Office 365 licenses include Power Automate capabilities:
 
 - Office 365 E1
 - Office 365 E3
 - Office 365 E5
+- Office 365 F1
 - Office 365 F3
 - Office 365 Business Basic
 - Office 365 Business Standard
 - Office 365 Business Premium
-- Office 365 F1
-- Office 365 F3
-- Office 365 E3
-- Office 365 E5
-- Windows 10 Pro
-- Windows Enterprise E3
-- Windows Enterprise E5
 - Office 365 A1 for Faculty
 - Office 365 A1 for Students
 - Office 365 A1 Plus for Faculty
@@ -447,26 +426,32 @@ The following Office 365 licenses include Power Automate capabilities:
 - Office 365 A5 for Students
 - Office 365 A5 for Student Use Benefit
 
+### Which capabilities are included with seeded licenses?
+
+The following table compares the Power Automate capabilities included with Office 365, Dynamics 365, Power Apps, and Windows licenses. *In app context* means the capability is included only when the flow uses the same data sources as the licensed application.
+
+| Capability | Office 365 | Dynamics 365 | Power Apps | Windows |
+|---|---|---|---|---|
+| Automated, scheduled, and button cloud flows | Yes | Yes | Yes | No |
+| Standard connectors | Yes | Yes | Yes | No |
+| Premium connectors | Only in [Dataverse for Teams](../pricing-billing-skus.md#dataverse-capabilities-with-microsoft-365-licenses) environments | In app context | In app context | No |
+| Business process flows | No | In app context | In app context | No |
+| Custom connectors | No | In app context | In app context | No |
+| On-premises data gateway | No | In app context | In app context | No |
+| Attended RPA (desktop flows) | No | No | No | Default environment only |
+| Unattended RPA | No | No | No | No |
+| AI Builder capacity | No | No | No | No |
+| [Actions per day](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate) | 6,000 | 6,000 Team Member<br>40,000 Professional and Enterprise | 40,000 Premium<br>6,000 Per App | Not applicable |
+
+During the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period), per-user entitlements still exist, but aren't the ones being applied yet. Instead, each cloud flow gets a single limit that everyone who runs it shares, not a limit created by combining individual users' entitlements. Learn more in [Action limits and capacity questions](#action-limits-and-capacity-questions).
+
 ## Dynamics 365 license questions
 
 The following questions are related to Dynamics 365 licensing and Power Automate use rights.
 
 ### What Power Automate capabilities are included in Dynamics 365 licenses?
 
-Dynamics 365 licenses include the following Power Automate capabilities:
-
-- Create and execute automated, scheduled, or button flows.
-- Access to standard connectors.
-- Access to premium connectors within app context.
-- Business process flows within app context.
-- Custom connectors within app context.
-- On-premises gateways within app context.
-- [Action limits](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate): Dynamics 365 Team Member gets 6,000 actions per day, Dynamics 365 Professional gets 40,000 actions per day, and Dynamics 365 Enterprise gets 40,000 actions per day.
-
-The following Power Automate capabilities aren't included in Dynamics 365 licenses:
-
-- Robotic Process Automation
-- AI Builder capacity
+Dynamics 365 licenses include a limited set of Power Automate capabilities. See the [capability comparison table](#which-capabilities-are-included-with-seeded-licenses).
 
 When you use a Dynamics 365 license with Power Automate, your flows must run within the context of the Dynamics 365 application. This requirement means using the same data sources for triggers or actions as the Dynamics 365 application. If your flow uses standalone Power Automate actions that aren't related to the Dynamics 365 applications, you need to purchase standalone Power Automate licenses.
 
@@ -509,21 +494,9 @@ The following questions are related to Power Apps licensing and Power Automate u
 
 ### What Power Automate capabilities are included in Power Apps licenses?
 
-A limited set of Power Automate capabilities are included as part of a Power Apps license. Power Apps licenses include the following Power Automate capabilities:
+A limited set of Power Automate capabilities are included as part of a Power Apps license. See the [capability comparison table](#which-capabilities-are-included-with-seeded-licenses).
 
-- Create and execute automated, scheduled, and button flows.
-- Access to standard connectors.
-- Access to premium connectors within app context.
-- Business process flows within app context.
-- Custom connectors within app context.
-- On-premises gateways within app context.
-- Action limits: Power Apps Premium gets 40,000 actions per day and Power Apps Per App gets 6,000 actions per day. Learn more in [action limits and allocations](/power-platform/admin/api-request-limits-allocations#request-limits-in-power-automate).
-- Power Apps Premium gets 250 MB Dataverse database capacity and 2 GB Dataverse file capacity. Power Apps per app gets 50 MB Dataverse database capacity and 400 MB Dataverse file capacity. Flows invoked by the app created using Power Apps that handle complex objects consume this storage limit. For example, if a flow parses a 100-page document and makes updates to it, the storage it needs to retain the document in run history for future troubleshooting consumes this limit.
-
-The following Power Automate capabilities aren't included in Power Apps licenses:
-
-- Robotic Process Automation
-- AI Builder capacity
+Power Apps licenses also add Dataverse database and file capacity to your tenant's overall capacity pool. Power Apps Premium adds 250 MB of Dataverse database capacity and 2 GB of Dataverse file capacity per license. Power Apps Per App adds 50 MB of Dataverse database capacity and 400 MB of Dataverse file capacity per license. This capacity isn't reserved for the app that earned it—any Dataverse consumption in the tenant draws from the same pool, including flows invoked by the app that handle complex objects. For example, if a flow parses a 100-page document and updates it, retaining the document in run history for troubleshooting consumes some of that tenant capacity.
 
 #### Example of Power Automate use within an app created using Power Apps context
 
@@ -641,37 +614,21 @@ Here are a few examples of what multiplexing is or isn't:
 
 ### I have multiple flows running under a shared service account. What licenses do I need?
 
-- **Service account**: Microsoft Entra user account used as a service account. Service accounts are a special type of account that's intended to represent a nonhuman entity, such as an application, API, or other service. User accounts, used as a service account by sharing credentials with other users, pose a security risk and it's difficult to track who made changes to a flow if multiple people have access to the service account. Managing their passwords is also a challenge. When creating service accounts, provide only the permissions that are required for the task. Evaluate existing service accounts to see if you can reduce privileges. Limit the number of people who have access to the service account to minimize security risks. You can also create different accounts for different scenarios to minimize the exposure. Service accounts aren't recommended as a best practice. In some scenarios, service accounts are used to remove the dependency from the flow to the original owner. In such cases, use Service principal to resolve security threats.
+This guidance applies to flows that run under a service account as the flow owner or run-only user. Flows that use a service account only as a connection or co-owner aren't affected.
 
-- **Service principal**: Microsoft Entra service principal functions as the identity of the application instance. Service principals define who can access the application and what resources the application can access. A service principal is created in each tenant where the application is used and references the globally unique application object.
+To avoid multiplexing:
 
-- **Non-interactive users**: Dataverse supports non-interactive users for activities like background processes that migrate data between databases. These don't require a user to interact with the service. There's a maximum limit of seven (7) non-interactive users per tenant. Non-interactive users aren't yet supported by Power Automate.
+- **Standard connectors only.** You don't need to purchase or assign a license. Power Automate Free automatically covers cloud flow creation and use for every work or school account in the tenant.
+- **Premium features** (premium connectors, robotic process automation, custom connectors, on-premises gateway, business process flows). If a small, fixed set of users share the account, license those users and the service account. If many users share the account, assign a [Process license](types.md#capacity-licenses) to the flow instead, so users added later are automatically compliant.
+- **Manually triggered, app-triggered, or Dataverse "Run as user" flows.** Every user who runs the flow needs a Premium license, or the flow needs a Process license. Learn more in [Who needs to purchase a Premium license?](#who-needs-to-purchase-a-premium-license).
+- **Premium flow in the context of a Power Apps or Dynamics 365 app**, where the flow shares the app's data sources. Every user who runs the flow, including through the service account, needs a Power Apps or Dynamics 365 license to use the app. If they don't have one, they need Power Automate user licenses instead. Assigning a Process license to the flow removes the need for a separate Power Automate user license, but doesn't replace the Power Apps or Dynamics 365 app license.
 
-- **Human users**: These are the human synchronized users from Microsoft Entra ID.
-
-This guidance is specific to flows that run under a service account as the owner of the flow.
-
-If you want to run your flow under a service account, here's how to avoid multiplexing:
-
-- If the flow only uses standard connectors and no premium features, all the users who have the credentials of the service account can have a Microsoft/Office 365 license, Power Automate Free, or any Power Automate Premium license.
-
-- If the flow uses premium features (premium connectors, Robotic Process Automation, custom connectors, on-premises gateway, business process flows):
-    - The service account is used by a limited set of users. In this case, licensing all the users and the service account is enough.
-    - The service account is used by many users. In this case, it's recommended to assign a Process license to the flow to ensure any new users adding to the account are automatically compliant.
-
-- If the flow is a manually- or app-triggered flow/Dataverse 'Run as user' flow, all users who run the flow need a Premium license or the flow needs a process license. Check out this FAQ on who needs to purchase a Premium license.
-
-- Premium flow is in context (the flow shares the data sources of the app) of an app created using Power Apps/Dynamics 365 app:
-    - All the users who have the credentials for the service account and the service account need a Power Apps/Dynamics 365 license.
-    - If they don’t have a Power Apps/Dynamics 365 license, all the users and the service account need Power Automate user licenses.
-    - Alternatively, the flow can be licensed with a Process license and none of the users/service account needs a license.
-
-- Multiple users sharing credentials of a service account and using premium flows with one Power Automate Premium license assigned to the service account is considered multiplexing and the flow isn't compliant.
+Assigning a single Power Automate Premium license to a service account that many users share is multiplexing, and the flow isn't compliant.
 
 > [!NOTE]
-> The guidance is specific to service accounts used as flow owners or run-only users. Flows using service accounts as connections or co-owners aren't impacted by this guidance. We recommend running the flows with service principal as the owner instead of service account to avoid security risks.
+> Microsoft recommends using a Microsoft Entra service principal as the flow owner rather than a shared service account. Shared credentials are a security risk and make it difficult to track who changed a flow. If you do use a service account, grant it only the permissions the task requires and limit who has access to it.
 >
-> This is guidance only and not hard enforcement. Admins are responsible for licensing all the flows correctly to stay compliant.
+> This guidance isn't hard enforcement. Admins are responsible for licensing flows correctly to stay compliant.
 
 ### There's a premium flow that sends approval requests to a set of users and then waits for the users to approve or reject the request before it continues running. Do the approvers need a Premium license?
 

@@ -1,15 +1,15 @@
 ---
 title: Issues and FAQs about pay-as-you-go plans 
 description: This article addresses known issues about pay-as-you-go plans and provides answers to frequently asked questions.
-author: EllenWehrle
+author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: faq
-ms.date: 12/02/2024
+ms.date: 09/22/2026
 ms.subservice: admin
-ms.author: ellenwehrle 
+ms.author: ampatra
 ms.reviewer: ellenwehrle
 contributors:
-  - amiyapatr-zz 
+  - radioblazer 
   - ShawnNandiMSFT
 search.audienceType: 
   - admin
@@ -20,7 +20,7 @@ search.audienceType:
 ## Known issues 
 - Pay-as-you-go billing and reporting aren't available in Norway and Korea (South).
 - Deleting a billing policy in the Power Platform admin center won't automatically delete corresponding Power Platform account resource in the Azure portal. This resource can be deleted manually in the Azure portal, if needed.
-- The Power Platform requests meter isn't available yet. Usage of Power Platform requests is reported, but it isn't billed, and linking an environment to an Azure subscription doesn't raise the request entitlements of the users and flows in it.
+- The Power Platform requests meter isn't available yet. Usage of Power Platform requests is reported, but it isn't billed, and linking an environment to an Azure subscription doesn't raise the request entitlements of the users and flows in it. Other limits that can throttle a flow, such as connector limits and Dataverse service protection limits, apply regardless.
 - The report for the Power Platform request meter doesn't currently show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users show as 0 when in fact they should be shown as 6000 (requests per 24 hour period) as outlined in [Request limits and allocations](https://aka.ms/platformlimits).
 
 ## Frequently asked questions 

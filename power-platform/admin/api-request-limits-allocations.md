@@ -239,7 +239,7 @@ To ensure Power Automate service availability and quality, there are limits to t
 The 24-hour limit is based on the user license or on the Process or per flow plan license allocated to a cloud flow:
 
 - If a user has a Power Automate Premium license, they can make 40,000 Power Platform requests across all of their cloud flows in a tenant within a 24-hour period. This limit includes requests the platform makes to non-Microsoft connectors.
-- If a cloud flow has a Process license, the flow, its child flows, and its associated flows can make 250,000 Power Platform requests across all users of the flow in a 24-hour period.
+- If a cloud flow has a Process license, the flow can make 250,000 Power Platform requests across all users of the flow in a 24-hour period. A Process license doesn't automatically extend to a flow's child flows; to share that entitlement across a flow and its child flows, explicitly add up to 25 solution-aware parent and child flows to the same [flow group](/power-automate/flow-groups).
 - If a cloud flow has a per flow plan (legacy), the flow can make 250,000 Power Platform requests across all users of the flow in a 24-hour period.
 
 To prevent a usage-heavy flow or user from impacting other users, the system tracks this capacity based on consumption at an individual user or flow level and it can't be pooled at any other level like environment or tenant levels. The 24 hours is a sliding window, meaning that anytime a cloud flow runs, the system looks at the requests in the past 24 hours to determine if the user is at their limit. For example, two users in a tenant might have Premium licenses, and each user gets 40,000 requests per 24-hour period. If the first person uses more than 40,000 requests in a 24-hour period, their flows slow down and don't impact the second user who only used 20,000 requests and still has 20,000 requests remaining.
@@ -270,7 +270,7 @@ Learn more about [Power Automate licenses](/power-platform/admin/power-automate-
 > - You can stack multiple Power Automate Process licenses on a single cloud flow. Each additional license adds 250,000 PPR to the flow's daily entitlement. The flow must be in a [solution](/power-automate/create-flow-solution).
 > - Learn more:
     > - [Can I assign multiple Process licenses to a single cloud flow?](/power-platform/admin/power-automate-licensing/faqs#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow)
-    > - [FAQ on Power Platform Request within Power Automate](/power-platform/admin/power-automate-licensing/faqs#power-platform-requests-questions)
+    > - [Action limits and capacity questions](/power-platform/admin/power-automate-licensing/faqs#action-limits-and-capacity-questions)
 
 ### Power Automate transition period
 
