@@ -1,7 +1,7 @@
 ---
 title: When premium flows are subject to license enforcement
 description: Learn about types of enforcements and recommendations.
-author: Samathur
+author: radioblazer
 contributors:
   - samathur
   - rakrish84
@@ -9,9 +9,9 @@ contributors:
   - v-aangie
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/14/2026
+ms.date: 09/22/2026
 ms.author: matow
-ms.reviewer: angieandrews
+ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ---
@@ -36,8 +36,6 @@ The report identifies flows that require a license for a subset of scenarios tha
 ## Types of enforcements
 
 Admins can access the details of flows that need attention through either the environment level or tenant level [license usage reports](../view-license-consumption-issues.md).
-
-Updated timeline for enforcement using the environment lifecycle operations will be shared in Q4 2024.
 
 |Enforcement type  |Exceptions  |Recommended action   |
 |---------|---------|---------|

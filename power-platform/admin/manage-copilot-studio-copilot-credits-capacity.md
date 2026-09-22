@@ -49,7 +49,8 @@ When you view the Copilot Studio summary, you see the following cards in the **C
 This card displays the count of active billing plans with the Copilot Studio meter applied, along with the month-to-date total of Copilot Studio credit billed to these plans. A billing plan in the Power Platform admin center is a configuration that administrators use to group one or more environments. By using a billing plan, administrators can track and bill Copilot Studio credit capacity usage directly to an Azure subscription on a pay-as-you-go basis.
 
 #### Prepaid capacity
-The **Prepaid capacity** card shows the number of prepaid capacity units that you purchased, assigned, and consumed. These units can be either session-based or Copilot credit capacity units. The card provides a link to manage each type.
+
+The **Prepaid capacity**  card shows the prepaid capacity units available, assigned, and consumed, including capacity purchased through Copilot Credit packs or included with eligible Dynamics 365 Premium licenses. These units can be session-based or Copilot Credit capacity units, with links to manage each type.
 
 ### Copilot Credits capacity tab
 

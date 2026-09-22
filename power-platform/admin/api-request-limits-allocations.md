@@ -38,6 +38,8 @@ Requests in Microsoft Power Platform are actions that a user takes across differ
 > [!NOTE]
 > Dataverse excludes a small set of internal system operations from limits, such as login, logout, and system metadata operations.
 
+Agent flows are metered through Microsoft Copilot Studio rather than through Power Platform requests, so the limits in this article don't apply to them. Learn more in the [Microsoft Copilot Studio Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2320995).
+
 The following sections describe the request types and the limits established for each.
 
 ## Licensed user request limits
@@ -105,20 +107,29 @@ If a tenant has multiple types of subscriptions, their non-licensed user request
 
 Power Platform request limits were updated and substantially increased in late 2021 to be at levels that are significantly higher than typical usage for most customers. With the updated limits, expectations are that few users would exceed the documented limits. If you anticipate exceeding the non-licensed user limits, reach out to your reseller or Microsoft Account team to discuss a custom solution.
 
-Any possible high usage enforcement won't happen until six months after Power Platform Request usage reporting is generally available in the Power Platform admin center.
+Enforcement of the official limits won't start until at least six months after Power Automate usage reporting is generally available.
 
-Microsoft reserves the right to enforce limits for overages. If you experience high usage enforcement, you might see throttling. Buy more capacity to avoid high usage enforcement, or move your environment to [pay-as-you-go](pay-as-you-go-overview.md) and pay for usage above daily limits.  
+Microsoft reserves the right to enforce limits for overages. If you experience high usage enforcement, you might see throttling. To avoid it, bring usage within your entitlement or add capacity for the identity or flow that exceeds it. Connector limits, Dataverse service protection limits, and other service protection limits are separate from the daily request limits and apply however much request capacity you hold.
 
-## Power Platform Request capacity add-on
+## Power Platform requests add-on
 
-Customers that observe in reporting that they're frequently using more requests than limits can avoid high usage enforcement by purchasing the Power Platform Request capacity add-on. This add-on allows customers to increase the limits for specific high usage licensed users or high usage non-licensed users. Each capacity add-on raises the request limit by another 50,000 per 24 hours. Multiple capacity add-ons can be assigned to increase limits.
+The Power Platform requests add-on increases the request limit for a specific high usage licensed user or high usage non-licensed user. Each add-on raises the limit by another 50,000 requests per 24 hours, and you can assign multiple add-ons to increase it further.
 
-You can't assign Power Platform requests capacity add-on packs to users or flows during the [transition period](#power-automate-transition-period). However, Microsoft recommends buying these add-ons to stay within your license terms and to prepare for when the transition period ends.
+You can't currently assign Power Platform requests add-on packs to users or flows. To give a specific flow its own entitlement, use a Process license instead.
 
-If your Power Automate flows are throttled, try [Pay-as-you-go](power-automate-licensing/faqs.md#pay-as-you-go-for-action-overages) to make sure none of the flows in the environment are throttled. If you can't use Pay-as-you-go, buy a [Process license](power-automate-licensing/types.md#capacity-licenses) or add-ons and create a Microsoft support ticket with the flow and add-on details so the support team can provide exceptions for your throttled flows.
+### Add capacity to a Power Automate cloud flow
+
+You can't assign the Power Platform requests add-on to a specific cloud flow, so it isn't the lever for a single throttled flow. Assign a [Process license](power-automate-licensing/types.md#capacity-licenses) to the flow instead. A Process license gives the flow its own entitlement of 250,000 Power Platform requests per 24 hours, independent of the licenses held by the people who use it. The flow must be in a [solution](/power-automate/create-flow-solution).
+
+You have two ways to allocate that capacity:
+
+- **Assign the license directly to the flow.** If one flow needs more than 250,000 requests per 24 hours, stack up to 10 Process licenses on it. Each license adds another 250,000 requests per 24 hours.
+- **Assign the license to a [flow group](/power-automate/flow-groups).** Up to 25 solution-aware cloud flows share the group's 250,000 requests per 24 hours. Add every parent and child flow that should use the shared capacity, because child flows don't inherit capacity from a parent. You can't stack licenses on a flow group.
 
 > [!NOTE]
-> Currently, you can't assign capacity add-ons to users (including application, administrative, and noninteractive users). The ability to assign capacity add-ons aligns with the timing of high usage enforcement.
+> The Power Automate Per-flow plan is a legacy license that the Process license replaced. Flows that already have a Per-flow license keep their 250,000 requests per 24 hours, but you can allocate only one Per-flow license to a flow, its limits can't be stacked, and it can't be assigned to a flow group. Use Process licenses for new capacity, and replace Per-flow licenses rather than renewing them.
+
+Learn more in [What happens when my flow runs too many actions?](power-automate-licensing/faqs.md#what-happens-when-my-flow-runs-too-many-actions)
 
 ## Other applicable limits
 
@@ -228,12 +239,12 @@ To ensure Power Automate service availability and quality, there are limits to t
 The 24-hour limit is based on the user license or on the Process or per flow plan license allocated to a cloud flow:
 
 - If a user has a Power Automate Premium license, they can make 40,000 Power Platform requests across all of their cloud flows in a tenant within a 24-hour period. This limit includes requests the platform makes to non-Microsoft connectors.
-- If a cloud flow has a Process license, the flow, its child flows, and its associated flows can make 250,000 Power Platform requests across all users of the flow in a 24-hour period.
+- If a cloud flow has a Process license, the flow can make 250,000 Power Platform requests across all users of the flow in a 24-hour period. A Process license doesn't automatically extend to a flow's child flows; to share that entitlement across a flow and its child flows, explicitly add up to 25 solution-aware parent and child flows to the same [flow group](/power-automate/flow-groups).
 - If a cloud flow has a per flow plan (legacy), the flow can make 250,000 Power Platform requests across all users of the flow in a 24-hour period.
 
 To prevent a usage-heavy flow or user from impacting other users, the system tracks this capacity based on consumption at an individual user or flow level and it can't be pooled at any other level like environment or tenant levels. The 24 hours is a sliding window, meaning that anytime a cloud flow runs, the system looks at the requests in the past 24 hours to determine if the user is at their limit. For example, two users in a tenant might have Premium licenses, and each user gets 40,000 requests per 24-hour period. If the first person uses more than 40,000 requests in a 24-hour period, their flows slow down and don't impact the second user who only used 20,000 requests and still has 20,000 requests remaining.
 
-Currently all organizations are in [a transition period](/power-platform/admin/power-automate-licensing/types#transition-period) during which higher transition period limits apply. Once transition period ends, the official limits are applicable. Build your cloud flows based on official limits.
+All organizations are currently in [a transition period](#power-automate-transition-period). During this time, Premium and seeded license limits are applied per cloud flow, not per user: each flow gets one limit that everyone who runs it shares, not a limit added up from individual users. Per-user entitlements still exist during the transition, but they aren't the ones being applied yet. Once the transition period ends, enforcement switches to the per-user limits. Process and per-flow capacity licenses don't change; they're flow-level both now and after. Design your cloud flows for the per-user limits that take effect once the transition ends. See [what changes when the transition period ends](#power-automate-transition-period).
 The five-minute limit is 100,000 requests and it's independent of a user's license. For example, flows with a Process license can make 250,000 requests in 24 hours but they can't make more than 100,000 requests within five minutes.
 
 Power Automate request limits per license:
@@ -259,25 +270,27 @@ Learn more about [Power Automate licenses](/power-platform/admin/power-automate-
 > - You can stack multiple Power Automate Process licenses on a single cloud flow. Each additional license adds 250,000 PPR to the flow's daily entitlement. The flow must be in a [solution](/power-automate/create-flow-solution).
 > - Learn more:
     > - [Can I assign multiple Process licenses to a single cloud flow?](/power-platform/admin/power-automate-licensing/faqs#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow)
-    > - [FAQ on Power Platform Request within Power Automate](/power-platform/admin/power-automate-licensing/faqs#power-platform-requests-questions)
+    > - [Action limits and capacity questions](/power-platform/admin/power-automate-licensing/faqs#action-limits-and-capacity-questions)
 
 ### Power Automate transition period
 
-All organizations are in a transition period. That means that enforcement isn't strict and PPR limits are higher. The transition period ends after [Power Platform admin center reports](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview) are generally available. Organizations then have six months to analyze their usage and purchase licenses that are appropriate before strict enforcement on license limits begins.
+All organizations are in a transition period. During this period, you apply limits for Premium and seeded licenses per cloud flow instead of per user, so flows aren't unexpectedly disrupted while usage reporting matures. The transition period doesn't mean there are no daily limits.
 
-Here are a few things to be aware of during the transition period:
+The following table summarizes what changes when the transition period ends.
 
-- The transition period doesn't mean there are no daily limits. It means the currently enforced limits are more generous than the official limits to prevent potential unintended impact on your apps or flows.
+| Behavior | During the transition period | After the transition period |
+|---|---|---|
+| Where limits apply | Cloud flow level | User level for Premium licenses; cloud flow level for Process and Per-flow licenses |
+| Stacking user licenses | Not supported. Same rule as after the transition period: a flow's limit follows its license context, not a combined total across the user's plans | Still not supported. Each license's limits apply separately to the flows running in that license's context, not as a combined total |
+| Power Platform requests add-ons | Not assignable to users or cloud flows | No change currently planned |
+| Seeded licenses | Cloud flows must run within the context of the app, though this isn't strictly enforced yet | Cloud flows must run within the context of the app |
 
-- These transition period limits are applied at the cloud flow level during the transition period. Additionally, a separate per user level limit of 1,000,000 cloud flow actions is applied during the transition period to ensure users don't exceed 1M actions across all their flow runs in a day. After the transition period ends, the actual limits are applied at user level for Premium licenses and cloud flow level for Process / Per flow-plan licenses.
+Two points that hold throughout:
 
-- During the transition period, manual cloud flows don't use the flow owners/flow invokers limits. Every manual cloud flow has a performance profile of Medium (100,000 requests/flow/24 hours). After the transition period, manual cloud flows will use the request limits of invoking user.
+- **Power Platform requests add-ons aren't the lever for a single throttled flow.** You can't assign the add-on to a cloud flow, and during the transition period you can't assign it at all. To give a specific flow its own entitlement, assign a [Process license](power-automate-licensing/types.md#capacity-licenses) to it or to a [flow group](/power-automate/flow-groups) that contains it. If a flow is throttled, assign a Process license to it.
+- **Stay within your license terms now.** Remaining compliant during the transition period avoids disruption when it ends. Learn more about [seeded licenses](power-automate-licensing/deep-dive-on-specific-license.md).
 
-- Since the limits are more generous during the transition period, stacking of user licenses isn't supported. If a user has multiple plans, such as a Microsoft 365 plan and a Dynamics 365 plan, the flow uses the higher plan (Dynamics 365 plan).
-
-- Power Platform requests capacity add-on packs aren't assignable to users or cloud flows during the transition period. However, Microsoft recommends that you purchase these add-ons to remain within your license terms and to be prepared for when the transition period ends. If your cloud flows are currently being throttled, purchase add-ons and create a support ticket with the flow details and add-on details so that the support team can provide exceptions for your throttled flows.
-
-- Seeded license users can only use cloud flows within the context of the app. Learn more in the [seeded licenses](/power-platform/admin/power-automate-licensing/deep-dive-on-specific-license) section. The enforcement on license limits is less strict during transition period and Microsoft recommends that you remain within your license terms to avoid any disruptions when the transition period ends.
+The **Licensing** > **Power Automate** > **Usage** area in the Power Platform admin center has superseded the downloadable [Power Platform request reports](#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview). Use it to prepare by finding flows and users that exceed their official limits, and license them with a Process license or a flow group.
 
 ## Frequently asked questions
 
@@ -287,7 +300,7 @@ Reporting for Power Platform request usage in preview is available in the Power 
 
 ### What are the timelines for Power Platform Request limits?
 
-The concept of limits was first introduced in late 2019 and documented limits were substantially increased in late 2021. Public preview reporting for Power Platform Requests rolled out in June 2022. Following a public preview period, the reports move to general availability. There's no current ETA for when GA happens. Any potential high usage enforcement won't start until at least six months after reports are generally available. However, Power Automate continues to throttle at transition limits until enforcement. Learn more in [Power Automate licensing FAQ](power-automate-licensing/faqs.md#action-limits-and-capacity-questions).
+Enforcement of the official limits won't start until at least six months after Power Automate usage reporting is generally available, so you have time to analyze usage and buy the licenses you need. Until enforcement begins, Power Automate continues to throttle at the [transition period](#power-automate-transition-period) limits. Learn more in [Power Automate licensing FAQ](power-automate-licensing/faqs.md#action-limits-and-capacity-questions).
 
 ### What account limits do classic workflows or Power Automate flows use?
 
