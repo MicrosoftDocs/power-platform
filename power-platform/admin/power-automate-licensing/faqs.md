@@ -182,7 +182,7 @@ Starting August 1, 2023, Power Automate per flow ($100 per flow/month, with a mi
 ### How is Process license different from per flow license request?
 For unattended RPA, previously customers needed to buy a per flow license for the cloud flow and an unattended RPA add-on. Now they can purchase a Process license for every RPA session on a machine. All the cloud flows invoking desktop flows on the machine are included as part of the Process license.
 
-For cloud flows, the legacy per-flow license entitled the licensed flow and its child flows. A Process license assigned directly to a cloud flow doesn't automatically cover its child flows. This allocation model is different from assigning Process capacity to a machine, where eligible cloud flows can inherit a Process plan from the machine. To share one Process license across cloud flows, explicitly add up to 25 solution-aware parent and child flows to a [flow group](/power-automate/flow-groups).
+For cloud flows, neither a legacy per-flow license nor a Process license assigned directly to a flow automatically covers its child flows. This allocation model is different from assigning Process capacity to a machine, where eligible cloud flows can inherit a Process plan from the machine. To share one Process license across cloud flows, add up to 25 solution-aware parent and child flows to a [flow group](/power-automate/flow-groups).
 
 ### How is Power Automate Premium license different from Power Automate per user with attended RPA license?
 
@@ -243,7 +243,7 @@ The Power Platform admin center contains [reports on action usage](../api-reques
 - [Per flow licensed flows report](../api-request-limits-allocations.md#per-flow-licensed-flows-report) – Shows action usage for every flow in the environment that has a Per-flow or Process license.
 - [Nonlicensed user report](../api-request-limits-allocations.md#non-licensed-user-report) – Shows action usage for nonlicensed users and the total entitlement for nonlicensed users for that tenant.
 
-After the reports are generally available, users have time to react and purchase higher action limit licenses before enforcement begins.
+Enforcement of the official limits won't start until at least six months after Power Automate usage reporting is generally available, giving users time to react and purchase higher action limit licenses.
 
 ### What happens when my flow runs too many actions?
 
@@ -259,16 +259,18 @@ Users aren't blocked from using an app or flow for occasional and reasonable ove
 
 Here are some things you can do if you exceeded the limits of your license:
 
-- Revisit your design and check for places that can help reduce the number of actions being called. Learn more in [Redesign your flow to use fewer actions and less data](/troubleshoot/power-platform/power-automate/flow-run-issues/troubleshoot-slow-running-flows#resolution-1-redesign-your-flow-to-use-fewer-actions-and-less-data).
-- If the flow is already optimized, but it uses many actions because of the nature of the business, consider a Process license. The Process license provides the highest action entitlement available (250,000 actions per day).
-    - If the flow already has a Process license and still exceeds 250,000 actions, you can [stack additional Process licenses](#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow) on the same flow&mdash;each adds 250,000 actions per day.
+- Revisit your design and check for places that can help reduce the number of actions being called. Learn more in [Redesign your flow to use fewer actions and less data](/troubleshoot/power-platform/power-automate/flow-run-issues/troubleshoot-slow-running-flows#resolution-1-redesign-your-flow-to-use-fewer-actions-and-less-data). Add trigger conditions so the flow runs only when it needs to, filter at the data source instead of inside an **Apply to each** loop, and remove actions that run on every iteration without changing the outcome.
+- If the flow is already optimized, but it uses many actions because of the nature of the business, consider a Process license. The Process license provides the highest action entitlement available (250,000 actions per day). It's allocated to the flow rather than to a user, so the entitlement doesn't depend on who owns or runs the flow. The flow must be in a [solution](/power-automate/create-flow-solution).
+    - If the flow already has a Process license and still exceeds 250,000 actions, you can [stack additional Process licenses](#can-i-assign-multiple-process-licenses-to-a-single-cloud-flow) on the same flow&mdash;each adds 250,000 actions per day, up to 10 licenses.
+    - To cover several related flows with one license instead, assign it to a [flow group](/power-automate/flow-groups) and share 250,000 actions per day across up to 25 solution-aware cloud flows. Add every parent and child flow explicitly. You can't stack licenses on a flow group.
     - Use [Power Platform request reports in the admin center](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview) to identify high-usage flows that need additional capacity.
 
-- Turn on [Pay-as-you-go](#pay-as-you-go-for-action-overages) for the environment to ensure none of the flows in the environment are throttled.
+> [!NOTE]
+> The Power Automate Per-flow plan is a legacy license that the Process license replaced. A flow that already has a Per-flow license keeps its 250,000 actions per day, but you can allocate only one Per-flow license to a flow, its limits can't be stacked, and it can't be assigned to a flow group. Use Process licenses for new capacity, and replace Per-flow licenses rather than renewing them.
 
-- Purchase the **Power Apps and Power Automate capacity add-on** for your organization. During the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period), because enforcement is less strict, there's no facility to assign the **Power Apps and Power Automate capacity add-on** to a user or flow. However, Microsoft recommends that you purchase these add-ons now to remain within your license terms. Create a support ticket with the flow details and add on details to get temporary relief (30 days) from throttling. This temporary relief isn't available for flows that already have a Process or Per-flow license assigned to them.
+If you're throttled and can't purchase a Process license immediately, a global admin can start a free 30-day trial to get capacity right away. In the [Microsoft 365 admin center](https://admin.microsoft.com/), go to **Billing** > **Purchase services**, search for **Power Automate**, select the Process license, and then select **Start free trial**. Trial Process licenses carry the same entitlements as paid licenses, so you can assign one to a throttled flow or stack one on a flow that already has a Process license. A trial runs for 30 days and can be extended once. Learn more in [Admin-managed trial licenses](deep-dive-on-specific-license.md#admin-managed-trial-licenses).
 
-If a flow is consistently above the transition period limits for 14 consecutive days, Power Automate suspends the flow and sends a notification to the owner. You can purchase a Process license with higher action limits, and then turn it on anytime. You can edit and save the flow to reset the 14 day counter while you purchase the license.  
+If a flow stays above the transition period limits for 14 consecutive days, Power Automate suspends it and notifies the owner. Assign a Process license to raise the flow's limits, then turn the flow back on at any time.
 
 ### What are connector limits and are they different from action limits?
 
@@ -278,7 +280,7 @@ When a flow was throttled because it exceeded the connector limits, you might se
 
 ### I'm using CoE Starter Kit. Will the usage count towards my action limits?
 
-Yes. Cloud flows included in the [CoE Starter Kit](../../guidance/coe/starter-kit.md) use the flow owner's action limits. If CoE flows are being throttled, consider assigning a Process license to high-usage flows or enabling [pay-as-you-go](#pay-as-you-go-for-action-overages) on the environment.
+Yes. Cloud flows included in the [CoE Starter Kit](../../guidance/coe/starter-kit.md) use the flow owner's action limits. If CoE flows are throttled, assign a [Process license](types.md#capacity-licenses) to the high-usage flows, or add them to a [flow group](/power-automate/flow-groups) that has a Process license assigned.
 
 ### Can I use service principal in flows, and does it count against my action limits?
 
@@ -292,7 +294,7 @@ Limits for automated or scheduled service principal flows:
 
 - **Standard connectors only**: 25,000 actions per day at the tenant level, no per-license accrual.
 
-If you need more capacity, enable [pay-as-you-go](#pay-as-you-go-for-action-overages) on the environment or purchase [Power Automate capacity add-ons](add-ons.md#power-automate-capacity-add-ons).
+If you need more capacity, assign more [Process licenses](types.md#capacity-licenses) to the flows that need them, or share one license across up to 25 flows with a [flow group](/power-automate/flow-groups).
 
 Learn more in [Associate flows to apps](/power-automate/associate-flow-to-app).
 
@@ -314,7 +316,7 @@ Only [Process licenses can be stacked](#can-i-assign-multiple-process-licenses-t
 
 ### How do I know the action limit for my cloud flow?
 
-The action limit for a cloud flow depends on the license context it runs under. Each flow gets the limit for its context — limits from different licenses don't add up across contexts.
+The action limit for a cloud flow depends on the license context it runs under. Each flow gets the limit for its context, and limits from different licenses don't add up across contexts.
 
 | **License context** | **Daily action limit** |
 | --- | ---: |
@@ -331,10 +333,18 @@ Yes. You can stack up to 10 Process licenses on a single cloud flow to increase 
 
 Alternatively, assign one Process license to a [flow group](/power-automate/flow-groups) to share 250,000 actions per day across up to 25 solution-aware cloud flows. You must explicitly add every parent and child flow that should use the shared capacity. Child flows don't inherit Process capacity from their parent. Stacking isn't available for flow groups.
 
+To stack licenses on a flow:
+
+1. An environment admin allocates the Process licenses to the environment.
+1. The flow owner or an admin opens the flow's **Details** page.
+1. In the Process license settings, select how many licenses to assign to the flow.
+
+Learn more in [Allocate Process capacity to a cloud flow](/power-automate/desktop-flows/capacity-process#allocate-process-capacity-to-a-cloud-flow).
+
 > [!NOTE]
 > - The flow must be in a [solution](/power-automate/create-flow-solution) before a Process license can be assigned. To add an existing flow to a solution, go to **Solutions** > select a solution > **Add existing** > **Automation** > **Cloud flow**. Learn more in [Add an existing cloud flow to a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution).
 > - Use [Power Platform request reports in the admin center](/power-platform/admin/api-request-limits-allocations#view-detailed-power-platform-request-usage-information-in-the-power-platform-admin-center-preview) to see each flow's actual daily action count and identify flows that need additional Process licenses.
-> - To try Process licenses before purchasing, admins can provision a free 30-day [admin-managed trial](deep-dive-on-specific-license.md#admin-managed-trial-licenses) from the Microsoft 365 admin center. Trial Process licenses have the same entitlements as paid licenses and can be stacked.
+> - Trial Process licenses carry the same entitlements as paid licenses and can be stacked. Learn more in [Admin-managed trial licenses](deep-dive-on-specific-license.md#admin-managed-trial-licenses).
 
 ### Are action limits pooled across users in my organization?
 
@@ -364,7 +374,20 @@ Use the fewest number of actions possible to achieve your automation.
 
 The current action limits are designed to be sufficient for most customer scenarios. Learn more in [Action limits and allocations](../api-request-limits-allocations.md).
 
-For high-scale scenarios that exceed these limits, you can link an environment to an Azure subscription. Users and flows in that environment can then consume more than their daily action limits without being throttled&mdash;you only pay for the actions used above the limit. Flows still need a base license (Power Automate Premium, Process, Office 365, Power Apps, or Dynamics). For example, a user with a Power Automate Premium license has a limit of 40,000 actions/day. If the user runs 45,000 actions in a day, the extra 5,000 are billed to the Azure subscription at a per-action rate. Multiple [meters](../pay-as-you-go-meters.md) are turned on when you enable pay-as-you-go on the environment. Learn more in [How to set up Pay-as-you-go](../pay-as-you-go-set-up.md).
+The Power Platform requests meter isn't available yet, so pay-as-you-go isn't currently a way to run a flow above its daily action limits. Usage above the limits is reported but isn't charged, and linking an environment to an Azure subscription doesn't give the flows in it a higher action entitlement. Multiple [meters](../pay-as-you-go-meters.md) are turned on when you enable pay-as-you-go on the environment. Learn more in [How to set up Pay-as-you-go](../pay-as-you-go-set-up.md).
+
+To give a flow a higher entitlement, assign a [Process license](types.md#capacity-licenses) to it, which entitles the flow to 250,000 actions per day independent of the licenses held by the people who use it. Process licenses are stackable, and a [flow group](/power-automate/flow-groups) shares one Process entitlement across up to 25 solution-aware cloud flows.
+
+Other limits are separate from the daily action limits, and no amount of action capacity removes them:
+
+- [Connector limits](#what-are-connector-limits-and-are-they-different-from-action-limits) still apply. For example, the SharePoint connector limit of 600 actions per minute is unchanged in a pay-as-you-go environment.
+- [Dataverse service protection limits](/powerapps/developer/data-platform/api-limits) still apply, and are separate from Power Automate action limits.
+- [Concurrency and throughput limits](/power-automate/limits-and-config) still apply.
+
+If a flow is throttled, confirm which limit it exceeded before changing how the environment is billed. Only the daily action limit responds to pay-as-you-go.
+
+> [!IMPORTANT]
+> You can't currently use Process licenses in a pay-as-you-go environment. If a flow needs a dedicated daily entitlement of 250,000 actions, keep it in an environment that isn't linked to an Azure subscription and assign a [Process license](types.md#capacity-licenses) to the flow or to a [flow group](/power-automate/flow-groups) that contains it.
 
 The following screenshot shows how overage actions are billed in a pay-as-you-go environment.
 
