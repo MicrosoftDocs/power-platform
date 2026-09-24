@@ -6,12 +6,11 @@ ms.author: edleh
 contributors: 
   - tverhasselt
   - EllenWehrle
-  - dgalitsky
   - edlehman
   - haowusky
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 03/17/2026
+ms.date: 09/24/2026
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As an administrator, I want to learn how to connect Power Platform to SAP, so I can build, extend, and deploy Power Platform solutions on top of SAP to integrate data, automate workflows, improve user experiences, and keep the core of my SAP system clean.
@@ -42,6 +41,7 @@ The [SAP OData connector](./sap-odata-connector.md) can consume data from all SA
 - Anonymous authentication
 - [Microsoft Entra ID using Azure API Management](./entra-id-apim-oauth.md) for authentication
 - [Microsoft Entra ID using SuccessFactors](./entra-id-using-successfactors.md) for authentication
+- [OAuth 2.0](./sap-ias-oauth.md) authentication (preview)
 
 ## On-premises data gateway
 
@@ -59,3 +59,4 @@ Set up a separate gateway for each environment. This practice allows you to test
 - [Set up Secure Network Communications](./secure-network-communications.md)
 - [Set up Microsoft Entra ID using Kerberos for SSO](./entra-id-kerberos.md)
 - [Set up Microsoft Entra ID using certificates for SSO](./entra-id-certs.md)
+- [Set up OAuth 2.0 authentication](./sap-ias-oauth.md)
