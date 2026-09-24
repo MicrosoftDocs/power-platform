@@ -6,12 +6,11 @@ ms.author: edleh
 contributors: 
   - tverhasselt
   - EllenWehrle
-  - dgalitsky
   - edlehman
   - haowusky
 ms.reviewer: ellenwehrle
 ms.topic: overview
-ms.date: 03/17/2026
+ms.date: 09/24/2026
 ms.service: power-platform
 ms.subservice: sap
 # Customer intent: As an administrator, I want to learn how to connect Power Platform to SAP, so I can build, extend, and deploy Power Platform solutions on top of SAP to integrate data, automate workflows, improve user experiences, and keep the core of my SAP system clean.
