@@ -6,12 +6,11 @@ ms.author: hawu1
 contributors:
   - tverhasselt
   - microsoft-dustin
-  - Wrighttyler
   - EllenWehrle
   - MartinPankraz
 ms.reviewer: ellenwehrle
 ms.topic: how-to
-ms.date: 09/14/2026
+ms.date: 09/24/2026
 ms.service: power-platform
 ms.subservice: sap
 ai-usage: ai-assisted
