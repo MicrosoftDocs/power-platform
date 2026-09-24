@@ -112,6 +112,8 @@
                   href: power-automate-licensing/faqs.md
                 - name: Licensing management
                   items:
+                    - name: Monitor usage and find flow group candidates
+                      href: power-automate-licensing/power-automate-usage-report.md
                     - name: When premium flows are subject to enforcement
                       href: power-automate-licensing/when-flows-are-turned-off.md
                     - name: Buy Power Automate licenses
