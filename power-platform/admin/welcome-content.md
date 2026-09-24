@@ -1,25 +1,21 @@
 ---
 title: Enable maker welcome content
-description: Enable welcome content for makers for managed environments.
+description: Learn how to enable welcome content for makers for managed environments.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 9/18/2025
-author: EllenWehrle
-ms.author: ellenwehrle
+ms.date: 9/23/2026
+author: sidhartg
+ms.author: sidhartg
 ms.reviewer: ellenwehrle
 ms.subservice: admin
 ms.custom: "admin-security"
 search.audienceType: 
   - admin
 ms.contributors:
-  - sericks
-  - hasharaf  
-  - syalandur
+  - hasharaf
 contributors:
   - akadrno 
-  - sericks007
   - hasharaf
-  - syalandur24
 ---
 
 # Enable maker welcome content
@@ -28,7 +24,7 @@ In managed environments, admins can provide customized welcome content to help t
 
 > [!VIDEO d378c495-3d91-4ba1-8646-aa335620d868]
 
-When the welcome content is used, upon signing in to Power Apps or Copilot Studio, makers are greeted with customized getting started information. More information: [Use the learn hub](/power-apps/maker/common/learn-hub#from-your-org-preview)
+When you use the welcome content, makers are greeted with customized getting-started information when they sign in to Power Apps or Copilot Studio. Learn more in [Use the learn hub](/power-apps/maker/common/learn-hub#from-your-org-preview).
 
 ## Add welcome content
 
@@ -41,9 +37,7 @@ When the welcome content is used, upon signing in to Power Apps or Copilot Studi
 4. On the top menu bar, select **Edit Managed Environment**.
 
 5. Enter the help content in the text box under **Maker Welcome content**.
- 
-    :::image type="content" source="media/welcome/maker-welcome-new.png" alt-text="Enter your welcome content.":::
-      
+       
     You can enter plain text or use Markdown, as demonstrated in this example.
    
      ```
@@ -59,8 +53,13 @@ When the welcome content is used, upon signing in to Power Apps or Copilot Studi
     >[!NOTE]
     >For help with Markdown, see [Getting Started](https://www.markdownguide.org/getting-started/).
 
-4. Enter your own link to a wiki, internal site, or other reference material in the **Learn more URL** box.
+6. Enter your own link to a wiki, internal site, or other reference material in the **Learn more URL** box.
+   
+7. To require makers to acknowledge a privacy or terms-of-use link before continuing, select **Include consent button and log maker activity**, and then enter the URL in **Terms and conditions**. Makers must read and acknowledge the linked content before they can continue. Consent activity is logged and available for audit in Microsoft Purview.
 
-5. Select **Preview in a new tab** to see how the text you entered, or Markdown renders.
+   :::image type="content" source="media/welcome/maker-welcome-new.png" alt-text="Maker Welcome content settings, including the consent button and Terms and conditions field.":::
+
+
+8. Select **Preview in a new tab** to see how the text you entered, or Markdown renders.
 
    :::image type="content" source="media/welcome/maker-welcome-new-2.png" alt-text="Preview content.":::
