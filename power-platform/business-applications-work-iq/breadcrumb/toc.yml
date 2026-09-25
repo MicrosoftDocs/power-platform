@@ -1,0 +1,12 @@
+items:
+- name: Learn
+  href: /
+  topicHref: /
+  items:
+  - name: Power Platform
+    tocHref: /power-platform/
+    topicHref: /power-platform/
+    items:
+    - name: Business Applications in Work IQ
+      tocHref: /power-platform/business-applications-work-iq/
+      topicHref: /power-platform/business-applications-work-iq/index
