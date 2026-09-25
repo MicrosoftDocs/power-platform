@@ -260,6 +260,8 @@
                   href: environment-database-settings.md
                 - name: Environment routing
                   href: default-environment-routing.md
+                - name: Environment routing for Copilot Managed Runtime
+                  href: default-environment-routing-copilot-managed-runtime.md
                 - name: Environment routing for apps
                   href: apps-default-environment-routing.md
                 - name: Product
