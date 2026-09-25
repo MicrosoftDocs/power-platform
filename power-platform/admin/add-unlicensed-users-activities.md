@@ -52,6 +52,5 @@ When you select a Microsoft Entra ID user for an activity, Dataverse creates a c
 
 ## See also
 
-[Update lookup-field.md with non-licensed user info - publish end of July along with PPAC #10993 by …](https://github.com/MicrosoftDocs/powerapps-docs-pr/pull/12155)
+[Use the lookup column on a row](/power-apps/user/lookup-field)
 
-## Additional resources
