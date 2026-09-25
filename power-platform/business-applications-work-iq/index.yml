@@ -59,8 +59,8 @@ landingContent:
         links:
           - text: Copilot Chat
             url: /power-platform/admin/business-applications-work-iq/quickstart?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
-          - text: MCP tools
-            url: /microsoft-365/copilot/extensibility/work-iq/mcp/tool-reference
+          - text: Work IQ CLI
+            url: /microsoft-365/copilot/extensibility/work-iq/cli
 
   - title: Add business context to agents
     linkLists:
@@ -98,7 +98,7 @@ landingContent:
         links:
           - text: Dataverse plugin skills reference
             url: /power-apps/developer/data-platform/agents-plugin/reference?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
-          - text: Work IQ API overview
-            url: /microsoft-365/copilot/extensibility/work-iq/api-overview
+          - text: Work IQ MCP tools reference
+            url: /microsoft-365/copilot/extensibility/work-iq/mcp/tool-reference
           - text: Work IQ Dev Tools
             url: https://microsoft.github.io/wiqd/getting-started/
