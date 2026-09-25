@@ -3,59 +3,59 @@
   - name: Business Applications in Work IQ
     href: index.yml
   - name: Overview
-    href: /power-apps/maker/data-platform/business-applications-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+    href: /power-apps/maker/data-platform/business-applications-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
   - name: Set up and manage
     expanded: false
     items:
     - name: Admin overview
-      href: ../admin/business-applications-work-iq/index.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: ../admin/business-applications-work-iq/index.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Quickstart
-      href: ../admin/business-applications-work-iq/quickstart.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: ../admin/business-applications-work-iq/quickstart.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Manage participation
-      href: ../admin/business-applications-work-iq/manage-participation.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: ../admin/business-applications-work-iq/manage-participation.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Manage AI experience access
-      href: ../admin/business-applications-work-iq/manage-ai-experience-access.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: ../admin/business-applications-work-iq/manage-ai-experience-access.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Review user, agent, and application access
-      href: ../admin/business-applications-work-iq/review-data-access.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: ../admin/business-applications-work-iq/review-data-access.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Understand costs
-      href: ../admin/business-applications-work-iq/understand-costs.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: ../admin/business-applications-work-iq/understand-costs.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
   - name: Create business skills
     items:
     - name: Overview
-      href: /power-apps/maker/data-platform/data-platform-business-skill-overview?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: /power-apps/maker/data-platform/data-platform-business-skill-overview?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Create and use business skills
-      href: /power-apps/maker/data-platform/data-platform-business-skills?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: /power-apps/maker/data-platform/data-platform-business-skills?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
   - name: Create semantic models
     items:
     - name: Overview
-      href: /power-apps/maker/data-platform/semantic-model-overview?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: /power-apps/maker/data-platform/semantic-model-overview?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Fine-tune semantic model signals
-      href: /power-apps/maker/data-platform/fine-tune-semantic-model-signals?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: /power-apps/maker/data-platform/fine-tune-semantic-model-signals?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Manage semantic model glossary entries
-      href: /power-apps/maker/data-platform/manage-semantic-model-glossary?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: /power-apps/maker/data-platform/manage-semantic-model-glossary?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Regenerate the semantic model
-      href: /power-apps/maker/data-platform/regenerate-semantic-model?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: /power-apps/maker/data-platform/regenerate-semantic-model?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Semantic model FAQ
-      href: /power-apps/maker/data-platform/semantic-model-faq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+      href: /power-apps/maker/data-platform/semantic-model-faq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
   - name: Developer tools
     expanded: false
     items:
     - name: Dataverse Ask API
       items:
       - name: Overview
-        href: /power-apps/developer/data-platform/ask?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+        href: /power-apps/developer/data-platform/ask?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
       - name: Get started
-        href: /power-apps/developer/data-platform/ask/get-started?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+        href: /power-apps/developer/data-platform/ask/get-started?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
       - name: Manage semantic models
-        href: /power-apps/developer/data-platform/ask/manage-semantic-models?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+        href: /power-apps/developer/data-platform/ask/manage-semantic-models?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
       - name: Ask using a semantic model
-        href: /power-apps/developer/data-platform/ask/ask-semantic-model?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+        href: /power-apps/developer/data-platform/ask/ask-semantic-model?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Dataverse plugin for coding agents
       items:
       - name: Overview
-        href: /power-apps/developer/data-platform/agents-plugin/?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+        href: /power-apps/developer/data-platform/agents-plugin/?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
       - name: Skills reference
-        href: /power-apps/developer/data-platform/agents-plugin/reference?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/business-applications-work-iq/breadcrumb/TOC.json
+        href: /power-apps/developer/data-platform/agents-plugin/reference?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Work IQ API
       href: /microsoft-365/copilot/extensibility/work-iq/api-overview
     - name: Work IQ Dev Tools

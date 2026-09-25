@@ -18,7 +18,16 @@ items:
       topicHref: /power-platform/architecture/index
     - name: Business Applications in Work IQ
       tocHref: /power-platform/business-applications-work-iq/
-      topicHref: /power-platform/business-applications-work-iq/index 
+      topicHref: /power-platform/business-applications-work-iq/index
+    - name: Business Applications in Work IQ
+      tocHref: /power-platform/admin/business-applications-work-iq/
+      topicHref: /power-platform/business-applications-work-iq/index
+    - name: Business Applications in Work IQ
+      tocHref: /power-apps/maker/data-platform/
+      topicHref: /power-platform/business-applications-work-iq/index
+    - name: Business Applications in Work IQ
+      tocHref: /power-apps/developer/data-platform/
+      topicHref: /power-platform/business-applications-work-iq/index
     - name: Well-Architected
       tocHref: /power-platform/well-architected/
       topicHref: /power-platform/well-architected/index
