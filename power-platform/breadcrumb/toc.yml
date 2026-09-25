@@ -16,6 +16,9 @@ items:
     - name: Architecture Center
       tocHref: /power-platform/architecture/
       topicHref: /power-platform/architecture/index
+    - name: Business Applications in Work IQ
+      tocHref: /power-platform/business-applications-work-iq/
+      topicHref: /power-platform/business-applications-work-iq/index 
     - name: Well-Architected
       tocHref: /power-platform/well-architected/
       topicHref: /power-platform/well-architected/index

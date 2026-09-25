@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path": "power-platform/admin/business-applications-work-iq/overview.md",
+      "redirect_url": "/power-platform/admin/business-applications-work-iq/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "power-platform/admin/manage-copilot-studio-messages-capacity.md",
       "redirect_url": "/power-platform/admin/manage-copilot-studio-copilot-credits-capacity",
       "redirect_document_id": "false"
@@ -2181,6 +2186,11 @@
     {
       "source_path": "power-platform/guidance/white-papers/migrating-from-default-environment.md",
       "redirect_url": "/power-platform/admin/move-apps-from-default-environment",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/apps-default-environment-routing.md",
+      "redirect_url": "/power-platform/admin/default-environment-routing-copilot-managed-runtime",
       "redirect_document_id": false
     }
   ]
