@@ -6,7 +6,6 @@ ms.author: hawu1
 contributors:
   - tverhasselt
   - microsoft-dustin
-  - Wrighttyler
   - EllenWehrle
   - MartinPankraz
 ms.reviewer: ellenwehrle

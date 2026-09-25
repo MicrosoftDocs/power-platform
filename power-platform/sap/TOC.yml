@@ -31,6 +31,8 @@
           href: connect/entra-id-apim-oauth.md
         - name: Set up Microsoft Entra ID using SuccessFactors
           href: connect/entra-id-using-successfactors.md
+        - name: Set up OAuth 2.0 authentication (preview)
+          href: connect/sap-oauth.md
     - name: Use templates or prebuilt agents
       href: templates/overview.md
       items:
