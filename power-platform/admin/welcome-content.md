@@ -3,7 +3,7 @@ title: Enable maker welcome content
 description: Learn how to enable welcome content for makers for managed environments.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 9/23/2026
+ms.date: 09/28/2026
 author: sidhartg
 ms.author: sidhartg
 ms.reviewer: ellenwehrle
@@ -59,7 +59,10 @@ When you use the welcome content, makers are greeted with customized getting-sta
 
    :::image type="content" source="media/welcome/maker-welcome-new.png" alt-text="Maker Welcome content settings, including the consent button and Terms and conditions field.":::
 
-
 8. Select **Preview in a new tab** to see how the text you entered, or Markdown renders.
 
    :::image type="content" source="media/welcome/maker-welcome-new-2.png" alt-text="Preview content.":::
+
+## Related content
+
+- [Configure maker guidelines for Copilot Studio](maker-guidelines.md)

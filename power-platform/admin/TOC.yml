@@ -230,6 +230,8 @@
                           href: allow-llm-generative-responses.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
+                - name: Configure maker guidelines (preview)
+                  href: maker-guidelines.md
                 - name: Usage insights
                   href: managed-environment-usage-insights.md
                 - name: Solution checker enforcement
