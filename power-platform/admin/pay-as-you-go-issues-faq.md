@@ -1,15 +1,15 @@
 ---
 title: Issues and FAQs about pay-as-you-go plans 
 description: This article addresses known issues about pay-as-you-go plans and provides answers to frequently asked questions.
-author: EllenWehrle
+author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: faq
-ms.date: 12/02/2024
+ms.date: 09/22/2026
 ms.subservice: admin
-ms.author: ellenwehrle 
+ms.author: ampatra
 ms.reviewer: ellenwehrle
 contributors:
-  - amiyapatr-zz 
+  - radioblazer 
   - ShawnNandiMSFT
 search.audienceType: 
   - admin
@@ -20,9 +20,8 @@ search.audienceType:
 ## Known issues 
 - Pay-as-you-go billing and reporting aren't available in Norway and Korea (South).
 - Deleting a billing policy in the Power Platform admin center won't automatically delete corresponding Power Platform account resource in the Azure portal. This resource can be deleted manually in the Azure portal, if needed.
-- The Power Platform requests meter is planned to be in preview by the end of March 2022. During this preview, we report on usage of Power Platform requests, however, we won't bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
+- The Power Platform requests meter isn't available yet. Usage of Power Platform requests is reported, but it isn't billed, and linking an environment to an Azure subscription doesn't raise the request entitlements of the users and flows in it. Other limits that can throttle a flow, such as connector limits and Dataverse service protection limits, apply regardless.
 - The report for the Power Platform request meter doesn't currently show correct entitlements for users licensed via the Power Apps Per App license or Power Apps Per App pay-as-you-go meter. Entitlements for such users show as 0 when in fact they should be shown as 6000 (requests per 24 hour period) as outlined in [Request limits and allocations](https://aka.ms/platformlimits).
-- If you have multifactor authentication turned on for the Azure portal, you might see an error when you try to link an Azure subscription from Power Platform admin center. This issue is planned for resolution by the end for March 2022. 
 
 ## Frequently asked questions 
 
@@ -82,10 +81,16 @@ Yes! Starting December 2024, you can select specific product meters when turning
 When an environment uses the pay-as-you-go plan and is linked to an Azure subscription, any storage consumption exceeding the allocated capacity is billed to Azure. If no capacity is allocated to the environment, all storage consumption is billed directly to Azure. For pay-as-you-go environments, the first 1 GB of Dataverse database storage and 1 GB of file storage are included at no charge. However, any log storage consumption is billed immediately. Log storage is utilized only if auditing is turned on for the environment. 
 
 ### Is there throttling if I exceed Power Platform requests entitlements in a pay-as-you-go environment?
-In the context of Power Platform Request entitlement limits, any high usage throttling is removed when an environment has pay-as-you-go turned on. When Power Platform Request metering is active in the Public Preview, if you exceed a daily entitlement limit, you're automatically charged for the overages via Azure subscription without experiencing high usage throttling. 
+In the context of Power Platform request entitlement limits, high usage throttling is removed when an environment has pay-as-you-go turned on. The Power Platform requests meter isn't available yet, so usage above a daily entitlement limit isn't charged today. When the meter becomes available, overages are charged to the linked Azure subscription without high usage throttling. 
 
-> [!NOTE]
-> This doesn't supersede [Service Protection Limit](/powerapps/developer/data-platform/api-limits) browser errors that are separate from high usage throttling. If service protection limits are exceeded, the user could still experience issues on client applications described on the service protection limits page.
+> [!IMPORTANT]
+> This applies only to Power Platform request entitlement limits. Turning on pay-as-you-go doesn't remove the other limits that can throttle a cloud flow or a desktop flow:
+>
+> - [Service protection limits](/powerapps/developer/data-platform/api-limits) for Dataverse are separate from high usage throttling and still apply. A flow that calls Dataverse frequently can still be throttled, and users can still see the client application errors described on the service protection limits page.
+> - Connector limits still apply. For example, the SharePoint connector limits actions to 600 per minute regardless of how the environment is billed.
+> - [Concurrency, looping, and throughput limits](/power-automate/limits-and-config) still apply.
+>
+> If a flow is throttled, confirm which limit it exceeded before you change how the environment is billed. To raise a specific flow's daily action limit, assign a [Process license](power-automate-licensing/types.md#capacity-licenses) to the flow or to a [flow group](/power-automate/flow-groups) that contains it. Process licenses can't be used in a pay-as-you-go environment, so keep a flow that needs one in an environment that isn't linked to an Azure subscription. Learn more in [What happens when my flow runs too many actions?](power-automate-licensing/faqs.md#what-happens-when-my-flow-runs-too-many-actions)
 
 ### Can I stop using pay-as-you-go billing at any time?
 Yes, you can disable pay-as-you-go at any point by either deleting the billing policy or removing the environment from the billing policy. Doing so stops any further charges on the Azure subscription. For more information, go to [Turn off pay-as-you-go](pay-as-you-go-set-up.md#turn-off-pay-as-you-go).
@@ -101,19 +106,7 @@ All environments enabled for pay-as-you-go use the [new Dataverse storage model]
 
 ### Are customers running flows in the context of a Dynamics 365 App charged for the Power Automate pay-as-you-go meters?  
 
-Charges depend on whether a flow is in the context or out of the context of a Dynamics 365 app, and the flow user/owner's Dynamics 365 license.  
-
-Flows that run outside the context of the Dynamics 365 application are charged for the Power Automate pay-as-you-go meters, regardless of the flow owner/user's Dynamics 365 license.  
-
-Flows that run in the context of the Dynamics 365 application are charged for the Power Automate pay-as-you-go meters. But note the following:  
-
-During the preview of the Power Automate pay-as-you-go meter (which starts on July 19, 2022), the following criteria is used to establish a flow is running in the context of a Dynamics 365 App:  
-
-- If it's an instant flow, the user running the flow has a Dynamics 365 Enterprise, Professional, or Team member license.
-
-- If it's an automated or scheduled flow, the owner of the flow has a Dynamics 365 Enterprise, Professional, or Team member license.
-
-These criteria change to align with our licensing guide when we reach general availability of the Power Automate pay-as-you-go meters.  
+A flow is excluded from being charged through the pay-as-you-go meter when it operates under a user who holds a Dynamics 365 Enterprise, Professional, or Team Member license. That's the user running an instant flow, or the owner of an automated or scheduled flow. This determination is based only on license possession; it doesn't check whether the flow actually interacts with Dynamics 365 data.  
 
 ### Are users Microsoft Project licenses charged for the Power Automate pay-as-you-go meters if their flows use Microsoft Dataverse?  
 

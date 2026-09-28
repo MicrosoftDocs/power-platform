@@ -2,19 +2,18 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: how-to
-ms.date: 06/23/2026
+ms.date: 09/25/2026
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta
 ms.reviewer: ellenwehrle
+ai-usage: ai-assisted
 contributors:
   - tapas1447
   - ttreen
   - Funken1766
   - Daniel2327
   - elijohnson-ms
-  - iscohen-microsoft
-  - yingchin
 ms.custom:
   - NewPPAC
   - sfi-image-nochange
@@ -337,9 +336,17 @@ Learn more about the recovery environment in [Recover environment](recover-envir
 
 ## Troubleshooting
 
+### The environment operation runs for a long time. What action can I take?
+
+The length of restore and copy operations varies depending on the size of the data involved, so it's common for these operations to take a long time. If the source environment has large amounts of data (such as database, file, log, audit, lake, or search data), the operation can take up to 48 hours to complete. These operations complete on their own without intervention from Microsoft Support. Wait 48 hours after the operation starts before you create a support ticket.
+
 ### The restore operation failed. What action can I take?
 
 The restore process, especially for environments with large amounts of data, is a complex backend operation. If the restore operation fails, the target environment is disabled. To retry the restore process, the failed environment must be the target environment for the operation. Wait 30 minutes and retry the operation. The other actions you can take for the disabled, target environment are reset, delete, or copy to as a target environment.
+
+### I created a manual backup but can't restore from it yet
+
+If you're restoring from a manual backup, the backup can take up to 10 minutes to be ready for restoration. Wait at least 10 minutes after you create a manual backup before you attempt to restore your data from it.
 
 ### You don't see the environment that you want to restore to
 

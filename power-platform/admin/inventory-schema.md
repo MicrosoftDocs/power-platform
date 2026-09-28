@@ -4,7 +4,7 @@ description: Learn about the resource types and fields available in Power Platfo
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 08/19/2026
+ms.date: 09/28/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -24,7 +24,7 @@ Every record in the `PowerPlatformResources` table has a **type** field that ide
 | Canvas apps | `microsoft.powerapps/canvasapps` |
 | Model-driven apps | `microsoft.powerapps/modeldrivenapps` |
 | Code apps | `microsoft.powerapps/codeapps` |
-| App Builder apps | `microsoft.powerapps/apps` |
+| Managed and App Builder apps | `microsoft.powerapps/apps` |
 | Cloud flows | `microsoft.powerautomate/cloudflows` |
 | Agent flows | `microsoft.powerautomate/agentflows` |
 | Workflow agent flows | `microsoft.powerautomate/m365agentflows` |
@@ -123,7 +123,7 @@ Power Platform inventory not only captures connector usage on individual resourc
 
 - **Tabular connectors don't report operations.** Connectors bound as data sources (such as SharePoint, Dataverse, SQL Server, and Excel Online) appear in `powerPlatformConnectors` but emit an empty `operations` array.
 - **Built-in actions aren't captured.** Built-in actions from Power Automate, such as the HTTP built-in action, Control actions, and Data operations, aren't connectors and don't appear in `powerPlatformConnectors`. This difference often causes confusion: a flow that calls an external service through the HTTP built-in action shows no connector for that call.
-- **Code apps, vibe apps, and App Builder apps aren't covered.** Only the resource types listed in this section emit connector data.
+- **Code apps, vibe apps, managed apps, and App Builder apps aren't covered.** Only the resource types listed in this section emit connector data.
 - **Model-driven apps rarely report connectors.** Model-driven apps rarely call connectors directly. Connector data only appears when a canvas page is embedded in a model-driven app, and that page's connector usage is captured on the canvas page record itself.
 - **No connector display names or tier data.** This release exposes connector IDs and operation IDs only. Display names, tiers (Standard/Premium), and publisher information aren't included.
 
@@ -168,9 +168,14 @@ Power Platform inventory not only captures connector usage on individual resourc
 > [!NOTE]
 > The subtype values correspond to [code apps](/power-apps/developer/code-apps/overview) and [vibe apps](/power-apps/vibe/overview), respectively.
 
-## App Builder apps
+## Apps
 
-For more information, see [App Builder](https://www.microsoft.com/power-platform/topics/app-builder).
+The `microsoft.powerapps/apps` resource type includes the following app subtypes.
+
+| App type | `properties.subType` value |
+|---|---|
+| Managed apps | `microsoftApp` |
+| App Builder apps | `appBuilderApp` |
 
 | API field path | Data type | Description | Example | Status |
 |---|---|---|---|---|
@@ -179,7 +184,15 @@ For more information, see [App Builder](https://www.microsoft.com/power-platform
 | `properties.lastModifiedAt` | datetime | The date and time the app was last modified. | `2026-01-15T10:30:00Z` | Generally available |
 | `properties.lastModifiedBy` | string | The object ID of the user who last modified the app. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.isQuarantined` | boolean | Whether the app is quarantined. | `false` | Generally available |
-| `properties.subType` | string | The subtype of the app. Currently `appBuilderApp`. | `appBuilderApp` | Generally available |
+| `properties.subType` | string | The subtype of the app: `microsoftApp` for managed apps or `appBuilderApp` for App Builder apps. | `microsoftApp` | Generally available |
+
+### Managed apps
+
+Managed apps use the `microsoftApp` subtype.
+
+### App Builder apps
+
+App Builder apps use the `appBuilderApp` subtype and don't add subtype-specific fields beyond the shared Apps fields. For more information, see [App Builder](https://www.microsoft.com/power-platform/topics/app-builder).
 
 ## Cloud flows
 

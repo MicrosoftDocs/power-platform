@@ -1,0 +1,1 @@
+Business Applications in Work IQ is in public preview. Preview features aren't meant for production use and might have restricted functionality. Microsoft makes these features available before an official release so that customers can get early access and provide feedback.

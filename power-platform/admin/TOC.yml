@@ -62,8 +62,8 @@
                       href: enable-hybrid-experience.md
             - name: Admin notifications and announcements (preview)
               items:
-              - name: Overview (preview)
-                href: admin-notifications-announcements.md
+                - name: Overview (preview)
+                  href: admin-notifications-announcements.md
         - name: Licensing
           items:
             - name: Overview
@@ -112,6 +112,8 @@
                   href: power-automate-licensing/faqs.md
                 - name: Licensing management
                   items:
+                    - name: Monitor usage and find flow group candidates
+                      href: power-automate-licensing/power-automate-usage-report.md
                     - name: When premium flows are subject to enforcement
                       href: power-automate-licensing/when-flows-are-turned-off.md
                     - name: Buy Power Automate licenses
@@ -228,6 +230,8 @@
                           href: allow-llm-generative-responses.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
+                - name: Configure maker guidelines (preview)
+                  href: maker-guidelines.md
                 - name: Usage insights
                   href: managed-environment-usage-insights.md
                 - name: Solution checker enforcement
@@ -258,8 +262,10 @@
                   href: environment-database-settings.md
                 - name: Environment routing
                   href: default-environment-routing.md
+                - name: Environment routing for Copilot Managed Runtime
+                  href: default-environment-routing-copilot-managed-runtime.md
                 - name: Environment routing for apps
-                  href: apps-default-environment-routing.md   
+                  href: apps-default-environment-routing.md
                 - name: Product
                   items:
                     - name: Behavior
@@ -268,6 +274,8 @@
                       href: settings-collaboration.md
                     - name: Features
                       href: settings-features.md
+                    - name: Add users without licenses to activity recipient fields (preview)
+                      href: add-unlicensed-users-activities.md
                     - name: Regional and language options
                       href: enable-languages.md
                     - name: Manage privacy and security settings
@@ -850,6 +858,20 @@
               href: administer-catalog.md
             - name: Portal administration
               href: /powerapps/maker/portals/admin/power-platform-admin-center
+        - name: Business Applications in Work IQ administration (preview)
+          items:
+            - name: Overview
+              href: business-applications-work-iq/index.md
+            - name: Quickstart
+              href: business-applications-work-iq/quickstart.md
+            - name: Manage participation
+              href: business-applications-work-iq/manage-participation.md
+            - name: Manage AI experience access
+              href: business-applications-work-iq/manage-ai-experience-access.md
+            - name: Review user, agent, and application access
+              href: business-applications-work-iq/review-data-access.md
+            - name: Understand costs
+              href: business-applications-work-iq/understand-costs.md
         - name: Activity logging and auditing
           items:
             - name: Overview

@@ -4,7 +4,7 @@ description: Learn how to use the Power Platform admin center to view restore de
 author: rijoshi1
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/27/2026
+ms.date: 09/25/2026
 ms.subservice: admin
 ms.author: rijoshi
 ms.reviewer: ellenwehrle
@@ -37,11 +37,12 @@ To restore deleted Dataverse records, turn on the **Keep deleted Dataverse recor
 1. Select **Manage** > **Environments** and then open the environment you want.
 1. Select **Settings** > **Product** > **Features**.
 1. Scroll down to view the **Deleted records** area, and select the **Keep deleted Dataverse records** option.
-1. In the **Keep deleted records (days)** box, enter the number of days, between 1 and 30, to keep deleted records.
+1. In the **Keep deleted records (days)** box, enter the number of days, between 1 and 90, to keep deleted records.
 1. Select **Save**.
 1. Allow 30 minutes for the system to configure the setting.
-    > [!NOTE]
-    > You can only restore records deleted after the setting is turned on.
+> [!NOTE]
+> 1. When you enable **Keep deleted records**, deleted records remain in storage and continue to count toward your organization's storage capacity until they're permanently removed.
+> 1. You can only restore records deleted after this setting is successfully enabled.
 
 ## View and restore the deleted records in Power Apps
 

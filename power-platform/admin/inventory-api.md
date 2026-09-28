@@ -4,7 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents and ap
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 03/27/2026
+ms.date: 09/28/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 
@@ -13,6 +13,19 @@ ai-usage: ai-assisted
 # Power Platform inventory API
 
 The inventory API allows you to execute structured queries against Azure Resource Graph using a POST request with a query specification in the request body. The API translates your query specification into [Kusto Query Language (KQL)](/azure/data-explorer/kusto/query/) for execution against Azure Resource Graph. The inventory API for [Resources](/rest/api/power-platform/resourcequery/resource-query/query-resources) is part of the [Power Platform API reference documentation](/rest/api/power-platform/). For a complete list of resource types and queryable fields, see [Power Platform inventory schema reference](inventory-schema.md).
+
+## Authentication
+
+The inventory API currently supports only delegated user authentication. Get a bearer token for a signed-in user before you call the API.
+
+> [!IMPORTANT]
+> The API doesn't support app-only authentication through a service principal or managed identity. Requests that use these identities return HTTP 403 Forbidden.
+
+For token setup instructions, see [Authentication](programmability-authentication-v2.md) and use a delegated user flow. The service principal flow described in that article doesn't apply to the inventory API.
+
+## Use Power Platform CLI (preview)
+
+You can run inventory resource queries from a terminal by using the preview [`pac resource-query query-resources`](/power-platform/developer/cli/reference/resource-query#pac-resource-query-query-resources) command. The command accepts the JSON query request body directly or from a file.
 
 ## API endpoint
 
@@ -370,7 +383,8 @@ Get all Power Platform resources with environment information—this is the defa
         "'microsoft.powerautomate/cloudflows'",
         "'microsoft.copilotstudio/agents'",
         "'microsoft.powerautomate/agentflows'",
-        "'microsoft.powerapps/codeapps'"
+        "'microsoft.powerapps/codeapps'",
+        "'microsoft.powerapps/apps'"
       ]
     },
     {
@@ -393,7 +407,7 @@ PowerPlatformResources
     | where type == 'microsoft.powerplatform/environments'
     | project joinKey = tolower(name), environmentName = properties.displayName, environmentRegion = location, environmentType = properties.environmentType, isManagedEnvironment = properties.isManaged
   ) on $left.joinKey == $right.joinKey
-| where type in~ ('microsoft.powerapps/canvasapps', 'microsoft.powerapps/modeldrivenapps', 'microsoft.powerautomate/cloudflows', 'microsoft.copilotstudio/agents', 'microsoft.powerautomate/agentflows', 'microsoft.powerapps/codeapps')
+| where type in~ ('microsoft.powerapps/canvasapps', 'microsoft.powerapps/modeldrivenapps', 'microsoft.powerautomate/cloudflows', 'microsoft.copilotstudio/agents', 'microsoft.powerautomate/agentflows', 'microsoft.powerapps/codeapps', 'microsoft.powerapps/apps')
 | order by tostring(properties.createdAt) desc
 ```
 

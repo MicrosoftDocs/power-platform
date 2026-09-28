@@ -5,7 +5,7 @@ author: swatimadhukargit
 ms.subservice: alm
 ms.author: swatim
 ms.custom: ""
-ms.date: 09/02/2026
+ms.date: 09/21/2026
 ms.reviewer: "matp"
 ms.contributors: yehong
 ms.topic: "article"
@@ -58,6 +58,7 @@ If you must use one of the below apps or features in an environment where block 
 |Resource Scheduling      | Enable of scheduling table and selection option to auto create relationships doesn't work.        |
 |Sales Accelerator     |  Enabling Sales Accelerator or modifying settings, enabling leads data hygiene, creating or editing sequences, configuring work assignment, creating or editing segments, don't work.        |
 |Dynamics 365 Customer Insights - Journeys (real-time journeys)  |  Journeys can't be created and published.  <br /> Engagement assets such as triggers can't be created and published.  <br />Channel assets such as emails, forms, SMS, and push notifications can't be created and published.  |
+|Dynamics 365 Customer Insights - Data | Hydration scenarios might fail with errors from Dataverse. |
 | Omnichannel  | Install or upgrade don't work.      |
 |Service Level Agreement (SLA)  | Activation, deactivation, and editing of service level agreement doesn't work.|
 |Attachments | File attachments to appointments or emails using the `activitymimeattachment` table fail.|

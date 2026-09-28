@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 07/28/2026
+ms.date: 09/23/2026
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: ellenwehrle
@@ -15,7 +15,6 @@ contributors:
   - pvayner
   - matapg007
   - wifun
-  - matapg007
 ---
 
 # Microsoft Azure VNet support overview
@@ -112,13 +111,14 @@ After confirming your environment's region, ensure you configure your enterprise
 | Brazil | brazilsouth |
 | Australia | australiasoutheast, australiaeast |
 | Asia | eastasia, southeastasia |
-| UAE | uaenorth |
+| UAE | uaenorth, uaecentral |
 | Korea | koreasouth, koreacentral |
 | Norway | norwaywest, norwayeast |
 | Singapore | southeastasia |
 | Sweden | swedencentral |
 | Italy | italynorth |
 | US Government | usgovtexas, usgovvirginia |
+| US Department of Defense (DoD) | usdodeat, susdodcentral | 
 
 > [!NOTE]
 > Support in US government cloud environments is currently only available for environments deployed in Government Community Cloud – High (GCC High) or Department of Defense (DoD). Support for Government Community Cloud (GCC) environments isn't available.

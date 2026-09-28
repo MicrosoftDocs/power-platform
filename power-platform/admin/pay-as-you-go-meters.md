@@ -25,9 +25,9 @@ When you choose to use pay-as-you-go, usage of Power Platform services is billed
 | Meter | What is counted? | What is billed? |
 |------|--------|--------|
 | Power Apps per-app | The total number of unique monthly active users of each app in a pay-as-you-go environment. </br>An active user is someone who opens an app at least once in the given month. </br>Repeat access of an app by a user isn't counted. Users with Power Apps per-user licenses aren't counted. Users with a Dynamics 365 license that provides access to per user license aren't counted.| $10 per active user/app/month |
-| [Power Automate flow runs (preview)](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview)| Flow runs for premium cloud flows and desktop flows. <br/>Flows with standard connectors are excluded from charges. <br /> Users with Power Automate per user licenses (for example Power Automate Per User, Power Automate Per User with attended RPA) are excluded from flow run charges when using a feature within their license entitlements. <br /> Similarly, flows using a Power Automate per flow license are excluded from run charges when using a feature within their license entitlements. | $0.60 per flow run for Power Automate cloud flow runs and desktop flow runs in attended mode <br /> $3.00 per flow run for Power Automate desktop flow runs in unattended mode  <br /> $3.00 per flow run for Power Automate desktop flow runs with hosted robotic process automation (RPA) (preview) which includes hosted machines and hosted machine groups |
+| [Power Automate flow runs (preview)](/power-platform/admin/pay-as-you-go-meters?tabs=image#power-automate-meters-preview)| Flow runs for premium cloud flows and desktop flows. <br/>Flows with standard connectors are excluded from charges. <br /> Users with Power Automate per user licenses (for example Power Automate Per User, Power Automate Per User with attended RPA) are excluded from flow run charges when using a feature within their license entitlements. | $0.60 per flow run for Power Automate cloud flow runs and desktop flow runs in attended mode <br /> $3.00 per flow run for Power Automate desktop flow runs in unattended mode  <br /> $3.00 per flow run for Power Automate desktop flow runs with hosted robotic process automation (RPA) (preview) which includes hosted machines and hosted machine groups |
 | Dataverse | For database storage, any usage exceeding 1 GB or the allocated capacity per pay-as-you-go environment. </br>For file storage, any usage exceeding 1 GB or the allocated capacity per pay-as-you-go environment. </br>If auditing is turned on, any resulting log storage usage exceeding allocated capacity is counted. | For usage above 1 GB for database: $48 per GB/month</br>For usage above 1 GB for file: $2.40 per GB/month </br>For any log usage: $12 per GB/month |
-| [Power Platform requests (coming soon)](/power-platform/admin/power-automate-licensing/types#pay-as-you-go)| Each user in a pay-as-you-go enabled environment gets a daily entitlement of Power Platform requests based on their license. Learn more in [License limits](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits). This is sufficient for most customers. For those with high-scale scenarios, any Power Platform requests above that entitlement is counted. | 0.00004$ per request/day above the daily entitled limits |
+| [Power Platform requests (not yet available)](/power-platform/admin/power-automate-licensing/faqs#pay-as-you-go-for-action-overages)| Each user in a pay-as-you-go enabled environment gets a daily entitlement of Power Platform requests based on their license. Learn more in [License limits](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits). This is sufficient for most customers. For those with high-scale scenarios, any Power Platform requests above that entitlement is counted. | Not billed. This meter isn't available yet. |
 | [Power Pages (preview)](#power-pages-meters-preview) | Unique monthly active users of Power Pages websites. </br>An active authenticated user is someone who logs in to the website at least once in the given month.<br>Users who authenticate to a website (by logging in using any auth provider) are counted as authenticated active users. Repeat access by a user within the calendar month isn't counted. Users with Power Apps per-user license or Dynamics 365 enterprise licenses that provides access to website won't be counted.</br>Users who don't authenticate to a website are counted as anonymous active users. Repeat access of the website by a user within the calendar month isn't counted as long as the anonymous user ID stored in the cookie isn't deleted or changed. | $4 per active authenticated user/website/month</br>$0.30 per active anonymous user/website/month |
 | Copilot Studio | The Copilot Studio pay-as-you-go meter counts the total number of Copilot Credits consumed by agents. <br/>_Copilot Credits_ are a measure of the time and effort required for your agent to retrieve information and respond to your prompts and any actions that the agent takes, based on custom triggers and skills. The number of Copilot Credits decreased for each response or action is dependent on the complexity of the task completed by the agent.<br/>For the most complete and up-to-date Copilot Studio licensing and billing information, see the [Microsoft Copilot Studio Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2320995)| $0.01 per credit  |
 | Windows 365 for Agents | Billable computer use execution (node) using Windows 365 for Agents Cloud PCs. Refer to [Use Cloud PC pool for computer use runs (preview)](/microsoft-copilot-studio/use-cloud-pc-pool) for more information.| Learn more in [Windows 365 for Agents (preview)](https://aka.ms/W365AMSLearn) |
@@ -36,7 +36,7 @@ When you choose to use pay-as-you-go, usage of Power Platform services is billed
 For detailed pricing information, go to [Power Apps pricing](https://powerapps.microsoft.com/pricing/).
 
 > [!NOTE]
-> In June 2022, we released a preview of the Power Platform requests meter. During this preview we report on usage of Power Platform requests, however, we'll not bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
+> The Power Platform requests meter isn't available yet. Usage of Power Platform requests is reported, but it isn't billed, and linking an environment to an Azure subscription doesn't raise the request entitlements of the users and flows in it. To give a cloud flow a higher entitlement, assign a [Process license](/power-platform/admin/power-automate-licensing/types#capacity-licenses) to it.
 
 ### Power Apps per-app meter 
 
@@ -120,14 +120,21 @@ When determining whether a flow run is charged or not:
 - For automated or scheduled flows, the license entitlements of the flow owner apply.  
 - For instant and Power Apps-triggered flows, the license entitlements of the user running the flow apply. 
 
-Customers can't use the Power Automate unattended RPA add-on subscription in a pay-as-you-go environment.  
+Customers can't use the Power Automate unattended RPA add-on subscription or Process licenses in a pay-as-you-go environment.  
 
 Example: If an environment has Unattended bot add on units assigned and then pay-as-you-go is turned on for that environment, every unattended flow run in the environment is charged. Any Unattended bots add-on units are ignored and can be reassigned to other environments.  
 
-If the owner of a flow is service principal, the flow runs are charged unless the flow has a per-flow license. 
+Process capacity behaves the same way. Process licenses allocated to machines or to cloud flows in the environment are ignored once pay-as-you-go is turned on, and the capacity can be reassigned to another environment. Keep flows that depend on a Process license in an environment that isn't linked to an Azure subscription.
+
+Desktop flow runs in a pay-as-you-go environment are charged as follows:
+
+- **Attended runs** follow the entitlements of the user running the flow. A user whose license includes attended RPA isn't charged; a user whose license doesn't include it is charged $0.60 per run.
+- **Unattended runs** are charged at $3.00 per run regardless of any capacity assigned to the environment.
+
+If the owner of a flow is a service principal, the flow runs are charged, because a service principal has no license entitlement of its own to draw on. You can instead designate a licensed user on a service principal owned flow, so that the flow runs under that user's entitlement. Learn more in [More non-licensed user request limit details](api-request-limits-allocations.md#more-non-licensed-user-request-limit-details).
 
 > [!NOTE]
-> Assigning a Power Automate per user/per flow license ensures that any runs of the flow doesn't trigger Power Automate flow run meter if the flow features are within their license entitlements. But, if the flow uses more Power platform requests than the [limits](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits), Power platform request meter is triggered for any overages.
+> Assigning a Power Automate per user license ensures that any runs of the flow doesn't trigger Power Automate flow run meter if the flow features are within their license entitlements. But, if the flow uses more Power platform requests than the [limits](/power-platform/admin/api-request-limits-allocations#licensed-user-request-limits), Power platform request meter is triggered for any overages.
 
 |User |Standard flow runs  |Premium cloud flow runs |Attended RPA flow runs |Unattended RPA runs| Azure billable runs|
 |---------|----------------------|----------------|--------------|-------------|-------------|
@@ -260,44 +267,10 @@ Example pricing
 
 ---
 
-### Power Platform request meter (coming soon)
+### Power Platform request meter (not yet available)
 
 > [!NOTE]
-> In June 2022, we released a preview of the Power Platform requests meter. During this preview, we report on usage of Power Platform requests, however, we won't bill for this usage until we reach general availability (GA) for this meter. If you link an environment to an Azure subscription, users and flows in the environment can consume more than their entitled usage without being throttled or paying for overages.
-
-Each Power Platform license includes a large entitlement of Power Platform requests, designed to be sufficient for most customers and scenarios. For customers with extremely high-scale scenarios, the Power Platform requests meter enables them to scale without getting throttled and only pay for the Power Platform requests used above those entitlements.
-
-For more information on Power Platform requests and the entitlements that are included in each license, go to [Requests limits and allocations](api-request-limits-allocations.md).
-
-Power Platform request entitlements are structured as daily entitlements (requests/day). In pay-as-you-go environments, users and flows that go above their daily entitlement are billed to the linked Azure subscription. With the Power Apps and Power Automate per-app meter, you get an entitlement of 6,000 API calls per user/app/day. Flows still need to be licensed with a base license (either Power Automate per-user, Power Automate per-flow, or Office).
-
-In the example below, User A is licensed with a Power Apps and Power Automate per-user license and Flow A is licensed with a Power Automate per-flow license. The number of Power Platform requests consumed by User A and Flow B are measured daily and any usage above the daily entitlement is multiplied by a $/request rate and shown in Azure Cost Management. The total amount is summed and billed based on the customer's Azure billing cycle.
-
-> [!NOTE]
-> The prices shown in this example are illustrative only. Your organization's pricing may vary based on your contract with Microsoft.
-
-# [Image](#tab/image)
-
-:::image type="content" source="media/pay-as-you-go-measured-usage-above-entitlements.png" alt-text="Measured usage above entitlements":::
-
-# [Table](#tab/table) 
-
-Measured usage *above* limits
-
-|   |Month #1  |Month #2  |Month #3  |
-|---------|---------|---------|---------|
-|**User A** <br />Power Apps and Power Automate <br />per user license with <br />40 K requests/day <br /> entitlement |  0 K     | 10 K        | 0 K        |
-|**Flow A** <br />Power Automate and Power Automate <br />per flow license <br /> with 250 K requests/day <br /> entitlement  | 0 K          |  100 K         |  50 K         |
-
-Example pricing
-
-|   |Month #1  |Month #2  |Month #3  |
-|---------|---------|---------|---------|
-|**Power Platform** <br />**Requests**     | No usage        | 110 K x $0.00004 = $4.40       | 50 K x $0.00004 = $2.00        |
-|**Total cost:**     |  $0.00       | $4.40        | $2.00        |
-
----
-
+> The Power Platform requests meter isn't available yet. Usage of Power Platform requests is reported, but it isn't billed, and linking an environment to an Azure subscription doesn't raise the request entitlements of the users and flows in it. To give a cloud flow a higher entitlement today, assign a [Process license](power-automate-licensing/types.md#capacity-licenses) to it. For current request limits and entitlements per license, go to [Requests limits and allocations](api-request-limits-allocations.md).
 
 ## Next step
 

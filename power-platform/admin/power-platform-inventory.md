@@ -4,7 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents, apps,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 08/25/2026
+ms.date: 09/28/2026
 ms.topic: concept-article
 contributors:
     - Grayson-Bishop
@@ -35,7 +35,7 @@ The Power Platform inventory includes the following resource types:
 
 - **Agents**: All agents you create in Copilot Studio, and all agents you create in Microsoft 365 Copilot Agent Builder.
 
-- **Apps**: All apps you create in Power Apps (canvas, model-driven, code, and vibe) and in Microsoft 365 Copilot's App Builder agent.
+- **Apps**: All canvas, model-driven, code, vibe, and [managed apps](inventory-schema.md#managed-apps), and all apps you create in Microsoft 365 Copilot's App Builder agent.
 
 - **Flows**: All agent flows you create in Copilot Studio, all cloud flows you create in Power Automate, and all workflows you create in Microsoft 365 Copilot's Workflows agent.
 
@@ -79,7 +79,7 @@ To view the Power Platform inventory, you must hold one of the supported Microso
 The AI administrator and AI reader roles are scoped to AI-related resources only. They can see:
 
 - **Agents** from Microsoft 365 Copilot and Copilot Studio
-- **Agentic apps**, including vibe apps, code apps, and App Builder apps
+- **Agentic apps**, including vibe apps, code apps, managed apps, and App Builder apps
 - **Agent flows** from Copilot Studio and workflow agent flows from Microsoft 365 Copilot
 - **Environments** and **environment groups**
 
@@ -98,13 +98,16 @@ You can access Power Platform inventory through multiple interfaces and APIs. By
 
 - **Manage** > **Copilot Studio:** Agents (Copilot Studio + Microsoft 365 Copilot Agent Builder), agent flows, and workflows.
 
-- **Manage** > **Power Apps** > **App Inventory tab**: Canvas, model-driven, code, vibe, and App Builder apps.
+- **Manage** > **Power Apps** > **App Inventory tab**: Canvas apps, model-driven apps, code apps, vibe apps, managed apps, and App Builder apps.
 
 - **Manage** > **Power Automate** > **Flow Inventory tab**: Cloud flows.
 
 ### Programmatic access
 
 You can access Power Platform inventory data programmatically, which supports advanced scenarios such as automation, reporting, and integration with external tools. For a complete list of resource types and their fields, see [Power Platform inventory schema reference](inventory-schema.md).
+
+> [!IMPORTANT]
+> The **Query Power Platform resources** action in the Power Platform API and the Power Platform for Admins V2 connector currently support only delegated user authentication. The action doesn't support service principal or managed identity authentication and returns HTTP 403 Forbidden for those identities. Use a delegated user token or user-authenticated connection instead.
 
 #### Power Platform for Admins V2 connector
 
@@ -113,6 +116,10 @@ You can query Power Platform inventory data directly from Power Automate by usin
 #### Power Platform API
 
 If you're new to the Power Platform API, see [Getting Started with Power Platform API](powerplatform-api-getting-started.md) for setup instructions and authentication details. After you set up the API, see the [Inventory API documentation](inventory-api.md) to learn how to query your inventory data.
+
+#### Microsoft Power Platform CLI (preview)
+
+You can run inventory queries from a terminal by using the preview [`pac resource-query query-resources`](/power-platform/developer/cli/reference/resource-query#pac-resource-query-query-resources) command. The command uses the request body described in the [Inventory API documentation](inventory-api.md).
 
 #### Azure Resource Graph
 
@@ -211,6 +218,7 @@ The following table shows which resource types are included in the Power Platfor
 | Agents with the Copilot Chat harness | No | No | No |
 | Agent flows | Yes | Yes | No |
 | Agents created in Microsoft 365 Copilot Agent Builder | No | No | No |
+| Managed apps | No | No | No |
 | Apps created in Microsoft 365 Copilot's App Builder agent | No | No | No |
 | Workflows created in Microsoft 365 Copilot's Workflows agent | No | No | No |
 | Vibe apps | No | No | No |
@@ -243,6 +251,10 @@ Power Platform inventory isn't currently available in 21Vianet (China) or air-ga
 - **_Owner_ column**: For cloud flows and agent flows, this column currently shows the user who created the flow. It doesn't update when the owner changes.
 
 - **Workflow agent flows have no environment information**: Starting April 2026, workflows created by Microsoft 365 Copilot's Workflows agent are stored in a single, hidden Power Platform environment that's automatically provisioned and managed by the platform (one per tenant). Because this environment isn't visible in the Power Platform admin center environment list or any Maker portal, these workflow agent flows appear in inventory without environment information. For details, see [Microsoft 365 Copilot workflows environment for Workflows agents](/microsoft-365/copilot/workflows-environment-workflows-agents#environment-provisioning).
+
+### Programmatic access
+
+- **Service principals and managed identities aren't supported for inventory queries**: The **Query Power Platform resources** action in the Power Platform API and the Power Platform for Admins V2 connector currently requires delegated user authentication. The action returns HTTP 403 Forbidden for service principal or managed identity authentication.
 
 ### Filtering and access
 
