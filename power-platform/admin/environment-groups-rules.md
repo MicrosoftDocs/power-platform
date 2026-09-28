@@ -3,7 +3,7 @@ title: Rules for environment groups
 description: Learn how to govern your managed environments with rules in bulk.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/28/2026
+ms.date: 09/28/2026
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
@@ -36,20 +36,21 @@ The following [rules](environment-groups.md#rules) can be applied to [environmen
 | 8 | [Default deployment pipeline (preview)](../alm/default-deployment-pipeline-rule-for-environment-groups.md) |
 | 9 | [Generative AI settings](geographical-availability-copilot.md) |
 | 10 | [External models](allow-llm-generative-responses.md) |
-| 11 | [Maker welcome content](welcome-content.md) |
-| 12 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
-| 13 | [Preview and experimental AI models](preview-experimental-ai-models-rule.md) |
-| 14 | [Release channel](https://go.microsoft.com/fwlink/?linkid=2237290) |
-| 15 | [Sharing agents with Editor permissions](managed-environment-sharing-limits.md#agent-sharing-rules) |
-| 16 | [Sharing agents with Viewer permissions](managed-environment-sharing-limits.md#agent-sharing-rules) |
-| 17 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md#canvas-app-sharing-rules) |
-| 18 | [Sharing controls for solution-aware cloud flows](managed-environment-sharing-limits.md#solution-aware-cloud-flow-sharing-rules) |
-| 19 | [Sharing data between Copilot Studio and Viva Insights](settings-features.md#sharing-copilot-studio-agent-data-with-viva-insights) |
-| 20 | [Solution checker enforcement](managed-environment-solution-checker.md) |
-| 21 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
-| 22 | [Usage insights](managed-environment-usage-insights.md) |
-| 23 | [Power Apps code apps](/power-apps/developer/code-apps/overview) |
-| 24 | [Content security policy](/power-platform/admin/content-security-policy) |
+| 11 | [Maker guidelines (preview)](maker-guidelines.md) |
+| 12 | [Maker welcome content](welcome-content.md) |
+| 13 | [Power Apps component framework for canvas apps](/power-apps/developer/component-framework/component-framework-for-canvas-apps) |
+| 14 | [Preview and experimental AI models](preview-experimental-ai-models-rule.md) |
+| 15 | [Release channel](https://go.microsoft.com/fwlink/?linkid=2237290) |
+| 16 | [Sharing agents with Editor permissions](managed-environment-sharing-limits.md#agent-sharing-rules) |
+| 17 | [Sharing agents with Viewer permissions](managed-environment-sharing-limits.md#agent-sharing-rules) |
+| 18 | [Sharing controls for canvas apps](managed-environment-sharing-limits.md#canvas-app-sharing-rules) |
+| 19 | [Sharing controls for solution-aware cloud flows](managed-environment-sharing-limits.md#solution-aware-cloud-flow-sharing-rules) |
+| 20 | [Sharing data between Copilot Studio and Viva Insights](settings-features.md#sharing-copilot-studio-agent-data-with-viva-insights) |
+| 21 | [Solution checker enforcement](managed-environment-solution-checker.md) |
+| 22 | [Unmanaged customizations](../alm/block-unmanaged-customizations.md) |
+| 23 | [Usage insights](managed-environment-usage-insights.md) |
+| 24 | [Power Apps code apps](/power-apps/developer/code-apps/overview) |
+| 25 | [Content security policy](/power-platform/admin/content-security-policy) |
 
 > [!NOTE]
 > The rules that have "(preview)" in their name are in public preview, while rules without it are considered generally available.
