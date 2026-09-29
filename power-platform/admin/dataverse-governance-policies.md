@@ -1,6 +1,6 @@
 ---
 title: Manage data with governance policies in Dataverse
-description: Learn how to manage Dataverse data growth with bulk deletion and long-term retention policies.
+description: Learn how to manage data with governance policies in Dataverse.
 ms.date: 09/29/2026
 ms.topic: how-to
 author: rijoshi1
