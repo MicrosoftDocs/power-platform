@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 08/17/2026
+ms.date: 09/29/2026
 ms.topic: concept-article
 author: amiyapatr 
 ms.subservice: admin
@@ -25,6 +25,7 @@ ms.contributors:
 ms.custom:
 - NewPPAC
 - sfi-ga-nochange
+ai-usage: ai-assisted
 ---
 
 # Dataverse capacity-based storage details
@@ -320,47 +321,46 @@ When you select the **Dataverse** tab, you can allocate capacity to a specific e
 1. Allocate capacity by entering the desired value in the **Database**, **File**, and **Log** fields. Ensure the capacity values are positive integers and don't exceed the available capacity displayed at the top of the panel.
 1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (database, log, or file) reaches a set percentage of the allocated capacity.
 1. Select **Save** to apply the changes.
-
-### Manage capacity overage
-
-When an environment's capacity consumption exceeds the preallocated capacity, you have two options to manage the overage:
-
-1. In the **Manage capacity** pane, use capacity available from the tenant's overall capacity pool.
-1. In the **Manage capacity** pane, link the environment to a pay-as-you-go billing plan, where any overage is charged to the associated Azure subscription.
+To manage environment-level storage overages, see [Manage an environment-level capacity overage](#manage-an-environment-level-capacity-overage).
+To manage environment-level storage overages, see [Manage an environment-level capacity overage](#manage-an-environment-level-capacity-overage).
 
 ## Changes for exceeding storage capacity entitlements
 
-Microsoft is making changes for what happens when an organization's storage capacity is close to or exceeds the capacity entitled or purchased through add-ons.
-
-Notifications for capacity approaching storage limits are triggered when any of the three storage capacities (database, file, or log) have less than 15% of capacity available after cross capacity-type borrowing is applied. Another warning notification that admin operations could be impacted is sent when any of the three storage capacities have less than 5% of capacity available. The final tier of notification triggers when the tenant exceeds the allocated capacity after [cross capacity-type borrowing](#how-storage-overages-are-calculated) is applied. 
+Microsoft notifies administrators when the organization's effective database, file, or log consumption approaches or exceeds its entitled capacity. Effective consumption is calculated after eligible cross capacity-type borrowing is applied. Notifications help administrators identify the affected storage type, review the environments contributing to consumption, and begin remediation before further restrictions apply.
 
 Environment lifecycle operations, such as creating, copying, restoring, recovering, or converting environments, are evaluated differently from storage notifications and overage status. While notifications and overage status are based on the tenant's effective capacity position after cross-capacity type borrowing, these operations require sufficient available capacity in the underlying Database, File, or Log capacity types. As a result, some environment lifecycle operations may be unavailable when the required capacity type does not have sufficient available capacity, even if the tenant's overall capacity position remains within entitlement limits after borrowing. 
 
 The following administrative environment lifecycle operations aren't available when the required storage capacity isn't available to support the operation:
 
-- Create a new environment (requires minimum 1-GB capacity available)
-- Copy an environment
-- Restore an environment
+- Create new environment (requires minimum 1-GB capacity available)
+- Copy an environment (requires minimum 1-GB capacity available)
+- Restore an environment (requires minimum 1-GB capacity available)
 - Convert a trial environment to paid (requires minimum 1-GB capacity available)
 - Recover an environment (requires minimum 1-GB capacity available)
 - Add Dataverse database to an environment
 
+  
+### Dataverse capacity banner and email notifications
+
+A notification email and banner appear in **Dataverse-only** tenants across the Power Platform admin center, Power Apps maker portal, Power Automate maker portal, Power Pages maker portal, and Dynamics 365 apps when database, file, or log capacities have less than 15% remaining capacity or exceed capacity after [cross capacity-type borrowing](#how-storage-overages-are-calculated) is applied. Notifications are triggered when database, file, or log storage falls below 15% remaining capacity, followed by an additional warning when available capacity drops below 5%. The final notification tier is triggered when the tenant exceeds its entitled capacity after [cross capacity-type borrowing](#how-storage-overages-are-calculated) is applied. 
+
+Global admins, Power Platform admins, and Dynamics 365 admins, system admins, and makers receive these notifications automatically on a weekly basis. There's no option for a customer to opt out of these notifications or delegate these notifications to someone else.
+
+For more information, see [Example storage capacity notification and validation scenarios](#example-storage-capacity-scenarios-and-impact). Banner notifications are based on periodic storage evaluations and might not always update immediately after a capacity change. Storage capacity is evaluated approximately every 24 hours, while banner visibility is refreshed through a separate asynchronous process that runs every seven days.
+
+The following behavior applies:
+
+- If the banner is **not dismissed**, it remains visible while the tenant continues to meet the notification criteria.
+- If the storage issue is resolved, the banner doesn't disappear immediately. It's removed during the next banner refresh cycle, which can take up to seven days from when the banner was originally created.
+- If the banner is **dismissed**, it remains hidden for seven days, even if the tenant continues to meet the notification criteria during that period.
+- After seven days, the banner is reevaluated and reappears if the tenant still meets the notification criteria.
+- Because storage capacity is evaluated more frequently than banner visibility, you might notice a temporary difference between reported capacity status and the presence of banner notifications.
+- In model-driven apps, dismissed banners reappear when the page is refreshed if the tenant continues to meet the notification criteria.
+
+These banner notifications are visible to [tenant admins](#for-tenant-admins) and [system admins](#for-system-admins).
 
 > [!NOTE]
-> The storage-driven capacity model calculation of these thresholds also considers the [cross capacity-type borrowing](#how-storage-overages-are-calculated) /overflow usage allowed in the storage-driven model. For example, extra database capacity can be used to cover log and file overuse and extra log capacity can be used to cover file overuse. Therefore, [cross capacity-type borrowing](#how-storage-overages-are-calculated) is taken into consideration to reduce the number of emails a tenant admin receives.
-
-Tenant admins, Power Platform admins, and Dynamics 365 admins receive these notifications on a weekly basis. At this time, there's no option for a customer to opt out of these notifications or delegate these notifications to someone else. All admin types listed earlier automatically receive these notifications.
-
-The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization's use of the online service, including consumption that exceeds the online service's documented entitlements or usage limits.
-
-Your organization must have the right licenses for the storage you use:
-
-- If you use more than your documented entitlements or usage limits, you must buy more licenses.
-- If your storage consumption exceeds the documented entitlements or usage limits, Microsoft might suspend use of the online service. Microsoft provides reasonable notice before suspending your online service.
-  
-### Dataverse capacity banner notifications
-
-A notification banner appears in **Dataverse-only** tenants across the Power Platform admin center, Power Apps, Power Automate, Power Pages, and Dynamics 365 apps when any Dataverse storage capacity type (database, file, or log) has less than 15% remaining capacity or exceeds capacity after [cross capacity-type borrowing](#how-storage-overages-are-calculated) has been applied. For more information, see [Example storage capacity scenarios and overage enforcement](#example-storage-capacity-scenarios-and-overage-enforcement). The banner remains visible as long as you don't dismiss it and the tenant continues to meet the banner visibility criteria. If a user dismisses the banner and the tenant's remaining storage capacity is still below 15 percent, the banner reappears after seven days in Power Platform products, except model-driven apps. The banner reappears in model-driven apps whenever a user refreshes the screen. These banner notifications are visible to [tenant admins](#for-tenant-admins) and [system admins](#for-system-admins).
+> The storage-driven capacity model calculation of these thresholds also considers the [cross capacity-type borrowing](#how-storage-overages-are-calculated) and overflow usage allowed in the storage-driven model. For example, extra database capacity can be used to cover log and file overuse, and extra log capacity can be used to cover file overuse. Therefore, [cross capacity-type borrowing](#how-storage-overages-are-calculated) is taken into consideration to reduce the number of emails a tenant admin receives.
 
 #### For tenant admins
 
@@ -368,12 +368,12 @@ The banner displays two call-to-action buttons:
 
 - **Buy more capacity**: Takes you directly to the [Microsoft 365 admin center](https://go.microsoft.com/fwlink/?LinkId=2364302) where you can purchase more storage capacity. [Learn how to add more Dataverse capacity to your tenant](add-storage.md). 
 - **Manage capacity**: Takes you to the [Licensing page in the Power Platform admin center](https://go.microsoft.com/fwlink/?LinkId=2364104) where you can view capacity consumption by type (database, log, file) and by environment. From there, you can:
-    - Request a [capacity extension](extend-capacity.md).
-    - [Set up a pay-as-you-go plan](pay-as-you-go-set-up.md) to be billed automatically through Azure.
     - [Free up storage](free-storage-space.md) for environments.
+    - [Set up a pay-as-you-go plan](pay-as-you-go-set-up.md) to be billed automatically through Azure.
     - [Delete environments](delete-environment.md) to recover storage.
+    - Request a [capacity extension](extend-capacity.md).
 
- #### For system admins
+#### For system admins
 
 The banner displays one call-to-action button: **Manage environment**, which takes you to your [environments in Power Platform admin center](https://admin.powerplatform.microsoft.com/manage/environments) where you can free up storage to optimize capacity usage. If freeing up storage doesn't resolve your capacity concerns, reach out to your IT department or tenant admin to purchase more storage. [Learn to free up storage space](free-storage-space.md) for environments.
 
@@ -398,58 +398,238 @@ For example:
 
 A tenant is considered to be in storage overage only after all eligible cross capacity-type borrowing has been applied and one or more storage types still exceed their effective available capacity. If borrowing fully offsets any deficits, the tenant isn't considered to be in overage, even if an individual storage type initially exceeded its allocated entitlement.
 
+## Storage overage lifecycle
 
-## Example storage capacity scenarios and overage enforcement
+
+When a tenant exceeds its entitled storage capacity, it enters a series of progressively more restrictive states, until/unless the overage is remediated. The following progressive restrictions apply when a tenant remains over its entitled storage capacity for an extended period:
+
+
+|Stage  |When it happens  |Customer experience  | Recommended action  |
+|---------|---------|---------|---------|
+|**Early notification**     | Effective consumption is more than 85%        | Informational or warning notifications appear.        | Review growth and begin remediation. |
+|**Stage 1: Restricted**     |  The tenant first exceeds 100% effective consumption       | Critical notifications appear. Environment create, copy, restore, and recover operations are blocked.       | Free storage, archive eligible data, add capacity, configure pay-as-you-go billing, or request a capacity extension.|
+|**Stage 2: Administration mode**     | The overage remains unresolved for 30 days        | In addition to the restrictions applied in Stage 1, access to affected sandbox environments is limited to administrators.       | Administrators can temporarily take affected sandbox environments out of Administration mode to perform remediation activities. However, the storage overage lifecycle and timer continue to progress until the overage is resolved.|
+|**Stage 3: Disabled**     | The overage remains unresolved for 60 days        | In addition to the restrictions applied in Stage 1, sign-in to affected sandbox environments is blocked for all users, including administrators. The environment and its data remain retained.       | Return the tenant to compliance, and then re-enable the environment.|
+
+The date the tenant first exceeds 100% effective consumption is the start of the lifecycle timeline. Resolving the effective deficit before the next stage prevents further progression. Sandbox environments with pay-as-you-go enabled do not progress through the storage overage lifecycle.
+
+> [!NOTE]
+> - Effective consumption represents the storage usage remaining after cross-capacity-type borrowing has been applied. Storage notifications, overage calculations, and storage validation actions are based on effective consumption rather than raw storage consumption.
+> - Affected environments are sandbox environments that don't have pay-as-you-go billing enabled and are therefore subject to Administration mode and disablement when the organization remains in storage overage.
+
+## Scope and exclusions
+
+### In scope for Dataverse storage validation
+
+The Dataverse storage validation applies only to **Dataverse-only** tenants without Dynamics 365 Finance and Operations environments or consumption. The products in scope are:
+- Microsoft Dynamics 365 Sales
+- Microsoft Dynamics 365 Customer Service
+- Microsoft Dynamics 365 Field Service
+- Microsoft Dynamics 365 Customer Insights
+- Microsoft Dynamics 365 Customer Voice
+- Microsoft Dynamics 365 Contact 
+- Microsoft Dynamics 365 Project Operations (Dataverse deployments)
+
+### Exclusions
+- Production environments don't go through the administration mode and become disabled.
+- Sandbox environments with active pay-as-you-go billing don't go through the administration mode and become disabled.
+- Tenants with Dynamics 365 Finance and Operations environments or consumption are out of scope for the Dataverse storage validation.
+
+
+## Example storage capacity scenarios and impact
 
 Stay within the limits for your entitled capacity for database, log, and file storage. If you use more capacity than you're entitled to, free up some space or buy more capacity. However, if you overuse database, log, or file capacity, review the following scenarios to understand when environment lifecycle operation restrictions apply.
 
-### Scenario 1: Database storage is over capacity, overage enforcement
+### Scenario 1: Database storage is running low, no restrictions
 
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100 GB        | 110 GB        |
-|**Log**     |  10 GB       | 5 GB        |
-|**File**     | 400 GB        | 200 GB        |
+|Type  |Entitled  |Consumed  | Status  |
+|---------|---------|---------|---------|
+|**Database**     | 100 GB        | 97 GB        | **Running low** |
+|**Log**     |  10 GB       | 5 GB        | Within capacity|
+|**File**     | 400 GB        | 200 GB        | Within capacity|
 
-This tenant uses 10 GB more than the database capacity. Even though the tenant has 200 GB of extra file storage, the tenant is in deficit. This tenant should free up storage or purchase more capacity.
+Database can't borrow from Log or File and hence receives **less than 5% capacity remaining** banner and email notifications. No restrictions are applied. 
 
-### Scenario 2: Log storage is over capacity, overage enforcement
+### Scenario 2: Log storage remains low after cross capacity-type borrowing, no restrictions
 
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100 GB        | 95 GB        |
-|**Log**     |  10 GB       | 20 GB        |
-|**File**     | 400 GB        | 200 GB        |
+|Type  |Entitled  |Consumed  | Status  |
+|---------|---------|---------|---------|
+|**Database**     | 200 GB        | 160 GB        | Within capacity |
+|**Log**     |  100 GB       |130 GB        | **Running low**|
+|**File**     | 500 GB        | 300 GB        | Within capacity|
 
-This tenant uses 10 GB more than the log capacity and has only 5 GB available in database capacity. Therefore, the tenant is in deficit and should free up storage or purchase more capacity.
+Database has 40 GB of unused capacity that Log can borrow, but this isn't enough to bring Log consumption down to under 85% threshold.  After borrowing, Log has 7.14% capacity remaining and receives the less-than-15%-remaining capacity banner.Log therefore remains at low capacity, and the tenant receives the **less than 15% remaining** capacity banner. 
 
-### Scenario 3: File storage is over capacity, overage enforcement
+> [!NOTE]
+> Borrowed capacity is added to the storage type's entitlement for the notification calculation. In this example, Log borrows 40 GB from unused Database capacity, increasing its effective Log entitlement from 100 GB to 140 GB. The tenant's purchased entitlement doesn't change, and no additional capacity is created. The calculation temporarily reallocates eligible unused capacity to determine the effective remaining percentage and notification status.
 
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100 GB        | 20 GB        |
-|**Log**     |  10 GB       | 5 GB        |
-|**File**     | 200 GB        | 290 GB        |
+### Scenario 3: File storage borrows from both Database and Log but remains low, no restrictions 
 
-This tenant is 90 GB over in file usage. Despite having 85 GB available (80-GB database + 5-GB log) in storage capacity, the tenant is considered to be in deficit. This tenant should free up storage or purchase more capacity.
+|Type  |Entitled  |Consumed  | Status  |
+|---------|---------|---------|---------|
+|**Database**     | 100 GB        | 80 GB        | Within capacity |
+|**Log**     |  100 GB       |70 GB        | Within capacity |
+|**File**     | 100 GB        | 140 GB        |**Running low**|
 
-## Example storage capacity scenario, no overage
+File borrows all 20 GB of unused Database capacity and all 30 GB of unused Log capacity. This increases its effective entitlement from 100 GB to 150 GB and removes the storage deficit. However, the borrowed capacity isn't enough to bring File consumption down to under 85% threshold. File has only 6.67% effective capacity remaining, so the tenant receives the less-than-15%-remaining capacity banner.
 
-### Scenario 4: Log storage is over capacity
 
-|Type  |Entitled  |Consumed  |
-|---------|---------|---------|
-|**Database**     | 100 GB        | 80 GB        |
-|**Log**     |  10 GB       | 20 GB        |
-|**File**     | 400 GB        | 200 GB        |
+### Scenario 4: Database storage is over capacity, restrictions applied
 
-This tenant is 10 GB over in log usage but has 20 GB available in database capacity. Therefore, the tenant isn't in deficit. File storage excess entitlement can't be used to compensate deficits in log or database storage.
+|Type  |Entitled  |Consumed  | Status |
+|---------|---------|---------|---------|
+|**Database**     | 100 GB        | 110 GB        | 10GB Deficit |
+|**Log**     |  10 GB       | 5 GB        | Available |
+|**File**     | 400 GB        | 200 GB        | Available |
 
-## Actions to take for a storage capacity deficit
+The tenant has a 10-GB effective Database deficit and is over capacity. Database is the highest-value storage type and can't borrow unused capacity from Log or File. The 5 GB of unused Log capacity and 200 GB of unused File capacity can't cover the Database deficit. The tenant should free up Database storage or purchase more Database capacity.
 
-You can always [free up storage](free-storage-space.md), [delete unwanted environments](delete-environment.md), or buy more capacity to be compliant with storage usage. To learn more about capacity add-ons, go to the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544) or the ["Add-ons" section of the Power Apps and Power Automate Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130).
+### Scenario 5: Log storage is over capacity, restrictions applied
 
-You can work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md).
+|Type  |Entitled  |Consumed  | Status |
+|---------|---------|---------|---------|
+|**Database**     | 100 GB        | 95 GB        | Available |
+|**Log**     |  10 GB       | 20 GB        | 5GB Deficit |
+|**File**     | 400 GB        | 200 GB        | Available |
+
+File has 200 GB of unused capacity, but File capacity can't flow backward to cover a Log deficit. Log borrows all 5 GB of available Database capacity, but this isn't enough to cover its 10-GB raw deficit. The tenant has a 5-GB effective Log deficit and should free up Log storage or purchase more Log or eligible Database capacity.
+
+
+### Scenario 6: File storage is over capacity, restrictions applied
+
+|Type  |Entitled  |Consumed  | Status |
+|---------|---------|---------|---------|
+|**Database**     | 100 GB        | 20 GB        | Available |
+|**Log**     |  10 GB       | 5 GB        | Available |
+|**File**     | 200 GB        | 290 GB        | 5GB Deficit |
+
+File borrows all 80 GB of unused Database capacity and all 5 GB of unused Log capacity. This covers 85 GB of the 90-GB raw File deficit, but leaves the tenant with a 5-GB effective File deficit. The tenant should free up File storage or purchase more File, Log, or eligible Database capacity.
+
+
+### Scenario 7: Log storage is over its original capacity but covered by borrowing, no restrictions
+
+|Type  |Entitled  |Consumed  | Status |
+|---------|---------|---------|---------|
+|**Database**     | 100 GB        | 80 GB        | Available |
+|**Log**     |  10 GB       | 20 GB        | Available |
+|**File**     | 400 GB        | 200 GB        | Available |
+
+Log storage is above its original entitled capacity, but eligible Database borrowing increases its effective Log entitlement to 20 GB. The tenant has no effective storage deficit and isn't considered over capacity. Although eligible Database borrowing currently covers the Log deficit, the tenant has no effective Log capacity remaining. The tenant should remove unneeded data or environments, review Log growth, or purchase the appropriate additional capacity to avoid entering overage and experiencing related restrictions.
+
+
+## Manage storage overage
+
+### Manage a tenant-level capacity overage
+
+Use the Dataverse tenant capacity report to confirm:
+
+- Current database, file, and log entitlement.
+- Current consumption by storage type.
+- The effective deficit after eligible borrowing.
+- The environments and tables contributing most to consumption.
+- Recent growth and expected future demand.
+
+Contact Microsoft Support if the entitlement details and consumption shown in Power Platform admin center reports don't align with the information in the [Dynamics 365 Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544).
+
+Use one or more of the following remediation options.
+
+#### Free storage
+
+Remove data that no longer has business, legal, regulatory, audit, or recovery value. Common cleanup opportunities include:
+
+- [Remove data](free-storage-space.md#free-up-storage-for-dataverse) and apps that you no longer need.
+- [Remove unused environments](delete-environment.md).
+- Establish [data governance policies in Dataverse](dataverse-governance-policies.md) to prevent future overages. Go to **Manage** > **Dataverse** in Power Platform admin center.
+
+Explore [best practices for storage management](storage-management.md#how-can-i-manage-the-ever-growing-storage).
+
+#### Retain inactive data
+
+Use Dataverse long-term retention for eligible inactive data that you must keep for business, legal, audit, or regulatory reasons but no longer need in active operations.
+
+Long-term retention can reduce active database capacity consumption. Policy processing and capacity reporting aren't immediate. For details, see [long-term retention (LTR)](/power-apps/maker/data-platform/data-retention-overview).
+
+#### Purchase capacity
+
+Purchase the storage type indicated by the validated effective deficit. Plan capacity by using:
+
+**Required capacity = effective deficit + expected growth + operating buffer - confirmed cleanup not yet reported**
+
+Purchase database capacity for a database deficit, file capacity for a file deficit, and log capacity for a log deficit. File capacity can't resolve a database deficit. For details, see [capacity add-ons](capacity-add-on.md).
+
+#### Use pay-as-you-go
+
+Pay-as-you-go links an environment to an Azure billing policy. It can be appropriate when storage demand is variable, urgent, or isolated to specific environments.
+
+Review the applicable meter, pricing, Azure subscription ownership, procurement process, and budget before linking an environment. Complete the billing setup and verify that the environment is linked. Linking a sandbox environment to pay-as-you-go removes overage restrictions, even if the tenant remains in an overage state.
+
+For details, see Set up a [pay-as-you-go](pay-as-you-go-meters.md#dataverse-capacity-meter) plan.
+
+
+#### Enable capacity extension
+
+1. Go to the Dataverse *Licenses* page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/dataverse/overview).
+1. If you're running low on storage capacity, the **Enable capacity extension** tab is highlighted.
+
+   :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
+
+1. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
+
+   :::image type="content" source="media/storage-extend-capacity-details.png" alt-text="Extend capacity details." lightbox="media/storage-extend-capacity-details.png":::
+
+1. Select **Confirm**.
+
+#### About extensions
+
+- An extension is at the tenant level.
+- An extension applies to both the legacy and new storage capacity models.
+- You can request a capacity extension after consumption reaches over 80% overall.
+- An extension allows you to create an environment, copy, restore, and convert if the extension covers the storage in overage.
+- An extension is granted for 25% of the consumption and for a maximum of 45 days.
+- Your organization can request an extension a maximum of three times in the last 365 days.
+- After extension, copying and restoring environments is blocked again if the tenant doesn't have available storage capacity. To avoid this situation, admins should reduce storage usage and/or purchase more storage capacity.
+
+
+### Manage an environment-level capacity overage
+An environment-level overage means an environment consumes more than its allocated capacity. The tenant might still have unused capacity.
+
+#### Allocate capacity for an environment
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) as a system admin.
+1. On the navigation pane, select **Licensing**.
+1. Select **Dataverse**.
+1. Select **Manage capacity**.
+1. On the *Manage capacity* pane, select an environment to see capacity management options for that environment. You can draw from available capacity within the tenant or bill to your pay-as-you-go billing plan. You can also select the option to receive an overage notification when the environment nears reaching any amount between 50-100%.
+1. Select **Save**.
+
+   :::image type="content" source="media/storage-manage-capacity.png" alt-text="Manage Dataverse storage capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
+
+#### Use pay-as-you-go
+
+Pay-as-you-go links an environment to an Azure billing policy. It can be appropriate when storage demand is variable, urgent, or isolated to specific environments.
+
+Review the applicable meter, pricing, Azure subscription ownership, procurement process, and budget before linking an environment. Complete the billing setup and verify that the environment is linked. Linking a sandbox environment to pay-as-you-go removes overage restrictions, even if the tenant remains in an overage state.
+
+For details, see Set up a [pay-as-you-go](pay-as-you-go-meters.md#dataverse-capacity-meter) plan.
+
+## Restore user access to affected sandbox environments.
+
+### Exit administration mode
+A tenant administrator can use the Power Platform admin center to exit administration mode for an affected sandbox environment. You perform this action one environment at a time.
+
+Exiting administration mode can restore access temporarily, but it doesn't:
+
+- Resolve the tenant storage overage.
+- Add storage entitlement.
+- Pause or reset the lifecycle timeline.
+- Prevent the environment from progressing to the next stage if the tenant remains over capacity.
+- Complete a tenant-level remediation to stop the lifecycle.
+
+### Re-enable a disabled sandbox
+
+Before re-enabling a disabled sandbox, bring the tenant back within its effective storage entitlement by following one of these [remediation options](#manage-a-tenant-level-capacity-overage).
+
+After capacity validation confirms that the tenant is within entitlement, an administrator can re-enable each affected environment in the Power Platform admin center.
 
 ## Frequently asked questions (FAQ)
 
@@ -559,6 +739,18 @@ Yes. All environments consume 1 GB, regardless of whether they have an associate
 
 Yes, tenant admins receive email notifications on a weekly basis if their organization is at or over capacity. Additionally, tenant admins get notified when their organization reaches 15 percent of available capacity, and when their organization reaches 5 percent of available capacity.
 
+### Is there a database size restriction for backing-up or restoring an organization through the user interface or API?
+
+Refer [here](backup-restore-environments.md#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api).
+
+### Can an environment operation be blocked when the tenant report shows no deficit?
+
+Yes. Tenant notifications apply eligible cross capacity-type borrowing. An environment operation such as environment creatinn, copy, restore, recover, or converting environments can require available capacity in the native database, file, or log storage type. 
+
+### Does reallocating capacity between environments resolve a tenant overage?
+
+No. Reallocation only changes how existing tenant capacity is distributed. Resolve a tenant overage by reducing consumption, adding capacity, using an eligible billing option, or requesting temporary tenant capacity.
+
 ### Why am I no longer getting storage notifications?
 
 Tenant admins receive capacity email notifications weekly based on three different thresholds. If you're no longer getting storage notifications, check your admin role. It could also be the case that your organization is over the three predefined capacity thresholds. In that case, you don't receive an email notification.
@@ -609,6 +801,24 @@ You can allocate database, file, and log capacity.
 ### Do I need to allocate capacity to every environment like other supported currencies?
 
 No, admins can select specific environments to allocate capacity.
+
+### Can I receive a capacity notification when my deficit is 0 GB?
+
+Yes. Informational and warning notifications appear before capacity is exhausted. For example, a tenant at 90% effective consumption has no deficit but has less than 15% capacity available.
+
+### Why can an operation be blocked when the tenant report shows no deficit?
+
+Notifications evaluate the tenant's effective storage position after eligible borrowing. An environment operation performs a separate validation and can require available capacity in a native storage type.
+
+### Should I purchase capacity or use pay-as-you-go?
+
+Capacity add-ons can suit predictable, sustained tenant demand. Pay-as-you-go can suit variable or environment-specific usage. Consider pricing, procurement, Azure billing ownership, the number of environments, and expected growth.
+
+### Does a capacity extension permanently resolve an overage?
+No. An extension is temporary. Continue cleanup or procurement so the tenant remains within entitlement after the extension expires.
+
+### Are production environments disabled?
+No. Production environments don't enter the administration mode or disabled stages. Production work can still be affected when it depends on a blocked create, copy, restore, or recovery operation.
 
 ### Related information
 
