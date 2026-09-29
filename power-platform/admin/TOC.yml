@@ -832,6 +832,8 @@
               items:
                 - name: Recover storage space
                   href: free-storage-space.md
+                - name: Manage data with governance policies in Dataverse
+                  href: dataverse-governance-policies.md
                 - name: Delete completed system jobs and process log
                   href: cleanup-asyncoperationbase-table.md
             - name: Finance and Operations storage capacity

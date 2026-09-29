@@ -4,14 +4,13 @@ description: Learn about enhancements for Dataverse capacity-based storage that 
 author: rijoshi1
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 08/17/2026
+ms.date: 09/29/2026
 ms.subservice: admin
 ms.author: rijoshi
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 contributors:
-- rijoshi1
 - ianceicys-msft
 - dasussMS
 ms.contributors:
@@ -57,10 +56,9 @@ Two versions of storage capacity reporting are available:
 
 ## What happens when my organization exceeds storage entitlements?
 
-If your organization exceeds its storage capacity, you receive email notifications that alert you to the over-capacity usage. For details about the new model for email notification, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For details about the legacy model for email notification, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner appears in the Power Platform admin center, Power Apps, Power Automate, Power Pages, and model-driven apps when any of the three storage capacities (database, file, or log) have less than 15% or exceed the allocated capacity after [cross-capacity type borrowing](capacity-storage.md#how-storage-overages-are-calculated) is applied. 
+If your organization approaches or exceeds its storage capacity, you receive banner and email notifications that alert you about your capacity usage. For details about the new model for email notification, see [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). For details about the legacy model for email notification, see [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner appears in the Power Platform admin center, Power Apps maker portal, Power Automate maker portal, Power Pages maker portal, and model-driven apps when your organization's database, file, or log storage is below 15% remaining or over its entitled capacity, after [cross-capacity type borrowing](capacity-storage.md#how-storage-overages-are-calculated) has been applied. 
 
-Environment lifecycle operations, such as creating, copying, restoring, recovering, or converting environments, are evaluated differently than storage notifications and overage status. While notifications and overage status are based on the tenant's effective capacity position after cross-capacity type borrowing, these operations require sufficient available capacity in the underlying Database, File, or Log capacity types. As a result, some environment lifecycle operations might be unavailable when the required capacity type doesn't have sufficient available capacity, even if the tenant's overall capacity position remains within entitlement limits after borrowing. 
-
+Environment lifecycle operations, such as creating, copying, restoring, recovering, or converting environments, are evaluated differently than storage notifications and overage status. While notifications and overage status are based on the tenant's effective capacity position after cross-capacity type borrowing, these operations require sufficient available capacity in the underlying database, file, or log capacity types. As a result, some environment lifecycle operations might be unavailable when the required capacity type doesn't have sufficient available capacity, even if the tenant's overall capacity position remains within entitlement limits after borrowing. 
 
 The following administrative environment lifecycle operations aren't available when the required storage capacity isn't available to support the operation:
 
@@ -74,11 +72,12 @@ The following administrative environment lifecycle operations aren't available w
 
 More information:
 
-- [Is there a database size restriction for backing-up or restoring an organization through the user interface or API?](backup-restore-environments.md#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api)
-- [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit).
-- [Banner notifications for storage usage](capacity-storage.md#capacity-page-details) on Power platform admin center, power portals, and Dynamics 365 apps
-- For the legacy capacity storage model, go to [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario).
-- For the new capacity storage model, go to [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-and-overage-enforcement).
+- [Alerts and notification for storage use](capacity-storage.md#dataverse-capacity-banner-and-email-notifications) on Power platform admin center, power portals, and Dynamics 365 apps
+- [How storage overages are calculated](capacity-storage.md#how-storage-overages-are-calculated)
+- [Storage overage lifecycle](capacity-storage.md#storage-overage-lifecycle)
+- [Scope and exclusions](capacity-storage.md#scope-and-exclusions)
+- To review legacy capacity storage model, go to [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario).
+- To review new capacity storage model, go to [Example storage capacity scenarios and impact](capacity-storage.md#example-storage-capacity-scenarios-and-impact).
 
 The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization's use of the online service, including consumption that exceeds the online service's documented entitlements or usage limits.
 
@@ -89,47 +88,49 @@ Your organization must have the right licenses for the storage you use:
 
 If the storage consumption goes over the entitled limit, manage the excess consumption by deleting unused data or purchasing extra operations storage capacity.
 
-## Manage overages
+## Manage storage overages
 
-You can manage capacity overages for environments by choosing pay-as-you-go, reallocating capacity from within your tenant, or increasing entitled capacity. You can also request a capacity extension after 80% overall consumption, up to three times in the last 365 days and after the expiry of an existing extension to manage overages. By enabling a tenant capacity extension, you have 45 days to reduce capacity usage and purchase more capacity.
+Start by determining whether the overage is at the tenant level or the environment level. These conditions require different actions.
 
-### Manage capacity
+|Storage condition |    What it means    | What to do |
+|---------|---------|---------|
+|Tenant-level storage overage    | The organization's effective consumption exceeds its storage entitlement after eligible cross capacity-type borrowing.    | Reduce storage, archive eligible inactive data, remove unneeded environments, purchase capacity, use eligible pay-as-you-go billing, or request a temporary capacity extension. |
+| Environment-level capacity overage    | An environment consumes more than the capacity allocated to it, but the tenant might still have available capacity.     | Allocate available capacity from the tenant pool or link the environment to a pay-as-you-go billing plan. |
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.com) as a system admin.
-1. On the navigation pane, select **Licensing**.
-1. Select **Dataverse**.
-1. Select **Manage capacity**.
-1. On the *Manage capacity* pane, select an environment to see capacity management options for that environment. You can draw from available capacity within the tenant or bill to your pay-as-you-go billing plan. You can also select the option to receive an overage notification when the environment nears reaching any amount between 50-100%.
-1. Select **Save**.
+> [!IMPORTANT]
+> Reallocating capacity between environments doesn't increase the tenant's storage entitlement or resolve a tenant-level storage deficit.
 
-   :::image type="content" source="media/storage-manage-capacity.png" alt-text="Manage Dataverse storage capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
+### Manage a tenant-level storage overage
+Use the tenant's capacity report to identify the effective database, file, or log deficit. You can then use one or more of the following options:
 
-### Enable capacity extension
+- Delete data that no longer has business, legal, regulatory, audit, or recovery value.
+- Use Dataverse long-term retention for eligible inactive data that you must keep.
+- Delete environments that you no longer need after reviewing their dependencies, ownership, backup, and retention requirements.
+- Purchase the database, file, or log capacity needed to cover the remaining deficit and expected growth.
+- Configure pay-as-you-go for eligible environment-specific consumption.
+- Request a temporary capacity extension while completing cleanup or purchasing permanent capacity.
 
-1. Go to the Dataverse *Licenses* page in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/billing/licenses/dataverse/overview).
-1. If you're running low on storage capacity, the **Enable capacity extension** tab is highlighted.
+A capacity extension provides temporary tenant-level capacity. It doesn't permanently change the organization's entitlement and isn't a replacement for a durable remediation plan. For current eligibility, capacity, duration, and request limits, see [Extend Dataverse capacity](extend-capacity.md#extend-dataverse-capacity).
 
-   :::image type="content" source="media/storage-extend-capacity-banner.png" alt-text="Extend capacity in Power Platform admin center." lightbox="media/storage-extend-capacity-banner.png":::
+For detailed remediation guidance, see [Manage a tenant-level storage overage](capacity-storage.md#manage-a-tenant-level-capacity-overage).
 
-1. Review the details of the capacity overage. The 25% capacity is calculated based on capacity used and applies to each capacity type (database, file, and log). Select **Enable capacity extension**.
+### Manage an environment-level capacity overage
 
-   :::image type="content" source="media/storage-extend-capacity-details.png" alt-text="Extend capacity details." lightbox="media/storage-extend-capacity-details.png":::
+When an environment consumes more than its allocated capacity, an administrator can:
 
-1. Select **Confirm**.
+- Allocate available database, file, or log capacity from the tenant pool.
+- Link the environment to an eligible pay-as-you-go billing plan.
+- Configure an environment-level alert to monitor future consumption.
 
-#### About extensions
+Allocating tenant capacity changes how existing prepaid capacity is distributed between environments. It doesn't add capacity to the tenant.
 
-- An extension is at the tenant level.
-- An extension applies to both the legacy and new storage capacity models.
-- An extension allows you to create an environment.
-- An extension allows admins to copy and restore environments for a maximum of 45 days while over the capacity limit.
-- Your organization can request an extension a maximum of three times in the last 365 days.
-- After extension, copying and restoring environments is blocked again if the tenant doesn't have available storage capacity. To avoid this situation, admins should reduce storage usage and/or purchase more storage capacity.
+For detailed steps, see [Manage an environment-level capacity overage](capacity-storage.md#manage-an-environment-level-capacity-overage).
 
 ## Change log for major updates in storage
 
 | Date | Description |
 |------|-------------|
+| September 2026 | Added guidance for the Dataverse storage overage lifecycle. Clarified storage notifications, immediately restricted environment operations, tenant-level and environment-level remediation, sandbox access stages, scope and exclusions, and steps to restore access after resolving an overage.|
 | April 2026 |We made internal adjustments to how solution-aware tables and metadata are reported in Dataverse. This content now resides in file storage rather than the database tier. You might notice corresponding shifts between database and file storage as the classification updates internally. Overall storage usage remains unchanged, and the transition required no downtime or action from administrators or makers.|
 | April 2025 | We made internal adjustments to how Web Resources are stored in a Dataverse organization. Web Resources continue to be reported as file store, but you might see the size of *WebResourceBase* fluctuate as storage transitions internally. Dataverse doesn't expect storage to significantly increase for *WebResourceBase*, but it might temporarily drop as files transition. |
 | June 2022 | The new finance and operations storage capacity report gives you a way to visualize your organization's storage usage versus your entitlement. |
