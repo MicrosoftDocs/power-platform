@@ -10,7 +10,7 @@ metadata:
   ms.topic: landing-page
   author: edoyle
   ms.author: edoyle
-  ms.date: 09/25/2026
+  ms.date: 09/30/2026
   ai-usage: ai-assisted
   ms.collection: bap-ai-copilot
 
@@ -21,6 +21,8 @@ landingContent:
         links:
           - text: Admin overview
             url: ../admin/business-applications-work-iq/index.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+          - text: Default settings
+            url: ../admin/business-applications-work-iq/default-settings.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
       - linkListType: how-to-guide
         links:
           - text: Quickstart
@@ -57,8 +59,6 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
-          - text: Copilot Chat
-            url: /power-platform/admin/business-applications-work-iq/quickstart?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Work IQ CLI
             url: /microsoft-365/copilot/extensibility/work-iq/cli
 

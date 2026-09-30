@@ -9,6 +9,8 @@
     items:
     - name: Admin overview
       href: ../admin/business-applications-work-iq/index.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+    - name: Default settings
+      href: ../admin/business-applications-work-iq/default-settings.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Quickstart
       href: ../admin/business-applications-work-iq/quickstart.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Manage participation
