@@ -3,7 +3,7 @@ title: View and manage on-premises data gateways
 description: View and manage on-premises gateways. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/10/2026
+ms.date: 09/30/2026
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
@@ -173,19 +173,18 @@ If a person who doesn't have access to install gateways tries to install one, th
 
 :::image type="content" source="media/manage-gateway-error-message.png" alt-text="Error message.":::
 
-## Delete gateways before tenant migration
+## Delete gateways before tenant remap
 
-If you have gateways in your home (default) region or target region, delete all gateways in both regions before [tenant migration](/power-bi/support/service-admin-region-move). Applications that depend on these gateways can't access their data sources after the gateways are deleted. After migration, re-create and configure the gateways to restore application access. Follow these steps to delete the gateways:
+If you have gateways in your home (default) region or target region, delete all gateways in both regions before your [tenant remap](/power-bi/support/service-admin-region-move). Applications that depend on these gateways can't access their data sources after the gateways are deleted. After migration, re-create and configure the gateways to restore application access. Follow these steps to delete the gateways:
 
-1. Select the region drop-down to see the list of gateway regions. Then, select your **home (default) region**. Turn on **Tenant administration**. Remove all gateways in this region. For each active gateway, hover over the row corresponding to the gateway, select the three dots (*More actions*), and select **Delete**. To permanently delete soft-deleted gateways, select **Deleted gateways (Preview)**. For each gateway under **Deleted clusters**, select **Permanently delete**.
+1. Go to **Power Platform Admin Center => Manage => Data (preview) => On-premise data gateways**
+1. Turn on **Tenant administration** toggle (top right)
+1. Select your **Home region (Default)** from the dropdown (top right)
+1. For each active gateway, hover over the row corresponding to the gateway, then select **Delete** from the context menu. This soft deletes each gateway.
+1. All the soft-deleted gateways need to be hard-deleted. Go to **Deleted gateways (Preview)** (top right). For each gateway under **Deleted clusters**, select **Permanently delete**. 
+1. Repeat the preceding steps for gateways in your **Target region**. You don't need to delete gateways in regions other than the home and target regions.
 
-
-:::image type="content" source="media/home-region-gateways.png" alt-text="Home region selected.":::
-
-1. Select the region drop-down. Then, select your **target region**. Keep **Tenant administration** on. Remove all active and soft-deleted gateways in this region.
-
-
-:::image type="content" source="media/target-region-gateways.png" alt-text="Target region selected.":::
+:::image type="content" source="media/ppac-gateways.png" alt-text="Gateways in the Power Platform Admin Center":::
 
 ### Related content
 
