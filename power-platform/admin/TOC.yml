@@ -864,6 +864,8 @@
           items:
             - name: Overview
               href: business-applications-work-iq/index.md
+            - name: Default settings
+              href: business-applications-work-iq/default-settings.md
             - name: Quickstart
               href: business-applications-work-iq/quickstart.md
             - name: Manage participation
