@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 09/29/2026
+ms.date: 09/30/2026
 ms.topic: concept-article
 author: amiyapatr 
 ms.subservice: admin
@@ -322,7 +322,6 @@ When you select the **Dataverse** tab, you can allocate capacity to a specific e
 1. Opt in to receive daily email alerts sent to tenant and environment admins when the consumed capacity (database, log, or file) reaches a set percentage of the allocated capacity.
 1. Select **Save** to apply the changes.
 To manage environment-level storage overages, see [Manage an environment-level capacity overage](#manage-an-environment-level-capacity-overage).
-To manage environment-level storage overages, see [Manage an environment-level capacity overage](#manage-an-environment-level-capacity-overage).
 
 ## Changes for exceeding storage capacity entitlements
 
@@ -400,6 +399,8 @@ A tenant is considered to be in storage overage only after all eligible cross ca
 
 ## Storage overage lifecycle
 
+> [!NOTE]
+> This section provides guidance for the upcoming Dataverse Storage Validation experience and applies after the feature rollout. For rollout details, see the related Message center communication.
 
 When a tenant exceeds its entitled storage capacity, it enters a series of progressively more restrictive states, until/unless the overage is remediated. The following progressive restrictions apply when a tenant remains over its entitled storage capacity for an extended period:
 
@@ -418,6 +419,9 @@ The date the tenant first exceeds 100% effective consumption is the start of the
 > - Affected environments are sandbox environments that don't have pay-as-you-go billing enabled and are therefore subject to Administration mode and disablement when the organization remains in storage overage.
 
 ## Scope and exclusions
+
+> [!NOTE]
+> This section provides guidance for the upcoming Dataverse Storage Validation experience and applies after the feature rollout. For rollout details, see the related Message center communication.
 
 ### In scope for Dataverse storage validation
 
@@ -484,6 +488,8 @@ File borrows all 20 GB of unused Database capacity and all 30 GB of unused Log c
 
 The tenant has a 10-GB effective Database deficit and is over capacity. Database is the highest-value storage type and can't borrow unused capacity from Log or File. The 5 GB of unused Log capacity and 200 GB of unused File capacity can't cover the Database deficit. The tenant should free up Database storage or purchase more Database capacity.
 
+To resolve the overage, see [Manage storage overage](#manage-storage-overage). If the overage limits access to an affected sandbox environment, see [Restore user access to affected sandbox environments](#restore-user-access-to-affected-sandbox-environments).
+
 ### Scenario 5: Log storage is over capacity, restrictions applied
 
 |Type  |Entitled  |Consumed  | Status |
@@ -494,6 +500,7 @@ The tenant has a 10-GB effective Database deficit and is over capacity. Database
 
 File has 200 GB of unused capacity, but File capacity can't flow backward to cover a Log deficit. Log borrows all 5 GB of available Database capacity, but this isn't enough to cover its 10-GB raw deficit. The tenant has a 5-GB effective Log deficit and should free up Log storage or purchase more Log or eligible Database capacity.
 
+To resolve the overage, see [Manage storage overage](#manage-storage-overage). If the overage limits access to an affected sandbox environment, see [Restore user access to affected sandbox environments](#restore-user-access-to-affected-sandbox-environments).
 
 ### Scenario 6: File storage is over capacity, restrictions applied
 
@@ -504,6 +511,8 @@ File has 200 GB of unused capacity, but File capacity can't flow backward to cov
 |**File**     | 200 GB        | 290 GB        | 5GB Deficit |
 
 File borrows all 80 GB of unused Database capacity and all 5 GB of unused Log capacity. This covers 85 GB of the 90-GB raw File deficit, but leaves the tenant with a 5-GB effective File deficit. The tenant should free up File storage or purchase more File, Log, or eligible Database capacity.
+
+To resolve the overage, see [Manage storage overage](#manage-storage-overage). If the overage limits access to an affected sandbox environment, see [Restore user access to affected sandbox environments](#restore-user-access-to-affected-sandbox-environments).
 
 
 ### Scenario 7: Log storage is over its original capacity but covered by borrowing, no restrictions
@@ -589,7 +598,6 @@ For details, see Set up a [pay-as-you-go](pay-as-you-go-meters.md#dataverse-capa
 - Your organization can request an extension a maximum of three times in the last 365 days.
 - After extension, copying and restoring environments is blocked again if the tenant doesn't have available storage capacity. To avoid this situation, admins should reduce storage usage and/or purchase more storage capacity.
 
-
 ### Manage an environment-level capacity overage
 An environment-level overage means an environment consumes more than its allocated capacity. The tenant might still have unused capacity.
 
@@ -614,6 +622,9 @@ For details, see Set up a [pay-as-you-go](pay-as-you-go-meters.md#dataverse-capa
 
 ## Restore user access to affected sandbox environments.
 
+> [!NOTE]
+> This section provides guidance for the upcoming Dataverse Storage Validation experience and applies after the feature rollout. For rollout details, see the related Message center communication.
+
 ### Exit administration mode
 A tenant administrator can use the Power Platform admin center to exit administration mode for an affected sandbox environment. You perform this action one environment at a time.
 
@@ -631,7 +642,7 @@ Before re-enabling a disabled sandbox, bring the tenant back within its effectiv
 
 After capacity validation confirms that the tenant is within entitlement, an administrator can re-enable each affected environment in the Power Platform admin center.
 
-## Frequently asked questions (FAQ)
+## Frequently asked questions about storage (FAQ)
 
 ### Why does my storage consumption decrease in the database and grow in the file storage?
 
@@ -662,6 +673,64 @@ Because an admin creates custom Quick Find lookups in the org, these indexes can
 
 > [!NOTE]
 > The Dataverse search indexed data is the data that improves the search quality for the global search and generative AI experiences, as well as interpreting the content by using natural language. This index data accrues to the overall Dataverse search consumption.
+
+### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
+
+You can provision environments through the Power Platform admin center. Learn more in [Create and manage environments in the Power Platform admin center](create-environment.md).
+
+### I'm a new customer and I recently purchased the new offers. My usage of database, log, or file is showing red. What should I do?
+
+Consider buying more capacity by using the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544). Alternatively, you can [free up storage](free-storage-space.md).
+
+### I'm an existing customer, and my renewal is coming up. Will I be affected?
+
+Customers who renew existing subscriptions can choose to continue to transact by using the existing offers for a certain period of time. Contact your Microsoft partner or Microsoft sales team for details.
+
+### I'm a Power Apps or Power Automate customer and have environments with and without database. Do they consume storage capacity?
+
+Yes. All environments consume 1 GB, regardless of whether they have an associated database.
+
+### Do I get notified through email when my organization is over capacity?
+
+Yes, tenant admins receive email notifications on a weekly basis if their organization is at or over capacity. Additionally, tenant admins get notified when their organization reaches 15 percent of available capacity, 5 percent of available capacity or exceeds entitled capacity.
+
+### Is there a database size restriction for backing-up or restoring an organization through the user interface or API?
+
+Refer [here](backup-restore-environments.md#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api).
+
+### Can an environment operation be blocked when the tenant report shows no deficit?
+
+Yes. Tenant notifications apply eligible cross capacity-type borrowing. An environment operation such as environment creatinn, copy, restore, recover, or converting environments can require available capacity in the native database, file, or log storage type. 
+
+### Does reallocating capacity between environments resolve a tenant overage?
+
+No. Reallocation only changes how existing tenant capacity is distributed. Resolve a tenant overage by reducing consumption, adding capacity, using an eligible billing option, or requesting temporary tenant capacity.
+
+### Why am I no longer getting storage notifications?
+
+Tenant admins receive capacity email notifications weekly based on three different thresholds (>85%, 95% or 100%). If you're no longer getting storage notifications, check your admin role. 
+
+### I'm an existing customer. Should I expect my file and log usage to change?
+
+Log and files data usage isn't expected to be exactly the same size as when the same data is stored by using database, due to different storage and indexing technologies. The current set of out-of-the-box tables stored in file and log storage might change in the future.
+
+### The capacity report shows the entitlement breakdown per license, but I have more licenses in my tenant and not all of them are listed in the breakdown. Why?
+
+Not all licenses give per-user entitlement. For example, the Team Member license doesn't give any per-user database, file, or log entitlement. So in this case, the license isn't listed in the breakdown.
+
+### Which environment types does the capacity report count for consumption?
+
+The capacity report counts default, production, and sandbox environments for consumption. It doesn't count trial, preview, support, and developer environments.
+
+### What are tables ending in *– analytics* in my capacity report?
+
+Tables ending in *– analytics* are tables used by one or more Insights applications, such as Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard, to generate predictive insights or analytics dashboards. The data syncs from Dataverse tables. For documentation about the installed Insights applications and the tables they use to create insights and dashboards, see the **More information** section.
+
+### Why can't I see the Summary tab in my capacity report?
+
+In April 2023, Microsoft changed the roles that can see the **Summary** tab in the capacity report. Now, only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab. Users with other roles, such as environment admins, no longer see this tab and are redirected to the **Dataverse** tab when accessing the report. If you need access to the **Summary** tab, ask your admin to assign one of the required roles.
+
+## Frequently asked questions about Dataverse search (FAQ)
 
 ### What is the DataverseSearch table and how can I reduce it?
 
@@ -765,22 +834,20 @@ Not all licenses give per-user entitlement. For example, the Team Member license
 
 ### Which environments are counted in the capacity report?
 
-Default, production, and sandbox environments count for consumption. Trial, preview, support, and developer environments don't count.
+The capacity report counts default, production, and sandbox environments for consumption. It doesn't count trial, preview, support, and developer environments.
 
-### What are tables ending in "– analytics" in my capacity report?
+### What are tables ending in *– analytics* in my capacity report?
 
-Tables ending in "– Analytics" are tables used by one or more Insights applications—for example, Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard—to generate predictive insights or analytics dashboards. The data is synched from Dataverse tables. Go to the section **More information** for documentation covering the installed Insights applications and the tables used to create insights and dashboards.
-
-### Why can't I see the Summary tab in my capacity report?
-
-In April 2023, Microsoft changed the roles that can see the **Summary** tab in the capacity report. Now, only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab. Users with other roles, such as environment admins, no longer see this tab and are redirected to the **Dataverse** tab when accessing the report. If you need access to the **Summary** tab, ask your admin to assign one of the required roles.
-
-**More information:**
+Tables ending in *– analytics* are tables used by one or more Insights applications, such as Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard, to generate predictive insights or analytics dashboards. The data syncs from Dataverse tables. For documentation about the installed Insights applications and the tables used to create insights and dashboards, see the following articles:
 
 - [Sales Insights](/dynamics365/ai/sales/help-hub#get-started)
 - [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)
 - [Customer Service Insights](/dynamics365/customer-service/customer-service-analytics-insights-csh)
 - [Field Service](/dynamics365/field-service/reports)
+
+### Why can't I see the Summary tab in my capacity report?
+
+In April 2023, Microsoft changed the roles that can see the **Summary** tab in the capacity report. Now, only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab. Users with other roles, such as environment admins, no longer see this tab and are redirected to the **Dataverse** tab when accessing the report. If you need access to the **Summary** tab, ask your admin to assign one of the required roles.
 
 ### Who can allocate capacity?
 
@@ -794,7 +861,7 @@ This change doesn't affect the overall capacity available at the tenant level. A
 
 Currently, only *soft enforcement* through email notification is turned on. Power Platform admins and environment admins start receiving notifications when capacity usage exceeds 85 percent of the allocated capacity.
 
-### What types of Dataverse capacity can be allocated?
+### What types of Dataverse capacity can I allocate?
 
 You can allocate database, file, and log capacity.
 
