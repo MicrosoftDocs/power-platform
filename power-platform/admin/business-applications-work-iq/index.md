@@ -30,9 +30,9 @@ Business applications contain both the data your organization works with and con
 
 For example, business context can help:
 
-1. Employees ask questions grounded in business applications data through AI experiences such as Microsoft 365 Copilot.
-1. Makers and agent builders create skills and agents that support business processes and operations.
-1. Developers connect coding agents to business context and permitted actions through the Work IQ MCP server.
+- Employees ask questions grounded in business applications data through AI experiences such as Microsoft 365 Copilot.
+- Makers and agent builders create skills and agents that support business processes and operations.
+- Developers connect coding agents to business context and permitted actions through the Work IQ MCP server.
 
 Making these connections available doesn't replace existing access permissions. Work IQ respects the user, agent, and application access already configured for the underlying business data.
 
@@ -50,10 +50,10 @@ Start with the permissions already configured for your business applications dat
 
 As an administrator, you should:
 
-1. Review which users, agents, and applications can access the underlying data.
-1. Confirm that their permissions are appropriate for the intended business scenarios.
-1. Restrict or block access where it isn't appropriate.
-1. Understand the difference between access to an AI experience and permission to access the business data used by that experience.
+- Review which users, agents, and applications can access the underlying data.
+- Confirm that their permissions are appropriate for the intended business scenarios.
+- Restrict or block access where it isn't appropriate.
+- Understand the difference between access to an AI experience and permission to access the business data used by that experience.
 
 Enabling an experience doesn't grant access to business data. Reviewing existing permissions is therefore a foundational step in preparing for adoption—not something replaced by enabling Work IQ.
 
@@ -82,10 +82,10 @@ Responsible adoption requires visibility into both how AI interacts with busines
 
 As an administrator, you should:
 
-1. Understand what connected AI experiences and agents are permitted to do.
-1. Use the available monitoring capabilities to review their interactions with business data.
-1. Understand where usage and charges are reported.
-1. Review consumption and spending, and apply the supported cost-management controls.
+- Understand what connected AI experiences and agents are permitted to do.
+- Use the available monitoring capabilities to review their interactions with business data.
+- Understand where usage and charges are reported.
+- Review consumption and spending, and apply the supported cost-management controls.
 
 Consider activity and spending together when deciding whether to expand a rollout or adjust its scope.
 

@@ -91,6 +91,7 @@ When you're ready, add more users, explore additional applications, or enable an
 
 ## Related content
 
+- [Review default settings for Business Applications in Work IQ](default-settings.md)
 - [Manage participation in Business Applications in Work IQ](manage-participation.md)
 - [Manage AI experience access to Business Applications in Work IQ](manage-ai-experience-access.md) for information about connections through the Work IQ MCP server and API.
 - [Understand costs for Business Applications in Work IQ](understand-costs.md)
