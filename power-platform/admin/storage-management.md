@@ -303,6 +303,14 @@ OneLake, part of Microsoft Fabric, provides a unified data lake experience where
 Dataverse offers several built-in tools and strategies to help administrators manage storage efficiently and maintain system performance.
 
 ###### Dataverse 
+
+**Manage data with governance policies**
+- Start with the environments and tables that consume the most storage.
+- Use recurring [governance policies](dataverse-governance-policies.md#recommended-practices) for predictable data growth instead of relying only on one-time cleanup.
+- Test deletion and retention criteria in a sandbox environment before using them in production.
+- Review policy results and failures regularly.
+- Add storage capacity when required data can't be deleted or moved to long-term retention.
+
 **Environment and data clean-up**
 - [Delete unused environments](delete-environment.md): You can delete an environment to recover storage space and to remove Personally Identifiable Information (PII).
 - [Bulk deletion jobs](delete-bulk-records.md): You can delete the following data in bulk:

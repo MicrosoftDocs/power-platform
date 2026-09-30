@@ -1,14 +1,14 @@
 ---
 title: Extend Dataverse capacity for 45 days
 description: Learn about extending Microsoft Dataverse storage capacity.
-author: ianceicys-msft
+author: rijoshi1
 ms.subservice: admin
-ms.author: ceian
+ms.author: rijoshi
 ms.reviewer: ellenwehrle
 ms.custom: admin-security
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/18/2025
+ms.date: 09/29/2026
 search.audienceType: 
   - admin
     
@@ -23,7 +23,7 @@ Learn more about storage capacity add-ons in [Dynamics 365 Licensing Guide](http
 If your tenant is running low on available storage capacity, and you need immediate capacity while you work through your organization's standard procurement process to purchase [capacity add-ons](capacity-add-on.md), you can temporarily extend an extra 25% of storage to your tenant for 45 days.
 
 > [!NOTE]
-> The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
+> The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization's use of the online service, including consumption that exceeds the online service's documented entitlements or usage limits.
 >
 > Your organization must have the right licenses for the storage you use:
 >
@@ -65,7 +65,7 @@ After you determine how much storage you're using, use the following steps to ex
 
 If you exceed your storage capacity, you receive email notifications that alert you to the over-capacity usage. Learn more about the new model for email notification in [Changes for exceeding storage capacity entitlements](capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). Learn more about the legacy model for email notification in [Changes for exceeding storage capacity entitlements](legacy-capacity-storage.md#changes-for-exceeding-storage-capacity-entitlements). A notification banner also appears in the Power Platform admin center when a tenant exceeds storage capacity. Currently, exceeding storage entitlements doesn't affect the availability of the service. Data stored in the service remains durable even if you go over your storage limit.
 
-The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization’s use of the online service, including consumption that exceeds the online service’s documented entitlements or usage limits.
+The [Universal License Terms for Online Services](https://www.microsoft.com/licensing/terms/product/ForOnlineServices/EAEAS) apply to your organization's use of the online service, including consumption that exceeds the online service's documented entitlements or usage limits.
 
 Your organization must have the right licenses for the storage you use: 
 - If you use more than your documented entitlements or usage limits, you must buy more licenses.
@@ -85,6 +85,6 @@ The following admin operations aren't available when a tenant exceeds storage ca
 ### Related information
 
 - [Is there a database size restriction for backing-up or restoring an organization through the user interface or API?](backup-restore-environments.md#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api)
-- [Actions to take for a storage capacity deficit](capacity-storage.md#actions-to-take-for-a-storage-capacity-deficit)
+- [Manage a tenant-level capacity overage](capacity-storage.md#manage-a-tenant-level-capacity-overage)
 - Legacy capacity storage model: [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario)
-- New capacity storage model: [Example storage capacity scenarios, overage enforcement](capacity-storage.md#example-storage-capacity-scenarios-and-overage-enforcement)
+- New capacity storage model: [Example storage capacity scenarios and impact](capacity-storage.md#example-storage-capacity-scenarios-and-impact)
