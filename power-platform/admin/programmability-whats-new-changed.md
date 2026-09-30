@@ -5,7 +5,7 @@ author: laneswenka
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: overview
-ms.date: 08/12/2026
+ms.date: 09/30/2026
 ms.subservice: admin
 ms.author: laswenka
 search.audienceType: 
@@ -15,6 +15,16 @@ search.audienceType:
 # Programmability and extensibility - what's new or changed
 
 Learn about the latest changes and new capabilities for Power Platform APIs and admin SDKs.
+
+## August 2026
+
+| Item | Type | Description |
+|------|------|-------------|
+| Send Advisor Chat Message | API | New endpoint: [Send Advisor Chat Message](/rest/api/power-platform/analytics/advisor-chat/send-advisor-chat-message) |
+| Get Affected Sites | API | New endpoint: [Get Affected Sites](/rest/api/power-platform/powerpages/websites/get-affected-sites) |
+| Grant Exception | API | New endpoint: [Grant Exception](/rest/api/power-platform/powerpages/websites/grant-exception) |
+| Get Exceptions | API | New endpoint: [Get Exceptions](/rest/api/power-platform/powerpages/websites/get-exceptions) |
+| Revoke Exception | API | New endpoint: [Revoke Exception](/rest/api/power-platform/powerpages/websites/revoke-exception) |
 
 ## July 2026
 
@@ -192,10 +202,10 @@ Learn about the latest changes and new capabilities for Power Platform APIs and 
 | Recover Environment | API | New endpoint: [Recover Environment](/rest/api/power-platform/environmentmanagement/environment-recover/recover-environment) |
 | Perform Force Failover | API | New endpoint: [Perform Force Failover](/rest/api/power-platform/environmentmanagement/failover/perform-force-failover) |
 | Enable Disaster Recovery | API | New endpoint: [Enable Disaster Recovery](/rest/api/power-platform/environmentmanagement/failover/enable-disaster-recovery) |
-| Enable Environment | API | New endpoint: [Enable Environment](/rest/api/power-platform/environmentmanagement/environment-state/enable-environment) |
+| Enable Environment [Deprecated] | API | New endpoint: Enable Environment |
 | Perform DR Drill | API | New endpoint: [Perform DR Drill](/rest/api/power-platform/environmentmanagement/failover/perform-dr-drill) |
 | Disable Disaster Recovery | API | New endpoint: [Disable Disaster Recovery](/rest/api/power-platform/environmentmanagement/failover/disable-disaster-recovery) |
-| Disable Environment | API | New endpoint: [Disable Environment](/rest/api/power-platform/environmentmanagement/environment-state/disable-environment) |
+| Disable Environment [Deprecated] | API | New endpoint: Disable Environment |
 | Get Business Continuity State Full Snapshot | API  | New endpoint: [Get Business Continuity State Full Snapshot](/rest/api/power-platform/environmentmanagement/failover/get-business-continuity-state-full-snapshot) |
 | Delete Environment Backup | API | New endpoint: [Delete Environment Backup](/rest/api/power-platform/environmentmanagement/environment-backup/delete-environment-backup) |
 | Get Environment Backups | API | New endpoint: [Get Environment Backups](/rest/api/power-platform/environmentmanagement/environment-backup/get-environment-backups) |
