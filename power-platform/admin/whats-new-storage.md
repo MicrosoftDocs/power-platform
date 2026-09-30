@@ -76,6 +76,7 @@ More information:
 - [How storage overages are calculated](capacity-storage.md#how-storage-overages-are-calculated)
 - [Storage overage lifecycle](capacity-storage.md#storage-overage-lifecycle)
 - [Scope and exclusions](capacity-storage.md#scope-and-exclusions)
+- [Restore user access to affected sandbox environments](capacity-storage.md#restore-user-access-to-affected-sandbox-environments)
 - To review legacy capacity storage model, go to [Example storage capacity scenario](legacy-capacity-storage.md#example-storage-capacity-scenario).
 - To review new capacity storage model, go to [Example storage capacity scenarios and impact](capacity-storage.md#example-storage-capacity-scenarios-and-impact).
 
@@ -106,6 +107,7 @@ Use the tenant's capacity report to identify the effective database, file, or lo
 - Delete data that no longer has business, legal, regulatory, audit, or recovery value.
 - Use Dataverse long-term retention for eligible inactive data that you must keep.
 - Delete environments that you no longer need after reviewing their dependencies, ownership, backup, and retention requirements.
+- Establish governance policies to manage data growth and prevent future storage overages.
 - Purchase the database, file, or log capacity needed to cover the remaining deficit and expected growth.
 - Configure pay-as-you-go for eligible environment-specific consumption.
 - Request a temporary capacity extension while completing cleanup or purchasing permanent capacity.
@@ -130,7 +132,7 @@ For detailed steps, see [Manage an environment-level capacity overage](capacity-
 
 | Date | Description |
 |------|-------------|
-| September 2026 | Added guidance for the Dataverse storage overage lifecycle. Clarified storage notifications, immediately restricted environment operations, tenant-level and environment-level remediation, sandbox access stages, scope and exclusions, and steps to restore access after resolving an overage.|
+| September 2026 | Added guidance for the upcoming Dataverse storage validation. For rollout details, see the related Message center communication. Clarified storage notifications, the overage lifecycle, immediately restricted environment operations, tenant-level and environment-level remediation, sandbox access stages, scope and exclusions, and steps to restore access after resolving an overage. |
 | April 2026 |We made internal adjustments to how solution-aware tables and metadata are reported in Dataverse. This content now resides in file storage rather than the database tier. You might notice corresponding shifts between database and file storage as the classification updates internally. Overall storage usage remains unchanged, and the transition required no downtime or action from administrators or makers.|
 | April 2025 | We made internal adjustments to how Web Resources are stored in a Dataverse organization. Web Resources continue to be reported as file store, but you might see the size of *WebResourceBase* fluctuate as storage transitions internally. Dataverse doesn't expect storage to significantly increase for *WebResourceBase*, but it might temporarily drop as files transition. |
 | June 2022 | The new finance and operations storage capacity report gives you a way to visualize your organization's storage usage versus your entitlement. |
