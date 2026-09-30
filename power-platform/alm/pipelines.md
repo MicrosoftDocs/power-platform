@@ -5,7 +5,7 @@ author: caburk
 ms.subservice: alm
 ms.author: matp
 ms.custom: ""
-ms.date: 01/12/2026
+ms.date: 09/29/2026
 ms.reviewer: "matp"
 ms.topic: "overview"
 contributors:
@@ -108,12 +108,8 @@ A common setup example:
 Yes. Tenant admins can automatically convert pipeline target environments to managed environments, ensuring compliance with Microsoft standards.
 To enable an environment as a managed environment, go to the Power Platform admin center **Deployments** > **Settings**. Turn on the automatic managed environment setting for each pipeline host.
 
- > [!IMPORTANT]
- > Starting February 2026, Microsoft will start enabling managed environments for any pipeline target environments that aren't already enabled. Customers will be notified via Microsoft 365 Message center.
- > We recommend you review and enable managed environments for all pipeline targets now. You can do this manually now or set it to occur automatically:
->
-> - **Manually:** Go to enable [managed environments](../admin/managed-environment-enable.md).
-> - **Automatically:** Configure the setting for new pipelines as described above.
+> [!IMPORTANT]
+> Starting in October 2026, the admin deployment page notifies admins when pipelines deploy to unmanaged target environments. Admins have 30 days to approve enabling managed environments before future deployments to the target are blocked. You can request one additional 30-day extension for each environment. For more information, see [Managed environments enforcement for pipelines](admin-deployment-hub.md#what-happens-when-pipelines-deploy-to-unmanaged-target-environments-starting-in-october-2026).
 
 ### Can I configure approvals for deployments?
 

@@ -7,7 +7,7 @@ ms.author: caburk
 ms.custom: NewPPAC
 ms.reviewer: matp
 ms.topic: overview
-ms.date: 2/11/2026
+ms.date: 9/29/2026
 ---
 # Admin deployment page
 
@@ -90,39 +90,27 @@ A dedicated **Failed deployments** view helps admins quickly identify and troubl
 
 Yes. All target environments used in Power Platform deployment pipelines have always been required to be managed environments for compliant usage. This requirement helps your organization benefit from enhanced governance, improved security, and streamlined license management.
 
-### How can I ensure pipelines targets are managed environments automatically?
+### What happens when pipelines deploy to unmanaged target environments starting in October 2026?
 
-Tenant admins (Power Platform and Dynamics 365 admins) can enable a setting that automatically converts pipelines target environments to managed environments, ensuring compliance with Microsoft standards. Managed environments are then enabled on the target during the next deployment.
+Starting in October 2026, the admin deployment page notifies admins when pipelines deploy to an unmanaged target environment. Admins must approve enabling managed environments for the target within 30 days of the notification to prevent future pipelines deployments from being blocked.
 
-To enable the setting, go to the Power Platform admin center **Deployments** > **Settings**. Turn on the automatic managed environment setting for each pipeline host.
+Admins can enable managed environments for deployment targets individually or turn on [automatic enablement](#manage-deployment-settings). If more time is needed, admins can request one additional 30-day extension for each environment. After the grace period or extension expires, the system blocks pipelines deployments to the unmanaged target environment.
 
-### Why did I receive Message Center notification “Power Platform – Automatic enablement of managed environments for Deployment Pipelines”?
+### What can makers without tenant-administrator permissions do?
 
-You receive a notification when you have environments that aren't managed and are target of a pipeline and used for deployment in the last six months. 
-The notification lists specific environments that need action.
+Makers can view affected targets, continue deploying during the allowed period, and acknowledge the one-time extension, but they can't enable managed environments. Ask your tenant administrator to enable managed environments before the countdown expires; enabling it removes the deployment block.
 
-> [!IMPORTANT]
->
-> - Starting February 2026, Microsoft starts enabling managed environments for any pipeline target environments that aren’t already enabled.
-> - We recommend that you review and enable managed environments for all pipeline targets now or set it to occur automatically.
+### Can automatic enablement prevent this deployment block?
 
-### How do I verify pipelines target environments requiring managed environments?
+Yes. Power Platform or Dynamics 365 administrators can enable [automatic conversion](#manage-deployment-settings) under **Deployment** > **Settings** for each pipelines host, so unmanaged targets become managed on their next deployment. Turning automatic conversion off doesn't remove the requirement for pipeline targets to be managed environments.
 
-Go to the Power Platform admin center **Deployments** > **Pipelines** > **Run History**. Then select a host and change the filter to **Last 180 days**. If multiple hosts exist, review deployments in each. Environments listed under **Target** require managed environments.
+### Where can administrators find and enable managed environments for affected targets?
 
- > [!NOTE]
- > Additional run history information and the ability to export data and generate reports is available within the [Deployment Pipelines Configuration app](custom-host-pipelines.md).
+In the Power Platform admin center, open **Deployment**, select a pipelines host, and review **Environments to convert**. Power Platform and Dynamics 365 administrators can select one or more environments and enable managed environments. Review each pipelines host separately.
 
-### Does this automatic enablement affect end users or licensing, and how can I prepare?
+### Will managed environments checks affect solutions that are already deployed?
 
-There's no expected disruption for end users or their applications because of this automatic enablement. The changes focus on environment governance and compliance, so your users and apps continue to function as usual.
-
- > [!IMPORTANT]
- > Managed environments come with an [autoclaim policy](../admin/auto-claim-licensing.md), which is applied automatically. The autoclaim policy ensures users who access apps in managed environments automatically receive the necessary licenses. Ensure you have appropriate license capacity in the tenant to utilize autoclaim.
-
-### Will Microsoft enable unmanaged pipelines target environments in February 2026 if the automatic enablement setting is turned off? 
-
-Yes. These are different and one doesn't impact the other. The notification you recieved doesn't require opt-in and is specific to environments you've already deployed to. The automatic enablement setting is opt-in and helps you stay compliant going forward.
+These pipeline checks block new deployments; they don't disable anything already deployed. Separate licensing requirements still apply - review your license coverage, capacity, and auto-claim policy.
 
 ### Can I restrict access to personal pipelines?
 
