@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: mikferland-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/21/2026
+ms.date: 10/01/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: miferlan
@@ -115,9 +115,10 @@ To turn on data movement across regions, Bing search, Microsoft 365 services, an
     For tenants that are managed through the Microsoft 365 admin center, the default value of the **Allow flex routing during periods of peak load** setting in the Power Platform admin center is the same as the Microsoft 365 admin center toggle, unless the **Move data across regions** setting is turned off.
 
     - Select the **Allow flex routing during periods of peak load** checkbox, if desired. This setting allows LLM inferencing and the storage of associated pseudonymized data to occur outside the EU Data Boundary during periods of peak demand.
-    - If you don’t want to allow flex routing, clear the **Allow flex routing during periods of peak load** checkbox, which results in all LLM inferencing occuring inside the EU Data Boundary, even during periods of peak demand.
+    - If you don't want to allow flex routing, clear the **Allow flex routing during periods of peak load** checkbox, which results in all LLM inferencing occuring inside the EU Data Boundary, even during periods of peak demand.
       - If the **Allow flex routing during periods of peak load** checkbox is visible but unavailable, it means either the feature is currently   turned off in the Microsoft 365 admin center or the **Move data across regions** setting isn't enabled in the Power Platform admin center.
-      - Flex routing is on by default for eligible tenants that were created after March 25, 2026. For eligible tenants that existed before March 25, 2026, please check the Message Center for more details on your tenant's default flex routing setting.
+      - Flex routing is on by default for eligible tenants that were created after March 25, 2026. For eligible tenants that existed before March 25, 2026, tenant administrators are encouraged to check their tenant's setting in the [Microsoft 365 admin center](/microsoft-365/admin).
+
     
     > [!NOTE]
     > - Flex routing lets customers in the European Union Data Boundary allow large language model (LLM) inferencing to occur outside the EU Data Boundary during periods of peak demand to help maintain a consistent Copilot experience. Inferencing is the processing step when an AI model executes the prompt to produce an output or response, such as summarizing content or answering a question.
@@ -132,7 +133,7 @@ The following table lists Copilots and generative AI features that depend on the
 
 When the **Move data across regions** checkbox is selected, these features work at their best, allowing use of other region capacity when needed. 
 
-When the **Move data across regions** checkbox isn't selected, no data is sent outside of the region, so depending on the _in region_ capacities, some of these features won’t work. 
+When you don't select the **Move data across regions** checkbox, no data is sent outside of the region. Depending on the _in region_ capacities, some of these features won't work. 
 
 More Copilots and generative AI features will be available in the future.
 
@@ -156,17 +157,21 @@ Learn more about the languages that are supported in the [Copilot international 
 ## Frequently asked questions (FAQ)
 
 ### Is it possible to modify the "Move data across regions" checkbox at scale across all my environments?
+
 Yes, you can use the **Generative AI settings** environment rule to control this at scale. Learn more in [Rules](/power-platform/admin/environment-groups#rules).
 
-### What features are turned off when you clear the “Move data across regions” checkbox?
+### What features turn off when I clear the "Move data across regions" checkbox?
+
 The **Move data across regions** checkbox isn't intended to turn off Copilots and generative AI features. Not all Copilot and generative AI features are governed by this setting. Some features use alternate services and are not subject to the **Move data across regions** setting. 
 
 When you clear the **Move data across regions** checkbox, it may turn off some features that require data movement. As we add new capacities to new regions, these features may work with in region capacity at some point. Use feature-dedicated controls to turn off unwanted features.
 
-### Why do I need to select the “Move data across regions” checkbox if my environment has in region capacity? 
+### Why do I need to select the "Move data across regions" checkbox if my environment has in-region capacity?
+ 
 Some regions may have limited capacity, or no capacity at all. To ensure availability of Copilots and generative AI features, we may need to move the data outside of the region for processing.
 
-### Why does the “Move data across regions” checkbox not appear in some of my environments?
+### Why doesn't the "Move data across regions" checkbox appear in some of my environments?
+
 If your environment is in a region that has full in region capacity, the **Move data across regions** checkbox doesn't appear.
 
 ## Related information
