@@ -730,6 +730,44 @@ Tables ending in *– analytics* are tables used by one or more Insights applica
 
 In April 2023, Microsoft changed the roles that can see the **Summary** tab in the capacity report. Now, only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab. Users with other roles, such as environment admins, no longer see this tab and are redirected to the **Dataverse** tab when accessing the report. If you need access to the **Summary** tab, ask your admin to assign one of the required roles.
 
+### Who can allocate capacity?
+
+Users with global admin, Power Platform admin, and Dynamics 365 admin roles can allocate Dataverse capacity.
+
+### Does allocating capacity affect the total available capacity in my tenant?
+
+Allocating capacity doesn't affect the overall capacity available at the tenant level. Admins can choose to pre-allocate capacity from the tenant pool to an environment. When they pre-allocate capacity, it reduces the tenant level's total available capacity for use by other environments.
+
+### What happens if capacity consumption goes beyond the allocated capacity?
+
+Currently, only *soft enforcement* through email notification is turned on. Power Platform admins and environment admins start receiving notifications when capacity usage exceeds 85 percent of the allocated capacity. As part of the upcoming Dataverse storage validation, affected sandbox environments will experience restrictions. Refer [storage overage lifecycle](#storage-overage-lifecycle) for details about the impact on sandbox environments. For rollout information, see the Message center communication.
+
+### What types of Dataverse capacity can I allocate?
+
+You can allocate database, file, and log capacity.
+
+### Do I need to allocate capacity to every environment like other supported currencies?
+
+No, admins can select specific environments to allocate capacity.
+
+### Can I receive a capacity notification when my deficit is 0 GB?
+
+Yes. Informational and warning notifications appear before capacity is exhausted. For example, a tenant at 90% effective consumption has no deficit but has less than 15% capacity available.
+
+### Why can an operation be blocked when the tenant report shows no deficit?
+
+Notifications evaluate the tenant's effective storage position after eligible borrowing. An environment operation performs a separate validation and can require available capacity in a native storage type.
+
+### Should I purchase capacity or use pay-as-you-go?
+
+Capacity add-ons can suit predictable, sustained tenant demand. Pay-as-you-go can suit variable or environment-specific usage. Consider pricing, procurement, Azure billing ownership, the number of environments, and expected growth.
+
+### Does a capacity extension permanently resolve an overage?
+No. An extension is temporary. Continue cleanup or procurement so the tenant remains within entitlement after the extension expires.
+
+### Are production environments disabled as part of the upcoming Dataverse storage validation?
+No. Production environments don't enter the administration mode or disabled stages. Production work can still be affected when it depends on a blocked create, copy, restore, or recovery operation.
+
 ## Frequently asked questions about Dataverse search (FAQ)
 
 ### What is the DataverseSearch table and how can I reduce it?
@@ -788,104 +826,6 @@ All experiences that use Dataverse search become limited. For more information, 
 > [!NOTE]
 > You can't turn Dataverse search **On** or **Off** for different applications in the same environment. The status of the setting applies to all applications in the environment that use Dataverse search.
 
-### I just bought the new capacity-based licenses. How do I provision an environment by using this model?
-
-You can provision environments through the Power Platform admin center. Learn more in [Create and manage environments in the Power Platform admin center](create-environment.md).
-
-### I'm a new customer and I recently purchased the new offers. My usage of database, log, or file is showing red. What should I do?
-
-Consider buying more capacity by using the [Licensing Guide](https://go.microsoft.com/fwlink/p/?LinkId=866544). Alternatively, you can [free up storage](free-storage-space.md).
-
-### I'm an existing customer, and my renewal is coming up. Will I be affected?
-
-Customers who renew existing subscriptions can choose to continue to transact by using the existing offers for a certain period of time. Contact your Microsoft partner or Microsoft sales team for details.
-
-### I'm a Power Apps or Power Automate customer and have environments with and without database. Do they consume storage capacity?
-
-Yes. All environments consume 1 GB, regardless of whether they have an associated database.
-
-### Do I get notified through email when my organization is over capacity?
-
-Yes, tenant admins receive email notifications on a weekly basis if their organization is at or over capacity. Additionally, tenant admins get notified when their organization reaches 15 percent of available capacity, and when their organization reaches 5 percent of available capacity.
-
-### Is there a database size restriction for backing-up or restoring an organization through the user interface or API?
-
-Refer [here](backup-restore-environments.md#is-there-a-database-size-restriction-for-backing-up-or-restoring-an-organization-through-the-user-interface-or-api).
-
-### Can an environment operation be blocked when the tenant report shows no deficit?
-
-Yes. Tenant notifications apply eligible cross capacity-type borrowing. An environment operation such as environment creatinn, copy, restore, recover, or converting environments can require available capacity in the native database, file, or log storage type. 
-
-### Does reallocating capacity between environments resolve a tenant overage?
-
-No. Reallocation only changes how existing tenant capacity is distributed. Resolve a tenant overage by reducing consumption, adding capacity, using an eligible billing option, or requesting temporary tenant capacity.
-
-### Why am I no longer getting storage notifications?
-
-Tenant admins receive capacity email notifications weekly based on three different thresholds. If you're no longer getting storage notifications, check your admin role. It could also be the case that your organization is over the three predefined capacity thresholds. In that case, you don't receive an email notification.
-
-### I'm an existing customer. Should I expect my file and log usage to change?
-
-Log and files data usage isn't expected to be exactly the same size as when the same data is stored by using database, due to different storage and indexing technologies. The current set of out-of-the-box tables stored in file and log storage might change in the future.
-
-### The capacity report shows the entitlement breakdown per license, but I have more licenses in my tenant and not all of them are listed in the breakdown. Why?
-
-Not all licenses give per-user entitlement. For example, the Team Member license doesn't give any per-user database, file, or log entitlement. So in this case, the license isn't listed in the breakdown.
-
-### Which environments are counted in the capacity report?
-
-The capacity report counts default, production, and sandbox environments for consumption. It doesn't count trial, preview, support, and developer environments.
-
-### What are tables ending in *– analytics* in my capacity report?
-
-Tables ending in *– analytics* are tables used by one or more Insights applications, such as Sales Insights, Customer Service Hub, or Field Service and resource scheduling and optimization analytics dashboard, to generate predictive insights or analytics dashboards. The data syncs from Dataverse tables. For documentation about the installed Insights applications and the tables used to create insights and dashboards, see the following articles:
-
-- [Sales Insights](/dynamics365/ai/sales/help-hub#get-started)
-- [Field Service and resource scheduling optimization (RSO)](/dynamics365/field-service/scheduling-analytics-reports)
-- [Customer Service Insights](/dynamics365/customer-service/customer-service-analytics-insights-csh)
-- [Field Service](/dynamics365/field-service/reports)
-
-### Why can't I see the Summary tab in my capacity report?
-
-In April 2023, Microsoft changed the roles that can see the **Summary** tab in the capacity report. Now, only users with the tenant admin, Power Platform admin, or Dynamics 365 admin roles can see the **Summary** tab. Users with other roles, such as environment admins, no longer see this tab and are redirected to the **Dataverse** tab when accessing the report. If you need access to the **Summary** tab, ask your admin to assign one of the required roles.
-
-### Who can allocate capacity?
-
-Users with global admin, Power Platform admin, and Dynamics 365 admin roles can allocate Dataverse capacity.
-
-### Does this change affect the total available capacity in my tenant?
-
-This change doesn't affect the overall capacity available at the tenant level. Admins can choose to preallocate capacity from the tenant pool to an environment. When they preallocate capacity, it reduces the tenant level's total available capacity for use by other environments.
-
-### What happens if capacity consumption goes beyond the allocated capacity?
-
-Currently, only *soft enforcement* through email notification is turned on. Power Platform admins and environment admins start receiving notifications when capacity usage exceeds 85 percent of the allocated capacity.
-
-### What types of Dataverse capacity can I allocate?
-
-You can allocate database, file, and log capacity.
-
-### Do I need to allocate capacity to every environment like other supported currencies?
-
-No, admins can select specific environments to allocate capacity.
-
-### Can I receive a capacity notification when my deficit is 0 GB?
-
-Yes. Informational and warning notifications appear before capacity is exhausted. For example, a tenant at 90% effective consumption has no deficit but has less than 15% capacity available.
-
-### Why can an operation be blocked when the tenant report shows no deficit?
-
-Notifications evaluate the tenant's effective storage position after eligible borrowing. An environment operation performs a separate validation and can require available capacity in a native storage type.
-
-### Should I purchase capacity or use pay-as-you-go?
-
-Capacity add-ons can suit predictable, sustained tenant demand. Pay-as-you-go can suit variable or environment-specific usage. Consider pricing, procurement, Azure billing ownership, the number of environments, and expected growth.
-
-### Does a capacity extension permanently resolve an overage?
-No. An extension is temporary. Continue cleanup or procurement so the tenant remains within entitlement after the extension expires.
-
-### Are production environments disabled?
-No. Production environments don't enter the administration mode or disabled stages. Production work can still be affected when it depends on a blocked create, copy, restore, or recovery operation.
 
 ### Related information
 
