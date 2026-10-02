@@ -2,7 +2,7 @@
 title: Manage Copilot Credits and capacity for Copilot Studio
 description: Learn how to manage Copilot Credits and capacity for Copilot Studio.
 author: amiyapatr-zz
-ms.date: 09/18/2026
+ms.date: 10/02/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
@@ -99,7 +99,7 @@ View the Copilot Studio capacity consumed within that environment. The following
 - **Copilot Credit consumption details**: The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus nonbillable credits.
   
 > [!NOTE]
-> Copilot credits used to build [Apps in Copilot Studio (preview)](https://learn.microsoft.com/en-us/microsoft-copilot-studio/apps-experience/apps-overview) are temporarily grouped in the **Top Agents by credit usage** section. Under **View all agents**, credits used to build apps are categorized as App under **Billable features**.
+> Copilot credits used to build [Apps in Copilot Studio (preview)](/microsoft-copilot-studio/apps-experience/apps-overview) are temporarily grouped in the **Top Agents by credit usage** section. Under **View all agents**, credits used to build apps are categorized as App under **Billable features**.
 
 > [!TIP]
 > To monitor credit consumption for agent flows, look for the **Agent flow actions** feature in the **Copilot credit consumption details** grid. When prepaid capacity is exhausted, new agent flow runs are blocked while the parent agent continues to function for non-flow interactions. Flow authors also see a design-time warning in the Copilot Studio designer. To resolve enforcement, reallocate capacity, purchase more credits, or [enable pay-as-you-go billing](#overage-management). For more information, see [Agent flow enforcement](/microsoft-copilot-studio/requirements-messages-management#agent-flow-enforcement).
