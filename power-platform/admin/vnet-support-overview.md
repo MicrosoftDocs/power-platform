@@ -90,7 +90,7 @@ Power Platform supports VNet for both Dataverse plugins and [connectors](#suppor
 
 - [Dataverse low-code plugins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
 - You use copy, backup, and restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center) on virtual network-supported Power Platform environments. You can perform the restore operation within the same virtual network, and across different environments, provided they're connected to the same virtual network. Additionally, the restore operation is permissible from environments that don't support virtual networks to those that do.
-- [SQL Server](/connectors/sql/) connections that use an on-premises data gateway aren't supported in Power Platform environment linked to a virtual network.
+- [SQL Server](/connectors/sql/) connections that use an on-premises data gateway aren't supported in Power Platform environments linked to a virtual network.
 
 
 ## Supported regions
