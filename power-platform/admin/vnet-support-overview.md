@@ -89,10 +89,12 @@ Power Platform supports VNet for both Dataverse plugins and [connectors](#suppor
 
 - [Dataverse low-code plugins](/power-apps/maker/data-platform/low-code-plug-ins) that use connectors aren't supported until those connector types are updated to use subnet delegation.
 - You use copy, backup, and restore [environment lifecycle operations](/dynamics365/fin-ops-core/dev-itpro/power-platform/environment-lifecycle-core-concepts#terminology-differences-between-lifecycle-services-and-power-platform-admin-center) on virtual network-supported Power Platform environments. You can perform the restore operation within the same virtual network, and across different environments, provided they're connected to the same virtual network. Additionally, the restore operation is permissible from environments that don't support virtual networks to those that do.
+- [SQL Server](/connectors/sql/) connections that use an on-premises data gateway aren't supported in Power Platform environments linked to a virtual network.
+
 
 ## Supported regions
 
-Before creating your virtual network and enterprise policy, validate your Power Platform environment's region to ensure it's in a supported region. Use the `Get-EnvironmentRegion` cmdlet from the [subnet diagnostics PowerShell module](/troubleshoot/power-platform/administration/virtual-network#use-the-diagnostics-powershell-module) to retrieve your environment's region information.
+Before creating your virtual network and enterprise policy, validate that your Power Platform environment is in a supported region. Use the `Get-EnvironmentRegion` cmdlet from the [subnet diagnostics PowerShell module](/troubleshoot/power-platform/administration/virtual-network#use-the-diagnostics-powershell-module) to retrieve your environment's region information.
 
 After confirming your environment's region, ensure you configure your enterprise policy and Azure resources in the corresponding supported Azure regions. For example, if your Power Platform environment is in the United Kingdom, then your virtual network and subnets must be in the **uksouth** and **ukwest** Azure regions. If a Power Platform region has more than two available region pairs, you must use the specific region pair that matches your environment's region. For example, if `Get-EnvironmentRegion` returns **westus** for your environment, then your virtual network and subnets must be in **eastus** and **westus**.
 
