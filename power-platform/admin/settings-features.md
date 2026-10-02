@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/27/2026
+ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -32,7 +32,7 @@ ms.collection:
 
 Use feature settings to adjust how features appear and function in Power Apps [canvas apps](/power-apps/maker/canvas-apps/getting-started) and [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview).
 
-These settings can be found in the Power Platform admin center for an environment.
+You can find these settings in the Power Platform admin center for an environment.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
@@ -56,9 +56,9 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable new AI-powered Copilot features for people who make apps. | When **On**, lets preview Copilot features that help create apps, tables apps, tables, edit apps, generate formulas, answering how-to questions and AI Builder GPT experiences. Learn more in [AI Copilot overview ](/power-apps/maker/canvas-apps/ai-overview). <br><br>**Note**: [Generally available](general-availability-deployment.md) Copilot features are turned on by default and can't be turned off. To turn them off, a tenant admin must [contact support](get-help-support.md).| On |
-| Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, this environment needs to be set to the monthly release channel.| When **On**, lets Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps for users to ask questions and have a natural language conversation about data in the app. Learn more in [Add Copilot control to a canvas app ](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot), and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot).<br><br>When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is turned on. | Default |
-| Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, lets makers add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. Learn more in [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
+| Enable new AI-powered Copilot features for people who make apps. | When **On**, preview Copilot features that help create apps, table apps, tables, edit apps, generate formulas, answer how-to questions, and AI Builder GPT experiences. Learn more in [AI Copilot overview](/power-apps/maker/canvas-apps/ai-overview). <br><br>**Note**: [Generally available](general-availability-deployment.md) Copilot features are turned on by default and can't be turned off. To turn them off, a tenant admin must [contact support](get-help-support.md).| On |
+| Allow users to analyze data using an AI-powered chat experience in canvas and model-driven apps. <br><br>**Note**: For model-driven apps, set this environment to the monthly release channel.| When **On**, Copilot in canvas apps, model-driven apps, and Dynamics 365 Sales apps lets users ask questions and have a natural language conversation about data in the app. Learn more in [Add Copilot control to a canvas app](/power-apps/maker/canvas-apps/add-ai-copilot), [Add Copilot to model-driven apps](/power-apps/maker/model-driven-apps/add-ai-copilot), and [Enable and configure Copilot in Dynamics 365 Sales](/dynamics365/sales/enable-setup-copilot).<br><br>When set to **Default**, only [Copilot in Dynamics 365 Sales apps](/dynamics365/sales/enable-setup-copilot) is turned on. | Default |
+| Allow canvas editors to insert the Copilot answer component, which allows users to receive an AI-powered answer to a predefined data query.| When **On**, makers can add a Copilot answer control that allows users to receive an AI-powered answer to a predefined question set by a maker. Learn more in [Use Copilot answer control for canvas apps (preview)](/power-apps/maker/canvas-apps/copilot-answer-control-overview).| Off |
 
 ## Copilot Studio agents
 
@@ -67,14 +67,14 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Allow agent owners and editors to see session transcripts from conversation interactions | When **On**, makers and admins can see and download transcripts in [Copilot Studio](/microsoft-copilot-studio/analytics-transcripts-studio) for agents in the environment. When turned off, the options to see or download transcripts is unavailable. | On |
-| Allow conversation transcripts and their associated metadata to be saved in Dataverse (required for enhanced reporting). | When **On**, transcripts are saved in Dataverse and can be viewed and downloaded in [Power Apps](/microsoft-copilot-studio/analytics-transcripts-powerapps). When turned off, transcripts aren't saved for any conversations that occur in the environment. Transcripts for conversations that occurred before saving was turned off are still available. If this setting is re-enabled, transcripts are only saved for any conversations that occur after the setting is re-enabled in the environment. Transcripts for conversations that occurred when the setting was off will still be unavailable.  | On |
+| Allow conversation transcripts and their associated metadata to be saved in Dataverse (required for enhanced reporting). | When **On**, transcripts are saved in Dataverse and can be viewed and downloaded in [Power Apps](/microsoft-copilot-studio/analytics-transcripts-powerapps). When turned off, transcripts aren't saved for any conversations that occur in the environment. Transcripts for conversations that occurred before saving was turned off are still available. If this setting is re-enabled, transcripts are only saved for any conversations that occur after the setting is re-enabled in the environment. Transcripts for conversations that occurred when the setting was off are still unavailable.  | On |
 
 ### Sharing Copilot Studio agent data with Viva Insights
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md#copilots-and-generative-ai-features-that-depend-on-data-movement-across-regions) to be turned on. For information on what data is shared with Viva Insights, see [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). | On |
-| Allow cross-geo boundary sharing of aggregated analytics data of your tenant preferred data location for Viva Insights is different than the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features). When **On**, Microsoft Copilot Studio is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
+| Allow cross-geo boundary sharing of aggregated analytics data if your tenant preferred data location for Viva Insights is different from the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features). When **On**, Microsoft Copilot Studio data is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
 
 ## Dataverse intelligence (preview)
 
@@ -87,7 +87,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 | Turn on Dataverse intelligence (Work IQ) for agents and AI experiences | When **On**, allows reusable business context [business skills](/power-apps/maker/data-platform/data-platform-business-skill-overview) to be used by your agents. | Off |
 
 > [!NOTE]
-> To use the **Allow data availability in Microsoft 365 Copilot** feature, the following settings must be turned on:
+> To use the **Allow data availability in Microsoft 365 Copilot** feature, turn on the following settings:
 > - [Microsoft 365 admin center: Enable Microsoft 365 admin center Copilot Dataverse settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings)
 > - [Copilot](settings-features.md#copilot-preview)
 > - [Dataverse search: Turn on search indexing to support Dataverse intelligence (WorkIQ) in AI and agent experience](settings-features.md#search)
@@ -98,8 +98,8 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Allow MCP clients to interact with Dataverse MCP server | When selected, allows MCP clients such as Copilot Studio, Visual Studio Code, and other non-Microsoft clients that have been enabled through Advanced Settings to connect to Dataverse. | On |
-| Advanced Settings | Open the Advanced Settings page to enable MCP clients not in Copilot Studio, such as Claude. Learn more: [Configure and manage the Dataverse MCP server for an environment](/power-apps/maker/data-platform/data-platform-mcp-disable#configure-and-manage-the-dataverse-mcp-server-for-an-environment) | Clients not in Copilot Studio are restricted. |
+| Allow MCP clients to interact with Dataverse MCP server | When selected, allows MCP clients such as Copilot Studio, Visual Studio Code, and other non-Microsoft clients that you enable through Advanced Settings to connect to Dataverse. | On |
+| Advanced Settings | Open the Advanced Settings page to enable MCP clients that aren't in Copilot Studio, such as Claude. Learn more: [Configure and manage the Dataverse MCP server for an environment](/power-apps/maker/data-platform/data-platform-mcp-disable#configure-and-manage-the-dataverse-mcp-server-for-an-environment) | Clients that aren't in Copilot Studio are restricted. |
 
 ## Preview and experimental AI models (formerly AI Builder)
 
@@ -117,23 +117,23 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable the AI prompts feature in Power Platform and Copilot Studio. | If you turn off AI prompts, you aren't be able to use custom or prebuilt prompts. These prompts are essential for tasks like summarizing, categorizing, translating, text completion and generation, and more. They help automate and streamline your work in Power Automate, Power Apps, and Copilot Studio.<br><br>Learn more in [Enable or disable AI prompts in Power Platform and Copilot Studio](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio). | On |
+| Enable the AI prompts feature in Power Platform and Copilot Studio. | If you turn off AI prompts, you can't use custom or prebuilt prompts. These prompts are essential for tasks like summarizing, categorizing, translating, text completion and generation, and more. They help automate and streamline your work in Power Automate, Power Apps, and Copilot Studio.<br><br>Learn more in [Enable or disable AI prompts in Power Platform and Copilot Studio](/ai-builder/administer#enable-or-disable-ai-prompts-in-power-platform-and-copilot-studio). | On |
 
 ## AI form fill assistance
 
 > [!IMPORTANT]
-> Admin controls for the **AI form fill assistance** feature is changing to have the primary admin control within **Copilot > Settings > Power Apps > Data entry**. In the coming weeks, the new admin controls will appear and provide increased admin control for environment groups and Entra group support. The following settings will be removed from the **Environment > Settings > Features** page and be accessed through [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties) or [Solution Explorer App Settings](/power-apps/maker/data-platform/create-edit-configure-settings#updating-a-setting-definition). Learn more at [Use form fill assistance feature for model-driven apps](/power-apps/user/form-filling-assistance#admin-control).
+> Admin controls for the **AI form fill assistance** feature are changing. The primary admin control moves to **Copilot > Settings > Power Apps > Data entry**. In the coming weeks, the new admin controls appear and provide increased admin control for environment groups and Entra group support. The following settings are removed from the **Environment > Settings > Features** page. Access them through [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties) or [Solution Explorer App Settings](/power-apps/maker/data-platform/create-edit-configure-settings#updating-a-setting-definition). For more information, see [Use form fill assistance feature for model-driven apps](/power-apps/user/form-filling-assistance#admin-control).
 
 > [!NOTE]
 > Users might need to clear the cache and refresh the browser twice for the setting change to take effect.
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Automatic suggestions | Allow AI to generate suggestions for fields in model-driven apps. Learn more in [Use form fill assistance feature for model-driven apps](/power-apps/user/form-filling-assistance). | Default<br><br>**Note:** If the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
-| Smart paste and file suggestions | Smart paste and file suggestions (production-ready preview) use the text or image copied to your clipboard or files you upload via the form fill assist toolbar to suggest text for specific fields. They also provide inline suggestions in the form. Learn more in [Use smart paste](/power-apps/user/form-filling-assistance#use-smart-paste-preview).  | Default<br><br>**Note:** In the monthly channel, if the **Default** option is selected, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is kept off for users of Power Apps model-driven apps. |
-| Form fill assist toolbar | The form fill assist toolbar lets users access form fill assistance features, view and manage suggestions in the form, and provide feedback.  | Default<br><br>**Note:** In the monthly channel, if the **Default** option is selected, the feature is turned on for users of all model-driven apps. The toolbar appears when at least one of the above AI form fill assistance features is enabled.<br><br> You can override this setting for individual apps using the form fill assist toolbar setting in app designer, documented in [Features](/power-apps/maker/model-driven-apps/app-properties#features).  |
+| Automatic suggestions | Allow AI to generate suggestions for fields in model-driven apps. For more information, see [Use form fill assistance feature for model-driven apps](/power-apps/user/form-filling-assistance). | Default<br><br>**Note:** If you select the **Default** option, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is turned off for users of Power Apps model-driven apps. |
+| Smart paste and file suggestions | Smart paste and file suggestions (production-ready preview) use the text or image you copy to your clipboard or files you upload through the form fill assist toolbar to suggest text for specific fields. They also provide inline suggestions in the form. For more information, see [Use smart paste](/power-apps/user/form-filling-assistance#use-smart-paste-preview).  | Default<br><br>**Note:** In the monthly channel, if you select the **Default** option, the feature is turned on for users of Dynamics 365 model-driven apps, and the feature is turned off for users of Power Apps model-driven apps. |
+| Form fill assist toolbar | The form fill assist toolbar lets users access form fill assistance features, view and manage suggestions in the form, and provide feedback.  | Default<br><br>**Note:** In the monthly channel, if you select the **Default** option, the feature is turned on for users of all model-driven apps. The toolbar appears when at least one of the preceding AI form fill assistance features is enabled.<br><br> You can override this setting for individual apps by using the form fill assist toolbar setting in app designer, documented in [Features](/power-apps/maker/model-driven-apps/app-properties#features).  |
 
-Makers can learn more about form fill assistance in [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties#features).
+App makers can learn more about form fill assistance in [Manage model-driven app settings in the app designer](/power-apps/maker/model-driven-apps/app-properties#features).
 
 ## AI suggestions for formula columns (preview)
 
@@ -142,7 +142,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Allow users to get AI suggestions when creating formula columns. | If **On**, app makers are able to describe what the formula should do and get AI generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula using a GPT-based AI model. Learn more in [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1). | Off |
+| Allow users to get AI suggestions when creating formula columns. | If **On**, app makers can describe what the formula should do and get AI-generated results to help create or edit a Microsoft Dataverse formula column. Formula suggestions in formula columns accept natural language input to interpret and suggest a Power Fx formula by using a GPT-based AI model. For more information, see [Get formula suggestions](/power-apps/maker/data-platform/formula-columns#get-formula-suggestions-preview-1). | Off |
 
 ## Natural language grid and view search
 
@@ -158,7 +158,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 ## AI insight cards
 
 > [!IMPORTANT]
-> Admin controls for the **AI insights cards** feature is changing to have the primary admin control within **Copilot > Settings > Power Apps > Summary**. In the coming weeks, the new admin controls will appear and provide increased admin control for environment groups and Entra group support. The following settings will be removed from the **Environment > Settings > Features** page and be accessed through [Model App Designer Setting](/power-apps/maker/model-driven-apps/app-properties) or [Solution Explorer App Settings](/power-apps/maker/data-platform/create-edit-configure-settings#updating-a-setting-definition). Learn more at [Adming controls for Row summary](/power-apps/user/record-summaries#admin-control).
+> Admin controls for the **AI insights cards** feature are changing to have the primary admin control within **Copilot > Settings > Power Apps > Summary**. In the coming weeks, the new admin controls will appear and provide increased admin control for environment groups and Entra group support. The following settings are removed from the **Environment > Settings > Features** page and accessed through [Model App Designer Setting](/power-apps/maker/model-driven-apps/app-properties) or [Solution Explorer App Settings](/power-apps/maker/data-platform/create-edit-configure-settings#updating-a-setting-definition). Learn more at [Adming controls for Row summary](/power-apps/user/record-summaries#admin-control).
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
@@ -177,13 +177,13 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Allow users to import Excel to existing table with AI-assisted mapping. | If **On**, users have the capability to import Excel tables to existing Dataverse tables using AI-assisted mapping. Learn more in [Import data from Excel and export data to CSV](/power-apps/maker/data-platform/data-platform-import-export).| Off |
+|Allow users to import Excel to existing table with AI-assisted mapping. | If **On**, users can import Excel tables to existing Dataverse tables by using AI-assisted mapping. For more information, see [Import data from Excel and export data to CSV](/power-apps/maker/data-platform/data-platform-import-export).| Off |
 
 ## Embedded content
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Power BI visualization embedding| Learn more in [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards).| Off |
+|Power BI visualization embedding| For more information, see [Add or edit Power BI visualizations on your dashboard](/powerapps/user/add-powerbi-dashboards).| Off |
 |Bing Maps| If **On**, Customer Engagement (on-premises) users need to enter a Bing Maps key. Users don't need to enter a key. | Off |
 |Prevent social data in Dynamics | If you don't want to receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service), select **Off**. If you disable social engagement, your organization can't receive social data in customer engagement apps (such as Dynamics 365 Sales and Customer Service). Users can continue to work with existing social data, however.| Off  |
 
@@ -227,14 +227,14 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Disable money saving rules. |  When **On**, prevents makers from creating money savings rules and track money savings generated by their Power Automate automations (cloud flows) and by their Microsoft Copilot Studio automations (agent flows and agents). Any pre-existing money saving rule at time of enforcement stops generating new money saving records, but pre-existing money saving records remain. Learn more in [Savings in Power Automate](/power-automate/savings) for makers.| Off |
-| Time to live (in days) of savings events in Flow Aggregation entity | Determines how long savings records (not savings rules) should be retained in the Flow Aggregation entity. Dataverse automatically deletes records that are older than the specified time frame. Agents' savings aren't stored using the Flow Aggregation entity and aren't impacted by this setting.| 365 days |
+| Disable money-saving rules. |  When **On**, prevents makers from creating money-saving rules and tracking money savings generated by their Power Automate automations (cloud flows) and by their Microsoft Copilot Studio automations (agent flows and agents). Any pre-existing money-saving rule at time of enforcement stops generating new money-saving records, but pre-existing money-saving records remain. Learn more in [Savings in Power Automate](/power-automate/savings) for makers.| Off |
+| Time to live (in days) of savings events in Flow Aggregation entity | Determines how long savings records (not savings rules) are retained in the Flow Aggregation entity. Dataverse automatically deletes records that are older than the specified time frame. Agents' savings aren't stored using the Flow Aggregation entity and aren't impacted by this setting.| 365 days |
 
 ## Desktop flow connection embedding
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Allow connection embedding for desktop flows. | When **On**, Desktop flow co-owners have access to underlying embedded connection data so they can modify and run the desktop flow. Learn more in [Run a shared desktop flow that contains connector actions as a co-owner](/power-automate/desktop-flows/how-to/share-desktop-flows-that-contain-connector-actions) |On |
+| Allow connection embedding for desktop flows. | When **On**, desktop flow co-owners have access to underlying embedded connection data so they can modify and run the desktop flow. Learn more in [Run a shared desktop flow that contains connector actions as a co-owner](/power-automate/desktop-flows/how-to/share-desktop-flows-that-contain-connector-actions) |On |
 
 ## Desktop flow repair at runtime configuration (preview)
 
@@ -243,8 +243,8 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Repair attended flows at runtime  |  When **On**, users are able to turn on the feature that allows them to repair attended desktop flows at runtime. Learn more in [Repair flow automation errors (preview)](/power-automate/desktop-flows/repair-at-runtime).| On |
-| Repair unattended flows at runtime | When **On**, users are able to turn on the feature that allows them to repair unattended desktop flows at runtime. Learn more in [Repair flow automation errors (preview)](/power-automate/desktop-flows/repair-at-runtime). |On |
+| Repair attended flows at runtime  |  When **On**, users can turn on the feature that allows them to repair attended desktop flows at runtime. Learn more in [Repair flow automation errors (preview)](/power-automate/desktop-flows/repair-at-runtime).| On |
+| Repair unattended flows at runtime | When **On**, users can turn on the feature that allows them to repair unattended desktop flows at runtime. Learn more in [Repair flow automation errors (preview)](/power-automate/desktop-flows/repair-at-runtime). |On |
 
 ## Grids and views
 
@@ -303,20 +303,20 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable security on Attachment entity |  Earlier versions of the Power Platform lacked a security model to restrict access to attachments. This setting was introduced to allow customers to revert in case any issues arose with the implementation of attachment security enforcement. It's recommended that this setting remains enabled. | On |
+| Enable security on Attachment entity |  Earlier versions of the Power Platform didn't include a security model to restrict access to attachments. This setting was introduced to allow customers to revert in case any issues arose with the implementation of attachment security enforcement. Keep this setting enabled. | On |
 
 ## Microsoft Fabric
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Enable admins to link Dataverse tables with a Microsoft Fabric workspace and get real-time insights. |  Enables a system admin to disable the "Link to Fabric: feature in the selected environment. The [Link to Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric) feature is used to get insights on Dataverse and Finance and operations data. Admins can reduce data exposure by disabling this feature in specific environments such as sandbox and dev environments. | On |
+| Enable admins to link Dataverse tables with a Microsoft Fabric workspace and get real-time insights. |  Enables a system admin to disable the **Link to Fabric** feature in the selected environment. The [Link to Fabric](/power-apps/maker/data-platform/azure-synapse-link-view-in-fabric#link-to-microsoft-fabric) feature is used to get insights on Dataverse and Finance and operations data. Admins can reduce data exposure by disabling this feature in specific environments such as sandbox and dev environments. | On |
 | Enable users to define Dataverse virtual tables using data from Microsoft Fabric and build apps (preview). | Enables a system admin to disable the feature where makers can [create virtual tables using Fabric OneLake data](/power-apps/maker/data-platform/azure-synapse-link-build-apps-with-fabric). While this feature is useful for building apps and driving insights from Fabric One Lake data, admins can disable this feature in specific sandbox and developer environments as needed. | On |
 
 ## Power Automate capacity
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Allow process capacity overage  |  When **On**, enables machines and cloud flows to go into process capacity overage. New process capacity overage is only possible in an environment with at least one process / hosted process / unattended capacity assigned. Learn more in [Process capacity overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage). | On |
+| Allow process capacity overage  |  When **On**, enables machines and cloud flows to go into process capacity overage. New process capacity overage is only possible in an environment with at least one process, hosted process, or unattended capacity assigned. Learn more in [Process capacity overage](/power-automate/desktop-flows/capacity-utilization-process#capacity-overage). | On |
 | Allow auto-claim of process capacity |  When **On**, enables automatic assignment of process capacity to the environment (if any is available in the admin center) when required by an assignation of process capacity to a cloud flow, or to a machine while there's no available capacity in the environment. Learn more in [Process capacity](/power-automate/desktop-flows/capacity-process). | On |
 
 ## Search
@@ -325,8 +325,8 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 |---------|-------------|---------------|
 |Dataverse search| If **On**, you can use Dataverse search to find records across multiple tables, sorted by relevance.| Off|
 |Single table search option| If **On**, users get another option to search on a single table on view pages of search-enabled tables in all model-driven apps.|Off|
-|Prevent slow keyword filter for quick find terms on view pages |  If **On**, users are prevented from searching with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message displays in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip displays indicating the search might be slow. Learn more in [Grid search](/power-apps/user/grid-filters#grid-search). | Off|
-|Quick Find record limits| If **On**, if more than 10,000 records are found, a message displays that suggests a more selective search. Learn more in [Configure Dataverse search for the organization](configure-relevance-search-organization.md).| On |
+|Prevent slow keyword filter for quick find terms on view pages |  If **On**, users can't search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, and a message displays in the application. If **Off**, users can search with keywords that begin with an asterisk (\*) in grid search in all model-driven apps, but an information tooltip displays indicating the search might be slow. Learn more in [Grid search](/power-apps/user/grid-filters#grid-search). | Off|
+|Quick Find record limits| If **On**, and more than 10,000 records are found, a message suggests a more selective search. Learn more in [Configure Dataverse search for the organization](configure-relevance-search-organization.md).| On |
 | Use quick find view of an entity for searching on grids and subgrids|  Select **Yes** to show the traditional Quick Find search in an entity grid. The traditional Quick Find search applies the [Quick Find View](/powerapps/maker/model-driven-apps/create-edit-views#system-views) filters and displays the Quick Find columns after searching.  |Off|
 | Search for records in Microsoft 365 apps | You can quickly enable your users to access the records they most recently used in their application. The records are available in the Outlook Web client using a simple /mention gesture.  | On |
 
@@ -350,7 +350,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Allow publishing of canvas apps with code components| In Power Apps, when importing a solution that includes a Power Apps component framework component, it's essential that the target environment has the **Allow publishing of canvas apps with code components** setting turned on. This setting must be turned on prior to deployment, otherwise the component framework component doesn't function properly within canvas apps.<br><br>After the setting is turned on, and the solution is successfully imported and published. The component becomes part of the app's runtime. As a result, even if the setting is turned off afterwards, the Power Apps component framework continues to work as expected. However, if you need to make further updates or republish the app with changes to the component framework, you must turn on the setting again to ensure continued support for code components.<br><br>This setting is critical for environments that use custom controls or UI enhancements built with the component framework inside canvas apps.  | Off |
+|Allow publishing of canvas apps with code components| In Power Apps, when importing a solution that includes a Power Apps component framework component, the target environment must have the **Allow publishing of canvas apps with code components** setting turned on. Turn on this setting before deployment, otherwise the component framework component doesn't function properly within canvas apps.<br><br>After you turn on the setting and successfully import and publish the solution, the component becomes part of the app's runtime. As a result, even if you turn off the setting afterwards, the Power Apps component framework continues to work as expected. However, if you need to make further updates or republish the app with changes to the component framework, you must turn on the setting again to ensure continued support for code components.<br><br>This setting is critical for environments that use custom controls or UI enhancements built with the component framework inside canvas apps.  | Off |
 
 ## Power Apps code apps
 
@@ -381,13 +381,13 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-|Disable empty address record creation in Dataverse | When **On**, if the incoming payload doesn't have any address relevant data, an empty address data record aren't created. This feature is supported only for **Account** and **Contact** tables. Learn more in [Disable empty record creation](/power-apps/developer/data-platform/customer-entities-account-contact#disable-empty-record-creation). |    Off    |
+|Disable empty address record creation in Dataverse | When **On**, if the incoming payload doesn't have any address relevant data, the system doesn't create an empty address data record. This feature is supported only for **Account** and **Contact** tables. Learn more in [Disable empty record creation](/power-apps/developer/data-platform/customer-entities-account-contact#disable-empty-record-creation). |    Off    |
 
 ## Enable deletion of address records
 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-|Enable deletion of address records in Dataverse |When **On**, address records created in Dataverse for **Account** and **Contact** tables can be deleted through the user interface or through bulk deletion. Learn more in [Delete embedded address records](/power-apps/developer/data-platform/customer-entities-account-contact#delete-embedded-address-records).|    Off    |
+|Enable deletion of address records in Dataverse |When **On**, users can delete address records created in Dataverse for **Account** and **Contact** tables through the user interface or through bulk deletion. Learn more in [Delete embedded address records](/power-apps/developer/data-platform/customer-entities-account-contact#delete-embedded-address-records).|    Off    |
 
 ## Block deletion of out-of-the-box attribute maps
 
@@ -411,7 +411,7 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Server and client conflict resolution.| When **On**, any conflicts detected between server and a client that's been offline must be resolved manually. Learn more in [Set up mobile offline for model-driven apps](/power-apps/mobile/setup-mobile-offline). | Off |
+| Server and client conflict resolution.| When **On**, any conflicts detected between server and a client that was offline must be resolved manually. Learn more in [Set up mobile offline for model-driven apps](/power-apps/mobile/setup-mobile-offline). | Off |
 
 ## Deleted records (preview)
 
@@ -420,5 +420,14 @@ Makers can learn more about form fill assistance in [Manage model-driven app set
 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-| Keep deleted Dataverse records.  | When **On**, you can use this feature for Dataverse tables to restore deleted records. |    **Off**     |
+| Keep deleted Dataverse records.  | When **On**, use this feature for Dataverse tables to restore deleted records. |    **Off**     |
 |Keep deleted records (days).     | Recover table record data from 1 to up to *30* days after the record was deleted. Learn more: [Restore deleted Microsoft Dataverse table records](restore-deleted-table-records.md)     |   **30**      |
+
+## Activities for users without licenses (preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+|Setting  |Description  |Default value  |
+|---------|---------|---------|
+| Add anyone with an Entra ID to an activity's recipients fields.  | When **On**, you and other users can add Entra ID users who don't have Dynamics 365 or Power Apps license to an activity's recipients fields (such as To, CC, or BCC lines of an email or appointment). |    **Off**     |
