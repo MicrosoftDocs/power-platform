@@ -9,6 +9,7 @@ ms.subservice: admin
 ms.author: arthii
 ms.reviewer: ellenwehrle
 ms.contributors:
+  - kernanb
   - lsuresh
 contributors:
   - charls-msft
@@ -175,16 +176,23 @@ If a person who doesn't have access to install gateways tries to install one, th
 
 ## Delete gateways before tenant remap
 
-If you have gateways in your home (default) region or target region, delete all gateways in both regions before your [tenant remap](/power-bi/support/service-admin-region-move). Applications that depend on these gateways can't access their data sources after the gateways are deleted. After migration, re-create and configure the gateways to restore application access. Follow these steps to delete the gateways:
+If you have on-premises data gateways in your home (default) region or target region, delete all those gateways in both regions before your [tenant remap](/power-bi/support/service-admin-region-move). Applications (Power BI, Fabric, PowerApps, Logic Apps, Power Automate) that depend on these gateways can't access their data sources after the gateways are deleted. After remap, you need to recreate and configure the gateways to restore application access. Follow these steps to delete your on-premises data gateways before your tenant remap:
 
-1. Go to **Power Platform Admin Center => Manage => Data (preview) => On-premise data gateways**
-1. Turn on **Tenant administration** toggle (top right)
-1. Select your **Home region (Default)** from the dropdown (top right)
+1. Go to **[Power Platform admin center](https://admin.powerplatform.microsoft.com/) => Manage => Data (preview)**
+1. Toggle on **Tenant administration** (top right)
+1. Select **On-premises data gateways** from the dropdown (top right). You don't have to worry about On-premises data gateways (Personal mode).
+1. Select your **Home region (Default)** from the dropdown (top right). It might simply say **Default** which indicates it's already set to your home region.
+1. Select the **On-premises data gateways** tab under **Manage Gateways** (top left)
 1. For each active gateway, hover over the row corresponding to the gateway, then select **Delete** from the context menu. This soft deletes each gateway.
-1. All the soft-deleted gateways need to be hard-deleted. Go to **Deleted gateways (Preview)** (top right). For each gateway under **Deleted clusters**, select **Permanently delete**. 
-1. Repeat the preceding steps for gateways in your **Target region**. You don't need to delete gateways in regions other than the home and target regions.
+1. All the soft-deleted gateways need to be hard-deleted. Go to **Deleted gateways (Preview)** (top right). For each gateway under **Deleted clusters**, select the trash can icon to permanently delete the gateway and all its members.
+1. Repeat steps 4 through 8 for gateways in your remap **Target region**. You don't need to delete gateways in regions other than the home and target regions.
 
 :::image type="content" source="media/ppac-gateways.png" alt-text="Gateways in the Power Platform Admin Center":::
+
+> [!NOTE]
+> You don't need to delete any **On-premises data gateways (Personal mode)**.
+> 
+> You don't need to delete **On-premises data gateways** in regions other than your home region (default), and your remap target region.
 
 ### Related content
 
