@@ -1330,6 +1330,8 @@
               href: support-overview.md
             - name: Get support
               href: get-help-support.md
+            - name: Agentic Support FAQ
+              href: agentic-support-faq.md
             - name: Manage support requests
               href: manage-support-requests.md
             - name: Use live chat with persistence
