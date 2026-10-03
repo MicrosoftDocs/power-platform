@@ -1,7 +1,7 @@
 ---
 title: Data storage and governance in Power Platform
 description: Learn how data is stored and governed in Power Platform.
-ms.date: 08/03/2026
+ms.date: 10/01/2026
 ms.service: power-platform
 ms.topic: concept-article
 ms.custom: 
@@ -22,7 +22,16 @@ ms.contributors:
 ---
 # Data storage and governance in Power Platform
 
-Power Platform processes both **personal data** and **customer data**. To learn more about personal data and customer data, see the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
+Power Platform processes both personal data and customer data. This processing includes data from:
+
+- Custom connectors
+- Dataverse
+- Microsoft Dynamics 365 Remote Assist
+- Power Apps
+- Power Automate
+- Power Pages
+
+To learn more about personal data and customer data, see the [Microsoft Trust Center](https://www.microsoft.com/trustcenter).
 
 ## Data residency
 

@@ -3,10 +3,11 @@ title: Manage advanced connector policies programmatically
 description: Learn how to create, assign, copy, modify, and remove advanced connector policies (ACP) by using the Power Platform API and the administration (Admin) SDKs for PowerShell, C#, and Python.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/14/2026
+ms.date: 10/02/2026
 author: laneswenka
 ms.author: laswenka
 ms.reviewer: ellenwehrle
+ms.contributor: rurimmer
 ms.subservice: admin
 search.audienceType:
   - admin
@@ -576,6 +577,690 @@ async def copy_policy(client, source_group_id: str, target_group_id: str, copy_a
         patch.rule_sets = [source_cm]
         await client.governance.rule_based_policies.by_policy_id(target_policy_id).patch(patch)
         print(f"Merged the ConnectorManagement rule into target policy {target_policy_id}")
+```
+---
+
+## Step 6b. Copy a policy from one environment group to another including connector actions
+
+When you replicate a governance baseline to another group, choose how much to copy by using the `CopyAllRules` flag:
+
+- **`CopyAllRules = true`**: Create a new policy from *all* of the source group's rule sets and assign it to the target group. The target group's governance becomes an independent copy of the source.
+- **`CopyAllRules = false`**: Extract only the `ConnectorManagement` rule set from the source policy and merge it into the target group's existing policy. The patch operation adds or updates the rule set by ID, so the target group keeps its other rules.
+
+### [PowerShell](#tab/powershell)
+
+```powershell
+$tenantId   = "<tenant-id>"
+$apiBaseUrl = "https://api.powerplatform.com"
+$apiVersion = "2024-10-01"
+
+$sourceGroupId = "<source environment group ID>"
+$targetGroupId = "<target environment group ID>"
+$CopyAllRules  = $true
+
+# ---------- Helpers ----------
+function Get-Prop($obj, $name) {
+    if ($null -ne $obj -and $obj.PSObject.Properties.Name -contains $name) { return $obj.$name }
+    return $null
+}
+
+function Get-ConnectorKey($entry) { (([string]$entry.AllowedConnector) -split "/")[-1].ToLowerInvariant() }
+
+function Get-ConnectorManagement($policy) {
+    $policy.ruleSets | Where-Object { $_.id -eq "ConnectorManagement" } | Select-Object -First 1
+}
+
+function Get-ActionSignature($entry) {
+    $mode = Get-Prop $entry "AllowedActionsMode"
+    if (-not $mode) { $mode = "AllAllowed" }
+    if ($mode -ne "SomeAllowed") { return $mode }
+    $actions = (@(Get-Prop $entry "AllowedActions") | Where-Object { $_ } | Sort-Object) -join "|"
+    return "$mode::$actions"
+}
+
+# Copies AllowedActionsMode/AllowedActions from each source connector to the matching target connector.
+# Returns the number of connectors that were changed.
+function Sync-ConnectorActions($sourceCm, $targetCm) {
+    $changed = 0
+    foreach ($src in @($sourceCm.inputs.AllowedConnectorList)) {
+        $key = Get-ConnectorKey $src
+        $tgt = @($targetCm.inputs.AllowedConnectorList) | Where-Object { (Get-ConnectorKey $_) -eq $key } | Select-Object -First 1
+        if (-not $tgt) { Write-Warning "  $key is in the source but not in the target rule - skipped"; continue }
+        if ((Get-ActionSignature $src) -eq (Get-ActionSignature $tgt)) { continue }
+
+        $mode = Get-Prop $src "AllowedActionsMode"
+        if (-not $mode) { $mode = "AllAllowed" }
+        $tgt | Add-Member -NotePropertyName AllowedActionsMode -NotePropertyValue $mode -Force
+        if ($mode -eq "SomeAllowed") {
+            $actions = [object[]]@(Get-Prop $src "AllowedActions")
+            $tgt | Add-Member -NotePropertyName AllowedActions -NotePropertyValue $actions -Force
+            Write-Host "  $key -> SomeAllowed ($($actions.Count) allowed): $($actions -join ', ')"
+        }
+        else {
+            $tgt.PSObject.Properties.Remove("AllowedActions")
+            Write-Host "  $key -> $mode"
+        }
+        $changed++
+    }
+    return $changed
+}
+
+if ($MyInvocation.InvocationName -eq ".") { return }  # dot-sourced: load helpers only
+
+# ---------- Authenticate (requires the Az.Accounts module: Install-Module Az.Accounts -Scope CurrentUser) ----------
+Connect-AzAccount -Tenant $tenantId | Out-Null
+$token = (Get-AzAccessToken -ResourceUrl $apiBaseUrl -AsSecureString).Token | ConvertFrom-SecureString -AsPlainText
+$headers = @{ Authorization = "Bearer $token" }
+
+function Invoke-PpApi($method, $path, $body) {
+    $params = @{ Method = $method; Uri = "$apiBaseUrl/$path`?api-version=$apiVersion"; Headers = $headers }
+    if ($body) { $params.ContentType = "application/json"; $params.Body = $body }
+    Invoke-RestMethod @params
+}
+
+# ---------- 1. Read the source group's policy ----------
+$sourceAssignments = Invoke-PpApi Get "governance/ruleBasedPolicies/environmentGroups/$sourceGroupId/assignments"
+if (-not $sourceAssignments.value) { throw "No policy is assigned to source group $sourceGroupId" }
+$sourcePolicyId = $sourceAssignments.value[0].policyId
+$source   = Invoke-PpApi Get "governance/ruleBasedPolicies/$sourcePolicyId"
+$sourceCm = Get-ConnectorManagement $source
+
+# ---------- 2. Copy the rules (unchanged logic) ----------
+# A group can have only one assigned policy, so check the target first
+$targetAssignments = Invoke-PpApi Get "governance/ruleBasedPolicies/environmentGroups/$targetGroupId/assignments"
+$targetPolicyId = if ($targetAssignments.value) { $targetAssignments.value[0].policyId } else { $null }
+
+if ($targetPolicyId) {
+    # Target already has a policy: patch the source rule sets into it (patch adds/updates rule sets by ID)
+    $targetPolicy = Invoke-PpApi Get "governance/ruleBasedPolicies/$targetPolicyId"
+    $ruleSetsToCopy = if ($CopyAllRules) { @($source.ruleSets) } else { @($sourceCm) }
+    if (-not $ruleSetsToCopy -or -not $ruleSetsToCopy[0]) { throw "Source policy $sourcePolicyId has no rule sets to copy." }
+
+    $patchBody = @{ name = $targetPolicy.name; ruleSets = $ruleSetsToCopy } | ConvertTo-Json -Depth 20
+    Invoke-PpApi Patch "governance/ruleBasedPolicies/$targetPolicyId" $patchBody | Out-Null
+    Write-Host "Target group already uses policy $targetPolicyId - updated it with $($ruleSetsToCopy.Count) rule set(s): $(($ruleSetsToCopy.id) -join ', ')"
+}
+elseif ($CopyAllRules) {
+    # No policy on the target: copy ALL rule sets into a new policy and assign it
+    $copyBody = @{ name = "$($source.name) (copy)"; ruleSets = $source.ruleSets } | ConvertTo-Json -Depth 20
+    $copy = Invoke-PpApi Post "governance/ruleBasedPolicies" $copyBody
+    Invoke-PpApi Post "governance/ruleBasedPolicies/$($copy.id)/environmentGroups/$targetGroupId/assignments" "{}" | Out-Null
+    $targetPolicyId = $copy.id
+    Write-Host "Copied all rules to new policy $targetPolicyId and assigned it to group $targetGroupId"
+}
+else {
+    throw "No policy is assigned to target group $targetGroupId. Set `$CopyAllRules = `$true to create one."
+}
+
+# ---------- 3. Copy connector actions for each copied connector rule ----------
+if (-not $sourceCm) { Write-Host "Source policy has no ConnectorManagement rule set - no connector actions to copy."; return }
+
+$restricted = @($sourceCm.inputs.AllowedConnectorList | Where-Object { (Get-Prop $_ "AllowedActionsMode") -eq "SomeAllowed" })
+Write-Host "Source has $($restricted.Count) connector(s) with restricted (partly disabled) actions."
+
+# Re-read what the service actually stored for the target
+$target   = Invoke-PpApi Get "governance/ruleBasedPolicies/$targetPolicyId"
+$targetCm = Get-ConnectorManagement $target
+if (-not $targetCm) { throw "Target policy $targetPolicyId has no ConnectorManagement rule set after the copy." }
+
+Write-Host "Syncing connector actions into policy $targetPolicyId :"
+$changed = Sync-ConnectorActions $sourceCm $targetCm
+if ($changed -gt 0) {
+    $patchBody = @{ name = $target.name; ruleSets = @($targetCm) } | ConvertTo-Json -Depth 20
+    Invoke-PpApi Patch "governance/ruleBasedPolicies/$targetPolicyId" $patchBody | Out-Null
+    Write-Host "Updated actions on $changed connector(s)."
+}
+else {
+    Write-Host "Connector actions already match the source - nothing to update."
+}
+
+# ---------- 4. Verify ----------
+$verifyCm = Get-ConnectorManagement (Invoke-PpApi Get "governance/ruleBasedPolicies/$targetPolicyId")
+$mismatches = 0
+foreach ($src in @($sourceCm.inputs.AllowedConnectorList)) {
+    $key = Get-ConnectorKey $src
+    $tgt = @($verifyCm.inputs.AllowedConnectorList) | Where-Object { (Get-ConnectorKey $_) -eq $key } | Select-Object -First 1
+    if (-not $tgt -or (Get-ActionSignature $src) -ne (Get-ActionSignature $tgt)) {
+        Write-Warning "Mismatch for $key - source: $(Get-ActionSignature $src) | target: $(Get-ActionSignature $tgt)"
+        $mismatches++
+    }
+}
+if ($mismatches -eq 0) { Write-Host "Verified: connector actions in $targetPolicyId match the source." }
+```
+
+### [C#](#tab/csharp)
+
+```csharp
+// Requires the .NET 10 SDK. Run with:
+//   dotnet run CopyAcpPolicy.cs -- --tenant <tenant-id> --source <source group ID> --target <target group ID> [--connector-only]
+#:package Azure.Identity@1.21.0
+using System.Net.Http.Headers;
+using System.Text;
+using System.Text.Json.Nodes;
+using Azure.Core;
+using Azure.Identity;
+
+// ---------- Settings (can be overridden: --tenant <id> --source <id> --target <id> --connector-only) ----------
+var tenantId      = "<tenant-id>";
+var sourceGroupId = "<source environment group ID>";
+var targetGroupId = "<target environment group ID>";
+var copyAllRules  = true;   // false = copy only the ConnectorManagement rule set
+
+const string ApiBaseUrl = "https://api.powerplatform.com";
+const string ApiVersion = "2024-10-01";
+
+for (var i = 0; i < args.Length; i++)
+{
+    switch (args[i].ToLowerInvariant())
+    {
+        case "--tenant": tenantId = args[++i]; break;
+        case "--source": sourceGroupId = args[++i]; break;
+        case "--target": targetGroupId = args[++i]; break;
+        case "--connector-only": copyAllRules = false; break;
+        default: Console.Error.WriteLine($"Unknown argument: {args[i]}"); return 1;
+    }
+}
+
+try
+{
+    // ---------- Authenticate (interactive browser sign-in, like Connect-AzAccount) ----------
+    var credential = new InteractiveBrowserCredential(new InteractiveBrowserCredentialOptions { TenantId = tenantId });
+    var token = await credential.GetTokenAsync(new TokenRequestContext([$"{ApiBaseUrl}/.default"]));
+
+    using var http = new HttpClient { BaseAddress = new Uri($"{ApiBaseUrl}/") };
+    http.DefaultRequestHeaders.Authorization = new("Bearer", token.Token);
+    var api = new PowerPlatformApi(http, ApiVersion);
+
+    // ---------- 1. Read the source group's policy ----------
+    var sourcePolicyId = await GetAssignedPolicyIdAsync(api, sourceGroupId)
+        ?? throw new InvalidOperationException($"No policy is assigned to source group {sourceGroupId}");
+    var source = await api.GetAsync($"governance/ruleBasedPolicies/{sourcePolicyId}")
+        ?? throw new InvalidOperationException($"Source policy {sourcePolicyId} returned no content");
+    var sourceCm = Acp.GetConnectorManagement(source);
+
+    // ---------- 2. Copy the rules ----------
+    // A group can have only one assigned policy, so check the target first
+    var targetPolicyId = await GetAssignedPolicyIdAsync(api, targetGroupId);
+    var sourceRuleSets = (source["ruleSets"] as JsonArray)?.OfType<JsonObject>().ToList() ?? [];
+
+    if (targetPolicyId is not null)
+    {
+        // Target already has a policy: patch the source rule sets into it (patch adds/updates rule sets by ID)
+        var targetPolicy = await api.GetAsync($"governance/ruleBasedPolicies/{targetPolicyId}");
+        var ruleSetsToCopy = copyAllRules ? sourceRuleSets : sourceCm is null ? [] : [sourceCm];
+        if (ruleSetsToCopy.Count == 0)
+            throw new InvalidOperationException($"Source policy {sourcePolicyId} has no rule sets to copy.");
+
+        await api.PatchAsync($"governance/ruleBasedPolicies/{targetPolicyId}", PolicyBody(Acp.GetString(targetPolicy, "name"), ruleSetsToCopy));
+        Console.WriteLine($"Target group already uses policy {targetPolicyId} - updated it with {ruleSetsToCopy.Count} rule set(s): " +
+                          string.Join(", ", ruleSetsToCopy.Select(r => Acp.GetString(r, "id"))));
+    }
+    else if (copyAllRules)
+    {
+        // No policy on the target: copy ALL rule sets into a new policy and assign it
+        var copy = await api.PostAsync("governance/ruleBasedPolicies", PolicyBody($"{Acp.GetString(source, "name")} (copy)", sourceRuleSets));
+        targetPolicyId = Acp.GetString(copy, "id")
+            ?? throw new InvalidOperationException("Create policy response did not include an id.");
+        await api.PostAsync($"governance/ruleBasedPolicies/{targetPolicyId}/environmentGroups/{targetGroupId}/assignments", new JsonObject());
+        Console.WriteLine($"Copied all rules to new policy {targetPolicyId} and assigned it to group {targetGroupId}");
+    }
+    else
+    {
+        throw new InvalidOperationException($"No policy is assigned to target group {targetGroupId}. Omit --connector-only to create one.");
+    }
+
+    // ---------- 3. Copy connector actions for each copied connector rule ----------
+    if (sourceCm is null)
+    {
+        Console.WriteLine("Source policy has no ConnectorManagement rule set - no connector actions to copy.");
+        return 0;
+    }
+
+    var restricted = Acp.GetConnectors(sourceCm).Count(e => Acp.GetActionsMode(e) == "SomeAllowed");
+    Console.WriteLine($"Source has {restricted} connector(s) with restricted (partly disabled) actions.");
+
+    // Re-read what the service actually stored for the target
+    var target = await api.GetAsync($"governance/ruleBasedPolicies/{targetPolicyId}");
+    var targetCm = Acp.GetConnectorManagement(target)
+        ?? throw new InvalidOperationException($"Target policy {targetPolicyId} has no ConnectorManagement rule set after the copy.");
+
+    Console.WriteLine($"Syncing connector actions into policy {targetPolicyId}:");
+    var changed = Acp.SyncConnectorActions(sourceCm, targetCm);
+    if (changed > 0)
+    {
+        await api.PatchAsync($"governance/ruleBasedPolicies/{targetPolicyId}", PolicyBody(Acp.GetString(target, "name"), [targetCm]));
+        Console.WriteLine($"Updated actions on {changed} connector(s).");
+    }
+    else
+    {
+        Console.WriteLine("Connector actions already match the source - nothing to update.");
+    }
+
+    // ---------- 4. Verify ----------
+    var verifyCm = Acp.GetConnectorManagement(await api.GetAsync($"governance/ruleBasedPolicies/{targetPolicyId}"));
+    var mismatches = 0;
+    foreach (var src in Acp.GetConnectors(sourceCm))
+    {
+        var key = Acp.GetConnectorKey(src);
+        var tgt = Acp.FindConnector(verifyCm, key);
+        if (tgt is null || Acp.GetActionSignature(src) != Acp.GetActionSignature(tgt))
+        {
+            Log.Warn($"Mismatch for {key} - source: {Acp.GetActionSignature(src)} | target: {Acp.GetActionSignature(tgt)}");
+            mismatches++;
+        }
+    }
+    if (mismatches == 0) Console.WriteLine($"Verified: connector actions in {targetPolicyId} match the source.");
+    return mismatches == 0 ? 0 : 2;
+}
+catch (Exception ex) when (ex is HttpRequestException or InvalidOperationException or AuthenticationFailedException)
+{
+    Console.Error.WriteLine($"ERROR: {ex.Message}");
+    return 1;
+}
+
+static async Task<string?> GetAssignedPolicyIdAsync(PowerPlatformApi api, string groupId)
+{
+    var assignments = await api.GetAsync($"governance/ruleBasedPolicies/environmentGroups/{groupId}/assignments");
+    var first = (assignments?["value"] as JsonArray)?.FirstOrDefault();
+    return Acp.GetString(first, "policyId");
+}
+
+// Rule sets are deep-cloned because a JsonNode can only belong to one parent.
+static JsonObject PolicyBody(string? name, IEnumerable<JsonObject> ruleSets) => new()
+{
+    ["name"] = name,
+    ["ruleSets"] = new JsonArray(ruleSets.Select(r => (JsonNode?)r.DeepClone()).ToArray()),
+};
+
+// ---------- Types ----------
+
+/// <summary>Minimal Power Platform API client (equivalent of Invoke-PpApi in the PowerShell version).</summary>
+public sealed class PowerPlatformApi(HttpClient http, string apiVersion)
+{
+    public async Task<JsonNode?> SendAsync(HttpMethod method, string path, JsonNode? body = null)
+    {
+        using var request = new HttpRequestMessage(method, $"{path}?api-version={apiVersion}");
+        if (body is not null)
+        {
+            request.Content = new StringContent(body.ToJsonString(), Encoding.UTF8);
+            request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
+        }
+
+        using var response = await http.SendAsync(request);
+        var text = await response.Content.ReadAsStringAsync();
+        if (!response.IsSuccessStatusCode)
+        {
+            throw new HttpRequestException(
+                $"{method} {path} failed with {(int)response.StatusCode} {response.ReasonPhrase}: {text}",
+                null, response.StatusCode);
+        }
+        return string.IsNullOrWhiteSpace(text) ? null : JsonNode.Parse(text, Acp.NodeOptions);
+    }
+
+    public Task<JsonNode?> GetAsync(string path) => SendAsync(HttpMethod.Get, path);
+    public Task<JsonNode?> PostAsync(string path, JsonNode body) => SendAsync(HttpMethod.Post, path, body);
+    public Task<JsonNode?> PatchAsync(string path, JsonNode body) => SendAsync(HttpMethod.Patch, path, body);
+}
+
+/// <summary>Helpers for the ConnectorManagement (advanced connector policy) rule set.</summary>
+public static class Acp
+{
+    public const string RuleSetId = "ConnectorManagement";
+
+    // Policy JSON is parsed case-insensitively to match PowerShell's property semantics.
+    public static readonly JsonNodeOptions NodeOptions = new() { PropertyNameCaseInsensitive = true };
+
+    public static string? GetString(JsonNode? node, string name) =>
+        node is JsonObject obj && obj.TryGetPropertyValue(name, out var value) && value is JsonValue v &&
+        v.TryGetValue<string>(out var s) ? s : null;
+
+    public static JsonObject? GetConnectorManagement(JsonNode? policy) =>
+        (policy?["ruleSets"] as JsonArray)?
+            .OfType<JsonObject>()
+            .FirstOrDefault(r => GetString(r, "id") == RuleSetId);
+
+    public static IEnumerable<JsonObject> GetConnectors(JsonObject? connectorManagement) =>
+        (connectorManagement?["inputs"]?["AllowedConnectorList"] as JsonArray)?.OfType<JsonObject>()
+        ?? Enumerable.Empty<JsonObject>();
+
+    public static string GetConnectorKey(JsonObject entry) =>
+        (GetString(entry, "AllowedConnector") ?? "").Split('/').Last().ToLowerInvariant();
+
+    public static JsonObject? FindConnector(JsonObject? connectorManagement, string key) =>
+        GetConnectors(connectorManagement).FirstOrDefault(e => GetConnectorKey(e) == key);
+
+    public static string GetActionsMode(JsonObject entry) =>
+        string.IsNullOrEmpty(GetString(entry, "AllowedActionsMode")) ? "AllAllowed" : GetString(entry, "AllowedActionsMode")!;
+
+    public static List<string> GetAllowedActions(JsonObject entry) =>
+        (entry["AllowedActions"] as JsonArray)?
+            .Select(a => a?.GetValue<string>())
+            .Where(a => !string.IsNullOrEmpty(a))
+            .Select(a => a!)
+            .ToList()
+        ?? new List<string>();
+
+    public static string GetActionSignature(JsonObject? entry)
+    {
+        if (entry is null) return "";
+        var mode = GetActionsMode(entry);
+        if (mode != "SomeAllowed") return mode;
+        return $"{mode}::{string.Join("|", GetAllowedActions(entry).OrderBy(a => a, StringComparer.Ordinal))}";
+    }
+
+    /// <summary>
+    /// Copies AllowedActionsMode/AllowedActions from each source connector to the matching target connector.
+    /// Returns the number of connectors that were changed.
+    /// </summary>
+    public static int SyncConnectorActions(JsonObject sourceCm, JsonObject targetCm)
+    {
+        var changed = 0;
+        foreach (var src in GetConnectors(sourceCm))
+        {
+            var key = GetConnectorKey(src);
+            var tgt = FindConnector(targetCm, key);
+            if (tgt is null)
+            {
+                Log.Warn($"  {key} is in the source but not in the target rule - skipped");
+                continue;
+            }
+            if (GetActionSignature(src) == GetActionSignature(tgt)) continue;
+
+            var mode = GetActionsMode(src);
+            tgt["AllowedActionsMode"] = mode;
+            if (mode == "SomeAllowed")
+            {
+                var actions = GetAllowedActions(src);
+                tgt["AllowedActions"] = new JsonArray(actions.Select(a => (JsonNode?)JsonValue.Create(a)).ToArray());
+                Console.WriteLine($"  {key} -> SomeAllowed ({actions.Count} allowed): {string.Join(", ", actions)}");
+            }
+            else
+            {
+                tgt.Remove("AllowedActions");
+                Console.WriteLine($"  {key} -> {mode}");
+            }
+            changed++;
+        }
+        return changed;
+    }
+}
+
+public static class Log
+{
+    public static void Warn(string message)
+    {
+        var previous = Console.ForegroundColor;
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine($"WARNING: {message}");
+        Console.ForegroundColor = previous;
+    }
+}
+```
+
+### [Python](#tab/python)
+
+```python
+# requires-python = ">=3.9"
+# dependencies = ["azure-identity"]
+"""
+Copies rule-based policies (including advanced connector policy actions) from one
+Power Platform environment group to another.
+
+Setup:   pip install azure-identity
+Run:     python copy_acp_policy.py --tenant <tenant-id> --source <source group ID> --target <target group ID> [--connector-only]
+   or:   uv run copy_acp_policy.py --tenant ... (installs dependencies automatically)
+"""
+
+import argparse
+import copy
+import json
+import sys
+import urllib.error
+import urllib.request
+
+from azure.identity import InteractiveBrowserCredential
+
+# ---------- Settings (can be overridden on the command line) ----------
+TENANT_ID = "<tenant-id>"
+SOURCE_GROUP_ID = "<source environment group ID>"
+TARGET_GROUP_ID = "<target environment group ID>"
+COPY_ALL_RULES = True  # False = copy only the ConnectorManagement rule set
+
+API_BASE_URL = "https://api.powerplatform.com"
+API_VERSION = "2024-10-01"
+RULE_SET_ID = "ConnectorManagement"
+
+
+# ---------- Helpers ----------
+# Property lookups are case-insensitive to match PowerShell's semantics.
+def _find_key(obj, name):
+    if isinstance(obj, dict):
+        lowered = name.lower()
+        for key in obj:
+            if key.lower() == lowered:
+                return key
+    return None
+
+
+def get_prop(obj, name):
+    key = _find_key(obj, name)
+    return obj[key] if key is not None else None
+
+
+def set_prop(obj, name, value):
+    obj[_find_key(obj, name) or name] = value
+
+
+def remove_prop(obj, name):
+    key = _find_key(obj, name)
+    if key is not None:
+        del obj[key]
+
+
+def get_connector_management(policy):
+    for rule_set in get_prop(policy, "ruleSets") or []:
+        if get_prop(rule_set, "id") == RULE_SET_ID:
+            return rule_set
+    return None
+
+
+def get_connectors(connector_management):
+    return get_prop(get_prop(connector_management, "inputs"), "AllowedConnectorList") or []
+
+
+def get_connector_key(entry):
+    return str(get_prop(entry, "AllowedConnector") or "").split("/")[-1].lower()
+
+
+def find_connector(connector_management, key):
+    return next((e for e in get_connectors(connector_management) if get_connector_key(e) == key), None)
+
+
+def get_actions_mode(entry):
+    return get_prop(entry, "AllowedActionsMode") or "AllAllowed"
+
+
+def get_allowed_actions(entry):
+    return [a for a in (get_prop(entry, "AllowedActions") or []) if a]
+
+
+def get_action_signature(entry):
+    if entry is None:
+        return ""
+    mode = get_actions_mode(entry)
+    if mode != "SomeAllowed":
+        return mode
+    return f"{mode}::{'|'.join(sorted(get_allowed_actions(entry)))}"
+
+
+def warn(message):
+    print(f"WARNING: {message}", file=sys.stderr)
+
+
+def sync_connector_actions(source_cm, target_cm):
+    """Copies AllowedActionsMode/AllowedActions from each source connector to the matching
+    target connector. Returns the number of connectors that were changed."""
+    changed = 0
+    for src in get_connectors(source_cm):
+        key = get_connector_key(src)
+        tgt = find_connector(target_cm, key)
+        if tgt is None:
+            warn(f"  {key} is in the source but not in the target rule - skipped")
+            continue
+        if get_action_signature(src) == get_action_signature(tgt):
+            continue
+
+        mode = get_actions_mode(src)
+        set_prop(tgt, "AllowedActionsMode", mode)
+        if mode == "SomeAllowed":
+            actions = get_allowed_actions(src)
+            set_prop(tgt, "AllowedActions", list(actions))
+            print(f"  {key} -> SomeAllowed ({len(actions)} allowed): {', '.join(actions)}")
+        else:
+            remove_prop(tgt, "AllowedActions")
+            print(f"  {key} -> {mode}")
+        changed += 1
+    return changed
+
+
+def policy_body(name, rule_sets):
+    return {"name": name, "ruleSets": copy.deepcopy(list(rule_sets))}
+
+
+# ---------- Power Platform API client (equivalent of Invoke-PpApi) ----------
+class PowerPlatformApi:
+    def __init__(self, token):
+        self._token = token
+
+    def send(self, method, path, body=None):
+        data = json.dumps(body).encode("utf-8") if body is not None else None
+        request = urllib.request.Request(
+            f"{API_BASE_URL}/{path}?api-version={API_VERSION}", data=data, method=method)
+        request.add_header("Authorization", f"Bearer {self._token}")
+        if data is not None:
+            request.add_header("Content-Type", "application/json")
+        try:
+            with urllib.request.urlopen(request) as response:
+                text = response.read().decode("utf-8")
+        except urllib.error.HTTPError as err:
+            detail = err.read().decode("utf-8", errors="replace")
+            raise RuntimeError(f"{method} {path} failed with {err.code} {err.reason}: {detail}") from None
+        return json.loads(text) if text.strip() else None
+
+    def get(self, path):
+        return self.send("GET", path)
+
+    def post(self, path, body):
+        return self.send("POST", path, body)
+
+    def patch(self, path, body):
+        return self.send("PATCH", path, body)
+
+
+def get_assigned_policy_id(api, group_id):
+    assignments = api.get(f"governance/ruleBasedPolicies/environmentGroups/{group_id}/assignments")
+    values = get_prop(assignments, "value") or []
+    return get_prop(values[0], "policyId") if values else None
+
+
+# ---------- Main ----------
+def run(tenant_id, source_group_id, target_group_id, copy_all_rules):
+    # Authenticate (interactive browser sign-in, like Connect-AzAccount)
+    credential = InteractiveBrowserCredential(tenant_id=tenant_id)
+    token = credential.get_token(f"{API_BASE_URL}/.default").token
+    api = PowerPlatformApi(token)
+
+    # 1. Read the source group's policy
+    source_policy_id = get_assigned_policy_id(api, source_group_id)
+    if not source_policy_id:
+        raise RuntimeError(f"No policy is assigned to source group {source_group_id}")
+    source = api.get(f"governance/ruleBasedPolicies/{source_policy_id}")
+    source_cm = get_connector_management(source)
+    source_rule_sets = get_prop(source, "ruleSets") or []
+
+    # 2. Copy the rules. A group can have only one assigned policy, so check the target first.
+    target_policy_id = get_assigned_policy_id(api, target_group_id)
+    if target_policy_id:
+        # Target already has a policy: patch the source rule sets into it (patch adds/updates rule sets by ID)
+        target_policy = api.get(f"governance/ruleBasedPolicies/{target_policy_id}")
+        rule_sets_to_copy = source_rule_sets if copy_all_rules else ([source_cm] if source_cm else [])
+        if not rule_sets_to_copy:
+            raise RuntimeError(f"Source policy {source_policy_id} has no rule sets to copy.")
+
+        api.patch(f"governance/ruleBasedPolicies/{target_policy_id}",
+                  policy_body(get_prop(target_policy, "name"), rule_sets_to_copy))
+        ids = ", ".join(str(get_prop(r, "id")) for r in rule_sets_to_copy)
+        print(f"Target group already uses policy {target_policy_id} - updated it with "
+              f"{len(rule_sets_to_copy)} rule set(s): {ids}")
+    elif copy_all_rules:
+        # No policy on the target: copy ALL rule sets into a new policy and assign it
+        new_policy = api.post("governance/ruleBasedPolicies",
+                              policy_body(f"{get_prop(source, 'name')} (copy)", source_rule_sets))
+        target_policy_id = get_prop(new_policy, "id")
+        if not target_policy_id:
+            raise RuntimeError("Create policy response did not include an id.")
+        api.post(f"governance/ruleBasedPolicies/{target_policy_id}/environmentGroups/{target_group_id}/assignments", {})
+        print(f"Copied all rules to new policy {target_policy_id} and assigned it to group {target_group_id}")
+    else:
+        raise RuntimeError(f"No policy is assigned to target group {target_group_id}. "
+                           "Omit --connector-only to create one.")
+
+    # 3. Copy connector actions for each copied connector rule
+    if source_cm is None:
+        print("Source policy has no ConnectorManagement rule set - no connector actions to copy.")
+        return 0
+
+    restricted = sum(1 for e in get_connectors(source_cm) if get_actions_mode(e) == "SomeAllowed")
+    print(f"Source has {restricted} connector(s) with restricted (partly disabled) actions.")
+
+    # Re-read what the service actually stored for the target
+    target = api.get(f"governance/ruleBasedPolicies/{target_policy_id}")
+    target_cm = get_connector_management(target)
+    if target_cm is None:
+        raise RuntimeError(f"Target policy {target_policy_id} has no ConnectorManagement rule set after the copy.")
+
+    print(f"Syncing connector actions into policy {target_policy_id}:")
+    changed = sync_connector_actions(source_cm, target_cm)
+    if changed:
+        api.patch(f"governance/ruleBasedPolicies/{target_policy_id}",
+                  policy_body(get_prop(target, "name"), [target_cm]))
+        print(f"Updated actions on {changed} connector(s).")
+    else:
+        print("Connector actions already match the source - nothing to update.")
+
+    # 4. Verify
+    verify_cm = get_connector_management(api.get(f"governance/ruleBasedPolicies/{target_policy_id}"))
+    mismatches = 0
+    for src in get_connectors(source_cm):
+        key = get_connector_key(src)
+        tgt = find_connector(verify_cm, key)
+        if tgt is None or get_action_signature(src) != get_action_signature(tgt):
+            warn(f"Mismatch for {key} - source: {get_action_signature(src)} | target: {get_action_signature(tgt)}")
+            mismatches += 1
+    if mismatches == 0:
+        print(f"Verified: connector actions in {target_policy_id} match the source.")
+    return 0 if mismatches == 0 else 2
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Copy Power Platform rule-based policies between environment groups.")
+    parser.add_argument("--tenant", default=TENANT_ID)
+    parser.add_argument("--source", default=SOURCE_GROUP_ID, help="Source environment group ID")
+    parser.add_argument("--target", default=TARGET_GROUP_ID, help="Target environment group ID")
+    parser.add_argument("--connector-only", action="store_true",
+                        help="Copy only the ConnectorManagement rule set")
+    args = parser.parse_args()
+
+    try:
+        return run(args.tenant, args.source, args.target, COPY_ALL_RULES and not args.connector_only)
+    except Exception as ex:  # noqa: BLE001 - report any failure cleanly
+        print(f"ERROR: {ex}", file=sys.stderr)
+        return 1
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
 ```
 
 ---
