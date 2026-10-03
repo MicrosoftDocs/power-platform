@@ -5,10 +5,11 @@ author: shpradha
 ms.component: pa-admin
 ms.topic: concept-article
 ms.collection: get-started
-ms.date: 09/21/2026
+ms.date: 10/02/2026
 ms.subservice: admin
 ms.author: joelsch
 ms.reviewer: ellenwehrle
+ai-usage: ai-assisted
 search.audienceType: 
   - admin
 ms.contributors:
@@ -41,25 +42,22 @@ Using a macro region geography provides the following capabilities:
 
 The following table describes each macro region geography:
 
-| # | Macro region geography          | Regions                 | Description                                               |
-|---|---------------------------------|---------------------------------------------------------------------------------------|---------------------------------------------------------|
-|1  |North America                    |United States, Canada                                                             | Your data resides within the United States or Canada.| 
-|2  |The Americas                     |United States, Canada, Brazil | Your data resides within the Americas, including North and South America. |
-|3  | European Union (EU)  and European Free Trade Association (EFTA)       |France, Germany, Norway, Sweden, Switzerland, Poland, Italy, Ireland, Netherlands      | Your data resides within EU and EFTA member states which are European Union Data Boundary (EUDB) regions. | 
-|4  |Europe and United Kingdom (UK)                      | UK, France, Germany, Norway, Sweden, Switzerland, Poland, Italy, Ireland, Netherlands | Your data resides within EU and EFTA or the UK and it shouldn't be considered EUDB. |
-|5  |Europe, UK, Middle East, Africa  | UK, France, Germany, Norway, Sweden, Switzerland, Poland, Italy,  Ireland, Netherlands, South Africa, United Arab Emirates (UAE) | Your data resides within Europe, UK, Middle East, or Africa and it shouldn't be considered EUDB.|   
-|6  |Asia-Pacific                     | Singapore, Australia*, India*, Japan, South Korea                                           | Your data resides within the Asia-Pacific region. |
- 
-\* Australia and India geographies have tax restrictions and need data residency alignment and accountability for compliance with local tax reporting rules and for auditability within jurisdiction. If you're a customer who needs your data at rest to stay in Australia and India, you need to consider getting [advanced data residency](/microsoft-365/enterprise/advanced-data-residency) and are subject to other regulatory needs.
+| # | Macro region geography | Individual regions | Description |
+|---|---|---|---|
+| 1 | North America | United States, Canada | Your data resides within the United States or Canada. |
+| 2 | The Americas | United States, Canada, South America<sup>1</sup> | Your data resides within the Americas, including North and South America. |
+| 3 | European Union (EU) and European Free Trade Association (EFTA) | France, Germany, Norway, Sweden, Switzerland, Poland, Italy, Europe<sup>2</sup> | Your data resides within EU and EFTA member states which are European Union Data Boundary (EUDB) regions. |
+| 4 | Europe and United Kingdom (UK) | United Kingdom, France, Germany, Norway, Sweden, Switzerland, Poland, Italy, Europe<sup>2</sup> | Your data resides within EU and EFTA or the UK and it shouldn't be considered EUDB. |
+| 5 | Europe, UK, Middle East, Africa | United Kingdom, France, Germany, Norway, Sweden, Switzerland, Poland, Italy, Europe<sup>2</sup>, South Africa, United Arab Emirates (UAE) | Your data resides within Europe, UK, Middle East, or Africa and it shouldn't be considered EUDB. |
+| 6 | Asia-Pacific | Singapore<sup>3</sup>, Asia<sup>4</sup>, Australia, India, Japan, South Korea | Your data resides within the Asia-Pacific region. |
 
-Please note:
+<sup>1</sup> The South America region includes the datacenter in Brazil.
 
-- Macro region geography #1 is geared toward North America.
-- Macro region geography #2 is geared toward folks in South America. 
-- Macro region geography #3, European Union (EU) and European Free Trade Association (EFTA), is geared toward EUDB.  
-- Macro region geography #4 specifically includes United Kingdom (UK) with Europe. Customers who want to be in EUDB should not pick #4.
-- Macro region geography #5 is geared toward Middle East and Africa. Customers who want to be in EUDB should not pick #5. 
-- Macro region geography #6 is geared toward Asia pacific.
+<sup>2</sup> The Europe region includes datacenters in Ireland and Netherlands.
+
+<sup>3</sup> Only customers eligible to create new environments in the Singapore *GoLocal* region see the Singapore region in the region selector.
+
+<sup>4</sup> The Asia region includes datacenters in Singapore and Hong Kong SAR. The region selection calculation for the *Asia-Pacific* macro region excludes the Asia region.
 
 > [!NOTE]
 > Sovereign clouds like the Government Community Cloud (GCC), Government Community Cloud – High (GCC-H), and Department of Defense (DoD) remain unchanged and are excluded from macro region strategy.
