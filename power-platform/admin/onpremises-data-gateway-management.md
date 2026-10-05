@@ -3,7 +3,7 @@ title: View and manage on-premises data gateways
 description: View and manage on-premises gateways. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/30/2026
+ms.date: 10/05/2026
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
@@ -178,6 +178,9 @@ If a person who doesn't have access to install gateways tries to install one, th
 
 If you have on-premises data gateways in your home (default) region or target region, delete all those gateways in both regions before your [tenant remap](/power-bi/support/service-admin-region-move). Applications (Power BI, Fabric, PowerApps, Logic Apps, Power Automate) that depend on these gateways can't access their data sources after the gateways are deleted. After remap, you need to recreate and configure the gateways to restore application access. Follow these steps to delete your on-premises data gateways before your tenant remap:
 
+> [!NOTE]
+> Gateways are only soft-deleted by default. You need to hard-delete gateways to unblock your tenant remap.
+
 1. Go to **[Power Platform admin center](https://admin.powerplatform.microsoft.com/) => Manage => Data (preview)**
 1. Toggle on **Tenant administration** (top right)
 1. Select **On-premises data gateways** from the dropdown (top right). You don't have to worry about On-premises data gateways (Personal mode).
@@ -192,7 +195,7 @@ If you have on-premises data gateways in your home (default) region or target re
 > [!NOTE]
 > You don't need to delete any **On-premises data gateways (Personal mode)**.
 > 
-> You don't need to delete **On-premises data gateways** in regions other than your home region (default), and your remap target region.
+> You don't need to delete **On-premises data gateways** in regions other than your home region (default), and your remap target region. However, these gateways might not be functional after the remap.
 
 ### Related content
 
