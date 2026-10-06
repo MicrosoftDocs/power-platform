@@ -86,4 +86,7 @@ The following built-in roles are available to assign to users, groups, and servi
 | Power Platform contributor                        | ff954d61-a89a-4fbe-ace9-01c367b89f87      | /tenants/{0}                                 | Can manage and read all resources, but can't make or change role assignments                                                           |
 | Power Platform owner                              | 0cb07c69-1631-4725-ab35-e59e001c51ea      | /tenants/{0}                                 | All permissions                                                          |
 
+> [!NOTE]
+> If you call the Power Platform Authorization API to list role definitions, you might notice more granular role definitions beyond the four built-in roles described here. For example, a role scoped narrowly to a single capability such as environment backups. Power Platform RBAC is designed so that each service area can eventually offer its own finely scoped role for more precise, least-privilege access as RBAC coverage expands. These additional role definitions are reserved for future use. They're not yet supported for assignment, and they're intentionally not shown in the Power Platform admin center. To manage access today, assign only the built-in roles listed in this article.
+
 For detailed reference on permissions, roles, and integration, see [Power Platform API reference](/rest/api/power-platform/). To learn how to assign these roles programmatically, see [Tutorial: Assign roles to service principals](../programmability-tutorial-rbac-role-assignment.md).

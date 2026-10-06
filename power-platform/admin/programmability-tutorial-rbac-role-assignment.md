@@ -50,6 +50,9 @@ Power Platform provides four built-in roles that can be assigned via RBAC. Each 
 | Power Platform reader | `c886ad2e-27f7-4874-8381-5849b8d8a090` | Read-only access to all resources |
 | Power Platform role-based access control administrator | `95e94555-018c-447b-8691-bdac8e12211e` | Read all resources + manage role assignments |
 
+> [!NOTE]
+> When you call the API in the next step, you might see additional, more granular role definitions beyond these four. Those roles are reserved for future use and aren't yet supported for assignment. For details, see [Additional role definitions](security/role-based-access-control.md#built-in-power-platform-roles).
+
 ## Step 1. List available role definitions
 
 First, authenticate and retrieve the available role definitions to confirm the contributor role ID.
