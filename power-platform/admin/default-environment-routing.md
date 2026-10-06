@@ -89,61 +89,6 @@ The **Environment routing** setting is off by default. Turn it on by using the P
 
 1. Select **Save**.
 
-## Turn on environment routing using PowerShell
-
-1. Sign in to your tenant account.
-
-   ```powershell
-   Add-PowerAppsAccount -Endpoint "prod" -TenantID <Tenant_ID>
-   ```
-
-1. Retrieve and store your tenant settings in `TenantSettings`.
-
-   ```powershell
-   $tenantSettings = Get-TenantSettings  
-   ```
-
-1. Set the `enableDefaultEnvironmentRouting` flag to **True**.
-
-   ```powershell
-   $tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $True
-   Set-TenantSettings -RequestBody $tenantSettings
-   ```
-   
-1. Set the `environmentRoutingAllMakers` flag to **True** to allow routing for all makers or **False** to limit routing to new makers.
-
-   ```powershell
-   $tenantSettings = Get-TenantSettings
-   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingAllMakers' -Value $True -Force
-   ```
-
-1. (Optional) Set the `environmentRoutingTargetEnvironmentGroupId` to the desired Environment Group ID.
-
-   ```powershell
-   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetEnvironmentGroupId' -Value "<GUID for the group that has published rules>" -Force
-   ```
-1. (Optional) Set the `environmentRoutingTargetSecurityGroupId` to the desired Security Group.
-
-   ```powershell
-   $tenantSettings.powerPlatform.governance | Add-Member -MemberType NoteProperty -Name 'environmentRoutingTargetSecurityGroupId' -Value "<GUID for the security group>" -Force
-
-   ```
-1. Save `TenantSettings`.
-   ```powershell
-   Set-TenantSettings -RequestBody $tenantSettings
-   ```
-
-### Turn off environment routing by using PowerShell 
-```powershell
-$tenantSettings = Get-TenantSettings  
-
-$tenantSettings.powerPlatform.governance.enableDefaultEnvironmentRouting = $False
-
-Set-TenantSettings -RequestBody $tenantSettings
-```
-
-For more information about using PowerShell in Power Apps, see the [Overview](/powershell/powerapps/overview).
-
 
 ## Frequently asked questions (FAQs)
 
