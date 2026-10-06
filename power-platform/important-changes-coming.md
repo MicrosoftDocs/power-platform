@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 09/04/2026
+ms.date: 10/05/2026
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -259,6 +259,22 @@ There is no impact on app logic, data, or permissions. Existing apps will automa
 
 ### Replacement feature
 The modern, refreshed look is now the default experience for all model-driven apps. No action is required from makers or admins. For more information on this, see [Modern, refreshed look for model-driven apps](/power-apps/user/modern-fluent-design).
+
+## Deprecation of legacy advanced find
+
+Legacy advanced find in model-driven apps is deprecated.
+
+### Why is this needed?
+
+As of September 2019, the [legacy web client](#legacy-web-client-is-deprecated) is deprecated. Legacy advanced find was part of that deprecation.
+
+### Impact
+
+Customers who use legacy advanced find should transition to the modern experience. Feature investment focuses on modern advanced find and addressing feature gaps that block customer migration.
+
+### Replacement feature
+
+[Modern advanced find](/power-apps/user/advanced-find) in model-driven apps is the recommended solution.
 
 ## Deprecation of create an app from an image or Figma file
 
@@ -1061,6 +1077,7 @@ For more information and steps to make a smooth transition, see:
 
 - [Quick Start Guide – set an environment to Unified Interface as
     default](/powerapps/maker/model-driven-apps/transition-web-app)
+
 
 ## Task flows are deprecated
 
