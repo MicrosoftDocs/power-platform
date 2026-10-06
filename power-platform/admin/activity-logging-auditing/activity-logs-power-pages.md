@@ -2,11 +2,12 @@
 title: View Power Pages activity logs in Microsoft Purview
 description: Learn how to access Power Pages activity logs in Microsoft Purview and explore what Power Pages activities you can monitor.
 ms.topic: how-to
-ms.date: 04/03/2026
+ms.date: 10/05/2026
 author: EllenWehrle
 ms.subservice: admin
 ms.author: grbarker
 ms.reviewer: ellenwehrle
+ms.contributors: apsinhar
 search.audienceType: 
   - admin
 ---
@@ -50,6 +51,7 @@ This table lists some of the activities you can monitor in Power Pages audit log
 
 | Activity Name                              | Operation Name                     | Description                                                               |
 |------------------------------------------------|----------------------------------------|-------------------------------------------------------------------------------|
+| Transfer site ownership                        | `OwnershipTransferred`                   | Ownership of the site is transferred to another user.                          |
 | Enable Power BI visualization                  | `PowerBIVisualizationEnabled`            | Power BI visualization is enabled for the site.                           |
 | Disable Power BI visualization                 | `PowerBIVisualizationDisabled`           | Power BI visualization is disabled for the site.                          |
 | Enable Power BI embedded service               | `PowerBIEmbeddedServiceEnabled`          | Power BI embedded service is enabled for the site.                        |
