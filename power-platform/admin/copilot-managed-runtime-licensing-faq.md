@@ -79,51 +79,34 @@ If makers also build Power Apps, Power Automate flows, or Copilot Studio agents 
 
 Users need one of the following:
 
-- **Power Apps Premium license**: Covers app operations without consuming Copilot Credits, subject to the applicable Power Platform request limits.
-- **Managed application Copilot Credits**: Credits are charged each time the app launches and for each billable API call. Each API call consumes 0.1 Copilot Credits.
+- **Power Apps Premium license**: Covers running apps without consuming Copilot Credits.
+- **Copilot Credits**: Usage is billed through Copilot Credits.
 
 These requirements apply to users running apps and to developers running apps locally with the CLI.
 
-### What counts as a billable API call?
+### Which actions consume Copilot Credits?
 
-Copilot Managed Runtime measures hosting, running, and managing apps in API calls. Each billable API call consumes 0.1 Copilot Credits. The following operations each count as one API call:
+Copilot Managed Runtime measures app usage in API calls. Typical actions that count as API calls include:
 
-- **App launch**: Each time a user opens the app.
-- **Connector call**: Each successful call the app makes to a connector or to an external data service that the app calls natively.
-- **Dataverse call**: Each call the app makes to Dataverse natively.
+- Launching an app.
+- Calling data through a connector, such as reading or writing records.
+- Publishing an app.
 
-The following activity doesn't count as a Copilot Managed Runtime API call:
-
-- **Failed calls**: Only successful operations are metered. An API call that returns an error isn't billed.
-- **Separately billed services**: Calls to services that have their own Copilot Credit charges, such as Work IQ APIs and agents, aren't counted again as Copilot Managed Runtime API calls.
-- **Internal runtime telemetry**: Telemetry that the platform collects doesn't increment the consumption meter.
-
-<!-- SME review (Austin): The July Managed Apps Runtime Licensing Spec also counts each static asset loaded at launch as an API call, and a successful publish that triggers a build as one API call. Confirm whether these still apply under the October Copilot Credits Guide before documenting them. -->
-
-### How can I estimate the cost of running an app?
-
-Estimate the number of billable API calls the app makes, and multiply by 0.1 Copilot Credits. For example, if a user opens an app once and the app makes nine successful connector calls, the session uses 10 API calls, or 1 Copilot Credit.
-
-To estimate monthly consumption for an app, multiply the expected API calls per session by the expected number of sessions per month. Usage by users with a Power Apps Premium license doesn't consume Copilot Credits until it exceeds the applicable Power Platform request limits.
+Each API call consumes 0.1 Copilot Credits. Specialized services that an app uses, such as Work IQ APIs, are charged separately at their own rates.
 
 For the authoritative metric and rate, see the [Copilot Credits Guide](https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/bade/documents/products-and-services/en-us/ai/Copilot-Credits-Guide.pdf).
 
-### Why don't I see Copilot Credit consumption for some users?
+### Do Power Apps Premium users consume Copilot Credits?
 
-Users with a Power Apps Premium license run apps without consuming Copilot Credits, so their usage doesn't appear as Copilot Credit consumption. Their app operations are still measured in API calls. If these users exceed the applicable Power Platform request limits, usage above the limits is billed through Copilot Credits.
+No. Users with a Power Apps Premium license don't consume Copilot Credits when they run apps. Their API calls count toward the daily [Power Platform request limits](api-request-limits-allocations.md) for their license, and usage above those limits is billed through Copilot Credits. Specialized services, such as Work IQ APIs, are still charged at their own rates.
+
+### Can users with Power Apps use rights included in Microsoft 365 or Dynamics 365 run apps?
+
+No. Power Apps use rights included with Microsoft 365 or Dynamics 365 licenses don't provide access to apps hosted on Copilot Managed Runtime, regardless of the type of connector the app uses. These users need a Power Apps Premium license or Copilot Credits to run the apps.
 
 ### Do users need a Microsoft 365 Copilot license to run an app?
 
 No. A user's runtime eligibility is based on a Power Apps Premium license or Copilot Credits. Runtime entitlement is separate from the requirements and charges for creating the app, even when the app was created in Cowork.
-
-### Does a Power Apps Premium license cover everything an app does at runtime?
-
-A Power Apps Premium license covers app operations without consuming Copilot Credits, with the following exceptions:
-
-- The app uses separately billed services, such as Work IQ APIs.
-- Usage exceeds the applicable [Power Platform request limits](api-request-limits-allocations.md) for Power Apps Premium.
-
-The runtime entitlement doesn't change how building the app is billed.
 
 ### What happens when a user doesn't have enough credits to run an app?
 
