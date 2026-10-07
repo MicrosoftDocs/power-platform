@@ -88,9 +88,9 @@ Map business units to Microsoft Entra security groups to simplify user managemen
 For each business unit:
 
 1. Create a Microsoft Entra security group.
-1. Create a [Dataverse group team](manage-group-teams.md) for the security group.
-1. Assign the business unit's security role to the Dataverse group team.
-1. Add users to the Microsoft Entra security group.
+2. Create a [Dataverse group team](manage-group-teams.md) for the security group.
+3. Assign the business unit's security role to the Dataverse group team.
+4. Add users to the Microsoft Entra security group.
 
 When a user first accesses the environment, Dataverse creates the user in the root business unit. The user and Dataverse group teams can remain in the root business unit. Their assigned security roles grant access to data in the corresponding business units.
 
@@ -138,6 +138,17 @@ Configure the standard table privileges separately: **Create**, **Read**, **Writ
 :::image type="content" source="media/security-role-privileges-key.png" alt-text="Screenshot of the security role privilege key showing icons for None Selected, User, Business Unit, Parent: Child Business Units, and Organization.":::
 
 In this example, organization-level access to the Contact table lets a user in Division A view and update contacts owned by anyone. Grant only the access users need. Broad privileges can weaken an otherwise well-designed security model.
+
+### Filtered table record ownership (preview)
+
+[!INCLUDE [preview](../includes/cc-preview-features-definition.md)]
+
+Filtered record ownership lets admins control access to Dataverse records with column-value filters. For example, grant access only to records where the `City` column equals *Redmond*. Users can create, read, update, and delete only records that match filters in their security roles.
+
+Unlike traditional Dataverse tables, tables with filtered record ownership don't support record ownership, sharing, or assignment. Filter-based privileges control record access and provide granular row-level access without restricting tables, columns, or other model objects.
+
+> [!NOTE]
+> Use filtered record ownership to grant row-level access to records that meet filter criteria. Apply filter-based privileges to filtered record ownership tables and existing user-owned or organization-owned tables. For existing tables, this approach retains the underlying ownership model.
 
 ## Record ownership in modernized business units
 
@@ -194,9 +205,9 @@ Use Dataverse solutions to move security roles and column security profiles betw
 After you create roles, teams, and business units, configure each user's access:
 
 1. Associate the user with a business unit. Dataverse uses the root business unit by default and adds the user to that business unit's default team.
-1. Assign the security roles the user needs.
-1. Add the user to the appropriate teams.
-1. If you use column-level security, assign a column security profile to the user or one of their teams.
+2. Assign the security roles the user needs.
+3. Add the user to the appropriate teams.
+4. If you use column-level security, assign a column security profile to the user or one of their teams.
 
 A user's effective access combines directly assigned security roles with roles assigned through teams. Dataverse always grants the broadest permission from those roles. For a detailed walkthrough, see [Configure environment security](database-security.md).
 

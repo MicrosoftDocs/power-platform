@@ -28,6 +28,11 @@ You can use filter-based security with:
 - User or team record ownership tables.
 - Organization record ownership tables.
 
+> [!IMPORTANT]
+>
+> - This feature is in preview.
+> - [!INCLUDE [cc-preview-features-definition](../includes/cc-preview-features-definition.md)]
+
 ## Understand how filter-based security works
 
 Configure filter-based security with two primary components:
