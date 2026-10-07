@@ -122,6 +122,8 @@
                       href: power-automate-licensing/request-premium-license.md
                     - name: Autoclaim policies for Power Automate licenses
                       href: power-automate-licensing/power-automate-auto-claim.md
+            - name: Copilot Managed Runtime licensing FAQ (preview)
+              href: copilot-managed-runtime-licensing-faq.md
             - name: Pay-as-you-go plan
               items:
                 - name: Overview

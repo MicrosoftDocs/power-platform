@@ -43,5 +43,6 @@ Review the following routing behavior and requirements for tenants that use Copi
 
 ## Related information
 
+- [Copilot Managed Runtime licensing FAQ (preview)](copilot-managed-runtime-licensing-faq.md)
 - [Copilot Managed Runtime default governance settings (Frontier)](/microsoft-365/admin/manage/apps/governance)
 - [What is Copilot Managed Runtime](/microsoft-365/managed-apps/index)
