@@ -1,3 +1,8 @@
+<!-- 
+Instructions: Remove comments and this line. Add appropriate remarks below
+
 ### Remarks
 
-You can find an example using this command in [Turn on environment routing with PowerShell](../../../../admin/default-environment-routing.md#turn-on-environment-routing-using-powershell).
+Add remarks here...
+
+-->
