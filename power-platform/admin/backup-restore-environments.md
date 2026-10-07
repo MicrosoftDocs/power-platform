@@ -334,6 +334,10 @@ You can recover a recently deleted environment (within seven days of deletion) b
 
 Learn more about the recovery environment in [Recover environment](recover-environment.md).
 
+### What are production environments without Dynamics 365 apps?
+
+Production environments without Dynamics 365 apps are environments where none of the Dynamics 365 apps are installed. The backup retention period for production environments with Dynamics 365 apps can differ from those without Dynamics 365 apps. Learn more in [Change the backup retention period for production managed environments](#change-the-backup-retention-period-for-production-managed-environments).
+
 ## Troubleshooting
 
 ### The environment operation runs for a long time. What action can I take?
