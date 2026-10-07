@@ -48,7 +48,7 @@ Assign each user to one business unit and assign the user a security role from t
 
 In this example, user A belongs to Division A and has security role Y from Division A. User A can access Contact #1 and Contact #2. User B belongs to Division B, so user B can't access Division A's contacts but can access Contact #3.
 
-:::image type="content" source="media/hierarchical-business-unit-data-access-example.png" alt-text="Diagram of hierarchical business units where user A accesses Division A contacts and user B accesses Division B's Contact #3.":::
+:::image type="content" source="media/wp-security-cds/hierarchical-business-unit-data-access-example.png" alt-text="Diagram of hierarchical business units where user A accesses Division A contacts and user B accesses Division B's Contact #3.":::
 
 ### Matrix data access structure (modernized business units)
 
@@ -58,7 +58,7 @@ Assign the user a security role from each business unit whose data they need to 
 
 In this example, user A can belong to any business unit, including the root business unit. Security role Y from Division A gives user A access to Contact #1 and Contact #2. Security role Y from Division B gives user A access to Contact #3.
 
-:::image type="content" source="media/example-business-unit.png" alt-text="Diagram showing user A accessing contacts in Division A and Division B through role Y assigned from each business unit." lightbox="media/example-business-unit.png":::
+:::image type="content" source="media/wp-security-cds/example-business-unit.png" alt-text="Diagram showing user A accessing contacts in Division A and Division B through role Y assigned from each business unit." lightbox="media/wp-security-cds/example-business-unit.png":::
 
 #### Enable the matrix data access structure
 
@@ -83,7 +83,7 @@ You can make a user the record owner in any business unit if one of their securi
 
 Map business units to Microsoft Entra security groups to simplify user management and role assignment.
 
-:::image type="content" source="media/business-unit-with-aad-sec-group2.png" alt-text="Create a Microsoft Entra security group for each business unit." lightbox="media/business-unit-with-aad-sec-group2.png":::
+:::image type="content" source="media/wp-security-cds/business-unit-with-aad-sec-group2.png" alt-text="Create a Microsoft Entra security group for each business unit." lightbox="media/wp-security-cds/business-unit-with-aad-sec-group2.png":::
 
 For each business unit:
 
@@ -131,13 +131,10 @@ If user A belongs to Division A and has business unit-level **Read** access to t
 
 When you configure a security role, select an access level for each privilege.
 
-:::image type="content" source="media/security-role-core-records-privileges.png" alt-text="Screenshot of the security role Core Records tab showing Create through Share privilege levels, with the Contact table highlighted.":::
+:::image type="content" source="media/wp-security-cds/security-role-privileges.png" alt-text="Screenshot of security role privileges and access levels, with the Contact table and standard privilege columns highlighted.":::
 
 Configure the standard table privileges separately: **Create**, **Read**, **Write**, **Delete**, **Append**, **Append To**, **Assign**, and **Share**. The privilege icon shows the granted access level.
 
-:::image type="content" source="media/security-role-privileges-key.png" alt-text="Screenshot of the security role privilege key showing icons for None Selected, User, Business Unit, Parent: Child Business Units, and Organization.":::
-
-In this example, organization-level access to the Contact table lets a user in Division A view and update contacts owned by anyone. Grant only the access users need. Broad privileges can weaken an otherwise well-designed security model.
 
 ### Filtered table record ownership (preview)
 
