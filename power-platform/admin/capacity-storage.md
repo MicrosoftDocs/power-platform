@@ -408,9 +408,9 @@ When a tenant exceeds its entitled storage capacity, it enters a series of progr
 |Stage  |When it happens  |Customer experience  | Recommended action  |
 |---------|---------|---------|---------|
 |**Early notification**     | Effective consumption is more than 85%        | Informational or warning notifications appear.        | Review growth and begin remediation. |
-|**Stage 1: Restricted**     |  The tenant first exceeds 100% effective consumption       | Critical notifications appear. Environment create, copy, restore, and recover operations are blocked.       | Free storage, archive eligible data, add capacity, configure pay-as-you-go billing, or request a capacity extension.|
-|**Stage 2: Administration mode**     | The overage remains unresolved for 30 days        | In addition to the restrictions applied in Stage 1, access to affected sandbox environments is limited to administrators.       | Administrators can temporarily take affected sandbox environments out of Administration mode to perform remediation activities. However, the storage overage lifecycle and timer continue to progress until the overage is resolved.|
-|**Stage 3: Disabled**     | The overage remains unresolved for 60 days        | In addition to the restrictions applied in Stage 1, sign-in to affected sandbox environments is blocked for all users, including administrators. The environment and its data remain retained.       | Return the tenant to compliance, and then re-enable the environment.|
+|**Stage 1: Restricted**     | The tenant first exceeds 100% effective consumption (time zero, or T0).       | Critical notifications appear. Environment create, copy, restore, and recover operations are blocked.       | Free storage, archive eligible data, add capacity, configure pay-as-you-go billing, or request a capacity extension.|
+|**Stage 2: Administration mode**     | The overage remains unresolved for 30 days from T0        | In addition to the restrictions applied in Stage 1, access to affected sandbox environments is limited to administrators.       | Administrators can temporarily take affected sandbox environments out of Administration mode to perform remediation activities. However, the storage overage lifecycle and timer continue to progress until the overage is resolved.|
+|**Stage 3: Disabled**     | The overage remains unresolved for 90 days from T0        | In addition to the restrictions applied in Stage 1, sign-in to affected sandbox environments is blocked for all users, including administrators. The environment and its data remain retained.  | Return the tenant to compliance, and then re-enable the environment. Customer can reach the Microsoft support to explore data export options.  |
 
 The date the tenant first exceeds 100% effective consumption is the start of the lifecycle timeline. Resolving the effective deficit before the next stage prevents further progression. Sandbox environments with pay-as-you-go enabled do not progress through the storage overage lifecycle.
 
@@ -462,10 +462,24 @@ Database can't borrow from Log or File and hence receives **less than 5% capacit
 |**Log**     |  100 GB       |130 GB        | **Running low**|
 |**File**     | 500 GB        | 300 GB        | Within capacity|
 
-Database has 40 GB of unused capacity that Log can borrow, but this isn't enough to bring Log consumption down to under 85% threshold.  After borrowing, Log has 7.14% capacity remaining and receives the less-than-15%-remaining capacity banner.Log therefore remains at low capacity, and the tenant receives the **less than 15% remaining** capacity banner. 
+How the calculation works
+
+1. Calculate the capacity Log needs to reach the 85% threshold.  
+ 130 GB ÷ 85% = 152.94 GB   
+Log therefore needs an effective entitlement of 152.94 GB to avoid a capacity notification.  
+1. Calculate how much Log would need to borrow.  
+ 152.94 GB - 100 GB = 52.94 GB   
+Log needs to borrow 52.94 GB, but Database has only 40 GB available.  
+1. Apply the available borrowing.  
+ 100 GB + 40 GB = 140 GB effective Log entitlement  
+1. Calculate Log usage after borrowing.  
+ 130 GB ÷ 140 GB = 92.86% consumed   
+ 100% - 92.86% = 7.14% remaining  
+1. Determine the outcome.  
+Log still has less than 15% effective capacity remaining, so administrators receive the **less-than-15%-remaining capacity banner**. However, because Log consumption is below its effective entitlement of 140 GB, the tenant isn't over capacity and no restrictions are applied.
 
 > [!NOTE]
-> Borrowed capacity is added to the storage type's entitlement for the notification calculation. In this example, Log borrows 40 GB from unused Database capacity, increasing its effective Log entitlement from 100 GB to 140 GB. The tenant's purchased entitlement doesn't change, and no additional capacity is created. The calculation temporarily reallocates eligible unused capacity to determine the effective remaining percentage and notification status.
+>  Borrowing doesn't reduce Log consumption or change the tenant's purchased entitlement. It temporarily reallocates eligible unused capacity for notification calculations. In this example, Database can provide only 40 GB of the 52.94 GB needed to bring Log usage down to 85%, leaving Log at 92.86% usage and 7.14% remaining.
 
 ### Scenario 3: File storage borrows from both Database and Log but remains low, no restrictions 
 
@@ -475,7 +489,22 @@ Database has 40 GB of unused capacity that Log can borrow, but this isn't enough
 |**Log**     |  100 GB       |70 GB        | Within capacity |
 |**File**     | 100 GB        | 140 GB        |**Running low**|
 
-File borrows all 20 GB of unused Database capacity and all 30 GB of unused Log capacity. This increases its effective entitlement from 100 GB to 150 GB and removes the storage deficit. However, the borrowed capacity isn't enough to bring File consumption down to under 85% threshold. File has only 6.67% effective capacity remaining, so the tenant receives the less-than-15%-remaining capacity banner.
+How the calculation works
+
+1. Calculate the capacity File needs to reach the 85% threshold.  
+ 140 GB ÷ 85% = 164.71 GB   
+File needs an effective entitlement of 164.71 GB to avoid a capacity notification.  
+1. Calculate how much File needs to borrow.   
+ 164.71 GB - 100 GB = 64.71 GB   
+File needs to borrow 64.71 GB, but Database and Log have only 50 GB available in total.  
+1. Apply the available borrowing.   
+File borrows 20 GB from Database and 30 GB from Log:   
+ 100 GB + 20 GB + 30 GB = 150 GB effective File entitlement   
+1. Calculate File usage after borrowing.   
+ 140 GB ÷ 150 GB = 93.33% consumed   
+ 100% - 93.33% = 6.67% remaining   
+1. Determine the outcome.  
+Borrowing removes the File storage deficit because its 140 GB consumption is covered by the 150 GB effective entitlement. However, only 6.67% remains, so administrators receive the less-than-15%-remaining capacity banner. The tenant isn't over capacity, so no restrictions are applied.
 
 
 ### Scenario 4: Database storage is over capacity, restrictions applied
@@ -498,7 +527,22 @@ To resolve the overage, see [Manage storage overage](#manage-storage-overage). I
 |**Log**     |  10 GB       | 20 GB        | 5GB Deficit |
 |**File**     | 400 GB        | 200 GB        | Available |
 
-File has 200 GB of unused capacity, but File capacity can't flow backward to cover a Log deficit. Log borrows all 5 GB of available Database capacity, but this isn't enough to cover its 10-GB raw deficit. The tenant has a 5-GB effective Log deficit and should free up Log storage or purchase more Log or eligible Database capacity.
+How the calculation works
+
+1. Calculate the initial Log deficit.  
+Log has 10 GB of entitlement but is consuming 20 GB:  
+ 20 GB consumed - 10 GB entitled = 10 GB raw deficit   
+1. Use the unused Database capacity to cover part of the Log deficit.  
+Database is entitled to 100 GB and consumes 95 GB, leaving 5 GB unused:  
+ 100 GB Database entitlement - 95 GB Database consumption = 5 GB available   
+Log can use this 5 GB for the capacity calculation, increasing its effective entitlement from 10 GB to 15 GB:  
+ 10 GB Log entitlement + 5 GB borrowed = 15 GB effective Log entitlement   
+Log is still consuming 20 GB, so a 5 GB deficit remains:  
+ 20 GB Log consumption - 15 GB effective entitlement = **5 GB effective deficit**   
+1. Check the available File capacity.  
+File has 200 GB available, but File capacity can't be used to cover a Log deficit. The remaining 5 GB deficit therefore can't be covered through borrowing.  
+1. Determine the outcome.  
+The tenant remains 5 GB over its effective Log capacity and receives a critical over-capacity notification. The tenant should free up Log storage or purchase more Log or eligible Database capacity.
 
 To resolve the overage, see [Manage storage overage](#manage-storage-overage). If the overage limits access to an affected sandbox environment, see [Restore user access to affected sandbox environments](#restore-user-access-to-affected-sandbox-environments).
 
@@ -640,7 +684,7 @@ Exiting administration mode can restore access temporarily, but it doesn't:
 
 Before re-enabling a disabled sandbox, bring the tenant back within its effective storage entitlement by following one of these [remediation options](#manage-a-tenant-level-capacity-overage).
 
-After capacity validation confirms that the tenant is within entitlement, an administrator can re-enable each affected environment in the Power Platform admin center.
+After capacity validation confirms that the tenant is within entitlement, an administrator can re-enable each affected environment in the Power Platform admin center. If the customer remains in an overage state, they can contact Microsoft Support to explore available data export options.
 
 ## Frequently asked questions about storage (FAQ)
 
