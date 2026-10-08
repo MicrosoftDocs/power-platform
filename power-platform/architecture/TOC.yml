@@ -109,10 +109,14 @@
               href: reference-architectures/arch-pattern-sap.md
             - name: Integrate Outlook and SAP with Power Apps
               href: reference-architectures/outlook-canvas-app.md
+            - name: Implement the Transactional Outbox pattern with Dataverse
+              href: reference-architectures/transactional-outbox-pattern.md
         - name: Build and extend apps
           items:
-            - name: Connect Power Apps to a centralized data warehouse with Dataverse virtual tables
+            - name: Connect Power Apps to a data warehouse with Dataverse virtual tables
               href: reference-architectures/power-apps-virtual-tables.md
+            - name: Modernize applications with React and Dataverse custom APIs
+              href: reference-architectures/modernize-legacy-applications.md
             - name: Optimize performance of canvas apps requiring complex logic
               href: reference-architectures/optimize-performance-canvas-apps.md
             - name: Upload files to SharePoint with metadata from model‑driven apps

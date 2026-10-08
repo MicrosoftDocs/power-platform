@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 09/18/2026
+ms.date: 10/08/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -54,12 +54,14 @@ Browse reference architectures categorized by common design decisions. Each refe
 | **[​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables](app-integrate-lakehouse.md)** | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | **[Integrate Power Platform with SAP](arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
 | **[Integrate Outlook and SAP with Power Apps](outlook-canvas-app.md)** | Extend Outlook using a Power Apps canvas app to interact with SAP CRM and SAP S/4HANA data directly from Outlook. |
+| **[Implement the Transactional Outbox pattern with Dataverse](transactional-outbox-pattern.md)** | Learn how to implement the Transactional Outbox pattern with Dataverse and Azure Service Bus to ensure reliable message delivery and maintain consistency across integrated systems. |
 
 ## Build and extend apps
 
 | Title | Description |
 | --- | --- |
 | **[Connect Power Apps to a centralized data warehouse with Dataverse virtual tables](power-apps-virtual-tables.md)** | Connect Power Apps to a centralized data warehouse through Dataverse virtual tables, enabling business processes to use consolidated enterprise data alongside operational records stored in Dataverse. |
+| **[Modernize legacy applications with React web resources and Dataverse custom APIs](modernize-legacy-applications.md)** | Learn how to modernize legacy applications with Power Platform, React web resources, and Dataverse custom APIs. |
 | **[Optimize the performance of canvas apps that require complex business logic](optimize-performance-canvas-apps.md)** | Optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
 | **[Upload files to SharePoint with metadata from model-driven apps](custom-page-file-upload.md)** | Use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
 | **[Use Dataverse as a data source for canvas apps​](dataverse-canvas-app.md)** | Create a Power Apps application that uses Dataverse as a data source to enable building a more custom user experience. |
