@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 09/18/2026
+ms.date: 10/08/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -17,6 +17,12 @@ ms.custom:
 # What's new in the Power Platform and Copilot Studio Architecture Center
 
 Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
+
+## October 2026
+
+New in [Reference architectures](reference-architectures/index.md):
+
+- [Modernize legacy applications with React web resources and Dataverse custom APIs](reference-architectures/modernize-legacy-applications.md)
 
 ## September 2026
 
