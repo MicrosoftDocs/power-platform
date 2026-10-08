@@ -3,7 +3,7 @@ title: "Organize your solutions in Power Platform"
 description: "This document lists down some strategies to organize your solutions in Power Platform."
 author: SabrinaDiBartolomeo
 ms.author: sabrinadi
-ms.date: 11/04/2025
+ms.date: 10/08/2026
 ms.reviewer: pehecke
 ms.topic: how-to
 ms.subservice: alm
@@ -42,28 +42,51 @@ Recommended for:
 > [!NOTE]
 > Recent improvements in Microsoft Power Platform have reduced import times for managed solutions, including those that use the upgrade option. These optimizations include better handling of component dependencies and reduced overhead for unchanged components. To learn how to benefit from these improvements, go to [performance recommendations](./performance-recommendations.md).
 
-## Multiple solutions in the same development environment
+## Multiple solutions within a single development environment
 
 Multiple unmanaged solutions are maintained within a single development environment, each typically dedicated to unrelated features or modules.
 
+> [!CAUTION]
+> Working with multiple solutions in a single environment can introduce issues with deployment to downstream environments, including your production environments. If you choose to work with multiple solutions in your development environment, understand the importance of adhering to the guidelines outlined in this section. For more information, see [What you need to know before working with multiple solutions in the same environment](#what-you-need-to-know-before-working-with-multiple-solutions-in-the-same-environment).
+
 Recommended for:
 
-- Small-medium scale implementations with distinct and independent functional areas that don’t share components.
+- Small to medium scale implementations with distinct and independent functional areas *that don’t share components*.
 
 |Advantage  |Disadvantage  |
 |---------|---------|
-|Simplified environment setup and management.     |  Maintaining multiple unmanaged solutions within the same development environment increases the likelihood of dependency conflicts. For example, you might encounter a situation where Solution A can't be imported because it depends on Solution B, while Solution B can't be imported because it depends on Solution A.       |
+|Simplified environment setup and management.     |  Maintaining multiple unmanaged solutions within the same development environment *increases the likelihood of dependency conflicts*. For example, you might encounter a situation where Solution A can't be imported because it depends on Solution B, while Solution B can't be imported because it depends on Solution A.       |
 |Functional areas can be deployed independently from each other.     |  Multiple developers working on the same development environment might overwrite each other's changes. Working in an unmanaged solution doesn't provide isolation. Every modification is applied directly to the environment, regardless of which solution is being edited.       |
 
-> [!NOTE]
-> When you have multiple solutions in the same development environment, after importing the managed solutions into your target environment, you're often creating layers. More information: [Solution layers and merge behavior](./solution-layers-alm.md)
->
-> It's important that you:
->
-> - Don’t include the same unmanaged component in more than one solution.
-> - Have only one solution that includes all your tables. Don't have two different solutions where both contain tables. This is because there are frequently risks of a single relationship between tables, which creates a cross-solution dependency and causes solution upgrade or delete issues in the target environment at a later point in time.
-> - Use only one solution publisher. The solution publisher owns the components of a managed solution and its association can't be changed later. For example, if a custom table is imported as managed through Solution A with Publisher X, you can't later move that table to Solution B with Publisher Y. The only option is to delete the table, upgrade Solution A to remove the table from the target system, then recreate the table in Solution B with Publisher Y and import Solution B. This process results in loss of all data stored in the custom table unless it's migrated beforehand.
-> - Avoid creating dependencies between solutions. Dependencies enforce an import order and can cause issues. For example, if you have one solution for tables and another for cloud flows, and a flow relies on a custom column, it works in development because the column exists. However, if only the cloud flow solution is imported into the target environment, the import process might not recognize the dependency on the custom column. As a result, the flow solution installs successfully, but the flow itself doesn't work. More information: [Examples of dependencies created by multiple solutions](#examples-of-dependencies-created-by-multiple-solutions)
+When you have multiple solutions in the same development environment, after importing the managed solutions into your target environment, you're often creating layers. For more information, see [Solution layers and merge behavior](./solution-layers-alm.md).
+
+### What you need to know before working with multiple solutions in the same environment
+
+Follow these practices when working with multiple unmanaged solutions in a single development environment:
+
+- *Use only one solution publisher*. The solution publisher owns the components of a managed solution and its association can't be changed later. For example, if you import a custom table as managed through Solution A with Publisher X, you can't later move that table to Solution B with Publisher Y. The only option is to delete the table, upgrade Solution A to remove the table from the target system, then re-create the table in Solution B with Publisher Y and import Solution B. *This removal process results in loss of all data stored in the custom table unless you migrate it beforehand*.
+- Use a single unmanaged solution in your development environment. If you need to customize a managed component from another managed solution, add the component to your unmanaged solution. To customize the managed component, the managed properties must be set to customizable. Then export the unmanaged solution as managed for deployment to other environments. For more information, see [Managed properties](managed-properties-alm.md).
+- If you do use multiple solutions, don’t include the same unmanaged component in more than one solution.
+- If you do use multiple solutions,, have only one solution that includes all your tables. Don't have two different solutions where both contain tables. This condition exists because there are frequently risks of a single relationship between tables, which creates a cross-solution dependency and causes solution upgrade or delete issues in the target environment at a later point in time.
+- If you do use multiple solutions, avoid creating dependencies between solutions. Dependencies enforce an import order and can cause issues. For example, if you have one solution for tables and another for cloud flows, and a flow relies on a custom column, it works in development because the column exists. However, if you only import the cloud flow solution into the target environment, the import process might not recognize the dependency on the custom column. As a result, the flow solution installs successfully, but the flow doesn't work. For more information, see [Examples of dependencies created by multiple solutions](#examples-of-dependencies-created-by-multiple-solutions).
+
+#### What to avoid when working with multiple solutions in the same environment
+
+Here’s an example where the platform doesn't let you uninstall or upgrade either managed solution because the two solutions from different publishers are attempting to update the same component. The situation:
+
+- Two managed solutions from different publishers are installed in the same environment.
+- At least one component (Component 1) is owned by Publisher A but extended by Publisher B. Publisher A's solution is the base layer for that component, and Publisher B's solution sits on top of it.
+- At least one other component (Component 2) is owned by Publisher B and extended by Publisher A. This condition is the inverse of the previous bullet point.
+
+| Layer | Component 1 | Component 2 |
+| --- | --- | --- |
+| Top | Solution B (Publisher B) | Solution A (Publisher A) |
+| Base | Solution A (Publisher A) | Solution B (Publisher B) |
+
+This issue occurs because it presents a circular dependency for the component with both solutions and the platform doesn't let you uninstall or upgrade the component. In this example:
+
+- Sol A can't be uninstalled because it owns Component 1 and there's a customization on top from a solution belonging to Publisher B. To uninstall Sol A you must first uninstall Sol B.
+- Sol B can't be uninstalled because it owns Component 2 and there's a customization on top from a solution belonging to Publisher A. To uninstall Sol B you must first uninstall Sol A.
 
 ### Examples of dependencies created by multiple solutions
 
@@ -71,7 +94,7 @@ Recommended for:
 - Plugins or cloud flows. If the plugin or flow triggers on a custom column or updates a custom table, the object depends on those custom tables.
 - Security roles. When custom tables exist, security roles typically depend on those tables for user access.
 
-## Multiple solutions with dedicated development environments
+## Multiple solutions with multiple dedicated development environments
 
 This strategy involves developing each unmanaged solution in its own isolated Dataverse development environment. This strategy is commonly used in modular architectures where, for example, different applications—such as Sales, Customer Service, or Field Service—are built and maintained independently. A base solution containing common components (for example, account and contact tables) is created and deployed as a managed solution into each app-specific development environment. Each app then has its own unmanaged solution, layered on top of the base managed solution, allowing teams to extend functionality without altering the base foundation.
 
