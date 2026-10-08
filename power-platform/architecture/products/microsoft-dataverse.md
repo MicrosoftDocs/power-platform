@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 09/18/2026
+ms.date: 10/08/2026
 ---
 
 # Microsoft Dataverse reference architectures and solution ideas
@@ -55,6 +55,8 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Integrate Dataverse with enterprise data in Microsoft Fabric using a medallion architecture**](../reference-architectures/enterprise-data-fabric-dataverse.md) | Integrate Dataverse with enterprise data in Microsoft Fabric to build a governed analytics platform using a bronze, silver, gold medallion approach. |
 | [**Integrate finance and operations data with Dataverse**](../reference-architectures/finance-and-operations-dataverse.md) | Integrate Dynamics 365 finance and operations apps with Power Platform and Azure services to support engineer-to-order estimation, customer-specific pricing, quoting, and production planning. |
 | [**Connect Power Apps to a centralized data warehouse with Dataverse virtual tables**](../reference-architectures/power-apps-virtual-tables.md) | Connect Power Apps to a centralized data warehouse through Dataverse virtual tables to use consolidated enterprise data alongside operational records stored in Dataverse. |
+| [**Modernize legacy applications with React web resources and Dataverse custom APIs**](../reference-architectures/modernize-legacy-applications.md) | Learn how to modernize legacy applications with Power Platform, React web resources, and Dataverse custom APIs. |
+| [**Implement the Transactional Outbox pattern with Dataverse**](../reference-architectures/transactional-outbox-pattern.md) | Learn how to implement the Transactional Outbox pattern with Dataverse and Azure Service Bus to ensure reliable message delivery and maintain consistency across integrated systems. |
 
 ## Solution ideas
 
