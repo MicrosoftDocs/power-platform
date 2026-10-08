@@ -48,7 +48,7 @@ Assign each user to one business unit and assign the user a security role from t
 
 In this example, user A belongs to Division A and has security role Y from Division A. User A can access Contact #1 and Contact #2. User B belongs to Division B, so user B can't access Division A's contacts but can access Contact #3.
 
-:::image type="content" source="media/hierarchical-business-unit-data-access-example.png" alt-text="Diagram of hierarchical business units where user A accesses Division A contacts and user B accesses Division B's Contact #3.":::
+:::image type="content" source="media/wp-security-cds/hierarchical-business-unit-data-access-example.png" alt-text="Diagram of hierarchical business units where user A accesses Division A contacts and user B accesses Division B's Contact #3.":::
 
 ### Matrix data access structure (modernized business units)
 
@@ -58,7 +58,7 @@ Assign the user a security role from each business unit whose data they need to 
 
 In this example, user A can belong to any business unit, including the root business unit. Security role Y from Division A gives user A access to Contact #1 and Contact #2. Security role Y from Division B gives user A access to Contact #3.
 
-:::image type="content" source="media/example-business-unit.png" alt-text="Diagram showing user A accessing contacts in Division A and Division B through role Y assigned from each business unit." lightbox="media/example-business-unit.png":::
+:::image type="content" source="media/wp-security-cds/example-business-unit.png" alt-text="Diagram showing user A accessing contacts in Division A and Division B through role Y assigned from each business unit." lightbox="media/wp-security-cds/example-business-unit.png":::
 
 #### Enable the matrix data access structure
 
@@ -83,14 +83,14 @@ You can make a user the record owner in any business unit if one of their securi
 
 Map business units to Microsoft Entra security groups to simplify user management and role assignment.
 
-:::image type="content" source="media/business-unit-with-aad-sec-group2.png" alt-text="Create a Microsoft Entra security group for each business unit." lightbox="media/business-unit-with-aad-sec-group2.png":::
+:::image type="content" source="media/wp-security-cds/business-unit-with-aad-sec-group2.png" alt-text="Create a Microsoft Entra security group for each business unit." lightbox="media/wp-security-cds/business-unit-with-aad-sec-group2.png":::
 
 For each business unit:
 
 1. Create a Microsoft Entra security group.
-1. Create a [Dataverse group team](manage-group-teams.md) for the security group.
-1. Assign the business unit's security role to the Dataverse group team.
-1. Add users to the Microsoft Entra security group.
+2. Create a [Dataverse group team](manage-group-teams.md) for the security group.
+3. Assign the business unit's security role to the Dataverse group team.
+4. Add users to the Microsoft Entra security group.
 
 When a user first accesses the environment, Dataverse creates the user in the root business unit. The user and Dataverse group teams can remain in the root business unit. Their assigned security roles grant access to data in the corresponding business units.
 
@@ -131,13 +131,21 @@ If user A belongs to Division A and has business unit-level **Read** access to t
 
 When you configure a security role, select an access level for each privilege.
 
-:::image type="content" source="media/security-role-core-records-privileges.png" alt-text="Screenshot of the security role Core Records tab showing Create through Share privilege levels, with the Contact table highlighted.":::
+:::image type="content" source="media/wp-security-cds/security-role-privileges.png" alt-text="Screenshot of security role privileges and access levels, with the Contact table and standard privilege columns highlighted.":::
 
 Configure the standard table privileges separately: **Create**, **Read**, **Write**, **Delete**, **Append**, **Append To**, **Assign**, and **Share**. The privilege icon shows the granted access level.
 
-:::image type="content" source="media/security-role-privileges-key.png" alt-text="Screenshot of the security role privilege key showing icons for None Selected, User, Business Unit, Parent: Child Business Units, and Organization.":::
 
-In this example, organization-level access to the Contact table lets a user in Division A view and update contacts owned by anyone. Grant only the access users need. Broad privileges can weaken an otherwise well-designed security model.
+### Filtered table record ownership (preview)
+
+[!INCLUDE [preview](../includes/cc-preview-features-definition.md)]
+
+Filtered record ownership lets admins control access to Dataverse records with column-value filters. For example, grant access only to records where the `City` column equals *Redmond*. Users can create, read, update, and delete only records that match filters in their security roles.
+
+Unlike traditional Dataverse tables, tables with filtered record ownership don't support record ownership, sharing, or assignment. Filter-based privileges control record access and provide granular row-level access without restricting tables, columns, or other model objects.
+
+> [!NOTE]
+> Use filtered record ownership to grant row-level access to records that meet filter criteria. Apply filter-based privileges to filtered record ownership tables and existing user-owned or organization-owned tables. For existing tables, this approach retains the underlying ownership model.
 
 ## Record ownership in modernized business units
 
@@ -194,9 +202,9 @@ Use Dataverse solutions to move security roles and column security profiles betw
 After you create roles, teams, and business units, configure each user's access:
 
 1. Associate the user with a business unit. Dataverse uses the root business unit by default and adds the user to that business unit's default team.
-1. Assign the security roles the user needs.
-1. Add the user to the appropriate teams.
-1. If you use column-level security, assign a column security profile to the user or one of their teams.
+2. Assign the security roles the user needs.
+3. Add the user to the appropriate teams.
+4. If you use column-level security, assign a column security profile to the user or one of their teams.
 
 A user's effective access combines directly assigned security roles with roles assigned through teams. Dataverse always grants the broadest permission from those roles. For a detailed walkthrough, see [Configure environment security](database-security.md).
 

@@ -84,7 +84,9 @@ The **Details** page shows the following properties for the application user:
 - Business unit
 - Email address
 
-You can edit only the business unit, email address, and security roles properties.
+> [!NOTE]
+> You can't change the Application ID. You can edit only the business unit, email address, and security roles.
+ 
 
 ## Sync the application user name with the Microsoft Entra application name  
 
