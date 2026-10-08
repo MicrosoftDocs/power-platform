@@ -22,6 +22,7 @@ Get the latest info about what's new and what's changed in the Power Platform an
 
 New in [Reference architectures](reference-architectures/index.md):
 
+- [Implement the Transactional Outbox pattern with Dataverse](reference-architectures/transactional-outbox-pattern.md)
 - [Modernize legacy applications with React web resources and Dataverse custom APIs](reference-architectures/modernize-legacy-applications.md)
 
 ## September 2026

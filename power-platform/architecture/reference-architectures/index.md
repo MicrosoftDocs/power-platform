@@ -54,6 +54,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 | **[​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables](app-integrate-lakehouse.md)** | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | **[Integrate Power Platform with SAP](arch-pattern-sap.md)** | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
 | **[Integrate Outlook and SAP with Power Apps](outlook-canvas-app.md)** | Extend Outlook using a Power Apps canvas app to interact with SAP CRM and SAP S/4HANA data directly from Outlook. |
+| **[Implement the Transactional Outbox pattern with Dataverse](transactional-outbox-pattern.md)** | Learn how to implement the Transactional Outbox pattern with Dataverse and Azure Service Bus to ensure reliable message delivery and maintain consistency across integrated systems. |
 
 ## Build and extend apps
 
