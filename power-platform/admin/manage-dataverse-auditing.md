@@ -3,7 +3,7 @@ title: Manage Dataverse auditing
 description: Configure Dataverse auditing to log changes to customer records, user access, operations on records, and security roles. This feature meets external and internal auditing, compliance, security, and governance policies.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/08/2026
+ms.date: 10/07/2026
 author: paulliew 
 ms.subservice: admin
 ms.author: paulliew 
@@ -180,7 +180,7 @@ The following table describes the retention policy settings available when you t
    | Set a custom retention policy | Maximum: 24,855 days. Visible if you select **Custom** in the previous setting.   |  
 
 > [!IMPORTANT]
-> The audit retention period isn't available for Dynamics 365 Customer Engagement (on-premises) or for environments encrypted with a customer's own encryption key.
+> The audit retention period isn't available for Dynamics 365 Customer Engagement (on-premises).
 
 ### Start or stop auditing for an environment 
 

@@ -1,7 +1,7 @@
 ---
 title:  Default settings
 description: Learn which Business Applications in Work IQ settings are on by default and how to manage them.
-ms.date: 09/28/2026
+ms.date: 10/07/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 author: NHelgren
@@ -81,8 +81,8 @@ Use the tenant-level setting to manage whether Power Apps and Dynamics 365 data 
 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/).
 1. In the left navigation pane, select **Copilot** > **Settings**.
-1. In **Copilot settings**, select **View all** > **Dataverse Data available in Microsoft 365 Copilot**.
-1. In the **Dataverse Data available in Microsoft 365 Copilot** pane, select an option:
+1. In **Copilot settings**, select **View all** > **Business Applications data in Work IQ available to Copilot**.
+1. In the **Business Applications data in Work IQ available to Copilot** pane, select an option:
    - To turn off access for everyone, select **No users**.
    - To turn on access for everyone, select **All users**. This option is the default.
    - To provide access to a limited audience, select **Specific groups**, and then add or remove groups.
