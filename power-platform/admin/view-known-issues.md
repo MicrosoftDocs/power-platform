@@ -4,7 +4,7 @@ description: Learn how to view known issues in Power Platform admin center.
 author: mamali-ms 
 ms.component: pa-admin
 ms.topic: troubleshooting-known-issue
-ms.date: 03/10/2026
+ms.date: 10/09/2026
 ms.subservice: admin
 ms.author: mamali 
 ms.reviewer: ellenwehrle
@@ -13,12 +13,16 @@ ms.contributors:
 contributors:
   - lavanyapg
   - johnehart
+  - chramsey4
 search.audienceType: 
   - admin
 ---
 # View known issues
 
 Customer trust and transparency are important to us. You can now view existing product issues, or known issues, for which a fix is identified or is in progress. A workaround and expected time to fix the issue are also provided, when available.  
+
+> [!NOTE]
+> The Known Issues experience isn't currently available in Power Platform services in China (Mooncake).
 
 ## View known issues in Power Platform admin center  
   
