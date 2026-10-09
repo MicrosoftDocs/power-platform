@@ -1,35 +1,43 @@
 ---
 title: Access audit data with Azure Synapse Link and Power BI
-description: Configure Azure Synapse Link to access Microsoft Dataverse audit tables and then use Power BI for deep insights.
+description: Configure Azure Synapse Link to access Microsoft Dataverse audit tables, and then use Power BI for deep insights.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 07/01/2026
+ms.date: 10/09/2026
 author: paulliew
 contributors:
  - NatuvaHiranmai
+ - anibakore-msft
 ms.subservice: admin
 ms.author: paulliew 
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
 ms.custom: sfi-image-nochange
+ai-usage: ai-assisted
 ---
-# Access audit data using Azure Synapse Link for Dataverse and Power BI
+# Access audit data with Azure Synapse Link for Dataverse and Power BI
 
-Customers who use Azure Synapse Link for Dataverse can export audit logs easily to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises.
+> [!NOTE]
+> Azure Synapse Link branding will retire soon. In Power Apps, open **Link data** to access this experience. The UX uses **Link to Data lake**, while this article continues to use Azure Synapse Link so existing customers can recognize the feature.
 
-Microsoft Dataverse auditing is supported on all custom and most customizable tables and columns. Audit logs are stored in Dataverse and consume log storage capacity. If you have Azure resources in the same region as the Dataverse environment, you can export audit logs to an Azure storage account using Azure Synapse Link for Dataverse and query the audit logs using Azure Synapse Analytics and Power BI Desktop.
+Customers who use Azure Synapse Link for Dataverse can export audit logs to meet the external and internal auditing, compliance, security, and governance policies that are common to many enterprises.
+
+Microsoft Dataverse auditing supports all custom and most customizable tables and columns. Dataverse stores audit logs and consumes log storage capacity. If you have Azure resources in the same region as the Dataverse environment, you can export audit logs to an Azure storage account with Azure Synapse Link for Dataverse and query the audit logs by using Azure Synapse Analytics and Power BI Desktop.
 
 ## Prerequisites
 
-- An Azure subscription with admin permissions to create resource groups, workspace, and other Azure assets. More information: [Create an Azure Synapse Link for Dataverse with your Azure Synapse Workspace](/power-apps/maker/data-platform/azure-synapse-link-synapse#prerequisites)
+- An Azure subscription with admin permissions to create resource groups, a workspace, and other Azure assets. More information: [Create an Azure Synapse Link for Dataverse with your Azure Synapse workspace](/power-apps/maker/data-platform/azure-synapse-link-synapse#prerequisites)
 - You must have the Dataverse system administrator security role.
 - Power BI.
 
 ## Considerations
 
 > [!IMPORTANT]
-> Azure Synapse Link doesn't support synchronizing audit tables that contain more than 100 million records.
+>
+> - This procedure requires the Delta Lake (Parquet) export option in Azure Synapse Link, which is deprecated. Beginning October 15, 2026, the option won't be available to new customers. Eligibility is evaluated at the Dataverse organization ID level, not at the tenant level. A new environment with a new organization ID isn't eligible, even if another organization in the same tenant is eligible. If you unlink an eligible existing organization, you can create the link again for that same organization ID. The opt-in URL doesn't override eligibility or extend the deprecation deadlines.
+> - Existing customers must transition to CSV output in Azure Synapse Link or Link to Microsoft Fabric by December 2027, when the Delta Lake (Parquet) export option will no longer be available. Audit table export is supported only with Delta Lake profiles today. Link to Microsoft Fabric will support audit tables soon. Plan to use [Link to Microsoft Fabric](/power-apps/maker/data-platform/fabric-link-to-data-platform) for this functionality when audit-table support becomes available. More information: [Export Dataverse data in Delta Lake format](/power-apps/maker/data-platform/azure-synapse-link-delta-lake).
+> - Azure Synapse Link doesn't support synchronizing audit tables that contain more than 100 million records.
 
 ## Tasks to complete
 
@@ -40,7 +48,7 @@ Here are the high-level steps for creating the storage and workspace in Azure, t
    1. Create an Azure Data Lake Storage Gen2 account with hierarchical directory enabled.
    1. Create a Synapse workspace.
    1. Create an Apache Spark pool for the Synapse workspace.
-   1. To enable your app maker the ability to create an Azure Synapse Link for Dataverse, grant storage account and synapse workspace permissions to the Power Platform maker.
+   1. Grant storage account and Synapse workspace permissions to the Power Platform maker who creates the Azure Synapse Link for Dataverse.
 1. [Connect Dataverse audit table to Synapse workspace](#connect-dataverse-audit-table-to-synapse-workspace)
    1. Verify the auditing table’s sync status.
 1. [Create reports and dashboards using Power BI](#create-reports-and-dashboards-using-power-bi)
@@ -56,7 +64,7 @@ Here are the high-level steps for creating the storage and workspace in Azure, t
    1. Enter a **Storage account name**.
    1. Select the **Advanced** tab and enable the **Hierarchical Namespace** option.
 
-      :::image type="content" source="media/azure-storage-account.png" alt-text="Create an Azure storage account":::
+      :::image type="content" source="media/audit-data-azure-synapse-link/azure-storage-account.png" alt-text="Create an Azure storage account":::
 1. Grant **Storage account** access to the Power Apps admin who is connecting the Dataverse tables to this storage account.
    1. On the left pane, select **Access control (IAM)**.
    1. Select **Role assignments** > **+ Add** > **Add role assignments**.
@@ -93,19 +101,35 @@ Here are the high-level steps for creating the storage and workspace in Azure, t
 
 ## Connect Dataverse audit table to Synapse workspace
 
-To connect your Dataverse audit table to a Synapse workspace, you use the Azure Synapse Link that was created earlier in this article.
+To connect your Dataverse audit table to a Synapse workspace, use the Azure Synapse Link that you created earlier in this article.
 
-1. With a user account that has the Dataverse system administrator security role, sign into Power Apps and then select the environment you want.
-1. Connect Dataverse to your Synapse workspace:
-   1. On the left navigation pane, select **Azure Synapse Link**. If the item isn't available, select **More** > **Discover all**. Select **New link**.
-   1. On the **New link** page:
-      - Select the **Connect to your Azure Synapse Analytics workspace** option.
-      - Select the Azure **Subscription**, the **Resource group**, and the **Storage account**.
-      - Select the **Use Spark pool for Delta Lake data conversion job** option.
-      - Select the **Spark pool** and **Storage account**.
-   1. Select **Next**.
-   1. Expand the **Advanced** tab and enter *480* minutes in the **Time interval** field. Later, you can change the duration for how frequent you want to refresh the Dataverse tables in the Synapse workspace.
-   1. Under the list of tables, select the **Auditing** and **User** tables.
+1. Sign in to [Power Apps](https://make.powerapps.com/) with the Dataverse system administrator security role and select the environment you want.
+1. Open **Link data**, and then add `enableSynapseParquet=true` to the URL. Keep your usual Maker Portal host and environment ID. For example:
+
+   ```text
+   https://make.powerapps.com/environments/<environment-id>/linkdata?tab=other&enableSynapseParquet=true
+   ```
+
+   Use the exact parameter spelling and lowercase `true`, and include the parameter only once. If the URL already contains `?`, append `&enableSynapseParquet=true`. Otherwise, append `?enableSynapseParquet=true`.
+1. Allow the page to finish loading, and then select **Create link to data lake**. Don't select **Create a new Fabric link** for this procedure.
+
+   :::image type="content" source="media/audit-data-azure-synapse-link/parquet-link-data.png" alt-text="Link data page with Create link to data lake selected.":::
+
+1. In **Create Link to Data lake**, find the **Get more from your data with Link to Fabric** card, and then select **Get Parquet format in a Synapse workspace anyway**.
+
+   :::image type="content" source="media/audit-data-azure-synapse-link/parquet-option.png" alt-text="Create Link to Data lake panel with the existing-customer Parquet option highlighted.":::
+
+   > [!NOTE]
+   > The URL doesn't select Parquet. The creation panel starts with CSV, and the Parquet action appears only after the URL opt-in and your organization's eligibility are confirmed. If the action isn't available, don't try other feature flags.
+
+1. Select the Azure **Subscription**, **Resource group**, and **Synapse workspace**.
+1. Select **Use Spark pool for Delta Lake data conversion job**, and then select the **Spark pool** and **Storage account**.
+
+   :::image type="content" source="media/audit-data-azure-synapse-link/parquet-resources.png" alt-text="Create Link to Data lake panel with Spark enabled for the Delta Lake conversion job.":::
+
+1. Select **Next**.
+1. Expand the **Advanced** tab and enter *480* minutes in the **Time interval** field. Later, you can change how frequently you want to refresh the Dataverse tables in the Synapse workspace.
+1. Under the list of tables, select the **Auditing** and **User** tables.
 
 The tables you select must have change tracking enabled. More information: [Enable change tracking to control data synchronization](/dynamics365/customer-engagement/admin/enable-change-tracking-control-data-synchronization).
 
@@ -113,7 +137,7 @@ It takes a while for the Dataverse tables to get exported to the Synapse workspa
 
 ### Verify auditing table sync status
 
-1. In Power Apps, select **Azure Synapse Link** on the left navigation pane.
+1. In Power Apps, select **Link data**, and then select **Data lake links**.
 1. Open the link that you created and verify the auditing table’s sync status. It should show as **Active**.
 
 ## Create reports and dashboards using Power BI
@@ -131,7 +155,7 @@ Use the Azure Synapse Analytics workspace connection for smaller volumes of data
 1. Once signed in, select the workspace under the **Navigator** dialog pane.
 1. Expand the workspace and locate the Dataverse environment’s workspace. A list of Dataverse tables are displayed.
 1. Select the **audit** and the **systemuser** tables, and then select **Load**.
-   :::image type="content" source="media/select-audit-systemuser-tables-pbid.png" alt-text="Select the audit and systemuser tables in Power BI Desktop" lightbox="media/select-audit-systemuser-tables-pbid.png":::
+   :::image type="content" source="media/audit-data-azure-synapse-link/select-audit-systemuser-tables-pbid.png" alt-text="Select the audit and systemuser tables in Power BI Desktop" lightbox="media/audit-data-azure-synapse-link/select-audit-systemuser-tables-pbid.png":::
 1. With the tables selected, you can build Power BI visualizations.
 
 ### Create reports using the Azure Synapse Analytics SQL connection
@@ -143,7 +167,7 @@ Use the Azure Synapse Analytics SQL connection for larger volumes of data to bui
 1. Select **Connect**.
 1. Enter the **Server** and **Database** names.
    - The server name can be found in the Azure portal. Enter the workspace name in the **Search** bar, and then select the workspace. On the **Overview** page, copy the **Serverless SQL endpoint** and return to the **Power BI SQL Server database** page and paste it to the **Server** field.
-   - The database name can be found in the Azure Synapse Link in [Power Apps (make.powerapps.com)](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc). Select **Azure Synapse Link for Dataverse** on the left navigation pane, select the Azure Synapse Link, and then select **Go to Azure Synapse Analytics workspace** on the command bar. Your database name can be found under the **Lake database** folder on the **Data** page.
+   - To find the database name, go to [Power Apps](https://make.powerapps.com/?utm_source=padocs&utm_medium=linkinadoc&utm_campaign=referralsfromdoc), select **Link data** > **Data lake links**, and then select the Azure Synapse Link. Select **Go to Azure Synapse Analytics workspace** on the command bar. You find your database name under the **Lake database** folder on the **Data** page.
 1. Select **OK**.
 
 ## See also
