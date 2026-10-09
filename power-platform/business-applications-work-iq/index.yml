@@ -59,6 +59,8 @@ landingContent:
     linkLists:
       - linkListType: get-started
         links:
+          - text: Copilot Chat
+            url: /power-apps/maker/data-platform/business-applications-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Work IQ CLI
             url: /microsoft-365/copilot/extensibility/work-iq/cli
 
