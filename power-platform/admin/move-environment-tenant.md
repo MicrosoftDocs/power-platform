@@ -1,8 +1,9 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 09/04/2026
+ms.date: 10/05/2026
 ms.topic: concept-article
+ai-usage: ai-assisted
 author: gakulka 
 contributors:
   - SatishKumarkannanMs
@@ -32,7 +33,7 @@ Be aware of the following considerations before starting a tenant-to-tenant migr
 * **Unsupported environment types**: Default, developer, trial, and Teams environments aren't supported. Government Community Cloud (GCC) to public clouds and vice versa are also not supported.
 * The following components aren't supported: Dynamics 365 Customer Voice, Omnichannel for Customer Service, and component library.
 * Specific steps required for Dynamics 365 Customer Insights - Journeys, Dynamics 365 Customer Insights - Data, Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio. The steps are called out in the premigration and post-migration steps.
-* A Dataverse organization linked to a finance and operations organization can't be migrated to a different tenant.
+* Environments that include finance and operations apps are supported when they meet the [additional prerequisites for finance and operations apps](#additional-prerequisites-for-finance-and-operations-apps).
 * You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
 * Once you create and configure users, you must [create a user mapping file](#create-a-user-mapping-file), which is described later in this article.
 * If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
@@ -48,8 +49,23 @@ Complete the following prerequisites before you start the migration process:
 * You must have admin privileges with Power Platform or Dynamics 365 to perform the migration.
 * The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For more information, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
-> [!TIP]
-> Before you migrate a production environment, we recommend that you do a test migration first. [Copy](copy-environment.md) the production environment to a newly created sandbox environment, and then migrate that sandbox environment to the destination tenant. A test migration helps you validate the preparation steps and understand what to expect before you migrate production.
+### Additional prerequisites for finance and operations apps
+
+> [!IMPORTANT]
+> A tenant-to-tenant migration changes the source environment itself. Unlike a tenant migration for a Lifecycle Services-managed environment, this process doesn't preserve the source environment. To keep the source environment intact, [copy the environment](copy-environment.md) before you start the migration.
+
+Complete these additional prerequisites for an environment that includes finance and operations apps:
+
+* Make sure the environment doesn't have finance and operations add-ins installed.
+
+  > [!WARNING]
+  > Tenant-to-tenant migration isn't supported when finance and operations add-ins are installed. Don't proceed with the migration because it can cause unexpected behavior.
+
+* Contact your independent software vendor (ISV) and obtain updated license files. Existing ISV licenses will no longer be valid after the migration. You should import the updated license files after the migration is complete.
+* Create the user who becomes the finance and operations administrator in the target tenant. You'll enter this user's email address in the **New FnO Admin Email** field when you submit the migration request. The migration fails if the user doesn't exist in the target tenant.
+
+> [!IMPORTANT]
+> Before you migrate a production environment, first migrate a sandbox environment and test all functionality. Don't migrate the production environment until the sandbox migration and validation are successful.
 
 ## Preparation process
 Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages before the migration. You also must create a user-mapping file.
@@ -202,6 +218,7 @@ After the migration request is approved, a banner with the **Begin move** button
     :::image type="content" source="media/move-environment-tenant/prevaldationmovepanel.jpg" alt-text="Screenshot of the Get ready for this tenant-to-tenant move pane showing pre-move steps.":::
 
 1. Upload the user-mapping file for validation. The file must be named **usermapping.csv**.
+1. If the environment includes finance and operations apps, enter the target tenant user's email address in the **New FnO Admin Email** box. This user becomes the finance and operations administrator after the migration. The user must exist in the target tenant, or the migration fails.
 1. After you upload the file, select **Validate**. This action triggers a validation lifecycle operation. Wait until the operation is complete.
 
 #### When validation fails
@@ -238,9 +255,11 @@ After validation succeeds, a banner with the **Move environment** button appears
 
 After the move operation completes:
 
-- The process moves the Dataverse organization from the source tenant to the destination tenant.
-- The source tenant keeps the environment but without the Dataverse organization.
-- The process creates a new environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
+- For an environment that doesn't include finance and operations apps:
+  - The process moves the Dataverse organization from the source tenant to the destination tenant.
+  - The source tenant keeps the environment but without the Dataverse organization.
+  - The process creates an environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
+- For an environment that includes finance and operations apps, the process moves the source environment to the destination tenant. The source environment isn't preserved in the source tenant.
 - Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
 - The managed environment needs to be re-enabled in destination tenant. The destination tenant should have the required license to enable the managed environment.
 - Environment settings that aren't copied over must be updated by customers post-move.
@@ -426,7 +445,7 @@ After moving environments to another tenant:
 > [!WARNING]
 > Once the move is complete, [assign the **System Administrator** role](assign-security-roles.md) in the destination environment to the administrators who validate the migration. Since security groups are not migrated, an administrator who was not included in the user-mapping file will see the environment as completely empty. This is a permissions issue, not data loss. Confirm the role assignment before opening a support request.
 
-Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages.
+Complete the applicable post-migration procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and finance and operations apps.
 
 ### Post-migration process for Power Automate
 
@@ -470,6 +489,11 @@ Complete the following steps for each website in the environment.
 1. Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
 1. Provision the website with the same portal type and language.
 
+### Post-migration process for finance and operations apps
+
+1. Reimport the users.
+2. Import the updated ISV license files that you obtained from your vendors before the migration.
+
 ### Post-migration process for Customer Insights
 Dynamics 365 Customer Insights - Journeys (CI-J) requires post-migration steps to restore functionality in the destination tenant. 
 Learn more in [Migrate Dynamics 365 Customer Insights - Journeys between tenants](/dynamics365/customer-insights/journeys/tenant-to-tenant#customer-insights---journeys-app-status-after-migration).
@@ -496,7 +520,8 @@ Only production and sandbox environments are supported. Default, developer, tria
 
 #### Will the environment physically move to the new tenant?
 
-No. The environment remains in place, but the Dataverse organization moves to the destination tenant. It's no longer part of the source tenant and is managed under the new environment in the destination tenant. Data that is stored in Dataverse is still stored in the environment in your tenant. You should delete the orphan environment when the tenant-to-tenant move is completed and it's confirmed that the data is no longer needed in the source tenant.
+No. The environment remains in place, but the Dataverse organization and finance and operations apps move to the destination tenant. They're no longer part of the source tenant and are managed under the new environment in the destination tenant. Data that is stored in Dataverse is still stored in the environment in your tenant. You should delete the orphan environment when the tenant-to-tenant move is completed and it's confirmed that the data is no longer needed in the source tenant.
+
 #### Are there any components that aren't fully supported?
 
 For more information about which components are supported and which components aren't supported, see [Before you get started](#before-you-get-started).
