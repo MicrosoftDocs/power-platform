@@ -4,13 +4,13 @@ description: Guide to working with JSON in Power Fx.
 author: gregli
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: jorisde
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 ---
 # Working with JSON in Power Fx

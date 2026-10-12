@@ -12,7 +12,7 @@ search.audienceType:
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 ---
 # Global support

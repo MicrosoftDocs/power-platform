@@ -5,7 +5,7 @@ author: gregli
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: jorisde
@@ -13,7 +13,7 @@ search.audienceType:
   - maker
 contributors:
   - gregli
-  - mduelae
+  - joshuapartlow
 ---
 # Dynamic values
 

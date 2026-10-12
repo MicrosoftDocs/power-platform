@@ -5,7 +5,7 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur tapanm
+ms.reviewer: joshuapa tapanm
 ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
@@ -13,7 +13,7 @@ search.audienceType:
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 no-loc: ["Table"]
 ---

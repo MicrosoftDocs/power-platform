@@ -4,14 +4,14 @@ description: Reference information including syntax and examples for the App obj
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 06/11/2026
 ms.author: gregli
 search.audienceType: 
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 ms.contributors:
 - anuitz

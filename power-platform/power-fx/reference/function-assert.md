@@ -1,11 +1,11 @@
 ﻿---
 title: Assert function
 description: Reference information, including syntax, for the Assert function.
-author: mduelae
+author: joshuapartlow
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 6/10/2024
 ms.subservice: power-fx
 ms.author: jorisde
@@ -13,7 +13,7 @@ search.audienceType:
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 no-loc: ["Assert"]
 ---
