@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: mikferland-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/01/2026
+ms.date: 10/12/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: miferlan
@@ -13,8 +13,8 @@ search.audienceType:
   - admin
 contributors:
   - v-aangie
-  - CedrickBellarosa 
-  - antoinecellerier 
+  - CedrickBellarosa
+  - antoinecellerier
   - JesseParsons
   - tapanm-msft
   - sidhartg
@@ -31,8 +31,8 @@ ms.custom:
   - ai-gen-title
   - ai-seo-date:09/07/2023
   - copilot-learning-hub
-ms.collection: 
-    - bap-ai-copilot
+ms.collection:
+  - bap-ai-copilot
 ms.contributors:
   - lapeter
   - nitemp
@@ -45,20 +45,20 @@ Copilots and generative AI features aren't available in all regions and language
 > [!NOTE]
 > - Copilots and generative AI features that are generally available are turned on by default. However, you might need to allow data movement across regions to use all Copilot and generative AI features.
 > - If you don't allow data movement across regions, that doesn't turn off all Copilots and generative AI features. Copilots and generative AI features are allowed as capacity is made available in the region.
-> - Certain generative AI features are powered by Microsoft 365 services and store data according to Microsoft 365 terms and data residency commitments. 
+> - Certain generative AI features are powered by Microsoft 365 services and store data according to Microsoft 365 terms and data residency commitments.
 
 ## Regions where data is processed for Copilots and generative AI features
 
 When you allow data movement across regions, **your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted**. We don't use your data to train, retrain, or improve Azure OpenAI Service foundation models. Learn more about product-specific Copilot availability in the [Copilot international availability report](https://releaseplans.microsoft.com/en-US/availability-reports/?report=copilotproductreport).
 
-The following table lists the regions where your Power Platform or Dynamics 365 environment is hosted and the corresponding regions where the Azure OpenAI service and Bing search service are hosted. 
+The following table lists the regions where your Power Platform or Dynamics 365 environment is hosted and the corresponding regions where the Azure OpenAI service and Bing search service are hosted.
 
-| Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search | 
-|-------------------------|-------------------------|-------------------------|
-| United States | In region* | United States| 
-| Europe\**  | In European Union (EU) Data Boundary | United States |
-| France<br>Germany<br>Norway<br>Sweden<br>Switzerland\** | In EU Data Boundary | United States|
-| Brazil<br>Canada<br>Japan<br>Korea<br>South Africa<br>United Arab Emirates | United States | United States| 
+| Region where your Power Platform or Dynamics 365 environment is hosted | Region where Azure OpenAI Service is hosted | Region where data is stored and processed for Bing Search |
+|---|---|---|
+| United States | In region* | United States |
+| Europe\** | In European Union (EU) Data Boundary | United States |
+| France<br>Germany<br>Norway<br>Sweden<br>Switzerland\** | In EU Data Boundary | United States |
+| Brazil<br>Canada<br>Japan<br>Korea<br>South Africa<br>United Arab Emirates | United States | United States |
 | Asia<br>Singapore | In region* or United States | United States |
 | Australia<br>India | In region* or United States | United States |
 | United Kingdom | In region* or in EU Data Boundary | United States |
@@ -75,33 +75,34 @@ Learn more about EU Data Boundary in [What is the EU Data Boundary?](/privacy/eu
 To turn on data movement across regions, Bing search, Microsoft 365 services, and flex routing for Copilots and generative AI features, you must consent to the terms of use in the Power Platform admin center. To grant consent, you must be a Power Platform administrator or Dynamics 365 administrator.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**. The **Environments** page is displayed.
-1. Select the name of your environment. Details about your environment are displayed.
-1. In the **Generative AI features** card, select **Edit**. The **Generative AI features** pane is displayed.
-1. Review the terms of use and select the **Move data across regions** checkbox.
+2. In the navigation pane, select **Manage**.
+3. In the **Manage** pane, select **Environments**. The **Environments** page is displayed.
+4. Select the name of your environment. Details about your environment are displayed.
+5. In the **Generative AI features** card, select **Edit**. The **Generative AI features** pane is displayed.
+6. Review the terms of use and select the **Move data across regions** checkbox.
 
-    > [!Note]
-    > The **Move data across regions** checkbox isn't displayed for US and government cloud regions.
+    > [!IMPORTANT]
+    > - The **Move data across regions** checkbox isn't displayed for environments in U.S. or government cloud regions.
+    > - In **Copilot Studio**, cross-geo data movement is currently available only to U.S.-based tenants. For tenants based outside the United States, enabling this setting doesn't enable cross-geo processing in Copilot Studio.
 
-     When the **Move data across regions** checkbox is selected, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table.
-    
-    - Moving data across regions only happens if the required model isn't deployed locally, if capacity is maxed out as overflow, or if there is a reliability-impacting issue with the local model.  
+    When the **Move data across regions** checkbox is selected, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table.
+
+    - Moving data across regions only happens if the required model isn't deployed locally, if capacity is maxed out as overflow, or if there is a reliability-impacting issue with the local model.
     - Microsoft doesn't log, store, or retain any input or output data during this process. There is no persistence of the data.
-              
+
     For Core Online Services, allowing data movement across regions with this toggle doesn't impact the commitments made in the Product Terms regarding storage of Customer Data at rest. Learn more in [Regions where data is processed for Copilots and generative AI features](#regions-where-data-is-processed-for-copilots-and-generative-ai-features).
 
     > [!NOTE]
     > Data movement that occurred while your environment was allowed to move data across regions can't be reversed by clearing the **Move data across regions** checkbox.
 
-1. Review the terms of use and select the **Bing search** checkbox.
+7. Review the terms of use and select the **Bing search** checkbox.
 
     When the **Bing search** feature is turned on, your agent in Microsoft Copilot Studio can use the data sources you provided, but it can use Bing's APIs to index the results better and find the best answer from within your data sources. Learn more in [Generative answers](/microsoft-copilot-studio/nlu-boost-conversations).
 
     > [!NOTE]
     > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Bing search** checkbox.
 
-1. Review the terms of use and select the **Microsoft 365 services** checkbox.
+8. Review the terms of use and select the **Microsoft 365 services** checkbox.
 
     When the **Microsoft 365 services** feature is turned on, users can use features powered by Microsoft 365 services.
 
@@ -110,38 +111,37 @@ To turn on data movement across regions, Bing search, Microsoft 365 services, an
     > [!NOTE]
     > If the **Move data across regions** checkbox is displayed in the **Generative AI features** pane, you must have it already selected in order to select the **Microsoft 365 services** checkbox.
 
-1. If your environment is in the European Union Data Boundary, the **Allow flex routing during periods of peak load** checkbox is displayed.
+9. If your environment is in the European Union Data Boundary, the **Allow flex routing during periods of peak load** checkbox is displayed.
 
     For tenants that are managed through the Microsoft 365 admin center, the default value of the **Allow flex routing during periods of peak load** setting in the Power Platform admin center is the same as the Microsoft 365 admin center toggle, unless the **Move data across regions** setting is turned off.
 
     - Select the **Allow flex routing during periods of peak load** checkbox, if desired. This setting allows LLM inferencing and the storage of associated pseudonymized data to occur outside the EU Data Boundary during periods of peak demand.
-    - If you don't want to allow flex routing, clear the **Allow flex routing during periods of peak load** checkbox, which results in all LLM inferencing occuring inside the EU Data Boundary, even during periods of peak demand.
-      - If the **Allow flex routing during periods of peak load** checkbox is visible but unavailable, it means either the feature is currently   turned off in the Microsoft 365 admin center or the **Move data across regions** setting isn't enabled in the Power Platform admin center.
-      - Flex routing is on by default for eligible tenants that were created after March 25, 2026. For eligible tenants that existed before March 25, 2026, tenant administrators are encouraged to check their tenant's setting in the [Microsoft 365 admin center](/microsoft-365/admin).
+    - If you don't want to allow flex routing, clear the **Allow flex routing during periods of peak load** checkbox, which results in all LLM inferencing occurring inside the EU Data Boundary, even during periods of peak demand.
+    - If the **Allow flex routing during periods of peak load** checkbox is visible but unavailable, either the feature is turned off in the Microsoft 365 admin center or the **Move data across regions** setting isn't enabled in the Power Platform admin center.
+    - Flex routing is on by default for eligible tenants that were created after March 25, 2026. For eligible tenants that existed before March 25, 2026, tenant administrators are encouraged to check their tenant's setting in the [Microsoft 365 admin center](/microsoft-365/admin).
 
-    
     > [!NOTE]
     > - Flex routing lets customers in the European Union Data Boundary allow large language model (LLM) inferencing to occur outside the EU Data Boundary during periods of peak demand to help maintain a consistent Copilot experience. Inferencing is the processing step when an AI model executes the prompt to produce an output or response, such as summarizing content or answering a question.
     > - No matter where LLM inferencing occurs, data is encrypted in transit and at rest. Data at rest continues to be stored inside the EU Data Boundary, except for limited pseudonymized data which may be stored outside the EU Data Boundary for security and operational purposes. For more information, see [Services that transfer a subset of Customer Data, pseudonymized personal data, or Professional Services Data out of the EU Data Boundary on an ongoing basis](/privacy/eudb/eu-data-boundary-ongoing-partial-transfers).
     > - For more information, see [Flex routing (EU and EFTA)](https://go.microsoft.com/fwlink/?linkid=2356281).
 
-1. Select **Save**.
+10. Select **Save**.
 
 ## Copilots and generative AI features that depend on data movement across regions
 
 The following table lists Copilots and generative AI features that depend on the **Move data across regions** checkbox.
 
-When the **Move data across regions** checkbox is selected, these features work at their best, allowing use of other region capacity when needed. 
+When you select the **Move data across regions** checkbox, these features work at their best, and you can use other region capacity when needed. 
 
-When you don't select the **Move data across regions** checkbox, no data is sent outside of the region. Depending on the _in region_ capacities, some of these features won't work. 
+When you don't select the **Move data across regions** checkbox, no data is sent outside of the region. Depending on the _in region_ capacities, some of these features won't work.
 
 More Copilots and generative AI features will be available in the future.
 
-| Product | Feature  | Available in GCC? | Documentation
-|-------------------------|-------------------------|-------------------------|-------------------------|
-| Dynamics 365 Customer Service | Copilot | No | [Manage Copilot features in Customer Service](/dynamics365/customer-service/administer/configure-copilot-features)|
-| Dynamics 365 Sales | Copilot | No | [Copilot in Dynamics 365 Sales overview](/dynamics365/sales/copilot-overview)|
-| Dynamics 365 Customer Insights | Copilot | No | Customer Insights - Journeys: [Give consent to use Copilot in Customer Insights - Journeys](/dynamics365/customer-insights/journeys/copilot-consent-journeys) <br> Customer Insights - Data: [Give consent to use Copilot in Customer Insights - Data](/dynamics365/customer-insights/data/copilot-global-consent) |
+| Product | Feature | Available in GCC? | Documentation |
+|---|---|---|---|
+| Dynamics 365 Customer Service | Copilot | No | [Manage Copilot features in Customer Service](/dynamics365/customer-service/administer/configure-copilot-features) |
+| Dynamics 365 Sales | Copilot | No | [Copilot in Dynamics 365 Sales overview](/dynamics365/sales/copilot-overview) |
+| Dynamics 365 Customer Insights | Copilot | No | Customer Insights - Journeys: [Give consent to use Copilot in Customer Insights - Journeys](/dynamics365/customer-insights/journeys/copilot-consent-journeys)<br>Customer Insights - Data: [Give consent to use Copilot in Customer Insights - Data](/dynamics365/customer-insights/data/copilot-global-consent) |
 | Microsoft Copilot Studio | Generative AI in copilots | Yes | [AI-based copilot authoring overview](/microsoft-copilot-studio/nlu-gpt-overview) and [Configure data movement for Copilot Studio generative AI features outside the United States](/microsoft-copilot-studio/manage-data-movement-outside-us) |
 | Microsoft Dataverse | Excel to table for new makers | No | [Upload an Excel file (preview)](/power-apps/maker/data-platform/create-edit-entities-portal#upload-an-excel-file-preview) |
 | Power Apps | Build apps through conversation | No | [Build apps through conversation](/power-apps/maker/canvas-apps/ai-conversations-create-app) |
@@ -162,12 +162,12 @@ Yes, you can use the **Generative AI settings** environment rule to control this
 
 ### What features turn off when I clear the "Move data across regions" checkbox?
 
-The **Move data across regions** checkbox isn't intended to turn off Copilots and generative AI features. Not all Copilot and generative AI features are governed by this setting. Some features use alternate services and are not subject to the **Move data across regions** setting. 
+The **Move data across regions** checkbox isn't designed to turn off Copilots and generative AI features. Not all Copilot and generative AI features are governed by this setting. Some features use alternate services and aren't subject to the **Move data across regions** setting. 
 
 When you clear the **Move data across regions** checkbox, it may turn off some features that require data movement. As we add new capacities to new regions, these features may work with in region capacity at some point. Use feature-dedicated controls to turn off unwanted features.
 
 ### Why do I need to select the "Move data across regions" checkbox if my environment has in-region capacity?
- 
+
 Some regions may have limited capacity, or no capacity at all. To ensure availability of Copilots and generative AI features, we may need to move the data outside of the region for processing.
 
 ### Why doesn't the "Move data across regions" checkbox appear in some of my environments?
