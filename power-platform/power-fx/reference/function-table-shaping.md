@@ -5,7 +5,7 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 4/11/2024
 ms.subservice: power-fx
 ms.author: gregli
@@ -13,7 +13,7 @@ search.audienceType:
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 no-loc: ["AddColumns","DropColumns","RenameColumns","ShowColumns"]
 ---

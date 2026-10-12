@@ -4,7 +4,7 @@ description: Reference information, including syntax, for the ReadNFC function
 author: mikepenaMS
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: mikepena
@@ -12,7 +12,7 @@ search.audienceType:
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
   - mikepenaMS
   - anuitz

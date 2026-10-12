@@ -1,11 +1,11 @@
 ﻿---
 title: SetProperty function
 description: Reference information including syntax and examples for the SetProperty function.
-author: mduelae
+author: joshuapartlow
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: jorisde
@@ -13,7 +13,7 @@ search.audienceType:
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 no-loc: ["SetProperty"]
 ---

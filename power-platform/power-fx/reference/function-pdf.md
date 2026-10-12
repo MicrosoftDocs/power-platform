@@ -4,7 +4,7 @@ description: Reference information including syntax and examples for the PDF fun
 author: TashasEv
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: tashas
@@ -12,7 +12,7 @@ search.audienceType:
   - maker
 contributors:
   - TashasEv
-  - mduelae
+  - joshuapartlow
 no-loc: ["PDF"]
 ---
 

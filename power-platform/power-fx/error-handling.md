@@ -4,14 +4,14 @@ description: Reference information about working with errors in Power Fx.
 author: gregli-msft
 ms.topic: how-to
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 02/26/2026
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType: 
   - maker
 contributors:
-  - mduelae
+  - joshuapartlow
   - gregli-msft
   - gregli
 ---

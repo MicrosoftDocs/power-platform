@@ -5,14 +5,14 @@ author: gregli-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 6/10/2024
 ms.author: gregli
 search.audienceType: 
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 no-loc: ["WeekNum","ISOWeekNum"]
 ---

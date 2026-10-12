@@ -3,7 +3,7 @@ title: Regular expressions in Microsoft Power Fx | Microsoft Docs
 description: Reference information about working with regular expressions in Microsoft Power Fx
 author: gregli-msft
 ms.topic: concept-article
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 5/1/2025
 ms.subservice: power-fx
 ms.author: gregli
@@ -11,7 +11,7 @@ search.audienceType:
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 ---
 # Regular expressions

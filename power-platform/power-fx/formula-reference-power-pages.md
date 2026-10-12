@@ -4,14 +4,14 @@ description: Reference information for all functions in Power Pages.
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur-msft
+ms.reviewer: joshuapa
 ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
 contributors:
-  - mduelae
+  - joshuapartlow
   - gregli-msft
   - gregli
 ---
