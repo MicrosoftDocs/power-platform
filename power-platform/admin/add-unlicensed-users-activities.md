@@ -7,14 +7,14 @@ ms.author: paulliew
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/18/2026
+ms.date: 10/12/2026
 search.audienceType: 
   - admin
 ---
 
 # Add users without licenses to activity recipient fields (preview)
 
-By default, only users with a Dataverse or Power Apps license can be added to activities in Dynamics 365 apps. Turn on the *Activities for users without licenses* feature in the Power Platform admin center to allow any user in your tenant with a Microsoft Entra ID to be added to activity recipient fields, such as the To, Cc, or Bcc fields of an email; Owner, Required Attendees, Optional attendees of appointment; the Owner, Call From, or Call To of phone call; and Owner (co-owner) of Task.  Learn more in [Manage feature settings](https://go.microsoft.com/fwlink/?linkid=2008957).
+By default, you can only add users with a Dataverse or Power Apps license to activities in Dynamics 365 apps. Turn on the *Activities for users without licenses* feature in the Power Platform admin center to allow any user in your tenant with a Microsoft Entra ID to be added to activity recipient fields, such as the To, Cc, or Bcc fields of an email; Required Attendees, Optional attendees of appointment; Call From, or Call To of phone call.  Learn more in [Manage feature settings](https://go.microsoft.com/fwlink/?linkid=2008957).
 
 ## Prerequisites
 
@@ -50,7 +50,11 @@ Users without licenses are people in your tenant who have an active Microsoft En
 
 When you select a Microsoft Entra ID user for an activity, Dataverse creates a corresponding unlicensed-user record in the environment so that the user can be added to the activity's recipient fields. The user record is created with a disabled status. These users can be included as recipients, but they can't sign in to or run Dynamics 365 apps.
 
+## What happens when a user receives a license
+
+When a user without a license is assigned a license, the user is automatically updated to a licensed user and can use the application based on their assigned security roles and permissions. Activities previously associated with the user remain associated with the same user record. No migration or conversion of the user or their existing activities is required.
+
 ## See also
 
+[Create users without licenses](create-users.md#users-without-licenses-preview)
 [Use the lookup column on a row](/power-apps/user/lookup-field)
-
