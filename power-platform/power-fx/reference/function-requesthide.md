@@ -5,7 +5,7 @@ author: emcoope-msft
 
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 3/22/2024
 ms.subservice: power-fx
 ms.author: emcoope
@@ -13,7 +13,7 @@ search.audienceType:
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 no-loc: ["RequestHide"]
 ---

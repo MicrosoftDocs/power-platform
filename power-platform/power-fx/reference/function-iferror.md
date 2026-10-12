@@ -4,7 +4,7 @@ description: Reference information including syntax and examples for the Error, 
 author: gregli-msft
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 10/16/2024
 ms.subservice: power-fx
 ms.author: gregli
@@ -12,7 +12,7 @@ search.audienceType:
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 no-loc: ["Error","IfError","IsError","IsBlankOrError"]
 ---

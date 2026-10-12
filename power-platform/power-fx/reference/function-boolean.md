@@ -4,13 +4,13 @@ description: Reference information including syntax and examples for the Boolean
 author: gregli
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: jorisde
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 no-loc: ["Boolean"]
 ---

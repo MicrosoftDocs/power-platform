@@ -2,11 +2,11 @@
 title: Develop a tenant environment strategy to adopt Power Platform at scale
 description: Learn how to best use the features of the platform to implement an environment strategy that can allow your adoption of Power Platform to reach enterprise scale.
 #customer intent: As a Power Platform admin, I want to develop a tenant environment strategy for Power Platform so that I can manage and secure environments at enterprise scale.  
-author: robstand
+author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/04/2026
-ms.author: rstand
+ms.date: 10/12/2026
+ms.author: mapichle
 ms.reviewer: edoyle
 ms.custom: bap-template
 ms.subservice: guidance
@@ -158,7 +158,7 @@ You can use environment routing by itself, but the recommended way is to use it 
 
 Makers are automatically assigned a security role that makes them an environment admin of their developer environment. When the environment is a part of an environment group, the maker&mdash;as the environment admin&mdash;can't change the environment settings because they're managed by the environment group rules. Only admins, who can modify the group rules, can make any changes.
 
-You can impose even more control in two ways. First, you can disallow manual creation of developer environments in your tenant settings. When this option is set, makers can't create environments themselves in the admin portal. They also won't get one automatically created by the routing policy. Second, you can specify a security group, in the routing policy, to limit who can automatically get an environment created.
+You can impose even more control by specifying a security group in the routing policy to limit who can automatically get an environment created.
 
 Initially, environment routing supports routing new and existing makers away from the default environment when they use *make.powerapps.com*. Over time, other Power Platform services will support the environment routing feature.
 

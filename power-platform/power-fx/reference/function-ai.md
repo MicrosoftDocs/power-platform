@@ -4,7 +4,7 @@ description: Reference information including syntax and examples for the AIClass
 author: paulliew
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur
+ms.reviewer: joshuapa
 ms.date: 06/20/2025
 ms.subservice: power-fx
 ms.author: paulliew
@@ -12,7 +12,7 @@ search.audienceType:
   - maker
 contributors:
   - paulliew
-  - mduelae
+  - joshuapartlow
 no-loc: ["AIClassify","AIExtract","AIReply","AISentiment","AISummarize","AISummarizeRecord","AITranslate"]
 ---
 

@@ -1,20 +1,20 @@
 ---
 title: Power Fx formula reference
 description: Reference information for all functions in Power Fx
-author:  mduelae
+author:  joshuapartlow
 ms.topic: reference
 ms.custom: canvas
-ms.reviewer: mkaur-msft
+ms.reviewer: joshuapa
 ms.date: 8/29/2025
 ms.subservice: power-fx
-ms.author: mkaur
+ms.author: joshuapa
 search.audienceType:
   - maker
 contributors:
-  - mduelae
+  - joshuapartlow
   - gregli-msft
   - gregli
-  -  mduelae
+  -  joshuapartlow
   - tapanm-msft
 ---
 

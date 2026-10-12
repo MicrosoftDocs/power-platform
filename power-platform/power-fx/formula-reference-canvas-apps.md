@@ -3,14 +3,14 @@ title: Formula reference - canvas apps
 description: Reference information for all functions in canvas apps.
 author: gregli-msft
 ms.topic: reference
-ms.reviewer: mkaur-msft
+ms.reviewer: joshuapa
 ms.date: 06/18/2025
 ms.subservice: power-fx
 ms.author: gregli
 search.audienceType:
   - maker
 contributors:
-  - mduelae
+  - joshuapartlow
   - gregli-msft
   - gregli
 ms.custom:

@@ -13,7 +13,7 @@ search.audienceType:
   - maker
 contributors:
   - gregli-msft
-  - mduelae
+  - joshuapartlow
   - gregli
 no-loc: ["Now","Today","IsToday","UTCNow","UTCToday","IsUTCToday"]
 ---
