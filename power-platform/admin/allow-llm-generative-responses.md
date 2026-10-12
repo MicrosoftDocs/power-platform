@@ -1,13 +1,14 @@
 ---
 title: Allow external language models for generative responses
-description: Learn how to allow external language models for generative responses in Power Platform.
+description: Learn how to make external language models available in Power Platform environments and environment groups.
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/28/2026
+ms.date: 10/12/2026
 author: EllenWehrle
 ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
+ai-usage: ai-assisted
 search.audienceType: 
   - admin
 ms.contributors:
@@ -17,57 +18,84 @@ ms.contributors:
 
 # Allow external language models for generative responses
 
-AI innovation moves at a rapid pace, and each AI model has different strengths and specialties. With the **Enable External models** rule and setting, you can allow the choice of external AI models in model-picking scenarios for an environment or an environment group. These models offer an alternative approach to generative AI in Microsoft Copilot Studio and Power Platform. These models support advanced summarization and conversational capabilities. 
+External language models give makers more model choices for generative AI scenarios in Microsoft Copilot Studio and Power Platform. To make these models available, first enable each model provider in the Microsoft 365 admin center. Then, allow the models in an individual environment or an environment group.
 
-Some model families are available in preview for evaluation purposes, and also in production as Microsoft subprocessors. The models available under the **Enable External Models** setting are hosted outside of Microsoft and, in some cases, are subject to their own usage and data handling terms. Currently, the models available under the **Enable External Models** setting are through the following third-parties:
+The **Enable External Models** settings include models from these providers:
 
+- OpenAI
 - Anthropic
 - Mistral
 - xAI
 
-Since January 7, 2026, Anthropic operates as a Microsoft subprocessor and the Microsoft [Product Terms](https://www.microsoft.com/licensing/terms?msockid=344e0e6ad66c6b3e19441848d7416abd) and [Microsoft Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA?lang=18&msockid=344e0e6ad66c6b3e19441848d7416abd) apply to use of Anthropic models through Copilot Studio and Power Platform.
+Model release status, processing arrangements, terms, and data-handling practices vary by provider and model. Review the provider-specific guidance before you enable a provider.
 
 > [!NOTE]
-> You must [allow Anthropic access in the Microsoft 365 admin center](https://go.microsoft.com/fwlink/?linkid=2341952), allow Mistral access in the Microsoft 365 admin center, and/or [allow xAI access in Microsoft 365 admin center.](https://go.microsoft.com/fwlink/?linkid=2348423) If enabled there, you can access these settings in the Power Platform admin center.  
+> Each model provider maintains and manages the certifications for its models. For information about available certifications and audit reports, see the [OpenAI Trust Portal](https://trust.openai.com/), [Anthropic Trust Center](https://trust.anthropic.com/), [Mistral AI Trust Center](https://trust.mistral.ai/), and [xAI Trust Center](https://trust.x.ai/).
+
+## Enable model providers in the Microsoft 365 admin center
+
+External models require two separate admin actions. First, a Microsoft 365 AI administrator enables access to a model provider. Then, a Power Platform system admin allows the provider's models in an environment or environment group. Enabling a provider in Microsoft 365 doesn't automatically make its models available in Power Platform.
+
+A Microsoft 365 AI administrator must review and enable each provider that your organization plans to use:
+
+- [Manage OpenAI as a subprocessor](/microsoft-365/copilot/openai-subprocessor)
+- [Manage Anthropic model settings](/microsoft-365/copilot/connect-to-ai-subprocessor)
+- [Connect to Mistral AI models](/microsoft-365/copilot/connect-mistral-ai-models)
+- [Connect to xAI models](/microsoft-365/copilot/connect-to-ai-models)
 
 [!INCLUDE [models-xai-disclaimer-note](~/../shared-content/shared/models-xai-disclaimer-note.md)]
 
-## Control external AI models use for an environment
+After an admin enables a provider in Microsoft 365, it might take a few hours for the provider settings to become available in the Power Platform admin center.
 
-To enable external models, complete these steps:
+:::image type="content" source="media/allow-llm-generative-responses/enable-external-models.png" alt-text="Screenshot of Enable External Models settings with disabled checkboxes for OpenAI, Anthropic, xAI, and Mistral models, each off in Microsoft 365 admin center." lightbox="media/allow-llm-generative-responses/enable-external-models.png":::
 
-1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**. Then select the environment you want to manage.
-1. In the command bar, select **Settings**.
-1. On the **Settings** page, select **Product** > **Features**.
-1. On the **Features** page, check or uncheck the available model family setting to turn it **On** or **Off**.
-1. Select **Save**.
+## Allow external models in an environment
 
-## Control external models use for an environment group
-
-If your environment is part of an [environment group](environment-groups.md), you can govern use of external models through the [External models environment group rule](environment-groups-rules.md).
-
-> [!Note]
-> If your environment is part of an [environment group](environment-groups.md), it must be a managed environment.
+After the model provider is enabled in Microsoft 365, allow its models in each applicable Power Platform environment:
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environment groups**. Then select the environment group you want to manage.
-1. Select the **Rules** tab.
-1. Select the **External Models** rule.
-1. In the **External Models** pane, check or uncheck the available model family features to turn them on or off.
-1. Select **Save**.
-1. To apply your changes to the environments in the group, select **Publish rules**.
+2. In the navigation pane, select **Manage**.
+3. In the **Manage** pane, select **Environments**, and then select the environment.
+4. On the command bar, select **Settings**.
+5. On the **Settings** page, select **Product** > **Features**.
+6. On the **Features** page, turn each applicable model provider setting **On** or **Off**.
+7. Select **Save**.
 
 > [!NOTE]
-> If the external model toggle is visible but you can't select it, your organization's admin didn't enable access to that model family in the Microsoft 365 admin center. To enable Anthropic models on January 7, 2026 or later, complete the steps in [Anthropic as a subprocessor for Microsoft Online Services](/copilot/microsoft-365/connect-to-ai-subprocessor).
+> If you see a provider setting but can't select it, confirm that a Microsoft 365 admin enabled the provider. To learn how the model providers are enabled in the Microsoft 365 admin center, see [Enable model providers in the Microsoft 365 admin center](#enable-model-providers-in-the-microsoft-365-admin-center).
 
-## Exclusions
+## Allow external models in an environment group
+
+If an environment is part of an [environment group](environment-groups.md), use [environment group rules](environment-groups-rules.md) to manage external models across the group. Add and configure each applicable rule separately.
+
+| Rule | Purpose |
+|---|---|
+| **Enable OpenAI models in MCS (Copilot Studio)** | Controls Power Platform OpenAI models. |
+| **Power Platform Anthropic** | Controls Power Platform Anthropic models. |
+| **Power Platform Mistral AI** | Controls Power Platform Mistral AI models. |
+| **Power Platform XAI** | Controls Power Platform xAI models. |
+
+> [!NOTE]
+> Environments in an environment group must be managed environments.
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+2. In the navigation pane, select **Manage**.
+3. In the **Manage** pane, select **Environment groups**, and then select the environment group.
+4. Select the **Add rules** tab.
+5. Select the checkbox for each rule that you want to add: **Power Pages AI features**, **Power Platform Anthropic**, **Power Platform Mistral AI**, or **Power Platform XAI**. The rules available to you depend on your tenant's configuration.
+  :::image type="content" source="media/allow-llm-generative-responses/add-models-rules.png" alt-text="Screenshot of the Add rules to this group pane with the Power Platform Anthropic rule checkbox selected and the Add button." lightbox="media/allow-llm-generative-responses/add-models-rules.png":::
+6. Select each rule to see its details page, confirm or configure its feature settings, and then select **Save**.
+7. After you configure all selected rules, select **Add**.
+8. To publish the rules to the environments in the group, select **Apply changes**.
+
+> [!NOTE]
+> If you don't see the rule available for the model provider you want to add, consult with your Microsoft 365 AI administrator about enabling the model in the Microsoft 365 admin center first. To learn how the model providers are enabled in the Microsoft 365 admin center, see [Enable model providers in the Microsoft 365 admin center](#enable-model-providers-in-the-microsoft-365-admin-center).
+
+## Review limitations and exclusions
 
 The following exclusions apply:
 
 - Anthropic models in Copilot Studio are currently excluded from EU Data Boundary commitments.
-- xAI models within Copilot Studio are currently available for US tenants only. 
-- FedRAMP isn't achieved for Anthropic or xAI models in Copilot Studio. If your organization requires FedRAMP before use, consult with your authorization official to determine if use of Anthropic models is allowed.
-- Payment Card Industry (PCI) Data Security Standard (DSS) isn't applicable to Anthropic or xAI models within Copilot Studio to store, process, or transmit payment and cardholder data.
+- xAI models in Copilot Studio are currently available only to US tenants.
+- Anthropic and xAI models in Copilot Studio aren't FedRAMP authorized. If your organization requires FedRAMP authorization, consult your authorization official before you use these models.
+- Payment Card Industry Data Security Standard (PCI DSS) coverage doesn't apply when Anthropic or xAI models in Copilot Studio store, process, or transmit payment or cardholder data.
