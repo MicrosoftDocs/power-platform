@@ -133,6 +133,14 @@ all and that's OK. The "Applies to:" at the top of each article clarifies
 which elements are used where. The per host formula-reference-*.md files, 
 with short descriptions, provides a per host manifest.
 
+Namespaced functions
+====================
+
+Use the qualified name, such as Dataverse.Unmask, in the host JSON manifest,
+article title, formula reference, and TOC. The scripts preserve qualified
+function names. Calendar.* and Clock.* remain grouped under Calendar and Clock
+to match their shared reference article.
+
 Sample code for keeping the .json file up to date
 =================================================
 
@@ -190,4 +198,3 @@ public class PowerFxDocumentationTests
         Assert.Equal(expectedJson, actualJson);
     }
 }
-

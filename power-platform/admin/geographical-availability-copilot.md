@@ -4,7 +4,7 @@ description: Learn how to turn on data movement across regions for Copilots and 
 author: mikferland-msft
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/12/2026
+ms.date: 10/13/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.author: miferlan
@@ -83,7 +83,7 @@ To turn on data movement across regions, Bing search, Microsoft 365 services, an
 
     > [!IMPORTANT]
     > - The **Move data across regions** checkbox isn't displayed for environments in U.S. or government cloud regions.
-    > - In **Copilot Studio**, cross-geo data movement is currently available only to U.S.-based tenants. For tenants based outside the United States, enabling this setting doesn't enable cross-geo processing in Copilot Studio.
+    > - In **Microsoft Copilot Studio**, cross-geo data movement is currently available only to U.S.-based tenants. For tenants based outside the United States, enabling this setting doesn't enable cross-geo processing in Copilot Studio.
 
     When the **Move data across regions** checkbox is selected, your inputs (prompts) and outputs (results) might move outside of your region to the location where the generative AI feature is hosted, as described in the preceding table.
 

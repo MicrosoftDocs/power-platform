@@ -39,7 +39,7 @@ function get_formula_references {
 
             $refLines = $refContent -split '[\n\r]+'
             foreach ( $refLine in $refLines ) {
-                if ( $refLine -match '^\*\*\[(\w+)\]\(\s*([^\)\s]+)\s*\)' ) {
+                if ( $refLine -match '^\*\*\[(\w+(?:\.\w+)*)\]\(\s*([^\)\s]+)\s*\)' ) {
                     if ($refLink -contains $matches[1]) {
                         write-host "duplicate for $matches[1]"
                         if (-not ($refLink[$matches[1]] -eq $matches[2])) {
@@ -159,7 +159,7 @@ function get_func_appliesto_map {
                 continue;
             }            
             $funcName = ""
-            if ( $functionName -match '(\w+)\.' ) {
+            if ( $functionName -match '^(Calendar|Clock)\.' ) {
                 $funcName = $matches[1]
             }
             else {        
@@ -247,7 +247,7 @@ function apply_appliesto() {
         $appliesToGroup = @{}
         if ($refContent -match '(?m)[\r\n]title:([^\r\n]+)[\r\n]') {
             $titleMatch = ($errataPlus -join " ") + " " + $matches[1]
-            $refFuncNames = Select-String '(\w+)' -input $titleMatch -AllMatches
+            $refFuncNames = Select-String '(\w+(?:\.\w+)*)' -input $titleMatch -AllMatches
             foreach ( $refFuncMatchWhole in $refFuncNames.matches ) {
                 $refFuncName = $refFuncMatchWhole.Groups[1].Value
                 if ($refFuncName -eq "in") {
