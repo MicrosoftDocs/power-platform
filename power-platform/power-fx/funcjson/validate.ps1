@@ -102,7 +102,7 @@ foreach ( $jsonFile in Get-ChildItem "$powerFxPath/funcjson" -Filter *.json ) {
         if ($errataMinus -contains $functionName) {
             continue;
         }
-        if ( $functionName -match '(\w+)\.' ) {
+        if ( $functionName -match '^(Calendar|Clock)\.' ) {
             if ( -not ($jsonFuncs[$appliesToName] -contains $matches[1])) {
                 $jsonFuncs[$appliesToName] += $matches[1]
                 if (-not $funcsJson.ContainsKey($matches[1])) {
@@ -145,7 +145,7 @@ foreach ( $refFile in Get-ChildItem $powerFxPath -Filter formula-reference-*.md 
             $refLines = $refContent -split '[\n\r]+'
             $banner = $false
             foreach ( $refLine in $refLines ) {
-                if ( $refLine -match '^\*\*\[(\w+)\]\(\s*([^\)\s]+)\s*\)' ) {
+                if ( $refLine -match '^\*\*\[(\w+(?:\.\w+)*)\]\(\s*([^\)\s]+)\s*\)' ) {
                     $refFunc = $matches[1]
                     $refLink = $matches[2]
                     if ( $jsonFuncs[$appliesToName] -contains $refFunc ) {
@@ -192,7 +192,7 @@ foreach ( $refFile in Get-ChildItem "$powerFxPath/reference" -Filter *.md ) {
     $refContent = [System.IO.File]::ReadAllText( $refFile.FullName, $enc )
 
     if ($refContent -match '(?m)[\r\n]title:([^\r\n]+)[\r\n]') {
-        $refFuncNames = Select-String '(\w+)' -input $matches[1] -AllMatches
+        $refFuncNames = Select-String '(\w+(?:\.\w+)*)' -input $matches[1] -AllMatches
         foreach ( $refFuncMatchWhole in $refFuncNames.matches ) {
             $refFuncName = $refFuncMatchWhole.Groups[1].Value
             if ($refFuncName -eq "in") {
@@ -218,7 +218,7 @@ foreach ( $refFile in Get-ChildItem "$powerFxPath/reference" -Filter *.md ) {
         $funcIncludeLine = @{}; 
         ForEach ($includeLine in $($includeContent -split "`n"))
         {
-            if ($includeLine -match '^\s*\|\s*([\w\*<>/]+)\s*\|')
+            if ($includeLine -match '^\s*\|\s*([\w.\*<>/]+)\s*\|')
             {
                 $funcInlineNames = $matches[1]
                 $funcInlineNames = $funcInlineNames -replace '\*', ''

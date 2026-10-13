@@ -145,6 +145,8 @@ Other elements include:
 
 **[DataSourceInfo](reference/function-datasourceinfo.md)** – Provides information about a data source.
 
+**[Dataverse.Unmask](reference/function-dataverse-unmask.md)** – Requests the unmasked value of a secured column for a single Dataverse record.
+
 **[Date](reference/function-date-time.md)** – Returns a date/time value, based on **Year**, **Month**, and **Day** values.
 
 **[DateAdd](reference/function-dateadd-datediff.md)** – Adds days, months, quarters, or years to a date/time value.
@@ -507,5 +509,4 @@ Other elements include:
 ## Y
 
 **[Year](reference/function-datetime-parts.md)** – Retrieves the year portion of a date/time value.
-
 

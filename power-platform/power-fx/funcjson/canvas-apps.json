@@ -53,6 +53,7 @@
     "CountIf",
     "CountRows",
     "DataSourceInfo",
+    "Dataverse.Unmask",
     "Date",
     "DateAdd",
     "DateDiff",
