@@ -146,6 +146,8 @@
             href: reference/function-table-counts.md
           - name: DataSourceInfo
             href: reference/function-datasourceinfo.md
+          - name: Dataverse.Unmask
+            href: reference/function-dataverse-unmask.md
           - name: Date
             href: reference/function-date-time.md
           - name: DateAdd

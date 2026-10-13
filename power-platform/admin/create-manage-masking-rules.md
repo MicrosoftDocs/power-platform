@@ -2,13 +2,15 @@
 title: Create and manage masking rules
 description: Learn how to create and manage masking rules in Microsoft Power Apps.
 ms.component: pa-admin
-ms.date: 10/30/2025
+ms.date: 10/13/2026
 ms.topic: overview
 ms.custom: "admin-security"
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
+ms.contributor: yogupt
 ms.reviewer: ellenwehrle
+ai-usage: ai-assisted
 search.audienceType: 
   - admin
 contributors:
@@ -34,7 +36,7 @@ The environment must be a [managed environments](managed-environment-overview.md
 
 ## Create masking rules
 
-Get a predefined set of masking rules, to start, or you can create your own.
+Use a predefined set of masking rules to get started, or create your own.
 
 1. Create a solution: [Create a solution in Power Apps](/power-apps/maker/data-platform/create-solution).
 
@@ -63,12 +65,12 @@ Get a predefined set of masking rules, to start, or you can create your own.
 
 1. Enter a **Masked Character**, for example `#`.
 
-1. Enter an original value in the **Enter Plain Text Test Data** column, such as a social security number, or email address.
+1. Enter an original value in the **Enter Plain Text Test Data** column, such as a social security number or email address.
 
-1. Enter an original value in the **Enter Rich Text Test Data** column, such as a social security number, or email address (for testing Text Data type with Rich text format columns).
+1. Enter an original value in the **Enter Rich Text Test Data** column, such as a social security number or email address (for testing Text Data type with Rich text format columns).
 
     > [!NOTE]
-    > For **Rich text** columns, the raw value of the column needs to be taken into account when defining the **Regular Expression**. You can view the raw value using the Web API to query the table columns with rich text. For example, 
+    > For **Rich text** columns, take into account the raw value of the column when defining the **Regular Expression**. You can view the raw value by using the Web API to query the table columns with rich text. For example,
     > `https://<environment url>/api/data/v9.2/maskingrules(<id>)?$select=richtestdata`
     >
     > (result)
@@ -78,9 +80,9 @@ Get a predefined set of masking rules, to start, or you can create your own.
 
 10. Select **Save**.
 
-    **Masked Plain Text test data**, and **Masked Rich Text test data** display on the screen.
+    **Masked Plain Text test data** and **Masked Rich Text test data** display on the screen.
 
-Your masked values might be masked like this:
+Your masked values might look like this:
 
 | Regular expression | Original values   | Masked values   |
 |--------------------------|------------------------|--------------------|
@@ -112,7 +114,7 @@ When a customer sends you an email with sensitive data and the email has this ma
 
 ### Add a masking rule to a secured column
 
-1. Go to the [Power Apps](https://make.powerapps.com).
+1. Go to [Power Apps](https://make.powerapps.com).
 
 1. Select the [managed environment](managed-environment-overview.md) where you want to add a masking rule to a column.
 
@@ -147,9 +149,9 @@ When a customer sends you an email with sensitive data and the email has this ma
 
 ### Grant permissions to a secured column with a masking rule
 
-Permissions to read masked columns are granted using the [Column security profiles](/power-platform/admin/set-up-security-permissions-field#associate-security-profiles-and-set-permissions).
+Grant permissions to read masked columns by using [column security profiles](/power-platform/admin/set-up-security-permissions-field#associate-security-profiles-and-set-permissions).
 
-Users or Teams groups can be granted access through column security:
+Grant access to users or Teams groups through column security:
 
 :::image type="content" source="media/create-and-manage-masking-rules/edit-column-security.png" alt-text="Screenshot that shows the Edit column security panel where you can set permissions to users or Teams groups.":::
 
@@ -208,24 +210,38 @@ If you have permission to **Read** unmasked columns, you see masked values by de
 
 ### Options for viewing masked columns
 
-When a column security is configured to allow reading unmasked data, a developer can write code that's able to show unmasked data using the [UnMaskedData optional parameter](/power-apps/developer/data-platform/optional-parameters?tabs=webapi#return-unmasked-data). [Learn how to retrieve unmasked data](/power-apps/developer/data-platform/column-level-security#retrieve-unmasked-data)
+When you configure column security to allow reading unmasked data, a developer can write code that shows unmasked data by using the [UnMaskedData optional parameter](/power-apps/developer/data-platform/optional-parameters?tabs=webapi#return-unmasked-data). [Learn how to retrieve unmasked data](/power-apps/developer/data-platform/column-level-security#retrieve-unmasked-data).
+
+#### Read unmasked values in canvas apps
+
+In a canvas app, use the [Dataverse.Unmask function](../power-fx/reference/function-dataverse-unmask.md) to request the unmasked value of a secured column for one Dataverse record. Unlike the model-driven form eye-icon interaction described in the next section, you use a Power Fx formula to display the value in your app.
+
+The user's existing table and record access, column **Read** permission, and appropriate **Read unmasked** permission still apply. The function doesn't grant access, update the original value, or change the masking rule.
+
+For example, if `Gallery1` displays saved records from a single Dataverse table with a secured column named `'Sensitive reference'`, this formula requests the selected record's unmasked value:
+
+```powerfx
+Dataverse.Unmask( Gallery1.Selected, 'Sensitive reference' )
+```
+
+For setup and a reveal-and-hide interaction, see [Reveal a masked Dataverse column value](/power-apps/maker/canvas-apps/dataverse-unmask).
 
 #### Reading unmasked values on the form
 
-Users who were granted permission to [read unmasked fields](#grant-permissions-to-a-secured-column-with-a-masking-rule) see a button to read the unmasked values on the form.
+Users who have permission to [read unmasked fields](#grant-permissions-to-a-secured-column-with-a-masking-rule) see a button to read the unmasked values on the form.
 
 :::image type="content" source="media/eye-icon.png" alt-text="Select the eye icon to read the unmasked values on the form." lightbox="media/eye-icon.png":::
 
-To read the unmasked values, select the "Read" icon (:::image type="content" source="media/create-and-manage-masking-rules/icon-read.png" alt-text="A screenshot of read icon.":::).
+To read the unmasked values, select the **Read** icon (:::image type="content" source="media/create-and-manage-masking-rules/icon-read.png" alt-text="A screenshot of the Read icon.":::).
 
 All read unmasked value requests are audited.
 
 > [!NOTE]
-> The **Read** icon is currently visible only to users with the System Administrator security role with **Read Unmasked** permissions. We’re working on enabling visibility for nonadministrator users in an upcoming update.
+> The **Read** icon is currently visible only to users with the System Administrator security role with **Read Unmasked** permissions. Microsoft is working on enabling visibility for nonadministrator users in an upcoming update.
 
 #### Creating and updating unmasked values on the form
 
-When you create a new record, you enter the sensitive field as unmasked values. After you save, the form automatically refreshes, and the sensitive field is immediately masked.
+When you create a new record, enter the sensitive field as unmasked values. After you save, the form automatically refreshes, and the sensitive field is immediately masked.
 
 To update the field, you need the [**allowed read unmasked** and **allowed update** permissions](#grant-permissions-to-a-secured-column-with-a-masking-rule).
 
@@ -233,27 +249,27 @@ Select the read unmasked field button to get the unmasked value, then update the
 
 ### Audit logs on masked fields
 
-All create and update record events will show the before and after values as masked values.
+All create and update record events show the before and after values as masked values.
 
-:::image type="content" source="media/audit-1-image.png" alt-text="All create and update record events will show the before and after values as masked values." lightbox="media/audit-1-image.png":::
+:::image type="content" source="media/audit-1-image.png" alt-text="All create and update record events show the before and after values as masked values." lightbox="media/audit-1-image.png":::
 
-Read unmasked value is also logged.
+The audit log also records the unmasked value for read operations.
 
-:::image type="content" source="media/audit-2-image.png" alt-text="Read unmasked value is also logged." lightbox="media/audit-2-image.png":::
+:::image type="content" source="media/audit-2-image.png" alt-text="The audit log records the unmasked value for read operations." lightbox="media/audit-2-image.png":::
 
-## Known limitations/Not supported
+## Known limitations and unsupported scenarios
 
 ### Creating and updating unmasked values on the form
 
-When you create a new record, you enter the sensitive column as unmasked values. After you save, the form automatically refreshes, and the sensitive column is immediately masked. You can update the column but make sure that you enter the unmasked values.
+When you create a new record, enter the sensitive column as unmasked values. After you save the record, the form automatically refreshes, and the sensitive column is immediately masked. You can update the column, but ensure that you enter the unmasked values.
 
 ### Embedded images in rich text data
 
-If you're using rich text format in a large text area, like an email body and you accept embedded images, the masking rules continue to be applied to the image making it unreadable.
+If you use rich text format in a large text area, like an email body, and accept embedded images, the masking rules continue to apply to the image, making it unreadable.
 
 ### Form with added components
 
-When a form is customized and a [component](/power-apps/maker/model-driven-apps/add-move-configure-or-delete-components-on-form#add-components-for-a-column-on-the-form), such as **Rich Text Editor Control**, is added to a masked column, the entire column is masked. Users who have permissions to read and update this column can unmask it.
+When you customize a form and add a [component](/power-apps/maker/model-driven-apps/add-move-configure-or-delete-components-on-form#add-components-for-a-column-on-the-form), such as **Rich Text Editor Control**, to a masked column, the entire column is masked. Users who have permissions to read and update this column can unmask it.
 
 
 ## Related articles
