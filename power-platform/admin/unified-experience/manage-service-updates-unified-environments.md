@@ -3,7 +3,7 @@ title: Manage service updates for unified environments
 description: Learn how service updates are scheduled, configured, and validated for unified finance and operations environments.
 author: aarsh-msft
 ms.topic: concept-article
-ms.date: 09/10/2026
+ms.date: 10/13/2026
 ms.subservice: admin
 ms.author: sharmaaarsh
 ms.reviewer: ellenwehrle
@@ -12,6 +12,9 @@ ms.reviewer: ellenwehrle
 # Manage service updates for unified environments
 
 Microsoft regularly delivers service updates to unified finance and operations environments. This article explains how Microsoft communicates the service update schedule, how you can configure update behavior, and how updates are validated in sandbox environments before they're applied to production.
+
+> [!NOTE]
+> Newly created environments aren't eligible to receive service updates during the first seven days after creation. After this period, they become eligible for updates according to the published rollout schedule and their configured maintenance settings.
 
 ## Notifications
 
@@ -33,13 +36,7 @@ Maintenance settings control when production environments receive service update
 
 Use the **Maintenance Windows Days** dropdown to select the days of the week when your environment can receive service updates and PQUs. Schedule the update on one of the selected days, based on the rollout schedule for your environment.
 
-You can set the weekday selection on the **Maintenance window settings** page. A change is being rolled out that also makes this setting available on the **Finance and Operations details** card on the environment home page. During the rollout, the location of the setting might differ between environments.
-
-#### Maintenance window settings
-
-:::image type="content" source="media/maintenance-settings-selection.png" alt-text="Screenshot of the Maintenance window settings selection on Settings Page.":::
-
-:::image type="content" source="media/maintenance-settings-day-selection.png" alt-text="Screenshot of the weekday selection on the Maintenance window settings page.":::
+Set the weekday selection on the **Finance and Operations details** card on the environment home page.
 
 #### Finance and Operations details card
 
@@ -51,10 +48,6 @@ The maintenance window cadence determines whether a production environment recei
 
 - **Every update**: The environment receives the next available service update.
 - **Every other update**: The environment skips the next service update and receives the following service update.
-
-#### Maintenance window settings
-
-:::image type="content" source="media/maintenance-settings-cadence-selection.png" alt-text="Screenshot of the maintenance window cadence setting.":::
 
 #### Finance and Operations details card
 
