@@ -1,0 +1,391 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API - monitoringhub",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
+    "version": "2024-10-01"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/monitoringhub/powerplatform/triggeredAlerts/poll": {
+      "get": {
+        "tags": [
+          "Monitoring Hub"
+        ],
+        "summary": "When an alert triggers (preview)",
+        "description": "Triggers when a daily Power Platform Monitor alert rule fires in your tenant and its notification type is set to \"Connector\" or \"Email and connector\". This preview supports daily alert rules and returns alert IDs, metadata, affected resources, and a link to the Power Platform admin center. Each alert is returned as one item in the value array. To start a separate flow run for each alert, enable Split On for value.",
+        "operationId": "OnAlertTriggered",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful request. The response contains one or more alert events.",
+            "schema": {
+              "$ref": "#/definitions/MonitoringHubTriggeredAlertsPollResponse"
+            },
+            "headers": {
+              "Location": {
+                "description": "The absolute URL for the next poll, including the API version and updated trigger state.",
+                "type": "string",
+                "format": "uri"
+              },
+              "Retry-After": {
+                "description": "Recommended delay in seconds before the next poll.",
+                "type": "string"
+              }
+            }
+          },
+          "202": {
+            "description": "Accepted. No alert events are returned; there is no body and no flow run.",
+            "headers": {
+              "Location": {
+                "description": "The absolute URL for the next poll, including the API version and updated trigger state.",
+                "type": "string",
+                "format": "uri"
+              },
+              "Retry-After": {
+                "description": "Recommended delay in seconds before the next poll.",
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request. One or more request parameters are invalid."
+          },
+          "401": {
+            "description": "Unauthorized. A valid access token is required."
+          },
+          "403": {
+            "description": "Forbidden. You don't have permission to read alerts in this tenant."
+          },
+          "429": {
+            "description": "Too many requests. Retry after the indicated delay.",
+            "headers": {
+              "Retry-After": {
+                "description": "Delay in seconds before retrying.",
+                "type": "string"
+              }
+            }
+          },
+          "500": {
+            "description": "Internal server error."
+          }
+        },
+        "x-ms-summary": "When an alert triggers (preview)",
+        "x-ms-trigger": "batch",
+        "x-ms-trigger-metadata": {
+          "mode": "polling",
+          "kind": "query"
+        },
+        "x-ms-trigger-hint": "In Power Platform admin center, set a daily alert rule's notification type to Connector, then wait for the rule to fire.",
+        "x-ms-visibility": "important"
+      }
+    }
+  },
+  "definitions": {
+    "MonitoringHubTriggeredAlertsPollResponse": {
+      "description": "A batch of Power Platform Monitor alerts. Use the value array as the Split On target to start a separate flow run for each alert.",
+      "required": [
+        "value",
+        "totalCount"
+      ],
+      "type": "object",
+      "properties": {
+        "value": {
+          "description": "The alerts returned by this poll.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MonitoringHubTriggeredAlert"
+          },
+          "x-ms-summary": "Alerts"
+        },
+        "totalCount": {
+          "format": "int32",
+          "description": "The number of alerts in this response.",
+          "minimum": 0,
+          "type": "integer",
+          "x-ms-summary": "Alert Count"
+        }
+      },
+      "additionalProperties": false
+    },
+    "MonitoringHubTriggeredAlert": {
+      "description": "A Power Platform Monitor alert with its rule, metric, and affected-resource details. Unknown indicates an unrecognized value. Optional details are omitted when unavailable.",
+      "required": [
+        "alertId",
+        "alertRuleId",
+        "monitorCondition",
+        "severity",
+        "firedDateTime",
+        "productType",
+        "subProductType",
+        "scope",
+        "metric",
+        "metricUnit",
+        "operator",
+        "threshold",
+        "dataReviewPeriod",
+        "affectedResourceCount",
+        "affectedResources",
+        "affectedResourcesTruncated",
+        "alertLink",
+        "tenantId"
+      ],
+      "type": "object",
+      "properties": {
+        "alertId": {
+          "format": "uuid",
+          "description": "The ID of the alert instance.",
+          "type": "string",
+          "x-ms-summary": "Alert ID"
+        },
+        "alertRuleId": {
+          "format": "uuid",
+          "description": "The ID of the alert rule in the Power Platform admin center.",
+          "type": "string",
+          "x-ms-summary": "Alert Rule ID"
+        },
+        "monitorCondition": {
+          "description": "Whether the alert has fired or resolved. Daily alert rules currently report Fired only. Unknown indicates an unrecognized condition.",
+          "enum": [
+            "Unknown",
+            "Fired",
+            "Resolved"
+          ],
+          "type": "string",
+          "x-ms-summary": "Monitor Condition"
+        },
+        "severity": {
+          "description": "The alert severity, or Unknown when the severity isn't recognized.",
+          "enum": [
+            "Unknown",
+            "Low",
+            "Medium",
+            "High"
+          ],
+          "type": "string",
+          "example": "Medium",
+          "x-ms-summary": "Severity"
+        },
+        "firedDateTime": {
+          "format": "date-time",
+          "description": "The time the alert fired, in UTC ISO-8601 format.",
+          "type": "string",
+          "x-ms-summary": "Fired Time"
+        },
+        "resolvedDateTime": {
+          "format": "date-time",
+          "description": "The time the alert resolved, in UTC ISO-8601 format. Omitted when no resolution time is available.",
+          "type": "string",
+          "x-ms-summary": "Resolved Time"
+        },
+        "productType": {
+          "description": "The Power Platform product associated with the alert, or Unknown when unrecognized.",
+          "enum": [
+            "Unknown",
+            "PowerApps",
+            "PowerAutomate",
+            "PowerPages",
+            "CopilotStudio"
+          ],
+          "type": "string",
+          "example": "PowerApps",
+          "x-ms-summary": "Product"
+        },
+        "subProductType": {
+          "description": "The type of app, flow, or other resource associated with the alert, or Unknown when unrecognized.",
+          "enum": [
+            "Unknown",
+            "CanvasApp",
+            "ModelDrivenApp",
+            "PowerPages",
+            "CodeApp",
+            "DesktopFlow",
+            "CloudFlow",
+            "WorkQueue",
+            "Agent"
+          ],
+          "type": "string",
+          "example": "CanvasApp",
+          "x-ms-summary": "Sub-Product"
+        },
+        "scope": {
+          "description": "Whether the rule monitors a tenant, environment, or resource, or Unknown when unrecognized.",
+          "enum": [
+            "Unknown",
+            "Tenant",
+            "Environment",
+            "Resource"
+          ],
+          "type": "string",
+          "example": "Tenant",
+          "x-ms-summary": "Scope"
+        },
+        "metric": {
+          "description": "The metric monitored by the alert rule, or Unknown when the metric isn't recognized.",
+          "enum": [
+            "Unknown",
+            "CanvasAppAvailability",
+            "CanvasAppTimeToInteract",
+            "CanvasAppTimeToFullLoad",
+            "CanvasAppRecentAppLaunches",
+            "CanvasAppDataRequest",
+            "CanvasAppDataRequestLatency",
+            "CodeAppAvailability",
+            "CodeAppTimeToInteract",
+            "CodeAppRecentAppLaunches",
+            "CodeAppDataRequest",
+            "CodeAppDataRequestLatency",
+            "ModelAppAvailability",
+            "ModelDrivenAppRecentAppLaunches",
+            "CloudFlowSuccessRate",
+            "CloudFlowDuration",
+            "CloudFlowRunCount",
+            "DesktopFlowSuccessRate",
+            "DesktopFlowTimeInQueue",
+            "DesktopFlowDuration",
+            "DesktopFlowRunCount",
+            "PowerPagesAvailability",
+            "PowerPagesPageLoadTime",
+            "PowerPagesErrorRate",
+            "PowerPagesSessions",
+            "PowerPagesSessionTime",
+            "WorkQueueOutOfSla",
+            "WorkQueueItException",
+            "WorkQueueBusinessException",
+            "WorkQueueGenericException",
+            "AgentSuccessRate"
+          ],
+          "type": "string",
+          "example": "CanvasAppAvailability",
+          "x-ms-summary": "Metric"
+        },
+        "metricUnit": {
+          "description": "The unit for the threshold and observed metric values. Percent uses percentage points (95 means 95 percent), Seconds uses seconds, and Count uses item or event counts. Unknown indicates an unrecognized unit.",
+          "enum": [
+            "Unknown",
+            "Percent",
+            "Seconds",
+            "Count"
+          ],
+          "type": "string",
+          "example": "Percent",
+          "x-ms-summary": "Metric Unit"
+        },
+        "operator": {
+          "description": "How the metric is compared with the threshold. IsUnder and IsOver exclude equality; IsUnderOrEqual and IsOverOrEqual include equality. Unknown indicates an unrecognized comparison.",
+          "enum": [
+            "Unknown",
+            "IsUnder",
+            "IsOver",
+            "Equals",
+            "IsUnderOrEqual",
+            "IsOverOrEqual"
+          ],
+          "type": "string",
+          "example": "IsUnder",
+          "x-ms-summary": "Comparison Operator"
+        },
+        "threshold": {
+          "format": "double",
+          "description": "The threshold configured for the rule, expressed in Metric Unit. For example, 95 with Percent means 95 percent.",
+          "type": "number",
+          "example": 95,
+          "x-ms-summary": "Threshold"
+        },
+        "dataReviewPeriod": {
+          "description": "The time period evaluated by the rule, as an ISO-8601 duration, such as PT1H for one hour or P1D for one day.",
+          "type": "string",
+          "example": "P1D",
+          "x-ms-summary": "Data Review Period"
+        },
+        "affectedResourceCount": {
+          "format": "int32",
+          "description": "The total number of affected resources, including any resources omitted from the Affected Resources list.",
+          "minimum": 0,
+          "type": "integer",
+          "example": 3,
+          "x-ms-summary": "Affected Resource Count"
+        },
+        "affectedResources": {
+          "description": "A list of affected resource and environment IDs, with observed metric values when available. The list can be limited. Check Affected Resource Count and Affected Resources Truncated to determine whether more resources were affected.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MonitoringHubAffectedResource"
+          },
+          "x-ms-summary": "Affected Resources"
+        },
+        "affectedResourcesTruncated": {
+          "description": "True when the Affected Resources list omits one or more resources included in Affected Resource Count.",
+          "type": "boolean",
+          "example": false,
+          "x-ms-summary": "Affected Resources Truncated"
+        },
+        "alertLink": {
+          "format": "uri",
+          "description": "A link to view the alert in Power Platform admin center. Sign in with an account that has access to the alert.",
+          "type": "string",
+          "x-ms-summary": "Alert Link"
+        },
+        "tenantId": {
+          "format": "uuid",
+          "description": "The ID of your Power Platform tenant.",
+          "type": "string",
+          "x-ms-summary": "Tenant ID"
+        }
+      },
+      "additionalProperties": false
+    },
+    "MonitoringHubAffectedResource": {
+      "description": "The IDs of an affected resource and its environment, with the observed metric value when available.",
+      "required": [
+        "environmentId",
+        "resourceId"
+      ],
+      "type": "object",
+      "properties": {
+        "environmentId": {
+          "description": "The environment ID: a GUID, or Default-{tenant GUID} for the default environment.",
+          "type": "string",
+          "x-ms-summary": "Environment ID"
+        },
+        "resourceId": {
+          "format": "uuid",
+          "description": "The ID of the affected resource.",
+          "type": "string",
+          "x-ms-summary": "Resource ID"
+        },
+        "metricValue": {
+          "format": "double",
+          "description": "The observed value for this resource, expressed in the alert's Metric Unit. Omitted when unavailable.",
+          "type": "number",
+          "example": 90,
+          "x-ms-summary": "Observed Metric Value"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [
+        ".default"
+      ]
+    }
+  ]
+}

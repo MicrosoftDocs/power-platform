@@ -170,6 +170,73 @@
         }
       }
     },
+    "/authorization/environments/{environmentId}/listRoleAssignments": {
+      "post": {
+        "tags": [
+          "RoleBasedAccessControl"
+        ],
+        "summary": "Search environment role assignments.",
+        "description": "Searches role assignments for the specified environment, with optional transitive lookup up to parent scopes or down into nested scopes. Preview.",
+        "operationId": "SearchEnvironmentRoleAssignments",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The unique identifier of the environment.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "The continuation token from a previous response, used to retrieve the next page of results.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/SearchRoleAssignmentsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A page of role assignments for the environment matching the search filters.",
+            "schema": {
+              "$ref": "#/definitions/SearchRoleAssignmentsResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The body is invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
     "/authorization/environments/{environmentId}/roleAssignments": {
       "get": {
         "tags": [
@@ -323,6 +390,66 @@
           },
           "404": {
             "description": "Not Found - The role assignment does not exist."
+          },
+          "500": {
+            "description": "Internal Server Error - Unexpected server error."
+          }
+        }
+      }
+    },
+    "/authorization/listRoleAssignments": {
+      "post": {
+        "tags": [
+          "RoleBasedAccessControl"
+        ],
+        "summary": "Search role assignments.",
+        "description": "Searches role assignments by scope, principal, and permission, with optional transitive lookup up to parent scopes or down into nested scopes. Preview.",
+        "operationId": "SearchRoleAssignments",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "continuationToken",
+            "description": "The continuation token from a previous response, used to retrieve the next page of results.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/SearchRoleAssignmentsRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A page of role assignments matching the search filters.",
+            "schema": {
+              "$ref": "#/definitions/SearchRoleAssignmentsResponse"
+            }
+          },
+          "400": {
+            "description": "Bad Request - The body is invalid."
+          },
+          "401": {
+            "description": "Unauthorized - Invalid credentials or missing authentication."
+          },
+          "404": {
+            "description": "Not Found - The specified resource does not exist."
           },
           "500": {
             "description": "Internal Server Error - Unexpected server error."
@@ -524,7 +651,7 @@
             "type": "object",
             "properties": {
               "roleDefinitionId": {
-                "description": "Role definition Id",
+                "description": "Role definition ID",
                 "type": "string",
                 "example": "roleDef1"
               },
@@ -594,7 +721,7 @@
               },
               "createdOn": {
                 "format": "date-time",
-                "description": "The datetime of when the assignment was created",
+                "description": "The date and time when the assignment was created",
                 "type": "string",
                 "example": "2025-11-04T15:30:00.0000000+00:00"
               }
@@ -626,6 +753,129 @@
           "description": "The type of the principal",
           "type": "string",
           "example": "ApplicationUser"
+        }
+      }
+    },
+    "SearchRoleAssignmentsRequest": {
+      "description": "Request to search role assignments using scope, principal, and permission filters.",
+      "required": [
+        "scope"
+      ],
+      "type": "object",
+      "properties": {
+        "scope": {
+          "description": "The scope to filter role assignments by",
+          "type": "string",
+          "example": "environment/abc"
+        },
+        "principalType": {
+          "description": "The type of the principal to filter by",
+          "type": "string",
+          "example": "ApplicationUser"
+        },
+        "principalObjectId": {
+          "description": "The ID of the principal to filter by",
+          "type": "string",
+          "example": "user123"
+        },
+        "permission": {
+          "description": "The permission to filter by",
+          "type": "string",
+          "example": "Read"
+        },
+        "includeNestedScopes": {
+          "description": "Whether to include role assignments from scopes nested under the provided scope",
+          "default": false,
+          "type": "boolean"
+        },
+        "includeParentScopes": {
+          "description": "Whether to include role assignments from parent scopes up to the tenant",
+          "default": false,
+          "type": "boolean"
+        },
+        "expandEnvironmentGroups": {
+          "description": "Whether to include role assignments inherited from the environment groups an environment belongs to",
+          "default": false,
+          "type": "boolean"
+        },
+        "expandEnvironmentClusters": {
+          "description": "Whether to include role assignments inherited from the environment cluster an environment belongs to",
+          "default": false,
+          "type": "boolean"
+        },
+        "expandSecurityGroups": {
+          "description": "Whether to include role assignments inherited from the security groups the principal belongs to",
+          "default": false,
+          "type": "boolean"
+        },
+        "includeVirtualEntraRoleAssignments": {
+          "description": "Whether to include virtual role assignments granted through an Entra directory role",
+          "default": false,
+          "type": "boolean"
+        }
+      }
+    },
+    "SearchRoleAssignmentsResponse": {
+      "description": "A page of role assignments matching the search filters.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "roleAssignmentId": {
+                "description": "Role assignment ID",
+                "type": "string",
+                "example": "assignment1"
+              },
+              "principalObjectId": {
+                "description": "The ID of the assigned principal",
+                "type": "string",
+                "example": "user123"
+              },
+              "roleDefinitionId": {
+                "description": "The ID of the role definition",
+                "type": "string",
+                "example": "roleDef1"
+              },
+              "scope": {
+                "description": "The assignment scope",
+                "type": "string",
+                "example": "environment/abc"
+              },
+              "principalType": {
+                "description": "The type of the principal",
+                "type": "string",
+                "example": "ApplicationUser"
+              },
+              "createdByPrincipalType": {
+                "description": "The type of the creator principal",
+                "type": "string",
+                "example": "User"
+              },
+              "createdByPrincipalObjectId": {
+                "description": "The ID of the creator principal",
+                "type": "string",
+                "example": "user123"
+              },
+              "createdOn": {
+                "format": "date-time",
+                "description": "The date and time when the assignment was created",
+                "type": "string",
+                "example": "2025-11-04T15:30:00.0000000+00:00"
+              },
+              "source": {
+                "description": "Where the role assignment came from, such as a directly stored assignment or a virtual grant from an Entra or Dataverse role",
+                "type": "string",
+                "example": "Direct"
+              }
+            }
+          }
+        },
+        "nextLink": {
+          "description": "The URL to retrieve the next page of results, or null if there are no more pages",
+          "type": "string"
         }
       }
     }

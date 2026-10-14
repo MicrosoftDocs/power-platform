@@ -210,7 +210,7 @@
         "tags": [
           "EntitlementInsight"
         ],
-        "summary": "Get environment resource entitlement snapshots for an entitlement.",
+        "summary": "Get environment resource entitlement snapshots for an entitlement (deprecated).",
         "operationId": "GetEnvironmentResources",
         "produces": [
           "application/json"
@@ -299,7 +299,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "deprecated": true
       }
     },
     "/licensing/entitlements/{entitlementId}/licenses": {
@@ -386,7 +387,7 @@
         "tags": [
           "EntitlementInsight"
         ],
-        "summary": "Get tenant resources for an entitlement across all environments.",
+        "summary": "Get tenant resources for an entitlement across all environments (deprecated).",
         "operationId": "GetTenantResourcesAcrossEnvironments",
         "produces": [
           "application/json"
@@ -454,7 +455,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "deprecated": true
       }
     },
     "/licensing/entitlements/{entitlementId}/resources/{resourceId}/users": {
@@ -462,7 +464,7 @@
         "tags": [
           "EntitlementInsight"
         ],
-        "summary": "Get tenant user consumption by entitlement and resource ID.",
+        "summary": "Get tenant user consumption by entitlement and resource ID (deprecated).",
         "operationId": "GetTenantUserConsumptionByResource",
         "produces": [
           "application/json"
@@ -547,7 +549,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "deprecated": true
       }
     },
     "/licensing/entitlements/{entitlementId}/resourceThresholds": {
@@ -604,7 +607,8 @@
         "tags": [
           "EntitlementInsight"
         ],
-        "summary": "Get the list of tenant users entitlement snapshot for the specified entitlement.",
+        "summary": "Get tenant users' entitlement snapshots (deprecated).",
+        "description": "Gets tenant users' entitlement snapshots for the specified entitlement. This operation is deprecated.",
         "operationId": "GetTenantUsers",
         "produces": [
           "application/json"
@@ -688,7 +692,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "deprecated": true
       }
     },
     "/licensing/entitlements/{entitlementId}/users/{userId}/resources": {
@@ -696,7 +701,7 @@
         "tags": [
           "EntitlementInsight"
         ],
-        "summary": "Get resource consumption by entitlement and user ID.",
+        "summary": "Get resource consumption by entitlement and user ID (deprecated).",
         "operationId": "GetTenantResourceConsumptionByUser",
         "produces": [
           "application/json"
@@ -781,7 +786,8 @@
           "404": {
             "description": "Not Found"
           }
-        }
+        },
+        "deprecated": true
       }
     },
     "/licensing/environments/{environmentId}/entitlements": {
@@ -2849,7 +2855,7 @@
           "type": "string"
         },
         "productCategories": {
-          "description": "The entitlement product categories (e.g., D365Apps, Dataverse, Power Apps, Power Automate).",
+          "description": "The entitlement product categories (e.g., D365Apps, Dataverse, PowerApps, PowerAutomate).",
           "type": "array",
           "items": {
             "$ref": "#/definitions/ProductCategory"
@@ -3651,7 +3657,7 @@
           "type": "string"
         },
         "productCategories": {
-          "description": "The entitlement product categories (e.g., D365Apps, Dataverse, Power Apps, Power Automate).",
+          "description": "The entitlement product categories (e.g., D365Apps, Dataverse, PowerApps, PowerAutomate).",
           "type": "array",
           "items": {
             "$ref": "#/definitions/ProductCategory"

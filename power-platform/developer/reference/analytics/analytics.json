@@ -112,7 +112,7 @@
         "tags": [
           "Advisor Chat"
         ],
-        "summary": "Send an advisor chat message.",
+        "summary": "Send an advisor chat message (preview).",
         "description": "Sends a message to the advisor chat agent and returns the agent response. Supply the conversation ID returned by a previous turn to continue a multi-turn conversation.",
         "operationId": "SendAdvisorChatMessage",
         "consumes": [
@@ -164,8 +164,7 @@
             "description": "Too Many Requests"
           }
         },
-        "x-ms-summary": "Send an advisor chat message.",
-        "x-ms-visibility": "internal"
+        "x-ms-summary": "Send an advisor chat message (preview)."
       }
     },
     "/analytics/advisorRecommendations": {
@@ -180,14 +179,6 @@
           "application/json"
         ],
         "parameters": [
-          {
-            "in": "query",
-            "name": "$skipToken",
-            "description": "Skip token for the next page of recommendations.",
-            "type": "string",
-            "x-ms-visibility": "internal",
-            "x-ms-summary": "Skip Token"
-          },
           {
             "in": "query",
             "name": "api-version",
@@ -389,14 +380,6 @@
                 }
               }
             }
-          },
-          {
-            "in": "query",
-            "name": "$skipToken",
-            "description": "Skip token for the next page of resources.",
-            "type": "string",
-            "x-ms-visibility": "internal",
-            "x-ms-summary": "Skip Token"
           },
           {
             "in": "query",
