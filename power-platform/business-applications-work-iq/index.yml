@@ -55,7 +55,7 @@ landingContent:
           - text: Fine-tune semantic model signals
             url: /power-apps/maker/data-platform/fine-tune-semantic-model-signals?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
 
-  - title: Use in Copilot and agents
+  - title: Use in agents, Copilot and Cowork
     linkLists:
       - linkListType: get-started
         links:
@@ -63,6 +63,8 @@ landingContent:
             url: /power-apps/maker/data-platform/business-applications-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Work IQ CLI
             url: /microsoft-365/copilot/extensibility/work-iq/cli
+          - text: Work IQ plugin in Cowork
+            url: /microsoft-365/copilot/cowork/cowork-work-iq
 
   - title: Add business context to agents
     linkLists:
