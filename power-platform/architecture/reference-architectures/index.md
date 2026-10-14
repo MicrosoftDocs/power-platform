@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 10/08/2026
+ms.date: 10/13/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -32,6 +32,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 | **[Automate vendor invoice processing with Power Automate and AI Builder](vendor-invoice-integration.md)** | Automate vendor invoice ingestion by extracting and validating XML invoice data using Power Automate and AI Builder. |
 | **[Extract and analyze agent conversation transcripts](analyze-agent-conversation-transcripts.md)** | Extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
 | **[Migrate legacy meetings to Microsoft Teams with a conversational agent](migrate-legacy-meetings.md)** | Use a conversational agent built with Copilot Studio to help employees migrate their meetings from a legacy platform to Microsoft Teams. |
+| **[Modernize employee HR support with a multi-agent solution](modernize-hr-support.md)** | Modernize employee HR support with a multi-agent architecture that connects Copilot Studio agents to HR systems of record. |
 | **[Perform predictive data analysis with Dataverse, Fabric, and Azure AI services](ai-predictive-data-analysis.md)** | Perform predictive data analysis using Dataverse, Microsoft Fabric, and Azure AI and learn best practices for data ingestion, model training, and visualization, enabling you to build robust predictive models and actionable insights. |
 | **[Use Copilot Studio agents in model-driven apps](contextual-ai-model-driven-app.md)** | Integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
 
