@@ -62,12 +62,3 @@
       href: /microsoft-365/copilot/extensibility/work-iq/api-overview
     - name: Work IQ Dev Tools
       href: https://microsoft.github.io/wiqd/getting-started/
-  - name: Use in agents, Copilot and Cowork
-    expanded: false
-    items:
-    - name: Copilot Chat
-      url: /power-apps/maker/data-platform/business-applications-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
-    - name: Work IQ CLI
-      url: /microsoft-365/copilot/extensibility/work-iq/cli
-    - name: Work IQ plugin in Cowork
-      url: /microsoft-365/copilot/cowork/cowork-work-iq
