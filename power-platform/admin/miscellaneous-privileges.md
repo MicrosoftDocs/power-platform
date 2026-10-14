@@ -85,6 +85,6 @@ The following table describes the miscellaneous privileges, which in the new, mo
 | Use internet marketing module | prvUseInternetMarketing | [Create a quick campaign using in-app marketing (Sales)](/dynamics365/customerengagement/on-premises/developer/sample-distribute-a-quick-campaign) |
 | View Audit History | prvReadRecordAuditHistory | [Audit history](dataverse-privacy-dsr-guide.md#audit-history) |
 | View Audit Partitions | prvReadAuditPartitions | [Audit data and user activity for security and compliance](manage-dataverse-auditing.md) |
-| View Audit Summary | prvReadAuditSummary | [Power Apps activity logging](logging-powerapps.md) |
+| View Audit Summary | prvReadAuditSummary | [Power Apps activity logging](activity-logging-auditing/activity-logs-power-apps.md) |
 | Web Mail Merge | prvWebMailMerge | [Work with mail merge templates](work-mail-merge-templates.md) |
 | Write own calendar | prvWriteOwnCalendar | Not applicable |
