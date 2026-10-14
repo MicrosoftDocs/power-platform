@@ -13,7 +13,7 @@ contributors:
   - dileepsinghmicrosoft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/08/2026
+ms.date: 10/14/2026
 ms.subservice: admin
 ms.author: matow
 ms.reviewer: ellenwehrle
@@ -50,7 +50,7 @@ All Microsoft Power Platform users have request limits based on their assigned l
 |--------------|-------------------|
 | Paid licensed users for Power Platform (excludes Power Apps per App, Power Automate per flow, and Microsoft Copilot Studio) and Dynamics 365 excluding Dynamics 365 Team Member<sup>1</sup>    | 40,000     |
 | [Power Apps pay-as-you-go plan](https://go.microsoft.com/fwlink/?linkid=2173947), and paid licensed users for Power Apps per app, Microsoft 365 apps with Power Platform access, and Dynamics 365 Team Member<sup>2</sup> | 6,000        |
-| Power Automate per flow plan<sup>3</sup>, Microsoft Copilot Studio base offer, and Microsoft Copilot Studio add-on pack<sup>4</sup>   | 250,000    |
+| Power Automate per flow plan<sup>3</sup>   | 250,000    |
 | Paid Power Apps Portals login | 200 |
 
 <sup>1</sup> This category includes paid licenses for Power Apps per user plan (which includes the previous Power Apps Plan 1 and Power Apps Plan 2 licenses), Power Automate per user plan (which includes the previous Flow Plan 1 and Flow Plan 2 licenses), Dynamics 365 Sales Premium, Dynamics 365 Sales Enterprise, Dynamics 365 Sales Professional, Dynamics 365 Customer Service Enterprise, Dynamics 365 Customer Service Professional, Dynamics 365 Field Service, Microsoft Relationship Sales, Microsoft Industry Cloud, Dynamics 365 Project Service Automation, Dynamics 365 Commerce, Dynamics 365 Human Resources, Dynamics 365 Finance, Dynamics 365 Project Operations, Dynamics 365 Supply Chain Management, Dynamics 365 Customer Engagement plan, Dynamics 365 Unified Ops plan, Dynamics 365 Plan, Dynamics 365 for Operations Device, Dynamics 365 for Operations Activity, Dynamics AX Online Device, Dynamics AX Online Task, Dynamics CRM Online Enterprise, and Dynamics CRM Online Professional.
@@ -59,18 +59,33 @@ All Microsoft Power Platform users have request limits based on their assigned l
 
 <sup>3</sup> The Power Automate per flow plan allows capacity to be specifically reserved for a single flow, irrespective of the owner of the flow. This plan doesn't use the non-licensed user request limits at the tenant level.
 
-<sup>4</sup> Microsoft Copilot Studio requests are counted from Power Automate flows triggered from a Microsoft Copilot Studio chatbot. Microsoft Copilot Studio initial sessions pack and additional sessions pack both receive the same daily Power Platform Request limits.
-
 ### More licensed user request limit details
 
 Power Platform request limits are included only with paid base licenses in the Dynamics 365 *base + attach* licensing model. Attach licenses don't include separate limits. For example, if a user has Dynamics 365 Customer Service Enterprise as the base license and Dynamics 365 Sales Enterprise as an attach license, the total request limit is what the base license provides - Dynamics 365 Customer Service Enterprise.
 
 If a user has multiple paid licenses, the total number of requests allowed is the sum of requests for each license. For example, if a user has both a Dynamics 365 Customer Service Enterprise base license and a Power Apps per user license then that user has a total of 40,000 + 40,000 = 80,000 requests available per 24 hours.
 
+This rule doesn't apply to Copilot Studio packs. Learn more in [Copilot Studio request limit](#copilot-studio-request-limit).
+
 The capability to run apps built in Cowork is included with Power Apps Premium. Power Platform requests generated when running these apps count toward the license's limit of 40,000 requests per user per 24-hour period. This capability isn't included with Power Apps per app, Power Apps pay-as-you-go, or Dynamics 365 licenses that include Power Apps capabilities. Usage of AI-powered runtime, such as agents and Work IQ APIs, is not included in these limits and consumes Copilot Credits. Refer to the [Copilot Credits Guide](https://go.microsoft.com/fwlink/?linkid=2368800) and the [Microsoft Copilot Studio Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2320995) for additional information.
 
-Microsoft Copilot Studio requests are counted from Power Automate flows triggered from a Microsoft Copilot Studio chatbot or agent. Microsoft Copilot Studio initial sessions pack and additional sessions pack both receive the same daily Power Platform Request limits.
+### Copilot Studio request limit
 
+If your tenant has one or more Copilot Studio packs, Power Automate cloud flows that a Copilot Studio agent triggers can use up to 250,000 Power Platform requests per tenant in a rolling 24-hour period. This allowance is a single tenant-level limit. It doesn't increase with the number of Copilot Studio packs you buy:
+
+| Copilot Studio packs in the tenant | Power Platform requests per 24 hours |
+| --- | --- |
+| One pack | 250,000 |
+| Two or more packs | 250,000 |
+
+Agent flows use Copilot Credits instead of Power Platform requests, so this limit doesn't apply to them.
+
+If your cloud flows need more capacity, you can:
+
+- Assign a Process license to the flow. Each Process license gives the flow its own 250,000 requests per 24 hours, and you can stack up to 10 licenses on one flow. The flow must be in a solution. Learn more in [Add capacity to a Power Automate cloud flow](#add-capacity-to-a-power-automate-cloud-flow).
+- Convert the flow to an agent flow, if the workload is agent-focused. Agent flows use Copilot Credits instead of Power Platform requests. You can't undo the conversion, and the environment needs prepaid Copilot Credits or pay-as-you-go billing.
+
+These options don't raise the Copilot Studio limit. They move the workload to a different capacity model.
 
 ## Non-licensed user request limits
 
@@ -326,4 +341,3 @@ No. Non-Microsoft data integration tools are subject to the exact same limits as
 
 - [Dataverse API limits overview](/powerapps/maker/common-data-service/api-limits-overview)
 - [Power Automate limits and configuration](/power-automate/limits-and-config)
-
