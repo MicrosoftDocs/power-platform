@@ -65,6 +65,7 @@ Most of these users are hidden from user views but they can be found by using th
 | AriaMdlExporter | AriaMdlExporter@onmicrosoft.com | To export data from Engagement Insights to Managed Data Lake. | DataLakeWorkspaceAppAccess |
 | CDSFileStorage | CDSFileStorage@onmicrosoft.com | To perform background operations like Organization Lifecycle (OLC) operations, file reconciliation and migration. | FileStoreService App Access |
 | CDSUserManagement | CDSUserManagement<br />@onmicrosoft.com | To provision and synchronize users into Dataverse from Active Directory. | System Administrator |
+| CDSUserManagementApi | CDSUserManagement<br />@onmicrosoft.com | To provision and synchronize users into Dataverse from Active Directory. | System Administrator |
 |GDSGlobalDiscovery | GDSGlobalDiscovery<br />@onmicrosoft.com | To validate which environments that users can access. | Global Discovery Service  |
 | PowerPlatformAuthorization | PowerPlatformAuthorization<br />@onmicrosoft.com | To aggregate environment role assignments for tenant-wide discovery. | Global Discovery Service  |
 | BAP | BAP@onmicrosoft.com | To perform administrative operations on Dataverse linked environments: fetch user roles, provision users, assign roles in Power Platform portals.| N/A |
