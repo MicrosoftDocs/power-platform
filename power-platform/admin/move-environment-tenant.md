@@ -273,7 +273,7 @@ After the move operation completes:
 
 - The process moves the Dataverse organization from the source tenant to the destination tenant.
 - The source tenant keeps the environment but without the Dataverse organization.
-- The process creates an environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
+- The process creates a new environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
 - For an environment that includes finance and operations apps, the process moves the source environment to the destination tenant. The source environment isn't preserved in the source tenant.
 - Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
 - The managed environment needs to be re-enabled in destination tenant. The destination tenant should have the required license to enable the managed environment.
