@@ -1,5 +1,5 @@
 ---
-title:  Default settings
+title: Default settings (preview)
 description: Learn which Business Applications in Work IQ settings are on by default and how to manage them.
 ms.date: 10/07/2026
 ms.topic: concept-article
@@ -9,9 +9,13 @@ ms.author: nhelgren
 ms.reviewer: ellenwehrle
 ---
 
-# Business Applications in Work IQ default settings
+# Business Applications in Work IQ default settings (preview)
+
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 **Business Applications in Work IQ** is a set of capabilities that lets Microsoft 365 Copilot, Microsoft 365 Copilot Chat, Copilot Cowork, and Model Context Protocol (MCP) clients work with Power Apps and Dynamics 365 data.
+
+[!INCLUDE [preview-note-pp](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 Starting September 30, 2026, Microsoft turns on these capabilities by default for all new environments that aren't listed as exceptions in this article. You can use the capabilities without a separate configuration process.
 
