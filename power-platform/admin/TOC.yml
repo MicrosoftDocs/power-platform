@@ -228,6 +228,10 @@
                           href: preview-experimental-ai-models-rule.md
                         - name: External models rule
                           href: allow-llm-generative-responses.md
+                        - name: Knowledge sources for agents rule
+                          href: knowledge-sources-for-agents-rule.md
+                        - name: Skills in Copilot Studio rule
+                          href: skills-copilot-studio-rule.md
                 - name: Enable maker welcome content
                   href: welcome-content.md
                 - name: Configure maker guidelines (preview)
@@ -532,6 +536,10 @@
                       href: data-encryption.md
                 - name: Advanced connector policies
                   href: advanced-connector-policies.md
+                - name: Knowledge sources for agents
+                  href: knowledge-sources-for-agents-rule.md
+                - name: Skills in Copilot Studio
+                  href: skills-copilot-studio-rule.md
                 - name: Data policies
                   items:
                     - name: Data policies for managed environments
