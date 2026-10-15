@@ -12,7 +12,8 @@ contributors:
   - ImadYanni
   - bevans 
   - LaurentPepin
-  - udmehta 
+  - udmehta
+  - dkhurana
 ms.contributors:
   - ralinga
   - gakulka
