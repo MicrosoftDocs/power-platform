@@ -18,9 +18,11 @@ ms.collection: bap-ai-copilot
 
 # Review user, agent, and application access for Business Applications in Work IQ (preview)
 
-[!INCLUDE [cc-preview-work-iq](../../includes/cc-preview-work-iq.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 **Business Applications in Work IQ** is a capability that uses the access permissions already configured for your business applications data to determine what users, agents, and applications can see and do. As an administrator, you review what data users, agents, and applications are authorized to access and which operations they can perform, so that access aligns with the business scenarios your organization wants to support.
+
+[!INCLUDE [preview-note-pp](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 This article focuses on underlying data permissions. For Copilot availability, Work IQ MCP access, and application blocking through App Access, see [Manage AI experience access to Business Applications in Work IQ](manage-ai-experience-access.md).
 
