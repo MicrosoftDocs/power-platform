@@ -78,7 +78,7 @@ Complete these additional prerequisites for an environment that includes finance
   > Tenant-to-tenant migration isn't supported when finance and operations add-ins are installed. Don't proceed with the migration because it can cause unexpected behavior.
 
 * Contact your independent software vendor (ISV) and obtain updated license files. Existing ISV licenses will no longer be valid after the migration. You should import the updated license files after the migration is complete.
-* Create the user who becomes the finance and operations administrator in the target tenant. You'll enter this user's email address in the **New FnO Admin Email** field when you start the preparation process. The migration fails if the user doesn't exist in the target tenant.
+* Create the user who becomes the finance and operations administrator in the target tenant. You'll enter this user's email address in the **New FinOps Admin Email** field when you start the preparation process. The migration fails if the user doesn't exist in the target tenant.
 
 > [!IMPORTANT]
 > Before you migrate a production environment, first migrate a sandbox environment and test all functionality. Don't migrate the production environment until the sandbox migration and validation are successful.
@@ -234,7 +234,10 @@ After the migration request is approved, a banner with the **Begin move** button
     :::image type="content" source="media/move-environment-tenant/prevaldationmovepanel.jpg" alt-text="Screenshot of the Get ready for this tenant-to-tenant move pane showing pre-move steps.":::
 
 1. Upload the user-mapping file for validation. The file must be named **usermapping.csv**.
-1. If the environment includes finance and operations apps, enter the target tenant user's email address in the **New FnO Admin Email** box. This user becomes the finance and operations administrator after the migration. The user must exist in the target tenant, or the migration fails.
+1. If the environment includes finance and operations apps, enter the target tenant user's email address in the **New FinOps Admin Email** box. This user becomes the finance and operations administrator after the migration. The user must exist in the target tenant, or the migration fails.
+
+    :::image type="content" source="media/move-environment-tenant/newfinopsadminemail.png" alt-text="Screenshot of the Get ready for this tenant-to-tenant move pane showing the New FinOps Admin Email box.":::
+
 1. After you upload the file, select **Validate**. This action triggers a validation lifecycle operation. Wait until the operation is complete.
 
 #### When validation fails
