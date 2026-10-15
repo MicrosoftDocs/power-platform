@@ -177,7 +177,8 @@ Select the checkbox for a team name. Select **Edit team**. Only the **Team name*
 > - Team members are added or removed from the group team at run-time when the group member signs into the environment. These addition and removal group member events can be used to trigger plugin operations.
 > - You don't need to assign team members with an individual security role if your group team's security role has a [member's privilege inheritance](security-roles-privileges.md) and the security role contains at least one privilege that has User level permission.
 > - The group team name isn't automatically updated when the Microsoft Entra group name is changed. There's no impact in system operation with group name changes, but we recommend that you update it in the Power Platform admin center Teams settings.
-> - The AD group members are automatically created in the environment when they first access the environment. The users are added under the root business unit. You don't need to move the user to a different business unit if you enabled the [Modernized Business Units](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) to manage your user's data access. 
+> - The AD group members are automatically created in the environment when they first access the environment. The users are added under the root business unit. You don't need to move the user to a different business unit if you enabled the [Modernized Business Units](wp-security-cds.md#matrix-data-access-structure-modernized-business-units) to manage your user's data access.
+> - A user that is in a disabled state will not have their teams updated.
 
 ## Manage the security roles of a team
 
