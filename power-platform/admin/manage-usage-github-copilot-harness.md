@@ -2,7 +2,7 @@
 title: Manage costs for agents powered by the GitHub Copilot harness
 description: Learn how to control and monitor Copilot Credit consumption for agents powered by the GitHub Copilot harness.
 author: gmosleymsft
-ms.date: 08/28/2026
+ms.date: 10/14/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
@@ -43,6 +43,7 @@ This table lists the Copilot Studio features that consume Copilot Credits and wh
 | Feature | Covered by a Microsoft 365 Copilot license? | When Copilot Credits are billed |
 |---|---|---|
 | Standard harness agents|Yes, in Microsoft 365 channels| Billed when the user has no Microsoft 365 Copilot license, or when the agent is used in a channel outside Microsoft 365. |
+| Agent flows | Yes, when a standard harness agent calls the agent flow through the **When an agent calls the flow** trigger while a user who is authenticated with a Microsoft 365 Copilot license is interacting with the agent | Billed in all other cases, including agent flow runs that an agent starts while it runs autonomously and agent flows that use other triggers. Runs from the agent's test chat and test runs in the flow designer aren't billed. |
 | Workflows | Yes, when run inside a standard harness agent by a licensed user | Billed in all other cases. |
 | Prompts | Yes, when run inside a standard harness agent by a licensed user | Billed in all other cases. |
 | Computer use (CUA) | No | Billed for all usage. |
@@ -143,7 +144,7 @@ Use the Copilot Studio licensing pages in the Power Platform admin center to rev
 
 Review environment and agent consumption together. A tenant-level total alone might not reveal an individual environment or agent that is consuming more credits than expected.
 
-Discrete costs aren't attributed to individual makers or end users. Copilot Studio usage is billed at the environment and agent level, not at the user level. Use permissions to control who builds and runs agents, and use environment and agent limits to contain consumption.
+Copilot Credits are charged to the environment where the agent runs, from prepaid capacity or through the environment's pay-as-you-go billing plan, and not to the individual makers or users who run agents. To contain consumption, use permissions to control who builds and runs agents, and use environment and agent limits.
 
 For information about the available views, see [Manage Copilot Credits and capacity for Copilot Studio](manage-copilot-studio-copilot-credits-capacity.md).
 

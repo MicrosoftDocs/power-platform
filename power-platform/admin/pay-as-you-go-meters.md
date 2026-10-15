@@ -4,10 +4,11 @@ description: If you're using a pay-as-you-go plan, 3 meters determine how much y
 author: amiyapatr-zz
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/14/2026
+ms.date: 10/14/2026
 ms.subservice: admin
 ms.author: ampatra
 ms.reviewer: ellenwehrle
+ai-usage: ai-assisted
 contributors:
   - kenseongtan
   - ShawnNandiMSFT
@@ -18,7 +19,7 @@ search.audienceType:
 ---
 # Pay-as-you-go meters
 
-When you choose to use pay-as-you-go, usage of Power Platform services is billed to your Azure subscription using Azure meters. The following table describes each meter and how it measures usage. When you link an environment to an Azure subscription, all of these meters are automatically enabled for the environment, so any usage of Power Platform services in that environment is billed according to the details shown in this article.
+When you choose to use pay-as-you-go, Azure meters bill your Azure subscription for your usage of Power Platform services. The following table describes each meter and how it measures usage. When you link an environment to an Azure subscription through a billing plan, only the products you select in the billing plan are enabled for pay-as-you-go billing in that environment. You pay for usage of those products according to the details shown in this article.
 
 ## How do meters work?
 
