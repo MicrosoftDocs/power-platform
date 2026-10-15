@@ -61,10 +61,13 @@ Complete the following prerequisites before you start the migration process:
 * You must have admin privileges with Power Platform or Dynamics 365 to perform the migration.
 * The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For more information, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
+> [!TIP]
+> Before you migrate a production environment, we recommend that you do a test migration first. [Copy](copy-environment.md) the production environment to a newly created sandbox environment, and then migrate that sandbox environment to the destination tenant. A test migration helps you validate the preparation steps and understand what to expect before you migrate production.
+
 ### Additional prerequisites for finance and operations apps
 
-> [!IMPORTANT]
-> A tenant-to-tenant migration changes the source environment itself. Unlike a tenant migration for a Lifecycle Services-managed environment, this process doesn't preserve the source environment. To keep the source environment intact, [copy the environment](copy-environment.md) before you start the migration.
+> [!TIP]
+> A tenant-to-tenant migration changes the FinOps source environment itself. Unlike a tenant migration for a Lifecycle Services-managed environment, this process doesn't preserve the source environment. To keep the source environment intact, [Copy](copy-environment.md) and use the copied environment for the tenant-to-tenant migration.
 
 Complete these additional prerequisites for an environment that includes finance and operations apps:
 
@@ -74,7 +77,7 @@ Complete these additional prerequisites for an environment that includes finance
   > Tenant-to-tenant migration isn't supported when finance and operations add-ins are installed. Don't proceed with the migration because it can cause unexpected behavior.
 
 * Contact your independent software vendor (ISV) and obtain updated license files. Existing ISV licenses will no longer be valid after the migration. You should import the updated license files after the migration is complete.
-* Create the user who becomes the finance and operations administrator in the target tenant. You'll enter this user's email address in the **New FnO Admin Email** field when you submit the migration request. The migration fails if the user doesn't exist in the target tenant.
+* Create the user who becomes the finance and operations administrator in the target tenant. You'll enter this user's email address in the **New FnO Admin Email** field when you start the preparation process. The migration fails if the user doesn't exist in the target tenant.
 
 > [!IMPORTANT]
 > Before you migrate a production environment, first migrate a sandbox environment and test all functionality. Don't migrate the production environment until the sandbox migration and validation are successful.
@@ -267,10 +270,9 @@ After validation succeeds, a banner with the **Move environment** button appears
 
 After the move operation completes:
 
-- For an environment that doesn't include finance and operations apps:
-  - The process moves the Dataverse organization from the source tenant to the destination tenant.
-  - The source tenant keeps the environment but without the Dataverse organization.
-  - The process creates an environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
+- The process moves the Dataverse organization from the source tenant to the destination tenant.
+- The source tenant keeps the environment but without the Dataverse organization.
+- The process creates an environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
 - For an environment that includes finance and operations apps, the process moves the source environment to the destination tenant. The source environment isn't preserved in the source tenant.
 - Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
 - The managed environment needs to be re-enabled in destination tenant. The destination tenant should have the required license to enable the managed environment.
