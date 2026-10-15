@@ -2,7 +2,7 @@
 title: Manage Copilot Credits and capacity for Copilot Studio
 description: Learn how to manage Copilot Credits and capacity for Copilot Studio.
 author: amiyapatr-zz
-ms.date: 10/02/2026
+ms.date: 10/14/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
@@ -10,6 +10,7 @@ ms.author: ampatra
 ms.contributors:
  - surenmalik
  - venpe
+ - dimutako
 ms.custom: bap-template, NewPPAC
 ai-usage: ai-assisted
 search.audienceType: 
@@ -22,7 +23,7 @@ contributors:
 # Manage Copilot Credits and capacity for Copilot Studio
 
 > [!IMPORTANT]
-> Microsoft Copilot Studio is a multi-harness platform. The Power Platform admin center (PPAC) provides a unified capacity management experience across all Copilot Studio harnesses, including Copilot Chat, Standard, and GitHub Copilot. Administrators can view capacity and consumption data at the agent and environment level in PPAC. 
+> Microsoft Copilot Studio is a multi-harness platform. The Power Platform admin center (PPAC) provides a unified capacity management experience across all Copilot Studio harnesses, including Copilot Chat, Standard, and GitHub Copilot. Administrators can view capacity and consumption data at the environment and agent level, and can download consumption reports by environment, agent, or user.
 
 The Microsoft Copilot Studio capacity management experience in the Power Platform admin center enables administrators to manage Copilot Studio credit capacity and monitor overall capacity consumption. This experience provides an overview of the licensing models in use. Administrators can efficiently manage their available session capacity.
 
@@ -82,6 +83,24 @@ Start with the environment report to identify where consumption occurs. Then use
 
 :::image type="content" source="media/manage-copilot-studio-copilot-credits-capacity/copilot-environment-report.png" alt-text="Download  an environment-level report first.":::
 
+#### What the reports show
+
+The reports show consumption by environment and agent. For agents powered by the standard harness, the user report also shows consumption by user. The detailed report adds the **Product / AI feature**, **Channel**, **LLM model**, and **Knowledge sources / Tool used** columns.
+
+In the user report, usage from sessions where the user didn't sign in, for example on an agent that doesn't require authentication, can appear under the user ID `00000000-0000-0000-0000-000000000000` with no user name.
+
+The reports don't show:
+
+- Usage for a single conversation or message.
+- Token counts, such as input, output, or cached tokens.
+- The reason a row wasn't billed.
+
+To find what drove a spike, download the detailed report for the environment for a period around the spike, and then group billed credits by agent, **Product / AI feature**, and **LLM model**.
+
+To check the amounts billed to your Azure subscription for pay-as-you-go, use Azure Cost Management. For more information, see [View usage and billing information](pay-as-you-go-usage-costs.md).
+
+The agent's **Monitor** page in Copilot Studio shows the agent's billed credits over time. It shows billed credits only, so it can show less consumption than these reports, which also include non-billed credits. For more information, see [View an agent's billing consumption](/microsoft-copilot-studio/analytics-consumption).
+
 ## View credit capacity consumed per environment
 
 The **Environments** tab provides details on the Copilot Studio credit capacity consumed per environment, including the number of Copilot Credits deducted from the prepaid capacity and the units billed under pay-as-you-go plans. It also indicates the environment's status, such as whether it's within capacity or in overage, if capacity is allocated, and if pay-as-you-go is used.
@@ -99,10 +118,10 @@ View the Copilot Studio capacity consumed within that environment. The following
 - **Copilot Credit consumption details**: The grid displays a list of Copilot agents consuming capacity, including the associated product, feature name, and the count of billed versus nonbillable credits.
   
 > [!NOTE]
-> Copilot credits used to build [Apps in Copilot Studio (preview)](/microsoft-copilot-studio/apps-experience/apps-overview) are temporarily grouped in the **Top Agents by credit usage** section. Under **View all agents**, credits used to build apps are categorized as App under **Billable features**.
+> Copilot Credits used to build [Apps in Copilot Studio (preview)](/microsoft-copilot-studio/apps-experience/apps-overview) are temporarily grouped in the **Top Agents by credit usage** section. Under **View all agents**, credits used to build apps are categorized as App under **Billable features**.
 
 > [!TIP]
-> To monitor credit consumption for agent flows, look for the **Agent flow actions** feature in the **Copilot credit consumption details** grid. When prepaid capacity is exhausted, new agent flow runs are blocked while the parent agent continues to function for non-flow interactions. Flow authors also see a design-time warning in the Copilot Studio designer. To resolve enforcement, reallocate capacity, purchase more credits, or [enable pay-as-you-go billing](#overage-management). For more information, see [Agent flow enforcement](/microsoft-copilot-studio/requirements-messages-management#agent-flow-enforcement).
+> To monitor credit consumption for agent flows, look for the **Agent flow actions** feature in the **Copilot credit consumption details** grid. Agents powered by the GitHub Copilot harness can also be referred to as Process Agents in the Power Platform admin center licensing report. When the environment has no Copilot Credits available, new agent flow runs are blocked while the parent agent continues to function for non-flow interactions. Flow authors also see a design-time warning in the Copilot Studio designer. To resolve enforcement, reallocate capacity, purchase more credits, or [enable pay-as-you-go billing](#overage-management). For more information, see [Agent flow enforcement](/microsoft-copilot-studio/requirements-messages-management#agent-flow-enforcement).
 
 ### Download detailed Copilot consumption for an environment
 
@@ -126,6 +145,14 @@ In the report, use these columns to investigate consumption:
 | **Billed credits / Non-billed credits** | Compare activity that deducted credits with activity that didn't deduct credits. |
 
 Filter or sort the report to isolate unexpected usage. For example, start with billed credits, and then group the results by agent and AI feature to identify the main source of consumption.
+
+To investigate consumption by reasoning models for agents powered by the standard harness:
+
+1. Filter **Product / AI feature** to **Text and generative AI tools (premium)**.
+1. Group the results by **Agent name** and **LLM model** to find the agents and models that consumed the most credits.
+1. Multiply the credits by 100 to estimate the billed tokens behind this consumption. Reasoning models are billed at 10 Copilot Credits per 1,000 billed tokens, so each credit represents 100 billed tokens. For example, 12,000 credits represent 1,200,000 billed tokens. If your agent also uses prompt tools with the same model, part of the credits on that line comes from the prompt tools and doesn't convert this way, so the estimate is approximate. Prompt tools are measured as described in [Licensing and Copilot Credits](/ai-builder/message-management#copilot-credit-consumption-rates).
+
+To learn which tokens are billed, see [How tokens are counted for reasoning models](/microsoft-copilot-studio/requirements-messages-management#how-tokens-are-counted-for-reasoning-models).
 
 ## Manage capacity
 
@@ -184,12 +211,16 @@ Admins can set monthly consumption limits for each Copilot Studio agent, regardl
    - **Hard stop**: The agent is automatically turned off once it hits the defined limit.
   
    :::image type="content" source="media/agents-capacity-limits.png" alt-text="Tenant capacity extension in admin center." lightbox="media/agents-capacity-limits.png":::
-   
+
+> [!NOTE]
+> - An agent's monthly limit doesn't stop the agent flows that the agent calls. Agent flows are billed and checked for capacity separately, and new agent flow runs are blocked only when the environment has no Copilot Credits available. For more information, see [Agent flow enforcement](/microsoft-copilot-studio/requirements-messages-management#agent-flow-enforcement).
+> - Limits aren't applied instantly. An agent can continue to respond for some time after it reaches its limit, so set limits and notification thresholds with some margin.
+
 ## Frequently asked questions
 
-### What is a Copilot credit?
+### What is a Copilot Credit?
 
-A Copilot credit represents a single interaction between a user and a Copilot agent, counted as one unit of consumption. Each credit is defined as a request sent to Copilot that prompts a response or action.
+Copilot Credits measure agent usage. One interaction with an agent can consume several credits because each feature the agent uses in that interaction has its own rate. Some features, such as text and generative AI tools (premium), bill per 1,000 tokens instead of per interaction. To learn which tokens are billed when a reasoning model orchestrates your agent, see [How tokens are counted for reasoning models](/microsoft-copilot-studio/requirements-messages-management#how-tokens-are-counted-for-reasoning-models). For the rate of each feature, see [Billing rates and management](/microsoft-copilot-studio/requirements-messages-management). For agents powered by the GitHub Copilot harness, see [Overview of billing for agents powered by the GitHub Copilot harness](/microsoft-copilot-studio/agents-experience/billing-credit-overview).
 
 ### Why should I use a pay-as-you-go plan?
 Pay-as-you-go plans provide these benefits:
