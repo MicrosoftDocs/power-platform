@@ -18,9 +18,11 @@ ms.collection: bap-ai-copilot
 
 # Business Applications in Work IQ administration (preview)
 
-[!INCLUDE [cc-preview-work-iq](../../includes/cc-preview-work-iq.md)]
+[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
 **Work IQ** is Microsoft's context and intelligence layer for AI at work. **Business Applications in Work IQ** is the connection between that layer and the business applications data stored across Dynamics 365 and Power Apps, enabling AI experiences and coding agents to work with your organization's business data and context.
+
+[!INCLUDE [preview-note-pp](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
 
 These connections support experiences ranging from answering business questions to powering business processes and operations through skills and agents, and helping developers build business solutions. As an administrator, your role is to help your organization adopt these capabilities in a trusted and responsible way—understanding who and what can access your business data, deciding what participates and where it can be used, and maintaining visibility into AI activity and spending.
 
