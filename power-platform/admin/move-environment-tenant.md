@@ -1,7 +1,7 @@
 ---
 title: Tenant-to-tenant migrations 
 description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 10/05/2026
+ms.date: 10/15/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 author: gakulka 
@@ -33,7 +33,19 @@ Be aware of the following considerations before starting a tenant-to-tenant migr
 * **Unsupported environment types**: Default, developer, trial, and Teams environments aren't supported. Government Community Cloud (GCC) to public clouds and vice versa are also not supported.
 * The following components aren't supported: Dynamics 365 Customer Voice, Omnichannel for Customer Service, and component library.
 * Specific steps required for Dynamics 365 Customer Insights - Journeys, Dynamics 365 Customer Insights - Data, Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio. The steps are called out in the premigration and post-migration steps.
-* Environments that include finance and operations apps are supported when they meet the [additional prerequisites for finance and operations apps](#additional-prerequisites-for-finance-and-operations-apps).
+* Environments that include finance and operations apps are now supported when they meet the [additional prerequisites for finance and operations apps](#additional-prerequisites-for-finance-and-operations-apps).
+
+  The rollout schedule for this feature is:
+
+  | Station | Release date |
+  |---|---|
+  | Station 1 | October 19, 2026 |
+  | Station 2 | October 26, 2026 |
+  | Station 3 | October 27, 2026 |
+  | Station 4 | October 29, 2026 |
+  | Station 5 | November 2, 2026 |
+  | Station 6 | November 9, 2026 |
+
 * You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
 * Once you create and configure users, you must [create a user mapping file](#create-a-user-mapping-file), which is described later in this article.
 * If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
