@@ -61,6 +61,8 @@ For most customers, business applications are available in Microsoft 365 Copilot
    - If your pilot group isn't included or **Business Applications in Work IQ available to Copilot** is off, turn on **Business Applications in Work IQ available to Copilot** for your pilot group.
 1. Select **Save** if you made changes.
 
+Learn more in [Use the Business Applications in Work IQ plugin in Cowork](/microsoft-365/copilot/cowork/cowork-work-iq).
+
 ## Turn on Work IQ in your environment
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).

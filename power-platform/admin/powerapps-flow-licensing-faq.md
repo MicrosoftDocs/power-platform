@@ -2,7 +2,7 @@
 title: Power Platform licensing FAQs
 description: Learn FAQs for licensing Power Apps, Power Automate, Copilot Studio, Power Pages, Dataverse, Dataverse for Teams, and AI Builder.
 ms.topic: faq
-ms.date: 08/14/2026
+ms.date: 10/08/2026
 author: chrisgarty
 contributors:
   - Antoine2F
@@ -65,6 +65,9 @@ Yes, non-profit, government, and academic pricing is available in respective pro
 ### Is there a plan for developers?
 
 Yes, we have a free Developer Plan to learn and build skills on Power Apps, Power Automate, and Microsoft Dataverse. To learn more, go to [Power Apps Developer Plan](https://powerapps.microsoft.com/en-us/developerplan/).
+
+> [!IMPORTANT]
+> Unmanaged developer environments, including those that Power Platform creates when you sign up for the Power Apps Developer Plan, are deprecated. Starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unmanaged-developer-env-creation-phase-date.md)], signing up for the Developer Plan no longer creates a developer environment. Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan).
 
 ### What happens when I use all the data storage, file storage, and flow runs included in my per user licenses?
 
@@ -510,6 +513,8 @@ Since flows, as well as certain Power Automate features like approvals, run insi
 
 ### Dataverse for Teams
 
+[!INCLUDE [deprecation-dataverse-for-teams-environments](../includes/deprecation-dataverse-for-teams-environments.md)]
+
 #### Are the existing Power Platform use rights included with Microsoft 365 licenses changing?
 
 To deliver a comprehensive low-code extensibility platform for Microsoft Teams, Power Platform capabilities available as part of select Microsoft 365 subscriptions are expanding with the introduction of Dataverse for Teams.
@@ -532,7 +537,7 @@ Dataverse for Teams and Microsoft Copilot Studio for Teams capabilities are avai
 
 #### How is a Dataverse for Teams environment created?
 
-Creation of Dataverse for Teams environments isn't available from the Power Platform admin center. Creation of new Dataverse for Teams environments is only possible from within Teams.
+You can't create Dataverse for Teams environments from the Power Platform admin center. You can only create new Dataverse for Teams environments from within Teams. Starting [!INCLUDE [dv4t-creation-ends-date](../includes/dv4t-creation-ends-date.md)], you can't create new Dataverse for Teams environments.
 
 #### Can Dataverse for Teams be used outside of Teams?
 
@@ -703,6 +708,8 @@ Free trials for Microsoft Power Apps last 30 days. For Power Automate, they're a
 #### Is there a way to develop my Power Apps and Power Automate skills for more than 90 days?
 
 Yes. With the Power Apps Developer Plan, you get a free environment for individual use with functionality including Dataverse. In this environment, you can explore and learn everything about Power Automate and Power Apps for free, but the Power Apps Developer Plan isn't intended for production use.
+
+Unmanaged developer environments, including those created by using the Power Apps Developer Plan, are deprecated and can't be created starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unmanaged-developer-env-creation-phase-date.md)]. Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan).
 
 To learn more, go to [pricing and explore](https://powerapps.microsoft.com/pricing/).
 
