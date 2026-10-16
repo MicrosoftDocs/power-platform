@@ -4,9 +4,10 @@ description: "Learn about the Power Apps Developer Plan features, capacity limit
 author: MKBajwa-PM
 ms.subservice: developer
 ms.author: mbajwa
-ms.date: 03/31/2026
+ms.date: 10/08/2026
 ms.reviewer: jdaly
 ms.topic: concept-article
+ai-usage: ai-assisted
 contributors:
  - mattp123
  - JimDaly
@@ -14,6 +15,8 @@ contributors:
  - leeclontz
 ---
 # Power Apps Developer Plan Guide: Features and Benefits
+
+[!INCLUDE [deprecation-unmanaged-developer-environments](../includes/deprecation-unmanaged-developer-environments.md)]
 
 The Power Apps Developer Plan provides a free development environment to build and test applications with Power Apps, Power Automate, and Microsoft Dataverse. This comprehensive plan enables you to:
 
@@ -88,6 +91,29 @@ business. For more information, see [Publish your app on Marketplace](/power-ap
 
 The following section lists frequently asked questions relevant to the Power Apps Developer Plan. For more information about different types of environments including the developer environment, see [Types of environments in Power Platform](/power-platform/admin/environments-overview#types-of-environments).
 
+### What happens to my developer environment because of the deprecation of unmanaged developer environments?
+
+It depends on whether your developer environment is a managed environment:
+
+- **Unmanaged developer environments**, including the environment that you get when you sign up for the Developer Plan, are suspended starting [!INCLUDE [unmanaged-developer-env-suspended-phase-date](../includes/unmanaged-developer-env-suspended-phase-date.md)] and deleted starting [!INCLUDE [unmanaged-developer-env-deleted-phase-date](../includes/unmanaged-developer-env-deleted-phase-date.md)].
+- **Developer environments that are managed environments** aren't affected.
+
+To keep your work, choose one of these options before [!INCLUDE [unmanaged-developer-env-suspended-phase-date-start](../includes/unmanaged-developer-env-suspended-phase-date.md)]:
+
+- **Convert to a managed environment (recommended)**: If you have the appropriate licensing, ask your admin to enable Managed Environments on your developer environment. Managed Environments use rights aren't included in the Developer Plan. Learn more in [Managed Environments licensing](../admin/managed-environment-licensing.md).
+- **Try premium capabilities in a trial**: If you only need to try premium capabilities, use a [standard trial environment](../admin/trial-environments.md). Standard trial environments remain available.
+- **Move your solutions**: Export your solutions and import them into another environment, such as a sandbox environment.
+
+Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan).
+
+### Does the developer environment type still exist?
+
+Yes. The developer environment type continues to exist, but only as a managed developer environment. Going forward, each user can create only one managed developer environment. Existing managed developer environments aren't changed, even if a user already has more than one.
+
+### Can I still sign up for the Power Apps Developer Plan?
+
+Starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unmanaged-developer-env-creation-phase-date.md)], signing up for the Developer Plan no longer creates a developer environment, and you can't create new unmanaged developer environments. Ask your admin about a managed developer environment, for example through [environment routing](../admin/default-environment-routing.md), or another environment for development and testing.
+
 ### What should I do if I reach the capacity limits of the environment?
 
 There's a limited capacity provided because this environment is meant for development and test purposes, not for production use. The capacity limits are:
@@ -110,9 +136,11 @@ see [Solutions](/power-apps/maker/data-platform/solutions-overview).
 
 You can continue using your Power Apps Developer Plan for free as long as there's active usage and no abuse of the plan (for example, apps aren't used for production purposes and the capacity limits aren't exceeded). Environments created using Power Apps Developer Plan that are inactive for the last 30 days are automatically disabled. See [Timeline for unused developer environments](../admin/automatic-environment-cleanup.md#timeline-for-unused-developer-environments)
 
+However, unmanaged developer environments are deprecated. Regardless of activity, unmanaged developer environments are suspended starting [!INCLUDE [unmanaged-developer-env-suspended-phase-date](../includes/unmanaged-developer-env-suspended-phase-date.md)] and deleted starting [!INCLUDE [unmanaged-developer-env-deleted-phase-date](../includes/unmanaged-developer-env-deleted-phase-date.md)]. Learn more in [What happens to my developer environment because of the deprecation of unmanaged developer environments?](#what-happens-to-my-developer-environment-because-of-the-deprecation-of-unmanaged-developer-environments)
+
 ### Can I get or create multiple developer environments?
 
-Yes. You have one developer environment, which is created for you by Power Platform when you sign up for the Developer Plan. You can create up to three environments in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+Until [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unmanaged-developer-env-creation-phase-date.md)], you have one developer environment, which Power Platform creates for you when you sign up for the Developer Plan, and you can create up to three environments in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/). Starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unmanaged-developer-env-creation-phase-date.md)], you can't create new unmanaged developer environments, and each user can create only one managed developer environment. Existing managed developer environments aren't changed.
 
 ### What's the difference between the Power Apps Plan Trial and Power Apps Developer Plan? Which one should I sign up for?
 
@@ -148,7 +176,7 @@ Yes. To prevent users from creating developer environments, go to [Control envir
 
 ### Does the developer environment get auto-created with a developer plan?
 
-Yes. A developer environment is created when the user signs up for the developer plan using any of the experiences in the [Power Apps Developer Plan website](https://www.microsoft.com/power-platform/products/power-apps/free), [Power Apps](https://make.powerapps.com), or [Power Platform admin center](https://admin.powerplatform.microsoft.com). However, when you delete a developer environment, or you need more developer environments, you need to create them manually.
+Yes. A developer environment is created when the user signs up for the developer plan by using any of the experiences in the [Power Apps Developer Plan website](https://www.microsoft.com/power-platform/products/power-apps/free), [Power Apps](https://make.powerapps.com), or [Power Platform admin center](https://admin.powerplatform.microsoft.com). However, when you delete a developer environment, or you need more developer environments, you need to create them manually. Starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unmanaged-developer-env-creation-phase-date.md)], signing up for the Developer Plan no longer creates a developer environment.
 
 ### Does the Power Apps Developer plan include Power Automate RPA use rights?
 
@@ -160,7 +188,7 @@ No. However, users can start an AI Builder trial to try out the AI Builder capab
 
 ### Can a developer environment be a managed environment?
 
-A developer environment can become a managed environment. However, managed environment use rights aren't included in the developer plan. As a result, end users require premium licenses to run their assets in a managed developer environment.
+A developer environment can become a managed environment. However, the developer plan doesn't include managed environment use rights. As a result, end users need premium licenses to run their assets in a managed developer environment. The deprecation of unmanaged developer environments doesn't affect developer environments that are managed environments.
 
 ### Why does a banner appear with apps running in the developer environment?
 

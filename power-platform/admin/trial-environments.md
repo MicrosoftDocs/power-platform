@@ -8,7 +8,7 @@ ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 06/17/2025
+ms.date: 10/08/2026
 ms.contributors:
   - lsuresh
 contributors:
@@ -186,7 +186,7 @@ Administrative operations (copy, backup, restore, and reset) aren't supported fo
 
 ### How can I retain my data and resources if I don't have a way to convert the trial (standard) environment to a production environment?
 
-You can export your resources and data to another environment if you want to retain them longer than the trial period. We recommend that you create a production environment or an individual environment (with the [Power Apps Developer Plan](https://powerapps.microsoft.com/communityplan/)) and export your resources to that environment. 
+If you want to keep your data and resources beyond the trial period, export them to another environment. Create a production environment or a managed developer environment and export your resources to that environment. Unmanaged developer environments, including those created with the [Power Apps Developer Plan](../developer/plan.md), are deprecated. Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan). 
 
 Here are some guidelines for exporting resources.
 

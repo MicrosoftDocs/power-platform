@@ -410,7 +410,7 @@ When a tenant exceeds its entitled storage capacity, it enters a series of progr
 |**Early notification**     | Effective consumption is more than 85%        | Informational or warning notifications appear.        | Review growth and begin remediation. |
 |**Stage 1: Restricted**     | The tenant first exceeds 100% effective consumption (time zero, or T0).       | Critical notifications appear. Environment create, copy, restore, and recover operations are blocked.       | Free storage, archive eligible data, add capacity, configure pay-as-you-go billing, or request a capacity extension.|
 |**Stage 2: Administration mode**     | The overage remains unresolved for 30 days from T0        | In addition to the restrictions applied in Stage 1, access to affected sandbox environments is limited to administrators.       | Administrators can temporarily take affected sandbox environments out of Administration mode to perform remediation activities. However, the storage overage lifecycle and timer continue to progress until the overage is resolved.|
-|**Stage 3: Disabled**     | The overage remains unresolved for 90 days from T0        | In addition to the restrictions applied in Stage 1, sign-in to affected sandbox environments is blocked for all users, including administrators. The environment and its data remain retained.  | Return the tenant to compliance, and then re-enable the environment. Customer can reach the Microsoft support to explore data export options.  |
+|**Stage 3: Disabled**     | The overage remains unresolved for 90 days from T0        | In addition to the restrictions applied in Stage 1, sign-in to affected sandbox environments is blocked for all users, including administrators. The environment and its data remain retained.  | Return the tenant to compliance, and then re-enable the environment. If tenant remains in overage, customer can reach the Microsoft support for the sole purpose of directing data export options, if needed. |
 
 The date the tenant first exceeds 100% effective consumption is the start of the lifecycle timeline. Resolving the effective deficit before the next stage prevents further progression. Sandbox environments with pay-as-you-go enabled do not progress through the storage overage lifecycle.
 
@@ -676,15 +676,15 @@ Exiting administration mode can restore access temporarily, but it doesn't:
 
 - Resolve the tenant storage overage.
 - Add storage entitlement.
-- Pause or reset the lifecycle timeline.
+- Pause or reset the overage lifecycle timeline.
 - Prevent the environment from progressing to the next stage if the tenant remains over capacity.
-- Complete a tenant-level remediation to stop the lifecycle.
+- Complete a tenant-level remediation to stop the overage lifecycle.
 
 ### Re-enable a disabled sandbox
 
 Before re-enabling a disabled sandbox, bring the tenant back within its effective storage entitlement by following one of these [remediation options](#manage-a-tenant-level-capacity-overage).
 
-After capacity validation confirms that the tenant is within entitlement, an administrator can re-enable each affected environment in the Power Platform admin center. If the customer remains in an overage state, they can contact Microsoft Support to explore available data export options.
+After capacity validation confirms that the tenant is within entitlement, an administrator can re-enable each affected environment in the Power Platform admin center. If the customer remains in an overage state, they can contact Microsoft Support for the sole purpose of directing data export options, if needed.
 
 ## Frequently asked questions about storage (FAQ)
 

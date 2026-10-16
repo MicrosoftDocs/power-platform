@@ -3,7 +3,7 @@ title: Environment routing
 description: Learn how to use the environment routing governance feature. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/25/2026
+ms.date: 10/06/2026
 ms.collection: bap-ai-copilot
 author: akadrno
 ms.custom: NewPPAC
@@ -34,6 +34,7 @@ Dataverse is available in developer environments, and these environments are [ma
 > - By default, all developer environments created through environment routing are managed.
 > - Managed environments aren't included as an entitlement in the Developer Plan when users run their assets. For more information about managed environments and the Developer Plan, see [Power Apps Developer Plan Guide: Features and Benefits](../developer/plan.md).
 > - **Non-managed** developer environments are **unaffected** by this feature. Learn more about the developer environment and developer plan in [Power Apps Developer Plan Guide: Features and Benefits](../developer/plan.md).
+> - Unmanaged developer environments are deprecated, and they're suspended starting [!INCLUDE [unmanaged-developer-env-suspended-phase-date](../includes/unmanaged-developer-env-suspended-phase-date.md)]. Environment routing creates managed developer environments, which aren't affected by this deprecation. Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan).
 > - The **Environment assignment: Developer** setting is applicable for manual creation of developer environments and environment routing is unaffected by this setting.
 
 ## Multi-rule environment routing

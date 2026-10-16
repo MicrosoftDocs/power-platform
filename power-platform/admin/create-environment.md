@@ -4,7 +4,7 @@ description: Learn how to create and manage environments in the Power Platform a
 author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/06/2026
+ms.date: 10/08/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: mbajwa
@@ -38,7 +38,7 @@ To create an environment, these requirements must be true:
    | --- | --- | --- | 
    | Microsoft 365 Plans |No | No |
    | Dynamics 365 Teams Plans   |No | No |
-   | Power Apps Developer Plan   |No | No | 
+   | Power Apps Developer Plan<sup>\*</sup>   |No | No | 
    | Dynamics 365 trial | Yes (one) | No| 
    | Dynamics 365 Plans |Yes (one)| Yes | 
    | Power Apps plan |Yes (one)| Yes | 
@@ -47,6 +47,8 @@ To create an environment, these requirements must be true:
    | Power Automate trial |Yes (one)| Yes | 
    | Microsoft Copilot Studio trial plan |Yes | No | 
    | Microsoft Copilot Studio plan | No | Yes | 
+
+  <sup>\*</sup>Unmanaged developer environments, including those created with the Power Apps Developer Plan, are deprecated. Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan). New unmanaged developer environments can't be created starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unmanaged-developer-env-creation-phase-date.md)]. 
 
   You can also create a developer environment. For more information about developer environment, see [Create a developer environment](/power-platform/developer/create-developer-environment).
   

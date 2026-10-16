@@ -3,7 +3,7 @@ title: Managed environments overview
 description: Use managed environments to view and control your Dynamics 365 applications with less effort.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 02/23/2026
+ms.date: 10/08/2026
 author: mihaelablendea 
 ms.author: mihaelab 
 ms.reviewer: ellenwehrle
@@ -55,6 +55,8 @@ A managed environment encompasses, but isn't limited to, the following features:
 > Managed environments are included as an entitlement with standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses. Trial licenses can be used to license users in managed environments, with the restrictions specific to these types of licenses. To learn more about managed environment licensing, see [Licensing](managed-environment-licensing.md) and [Licensing overview for Microsoft Power Platform](pricing-billing-skus.md).
 >
 > Managed environment isn't included as an entitlement in the Developer Plan when users run their assets. For more information about managed environments and the Developer Plan, see [Power Apps Developer Plan Guide: Features and Benefits](../developer/plan.md).
+>
+> Unmanaged developer environments are deprecated. To keep an existing developer environment, enable Managed Environments on it before [!INCLUDE [unmanaged-developer-env-suspended-phase-date](../includes/unmanaged-developer-env-suspended-phase-date.md)]. Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan).
 
 ## Related content
 

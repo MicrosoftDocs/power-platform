@@ -4,7 +4,7 @@ description: "Create a developer environment with the Power Apps Developer Plan 
 author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
-ms.date: 08/04/2026
+ms.date: 10/08/2026
 ms.reviewer: jdaly
 ms.topic: how-to
 search.audienceType: 
@@ -16,6 +16,8 @@ contributors:
 ---
 # Create a developer environment with the Power Apps Developer Plan
 
+[!INCLUDE [deprecation-unmanaged-developer-environments](../includes/deprecation-unmanaged-developer-environments.md)]
+
 To get the most out of the [Power Apps Developer Plan](plan.md) as a developer, you need an Azure account and a work account. This article guides you through the process of creating a Power Platform environment and a test tenant if needed.
 
 ## Choose an account for your developer environment
@@ -25,6 +27,9 @@ If you have a [work account](/power-apps/maker/signup-for-powerapps#what-email-a
 If you don't have a work account or prefer a Sandbox tenant to learn Power Platform, read the information in the [create a test tenant](#how-to-create-a-test-tenant) section later in this article before signing up for the developer environment.
 
 ## Sign up for the Power Apps Developer Plan
+
+> [!NOTE]
+> The sign-up steps in this section create an unmanaged developer environment until [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unmanaged-developer-env-creation-phase-date.md)]. After that date, signing up for the Developer Plan no longer creates a developer environment. Ask your admin for a developer environment that's a managed environment, for example through [environment routing](../admin/default-environment-routing.md). Each user can create only one managed developer environment. To try premium capabilities, you can use a [standard trial environment](../admin/trial-environments.md).
 
 The Power Apps Developer Plan provides a free development environment where you can build and test apps by using Power Apps, Power Automate, and Microsoft Dataverse.
 
