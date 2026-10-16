@@ -75,6 +75,10 @@ Review ownership, apps, and dependencies before deleting an environment. Don't a
 
 Contact Microsoft Support with the tenant ID, affected environment IDs, UTC creation times, originating app-building experience, and the settings you applied.
 
+### Will routing move Personal Environments from one environment group to another.
+
+If a personal environment is in a group, it stays there. However, if the personal environment is not in any group, it will be added to the environment group matching the environment routing rule.
+
 ## Related information
 
 - [Copilot Managed Runtime default governance settings (Frontier)](/microsoft-365/admin/manage/apps/governance)
