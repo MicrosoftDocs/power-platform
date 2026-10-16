@@ -8,7 +8,8 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: edoyle
-ms.date: 08/22/2026
+ms.date: 10/16/2026
+ai-usage: ai-assisted
 ---
 
 # Power Platform governance overview and strategy
@@ -18,8 +19,9 @@ Power Platform governance refers to the set of policies, practices, and tools us
 In this section, we explore some best practices to follow when establishing and implementing a governance strategy for Power Platform.
 
 1. [Designate a Power Platform admin](pp-admin.md). Assign a dedicated administrative role to oversee operations, ensure compliance, and optimize performance.
-1. [Support management at scale](govern-at-scale.md). Implement governance practices that support the efficient and secure management of Power Platform environments at scale, ensuring consistency and control across the organization.
-1. [Establish an environment strategy](environment-strategy.md). Develop a comprehensive strategy for creating, managing, and decommissioning environments to support organizational goals.
-1. [Implement reactive governance controls](reactive-governance.md). Manage and address actions and issues as they arise.
-1. [Manage Dataverse for Teams environments](teams-environment-strategy.md). Develop strategies for managing Dataverse for Teams environments.
-1. [Manage the default environment](manage-default-environment.md). Implement best practices for managing the default environment.
+2. [Support management at scale](govern-at-scale.md). Implement governance practices that support the efficient and secure management of Power Platform environments at scale, ensuring consistency and control across the organization.
+3. [Establish an environment strategy](environment-strategy.md). Develop a comprehensive strategy for creating, managing, and decommissioning environments to support organizational goals.
+4. [Implement reactive governance controls](reactive-governance.md). Manage and address actions and issues as they arise.
+5. [Use agentic governance with Power Platform Admin in Cowork](agentic-governance.md). Ask tenant governance questions, explore findings, and turn answers into reports and recurring briefings.
+6. [Manage Dataverse for Teams environments](teams-environment-strategy.md). Develop strategies for managing Dataverse for Teams environments.
+7. [Manage the default environment](manage-default-environment.md). Implement best practices for managing the default environment.
