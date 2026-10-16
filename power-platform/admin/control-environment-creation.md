@@ -4,7 +4,7 @@ description: Control who can create and manage environments in the Power Platfor
 author: Mattp123
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/17/2024
+ms.date: 10/06/2026
 ms.subservice: admin
 ms.author: matp
 ms.reviewer: ellenwehrle
@@ -46,6 +46,9 @@ In the **Tenant settings** page, select one of these environment-type creation s
 > Environments created before the restriction remain manageable by their creators even after the restriction is applied. Restriction prevents any new environments being created and managed. 
 
 ## Developer environments
+
+> [!IMPORTANT]
+> Unmanaged developer environments are deprecated. Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan). Starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unmanaged-developer-env-creation-phase-date.md)], users can't create new unmanaged developer environments, regardless of the **Developer environment assignments** setting. The developer environment type continues to exist, but only as a managed developer environment, and each user can create only one managed developer environment. Existing managed developer environments aren't changed. Starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unmanaged-developer-env-creation-phase-date.md)], this setting controls who can create managed developer environments. 
 
 Developer environments are special environments intended only for use by the owner. You can restrict users from creating developer type environments from Power Platform admin center.
 To restrict users from creating developer type environments, admins can use following PowerShell command:

@@ -2,7 +2,7 @@
 title: Back up and restore environments
 description: Learn how to back up and restore Power Platform environments.
 ms.topic: how-to
-ms.date: 09/25/2026
+ms.date: 10/06/2026
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta
@@ -33,8 +33,8 @@ Manual backups are backups that you initiate. Create manual backups before major
 | --- | --- | --- |
 | Production\* | 7 days | 7 days |
 | Sandbox | 7 days | 7 days |
-| Developer | 7 days | 7 days |
-| Teams | 7 days | 7 days |
+| Developer\*\*\* | 7 days | 7 days |
+| Teams\*\*\* | 7 days | 7 days |
 | Default\*\* | 7 days | Not supported |
 | Trial | Not backed up | Not supported |
 | Trial (subscription-based) | Not backed up | Not supported |
@@ -42,6 +42,8 @@ Manual backups are backups that you initiate. Create manual backups before major
 \* For production [managed environments](managed-environment-overview.md), you can extend the retention period beyond seven days, to a maximum of 28 days, through the Power Platform admin center or PowerShell. Learn more in [Change the backup retention period for production managed environments](#change-the-backup-retention-period-for-production-managed-environments).
 
 \*\* You can't restore a system backup over the default environment. Instead, Power Platform admins can use the Power Platform admin center to restore a default environment system backup to a developer environment. Learn more in [Backup and restoration of the default environment](../guidance/adoption/manage-default-environment.md#back-up-and-restore-the-default-environment).
+
+\*\*\* Unmanaged developer environments and Dataverse for Teams environments are deprecated. Backups of these environments don't replace the actions required to keep your apps, flows, and data before the environments are disabled. Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan) and [Deprecation of Microsoft Dataverse for Teams environments](../important-changes-coming.md#deprecation-of-microsoft-dataverse-for-teams-environments).
 
 System backup and restore operations aren't supported for trial-type environments. To use the full set of features, including system backup and restore options, go to [Convert either type of trial environment to a production environment](trial-environments.md#convert-either-type-of-trial-environment-to-a-production-environment).
 

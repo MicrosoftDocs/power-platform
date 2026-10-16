@@ -4,7 +4,7 @@ description: Administer and manage a Microsoft Dataverse for Teams environment
 author: paulliew
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/15/2026
+ms.date: 10/06/2026
 ms.subservice: admin
 ms.author: matp
 ms.reviewer: ellenwehrle
@@ -18,6 +18,8 @@ ms.custom:
 # About the Microsoft Dataverse for Teams environment 
 
 <!-- fwlink 2143567 -->
+
+[!INCLUDE [deprecation-dataverse-for-teams-environments](../includes/deprecation-dataverse-for-teams-environments.md)]
 
 Introduced in September 2020, *Microsoft Dataverse for Teams* is a built-in, low-code data platform for Microsoft Teams that empowers users to build custom apps, agents, and flows in Microsoft Teams by using Power Apps, Microsoft Copilot Studio, and Power Automate. Dataverse for Teams—built on Microsoft Dataverse—provides relational data storage, rich data types, enterprise-grade governance, and one-click solution deployment to the Microsoft Teams app store. More information: [Dataverse for Teams overview](/powerapps/teams/overview-data-platform)
 
@@ -33,7 +35,7 @@ Note the following regarding access to Microsoft Power Platform apps in Teams:
 
 - Apps created in Microsoft Teams that use Dataverse for Teams will be accessible outside of Microsoft Teams in a web browser if you have a trial or standalone Power Apps license. However, note the following:
   - Apps created in Teams are not displayed in the list of apps in make.powerapps.com or Power Apps mobile app. The only way to run these apps is to launch them in a web browser from Teams using **Go to website** or **Open in browser** in the Power Apps mobile app.
-  - When run outside of Teams, the Teams integration object’s values won’t be available.
+  - When run outside of Teams, the Teams integration object's values aren't available.
 
 - For any standalone Power Apps or Power Automate usage, which also includes Dataverse API access, the Dataverse for Teams environment needs to upgrade to Dataverse.  
 
@@ -55,10 +57,10 @@ This section provides a summary of key lifecycle operations that will be allowed
 |Backup     | Automated backups and labeled backups can be taken. Admins can view them in the Power Platform admin center. Backups will be available for up to 7 days.        |  Yes       |
 |Restore     | Teams environments only support self-restore. Only point-in-time restores to the same environment will be possible. Note: if the environment has been upgraded, the point-in-time restore will only be available starting from the moment it was upgraded. | Yes        |
 |Copy     | Not available by default for Dataverse for Teams environments.        | No        |
-|Create     | Only through Microsoft Teams. Note: Dataverse for Teams environments will be limited to a 1:1 mapping to the Microsoft Teams team it was created in and bound to the Microsoft 365 group associated with the team.        | No        |
+| Create | Only through Microsoft Teams. Dataverse for Teams environments are limited to a 1:1 mapping to the Microsoft Teams team it was created in and bound to the Microsoft 365 group associated with the team. You can't create new Dataverse for Teams environments starting [!INCLUDE [dv4t-creation-ends-date](../includes/dv4t-creation-ends-date.md)]. | No |
 |Delete     | The environment can be deleted by the team owner. The environment will be deleted automatically if the team it was created in is also deleted.| Yes  |
 |Reset     | Not available by default for Dataverse for Teams environments.        | No        |
-|Upgrade     | Unlocks all the functionality of Dataverse services for the environment.         | Yes        | 
+| Upgrade | Unlocks all the functionality of Dataverse services for the environment. Upgrade environments that you want to keep before [!INCLUDE [dv4t-env-decommision-date](../includes/dv4t-env-decommision-date.md)]. | Yes |
 
 The lifetime of the environment will be tied to the team it was created in. If you upgrade an environment to Dataverse, the 1:1 mapping isn't guaranteed because the environment can be used by applications outside of Microsoft Teams. The upgraded environment is bound by the lifecycle rules associated with the Power Apps license and the configuration of the environment.
 
@@ -137,7 +139,7 @@ There's a difference in the models for adding users to an environment with a Dat
 ## Dataverse for Teams environment settings and actions
 <!-- fwlink 2133713 2134780(settings) 213924(backup/restore) -->
 
-Access requires sufficient permissions, such as System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don’t have the correct permissions, contact your system administrator.
+Access requires sufficient permissions, such as the System Administrator or System Customizer role. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
 To change settings for a Dataverse for Teams environment, follow these steps:
 
@@ -191,6 +193,9 @@ Select **Upgrade to production**. More information: [Upgrade process](#upgrade-p
 
 ## Capacity limits
 
+> [!NOTE]
+> The capacity limits and enforcement actions in this section apply to existing Dataverse for Teams environments until they're upgraded or decommissioned as part of the [Dataverse for Teams deprecation](../important-changes-coming.md#deprecation-of-microsoft-dataverse-for-teams-environments). Starting [!INCLUDE [dv4t-creation-ends-date](../includes/dv4t-creation-ends-date.md)], you can't create new Dataverse for Teams environments.
+
 The consumption of capacity by Dataverse for Teams environments won't count toward the tenant's capacity limits. Instead, we provide a pool of capacity for Dataverse for Teams environments, which is separate from the tenant's Microsoft Power Platform Dataverse capacity pool. Capacity isn't transferable between these two pools.  
 
 **Per-environment limits on Dataverse for Teams environments**: Each Dataverse for Teams environment provides 2 GB of combined database and file storage, with a portion of this amount reserved for system use. 
@@ -231,6 +236,8 @@ As mentioned for the environment-level enforcement, any existing apps will still
 ## Upgrade process 
 <!-- fwlink 2122620 for failure need 1GB -->
 <!-- fwlink 2134779 for for a few thing to know -->
+
+Because Microsoft is deprecating Dataverse for Teams environments, upgrading to Dataverse is the supported way to keep the apps, flows, agents, and data in a Dataverse for Teams environment. Upgrade each environment that you want to keep before [!INCLUDE [dv4t-env-decommision-date](../includes/dv4t-env-decommision-date.md)]. Microsoft decommissions environments that aren't upgraded on [!INCLUDE [dv4t-env-decommision-date](../includes/dv4t-env-decommision-date.md)].
  
 The high-level flow and business rules for upgrading a Dataverse for Teams environment follow. 
 
@@ -263,6 +270,9 @@ After upgrade, the following applies to the newly upgraded environment:
 - Adding a new Microsoft Teams Template app to the former team doesn't create a new Dataverse for Teams environment for the team. 
 
 ## Ability to govern Dataverse for Teams
+
+> [!NOTE]
+> Starting [!INCLUDE [dv4t-creation-ends-date](../includes/dv4t-creation-ends-date.md)], you can't create new Dataverse for Teams environments, regardless of the Microsoft Teams app permission policies described in this section.
 
 The ability to create apps or agents with the new Power Apps and Microsoft Copilot Studio apps is enabled by default in Microsoft Teams. Admins can enable or disable it for specific users by using the Microsoft Teams apps permission policies in Microsoft Teams.
 
@@ -302,7 +312,7 @@ You need to add at least one environment to save your policy. Any environments y
    > [!div class="mx-imgBorder"] 
    > ![UpdatePolicyEnvironmentsForTeams function.](media/update-policy-environments-teams.png "UpdatePolicyEnvironmentsForTeams function")
 
-   1. Both the name and display name of the policy are required. If the policy name and display name don’t match, the policy isn't updated.   
+   1. Provide both the name and display name of the policy. If the policy name and display name don't match, the function doesn't update the policy.   
       1. `OnlyEnvironmentsPolicyName` – the name (guid) of the policy 
       2. `OnlyEnvironmentsPolicyDisplayName` – the display name of the policy 
    2. (Optional) Additionally, you can exclude these Teams environments from another policy. This policy must be scoped to apply to *Exclude certain environments*.  

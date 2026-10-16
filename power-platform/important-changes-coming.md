@@ -1,7 +1,8 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 10/05/2026
+ms.date: 10/06/2026
+ai-usage: ai-assisted
 ms.topic: concept-article
 ms.subservice: admin
 searchScope:
@@ -24,6 +25,193 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means Microsoft intends to remove the feature or capability in a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability no longer works. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of Microsoft Dataverse for Teams environments
+
+Microsoft Dataverse for Teams environments are deprecated. The deprecation happens in three phases. You can't create new Dataverse for Teams environments starting [!INCLUDE [dv4t-creation-ends-date](includes/dv4t-creation-ends-date.md)]. Existing Dataverse for Teams environments that aren't upgraded to Dataverse are suspended on [!INCLUDE [dv4t-env-suspension-date](includes/dv4t-env-suspension-date.md)] and decommissioned on [!INCLUDE [dv4t-env-decommision-date](includes/dv4t-env-decommision-date.md)].
+
+### Why is this change needed?
+
+Dataverse for Teams provides a subset of Microsoft Dataverse capabilities. For example, it limits each environment to 2 GB of storage, doesn't provide direct API access, and doesn't support custom connectors, desktop flows, or AI Builder. Consolidating on Dataverse gives makers and admins one data platform with the full set of capabilities, governance controls, and lifecycle operations. Apps, flows, and agents built on Dataverse can still be used in Microsoft Teams.
+
+### Timeline
+
+| Phase | Date | What happens |
+|---|---|---|
+| **Creation ends** | [!INCLUDE [dv4t-creation-ends-date](includes/dv4t-creation-ends-date.md)]| You can't create new Dataverse for Teams environments from Microsoft Teams, including when you create your first app or agent in a team or install an app from the Teams app catalog. |
+| **Environments suspended** | [!INCLUDE [dv4t-env-suspension-date](includes/dv4t-env-suspension-date.md)] | Dataverse for Teams environments that aren't upgraded to Dataverse are suspended. Their apps, flows, agents, and data are no longer available. |
+| **Environments decommissioned**| [!INCLUDE [dv4t-env-decommision-date](includes/dv4t-env-decommision-date.md)] | Dataverse for Teams environments that aren't upgraded to Dataverse are decommissioned. Their apps, flows, agents, and data are no longer available. |
+
+### Impact
+
+After [!INCLUDE [dv4t-creation-ends-date](includes/dv4t-creation-ends-date.md)]:
+
+- Users can't create a Dataverse for Teams environment by creating an app, flow, or agent in a team, or by installing a Dataverse for Teams app from the Teams app catalog.
+- Existing Dataverse for Teams environments continue to work until [!INCLUDE [dv4t-env-suspension-date](includes/dv4t-env-suspension-date.md)].
+
+Starting [!INCLUDE [dv4t-env-decommision-date](includes/dv4t-env-decommision-date.md)]:
+
+- Dataverse for Teams environments that aren't upgraded to Dataverse are decommissioned. Their apps, flows, agents, and data are no longer available.
+
+#### What *isn't* affected
+
+- Dataverse for Teams environments that are upgraded to Dataverse before [!INCLUDE [dv4t-env-decommision-date](includes/dv4t-env-decommision-date.md)].
+- Other Microsoft Teams assets, such as teams, channels, chats, SharePoint sites, and files. Decommissioning a Dataverse for Teams environment applies only to the Dataverse for Teams environment and its resources.
+- Apps, flows, and agents built in Dataverse environments and added to Microsoft Teams.
+
+### Action required
+
+**For admins**:
+
+1. Identify your Dataverse for Teams environments. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), go to **Manage** > **Environments** and filter the list where **Type** is **Microsoft Teams**. Use the **Last activity** column to find environments that are still in use.
+1. For each environment that you still need, plan the upgrade:
+    - Ensure your tenant has at least as much available Dataverse capacity as the size of the environment. After the upgrade, the environment's consumption counts toward your tenant's Dataverse capacity.
+    - Ensure users have the Power Platform licenses they need. After the upgrade, apps, flows, and agents in the environment require Power Apps, Power Automate, or Copilot Studio licenses.
+1. [Upgrade the Dataverse for Teams environment to Dataverse](admin/about-teams-environment.md#upgrade-process) before [!INCLUDE [dv4t-env-decommision-date](includes/dv4t-env-decommision-date.md)]. For agents, see [Upgrade a Dataverse for Teams environment for Copilot Studio](/microsoft-copilot-studio/admin-upgrade-dataverse-teams).
+1. Let the environment's team owners know about the change. After the upgrade, makers find and edit their apps and flows in [Power Apps](https://make.powerapps.com) and [Power Automate](https://make.powerautomate.com).
+1. Environments that you don't need don't require any action. They're decommissioned on [!INCLUDE [dv4t-env-decommision-date](includes/dv4t-env-decommision-date.md)].
+
+**For makers**:
+
+- Ask your admin to upgrade any Dataverse for Teams environment that you still use.
+- Build new apps, flows, and agents in a Dataverse environment, and then add them to Microsoft Teams. Learn more in [Embed an app in Teams](/power-apps/teams/embed-teams-app).
+
+### Frequently asked questions
+
+#### What's the recommended migration path for Dataverse for Teams environments?
+
+Upgrade the Dataverse for Teams environment to a full Dataverse environment. The upgrade keeps the environment's apps, flows, agents, and data, and unlocks the full set of Dataverse capabilities. Learn more in [Upgrade process](admin/about-teams-environment.md#upgrade-process) and [Upgrade a Dataverse for Teams environment for Copilot Studio](/microsoft-copilot-studio/admin-upgrade-dataverse-teams). To compare capabilities before and after the upgrade, see [How are Dataverse for Teams and Dataverse different?](/power-apps/teams/data-platform-compare)
+
+#### Who can upgrade a Dataverse for Teams environment?
+
+A tenant admin, such as a Power Platform admin, upgrades the environment in the Power Platform admin center. Learn more in [Upgrade a Dataverse for Teams environment to production](admin/about-teams-environment.md#upgrade-a-dataverse-for-teams-environment-to-production).
+
+#### What do I need before I upgrade?
+
+- **Capacity**: Your tenant must have at least as much available Dataverse capacity as the size of the Dataverse for Teams environment. After the upgrade, the environment's consumption counts toward your tenant's Dataverse capacity.
+- **Licenses**: After the upgrade, users need Power Apps, Power Automate, or Copilot Studio licenses to use the apps, flows, and agents in the environment.
+
+#### What happens to my apps, flows, agents, and data after the upgrade?
+
+They stay in the upgraded environment. After the upgrade:
+
+- Apps can run inside and outside Microsoft Teams.
+- Makers find and edit apps and flows in [Power Apps](https://make.powerapps.com) and [Power Automate](https://make.powerautomate.com).
+- The environment's lifecycle is no longer tied to the team. If the team is deleted, the upgraded environment remains.
+- Team owners are assigned the System Administrator role in the environment.
+
+#### Can I move my solutions to an existing Dataverse environment instead of upgrading?
+
+Yes. Export your apps, flows, and tables as a solution from the Dataverse for Teams environment, and then import the solution into a Dataverse environment. Learn more in [Move customizations between environments](/power-apps/teams/import-solution-in-teams).
+
+#### Can I create new Dataverse for Teams environments?
+
+No. Starting [!INCLUDE [dv4t-creation-ends-date](includes/dv4t-creation-ends-date.md)], new Dataverse for Teams environments can't be created. Build new apps, flows, and agents in a Dataverse environment, and add them to Microsoft Teams.
+
+#### What happens if I don't upgrade my Dataverse for Teams environment?
+
+The environment is decommissioned on [!INCLUDE [dv4t-env-decommision-date](includes/dv4t-env-decommision-date.md)], and its apps, flows, agents, and data are no longer available. The team and its other assets, such as channels, chats, SharePoint sites, and files, aren't affected.
+
+### Learn more
+
+- [About the Microsoft Dataverse for Teams environment](admin/about-teams-environment.md)
+- [How are Dataverse for Teams and Dataverse different?](/power-apps/teams/data-platform-compare)
+- [Automatic deletion of Power Platform environments](admin/automatic-environment-cleanup.md)
+
+## Deprecation of unmanaged developer environments and the Power Apps Developer Plan
+
+Unmanaged developer environments are deprecated. This deprecation includes the developer environments that Power Platform creates when you sign up for the free Power Apps Developer Plan. The deprecation happens in three phases. You can't create new unmanaged developer environments starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](includes/unmanaged-developer-env-creation-phase-date.md)]. Existing unmanaged developer environments are suspended starting [!INCLUDE [unmanaged-developer-env-suspended-phase-date](includes/unmanaged-developer-env-suspended-phase-date.md)] and deleted starting [!INCLUDE [unmanaged-developer-env-deleted-phase-date](includes/unmanaged-developer-env-deleted-phase-date.md)]. For details, see the [Timeline](#developer-environment-deprecation-timeline).
+
+Developer environments that are [managed environments](admin/managed-environment-overview.md) aren't affected. This exception includes the personal developer environments that [environment routing](admin/default-environment-routing.md) creates, which are managed by default.
+
+The developer environment type continues to exist, but only as a managed developer environment. Going forward, each user can create only one managed developer environment. Existing managed developer environments aren't changed, even if a user already has more than one.
+
+### Why is this change needed?
+
+Unmanaged developer environments sit outside many of the governance controls that admins rely on, such as Managed Environments policies, usage insights, and sharing limits. Moving development work to managed environments gives admins consistent visibility and control over every environment in their tenant, while makers keep a personal space to build and test.
+
+
+### Timeline
+
+This table describes the deprecation phases:
+
+<a id="developer-environment-deprecation-timeline"></a>
+
+| Phase | Date | What happens |
+|---|---|---|
+| **Creation ends** | [!INCLUDE [unmanaged-developer-env-creation-phase-date](includes/unmanaged-developer-env-creation-phase-date.md)] | Signing up for the Power Apps Developer Plan no longer creates a developer environment. Users can't create new unmanaged developer environments from Power Apps, the Power Platform admin center, PowerShell, or the Power Platform CLI. |
+| **Suspension starts** | [!INCLUDE [unmanaged-developer-env-suspended-phase-date](includes/unmanaged-developer-env-suspended-phase-date.md)] | Starting on this date, existing unmanaged developer environments are suspended. Their apps, flows, agents, Power Pages developer sites, and data aren't available. |
+| **Deletion starts** | [!INCLUDE [unmanaged-developer-env-deleted-phase-date](includes/unmanaged-developer-env-deleted-phase-date.md)] | Starting on this date, suspended unmanaged developer environments are deleted. |
+
+### Impact
+
+This change affects users who rely on the Power Apps Developer Plan to provision a developer environment and users who have an unmanaged developer environment. Starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](includes/unmanaged-developer-env-creation-phase-date.md)], users can create only managed developer environments, with a limit of one per user. Existing managed developer environments aren't changed.
+
+Existing unmanaged developer environments keep working until [!INCLUDE [unmanaged-developer-env-suspended-phase-date-start](includes/unmanaged-developer-env-suspended-phase-date.md)]. If you don't convert an environment to a managed environment or move its solutions before then, its makers and users lose access to its apps, flows, agents, Power Pages developer sites, and data.
+
+#### What *isn't* affected
+
+- Developer environments that are managed environments, including developer environments created by environment routing.
+- Production, sandbox, trial, and default environments.
+- Solutions that you export from an unmanaged developer environment before it's suspended.
+
+### Action required
+
+**For admins**:
+
+1. Identify unmanaged developer environments. In the [Power Platform admin center](https://admin.powerplatform.microsoft.com), go to **Manage** > **Environments** and filter the list where **Type** is **Developer** and **Managed** is **No**. Use the **Last activity** column to find environments that are still in use.
+1. For each environment that you still need, choose one of these options before [!INCLUDE [unmanaged-developer-env-suspended-phase-date-start](includes/unmanaged-developer-env-suspended-phase-date.md)]:
+    - If users have the appropriate licensing, [enable Managed Environments](admin/managed-environment-enable.md) on the developer environment to convert it to a managed developer environment. Managed Environments use rights aren't included in the Power Apps Developer Plan. Users need a premium license to run apps and flows in a managed developer environment. Learn more in [Managed Environments licensing](admin/managed-environment-licensing.md).
+    - Move the solutions to a sandbox or other supported environment. Learn more in [Solutions overview](/power-apps/maker/data-platform/solutions-overview).
+1. To give makers a personal space to build and test, turn on [environment routing](admin/default-environment-routing.md). Environment routing creates managed developer environments for makers. Each user can create only one managed developer environment.
+1. Review your **Developer environment assignments** tenant setting. Learn more in [Control environment creation](admin/control-environment-creation.md).
+
+**For makers and developers**:
+
+- Export the solutions in your developer environment so you have a copy of your work. Learn more in [Export solutions](/power-apps/maker/data-platform/export-solutions).
+- Ask your admin to convert your developer environment to a managed environment or to provide another environment for development and testing.
+- To try premium capabilities, use a [standard trial environment](admin/trial-environments.md). Standard trial environments remain available.
+
+### Frequently asked questions
+
+#### What's the recommended migration path for unmanaged developer environments?
+
+If the users who build and run apps, flows, and agents in the environment have the appropriate licensing, convert the environment to a managed environment by [enabling Managed Environments](admin/managed-environment-enable.md) on it before [!INCLUDE [unmanaged-developer-env-suspended-phase-date-start](includes/unmanaged-developer-env-suspended-phase-date.md)]. The environment keeps its apps, flows, agents, and data, and remains a developer environment.
+
+#### What licensing do I need to convert a developer environment to a managed environment?
+
+Managed Environments use rights aren't included in the Power Apps Developer Plan. Managed Environments are included as an entitlement with standalone Power Apps, Power Automate, Microsoft Copilot Studio, Power Pages, and Dynamics 365 licenses. Learn more in [Managed Environments licensing](admin/managed-environment-licensing.md).
+
+#### I don't have licensing for Managed Environments. What are my options?
+
+- **To try premium capabilities**: Use a [standard trial environment](admin/trial-environments.md). Standard trial environments remain available. Export your solutions before the trial ends if you want to keep your work.
+- **For ongoing development and testing**: Export your solutions and import them into a sandbox or other environment that your organization provides. Learn more in [Export solutions](/power-apps/maker/data-platform/export-solutions).
+
+#### Does the developer environment type still exist?
+
+Yes. The developer environment type continues to exist, but only as a managed developer environment. Going forward, each user can create only one managed developer environment. Existing managed developer environments aren't changed, even if a user already has more than one.
+
+#### How do users get a managed developer environment?
+
+An admin can convert an existing developer environment to a managed environment, or turn on [environment routing](admin/default-environment-routing.md) to automatically create a managed developer environment for each maker.
+
+#### Can I still sign up for the Power Apps Developer Plan?
+
+Starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](includes/unmanaged-developer-env-creation-phase-date.md)], signing up for the Power Apps Developer Plan no longer creates a developer environment.
+
+#### What happens to Power Pages sites in an unmanaged developer environment?
+
+Sites in an unmanaged developer environment are suspended and deleted along with the environment. To keep a site, convert the environment to a managed environment before [!INCLUDE [unmanaged-developer-env-suspended-phase-date-start](includes/unmanaged-developer-env-suspended-phase-date.md)].
+
+#### What happens if I don't take any action?
+
+Your unmanaged developer environment is suspended starting [!INCLUDE [unmanaged-developer-env-suspended-phase-date](includes/unmanaged-developer-env-suspended-phase-date.md)] and deleted starting [!INCLUDE [unmanaged-developer-env-deleted-phase-date](includes/unmanaged-developer-env-deleted-phase-date.md)]. Export your solutions before [!INCLUDE [unmanaged-developer-env-suspended-phase-date-start](includes/unmanaged-developer-env-suspended-phase-date.md)] if you want to keep a copy of your work.
+
+### Learn more
+
+- [Power Apps Developer Plan Guide: Features and Benefits](developer/plan.md)
+- [Power Platform environments overview](admin/environments-overview.md)
+- [Managed Environments overview](admin/managed-environment-overview.md)
 
 ## Deprecation of help chatbot in Power Automate maker portal
 

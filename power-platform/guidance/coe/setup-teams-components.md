@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/15/2026
+ms.date: 10/06/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: edoyle
@@ -16,6 +16,8 @@ search.audienceType:
 # Set up Dataverse for Teams environment management
 
 [!INCLUDE [guidance-deprecate-coe-kit](../../includes/guidance-deprecate-coe-kit.md)]
+
+[!INCLUDE [deprecation-dataverse-for-teams-environments](../../includes/deprecation-dataverse-for-teams-environments.md)]
 
 > [!IMPORTANT]
 > Flows post adaptive cards to users using the [Microsoft Teams](/connectors/teams/) connector. The ability to post adaptive cards in Teams isn't available in Government Community Cloud (GCC) High and Department of Defence (DoD).

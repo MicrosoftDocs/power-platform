@@ -3,7 +3,7 @@ title: Licensing overview for Microsoft Power Platform
 description: Learn about Microsoft Power Platform license types and where to find current licensing, capacity, and consumption guidance.
 author: dileepsinghmicrosoft
 ms.topic: overview
-ms.date: 08/25/2026
+ms.date: 10/06/2026
 ms.subservice: admin
 ms.author: dileeps
 ms.reviewer: ellenwehrle
@@ -74,6 +74,8 @@ Admins can view and allocate supported capacity in the **Licensing** area of the
 ## Power Apps Developer Plan
 
 The free [Power Apps Developer Plan](/power-apps/maker/developer-plan) provides an individual developer environment for building and testing apps, flows, and other solution assets. Developer environments are intended for development and test use, not production workloads.
+
+[!INCLUDE [deprecation-unmanaged-developer-environments](../includes/deprecation-unmanaged-developer-environments.md)]
 
 ## Pay-as-you-go plan
 

@@ -5,10 +5,11 @@ description: Discover best practices for managing Dataverse for Teams environmen
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 08/20/2025
+ms.date: 10/06/2026
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: edoyle
+ai-usage: ai-assisted
 search.audienceType:
   - admin
 ms.custom:
@@ -19,6 +20,8 @@ ms.custom:
 
 # Establish governance policies to manage Microsoft Dataverse for Teams environments
 
+[!INCLUDE [deprecation-dataverse-for-teams-environments](../../includes/deprecation-dataverse-for-teams-environments.md)]
+
 Microsoft Dataverse for Teams empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Microsoft Copilot Studio, and Power Automate. When a Teams owner adds this capability to their team, a Microsoft Power Platform environment with a Dataverse for Teams database is created and linked to the team. Learn more in [About Microsoft Dataverse for Teams environments](../../admin/about-teams-environment.md).
 
 Dataverse for Teams honors the existing data governance paradigms of Power Platform and enables access control in the Microsoft Teams admin center. In addition, the Power Platform admin center provides monitoring of dedicated capacity usage and [data policies](../../admin/wp-data-loss-prevention.md).
@@ -28,6 +31,18 @@ Dataverse for Teams simplifies environment lifecycle management and user securit
 Dataverse for Teams is a fully embedded experience. Governance controls specific to Power Platform are also provided directly in the context of the Microsoft Teams admin center. Learn more in [Manage Microsoft Power Platform apps in the Microsoft Teams admin center](/microsoftteams/manage-power-platform-apps).
 
 Use Power Platform to manage Power Platform. Using Power Automate, send welcome emails to owners of new Dataverse for Teams environments and request a business justification for their environments. Central IT engages with new makers and ensures that Dataverse for Teams capacity is used effectively in the tenant and distributed to the most important business use cases. Use similar workflows to apply specific data policies to Dataverse for Teams environments as needed and to invoke cleanup of unused assets, which can be repurposed for more compelling scenarios in the tenant.
+
+## Plan for the deprecation of Dataverse for Teams environments
+
+Because Dataverse for Teams environments are deprecated, shift your governance focus from controlling new environments to migrating or retiring existing ones. Use the following steps to plan the transition:
+
+1. **Inventory.** In the Power Platform admin center, list all environments where **Type** is **Microsoft Teams**. Record each environment's team, owners, size, and last activity date.
+1. **Classify.** Work with team owners to decide which environments to upgrade to Dataverse and which to let expire. Use the business justifications that you already collect, along with usage data, to prioritize.
+1. **Prepare capacity and licensing.** Ensure your tenant has enough Dataverse capacity for the environments that you upgrade. Ensure users of those apps, flows, and agents have the required Power Apps, Power Automate, or Copilot Studio licenses.
+1. **Upgrade.** [Upgrade the selected environments to Dataverse](../../admin/about-teams-environment.md#upgrade-process) before they're decommissioned on [!INCLUDE [dv4t-env-decommision-date](../../includes/dv4t-env-decommision-date.md)]. Environments that aren't upgraded are suspended on [!INCLUDE [dv4t-env-suspension-date](../../includes/dv4t-env-suspension-date.md)], but they can still be upgraded before they're decommissioned. After the upgrade, apply your standard environment governance, such as [environment groups](../../admin/environment-groups.md), data policies, and Managed Environments.
+1. **Communicate.** Let makers know where to find their apps and flows after the upgrade, and where to build new solutions. Point makers to Dataverse environments for new work instead of Dataverse for Teams.
+
+The governance practices in the rest of this article apply to existing Dataverse for Teams environments until they're upgraded or suspended.
 
 ## Govern environment creation
 

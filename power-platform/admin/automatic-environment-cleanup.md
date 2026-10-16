@@ -3,7 +3,8 @@ title: Automatic deletion of Power Platform environments
 description: Learn about the automatic processes that identify and disable Power Platform environments and how you can prevent them from being deleted.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 05/15/2026
+ms.date: 10/08/2026
+ai-usage: ai-assisted
 ms.subservice: admin
 author: matapg007
 ms.author: matgupta 
@@ -83,6 +84,14 @@ Environment admins can see when an environment was last used by checking the **L
 1. See **Last activity** column for environment in question.
 
 ## Developer environments
+
+> [!IMPORTANT]
+> The inactivity-based cleanup described in this section is separate from the [deprecation of unmanaged developer environments](../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan). 
+>
+> Regardless of activity, unmanaged developer environments are suspended starting [!INCLUDE [unmanaged-developer-env-suspended-phase-date](../includes/unmanaged-developer-env-suspended-phase-date.md)] and deleted starting [!INCLUDE [unmanaged-developer-env-deleted-phase-date](../includes/unmanaged-developer-env-deleted-phase-date.md)]. Until then, the inactivity schedule in this section continues to apply. 
+> 
+> Developer environments that are managed environments aren't affected by the deprecation and continue to follow the [60-day inactivity schedule](#timeline-for-unused-developer-environments-that-are-managed-environments).
+
 Power Platform automatically removes developer environments that aren't being used based on the following schedule. After 30 days of inactivity, the system automatically disables environments. If, after 15 days, you don't [re-enable the environment](#re-enable-a-disabled-environment), the system deletes the environment. You have seven days to [recover the environment](recover-environment.md) once it's deleted.
 
 As part of this cleanup process, you can expect the following outcomes:
@@ -144,6 +153,9 @@ The environment administrators receive email notifications according to the foll
 A warning message appears on the **Environments** list page and **Environment** page when the default environment is within 30 days of deletion.
 
 ## Dataverse for Teams environments
+
+> [!IMPORTANT]
+> The inactivity-based cleanup described in this section is separate from the [deprecation of Dataverse for Teams environments](../important-changes-coming.md#deprecation-of-microsoft-dataverse-for-teams-environments). Regardless of activity, Dataverse for Teams environments that aren't upgraded to Dataverse are suspended on [!INCLUDE [dv4t-env-suspension-date](../includes/dv4t-env-suspension-date.md)] and decommissioned on [!INCLUDE [dv4t-env-decommision-date](../includes/dv4t-env-decommision-date.md)]. Until the suspension date, the inactivity schedule in this section continues to apply.
 
 Power Platform automatically removes [Microsoft Dataverse for Teams environments](about-teams-environment.md) from your tenant that are left inactive. An environment is first disabled after 90 days of inactivity. And then, deleted if administrators don't take any action and the environment is left disabled for 30 days. Administrators have seven days to recover deleted environments.
 

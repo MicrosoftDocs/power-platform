@@ -4,7 +4,7 @@ description: "This article describes a sample process for managing environment c
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/21/2026
+ms.date: 10/06/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: edoyle
@@ -62,7 +62,7 @@ Power Platform Admins can also use the Environment Capacity tab of the [Power BI
 No, the approved capacity is a soft limit for reporting and alerting only. The environment can still consume more capacity. The goal of the capacity alerting process is to allow you to have a better insight into which environments are consuming the tenant's capacity and place a soft limit on the environment. If you exceed storage at your organization's tenant level, [certain operations](/power-platform/admin/capacity-storage#changes-for-exceeding-storage-capacity-entitlements) - such as creating, copying, restoring or recovering an environment - will no longer be possible. Learn more: [About Microsoft Dataverse storage capacity](/power-platform/admin/capacity-storage#changes-for-exceeding-storage-capacity-entitlements)
 
 **How is the capacity for Dataverse for Teams environments managed?**
-Dataverse for Teams environments capacity is capped at two (2) GB of combined database and file storage and is separate from this process.
+Dataverse for Teams environments capacity is capped at 2 GB of combined database and file storage and is separate from this process. Dataverse for Teams environments are deprecated. After you [upgrade a Dataverse for Teams environment to Dataverse](../../admin/about-teams-environment.md#upgrade-process), its consumption counts toward your tenant's Dataverse capacity. Learn more in [Deprecation of Microsoft Dataverse for Teams environments](../../important-changes-coming.md#deprecation-of-microsoft-dataverse-for-teams-environments).
 
 **I've received an email saying an environment is at 80% of the capacity, what actions do I take?**
 Once you're alerted of an environment approaching or exceeding their approved capacity amount, you should reach out to the environment admin to discuss a strategy for capacity management. For example, you could either increase the approved capacity, [free up space](/power-platform/admin/free-storage-space) to reduce the storage needed, or [purchase more Microsoft Dataverse storage](/power-platform/admin/add-storage).

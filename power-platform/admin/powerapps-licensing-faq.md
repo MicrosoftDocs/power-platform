@@ -2,7 +2,7 @@
 title: Power Apps licensing FAQs
 description: Learn about common questions and answers for licensing and plan options.
 author: amchern
-ms.date: 08/31/2026
+ms.date: 10/08/2026
 ms.reviewer: ellenwehrle
 ms.topic: faq
 ms.subservice:
@@ -70,7 +70,7 @@ Take a look at the [Power Apps pricing guide](https://go.microsoft.com/fwlink/?l
 
 ### I'm working on a proof of concept Power Apps solution. How do I extend my trial?
 
-Create your proof of concept in a developer environment, which doesn't expire. [Learn more](https://go.microsoft.com/fwlink/?linkid=2262774).
+Create your proof of concept in a sandbox environment or in a developer environment that's a managed environment. Unmanaged developer environments, including those created with the Power Apps Developer Plan, are deprecated and can't be created starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unmanaged-developer-env-creation-phase-date.md)]. Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan).
 
 ### I have a dev trial license, but I'm being told that my trial is expired. What do I do?
 
