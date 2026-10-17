@@ -148,6 +148,7 @@ Don't include passwords, access tokens, or secrets.
 
 ## Related content
 
+- [Agentic governance with Power Platform Admin in Cowork](../guidance/adoption/agentic-governance.md)
 - [Manage plugins, skills, and MCP servers in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-plugins-skills-mcp-servers)
 - [Manage plugins for Copilot Cowork](/microsoft-365/copilot/cowork/cowork-manage-plugins)
 - [Use plugins with Copilot Cowork](/microsoft-365/copilot/cowork/cowork-plugins)

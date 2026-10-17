@@ -46,6 +46,8 @@ Reactive governance focuses on responding to recommendations and optimizing perf
 
 The **[actions page](../../admin/power-platform-advisor.md)** provides insights and recommendations to optimize Power Platform usage and performance. By regularly reviewing Power Advisor's suggestions, organizations can identify best practices, performance improvements, and security enhancements. These recommendations help in addressing issues proactively and refining governance practices to ensure the platform operates efficiently and securely.
 
+For conversational exploration of tenant governance data, see [Agentic governance with Power Platform Admin in Cowork](agentic-governance.md). Use the [governance prompt library](agentic-governance-prompts.md) to investigate unused and ownerless resources, and learn how to [turn findings into reports and recurring briefings](agentic-governance-reports.md).
+
 The **[CoE Starter Kit](../coe/starter-kit.md)** is a comprehensive set of tools and templates designed to help organizations establish and maintain a Center of Excellence for Power Platform. It includes components for monitoring, reporting, and managing environments, apps, and flows. The CoE Starter Kit implements sample reactive governance processes that you can learn from and amend to your own requirements.
 
 Organizations can use **[APIs and connectors](../../admin/programmability-extensibility-overview.md)** to create custom reactive governance processes tailored to their specific needs. By integrating these tools, organizations can automate responses to governance issues, streamline workflows, and enhance efficiency.

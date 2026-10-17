@@ -5,15 +5,24 @@ description: Power Platform guidance delivers best practices, fresh insights, an
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/08/2026
+ms.date: 10/16/2026
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: jhaskett
+ai-usage: ai-assisted
 ---
 
 # What's new in Microsoft Power Platform guidance
 
 The Microsoft Power Platform guidance is developed collaboratively with customers, partners, and internal Microsoft teams. New and updated content is released based on new learnings and product changes. Use the new releases to validate and refine your Power Platform adoption approach.
+
+## October 2026
+
+Added a three-article series on [agentic governance with Power Platform Admin in Cowork](agentic-governance.md). Learn how to ask tenant governance questions and turn findings into recurring reports and follow-up actions:
+
+- [Prepare for rollout](agentic-governance.md#prepare-for-rollout) with guidance on pilot scenarios, Copilot Credit spending policies, and compliance checks.
+- [Explore governance prompts](agentic-governance-prompts.md) for inventory, unused and ownerless resources, policy impact, showback, security, and capacity planning.
+- [Turn answers into reports and automations](agentic-governance-reports.md) to create briefings, schedule recurring checks, and draft owner outreach.
 
 ## May 2026
 
