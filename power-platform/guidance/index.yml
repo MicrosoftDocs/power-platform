@@ -13,7 +13,7 @@ metadata:
   ms.collection: collection
   author: erikadoyle
   ms.author: edoyle
-  ms.date: 08/21/2026
+  ms.date: 10/16/2026
 
 # highlightedContent section (optional)
 # Maximum of 8 items
@@ -70,6 +70,8 @@ productDirectory:
           text: Establish an environment strategy
         - url: /power-platform/guidance/adoption/reactive-governance
           text: Implement reactive governance controls
+        - url: adoption/agentic-governance.md
+          text: Agentic governance with Power Platform Admin in Cowork
         - url: /power-platform/guidance/adoption/admin-best-practices
           text: More...
     - title: Operations

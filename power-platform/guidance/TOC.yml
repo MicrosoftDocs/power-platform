@@ -105,6 +105,14 @@
               href: adoption/environment-strategy.md
             - name: Implement reactive governance controls
               href: adoption/reactive-governance.md
+            - name: Agentic governance with Power Platform Admin in Cowork
+              items:
+                - name: Overview
+                  href: adoption/agentic-governance.md
+                - name: Governance prompt library
+                  href: adoption/agentic-governance-prompts.md
+                - name: Turn answers into reports and automations
+                  href: adoption/agentic-governance-reports.md
             - name: Manage Dataverse for Teams environments
               href: adoption/teams-environment-strategy.md
             - name: Manage and govern the default environment
