@@ -5,7 +5,7 @@ description: Learn how to best use the features of the platform to implement an 
 author: manuelap-msft
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 10/12/2026
+ms.date: 10/17/2026
 ms.author: mapichle
 ms.reviewer: edoyle
 ms.custom: bap-template
@@ -70,9 +70,9 @@ The following table describes the types of environments you can create, their ch
 | Default                       | The environment that comes with every tenant. Many Microsoft 365 experiences use this environment for customizations and automations. This environment isn't intended for long-term or permanent work beyond the Microsoft 365 personal, productivity scenarios.             |
 | Production                    | This environment is intended to be used for permanent work in an organization. Production [managed environments](/power-platform/admin/managed-environment-overview) support extended back-up retention from seven days to up to 28 days.       |
 | Sandbox                       | These nonproduction environments support environment actions like copy and reset. Sandboxes are best used for testing and ALM build environments.                          |
-| Developer                     | These special environments are intended as makers' personal development workspaces, which isolate low-code assets from users and other makers. Makers can have up to three developer environments. They don't count against your tenant capacity. Developer environments that haven't been used for 90 days are automatically turned off and then removed from your tenant if the owner doesn't respond to notifications. Dynamics 365 apps aren't available in developer environments. |
+| Developer                     | These special environments are intended as makers' personal development workspaces, which isolate low-code assets from users and other makers. Each maker can create only one managed developer environment. Unmanaged developer environments are deprecated. Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan). Developer environments don't count against your tenant capacity. Inactive developer environments are automatically turned off and then removed from your tenant if the owner doesn't respond to notifications. Learn more in [Automatic deletion of Power Platform environments](../../admin/automatic-environment-cleanup.md#developer-environments). Dynamics 365 apps aren't available in developer environments. |
 | Trial                         | These environments are intended to support short-term testing and proofs of concept. They're limited to one per user. Trial environments are automatically removed from your tenant after a short period of time.   |
-| Microsoft Dataverse for Teams | These environments are automatically created when you create an app in Teams or install an app from the app catalog. The security model for these environments aligns with the team they're associated with.        |
+| Microsoft Dataverse for Teams | These environments are deprecated. You can't create new Dataverse for Teams environments starting [!INCLUDE [dv4t-creation-ends-date](../../includes/dv4t-creation-ends-date.md)]. Existing environments are automatically created when you create an app in Teams or install an app from the app catalog, and their security model aligns with the team they're associated with. Learn more in [Deprecation of Microsoft Dataverse for Teams environments](../../important-changes-coming.md#deprecation-of-microsoft-dataverse-for-teams-environments).        |
 | Support                       | These are special environments created by Microsoft Support to allow engineers to troubleshoot problems. These environments don't count against your tenant capacity.      |
 
 When creating an overall tenant environment strategy, consider the different types to support your recommendations.
@@ -691,6 +691,9 @@ The following table lists example use cases and migration actions. Ultimately, y
 
 ### Assets in Dataverse for Teams environments
 
+> [!IMPORTANT]
+> Dataverse for Teams environments are deprecated. To keep the apps, flows, agents, and data in a Dataverse for Teams environment, [upgrade the environment to Dataverse](../../admin/about-teams-environment.md#upgrade-process) and then manage it with the rest of your environment strategy. Learn more in [Deprecation of Microsoft Dataverse for Teams environments](../../important-changes-coming.md#deprecation-of-microsoft-dataverse-for-teams-environments).
+
 [Microsoft Dataverse for Teams](/power-platform/admin/about-teams-environment) empowers users to build custom apps, bots, and flows in Microsoft Teams by using Power Apps, Microsoft Copilot Studio, and Power Automate. When a team owner adds this capability to their team, a Microsoft Power Platform environment with a Dataverse for Teams database is created and linked to their team. Learn how to [establish governance policies to manage Microsoft Dataverse for Teams environments](/power-platform/guidance/adoption/teams-environment-strategy).
 
 ### Environment strategy internally at Microsoft
@@ -709,7 +712,7 @@ Microsoft is structuring its Power Platform environments into three broad catego
 
 - **Personal productivity**: For users who just want to build an app or flow for themselves, without collaborating with others. These users are routed to personal development environments. These locked-down environments use managed environment features, including restricting sharing and controlling other actions. Connectors and actions in these environments are heavily restricted. These environments are the least risky. Using locked-down personal environments allows users to avoid the more rigorous compliance process required to build personal productivity apps and flows.
 
-- **Team collaboration**: For users who are building tooling, automation, and processes for their team. For this scenario, Microsoft recommends using Dataverse for Teams environments. Lifecycle, access management, and data labeling are controlled at the Microsoft 365 group-level, eliminating the need to spend time managing these users from a Power Platform governance perspective. This level of use is the next step up in the risk spectrum.
+- **Team collaboration**: For users who are building tooling, automation, and processes for their team. Microsoft used Dataverse for Teams environments for this scenario, where lifecycle, access management, and data labeling are controlled at the Microsoft 365 group level. Because Dataverse for Teams environments are deprecated, build new team solutions in Dataverse environments, and [upgrade existing Dataverse for Teams environments to Dataverse](../../admin/about-teams-environment.md#upgrade-process). Use [environment groups and rules](../../admin/environment-groups.md) to apply consistent governance to these environments. This level of use is the next step up in the risk spectrum.
 
 - **Enterprise development/production-level used by all employees**: For users building tooling or solutions used more broadly across the company. These environments may store the most sensitive data, use more powerful connectors, and require more governance. This level carries the highest risk and, therefore, significant effort is spent on governance. ALM is required, with preproduction work happening in sandbox environments and only managed solutions allowed in production environments. These environments must be linked to ServiceTree, which enforces reoccurring security and privacy reviews. The environment group rules are customized based on ServiceTree metadata and signals. Many environment groups and rules are used to manage and control these environments.
 
