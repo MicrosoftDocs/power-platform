@@ -11,7 +11,7 @@ contributors:
   - kenseongtan
 ms.subservice: admin
 ms.topic: concept-article
-ms.date: 09/22/2026
+ms.date: 10/17/2026
 ms.author: matow
 ms.reviewer: ellenwehrle
 search.audienceType: 
@@ -196,7 +196,10 @@ P1 and P2 plans|User license (legacy)|These grandfathered licenses are no longer
 
 ## Power Apps Developer plan
 
-There's a [free Power Apps Developer plan to learn about Power Platform](https://powerapps.microsoft.com/communityplan/). You aren't allowed to use it in production but can try out things and have access to all premium connectors. You can use this free developer plan also in a free [Microsoft 365 developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). Business process flows and RPA flows can't be created in an environment with the Power Apps Developer plan.
+There's a [free Power Apps Developer plan to learn about Power Platform](../../developer/plan.md). You aren't allowed to use it in production but can try out things and have access to all premium connectors. You can use this free developer plan also in a free [Microsoft 365 developer tenant](https://developer.microsoft.com/microsoft-365/dev-program). Business process flows and RPA flows can't be created in an environment with the Power Apps Developer plan.
+
+> [!IMPORTANT]
+> Unmanaged developer environments, including the environments that Power Platform creates when you sign up for the Power Apps Developer Plan, are deprecated. Starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](../../includes/unmanaged-developer-env-creation-phase-date.md)], signing up for the Developer Plan no longer creates a developer environment, and each user can create only one managed developer environment. Learn more in [Deprecation of unmanaged developer environments and the Power Apps Developer Plan](../../important-changes-coming.md#deprecation-of-unmanaged-developer-environments-and-the-power-apps-developer-plan).
 
 ## Entitlements of free / trial / legacy licenses
 

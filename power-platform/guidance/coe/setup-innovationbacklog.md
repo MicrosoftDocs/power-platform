@@ -5,7 +5,7 @@ author: manuelap-msft
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/20/2026
+ms.date: 10/17/2026
 ms.subservice: guidance-toolkit
 ms.author: mapichle
 ms.reviewer: edoyle
@@ -22,7 +22,7 @@ Use the Innovation Backlog app to gather ideas from users for apps and flows to 
 
 Pick the most impactful ideas for your development team to build, or select them for an upcoming hackathon. Other users can vote on ideas, or add their own scenarios to an existing idea. Developers can additionally request feedback and testimonials to build their portfolio.
 
-The Innovation Backlog solution contains assets that are relevant to all users in your organization, and can be installed in [production](../../admin/environments-overview.md#environment-types) or [Dataverse for Teams](/powerapps/teams/overview-data-platform) environments.
+The Innovation Backlog solution contains assets that are relevant to all users in your organization, and you can install it in a [production](../../admin/environments-overview.md#environment-types) environment. You can also install it in an existing [Dataverse for Teams](/powerapps/teams/overview-data-platform) environment, but Dataverse for Teams environments are deprecated.
 
 > [!IMPORTANT]
 > The Innovation Backlog components solution doesn't have a dependency on other components of the CoE Starter Kit. It can be used independently.
@@ -120,6 +120,9 @@ Learn more: [Turn flows on](/power-automate/disable-flow#turn-flows-on)
 You can now [use the Innovation Backlog app](innovationbacklog-components.md).
 
 ## Option 2: Import the solution into a Dataverse for Teams environment
+
+> [!IMPORTANT]
+> Dataverse for Teams environments are deprecated. You can't create new Dataverse for Teams environments starting [!INCLUDE [dv4t-creation-ends-date](../../includes/dv4t-creation-ends-date.md)], and existing environments that aren't upgraded to Dataverse are decommissioned. For new installations, use [Option 1](#option-1-import-the-solution-into-a-production-environment). Learn more in [Deprecation of Microsoft Dataverse for Teams environments](../../important-changes-coming.md#deprecation-of-microsoft-dataverse-for-teams-environments).
 
 Before you begin:
 

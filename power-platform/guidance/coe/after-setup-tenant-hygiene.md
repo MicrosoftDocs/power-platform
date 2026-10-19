@@ -3,7 +3,7 @@ title: Establish tenant hygiene with the CoE Starter Kit
 description: Establish tenant hygiene, manage environments, and secure your Power Platform with actionable governance strategies using the CoE Starter Kit.
 author: stjeffer
 ms.topic: how-to
-ms.date: 05/15/2026
+ms.date: 10/17/2026
 ms.subservice: guidance-toolkit
 ms.author: stjeffer
 ms.reviewer: edoyle
@@ -103,9 +103,12 @@ Learn more:
 
 ## Manage Dataverse for Teams environments
 
+> [!IMPORTANT]
+> Dataverse for Teams environments are deprecated. You can't create new Dataverse for Teams environments starting [!INCLUDE [dv4t-creation-ends-date](../../includes/dv4t-creation-ends-date.md)]. Use the guidance in this section to inventory existing environments and decide which ones to [upgrade to Dataverse](../../admin/about-teams-environment.md#upgrade-process). Learn more in [Deprecation of Microsoft Dataverse for Teams environments](../../important-changes-coming.md#deprecation-of-microsoft-dataverse-for-teams-environments).
+
 Dataverse for Teams is a low-code data platform that enables you to create custom apps and bots directly within Microsoft Teams.
 
-Dataverse for Teams automatically provisions new environments for each team within an organization, once an app or bot is created or installed from the app catalog. This provisioning allows teams to easily access and manage their own data, while providing a level of isolation and security to protect data from other teams.
+Until creation ends, Dataverse for Teams automatically provisions new environments for each team within an organization, once an app or bot is created or installed from the app catalog. This provisioning allows teams to easily access and manage their own data, while providing a level of isolation and security to protect data from other teams.
 
 Power Platform includes a built-in mechanism that automatically cleans up Dataverse for Teams environments that are inactive for 90 days. Beyond the automatic clean-up, you can keep track of existing environments and their purpose, data types, connectors, and other information associated with each environment.
 
