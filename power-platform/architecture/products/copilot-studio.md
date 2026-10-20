@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 10/13/2026
+ms.date: 10/20/2026
 ---
 
 # Copilot Studio reference architectures and solution ideas
@@ -39,6 +39,7 @@ Understanding Copilot Studio design and implementation concepts and exploring so
 | Title | Description |
 | --- | --- |
 | [**Automate procurement order acknowledgment matching with Copilot Studio and SAP**](../reference-architectures/order-acknowledgment-validation.md) | Use a multi-agent architecture to compare supplier order acknowledgments with purchase orders in SAP, automatically confirm matches, and escalate exceptions for review. |
+| [**Build a student recruitment solution with Power Platform**](../reference-architectures/student-recruitment-solution.md) | Centralize student recruitment data, automate engagement, and connect recruitment activities to enrollment outcomes. |
 | [**Extract and analyze agent conversation transcripts**](../reference-architectures/analyze-agent-conversation-transcripts.md) | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
 | [**Migrate legacy meetings to Microsoft Teams with a conversational agent**](../reference-architectures/migrate-legacy-meetings.md) | Use a conversational agent built with Copilot Studio to help employees migrate their meetings from a legacy platform to Microsoft Teams. |
 | [**Modernize employee HR support with a multi-agent solution**](../reference-architectures/modernize-hr-support.md) | Modernize employee HR support with a multi-agent architecture that connects Copilot Studio agents to HR systems of record. |

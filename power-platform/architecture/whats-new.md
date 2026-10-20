@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 10/13/2026
+ms.date: 10/20/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -22,6 +22,7 @@ Get the latest info about what's new and what's changed in the Power Platform an
 
 New in [Reference architectures](reference-architectures/index.md):
 
+- [Build a student recruitment solution with Power Platform](reference-architectures/student-recruitment-solution.md)
 - [Modernize employee HR support with a multi-agent solution](reference-architectures/modernize-hr-support.md)
 - [Implement the Transactional Outbox pattern with Dataverse](reference-architectures/transactional-outbox-pattern.md)
 - [Modernize legacy applications with React web resources and Dataverse custom APIs](reference-architectures/modernize-legacy-applications.md)
