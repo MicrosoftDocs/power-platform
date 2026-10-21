@@ -84,6 +84,8 @@
                   href: manage-copilot-studio-copilot-credits-capacity.md
                 - name: Manage costs for agents powered by the GitHub Copilot harness
                   href: manage-usage-github-copilot-harness.md
+                - name: Manage costs for agents powered by the Customer Conversation harness
+                  href: manage-usage-customer-conversation-harness.md
                 - name: View intelligent recommendations about licensing
                   href: get-recommendations-licensing.md
                 - name: Administer without a license
