@@ -353,7 +353,7 @@ Organizations that encourage developers and makers to build and share components
 
 ### Feature roadmap
 
-As Microsoft continues to evolve the features of Power Platform that support governance and administration, you can follow along in the [release planner](https://releaseplans.microsoft.com/en-US/?app=Governance+and+administration). You learn what's planned, what's in the upcoming release wave, and what you can try now. You can even create your own release plan by saving the items you want to follow.
+As Microsoft continues to evolve the features of Power Platform that support governance and administration, you can follow along in the [AI at Work Roadmap](https://aka.ms/roadmap). You can learn what's planned, what's coming next, and what you can try now, and follow the items relevant to your organization.
 
 ## Foundation of an enterprise-scale environment strategy
 

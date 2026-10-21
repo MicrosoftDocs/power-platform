@@ -8,7 +8,7 @@ ms.date: 10/02/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: ellenwehrle
+ms.author: jasongre
 ms.reviewer: ellenwehrle
 contributors:
     - paulliew
@@ -44,7 +44,7 @@ You can find these settings in the Power Platform admin center for an environmen
 Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
 > [!NOTE]
-> These settings might not yet be available in your environment. The settings availability depends on the region's release plan.
+> These settings might not yet be available in your environment. Availability depends on the regional rollout schedule.
 
 ## Copilot (preview)
 
@@ -251,16 +251,16 @@ App makers can learn more about form fill assistance in [Manage model-driven app
 | Setting | Description | Default value |
 |---------|-------------|---------------|
 | Enable the modern read-only grid experience. | If **On**, the Power Apps read-only grid control lets users view and open records from views and subgrids. | On |
-|Show the Edit columns button on views |  If **On**, users can create personal views by adding, removing, and reordering columns on a view accessible to them in a model-driven app. Learn more in [Edit columns on a grid page](/powerapps/user/grid-filters-advanced#column-editor). This setting only appears if you turned on 2022 Release Wave 1. |  On|
-|Show the Edit filters button on views | If **On**, users can create personal views by filtering data based on conditional expressions starting with a view accessible to them in a model-driven app. Learn more in [Edit filters on a grid page](/powerapps/user/grid-filters-advanced#filter-editor). This setting only appears if you turned on 2022 Release Wave 1.| On |
+|Show the Edit columns button on views |  If **On**, users can create personal views by adding, removing, and reordering columns on a view accessible to them in a model-driven app. Learn more in [Edit columns on a grid page](/powerapps/user/grid-filters-advanced#column-editor). |  On|
+|Show the Edit filters button on views | If **On**, users can create personal views by filtering data based on conditional expressions starting with a view accessible to them in a model-driven app. Learn more in [Edit filters on a grid page](/powerapps/user/grid-filters-advanced#filter-editor).| On |
 |Enable focused view for all records. | Focused view allows you to view and manage account, contact, lead, opportunity, and other records and their associated activities on one page. Learn more in [View and manage records in focused view](/dynamics365/sales/focused-view). | On |
 
 ## Advanced find options
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-|Modern advanced find in model-driven apps| If **On**, legacy advanced find is replaced with a modern experience that enhanced view management capabilities like searching on views and the ability to share, hide, and delete personal views. Learn more in [Advanced find in model-driven apps](/powerapps/user/advanced-find). This setting only appears if you turned on 2022 Release Wave 1. |  On|
-|Allow users to hide system views| If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. Learn more in [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views). This setting only appears if you turned on 2022 Release Wave 1.| Off |
+|Modern advanced find in model-driven apps| If **On**, legacy advanced find is replaced with a modern experience that enhanced view management capabilities like searching on views and the ability to share, hide, and delete personal views. Learn more in [Advanced find in model-driven apps](/powerapps/user/advanced-find). |  On|
+|Allow users to hide system views| If **On**, users can hide system views in the view selector to manage their view list in model-driven apps. Learn more in [Hide views on a grid page](/powerapps/user/grid-filters-advanced#hide-views).| Off |
 
 ## Activities
 
