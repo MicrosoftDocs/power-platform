@@ -5,7 +5,7 @@ description: Learn how to streamline customer support by building a Microsoft Co
 author: carcla
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.date: 02/04/2026
+ms.date: 10/20/2026
 ms.author: v-caclaesson
 ms.reviewer: jhaskett-msft
 ---
@@ -79,7 +79,7 @@ This agent reduces handling time, improves resolution accuracy, and lowers the n
 
 **​Test for resiliency and availability**: With multiple integrated systems, it's important to implement error handling and transient fault handling for any interactions with those systems that might affect the process. For example, if the agent can't transfer the conversation, it might automatically create a ticket for follow-up later.
 
-**​Measure and publish the health indicators**: Telemetry from the agent runtime should provide adequate indicators of the agent's health. You can also configure the agent to publish to Application Insights. By using the telemetry in Application Insights, you can query the data and include custom telemetry events from your topics. Escalations have built-in telemetry that is captured and can be analyzed to increase your deflection rates. You can also build on your own custom analytics on top of the conversation transcripts data. Learn more in [Analytics considerations for Copilot Studio vs Dynamics 365 Omnichannel](/microsoft-copilot-studio/guidance/oc-pva-analytics).
+**​Measure and publish the health indicators**: Telemetry from the agent runtime should provide adequate indicators of the agent's health. You can also configure the agent to publish to Application Insights. By using the telemetry in Application Insights, you can query the data and include custom telemetry events from your topics. Escalations have built-in telemetry that is captured and can be analyzed to increase your deflection rates. You can also build on your own [custom analytics](/microsoft-copilot-studio/guidance/custom-analytics-strategy) on top of the conversation transcripts data.
 
 **Enforce knowledge source accuracy**: Customers depend on getting accurate information from the agent. Scope these types of agents to use only their preconfigured knowledge sources, such as a specific website or a specific set of documents. These resources should be organizationally controlled with a process for change management. Allowing these types of support agents to use knowledge acquired by searching the web could lead to inconsistent accuracy. You must also consider how the product or service versions information. You might need to query knowledge across multiple versions simultaneously.​
 
