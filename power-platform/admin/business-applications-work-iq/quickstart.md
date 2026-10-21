@@ -22,7 +22,7 @@ ms.collection: bap-ai-copilot
 
 In this quickstart, you connect your business applications to Work IQ so your pilot users can ask questions grounded in Dynamics 365 and Power Apps data through [Microsoft 365 Copilot](/microsoft-365/copilot/). You choose a pilot scenario, confirm availability, enable Work IQ in your environment, and try the experience.
 
-[!INCLUDE [preview-note-pp](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+[!INCLUDE [preview-note-business-applications-work-iq](~/../shared-content/shared/preview-includes/preview-note-business-applications-work-iq.md)]
 
 ## Before you begin
 

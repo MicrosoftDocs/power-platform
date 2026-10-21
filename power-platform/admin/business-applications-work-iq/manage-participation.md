@@ -22,7 +22,7 @@ ms.collection: bap-ai-copilot
 
 **Business Applications in Work IQ** is a capability that administrators use to choose which environments and applications participate in Work IQ. It controls which environments have Work IQ features, which environments Work IQ can reason over and return data from, and which applications makers include within those environments.
 
-[!INCLUDE [preview-note-pp](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+[!INCLUDE [preview-note-business-applications-work-iq](~/../shared-content/shared/preview-includes/preview-note-business-applications-work-iq.md)]
 
 ## Before you begin
 
