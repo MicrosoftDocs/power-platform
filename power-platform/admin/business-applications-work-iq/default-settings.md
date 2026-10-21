@@ -1,7 +1,7 @@
 ---
 title: Default settings (preview)
 description: Learn which Business Applications in Work IQ settings are on by default and how to manage them.
-ms.date: 10/07/2026
+ms.date: 10/16/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 author: NHelgren
@@ -15,7 +15,7 @@ ms.reviewer: ellenwehrle
 
 **Business Applications in Work IQ** is a set of capabilities that lets Microsoft 365 Copilot, Microsoft 365 Copilot Chat, Copilot Cowork, and Model Context Protocol (MCP) clients work with Power Apps and Dynamics 365 data.
 
-[!INCLUDE [preview-note-pp](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+[!INCLUDE [preview-note-business-applications-work-iq](~/../shared-content/shared/preview-includes/preview-note-business-applications-work-iq.md)]
 
 Starting September 30, 2026, Microsoft turns on these capabilities by default for all new environments that aren't listed as exceptions in this article. You can use the capabilities without a separate configuration process.
 
@@ -25,7 +25,7 @@ Starting in November 2026, Microsoft turns on Business Applications in Work IQ f
 
 The default applies to public production environments created for new or existing tenants. The following environments are exceptions:
 
-- **European Economic Area (EEA) and European Union (EU) environments**: Microsoft plans to enable environments provisioned in the EEA or EU when the feature becomes generally available. During public preview, customers can turn on Work IQ by using the corresponding setting in the Microsoft 365 admin center.
+- **European Union (EU) and European Free Trade Association (EFTA) environments**: Microsoft plans to enable environments provisioned in the European Union (EU) and European Free Trade Association (EFTA) environments when the feature becomes generally available. During public preview, customers can turn on Work IQ by using the corresponding setting in the Microsoft 365 admin center.
 - **Government-related environments**: This exception applies to environments provisioned by customers with current or previous government cloud deployments that are likely to depend on FedRAMP security controls.
 - **Nonproduction environments**: This exception applies to trial, sandbox, and developer environments.
 

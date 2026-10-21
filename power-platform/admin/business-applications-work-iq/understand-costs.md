@@ -22,7 +22,7 @@ ms.collection: bap-ai-copilot
 
 **Cost management** in the Microsoft 365 admin center is a set of controls that you use to manage the consumption of the experiences your organization enables. Spending policies let you choose the users and services covered, set a shared monthly limit, add a per-user limit, and receive alerts as consumption approaches a threshold.
 
-[!INCLUDE [preview-note-pp](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+[!INCLUDE [preview-note-business-applications-work-iq](~/../shared-content/shared/preview-includes/preview-note-business-applications-work-iq.md)]
 
 For Business Applications in Work IQ, you track cost by the experiences people use rather than by a dedicated business applications category. Business context accessed through Cowork contributes to Cowork consumption. Direct calls through the [Work IQ API](/microsoft-365/copilot/extensibility/work-iq/api-overview) are reported under Work IQ API. Configure the policy for the consuming experience rather than looking for a separate business applications spending policy.
 
