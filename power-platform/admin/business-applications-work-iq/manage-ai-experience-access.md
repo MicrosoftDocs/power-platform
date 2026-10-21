@@ -22,7 +22,7 @@ ms.collection: bap-ai-copilot
 
 **Connection controls** are administrative settings that determine which AI experiences and applications can connect to business applications data. These controls let administrators manage availability through Microsoft 365 Copilot, allow or block access to the Work IQ MCP server, and use App Access to control which applications can access data in an environment.
 
-[!INCLUDE [preview-note-pp](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+[!INCLUDE [preview-note-business-applications-work-iq](~/../shared-content/shared/preview-includes/preview-note-business-applications-work-iq.md)]
 
 This article covers connection controls. For environment features and data participation, see [Manage participation in Business Applications in Work IQ](manage-participation.md). For the underlying data permissions, see [Review user, agent, and application access for Business Applications in Work IQ](review-data-access.md).
 
