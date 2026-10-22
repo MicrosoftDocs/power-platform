@@ -5,9 +5,9 @@ author: EllenWehrle
 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/29/2024
+ms.date: 09/11/2026
 ms.subservice: admin
-ms.author: ellenwehrle
+ms.author: jasongre
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -116,7 +116,7 @@ The gradual hiding happens in the following steps. Admins can explicitly set to 
 
 1. Starting in May 2024 when new environments are provisioned, this property will be defaulted to **Off**.
 1. Starting with 2406 monthly channel release, admins in monthly channel will have **Auto** treated as **Off**.
-1. Starting with 2024 Release Wave 2, admins in semi-annual channel will have **Auto** treated as **Off**.
+1. Admins in the semi-annual channel have **Auto** treated as **Off**.
 
 ### Advanced settings
 

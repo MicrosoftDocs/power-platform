@@ -2,16 +2,14 @@
 title: Modernize applications with Power Platform
 description: Explore the benefits, strategies, and best practices of modernizing applications with Microsoft Power Platform.
 #customer intent: As an IT decision-maker, I want to understand how Power Platform can modernize legacy applications so that I can improve operational efficiency and reduce costs.  
-author: robstand
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/14/2025
-ms.author: rstand
+ms.date: 09/11/2026
+author: jasongre
+ms.author: jasongre
 ms.reviewer: edoyle
 ms.custom: bap-template
 ms.subservice: guidance
-contributors:
-  - RobStand
 ---
 
 # Modernize applications with Power Platform
@@ -296,7 +294,7 @@ As important as identifying low-code opportunities is recognizing when a low-cod
 | **Background workloads with complex logic** | Background workloads that involve complex logic or a high volume of API calls might not be right for a low-code solution. Instead, the logic can be centralized in an API that a low-code solution can call. |
 | **APIs that use non-RESTful protocols** | Power Platform connectors support only REST APIs. If you need to connect to another style API like SOAP or gRPC, provide your own REST API that communicates with the incompatible one. |
 
-We recommend keeping up with Power Platform release waves because they continue to close gaps in what you can do with low-code solutions. Creating a low-code proof-of-concept is a good way to determine whether your scenario is a good fit.
+Keep up with Power Platform updates because they continue to close gaps in what you can do with low-code solutions. Creating a low-code proof of concept is a good way to determine whether your scenario is a good fit.
 
 ### Prioritize low-code opportunities
 
@@ -706,7 +704,7 @@ Every organization's journey to application modernization is unique. Your Micros
 - [EY transforms its global finance operations with innovative apps and AI-driven agents using Power Platform](https://www.microsoft.com/customers/story/25760-ey-global-services-limited-microsoft-power-platform/)
 - [Azure Private Link](/power-bi/enterprise/service-security-private-links)
 - [Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview)
-- [Power Platform Release Planner](https://releaseplans.microsoft.com?app=Power+Apps)
+- [AI at Work Roadmap](https://aka.ms/roadmap)
 - [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 - [Microsoft outlines framework for building AI apps and copilots; expands AI plugin ecosystem](https://news.microsoft.com/source/features/ai/microsoft-outlines-framework-for-building-ai-apps-and-copilots-expands-ai-plugin-ecosystem/)
 

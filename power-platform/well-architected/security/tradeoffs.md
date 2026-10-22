@@ -1,12 +1,12 @@
 ---
 title: Security tradeoffs for Power Platform workloads
 description: Learn about the Security tradeoffs you might encounter when optimizing for the other Power Platform Well-Architected pillars.
-author: robstand
-ms.author: rstand
+author: jasongre
+ms.author: jasongre
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: concept-article
-ms.date: 08/18/2025
+ms.date: 09/11/2026
 ---
 
 # Security tradeoffs for Power Platform workloads
@@ -43,7 +43,7 @@ The Security pillar requires a workload to explicitly verify identities and acti
 
 - Stricter solution update policies lead to more changes in a workload's production environment. This change comes from sources like these:
   - Releasing application code more frequently because of updates to solutions
-  - Applying Power Platform release wave updates
+  - Applying Power Platform service updates
   - Updating configurations of Power Platform environment settings in the environment
   - Applying patches to libraries or components used in the environment
 
