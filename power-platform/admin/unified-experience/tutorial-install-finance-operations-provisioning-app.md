@@ -5,11 +5,12 @@ author: laneswenka
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 08/11/2025
+ms.date: 10/21/2025
 ms.subservice: admin
 ms.author: laswenka
 ms.contributors:
   - lsuresh
+  - tapa
 contributors:
   - lavanyapg
 search.audienceType: 
@@ -83,17 +84,21 @@ Installation of the provisioning app has the following known limitations:
     :::image type="content" source="media/tutorial-install-app1.png" alt-text="Screenshot where an entry for Dynamics 365 Finance and Operations Provisioning App that has a status of Configured is selected for installation.":::
 
 1. Select **OK** to open the installation configuration page for the provisioning app.
-1. On the **Dynamics 365 Finance and Operations Provisioning App** page, set the following fields to configure the app:
+1. On the **Dynamics 365 Finance and Operations Provisioning App** page, complete the installation wizard:
 
-    - **Enable Developer Tools for Finance and Operations**: Select this checkbox to get a developer-enabled sandbox environment where you can connect Visual Studio and make X++ changes. If you leave this checkbox cleared, you get a standard sandbox or production environment.
-    - **Enable Demo Data for Finance and Operations**: Select this checkbox to deploy the standard Contoso demo data with your app.
-    - **Select the version of the product to be installed**: You can select any of the available supported versions for installation.
+    a. On the **Settings** step, configure the following fields, and then select **Next**:
+     - **Enable Developer Tools for Finance and Operations**: Select this checkbox to get a developer-enabled sandbox environment where you can connect Visual Studio and make X++ changes. If you leave this checkbox cleared, you get a standard sandbox or production environment.
+     - **Select a dataset for the Finance and Operations application database**: Select the dataset to use for the application database. Select **None** to provision without demo data, or **Demo** to include the standard Contoso demo data.
+     
+    :::image type="content" source="media/tutorial-install-app3.png" alt-text="Screenshot of the Settings step showing the developer tools checkbox and application database dataset dropdown.":::
 
-    :::image type="content" source="media/tutorial-install-app2.png" alt-text="Screenshot of the installation configuration page for the provisioning app.":::
+    b. On the **Version** step, use **Select the version of the product to be installed** to select one of the available supported versions, and then select **Next**.
+   
+    c. On the **Review and install** step, review your settings and selected version. Select **I agree to the terms of service**, and then select **Install**.
 
-1. Agree to the terms and conditions, and then select **Install** to start the installation.
+   :::image type="content" source="media/tutorial-install-app4.png" alt-text="Screenshot of the Review and install step showing the selected settings, product version, terms of service checkbox, and Install button.":::
 
-The installation takes about an hour to be completed. While the installation is still in progress, the status of the Finance and Operations Provisioning app is shown as **Installing**.
+The installation can take up to a couple of hours to complete. While the installation is still in progress, the status of the Finance and Operations Provisioning app is shown as **Installing**.
 
 ## Application versions
 
