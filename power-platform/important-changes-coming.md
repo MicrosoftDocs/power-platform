@@ -14,7 +14,7 @@ contributors:
   - v-jlandrum 
   - sbasi19
   - v-aangie
-ms.author: ellenwehrle
+ms.author: jasongre
 ms.reviewer: smurkute
 ---
 # Important changes (deprecations) coming in Power Platform
@@ -864,7 +864,7 @@ If you have more questions, contact your Microsoft Customer Service representati
 
 ## The legacy read-only grid in model-driven apps is deprecated
 
-The legacy read-only grid control has been deprecated in model-driven apps with the 2022 release wave 1. This control is being replaced by the **Power Apps read-only grid**, which became the default read-only grid experience for all environments for model-driven apps with the 2022 release wave 1.  
+The legacy read-only grid control was deprecated in model-driven apps with the April 2022 release. This control is being replaced by the **Power Apps read-only grid**, which became the default read-only grid experience for all model-driven app environments with the April 2022 release.  
 
 ### Why is this needed?
 
@@ -876,7 +876,7 @@ The legacy read-only grid:
 
 ### Impact
 
-Tables configured to use the *Read-only Grid (Default)* control are replaced with the *Power Apps read-only grid* for views and subgrids. This change started with the 2022 release wave 1.
+Tables configured to use the *Read-only Grid (Default)* control are replaced with the *Power Apps read-only grid* for views and subgrids. This change started with the April 2022 release.
 
 When the Power Apps read-only grid is originally enabled, the jump bar row isn't visible; however, makers can re-enable this as needed. More information: [Configure the Power Apps read-only grid control](/power-apps/maker/model-driven-apps/power-apps-grid-control#configure-the-power-apps-read-only-grid-control)
 
@@ -946,9 +946,9 @@ The presence indication backed by Skype for Business will no longer function. Th
 
 Plan to transition to Microsoft Teams, because the Team's capabilities go beyond those of Skype for Business Online. Teams is the next chapter in enterprise communication solution from Microsoft.
 
-## Low-density headers in model-driven apps won't be supported with the 2021 release wave 2
+## Low-density headers in model-driven apps aren't supported as of the October 2021 release
 
-With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), the low-density header option, and runtime experience won't be supported in model-driven app forms.
+Beginning with the October 2021 release (public preview started in August 2021), model-driven app forms don't support the low-density header option and runtime experience.
 
 ### Why is this needed?
 
@@ -968,9 +968,9 @@ To meet the October 2021 deadline, be sure you update any of your forms from a l
 
 If you don't make this change, the form no longer honors this setting at runtime. It also defaults to high density with flyout.
 
-## Form footers in model-driven apps won't be supported with the 2021 release wave 2
+## Form footers in model-driven apps aren't supported as of the October 2021 release
 
-With the upcoming 2021 release wave 2 (public preview in August 2021 and GA in October 2021), form footers won't be supported in a model-driven app form.
+Beginning with the October 2021 release (public preview started in August 2021), form footers aren't supported in model-driven app forms.
 
 #### Why is this needed?
 
@@ -989,13 +989,13 @@ Main forms will no longer include the footer when a record is opened. Any out of
 - To meet the October 2021 deadline, be sure you move fields or controls added to a form footer to either the header or a section on the form.
 - If you do nothing, the footer fields or controls that you've added no longer render on the form and aren't available to users.
 
-The out of box fields currently on the footer is removed and included on the form as part of the 2021 release wave 2 updates. So, you don't lose status, unsaved changes, or the option to open a form in a new window. The **Save** option is already available in the command bar and is always visible to the user.
+The out of box fields currently on the footer are removed and included on the form as part of the October 2021 release. So, you don't lose status, unsaved changes, or the option to open a form in a new window. The **Save** option is already available in the command bar and is always visible to the user.
 
 While we understand that these types of changes can be disruptive for makers that use the footer today, we always evaluate the experiences. We do this to ensure they provide a modern experience that improves usability, support accessibility requirements, and improves discoverability for highly used fields and controls on a page.
 
-## Model-driven app controls deprecation (2021 Release Wave 1)
+## Model-driven app controls deprecation (April 2021)
 
-With the upcoming 2021 release wave 1 (public preview in February 2021 and GA in April 2021), some older controls for model-driven apps will be deprecated. These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radial Knob, Arc Knob, Linear Gauge; along with the Website Preview control, MultiSelectPicklistControl (V1), and the Flip Label (two radio buttons format option).
+Beginning with the April 2021 release (public preview started in February 2021), Microsoft deprecated some older controls for model-driven apps. These controls include Flip Switch, Calendar Control (V1), Linear Slider, Radial Knob, Arc Knob, Linear Gauge, Website Preview control, MultiSelectPicklistControl (V1), and the Flip Label (two radio buttons format option).
 
 #### Why is this needed?
 

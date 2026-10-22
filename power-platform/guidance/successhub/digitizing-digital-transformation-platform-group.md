@@ -6,7 +6,7 @@ author: manuelap-msft
 ms.author: mapichle
 ms.component: pa-admin
 ms.topic: article
-ms.date: 05/14/2025
+ms.date: 09/11/2026
 ms.subservice: guidance
 ms.reviewer: edoyle
 search.audienceType:
@@ -25,7 +25,7 @@ To digitize a large organization like the Digital Transformation Platform (DTP) 
 
 The four aspects of the digital feedback loop include:
 
-- **Transforming** products to enhance our offerings. For example, publishing release notes about upcoming release wave deliverables.
+- **Transforming** products to enhance your offerings. For example, publish release notes about upcoming release deliverables.
 - **Engaging** with customers and partners to boost business growth. For example, customer engagements and taking feedback and ideas from customers. 
 - **Empowering** our own people to improve our organization's performance.
 - **Optimizing** business operations to improve efficiency. For example, automating business reviews.

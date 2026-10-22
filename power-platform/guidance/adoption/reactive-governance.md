@@ -8,7 +8,7 @@ ms.topic: concept-article
 ms.subservice: guidance
 ms.author: mapichle
 ms.reviewer: edoyle
-ms.date: 08/18/2025
+ms.date: 09/11/2026
 ---
 
 # Implement reactive governance controls
@@ -66,7 +66,7 @@ You should keep a few things in mind when you're considering using managed envir
 
 Managed environments are a set of features that's designed to make governance of Power Platform easier by giving more control to and requiring less effort from admins. The governance processes of many organizations were influenced by the [CoE Starter Kit](/power-platform/guidance/coe/overview). Others are based on the kit's out-of-the-box features, extended to meet an organization's specific needs. Still others use the CoE Starter Kit to expand the governance features of managed environments.
 
-The engineering team for managed environments worked closely with [Power CAT](https://aka.ms/whoispowercat), the team responsible for the CoE Starter Kit, to identify the most-used features in the kit and add them to managed environments. As a result, some features are available in both products. When you use managed environments, in-product features are managed and supported by Microsoft. You don't need to update or maintain them&mdash;they're updated automatically with Power Platform release waves. If your organization uses the CoE Starter Kit, it's important to establish and maintain an internal process to update it monthly. Follow the suggestions presented in the [CoE Starter Kit Office Hours](https://aka.ms/coeofficehours).
+The engineering team for managed environments worked closely with [Power CAT](https://aka.ms/whoispowercat), the team responsible for the CoE Starter Kit, to identify the most-used features in the kit and add them to managed environments. As a result, some features are available in both products. When you use managed environments, in-product features are managed and supported by Microsoft. You don't need to update or maintain them&mdash;they're updated automatically with Power Platform service updates. If your organization uses the CoE Starter Kit, it's important to establish and maintain an internal process to update it monthly. Follow the suggestions presented in the [CoE Starter Kit Office Hours](https://aka.ms/coeofficehours).
 
 We recommend starting with managed environments. If you discover any gaps in your governance requirements, explore whether the CoE Starter Kit offers features that can address them. Learn more in [How to decide whether to use managed environments with the CoE Starter Kit](#how-to-decide-whether-to-use-managed-environments-with-the-coe-starter-kit).
 

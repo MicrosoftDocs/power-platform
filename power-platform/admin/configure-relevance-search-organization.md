@@ -4,7 +4,7 @@ description: Configure Dataverse search for your environment to improve search r
 author: JasonHQX 
 ms.component: pa-admin
 ms.topic: get-started
-ms.date: 05/08/2026
+ms.date: 09/11/2026
 ms.subservice: admin
 ms.custom: NewPPAC
 ms.author: jasonhuang
@@ -85,7 +85,7 @@ The selected state affects how Dataverse data is indexed and used across the glo
 > [!IMPORTANT]
 > Turning off Dataverse search deprovisions and removes the index within 12 hours. If you turn on Dataverse search after it's been off for 12 hours, it creates a fresh index that needs to go through a full sync. Syncing can take an hour or more for average size organizations, and a couple of days for large organizations. Be sure to consider these implications when you turn off Dataverse search temporarily.
 > 
-> If you're using your own encryption key, you can turn off Dataverse search after allowing early access of 2021 release wave 2 in the Power Platform admin center.
+> If you're using your own encryption key, you can turn off Dataverse search after enabling early access for the October 2021 release in the Power Platform admin center.
 
 ## Turn on search indexing to support Dataverse intelligence ([Work IQ](/microsoft-365/copilot/extensibility/work-iq)) in AI and agent experiences
 

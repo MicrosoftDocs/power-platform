@@ -4,10 +4,10 @@ description: View and manage behavior settings for Microsoft Dataverse.
 author: EllenWehrle
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 04/24/2025
+ms.date: 09/11/2026
 ms.subservice: admin
 ms.custom: NewPPAC
-ms.author: ellenwehrle
+ms.author: jasongre
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -33,7 +33,7 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 |Settings|Description| Default value |
 |--------------|-----------------|-----|  
-|Model-driven app release channel|If this setting is set to **Semi-annual channel**, users in the organization use features from the _current release wave_, which is existing behavior. <br><br>If this setting is set to **Monthly channel**, users use features from the _current monthly release_. <br><br>This setting can be changed at any time and users are switched after one to two browser refreshes. Learn more at [Release channels for your model driven app](/power-apps/maker/model-driven-apps/channel-overview).   | Auto<br><br>**Note**: Behavior for the **Auto** option is changing with 2024 release wave 2. Learn more at [Configuring release channel](/power-apps/maker/model-driven-apps/channel-overview#configuring-release-channel). | 
+|Model-driven app release channel|If you set this setting to **Semi-annual channel**, users in the organization use features from the _current semi-annual release_, which is existing behavior. <br><br>If you set this setting to **Monthly channel**, users use features from the _current monthly release_. <br><br>You can change this setting at any time and users switch after one to two browser refreshes. Learn more at [Release channels for your model driven app](/power-apps/maker/model-driven-apps/channel-overview).   | Auto<br><br>**Note**: The **Auto** option uses the **Monthly channel**. Learn more at [Configuring release channel](/power-apps/maker/model-driven-apps/channel-overview#configuring-release-channel). | 
 
 ## Basic behavior
 

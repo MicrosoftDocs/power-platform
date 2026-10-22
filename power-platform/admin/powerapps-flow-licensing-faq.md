@@ -29,7 +29,7 @@ For more details about Microsoft Power Platform licensing, download the [Licens
 
 ### What are the licensing implications of generally available Copilot capabilities for end users of model-driven apps?
 
-As part of 2024 release wave 1, Copilot chat and form fill assistance are both generally available and on-by-default for Dynamics 365 users.  
+As part of the April 2024 release, Copilot chat and form fill assistance are both generally available and on-by-default for Dynamics 365 users.  
 
 To utilize these features, you need any of the following licenses:
 

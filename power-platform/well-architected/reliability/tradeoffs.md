@@ -1,12 +1,12 @@
 ---
 title: Reliability tradeoffs for Power Platform workloads
 description: Learn about the Reliability tradeoffs you might encounter when optimizing for the other Power Platform Well-Architected pillars.
-author: robstand
-ms.author: rstand
+author: jasongre
+ms.author: jasongre
 ms.reviewer: jhaskett-msft
 ms.subservice: well-architected
 ms.topic: concept-article
-ms.date: 08/18/2025
+ms.date: 09/11/2026
 ---
 
 # Reliability tradeoffs for Power Platform workloads
@@ -35,7 +35,7 @@ During the design phase of a workload, you need to consider how decisions based 
 
 > :::image type="icon" source="../_images/trade-off.svg"::: **Tradeoff: Old software versions**. The Security pillar encourages a "get current, stay current" approach to vendor security patches.
 
-- Applying release wave updates or updates to vendor libraries, like third-party components or solutions, can potentially disrupt the target component, causing unavailability during the change. Delaying or avoiding patching might avoid the potential reliability risks, but it leaves the system unprotected against evolving threats.
+- Applying Power Platform service updates or updates to vendor libraries, like third-party components or solutions, can potentially disrupt the target component, causing unavailability during the change. Delaying or avoiding patching might avoid the potential reliability risks, but it leaves the system unprotected against evolving threats.
 
 - The preceding consideration also applies to the workload's code. For example, it applies to application code that uses old libraries and components. If updating and deploying application code is viewed as an unmitigated reliability risk, the application is exposed to additional security risks over time.
 
