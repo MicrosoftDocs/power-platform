@@ -512,6 +512,8 @@
                   href: inventory-api.md
                 - name: Power Platform inventory schema reference
                   href: inventory-schema.md
+                - name: "Data Export Migration: Inventory API Field Mapping"
+                  href: inventory-data-availability-differences.md
                 - name: Power Platform inventory sample queries
                   href: inventory-sample-queries.md
                 - name: Understand agent counts across admin surfaces
