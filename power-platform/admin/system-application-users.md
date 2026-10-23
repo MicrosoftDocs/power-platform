@@ -3,7 +3,8 @@ title: Special system users and application users
 description: Learn about the special system and application users created when the system is provisioned, including assigned security role, user name, and purpose.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/27/2026
+ms.date: 10/23/2026
+ai-usage: ai-assisted
 author: paulliew
 ms.subservice: admin
 ms.author: paulliew
@@ -12,6 +13,7 @@ ms.custom: admin-security
 search.audienceType: 
   - admin
 ms.contributors:
+- magillio
 - sanjeevgoyalmsft 
 - gattimassimo
 - saponcer
@@ -85,6 +87,10 @@ Most of these users are hidden from user views but they can be found by using th
 | Apollo | capaeinfra@microsoft.com | For performing organization lifecycle operations for Dataverse | Service Writer Role |
 | Dataverse Information Protection | dvinfoprotection@microsoft.com | Allows Microsoft Purview to integrate with Dataverse. | Service Reader Role, PurviewLabelRole |
 | PowerAutomate-DesktopFlowAI | PowerAutomate-DesktopFlowAI@onmicrosoft.com | Service application to perform data integration between Dataverse and the Power Automate AI features | Desktop Flows AI Application User |
+| PowerAutomate-AiFlowsAppUser-Web | PowerAutomate-AiFlowsAppUser-Web@onmicrosoft.com | To support Power Automate AI flow service operations in Dataverse, including flow definitions and run records. | Power Automate AI Flows Application User |
+| PowerAutomate-AiFlowsAppUser-Worker | PowerAutomate-AiFlowsAppUser-Worker@onmicrosoft.com | To support Power Automate AI flow service operations in Dataverse, including flow definitions and run records. | Power Automate AI Flows Application User |
+| PowerAutomate-DesktopFlowRuntime | PowerAutomate-DesktopFlowRuntime@onmicrosoft.com | To support desktop flow runs and manage run-session data in Dataverse. | Desktop Flows Runtime Application User |
+| PowerAutomate-MachineManagementRelay | PowerAutomate-MachineManagementRelay@onmicrosoft.com | To manage desktop flow machines and machine groups and support communication with Dataverse. | Desktop Flows Machine Application User |
 | PowerAutomate-MachineProvisioning | PowerAutomate-MachineProvisioning@onmicrosoft.com | The user performs database operations during Hosted Machine and Hosted Machine Groups provisioning. | System Administrator |
 | Connector Management Service Backend | ConnectorManagementServiceBackend@onmicrosoft.com |To manage Microsoft Power Platform connectors within environments. | System admin |
 |# Sustainability Service Application|	sustainabiity-service@microsoft.com	| Application identity used by the sustainability microservices to perform operations on data.	|Sustainability Service Application Role <br> Sustainability Service Application Role - Data Sync <br> Sustainability Service Application Role - Custom|
