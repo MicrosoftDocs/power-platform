@@ -38,12 +38,13 @@ Follow the [Microsoft Writing Style Guide](https://learn.microsoft.com/style-gui
 - Number all ordered lists sequentially like "1.", "2.", "3.".
 - Complete sentences with proper punctuation in all list items
 - Avoid "etc." or "and so on" - provide complete lists or use "for example"
-- No consecutive headings without content between them
+- No consecutive headings without content between them. Introductory text should be included to provide context for the following section.
 
 #### Formatting conventions
 
 - **Bold** for UI elements
-- `Code style` for file names, folders, custom types, and non-localizable text
+- `Code style` for file names, folders, and custom types
+- Use :::no-loc text="<string>"::: for non-localizable text so it's not translated.
 - Raw URLs in angle brackets
 - Use relative links for files in this repo
 - Remove `https://learn.microsoft.com/en-us` from learn.microsoft.com links
@@ -52,4 +53,6 @@ Follow the [Microsoft Writing Style Guide](https://learn.microsoft.com/style-gui
 
 The following instructions are specific to this repository. Repository maintainers might update these instructions as needed.
 
-<!--- Add additional repository level instructions below. Do NOT update this line or above. --->
+If an article has (preview) content, ensure that it is labeled in the title and throughout the content where applicable. It always appears as (preview) with a lowercase "p" in parentheses. The (preview) label is also added after the title in the TOC. If an article has the (preview) label, it should also have [!INCLUDE [cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)] place directly at the top of the article. If no other IMPORTANT notes exist already, add this include file after the opening paragraph:[!INCLUDE [cc-preview-features-standard-important-note](../includes/cc-preview-features-standard-important-note.md)].
+
+Some names are not listed in the product style guide yet. The names should always match how they appear in the product itself and be used consistently throughout the documentation. Power Platform naming conventions typically use descriptive names written in sentence case. Occasionally, there are branded names that should be used as they appear in the product, even if they deviate from sentence case. One such example is "Copilot Credits."

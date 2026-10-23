@@ -1,9 +1,9 @@
 ---
-title: Configure Knowledge Sources for Agents
+title: Configure knowledge sources for agents (preview)
 description: Configure knowledge sources for agents in the Power Platform admin center to control access to SharePoint, public websites, and documents. Learn how to manage sources today.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 10/14/2026
+ms.date: 10/21/2026
 author: laneswenka
 ms.author: laswenka
 ms.contributors:
@@ -17,9 +17,11 @@ search.audienceType:
   - admin
 ---
 
-# Configure knowledge sources for agents in the Power Platform admin center
+# Configure knowledge sources for agents in the Power Platform admin center (preview)
 
-You can choose which types of knowledge sources your agents can reference. The **Knowledge sources for agents** setting controls access to sources like SharePoint, public websites, and documents such as files. 
+[!INCLUDE [cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
+
+You can choose which types of knowledge sources your agents can reference. The **Knowledge sources for agents** setting controls access to sources like SharePoint, public websites, and documents such as files.
 
 You can access the knowledge sources for agents setting from two places in the Power Platform admin center:
 
@@ -37,7 +39,7 @@ To manage knowledge sources for agents:
 1. Select the **Data and privacy** setting.
 1. Select the **Knowledge sources for agents** setting.
 
-    :::image type="content" source="media/controls-knowledge.png" alt-text="Data policy for knowledge source for agents":::
+    :::image type="content" source="media/controls-knowledge.png" lightbox="media/controls-knowledge.png" alt-text="Screenshot of the Knowledge sources for agents setting in the Power Platform admin center":::
 
 1. In the side pane, choose whether to sort by **Environment groups** or by **Environments**.
 1. Select the environment group or environment that you want to configure.
@@ -60,7 +62,7 @@ To manage knowledge sources for agents:
 
 ## Related content
 
-- [Configure data policies for agents](/microsoft-copilot-studio/admin-data-loss-prevention)
+- [Choose knowledge sources for agents built in Copilot Studio](/microsoft-copilot-studio/choose-knowledge-sources)
 - [Rules for environment groups](environment-groups-rules.md)
 - [Security overview](security/security-overview.md)
 - [Data protection and privacy](security/data-protection-privacy.md)
