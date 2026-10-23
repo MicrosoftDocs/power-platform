@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 10/20/2026
+ms.date: 10/22/2026
 ---
 
 # Power Automate reference architectures and solution ideas
@@ -40,6 +40,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Integrate legacy data with Power Automate and SharePoint**](../reference-architectures/app-legacy-data-integration.md) | Streamline the process of integrating legacy data with modern platforms. |
 | [**​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | [**Integrate Power Platform with SAP for data management**](../reference-architectures/arch-pattern-sap.md) | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
+| [**Modernize frontline applications with Power Platform**](../reference-architectures/modernize-frontline-applications.md) | Modernize frontline material requests with an offline-capable canvas app, automated approvals, centralized data in Dataverse, and SAP integration. |
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | [**Reduce infrastructure challenges with hosted RPA in Power Automate​**](../reference-architectures/rpa-scale-operations.md) | Use hosted RPA to reduce the time and effort needed to procure, set up, operationalize, and maintain infrastructure for robotic process automations. |
 | [**Automate vendor invoice processing with Power Automate and AI Builder**](../reference-architectures/vendor-invoice-integration.md) | Learn how to automate vendor invoice ingestion by extracting and validating XML invoice data using Power Automate and AI Builder. |
