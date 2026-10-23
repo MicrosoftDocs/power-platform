@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-rule-set` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Rule Sets - Get Rule Set](/rest/api/power-platform/governance/rule-sets/get-rule-set).

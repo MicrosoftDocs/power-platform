@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-approvals` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Dsr Compliance - Get Approvals](/rest/api/power-platform/workflowsagent/dsr-compliance/get-approvals).

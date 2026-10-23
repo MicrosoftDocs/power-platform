@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-flow-runs-singleton` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Dsr Compliance - Get Flow Runs Singleton](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flow-runs-singleton).

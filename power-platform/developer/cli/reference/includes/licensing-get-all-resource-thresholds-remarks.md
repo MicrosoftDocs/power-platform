@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-all-resource-thresholds` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Resource Threshold - Get All Resource Thresholds](/rest/api/power-platform/licensing/resource-threshold/get-all-resource-thresholds).

@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-recommendation-scenarios` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Recommendations - Get Recommendation Scenarios](/rest/api/power-platform/analytics/recommendations/get-recommendation-scenarios).

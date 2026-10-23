@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `list-maker-evaluation-test-sets` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Bots - List Maker Evaluation Test Sets](/rest/api/power-platform/copilotstudio/bots/list-maker-evaluation-test-sets).

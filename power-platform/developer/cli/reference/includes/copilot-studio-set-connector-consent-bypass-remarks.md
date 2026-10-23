@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `set-connector-consent-bypass` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Bots - Set Connector Consent Bypass](/rest/api/power-platform/copilotstudio/bots/set-connector-consent-bypass).

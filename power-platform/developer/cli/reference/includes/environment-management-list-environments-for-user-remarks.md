@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `list-environments-for-user` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environments - List Environments For User](/rest/api/power-platform/environmentmanagement/environments/list-environments-for-user).

@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-flows` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Dsr Compliance - Get Flows](/rest/api/power-platform/workflowsagent/dsr-compliance/get-flows).

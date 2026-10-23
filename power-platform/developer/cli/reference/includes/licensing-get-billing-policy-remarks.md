@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-billing-policy` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Billing Policy - Get Billing Policy](/rest/api/power-platform/licensing/billing-policy/get-billing-policy).

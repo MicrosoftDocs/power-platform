@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `update-environment-management-settings` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Management Settings - Update Environment Management Settings](/rest/api/power-platform/environmentmanagement/environment-management-settings/update-environment-management-settings).

@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `perform-force-failover` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Failover - Perform Force Failover](/rest/api/power-platform/environmentmanagement/failover/perform-force-failover).

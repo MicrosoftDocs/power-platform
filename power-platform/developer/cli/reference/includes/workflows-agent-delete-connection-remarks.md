@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `delete-connection` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Dsr Compliance - Delete Connection](/rest/api/power-platform/workflowsagent/dsr-compliance/delete-connection).

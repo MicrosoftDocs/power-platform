@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `provision-new-environment` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Provisioning - Provision New Environment](/rest/api/power-platform/environmentmanagement/environment-provisioning/provision-new-environment).

@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `perform-dr-drill` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Failover - Perform DR Drill](/rest/api/power-platform/environmentmanagement/failover/perform-dr-drill).

@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `delete-environment-by-id` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Delete - Delete Environment By ID](/rest/api/power-platform/environmentmanagement/environment-delete/delete-environment-by-id).

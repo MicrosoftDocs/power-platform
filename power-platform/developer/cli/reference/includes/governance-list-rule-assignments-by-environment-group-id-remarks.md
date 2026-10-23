@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `list-rule-assignments-by-environment-group-id` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Rule Based Policies - List Rule Assignments By Environment Group Id](/rest/api/power-platform/governance/rule-based-policies/list-rule-assignments-by-environment-group-id).

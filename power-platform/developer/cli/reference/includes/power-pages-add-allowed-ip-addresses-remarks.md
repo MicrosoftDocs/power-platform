@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `add-allowed-ip-addresses` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Websites - Add Allowed Ip Addresses](/rest/api/power-platform/powerpages/websites/add-allowed-ip-addresses).

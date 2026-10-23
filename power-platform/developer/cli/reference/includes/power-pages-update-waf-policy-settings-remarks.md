@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `update-waf-policy-settings` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Websites - Update Waf Policy Settings](/rest/api/power-platform/powerpages/websites/update-waf-policy-settings).

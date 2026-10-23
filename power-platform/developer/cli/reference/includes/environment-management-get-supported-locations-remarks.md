@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-supported-locations` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Provisioning - Get Supported Locations](/rest/api/power-platform/environmentmanagement/environment-provisioning/get-supported-locations).

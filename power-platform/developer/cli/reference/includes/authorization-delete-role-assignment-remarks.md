@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `delete-role-assignment` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Role Based Access Control - Delete Role Assignment](/rest/api/power-platform/authorization/role-based-access-control/delete-role-assignment).

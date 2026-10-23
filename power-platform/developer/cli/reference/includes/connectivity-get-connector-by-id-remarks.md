@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-connector-by-id` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Connectors - Get Connector By Id](/rest/api/power-platform/connectivity/connectors/get-connector-by-id).

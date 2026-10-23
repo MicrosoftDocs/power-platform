@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `refresh-provisioning-status` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Billing Policy - Refresh Provisioning Status](/rest/api/power-platform/licensing/billing-policy/refresh-provisioning-status).

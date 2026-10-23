@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `retrieve-temporary-currency-entitlement-count` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Temporary Currency Entitlement - Retrieve Temporary Currency Entitlement Count](/rest/api/power-platform/licensing/temporary-currency-entitlement/retrieve-temporary-currency-entitlement-count).

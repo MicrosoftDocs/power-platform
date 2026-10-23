@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `list-billing-policy-environments` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Billing Policy Environment - List Billing Policy Environments](/rest/api/power-platform/licensing/billing-policy-environment/list-billing-policy-environments).
