@@ -232,7 +232,7 @@
                           href: preview-experimental-ai-models-rule.md
                         - name: External models rule
                           href: allow-llm-generative-responses.md
-                        - name: Knowledge sources for agents rule
+                        - name: Knowledge sources for agents rule (preview)
                           href: knowledge-sources-for-agents-rule.md
                         - name: Skills in Copilot Studio rule
                           href: skills-copilot-studio-rule.md
