@@ -11,9 +11,9 @@ metadata:
   ms.subservice: admin
   ms.topic: landing-page 
   ms.collection: collection
-  author: sericks007
-  ms.author: sericks
-  ms.date: 07/29/2025
+  author: EllenWehrle
+  ms.author: ellenwehrle
+  ms.date: 10/23/2026
 
 # linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | video | whats-new
 
@@ -91,6 +91,8 @@ landingContent:
             url: ../responsible-ai-overview.md
        - linkListType: how-to-guide
          links:
+          - text: Use Power Platform Admin in Cowork (preview)
+            url: power-platform-admin-cowork.md
           - text: Move data across regions for Copilots and generative AI features
             url: geographical-availability-copilot.md
           - text: Track, manage, and scale Copilot adoption

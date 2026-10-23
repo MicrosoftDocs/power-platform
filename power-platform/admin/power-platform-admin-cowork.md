@@ -1,23 +1,30 @@
 ---
-title: Power Platform Admin in Cowork (Preview)
-description: Learn how to install Power Platform Admin (Preview) for Copilot Cowork users and connect to Power Platform for Admins V2.
+title: Power Platform Admin in Cowork (preview)
+description: Learn how to install Power Platform Admin (preview) for Copilot Cowork users and connect to Power Platform for Admins V2.
 ms.topic: how-to
 ms.service: power-platform
-ms.date: 10/15/2026
+ms.date: 10/23/2026
 ai-usage: ai-assisted
 author: Greggbarker-MS
 ms.author: grbarker
 ms.reviewer: ellenwehrle
 ---
 
-# Power Platform Admin in Cowork (Preview)
+# Power Platform Admin in Cowork (preview)
 
-Power Platform Admin (Preview) helps you get insights about your Power Platform resources through Microsoft Copilot Cowork. You can ask about inventory, usage, governance, capacity, and licensing.
+[!INCLUDE [cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
 
-As a Microsoft 365 administrator, install Power Platform Admin (Preview) for all users or selected users and groups. After installation, users connect their Power Platform account in Cowork.
+Use Power Platform Admin (preview) in Microsoft Copilot Cowork to explore your Power Platform resources. Start by asking which environments you have, then ask about inventory, usage, governance, capacity, or licensing.
 
-> [!IMPORTANT]
-> This feature is in preview. It provides read-only insights and guidance and doesn't independently execute administrative actions.
+This article walks you through installation, connection, and your first question:
+
+- **Microsoft 365 administrators:** Review the [prerequisites](#prerequisites), then [install the plugin for users](#install-the-plugin-for-users).
+- **Users with the plugin already installed:** Review the [required roles for data access](#required-roles-for-data-access), then [connect the plugin in Cowork](#connect-the-plugin-in-cowork).
+
+> [!NOTE]
+> This feature provides read-only insights and guidance and doesn't independently execute administrative actions.
+
+[!INCLUDE [cc-preview-features-standard-important-note](../includes/cc-preview-features-standard-important-note.md)]
 
 ## Prerequisites
 
@@ -26,7 +33,7 @@ To deploy the plugin, you need access to the [Microsoft 365 admin center](https:
 Users who connect the plugin need:
 
 - An active work or school account in the organization that contains the Power Platform resources you want to access.
-- Access to Microsoft Copilot Cowork and the Power Platform Admin (Preview) plugin.
+- Access to Microsoft Copilot Cowork and the Power Platform Admin (preview) plugin.
 - Permission to create a Power Platform for Admins V2 connection.
 
 ### Required roles for data access
@@ -42,7 +49,7 @@ Installing the plugin for a user doesn't grant these roles or access to Power Pl
 Confirm that the target users have the required licenses and access to Cowork. Installing the plugin doesn't grant access to Power Platform resources.
 
 > [!IMPORTANT]
-> Deploying the Power Platform Admin plugin doesn't grant access to Cowork itself. Configure Cowork access separately. Current Cowork access controls use a spending policy that includes Cowork; changing the Cowork agent entry in the registry doesn't grant that access. See [Manage Copilot Cowork for your organization](/microsoft-365/copilot/cowork/cowork-admin-governance#allow-access-to-cowork).
+> Deploying the Power Platform Admin (preview) plugin doesn't grant access to Cowork itself. Configure Cowork access separately. Current Cowork access controls use a spending policy that includes Cowork; changing the Cowork agent entry in the registry doesn't grant that access. See [Manage Copilot Cowork for your organization](/microsoft-365/copilot/cowork/cowork-admin-governance#allow-access-to-cowork).
 
 ## Install the plugin for users
 
@@ -51,13 +58,13 @@ As a Microsoft 365 administrator, install the plugin in the Microsoft 365 admin 
 1. Sign in to the [Microsoft 365 admin center](https://admin.microsoft.com/).
 1. In the left navigation pane, select **Agents** > **Tools**.
 1. On the **Tools** page, select the **Registry** tab.
-1. Search for **Power Platform Admin** and select **Power Platform Admin (Preview)**, published by **Microsoft**.
+1. Search for **Power Platform Admin (preview)** and select **Power Platform Admin (preview)**, published by **Microsoft**.
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-tools-registry.png" alt-text="Microsoft 365 admin center Tools page with Power Platform Admin (Preview) listed in the Registry.":::
+:::image type="content" source="media/admin-cowork/power-platform-admin-tools-registry.png" alt-text="Microsoft 365 admin center Tools page with Power Platform Admin (preview) listed in the Registry.":::
 
 1. Review the plugin overview and select **Install**.
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-install-overview.png" alt-text="Power Platform Admin (Preview) plugin overview in the Microsoft 365 admin center with the Install button.":::
+:::image type="content" source="media/admin-cowork/power-platform-admin-install-overview.png" alt-text="Power Platform Admin (preview) plugin overview in the Microsoft 365 admin center with the Install button.":::
 
 1. On the **Select users** page, confirm that **Channel** is **Copilot**.
 1. Under **Installed for**, select **All users** or **Specific users and groups**. If you select specific users and groups, add them when prompted.
@@ -67,7 +74,7 @@ As a Microsoft 365 administrator, install the plugin in the Microsoft 365 admin 
 
 1. On the **Review and install** page, confirm the selected audience and select **Install**.
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-review-install.png" alt-text="Install wizard Review and install page showing Power Platform Admin (Preview) set to install for all users.":::
+:::image type="content" source="media/admin-cowork/power-platform-admin-review-install.png" alt-text="Install wizard Review and install page showing Power Platform Admin (preview) set to install for all users.":::
 
 ## Connect the plugin in Cowork
 
@@ -75,9 +82,9 @@ As a user in the installation audience, connect the plugin in Cowork.
 
 1. Open Copilot Cowork with your work or school account.
 1. In Cowork's navigation, select **Customize**.
-1. Under **Installed**, find **Power Platform Admin (Preview)** and select **Connect**.
+1. Under **Installed**, find **Power Platform Admin (preview)** and select **Connect**.
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-cowork-customize.png" alt-text="Cowork Customize page with Power Platform Admin (Preview) under Installed and a Connect button.":::
+:::image type="content" source="media/admin-cowork/power-platform-admin-cowork-customize.png" alt-text="Cowork Customize page with Power Platform Admin (preview) under Installed and a Connect button.":::
 
 1. In the **Connect Power Platform for Admins V2** dialog, set **Authentication Type** to **OAuth Connection**, then select **Connect**.
 1. Sign in with an account that has one of the [required roles for data access](#required-roles-for-data-access). Confirm that you're using the account and organization you intend to access before completing consent.
@@ -90,19 +97,23 @@ As a user in the installation audience, connect the plugin in Cowork.
 
 ## Ask a question and approve the request
 
-Ask a Power Platform question in Cowork. For example:
+Try an inventory question first, then use an environment name from the answer to ask a more focused question.
 
-> Which environments do we have, and what types are they?
+1. In Cowork, enter:
 
-When Cowork displays an Ask Advisor approval card, select **View details** to review the request, and then select **Approve** to continue.
+   > Which environments do we have, and what types are they?
+
+2. When Cowork displays an Ask Advisor approval card, select **View details** to review the request, and then select **Approve** to continue.
 
 :::image type="content" source="media/admin-cowork/power-platform-admin-cowork-approval.png" alt-text="Cowork Ask Advisor approval card with View details and Approve controls.":::
 
-To allow future Ask Advisor send-message requests without a separate approval prompt, open the menu next to **Approve** and select **Always allow Ask advisor send message advisor**. Choose this option only if you want Cowork to remember this approval for future requests.
+3. Review the answer. To explore an environment further, ask:
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-cowork-approval-preference.png" alt-text="Cowork approval menu with the Always allow Ask advisor send message advisor option.":::
+   > Which apps belong to the [environment name] environment?
 
-You can then ask about a named environment, resource, or reporting period. For example:
+   Replace `[environment name]` with a name from the answer.
+
+Ask more questions about a named environment, resource, or reporting period. For example:
 
 | Topic | Example question |
 | --- | --- |
@@ -111,6 +122,17 @@ You can then ask about a named environment, resource, or reporting period. For e
 | Governance | Which resources have ownership or sharing concerns? |
 | Capacity | Where is Power Platform capacity being consumed? |
 | Licensing | Which licensing considerations apply to this scenario? |
+
+To allow future Ask Advisor send-message requests without a separate approval prompt:
+
+1. Open the menu next to **Approve**.
+2. Select **Always allow Ask advisor send message advisor**.
+
+Choose this option only if you want Cowork to remember this approval for future requests.
+
+:::image type="content" source="media/admin-cowork/power-platform-admin-cowork-approval-preference.png" alt-text="Cowork approval menu with the Always allow Ask advisor send message advisor option.":::
+
+For guidance on agentic governance, see [Agentic governance with Power Platform Admin in Cowork (preview)](../guidance/adoption/agentic-governance.md).
 
 ## Troubleshooting
 
@@ -127,7 +149,7 @@ You can then ask about a named environment, resource, or reporting period. For e
 
 ## Disable the plugin or disconnect your account
 
-To disable the plugin for your conversations, open **Customize**, select **Power Platform Admin (Preview)**, and turn off its switch. Users can't uninstall an admin-installed plugin. Contact your Microsoft 365 administrator to have the plugin removed from your account.
+To disable the plugin for your conversations, open **Customize**, select **Power Platform Admin (preview)**, and turn off its switch. Users can't uninstall an admin-installed plugin. Contact your Microsoft 365 administrator to have the plugin removed from your account.
 
 To disconnect your account, open the connection settings for Power Platform for Admins V2 and remove the connection. If you can't find a disconnect or removal control, contact your administrator or support for instructions.
 
@@ -139,7 +161,7 @@ For Power Platform assistance, use [Microsoft Support in the Power Platform admi
 
 When reporting a plugin issue, include:
 
-- The plugin name, **Power Platform Admin (Preview)**.
+- The plugin name, **Power Platform Admin (preview)**.
 - The Copilot experience in which the issue occurred, such as Cowork.
 - The time of the issue and the steps you followed.
 - Any error message or conversation ID.
@@ -148,7 +170,6 @@ Don't include passwords, access tokens, or secrets.
 
 ## Related content
 
-- [Agentic governance with Power Platform Admin in Cowork](../guidance/adoption/agentic-governance.md)
 - [Manage plugins, skills, and MCP servers in the Microsoft 365 admin center](/microsoft-365/admin/manage/manage-plugins-skills-mcp-servers)
 - [Manage plugins for Copilot Cowork](/microsoft-365/copilot/cowork/cowork-manage-plugins)
 - [Use plugins with Copilot Cowork](/microsoft-365/copilot/cowork/cowork-plugins)
