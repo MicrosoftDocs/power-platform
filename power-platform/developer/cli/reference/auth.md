@@ -84,6 +84,8 @@ Use one of these values:
 - `UsGovHigh`
 - `UsGovDod`
 - `China`
+- `UsNat`
+- `UsSec`
 
 #### `--deviceCode` `-dc`
 
