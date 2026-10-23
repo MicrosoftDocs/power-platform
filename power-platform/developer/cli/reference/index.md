@@ -34,7 +34,7 @@ Use the includes/index-intro.md or includes/index-remarks.md files to add additi
 |[pac connectivity](connectivity.md)|(Preview) List an environment's connectors, connector details, and maker connections.|
 |[pac connector](connector.md)|Commands for working with Power Platform Connectors.|
 |[pac copilot](copilot.md)|Tools and utilities for copilot management.|
-|[pac copilot-studio](copilot-studio.md)|(Preview) Administer Copilot Studio agents: quarantine, reassign, delete, and evaluate.|
+|[pac copilot-studio](copilot-studio.md)|(Preview) Administer Copilot Studio agents and export tenant licensing reports.|
 |[pac data](data.md)|Import and export data from Dataverse.|
 |[pac dynamics](dynamics.md)|(Preview) Administer Finance and Operations environments, maintenance, and versions.|
 |[pac env](env.md)|Work with your Dataverse organization.|
