@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-entitlement` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Entitlement - Get Entitlement](/rest/api/power-platform/licensing/entitlement/get-entitlement).

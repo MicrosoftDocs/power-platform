@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `toggle-afd-traffic-routing` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Websites - Toggle AFD Traffic Routing](/rest/api/power-platform/powerpages/websites/toggle-afd-traffic-routing).

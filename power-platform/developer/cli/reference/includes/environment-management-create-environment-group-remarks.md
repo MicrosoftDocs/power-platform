@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `create-environment-group` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Groups - Create Environment Group](/rest/api/power-platform/environmentmanagement/environment-groups/create-environment-group).

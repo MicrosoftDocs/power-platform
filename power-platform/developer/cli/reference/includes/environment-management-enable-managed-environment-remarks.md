@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `enable-managed-environment` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Managed Governance - Enable Managed Environment](/rest/api/power-platform/environmentmanagement/environment-managed-governance/enable-managed-environment).

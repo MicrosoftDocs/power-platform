@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `delete-environment-backup` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Backup - Delete Environment Backup](/rest/api/power-platform/environmentmanagement/environment-backup/delete-environment-backup).

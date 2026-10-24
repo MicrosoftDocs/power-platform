@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `reset-environment` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Reset - Reset Environment](/rest/api/power-platform/environmentmanagement/environment-reset/reset-environment).

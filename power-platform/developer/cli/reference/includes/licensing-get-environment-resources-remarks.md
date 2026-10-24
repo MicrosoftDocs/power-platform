@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-environment-resources` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Entitlement Insight - Get Environment Resources](/rest/api/power-platform/licensing/entitlement-insight/get-environment-resources).

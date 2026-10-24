@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `delete-host-name-for-portal` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Websites - Delete Host Name For Portal](/rest/api/power-platform/powerpages/websites/delete-host-name-for-portal).

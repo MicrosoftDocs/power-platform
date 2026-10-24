@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-environment-group` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Groups - Get Environment Group](/rest/api/power-platform/environmentmanagement/environment-groups/get-environment-group).

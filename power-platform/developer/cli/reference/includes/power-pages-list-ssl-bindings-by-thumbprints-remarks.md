@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `list-ssl-bindings-by-thumbprints` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Websites - List Ssl Bindings By Thumbprints](/rest/api/power-platform/powerpages/websites/list-ssl-bindings-by-thumbprints).

@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-operation-by-id` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Operation - Get Operation By ID](/rest/api/power-platform/environmentmanagement/operation/get-operation-by-id).

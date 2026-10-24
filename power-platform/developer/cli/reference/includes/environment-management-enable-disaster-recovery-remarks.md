@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `enable-disaster-recovery` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Failover - Enable Disaster Recovery](/rest/api/power-platform/environmentmanagement/failover/enable-disaster-recovery).

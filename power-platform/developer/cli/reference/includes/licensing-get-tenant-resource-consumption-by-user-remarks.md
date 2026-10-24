@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-tenant-resource-consumption-by-user` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Entitlement Insight - Get Tenant Resource Consumption By User](/rest/api/power-platform/licensing/entitlement-insight/get-tenant-resource-consumption-by-user).

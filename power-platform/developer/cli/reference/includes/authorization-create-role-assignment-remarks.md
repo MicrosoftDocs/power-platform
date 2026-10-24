@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `create-role-assignment` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Role Based Access Control - Create Role Assignment](/rest/api/power-platform/authorization/role-based-access-control/create-role-assignment).

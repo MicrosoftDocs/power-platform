@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-many-environment-entitlements` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Entitlement - Get Many Environment Entitlements](/rest/api/power-platform/licensing/entitlement/get-many-environment-entitlements).

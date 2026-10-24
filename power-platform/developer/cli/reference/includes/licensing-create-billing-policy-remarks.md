@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `create-billing-policy` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Billing Policy - Create Billing Policy](/rest/api/power-platform/licensing/billing-policy/create-billing-policy).

@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `list-flow-actions` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Flow Actions - List Flow Actions](/rest/api/power-platform/powerautomate/flow-actions/list-flow-actions).

@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-scenario-actions` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Recommendations - Get Scenario Actions](/rest/api/power-platform/analytics/recommendations/get-scenario-actions).

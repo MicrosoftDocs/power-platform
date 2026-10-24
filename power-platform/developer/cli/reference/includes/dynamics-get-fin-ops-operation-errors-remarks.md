@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-fin-ops-operation-errors` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Finance And Operations Operation Errors - Get Fin Ops Operation Errors](/rest/api/power-platform/dynamics/finance-and-operations-operation-errors/get-fin-ops-operation-errors).

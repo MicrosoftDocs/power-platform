@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-fin-ops-license-summary-v2` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Fin Ops Licensing - Get Fin Ops License Summary V2](/rest/api/power-platform/licensing/fin-ops-licensing/get-fin-ops-license-summary-v2).

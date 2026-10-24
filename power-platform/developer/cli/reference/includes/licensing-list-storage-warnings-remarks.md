@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `list-storage-warnings` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Storage Warnings - List Storage Warnings](/rest/api/power-platform/licensing/storage-warnings/list-storage-warnings).

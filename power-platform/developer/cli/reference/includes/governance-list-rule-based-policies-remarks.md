@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `list-rule-based-policies` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Rule Based Policies - List Rule Based Policies](/rest/api/power-platform/governance/rule-based-policies/list-rule-based-policies).

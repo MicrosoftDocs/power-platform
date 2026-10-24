@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `list-cloud-flows` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Cloud Flows - List Cloud Flows](/rest/api/power-platform/powerautomate/cloud-flows/list-cloud-flows).
