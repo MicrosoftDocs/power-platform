@@ -62,6 +62,7 @@ Browse solution ideas categorized by industry or use case. Each solution idea in
 
 | Title | Description |
 | --- | --- |
+| **[Automate Copilot Studio agent evaluation in CI/CD pipelines](agent-evaluation-cicd.md)** | Establish automated quality gates and evaluation test runs for Copilot Studio agents in CI/CD pipelines using the Power Platform CLI to prevent prompt regression and ensure safe production releases. |
 | **[Automate software bug reporting process with Auto Triage AI Agent](auto-ai-triage.md)** | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
 
 ## Human resources and nonprofit

@@ -1,5 +1,5 @@
 ---
-title: ​Improve the new hire experience with a smart onboarding agent
+title: Improve the new hire experience with a smart onboarding agent
 description: Learn how to create a conversational onboarding agent in Copilot Studio that automates the onboarding process.
 #customer intent: As a Copilot Studio maker, I want to create an onboarding agent using Copilot Studio so that I can automate the new hire onboarding process and improve efficiency.
 author: carcla
@@ -46,17 +46,17 @@ To properly respond to the new employee's questions, the agent requires several 
 
 ## Components
 
-[​​**Power Platform environment**](/power-platform/admin/environments-overview): Contains the Power Platform resources such as the agent built in Copilot Studio, and any supporting Power Apps that implement the human-in-the-loop user experience. Use [solutions](/microsoft-copilot-studio/authoring-solutions-overview) to move these resources from one environment to another, like development to test.
+[**Power Platform environment**](/power-platform/admin/environments-overview): Contains the Power Platform resources such as the agent built in Copilot Studio, and any supporting Power Apps that implement the human-in-the-loop user experience. Use [solutions](/microsoft-copilot-studio/authoring-solutions-overview) to move these resources from one environment to another, like development to test.
 
-​[**Copilot Studio agents**](/microsoft-copilot-studio): Use Copilot Studio to implement the agents in the solution. The primary agent, the Onboarding Agent, interacts with users directly or it can trigger autonomously. While multiple agents aren't required for this scenario, you can use them to break the agent into more manageable components. For example, an Onboarding Learning agent could handle all the learning plan related tasks.
+[**Copilot Studio agents**](/microsoft-copilot-studio): Use Copilot Studio to implement the agents in the solution. The primary agent, the Onboarding Agent, interacts with users directly or it can trigger autonomously. While multiple agents aren't required for this scenario, you can use them to break the agent into more manageable components. For example, an Onboarding Learning agent could handle all the learning plan related tasks.
 
-[​**Power Apps​**](/power-apps): Use Power Apps to create the user experience for the manager overseeing candidate onboarding. Managers use the application to monitor candidate progress and address blockers to keep things moving.
+[**Power Apps**](/power-apps): Use Power Apps to create the user experience for the manager overseeing candidate onboarding. Managers use the application to monitor candidate progress and address blockers to keep things moving.
 
-[​**Power Platform custom connectors​**](/connectors/custom-connectors): Implement custom connectors to interact with any HR candidate systems or learning management systems that don't have certified connectors available.
+[**Power Platform custom connectors**](/connectors/custom-connectors): Implement custom connectors to interact with any HR candidate systems or learning management systems that don't have certified connectors available.
 
-[​**Microsoft Dataverse**](/power-apps/maker/data-platform): Use Dataverse to track the onboarding process from start to completion. Synchronize Dataverse detailed data with Microsoft Fabric to analyze insights on the overall onboarding process.
+[**Microsoft Dataverse**](/power-apps/maker/data-platform): Use Dataverse to track the onboarding process from start to completion. Synchronize Dataverse detailed data with Microsoft Fabric to analyze insights on the overall onboarding process.
 
-​**Microsoft 365 document library**: ​Store FAQs, training guidance, and other onboarding knowledge in a document library so agents can easily access these assets as a knowledge source.
+**Microsoft 365 document library**: Store FAQs, training guidance, and other onboarding knowledge in a document library so agents can easily access these assets as a knowledge source.
 
 ## Scenario details
 
@@ -81,9 +81,9 @@ The agent delivers value by:
 
 **Design your workload to avoid unnecessary complexity**: By allocating the responsibilities between the agents and custom connectors, you avoid unnecessary complexity. Creating this solution as a single solution with all onboarding instructions in a single agent could make the primary agent complex. Evaluate your onboarding process. If any single area has enough complexity, consider whether multiple agents would reduce overall complexity. However, breaking down the process into too many agents likely increases complexity. Evaluate your process and adjust your agent composition accordingly.
 
-**​Test for resiliency and availability**: With multiple integrated systems, it's important to implement error handling and transient fault handling for any interactions with those systems that might affect the onboarding process. For example, in situations where the user might be affected by the transient error and the agent isn't able to complete the interaction with the user. If it's an important interaction, handle the error by using automation to follow up with the user after the problem is resolved.
+**Test for resiliency and availability**: With multiple integrated systems, it's important to implement error handling and transient fault handling for any interactions with those systems that might affect the onboarding process. For example, in situations where the user might be affected by the transient error and the agent isn't able to complete the interaction with the user. If it's an important interaction, handle the error by using automation to follow up with the user after the problem is resolved.
 
-**​Measure and publish the health indicators**: Telemetry from the agent runtime should provide adequate indicators of the agent's health. You can also configure the agent to publish to Application Insights. By using the telemetry in Application Insights, you can query the data and include custom telemetry events from your topics.​
+**Measure and publish the health indicators**: Telemetry from the agent runtime should provide adequate indicators of the agent's health. You can also configure the agent to publish to Application Insights. By using the telemetry in Application Insights, you can query the data and include custom telemetry events from your topics.
 
 ### Operational Excellence
 
@@ -97,7 +97,7 @@ The agent delivers value by:
 
 **Design to meet performance requirements**: Evaluate your solution performance and volume of data requirements. The solution architecture has both user interactive and autonomous agent processing. These two types of processing likely require a different level of performance scrutiny. User interactive logic is more sensitive to response time, while you're likely more concerned with the consumption of the autonomous agents than processing time. Performance testing should address the testing needs of both processing types. If any of the logic is implemented by using agent flows, evaluate whether they're eligible for express mode to speed up processing and reduce agent response wait time.
 
-**​Optimize logic**: An agent's instructions are a form of logic. They provide the instructions for how the agent should guide the user through the onboarding process. As your instructions in a single agent become more complex, the agent might not be as precise in following the instructions or might become confused by overlapping instructions. Move some of the responsibility to another agent, a tool such as a prompt, a custom connector, or Model Context Protocol (MCP). Use agent flows when you need a more deterministic path of execution for the onboarding process. Agents see agent flows as tools and can include instructions for using specific tools. For example, you can implement Create Learning Plan as an agent flow that takes as input the role and uses connectors to the learning management system to identify and enroll the candidate in the appropriate courses.​
+**Optimize logic**: An agent's instructions are a form of logic. They provide the instructions for how the agent should guide the user through the onboarding process. As your instructions in a single agent become more complex, the agent might not be as precise in following the instructions or might become confused by overlapping instructions. Move some of the responsibility to another agent, a tool such as a prompt, a custom connector, or Model Context Protocol (MCP). Use agent flows when you need a more deterministic path of execution for the onboarding process. Agents see agent flows as tools and can include instructions for using specific tools. For example, you can implement Create Learning Plan as an agent flow that takes as input the role and uses connectors to the learning management system to identify and enroll the candidate in the appropriate courses.
 
 **Test performance**: Along with testing for functionality and failures, it's important to test and develop a baseline for performance and evaluate it as part of your release cycle. Learn more in [Design a testing strategy for your agents](/microsoft-copilot-studio/guidance/sec-gov-phase4).
 

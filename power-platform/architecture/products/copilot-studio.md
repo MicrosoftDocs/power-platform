@@ -18,7 +18,7 @@ Understanding Copilot Studio design and implementation concepts and exploring so
 
 - **Key concepts**: Learn about key pillars and responsibilities for implementing Copilot Studio projects to help you build robust, efficient, and maintainable solutions.
 
-- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Apps.
+- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Copilot Studio.
 
 - **Solution ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Copilot Studio.
 
@@ -54,11 +54,12 @@ Understanding Copilot Studio design and implementation concepts and exploring so
 | [**Custom contact center solution with Copilot Studio agent**](../solution-ideas/agent-custom-contact-center.md) | Enhance customer service efficiency through integrated platforms and technologies. |
 | [**Travel concierge using generative AI with Copilot Studio**](../solution-ideas/agent-travel-customer.md) | Employ an AI-driven solution to enhance customer interactions and streamline information access. |
 | [**Ticket management system with Copilot Studio agents**](../solution-ideas/agent-ticket-and-refund.md) | Improve ticket refund and management processes by deploying both a user-based and autonomous agent to integrate with legacy systems. |
+| [**Automate Copilot Studio agent evaluation in CI/CD pipelines**](../solution-ideas/agent-evaluation-cicd.md) | Establish automated quality gates and evaluation test runs for Copilot Studio agents in CI/CD pipelines using the Power Platform CLI to prevent prompt regression and ensure safe production releases. |
 | [**Automate software bug reporting with Auto Triage AI Agent**](../solution-ideas/auto-ai-triage.md) | Automate bug reporting in software development with two agents that handle issue creation and follow-up, reducing the burden on customer support teams and enhancing the customer experience. |
 | [**Intelligent cardiac triage and scheduling with Power Platform**](../solution-ideas/cardio-triage-agent.md) | Automate and enhance the triage process for cardiology patients using AI Builder, Copilot Studio, and Microsoft 365 integrations. |
-| [**​Build anomaly detection with Copilot Studio and Fabric​**](../solution-ideas/agent-anomaly-detection.md) | Automate fraud detection by identifying duplicate invoices, suspicious vendor activity, and policy violations, using Microsoft Copilot Studio and Fabric. |
-| [**​​Streamline customer service with a customer support assistance agent**​](../solution-ideas/customer-support-agent.md) | Streamline customer support by building a Microsoft Copilot Studio conversational agent that integrates Dynamics 365, Dataverse, and SharePoint. |
-| [**​Improve the new hire experience with a smart onboarding agent**](../solution-ideas/onboarding-agent.md) | Create a conversational onboarding agent in Copilot Studio that automates the new hire onboarding process. |
+| [**Build anomaly detection with Copilot Studio and Fabric**](../solution-ideas/agent-anomaly-detection.md) | Automate fraud detection by identifying duplicate invoices, suspicious vendor activity, and policy violations, using Microsoft Copilot Studio and Fabric. |
+| [**Streamline customer service with a customer support assistance agent**](../solution-ideas/customer-support-agent.md) | Streamline customer support by building a Microsoft Copilot Studio conversational agent that integrates Dynamics 365, Dataverse, and SharePoint. |
+| [**Improve the new hire experience with a smart onboarding agent**](../solution-ideas/onboarding-agent.md) | Create a conversational onboarding agent in Copilot Studio that automates the new hire onboarding process. |
 | [**AI-enabled donor management solution**](../solution-ideas/agent-donor-management.md) | Streamline donor engagement, automate workflows, and enhance operational efficiency for nonprofits with an AI-powered donor management solution. |
 
 ## Related resources
