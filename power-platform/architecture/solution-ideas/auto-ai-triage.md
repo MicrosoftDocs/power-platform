@@ -19,7 +19,7 @@ search.audienceType:
 
 In this article, you learn about the Auto Triage AI Agent, which automates bug reporting in software development. The solution highlights the efficiency gained through using generative AI to automate triage and follow-up of product issues, reducing the burden on customer support teams and enhancing the customer experience.
 
-For a demo and more information, visit the Auto Triage AI Agent solution on [GitHub](https://github.com/Shrusti13/TriageAutonomousAgent?tab=readme-ov-file​).
+For a demo and more information, visit the Auto Triage AI Agent solution on [GitHub](https://github.com/Shrusti13/TriageAutonomousAgent?tab=readme-ov-file).
 
 [!INCLUDE [pp-arch-solution-idea-tip](../../includes/pp-arch-solution-idea-tip.md)]
 
@@ -126,4 +126,4 @@ Principal authors:
 
 ## Next steps
 
-For a demo video, more details about functionality, architecture, source code, and more, visit the Auto Triage AI Agent solution on [GitHub](https://github.com/Shrusti13/TriageAutonomousAgent?tab=readme-ov-file​).
+For a demo video, more details about functionality, architecture, source code, and more, visit the Auto Triage AI Agent solution on [GitHub](https://github.com/Shrusti13/TriageAutonomousAgent?tab=readme-ov-file).
