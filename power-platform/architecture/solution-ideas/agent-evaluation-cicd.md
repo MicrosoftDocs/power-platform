@@ -6,7 +6,7 @@ author: sapanpatel1230
 ms.subservice: architecture-center
 ms.topic: solution-idea
 ms.date: 10/24/2026
-ms.author: sapanpatel
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors:
   - sapanpatel1230
