@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `run-maker-evaluation-test-set` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Bots - Run Maker Evaluation Test Set](/rest/api/power-platform/copilotstudio/bots/run-maker-evaluation-test-set).

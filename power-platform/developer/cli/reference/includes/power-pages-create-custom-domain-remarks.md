@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `create-custom-domain` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Websites - Create Custom Domain](/rest/api/power-platform/powerpages/websites/create-custom-domain).

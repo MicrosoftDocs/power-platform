@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `recover-environment` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Recover - Recover Environment](/rest/api/power-platform/environmentmanagement/environment-recover/recover-environment).

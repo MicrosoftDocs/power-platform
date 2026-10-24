@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `remove-billing-policy-environment` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Billing Policy Environment - Remove Billing Policy Environment](/rest/api/power-platform/licensing/billing-policy-environment/remove-billing-policy-environment).

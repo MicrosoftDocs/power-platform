@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `patch-rule-based-policy` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Rule Based Policies - Patch Rule Based Policy](/rest/api/power-platform/governance/rule-based-policies/patch-rule-based-policy).

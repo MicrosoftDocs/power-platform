@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `list-host-names-for-portal` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Websites - List Host Names For Portal](/rest/api/power-platform/powerpages/websites/list-host-names-for-portal).

@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `convert-trial-to-production` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Websites - Convert Trial To Production](/rest/api/power-platform/powerpages/websites/convert-trial-to-production).

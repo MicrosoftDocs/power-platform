@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `delete-copilot-agent` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Bots - Delete Copilot Agent](/rest/api/power-platform/copilotstudio/bots/delete-copilot-agent).

@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `update-environment-group` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Groups - Update Environment Group](/rest/api/power-platform/environmentmanagement/environment-groups/update-environment-group).

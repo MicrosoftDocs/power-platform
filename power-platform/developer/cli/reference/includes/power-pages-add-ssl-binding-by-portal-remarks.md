@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `add-ssl-binding-by-portal` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Websites - Add Ssl Binding By Portal](/rest/api/power-platform/powerpages/websites/add-ssl-binding-by-portal).

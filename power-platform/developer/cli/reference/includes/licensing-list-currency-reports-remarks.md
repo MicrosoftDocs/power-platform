@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `list-currency-reports` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Currency Reports - List Currency Reports](/rest/api/power-platform/licensing/currency-reports/list-currency-reports).

@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `set-bot-as-unquarantined` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Bots - Set Bot As Unquarantined](/rest/api/power-platform/copilotstudio/bots/set-bot-as-unquarantined).

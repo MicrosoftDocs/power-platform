@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `apply-admin-role` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Users - Apply Admin Role](/rest/api/power-platform/usermanagement/users/apply-admin-role).

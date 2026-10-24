@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-tenant-resources-across-environments` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Entitlement Insight - Get Tenant Resources Across Environments](/rest/api/power-platform/licensing/entitlement-insight/get-tenant-resources-across-environments).

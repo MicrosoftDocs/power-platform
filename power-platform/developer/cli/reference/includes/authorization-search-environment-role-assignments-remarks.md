@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `search-environment-role-assignments` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Role Based Access Control - Search Environment Role Assignments](/rest/api/power-platform/authorization/role-based-access-control/search-environment-role-assignments).

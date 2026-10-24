@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-restore-candidates` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Environment Restore - Get Restore Candidates](/rest/api/power-platform/environmentmanagement/environment-restore/get-restore-candidates).

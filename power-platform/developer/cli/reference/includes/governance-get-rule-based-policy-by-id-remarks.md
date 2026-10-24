@@ -1,8 +1,3 @@
-<!-- 
-Instructions: Remove comments and this line. Add appropriate remarks below
+### `get-rule-based-policy-by-id` remarks
 
-### Remarks
-
-Add remarks here...
-
--->
+You can also invoke this command using the [Power Platform REST API Rule Based Policies - Get Rule Based Policy By ID](/rest/api/power-platform/governance/rule-based-policies/get-rule-based-policy-by-id).
