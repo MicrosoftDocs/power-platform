@@ -4,7 +4,7 @@ description: "Learn about the Power Apps Developer Plan features, capacity limit
 author: MKBajwa-PM
 ms.subservice: developer
 ms.author: mbajwa
-ms.date: 10/17/2026
+ms.date: 10/26/2026
 ms.reviewer: jdaly
 ms.topic: concept-article
 ai-usage: ai-assisted
@@ -74,7 +74,7 @@ The following capacity limits apply to the developer environments:
 
 | **Capacity**| **Limits** |
 | --- | --- |
-| Flow runs/month| 750|
+| Flow runs per month| 750|
 | Database size| 2 GB|
 
 You can't increase capacity by applying add-ons to the quantities we include. If you hit capacity limits, purchase the Power Apps Per User Plan. For more information, see the [Power Apps pricing page](https://powerapps.microsoft.com/pricing/).
@@ -116,25 +116,25 @@ Starting [!INCLUDE [unmanaged-developer-env-creation-phase-date](../includes/unm
 
 ### What should I do if I reach the capacity limits of the environment?
 
-There's a limited capacity provided because this environment is meant for development and test purposes, not for production use. The capacity limits are:
+There's a limited capacity because this environment is meant for development and test purposes, not for production use. The capacity limits are:
 
 | **Capacity**| **Limits** |
 | --- | --- |
-| Flow runs/month| 750|
+| Flow runs per month| 750|
 | Database size| 2 GB|
 
-If you reach one or more capacity limits, we recommend you purchase a plan that
+If you reach one or more capacity limits, purchase a plan that
 supports production use. Learn more about our plans on the [Power Apps pricing
 page](https://powerapps.microsoft.com/pricing/).
 
-### Can I transfer the apps, flows, and other resources created in the developer environment to another environment?
+### Can I transfer the apps, flows, and other resources I created in the developer environment to another environment?
 
-Yes, you should be able to export the resources from this environment to other environments. For more information,
+Yes, you can export the resources from this environment to other environments. For more information,
 see [Solutions](/power-apps/maker/data-platform/solutions-overview).
 
 ### Will my Power Apps Developer Plan subscription ever expire?
 
-You can continue using your Power Apps Developer Plan for free as long as there's active usage and no abuse of the plan (for example, apps aren't used for production purposes and the capacity limits aren't exceeded). Environments created using Power Apps Developer Plan that are inactive for the last 30 days are automatically disabled. See [Timeline for unused developer environments](../admin/automatic-environment-cleanup.md#timeline-for-unused-developer-environments)
+You can continue using your Power Apps Developer Plan for free as long as there's active usage and no abuse of the plan (for example, you don't use apps for production purposes and you don't exceed the capacity limits). Environments you created by using Power Apps Developer Plan that are inactive for the last 30 days are automatically disabled. See [Timeline for unused developer environments](../admin/automatic-environment-cleanup.md#timeline-for-unused-developer-environments)
 
 However, unmanaged developer environments are deprecated. Regardless of activity, unmanaged developer environments are suspended starting [!INCLUDE [unmanaged-developer-env-suspended-phase-date](../includes/unmanaged-developer-env-suspended-phase-date.md)] and deleted starting [!INCLUDE [unmanaged-developer-env-deleted-phase-date](../includes/unmanaged-developer-env-deleted-phase-date.md)]. Learn more in [What happens to my developer environment because of the deprecation of unmanaged developer environments?](#what-happens-to-my-developer-environment-because-of-the-deprecation-of-unmanaged-developer-environments)
 
@@ -195,25 +195,25 @@ A developer environment can become a managed environment. However, the developer
 
 ### Why does a banner appear with apps running in the developer environment?
 
-Since developer environments aren't intended to support production scenarios, apps display a temporary banner to remind makers about them running in a developer environment. This banner no longer appears if you move the app from a developer environment to a non-developer environment.
+Since developer environments aren't designed to support production scenarios, apps display a temporary banner to remind makers that they're running in a developer environment. This banner no longer appears if you move the app from a developer environment to a non-developer environment.
 
 :::image type="content" source="media/power_apps_dev_env_app_banner.png" alt-text="Power Apps Developer Environment app banner.":::
 
-### Can I launch a premium app with a Power Apps Developer Plan in non-Developer environments?
+### Can I launch a premium app with a Power Apps Developer Plan in non-developer environments?
 
-No. You can't use the Power Apps Developer Plan to launch premium apps that aren't in a Developer environment. You need a valid Power Apps premium entitlement. [Learn more about Power Apps plans](../admin/signup-for-powerapps-admin.md#choosing-the-right-plan).
+No. You can't use the Power Apps Developer Plan to launch premium apps that aren't in a developer environment. You need a valid Power Apps premium entitlement. [Learn more about Power Apps plans](../admin/signup-for-powerapps-admin.md#choosing-the-right-plan).
 
 ### Are managed environment use rights included in the Developer Plan?
 
-Managed environment isn't included as an entitlement in the Developer Plan when users run their assets. In other words, users&mdash;including makers running their own apps or flows&mdash;need a premium license in addition to the developer plan to run their assets in a managed, developer environment.
+The Developer Plan doesn't include managed environment use rights when users run their assets. In other words, users&mdash;including makers running their own apps or flows&mdash;need a premium license in addition to the developer plan to run their assets in a managed developer environment.
 
 ### Are Dynamics 365 apps available in a developer environment?
 
-No. Dynamics 365 apps can't be installed in a developer environment. You see the following message when you try to install them:
+No. You can't install Dynamics 365 apps in a developer environment. You see the following message when you try to install them:
 
 "Installing Dynamics 365 apps such as Dynamics 365 Sales and Dynamics 365 Customer Service is only supported on environments that are created with a database with the option to Enable Dynamics 365 apps set to "Yes". Try installing this application in an environment with a database and Enable Dynamics 365 apps enabled on it."
 
-If you want to explore Dynamics 365 apps, refer to the app-specific documentation for free trials, or to install them on existing environments.
+To explore Dynamics 365 apps, refer to the app-specific documentation for free trials, or to install them on existing environments.
 
 ### Are users automatically added to a developer environment?
 

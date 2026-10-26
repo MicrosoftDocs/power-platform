@@ -4,7 +4,7 @@ description: Learn how to use the Power Platform CLI with the built-in MCP serve
 ms.author: anpetroc
 author: anpetroc
 ms.reviewer: jdaly
-ms.date: 12/18/2025
+ms.date: 10/26/2026
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
@@ -38,29 +38,29 @@ You must have .NET 10.0 or higher installed.
 
 ## Use built-in MCP server
 
-The Power Platform CLI (PAC CLI) features an integrated Model Context Protocol (MCP) server designed for local development and testing purposes. This server lets you interact with Power Platform in natural language using MCP-compatible tools like [Microsoft Visual Studio](https://visualstudio.microsoft.com/), [VS Code](https://code.visualstudio.com/), and Claude Code.
+The Power Platform CLI (PAC CLI) features an integrated Model Context Protocol (MCP) server designed for local development and testing purposes. This server lets you interact with Power Platform in natural language by using MCP-compatible tools like [Microsoft Visual Studio](https://visualstudio.microsoft.com/), [VS Code](https://code.visualstudio.com/), and Claude Code.
 
 ## Invoke PAC CLI commands with natural language
 
-It isn't necessary to memorize all the PAC CLI commands and parameters or constantly refer to the [help command](../cli/reference/help.md) when you use natural language to invoke PAC CLI commands. It's easier to use the PAC CLI integrated MCP server invoke the commands using natural language.
+You don't need to memorize all the PAC CLI commands and parameters or constantly refer to the [help command](../cli/reference/help.md) when you use natural language to invoke PAC CLI commands. It's easier to use the PAC CLI integrated MCP server to invoke the commands by using natural language.
 
 Before you begin, you need to start the built-in MCP server.
 
 ## Start the MCP Server
 
-To start the built-in MCP server, use the [copilot mcp](../cli/reference/copilot.md#pac-copilot-mcp) cli command with the `--run` option:
+To start the built-in MCP server, use the [copilot mcp](../cli/reference/copilot.md#pac-copilot-mcp) CLI command with the `--run` option:
 
 ```dotnetcli
 pac copilot mcp --run
 ```
 
-Or you can start the MCP server with .NET `dnx` command without installing PAC CLI.
+Or you can start the MCP server by using the .NET `dnx` command without installing PAC CLI.
 
 ```dotnetcli
 dnx Microsoft.PowerApps.CLI.Tool --yes copilot mcp --run
 ```
 
-[Learn more about how to use the Power Platform CLI without installing it](dnx-cli.md)
+[Learn more about how to use the Power Platform CLI without installing it](dnx-cli.md).
 
 
 ## Register the MCP Server
@@ -70,9 +70,9 @@ After the server is running, register it with your MCP-compatible tool so it can
 
 ### Visual Studio
 
-To register the MCP server with Visual Studio, follow steps outlined in the [Use MCP servers for Visual Studio](/visualstudio/ide/mcp-servers).
+To register the MCP server with Visual Studio, follow the steps outlined in the [Use MCP servers for Visual Studio](/visualstudio/ide/mcp-servers).
 
-If you're editing `mcp.json` file manually, MCP server registration should look like this:
+If you edit the `mcp.json` file manually, MCP server registration should look like this:
 
 ```json
 {
@@ -88,13 +88,13 @@ If you're editing `mcp.json` file manually, MCP server registration should look 
 
 ### Visual Studio Code
 
-To register the MCP server with VS Code, follow steps outlined in the [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers).
+To register the MCP server with VS Code, follow the steps in [Use MCP servers in VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-servers).
 
 ### Claude Code
 
-To register the MCP server with Claude Code, follow steps outlined in the [Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp).
+To register the MCP server with Claude Code, follow the steps in [Connect Claude Code to tools via MCP](https://code.claude.com/docs/en/mcp).
 
-To register the MCP server manually, you can run `claude mcp add-json` command:
+To register the MCP server manually, run the `claude mcp add-json` command:
 
 ```dotnetcli
 claude mcp add-json pac-cli '{"type":"stdio","command":"dnx","args":["Microsoft.PowerApps.CLI.Tool","--yes","copilot","mcp","--run"]}'
@@ -102,7 +102,7 @@ claude mcp add-json pac-cli '{"type":"stdio","command":"dnx","args":["Microsoft.
 
 ## Interact with the MCP Server
 
-Once the MCP server is registered with your MCP-compatible tool, you can start interacting with it using natural language. Here are a couple of examples:
+After you register the MCP server with your MCP-compatible tool, you can start interacting with it using natural language. Here are a couple of examples:
 
 ```
 show me AI related tenant settings
@@ -112,4 +112,4 @@ show me AI related tenant settings
 Create MD file with table listing all Dataverse environments
 ```
 
-See full list of available commands in the [Power Platform CLI reference](../../developer/cli/reference/index.md).
+See the full list of available commands in the [Power Platform CLI reference](../../developer/cli/reference/index.md).

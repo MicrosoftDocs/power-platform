@@ -1,10 +1,10 @@
 ---
 title: Install Power Platform CLI using Windows MSI
 description: Instructions to install, update, and uninstall the Power Platform CLI for Windows using an MSI.
-ms.author: marcsc
-author: devkeydet
+ms.author: laswenka
+author: laneswenka
 ms.reviewer: jdaly
-ms.date: 01/20/2026
+ms.date: 10/26/2026
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
@@ -20,7 +20,7 @@ ms.custom: bap-template
 The [pac data](../cli/reference/data.md) and certain [pac package](../cli/reference/package.md) commands are only available for Windows because they currently have dependencies on .NET Framework, which isn't cross-platform compatible.
 
 > [!NOTE]
-> An internet connection is required for install and update. Power Platform CLI for Windows is installed and updated from this NuGet package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
+> You need an internet connection to install and update Power Platform CLI. The installer and updater for Power Platform CLI for Windows come from this NuGet package: [Microsoft.PowerApps.CLI](https://www.nuget.org/packages/Microsoft.PowerApps.CLI)
 
 ## Install
 
