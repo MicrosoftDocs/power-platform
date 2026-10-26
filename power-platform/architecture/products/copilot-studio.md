@@ -18,7 +18,7 @@ Understanding Copilot Studio design and implementation concepts and exploring so
 
 - **Key concepts**: Learn about key pillars and responsibilities for implementing Copilot Studio projects to help you build robust, efficient, and maintainable solutions.
 
-- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Power Apps.
+- **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Copilot Studio.
 
 - **Solution ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Copilot Studio.
 
