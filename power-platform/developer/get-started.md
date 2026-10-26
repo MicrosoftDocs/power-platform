@@ -5,7 +5,7 @@ author: marcelbf
 ms.subservice: developer
 ms.author: marcelbf
 ms.custom: "ai-learning-hub"
-ms.date: 12/04/2025
+ms.date: 10/26/2026
 ms.reviewer: jdaly
 ms.topic: concept-article
 search.audienceType: 
@@ -16,19 +16,21 @@ search.audienceType:
 
 Microsoft Power Platform is a low-code platform for rapidly building customized end-to-end business solutions. It consists of five product areas: 
 
-- Copilot Studio
-- Power Apps
-- Power Automate
-- Power BI,
-- Power Pages.
+| Area | Description |
+| --- | --- |
+| [Copilot Studio](#copilot-studio) | Build AI-powered agents and agent flows that connect to your data and services. |
+| [Power Apps](#power-apps) | Build custom business apps with low-code tools. |
+| [Power Automate](#power-automate) | Automate tasks and business processes with cloud and desktop flows. |
+| [Power BI](#power-bi) | Visualize and analyze data, and share insights across your organization. |
+| [Power Pages](#power-pages) | Create secure, external-facing business websites that connect to Dataverse. |
 
 Each area can be used individually or together. United by the underlying Microsoft Dataverse technology, all areas are designed for a connected experience to achieve your business goals, whether it's creating AI-powered agents, analytics, process automation, or data-driven productivity applications.
 
-The platform's low-code approach enables everyone in an organization&mdash;from frontline workers to professional developers&mdash;to participate in the development of business solutions that drive positive business outcomes. Developers can collaborate with citizen developers to enhance business solutions and solve complex requirements by using the platform's various extension capabilities with code. Thanks to a native integration with Azure, developers can use their cloud development skills to extend Microsoft Power Platform with different Azure services. With a low-code integrated development approach, business goals can be achieved faster and frees up time for the developers.
+The platform's low-code approach enables everyone in an organization&mdash;from frontline workers to professional developers&mdash;to participate in the development of business solutions that drive positive business outcomes. Developers can collaborate with citizen developers to enhance business solutions and solve complex requirements by using the platform's various extension capabilities with code. Thanks to a native integration with Azure, developers can use their cloud development skills to extend Microsoft Power Platform with different Azure services. By using a low-code integrated development approach, you can achieve business goals faster and free up time for the developers.
 
 ![Power Platform.](media/power-platform.png "Power Platform")
 
-As a developer interacting with the platform, it's important to understand the basics of what the platform offers. In the following, you'll find a high-level overview of each of the core product areas and their key extensibility points.
+As a developer interacting with the platform, it's important to understand the basics of what the platform offers. In the following sections, you find a high-level overview of each of the core product areas and their key extensibility points.
 
 ## Copilot Studio
 
@@ -52,22 +54,22 @@ Provides the Power Apps maker with complete control over the pixel-perfect scree
 
 > #### Key developer extensibility points
 >
-> - Build custom UI components using [Power Apps component framework](/power-apps/developer/component-framework/overview)
-> - Create [custom connectors](/connectors/custom-connectors/) to communicate to your external data sources and services. A custom connector is a wrapper around a REST API and can be created using tools like Azure Functions and Azure API Management
+> - Build custom UI components by using the [Power Apps component framework](/power-apps/developer/component-framework/overview).
+> - Create [custom connectors](/connectors/custom-connectors/) to communicate with your external data sources and services. A custom connector is a wrapper around a REST API and you can create it by using tools like Azure Functions and Azure API Management.
 
 ### Model-driven apps  
 
-Data-driven applications that are built on top of [Microsoft Dataverse](#dataverse). Other data sources and services can be used by model-driven applications by embedding a canvas application.
+Data-driven applications that are built on top of [Microsoft Dataverse](#dataverse). Model-driven applications can use other data sources and services by embedding a canvas application.
 
 > #### Key developer extensibility points
 >
-> - Build custom UI components using [Power Apps component framework](/power-apps/developer/component-framework/overview)
-> - Implement client business logic using [JavaScript and the client API](/power-apps/developer/model-driven-apps/client-scripting)
-> - Build [HTML web resources](/power-apps/developer/model-driven-apps/webpage-html-web-resources)
+> - Build custom UI components by using the [Power Apps component framework](/power-apps/developer/component-framework/overview).
+> - Implement client business logic by using [JavaScript and the client API](/power-apps/developer/model-driven-apps/client-scripting).
+> - Build [HTML web resources](/power-apps/developer/model-driven-apps/webpage-html-web-resources).
 
 ## Power Automate
 
-Power Automate is used to automate tasks and orchestrate activities across various services that use integrated or custom connectors. Using Power Automate you can create cloud flows or desktop flows.
+Use Power Automate to automate tasks and orchestrate activities across various services that use integrated or custom connectors. By using Power Automate, you can create cloud flows or desktop flows.
 
 | Type | Description |
 | ---- | ---- |
@@ -76,8 +78,8 @@ Power Automate is used to automate tasks and orchestrate activities across vario
 
 > #### Key developer extensibility points
 >
-> - Create [custom connectors](/connectors/custom-connectors/) to communicate to your external data sources and services. A custom connector is a wrapper around a REST API and can be created using tools like Azure Functions and Azure API Management
-> - Use [workflow definition functions](/power-automate/developer/custom-cds-for-apps-workflow-activities) to build complex expressions
+> - Create [custom connectors](/connectors/custom-connectors/) to communicate with your external data sources and services. A custom connector is a wrapper around a REST API and you can create it by using tools like Azure Functions and Azure API Management.
+> - Use [workflow definition functions](/power-automate/developer/custom-cds-for-apps-workflow-activities) to build complex expressions.
 
 ## Power BI
 
@@ -100,7 +102,7 @@ Power Pages is a secure, enterprise-grade, low-code software as a service (SaaS)
 
 ## Dataverse
 
-Dataverse is a cloud scale data store that builds on Microsoft's data technologies and abstracts away data management complexity from the app maker. It lets you securely store and manage data that is used by business applications. Business data within Dataverse is stored within a set of data tables. Role-based security allows businesses to control access to the data tables and even individual records for different users within your organization. Developers can extend or customize Dataverse functionality by adding custom business logic. You can define calculated table columns, business rules, workflows, and business process flows to ensure data quality and drive business processes.
+Dataverse is a cloud-scale data store that builds on Microsoft's data technologies and abstracts away data management complexity from the app maker. It lets you securely store and manage data that business applications use. Business data within Dataverse is stored within a set of data tables. Role-based security allows businesses to control access to the data tables and even individual records for different users within your organization. Developers can extend or customize Dataverse functionality by adding custom business logic. You can define calculated table columns, business rules, workflows, and business process flows to ensure data quality and drive business processes.
 
 > ### Key developer extensibility points
 >

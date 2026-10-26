@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 09/30/2026
+ms.date: 10/26/2026
 ms.topic: concept-article
 author: amiyapatr 
 ms.subservice: admin
@@ -410,13 +410,15 @@ When a tenant exceeds its entitled storage capacity, it enters a series of progr
 |**Early notification**     | Effective consumption is more than 85%        | Informational or warning notifications appear.        | Review growth and begin remediation. |
 |**Stage 1: Restricted**     | The tenant first exceeds 100% effective consumption (time zero, or T0).       | Critical notifications appear. Environment create, copy, restore, and recover operations are blocked.       | Free storage, archive eligible data, add capacity, configure pay-as-you-go billing, or request a capacity extension.|
 |**Stage 2: Administration mode**     | The overage remains unresolved for 30 days from T0        | In addition to the restrictions applied in Stage 1, access to affected sandbox environments is limited to administrators.       | Administrators can temporarily take affected sandbox environments out of Administration mode to perform remediation activities. However, the storage overage lifecycle and timer continue to progress until the overage is resolved.|
-|**Stage 3: Disabled**     | The overage remains unresolved for 90 days from T0        | In addition to the restrictions applied in Stage 1, sign-in to affected sandbox environments is blocked for all users, including administrators. The environment and its data remain retained.  | Return the tenant to compliance, and then re-enable the environment. If tenant remains in overage, customer can reach the Microsoft support for the sole purpose of directing data export options, if needed. |
+|**Stage 3: Disabled**     | The overage remains unresolved for 90 days from T0        | In addition to the restrictions applied in Stage 1, sign-in to affected sandbox environments is blocked for all users, including administrators. The environment and its data are limited to data export and recovery options through support tickets.  | Return the tenant to compliance, and then re-enable the environment. If tenant remains in overage, customer can reach the Microsoft support for the sole purpose of directing data export options, if needed. |
 
 The date the tenant first exceeds 100% effective consumption is the start of the lifecycle timeline. Resolving the effective deficit before the next stage prevents further progression. Sandbox environments with pay-as-you-go enabled do not progress through the storage overage lifecycle.
 
-> [!NOTE]
+[!IMPORTANT]
 > - Effective consumption represents the storage usage remaining after cross-capacity-type borrowing has been applied. Storage notifications, overage calculations, and storage validation actions are based on effective consumption rather than raw storage consumption.
 > - Affected environments are sandbox environments that don't have pay-as-you-go billing enabled and are therefore subject to Administration mode and disablement when the organization remains in storage overage.
+> - During the Disabled stage, tenants can reach Microsoft support at all times for the sole purposes of directing data export and recovery options, if needed.
+
 
 ## Scope and exclusions
 
