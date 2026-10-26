@@ -1,10 +1,10 @@
 ---
 title: Install the Power Platform Tools Visual Studio Code extension
 description: Instructions to install, update, and uninstall the Power Platform Tools Visual Studio Code extension.
-ms.author: marcsc
-author: devkeydet
+ms.author: laswenka
+author: laneswenka
 ms.reviewer: jdaly
-ms.date: 01/20/2026
+ms.date: 10/26/2026
 ms.subservice: developer
 ms.topic: how-to
 search.audienceType: 
@@ -38,7 +38,7 @@ You can install the Microsoft Power Platform CLI by using the Visual Studio Code
 ### Install from Visual Studio Code extensions
 
 1. In Visual Studio Code, select the **Extensions** icon in the navigation bar.
-1. Search for 'power platform tools'.
+1. Search for `power platform tools`.
 1. Select the **Install** button in the search results.
 
 ### Install a previous version
@@ -46,7 +46,7 @@ You can install the Microsoft Power Platform CLI by using the Visual Studio Code
 If there's a problem with the current version, revert to an earlier version.
 
 1. In Visual Studio Code, select **Extensions**.
-1. Search for 'power platform tools'.
+1. Search for `power platform tools`.
 1. In the main window, select the drop-down arrow on the **Uninstall** button.
 1. Select **Install Another version...**.
    
@@ -90,7 +90,7 @@ If you choose to [install a previous version](#install-a-previous-version), you 
 ## Uninstall
 
 1. In Visual Studio Code, select **Extensions**.
-1. Search for 'power platform tools'.
+1. Search for `power platform tools`.
 1. In the main window, select **Uninstall**.
 
 ## Enable PAC CLI in Command Prompt (CMD) and PowerShell terminals for Windows
