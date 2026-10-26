@@ -26,8 +26,8 @@ Copilot Studio operational health metrics are available in the Power Platform ad
  1. In the navigation pane, select **Monitor**.
  1. In the **Monitor** pane, under **Products**, select **Copilot Studio**.
 
-    The **Copilot Studio** page displays the metrics for conversational and autonomous agents created in Copilot Studio.
-
+    The **Copilot Studio** page displays the metrics for conversational and autonomous agents created in Copilot Studio. Agents that use GitHub Copilot use AI to map sessions with outcomes more accurately. As a result, the metrics generated for these agents can appear in Monitor up to 48 hours after usage.
+    
 ## Copilot Studio metrics and recommendations
 
 ### Metric definitions
