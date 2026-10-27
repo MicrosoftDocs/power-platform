@@ -60,21 +60,21 @@ As a Microsoft 365 administrator, install the plugin in the Microsoft 365 admin 
 1. On the **Tools** page, select the **Registry** tab.
 1. Search for **Power Platform Admin (preview)** and select **Power Platform Admin (preview)**, published by **Microsoft**.
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-tools-registry.png" alt-text="Microsoft 365 admin center Tools page with Power Platform Admin (preview) listed in the Registry.":::
+   :::image type="content" source="media/admin-cowork/power-platform-admin-tools-registry.png" alt-text="Microsoft 365 admin center Tools page with Power Platform Admin (preview) listed in the Registry.":::
 
 1. Review the plugin overview and select **Install**.
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-install-overview.png" alt-text="Power Platform Admin (preview) plugin overview in the Microsoft 365 admin center with the Install button.":::
+   :::image type="content" source="media/admin-cowork/power-platform-admin-install-overview.png" alt-text="Power Platform Admin (preview) plugin overview in the Microsoft 365 admin center with the Install button.":::
 
 1. On the **Select users** page, confirm that **Channel** is **Copilot**.
 1. Under **Installed for**, select **All users** or **Specific users and groups**. If you select specific users and groups, add them when prompted.
 1. Select **Next**.
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-select-users.png" alt-text="Install wizard Select users page with the Copilot channel and All users or Specific users and groups options.":::
+   :::image type="content" source="media/admin-cowork/power-platform-admin-select-users.png" alt-text="Install wizard Select users page with the Copilot channel and All users or Specific users and groups options.":::
 
 1. On the **Review and install** page, confirm the selected audience and select **Install**.
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-review-install.png" alt-text="Install wizard Review and install page showing Power Platform Admin (preview) set to install for all users.":::
+   :::image type="content" source="media/admin-cowork/power-platform-admin-review-install.png" alt-text="Install wizard Review and install page showing Power Platform Admin (preview) set to install for all users.":::
 
 ## Connect the plugin in Cowork
 
@@ -84,13 +84,13 @@ As a user in the installation audience, connect the plugin in Cowork.
 1. In Cowork's navigation, select **Customize**.
 1. Under **Installed**, find **Power Platform Admin (preview)** and select **Connect**.
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-cowork-customize.png" alt-text="Cowork Customize page with Power Platform Admin (preview) under Installed and a Connect button.":::
+   :::image type="content" source="media/admin-cowork/power-platform-admin-cowork-customize.png" alt-text="Cowork Customize page with Power Platform Admin (preview) under Installed and a Connect button.":::
 
 1. In the **Connect Power Platform for Admins V2** dialog, set **Authentication Type** to **OAuth Connection**, then select **Connect**.
 1. Sign in with an account that has one of the [required roles for data access](#required-roles-for-data-access). Confirm that you're using the account and organization you intend to access before completing consent.
 1. Return to Cowork after the connection completes.
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-cowork-connect.png" alt-text="Cowork dialog to connect Power Platform for Admins V2 using OAuth Connection.":::
+   :::image type="content" source="media/admin-cowork/power-platform-admin-cowork-connect.png" alt-text="Cowork dialog to connect Power Platform for Admins V2 using OAuth Connection.":::
 
 > [!IMPORTANT]
 > Don't paste passwords, access tokens, or client secrets into a conversation.
@@ -105,7 +105,7 @@ Try an inventory question first, then use an environment name from the answer to
 
 2. When Cowork displays an Ask Advisor approval card, select **View details** to review the request, and then select **Approve** to continue.
 
-:::image type="content" source="media/admin-cowork/power-platform-admin-cowork-approval.png" alt-text="Cowork Ask Advisor approval card with View details and Approve controls.":::
+   :::image type="content" source="media/admin-cowork/power-platform-admin-cowork-approval.png" alt-text="Cowork Ask Advisor approval card with View details and Approve controls.":::
 
 3. Review the answer. To explore an environment further, ask:
 
