@@ -337,7 +337,7 @@
                     - name: User channel override
                       href: user-channel-override.md
                     - name: Plug-in steps
-                      href: plug-ins.md
+                      href: plugin-steps.md
                 - name: Audit and logs
                   items:
                     - name: Monitor system jobs
