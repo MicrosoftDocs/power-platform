@@ -41,7 +41,7 @@ Because the next scheduled synchronization time for a given workload is calculat
 After an incoming sync cycle is completed, a mailbox will postpone the processing of incoming emails for five minutes. This means the mailbox will be ready for processing again in five minutes.  
 
 > [!IMPORTANT]
-> Having long-running synchronous customizations (plug-ins and workflows) in the email delivery flow can lead to lower throughput. Moving these customizations to async execution can improve throughput.
+> Having long-running synchronous customizations (plugin steps and workflows) in the email delivery flow can lead to lower throughput. Moving these customizations to async execution can improve throughput.
 
 ### Outgoing sync frequency
 
