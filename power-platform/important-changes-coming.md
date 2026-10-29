@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 10/06/2026
+ms.date: 10/28/2026
 ai-usage: ai-assisted
 ms.topic: concept-article
 ms.subservice: admin
@@ -25,6 +25,22 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means Microsoft intends to remove the feature or capability in a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability no longer works. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Retirement of Describe it to design it in Power Automate
+
+On November 30, 2026, **Describe it to design it** in Power Automate retires for all customers. This option lets makers create a cloud flow by describing what they want to automate.
+
+### Impact
+
+Beginning November 30, 2026, makers can no longer create new cloud flows with **Describe it to design it**. This retirement doesn't delete or move existing flows. Makers can still create and edit flows in the visual designer and start from templates.
+
+### Action required
+
+Share this change with your makers and update any internal guides that recommend **Describe it to design it**.
+
+For makers who want to keep creating flows from descriptions, use the **[Power Automate plugin](/power-automate/power-automate-plugin-external-tools)** in a supported AI assistant that your organization approves, such as GitHub Copilot.
+
+Makers can also [create a flow manually](/power-automate/get-started-logic-flow#tab/without-copilot) or [start from a template](https://make.powerautomate.com/templates).
 
 ## Deprecation of Microsoft Dataverse for Teams environments
 

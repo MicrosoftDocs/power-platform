@@ -1,9 +1,9 @@
 ---
 title: "Power Apps Developer Plan Guide: Features and Benefits"
 description: "Learn about the Power Apps Developer Plan features, capacity limits, and how to get started with free development tools for building apps and flows."
-author: MKBajwa-PM
+author: sidhartg
+ms.author: sidhartg
 ms.subservice: developer
-ms.author: mbajwa
 ms.date: 10/26/2026
 ms.reviewer: jdaly
 ms.topic: concept-article

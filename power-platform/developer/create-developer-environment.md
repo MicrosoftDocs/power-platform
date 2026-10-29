@@ -1,9 +1,9 @@
 ---
 title: "Create a Developer Environment with the Power Apps Developer Plan"
 description: "Create a developer environment with the Power Apps Developer Plan to build and test apps with Power Apps, Power Automate, and Microsoft Dataverse. Sign up now."
-author: marcelbf
+author: sidhartg
+ms.author: sidhartg
 ms.subservice: developer
-ms.author: marcelbf
 ms.date: 10/08/2026
 ms.reviewer: jdaly
 ms.topic: how-to
