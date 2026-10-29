@@ -4,7 +4,7 @@ description: Learn how to use the Power Platform admin center to view restore de
 author: rijoshi1
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 09/25/2026
+ms.date: 10/28/2026
 ms.subservice: admin
 ms.author: rijoshi
 ms.reviewer: ellenwehrle
@@ -110,7 +110,7 @@ Turning on the **Keep deleted Dataverse records** setting triggers a background 
 | What you see       | What it means | Action |
 |--------------------|------------------|------------------|
 | Job isn't listed | Job completed and was automatically removed. This is the expected outcome. | Verify by checking whether the recently deleted record appears under **Settings** > **Data management** > **Deleted records**.    | 
-| Job is listed, Status: Succeeded | Job completed successfully, but isn't cleaned up yet.	| No action needed. |
+| Job is listed, Status: Succeeded | Job completed successfully, but isn't cleaned up yet.   | No action needed. |
 | Job is listed, Status: Failed | Job encountered an error. | Open the job to view error details, then contact support. |
 | Job is listed, Status: Waiting or In Progress | Job is still running. | Wait a few minutes and refresh. |
 
@@ -137,36 +137,46 @@ Some tables don't support restoring deleted records. These tables include:
 - [Elastic tables](/power-apps/maker/data-platform/create-edit-elastic-tables)
 - Tables with more than 600 attributes
 
-Check the attribute count for a specific entity using **{organizationUrl}/api/data/v9.0/EntityDefinitions(LogicalName='account')/Attributes?$count=true**.
+Check the attribute count for a specific table by using **{organizationUrl}/api/data/v9.0/EntityDefinitions(LogicalName='account')/Attributes?$count=true**.
 
 Developers can [detect which tables are enabled for deleted record keeping](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-are-enabled-for-deleted-record-keeping) in their environment.
 
 ### Tables that the deleted records setting doesn't support
 
-As of August 2024, the query to [detect which tables don't have deleted records feature enabled](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-arent-enabled-for-deleted-record-keeping) returns these tables in an uncustomized Dataverse environment.
+As of October 2026, the query to [detect which tables don't have deleted records feature enabled](/power-apps/developer/data-platform/restore-deleted-records#detect-which-tables-arent-enabled-for-deleted-record-keeping) returns these tables in an uncustomized Dataverse environment.
 
 Your environment might return different results. Tables might not be supported if you customize them by adding a large number of columns.
 
 :::row:::
    :::column:::
       `aaduser`<br />
-      `aicopilot`<br />
+      `advancedsimilarityrule`<br />
+      `agentmemory`<br />
+      `agenttask`<br />
+      `aicopilot_aiplugin`<br />
       `aiplugin`<br />
       `aipluginconversationstartermapping`<br />
       `aipluginexternalschemaproperty`<br />
       `aipluginoperation`<br />
       `aipluginoperationresponsetemplate`<br />
+      `aiskillconfig`<br />
       `annualfiscalcalendar`<br />
-      `appaction_appactionrule_classicrules`<br />
-      `appactionrule`<br />
-      `appconfig`<br />
-      `application`<br />
-      `applicationuser`<br />
-      `applicationuserrole`<br />
-      `appmodulecomponent`<br />
+      `appaction`<br />
+      `appactionmigration`<br />
+      `appactionrule_webresource_scripts`<br />
+      `appconfiginstance`<br />
+      `appentitysearchview`<br />
+      `applicationroles`<br />
+      `applicationuserprofile`<br />
+      `appmodule`<br />
+      `appmodulemetadata`<br />
+      `appmodulemetadataoperationlog`<br />
       `appnotification`<br />
-      `asyncoperation`<br />
+      `appointment`<br />
+      `appsetting`<br />
+      `attribute`<br />
       `attributeimageconfig`<br />
+      `attributemaskingrule`<br />
       `backgroundoperation`<br />
       `bot_botcomponent`<br />
       `bot_environmentvariabledefinition`<br />
@@ -174,17 +184,27 @@ Your environment might return different results. Tables might not be supported i
       `botcomponent_connectionreference`<br />
       `botcomponent_environmentvariabledefinition`<br />
       `botcomponent_workflow`<br />
-      `bulkdeletefailure`<br />
-      `businessunit`<br />
+      `bulkarchiveconfig`<br />
+      `bulkdeleteoperation`<br />
+      `businessprocess`<br />
+      `businessprocesslinkedartifact`<br />
+      `businessunitmap`<br />
       `callbackregistration`<br />
       `card`<br />
       `cardstateitem`<br />
+      `cascadegrantrevokeaccessversiontracker`<br />
       `catalogassignment`<br />
-      `columnmapping`<br />
-      `componentversion`<br />
-      `componentversionnrddatasource`<br />
+      `channelaccessprofileentityaccesslevel`<br />
+      `channelaccessprofileruleitem`<br />
+      `channelpropertygroup`<br />
+      `complexcontrol`<br />
+      `componentchangesetversion`<br />
+      `componentversiondatasource`<br />
+      `computeruseagent`<br />
       `connectionreference`<br />
       `connectionroleassociation`<br />
+      `connector`<br />
+      `convertrule`<br />
       `copilotexamplequestion`<br />
       `copilotsynonyms`<br />
       `customapi`<br />
@@ -193,233 +213,88 @@ Your environment might return different results. Tables might not be supported i
       `datalakefolder`<br />
       `datalakeworkspace`<br />
       `dataprocessingconfiguration`<br />
-      `desktopflowbinary`<br />
-      `displaystring`<br />
-      `duplicaterulecondition`<br />
-      `dvfilesearchattribute`<br />
-      `dvtablesearch`<br />
-      `dvtablesearchentity`<br />
-      `entity`<br />
-      `entitydataprovider`<br />
-      `entityindex`<br />
-      `entityrecordfilter`<br />
-      `environmentvariabledefinition`<br />
-      `eventexpanderbreadcrumb`<br />
-      `expiredprocess`<br />
-      `fabricaiskill`<br />
-      `federatedknowledgeconfiguration`<br />
-      `fieldpermission`<br />
-      `fixedmonthlyfiscalcalendar`<br />
-      `flowlog`<br />
-      `flowmachinegroup`<br />
-      `flowmachineimageversion`<br />
-      `flowrun`<br />
-      `goal`<br />
-      `importentitymapping`<br />
-      `importjob`<br />
-      `importmap`<br />
-      `interactionforemail`<br />
-      `kbarticletemplate`<br />
-      `lookupmapping`<br />
-      `mainfewshot`<br />
-      `managedproperty`<br />
-      `metadataforarchival`<br />
-      `mobileofflineprofileitem`<br />
-      `mobileofflineprofileitemfilter`<br />
-      `msdyn_aiconfiguration`<br />
-      `msdyn_aitemplate`<br />
-      `msdyn_componentlayer`<br />
-      `msdyn_connectordatasource`<br />
-      `msdyn_dataflow_datalakefolder`<br />
-      `msdyn_dataflowtemplate`<br />
-      `msdyn_dmsrequest`<br />
-      `msdyn_entitylinkchatconfiguration`<br />
-      `msdyn_helppage`<br />
-      `msdyn_knowledgeassetconfiguration`<br />
-      `msdyn_knowledgesearchfilter`<br />
-      `msdyn_modulerundetail`<br />
-      `msdyn_odatav4ds`<br />
-      `msdyn_pmbusinessruleautomationconfig`<br />
-      `msdyn_pmcalendarversion`<br />
-      `msdyn_pmprocessextendedmetadataversion`<br />
-      `msdyn_pmprocessusersettings`<br />
-      `msdyn_pmrecording`<br />
-      `msdyn_pmview`<br />
-      `msdyn_salesforcestructuredqnaconfig`<br />
-      `msdyn_slakpi`<br />
-      `msdyn_solutioncomponentcountsummary`<br />
-      `msdyn_solutioncomponentsummary`<br />
-      `msdyn_solutionhistorydatasource`<br />
-      `msdyn_tour`<br />
-      `mspp_adplacement`<br />
-      `mspp_columnpermissionprofile`<br />
-      `mspp_entityform`<br />
-      `mspp_entitylist`<br />
-      `mspp_pagetemplate`<br />
-      `mspp_powerpagescoreentityds`<br />
-      `mspp_publishingstatetransitionrule`<br />
-      `mspp_shortcut`<br />
-      `mspp_sitesetting`<br />
-      `mspp_webform`<br />
-      `mspp_webformstep`<br />
-      `mspp_weblinkset`<br />
-      `mspp_webpageaccesscontrolrule`<br />
-      `mspp_website`<br />
-      `mspp_websitelanguage`<br />
-      `navigationsetting`<br />
-      `nlsqregistration`<br />
-      `ownermapping`<br />
-      `pluginassembly`<br />
-      `plugintracelog`<br />
-      `position`<br />
-      `powerbimashupparameter`<br />
-      `powerfxrule`<br />
-      `powerpagecomponent_powerpagecomponent`<br />
-      `powerpagesite_dvfilesearch`<br />
-      `powerpageslog`<br />
-      `principalentitymap`<br />
-      `privilegesremovalsetting`<br />
-      `processstage`<br />
-      `publisher`<br />
-      `quarterlyfiscalcalendar`<br />
-      `queuemembership`<br />
-      `recordfilter`<br />
-      `recyclebinconfig`<br />
-      `relationshipattribute`<br />
-      `reportcategory`<br />
-      `retaineddataexcel`<br />
-      `ribbonmetadatatoprocess`<br />
-      `roleeditorlayout`<br />
-      `roletemplate`<br />
-      `runtimedependency`<br />
-      `savedqueryvisualization`<br />
-      `sdkmessagefilter`<br />
-      `sdkmessageprocessingstepimage`<br />
-      `searchtelemetry`<br />
-      `serviceendpoint`<br />
-      `serviceplanappmodules`<br />
-      `serviceplanmapping`<br />
-      `sharepointsite`<br />
-      `sitemap`<br />
-      `slaitem`<br />
-      `solution`<br />
-      `solutioncomponentattributeconfiguration`<br />
-      `solutioncomponentconfiguration`<br />
-      `solutionhistorydata`<br />
-      `subscriptionsyncentryoffline`<br />
-      `synapselinkprofile`<br />
-      `synapselinkschedule`<br />
-      `systemform`<br />
-      `systemuserauthorizationchangetracker`<br />
-      `systemuserroles`<br />
-      `teamprofiles`<br />
-      `teamtemplate`<br />
-      `tracelog`<br />
-      `transformationparametermapping`<br />
-      `userform`<br />
-      `userquery`<br />
-      `virtualentitymetadata`<br />
-      `webwizard`<br />
-      `workflowbinary`<br />
-      `workflowlog`<br />
-      `workqueueitem`<br />
-   :::column-end:::
-   :::column:::
-      `activityfileattachment`<br />
-      `aicopilot_aiplugin`<br />
-      `aipluginconversationstarter`<br />
-      `aipluginexternalschema`<br />
-      `aiplugininstance`<br />
-      `aipluginoperationparameter`<br />
-      `aiplugintitle`<br />
-      `appaction`<br />
-      `appactionmigration`<br />
-      `appactionrule_webresource_scripts`<br />
-      `appconfiginstance`<br />
-      `applicationroles`<br />
-      `applicationuserprofile`<br />
-      `appmodule`<br />
-      `appmoduleroles`<br />
-      `appointment`<br />
-      `attribute`<br />
-      `attributemaskingrule`<br />
-      `bot`<br />
-      `bot_botcomponentcollection`<br />
-      `botcomponent`<br />
-      `botcomponent_botcomponent`<br />
-      `botcomponent_dvtablesearch`<br />
-      `botcomponent_msdyn_aimodel`<br />
-      `botcomponentcollection`<br />
-      `bulkdeleteoperation`<br />
-      `calendar`<br />
-      `canvasapp`<br />
-      `cardentityconnections`<br />
-      `catalog`<br />
-      `channelaccessprofileentityaccesslevel`<br />
-      `complexcontrol`<br />
-      `componentversiondatasource`<br />
-      `connectioninstance`<br />
-      `connectionrole`<br />
-      `connector`<br />
-      `copilotglossaryterm`<br />
-      `credential`<br />
-      `customapirequestparameter`<br />
-      `customcontrol`<br />
-      `customcontrolresource`<br />
-      `datalakefolderpermission`<br />
-      `datalakeworkspacepermission`<br />
       `dependency`<br />
+      `dependencynode`<br />
       `desktopflowmodule`<br />
+      `displaystringmap`<br />
       `duplicaterule`<br />
       `dvfilesearch`<br />
       `dvfilesearchentity`<br />
       `dvtablesearchattribute`<br />
       `elasticfileattachment`<br />
-      `entityanalyticsconfig`<br />
-      `entityimageconfig`<br />
-      `entitykey`<br />
+      `emailhash`<br />
+      `entity`<br />
+      `entityclusterconfig`<br />
+      `entitydatasource`<br />
+      `entityindex`<br />
+      `entitymap`<br />
       `entityrelationship`<br />
       `environmentvariablevalue`<br />
       `exchangesyncidmapping`<br />
-      `exportedexcel`<br />
-      `featurecontrolsetting`<br />
-      `federatedknowledgeentityconfiguration`<br />
-      `fieldsecurityprofile`<br />
+      `expiredprocess`<br />
+      `fabricaiskill`<br />
+      `federatedknowledgeconfiguration`<br />
+      `fieldpermission`<br />
+      `fixedmonthlyfiscalcalendar`<br />
       `flowcredentialapplication`<br />
-      `flowmachine`<br />
-      `flowmachineimage`<br />
-      `flowmachinenetwork`<br />
-      `fxexpression`<br />
+      `flowlog`<br />
+      `flowmachinegroup`<br />
+      `flowmachineimageversion`<br />
+      `flowrun`<br />
+      `gitbranch`<br />
+      `gitorganization`<br />
+      `gitrepository`<br />
+      `globalsearchconfiguration`<br />
+      `hierarchyrule`<br />
       `import`<br />
       `importfile`<br />
       `importlog`<br />
       `indexattributes`<br />
-      `invaliddependency`<br />
-      `keyvaultreference`<br />
-      `mailmergetemplate`<br />
-      `managedidentity`<br />
-      `maskingrule`<br />
+      `intelligentmemory`<br />
+      `internalcatalogassignment`<br />
+      `kbarticletemplate`<br />
+      `knowledgesearchmodel`<br />
+      `mailboxtrackingfolder`<br />
+      `mainfewshot`<br />
+      `managedproperty`<br />
+      `mcpprompt`<br />
+      `mcpresourcecontent`<br />
+      `mcptool`<br />
       `mobileofflineprofile`<br />
       `mobileofflineprofileitemassociation`<br />
+      `mobileofflineprofilesuggestion`<br />
       `monthlyfiscalcalendar`<br />
-      `msdyn_aimodel`<br />
-      `msdyn_appinsightsmetadata`<br />
-      `msdyn_componentlayerdatasource`<br />
-      `msdyn_dataflow`<br />
-      `msdyn_dataflowconnectionreference`<br />
-      `msdyn_datalakeds`<br />
+      `msdyn_aiconfiguration_documenttemplate`<br />
+      `msdyn_aidocumenttemplate`<br />
+      `msdyn_aievaluationmetric`<br />
+      `msdyn_aimodelcatalog`<br />
+      `msdyn_aitestcase`<br />
+      `msdyn_aitestcaseinput`<br />
+      `msdyn_componentlayer`<br />
+      `msdyn_connectordatasource`<br />
+      `msdyn_dataflow_datalakefolder`<br />
+      `msdyn_dataflowtemplate`<br />
+      `msdyn_dataworkspace`<br />
       `msdyn_dmsrequeststatus`<br />
-      `msdyn_formmapping`<br />
+      `msdyn_evalassertion`<br />
+      `msdyn_evalprompt`<br />
+      `msdyn_evalrun`<br />
+      `msdyn_function`<br />
       `msdyn_insightsstorevirtualentity`<br />
-      `msdyn_knowledgemanagementsetting`<br />
-      `msdyn_mobileapp`<br />
+      `msdyn_knowledgeharvestplan`<br />
+      `msdyn_knowledgesearchfilter`<br />
+      `msdyn_modulerundetail`<br />
       `msdyn_nonrelationalds`<br />
-      `msdyn_pmanalysishistory`<br />
-      `msdyn_pmcalendar`<br />
-      `msdyn_pminferredtask`<br />
-      `msdyn_pmprocesstemplate`<br />
-      `msdyn_pmprocessversion`<br />
-      `msdyn_pmtemplate`<br />
+      `msdyn_plan`<br />
+      `msdyn_planattachment`<br />
+      `msdyn_pmbusinessruleautomationconfig`<br />
+      `msdyn_pmcalendarversion`<br />
+      `msdyn_pmprocessextendedmetadataversion`<br />
+      `msdyn_pmprocessusersettings`<br />
+      `msdyn_pmrecording`<br />
+      `msdyn_pmtab`<br />
+      `msdyn_pmview`<br />
+      `msdyn_rtestructuredtemplateconfig`<br />
       `msdyn_salesforcestructuredobject`<br />
       `msdyn_schedule`<br />
       `msdyn_solutioncomponentcountdatasource`<br />
@@ -444,62 +319,359 @@ Your environment might return different results. Tables might not be supported i
       `mspp_webtemplate`<br />
       `newprocess`<br />
       `optionset`<br />
+      `organizationui`<br />
       `picklistmapping`<br />
-      `pluginpackage`<br />
-      `plugintype`<br />
-      `powerbidataset`<br />
-      `powerbireport`<br />
+      `pluginassembly`<br />
+      `plugintracelog`<br />
+      `position`<br />
       `powerpagecomponent`<br />
       `powerpagesite`<br />
-      `powerpagesitelanguage`<br />
-      `principalentitybusinessunitmap`<br />
+      `powerpagesite_dvtablesearch`<br />
+      `powerpageslog`<br />
+      `powerpagessourcefile`<br />
+      `principalentitymap`<br />
       `privilege`<br />
-      `processsession`<br />
-      `processtrigger`<br />
-      `publisheraddress`<br />
-      `queue`<br />
-      `recentlyused`<br />
-      `recurringappointmentmaster`<br />
-      `relationship`<br />
-      `report`<br />
+      `privilegesremovalsetting`<br />
+      `processstage`<br />
+      `publisher`<br />
+      `quarterlyfiscalcalendar`<br />
+      `queueitemcount`<br />
+      `queuemembership`<br />
+      `recordfilter`<br />
+      `recyclebinconfig`<br />
+      `relationshipattribute`<br />
+      `reportcategory`<br />
       `reportparameter`<br />
-      `retentionconfig`<br />
+      `retaineddataexcel`<br />
+      `revokeinheritedaccessrecordstracker`<br />
+      `ribboncontextgroup`<br />
+      `ribbondiff`<br />
+      `ribbonrule`<br />
       `role`<br />
       `roleprivileges`<br />
       `roletemplateprivileges`<br />
-      `savedquery`<br />
+      `routingrule`<br />
+      `runtimedependency`<br />
+      `savedqueryvisualization`<br />
       `sdkmessage`<br />
-      `sdkmessageprocessingstep`<br />
-      `searchresultscache`<br />
-      `semiannualfiscalcalendar`<br />
-      `serviceplan`<br />
-      `serviceplancustomcontrol`<br />
+      `sdkmessagepair`<br />
+      `sdkmessageprocessingstepimage`<br />
+      `sdkmessagerequestfield`<br />
+      `sdkmessageresponsefield`<br />
+      `searchtelemetry`<br />
+      `sensitivitylabel`<br />
+      `serviceendpoint`<br />
+      `serviceplanappmodules`<br />
+      `serviceplanmapping`<br />
       `sharedlinksetting`<br />
+      `sharedworkspaceaccesstoken2`<br />
+      `sharepointsite`<br />
       `similarityrule`<br />
+      `skill`<br />
+      `skillchangesetreviewer`<br />
+      `skillevalresult`<br />
+      `skillresource`<br />
       `sla`<br />
       `slakpiinstance`<br />
       `solutioncomponent`<br />
       `solutioncomponentbatchconfiguration`<br />
-      `solutioncomponentrelationshipconfiguration`<br />
+      `solutioncomponentdefinition`<br />
+      `solutionhistorydata`<br />
+      `sourcecontrolcomponent`<br />
+      `sourcecontrolconfiguration`<br />
+      `statusmap`<br />
+      `subscription`<br />
       `subscriptionstatisticsoffline`<br />
+      `subscriptiontrackingdeletedobject`<br />
+      `synapselinkprofile`<br />
+      `synapselinkschedule`<br />
+      `systemform`<br />
+      `systemuserauthorizationchangetracker`<br />
+      `systemusermanagermap`<br />
+      `systemuserprofiles`<br />
+      `tag`<br />
+      `taggedprocess`<br />
+      `teammobileofflineprofilemembership`<br />
+      `teamroles`<br />
+      `template`<br />
+      `textdatarecordsindexingstatus`<br />
+      `traceregarding`<br />
+      `transformationmapping`<br />
+      `translationprocess`<br />
+      `unstructuredfilesearchrecord`<br />
+      `userentityuisettings`<br />
+      `usermobileofflineprofilemembership`<br />
+      `userqueryvisualization`<br />
+      `uxagentprojectfile`<br />
+      `webresource`<br />
+      `workflow`<br />
+      `workflowcardconnections`<br />
+      `workflowlog`<br />
+      `workqueue`<br />
+   :::column-end:::
+   :::column:::
+      `activityfileattachment`<br />
+      `agenticscenario`<br />
+      `agentprompt`<br />
+      `aicopilot`<br />
+      `aiinsightcard`<br />
+      `aipluginconversationstarter`<br />
+      `aipluginexternalschema`<br />
+      `aiplugininstance`<br />
+      `aipluginoperationparameter`<br />
+      `aiplugintitle`<br />
+      `allowedmcpclient`<br />
+      `anyprivilegeentity`<br />
+      `appaction_appactionrule_classicrules`<br />
+      `appactionrule`<br />
+      `appconfig`<br />
+      `appelement`<br />
+      `application`<br />
+      `applicationuser`<br />
+      `applicationuserrole`<br />
+      `appmodulecomponent`<br />
+      `appmodulemetadatadependency`<br />
+      `appmoduleroles`<br />
+      `appnotificationsignal`<br />
+      `approvalprocess`<br />
+      `asyncoperation`<br />
+      `attributeclusterconfig`<br />
+      `attributemap`<br />
+      `attributepicklistvalue`<br />
+      `bot`<br />
+      `bot_botcomponentcollection`<br />
+      `botcomponent`<br />
+      `botcomponent_botcomponent`<br />
+      `botcomponent_dvtablesearch`<br />
+      `botcomponent_msdyn_aimodel`<br />
+      `botcomponentcollection`<br />
+      `bulkdeletefailure`<br />
+      `businessdatalocalizedlabel`<br />
+      `businessprocessflowinstance`<br />
+      `businessunit`<br />
+      `calendar`<br />
+      `canvasapp`<br />
+      `cardentityconnections`<br />
+      `cascadegrantrevokeaccessrecordstracker`<br />
+      `catalog`<br />
+      `channelaccessprofile`<br />
+      `channelaccessprofilerule`<br />
+      `channelproperty`<br />
+      `columnmapping`<br />
+      `componentchangesetpayload`<br />
+      `componentversion`<br />
+      `componentversionnrddatasource`<br />
+      `connectioninstance`<br />
+      `connectionrole`<br />
+      `connectionroleobjecttypecode`<br />
+      `controlconfiguration`<br />
+      `convertruleitem`<br />
+      `copilotglossaryterm`<br />
+      `credential`<br />
+      `customapirequestparameter`<br />
+      `customcontrol`<br />
+      `customcontrolresource`<br />
+      `datalakefolderpermission`<br />
+      `datalakeworkspacepermission`<br />
+      `deleteditemreference`<br />
+      `dependencyfeature`<br />
+      `desktopflowbinary`<br />
+      `displaystring`<br />
+      `duplicaterecord`<br />
+      `duplicaterulecondition`<br />
+      `dvfilesearchattribute`<br />
+      `dvtablesearch`<br />
+      `dvtablesearchentity`<br />
+      `emailaddressconfiguration`<br />
+      `enablearchivalrequest`<br />
+      `entityanalyticsconfig`<br />
+      `entitydataprovider`<br />
+      `entityimageconfig`<br />
+      `entitykey`<br />
+      `entityrecordfilter`<br />
+      `environmentvariabledefinition`<br />
+      `eventexpanderbreadcrumb`<br />
+      `expanderevent`<br />
+      `exportedexcel`<br />
+      `featurecontrolsetting`<br />
+      `federatedknowledgeentityconfiguration`<br />
+      `fieldsecurityprofile`<br />
+      `flowaggregation`<br />
+      `flowgroup`<br />
+      `flowmachine`<br />
+      `flowmachineimage`<br />
+      `flowmachinenetwork`<br />
+      `fxexpression`<br />
+      `gitconfigurationretrievaldatasource`<br />
+      `gitproject`<br />
+      `gitsolution`<br />
+      `goal`<br />
+      `hierarchysecurityconfiguration`<br />
+      `importentitymapping`<br />
+      `importjob`<br />
+      `importmap`<br />
+      `indexedtrait`<br />
+      `interactionforemail`<br />
+      `invaliddependency`<br />
+      `keyvaultreference`<br />
+      `lookupmapping`<br />
+      `mailmergetemplate`<br />
+      `managedidentity`<br />
+      `maskingrule`<br />
+      `mcpresource`<br />
+      `mcpserver`<br />
+      `metadataforarchival`<br />
+      `mobileofflineprofileitem`<br />
+      `mobileofflineprofileitemfilter`<br />
+      `mobileofflineprofilesuggestionimpactedtable`<br />
+      `msdyn_aiconfiguration`<br />
+      `msdyn_aiconfigurationsearch`<br />
+      `msdyn_aievaluationconfiguration`<br />
+      `msdyn_aimodel`<br />
+      `msdyn_aitemplate`<br />
+      `msdyn_aitestcasedocument`<br />
+      `msdyn_appinsightsmetadata`<br />
+      `msdyn_componentlayerdatasource`<br />
+      `msdyn_dataflow`<br />
+      `msdyn_dataflowconnectionreference`<br />
+      `msdyn_datalakeds`<br />
+      `msdyn_dmsrequest`<br />
+      `msdyn_entitylinkchatconfiguration`<br />
+      `msdyn_evaldataset`<br />
+      `msdyn_evalresult`<br />
+      `msdyn_formmapping`<br />
+      `msdyn_helppage`<br />
+      `msdyn_knowledgeassetconfiguration`<br />
+      `msdyn_knowledgemanagementsetting`<br />
+      `msdyn_mobileapp`<br />
+      `msdyn_nativeextension`<br />
+      `msdyn_odatav4ds`<br />
+      `msdyn_planartifact`<br />
+      `msdyn_pmanalysishistory`<br />
+      `msdyn_pmcalendar`<br />
+      `msdyn_pminferredtask`<br />
+      `msdyn_pmprocesstemplate`<br />
+      `msdyn_pmprocessversion`<br />
+      `msdyn_pmsimulation`<br />
+      `msdyn_pmtemplate`<br />
+      `msdyn_rtestructuredtemplate`<br />
+      `msdyn_rtetemplatemapping`<br />
+      `msdyn_salesforcestructuredqnaconfig`<br />
+      `msdyn_slakpi`<br />
+      `msdyn_solutioncomponentcountsummary`<br />
+      `msdyn_solutioncomponentsummary`<br />
+      `msdyn_solutionhistorydatasource`<br />
+      `msdyn_tour`<br />
+      `mspp_adplacement`<br />
+      `mspp_columnpermissionprofile`<br />
+      `mspp_entityform`<br />
+      `mspp_entitylist`<br />
+      `mspp_pagetemplate`<br />
+      `mspp_powerpagescoreentityds`<br />
+      `mspp_publishingstatetransitionrule`<br />
+      `mspp_shortcut`<br />
+      `mspp_sitesetting`<br />
+      `mspp_webform`<br />
+      `mspp_webformstep`<br />
+      `mspp_weblinkset`<br />
+      `mspp_webpageaccesscontrolrule`<br />
+      `mspp_website`<br />
+      `mspp_websitelanguage`<br />
+      `navigationsetting`<br />
+      `nlsqregistration`<br />
+      `organizationsetting`<br />
+      `ownermapping`<br />
+      `plugin`<br />
+      `pluginpackage`<br />
+      `plugintype`<br />
+      `powerfxrule`<br />
+      `powerpagecomponent_powerpagecomponent`<br />
+      `powerpagesite_dvfilesearch`<br />
+      `powerpagesitelanguage`<br />
+      `powerpagessiteaifeedback`<br />
+      `principalattributeaccessmap`<br />
+      `principalobjectaccessreadsnapshot`<br />
+      `privilegeobjecttypecodes`<br />
+      `processsession`<br />
+      `processtrigger`<br />
+      `publisheraddress`<br />
+      `queue`<br />
+      `queuemembercount`<br />
+      `recentlyused`<br />
+      `recurringappointmentmaster`<br />
+      `relationship`<br />
+      `report`<br />
+      `reportentity`<br />
+      `reportvisibility`<br />
+      `retentionconfig`<br />
+      `ribboncommand`<br />
+      `ribboncustomization`<br />
+      `ribbonmetadatatoprocess`<br />
+      `ribbontabtocommandmap`<br />
+      `roleeditorlayout`<br />
+      `roletemplate`<br />
+      `rollupproperties`<br />
+      `routingruleitem`<br />
+      `savedquery`<br />
+      `savingrule`<br />
+      `sdkmessagefilter`<br />
+      `sdkmessageprocessingstep`<br />
+      `sdkmessagerequest`<br />
+      `sdkmessageresponse`<br />
+      `searchresultscache`<br />
+      `semiannualfiscalcalendar`<br />
+      `sensitivitylabelattributemapping`<br />
+      `serviceplan`<br />
+      `serviceplancustomcontrol`<br />
+      `settingdefinition`<br />
+      `sharedobjectsforread`<br />
+      `sharepointmanagedidentity`<br />
+      `signal`<br />
+      `sitemap`<br />
+      `skillchangesethistory`<br />
+      `skilldvtablesearch`<br />
+      `skillmetadata`<br />
+      `skillrolemapping`<br />
+      `slaitem`<br />
+      `solution`<br />
+      `solutioncomponentattributeconfiguration`<br />
+      `solutioncomponentconfiguration`<br />
+      `solutioncomponentrelationshipconfiguration`<br />
+      `sourcecontrolbranchconfiguration`<br />
+      `sourcecontrolcomponentpayload`<br />
+      `stagedsourcecontrolcomponent`<br />
+      `stringmap`<br />
+      `subscriptionclients`<br />
+      `subscriptionsyncentryoffline`<br />
       `synapsedatabase`<br />
       `synapselinkprofileentity`<br />
       `syncerror`<br />
       `systemuser`<br />
-      `systemuserprofiles`<br />
-      `teammobileofflineprofilemembership`<br />
-      `teamroles`<br />
-      `template`<br />
-      `transformationmapping`<br />
-      `translationprocess`<br />
-      `usermobileofflineprofilemembership`<br />
-      `userqueryvisualization`<br />
-      `webresource`<br />
-      `workflow`<br />
-      `workflowcardconnections`<br />
-      `workqueue`<br />
+      `systemuserbusinessunitentitymap`<br />
+      `systemuserprincipals`<br />
+      `systemuserroles`<br />
+      `taggedflowsession`<br />
+      `tdsmetadata`<br />
+      `teamprofiles`<br />
+      `teamtemplate`<br />
+      `textanalyticsentitymapping`<br />
+      `tracelog`<br />
+      `trait`<br />
+      `transformationparametermapping`<br />
+      `unstructuredfilesearchentity`<br />
+      `unstructuredfilesearchrecordstatus`<br />
+      `userform`<br />
+      `userquery`<br />
+      `uxagentproject`<br />
+      `virtualentitymetadata`<br />
+      `webwizard`<br />
+      `workflowbinary`<br />
+      `workflowdependency`<br />
+      `workflowmetadata`<br />
+      `workqueueitem`<br />
    :::column-end:::
 :::row-end:::
+
 
 ### Related information
 
