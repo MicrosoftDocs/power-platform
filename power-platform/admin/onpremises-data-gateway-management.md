@@ -3,18 +3,18 @@ title: View and manage on-premises data gateways
 description: View and manage on-premises gateways. 
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/05/2026
+ms.date: 10/29/2026
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
 ms.reviewer: ellenwehrle
 ms.contributors:
+  - brianke
   - kernanb
   - lsuresh
 contributors:
   - charls-msft
   - lavanyapg
-  - avermams
 search.audienceType: 
   - admin
 ms.custom:
@@ -179,6 +179,8 @@ If a person who doesn't have access to install gateways tries to install one, th
 If you have on-premises data gateways in your home (default) region or target region, delete all those gateways in both regions before your [tenant remap](/power-bi/support/service-admin-region-move). Applications (Power BI, Fabric, PowerApps, Logic Apps, Power Automate) that depend on these gateways can't access their data sources after the gateways are deleted. After remap, you need to recreate and configure the gateways to restore application access. Follow these steps to delete your on-premises data gateways before your tenant remap:
 
 > [!NOTE]
+> Delete all gateways in both home and target regions before performing a tenant remap, regardless of the results of the tenant remap readiness check. It is possible for the gateway readiness check in the Fabric admin portal to pass even when gateways are still present. Any gateways that remain might not function correctly after the tenant remap.
+>
 > Gateways are only soft-deleted by default. You need to hard-delete gateways to unblock your tenant remap.
 
 1. Go to **[Power Platform admin center](https://admin.powerplatform.microsoft.com/) => Manage => Data (preview)**
@@ -195,7 +197,7 @@ If you have on-premises data gateways in your home (default) region or target re
 > [!NOTE]
 > You don't need to delete any **On-premises data gateways (Personal mode)**.
 > 
-> You don't need to delete **On-premises data gateways** in regions other than your home region (default), and your remap target region. However, these gateways might not be functional after the remap.
+> You don't need to delete **On-premises data gateways** in regions other than your home and target regions. However, these gateways might not function correctly after the tenant remap.
 
 ### Related content
 
