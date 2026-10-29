@@ -2,7 +2,7 @@
 title: Manage costs for agents powered by the GitHub Copilot harness
 description: Learn how to control and monitor Copilot Credit consumption for agents powered by the GitHub Copilot harness.
 author: gmosleymsft
-ms.date: 10/14/2026
+ms.date: 10/28/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
@@ -23,6 +23,25 @@ As a Power Platform administrator, you can use controls in the Power Platform ad
 > The capacity and consumption controls in the Power Platform admin center apply across Copilot Studio. They aren't exclusive to the GitHub Copilot harness. Configure controls with the other Copilot Studio agents, workflows, and features in mind for each environment.
 
 For information about which activities consume credits and how consumption is measured, see [Overview of billing for agents powered by the GitHub Copilot harness](/microsoft-copilot-studio/agents-experience/billing-credit-overview).
+
+## Control who can build, and control how much they can spend
+
+Maker permissions and spending controls do different jobs, so you need both.
+
+**Control who can create agents.** The GitHub Copilot harness doesn't have its own maker-access setting. To control who can create agents, use your existing Copilot Studio and environment permissions.
+
+- For environment access and authoring permissions, see [Work with Power Platform environments](/microsoft-copilot-studio/environments-first-run-experience).
+- To restrict authoring, or to block access to Copilot Studio completely, see the [Authors-group troubleshooting guidance](/troubleshoot/power-platform/copilot-studio/licensing/authors-access).
+
+> [!IMPORTANT]
+> Choosing a group in the **Copilot Studio authors** setting doesn't automatically remove access from users outside that group. Review existing access separately.
+
+Limit authoring access in production environments and in any environment with a large credit allocation. Give approved makers governed development environments with defined credit allocations, limits, and alerts. Use your [internal access and capacity request process](#establish-an-access-and-capacity-request-process) to approve makers and to handle requests for more capacity.
+
+**Control how much agents consume.** Credit allocations and agent limits control consumption. They don't control who is an approved author or who can open the Copilot Studio portal. Set [environment credit controls](#contain-prepaid-consumption-for-an-environment) and [agent monthly limits](#set-a-monthly-limit-for-an-agent) in addition to permissions, not instead of them.
+
+> [!NOTE]
+> Changes to shared capacity can affect other Copilot Studio agents, workflows, and features in the same environment.
 
 ## Before you begin
 
