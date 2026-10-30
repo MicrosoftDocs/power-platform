@@ -1,8 +1,8 @@
 ---
 title: "Fusion development in Power Platform"
 description: "Overview of fusion development in Power Platform."
-author: marcelbf
-ms.author: marcelbf
+author: jordanchodakWork
+ms.author: jordanchodak
 ms.reviewer: jdaly
 ms.subservice: developer
 ms.date: 10/26/2026
