@@ -1,7 +1,7 @@
 ---
 title: "SolutionPackager tool (Microsoft Dataverse) | Microsoft Docs"
 description: "SolutionPackager is a tool that can reversibly decompose a Microsoft Dataverse compressed solution file into multiple XML files."
-ms.date: 04/07/2026
+ms.date: 10/30/2026
 ms.reviewer: pehecke
 ms.topic: concept-article
 author: caburk
@@ -33,26 +33,26 @@ Find the SolutionPackager.exe executable in the \<extracted-folder-name\>/conten
 
 ## SolutionPackager command-line arguments  
 
- SolutionPackager is a command-line tool that can be invoked with the parameters identified in the following table.  
+ SolutionPackager is a command-line tool. You can invoke it by using the parameters described in the following table.  
   
 |Argument|Description|  
 |--------------|-----------------|  
 |/action: {Extract&#124;Pack}|Required. The action to perform. The action can be either to extract a solution .zip file to a folder, or to pack a folder into a .zip file.|  
 |/zipfile: \<file path>|Required. The path and name of a solution .zip file. When extracting, the file must exist and be readable. When packing, the file is replaced.|  
 |/folder: \<folder path>|Required. The path to a folder. When extracting, this folder is created and populated with component files. When packing, this folder must already exist and contain previously extracted component files.|  
-|/packagetype: {Unmanaged&#124;Managed&#124;Both}|Optional. The type of package to process. The default value is Unmanaged. This argument may be omitted in most occasions because the package type can be read from inside the .zip file or component files. When extracting and Both is specified, managed and unmanaged solution .zip files must be present and are processed into a single folder. When packing and Both is specified, managed and unmanaged solution .zip files are produced from one folder. For more information, see the section on working with managed and unmanaged solutions later in this article.|  
-|/allowWrite:{Yes&#124;No}|Optional. The default value is Yes. This argument is used only during an extraction. When /allowWrite:No is specified, the tool performs all operations but is prevented from writing or deleting any files. The extract operation can be safely assessed without overwriting or deleting any existing files.|  
-|/allowDelete:{Yes&#124;No&#124;Prompt}|Optional. The default value is Prompt. This argument is used only during an extraction. When /allowDelete:Yes is specified, any files present in the folder specified by the /folder parameter that aren't expected are automatically deleted. When /allowDelete:No is specified, no deletes occur. When /allowDelete:Prompt is specified, the user is prompted through the console to allow or deny all delete operations. If /allowWrite:No is specified, no deletes occur even if /allowDelete:Yes is also specified.|  
-|/clobber|Optional. This argument is used only during an extraction. When /clobber is specified, files that have the read-only attribute set are overwritten or deleted. When not specified, files with the read-only attribute aren't overwritten or deleted.|  
+|/packagetype: {Unmanaged&#124;Managed&#124;Both}|Optional. The type of package to process. The default value is Unmanaged. Omit this argument in most cases because the tool can read the package type from inside the .zip file or component files. When extracting and Both is specified, managed and unmanaged solution .zip files must be present and are processed into a single folder. When packing and Both is specified, managed and unmanaged solution .zip files are produced from one folder. For more information, see the section on working with managed and unmanaged solutions later in this article.|    
+|/allowWrite:{Yes&#124;No}|Optional. The default value is Yes. Use this argument only during an extraction. When you specify /allowWrite:No, the tool performs all operations but doesn't write or delete any files. You can safely assess the extract operation without overwriting or deleting any existing files.|  
+|/allowDelete:{Yes&#124;No&#124;Prompt}|Optional. The default value is Prompt. Use this argument only during an extraction. When you specify /allowDelete:Yes, the tool automatically deletes any files present in the folder specified by the /folder parameter that aren't expected. When you specify /allowDelete:No, the tool doesn't delete any files. When you specify /allowDelete:Prompt, the user is prompted through the console to allow or deny all delete operations. If you specify /allowWrite:No, the tool doesn't delete any files even if /allowDelete:Yes is also specified.|  
+|/clobber|Optional. Use this argument only during an extraction. When you specify /clobber, the tool overwrites or deletes files that have the read-only attribute set. When not specified, the tool doesn't overwrite or delete files with the read-only attribute.|  
 |/errorlevel: {Off&#124;Error&#124;Warning&#124;Info&#124;Verbose}|Optional. The default value is Info. This argument indicates the level of logging information to output.|  
-|/map: \<file path>|Optional. The path and name of an .xml file containing file mapping directives. When used during an extraction, files typically read from inside the folder specified by the /folder parameter are read from alternate locations as specified in the mapping file. During a pack operation, files that match the directives aren't written.|  
+|/map: \<file path>|Optional. The path and name of an .xml file containing file mapping directives. When used during an extraction, the tool reads files typically read from inside the folder specified by the /folder parameter from alternate locations as specified in the mapping file. During a pack operation, the tool doesn't write files that match the directives.|  
 |/nologo|Optional. Suppress the banner at runtime.|  
 |/log: \<file path>|Optional. A path and name to a log file. If the file already exists, new logging information is appended to the file.|  
 |@ \<file path>|Optional. A path and name to a file that contains command-line arguments for the tool.|  
-|/sourceLoc: \<string>|Optional. This argument generates a template resource file, and is valid only on extract.<br /><br /> Possible values are `auto` or an LCID/ISO code for the language you want to export. When this argument is used, the string resources from the given locale are extracted as a neutral .resx file. If `auto` or just the long or short form of the switch is specified, the base locale or the solution is used. You can use the short form of the command: /src.|  
-|/localize|Optional. Extract or merge all string resources into .resx files. You can use the short form of the command: /loc. The localize option supports shared components for .resx files. More information: [Using RESX web resources](/power-apps/developer/model-driven-apps/resx-web-resources)|  
+|/sourceLoc: \<string>|Optional. This argument generates a template resource file, and is valid only on extract.<br /><br /> Possible values are `auto` or an LCID/ISO code for the language you want to export. When you use this argument, the tool extracts the string resources from the given locale as a neutral .resx file. If you specify `auto` or just the long or short form of the switch, the base locale or the solution is used. You can use the short form of the command: /src.|  
+|/localize|Optional. Extract or merge all string resources into .resx files. You can use the short form of the command: /loc. The localize option supports shared components for .resx files. For more information, see [Using RESX web resources](/power-apps/developer/model-driven-apps/resx-web-resources).|  
 |/SolutionName: \<name>|Optional. The unique name of the solution to pack or extract when the source folder contains multiple solutions under `solutions/*/solution.yml`. Required when more than one solution is detected. Only applies to the YAML source control format. You can use the short form of the command: /sn.|
-|/remapPluginTypeNames|Optional. When specified, plug-in fully qualified type names are remapped based on the assemblies included in the solution. Enabled by default in the YAML source control format. You can use the short form of the command: /fp.|
+|/remapPluginTypeNames|Optional. When specified, the tool remaps plug-in fully qualified type names based on the assemblies included in the solution. Enabled by default in the YAML source control format. You can use the short form of the command: /fp.|
 
 <a name="use_command"></a>
 
@@ -62,18 +62,18 @@ SolutionPackager supports two folder layouts when extracting and packing solutio
 
 ### XML format (legacy)
 
-The original format. Solution metadata is stored in `Other\Solution.xml` and `Other\Customizations.xml`, and all component files are extracted into a flat folder hierarchy alongside those files. This format is the default format when extracting a `.zip` file without more configuration.
+The original format. The tool stores solution metadata in `Other\Solution.xml` and `Other\Customizations.xml`. The tool extracts all component files into a flat folder hierarchy alongside those files. This format is the default format when you extract a `.zip` file without more configuration.
 
 ### YAML source control format
 
-Introduced alongside [Dataverse Git integration](git-integration/overview.md), this format stores solution metadata as YAML files distributed across a structured folder hierarchy. It's the format written when you commit solutions using native Git integration in Power Apps.
+Introduced alongside [Dataverse Git integration](git-integration/overview.md), this format stores solution metadata as YAML files distributed across a structured folder hierarchy. It's the format written when you commit solutions by using native Git integration in Power Apps.
 
 #### Advantages over XML format
 
-- Produces cleaner, more readable per-component diffs in source control
-- Supports multiple solutions in a single repository folder
-- Canvas app `.msapp` files and modern flows are only supported in this format
-- Plug-in type name remapping is enabled by default
+- Produces cleaner, more readable per-component diffs in source control.
+- Supports multiple solutions in a single repository folder.
+- Canvas app `.msapp` files and modern flows are only supported in this format.
+- Plug-in type name remapping is enabled by default.
 
 #### Required folder structure
 
@@ -96,8 +96,8 @@ Introduced alongside [Dataverse Git integration](git-integration/overview.md), t
 ```
 
 > [!IMPORTANT]
-> The YAML format is autodetected by the presence of a `solutions/` subfolder containing `*solution.yml` files.
-> If your YAML manifest files (`solution.yml`, `solutioncomponents.yml`, and so on) are placed at the root of the folder rather than under `solutions/<SolutionUniqueName>/`, the tool doesn't detect the YAML format. The tool falls back to the XML path and reports a misleading error about a missing `Customizations.xml`. See [Troubleshooting](#troubleshooting) for information on how to fix this issue.
+> The presence of a `solutions/` subfolder containing `*solution.yml` files indicates the YAML format.
+> If you place your YAML manifest files (`solution.yml`, `solutioncomponents.yml`, and so on) at the root of the folder rather than under `solutions/<SolutionUniqueName>/`, the tool doesn't detect the YAML format. The tool falls back to the XML path and reports a misleading error about a missing `Customizations.xml`. See [Troubleshooting](#troubleshooting) for information on how to fix this issue.
 
 More information: [Solution YAML source control format reference](solution-source-control-yaml-format.md)
 
@@ -129,41 +129,41 @@ SolutionPackager.exe /action:Pack /zipfile:SolutionA.zip /folder:C:\repos\myrepo
 
 The following discussion details the use of the /map argument to the SolutionPackager tool.  
   
-Files that are built in an automated build system, such as \.xap Silverlight files and plug-in assemblies, are typically not checked into source control. Web resources may already be present in source control in locations that aren't directly compatible with the SolutionPackager tool. By including the /map parameter, the SolutionPackager tool can be directed to read and package such files from alternate locations and not from inside the Extract folder as it would typically be done. The /map parameter must specify the name and path to an XML file containing mapping directives. Those directives instruct the SolutionPackager to match files by their name and path, and indicate the alternate location to find the matched file. The following information applies to all directives equally.  
+Files that are built in an automated build system, such as `.xap` Silverlight files and plug-in assemblies, are typically not checked into source control. You might already have web resources in source control in locations that aren't directly compatible with the SolutionPackager tool. By including the /map parameter, you can direct the SolutionPackager tool to read and package such files from alternate locations instead of from inside the Extract folder. The /map parameter must specify the name and path to an XML file containing mapping directives. Those directives instruct the SolutionPackager to match files by their name and path, and indicate the alternate location to find the matched file. The following information applies to all directives equally.  
   
-- Multiple directives may be listed including those directives that match identical files. Directives listed early in the file take precedence over directives listed later.  
+- You can list multiple directives, including those directives that match identical files. Directives listed early in the file take precedence over directives listed later.  
   
 - If a file is matched to any directive, it must be found in at least one alternative location. If no matching alternatives are found, the SolutionPackager issues an error.  
   
-- Folder and file paths may be absolute or relative. Relative paths are always evaluated from the folder specified by the /folder parameter.  
+- Folder and file paths can be absolute or relative. Relative paths are always evaluated from the folder specified by the /folder parameter.  
   
-- Environment variables may be specified by using a %variable% syntax.  
+- Specify environment variables by using a `%variable%` syntax.  
   
-- A folder wildcard "**" may be used to mean "in any subfolder". It can only be used as the final part of a path, for example: "c:\folderA\\\*\*".  
+- Use a folder wildcard `**` to mean "in any subfolder". You can only use it as the final part of a path, for example: `c:\folderA\**`.  
   
-- File name wildcards may be used only in the forms "*.ext" or "\*.\*". No other pattern is supported.  
+- Use file name wildcards only in the forms `*.ext` or `*.*`. No other pattern is supported.  
   
-  The three types of directives mappings are described here, along with an example that shows you how to use them.  
+  The following section describes the three types of directive mappings, along with an example that shows you how to use them.  
   
 <a name="Folder_mapping"></a>
 
 ### Folder mapping  
 
-The following information provides detailed information on folder mapping.  
+The following section provides detailed information on folder mapping.  
   
-**Xml Format**
+**XML Format**
 
 `<Folder map="folderA" to="folderB" />`  
   
 **Description**
 
-File paths that match "folderA" are switched to "folderB".  
+File paths that match "folderA" switch to "folderB".  
   
-- The hierarchy of subfolders under each must exactly match.  
+- The hierarchy of subfolders under each folder must exactly match.  
   
 - Folder wildcards aren't supported.  
   
-- No file names may be specified.  
+- You can't specify file names.  
   
   **Examples**
 
@@ -175,35 +175,35 @@ File paths that match "folderA" are switched to "folderB".
   
 <a name="file_mapping"></a>
 
-### File To file mapping  
+### File-to-file mapping  
 
 The following information provides more details on file-to-file mapping.  
   
- **Xml Format**
+ **XML Format**
 
 `<FileToFile map="path\filename.ext" to="path\filename.ext" />`  
   
 **Description**
 
-Any file matching the `map` parameter is read from the name and path specified in the `to` parameter.  
+Any file matching the `map` parameter reads from the name and path specified in the `to` parameter.  
   
  For the `map` parameter:  
   
-- A file name must be specified. The path is optional. If no path is specified, files from any folder may be matched.  
+- Specify a file name. The path is optional. If you don't specify a path, the mapping can match files from any folder.  
   
 - File name wildcards aren't supported.  
   
-- The folder wildcard is supported.  
+- Supports the folder wildcard.  
   
   For the `to` parameter:  
   
-- A file name and path must be specified.  
+- Specify a file name and path.  
   
-- The file name may differ from the name in the `map` parameter.  
+- The file name can differ from the name in the `map` parameter.  
   
 - File name wildcards aren't supported.  
   
-- The folder wildcard is supported.  
+- Supports the folder wildcard.  
 
 **Examples**
 
@@ -219,37 +219,37 @@ Any file matching the `map` parameter is read from the name and path specified i
     to="myplg\bin\Debug\myplg.1.0.0.nupkg" /> 
 ```
 
-In the above NuGet package example, cr886_PluginPackageTest.nupkg is not overwritten if the file already exists in the specified location.
+In the preceding NuGet package example, `cr886_PluginPackageTest.nupkg` isn't overwritten if the file already exists in the specified location.
   
 <a name="file_path_mapping"></a>
 
-### File to path mapping  
+### File-to-path mapping  
 
-The following provides detailed information on file-to-path mapping.  
+The following section provides detailed information on file-to-path mapping.  
   
-**Xml Format**
+**XML Format**
 
 `<FileToPath map="path\filename.ext" to="path" />`  
   
 **Description**  
 
-Any file matching the `map` parameter is read from the path specified in the `to` parameter.  
+The `map` parameter specifies the file to match, and the `to` parameter specifies the path to read from.  
   
 For the `map` parameter:  
   
-- A file name must be specified. The path is optional. If no path is specified, files from any folder may be matched.  
+- Specify a file name. The path is optional. If you don't specify a path, the mapping can match files from any folder.  
   
-- File name wildcards are supported.  
+- Supports file name wildcards.  
   
-- The folder wildcard is supported.  
+- Supports the folder wildcard.  
   
 For the `to` parameter:  
   
-- A path must be specified.  
+- Specify a path.  
   
-- The folder wildcard is supported.  
+- Supports the folder wildcard.  
   
-- A file name must not be specified.  
+- Don't specify a file name.  
   
   **Examples**
 
@@ -282,17 +282,17 @@ The following XML code sample shows a complete mapping file that enables the Sol
 
 ## Managed and unmanaged solutions  
 
- A Dataverse compressed solution (.zip) file can be exported in one of two types as shown here.  
+ You can export a Dataverse compressed solution (.zip) file as either a managed or unmanaged solution.  
   
  **Managed solution**  
- A completed solution ready to be imported into an organization. Once imported, components can't be added or removed, although they can optionally allow further customization. This is recommended when development of the solution is complete.  
+ A completed solution ready to import into an organization. Once imported, you can't add or remove components, although you can optionally allow further customization. Use this type when development of the solution is complete.  
   
  **Unmanaged solution**  
- An open solution with no restrictions on what can be added, removed, or modified. This is recommended during development of a solution.  
+ An open solution with no restrictions on what you can add, remove, or modify. Use this type during development of a solution.  
   
- The format of a compressed solution file will be different based on its type, either managed or unmanaged. The SolutionPackager can process compressed solution files of either type. However, the tool can't convert one type to another. The only way to convert solution files to a different type, for example from unmanaged to managed, is by importing the unmanaged solution .zip file into a Dataverse server and then exporting the solution as a managed solution.  
+ The format of a compressed solution file differs based on its type, either managed or unmanaged. The SolutionPackager can process compressed solution files of either type. However, the tool can't convert one type to another. The only way to convert solution files to a different type, such as from unmanaged to managed, is by importing the unmanaged solution .zip file into a Dataverse server and then exporting the solution as a managed solution.  
   
- The SolutionPackager can process unmanaged and managed solution .zip files as a combined set via the /PackageType:Both parameter. To perform this operation, it is necessary to export your solution twice as each type, naming the .zip files as follows.  
+ The SolutionPackager can process unmanaged and managed solution .zip files as a combined set by using the `/PackageType:Both` parameter. To perform this operation, you need to export your solution twice as each type. Name the .zip files as follows:  
 
 :::row:::
    :::column span="":::
@@ -303,19 +303,19 @@ The following XML code sample shows a complete mapping file that enables the Sol
    :::column-end:::
 :::row-end:::
   
- The tool will assume the presence of the managed zip file in the same folder as the unmanaged file and extract both files into a single folder preserving the differences where managed and unmanaged components exist.  
+ The tool assumes the managed zip file is in the same folder as the unmanaged file. It extracts both files into a single folder and preserves the differences where managed and unmanaged components exist.  
   
- After a solution has been extracted as both unmanaged and managed, it is possible from that single folder to pack both, or each type individually, using the /PackageType parameter to specify which type to create. When specifying both files, two .zip files will be produced using the naming convention as above. If the /PackageType parameter is missing when packing from a dual managed and unmanaged folder, the default is to produce a single unmanaged .zip file.  
+ After you extract a solution as both unmanaged and managed, you can pack both types or each type individually from that single folder. Use the `/PackageType` parameter to specify which type to create. When you specify both files, the tool produces two .zip files by using the preceding naming convention. If you don't include the `/PackageType` parameter when packing from a dual managed and unmanaged folder, the default is to produce a single unmanaged .zip file.  
   
 ## Troubleshooting  
 
 ### Message displayed when using Visual Studio to edit resource files
 
-If you use Visual Studio to edit resource fsiles created by the solution packager, you may receive a message when you repack similar to this: `"Failed to determine version id of the resource file <filename>.resx the resource file must be exported from the solutionpackager.exe tool in order to be used as part of the pack process."` This happens because Visual Studio replaces the resource file's metadata tags with data tags.  
+If you use Visual Studio to edit resource files created by the solution packager, you might see a message when you repack similar to this: `"Failed to determine version id of the resource file <filename>.resx the resource file must be exported from the solutionpackager.exe tool in order to be used as part of the pack process."` This message appears because Visual Studio replaces the resource file's metadata tags with data tags.  
   
 #### Workaround  
   
-1. Open the resource file in your favorite text editor and locate and update the following tags:  
+1. Open the resource file in your favorite text editor then locate and update the following tags:    
   
    ```xml  
    <data name="Source LCID" xml:space="preserve">  
@@ -345,13 +345,13 @@ If you use Visual Studio to edit resource fsiles created by the solution package
   
    ```  
   
-   This allows the solution packager to read and import the resource file. This problem has only been observed when using the Visual Studio Resource editor.  
+   This change allows the solution packager to read and import the resource file. This problem occurs only when you use the Visual Studio Resource editor.  
 
 ### Error: "Cannot find required file …\Other\Customizations.xml" with a YAML folder
 
-This error appears when you run SolutionPackager (or `pac solution pack`) against a folder that contains YAML files such as `solution.yml`, but those files are placed at the root of the folder rather than inside the required `solutions/<SolutionUniqueName>/` subfolder.
+This error appears when you run SolutionPackager (or `pac solution pack`) against a folder that contains YAML files such as `solution.yml`, but you place those files at the root of the folder rather than inside the required `solutions/<SolutionUniqueName>/` subfolder.
 
-**Cause:** The tool detects the YAML source control format by looking for a `solutions/` subfolder containing `*solution.yml` files. When that directory is absent, the tool silently falls back to the XML (legacy) format and expects `Other\Customizations.xml`. The resulting error message refers to an XML file and doesn't mention YAML, which is misleading.
+**Cause:** The tool detects the YAML source control format by looking for a `solutions/` subfolder containing `*solution.yml` files. When that directory is absent, the tool silently falls back to the XML (legacy) format and expects `Other\Customizations.xml`. The error message refers to an XML file and doesn't mention YAML, which can be confusing.
 
 **Fix:** Reorganize the folder so that the YAML manifest files are under the correct paths:
 
@@ -366,7 +366,7 @@ This error appears when you run SolutionPackager (or `pac solution pack`) agains
     publisher.yml
 ```
 
-If you obtained the folder from a Git integration commit or `pac solution clone`, the folder structure should already be correct. A folder that only contains the top-level YAML files without the `solutions/` subdirectory represents an incomplete extract and can't be packed directly.
+If you obtained the folder from a Git integration commit or `pac solution clone`, the folder structure is already correct. A folder that only contains the top-level YAML files without the `solutions/` subdirectory represents an incomplete extract and can't be packed directly.
 
 ### Warning: component declared in rootcomponents.yml has no source files
 
@@ -381,6 +381,6 @@ This warning appears when a component, such as a canvas app, is listed in `rootc
 ### See also
 
 - [Use Source Control with Solution Files](use-source-control-solution-files.md)
-- s[Solution concepts](solution-concepts-alm.md)
+- [Solution concepts](solution-concepts-alm.md)
 
 [!INCLUDE[footer-include](../includes/footer-banner.md)]
