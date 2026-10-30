@@ -1,191 +1,216 @@
 ---
-title: Tenant-to-tenant migrations 
-description: Learn about the impact of migrating an environment from one tenant to another. 
-ms.date: 10/16/2026
+title: Tenant-to-tenant migrations
+description: Learn how to prepare for, perform, and validate an environment migration from one tenant to another.
+ms.date: 10/30/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
-author: gakulka 
+author: parkumar-msft
 contributors:
+  - thedsk8-microsoft
   - SatishKumarkannanMs
-  - val-bc 
+  - val-bc
   - brsova
   - ImadYanni
-  - bevans 
+  - bevans
   - LaurentPepin
   - udmehta
   - dkhurana
 ms.contributors:
   - ralinga
-  - gakulka
+  - laneswenka
 ms.subservice: admin
-ms.author: gakulka
+ms.author: parkumar
 ms.reviewer: ellenwehrle
-search.audienceType: 
+search.audienceType:
   - admin
 ---
 
 # Tenant-to-tenant migrations
-The tenant-to-tenant migration feature allows you to transfer an environment from one tenant to another. This feature supports scenarios such as merging multiple tenants into one and facilitating company acquisitions. The environment doesn't actually _move_, but rather is _linked_ to another tenant. The environment still exists but isn't part of the source tenant anymore. It's accessible and managed under the destination tenant. There are no user interface changes or version changes as part of this move.
+
+Use tenant-to-tenant migration to transfer an environment from one tenant to another, such as when you consolidate tenants or acquire a company. The migration doesn't change the user interface or version.
+
+For environments without finance and operations apps, the environment doesn't physically move. Its Dataverse organization moves to a new environment in the destination tenant, and the original environment remains in the source tenant without Dataverse. For environments that include finance and operations apps, the source environment moves to the destination tenant and isn't preserved in the source tenant.
 
 ## Before you get started
-Be aware of the following considerations before starting a tenant-to-tenant migration.
 
-* **Supported environment types**: Only production and sandbox environments are supported.
-* **Unsupported environment types**: Default, developer, trial, and Teams environments aren't supported. Government Community Cloud (GCC) to public clouds and vice versa are also not supported.
-* The following components aren't supported: Dynamics 365 Customer Voice, Omnichannel for Customer Service, and component library.
-* Specific steps required for Dynamics 365 Customer Insights - Journeys, Dynamics 365 Customer Insights - Data, Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio. The steps are called out in the premigration and post-migration steps.
-* Environments that include finance and operations apps are now supported when they meet the [additional prerequisites for finance and operations apps](#additional-prerequisites-for-finance-and-operations-apps).This feature is in the process of rolling out, and might not be available in your region yet.
-* You might need to reconfigure some applications and settings after tenant-to-tenant migration, such as Dynamics 365 for Outlook, server-side sync, SharePoint, and others.
-* Once you create and configure users, you must [create a user mapping file](#create-a-user-mapping-file), which is described later in this article.
-* If the mapped user has a mailbox in the destination tenant, then the mailbox is automatically configured during the migration. For all other users, you need to reconfigure the mailbox.
-  * If the same mailbox is used in the target tenant, `test@microsoft.com`, then the mailbox is used by default. Before the tenant-to-tenant migration, customers need to migrate and configure their mailboxes on the target tenant.
-  * If you're using the default onmicrosoft domain, `test@sourcecompanyname.onmicrosoft.com`, the post-migration domain name is changed to `test@targetcompanyname.onmicrosoft.com`. Customers need to reconfigure the mailbox. For more information about configuring the mailbox, see [Connect to Exchange Online](connect-exchange-online.md).
+Review these considerations before you start a tenant-to-tenant migration:
+
+- **Supported environment types**: Only production and sandbox environments are supported.
+- **Unsupported environment types**: Default, developer, trial, and Teams environments aren't supported. Migrations between Government Community Cloud (GCC) and public clouds aren't supported in either direction.
+- The following components aren't supported: Dynamics 365 Customer Voice, Omnichannel for Customer Service, and component libraries.
+- Dynamics 365 Customer Insights - Journeys, Dynamics 365 Customer Insights - Data, Power Apps, Power Automate, Power Pages, and Microsoft Copilot Studio require specific preparation and post-migration steps. Review the applicable sections in this article.
+- Environments that include finance and operations apps are supported when they meet the [additional prerequisites for finance and operations apps](#additional-prerequisites-for-finance-and-operations-apps). This feature is rolling out and might not be available in your region yet.
+- You might need to reconfigure applications and settings after migration, such as Dynamics 365 for Outlook, server-side synchronization, and SharePoint.
+- After you create and configure users, [create a user-mapping file](#create-a-user-mapping-file).
+- If a mapped user has a mailbox in the destination tenant, the migration configures it automatically. For all other users, reconfigure the mailbox.
+  - If the destination tenant uses the same mailbox address, such as `test@microsoft.com`, the migration uses that mailbox by default. Migrate and configure mailboxes in the destination tenant before you start the tenant-to-tenant migration.
+  - If you use the default `onmicrosoft.com` domain, an address such as `test@sourcecompanyname.onmicrosoft.com` changes to `test@targetcompanyname.onmicrosoft.com` after migration. Reconfigure the mailbox. For more information, see [Connect to Exchange Online](connect-exchange-online.md).
+- Test the migration before you migrate a production environment. A test migration helps you validate the preparation steps and understand what to expect before you migrate production. [Copy the production environment](copy-environment.md) to a new sandbox environment, and then migrate the sandbox environment to the destination tenant.
 
 ## Prerequisites
+
 Complete the following prerequisites before you start the migration process:
 
-* Create users in the target tenant, including:
-  * Create users in Microsoft 365 and Microsoft Entra ID.
-  * Assign licenses.
-* You must have admin privileges with Power Platform or Dynamics 365 to perform the migration.
-* The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For more information, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
-
-> [!TIP]
-> Before you migrate a production environment, we recommend that you do a test migration first. [Copy](copy-environment.md) the production environment to a newly created sandbox environment, and then migrate that sandbox environment to the destination tenant. A test migration helps you validate the preparation steps and understand what to expect before you migrate production.
+- Confirm that you have Power Platform administrator or Dynamics 365 administrator privileges.
+- Create users in Microsoft 365 and Microsoft Entra ID in the destination tenant, and assign licenses to them.
+- Use the recommended PowerShell for Power Platform Administrators module if you migrate with PowerShell. For more information, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md).
 
 ### Additional prerequisites for finance and operations apps
 
 > [!TIP]
-> A tenant-to-tenant migration changes the FinOps source environment itself. Unlike a tenant migration for a Lifecycle Services-managed environment, this process doesn't preserve the source environment. To keep the source environment intact, [Copy](copy-environment.md) and use the copied environment for the tenant-to-tenant migration.
+> A tenant-to-tenant migration changes the finance and operations source environment itself. Unlike a tenant migration for a Lifecycle Services-managed environment, this process doesn't preserve the source environment. To keep the source environment intact, [copy the environment](copy-environment.md) and migrate the copy.
 
 Complete these additional prerequisites for an environment that includes finance and operations apps:
 
-* Make sure the environment doesn't have finance and operations add-ins installed.
+- Confirm that the environment has no finance and operations add-ins installed.
 
   > [!WARNING]
   > Tenant-to-tenant migration isn't supported when finance and operations add-ins are installed. Don't proceed with the migration because it can cause unexpected behavior.
 
-* Contact your independent software vendor (ISV) and obtain updated license files. Existing ISV licenses aren't valid after the migration. You should import the updated license files after the migration is complete.
-* Create the user who becomes the finance and operations administrator in the target tenant. You enter this user's email address in the **New FinOps Admin Email** field when you start the preparation process. The migration fails if the user doesn't exist in the target tenant.
+- Obtain updated license files from your independent software vendor (ISV). Existing ISV licenses aren't valid after migration. Import the updated license files after migration.
+- Create the finance and operations administrator's user account in the destination tenant. Enter this user's email address in **New FinOps Admin Email** when you start the preparation process. The migration fails if the user doesn't exist in the destination tenant.
 
 > [!IMPORTANT]
 > Before you migrate a production environment, first migrate a sandbox environment and test all functionality. Don't migrate the production environment until the sandbox migration and validation are successful.
 
+> [!NOTE]
+> The PowerShell for Power Platform Administrators module requires Windows PowerShell 5.x. It isn't compatible with PowerShell 6.0 and later, which use .NET Core. For more information, see [Install PowerShell for Power Platform Administrators](powershell-installation.md).
+
 ## Preparation process
-Complete the following procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages before the migration. You also must create a user-mapping file.
+
+Complete the applicable procedures for Power Automate, Power Apps, Copilot Studio, and Power Pages before migration. You must also create a user-mapping file.
 
 ### Prepare Power Automate
 
-If you already defined your flows in Dataverse, then no extra work is required. 
+If your flows are already defined in Dataverse, you don't need to do any extra preparation.
 
 Add the definitions of any Power Automate flows that you want to migrate into Dataverse solutions in the source environment. For more information, see [Add an existing cloud flow into a solution](/power-automate/create-flow-solution#add-an-existing-cloud-flow-into-a-solution). You can run the [Add-AdminFlowsToSolution](/powershell/module/microsoft.powerapps.administration.powershell/add-adminflowstosolution?view=pa-ps-latest&preserve-view=true) cmdlet to add these definitions in bulk.
-      
+
 ### Prepare Power Apps
-Any Power Apps must be manually exported. We don't support the migration of customer connectors, connections, or gateways. If you have any of these components set up, they must be manually reconfigured after the migration.
+
+Manually export your Power Apps apps. Migration of custom connectors, connections, and gateways isn't supported. If you use these components, manually reconfigure them after migration.
 
 #### For solution-aware apps
-1. For solution-aware apps, go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all apps and solutions. You can export them individually or group them together in a single solution, if they're not already.
-1. Delete these solution-aware apps in the environment after exporting them.
-1. You can only delete apps belonging to managed solutions by deleting the solution.
-1. You can delete apps that are in an unmanaged solution by using the **Delete from this environment** option.	 
 
-    > [!Important]
+Export solution-aware apps before you delete them from the source environment.
+
+1. Go to [Power Apps](https://make.powerapps.com), select **Solutions**, and export all apps and solutions. Export them individually or group them in a single solution.
+2. After you export the apps, delete them from the source environment. To delete apps in a managed solution, you must delete the solution.
+
+    > [!CAUTION]
+    > Before you delete a managed solution, review its contents carefully. If the solution contains Dataverse tables, deleting it also permanently deletes all data in those tables. This risk is especially important for solutions that contain model-driven apps, which typically rely on Dataverse tables. Export and back up any data you need to keep before you proceed.
+
+3. To delete apps in an unmanaged solution, use **Delete from this environment**.
+
+    > [!IMPORTANT]
     > If you don't delete solution-aware canvas apps, custom pages, or component libraries from an environment before migration, they won't work after migration.
 
 #### For apps that aren't solution aware
-1.	Go to [Power Apps](https://make.powerapps.com), and then select **Apps**.
-1.	For each app that you want to move, select **More Commands** and then select **Export package (preview)**.
-1.	Enter the details required to perform the export of the app, and then select **Export**. Once the export completes, a download begins.
 
-  	  The resulting file contains the app package that you selected.
-  	
-1.	Repeat these steps until you export all apps.
-1.	Delete these nonsolution-aware apps from the environment.
+Export apps that aren't solution aware as app packages.
 
-An admin can also view or delete canvas apps from the list in the admin portal by completing the following steps:
+1. Go to [Power Apps](https://make.powerapps.com), and then select **Apps**.
+2. For each app that you want to move, select **More Commands**, and then select **Export package (preview)**.
+3. Enter the required export details, and then select **Export**. When the export finishes, the app package downloads.
+4. Repeat steps 2 and 3 until you export all apps.
+5. Delete the exported apps from the source environment.
 
-1.	Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) and then select the environment from **Manage**.
-1.	Under the **Resources** action, select **Power Apps** to view and delete them.
+As an administrator, you can also view or delete canvas apps in the Power Platform admin center:
+
+1. Go to the [Power Platform admin center](https://admin.powerplatform.microsoft.com), and then select the environment under **Manage**.
+2. Under **Resources**, select **Power Apps** to view or delete the apps.
 
 ### Prepare Copilot Studio
-You must manually export any Copilot Studio chatbots. You must also manually reconfigure some dependent components of chatbots during or after the migration. For example, you must manually reconfigure connections, environment variables, and custom connectors during or after the migration.
 
-Chatbots are solution aware. Go to [Power Apps](https://make.powerapps.com), navigate to the **Solutions** page, and export all chatbot solutions, either individually or grouped together in a single solution. For more information, see [Export and import bots using solutions](/microsoft-copilot-studio/authoring-export-import-bots?tabs=webApp).
+Manually export your Copilot Studio agents. During or after migration, manually reconfigure dependent components, such as connections, environment variables, and custom connectors.
 
-### Prepare Power Pages 
+Agents are solution aware. Go to [Power Apps](https://make.powerapps.com), select **Solutions**, and export all agent solutions, either individually or grouped in a single solution. For more information, see [Export and import agents using solutions](/microsoft-copilot-studio/authoring-export-import-bots?tabs=webApp).
+
+### Prepare Power Pages
+
 Complete the following steps for each website in an environment:
 
-1.	Sign in to the environment.
-1.	Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
-1.	[Delete](/power-pages/admin/delete-website) the website.
+1. Sign in to the environment.
+2. Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
+3. [Delete the website](/power-pages/admin/delete-website).
 
 ### Create a user-mapping file
-Create a user-mapping file for the source environment to transfer to the target environment. Each environment requires an individual mapping file. Make sure users are present and authorized in both the originating and destination tenants for a successful migration. The users' domains can vary between source and target, as long as they're active.
 
-1. Create a user-mapping file named **usermapping.csv**.
+Create a separate user-mapping file for each environment that you migrate. Ensure users exist, are active, and are authorized in both the source and destination tenants. Their domains can differ between tenants.
+
+1. Create a user-mapping file named `usermapping.csv`.
 
    > [!NOTE]
-   > The file name is case sensitive. Make sure records are separated by a comma, not a semicolon.
-  
-1. Accurately record the details of users, including their source and destination email IDs. Make sure there are no extra spaces before and after the header. Your mapping file should look like the following example:
+   > The file name is case-sensitive. Separate values with a comma, not a semicolon.
 
-    |Source|Destination|
-    |------|-------------|
-    |`SourceUser@sourcetenant.com`	|`DestinationUser@targettenant.com`|
+2. Record each user's source and destination email addresses. Don't add spaces before or after the header values. Use the following format:
+
+    ```csv
+    Source,Destination
+    SourceUser@sourcetenant.com,DestinationUser@targettenant.com
+    ```
 
 #### For full access users
 
+Create mappings for users with full access:
+
 1. Sign in to the source environment.
-1. Use **Advanced Find** to look for users.
-1. Select **Use Saved View** > **Full Access Users**, and then select **Edit Columns**.
-1. Remove all columns except the **Full Name** column.
-1. Select **Add Columns** > **Windows Live ID**.
-1. Select **OK** > **Results** to see the list of full access users.
-1. Select all the records, select **Export Users** in the ribbon, and then choose **Static Worksheet**.
-1. Follow steps 1-7 for the destination tenant, if possible. You should now have two separate Excel sheets: one for the source and one for the target tenant.
-1. Open the Excel files for editing.
-1. Starting with the source Excel sheet, copy the records under the **Windows Live ID** column into Notepad. Don't copy the header.
-1. Save the Notepad file.
-1. Enter the destination Windows Live ID (UPNs) in the same Notepad document to the right of the corresponding source UPN. Be sure to separate source and destination UPNs with a comma (,).
+2. Use **Advanced Find** to find users.
+3. Select **Use Saved View** > **Full Access Users**, and then select **Edit Columns**.
+4. Remove all columns except **Full Name**.
+5. Select **Add Columns** > **Windows Live ID**.
+6. Select **OK** > **Results** to see the list of full access users.
+7. Select all records, select **Export Users** on the ribbon, and then select **Static Worksheet**.
+8. Repeat steps 1-7 for the destination tenant, if possible. You now have two Excel worksheets: one for the source tenant and one for the destination tenant.
+9. Open the Excel files for editing.
+10. Copy the records from the **Windows Live ID** column in the source worksheet into Notepad. Don't copy the header.
+11. Save the Notepad file.
+12. Enter each destination Windows Live ID (user principal name, or UPN) to the right of the corresponding source UPN. Separate the source and destination UPNs with a comma, without spaces.
 
-    Example:
-      - `user001@source.com`, `user001@destination.com`
-      - `user002@source.com`, `user002@destination.com`
-      - `user003@source.com`, `user003@destination.com`
+    For example:
 
-1. Save as a CSV file.
+    ```csv
+    user001@source.com,user001@destination.com
+    user002@source.com,user002@destination.com
+    user003@source.com,user003@destination.com
+    ```
+
+13. Save the file as a CSV file.
 
 #### For administrative access users
 
+Decide whether to include users with administrative access in the mapping file:
+
 1. Sign in to the source environment.
-1. Use **Advanced Find** to look for users.
-1. Select **Use Saved View** > **Administrative Access Users**, and then select **Results** to see the list of administrative access users.
-1. If you decide not to include any of these users, skip the following steps. Otherwise, to include these users in the mapping file, do the following steps:
+2. Use **Advanced Find** to find users.
+3. Select **Use Saved View** > **Administrative Access Users**, and then select **Results** to see the list of administrative access users.
+4. If you don't want to include these users in the mapping file, skip the remaining steps. Otherwise, complete these steps:
     1. Find the corresponding users in the destination tenant.
-    1. Make sure a valid license is assigned to the destination user in the destination tenant.
+    2. Ensure each destination user has a valid license.
+
        > [!NOTE]
-       >  If the destination user isn't assigned any license, the migration fails.
-    
-    1. Save the CSV file that has both full access users and administrative access users mapped.
+       > If a destination user doesn't have a license, the migration fails.
+
+    3. Save the CSV file with mappings for both full access users and administrative access users.
 
 > [!NOTE]
-> Before proceeding with the migration, make sure you review and complete the [preparation process](#preparation-process). After you complete the preparation process, follow the steps in the following sections to migrate.
-> 
-> Update security groups after migration in the destination tenant. Security group migration isn't supported.
+> Security groups aren't migrated. Update them in the destination tenant after migration.
 
 ## Migrate using Power Platform admin center
-Before proceeding with the migration, make sure you review and complete the [preparation process](#preparation-process). After you complete the preparation process, follow the steps in the following sections to migrate using Power Platform admin center.
+
+Complete the [preparation process](#preparation-process) before you migrate using the Power Platform admin center.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
-1. In the navigation pane, select **Manage**.
-1. In the **Manage** pane, select **Environments**. 
-1. In the **Environments** page, select the environment that you want to move. Tenant-to-tenant moves support sandbox and production environments with Dataverse.
-1. In the command bar, select **Move environment**. The **Request tenant to tenant move** pane appears.
-1. Enter the destination tenant ID in the **Target tenant ID** box and select **Submit request**.
+2. In the navigation pane, select **Manage**.
+3. In the **Manage** pane, select **Environments**.
+4. On the **Environments** page, select the environment to move. Tenant-to-tenant moves support sandbox and production environments with Dataverse.
+5. On the command bar, select **Move environment**. The **Request tenant to tenant move** pane opens.
+6. Enter the destination tenant ID in **Target tenant ID**, and then select **Submit request**.
 
     The destination tenant receives the migration request for approval. A pending request banner appears on the **Environments** page.
 
 ### Migration requests list
+
 Notification banners appear at the top of the **Environments** page when:
 
 - You have a [request to approve as a destination tenant](#request-to-approve-as-destination-tenant).
@@ -193,23 +218,23 @@ Notification banners appear at the top of the **Environments** page when:
 
 #### Request to approve as destination tenant
 
+Review and respond to migration requests in the destination tenant:
+
 1. Select **Review moves** on the banner.
-1. A panel opens with a list of migration requests to review for approval.
 
-    You can search for a migration request by using the environment ID or request status.
+    A pane lists the migration requests that need approval. Search by environment ID or request status.
 
-1. Select the environment ID to approve or reject the request.
-1. Review the request and approve or reject it.
+2. Select the environment ID.
+3. Review the request, and then approve or reject it.
 
 > [!NOTE]
 > Requests expire after seven days.
 
 #### Request to review as source tenant
 
-1. Select **Review moves** on the banner.
-1. A panel opens with a list of migration requests you submitted.
+Select **Review moves** on the banner. A pane lists the migration requests you submitted.
 
-    You can search for a migration request by using the environment ID or request status.
+Search by environment ID or request status.
 
 ### Migration preparation after approval
 
@@ -217,68 +242,73 @@ After the migration request is approved, a banner with the **Begin move** button
 
 :::image type="content" source="media/move-environment-tenant/beginmovebanner.jpg" alt-text="Screenshot of the environment's details page with green approval banner, Begin move and Cancel move buttons.":::
 
-1. Select **Begin move** to open the **Get ready for this tenant-to-tenant move** panel, which displays the pre-move steps. The **Move environment** button in the command bar also opens this panel.
+1. Select **Begin move** to open the **Get ready for this tenant-to-tenant move** pane, which lists the pre-move steps. The **Move environment** button on the command bar also opens this pane.
 
     :::image type="content" source="media/move-environment-tenant/prevaldationmovepanel.jpg" alt-text="Screenshot of the Get ready for this tenant-to-tenant move pane showing pre-move steps.":::
 
-1. Upload the user-mapping file for validation. The file must be named **usermapping.csv**.
-1. If the environment includes finance and operations apps, enter the target tenant user's email address in the **New FinOps Admin Email** box. This user becomes the finance and operations administrator after the migration. The user must exist in the target tenant, or the migration fails.
+2. Upload the user-mapping file for validation. Name the file `usermapping.csv`.
+3. If the environment includes finance and operations apps, enter the destination tenant user's email address in **New FinOps Admin Email**. This user becomes the finance and operations administrator after migration. The user must exist in the destination tenant, or the migration fails.
 
     :::image type="content" source="media/move-environment-tenant/newfinopsadminemail.png" alt-text="Screenshot of the Get ready for this tenant-to-tenant move pane showing the New FinOps Admin Email box.":::
 
-1. After you upload the file, select **Validate**. This action triggers a validation lifecycle operation. Wait until the operation is complete.
+4. Select **Validate** to start validation. Wait for the operation to finish.
 
 #### When validation fails
 
-If the validation operation fails, a banner with a **Download errors** button appears. Download the error file, fix the issues in the user-mapping file, and revalidate by using the steps mentioned earlier.
+If validation fails, a banner with a **Download errors** button appears. Download the error file, fix the issues in the user-mapping file, and repeat the upload and validation steps.
 
 :::image type="content" source="media/move-environment-tenant/downloadusermappingerrfile.jpg" alt-text="Screenshot of the Environments page showing error banner with Download errors button.":::
 
-Use the following table to understand and troubleshoot user mapping results.
+Use the following table to troubleshoot user-mapping results.
 
-|Error code|Description|Action|
-|-----------|-------------|--------------|
-|SourceUserIdMissingInUserMap|SourceUserId is empty in the mapping.|Check and fix the Source User in the mapping file.|
-|TargetUserIdMissingInUserMap|TargetUserId is empty in the mapping.|Check and fix the Target User in the mapping file.|
-|SourceUserIdIsNotValidGuid|SourceUserId isn't a valid GUID.|Fix the Source User to be a valid GUID in the mapping file.|
-|SourceUserDoesNotExistInOrgDB|SourceUserId didn't match any SystemUserId in the organization's SystemUsers table.|Remove the entry from the mapping file.|
-|TargetUPNDoesNotExistInAAD|TargetUserId UPN isn't found in Microsoft Entra ID for the tenant.|Check and fix the Target User to an existing and valid user in the tenant Entra ID or remove the entry from the mapping file.|
-|RetryableError|A retriable error has occurred during mapping of the user. It might be successful on next retry.|Rerun the user mapping command with the list of users with this error in the mapping file.|
-|ApplicationUserCannotBeMapped|Source user in the map is an application user, which isn't supported by the mapping operation.|Application user mapping isn't supported. No action required. We suggest that you create the application users in the destination tenant. Source tenant app users can't be migrated to the destination tenant. This is by design.|
-|SkippedMapping|Source user doesn't exist in the organization, and the target user already exists.|No action required. It means the source user was already mapped to the target user in previous run or manually.|
+| Error code | Description | Action |
+| --- | --- | --- |
+| `SourceUserIdMissingInUserMap` | `SourceUserId` is empty in the mapping. | Correct the source user entry in the mapping file. |
+| `TargetUserIdMissingInUserMap` | `TargetUserId` is empty in the mapping. | Correct the destination user entry in the mapping file. |
+| `SourceUserIdIsNotValidGuid` | `SourceUserId` isn't a valid GUID. | Enter a valid GUID for the source user in the mapping file. |
+| `SourceUserDoesNotExistInOrgDB` | `SourceUserId` doesn't match any `SystemUserId` in the organization's `SystemUsers` table. | Remove the entry from the mapping file. |
+| `TargetUPNDoesNotExistInAAD` | The `TargetUserId` UPN isn't found in the destination tenant's Microsoft Entra ID. | Correct the destination user entry to identify a valid user in the destination tenant, or remove the entry. |
+| `RetryableError` | An error occurred while mapping the user. The operation might succeed on retry. | Rerun the user-mapping command with a mapping file that lists the users with this error. |
+| `ApplicationUserCannotBeMapped` | The source user is an application user, which the mapping operation doesn't support. | No action is required for the mapping operation. Create application users in the destination tenant because you can't migrate them from the source tenant. |
+| `SkippedMapping` | The source user doesn't exist in the organization, and the destination user already exists. | No action is required. The source user was already mapped to the destination user, either in a previous run or manually. |
 
 #### When validation succeeds
 
 After validation succeeds, a banner with the **Move environment** button appears on the environment's details page.
 
-1. Select **Move environment** to open the **Move this environment to another tenant** panel. You can revalidate by using a new user mapping file.
-1. Review the pre-move steps and select the check box to confirm that you completed the pre-move steps.
+1. Select **Move environment** to open the **Move this environment to another tenant** pane. You can validate again by using a new user-mapping file.
+2. Review the pre-move steps, and then select the checkbox to confirm that you completed them.
 
     :::image type="content" source="media/move-environment-tenant/postvalidationmovepanel.jpg" alt-text="Screenshot of the move environment panel showing target tenant ID, user mapping upload, pre-move steps checkbox, and Move environment button.":::
 
-1. Select **Move environment** to move the environment. This action triggers the move environment lifecycle operation. Wait until the operation is complete.
+3. Select **Move environment** to start the move. Wait for the operation to finish.
 
 ### Move completion
 
-After the move operation completes:
+After the move finishes:
 
 - The process moves the Dataverse organization from the source tenant to the destination tenant.
-- The source tenant keeps the environment but without the Dataverse organization.
-- The process creates a new environment in the destination tenant with the same name as the source environment and includes the moved Dataverse organization.
+- For an environment without finance and operations apps, the original environment remains in the source tenant without the Dataverse organization. The process creates an environment in the destination tenant with the same name as the source environment. This environment includes the moved Dataverse organization.
 - For an environment that includes finance and operations apps, the process moves the source environment to the destination tenant. The source environment isn't preserved in the source tenant.
-- Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
-- The managed environment needs to be re-enabled in destination tenant. The destination tenant should have the required license to enable the managed environment.
-- Environment settings that aren't copied over must be updated by customers post-move.
-- The generative AI feature is at the environment-level and has default values.
+- Update security groups in the destination tenant. Security groups aren't migrated.
+- Re-enable managed environments in the destination tenant if the source environment was a managed environment. Ensure the destination tenant has the required license.
+- Update any environment settings that weren't copied.
+- The generative AI feature uses default values at the environment level.
 
 ### Cancel move
-You can cancel the move at any time between submitting the request and completing the environment move. Select the **Cancel move** button on the banner to open the **Cancel move** dialog and cancel the move.
+
+You can cancel a move after you submit the request and before the move finishes. Select **Cancel move** on the banner to open the **Cancel move** dialog box, and then cancel the move.
 
 ## Migrate using PowerShell
-Before proceeding with the migration, make sure you review and complete the preparation process. After you complete the preparation process, follow the steps in the following sections to migrate using PowerShell.
 
-### Install PowerShell for Power Platform Administrators (both source and target admins) 
-The PowerShell for Power Platform Administrators module is the recommended PowerShell module for interacting with admin capabilities. For information that helps you get started with the PowerShell for Power Platform Administrators module, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Installing PowerShell for Power Platform Administrators](powershell-installation.md).
+Complete the [preparation process](#preparation-process) before you migrate using PowerShell. The following sections identify which steps the source and destination tenant administrators perform.
+
+### Install PowerShell for Power Platform Administrators (both source and target admins)
+
+Both administrators must install the PowerShell for Power Platform Administrators module. For more information, see [Get started with PowerShell for Power Platform Administrators](powershell-getting-started.md) and [Install PowerShell for Power Platform Administrators](powershell-installation.md).
+
+> [!NOTE]
+> The PowerShell for Power Platform Administrators module requires Windows PowerShell 5.x. It isn't compatible with PowerShell 6.0 and later, which use .NET Core. To check your version, run `$PSVersionTable.PSVersion`. For installation instructions, see [Install PowerShell for Power Platform Administrators](powershell-installation.md).
 
 Install or update the necessary module by using one of the following commands:
 
@@ -289,9 +319,9 @@ Update-Module -Name Microsoft.PowerApps.Administration.PowerShell
 
 ### Install Azure PowerShell on Windows (both source and target admins)
 
-The Azure PowerShell module is a rollup module. When you install the Azure PowerShell module, it downloads the generally available modules and makes their cmdlets available for use. For more information, see [Install Azure PowerShell on Windows](/powershell/azure/install-azps-windows?view=azps-11.6.0&tabs=powershell&pivots=windows-psgallery&preserve-view=true).
+Both administrators must install Azure PowerShell. The `Az` rollup module installs the generally available Azure PowerShell modules and makes their cmdlets available. For more information, see [Install Azure PowerShell on Windows](/powershell/azure/install-azps-windows?view=azps-11.6.0&tabs=powershell&pivots=windows-psgallery&preserve-view=true).
 
-Use the Install-Module cmdlet to install the Azure PowerShell module:
+Use `Install-Module` to install Azure PowerShell:
 
 ```PowerShell
 Install-Module -Name Az -Repository PSGallery -Force
@@ -299,31 +329,32 @@ Install-Module -Name Az -Repository PSGallery -Force
 
 ### Sign in to Microsoft Power Platform (both source and target admins)
 
-Sign in to Microsoft Power Platform. By signing in, administrators can authenticate and access the Power Platform environment.
+Sign in to Power Platform in your tenant:
 
 ```PowerShell
 Add-PowerAppsAccount
 ```
 
 ### Submit migration request (source admin)
-To start a tenant-to-tenant migration, the source tenant's Dynamics 365 or Power Platform administrator must submit a request to the target tenant. Use the following command and provide the environment name ID and tenant ID.
 
-You must have Power Platform administrator or Dynamics 365 administrator credentials to complete this step. 
+As a Power Platform administrator or Dynamics 365 administrator in the source tenant, submit a migration request to the destination tenant. Provide the environment ID and destination tenant ID:
 
 ```PowerShell
-TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}
+TenantToTenant-SubmitMigrationRequest -EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}
 ```
-To view the status and MigrationID, use the following command:
+
+To view the status and migration ID, run:
 
 ```PowerShell
 TenantToTenant-ViewMigrationRequest
 ```
+
 > [!NOTE]
-> Record the MigrationID, which you use in further migration commands.
-> Source Tenant MigrationID is different from Destination Tenant MigrationID.
+> Save the `MigrationID` so you can use it in later migration commands. The source and destination tenants have different migration IDs.
 
 ### View and approve migration request (target admin)
-The admin of the destination tenant runs the following command to see all the migration requests and their status. The admin can review all the migration requests and choose to approve or reject them. 
+
+As the destination tenant administrator, sign in and review the migration requests and their status. Then approve or reject the request by using its migration ID:
 
 ```PowerShell
 Add-PowerAppsAccount
@@ -332,73 +363,84 @@ TenantToTenant-ViewApprovalRequest
 
 TenantToTenant-ManageMigrationRequest -MigrationId {MigrationId from above command to approve or deny}
 ```
-Once the admin approves a request, they can notify the admin of the source tenant to proceed with the next step of the migration.
+
+After you approve the request, notify the source tenant administrator to continue.
 
 ### Upload the user-mapping file (source admin)
-This step creates the SAS URL. You use this URL later to upload the user-mapping file. Run the following PowerShell command, replacing **EnvironmentId** with the actual environment ID and **FileLocation** with the actual file location.
+
+Run the following command with the user-mapping file. Replace `{EnvironmentId}` with the environment ID and `{FileLocation}` with the full file path. The command returns a shared access signature (SAS) URI for the file.
 
 > [!NOTE]
-> When you pass the **FileLocation** value, you must include the usermapping file name (usermapping.csv) in the parameter:
-> `C:\Filelocation\usermapping.csv`.
+> Include the file name `usermapping.csv` in the path, such as `C:\Filelocation\usermapping.csv`.
 
 ```PowerShell
-TenantToTenant-UploadUserMappingFile –EnvironmentName {EnvironmentId} -UserMappingFilePath {FileLocation}
+TenantToTenant-UploadUserMappingFile -EnvironmentName {EnvironmentId} -UserMappingFilePath {FileLocation}
 ```
 
-Copy the value of the **Read Only UserMapping File ContainerUri** returned by the command. Use this SAS URI as the **-ReadOnlyUserMappingFileContainerUri** parameter in the **TenantToTenant-PrepareMigration** command.
+Copy the `Read Only UserMapping File ContainerUri` value returned by the command. Use this SAS URI for the `-ReadOnlyUserMappingFileContainerUri` parameter of `TenantToTenant-PrepareMigration`.
 
 ### Prepare the environment migration (source admin)
-This step runs comprehensive validations to ensure that every user listed in the user-mapping file is verified and currently active in the target tenant. 
 
-You can view MigrationId by using the "TenantToTenant-ViewMigrationRequest" command in the source tenant.
+Validate that every user in the user-mapping file is active in the destination tenant.
+
+Use `TenantToTenant-ViewMigrationRequest` in the source tenant to view the migration ID.
 
 ```PowerShell
-TenantToTenant-PrepareMigration 
--MigrationId {MigrationId} 
--TargetTenantId {TargetTenantId} 
--ReadOnlyUserMappingFileContainerUri {SasUri}
+TenantToTenant-PrepareMigration -MigrationId {MigrationId} -TargetTenantId {TargetTenantId} -ReadOnlyUserMappingFileContainerUri {SasUri}
 ```
 
 > [!NOTE]
-> Provide the **SASUri** value from the output of the **TenantToTenant-UploadUserMappingFile** command.
+> Replace `{SasUri}` with the URI returned by `TenantToTenant-UploadUserMappingFile`.
 
 #### Sample output
 
-```PowerShell
+The command returns an acceptance response:
+
+```output
 Code        : 202
 Description : Accepted
 ```
-The duration of this step varies depending on the number of users in the user-mapping file. You can monitor the progress of this step by using the **TenantToTenant-GetStatus** command, provided in the following section.
+
+Validation time depends on the number of users in the user-mapping file. Use `TenantToTenant-GetMigrationStatus`, as shown in the following section, to monitor progress.
 
 ### Check status (source admin)
+
+Run the following command to check validation status:
 
 ```PowerShell
 TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 ```
 
 #### Sample output
--	Validate Tenant To Tenant Migration: Running 
--	Validate Tenant To Tenant Migration: Succeeded
--	Validation Failed, Errors are updated on the blob here: SASURI
 
-### Errors and how to resolve them 
-- If you receive an error that says, **The User mapping file provided for Tenant To Tenant migration is invalid**, check if the user-mapping file name is correct and that the user-mapping file has a comma to separate values.
+The status can include the following messages:
+
+```output
+Validate Tenant To Tenant Migration: Running
+Validate Tenant To Tenant Migration: Succeeded
+Validation Failed, Errors are updated on the blob here: SASURI
+```
+
+### Errors and how to resolve them
+
+Use the following guidance to resolve user-mapping errors:
+
+- **The User mapping file provided for Tenant To Tenant migration is invalid**: Ensure the file is named `usermapping.csv` and uses commas to separate values.
 - **Line '{line numbers}' have the same '{email ID}'**: Make sure there aren't any duplicate entries.
-- **Invalid Email Format '{email ID}'**: Make sure the email format is correct for `testuser@tenantdomain.com`.
-- **Target on line '{line number}' is same as source email ID**: Make sure the **Destination Email** is different from the **Source Email**.
+- **Invalid Email Format '{email ID}'**: Use a valid email address format, such as `testuser@tenantdomain.com`.
+- **Target on line '{line number}' is same as source email ID**: Ensure the destination email address differs from the source email address.
 - **Each line must have exactly two columns: '{line numbers}'**: Make sure each row has only two columns: the source and destination columns. Remove any extra commas.
 
-After fixing user-mapping errors, reupload the user-mapping file by using the same SAS URI.
-  
+After you fix the errors, upload the user-mapping file again by using the same SAS URI.
+
 ### Download the error report (source admin)
-If the user-mapping file contains errors, you can download an error report. To do this, directly copy and paste the **SasUrl** provided in the **Tenant-To-Tenant-GetMigrationStatus** command to your internet browser. Or, use the following commands that use the SAS URI from the previous step to check status and the desired location to download the error report.
 
-Complete the following steps:
+If the user-mapping file contains errors, download the error report. Copy the `SasUrl` returned by `TenantToTenant-GetMigrationStatus` into your browser. Alternatively, use the following procedure to download the report with PowerShell.
 
-1. Run the following command with Windows PowerShell ISE.
+1. Run the following commands in Windows PowerShell ISE. Replace the `$sasUri` placeholder with the SAS URI from the status response, and set `$destinationPath` to your download folder.
 
-    ```Windows PowerShell ISE
-    Import-Module Az.Storage 
+    ```powershell
+    Import-Module Az.Storage
     # Define the SAS URI of the blob
     $sasUri = " Update the SAS Uri from previous step "
     # Define the path where the blob will be downloaded
@@ -408,22 +450,25 @@ Complete the following steps:
     $containerName = $url.Split('/')[3]
     $storageAccountName = $url.Split('/')[2].Split('.')[0]
     $storageContext = New-AzStorageContext -StorageAccountName $storageAccountName -SasToken $sasToken
-    Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Destination $destinationPath -Context $storageContext 
+    Get-AzStorageBlobContent -Blob "usermapping.csv" -Container $containerName -Destination $destinationPath -Context $storageContext
     ```
-1. Fix the issues in the user-mapping file.
-1. Reupload the file by using the steps in [Upload the user mapping file (source admin)](#upload-the-user-mapping-file-source-admin).
 
-After you successfully complete the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin), you can continue with the [Migrate the environment (source admin)](#migrate-the-environment-source-admin) procedure to migrate the environment. Perform the migration within the next seven days. If you don't complete the migration in the next seven days, you must start the [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin) procedure again.
+2. Fix the issues in the user-mapping file.
+3. Upload the file again by following [Upload the user-mapping file (source admin)](#upload-the-user-mapping-file-source-admin).
+
+After you successfully complete [Prepare the environment migration (source admin)](#prepare-the-environment-migration-source-admin), continue with [Migrate the environment (source admin)](#migrate-the-environment-source-admin). Complete the migration within seven days. Otherwise, repeat the preparation procedure.
 
 ## Migrate the environment (source admin)
-Use the **TenantToTenant-ViewMigrationRequest** command in the source tenant to view the **MigrationId**.
+
+Use `TenantToTenant-ViewMigrationRequest` in the source tenant to view the migration ID. Then run the migration command:
 
 ```PowerShell
-TenantToTenant-MigratePowerAppEnvironment
--MigrationId {MigrationId}
--TargetTenantId {TargetTenantId}
+TenantToTenant-MigratePowerAppEnvironment -MigrationId {MigrationId} -TargetTenantId {TargetTenantId}
 ```
+
 ### Get status (source admin)
+
+Run the following command to check migration status:
 
 ```PowerShell
 TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
@@ -431,82 +476,115 @@ TenantToTenant-GetMigrationStatus -MigrationId {MigrationId}
 
 #### Sample output
 
--	Migrate Environment: Running
--	Migrate Environment: Succeeded
+The status can include the following messages:
+
+```output
+Migrate Environment: Running
+Migrate Environment: Succeeded
+```
 
 > [!NOTE]
 > If you encounter any problems running the preceding commands, [submit a support request](get-help-support.md) for help.
 
 ## Post-migration process
-After moving environments to another tenant:
 
--	The environment URL, organization ID (OrgID), and the name stay the same.
--	The source environment doesn't include Dataverse.
--	Users not in the mapping file aren't migrated or mapped after migration.
-- Update the security groups after migration is completed in the destination tenant. Security group migration isn't supported.
-- A managed environment needs to be re-enabled in the destination tenant. The destination tenant should have the required license to enable the managed environment.
-- Environment settings that aren't copied over must be updated by customers post-move.
-- The generative AI feature is at the environment-level and has default values.
+After you migrate an environment to another tenant:
+
+- The environment URL, organization ID (OrgID), and name stay the same.
+- For an environment without finance and operations apps, the source environment no longer includes Dataverse. For an environment that includes finance and operations apps, the source environment isn't preserved in the source tenant.
+- Users who aren't in the mapping file aren't migrated or mapped after migration.
+- Update security groups in the destination tenant. Security groups aren't migrated.
+- Re-enable managed environments in the destination tenant if the source environment was a managed environment. Ensure the destination tenant has the required license.
+- Update any environment settings that weren't copied.
+- The generative AI feature uses default values at the environment level.
 
 > [!WARNING]
-> Once the move is complete, [assign the **System Administrator** role](assign-security-roles.md) in the destination environment to the administrators who validate the migration. Since security groups are not migrated, an administrator who was not included in the user-mapping file will see the environment as completely empty. This is a permissions issue, not data loss. Confirm the role assignment before opening a support request.
+> After the move finishes, [assign the **System Administrator** role](assign-security-roles.md) in the destination environment to the administrators who validate the migration. Security groups aren't migrated, so an administrator who wasn't included in the user-mapping file sees an empty environment. This is a permissions issue, not data loss. Confirm the role assignment before you open a support request.
 
 Complete the applicable post-migration procedures for Power Automate, Power Apps, Copilot Studio, Power Pages, and finance and operations apps.
 
 ### Post-migration process for Power Automate
 
-After the migration finishes, review the imported components and perform the following steps to ensure flows and other assets work correctly:
+After migration, review the imported components and complete these steps to ensure flows and other assets work correctly:
 
 1. Create or map connections for all connection references.
-    - Open the solution in the target environment.
+    - Open the solution in the destination environment.
     - Go to the connection references and reauthenticate or link each one to an existing connection.
-1. Enable all flows.
+2. Turn on all flows.
     - Imported flows are turned off by default.
-    - Start any child flows before enabling parent flows that call them to avoid errors.
-1. Update HTTP trigger URLs.
+    - To avoid errors, turn on child flows before the parent flows that call them.
+3. Update HTTP trigger URLs.
     - HTTP-triggered flows generate a new URL after import.
     - Update any calling apps, parent flows, or external systems to use the new URL.
 
 ### Post-migration process for Power Apps
 
+Import the apps that you exported during preparation.
+
 #### For solution-aware apps
-1. Select the new environment from [Power Apps](https://make.powerapps.com) and go to the **Solutions** page.
-1. Select **Import** and use the file selector to select the packages exported from the preceding step.
-1. Confirm that the import was successful by checking the solution contents of the migrated environment.
+
+Use solutions to import solution-aware apps.
+
+1. In [Power Apps](https://make.powerapps.com), select the destination environment, and then select **Solutions**.
+2. Select **Import**, and then select the packages that you exported during preparation.
+3. Check the solution contents in the destination environment to confirm that the import succeeded.
 
 #### For apps that aren't solution aware
+
+Import each app package into the destination environment.
+
 1. Go to [Power Apps](https://make.powerapps.com).
-1. Select the new environment from the environment dropdown list.
-1. Select **Apps**.
-1. Select **Import canvas app**.
-1. Upload the app package file.
-1. Complete all of the import option selections, and then select **Import**.
-1. Repeat these steps until all apps are imported.
+2. Select the destination environment from the environment list.
+3. Select **Apps**.
+4. Select **Import canvas app**.
+5. Upload the app package file.
+6. Configure the import options, and then select **Import**.
+7. Repeat steps 4-6 until you import all apps.
 
 ### Post-migration process for Copilot Studio
-1. Select the new environment from [Power Apps](https://make.powerapps.com) and go to the **Solutions** page.
-1. Select **Import** and use the file selector to select the packages exported from the preceding step.
-1. Confirm that the import was successful by checking the solution contents of the migrated environment.
 
-### Post-migration process for Power Pages 
-Complete the following steps for each website in the environment.
+Import the agent solutions that you exported during preparation.
+
+1. In [Power Apps](https://make.powerapps.com), select the destination environment, and then select **Solutions**.
+2. Select **Import**, and then select the packages that you exported during preparation.
+3. Check the solution contents in the destination environment to confirm that the import succeeded.
+
+### Post-migration process for Power Pages
+
+Complete these steps for each website in the destination environment:
 
 1. Sign in to the environment.
-1. Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
-1. Provision the website with the same portal type and language.
+2. Open the [admin center](/power-pages/admin/admin-overview#open-power-apps-portals-admin-center).
+3. Provision the website with the same portal type and language.
 
 ### Post-migration process for finance and operations apps
+
+Complete these steps in the destination tenant:
 
 1. Reimport the users.
 2. Import the updated ISV license files that you obtained from your vendors before the migration.
 
 ### Post-migration process for Customer Insights
-Dynamics 365 Customer Insights - Journeys (CI-J) requires post-migration steps to restore functionality in the destination tenant. 
-Learn more in [Migrate Dynamics 365 Customer Insights - Journeys between tenants](/dynamics365/customer-insights/journeys/tenant-to-tenant#customer-insights---journeys-app-status-after-migration).
 
-After you complete all of the preceding steps and the migration, you can validate the environment in the target tenant. Later, you can delete the source environment in the Power Platform admin center.
+Complete the post-migration steps for Dynamics 365 Customer Insights - Journeys to restore functionality in the destination tenant. For more information, see [Migrate Dynamics 365 Customer Insights - Journeys between tenants](/dynamics365/customer-insights/journeys/tenant-to-tenant#customer-insights---journeys-app-status-after-migration).
+
+After you complete migration and all applicable post-migration steps, validate the environment in the destination tenant. For environments without finance and operations apps, delete the source environment as described in the following section.
+
+### Delete the source environment
+
+For environments without finance and operations apps, the original environment in the source tenant becomes an orphan environment after migration: it retains its name and URL but no longer contains a Dataverse organization. Delete this orphan environment after you verify that migration succeeded. For environments that include finance and operations apps, the source environment isn't preserved in the source tenant, so this cleanup step doesn't apply.
+
+Before you delete the orphan environment, confirm that:
+
+- Apps, flows, and Power Pages sites work correctly in the destination tenant.
+- Any data you need to keep is exported or present in the destination tenant.
+- You no longer need the source environment as a fallback.
+
+To delete the orphan environment, sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com) with your source tenant credentials, select the orphan environment, and then select **Delete** on the command bar. For more information, see [Delete an environment](delete-environment.md).
 
 ### Frequently asked questions
+
+Find answers to common questions about tenant-to-tenant migration.
 
 #### Are background operations enabled during tenant-to-tenant migration?
 
@@ -514,11 +592,12 @@ Background operations don't run during tenant-to-tenant migration because admini
 
 #### Can all users of the Dataverse organization be migrated?
 
-You can migrate all users of the Dataverse organization only if the users exist in the destination tenant. For example:
+You can migrate users only if they exist in the destination tenant. For example, the following mappings require both destination users to exist:
 
-`user001@source.com`, `user001@destination.com`
-
-`user002@source.com`, `user002@destination.com`
+```csv
+user001@source.com,user001@destination.com
+user002@source.com,user002@destination.com
+```
 
 #### What environments are supported for migration?
 
@@ -526,7 +605,9 @@ Only production and sandbox environments are supported. Default, developer, tria
 
 #### Will the environment physically move to the new tenant?
 
-No. The environment remains in place, but the Dataverse organization and finance and operations apps move to the destination tenant. They're no longer part of the source tenant and are managed under the new environment in the destination tenant. Data that is stored in Dataverse is still stored in the environment in your tenant. You should delete the orphan environment when the tenant-to-tenant move is completed and it's confirmed that the data is no longer needed in the source tenant.
+For environments without finance and operations apps, the environment remains in place, but its Dataverse organization moves to a new environment in the destination tenant. Manage the Dataverse organization and its data in the destination tenant. After you validate the migration and confirm that you no longer need the source environment, [delete the orphan environment](#delete-the-source-environment).
+
+For environments that include finance and operations apps, the source environment moves to the destination tenant and isn't preserved in the source tenant.
 
 #### Are there any components that aren't fully supported?
 
@@ -534,15 +615,21 @@ For more information about which components are supported and which components a
 
 #### What happens to mailbox configurations?
 
-If the mapped user (mentioned in the user-mapping file) has a mailbox in the destination tenant, it's automatically configured. Otherwise, manual reconfiguration is required.
+If a user in the user-mapping file has a mailbox in the destination tenant, the migration configures it automatically. Otherwise, reconfigure the mailbox manually.
 
 #### How do I initiate a migration?
 
-The source tenant’s Dynamics 365 or Power Platform admin must submit a request by using PowerShell commands with the environment name, ID, and tenant ID. Refer to the commands earlier in this article.
+Start a tenant-to-tenant migration by using the Power Platform admin center or PowerShell. Both methods are supported:
+
+- **Power Platform admin center**: Go to **Manage** > **Environments**, select the environment, and then select **Move environment** on the command bar. For more information, see [Migrate using Power Platform admin center](#migrate-using-power-platform-admin-center).
+- **PowerShell**: Use the `TenantToTenant-SubmitMigrationRequest` cmdlet with the environment ID and target tenant ID. For more information, see [Migrate using PowerShell](#migrate-using-powershell).
+
+With either method, the destination tenant administrator must approve the request before the move can proceed.
 
 #### How long will the migration take?
 
-The time a migration takes depends on the number of users in the user-mapping file. A migration that doesn't appear to be making progress hasn't necessarily failed. Please allow up to 24 hours for the migration to finish.
+Migration time depends on the number of users in the user-mapping file. A migration that doesn't appear to be making progress hasn't necessarily failed. Allow up to 24 hours for migration to finish.
 
 #### Is there a self-serve UI option?
-Yes. After the `TenantToTenant-SubmitMigrationRequest –EnvironmentName {EnvironmentId} -TargetTenantID {TenantID}` is approved in the target tenant, a UI option to move the environment is available in the environment page.
+
+Yes. You can submit, approve, and complete the migration entirely through the Power Platform admin center without using PowerShell. For more information, see [Migrate using Power Platform admin center](#migrate-using-power-platform-admin-center).

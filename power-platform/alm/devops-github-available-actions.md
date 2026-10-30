@@ -5,7 +5,7 @@ keywords:
 author: kkanakas
 ms.subservice: alm
 ms.author: kartikka
-ms.date: 03/29/2024
+ms.date: 10/28/2026
 ms.reviewer: "pehecke"
 ms.topic: "article"
 search.audienceType: 
@@ -17,38 +17,38 @@ ms.custom:
 
 # Available GitHub Actions for Microsoft Power Platform development
 
-[GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions) are described in the following sections. In addition, sample GitHub workflows are shown as well. For more information about GitHub Actions and how to download them, go to [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
+The following sections describe [GitHub Actions for Microsoft Power Platform](https://github.com/marketplace/actions/powerplatform-actions). The sections also show sample GitHub workflows. For more information about GitHub Actions and how to download them, see [GitHub Actions for Microsoft Power Platform](devops-github-actions.md).
 
 ## Configure credentials to use with GitHub Actions with Microsoft Power Platform
 
-Many of the actions require you to connect to a Microsoft Dataverse environment. You can add service principal or user credentials as secrets in your GitHub repository and then use them in your workflows.
+Many of the actions require you to connect to a Microsoft Dataverse environment. Add service principal or user credentials as secrets in your GitHub repository and then use them in your workflows.
 
-- For details on how to set up secrets in GitHub, see [Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow) 
+- For details on how to set up secrets in GitHub, see [Encrypted secrets](https://docs.github.com/en/actions/reference/encrypted-secrets#using-encrypted-secrets-in-a-workflow). 
 
-- For details how to set up service principal authentication for Microsoft Power Platform, see [DevOps Build tools](devops-build-tools.md#configure-service-connections-using-a-service-principal)
+- For details on how to set up service principal authentication for Microsoft Power Platform, see [DevOps Build tools](devops-build-tools.md#configure-service-connections-using-a-service-principal).
 
-Once configured, you can call the Service Principal from with in your Action scripts. 
+After you configure the credentials, you can call the service principal from within your Action scripts. 
 
-Parameters to define within your GitHub Action Script as [Environment Variables](https://docs.github.com/en/actions/reference/environment-variables):
+Define the following parameters within your GitHub Action Script as [Environment Variables](https://docs.github.com/en/actions/reference/environment-variables):
 
-- Application ID such as: `WF_APPLICATION_ID:<your application id>`
-- Tenant ID such as: `WF_TENANT_ID:<your tenant id>`
+- Application ID, such as: `WF_APPLICATION_ID:<your application id>`
+- Tenant ID, such as: `WF_TENANT_ID:<your tenant id>`
 
-The client Secret must be added and stored as a GitHub Secret, and will be referenced from within the workflow using a parameter like: 
+Add the client secret as a GitHub secret. Reference it from within the workflow by using a parameter like: 
 `client secret: ${{secrets.CLIENT_SECRET_GITHUB_ACTIONS}}`
 
 ## Helper tasks
 
-The available helper task is described below.
+The following helper task is available.
 
 ### actions-install
 
-When a GitHub Actions workflow forces an install of Power Platform CLI in the context of a runner, and timeout error occurs then you must use version 1 (@v1) with an additional action (`actions-install`) as below.
+When a GitHub Actions workflow forces an install of Power Platform CLI in the context of a runner, and a timeout error occurs, use version 1 (@v1) with an additional action (`actions-install`) as shown in the following example.
 
 >
 > [!IMPORTANT]
 > - Using version 1 (@v1) might lead to updates to existing GitHub actions that can result in current workflows being updated.
-> - You must add the **Install Power Platform Tools** task as a first task in your workflow prior to any other GitHub Actions for Power Platform. 
+> - Add the **Install Power Platform Tools** task as the first task in your workflow before any other GitHub Actions for Power Platform. 
 
 ```
 jobs:
@@ -71,17 +71,17 @@ jobs:
 
 ```
 
-You can find additional samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
+You can find more samples of GitHub Actions at [Power Platform Actions](https://github.com/marketplace/actions/powerplatform-actions).
 
 ### whoAmI
 
-Verifies the service connection by connecting to the service and sending a `WhoAmI` [[SDK](/dotnet/api/microsoft.crm.sdk.messages.whoamirequest)/[Web API](/dynamics365/customer-engagement/web-api/whoami)] request. This task can be useful to include early in your GitHub workflow, to verify connectivity before processing begins.
+Verifies the service connection by connecting to the service and sending a `WhoAmI` [[SDK](/dotnet/api/microsoft.crm.sdk.messages.whoamirequest)/[Web API](/dynamics365/customer-engagement/web-api/whoami)] request. This task can be useful to include early in your GitHub workflow to verify connectivity before processing begins.
 
 | Parameter    | Description   |
 |---------------|---------------|
 | environment-url | The URL for the environment you're connecting to.|
 | user-name | The username of the account you're using to connect with. |
-| password-secret | The password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. You can't retrieve a secret after it has been defined and saved. |
+| password-secret | The password for *user-name*. Define GitHub passwords in **Settings** under **Secrets**. You can't retrieve a secret after you define and save it. |
 |app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
 |client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
@@ -112,7 +112,7 @@ Exports a solution from a source environment.
 |-----------------|---------------------|
 | environment-url| (Required) The URL for the environment that you want to export the solution from (for example, `https://YourOrg.crm.dynamics.com`).|
 |user-name|(Required) If you're using username/password authentication, the username of the account you're using to connect with.|
-| password-secret | (Required) If you're using username/password authentication, the password for *user-name*. GitHub passwords are defined in **Settings** under **Secrets**. You can't retrieve a secret after it has been defined and saved. |
+| password-secret | (Required) If you're using username/password authentication, the password for *user-name*. Define GitHub passwords in **Settings** under **Secrets**. You can't retrieve a secret after you define and save it. |
 |app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
 |client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
@@ -122,21 +122,21 @@ Exports a solution from a source environment.
 
 ### unpack-solution
 
-Takes a compressed solution file and decomposes it into multiple XML files so these files can be more easily read and managed by a source control system.
+Takes a compressed solution file and decomposes it into multiple XML files. You can more easily read and manage these files in a source control system.
 
 | Parameter    | Description       |
 |---------------|-------------------|
 | solution-file              | (Required) The path and file name of the solution.zip file to unpack.     |
-| solution-folder | (Required) The path and target folder you want to unpack the solution into.      |
+| solution-folder | (Required) The path and target folder where you want to unpack the solution.      |
 | solution-type | (Required) The type of solution you want to unpack. Options include **Unmanaged** (recommended), **Managed**, and **Both**. |
 
 ### pack-solution
 
-Packs a solution represented in source control into a solution.zip file that can be imported into another environment.
+Packs a solution represented in source control into a solution.zip file that you can import into another environment.
 
 | Parameter       | Description     |
 |------------------|-----------------|
-| solution-file              | (Required) The path and file name of the solution.zip file to pack the solution into (for example, out/CI/ALMLab.zip).     |
+| solution-file   | (Required) The path and file name of the solution.zip file to pack the solution into (for example, `out/CI/ALMLab.zip`).     |
 | solution-folder             | (Required) The path and source folder of the solution to pack.      |
 | solution-type                  | (Optional) The type of solution to pack. Options include **Unmanaged** (recommended), **Managed**, and **Both**. |
 
@@ -191,7 +191,7 @@ Checks the solution file to detect inconsistencies.
 
 ### upgrade-solution
 
-Provides the ability to upgrade the solution.
+Upgrades the solution.
 
 | Parameter    | Description       |
 |---------------|-------------------|
@@ -208,14 +208,14 @@ Provides the ability to upgrade the solution.
 
 ## Package tasks
 
-These tasks perform actions against packages and include the following.
+These tasks perform actions against packages.
 
 ### deploy-package
 
-Provides the ability to deploy a package dll or a zip file with a package. 
+Deploys a package DLL or a ZIP file with a package. 
 
 > [!NOTE]
-> This action is only supported on a Windows.
+> This action is only supported on Windows.
 
 | Parameter    | Description       |
 |---------------|-------------------|
@@ -225,7 +225,7 @@ Provides the ability to deploy a package dll or a zip file with a package.
 |app-id| The application ID to authenticate with. This parameter is **required** when authenticating with Service Principal credentials.|
 |client-secret| The client secret used to authenticate the GitHub pipeline. This parameter is **required** when authenticating with Service Principal credentials.|
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
-|package| (Required) The path to the package dll or zip file with a package.|
+|package| (Required) The path to the package DLL or ZIP file with a package.|
 
 ## Portal tasks
 
@@ -243,16 +243,16 @@ Uploads data to Power Pages.
 |tenant-id| The tenant ID when authenticating with `app-id` and `client-secret`.|
 |upload-path|Path where the website content is stored (alias: -p).|
 |deployment-profile| Upload portal data with environment details defined through [profile variables](/powerapps/maker/portals/power-apps-cli#use-deployment-profile) in deployment-profiles/\[profile-name].deployment.yaml file.|
-|model-version|Indicates if the site data to be uploaded will use the standard (`1`) or [enhanced data model](/power-pages/admin/enhanced-data-model) (`2`). Default value is '1'.|
+|model-version|Indicates if the site data to be uploaded uses the standard (`1`) or [enhanced data model](/power-pages/admin/enhanced-data-model) (`2`). Default value is `1`.|
 
 Learn more about [Microsoft Power Platform CLI support for Power Pages](/power-pages/configure/power-platform-cli).
 
 ## Catalog tasks (preview)
 
-These tasks perform actions against the catalog in Power Platform and include the following.
+These tasks perform actions against the catalog in Power Platform.
 
 > [!NOTE]
-> Currently, catalog tasks for Power Platform are a **preview** release.
+> Currently, catalog tasks for Power Platform are in preview.
 
 ### install
 
@@ -260,10 +260,10 @@ Install a catalog item to the target environment.
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-|catalog-item-id|(Required) Catalog item to be installed on the target environment.|
-| target-url| (Required) The Url of the target environment for the catalog item installation into (for example, "https://YourOrg.crm.dynamics.com").|
+|catalog-item-id|(Required) Catalog item to install on the target environment.|
+| target-url| (Required) The URL of the target environment for the catalog item installation (for example, `https://YourOrg.crm.dynamics.com`).|
 | settings | (Required) Runtime package settings for the installation framework to execute. The format of the string must be `key=value|key=value`. |
-| target-version        | Target version to install. If left empty, the published version is selected.   |
+| target-version        | Target version to install. If you don't specify a version, the published version is selected.   |
 |poll-status| Poll to check the status of your request.|
 
 ### submit
@@ -279,19 +279,19 @@ List all published catalog items from the current Dataverse environment (organiz
 
 ### status
 
-Get status of the catalog install/submit request.
+Get the status of the catalog install or submit request.
 
 | Parameter           | Description        |
 |----------------------|--------------------------|
-| tracking-id |(Required) Request tracking id.|
-| type | (Required) Request type (Values: Install, Submit) |
+| tracking-id |(Required) Request tracking ID.|
+| type | (Required) Request type. Valid values are `Install` and `Submit`. |
 
 
 ## GitHub workflow authoring
 
-To learn more about composing GitHub workflows using GitHub actions, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
+To learn more about composing GitHub workflows by using GitHub Actions, complete the [GitHub Actions for Microsoft Power Platform labs](https://aka.ms/poweractionslab).
 
-More information: [About GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions)
+For more information, see [About GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions).
 
 ### See Also
 
