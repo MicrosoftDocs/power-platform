@@ -4,7 +4,7 @@ description: Understand why agent counts differ across Microsoft admin surfaces,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 08/06/2026
+ms.date: 10/30/2026
 ms.topic: concept-article
 contributors:
     - Grayson-Bishop
@@ -17,24 +17,26 @@ Microsoft offers multiple admin surfaces that display agents, and you might noti
 
 ## Power Platform inventory vs. Microsoft 365 admin center
 
-The [Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps) shows agents that are **available to users in your tenant**. This view includes Microsoft first-party agents, third-party ISV agents, and org-created agents that you publish or share. Org-created agents in the Microsoft 365 admin center come from many authoring surfaces, including Teams Store Platform, Agent Toolkit, Foundry, Fabric, SharePoint, and more. It functions as a catalog of everything accessible to your employees.
+The Agent 365 agent registry in the [Microsoft 365 admin center](/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps) provides **tenant-wide visibility across agent platforms**. This view includes Microsoft first-party agents, third-party ISV agents, and org-created agents, including draft and unpublished agents created in Copilot Studio or Microsoft 365 Copilot Agent Builder. Org-created agents in the Microsoft 365 admin center come from many authoring surfaces, including Teams Store Platform, Agent Toolkit, Foundry, Fabric, SharePoint, and more.
+
+Copilot Studio agents register automatically when you create them. Publishing or sharing isn't required for these agents to appear in the registry. An agent's presence in the registry doesn't mean it's available for end users to use. For registration details, see [How Copilot Studio agents appear in the registry](/microsoft-agent-365/builder/agent-registry#how-copilot-studio-agents-appear-in-the-registry).
 
 Power Platform inventory, by contrast, shows only agents that were **built on Power Platform**. This includes both published and draft agents created in Copilot Studio or Microsoft 365 Copilot Agent Builder. It doesn't include first-party Microsoft agents, ISV agents, or agents created on other Microsoft surfaces.
 
-As a result, the agent counts between the two surfaces differ. The Microsoft 365 admin center includes agents your organization didn't build. Power Platform inventory might include agents that don't appear in the Microsoft 365 admin center if those agents are in draft form and not yet published.
+As a result, the agent counts between the two surfaces differ. The Microsoft 365 admin center includes agents your organization didn't build and agents built outside Power Platform. Differences in platform coverage and scope can produce different counts even though both surfaces include draft agents.
 
 ## Summary of differences
 
-| | Power Platform inventory | Microsoft 365 admin center |
+| | Power Platform inventory | Microsoft 365 admin center (Agent 365 registry) |
 |---|---|---|
 | **Designed for** | IT admins (Power Platform) | IT admins (Microsoft 365) |
-| **Shows** | Agents built on Power Platform | All agents available in your tenant (including agents from Teams Store Platform, Agent Toolkit, Foundry, Fabric, SharePoint, Groups, and more) |
-| **Includes drafts** | Yes | Published and shared only |
+| **Shows** | Agents built on Power Platform | Agents across platforms in your tenant, including draft, unpublished, published, and shared agents |
+| **Includes drafts** | Yes | Yes, including draft and unpublished agents created in Copilot Studio or Microsoft 365 Copilot Agent Builder |
 | **Includes 1st-party / ISV** | No | Yes |
 | **Scoped to** | Environments (rolled up to tenant) | Tenant |
 
 > [!TIP]
-> If you're asked to report on your organization's agent count, clarify what type of count is needed: **total available agents** (Microsoft 365 admin center) or **org-created agents on Power Platform** (Power Platform inventory). Each number is correct within its own context.
+> If you're asked to report on your organization's agent count, clarify what type of count is needed: **agents in the tenant-wide registry** (Microsoft 365 admin center) or **org-created agents on Power Platform** (Power Platform inventory). Registry counts aren't limited to agents available for end users to use. Each number is correct within its own context.
 
 ## Related content
 

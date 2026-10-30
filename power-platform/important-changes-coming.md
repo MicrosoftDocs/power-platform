@@ -26,21 +26,95 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means Microsoft intends to remove the feature or capability in a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability no longer works. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Retirement of Describe it to design it in Power Automate
+## Deprecation of cross-environment comment import and export
 
-On November 30, 2026, **Describe it to design it** in Power Automate retires for all customers. This option lets makers create a cloud flow by describing what they want to automate.
+After December 31, 2026, the dedicated action for importing and exporting comments between environments in Power Platform component designers, including the model-driven app designer, won't be available.
 
 ### Impact
 
-Beginning November 30, 2026, makers can no longer create new cloud flows with **Describe it to design it**. This retirement doesn't delete or move existing flows. Makers can still create and edit flows in the visual designer and start from templates.
+After this date, makers can't use the dedicated action to move comments between environments. Commenting within an environment remains available, and existing comments aren't removed.
 
 ### Action required
 
-Share this change with your makers and update any internal guides that recommend **Describe it to design it**.
+No data migration is required. Use source-controlled documentation, a wiki, an application lifecycle management (ALM) or DevOps pipeline, or release notes to preserve collaboration context across environments.
 
-For makers who want to keep creating flows from descriptions, use the **[Power Automate plugin](/power-automate/power-automate-plugin-external-tools)** in a supported AI assistant that your organization approves, such as GitHub Copilot.
+Learn more: [Add comments in the model-driven app designer](/power-apps/maker/model-driven-apps/comments#moving-comments-between-environments)
 
-Makers can also [create a flow manually](/power-automate/get-started-logic-flow#tab/without-copilot) or [start from a template](https://make.powerautomate.com/templates).
+## Deprecation of AI-generated descriptions for model-driven apps
+
+After November 30, 2026, the **Create descriptions using AI** AI-generated descriptions for model-driven apps option won't be available.
+
+### Impact
+
+After this date, the **Create descriptions using AI** option won't be available in the **Publish** dialog or the app designer **Settings** panel. Existing descriptions aren't affected, and makers can continue to add or edit descriptions manually.
+
+### Action required
+
+No data migration is required. Enter or update model-driven app descriptions manually. For another AI-assisted app creation option, use the model app-builder skill.
+
+Learn more:
+
+- [Create a model-driven app with the app designer](/power-apps/maker/model-driven-apps/create-model-driven-app#create-an-app-description-with-copilot)
+- [Build and edit model-driven apps with AI code generation tools](/power-apps/maker/model-driven-apps/model-driven-app-external-tools)
+
+## Deprecation of formula generation and Power Apps Ideas in canvas apps
+
+After December 11, 2026, Power Apps Ideas, **Create a formula**, and formula generation from code comments won't be available. The **Explain this formula** and **Explain this selection** experiences aren't affected.
+
+### Impact
+
+After this date, makers can't generate Power Fx formulas through Power Apps Ideas, natural-language requests in **Create a formula**, or code comments in the formula bar. Existing formulas in canvas apps aren't affected.
+
+### Action required
+
+Write and edit Power Fx directly in the formula bar. You can continue to use **Explain this formula** and **Explain this selection** to understand existing formulas.
+
+Learn more:
+
+- [Use Copilot to create and edit Power Fx formulas](/power-apps/maker/canvas-apps/ai-formulas-formulabar)
+- [Power Apps Ideas](/power-apps/maker/canvas-apps/power-apps-ideas)
+
+## Deprecation of proactive control rename in canvas apps
+
+After December 11, 2026, **Rename controls with Copilot** won't be available.
+
+### Impact
+
+After this date, Copilot won't suggest names for canvas app controls or let makers apply suggested names to multiple controls.
+
+### Action required
+
+Rename controls manually in **Tree view**. Power Apps updates references to a control when you rename it.
+
+Learn more: [Rename controls with Copilot](/power-apps/maker/canvas-apps/controls/copilot-rename-controls)
+
+## Deprecation of copresence in Power Apps plans
+
+After November 30, 2026, copresence in Power Apps plans won't be available.
+
+### Impact
+
+After this date, plans won't show the presence of other authors. Multi-author editing isn't supported.
+
+### Action required
+
+Coordinate plan edits outside the plan to ensure that only one author edits a plan at a time.
+
+Learn more: [Use plans to create a business solution with Copilot](/power-apps/maker/plan-designer/create-plan)
+
+## Deprecation of record-level copresence in model-driven apps
+
+After November 30, 2026, record-level copresence in model-driven apps won't be available.
+
+### Impact
+
+After this date, users don't see who else is working on the same record or open a presence card from that experience. This change doesn't affect record sharing or user pictures and status in grids and lookups.
+
+### Action required
+
+No data migration is required. Continue to use record sharing and the collaboration options available in model-driven apps.
+
+Learn more: [Collaborate with others in model-driven apps](/power-apps/user/collaboration)
 
 ## Deprecation of Microsoft Dataverse for Teams environments
 
