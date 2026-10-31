@@ -1,9 +1,9 @@
 ---
 title: "Introduction to Microsoft Power Platform for developers"
 description: "Overview of how developers can extend Power Platform."
-author: marcelbf
+author: jordanchodakWork
+ms.author: jordanchodak
 ms.subservice: developer
-ms.author: marcelbf
 ms.custom: "ai-learning-hub"
 ms.date: 10/26/2026
 ms.reviewer: jdaly
