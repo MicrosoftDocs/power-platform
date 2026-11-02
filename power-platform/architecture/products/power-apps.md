@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 10/22/2026
+ms.date: 10/30/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -66,6 +66,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Connect Power Apps to a centralized data warehouse with Dataverse virtual tables**](../reference-architectures/power-apps-virtual-tables.md) | Connect to a centralized data warehouse through Dataverse virtual tables to use consolidated enterprise data alongside operational records stored in Dataverse. |
 | [**Modernize frontline applications with Power Platform**](../reference-architectures/modernize-frontline-applications.md) | Modernize frontline material requests with an offline-capable canvas app, automated approvals, centralized data in Dataverse, and SAP integration. |
 | [**Modernize legacy applications with React web resources and Dataverse custom APIs**](../reference-architectures/modernize-legacy-applications.md) | Learn how to modernize legacy applications with Power Platform, React web resources, and Dataverse custom APIs. |
+| [**Implement a scalable ALM approach by using Microsoft Package Deployer**](../reference-architectures/implement-alm-approach.md) | Manage Dataverse solution deployments with Microsoft Package Deployer, Git, Azure DevOps, and Power Platform CLI to support parallel development, controlled releases, and deployment traceability. |
 
 ## Solution ideas
 

@@ -4,6 +4,7 @@ description: Learn how to modernize frontline applications by using Power Platfo
 #customer intent: As a Power Platform user, I want to build a solution that helps frontline workers manage requests and approvals efficiently so they can complete their tasks promptly and accurately.
 ms.date: 10/22/2026
 ms.topic: example-scenario
+ms.subservice: architecture-center
 author: caclaesson
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
