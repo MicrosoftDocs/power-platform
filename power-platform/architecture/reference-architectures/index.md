@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 10/22/2026
+ms.date: 10/30/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -86,5 +86,6 @@ Browse reference architectures categorized by common design decisions. Each refe
 | Title | Description |
 | --- | --- |
 | **[Automate deployments with Dataverse Git integration and pipelines in Power Platform](enterprise-power-platform-alm.md)** | Streamline Power Platform development and releases by integrating Dataverse Git, pipelines in Power Platform, and AI-assisted governance. |
+| **[Implement a scalable ALM approach by using Microsoft Package Deployer](implement-alm-approach.md)** | Manage Dataverse solution deployments with Microsoft Package Deployer, Git, Azure DevOps, and Power Platform CLI to support parallel development, controlled releases, and deployment traceability. |
 | **[Manage SharePoint document visibility in Dataverse solutions](sharepoint-dataverse-security.md)** | Reduce the risk of oversharing SharePoint documents associated with Dataverse records while preserving native document management capabilities. |
 | **[Secure Power Platform access to resources inside your virtual network](secure-access-azure-resources.md)** | Use Microsoft Azure Virtual Network support for Power Platform to integrate Power Platform with resources inside your virtual network without exposing them to the public internet. |
