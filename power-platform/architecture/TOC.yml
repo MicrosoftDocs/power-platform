@@ -149,6 +149,8 @@
           items:
             - name: Automate enterprise Power Platform ALM
               href: reference-architectures/enterprise-power-platform-alm.md
+            - name: Implement Dataverse ALM with Microsoft Package Deployer
+              href: reference-architectures/implement-alm-approach.md
             - name: Manage SharePoint document visibility in Dataverse solutions
               href: reference-architectures/sharepoint-dataverse-security.md
             - name: Secure Power Platform access to resources
