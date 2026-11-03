@@ -155,6 +155,8 @@
               href: reference-architectures/sharepoint-dataverse-security.md
             - name: Secure Power Platform access to resources
               href: reference-architectures/secure-access-azure-resources.md
+            - name: Standardize access control for Dataverse
+              href: reference-architectures/standardize-dataverse-access-control.md
     - name: Solution ideas
       items:
         - name: Overview
