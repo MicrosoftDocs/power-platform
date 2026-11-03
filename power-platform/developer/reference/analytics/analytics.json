@@ -107,66 +107,6 @@
         "x-ms-summary": "Execute recommendation action."
       }
     },
-    "/analytics/advisor/chat/messages": {
-      "post": {
-        "tags": [
-          "Advisor Chat"
-        ],
-        "summary": "Send an advisor chat message (preview).",
-        "description": "Sends a message to the advisor chat agent and returns the agent response. Supply the conversation ID returned by a previous turn to continue a multi-turn conversation.",
-        "operationId": "SendAdvisorChatMessage",
-        "consumes": [
-          "application/json"
-        ],
-        "produces": [
-          "application/json"
-        ],
-        "parameters": [
-          {
-            "in": "query",
-            "name": "api-version",
-            "description": "The API version.",
-            "required": true,
-            "type": "string",
-            "default": "2024-10-01"
-          },
-          {
-            "in": "body",
-            "name": "body",
-            "description": "The chat message request containing the user message.",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/AdvisorChatMessageRequest"
-            },
-            "x-ms-adminsdk-frontloadasparameter": true
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "Success",
-            "schema": {
-              "$ref": "#/definitions/AdvisorChatMessageResponse"
-            }
-          },
-          "400": {
-            "description": "Bad Request"
-          },
-          "401": {
-            "description": "Unauthorized"
-          },
-          "403": {
-            "description": "Forbidden"
-          },
-          "404": {
-            "description": "Not Found"
-          },
-          "429": {
-            "description": "Too Many Requests"
-          }
-        },
-        "x-ms-summary": "Send an advisor chat message (preview)."
-      }
-    },
     "/analytics/advisorRecommendations": {
       "get": {
         "tags": [
@@ -772,53 +712,6 @@
           "description": "Action display name",
           "type": "string",
           "x-ms-summary": "Action name"
-        }
-      }
-    },
-    "AdvisorChatMessageRequest": {
-      "description": "The request to send a message to the advisor chat agent",
-      "required": [
-        "message"
-      ],
-      "type": "object",
-      "properties": {
-        "message": {
-          "description": "The user message to send to the advisor chat agent",
-          "type": "string",
-          "x-ms-summary": "Message"
-        },
-        "conversationId": {
-          "description": "The conversation ID for multi-turn chat. Omit to start a new conversation",
-          "type": "string",
-          "x-ms-summary": "Conversation ID"
-        }
-      }
-    },
-    "AdvisorChatMessageResponse": {
-      "description": "The response from the advisor chat agent",
-      "type": "object",
-      "properties": {
-        "message": {
-          "description": "The agent response message",
-          "type": "string",
-          "x-ms-summary": "Message"
-        },
-        "role": {
-          "description": "The role of the message author, always 'assistant'",
-          "type": "string",
-          "example": "assistant",
-          "x-ms-summary": "Role"
-        },
-        "executionTimeMs": {
-          "format": "int64",
-          "description": "The time taken to produce the response, in milliseconds",
-          "type": "integer",
-          "x-ms-summary": "Execution time (ms)"
-        },
-        "conversationId": {
-          "description": "The conversation ID to supply on the next turn to continue the conversation",
-          "type": "string",
-          "x-ms-summary": "Conversation ID"
         }
       }
     }
