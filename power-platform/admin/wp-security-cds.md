@@ -1,7 +1,7 @@
 ---
 title: Ownership-based security in Microsoft Dataverse
 description: Learn about ownership-based security concepts in Microsoft Dataverse.
-ms.date: 10/05/2026
+ms.date: 11/02/2026
 ms.topic: concept-article
 author: paulliew
 ms.subservice: admin
@@ -32,7 +32,7 @@ Security privileges are cumulative. A user receives the broadest access granted 
 
 Watch this video to understand business units in Dataverse:
 
-> [!Video 66e9e218-232d-4559-afb6-100433531b47]
+> [!Video 389637aa-065f-4dcb-8789-bd97acf1a50a]
 
 Business units work with security roles to determine a user's access. They define security boundaries that help you manage users and data. Every Dataverse database has one root business unit.
 

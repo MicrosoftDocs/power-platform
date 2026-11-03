@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 10/30/2026
+ms.date: 11/02/2026
 ---
 
 # Microsoft Dataverse reference architectures and solution ideas
@@ -41,6 +41,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | [**Perform predictive data analysis using Dataverse, Fabric, and Azure AI services**](../reference-architectures/ai-predictive-data-analysis.md) | Learn best practices for data ingestion, model training, and visualization that help you build robust predictive models and gain actionable insights. |
 | [**Integrate legacy data with Power Automate and SharePoint**](../reference-architectures/app-legacy-data-integration.md) | Streamline the process of integrating legacy data with modern platforms. |
 | [**Manage SharePoint document visibility in Dataverse solutions**](../reference-architectures/sharepoint-dataverse-security.md) | Reduce the risk of oversharing SharePoint documents associated with Dataverse records while preserving native document management capabilities. |
+| [**Standardize access control for Dataverse with Microsoft Entra security groups**](../reference-architectures/standardize-dataverse-access-control.md) | Centralize Dataverse access management by mapping Microsoft Entra security groups to Dataverse teams and assigning security roles to teams instead of individual users. |
 | [**Secure intelligent document processing with Azure Virtual Network support**](../reference-architectures/secure-document-automation.md) | Securely automate document processing and store extracted data and case records in Dataverse by using Power Platform, Azure Document Intelligence, and private network connectivity. |
 | [**Use Dataverse background operations**](../reference-architectures/dataverse-background-operations.md) | Use custom APIs to define custom messages and implement business logic through plug-ins, allowing for background processing that eliminates the need for a persistent connection during execution. |
 | [**Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
