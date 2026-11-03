@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 10/30/2026
+ms.date: 11/02/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -62,6 +62,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | [**Use Copilot Studio agents in model-driven apps**](../reference-architectures/contextual-ai-model-driven-app.md) | Integrate Microsoft Copilot Studio with Power Apps using Agent APIs in PCF controls to provide users with intelligent, contextual recommendations. |
 | [**Upload files to SharePoint with metadata from model-driven apps**](../reference-architectures/custom-page-file-upload.md) | Use custom pages for metadata‑aware document uploads from model‑driven apps to SharePoint to improve user experience and governance. |
 | [**Manage SharePoint document visibility in Dataverse solutions**](../reference-architectures/sharepoint-dataverse-security.md) | Reduce the risk of oversharing SharePoint documents associated with Dataverse records while preserving native document management capabilities. |
+| [**Standardize access control for Dataverse with Microsoft Entra security groups**](../reference-architectures/standardize-dataverse-access-control.md) | Centralize Dataverse access management by mapping Microsoft Entra security groups to Dataverse teams and assigning security roles to teams instead of individual users. |
 | [**Automate service order lifecycle and SLA governance with Power Platform**](../reference-architectures/service-order-process.md) | Design a solution that automates service request lifecycles, approvals, SLA governance, and termination by using Power Platform components. |
 | [**Connect Power Apps to a centralized data warehouse with Dataverse virtual tables**](../reference-architectures/power-apps-virtual-tables.md) | Connect to a centralized data warehouse through Dataverse virtual tables to use consolidated enterprise data alongside operational records stored in Dataverse. |
 | [**Modernize frontline applications with Power Platform**](../reference-architectures/modernize-frontline-applications.md) | Modernize frontline material requests with an offline-capable canvas app, automated approvals, centralized data in Dataverse, and SAP integration. |
