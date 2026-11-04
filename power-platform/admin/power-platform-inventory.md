@@ -4,7 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents, apps,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 09/28/2026
+ms.date: 11/02/2026
 ms.topic: concept-article
 contributors:
     - Grayson-Bishop
@@ -17,7 +17,7 @@ Power Platform inventory gives tenant administrators a unified view of all agent
 
 By using Power Platform inventory, you can easily complete the following tasks:
 
-- **Map connector usage (preview)**: Find which apps, flows, and agents use a given connector or operation. Use this information to scope DLP, audit Premium connector adoption, and plan ahead of deprecations, security issues, or licensing changes.
+- **Map connector usage**: Find which apps, flows, and agents use a given connector or operation. Use this information to scope DLP, audit Premium connector adoption, and plan ahead of deprecations, security issues, or licensing changes.
 
 - **Spot your champions**: Quickly identify who's creating the most resources so you can recognize, nurture, and empower your top innovators.
 
@@ -33,13 +33,13 @@ By using Power Platform inventory, you can easily complete the following tasks:
 
 The Power Platform inventory includes the following resource types:
 
-- **Agents**: All agents you create in Copilot Studio, and all agents you create in Microsoft 365 Copilot Agent Builder.
+- **Agents**: All agents you create in Copilot Studio on the Standard harness or GitHub Copilot harness, and all agents you create in Microsoft 365 Copilot Agent Builder.
 
-- **Apps**: All canvas, model-driven, code, vibe, and [managed apps](inventory-schema.md#managed-apps), and all apps you create in Microsoft 365 Copilot's App Builder agent.
+- **Apps**: All canvas, model-driven, code, and vibe apps, all [apps built in Copilot managed runtime](inventory-schema.md#managed-apps), and all apps you create in Microsoft 365 Copilot's App Builder agent.
 
 - **Flows**: All agent flows you create in Copilot Studio, all cloud flows you create in Power Automate, and all workflows you create in Microsoft 365 Copilot's Workflows agent.
 
-- **Connectors (preview)**: All connectors available in your tenant, including the operations each connector exposes and its publisher and tier.
+- **Connectors**: All connectors available in your tenant, including the operations each connector exposes and its publisher and tier.
 
 - **Environments**: All environments in your tenant.
 
@@ -61,7 +61,7 @@ The Power Platform inventory includes the following key features:
 
 - **Download**: Export your entire inventory to a CSV file for further analysis.
 
-- **Connector visibility (preview)**: See which connectors and operations each resource uses, directly in the inventory grid.
+- **Connector visibility**: See which connectors and operations each resource uses, directly in the inventory grid.
 
 ## Access requirements
 
@@ -185,17 +185,17 @@ Export your inventory data for reporting, analysis, or integration with other to
 
 - **Query programmatically**: Retrieve the same inventory data through the Power Platform APIs and connectors. For more information, see [Programmatic access](#programmatic-access).
 
-## Connector inventory (preview)
+## Connector inventory
 
 Power Platform inventory captures the connectors and connector operations used by each resource. In the Power Platform admin center, this data appears as a **Connectors** column across the inventory grids: the unified **Manage** > **Inventory** page as well as the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate**. You can query the same data through the [Power Platform for Admins V2 connector](/connectors/powerplatformadminv2/), the [Power Platform inventory API](inventory-api.md), and [Azure Resource Graph](/azure/governance/resource-graph/overview).
 
 Connector inventory makes common admin workflows query-driven: identifying every resource affected by a deprecated connector, tracking Premium connector adoption for license decisions, scoping DLP policies to actual usage patterns, and reviewing a resource's full connector footprint during troubleshooting.
 
-**Supported resource types**: canvas apps, model-driven apps, cloud flows, agent flows, workflow agent flows, and Copilot Studio agents (including Microsoft 365 Copilot Agent Builder).
+**Supported resource types**: canvas apps, model-driven apps, apps built in Copilot managed runtime, cloud flows, agent flows, workflow agent flows, Copilot Studio agents on the Standard harness or GitHub Copilot harness, and agents created in Microsoft 365 Copilot Agent Builder.
 
 For flows, the inventory additionally captures the trigger connector and trigger operation that initiate the flow.
 
-For the data shape and known limitations, see [Connector inventory (preview)](inventory-schema.md#connector-inventory-preview) in the schema reference.
+For the data shape and known limitations, see [Connector inventory](inventory-schema.md#connector-inventory) in the schema reference.
 
 ## Sovereign clouds
 
