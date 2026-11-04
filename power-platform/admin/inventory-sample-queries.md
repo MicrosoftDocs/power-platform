@@ -4,8 +4,9 @@ description: Sample Kusto Query Language (KQL) queries you can run against Power
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 08/19/2026
+ms.date: 11/02/2026
 ms.topic: concept-article
+ai-usage: ai-assisted
 ---
 
 # Power Platform inventory sample queries
@@ -136,9 +137,9 @@ PowerPlatformResources
 | where createdAt >= ago(24h)
 ```
 
-## Connector queries (preview)
+## Connector queries
 
-The following queries analyze connector usage across the resource types covered by [Connector inventory (preview)](inventory-schema.md#connector-inventory-preview). Each query operates on the `properties.powerPlatformConnectors` array emitted by canvas apps, model-driven apps, cloud flows, agent flows, workflow agent flows, and Copilot Studio agents.
+The following queries analyze connector usage across the resource types covered by [Connector inventory](inventory-schema.md#connector-inventory). Each query operates on the `properties.powerPlatformConnectors` array emitted by canvas apps, model-driven apps, apps built in Copilot managed runtime, cloud flows, agent flows, workflow agent flows, Copilot Studio agents on the Standard harness or GitHub Copilot harness, and agents created in Microsoft 365 Copilot Agent Builder. Apps built in Copilot managed runtime use the `microsoft.powerapps/apps` type with the `microsoftApp` subtype. The queries exclude App Builder apps, which use the same type but don't emit connector data.
 
 ### Top connectors used across Power Platform resources
 
@@ -149,11 +150,13 @@ PowerPlatformResources
 | where type in (
     "microsoft.powerapps/canvasapps",
     "microsoft.powerapps/modeldrivenapps",
+    "microsoft.powerapps/apps",
     "microsoft.powerautomate/cloudflows",
     "microsoft.powerautomate/agentflows",
     "microsoft.powerautomate/m365agentflows",
     "microsoft.copilotstudio/agents")
 | extend properties = parse_json(properties)
+| where type != "microsoft.powerapps/apps" or tostring(properties.subType) == "microsoftApp"
 | mv-expand connector = properties.powerPlatformConnectors
 | extend connectorId = tostring(connector.connectorId)
 | where isnotempty(connectorId)
@@ -171,11 +174,13 @@ PowerPlatformResources
 | where type in (
     "microsoft.powerapps/canvasapps",
     "microsoft.powerapps/modeldrivenapps",
+    "microsoft.powerapps/apps",
     "microsoft.powerautomate/cloudflows",
     "microsoft.powerautomate/agentflows",
     "microsoft.powerautomate/m365agentflows",
     "microsoft.copilotstudio/agents")
 | extend properties = parse_json(properties)
+| where type != "microsoft.powerapps/apps" or tostring(properties.subType) == "microsoftApp"
 | extend connectorCount = array_length(properties.powerPlatformConnectors)
 | summarize ResourceCount = count() by toint(connectorCount)
 | order by connectorCount asc
@@ -190,11 +195,13 @@ PowerPlatformResources
 | where type in (
     "microsoft.powerapps/canvasapps",
     "microsoft.powerapps/modeldrivenapps",
+    "microsoft.powerapps/apps",
     "microsoft.powerautomate/cloudflows",
     "microsoft.powerautomate/agentflows",
     "microsoft.powerautomate/m365agentflows",
     "microsoft.copilotstudio/agents")
 | extend properties = parse_json(properties)
+| where type != "microsoft.powerapps/apps" or tostring(properties.subType) == "microsoftApp"
 | mv-expand connector = properties.powerPlatformConnectors
 | where tostring(connector.connectorId) == "shared_sharepointonline"
 | project resourceName = tostring(properties.displayName),
@@ -213,11 +220,13 @@ PowerPlatformResources
 | where type in (
     "microsoft.powerapps/canvasapps",
     "microsoft.powerapps/modeldrivenapps",
+    "microsoft.powerapps/apps",
     "microsoft.powerautomate/cloudflows",
     "microsoft.powerautomate/agentflows",
     "microsoft.powerautomate/m365agentflows",
     "microsoft.copilotstudio/agents")
 | extend properties = parse_json(properties)
+| where type != "microsoft.powerapps/apps" or tostring(properties.subType) == "microsoftApp"
 | mv-expand connector = properties.powerPlatformConnectors
 | extend connectorId = tostring(connector.connectorId)
 | where isnotempty(connectorId)

@@ -4,7 +4,7 @@ description: Learn about the resource types and fields available in Power Platfo
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 09/28/2026
+ms.date: 11/02/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -49,14 +49,14 @@ All resource types in the PowerPlatformResources table include the following fie
 > [!NOTE]
 > The `tenantId` field is also available as a top-level ARM field on every resource record.
 
-## Connector inventory (preview)
+## Connector inventory
 
 Power Platform inventory represents connectors in two related ways:
 
 - **Connectors used by resources**: the connectors and operations that each app, flow, or agent uses, captured as the `properties.powerPlatformConnectors` array. This data also appears as a **Connectors** column across the Power Platform admin center inventory grids: the unified **Manage** > **Inventory** page and the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate**.
 - **Connectors as a resource type**: each connector available in your tenant is also its own inventory record, under the `microsoft.powerplatformconnector/connectors` resource type. For its fields, see [Connectors as a resource type](#connectors-as-a-resource-type).
 
-The following resource types emit connector data: canvas apps, model-driven apps, cloud flows, agent flows, workflow agent flows, and Copilot Studio agents (including Microsoft 365 Copilot Agent Builder).
+The following resource types emit connector data: canvas apps, model-driven apps, apps built in Copilot managed runtime, cloud flows, agent flows, workflow agent flows, Copilot Studio agents on the Standard harness or GitHub Copilot harness, and agents created in Microsoft 365 Copilot Agent Builder.
 
 For flows (cloud flows, agent flows, and workflow agent flows), the inventory additionally captures the connector and operation that initiate the flow as `properties.trigger` and `properties.triggerOperation`. These fields complement `powerPlatformConnectors`, which captures the connectors invoked during flow execution.
 
@@ -64,10 +64,10 @@ For flows (cloud flows, agent flows, and workflow agent flows), the inventory ad
 
 | API field path | Data type | Description | Status |
 |---|---|---|---|
-| `properties.powerPlatformConnectors` | array | The connectors used by the resource. | Preview |
-| `properties.powerPlatformConnectors[].connectorId` | string | The identifier of the connector (for example, `shared_sharepointonline`). | Preview |
-| `properties.powerPlatformConnectors[].operations` | array | The operations on the connector that the resource invokes. | Preview |
-| `properties.powerPlatformConnectors[].operations[].operationId` | string | The identifier of the operation (for example, `GetItems`). | Preview |
+| `properties.powerPlatformConnectors` | array | The connectors used by the resource. | Generally available |
+| `properties.powerPlatformConnectors[].connectorId` | string | The identifier of the connector (for example, `shared_sharepointonline`). | Generally available |
+| `properties.powerPlatformConnectors[].operations` | array | The operations on the connector that the resource invokes. | Generally available |
+| `properties.powerPlatformConnectors[].operations[].operationId` | string | The identifier of the operation (for example, `GetItems`). | Generally available |
 
 ### Example
 
@@ -107,23 +107,23 @@ Power Platform inventory not only captures connector usage on individual resourc
 
 | API field path | Data type | Description | Example | Status |
 |---|---|---|---|---|
-| `properties.connectorId` | string | The identifier of the connector. | `shared_sharepointonline` | Preview |
-| `properties.description` | string | A description of the connector. | `SharePoint helps organizations share and collaborate with colleagues, partners, and customers.` | Preview |
-| `properties.publisher` | string | The publisher of the connector. | `Microsoft` | Preview |
-| `properties.tier` | string | The licensing tier of the connector, such as `Standard` or `Premium`. | `Standard` | Preview |
-| `properties.releaseTag` | string | The release stage of the connector, such as `Production` or `Preview`. | `Production` | Preview |
-| `properties.isDeprecated` | boolean | Whether the connector is deprecated. | `false` | Preview |
-| `properties.operations` | array | The operations that the connector exposes. | See following rows. | Preview |
-| `properties.operations[].operationId` | string | The identifier of the operation. | `GetItems` | Preview |
-| `properties.operations[].displayName` | string | The display name of the operation. | `Get items` | Preview |
-| `properties.operations[].description` | string | A description of the operation. | `Gets items from a SharePoint list.` | Preview |
-| `properties.operations[].method` | string | The HTTP method of the operation. | `GET` | Preview |
+| `properties.connectorId` | string | The identifier of the connector. | `shared_sharepointonline` | Generally available |
+| `properties.description` | string | A description of the connector. | `SharePoint helps organizations share and collaborate with colleagues, partners, and customers.` | Generally available |
+| `properties.publisher` | string | The publisher of the connector. | `Microsoft` | Generally available |
+| `properties.tier` | string | The licensing tier of the connector, such as `Standard` or `Premium`. | `Standard` | Generally available |
+| `properties.releaseTag` | string | The release stage of the connector, such as `Production` or `Preview`. | `Production` | Generally available |
+| `properties.isDeprecated` | boolean | Whether the connector is deprecated. | `false` | Generally available |
+| `properties.operations` | array | The operations that the connector exposes. | See following rows. | Generally available |
+| `properties.operations[].operationId` | string | The identifier of the operation. | `GetItems` | Generally available |
+| `properties.operations[].displayName` | string | The display name of the operation. | `Get items` | Generally available |
+| `properties.operations[].description` | string | A description of the operation. | `Gets items from a SharePoint list.` | Generally available |
+| `properties.operations[].method` | string | The HTTP method of the operation. | `GET` | Generally available |
 
 ### Known limitations
 
 - **Tabular connectors don't report operations.** Connectors bound as data sources (such as SharePoint, Dataverse, SQL Server, and Excel Online) appear in `powerPlatformConnectors` but emit an empty `operations` array.
 - **Built-in actions aren't captured.** Built-in actions from Power Automate, such as the HTTP built-in action, Control actions, and Data operations, aren't connectors and don't appear in `powerPlatformConnectors`. This difference often causes confusion: a flow that calls an external service through the HTTP built-in action shows no connector for that call.
-- **Code apps, vibe apps, managed apps, and App Builder apps aren't covered.** Only the resource types listed in this section emit connector data.
+- **Code apps, vibe apps, and App Builder apps aren't covered.** Only the resource types listed in this section emit connector data.
 - **Model-driven apps rarely report connectors.** Model-driven apps rarely call connectors directly. Connector data only appears when a canvas page is embedded in a model-driven app, and that page's connector usage is captured on the canvas page record itself.
 - **No connector display names or tier data.** This release exposes connector IDs and operation IDs only. Display names, tiers (Standard/Premium), and publisher information aren't included.
 
@@ -136,7 +136,7 @@ Power Platform inventory not only captures connector usage on individual resourc
 | `properties.lastModifiedAt` | datetime | The date and time the app was last modified. | `2026-01-15T10:30:00Z` | Generally available |
 | `properties.lastModifiedBy` | string | The object ID of the user who last modified the app. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.isQuarantined` | boolean | Whether the app is quarantined. | `false` | Generally available |
-| `properties.powerPlatformConnectors` | array | The connectors and operations used by the app. See [Connector inventory (preview)](#connector-inventory-preview). | See section. | Preview |
+| `properties.powerPlatformConnectors` | array | The connectors and operations used by the app. See [Connector inventory](#connector-inventory). | See section. | Generally available |
 
 ## Model-driven apps
 
@@ -149,7 +149,7 @@ Power Platform inventory not only captures connector usage on individual resourc
 | `properties.isQuarantined` | boolean | Whether the app is quarantined. | `false` | Generally available |
 | `properties.appModuleId` | string | The Dataverse app module ID. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.logicalName` | string | The Dataverse logical name of the app. | `contoso_expensereport` | Generally available |
-| `properties.powerPlatformConnectors` | array | The connectors and operations used by the app. See [Connector inventory (preview)](#connector-inventory-preview). | See section. | Preview |
+| `properties.powerPlatformConnectors` | array | The connectors and operations used by the app. See [Connector inventory](#connector-inventory). | See section. | Generally available |
 
 > [!NOTE]
 > The `properties.powerPlatformConnectors` field rarely returns data for model-driven apps, because model-driven apps don't use connectors directly. Connectors used by embedded canvas pages are captured on the canvas page record instead.
@@ -188,7 +188,11 @@ The `microsoft.powerapps/apps` resource type includes the following app subtypes
 
 ### Managed apps
 
-Managed apps use the `microsoftApp` subtype.
+Apps built in Copilot managed runtime use the `microsoftApp` subtype.
+
+| API field path | Data type | Description | Example | Status |
+|---|---|---|---|---|
+| `properties.powerPlatformConnectors` | array | The connectors and operations used by the app. See [Connector inventory](#connector-inventory). | See section. | Generally available |
 
 ### App Builder apps
 
@@ -203,9 +207,9 @@ App Builder apps use the `appBuilderApp` subtype and don't add subtype-specific 
 | `properties.lastModifiedAt` | datetime | The date and time the flow was last modified. | `2026-01-15T10:30:00Z` | Generally available |
 | `properties.lastModifiedBy` | string | The object ID of the user who last modified the flow. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.workflowEntityId` | string | The Dataverse workflow entity ID. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
-| `properties.powerPlatformConnectors` | array | The connectors and operations used by the flow. See [Connector inventory (preview)](#connector-inventory-preview). | See section. | Preview |
-| `properties.trigger` | string | The connector that initiates the flow. Empty when the trigger isn't connector-based (for example, recurrence or manual). | `sharepointonline` | Preview |
-| `properties.triggerOperation` | string | The operation that initiates the flow. | `GetOnNewItems` | Preview |
+| `properties.powerPlatformConnectors` | array | The connectors and operations used by the flow. See [Connector inventory](#connector-inventory). | See section. | Generally available |
+| `properties.trigger` | string | The connector that initiates the flow. Empty when the trigger isn't connector-based (for example, recurrence or manual). | `sharepointonline` | Generally available |
+| `properties.triggerOperation` | string | The operation that initiates the flow. | `GetOnNewItems` | Generally available |
 
 ## Agent flows
 
@@ -216,9 +220,9 @@ App Builder apps use the `appBuilderApp` subtype and don't add subtype-specific 
 | `properties.lastModifiedAt` | datetime | The date and time the flow was last modified. | `2026-01-15T10:30:00Z` | Generally available |
 | `properties.lastModifiedBy` | string | The object ID of the user who last modified the flow. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.workflowEntityId` | string | The Dataverse workflow entity ID. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
-| `properties.powerPlatformConnectors` | array | The connectors and operations used by the flow. See [Connector inventory (preview)](#connector-inventory-preview). | See section. | Preview |
-| `properties.trigger` | string | The connector that initiates the flow. Empty when the trigger isn't connector-based (for example, recurrence or manual). | `sharepointonline` | Preview |
-| `properties.triggerOperation` | string | The operation that initiates the flow. | `GetOnNewItems` | Preview |
+| `properties.powerPlatformConnectors` | array | The connectors and operations used by the flow. See [Connector inventory](#connector-inventory). | See section. | Generally available |
+| `properties.trigger` | string | The connector that initiates the flow. Empty when the trigger isn't connector-based (for example, recurrence or manual). | `sharepointonline` | Generally available |
+| `properties.triggerOperation` | string | The operation that initiates the flow. | `GetOnNewItems` | Generally available |
 
 ## Workflow agent flows
 
@@ -229,9 +233,9 @@ App Builder apps use the `appBuilderApp` subtype and don't add subtype-specific 
 | `properties.lastModifiedAt` | datetime | The date and time the flow was last modified. | `2026-01-15T10:30:00Z` | Generally available |
 | `properties.lastModifiedBy` | string | The object ID of the user who last modified the flow. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
 | `properties.workflowEntityId` | string | The Dataverse workflow entity ID. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Generally available |
-| `properties.powerPlatformConnectors` | array | The connectors and operations used by the flow. See [Connector inventory (preview)](#connector-inventory-preview). | See section. | Preview |
-| `properties.trigger` | string | The connector that initiates the flow. Empty when the trigger isn't connector-based (for example, recurrence or manual). | `sharepointonline` | Preview |
-| `properties.triggerOperation` | string | The operation that initiates the flow. | `GetOnNewItems` | Preview |
+| `properties.powerPlatformConnectors` | array | The connectors and operations used by the flow. See [Connector inventory](#connector-inventory). | See section. | Generally available |
+| `properties.trigger` | string | The connector that initiates the flow. Empty when the trigger isn't connector-based (for example, recurrence or manual). | `sharepointonline` | Generally available |
+| `properties.triggerOperation` | string | The operation that initiates the flow. | `GetOnNewItems` | Generally available |
 
 ## Copilot Studio agents
 
