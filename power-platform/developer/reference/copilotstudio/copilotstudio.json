@@ -726,6 +726,210 @@
           }
         }
       }
+    },
+    "/copilotstudio/licensing/reports/{ReportName}": {
+      "post": {
+        "tags": [
+          "Licensing Reports"
+        ],
+        "summary": "Generate Licensing Report.",
+        "description": "Starts generating a Copilot Studio licensing report for your tenant over the requested date range. Generation runs asynchronously; poll the URL in the Location header for status. Requires the Global, Dynamics 365, or Power Platform administrator role.",
+        "operationId": "GenerateLicensingReport",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "ReportName",
+            "description": "The name of the report to generate.",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "BillingDetailsPerEnvironment",
+              "FeatureDetailsPerResource"
+            ]
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CopilotStudioLicensingReportRequest"
+            }
+          }
+        ],
+        "responses": {
+          "202": {
+            "description": "Accepted. Report generation started.",
+            "headers": {
+              "Location": {
+                "description": "The URL of the report operation to poll for status.",
+                "type": "string",
+                "format": "uri"
+              },
+              "Retry-After": {
+                "description": "The recommended number of seconds to wait before polling the operation.",
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request. The request body or a date is missing or invalid, or the end date is before the start date."
+          },
+          "401": {
+            "description": "Unauthorized. A valid access token is required."
+          },
+          "403": {
+            "description": "Forbidden. The caller must be a Global, Dynamics 365, or Power Platform administrator of the tenant."
+          },
+          "404": {
+            "description": "Not found. The report isn't supported or licensing reports aren't available for the tenant."
+          }
+        }
+      }
+    },
+    "/copilotstudio/licensing/reports/{ReportName}/files/{FileName}": {
+      "get": {
+        "tags": [
+          "Licensing Reports"
+        ],
+        "summary": "Download Licensing Report File.",
+        "description": "Downloads a generated licensing report as a gzip-compressed CSV file. Use the file name returned by a report operation with a Succeeded status.",
+        "operationId": "DownloadLicensingReportFile",
+        "produces": [
+          "application/gzip"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "ReportName",
+            "description": "The name of the generated report.",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "BillingDetailsPerEnvironment",
+              "FeatureDetailsPerResource"
+            ]
+          },
+          {
+            "in": "path",
+            "name": "FileName",
+            "description": "The report file name, returned by a report operation with a Succeeded status.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The report file as a gzip-compressed CSV.",
+            "schema": {
+              "format": "binary",
+              "type": "string"
+            },
+            "headers": {
+              "Content-Disposition": {
+                "description": "Attachment with the report file name.",
+                "type": "string"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. A valid access token is required."
+          },
+          "403": {
+            "description": "Forbidden. The caller must be a Global, Dynamics 365, or Power Platform administrator of the tenant."
+          },
+          "404": {
+            "description": "Not found. The file doesn't exist, doesn't belong to your tenant, or licensing reports aren't available for the tenant."
+          }
+        }
+      }
+    },
+    "/copilotstudio/licensing/reports/{ReportName}/operations/{OperationId}": {
+      "get": {
+        "tags": [
+          "Licensing Reports"
+        ],
+        "summary": "Get Licensing Report Operation Status.",
+        "description": "Gets the status of a licensing report generation operation. When the status is Succeeded, the response includes the report file name and the Location header contains the download URL.",
+        "operationId": "GetLicensingReportOperation",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "ReportName",
+            "description": "The name of the report being generated.",
+            "required": true,
+            "type": "string",
+            "enum": [
+              "BillingDetailsPerEnvironment",
+              "FeatureDetailsPerResource"
+            ]
+          },
+          {
+            "in": "path",
+            "name": "OperationId",
+            "description": "The report operation ID, returned in the Location header when report generation starts.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response. The body contains the current status of the operation.",
+            "schema": {
+              "$ref": "#/definitions/CopilotStudioLicensingReportOperation"
+            },
+            "headers": {
+              "Location": {
+                "description": "The URL to download the report file. Returned only when the status is Succeeded.",
+                "type": "string",
+                "format": "uri"
+              },
+              "Retry-After": {
+                "description": "The recommended number of seconds to wait before polling again. Returned only when the status is Running.",
+                "type": "string"
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized. A valid access token is required."
+          },
+          "403": {
+            "description": "Forbidden. The caller must be a Global, Dynamics 365, or Power Platform administrator of the tenant."
+          },
+          "404": {
+            "description": "Not found. The operation doesn't exist or licensing reports aren't available for the tenant."
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -866,6 +1070,15 @@
         "RetrievedKnowledgeSourcesTextsAreEmpty",
         "RetrievedKnowledgeTokenLimitExceeded",
         "UnexpectedInternalError"
+      ],
+      "type": "string"
+    },
+    "CopilotStudioLicensingReportGranularity": {
+      "description": "The granularity of a licensing report. Daily returns one row per day in the date range, and Summary returns a single summarized row for the whole range.",
+      "default": "Daily",
+      "enum": [
+        "Daily",
+        "Summary"
       ],
       "type": "string"
     },
@@ -1210,6 +1423,69 @@
           "items": {
             "$ref": "#/definitions/MakerEvaluationConnection"
           }
+        }
+      }
+    },
+    "CopilotStudioLicensingReportName": {
+      "description": "The name of a Copilot Studio licensing report. BillingDetailsPerEnvironment reports billing details for each environment, and FeatureDetailsPerResource reports feature usage details for each resource.",
+      "enum": [
+        "BillingDetailsPerEnvironment",
+        "FeatureDetailsPerResource"
+      ],
+      "type": "string"
+    },
+    "CopilotStudioLicensingReportOperation": {
+      "description": "The status of a licensing report generation operation.",
+      "required": [
+        "status"
+      ],
+      "type": "object",
+      "properties": {
+        "error": {
+          "description": "A message describing why report generation failed. Returned only when the status is Failed.",
+          "type": "string"
+        },
+        "fileName": {
+          "description": "The generated report file name to use when downloading the report. Returned only when the status is Succeeded.",
+          "type": "string",
+          "example": "billingdetailsperenvironment_00000000-0000-0000-0000-000000000000_2026-09-01_2026-09-30_daily.csv.gz"
+        },
+        "status": {
+          "$ref": "#/definitions/CopilotStudioLicensingReportOperationStatus"
+        }
+      }
+    },
+    "CopilotStudioLicensingReportOperationStatus": {
+      "description": "The status of a licensing report generation operation.",
+      "enum": [
+        "Running",
+        "Succeeded",
+        "Failed"
+      ],
+      "type": "string"
+    },
+    "CopilotStudioLicensingReportRequest": {
+      "description": "The request body for generating a licensing report.",
+      "required": [
+        "endDate",
+        "startDate"
+      ],
+      "type": "object",
+      "properties": {
+        "endDate": {
+          "format": "date",
+          "description": "The inclusive UTC end date of the report range. Must be on or after the start date.",
+          "type": "string",
+          "example": "2026-09-30"
+        },
+        "granularity": {
+          "$ref": "#/definitions/CopilotStudioLicensingReportGranularity"
+        },
+        "startDate": {
+          "format": "date",
+          "description": "The inclusive UTC start date of the report range.",
+          "type": "string",
+          "example": "2026-09-01"
         }
       }
     }
