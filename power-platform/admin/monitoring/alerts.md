@@ -82,6 +82,70 @@ You can create an alert to monitor a specific resource, such as a specific canva
 
 After you create your alert, the system runs an on-demand evaluation and scans all the applicable resources under its scope.
 
+## Monitor critical resources with low-latency alerts (preview)
+
+Use low-latency alerts to evaluate supported resource metrics every hour instead of waiting for the daily evaluation. These alerts can help you detect issues sooner on mission-critical applications and other resources.
+
+For example, you can create a low-latency alert for a production canvas app to check whether its **App open success rate** falls below 95%. The rule evaluates each hour after new hourly metrics are produced and can fire when the condition is met, rather than waiting for the next daily evaluation.
+
+### How low-latency alerts work
+
+By default, Monitor metrics refresh every 24 hours, and alerts evaluate those metrics after the new 24-hour aggregates are produced. When you create a low-latency alert with **Data review period** set to **1 Hour**, Monitor enables hourly aggregation for the selected metric on the selected resource. The rule evaluates after new hourly metrics are produced and can fire each hour if its condition is met.
+
+Hourly aggregation applies only to that resource and metric. It doesn't enable hourly aggregation for every metric on the resource. The product list page and the metric summary on the left side of the resource pane continue to show 24-hour aggregates.
+
+Hourly alert rules do not perform an on-demand evaluation when it's created since new hourly data isn't available.
+
+> [!NOTE]
+> Low-latency alerts use an hourly refresh and evaluation schedule. They aren't real-time alerts.
+
+### Requirements and limits
+
+- Meet the existing [alert prerequisites](#prerequisites), including the admin permissions and managed environment requirements for custom alerts.
+- Use **Resource** scope. Low-latency alerts aren't available for environment-scoped rules.
+- Select a supported product and metric. Supported metrics have a symbol next to them in the **Metric** selector.
+- Each tenant can configure up to 10 low-latency alerts. Reserve these alerts for mission-critical applications and resources.
+- You can configure only one low-latency alert per resource per metric. For example, you can't create two low-latency rules for the same app's **App open success rate**, even if their thresholds or severities differ.
+
+### Supported products and metrics
+
+| Product | Supported metrics |
+| --- | --- |
+| Canvas apps | Time to interactive, App open success rate, Data request success rate, Data request latency |
+| Code apps | Time to interactive, App open success rate, Data request success rate, Data request latency |
+| Model-driven apps | App open success rate |
+| Cloud flows | Success rate |
+| Agents | Agent session success rate |
+
+### Create a low-latency alert
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
+1. Go to **Monitor**, select the relevant product, and select the resource to open its resource pane.
+1. In the upper-right corner of the resource pane, select **+ New alert rule**. This option is available for resources in managed environments.
+1. In the alert configuration panel, confirm the prepopulated **Product** and **Product type**. Ensure **Scope** is **Resource**, and verify that the correct **Environment** and **Resource** are selected.
+1. Enter an **Alert rule name**. In **Metric**, select a supported metric, identified by the symbol next to it. Ensure a low-latency alert doesn't already exist for this resource and metric, and that the tenant hasn't reached the limit of 10 low-latency alerts.
+1. In **Data review period**, select **1 Hour**.
+1. Configure the **Operator** and threshold for the alert condition, choose the **Severity**, and select the **Notification type**. For details about these settings, see [Create an alert on a resource](#create-an-alert-on-a-resource).
+1. Select **Save**.
+
+Creating the alert enables hourly aggregation for the selected metric on the selected resource. Other metrics on the resource continue to use their existing aggregation settings.
+
+### View hourly metrics and triggered alerts
+
+After you create a low-latency alert, use the resource's chart to view hourly data for the metric you selected:
+
+1. In **Monitor**, open the relevant product and select the resource.
+1. In the resource pane, select the metric or chart associated with the low-latency alert.
+1. Set **Review period** to **1 hour** to view the metric's hourly time series. The only available chart time range for this review period is **24 hours**.
+1. If the low-latency alert fired within the selected time range, a banner appears and indicates that it fired during the time range selected above the timeseries.
+
+The alert's **Data review period** controls the data aggregation and scheduled evaluation cadence for the rule. The chart's **Review period** controls the aggregation shown in the chart. The chart time range controls how much history is displayed: for a **1 hour** review period, the chart displays **24 hours** of history.
+
+The product list page and the metric summary on the left side of the resource pane still show 24-hour aggregates, even when you're viewing an hourly chart.
+
+> [!NOTE]
+> A banner that indicates an alert fired within the selected time range doesn't, by itself, mean the alert is currently firing, that the issue is unresolved, or that the resource is experiencing an outage now.
+
 ## When an alert triggers
 If you select to receive email notifications when any resource triggers an alert, you get an email notification.
 
