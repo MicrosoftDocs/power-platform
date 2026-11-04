@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to track and monitor the oper
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/15/2026
+ms.date: 11/03/2026
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: ellenwehrle
@@ -152,6 +152,112 @@ If you select to receive email notifications when any resource triggers an alert
 :::image type="content" source="media/alert-email.png" alt-text="Screenshot of an email notification showing a triggered alert with a Go to Alert button." lightbox="media/alert-email.png":::
 
 In the email notification, select **Go to Alert** to open a Power Platform page listing the triggered alerts. You can see information on the triggered alert and what resources triggered it. When you select any of the resources in the triggered alert, a pane is displayed that shows time series information for all applicable metrics for that resource, and recommendations for how to improve the metric if it's suboptimal.
+
+
+## Route alert notifications to any connector-backed destination (preview)
+
+Use the **When an alert fires** trigger on the **Power Platform for Admins V2** connector to route custom alert notifications through Power Automate to any supported connector-backed destination. Bring alerts into the tools your team already uses: post to a Microsoft Teams channel, create Azure DevOps work items, or start a workflow with another connector, such as ServiceNow.
+
+Instead of relying on an inbox to coordinate a response, use the triggered alert's details to decide where to send the notification and what information to include. You can route all received alerts to one destination or use conditions to send different alerts to different destinations.
+
+For example, suppose your organization uses a business-critical production canvas app in a Managed Environment. A custom alert rule with **High** severity detects when the app open success rate falls below 95 percent. When that alert fires, your flow can post the alert and affected resource details to an operations team's Teams channel. A separate branch within the same flow can create Azure DevOps work items for **Medium** and **Low** severity alerts received from other rules.
+
+> [!IMPORTANT]
+> The **When an alert fires** trigger and its **Power Platform for Admins V2** connection currently require a tenant-admin account. Environment-admin support for this trigger is coming soon. Tenant and environment admins can continue to create ordinary alerts.
+
+### Prerequisites
+
+Before you begin, ensure you have:
+
+- A tenant-admin account to authenticate the **Power Platform for Admins V2** trigger connection.
+- A custom alert rule for an environment or resource in a Managed Environment, or permission to create one. Custom alerts are available only in Managed Environments.
+- Access to create a Power Automate cloud flow and the connections required for your chosen destinations. 
+
+> [!NOTE]
+> Predefined alert rules can't be opted into the **When an alert fires** trigger.
+
+### Step 1: Configure the custom alert rule
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) as a tenant admin.
+1. Go to **Monitor** > **Alerts**.
+1. Create a custom alert rule. Follow the steps to [create an alert on an environment](#create-an-alert-on-an-environment) or [create an alert on a resource](#create-an-alert-on-a-resource), as appropriate.
+1. Select the **Product**, **Product type**, and **Scope**, including the environment or resource to monitor. Configure the metric, operator, threshold, and severity. For the example, select the canvas app's app open success rate, set **Operator** to **Is Under**, enter **95** for the threshold, and set **Severity** to **High**.
+1. In the **Notification type** dropdown, select one of these options:
+
+   - **Connector**: Opts the alert rule into connector notifications. The **When an alert fires** trigger listens to the rule and starts the flow when the alert fires.
+   - **Email and connector**: Sends an email to the specified recipients and also opts the rule into connector notifications, so the trigger starts the flow when the alert fires.
+
+1. If you selected **Email and connector**, specify the email recipients in **Recipient(s)**.
+1. Select **Save**.
+
+### Step 2: Create and configure the flow
+
+1. Sign in to Power Automate and create an automated cloud flow.
+1. Select the **When an alert fires** trigger in the **Power Platform for Admins V2** connector.
+1. Create or select a connection authenticated with your tenant-admin account.
+
+> [!NOTE]
+> By default, the trigger listens to all custom alert rules within the connected account's scope that use **Connector** or **Email and connector** notifications. It isn't bound to the rule you just created. To act on only some of those alerts, add conditions after the trigger using information such as severity or alert rule ID.
+
+### Step 3: Route notifications to your destination
+
+You can route the received alert to any supported connector-backed destination. You don't need to add severity filtering; the severity-based routing example later in this section is one optional pattern.
+
+1. Add the appropriate connector action after the trigger. For example, choose an action to post a message to a Teams channel, create an Azure DevOps work item, or create a record in another connected service.
+1. Configure the action's connection and destination settings, such as the target team and channel or the project where a work item belongs.
+1. Use the trigger's dynamic content to populate the destination action. Include the alert name, identifiers, severity, and affected resource details that help the receiving team investigate. The **Triggered alert body** section describes the available information.
+1. If the flow should handle only a specific rule, add a condition using its alert rule ID before the notification action. Otherwise, actions can apply to all opted-in rules within the connected account's scope, or to the subset selected by any other conditions you add.
+1. Save the flow and turn it on.
+
+### Step 4: Verify the notification
+
+1. After the flow is on, check for a new firing of a custom alert rule configured for **Connector** or **Email and connector** notifications.
+1. Open the flow's run history in Power Automate. Review the trigger, any condition results, and the destination action to confirm that the alert followed the intended route.
+1. Check the destination. Confirm that the delivered notification matches the alert rule and triggered alert occurrence, and contains the context your team needs. If you selected **Email and connector**, also check the specified recipients' email notifications.
+
+Creating an alert rule starts an on-demand evaluation, so the rule might have fired before you created or turned on the flow. Validate the flow with a new firing after it is on.
+
+Routing notifications through Power Automate doesn't change the rule's evaluation cadence or how frequently metrics are collected.
+
+### Triggered alert body
+
+Use information from the triggered alert body in conditions, messages, and work items. The following table describes the available fields using readable labels. For affected resources, keep each resource's identifier, metric value, and environment together so the receiving team can identify where the issue occurred.
+
+| Field | Description |
+| --- | --- |
+| `alertId` | Identifier of the individual triggered alert occurrence. Use it to distinguish separate firings of the same rule.|
+| `alertRuleId` | Identifier of the alert rule. Use it to filter notifications to a specific rule. |
+| `severity` | Severity assigned to the alert. You can optionally use it to route notifications. |
+| `monitorCondition` | Monitor condition reported for the alert. |
+| `firedDateTime` | Time when the alert fired. |
+| `productType` | Product type associated with the alert. |
+| `subProductType` | Sub product type associated with the alert. |
+| `scope` | Scope monitored by the alert rule. |
+| `metric` | Metric evaluated by the alert rule. |
+| `metricUnit` | Unit used for the metric. |
+| `operator` | Comparison operator used to evaluate the metric against the threshold. |
+| `threshold` | Threshold configured in the alert rule. |
+| `dataReviewPeriod` | Period of metric data reviewed when evaluating the alert. |
+| `affectedResourceCount` | Number of resources affected by the triggered alert. |
+| `affectedResource` | Identifiers of the affected resources. Each resource ID corresponds to that resource's metric value and environment. |
+| `metricValues` | Metric value reported for each affected resource, paired with that resource's ID and environment. |
+| `environmentId` | Environment identifier or context for each affected resource, paired with that resource's ID and metric value. |
+| `tenantId` | Identifier of the tenant associated with the alert. |
+
+### Example: Route alerts by severity
+
+This optional example sends high-severity alerts to Teams and creates Azure DevOps work items for medium- and low-severity alerts. It applies only to the custom alerts received by the trigger: rules within the connected account's scope that use **Connector** or **Email and connector** notifications. Severity conditions control routing in this example; they aren't required to configure or use the trigger.
+
+1. Start with the **When an alert fires** trigger and tenant-admin connection configured in Step 2.
+1. If you want to process only one rule, add a condition using its alert rule ID before the routing actions. Otherwise, continue with all opted-in rules within the connected account's scope.
+1. Add a **Condition** action that checks whether the alert's severity is **High**, using the trigger's dynamic content.
+1. In the **Yes** branch, add a Microsoft Teams action that posts a message to a channel. Configure the Teams connection and select the target team and channel.
+1. Populate the Teams message with the alert name, alert rule ID, triggered alert ID, severity, fired time, and relevant metric and threshold information. Include the affected resources with their corresponding metric values and environments.
+1. In the **No** branch of the severity condition, add an Azure DevOps action to create a work item. Configure the Azure DevOps connection, organization, project, and work item type.
+1. Map alert information to the work item's title and description. For example, include the severity and the alert rule ID, triggered alert ID, fired time, metric, threshold, and affected resource details in the description.
+1. Save the flow and turn it on.
+1. Verify each configured route when a relevant new alert fires. For a **High** severity alert, check the flow's run history and the Teams message. For a **Medium** or **Low** severity alert, check the run history and the Azure DevOps work item. Confirm that the rule and triggered alert identifiers match in each destination.
+
 
 ## Predefined alerts from Microsoft 
 
