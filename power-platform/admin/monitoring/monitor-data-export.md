@@ -42,7 +42,7 @@ Before you start, ensure you have the following:
 - An authenticated REST client and a bearer access token obtained through a supported authentication flow. The PowerShell example requires PowerShell 7.
 - A protected storage location and a plan for scheduling, retrying, ingesting, retaining, and controlling access to the exports.
 
-For authentication concepts, see [Power Platform API authentication](https://learn.microsoft.com/en-us/power-platform/admin/programmability-authentication-v2) and the [Power Platform API permission reference](https://learn.microsoft.com/en-us/power-platform/admin/programmability-permission-reference). These general references don't establish the export API's final permission or token configuration. Confirm the exact tenant-role names, token audience, OAuth scopes or application permissions, consent requirements, and supported authentication flow before running the examples. Don't assume that a service principal, managed identity, reader role, or environment admin can call this endpoint.
+For authentication concepts, see [Power Platform API authentication](../programmability-authentication-v2.md) and the [Power Platform API permission reference](../programmability-permission-reference.md). These general references don't establish the export API's final permission or token configuration. Confirm the exact tenant-role names, token audience, OAuth scopes or application permissions, consent requirements, and supported authentication flow before running the examples. Don't assume that a service principal, managed identity, reader role, or environment admin can call this endpoint.
 
 ## Supported products and required inputs
 
@@ -416,6 +416,6 @@ No. Finish all pages, validate the returned coverage, and separately verify inge
 
 ## Related content
 
-- [Monitor overview](https://learn.microsoft.com/en-us/power-platform/admin/monitoring/monitoring-overview)
-- [Power Platform API authentication](https://learn.microsoft.com/en-us/power-platform/admin/programmability-authentication-v2)
-- [Power Platform API permission reference](https://learn.microsoft.com/en-us/power-platform/admin/programmability-permission-reference)
+- [Monitor overview](monitoring-overview.md)
+- [Power Platform API authentication](../programmability-authentication-v2.md)
+- [Power Platform API permission reference](../programmability-permission-reference.md)
