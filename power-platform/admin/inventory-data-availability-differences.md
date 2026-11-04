@@ -1,9 +1,10 @@
 ---
 title: "Data export migration: Power Platform inventory API field mapping"
 description: Power Platform inventory API migration guide for data export users. Compare app, flow, connector, and environment fields, and plan your switch with confidence.
-ms.date: 10/23/2026
+ms.date: 11/03/2026
 ms.topic: how-to
 author: souravmukherjeedotnet
+ms.contributor: miferlan
 ms.author: somukhe
 ms.reviewer: ellenwehrle
 ai-usage: ai-assisted
@@ -114,8 +115,6 @@ Connector usage is available for supported apps, flows, and agents.
 | Operations used | Identifiers of operations invoked on a connector | `properties.powerPlatformConnectors[].operations[].operationId` |
 | Flow trigger | Connector that initiates a supported flow | `properties.trigger` |
 | Flow trigger operation | Connector operation that initiates a supported flow | `properties.triggerOperation` |
-
-Connector and operation usage fields are currently in preview.
 
 ### Connector catalog information
 
