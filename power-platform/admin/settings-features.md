@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 10/21/2026
+ms.date: 11/03/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -20,8 +20,10 @@ contributors:
     - steph-kent-ms
     - EllenWehrle
     - Mattp123
-ms.Contributors:
+    - vibhutinair23
+ms.contributors:
     - v-linhvovan
+    - kauguillard
 search.audienceType: 
   - admin
 ms.collection: 
@@ -75,6 +77,23 @@ Make sure you have the System Administrator security role or equivalent permissi
 |---------|-------------|---------------|
 | Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md#copilots-and-generative-ai-features-that-depend-on-data-movement-across-regions) to be turned on. For information on what data is shared with Viva Insights, see [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). | On |
 | Allow cross-geo boundary sharing of aggregated analytics data if your tenant preferred data location for Viva Insights is different from the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features). When **On**, Microsoft Copilot Studio data is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
+
+### Sharing agents with embedded maker credentials (preview)
+
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-banner-section.md)]
+[!INCLUDE [file-name](~/../shared-content/shared/preview-includes/preview-note-pp.md)]
+
+Control whether makers can share agents that include their own credentials.
+
+| Setting | Description | Default value |
+|---------|-------------|---------------|
+| Don't let makers share agents with their own credentials embedded (recommended) | When **On**, makers can't share agents that include their own credentials. | On |
+| Let makers share agents with their own credentials embedded | When **On**, makers can share agents that include their own credentials. | Off |
+
+Learn more in:
+
+- [Control sharing agents with embedded maker credentials (preview)](/power-platform/admin/security/control-sharing-agents-with-embedded-maker-credentials)
+- [Control sharing of agents that use maker-provided credentials](/microsoft-copilot-studio/admin-sharing-controls-limits#control-sharing-of-agents-that-use-maker-provided-credentials) in Copilot Studio
 
 ## Dataverse intelligence (preview)
 

@@ -624,6 +624,10 @@
                   href: security/secure-web-ai-gateway-agents.md
                 - name: Role-based access control for Power Platform admin center (preview)
                   href: security/role-based-access-control.md
+            - name: Threat detection
+              items:
+                - name: Control sharing agents with embedded maker credentials (preview)
+                  href: security/control-sharing-agents-with-embedded-maker-credentials.md
             - name: Compliance
               items:
                 - name: Compliance tools
