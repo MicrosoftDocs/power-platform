@@ -2,7 +2,7 @@
 title: "Quickstart: Set up Business Applications in Work IQ for a pilot (preview)"
 description: Set up Business Applications in Work IQ so pilot users can query Dynamics 365 and Power Apps data through Microsoft 365 Copilot.
 #customer intent: As a Power Platform admin, I want to connect Dynamics 365 and Power Apps data to Work IQ, so that pilot users can ask grounded questions through Microsoft 365 Copilot.
-ms.date: 09/25/2026
+ms.date: 11/04/2026
 author: karissa-larson
 ms.author: kalars
 ms.reviewer: ellenwehrle
@@ -20,7 +20,7 @@ ms.collection: bap-ai-copilot
 
 [!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
 
-In this quickstart, you connect your business applications to Work IQ so your pilot users can ask questions grounded in Dynamics 365 and Power Apps data through [Microsoft 365 Copilot](/microsoft-365/copilot/). You choose a pilot scenario, confirm availability, enable Work IQ in your environment, and try the experience.
+In this quickstart, you connect your business applications to Work IQ so your pilot users can ask questions grounded in Dynamics 365 and Power Apps data through [Microsoft 365 Copilot](/microsoft-365/copilot/). You choose a pilot scenario, confirm availability, enable Work IQ in your environment, configure your model-driven app, and try the experience.
 
 [!INCLUDE [preview-note-business-applications-work-iq](~/../shared-content/shared/preview-includes/preview-note-business-applications-work-iq.md)]
 
@@ -32,6 +32,8 @@ You need user accounts with the following roles:
 
 - **AI Administrator** to configure Microsoft Copilot availability if not already configured.
 - **Power Platform Administrator** to configure environment settings.
+
+You also need a maker account with permission to edit and publish the model-driven app used for your pilot.
 
 You need an [environment](../environments-overview.md) with a Dynamics 365 or Power Apps [model-driven application](/power-apps/maker/model-driven-apps/model-driven-app-overview).
 
@@ -66,10 +68,33 @@ Learn more in [Use the Business Applications in Work IQ plugin in Cowork](/micro
 ## Turn on Work IQ in your environment
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
-1. Select **Manage**, and select the environment containing your application.
-1. Select **Settings** > **Product** > **Features**.
-1. Turn on **Work IQ**. If it's already on, continue to the next step.
-1. Select **Save** if you made changes.
+2. Select **Manage**, and select the environment containing your application.
+3. Select **Settings** > **Product** > **Features**.
+4. Turn on **Work IQ**. If it's already on, continue to the next step.
+
+    :::image type="content" source="media/quickstart/turn-on-work-iq.png" alt-text="Screenshot of Power Platform admin center Features settings with Turn on Business Applications in Work IQ checkbox selected.":::
+
+5. In the **Dataverse search** section, turn on **Show global search bar in all model-driven apps and turn on search indexing to support search-only experiences**.
+
+    :::image type="content" source="media/quickstart/support-search-only-experiences.png" alt-text="Screenshot of Power Platform admin center Features page with Dataverse search option checked to show global search bar and support search-only experiences.":::
+    
+6. Select **Save** if you made changes.
+
+## Turn on Microsoft 365 Copilot for your model-driven app
+
+After you enable Work IQ in the environment, confirm that Microsoft Copilot is also on for the model-driven app used in your pilot. This app-level setting makes the app's tables, forms, and views available to Microsoft 365 Copilot. Enabling Work IQ in the environment alone doesn't replace this app-level configuration.
+
+1. Sign in to [Power Apps](https://make.powerapps.com/).
+2. Select **Apps**.
+3. Find your model-driven app, and then select the **Pencil Edit icon**.
+4. On the command bar, select **Settings** for the app.
+5. Select **Features**.
+6. Set **Enable Microsoft 365 Copilot in model-driven apps** to **On**.
+7. Select **Save** and publish the app for the changes to take effect.
+
+    :::image type="content" source="media/quickstart/enable-model-driven-apps.png" alt-text="Screenshot of Power Apps Settings Features tab showing the Enable M365 Copilot in model-driven apps dropdown set to On.":::
+
+For more information, see [Enable Microsoft Copilot in a single model-driven app](/power-apps/maker/model-driven-apps/add-microsoft-365-copilot#enable-microsoft-copilot-in-a-single-model-driven-app).
 
 ## Try the experience and enrich your business context
 
