@@ -174,7 +174,7 @@ Before you begin, ensure you have:
 - Access to create a Power Automate cloud flow and the connections required for your chosen destinations. 
 
 > [!NOTE]
-> Predefined alert rules can't be opted into the **When an alert fires** trigger.
+> Predefined alert rules and alerts configured with a 1-hour data review period can't be opted into the **When an alert fires** trigger at this time. 
 
 ### Step 1: Configure the custom alert rule
 
@@ -182,6 +182,7 @@ Before you begin, ensure you have:
 1. Go to **Monitor** > **Alerts**.
 1. Create a custom alert rule. Follow the steps to [create an alert on an environment](#create-an-alert-on-an-environment) or [create an alert on a resource](#create-an-alert-on-a-resource), as appropriate.
 1. Select the **Product**, **Product type**, and **Scope**, including the environment or resource to monitor. Configure the metric, operator, threshold, and severity. For the example, select the canvas app's app open success rate, set **Operator** to **Is Under**, enter **95** for the threshold, and set **Severity** to **High**.
+2. Select **24 hours** under **Data review period**
 1. In the **Notification type** dropdown, select one of these options:
 
    - **Connector**: Opts the alert rule into connector notifications. The **When an alert fires** trigger listens to the rule and starts the flow when the alert fires.
