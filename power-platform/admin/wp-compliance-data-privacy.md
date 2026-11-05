@@ -4,7 +4,7 @@ description: Compliance and data privacy
 author: paulliew
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 05/28/2026
+ms.date: 11/04/2026
 ms.subservice: admin
 ms.author: paulliew
 ms.reviewer: ellenwehrle
@@ -14,13 +14,13 @@ ms.custom: sfi-image-nochange
 ---
 # Compliance and data privacy
 
-Microsoft is committed to the highest levels of trust, transparency, standards conformance, and regulatory compliance. Microsoft’s broad suite of cloud products and services is built from the ground up to address the most rigorous security and privacy demands of customers.
+Microsoft is committed to the highest levels of trust, transparency, standards conformance, and regulatory compliance. Microsoft's broad suite of cloud products and services is built from the ground up to address the most rigorous security and privacy demands of customers.
 
-To help your organization comply with national, regional, and industry-specific requirements governing the collection and use of individuals’ data, Microsoft provides the most comprehensive set of compliance offerings, including certifications and attestations, of any cloud service provider. Microsoft also provides tools for administrators to support your organization’s efforts. In this part of the document, you learn about the resources available to help you determine and achieve your own organization requirements.
+To help your organization comply with national, regional, and industry-specific requirements governing the collection and use of individuals' data, Microsoft provides the most comprehensive set of compliance offerings, including certifications and attestations, of any cloud service provider. Microsoft also provides tools for administrators to support your organization's efforts. In this part of the document, you learn about the resources available to help you determine and achieve your own organization requirements.
 
 ## Trust Center
 
-The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is a centralized resource for obtaining information on Microsoft’s portfolio of products. This includes information on security, privacy, compliance, and transparency. While this content may contain some subset of this information for Power Apps, it's important to always refer to the Microsoft Trust Center for the most up-to-date authoritative information.
+The [Microsoft Trust Center](https://www.microsoft.com/trustcenter) is a centralized resource for obtaining information on Microsoft's portfolio of products. This resource includes information on security, privacy, compliance, and transparency. While this content might contain some subset of this information for Power Apps, always refer to the Microsoft Trust Center for the most up-to-date authoritative information.
 
 For quick reference, you can find the Trust Center information for the Microsoft Power Platform here: https://www.microsoft.com/trust-center/product-overview. This information includes details on Power Apps, Microsoft Power Automate, and Power BI.
 
@@ -80,10 +80,10 @@ In the compliance center Audit Log Search, administrators can search and view Po
 
 Audit data is retained for 90 days. You can export the data as CDSV, which you can move into Excel or Power BI for further analysis. For a complete walkthrough of using the audit information, see [Power Automate](https://flow.microsoft.com/blog/security-and-compliance-center/).
 
-## Dataverse data in Microsoft 365 Copilot
+## Business Applications data in Work IQ available to Copilot
 
 Allowing Microsoft 365 Copilot and Microsoft 365 Copilot Chat to get Power Apps, Dynamics 365, and other business data improves the quality of Copilot responses by using live data from Dataverse.
 
-Dataverse integration in Microsoft 365 Copilot sends only minimal, derived search queries to Dataverse with all user and tenant identifiers removed. Enterprise data (documents, prompts, responses) remains within the Microsoft 365 boundary and is covered by the [Data Processing Addendum](https://www.microsoft.com/licensing/docs/documents/download/MicrosoftOnlineServicesDPA(WW)(English)(Dec9,2020)(CR).docx) and [Product Terms](https://www.microsoft.com/licensing/terms/en-US/productoffering/MicrosoftPowerPlatform/OL). Customers retain full admin control to disable Dataverse search by using the [Enable Microsoft 365 admin center Copilot Dataverse settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings).
+Business Applications data in Work IQ available to Copilot sends only minimal, derived search queries to Dataverse with all user and tenant identifiers removed. Enterprise data (documents, prompts, responses) remains within the Microsoft 365 boundary and is covered by the [Data Processing Addendum](https://www.microsoft.com/licensing/docs/documents/download/MicrosoftOnlineServicesDPA(WW)(English)(Dec9,2020)(CR).docx) and [Product Terms](https://www.microsoft.com/licensing/terms/en-US/productoffering/MicrosoftPowerPlatform/OL). Customers retain full admin control to disable Dataverse search by using the [Enable Microsoft 365 admin center Copilot Dataverse settings](/power-apps/maker/data-platform/data-platform-intelligence#enable-microsoft-365-admin-center-copilot-dataverse-settings).
 
 For more information, see [Data, Privacy, and Security for Microsoft 365 Copilot](/microsoft-365/copilot/microsoft-365-copilot-privacy).
