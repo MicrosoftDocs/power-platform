@@ -4,7 +4,7 @@ description: Learn more about the metrics and recommendations for Power Automate
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 03/20/2026
+ms.date: 11/05/2026
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -38,13 +38,8 @@ Power Automate operational health metrics and recommendations are available in t
 | Flows| Run count| Count of flow runs. | Generally available |
 | Flows| Duration| Average (in seconds) total execution time of flow run. | Generally available |
 | Desktop flows| Time in queue| The minimum time (in seconds) that the slowest 10% of desktop flows have to wait before a machine is assigned to run them. | Generally available |
-| Work queues| Queued | Daily aggregation of every instance an item enters the **Queued** state, regardless of whether the same item transitions multiple times. | Public preview|
-| Work queues| Processed | Daily aggregation of every instance an item enters the **Processed** state, regardless of whether the same item transitions multiple times. | Public preview|
-| Work queues| Service Level Agreement (SLA) violation | Daily aggregation of every instance that an item expired because their SLA was breached. | Public preview|
-| Work queues| SLA at risk |Daily aggregation of occurrences where items are identified as having their SLA at risk, according to the defined SLA strategy.| Public preview|
-| Work queues| Business exceptions | Daily aggregation of every instance an item enters the **Business exception** state, regardless of whether the same item transitions multiple times. | Public preview|
-| Work queues| IT exceptions | Daily aggregation of every instance an item enters the **IT exception** state, regardless of whether the same item transitions multiple times. | Public preview|
-| Work queues| Generic exceptions | Daily aggregation of every instance an item enters the **Generic exception** state, regardless of whether the same item transitions multiple times | Public preview|
+| Desktop flows| Run queue errors count| The total number of errors encountered while desktop flow runs queue, before execution starts, during the selected time period. | Generally available |
+
 
 ### Metric and recommendation pairings
 
