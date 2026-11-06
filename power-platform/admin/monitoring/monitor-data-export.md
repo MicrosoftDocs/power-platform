@@ -4,7 +4,7 @@ description: Learn how to export daily Power Platform Monitor metric aggregates 
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/03/2026
+ms.date: 11/05/2026
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: ellenwehrle
@@ -16,7 +16,7 @@ search.audienceType:
 
 Use the Monitor metrics export REST API to retrieve daily metric aggregates for Power Platform resources in OpenTelemetry Protocol JSON (OTLP JSON) format. Store the exported data in a destination that you manage, then use it for historical reports, shared operational insights, or analysis alongside your other data.
 
-The API supports all existing products in Monitor. Any script or client that can make authenticated REST requests can retrieve the data. You don't need a specific command-line interface (CLI) or connector.
+The API supports all existing products in Monitor. Any script or client that can make authenticated REST requests can retrieve the data. You don't need a specific command-line interface (CLI) or connector. However, a PAC CLI command is also available to use. 
 
 > [!IMPORTANT]
 > **Draft — API contract validation required.** This article describes the current export requirements. The endpoint, authentication details, product identifiers, date-boundary semantics, and response examples still require final release validation. The examples are implementation drafts, not a live-tested customer integration. This article doesn't announce a release date or general availability.
@@ -30,14 +30,14 @@ Use exported aggregates to:
 - Combine Monitor metrics with deployment history, service inventory, or other operational data to build custom views.
 - Use OpenTelemetry-compatible pipelines with tools such as Datadog or Splunk, subject to the destination's configuration and historical-data support.
 
-This is a historical pull workflow: **retrieve all pages, store them, validate and ingest them, then query your own store**. It isn't a real-time feed or a replacement for a live telemetry service. Build dashboards against your stored data, not continuous queries to the export API.
+This is a historical pull workflow; it isn't a real-time feed or a replacement for a live telemetry service. Build dashboards against your stored data, not continuous queries to the export API.
 
 ## Prerequisites
 
 Before you start, ensure you have the following:
 
 - A tenant administrator account authorized to use the export API. Export is currently available to tenant admins only. Environment administrator support is planned but isn't currently available.
-- The environment ID, the product and product type, and an explicit list of 1–10 resource IDs for that environment and type.
+- The environment ID, the product and sub-product type (for example, *Power Apps* and *canvas app*), and an explicit list of 1–10 resource IDs for that environment and type.
 - A historical start date and end date within the last 30 days of the export date. Only daily aggregates that are at least one day old are eligible; current-day data isn't available.
 - An authenticated REST client and a bearer access token obtained through a supported authentication flow. The PowerShell example requires PowerShell 7.
 - A protected storage location and a plan for scheduling, retrying, ingesting, retaining, and controlling access to the exports.
@@ -53,8 +53,6 @@ The route supports all existing products in Monitor. The following list shows pr
 | Power Apps | Canvas apps, model-driven apps, and code apps |
 | Power Automate | Cloud flows and desktop flows |
 | Microsoft Copilot Studio | Agents |
-| Power Pages | Sites |
-| Copilot Managed Runtime | Apps (managed apps) |
 
 The route uses `resourceType` and `resourceSubType` to identify the selected product and type. Don't derive these values from the display labels. The canvas example uses `PowerApp` and `CanvasApp`, which you see in a demo request; the complete identifier matrix still needs publication validation.
 
@@ -68,7 +66,7 @@ The route uses `resourceType` and `resourceSubType` to identify the selected pro
 | End date | `timeRange.endDate` in the JSON body | Use `YYYY-MM-DD`, later than the start date. Exclude current-day data. |
 | Access token | `Authorization: Bearer` request header | Use a token for the supported export authentication flow. Keep it secret. |
 
-For more than 10 resources, divide the explicit resource list into batches of at most 10. Use separate requests for different environments or product/type pairs, and retrieve every page for each batch. An omitted or empty list doesn't mean all resources in an environment. Don't use a wildcard.
+For more than 10 resources, divide the explicit resource list into batches of at most 10. Use separate requests for different environments or product/type pairs, and retrieve every page for each batch. An omitted or empty list doesn't mean all resources in an environment.
 
 ## Export the metrics
 
@@ -76,7 +74,7 @@ For more than 10 resources, divide the explicit resource list into batches of at
 
 Choose the daily aggregates you need, considering their minimum age and processing time. The examples use UTC dates with an inclusive start and an exclusive end: `2026-10-20` through `2026-10-27` selects October 20–26, seven daily intervals.
 
-This worked example assumes an export on **November 3, 2026**. Its selected days are within the preceding 30 days and are more than one day old. Replace the dates when you run an export; these fixed dates aren't a rolling lookback.
+This example assumes an export on **November 3, 2026**. Its selected days are within the preceding 30 days and are more than one day old. Replace the dates when you run an export; these fixed dates aren't a rolling lookback.
 
 > [!NOTE]
 > UTC inclusive-start/exclusive-end boundaries are the draft contract used in this article and require final confirmation. At least one day old doesn't mean that a day's aggregates are guaranteed to be complete at midnight or exactly 24 hours later. Allow for processing time and verify the latest complete interval before scheduling production exports.

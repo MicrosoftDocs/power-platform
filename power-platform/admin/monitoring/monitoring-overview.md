@@ -4,7 +4,7 @@ description: Learn how to use the Monitor > Overview page to monitor and improve
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 11/20/2025
+ms.date: 11/05/2026
 ms.custom: NewPPAC
 author: alaug
 ms.author: alaug
@@ -73,11 +73,12 @@ For resources that are available in the Monitor experience, you can learn more a
 |---|---|---|---|
 | Power Apps | Canvas app | Generally available | Generally available |
 | Power Apps | Model-driven apps | Generally available | Generally available |
+| Power Apps | Code apps | Generally available | Generally available |
 | Power Automate | Cloud flows | Generally available | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Power Automate | Desktop flows | Generally available | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
-| Power Automate | Work queue | Public preview | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
+| Power Automate | Work queue | Not yet available | Not available. Use the [Automation center](/power-automate/automation-center-overview) for a similar experience. |
 | Dataverse | Dataverse | Not yet available | Not yet available |
-| Copilot Studio | Copilot Studio agents | Public preview | Use the [Analytics tab](/microsoft-copilot-studio/analytics-overview) for a similar experience. |
+| Copilot Studio | Copilot Studio agents | Generally available | Use the [Analytics tab](/microsoft-copilot-studio/analytics-overview) for a similar experience. |
 | Dynamics 365 | Apps | Not yet available | Not yet available |
 
 ## Frequently asked questions
