@@ -1,9 +1,10 @@
 ---
 title: View and manage on-premises data gateways 
-description: View and manage on-premises gateways. 
+description: Learn how to view and manage on-premises gateways.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/29/2026
+ms.date: 11/06/2026
+ai-usage: ai-assisted
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
@@ -15,6 +16,7 @@ ms.contributors:
 contributors:
   - charls-msft
   - lavanyapg
+  - rasivakumar-microsoft
 search.audienceType: 
   - admin
 ms.custom:
@@ -106,6 +108,14 @@ For on-premises data gateways in standard mode, you can add users in any of the 
 > - While sharing gateways for **Can use** and **Can use + share** permission levels, you can restrict the data source type that the user can connect over the gateway. You must select at least one data source type for the user to be successfully added.
 > - **Can Use** and **Can use + share** don't apply to custom connectors in Power Apps and Power Automate.
 > - You must share the gateway with the **Admin** permission level to be used by custom connectors.
+
+### Share access with security groups
+
+For on-premises data gateways in standard mode, the default maximum is **100 principal assignments per gateway** and, separately, **100 principal assignments per connection (data source)**. If more than 100 users need access, use Microsoft Entra security groups in the same tenant instead of adding each user individually. Assign each group the least-privileged role that its members need. A group counts as one principal assignment in each access list where it's added, regardless of its membership.
+
+Gateway permissions and connection (data source) permissions are separate. If users only need to use an existing Power BI connection, grant access to that connection instead of making them gateway admins. For principal limits and steps to replace individual assignments safely, see [Manage access with security groups](/data-integration/gateway/manage-security-roles#manage-access-with-security-groups).
+
+Security group support for gateway access doesn't apply to [Manage gateway installers](#manage-gateway-installers), which supports individual users only.
 
 ## Remove a gateway cluster
 
