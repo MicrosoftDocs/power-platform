@@ -4,7 +4,7 @@ description: Learn about the resource types and fields available in Power Platfo
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 11/02/2026
+ms.date: 11/06/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -29,6 +29,7 @@ Every record in the `PowerPlatformResources` table has a **type** field that ide
 | Agent flows | `microsoft.powerautomate/agentflows` |
 | Workflow agent flows | `microsoft.powerautomate/m365agentflows` |
 | Copilot Studio agents | `microsoft.copilotstudio/agents` |
+| Power Pages sites (preview) | `microsoft.powerpages/sites ` |
 | Connectors | `microsoft.powerplatformconnector/connectors` |
 | Environments | `microsoft.powerplatform/environments` |
 | Environment groups | `microsoft.powerplatform/environmentgroups` |
@@ -240,6 +241,27 @@ App Builder apps use the `appBuilderApp` subtype and don't add subtype-specific 
 ## Copilot Studio agents
 
 Copilot Studio agents have a rich set of properties beyond the shared fields. For the full schema, see [Microsoft Copilot Studio Agent inventory schema](/microsoft-copilot-studio/admin-agent-inventory).
+
+## Power Pages sites (preview)
+
+Power Pages sites use the `microsoft.powerpages/sites` resource type. 
+In addition to the [shared resource fields](/power-platform/admin/inventory-schema#shared-resource-fields), Power Pages sites include the following fields. 
+
+| API field path | Data type | Description | Example | Status |
+|---|---|---|---|---|
+| `properties.environmentId` | string | The identifier of the environment that contains the site. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Preview |
+| `properties.lastModifiedAt` | datetime | The date and time the flow was last modified, in UTC. | `2026-09-21T10:08:21.6034821Z` | Preview  |
+| `properties.ownerId` | string | The object ID of the resource owner. | `aaaa0000-bb11-2222-33cc-444444dddddd` | Preview |
+| `properties.status` | string |The current operational status of the site.  | `Online` | Preview |
+| `properties.anonymousAccessAllowed` | boolean | Whether anonymous access is allowed for the site. | `false` | Preview |
+| `properties.provisioningState` | string | The current provisioning state of the inventory resource. | `Succeeded` | Preview |
+| `properties.maintenanceMode` | boolean | Whether the site is in maintenance mode. | `false` | Preview |
+| `properties.siteVisibility` | string | The visibility configuration of the site. | `private` | Preview |
+| `properties.customSiteUrl` | string | The custom site URL, when configured. Empty when no custom URL is configured. | `https://www.contoso.com/ or Empty when no custom URL is configured` | Preview |
+| `properties.siteType`| string| The Power Pages site type. | `Production` | Preview |
+| `properties.siteUrl` | string | The default URL of the Power Pages site. | `https://site.powerappsportals.com/` | Preview |
+
+For sample queries, see [Power Pages queries (preview)](/power-platform/admin/inventory-sample-queries#power-pages-queries-preview).
 
 ## Environments
 
