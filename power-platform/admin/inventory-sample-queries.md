@@ -4,7 +4,7 @@ description: Sample Kusto Query Language (KQL) queries you can run against Power
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 11/02/2026
+ms.date: 11/06/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 ---
@@ -135,6 +135,119 @@ PowerPlatformResources
 | extend properties = parse_json(properties)
 | extend createdAt = todatetime(properties.createdAt)
 | where createdAt >= ago(24h)
+```
+
+## Power Pages queries (preview)
+
+Power Pages queries use the `microsoft.powerpages/sites` resource type. Power Pages inventory is available only to Global administrators, Power Platform administrators, and Dynamics 365 administrators.
+
+### List Power Pages sites
+
+This query returns a tenant-wide inventory of Power Pages sites with their environment, owner, and creation and modification dates.
+
+```kusto
+PowerPlatformResources
+| where type =~ "microsoft.powerpages/sites"
+| extend properties = parse_json(properties)
+| project siteName = tostring(properties.displayName),
+    siteId = name,
+    environmentId = tostring(properties.environmentId),
+    ownerId = tostring(properties.ownerId),
+    createdOn = todatetime(properties.createdAt),
+    lastModifiedOn = todatetime(properties.lastModifiedAt)
+| order by siteName asc
+```
+
+### Count Power Pages sites by environment
+
+This query shows which environments contain the most Power Pages sites.
+
+```kusto
+PowerPlatformResources
+| where type =~ "microsoft.powerpages/sites"
+| extend properties = parse_json(properties)
+| extend environmentId = tostring(properties.environmentId)
+| summarize siteCount = count() by environmentId
+| order by siteCount desc
+```
+
+### Count Power Pages sites by owner
+
+This query shows owners associated with the largest number of Power Pages sites to support ownership reviews and business continuity planning.
+
+```kusto
+PowerPlatformResources
+| where type =~ "microsoft.powerpages/sites"
+| extend properties = parse_json(properties)
+| extend ownerId = tostring(properties.ownerId)
+| summarize siteCount = count() by ownerId
+| order by siteCount desc
+```
+
+### Power Pages sites with anonymous access enabled
+
+This query finds sites whose inventory metadata indicates that anonymous access is allowed.
+
+```kusto
+PowerPlatformResources
+| where type =~ "microsoft.powerpages/sites"
+| extend properties = parse_json(properties)
+| extend anonymousAccessEnabled = tobool(properties.anonymousAccessAllowed)
+| where anonymousAccessEnabled == true
+| project siteName = tostring(properties.displayName),
+    siteId = name,
+    environmentId = tostring(properties.environmentId),
+    websiteUrl = tostring(properties.siteUrl)
+| order by siteName asc
+```
+
+### Recently created Power Pages sites
+
+This query returns sites created during the past 30 days. Adjust the interval as needed.
+
+```kusto
+PowerPlatformResources
+| where type =~ "microsoft.powerpages/sites"
+| extend properties = parse_json(properties)
+| extend createdOn = todatetime(properties.createdAt)
+| where createdOn >= ago(30d)
+| project siteName = tostring(properties.displayName),
+    siteId = name,
+    environmentId = tostring(properties.environmentId),
+    ownerId = tostring(properties.ownerId),
+    createdOn
+| order by createdOn desc
+```
+
+### Power Pages sites using custom domains
+
+This query returns sites whose inventory metadata includes a custom site URL.
+
+```kusto
+PowerPlatformResources
+| where type =~ "microsoft.powerpages/sites"
+| extend properties = parse_json(properties)
+| extend customDomain = tostring(properties.customSiteUrl)
+| where isnotempty(customDomain)
+| project siteName = tostring(properties.displayName),
+    siteId = name,
+    environmentId = tostring(properties.environmentId),
+    websiteUrl = tostring(properties.siteUrl),
+    customDomain
+| order by siteName asc
+```
+
+### Power Pages with other Power Platform resources
+
+This query summarizes resource counts by type and environment across Power Platform, including Power Pages sites. Records without an environment ID are excluded.
+
+```kusto
+PowerPlatformResources
+| extend properties = parse_json(properties)
+| extend environmentId = tostring(properties.environmentId)
+| where isnotempty(environmentId)
+| summarize resourceCount = count() by environmentId, type
+| order by environmentId asc, resourceCount desc
 ```
 
 ## Connector queries

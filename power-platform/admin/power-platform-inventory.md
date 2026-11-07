@@ -4,7 +4,7 @@ description: Learn how to get a comprehensive, unified view of all agents, apps,
 author: mikferland-msft
 ms.author: miferlan
 ms.reviewer: ellenwehrle
-ms.date: 11/02/2026
+ms.date: 11/06/2026
 ms.topic: concept-article
 contributors:
     - Grayson-Bishop
@@ -13,7 +13,7 @@ ai-usage: ai-assisted
 
 # Power Platform inventory
 
-Power Platform inventory gives tenant administrators a unified view of all agents, apps, and flows built on Power Platform across their organization. Administrators can discover, search, filter, and sort these resources to streamline common administrative tasks.
+Power Platform inventory gives tenant administrators a unified view of all agents, apps, flows, and sites built on Power Platform across their organization. Administrators can discover, search, filter, and sort these resources to streamline common administrative tasks.
 
 By using Power Platform inventory, you can easily complete the following tasks:
 
@@ -25,7 +25,7 @@ By using Power Platform inventory, you can easily complete the following tasks:
 
 - **Focus your governance**: Rank environments by resource count to focus security, governance, and compliance efforts where they matter most.
 
-- **Prevent orphaned agents**: Proactively find resources owned by departing users to allow seamless ownership transfers and ensure business continuity.
+- **Prevent orphaned resources**: Proactively find resources owned by departing users to allow seamless ownership transfers and ensure business continuity.
 
 - **Accelerate support**: Instantly pinpoint that _needle in a haystack_ resource referenced in a support ticket to dramatically improve response times.
 
@@ -38,6 +38,8 @@ The Power Platform inventory includes the following resource types:
 - **Apps**: All canvas, model-driven, code, and vibe apps, all [apps built in Copilot managed runtime](inventory-schema.md#managed-apps), and all apps you create in Microsoft 365 Copilot's App Builder agent.
 
 - **Flows**: All agent flows you create in Copilot Studio, all cloud flows you create in Power Automate, and all workflows you create in Microsoft 365 Copilot's Workflows agent.
+
+- **Power Pages sites (preview)**: Power Pages websites across your tenant. 
 
 - **Connectors**: All connectors available in your tenant, including the operations each connector exposes and its publisher and tier.
 
@@ -83,7 +85,7 @@ The AI administrator and AI reader roles are scoped to AI-related resources only
 - **Agent flows** from Copilot Studio and workflow agent flows from Microsoft 365 Copilot
 - **Environments** and **environment groups**
 
-Canvas apps, model-driven apps, and cloud flows are out of scope for the AI administrator and AI reader roles.
+Canvas apps, model-driven apps, cloud flows, and Power Pages sites are out of scope for the AI administrator and AI reader roles.
 
 > [!NOTE]
 > These roles are Microsoft Entra roles, which are different from [built-in Power Platform roles](security/role-based-access-control.md#built-in-power-platform-roles). The built-in Power Platform roles for role-based access control (RBAC) aren't supported for Power Platform inventory access.
@@ -177,6 +179,8 @@ Beyond viewing inventory data, you can act on individual resources directly from
 > [!NOTE]
 > Blocking prevents the resource from being used while you investigate or remediate a security or compliance issue. For a blocked agent, makers can still see and test it in Copilot Studio, but it can't be used in any other channel. Blocking applies only to **published** agents and canvas apps. You can block and unblock resources from the main **Inventory** page, or from **Manage** > **Copilot Studio** (agents) or **Manage** > **Power Apps** (canvas apps). For more information, see [Quarantine agents](/microsoft-copilot-studio/admin-api-quarantine).
 
+For Power Pages site administration, see [Use the admin center](/power-pages/admin/new-admin-overview).
+
 ## Export your inventory
 
 Export your inventory data for reporting, analysis, or integration with other tools.
@@ -223,6 +227,7 @@ The following table shows which resource types are included in the Power Platfor
 | Workflows created in Microsoft 365 Copilot's Workflows agent | No | No | No |
 | Vibe apps | No | No | No |
 | Connectors | No | No | No |
+| Power Pages | No | No | No |
 
 Except for connectors, every **No** in this table means that resource type isn't available in that cloud today.
 
