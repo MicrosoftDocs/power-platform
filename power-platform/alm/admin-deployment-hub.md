@@ -7,7 +7,7 @@ ms.author: caburk
 ms.custom: NewPPAC
 ms.reviewer: matp
 ms.topic: overview
-ms.date: 9/29/2026
+ms.date: 11/06/2026
 ---
 # Admin deployment page
 
@@ -54,16 +54,21 @@ The **Run history** view shows all deployment activity managed by the selected p
 
   :::image type="content" source="media/admin-deployment-hub/admin-deploy-hub-run-history.png" alt-text="Run history page in deployment hub" lightbox="media/admin-deployment-hub/admin-deploy-hub-run-history.png":::
 
-> [!IMPORTANT]
->
-> - All target environments used in a pipeline must be enabled as [managed environments](../admin/managed-environment-overview.md).
-> - Tenant admins can enable automatic conversion of pipelines environments to [managed environments](../admin/managed-environment-overview.md).
+## Review and approve deployment requests
 
-### Manage deployment settings
+On the deployment page, admins approve or reject deployment requests assigned to them. You’ll first need to [setup delegated deployments](delegated-deployments-setup.md) with service principals, which is recommended as the secure way to securely deploy to production environments.
+
+It’s important admins review changes in the solution and the sharing request. Once approved, the solution is deployed, and solution objects and security roles are shared automatically. Notice other types of approvals within the pipelines host environment can also be managed.
+
+## Retry failed deployments
+
+A dedicated **Failed deployments** view helps admins quickly identify and troubleshoot failures. Deployments shown as **Failed** in the run history view can be retried by selecting **Retry** in the details panel if the operation was **Deploy**. A confirmation message appears when you confirm the retry.
+
+## Manage deployment settings
 
 Admins can manage these **Settings** within the selected pipelines host (settings are managed separately for each host):
 
-- **Enable automatic conversion of pipelines environments to [managed environments](../admin/managed-environment-overview.md)**. This ensures pipelines environments meet Microsoft compliance standards automatically. When makers deploy to this environment, it gets automatically converted to a managed environment.
+- **Enable automatic conversion of pipelines environments to [managed environments](../admin/managed-environment-overview.md)**. An unmanaged target becomes managed on its next deployment, so the grace period doesn't apply. Review your license coverage before turning this setting on. Turning it off doesn't remove the managed environment requirement. Configure it separately for each pipelines host.
 - **[Solution deployments across regions](enable-cross-geo-solution-deployments.md)**: Admins can opt in to allow deployments between environments in different geographic locations. For example, when the host and production environments are in North America but the development environment is in India.
 
    > [!IMPORTANT]
@@ -74,43 +79,90 @@ Admins can manage these **Settings** within the selected pipelines host (setting
 
 :::image type="content" source="media/admin-deployment-hub/admin-deploy-hub-default-host.png" alt-text="Use a custom pipelines host option" lightbox="media/admin-deployment-hub/admin-deploy-hub-default-host.png":::
 
-### Review and approve deployment requests
+> [!IMPORTANT]
+> You must use [managed environments](../admin/managed-environment-overview.md) for all target environments in a pipeline. Starting in October 2026, deployments to an unmanaged target are blocked after a grace period. For details, see [Managed environments enforcement for pipelines](#managed-environments-enforcement-for-pipelines).
 
-On the deployment page, admins approve or reject deployment requests assigned to them. You’ll first need to [setup delegated deployments](delegated-deployments-setup.md) with service principals, which is recommended as the secure way to securely deploy to production environments.
+## Managed environments enforcement for pipelines
 
-It’s important admins review changes in the solution and the sharing request. Once approved, the solution is deployed, and solution objects and security roles are shared automatically. Notice other types of approvals within the pipelines host environment can also be managed.
+Pipeline target environments must be managed environments. Enforcement began rolling out in October 2026. Targets that are already managed aren't affected.
 
-### Retry failed deployments
+Enforcement applies to each target environment separately. Select each pipelines host to view any impacted target environments.
 
-A dedicated **Failed deployments** view helps admins quickly identify and troubleshoot failures. Deployments shown as **Failed** in the run history view can be retried by selecting **Retry** in the details panel if the operation was **Deploy**. A confirmation message appears when you confirm the retry.
+### Grace period and extension
+
+| Stage | When it applies | What happens |
+|---|---|---|
+| Initial grace period | 30 days from the first deployment to an unmanaged target after enforcement is enabled. | Deployments continue. Admins are notified and makers see a warning. No action is required to start this period. |
+| Acknowledgement required | The initial period has ended. | Deployments pause until a maker or tenant administrator acknowledges the prompt. |
+| Extension | One time, for 30 days from acknowledgement. | Deployments continue for that target. |
+| Blocked | The extension has ended. | Deployments stop until a tenant administrator enables managed environments on the target. |
+
+Waiting to acknowledge doesn't shorten the extension. For example, acknowledging on day 30 blocks deployments after day 60; acknowledging on day 45 blocks them after day 75.
+
+> [!NOTE]
+>
+> - Previewing or validating a deployment doesn't start the grace period.
+> - Enforcement blocks new deployments only. Deployed apps and solutions continue to run.
+> - Enabling managed environments on the target removes the block immediately.
+
+### Acknowledge the extension
+
+1. On the solution's **Pipelines** page, select **Deploy here**, and then select **Next**.
+1. In the **Keep deployments running smoothly** dialog, select the acknowledgement checkbox.
+1. Select **Use extension**, and then complete the deployment.
+
+The prompt appears only after the initial grace period ends.
+
+### Manage affected targets
+
+| Action | Maker | Power Platform or Dynamics 365 administrator |
+|---|---|---|
+| View affected targets and deploy during the allowed period | Yes | Yes |
+| Acknowledge the extension | Yes | Yes |
+| Enable managed environments or automatic conversion | No | Yes |
+
+To enable managed environments:
+
+1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com).
+1. Select **Deployment**, and then select a pipelines host.
+1. In **Environments to convert**, select one or more environments.
+1. Review the licensing and billing requirements, and then enable managed environments.
+
+The table lists pipeline targets that need conversion, not every unmanaged environment. Review each pipelines host separately.
 
 ## FAQ
 
 ### Are managed environments required for deployment pipelines, and what does this mean for my organization?
 
-Yes. All target environments used in Power Platform deployment pipelines have always been required to be managed environments for compliant usage. This requirement helps your organization benefit from enhanced governance, improved security, and streamlined license management.
+Yes. Pipeline targets have always been required to be managed environments. Enforcement of this requirement began rolling out in October 2026.
 
 ### What happens when pipelines deploy to unmanaged target environments starting in October 2026?
 
-Starting in October 2026, the admin deployment page notifies admins when pipelines deploy to an unmanaged target environment. Admins must approve enabling managed environments for the target within 30 days of the notification to prevent future pipelines deployments from being blocked.
+The first deployment starts a 30-day grace period for that target. After it ends, a maker or tenant administrator can acknowledge a one-time 30-day extension. When the extension ends, deployments are blocked until a tenant administrator enables managed environments. See [Managed environments enforcement for pipelines](#managed-environments-enforcement-for-pipelines).
 
-Admins can enable managed environments for deployment targets individually or turn on [automatic enablement](#manage-deployment-settings). If more time is needed, admins can request one additional 30-day extension for each environment. After the grace period or extension expires, the system blocks pipelines deployments to the unmanaged target environment.
+### Does acknowledging the extension enable managed environments?
 
-### What can makers without tenant-administrator permissions do?
+No. It only starts the one-time extension. A tenant administrator must enable managed environments to remove the requirement.
 
-Makers can view affected targets, continue deploying during the allowed period, and acknowledge the one-time extension, but they can't enable managed environments. Ask your tenant administrator to enable managed environments before the countdown expires; enabling it removes the deployment block.
+### When does the extension start?
 
-### Can automatic enablement prevent this deployment block?
+The extension lasts 30 days from acknowledgement. It doesn't restart if another maker deploys or acknowledges again.
 
-Yes. Power Platform or Dynamics 365 administrators can enable [automatic conversion](#manage-deployment-settings) under **Deployment** > **Settings** for each pipelines host, so unmanaged targets become managed on their next deployment. Turning automatic conversion off doesn't remove the requirement for pipeline targets to be managed environments.
+### How do I request a longer extension?
 
-### Where can administrators find and enable managed environments for affected targets?
+Customers with a Microsoft Enterprise Agreement (EA) might be eligible in certain circumstances, but approval isn't guaranteed. Microsoft Support can't approve extension requests. Contact your Microsoft account team instead.
 
-In the Power Platform admin center, open **Deployment**, select a pipelines host, and review **Environments to convert**. Power Platform and Dynamics 365 administrators can select one or more environments and enable managed environments. Review each pipelines host separately.
+### Do I need to acknowledge to start the initial grace period?
 
-### Will managed environments checks affect solutions that are already deployed?
+No. It starts automatically with the first deployment to an unmanaged target after enforcement is enabled.
 
-These pipeline checks block new deployments; they don't disable anything already deployed. Separate licensing requirements still apply - review your license coverage, capacity, and auto-claim policy.
+### Does enabling managed environments change my licensing?
+
+Enforcement isn't a new licensing requirement, but managed environments have licensing and billing requirements. Review [managed environment licensing](../admin/managed-environment-licensing.md) and the [auto-claim policy](../admin/auto-claim-licensing.md).
+
+### Where can administrators enable managed environments for affected targets?
+
+In the Power Platform admin center, open **Deployment**, select a pipelines host, and review **Environments to convert**. Review each host separately. Makers can't enable managed environments; if you're blocked, ask your tenant administrator.
 
 ### Can I restrict access to personal pipelines?
 

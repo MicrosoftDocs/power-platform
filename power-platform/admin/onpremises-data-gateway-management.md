@@ -1,9 +1,9 @@
 ---
 title: View and manage on-premises data gateways 
-description: View and manage on-premises gateways. 
+description: Learn how to view and manage on-premises gateways.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/29/2026
+ms.date: 11/06/2026
 author: arthiriyer
 ms.subservice: admin
 ms.author: arthii
@@ -15,6 +15,7 @@ ms.contributors:
 contributors:
   - charls-msft
   - lavanyapg
+  - rasivakumar-microsoft
 search.audienceType: 
   - admin
 ms.custom:
@@ -24,7 +25,7 @@ ms.custom:
 
 # On-premises data gateway management
 
-The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that isn't in the cloud) and the Power BI, Power Automate, Logic Apps, and Power Apps services. For more information, see [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem).
+The on-premises data gateway acts as a bridge, providing quick and secure data transfer between on-premises data (data that isn't in the cloud) and the Microsoft Fabric and Microsoft Power Platform services. For more information, see [What is an on-premises data gateway?](/data-integration/gateway/service-gateway-onprem).
 
 > [!NOTE]
 > The gateway management feature in the Power Platform admin center isn't supported on mobile or smaller screens with a resolution lower or equal to 320 x 256. 
@@ -35,9 +36,9 @@ On the **Data** page of the [Power Platform admin center](https://admin.powerpla
 1. Select **Manage** in the navigation pane.
 1. In the **Manage** pane, under the **Data** section, select **Data (preview)**. 
 
-Users who are part of the Microsoft Entra Global administrator role (which includes Global admins), Power BI service administrators, and Gateway administrators have access to data gateway management on the Power Platform admin center. However, there might be differences in the features available and the operations performed by each of these roles.
+Users with the Microsoft Entra Global Administrator, Fabric Administrator, or Gateway Administrator role can access data gateway management on the Power Platform admin center. However, there might be differences in the features available and the operations performed by each of these roles.
 
-The Microsoft Entra Global administrator role (which includes Global admins) and Power BI service administrators can use the **Tenant administration** setting to control the list of gateways exposed. Only these admins see the **Tenant administration** toggle.
+Microsoft Entra global admins and Fabric admins can use the **Tenant administration** setting to control the list of gateways exposed. Only these admins see the **Tenant administration** toggle.
 
 - Turn on **Tenant administration** to see and manage all gateways installed in your enterprise.
 - Turn off **Tenant administration** to see and manage all gateways for which you're an administrator.
@@ -76,7 +77,7 @@ After selecting a gateway member, you can select **Remove** to remove it. This s
 
 ## Settings
 
-Select **Settings** to set on-premises data gateway settings such as the gateway cluster name, department, General settings, and Power BI settings.
+Select **Settings** to set on-premises data gateway settings such as the gateway cluster name, department, General settings, and Fabric (Power BI) settings.
 
 :::image type="content" source="media/data-gateways-settings.png" alt-text="Data gateway settings.":::
 
@@ -95,7 +96,7 @@ For personal gateways, this page shows the owner of the personal gateway and you
 For on-premises data gateways in standard mode, you can add users in any of the following three categories: 
  
 - **Admin**: 
-  - **Power BI**: Administrators have full control of the gateway, including adding other admins, creating data sources, managing data source users, and deleting the gateway. 
+  - **Fabric (Power BI)**: Administrators have full control of the gateway, including adding other admins, creating data sources, managing data source users, and deleting the gateway. 
   - **Power Apps and Power Automate**: Administrators have full control of the gateway, including adding other admins, creating connections, additionally sharing gateways in **Can use** and **Can use + share** permission levels, and deleting the gateway.
   - **Others**: Administrators have full control of the gateway, including adding other admins and deleting the gateway.
 - **Can use**: Users who can create connections on the gateway to use for apps and flows but can't share the gateway. Use this permission for users who run apps but don't share them. Applies only to Power Apps and Power Automate. 
@@ -106,6 +107,14 @@ For on-premises data gateways in standard mode, you can add users in any of the 
 > - While sharing gateways for **Can use** and **Can use + share** permission levels, you can restrict the data source type that the user can connect over the gateway. You must select at least one data source type for the user to be successfully added.
 > - **Can Use** and **Can use + share** don't apply to custom connectors in Power Apps and Power Automate.
 > - You must share the gateway with the **Admin** permission level to be used by custom connectors.
+
+### Share access with security groups
+
+For on-premises data gateways in standard mode, the default maximum is **100 principal assignments per gateway** and, separately, **100 principal assignments per connection (data source)**. If more than 100 users need access, use Microsoft Entra security groups in the same tenant instead of adding each user individually. Assign each group the least-privileged role that its members need. A group counts as one principal assignment in each access list where it's added, regardless of its membership.
+
+Gateway permissions and connection (data source) permissions are separate. If users only need to use an existing Fabric (Power BI) connection, grant access to that connection instead of making them gateway admins. For principal limits and steps to replace individual assignments safely, see [Manage access with security groups](/data-integration/gateway/manage-security-roles#manage-access-with-security-groups).
+
+Security group support for gateway access doesn't apply to [Manage gateway installers](#manage-gateway-installers), which supports individual users only.
 
 ## Remove a gateway cluster
 
@@ -144,7 +153,7 @@ Select a gateway cluster, then select **Details** > **Check status** to check th
 
 ## Manage gateway installers
 
-As either a Microsoft Entra Global administrator (which includes global admins) or a Power BI service administrator, use **Manage gateway installers** to manage who can install the on-premises data gateway or virtual network data gateway in your enterprise. Gateway admins can't perform this operation.
+If you have the Microsoft Entra Global Administrator or Fabric Administrator role, use **Manage gateway installers** to manage who can install the on-premises data gateway or virtual network data gateway in your enterprise. Gateway admins can't perform this operation.
 
 > [!NOTE]
 > This feature doesn't apply to on-premises data gateways (personal mode).
@@ -176,12 +185,12 @@ If a person who doesn't have access to install gateways tries to install one, th
 
 ## Delete gateways before tenant remap
 
-If you have on-premises data gateways in your home (default) region or target region, delete all those gateways in both regions before your [tenant remap](/power-bi/support/service-admin-region-move). Applications (Power BI, Fabric, PowerApps, Logic Apps, Power Automate) that depend on these gateways can't access their data sources after the gateways are deleted. After remap, you need to recreate and configure the gateways to restore application access. Follow these steps to delete your on-premises data gateways before your tenant remap:
+If you have gateways in your home (default) region or target region, delete all those gateways in both regions before your [tenant remap](/power-bi/support/service-admin-region-move). Applications (Power BI, Fabric, PowerApps, Logic Apps, Power Automate) that depend on these gateways can't access their data sources after the gateways are deleted. After remap, you need to recreate and configure the gateways to restore application access. Follow these steps to delete your on-premises data gateways before your tenant remap:
 
 > [!NOTE]
 > Delete all gateways in both home and target regions before performing a tenant remap, regardless of the results of the tenant remap readiness check. It is possible for the gateway readiness check in the Fabric admin portal to pass even when gateways are still present. Any gateways that remain might not function correctly after the tenant remap.
->
-> Gateways are only soft-deleted by default. You need to hard-delete gateways to unblock your tenant remap.
+> 
+> On-premises data gateways are only soft-deleted by default. You need to hard-delete them to unblock your tenant remap.
 
 1. Go to **[Power Platform admin center](https://admin.powerplatform.microsoft.com/) => Manage => Data (preview)**
 1. Toggle on **Tenant administration** (top right)
@@ -191,6 +200,7 @@ If you have on-premises data gateways in your home (default) region or target re
 1. For each active gateway, hover over the row corresponding to the gateway, then select **Delete** from the context menu. This soft deletes each gateway.
 1. All the soft-deleted gateways need to be hard-deleted. Go to **Deleted gateways (Preview)** (top right). For each gateway under **Deleted clusters**, select the trash can icon to permanently delete the gateway and all its members.
 1. Repeat steps 4 through 8 for gateways in your remap **Target region**. You don't need to delete gateways in regions other than the home and target regions.
+1. Repeat above steps for **Virtual network data gateways** and **Streaming virtual network data gateways** tabs under **Manage Gateways** (top left). Those gateways are hard-deleted by default.
 
 :::image type="content" source="media/ppac-gateways.png" alt-text="Gateways in the Power Platform Admin Center":::
 
@@ -203,3 +213,4 @@ If you have on-premises data gateways in your home (default) region or target re
 
 [On-premises data gateway](/data-integration/gateway/service-gateway-onprem)<br/>
 [Connecting to on-premises data sources with On-premises Data Gateway](/azure/analysis-services/analysis-services-gateway)<br/>
+[Microsoft Fabric documentation](/fabric/)
