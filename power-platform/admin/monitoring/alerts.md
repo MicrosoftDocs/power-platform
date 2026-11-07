@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to track and monitor the oper
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/03/2026
+ms.date: 11/06/2026
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: ellenwehrle
@@ -18,7 +18,7 @@ Tenant and environment admins in Power Platform use _alerts_ to track the operat
 
 Keep the following principles in mind:
 
--	Alerts are evaluated after new metrics are produced. Currently, all metrics are 24-hour aggregates, which means an alert rule in the **Monitor** area is evaluated every 24 hours after the newest 24-hour aggregates are produced. An alert rule does an on-demand evaluation upon its creation.
+-	Alerts are evaluated after new metrics are produced. By default, all metrics are 24-hour aggregates, which means an alert rule with a 24 hour **Data review period** in the **Monitor** area is evaluated every 24 hours after the newest 24-hour aggregates are produced. However, you can also create an alert rule with a 1 hour **Data review period**. This enables an hourly aggregation on the resource's metric the alert rule is configured with. Alert rules with a 24 hour **Data review period** do an on-demand evaluation upon their creation.
 - Alert rules are alerts that admins create to monitor their resources. You can edit, delete, and turn an alert rule on or off. You can place alert rules on an environment and a specific resource.
 - A _triggered alert_ occurs when one or more of the resources that an alert rule monitors pass specific thresholds that the admin defines when configuring the alert rule. You can select the triggered alert to learn what resources triggered the alert rule, and get recommendations for how to improve the resources if it's in a managed environment. 
 
@@ -86,7 +86,7 @@ After you create your alert, the system runs an on-demand evaluation and scans a
 
 Use low-latency alerts to evaluate supported resource metrics every hour instead of waiting for the daily evaluation. These alerts can help you detect issues sooner on mission-critical applications and other resources.
 
-For example, you can create a low-latency alert for a production canvas app to check whether its **App open success rate** falls below 95%. The rule evaluates each hour after new hourly metrics are produced and can fire when the condition is met, rather than waiting for the next daily evaluation.
+For example, you can create a low-latency alert for a production cloud flow to check whether its **Success rate** falls below 95%. The rule evaluates each hour after new hourly metrics are produced and can fire when the condition is met.
 
 ### How low-latency alerts work
 
