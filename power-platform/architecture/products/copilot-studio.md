@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 10/20/2026
+ms.date: 11/06/2026
 ---
 
 # Copilot Studio reference architectures and solution ideas
@@ -38,6 +38,7 @@ Understanding Copilot Studio design and implementation concepts and exploring so
 
 | Title | Description |
 | --- | --- |
+| [**Build a regulatory application management solution**](../reference-architectures/regulatory-application-management.md) | Streamline regulatory application submissions, assessments, approvals, and licensing across business areas with a single solution that combines applicant self-service, AI-assisted guidance, internal application management, document handling, and reporting. |
 | [**Automate procurement order acknowledgment matching with Copilot Studio and SAP**](../reference-architectures/order-acknowledgment-validation.md) | Use a multi-agent architecture to compare supplier order acknowledgments with purchase orders in SAP, automatically confirm matches, and escalate exceptions for review. |
 | [**Build a student recruitment solution with Power Platform**](../reference-architectures/student-recruitment-solution.md) | Centralize student recruitment data, automate engagement, and connect recruitment activities to enrollment outcomes. |
 | [**Extract and analyze agent conversation transcripts**](../reference-architectures/analyze-agent-conversation-transcripts.md) | Learn how to extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |

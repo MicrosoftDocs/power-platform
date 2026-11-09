@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 11/03/2026
+ms.date: 11/06/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -22,6 +22,7 @@ Get the latest info about what's new and what's changed in the Power Platform an
 
 New in [Reference architectures](reference-architectures/index.md):
 
+- [Build a regulatory application management solution](reference-architectures/regulatory-application-management.md)
 - [Enable secure multi-account access in Power Pages](reference-architectures/power-pages-multi-account-access.md)
 - [Standardize access control for Dataverse with Microsoft Entra security groups](reference-architectures/standardize-dataverse-access-control.md)
 

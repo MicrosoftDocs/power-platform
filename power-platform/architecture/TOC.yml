@@ -117,6 +117,8 @@
               href: reference-architectures/transactional-outbox-pattern.md
         - name: Build and extend apps
           items:
+            - name: Build a regulatory application management solution
+              href: reference-architectures/regulatory-application-management.md
             - name: Connect Power Apps to a data warehouse with Dataverse virtual tables
               href: reference-architectures/power-apps-virtual-tables.md
             - name: Modernize applications with React and Dataverse custom APIs

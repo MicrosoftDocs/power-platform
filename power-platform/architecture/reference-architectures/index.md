@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 11/03/2026
+ms.date: 11/06/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -62,6 +62,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 
 | Title | Description |
 | --- | --- |
+| **[Build a regulatory application management solution](regulatory-application-management.md)** | Streamline regulatory application submissions, assessments, approvals, and licensing across business areas with a single solution that combines applicant self-service, AI-assisted guidance, internal application management, document handling, and reporting. |
 | **[Connect Power Apps to a centralized data warehouse with Dataverse virtual tables](power-apps-virtual-tables.md)** | Connect Power Apps to a centralized data warehouse through Dataverse virtual tables, enabling business processes to use consolidated enterprise data alongside operational records stored in Dataverse. |
 | **[Modernize legacy applications with React web resources and Dataverse custom APIs](modernize-legacy-applications.md)** | Learn how to modernize legacy applications with Power Platform, React web resources, and Dataverse custom APIs. |
 | **[Modernize frontline applications with Power Platform](modernize-frontline-applications.md)** | Modernize frontline material requests with an offline-capable canvas app, automated approvals, centralized data in Dataverse, and SAP integration. |
