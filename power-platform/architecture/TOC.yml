@@ -77,6 +77,8 @@
               href: reference-architectures/order-acknowledgment-validation.md
             - name: ​Automate vendor invoicing with Power Automate and AI Builder
               href: reference-architectures/vendor-invoice-integration.md
+            - name: Build a multilingual IT self-service agent with Copilot Studio
+              href: reference-architectures/multilingual-it-self-service-agent.md
             - name: Extract and analyze agent conversation transcripts
               href: reference-architectures/analyze-agent-conversation-transcripts.md
             - name: Migrate legacy meetings to Microsoft Teams with a conversational agent
