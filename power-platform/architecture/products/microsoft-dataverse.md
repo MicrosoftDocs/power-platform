@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 11/03/2026
+ms.date: 11/06/2026
 ---
 
 # Microsoft Dataverse reference architectures and solution ideas
@@ -37,6 +37,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 | Title | Description |
 | --- | --- |
 | [**Enable secure multi-account access in Power Pages**](../reference-architectures/power-pages-multi-account-access.md) | Let external users switch between authorized accounts in Power Pages while maintaining account isolation and role-based access control. |
+| [**Build a regulatory application management solution**](../reference-architectures/regulatory-application-management.md) | Streamline regulatory application submissions, assessments, approvals, and licensing across business areas with a single solution that combines applicant self-service, AI-assisted guidance, internal application management, document handling, and reporting. |
 | [**Automate procurement order acknowledgment matching with Copilot Studio and SAP**](../reference-architectures/order-acknowledgment-validation.md) | Use a multi-agent architecture to compare supplier order acknowledgments with purchase orders in SAP, automatically confirm matches, and escalate exceptions for review. |
 | [**Build a student recruitment solution with Power Platform**](../reference-architectures/student-recruitment-solution.md) | Centralize student recruitment data, automate engagement, and connect recruitment activities to enrollment outcomes. |
 | [**Perform predictive data analysis using Dataverse, Fabric, and Azure AI services**](../reference-architectures/ai-predictive-data-analysis.md) | Learn best practices for data ingestion, model training, and visualization that help you build robust predictive models and gain actionable insights. |

@@ -7,6 +7,7 @@ ms.topic: example-scenario
 ms.subservice: architecture-center
 author: caclaesson
 ms.author: mapichle
+ms.reviewer: jhaskett-msft
 ---
 
 # Standardize access control for Dataverse with Microsoft Entra security groups

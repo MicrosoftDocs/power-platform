@@ -77,7 +77,7 @@ Organizations that use Copilot Studio agents for customer or employee support of
 
 [!INCLUDE [pp-arch-ppwa-link](../../includes/pp-arch-ppwa-link.md)]
 
-## Security
+### Security
 
 - Stores data securely in Dataverse.
 - Role-based access control (RBAC) ensures only authorized users access data.

@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 11/03/2026
+ms.date: 11/06/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -49,6 +49,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 | --- | --- |
 | [**Enable secure multi-account access in Power Pages**](../reference-architectures/power-pages-multi-account-access.md) | Let external users switch between authorized accounts in Power Pages while maintaining account isolation and role-based access control. |
 | [**Build a student recruitment solution with Power Platform**](../reference-architectures/student-recruitment-solution.md) | Centralize student recruitment data, automate engagement, and connect recruitment activities to enrollment outcomes. |
+| [**Build a regulatory application management solution**](../reference-architectures/regulatory-application-management.md) | Streamline regulatory application submissions, assessments, approvals, and licensing across business areas with a single solution that combines applicant self-service, AI-assisted guidance, internal application management, document handling, and reporting. |
 | [**Perform predictive data analysis using Dataverse, Fabric, and Azure AI services**](../reference-architectures/ai-predictive-data-analysis.md) | Learn best practices for data ingestion, model training, and visualization that help you build robust predictive models and gain actionable insights. |
 | [**​​Integrate Microsoft Fabric Lakehouse data using Dataverse virtual tables**](../reference-architectures/app-integrate-lakehouse.md) | Gather data from multiple internal systems into a Microsoft Fabric Lakehouse, and consume the data in Power Platform apps and automations using Dataverse virtual tables. |
 | [**Integrate Power Platform with SAP for data management**](../reference-architectures/arch-pattern-sap.md) | Learn about the architecture, workflows, and connectivity methods available to integrate Power Platform with SAP to ensure a smooth integration process. |
