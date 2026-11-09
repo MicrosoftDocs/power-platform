@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 11/03/2026
+ms.date: 11/06/2026
 ai-usage: ai-assisted
 ms.custom:
   - ai-gen-docs-bap
@@ -43,6 +43,7 @@ Understanding Power Pages architecture concepts and exploring reference architec
 | Title | Description |
 | --- | --- |
 | [**Enable secure multi-account access in Power Pages**](../reference-architectures/power-pages-multi-account-access.md) | Let external users switch between authorized accounts in Power Pages while maintaining account isolation and role-based access control. |
+| [**Build a regulatory application management solution**](../reference-architectures/regulatory-application-management.md) | Streamline regulatory application submissions, assessments, approvals, and licensing across business areas with a single solution that combines applicant self-service, AI-assisted guidance, internal application management, document handling, and reporting. |
 
 ## Solution ideas
 

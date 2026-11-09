@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 11/03/2026
+ms.date: 11/09/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -30,6 +30,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 | --- | --- |
 | **[Automate procurement order acknowledgment matching with Copilot Studio and SAP](order-acknowledgment-validation.md)** | Use a multi-agent architecture to compare supplier order acknowledgments with purchase orders in SAP, automatically confirm matches, and escalate exceptions for review. |
 | **[Automate vendor invoice processing with Power Automate and AI Builder](vendor-invoice-integration.md)** | Automate vendor invoice ingestion by extracting and validating XML invoice data using Power Automate and AI Builder. |
+| **[Build a multilingual IT self-service agent with Copilot Studio](multilingual-it-self-service-agent.md)** | Help employees get IT answers, find service catalog items, and manage support tickets in Microsoft Teams with a multilingual agent that preserves employee identity across ITSM integrations and supports hand-off to a service desk analyst. |
 | **[Extract and analyze agent conversation transcripts](analyze-agent-conversation-transcripts.md)** | Extract and analyze agent conversation transcripts with AI to uncover key insights, improve accuracy, and enhance decision-making. |
 | **[Migrate legacy meetings to Microsoft Teams with a conversational agent](migrate-legacy-meetings.md)** | Use a conversational agent built with Copilot Studio to help employees migrate their meetings from a legacy platform to Microsoft Teams. |
 | **[Modernize employee HR support with a multi-agent solution](modernize-hr-support.md)** | Modernize employee HR support with a multi-agent architecture that connects Copilot Studio agents to HR systems of record. |
@@ -62,6 +63,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 
 | Title | Description |
 | --- | --- |
+| **[Build a regulatory application management solution](regulatory-application-management.md)** | Streamline regulatory application submissions, assessments, approvals, and licensing across business areas with a single solution that combines applicant self-service, AI-assisted guidance, internal application management, document handling, and reporting. |
 | **[Connect Power Apps to a centralized data warehouse with Dataverse virtual tables](power-apps-virtual-tables.md)** | Connect Power Apps to a centralized data warehouse through Dataverse virtual tables, enabling business processes to use consolidated enterprise data alongside operational records stored in Dataverse. |
 | **[Modernize legacy applications with React web resources and Dataverse custom APIs](modernize-legacy-applications.md)** | Learn how to modernize legacy applications with Power Platform, React web resources, and Dataverse custom APIs. |
 | **[Modernize frontline applications with Power Platform](modernize-frontline-applications.md)** | Modernize frontline material requests with an offline-capable canvas app, automated approvals, centralized data in Dataverse, and SAP integration. |
