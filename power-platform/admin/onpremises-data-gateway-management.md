@@ -185,7 +185,7 @@ If a person who doesn't have access to install gateways tries to install one, th
 
 ## Delete gateways before tenant remap
 
-If you have gateways in your home (default) region or target region, delete all those gateways in both regions before your [tenant remap](/power-bi/support/service-admin-region-move). Applications (Power BI, Fabric, PowerApps, Logic Apps, Power Automate) that depend on these gateways can't access their data sources after the gateways are deleted. After remap, you need to recreate and configure the gateways to restore application access. Follow these steps to delete your on-premises data gateways before your tenant remap:
+If you have gateways in your home (default) region or target region, delete all those gateways in both regions before your [tenant remap](/power-bi/support/service-admin-region-move). Applications (Power BI, Fabric, PowerApps, Logic Apps, Power Automate) that depend on these gateways can't access their data sources after the gateways are deleted. After remap, you need to recreate and configure the gateways to restore application access. Follow these steps to delete your gateways before your tenant remap:
 
 > [!NOTE]
 > Delete all gateways in both home and target regions before performing a tenant remap, regardless of the results of the tenant remap readiness check. It is possible for the gateway readiness check in the Fabric admin portal to pass even when gateways are still present. Any gateways that remain might not function correctly after the tenant remap.
@@ -200,14 +200,14 @@ If you have gateways in your home (default) region or target region, delete all 
 1. For each active gateway, hover over the row corresponding to the gateway, then select **Delete** from the context menu. This soft deletes each gateway.
 1. All the soft-deleted gateways need to be hard-deleted. Go to **Deleted gateways (Preview)** (top right). For each gateway under **Deleted clusters**, select the trash can icon to permanently delete the gateway and all its members.
 1. Repeat steps 4 through 8 for gateways in your remap **Target region**. You don't need to delete gateways in regions other than the home and target regions.
-1. Repeat above steps for **Virtual network data gateways** and **Streaming virtual network data gateways** tabs under **Manage Gateways** (top left). Those gateways are hard-deleted by default.
+1. Repeat above steps for **Virtual network data gateways** and **Streaming virtual network data gateways** tabs under **Manage Gateways** (top left) in both source and target regions. Those gateways are hard-deleted by default.
 
 :::image type="content" source="media/ppac-gateways.png" alt-text="Gateways in the Power Platform Admin Center":::
 
 > [!NOTE]
 > You don't need to delete any **On-premises data gateways (Personal mode)**.
 > 
-> You don't need to delete **On-premises data gateways** in regions other than your home and target regions. However, these gateways might not function correctly after the tenant remap.
+> You don't need to delete gateways in regions other than your home and target regions. However, these gateways might not function correctly after the tenant remap.
 
 ### Related content
 
