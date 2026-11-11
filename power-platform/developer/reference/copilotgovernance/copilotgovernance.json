@@ -1,0 +1,767 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API - copilotgovernance",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
+    "version": "2024-10-01"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/copilotgovernance/environments/{environmentId}/settings": {
+      "get": {
+        "tags": [
+          "Copilot Settings"
+        ],
+        "summary": "List Copilot governance settings.",
+        "description": "Lists the settings available for an environment in the tenant. Requires the Copilot Governance settings read permission and supports user and service API contexts. The collection is returned in results. The current implementation returns the collection without a continuation token.",
+        "operationId": "ListCopilotSettings",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of the environment that contains the settings.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The settings available for the environment.",
+            "schema": {
+              "$ref": "#/definitions/CopilotGovernanceSettingsResponse"
+            }
+          },
+          "400": {
+            "description": "The environment ID is invalid."
+          },
+          "401": {
+            "description": "A valid access token is required."
+          },
+          "403": {
+            "description": "The caller doesn't have permission to read settings."
+          },
+          "500": {
+            "description": "An unexpected error occurred while retrieving settings."
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Copilot Settings"
+        ],
+        "summary": "Update a batch of Copilot governance settings.",
+        "description": "Updates one or more setting values for an environment in the tenant. Requires the Copilot Governance settings write permission and a user API context. Service API contexts aren't supported. Supply a non-empty dictionary keyed by setting name. Legacy setting names are accepted. Null update objects aren't allowed. A null value is accepted only for a NullableBooleanValue setting. For EnumValue settings with defined options, each value must match an option returned by the setting.",
+        "operationId": "UpdateCopilotSettingsBatch",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of the environment that contains the settings.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "A non-empty dictionary of setting names and their updates.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CopilotGovernanceSettingsBatchUpdate"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "The settings were updated. No response body is returned."
+          },
+          "400": {
+            "description": "The environment ID, request body, settings dictionary, or a setting value is invalid."
+          },
+          "401": {
+            "description": "A valid access token is required."
+          },
+          "403": {
+            "description": "The caller doesn't have write permission or isn't using a user API context."
+          },
+          "404": {
+            "description": "A setting wasn't found or isn't available to the caller."
+          },
+          "500": {
+            "description": "An unexpected error occurred while updating settings."
+          }
+        }
+      }
+    },
+    "/copilotgovernance/environments/{environmentId}/settings/{settingName}": {
+      "get": {
+        "tags": [
+          "Copilot Settings"
+        ],
+        "summary": "Get a Copilot governance setting.",
+        "description": "Gets a setting and its metadata for an environment in the tenant. Requires the Copilot Governance settings read permission and supports user and service API contexts. Legacy setting names are accepted, and the response preserves the requested setting name.",
+        "operationId": "GetCopilotSetting",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of the environment that contains the settings.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "settingName",
+            "description": "The non-empty name of the setting, as returned by the settings collection.",
+            "required": true,
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The setting value and metadata.",
+            "schema": {
+              "$ref": "#/definitions/CopilotGovernanceSetting"
+            }
+          },
+          "400": {
+            "description": "The request contains an invalid environment ID or an empty setting name."
+          },
+          "401": {
+            "description": "A valid access token is required."
+          },
+          "403": {
+            "description": "The caller doesn't have permission to read the setting."
+          },
+          "404": {
+            "description": "The setting wasn't found or isn't available to the caller."
+          },
+          "500": {
+            "description": "An unexpected error occurred while retrieving the setting."
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Copilot Settings"
+        ],
+        "summary": "Update a Copilot governance setting.",
+        "description": "Updates the value of a setting for an environment in the tenant. Requires the Copilot Governance settings write permission and a user API context. Service API contexts aren't supported. Legacy setting names are accepted. Null values are accepted only for NullableBooleanValue settings. For EnumValue settings with defined options, the value must match an option returned by the setting.",
+        "operationId": "UpdateCopilotSetting",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of the environment that contains the settings.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "settingName",
+            "description": "The non-empty name of the setting, as returned by the settings collection.",
+            "required": true,
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The setting value to update.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/CopilotGovernanceSettingUpdate"
+            }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "The setting was updated. No response body is returned."
+          },
+          "400": {
+            "description": "The request body, environment ID, setting name, or setting value is invalid."
+          },
+          "401": {
+            "description": "A valid access token is required."
+          },
+          "403": {
+            "description": "The caller doesn't have write permission or isn't using a user API context."
+          },
+          "404": {
+            "description": "The setting wasn't found or isn't available to the caller."
+          },
+          "500": {
+            "description": "An unexpected error occurred while updating the setting."
+          }
+        }
+      }
+    },
+    "/copilotgovernance/settings/fetchSummary": {
+      "post": {
+        "tags": [
+          "Copilot Settings"
+        ],
+        "summary": "Fetch a tenant's Copilot governance settings summary.",
+        "description": "Retrieves a summary of settings across environments in the tenant, including the percentage of environments where each setting is enabled. Requires the Copilot Governance settings read permission and supports user and service API contexts. No request body is required. The collection is returned in results. The current implementation returns the collection without a continuation token.",
+        "operationId": "FetchCopilotSettingsSummary",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The tenant's setting summaries.",
+            "schema": {
+              "$ref": "#/definitions/CopilotGovernanceSettingsSummaryResponse"
+            }
+          },
+          "400": {
+            "description": "The authenticated tenant context is invalid."
+          },
+          "401": {
+            "description": "A valid access token is required."
+          },
+          "403": {
+            "description": "The caller doesn't have permission to read setting summaries."
+          },
+          "500": {
+            "description": "An unexpected error occurred while retrieving setting summaries."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CopilotGovernanceSettingUpdate": {
+      "description": "A setting value to update. The value's JSON type must match the setting. A missing value is treated as null. Null is accepted only for NullableBooleanValue settings. For EnumValue settings with defined options, supply a numeric option value from options.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "$ref": "#/definitions/CopilotGovernanceSettingValue"
+        }
+      },
+      "example": {
+        "value": true
+      }
+    },
+    "CopilotGovernanceSettingsBatchUpdate": {
+      "description": "A non-empty dictionary of setting names and their update objects.",
+      "required": [
+        "settings"
+      ],
+      "type": "object",
+      "properties": {
+        "settings": {
+          "$ref": "#/definitions/CopilotGovernanceSettingUpdates"
+        }
+      }
+    },
+    "CopilotGovernanceSettingUpdates": {
+      "description": "Setting updates keyed by setting name. Each update object must be non-null.",
+      "minProperties": 1,
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/definitions/CopilotGovernanceSettingUpdate"
+      }
+    },
+    "CopilotGovernanceSettingValue": {
+      "description": "A setting value whose JSON type is determined by valueType. Values can be strings, integers, numbers, booleans, arrays, or numeric enum options. Null values are preserved when returned by the service."
+    },
+    "CopilotGovernanceSetting": {
+      "description": "A Copilot governance setting, its value, and its metadata.",
+      "type": "object",
+      "properties": {
+        "resourceId": {
+          "description": "The setting resource ID.",
+          "type": "string"
+        },
+        "settingName": {
+          "description": "The setting name.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "The display name of the setting.",
+          "type": "string"
+        },
+        "description": {
+          "description": "The setting description.",
+          "type": "string"
+        },
+        "checkboxLabel": {
+          "description": "The checkbox label shown instead of On in the setting update panel.",
+          "type": "string"
+        },
+        "tenantId": {
+          "description": "The ID of the tenant that owns the setting.",
+          "type": "string"
+        },
+        "environmentId": {
+          "description": "The ID of the environment that owns the setting.",
+          "type": "string"
+        },
+        "platformProduct": {
+          "$ref": "#/definitions/CopilotGovernancePlatformProductType"
+        },
+        "settingState": {
+          "$ref": "#/definitions/CopilotGovernanceSettingState"
+        },
+        "valueType": {
+          "$ref": "#/definitions/CopilotGovernanceSettingValueType"
+        },
+        "audiences": {
+          "description": "The audiences for the setting.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CopilotGovernanceAudienceType"
+          }
+        },
+        "learnDocLink": {
+          "description": "The documentation link for the setting.",
+          "type": "string"
+        },
+        "isManagedEnvironmentProperty": {
+          "description": "Whether the setting is a Managed Environment property.",
+          "type": "boolean"
+        },
+        "invertValue": {
+          "description": "Whether the displayed setting value should be inverted.",
+          "type": "boolean"
+        },
+        "hideWhenNull": {
+          "description": "Whether a NullableBooleanValue setting should be hidden when its value is null.",
+          "type": "boolean"
+        },
+        "storeResource": {
+          "$ref": "#/definitions/CopilotGovernanceStoreResourceType"
+        },
+        "isDisabled": {
+          "description": "Whether the setting is disabled for editing.",
+          "type": "boolean"
+        },
+        "rule": {
+          "$ref": "#/definitions/CopilotGovernanceSettingRule"
+        },
+        "defaultValue": {
+          "$ref": "#/definitions/CopilotGovernanceSettingValue"
+        },
+        "options": {
+          "description": "The allowed numeric options for an EnumValue setting, when available.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CopilotGovernanceEnumOption"
+          }
+        },
+        "statusMessage": {
+          "$ref": "#/definitions/CopilotGovernanceStatusMessage"
+        },
+        "enabledStatus": {
+          "$ref": "#/definitions/CopilotGovernanceEnabledStatus"
+        },
+        "category": {
+          "$ref": "#/definitions/CopilotGovernanceCategoryType"
+        },
+        "value": {
+          "$ref": "#/definitions/CopilotGovernanceSettingValue"
+        }
+      }
+    },
+    "CopilotGovernanceSettingSummary": {
+      "description": "A Copilot governance setting and its aggregate enabled percentage across environments.",
+      "type": "object",
+      "properties": {
+        "resourceId": {
+          "description": "The setting resource ID.",
+          "type": "string"
+        },
+        "settingName": {
+          "description": "The setting name.",
+          "type": "string"
+        },
+        "displayName": {
+          "description": "The display name of the setting.",
+          "type": "string"
+        },
+        "description": {
+          "description": "The setting description.",
+          "type": "string"
+        },
+        "checkboxLabel": {
+          "description": "The checkbox label shown instead of On in the setting update panel.",
+          "type": "string"
+        },
+        "tenantId": {
+          "description": "The ID of the tenant that owns the setting.",
+          "type": "string"
+        },
+        "environmentId": {
+          "description": "The ID of the environment that owns the setting.",
+          "type": "string"
+        },
+        "platformProduct": {
+          "$ref": "#/definitions/CopilotGovernancePlatformProductType"
+        },
+        "settingState": {
+          "$ref": "#/definitions/CopilotGovernanceSettingState"
+        },
+        "valueType": {
+          "$ref": "#/definitions/CopilotGovernanceSettingValueType"
+        },
+        "audiences": {
+          "description": "The audiences for the setting.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CopilotGovernanceAudienceType"
+          }
+        },
+        "learnDocLink": {
+          "description": "The documentation link for the setting.",
+          "type": "string"
+        },
+        "isManagedEnvironmentProperty": {
+          "description": "Whether the setting is a Managed Environment property.",
+          "type": "boolean"
+        },
+        "invertValue": {
+          "description": "Whether the displayed setting value should be inverted.",
+          "type": "boolean"
+        },
+        "hideWhenNull": {
+          "description": "Whether a NullableBooleanValue setting should be hidden when its value is null.",
+          "type": "boolean"
+        },
+        "storeResource": {
+          "$ref": "#/definitions/CopilotGovernanceStoreResourceType"
+        },
+        "isDisabled": {
+          "description": "Whether the setting is disabled for editing.",
+          "type": "boolean"
+        },
+        "rule": {
+          "$ref": "#/definitions/CopilotGovernanceSettingRule"
+        },
+        "defaultValue": {
+          "$ref": "#/definitions/CopilotGovernanceSettingValue"
+        },
+        "options": {
+          "description": "The allowed numeric options for an EnumValue setting, when available.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CopilotGovernanceEnumOption"
+          }
+        },
+        "statusMessage": {
+          "$ref": "#/definitions/CopilotGovernanceStatusMessage"
+        },
+        "enabledStatus": {
+          "$ref": "#/definitions/CopilotGovernanceEnabledStatus"
+        },
+        "category": {
+          "$ref": "#/definitions/CopilotGovernanceCategoryType"
+        },
+        "enabledPercentage": {
+          "format": "int32",
+          "description": "The rounded percentage of environments where the setting is enabled.",
+          "type": "integer"
+        }
+      }
+    },
+    "CopilotGovernanceSettingsResponse": {
+      "description": "A collection of environment settings in the service's OData response shape.",
+      "required": [
+        "results"
+      ],
+      "type": "object",
+      "properties": {
+        "results": {
+          "description": "The settings returned for the environment.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CopilotGovernanceSetting"
+          }
+        },
+        "@odata.nextLink": {
+          "description": "The next-page URL. The current implementation doesn't issue continuation tokens.",
+          "type": "string"
+        },
+        "@odata.count": {
+          "format": "int32",
+          "description": "The optional collection count. The current implementation doesn't populate it.",
+          "type": "integer"
+        }
+      }
+    },
+    "CopilotGovernanceSettingsSummaryResponse": {
+      "description": "A collection of tenant setting summaries in the service's OData response shape.",
+      "required": [
+        "results"
+      ],
+      "type": "object",
+      "properties": {
+        "results": {
+          "description": "The setting summaries returned for the tenant.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CopilotGovernanceSettingSummary"
+          }
+        },
+        "@odata.nextLink": {
+          "description": "The next-page URL. The current implementation doesn't issue continuation tokens.",
+          "type": "string"
+        },
+        "@odata.count": {
+          "format": "int32",
+          "description": "The optional collection count. The current implementation doesn't populate it.",
+          "type": "integer"
+        }
+      }
+    },
+    "CopilotGovernanceEnumOption": {
+      "description": "A numeric option and its display name for an EnumValue setting.",
+      "type": "object",
+      "properties": {
+        "value": {
+          "format": "int32",
+          "description": "The numeric option value.",
+          "type": "integer"
+        },
+        "name": {
+          "description": "The display name of the option.",
+          "type": "string"
+        }
+      }
+    },
+    "CopilotGovernanceSettingRule": {
+      "description": "The environment-group rule associated with a setting.",
+      "required": [
+        "ruleId",
+        "ruleInput"
+      ],
+      "type": "object",
+      "properties": {
+        "ruleId": {
+          "description": "The rule ID registered for the setting.",
+          "type": "string"
+        },
+        "ruleInput": {
+          "description": "The rule inputs associated with settings.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/CopilotGovernanceRuleInput"
+          }
+        },
+        "isLegacyRule": {
+          "description": "Whether the rule uses the legacy rule definition.",
+          "type": "boolean"
+        },
+        "resourceType": {
+          "description": "The resource type, when applicable to a legacy rule.",
+          "type": "string"
+        }
+      }
+    },
+    "CopilotGovernanceRuleInput": {
+      "description": "The input and setting names that associate a setting with a rule.",
+      "required": [
+        "inputName",
+        "settingName"
+      ],
+      "type": "object",
+      "properties": {
+        "inputName": {
+          "description": "The name of the rule input.",
+          "type": "string"
+        },
+        "settingName": {
+          "description": "The setting name associated with the rule input.",
+          "type": "string"
+        }
+      }
+    },
+    "CopilotGovernanceStatusMessage": {
+      "description": "The localized badge and tooltip messages for a setting.",
+      "required": [
+        "enabledText",
+        "disabledText"
+      ],
+      "type": "object",
+      "properties": {
+        "enabledText": {
+          "description": "The badge text when the setting is enabled.",
+          "type": "string"
+        },
+        "disabledText": {
+          "description": "The badge text when the setting is disabled.",
+          "type": "string"
+        },
+        "disabledTooltip": {
+          "description": "The badge tooltip when the setting is disabled.",
+          "type": "string"
+        },
+        "disabledLearnMoreLink": {
+          "description": "The documentation link in the disabled badge tooltip.",
+          "type": "string"
+        },
+        "someText": {
+          "description": "The badge text when the setting is enabled for some users.",
+          "type": "string"
+        }
+      }
+    },
+    "CopilotGovernancePlatformProductType": {
+      "description": "The Power Platform product associated with the setting.",
+      "enum": [
+        "PowerPlatform",
+        "PowerApps",
+        "PowerAutomate",
+        "PowerPages",
+        "CopilotStudio",
+        "Agent365",
+        "D365Marketing",
+        "D365Sales",
+        "D365CustomerService",
+        "D365ProjectOperations",
+        "MicrosoftDataverse",
+        "ManagedApps"
+      ],
+      "type": "string"
+    },
+    "CopilotGovernanceSettingState": {
+      "description": "The release state of the setting.",
+      "enum": [
+        "PrivatePreview",
+        "PublicPreview",
+        "GenerallyAvailable",
+        "Beta"
+      ],
+      "type": "string"
+    },
+    "CopilotGovernanceSettingValueType": {
+      "description": "The JSON value type of the setting.",
+      "enum": [
+        "StringValue",
+        "IntegerValue",
+        "NumberValue",
+        "BooleanValue",
+        "ArrayValue",
+        "EnumValue",
+        "NullableBooleanValue"
+      ],
+      "type": "string"
+    },
+    "CopilotGovernanceAudienceType": {
+      "description": "The audience that can use the setting.",
+      "enum": [
+        "Admins",
+        "Makers",
+        "EndUsers"
+      ],
+      "type": "string"
+    },
+    "CopilotGovernanceStoreResourceType": {
+      "description": "The backing resource used to store the setting.",
+      "enum": [
+        "BAPRPTenant",
+        "BAPRPEnvironment",
+        "DataverseOrganization",
+        "OMSEnvironment",
+        "OMSEnvironmentV2"
+      ],
+      "type": "string"
+    },
+    "CopilotGovernanceCategoryType": {
+      "description": "The category of the setting.",
+      "enum": [
+        "None",
+        "DataEntryAgent",
+        "DataExplorationAgent",
+        "SummaryAgent",
+        "ChatAgent",
+        "ExternalModels"
+      ],
+      "type": "string"
+    },
+    "CopilotGovernanceEnabledStatus": {
+      "description": "Whether the setting is enabled for no users, all users, or a restricted set of users.",
+      "enum": [
+        "EnabledForNone",
+        "EnabledForAll",
+        "EnabledForSome"
+      ],
+      "type": "string"
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [
+        ".default"
+      ]
+    }
+  ]
+}
