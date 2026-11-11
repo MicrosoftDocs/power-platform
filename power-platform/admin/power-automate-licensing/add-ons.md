@@ -3,7 +3,7 @@ title: Types of Power Automate add-ons
 description: Learn about types of Power Automate add-ons.
 author: msftman
 ms.topic: overview
-ms.date: 07/10/2024
+ms.date: 11/10/2026
 ms.author: cvassallo
 contributors:
   - kenseongtan
@@ -136,7 +136,7 @@ No. AI builder service credits are pooled at the tenant level and can't be assig
 
 The Power Platform requests add-on increases the daily Power Platform requests limits for workloads that need more usage capacity than their allocation. These add-ons provide an extra 50,000 daily Power Platform requests per unit for $50/month. Unused Power Platform requests don't carry over from day to day. You can purchase these add-ons at any time and they remain part of the subscription for the remainder of the subscription term.
 
-You can't assign Power Platform requests add-on packs to users or flows during the [transition period](/power-platform/admin/api-request-limits-allocations#power-automate-transition-period).
+You can't currently assign Power Platform requests add-on packs to users or flows.
 
 > [!IMPORTANT]
 > You can't assign the Power Platform requests add-on to a specific cloud flow, so it isn't the lever for a single throttled flow. To give a flow its own request entitlement, assign a [Process license](types.md#capacity-licenses) to it, or to a [flow group](/power-automate/flow-groups) to share 250,000 Power Platform requests per 24 hours across up to 25 solution-aware cloud flows. If a flow is throttled, assign a Process license to it. Learn more in [What happens when my flow runs too many actions?](faqs.md#what-happens-when-my-flow-runs-too-many-actions)
