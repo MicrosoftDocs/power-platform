@@ -1,17 +1,16 @@
 ---
 title: Business continuity and disaster recovery
 description: Microsoft provides business continuity and disaster recovery for production environments if there's a region-wide Azure outage. 
-author: shpradha
-ms.date: 08/20/2026
+author: llistephanie
+ms.date: 11/11/2026
 ms.reviewer: ellenwehrle
 ms.topic: concept-article
 ms.subservice: admin
-ms.author: shpradha
+ms.author: stc
 ms.custom: NewPPAC
 search.audienceType: 
  - admin
 contributors:
- - shpradha
  - isaacwinoto
  - himakurada
  - jasunil
@@ -128,7 +127,7 @@ Because customers retain control of when and whether to trigger a cross-region f
 
 ### Why use self-service disaster recovery?
 
-Super storms, natural calamities, and unforeseen political uncertainties that can bring down an entire region are becoming more common. To minimize the impact of a disaster that brings down an entire region, maintain an asynchronous copy in a remote region. You might also want to maintain a copy in a remote region for compliance audits. 
+Superstorms, natural calamities, and unforeseen political uncertainties that can bring down an entire region are becoming more common. To minimize the impact of a disaster that brings down an entire region, maintain an asynchronous copy in a remote region. You might also want to maintain a copy in a remote region for compliance audits. 
 
 Self-service disaster recovery gives you control to fail over to a secondary region with the push of a button and fail back with the push of a button when the primary region is restored to ensure business continuity. You can also simulate the primary region being down to run a real failover and fail back to the secondary region to test a real compliance drill. Run drills with a copy of the production environment to avoid any downtime.
 
@@ -193,7 +192,7 @@ As of October 2025:
   > [!NOTE]
   > Power Automate environments enabled for self-service disaster recovery run on isolated, runtime capacity. Most workloads shouldn't notice a difference, but high-volume, highly parallel, or latency-sensitive flows might take longer to start or have lower throughput. Validate business-critical workloads before enabling this feature.
   
-- As Microsoft works on performance optimizations, you must [sign-up for this feature to opt-in](https://aka.ms/PowerAutomate-SSDR-Opt-in).
+- Microsoft is working on a new Power Automate disaster recovery experience, planned for a future 2027 release. If you require this capability sooner, submit a support request through the [Power Platform admin center](get-help-support.md), including your business justification and environment details for review.
 
 ### How can I find out where my data is being replicated? Can I change my secondary destination region?
 
@@ -213,10 +212,10 @@ For instructions on retrieving the current IP ranges, see [What are the outbound
 
 ### Can I enable SSDR on a sandbox environment in Dynamics 365 Finance & Operations?
 
-No. Only live production environments support Self-Service Disaster Recovery (SSDR) for Dynamics 365 Finance & Operations at this time. All sandbox tiers&mdash;including Tier 2, Tier 3, Tier 4, and Tier 5&mdash;aren't eligible for SSDR enrollment. If your environment isn't eligible for SSDR, the disaster recovery option won't appear in the Power Platform admin center.
+No. Only live production environments support Self-Service Disaster Recovery (SSDR) for Dynamics 365 Finance & Operations. All sandbox tiers&mdash;including Tier 2, Tier 3, Tier 4, and Tier 5&mdash;aren't eligible for SSDR enrollment. If your environment isn't eligible for SSDR, the disaster recovery option won't appear in the Power Platform admin center.
 
 ### Can I enable SSDR only for select applications on my environment (ex. Dynamics 365 Finance & Operations only)?
-No. SSDR is turned on at the environment level and can't be configured for individual applications. SSDR creates and maintains a secondary copy for Dataverse, providing disaster recovery coverage for all supported Dynamics 365 Customer Engagement (CE) applications in the environment, such as Dynamics 365 Sales, Field Service, and Contact Center.
+No. Turn on SSDR at the environment level. You can't configure it for individual applications. SSDR creates and maintains a secondary copy for Dataverse, providing disaster recovery coverage for all supported Dynamics 365 Customer Engagement (CE) applications in the environment, such as Dynamics 365 Sales, Field Service, and Contact Center.
 
 Dynamics 365 Finance & Operations (F&O) applications are linked with Microsoft Dataverse through the Power Platform integration. Hence, linked F&O applications are covered by SSDR. If your F&O application isn't linked to your environment, follow [this link](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration) to enable the integration.
 
@@ -308,5 +307,3 @@ For more information, see [VNet documentation](/power-platform/admin/vnet-suppor
 - There's a guidance document available at [Build a disaster recovery plan - Power Platform | Microsoft Learn](/power-platform/guidance/adoption/plan-disaster-recovery).
 - Review the reliability recommendations at [Power Platform Reliability | Microsoft Learn](/power-platform/well-architected/reliability/).
 - Design a disaster recovery strategy recommendation for Power Platform workloads at [Disaster Recovery Power Platform | Microsoft Learn](/power-platform/well-architected/reliability/disaster-recovery).
-
-
