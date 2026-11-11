@@ -7,7 +7,6 @@ contributors:
 - EllenWehrle
 - tverhasselt
 - microsoft-dustin
-- Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: faq
 ms.date: 03/17/2026

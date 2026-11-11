@@ -5,14 +5,13 @@ author: tverhasselt
 ms.author: thoverh
 contributors:
   - EllenWehrle
-  - Wrighttyler
   - shanep
 ms.reviewer: ellenwehrle
 ms.topic: overview
 ms.date: 05/20/2026
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 #customer intent: As a user, I want to learn about Microsoft's SAP Procurement template for Power Platform and understand how it can help streamline and automate SAP procurement processes.
 ---
 

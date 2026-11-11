@@ -6,13 +6,12 @@ ms.author: drasener
 contributors:
   - EllenWehrle
   - thoverh
-  - Wrighttyler
 ms.date: 05/19/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 ---
 
 # Set up on-premises data gateway for SAP integration with Power Platform

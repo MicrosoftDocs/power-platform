@@ -11,7 +11,7 @@ ms.date: 05/20/2026
 ms.update-cycle: 180-days
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 ms.collection: bap-ai-copilot
 ---
 

@@ -7,7 +7,6 @@ contributors:
   - haowusky
   - hidasa
   - tverhasselt
-  - Wrighttyler
   - EllenWehrle
   - MartinPankraz
 ms.reviewer: ellenwehrle

@@ -5,13 +5,12 @@ author: tverhasselt
 ms.author: thoverh
 contributors:
   - microsoft-dustin
-  - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 05/20/2026
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 ---
 
 # Customize the SAP Procurement solutions
