@@ -16,7 +16,7 @@
           "Monitoring Hub"
         ],
         "summary": "When an alert triggers (preview)",
-        "description": "Triggers when a daily Power Platform Monitor alert rule fires in your tenant and its notification type is set to \"Connector\" or \"Email and connector\". This preview supports daily alert rules and returns alert IDs, metadata, affected resources, and a link to the Power Platform admin center. Each alert is returned as one item in the value array. To start a separate flow run for each alert, enable Split On for value.",
+        "description": "Triggers when a daily Power Platform Monitor alert rule fires in your tenant and its notification type is Connector or Email and connector. This preview supports daily alert rules and returns alert IDs, metadata, affected resources, and a link to the alert in Power Platform admin center. Each alert is one item in the value array. When using this trigger in a flow, turn on Split On for value to run once per alert.",
         "operationId": "OnAlertTriggered",
         "produces": [
           "application/json"
@@ -84,6 +84,161 @@
         "x-ms-trigger-hint": "In Power Platform admin center, set a daily alert rule's notification type to Connector, then wait for the rule to fire.",
         "x-ms-visibility": "important"
       }
+    },
+    "/monitoringhub/environments/{environmentId}/resourceType/{resourceType}/resourceSubType/{resourceSubType}/exports/metrics": {
+      "post": {
+        "tags": [
+          "MetricsExport"
+        ],
+        "summary": "Export completed daily resource metrics (preview)",
+        "description": "Returns one OTLP JSON ExportMetricsServiceRequest page for 1 to 10 resources of one resource type and subtype in an environment. Each page contains at most 2,000 data points and 4 MiB of uncompressed JSON. To get the next page, repeat the same method, route, API version, and body with the x-ms-continuation response value in the x-ms-continuation request header. The last page has no continuation header. Only elapsed UTC days are eligible. The effective end date is capped at today's UTC midnight; a range with no eligible days returns an empty resourceMetrics array. Missing source data is omitted, not synthesized. Requires a user token with the PowerApps.Apps.Read delegated permission, a Global, Power Platform, Dynamics 365, AI, or Teams administrator role, and tenant preview admission. Application-only tokens and environment RBAC assignments alone don't grant access.",
+        "operationId": "ExportMetrics",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "environmentId",
+            "description": "The ID of the environment containing the resources. Use 1 to 100 ASCII letters, digits, or hyphens, starting and ending with a letter or digit.",
+            "required": true,
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9-]*[A-Za-z0-9])?$"
+          },
+          {
+            "in": "path",
+            "name": "resourceType",
+            "description": "The resource type, matched without regard to case. Supported pairs are PowerApp with CanvasApp, CodeApp, or ModelApp (also accepted as ModelDrivenApp); PowerAutomate with CloudFlow or DesktopFlow; CopilotStudio with Agent; and MicrosoftApp with App.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "resourceSubType",
+            "description": "The resource subtype for the selected resource type, matched without regard to case. MicrosoftApp requires App and uses the Managed App export action.",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "header",
+            "name": "x-ms-continuation",
+            "description": "The opaque continuation token from the previous page. Omit it for the first page and keep the original route, API version, and request body unchanged.",
+            "type": "string",
+            "maxLength": 16384
+          },
+          {
+            "in": "header",
+            "name": "x-ms-client-request-id",
+            "description": "A caller-generated correlation GUID, echoed when valid.",
+            "type": "string",
+            "format": "uuid"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The resource IDs, optional metric selection, and required UTC date range.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/MonitoringHubMetricsExportRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "One OTLP JSON page, including an empty resourceMetrics array when no eligible data matches.",
+            "schema": {
+              "$ref": "#/definitions/MonitoringHubMetricsExportPage"
+            },
+            "headers": {
+              "x-ms-continuation": {
+                "description": "An opaque token for the next page, present only when more data remains.",
+                "type": "string"
+              },
+              "x-ms-available-through": {
+                "description": "The exclusive UTC calendar cutoff for eligible days, fixed for the page chain. This isn't a guarantee that source ingestion is complete.",
+                "type": "string",
+                "format": "date-time"
+              },
+              "x-ms-record-count": {
+                "description": "The number of OTLP data points in this page.",
+                "type": "integer",
+                "format": "int32",
+                "maximum": 2000,
+                "minimum": 0
+              },
+              "x-ms-request-id": {
+                "description": "The request correlation ID for support and troubleshooting.",
+                "type": "string"
+              },
+              "x-ms-client-request-id": {
+                "description": "The caller correlation GUID, when supplied and valid.",
+                "type": "string"
+              }
+            }
+          },
+          "400": {
+            "description": "BadRequest indicates an unsupported route pair or metric, invalid resource ID, invalid date range, or invalid or expired continuation token. InvalidRequestContent indicates an invalid JSON body, missing required property, or unknown property.",
+            "schema": {
+              "$ref": "#/definitions/MonitoringHubErrorResponse"
+            }
+          },
+          "401": {
+            "description": "A valid authenticated user token is required."
+          },
+          "403": {
+            "description": "Required authorization is missing, or the routing tenant doesn't match the authenticated tenant.",
+            "schema": {
+              "$ref": "#/definitions/MonitoringHubErrorResponse"
+            }
+          },
+          "404": {
+            "description": "ApiResourceNotFound indicates that the authenticated tenant isn't admitted to the preview.",
+            "schema": {
+              "$ref": "#/definitions/MonitoringHubErrorResponse"
+            }
+          },
+          "413": {
+            "description": "RequestEntityTooLarge indicates that one metric record exceeds the 4 MiB response limit.",
+            "schema": {
+              "$ref": "#/definitions/MonitoringHubErrorResponse"
+            }
+          },
+          "429": {
+            "description": "The gateway throttled the request. Retry after the indicated delay, if supplied.",
+            "headers": {
+              "Retry-After": {
+                "description": "The delay in seconds before retrying, when supplied by the gateway.",
+                "type": "string"
+              }
+            }
+          },
+          "500": {
+            "description": "InternalServerError indicates that the export couldn't produce a valid page.",
+            "schema": {
+              "$ref": "#/definitions/MonitoringHubErrorResponse"
+            }
+          },
+          "503": {
+            "description": "ServiceUnavailable indicates a temporary dependency failure or timeout.",
+            "schema": {
+              "$ref": "#/definitions/MonitoringHubErrorResponse"
+            }
+          }
+        }
+      }
     }
   },
   "definitions": {
@@ -145,7 +300,7 @@
         },
         "alertRuleId": {
           "format": "uuid",
-          "description": "The ID of the alert rule in the Power Platform admin center.",
+          "description": "The ID of the alert rule in Power Platform admin center.",
           "type": "string",
           "x-ms-summary": "Alert Rule ID"
         },
@@ -368,6 +523,267 @@
         }
       },
       "additionalProperties": false
+    },
+    "MonitoringHubMetricsExportRequest": {
+      "description": "The export selection. Unknown properties, including scope, lookbackDays, and maxRecords, are rejected.",
+      "required": [
+        "resourceIds",
+        "timeRange"
+      ],
+      "type": "object",
+      "properties": {
+        "resourceIds": {
+          "description": "The IDs of 1 to 10 resources of the route's resource type and subtype in the environment. Each ID must be a non-empty, non-zero GUID in hyphenated format. Duplicate GUIDs are rejected, including case variants.",
+          "maxItems": 10,
+          "minItems": 1,
+          "uniqueItems": true,
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "metricNames": {
+          "description": "Up to 20 distinct supported metric names for the selected route pair. Omit this property or supply null to export all mapped metrics for that pair. An empty array or unsupported name is rejected. Names are trimmed and matched without regard to case; duplicates are consolidated and output names are canonical.",
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "timeRange": {
+          "$ref": "#/definitions/MonitoringHubMetricsExportTimeRange"
+        }
+      },
+      "additionalProperties": false
+    },
+    "MonitoringHubMetricsExportTimeRange": {
+      "description": "A UTC date range of at most 30 days, with an inclusive start and exclusive end.",
+      "required": [
+        "startDate",
+        "endDate"
+      ],
+      "type": "object",
+      "properties": {
+        "startDate": {
+          "format": "date",
+          "description": "The first UTC day to export, in YYYY-MM-DD format.",
+          "type": "string"
+        },
+        "endDate": {
+          "format": "date",
+          "description": "The UTC day after the last requested day, in YYYY-MM-DD format. It must be later than startDate. The effective end is capped at today's UTC midnight.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "MonitoringHubMetricsExportPage": {
+      "description": "An OTLP JSON ExportMetricsServiceRequest with no proprietary wrapper.",
+      "required": [
+        "resourceMetrics"
+      ],
+      "type": "object",
+      "properties": {
+        "resourceMetrics": {
+          "description": "The metrics grouped by Power Platform resource, or an empty array.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MonitoringHubOtlpResourceMetrics"
+          }
+        }
+      }
+    },
+    "MonitoringHubOtlpResourceMetrics": {
+      "description": "The metrics for one Power Platform resource.",
+      "type": "object",
+      "properties": {
+        "resource": {
+          "$ref": "#/definitions/MonitoringHubOtlpResource"
+        },
+        "scopeMetrics": {
+          "description": "The metrics grouped by instrumentation scope.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MonitoringHubOtlpScopeMetrics"
+          }
+        }
+      }
+    },
+    "MonitoringHubOtlpResource": {
+      "description": "Resource attributes identifying the service, tenant, environment, resource type, subtype, and resource ID. Resource display names aren't emitted.",
+      "type": "object",
+      "properties": {
+        "attributes": {
+          "description": "The resource attributes.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MonitoringHubOtlpKeyValue"
+          }
+        }
+      }
+    },
+    "MonitoringHubOtlpScopeMetrics": {
+      "description": "The metrics from one instrumentation scope.",
+      "type": "object",
+      "properties": {
+        "scope": {
+          "$ref": "#/definitions/MonitoringHubOtlpInstrumentationScope"
+        },
+        "metrics": {
+          "description": "The metrics.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MonitoringHubOtlpMetric"
+          }
+        }
+      }
+    },
+    "MonitoringHubOtlpInstrumentationScope": {
+      "description": "The instrumentation scope producing the metrics.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The instrumentation scope name.",
+          "type": "string",
+          "example": "Microsoft.PowerPlatform.MonitoringHub.DataExport"
+        },
+        "version": {
+          "description": "The instrumentation scope version.",
+          "type": "string",
+          "example": "1"
+        }
+      }
+    },
+    "MonitoringHubOtlpMetric": {
+      "description": "A metric and its daily values. Counts use delta monotonic sums. Ratios and timings use gauges. Non-Managed App timings are P75; Managed App timings are daily averages. Only gauge or sum is emitted for a metric.",
+      "type": "object",
+      "properties": {
+        "name": {
+          "description": "The canonical metric name.",
+          "type": "string"
+        },
+        "unit": {
+          "description": "The unit, using 1 for ratios, {count} for counts, and s for seconds.",
+          "type": "string"
+        },
+        "gauge": {
+          "$ref": "#/definitions/MonitoringHubOtlpGauge"
+        },
+        "sum": {
+          "$ref": "#/definitions/MonitoringHubOtlpSum"
+        }
+      }
+    },
+    "MonitoringHubOtlpGauge": {
+      "description": "The data points of a gauge metric.",
+      "type": "object",
+      "properties": {
+        "dataPoints": {
+          "description": "The data points.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MonitoringHubOtlpNumberDataPoint"
+          }
+        }
+      }
+    },
+    "MonitoringHubOtlpSum": {
+      "description": "The data points of a delta monotonic sum metric.",
+      "type": "object",
+      "properties": {
+        "dataPoints": {
+          "description": "The data points.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MonitoringHubOtlpNumberDataPoint"
+          }
+        },
+        "aggregationTemporality": {
+          "format": "int32",
+          "description": "The aggregation temporality. The service emits 1 for delta.",
+          "enum": [
+            1
+          ],
+          "type": "integer"
+        },
+        "isMonotonic": {
+          "description": "Whether the sum only increases.",
+          "type": "boolean"
+        }
+      }
+    },
+    "MonitoringHubOtlpNumberDataPoint": {
+      "description": "A daily metric value, with either asInt or asDouble.",
+      "type": "object",
+      "properties": {
+        "attributes": {
+          "description": "The public data-point dimensions, when present.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/MonitoringHubOtlpKeyValue"
+          }
+        },
+        "timeUnixNano": {
+          "description": "The value's time in nanoseconds since the Unix epoch, encoded as a decimal string.",
+          "type": "string"
+        },
+        "asDouble": {
+          "format": "double",
+          "description": "The floating-point value, when present.",
+          "type": "number"
+        },
+        "asInt": {
+          "description": "The integer count, encoded as a decimal string, when present.",
+          "type": "string"
+        }
+      }
+    },
+    "MonitoringHubOtlpKeyValue": {
+      "description": "An attribute key and string value.",
+      "type": "object",
+      "properties": {
+        "key": {
+          "description": "The attribute key.",
+          "type": "string"
+        },
+        "value": {
+          "$ref": "#/definitions/MonitoringHubOtlpStringValue"
+        }
+      }
+    },
+    "MonitoringHubOtlpStringValue": {
+      "description": "An OTLP string attribute value.",
+      "type": "object",
+      "properties": {
+        "stringValue": {
+          "description": "The attribute value.",
+          "type": "string"
+        }
+      }
+    },
+    "MonitoringHubErrorResponse": {
+      "description": "The error response returned when an export fails.",
+      "type": "object",
+      "properties": {
+        "error": {
+          "$ref": "#/definitions/MonitoringHubError"
+        }
+      }
+    },
+    "MonitoringHubError": {
+      "description": "The error code and message.",
+      "type": "object",
+      "properties": {
+        "code": {
+          "description": "A stable error code, such as BadRequest, InvalidRequestContent, or ServiceUnavailable.",
+          "type": "string"
+        },
+        "message": {
+          "description": "A message describing the failure.",
+          "type": "string"
+        }
+      }
     }
   },
   "securityDefinitions": {

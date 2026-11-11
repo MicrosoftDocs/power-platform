@@ -1,0 +1,301 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Microsoft Power Platform REST API - support",
+    "description": "Unified API for all administrative capabilities in Microsoft Power Platform.",
+    "version": "2024-10-01"
+  },
+  "host": "api.powerplatform.com",
+  "schemes": [
+    "https"
+  ],
+  "paths": {
+    "/support/KnownIssue/{issueId}": {
+      "get": {
+        "tags": [
+          "Known Issues"
+        ],
+        "summary": "Get a known issue by ID.",
+        "description": "Retrieves a known issue by its numeric work item ID. Requires a valid Power Platform API access token. A preferred locale can be supplied for translated content when translation is available. An issue can remain retrievable by ID after it is excluded from search results. The implementation returns 400, not 404, when an issue doesn't exist.",
+        "operationId": "GetKnownIssue",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "issueId",
+            "description": "The numeric work item ID of the known issue.",
+            "required": true,
+            "type": "string",
+            "minLength": 1
+          },
+          {
+            "in": "query",
+            "name": "locale",
+            "description": "The preferred locale for translated issue content, when available.",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The known issue, including its state and resolution guidance.",
+            "schema": {
+              "$ref": "#/definitions/SupportKnownIssue"
+            }
+          },
+          "400": {
+            "description": "The issue ID isn't a valid signed 64-bit integer, the issue doesn't exist, or the lookup failed."
+          },
+          "401": {
+            "description": "A valid Power Platform API access token is required."
+          },
+          "403": {
+            "description": "Access to the known-issue endpoint is forbidden."
+          },
+          "500": {
+            "description": "An unexpected error occurred before the lookup could complete."
+          }
+        }
+      }
+    },
+    "/support/KnownIssue/search": {
+      "post": {
+        "tags": [
+          "Known Issues"
+        ],
+        "summary": "Search known issues.",
+        "description": "Searches known issues for the supplied product IDs and search text. Requires a valid Power Platform API access token. Returns a JSON array of issues, without a collection wrapper or continuation token. Use skip and maxIssueCount in the request body to control the result window. An empty productIds array returns 204 with no body. A valid search with no matches returns an empty array.",
+        "operationId": "SearchKnownIssues",
+        "consumes": [
+          "application/json"
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "api-version",
+            "description": "The API version.",
+            "required": true,
+            "type": "string",
+            "default": "2024-10-01"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "description": "The search text, product IDs, and optional search controls.",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/SupportKnownIssueSearchRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "The matching known issues as a JSON array.",
+            "schema": {
+              "$ref": "#/definitions/SupportKnownIssueList"
+            }
+          },
+          "204": {
+            "description": "The productIds array was empty. No response body is returned."
+          },
+          "400": {
+            "description": "The request or a product ID is invalid, the search text is empty, or the search failed."
+          },
+          "401": {
+            "description": "A valid Power Platform API access token is required."
+          },
+          "403": {
+            "description": "Access to the known-issue endpoint is forbidden."
+          },
+          "500": {
+            "description": "An unexpected error occurred before the search could complete."
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "SupportKnownIssueSearchRequest": {
+      "description": "The public request fields for searching known issues.",
+      "required": [
+        "searchText",
+        "productIds"
+      ],
+      "type": "object",
+      "properties": {
+        "searchText": {
+          "description": "The search text. Use an asterisk to search without a text filter.",
+          "minLength": 1,
+          "type": "string"
+        },
+        "productIds": {
+          "description": "Product IDs to search. Each ID must be a GUID. An empty array returns 204.",
+          "type": "array",
+          "items": {
+            "format": "uuid",
+            "type": "string"
+          }
+        },
+        "issueStatus": {
+          "$ref": "#/definitions/SupportKnownIssueStatus"
+        },
+        "maxIssueCount": {
+          "format": "int32",
+          "description": "The requested result count. Values from 1 to 200 are used; otherwise the service uses 25.",
+          "default": 25,
+          "type": "integer"
+        },
+        "minMatchingScore": {
+          "format": "double",
+          "description": "The minimum matching score. A value of zero lets the service select a threshold for the search mode.",
+          "default": 0,
+          "type": "number"
+        },
+        "skip": {
+          "format": "int32",
+          "description": "The number of results to skip in the search.",
+          "default": 0,
+          "type": "integer"
+        },
+        "source": {
+          "description": "An optional caller context label used by the search service.",
+          "type": "string"
+        },
+        "locale": {
+          "description": "The preferred locale for translated search content, when available.",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "SupportKnownIssueStatus": {
+      "format": "int32",
+      "description": "The numeric status selector: 0 Unknown, 1 New, 2 Active, 3 Resolved, or 4 Closed.",
+      "default": 0,
+      "enum": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "type": "integer"
+    },
+    "SupportKnownIssueList": {
+      "description": "The matching known issues, returned directly as a JSON array.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/SupportKnownIssue"
+      }
+    },
+    "SupportKnownIssue": {
+      "description": "A known issue and its product, status, content, and search metadata.",
+      "type": "object",
+      "properties": {
+        "workItemId": {
+          "description": "The known issue work item ID.",
+          "type": "string"
+        },
+        "state": {
+          "description": "The issue state returned by the service.",
+          "type": "string"
+        },
+        "productId": {
+          "description": "The primary product ID.",
+          "type": "string"
+        },
+        "product": {
+          "description": "The primary product's display name.",
+          "type": "string"
+        },
+        "impactedProducts": {
+          "description": "The IDs of products impacted by the issue.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "title": {
+          "description": "The known issue title.",
+          "type": "string"
+        },
+        "description": {
+          "description": "The issue description, which can contain HTML.",
+          "type": "string"
+        },
+        "solution": {
+          "description": "The resolution or workaround guidance, which can contain HTML.",
+          "type": "string"
+        },
+        "version": {
+          "description": "Version information associated with the issue.",
+          "type": "string"
+        },
+        "createdDate": {
+          "description": "The creation timestamp as returned by the service.",
+          "type": "string"
+        },
+        "changedDate": {
+          "description": "The latest change timestamp as returned by the service.",
+          "type": "string"
+        },
+        "parentUrl": {
+          "description": "The parent work item URL provided by the service.",
+          "type": "string"
+        },
+        "productFamilyTags": {
+          "description": "The product family tags associated with the issue.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isSearchable": {
+          "description": "Whether the issue is eligible for search results. Retired issues can remain retrievable by ID.",
+          "type": "boolean"
+        },
+        "@search.score": {
+          "format": "double",
+          "description": "The search relevance score returned by the service.",
+          "type": "number"
+        },
+        "@search.rerankerScore": {
+          "format": "double",
+          "description": "The semantic reranker score returned by the service.",
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "securityDefinitions": {
+    "oauth2": {
+      "type": "oauth2",
+      "flow": "implicit",
+      "authorizationUrl": "https://login.microsoftonline.com/common/oauth2/authorize?resource=https://api.powerplatform.com",
+      "scopes": {
+        ".default": ".default"
+      },
+      "description": "Microsoft Entra ID OAuth2"
+    }
+  },
+  "security": [
+    {
+      "oauth2": [
+        ".default"
+      ]
+    }
+  ]
+}

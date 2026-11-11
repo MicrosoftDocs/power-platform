@@ -253,7 +253,7 @@
           {
             "in": "query",
             "name": "includeFields",
-            "description": "Comma separated additional fields to include in the response.",
+            "description": "Comma-separated additional fields to include in the response.",
             "type": "string"
           },
           {
@@ -607,7 +607,7 @@
         "tags": [
           "EntitlementInsight"
         ],
-        "summary": "Get tenant users' entitlement snapshots (deprecated).",
+        "summary": "Get tenant user entitlement snapshots (deprecated).",
         "description": "Gets tenant users' entitlement snapshots for the specified entitlement. This operation is deprecated.",
         "operationId": "GetTenantUsers",
         "produces": [
@@ -1160,7 +1160,7 @@
         "tags": [
           "BillingPolicy"
         ],
-        "summary": "Creates the billing policy at tenant level.",
+        "summary": "Create the billing policy at the tenant level.",
         "operationId": "CreateBillingPolicy",
         "consumes": [
           "application/json"
@@ -1210,7 +1210,7 @@
         "tags": [
           "BillingPolicy"
         ],
-        "summary": "Get the billing policy at tenant level by policy ID.",
+        "summary": "Get the billing policy at the tenant level by policy ID.",
         "operationId": "GetBillingPolicy",
         "produces": [
           "application/json"
@@ -1257,7 +1257,7 @@
         "tags": [
           "BillingPolicy"
         ],
-        "summary": "Updates the billing policy at tenant level.",
+        "summary": "Update the billing policy at the tenant level.",
         "operationId": "UpdateBillingPolicy",
         "consumes": [
           "application/json"
@@ -1487,7 +1487,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Model to represents the list of environments to be linked.",
+            "description": "Model that represents the list of environments to be linked.",
             "schema": {
               "$ref": "#/definitions/BillingPolicyEnvironmentAddRequestModel"
             }
@@ -1541,7 +1541,7 @@
           {
             "in": "body",
             "name": "body",
-            "description": "Model to represents the list of environments to be unlinked.",
+            "description": "Model that represents the list of environments to be unlinked.",
             "schema": {
               "$ref": "#/definitions/BillingPolicyEnvironmentRemoveRequestModel"
             }
@@ -2268,14 +2268,14 @@
           {
             "in": "query",
             "name": "includeAllocations",
-            "description": "Flag indicating to include allocations.",
+            "description": "Flag indicating whether to include allocations.",
             "type": "boolean",
             "default": true
           },
           {
             "in": "query",
             "name": "includeConsumptions",
-            "description": "Flag indicating to include consumptions.",
+            "description": "Flag indicating whether to include consumption data.",
             "type": "boolean",
             "default": false
           },
@@ -2306,7 +2306,7 @@
         "tags": [
           "UserPerFlowCapacitySource"
         ],
-        "summary": "Get user per flow capacity source data with pagination and filtering options.",
+        "summary": "Get user per-flow capacity source data with pagination and filtering options.",
         "operationId": "GetUserPerFlowCapacitySource",
         "produces": [
           "application/json"
@@ -2416,7 +2416,7 @@
         "tags": [
           "UserPerFlowCapacitySource"
         ],
-        "summary": "Get flow context summary for user per flow capacity source.",
+        "summary": "Get the flow context summary for a user's per-flow capacity source.",
         "operationId": "GetUserPerFlowCapacitySourceFlowContextSummary",
         "produces": [
           "application/json"
@@ -2502,7 +2502,7 @@
         "tags": [
           "UserPerFlowCapacitySource"
         ],
-        "summary": "Get flow context summary for a specific user's per flow capacity source.",
+        "summary": "Get the flow context summary for a specific user's per-flow capacity source.",
         "operationId": "GetUserPerFlowCapacitySourceFlowContextSummaryForUserId",
         "produces": [
           "application/json"
@@ -2596,7 +2596,7 @@
         "tags": [
           "UserPerFlowCapacitySource"
         ],
-        "summary": "Get tenant context summary for user per flow capacity source.",
+        "summary": "Get the tenant context summary for a user's per-flow capacity source.",
         "operationId": "GetUserPerFlowCapacitySourceTenantContextSummary",
         "produces": [
           "application/json"
@@ -2669,7 +2669,7 @@
         "tags": [
           "UserPerFlowCapacitySource"
         ],
-        "summary": "Get the user per flow capacity source user context summary.",
+        "summary": "Get the user context summary for a user's per-flow capacity source.",
         "operationId": "GetUserPerFlowCapacitySourceUserContextSummary",
         "produces": [
           "application/json"
@@ -2755,7 +2755,7 @@
         "tags": [
           "UserPerFlowCapacitySource"
         ],
-        "summary": "Get user context summary for a specific user's per flow capacity source.",
+        "summary": "Get the user context summary for a specific user's per-flow capacity source.",
         "operationId": "GetUserPerFlowCapacitySourceUserContextSummaryForUserId",
         "produces": [
           "application/json"
@@ -2847,7 +2847,7 @@
   },
   "definitions": {
     "TenantEntitlementResponseModel": {
-      "description": "Represents an entitlement and its capacity, pay-as-you-go and licensed policy details for a tenant.",
+      "description": "Represents an entitlement and its capacity, pay-as-you-go, and licensed policy details for a tenant.",
       "type": "object",
       "properties": {
         "entitlementId": {
@@ -3056,7 +3056,7 @@
           "type": "string"
         },
         "metadata": {
-          "description": "Additional metadata such as Feature, ProductName and nonBillableConsumed for MCSMessages.",
+          "description": "Additional metadata such as Feature, ProductName, and nonBillableConsumed for MCSMessages.",
           "type": "object"
         }
       },
@@ -3084,7 +3084,7 @@
           "type": "string"
         },
         "metadata": {
-          "description": "Additional metadata such as Feature, ProductName and nonBillableConsumed for MCSMessages.",
+          "description": "Additional metadata such as Feature, ProductName, and nonBillableConsumed for MCSMessages.",
           "type": "object"
         },
         "environmentId": {
@@ -3260,7 +3260,7 @@
       "additionalProperties": false
     },
     "AllocationPutRequestModel": {
-      "description": "Allocation put request model.",
+      "description": "Allocation data for a scope, used in allocation requests and operation results.",
       "type": "object",
       "properties": {
         "scope": {
@@ -3319,6 +3319,10 @@
         },
         "enabled": {
           "type": "boolean"
+        },
+        "ruleData": {
+          "description": "Optional rule-specific configuration data.",
+          "type": "object"
         }
       },
       "additionalProperties": false
@@ -3363,7 +3367,7 @@
           "type": "string"
         },
         "stopResource": {
-          "description": "Indicates whether the user has selected to stop the resource explicitly or not. If 'true' the resource is in a disabled state.",
+          "description": "Indicates whether the user has explicitly selected to stop the resource. If 'true', the resource is in a disabled state.",
           "type": "boolean"
         },
         "limit": {
@@ -3610,9 +3614,12 @@
       "type": "object",
       "properties": {
         "statusCode": {
-          "format": "int32",
-          "description": "The HTTP status code of the operation result.",
-          "type": "integer"
+          "description": "The symbolic HTTP status of the operation result, such as OK.",
+          "type": "string",
+          "example": "OK"
+        },
+        "value": {
+          "$ref": "#/definitions/AllocationPutRequestModel"
         },
         "isErrorResult": {
           "description": "Indicates whether the operation result represents an error.",
@@ -4119,7 +4126,7 @@
           "example": "00000000-0000-0000-0000-000000000000"
         },
         "currencyAllocations": {
-          "description": "The collection of currencies with allocation count.",
+          "description": "The collection of currencies with allocation counts.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/CurrencyAllocationResponseModelV1"
@@ -4193,7 +4200,7 @@
       "additionalProperties": false
     },
     "ExternalCurrencyType": {
-      "description": "Available currency type which can be allocated to environment.",
+      "description": "The available currency type that can be allocated to an environment.",
       "enum": [
         "AI",
         "AppPass",
@@ -4560,7 +4567,7 @@
       "type": "string"
     },
     "ConsumerIdentityModel": {
-      "description": "The consumer identity for ISV contract.",
+      "description": "The consumer identity for the ISV contract.",
       "type": "object",
       "properties": {
         "tenantId": {
@@ -5158,7 +5165,7 @@
       "additionalProperties": false
     },
     "PowerPlatformRequestSnapshotResultWithoutPagesUserPerFlowCapacitySourceRecord": {
-      "description": "Paginated result container for user per flow capacity source records.",
+      "description": "Paginated result container for user per-flow capacity source records.",
       "type": "object",
       "properties": {
         "currentPage": {
@@ -5167,7 +5174,7 @@
           "type": "integer"
         },
         "records": {
-          "description": "Collection of user per flow capacity source records.",
+          "description": "Collection of user per-flow capacity source records.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/UserPerFlowCapacitySourceRecord"
@@ -5258,7 +5265,7 @@
       "additionalProperties": false
     },
     "UserPerFlowCapacitySourceUserContextRecord": {
-      "description": "User context summary for per flow capacity source.",
+      "description": "User context summary for a per-flow capacity source.",
       "type": "object",
       "properties": {
         "tenantId": {
@@ -5302,7 +5309,7 @@
       "additionalProperties": false
     },
     "UserPerFlowCapacitySourceFlowContextRecord": {
-      "description": "Flow context summary for per flow capacity source.",
+      "description": "Flow context summary for a per-flow capacity source.",
       "type": "object",
       "properties": {
         "tenantId": {
@@ -5345,7 +5352,7 @@
       "additionalProperties": false
     },
     "UserPerFlowCapacitySourceTenantContextSummaryRecord": {
-      "description": "Tenant-level context summary for per flow capacity source.",
+      "description": "Tenant-level context summary for a per-flow capacity source.",
       "type": "object",
       "properties": {
         "tenantId": {

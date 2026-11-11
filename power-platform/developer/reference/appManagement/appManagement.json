@@ -55,7 +55,7 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Get the list of application packages that are available for install.",
+        "summary": "Get the list of application packages that are available for installation.",
         "description": "Lists available app packages for a target environment with OData filtering.",
         "operationId": "GetEnvironmentApplicationPackage",
         "produces": [
@@ -119,7 +119,7 @@
         "tags": [
           "Applications"
         ],
-        "summary": "Start the install of application package in target environment.",
+        "summary": "Start the installation of an application package in the target environment.",
         "description": "Installs an app package by unique name into a target environment.",
         "operationId": "InstallApplicationPackage",
         "consumes": [

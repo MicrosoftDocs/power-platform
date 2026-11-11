@@ -60,28 +60,28 @@
           {
             "in": "query",
             "name": "createdOnStartDate",
-            "description": "Filter for created on or after this date.",
+            "description": "Filter for flows created on or after this date.",
             "type": "string",
             "format": "date"
           },
           {
             "in": "query",
             "name": "createdOnEndDate",
-            "description": "Filter for created on or before this date.",
+            "description": "Filter for flows created on or before this date.",
             "type": "string",
             "format": "date"
           },
           {
             "in": "query",
             "name": "modifiedOnStartDate",
-            "description": "Filter for modified on or after this date.",
+            "description": "Filter for flows modified on or after this date.",
             "type": "string",
             "format": "date"
           },
           {
             "in": "query",
             "name": "modifiedOnEndDate",
-            "description": "Filter for modified on or before this date.",
+            "description": "Filter for flows modified on or before this date.",
             "type": "string",
             "format": "date"
           },
@@ -402,22 +402,22 @@
         },
         "createdBy": {
           "format": "uuid",
-          "description": "The created by Dataverse ID.",
+          "description": "The Dataverse ID of the user who created the flow.",
           "type": "string"
         },
         "createdOnBehalfBy": {
           "format": "uuid",
-          "description": "The created on behalf by Dataverse ID.",
+          "description": "The Dataverse ID of the user on whose behalf the flow was created.",
           "type": "string"
         },
         "modifiedBy": {
           "format": "uuid",
-          "description": "The modified by Dataverse ID.",
+          "description": "The Dataverse ID of the user who modified the flow.",
           "type": "string"
         },
         "modifiedOnBehalfBy": {
           "format": "uuid",
-          "description": "The modified on behalf by ID.",
+          "description": "The ID of the user on whose behalf the flow was modified.",
           "type": "string"
         },
         "ownerId": {
