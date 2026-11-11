@@ -5,14 +5,13 @@ author: tverhasselt
 ms.author: thoverh
 contributors:
   - EllenWehrle
-  - Wrighttyler
   - shanep
 ms.reviewer: ellenwehrle
 ms.topic: get-started
 ms.date: 05/20/2026
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 ---
 
 # Get started using the SAP Vendor Payment management app

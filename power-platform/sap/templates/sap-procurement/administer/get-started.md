@@ -6,13 +6,12 @@ ms.author: thoverh
 contributors:
 - EllenWehrle
 - microsoft-dustin
-- Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: get-started
 ms.date: 05/19/2026
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 ---
 
 # Get started with the SAP Procurement template

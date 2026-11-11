@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.date: 05/19/2026
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 ---
 
 # Install and set up the SAP Setup Assistant

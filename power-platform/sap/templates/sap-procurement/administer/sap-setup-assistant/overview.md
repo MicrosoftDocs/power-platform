@@ -11,7 +11,7 @@ ms.topic: overview
 ms.date: 05/19/2026
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 #customer intent: As an administrator, I want to learn about Microsoft's SAP Setup Assistant so I can integrate Power Platform with SAP and set up the SAP Procurement template.
 ---
 

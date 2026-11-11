@@ -6,13 +6,12 @@ ms.author: drasener
 contributors:
   - haowusky
   - thoverh
-  - Wrighttyler
 ms.date: 05/20/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 ---
 
 # General error handling
