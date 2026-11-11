@@ -4,7 +4,7 @@ description: Learn more about how to create alerts to track and monitor the oper
 ms.subservice: admin
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/06/2026
+ms.date: 11/10/2026
 author: arjunmayur
 ms.author: arjunmayur
 ms.reviewer: ellenwehrle
@@ -314,6 +314,9 @@ A _triggered alert_ is an instance when one or more resources meet the rule's co
 ### Who can create and manage alerts?
 You must be a **Tenant administrator** or an **Environment administrator** to create and manage alerts.
 
+### How many alert rules can I create?
+You can create up to 10 alert rules with a 1-hour data review period and up to 50 alert rules with a 24-hour data review period for a total of up to 60 alert rules. Hourly alert rules that are turned off still count towards the limit of 10, so delete hourly alert rules that you aren't using. Alert rules with a 24-hour data review period that are turned off don't count towards the alert rule limit.
+
 ### What environments are supported?
 All environment types, such as production, sandbox, trial, and developer environment types are supported, but they must be a managed environment. You select the environment in the **ID** field after setting the **Scope** field to **Environment**. 
 
@@ -347,15 +350,27 @@ No, Microsoft preconfigures these alerts. For customization, create custom alert
 ### Can I create alerts to monitor *Time to Interactive* or *Time to Full load* on specific screens for canvas or code apps?
 No, when you create an alert on a canvas or code app and select **Time to Interactive (TTI)** or **Time to Full load (TTFL)** as the metric, it only monitors the TTI or TTFL of the *start screen* for that app. You cannot select a specific screen of an app when configuring an alert. 
 
+### I created an hourly alert rule, why can't I see any data or alert triggering right after? 
+The first check runs after the first full hour, once there's at least one data point.
+
+### Why are there gaps in the hourly chart? 
+An hour with no activity has no data point. 
+
+### Will I get an email every hour while the problem lasts? 
+You get an email as soon as a low-latency alert fires, then a reminder every 4 hours while the issue continues. Reminders stop when the issue resolves or after 7 days, whichever comes first. If the issue comes back after it resolves, you get a new email.
+
+### Can I see more than 24 hours, or export hourly data?
+No, the hourly chart covers the last 24 hours only and Monitor's data export feature only covers daily metric aggregates. 
+
+### Can hourly alerts be opted into the 'When an alert fires' trigger on the Power Platform for Admins V2 Connector? 
+At the moment, no, only alerts that have a 24-hour data review period can be opted in. We expect to support this functionality for hourly alerts by January 2027.
+
 ### Any tips or best practices?
 Yes! Follow these best practices:
 
 - **Start small**: Create a few high-value rules first, such as performance-open times, error rates, usage spikes.
 - **Name consistently**: Use clear names like **Prod – Canvas apps – Availability < 90**.
 - **Set appropriate severity**: Use **High** for production-impacting metrics and **Medium** or **Low** for trend monitoring.
-- **Manage the 50-rule limit**: Delete obsolete rules.
-- **Validate email routing**: Ensure recipients can receive emails from **PowerPlat-noreply@microsoft.com**.
-- **Monitor the 24‑hour cadence**: Expect daily evaluation; it's not real-time.
-
-### How many alert rules can I turn on at one time?
-A tenant can have 50 alert rules turned on at one time. However, you can create an unlimited number of alert rules. Consider deleting or turning off any existing alert rule if you reach the maximum.
+- **Manage the 60-rule limit**: Delete obsolete rules.
+- **Validate email routing**: Ensure recipients can receive emails from **PowerPlat-noreply@microsoft.com**, **microsoft-noreply@microsoft.com** and **azure-noreply@microsoft**. 
+- **Monitor the 24‑hour or 1 hour cadence**: Expect daily or hourly evaluation; it's not real-time.
