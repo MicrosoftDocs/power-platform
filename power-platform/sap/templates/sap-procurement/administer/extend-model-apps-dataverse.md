@@ -6,13 +6,12 @@ ms.author: thoverh
 contributors:
   - EllenWehrle
   - microsoft-dustin
-  - Wrighttyler
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.date: 05/19/2023
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 ---
 
 # Use the SAP Solution Administrator model-driven app

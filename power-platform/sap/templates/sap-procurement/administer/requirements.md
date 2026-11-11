@@ -6,12 +6,11 @@ ms.author: drasener
 contributors:
   - EllenWehrle
   - thoverh
-  - Wrighttyler
 ms.date: 05/19/2026
 ms.custom: bap-template
 ms.topic: article
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 ---
 
 # Requirements to integrate SAP with Power Platform

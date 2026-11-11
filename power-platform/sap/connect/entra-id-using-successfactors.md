@@ -7,7 +7,6 @@ contributors:
   - hidasa
   - tverhasselt
   - microsoft-dustin
-  - Wrighttyler
   - EllenWehrle
   - MartinPankraz
 ms.reviewer: ellenwehrle

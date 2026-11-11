@@ -10,7 +10,7 @@ ms.topic: how-to
 ms.date: 05/20/2026
 ms.custom: bap-template
 ms.service: power-platform
-ms.subservice: solution-templates
+ms.subservice: sap
 ---
 
 # Get started managing the SAP Supplier Self Service solution
