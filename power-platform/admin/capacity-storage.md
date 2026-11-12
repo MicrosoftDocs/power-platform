@@ -1,7 +1,7 @@
----
+---1
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 10/26/2026
+ms.date: 11/2/2026
 ms.topic: concept-article
 author: amiyapatr 
 ms.subservice: admin
@@ -408,9 +408,9 @@ When a tenant exceeds its entitled storage capacity, it enters a series of progr
 |Stage  |When it happens  |Customer experience  | Recommended action  |
 |---------|---------|---------|---------|
 |**Early notification**     | Effective consumption is more than 85%        | Informational or warning notifications appear.        | Review growth and begin remediation. |
-|**Stage 1: Restricted**     | The tenant first exceeds 100% effective consumption (time zero, or T0).       | Critical notifications appear. Environment create, copy, restore, and recover operations are blocked.       | Free storage, archive eligible data, add capacity, configure pay-as-you-go billing, or request a capacity extension.|
-|**Stage 2: Administration mode**     | The overage remains unresolved for 30 days from T0        | In addition to the restrictions applied in Stage 1, access to affected sandbox environments is limited to administrators.       | Administrators can temporarily take affected sandbox environments out of Administration mode to perform remediation activities. However, the storage overage lifecycle and timer continue to progress until the overage is resolved.|
-|**Stage 3: Disabled**     | The overage remains unresolved for 90 days from T0        | In addition to the restrictions applied in Stage 1, sign-in to affected sandbox environments is blocked for all users, including administrators. The environment and its data are limited to data export and recovery options through support tickets.  | Return the tenant to compliance, and then re-enable the environment. If tenant remains in overage, customer can reach the Microsoft support for the sole purpose of directing data export options, if needed. |
+|**Stage 1: Restricted**     | The tenant first exceeds 100% effective consumption (time zero, or T0).       | Critical notifications appear. Environment create, copy, restore, convert, recover and add Dataverse to an environment operations are blocked.       | Free storage, archive eligible data, add capacity, configure pay-as-you-go billing, or request a capacity extension.|
+|**Stage 2: Administration mode**     | The overage remains unresolved for 30 days from T0        | In addition to the restrictions applied in Stage 1, access to affected sandbox environments is limited to administrators.       | Free storage, archive eligible data, add capacity, configure pay-as-you-go billing, or request a capacity extension. Administrators can temporarily take affected sandbox environments out of Administration mode to perform remediation activities. However, the storage overage lifecycle and timer continue to progress until the overage is resolved.|
+|**Stage 3: Disabled**     | The overage remains unresolved for 90 days from T0        | In addition to the restrictions applied in Stage 1, sign-in to affected sandbox environments is blocked for all users, including administrators. The environment and its data are limited to data export and recovery options through support tickets.  | Free storage, archive eligible data, add capacity, configure pay-as-you-go billing, or request a capacity extension. Return the tenant to compliance, and then re-enable the environment. If tenant remains in overage, customer can reach the Microsoft support for the sole purpose of directing data export options, if needed. |
 
 The date the tenant first exceeds 100% effective consumption is the start of the lifecycle timeline. Resolving the effective deficit before the next stage prevents further progression. Sandbox environments with pay-as-you-go enabled do not progress through the storage overage lifecycle.
 
@@ -439,7 +439,7 @@ The Dataverse storage validation applies only to **Dataverse-only** tenants with
 ### Exclusions
 - Production environments don't go through the administration mode and become disabled.
 - Sandbox environments with active pay-as-you-go billing don't go through the administration mode and become disabled.
-- Tenants with Dynamics 365 Finance and Operations environments or consumption are out of scope for the Dataverse storage validation.
+- Tenants with Dynamics 365 Finance and Operations environments or consumption are out of scope from the upcoming Dataverse storage validation.
 
 
 ## Example storage capacity scenarios and impact
