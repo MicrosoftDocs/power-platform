@@ -26,21 +26,21 @@ For deprecation information of other products, see [Other deprecation articles](
 > [!IMPORTANT]
 > "Deprecated" means Microsoft intends to remove the feature or capability in a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability no longer works. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
 
-## Retirement of Describe it to design it in Power Automate
+## Retirement of Copilot in the designer for cloud flows and agent flows
 
-On November 30, 2026, **Describe it to design it** in Power Automate retires for all customers. This option lets makers create a cloud flow by describing what they want to automate.
+On November 30, 2026, Microsoft retires Copilot in the designer for all customers in cloud flows and agent flows. This feature is the Copilot pane in the flow designer. It lets makers build and edit flows by chatting, ask questions about a flow, get help writing expressions, and troubleshoot errors.
 
 ### Impact
 
-Beginning November 30, 2026, makers can no longer create new cloud flows with **Describe it to design it**. This retirement doesn't delete or move existing flows. Makers can still create and edit flows in the visual designer and start from templates.
+Beginning November 30, 2026, makers can no longer open or use Copilot in the designer for cloud flows or agent flows. This retirement doesn't delete, move, or change existing cloud flows or agent flows, including flows created or edited with Copilot. Makers can still create, edit, test, and run cloud flows and agent flows in the designer, and start from templates.
 
 ### Action required
 
-Share this change with your makers and update any internal guides that recommend **Describe it to design it**.
+Share this change with your makers and update any internal guides or training that recommend Copilot in the designer.
 
-For makers who want to keep creating flows from descriptions, use the **[Power Automate plugin](/power-automate/power-automate-plugin-external-tools)** in a supported AI assistant that your organization approves, such as GitHub Copilot.
+If makers want to keep building and editing flows in natural language, they can use the **[Power Automate plugin](/power-automate/power-automate-plugin-external-tools)** in a supported AI assistant that your organization approves, such as GitHub Copilot.
 
-Makers can also [create a flow manually](/power-automate/get-started-logic-flow#tab/without-copilot) or [start from a template](https://make.powerautomate.com/templates).
+Makers can also edit flows directly in the designer, [start from a template](https://make.powerautomate.com/templates), use the expression editor to write expressions, and use the flow checker or run history to troubleshoot.
 
 ## Deprecation of cross-environment comment import and export
 

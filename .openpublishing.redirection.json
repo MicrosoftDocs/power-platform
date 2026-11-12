@@ -2202,6 +2202,11 @@
       "source_path": "power-platform/admin/plug-ins.md",
       "redirect_url": "/power-platform/admin/plugin-steps",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "power-platform/admin/manage-usage-github-copilot-harness.md",
+      "redirect_url": "/power-platform/admin/manage-usage-microsoft-copilot-harness",
+      "redirect_document_id": false
     }
   ]
 }

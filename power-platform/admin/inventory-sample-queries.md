@@ -82,7 +82,7 @@ PowerPlatformResources
 
 ### Count agents by harness
 
-Shows a breakdown of agents created with the GitHub Copilot harness, Copilot Chat harness, or Standard harness.
+Shows a breakdown of agents created with the Microsoft Copilot harness, Copilot Chat harness, or Standard harness.
 
 You can see an agent's harness in the **Harness** column in the Power Platform admin center, under **Manage** > **Copilot Studio**. That column is a user interface column only. Harness isn't yet returned as agent metadata, so this query derives it from the fields the inventory returns: `properties.isCLIAgent`, `properties.model`, and `properties.createdIn`. When the `properties.harness` field becomes available, you can query it directly instead. For the field definitions, see [Microsoft Copilot Studio Agent inventory schema](/microsoft-copilot-studio/admin-agent-inventory).
 
@@ -104,7 +104,7 @@ PowerPlatformResources
 
 ### List agents with their harness
 
-Returns one row per agent with its harness, so you can find and act on individual agents rather than only counting them. Uncomment the `where` line to return only the agents built with the GitHub Copilot harness.
+Returns one row per agent with its harness, so you can find and act on individual agents rather than only counting them. Uncomment the `where` line to return only the agents built with the Microsoft Copilot harness.
 
 ```Kusto
 PowerPlatformResources
@@ -252,7 +252,7 @@ PowerPlatformResources
 
 ## Connector queries
 
-The following queries analyze connector usage across the resource types covered by [Connector inventory](inventory-schema.md#connector-inventory). Each query operates on the `properties.powerPlatformConnectors` array emitted by canvas apps, model-driven apps, apps built in Copilot managed runtime, cloud flows, agent flows, workflow agent flows, Copilot Studio agents on the Standard harness or GitHub Copilot harness, and agents created in Microsoft 365 Copilot Agent Builder. Apps built in Copilot managed runtime use the `microsoft.powerapps/apps` type with the `microsoftApp` subtype. The queries exclude App Builder apps, which use the same type but don't emit connector data.
+The following queries analyze connector usage across the resource types covered by [Connector inventory](inventory-schema.md#connector-inventory). Each query operates on the `properties.powerPlatformConnectors` array emitted by canvas apps, model-driven apps, apps built in Copilot managed runtime, cloud flows, agent flows, workflow agent flows, Copilot Studio agents on the Standard harness or Microsoft Copilot harness, and agents created in Microsoft 365 Copilot Agent Builder. Apps built in Copilot managed runtime use the `microsoft.powerapps/apps` type with the `microsoftApp` subtype. The queries exclude App Builder apps, which use the same type but don't emit connector data.
 
 ### Top connectors used across Power Platform resources
 

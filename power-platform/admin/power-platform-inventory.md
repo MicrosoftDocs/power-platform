@@ -33,7 +33,7 @@ By using Power Platform inventory, you can easily complete the following tasks:
 
 The Power Platform inventory includes the following resource types:
 
-- **Agents**: All agents you create in Copilot Studio on the Standard harness or GitHub Copilot harness, and all agents you create in Microsoft 365 Copilot Agent Builder.
+- **Agents**: All agents you create in Copilot Studio on the Standard harness or Microsoft Copilot harness, and all agents you create in Microsoft 365 Copilot Agent Builder.
 
 - **Apps**: All canvas, model-driven, code, and vibe apps, all [apps built in Copilot managed runtime](inventory-schema.md#managed-apps), and all apps you create in Microsoft 365 Copilot's App Builder agent.
 
@@ -195,7 +195,7 @@ Power Platform inventory captures the connectors and connector operations used b
 
 Connector inventory makes common admin workflows query-driven: identifying every resource affected by a deprecated connector, tracking Premium connector adoption for license decisions, scoping DLP policies to actual usage patterns, and reviewing a resource's full connector footprint during troubleshooting.
 
-**Supported resource types**: canvas apps, model-driven apps, apps built in Copilot managed runtime, cloud flows, agent flows, workflow agent flows, Copilot Studio agents on the Standard harness or GitHub Copilot harness, and agents created in Microsoft 365 Copilot Agent Builder.
+**Supported resource types**: canvas apps, model-driven apps, apps built in Copilot managed runtime, cloud flows, agent flows, workflow agent flows, Copilot Studio agents on the Standard harness or Microsoft Copilot harness, and agents created in Microsoft 365 Copilot Agent Builder.
 
 For flows, the inventory additionally captures the trigger connector and trigger operation that initiate the flow.
 
@@ -218,7 +218,7 @@ The following table shows which resource types are included in the Power Platfor
 | Environments | Yes | Yes | Yes |
 | Environment groups | Yes | Yes | Yes |
 | Agents with the Standard harness | Yes | Yes | No |
-| Agents with the GitHub Copilot harness | No | No | No |
+| Agents with the Microsoft Copilot harness | No | No | No |
 | Agents with the Copilot Chat harness | No | No | No |
 | Agent flows | Yes | Yes | No |
 | Agents created in Microsoft 365 Copilot Agent Builder | No | No | No |
