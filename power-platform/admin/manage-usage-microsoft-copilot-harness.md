@@ -1,6 +1,6 @@
 ---
-title: Manage costs for agents powered by the GitHub Copilot harness
-description: Learn how to control and monitor Copilot Credit consumption for agents powered by the GitHub Copilot harness.
+title: Manage costs for agents powered by the Microsoft Copilot harness
+description: Learn how to control and monitor Copilot Credit consumption for agents powered by the Microsoft Copilot harness.
 author: gmosleymsft
 ms.date: 10/28/2026
 ms.reviewer: ellenwehrle
@@ -13,22 +13,22 @@ search.audienceType:
   - admin
 ---
 
-# Manage costs for agents powered by the GitHub Copilot harness
+# Manage costs for agents powered by the Microsoft Copilot harness
 
-Agents powered by the GitHub Copilot harness use consumption-based billing. Building, testing, evaluating, and running these agents can consume Copilot Credits. This usage isn't included with a user's Microsoft 365 Copilot license.
+Agents powered by the Microsoft Copilot harness use consumption-based billing. Building, testing, evaluating, and running these agents can consume Copilot Credits. This usage isn't included with a user's Microsoft 365 Copilot license.
 
-As a Power Platform administrator, you can use controls in the Power Platform admin center to allocate prepaid credits, limit consumption, monitor usage, and identify agents created through the GitHub Copilot harness.
+As a Power Platform administrator, you can use controls in the Power Platform admin center to allocate prepaid credits, limit consumption, monitor usage, and identify agents created through the Microsoft Copilot harness.
 
 > [!IMPORTANT]
-> The capacity and consumption controls in the Power Platform admin center apply across Copilot Studio. They aren't exclusive to the GitHub Copilot harness. Configure controls with the other Copilot Studio agents, workflows, and features in mind for each environment.
+> The capacity and consumption controls in the Power Platform admin center apply across Copilot Studio. They aren't exclusive to the Microsoft Copilot harness. Configure controls with the other Copilot Studio agents, workflows, and features in mind for each environment.
 
-For information about which activities consume credits and how consumption is measured, see [Overview of billing for agents powered by the GitHub Copilot harness](/microsoft-copilot-studio/agents-experience/billing-credit-overview).
+For information about which activities consume credits and how consumption is measured, see [Overview of billing for agents powered by the Microsoft Copilot harness](/microsoft-copilot-studio/agents-experience/billing-credit-overview).
 
 ## Control who can build, and control how much they can spend
 
 Maker permissions and spending controls do different jobs, so you need both.
 
-**Control who can create agents.** The GitHub Copilot harness doesn't have its own maker-access setting. To control who can create agents, use your existing Copilot Studio and environment permissions.
+**Control who can create agents.** The Microsoft Copilot harness doesn't have its own maker-access setting. To control who can create agents, use your existing Copilot Studio and environment permissions.
 
 - For environment access and authoring permissions, see [Work with Power Platform environments](/microsoft-copilot-studio/environments-first-run-experience).
 - To restrict authoring, or to block access to Copilot Studio completely, see the [Authors-group troubleshooting guidance](/troubleshoot/power-platform/copilot-studio/licensing/authors-access).
@@ -49,7 +49,7 @@ To manage Copilot Studio capacity, you need the Power Platform Administrator or 
 
 Before you configure controls, determine:
 
-- Which environments can host agents powered by the GitHub Copilot harness.
+- Which environments can host agents powered by the Microsoft Copilot harness.
 - Whether each environment uses prepaid capacity, pay-as-you-go billing, or both.
 - How much monthly consumption is acceptable for each environment and agent.
 - Who is responsible for reviewing usage and responding to alerts.
@@ -66,7 +66,7 @@ This table lists the Copilot Studio features that consume Copilot Credits and wh
 | Workflows | Yes, when run inside a standard harness agent by a licensed user | Billed in all other cases. |
 | Prompts | Yes, when run inside a standard harness agent by a licensed user | Billed in all other cases. |
 | Computer use (CUA) | No | Billed for all usage. |
-| GitHub Copilot harness agents | No | Billed for all usage. Creation and runtime activities consume Copilot Credits regardless of the user's license. |
+| Microsoft Copilot harness agents | No | Billed for all usage. Creation and runtime activities consume Copilot Credits regardless of the user's license. |
 
 ## Choose cost controls
 
@@ -167,9 +167,11 @@ Copilot Credits are charged to the environment where the agent runs, from prepai
 
 For information about the available views, see [Manage Copilot Credits and capacity for Copilot Studio](manage-copilot-studio-copilot-credits-capacity.md).
 
-## Identify and count agents created through the GitHub Copilot harness
+<a id="identify-and-count-agents-created-through-the-github-copilot-harness"></a>
 
-You can see a breakdown of agents created through the GitHub Copilot harness in Power Platform inventory.
+## Identify and count agents created through the Microsoft Copilot harness
+
+You can see a breakdown of agents created through the Microsoft Copilot harness in Power Platform inventory.
 
 ### Use the Harness column in the Power Platform admin center
 
@@ -202,7 +204,7 @@ For more information, see [Managing AI experiences enabled by usage-based billin
 
 ## Establish an access and capacity request process
 
-The Power Platform admin center doesn't have a GitHub Copilot harness-specific request process. Use your organization's existing access and approval process for makers who need an environment role or extra capacity.
+The Power Platform admin center doesn't have a Microsoft Copilot harness-specific request process. Use your organization's existing access and approval process for makers who need an environment role or extra capacity.
 
 Document:
 
@@ -220,7 +222,7 @@ Developer environments and trial environments move to usage-based billing Septem
 
 Before that date:
 
-1. Identify agents created through the GitHub Copilot harness.
+1. Identify agents created through the Microsoft Copilot harness.
 1. Review their recent nonbilled consumption.
 1. Configure environment capacity and overage behavior.
 1. Set limits and notifications for higher-risk agents.
@@ -229,7 +231,7 @@ Before that date:
 
 ## Related content
 
-- [Overview of billing for agents powered by the GitHub Copilot harness](/microsoft-copilot-studio/agents-experience/billing-credit-overview)
+- [Overview of billing for agents powered by the Microsoft Copilot harness](/microsoft-copilot-studio/agents-experience/billing-credit-overview)
 - [Purchase and manage Copilot Credits](/microsoft-copilot-studio/agents-experience/billing-manage-buy-credits)
 - [Manage Copilot Credits and capacity for Copilot Studio](manage-copilot-studio-copilot-credits-capacity.md)
 - [Manage Copilot Credits allocations programmatically](programmability-tutorial-manage-copilot-credit-allocations.md)
