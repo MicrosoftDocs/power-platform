@@ -57,7 +57,7 @@ Power Platform inventory represents connectors in two related ways:
 - **Connectors used by resources**: the connectors and operations that each app, flow, or agent uses, captured as the `properties.powerPlatformConnectors` array. This data also appears as a **Connectors** column across the Power Platform admin center inventory grids: the unified **Manage** > **Inventory** page and the resource-specific views under **Copilot Studio**, **Power Apps**, and **Power Automate**.
 - **Connectors as a resource type**: each connector available in your tenant is also its own inventory record, under the `microsoft.powerplatformconnector/connectors` resource type. For its fields, see [Connectors as a resource type](#connectors-as-a-resource-type).
 
-The following resource types emit connector data: canvas apps, model-driven apps, apps built in Copilot managed runtime, cloud flows, agent flows, workflow agent flows, Copilot Studio agents on the Standard harness or GitHub Copilot harness, and agents created in Microsoft 365 Copilot Agent Builder.
+The following resource types emit connector data: canvas apps, model-driven apps, apps built in Copilot managed runtime, cloud flows, agent flows, workflow agent flows, Copilot Studio agents on the Standard harness or Microsoft Copilot harness, and agents created in Microsoft 365 Copilot Agent Builder.
 
 For flows (cloud flows, agent flows, and workflow agent flows), the inventory additionally captures the connector and operation that initiate the flow as `properties.trigger` and `properties.triggerOperation`. These fields complement `powerPlatformConnectors`, which captures the connectors invoked during flow execution.
 
