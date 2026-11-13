@@ -53,6 +53,7 @@ IP-based cookie binding sets the IP address claim in the session cookie. Each re
 - When connecting to a wireless hotspot
 - When the Internet connection is reset by the Internet service provider
 - When a router is reset or restarted
+- Changes to the user's network or IP address during an active session can require reauthentication if the observed source IP address changes.
 
 ## How to test the feature
 
