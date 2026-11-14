@@ -73,6 +73,18 @@ Learn more:
 - [Create a model-driven app with the app designer](/power-apps/maker/model-driven-apps/create-model-driven-app#create-an-app-description-with-copilot)
 - [Build and edit model-driven apps with AI code generation tools](/power-apps/maker/model-driven-apps/model-driven-app-external-tools)
 
+## Deprecation of AI-generated descriptions for canvas apps
+
+After November 30, 2026, the **Create descriptions using AI** option for AI-generated descriptions for canvas apps won't be available.
+
+### Impact
+
+After this date, the **Create descriptions using AI** option won't be available in the **Publish** dialog or the app designer **Settings** panel. Existing descriptions aren't affected, and makers can continue to add or edit descriptions manually.
+
+### Action required
+
+No data migration is required. Enter or update canvas app descriptions manually.
+
 ## Deprecation of formula generation and Power Apps Ideas in canvas apps
 
 After December 11, 2026, Power Apps Ideas, **Create a formula**, and formula generation from code comments won't be available. The **Explain this formula** and **Explain this selection** experiences aren't affected.
