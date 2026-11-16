@@ -7,7 +7,7 @@ ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: overview
 ms.subservice: admin
-ms.date: 11/04/2026
+ms.date: 11/16/2026
 ai-usage: ai-assisted
 search.audienceType:
   - admin
@@ -185,7 +185,7 @@ One. Routing always takes a maker to the same personal environment. Starting Nov
 
 #### In which region are personal environments created?
 
-By default, personal environments are created in your tenant's home geography.
+By default, personal developer environments are created in your tenant's home geography. If macro-region provisioning is used, the platform chooses a location within the associated macro-region.
 
 #### Can makers build in a different environment?
 
