@@ -220,6 +220,46 @@
           href: when-edit-customization-file.md
         - name: Pipeline table reference
           href: ../developer/pipelines/table-reference.md
+    - name: ALM for Power Pages
+      items:
+        - name: Overview
+          href: power-pages/portals-alm.md
+        - name: Plan ALM for Power Pages
+          href: power-pages/plan-alm.md
+        - name: Configure ALM with built-in tools
+          items:
+            - name: Add a site to a solution
+              href: power-pages/power-pages-solutions.md
+            - name: Source control integration (preview)
+              href: power-pages/power-pages-source-control.md
+            - name: Use environment variables with site settings
+              href: power-pages/environment-variables-for-site-settings.md
+            - name: Deploy with pipelines in Power Platform
+              href: power-pages/power-pages-pipelines.md
+            - name: ALM for single-page applications
+              href: power-pages/power-pages-spa-alm.md
+        - name: Configure ALM with developer tools
+          items:
+            - name: Overview of ALM with developer tools
+              href: power-pages/developer-tools-overview.md
+            - name: Set up source control and branching
+              href: power-pages/source-control-developer-tools.md
+            - name: Automate deployments with Power Platform Build Tools
+              href: power-pages/build-tools.md
+            - name: Automate deployments with GitHub Actions
+              href: power-pages/github-actions.md
+            - name: Manage environment-specific values
+              href: power-pages/environment-specific-values.md
+            - name: CI/CD for single-page applications
+              href: power-pages/spa-developer-tools.md
+        - name: Roll back and hotfix releases
+          href: power-pages/rollback-hotfix.md
+        - name: Migrate website configuration
+          href: /power-pages/admin/migrate-site-configuration
+        - name: Troubleshoot ALM
+          href: power-pages/troubleshoot-alm.md
+        - name: ALM white paper
+          href: /power-pages/guidance/white-papers/application-lifecycle-management
     - name: Responsible AI
       items:
         - name: Overview
