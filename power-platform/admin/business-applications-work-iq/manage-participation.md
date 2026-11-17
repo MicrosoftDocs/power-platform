@@ -1,8 +1,8 @@
 ---
-title: Manage participation in Business Applications in Work IQ (preview)
+title: Manage participation in Business Applications in Work IQ
 description: Configure Work IQ participation controls to manage environment features, data reasoning, and app inclusion. Start setting up your environments now.
 #customer intent: As a Power Platform administrator, I want to understand the participation controls for Business Applications in Work IQ, so that I can decide which environments and applications share data with Work IQ.
-ms.date: 09/25/2026
+ms.date: 11/17/2026
 author: karissa-larson
 ms.author: kalars
 ms.reviewer: ellenwehrle
@@ -16,13 +16,9 @@ search.audienceType:
 ms.collection: bap-ai-copilot
 ---
 
-# Manage participation in Business Applications in Work IQ (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Manage participation in Business Applications in Work IQ
 
 **Business Applications in Work IQ** is a capability that administrators use to choose which environments and applications participate in Work IQ. It controls which environments have Work IQ features, which environments Work IQ can reason over and return data from, and which applications makers include within those environments.
-
-[!INCLUDE [preview-note-business-applications-work-iq](~/../shared-content/shared/preview-includes/preview-note-business-applications-work-iq.md)]
 
 ## Before you begin
 

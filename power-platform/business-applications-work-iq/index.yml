@@ -1,16 +1,16 @@
 ### YamlMime:Landing
 
-title: Business Applications in Work IQ documentation (preview)
+title: Business Applications in Work IQ documentation
 summary: Learn how to bring Microsoft Dataverse business data, processes, and context into Copilot and agent experiences with Business Applications in Work IQ.
 
 metadata:
-  title: Business Applications in Work IQ documentation (preview)
+  title: Business Applications in Work IQ documentation
   description: Learn how to manage Business Applications in Work IQ, use business skills and semantic models, and connect business data to Copilot and agent experiences.
   ms.service: power-platform
   ms.topic: landing-page
   author: edoyle
   ms.author: edoyle
-  ms.date: 09/30/2026
+  ms.date: 11/17/2026
   ai-usage: ai-assisted
   ms.collection: bap-ai-copilot
 
@@ -28,7 +28,7 @@ landingContent:
           - text: Quickstart
             url: ../admin/business-applications-work-iq/quickstart.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Manage participation
-            url: ../admin/business-applications-work-iq/manage-participation.md
+            url: ../admin/business-applications-work-iq/manage-participation.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Manage AI experience access
             url: ../admin/business-applications-work-iq/manage-ai-experience-access.md?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Review user, agent, and application access
@@ -55,40 +55,44 @@ landingContent:
           - text: Fine-tune semantic model signals
             url: /power-apps/maker/data-platform/fine-tune-semantic-model-signals?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
 
-  - title: Use in agents, Copilot and Cowork
+  - title: Use in apps, agents, Copilot and Cowork
     linkLists:
       - linkListType: get-started
         links:
           - text: Copilot Chat
             url: /power-apps/maker/data-platform/business-applications-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+          - text: Power Apps model-driven apps
+            url: /power-apps/user/use-business-apps-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Work IQ CLI
-            url: /microsoft-365/copilot/extensibility/work-iq/cli
+            url: /microsoft-365/copilot/extensibility/work-iq/cli?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Work IQ plugin in Cowork
-            url: /microsoft-365/copilot/cowork/cowork-work-iq
+            url: /microsoft-365/copilot/cowork/cowork-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
 
   - title: Add business context to agents
     linkLists:
       - linkListType: get-started
         links:
           - text: Agent Builder in Copilot
-            url: /microsoft-365/copilot/extensibility/agent-builder-add-knowledge#dynamics-365-and-power-apps-data
+            url: /microsoft-365/copilot/extensibility/agent-builder-add-knowledge#dynamics-365-and-power-apps-data?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Copilot Studio
-            url: /microsoft-copilot-studio/agents-experience/add-work-iq
+            url: /microsoft-copilot-studio/agents-experience/add-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: GitHub Copilot
-            url: /microsoft-365/copilot/extensibility/work-iq/mcp/quickstart/github-copilot-cli
+            url: /microsoft-365/copilot/extensibility/work-iq/mcp/quickstart/github-copilot-cli?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Other coding agents
-            url: /microsoft-365/copilot/extensibility/work-iq/cli
+            url: /microsoft-365/copilot/extensibility/work-iq/cli?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+          - text: Business skills for Dynamics 365 ERP
+            url: /dynamics365/fin-ops-core/dev-itpro/copilot/mcp/erp-business-skills?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
 
   - title: Supported line-of-business data
     linkLists:
       - linkListType: concept
         links:
           - text: Dynamics 365 Customer Service
-            url: /dynamics365/customer-service/develop/mcp-tools-overview
+            url: /dynamics365/customer-service/develop/mcp-tools-overview?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+          - text: Dynamics 365 ERP
+            url: /dynamics365/fin-ops-core/dev-itpro/copilot/erp-in-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Dynamics 365 Sales
-            url: /dynamics365/sales/ai-agent-overview#mcp-tools-and-skills-support
-          - text: Power Apps model-driven apps
-            url: /power-apps/user/use-business-apps-work-iq
+            url: /dynamics365/sales/ai-agent-overview#mcp-tools-and-skills-support?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
 
   - title: Develop with business context
     linkLists:
@@ -103,6 +107,6 @@ landingContent:
           - text: Dataverse plugin skills reference
             url: /power-apps/developer/data-platform/agents-plugin/reference?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Work IQ MCP tools reference
-            url: /microsoft-365/copilot/extensibility/work-iq/mcp/tool-reference
+            url: /microsoft-365/copilot/extensibility/work-iq/mcp/tool-reference?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
           - text: Work IQ Dev Tools
-            url: https://microsoft.github.io/wiqd/getting-started/
+            url: https://microsoft.github.io/wiqd/getting-started?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
