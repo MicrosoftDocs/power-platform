@@ -37,8 +37,13 @@ When Work IQ is on by default, the following settings are also on:
 - **Dataverse Data Available in Microsoft 365 Copilot**: This Microsoft 365 admin center setting allows environments in the tenant to share Dataverse and Microsoft 365 data bidirectionally. Tenant administrators manage this setting. It must be on for environments to use Work IQ capabilities.
 - **Work IQ**: This Power Platform admin center setting turns on Work IQ capabilities for a specific environment. Makers and users can then use these capabilities in apps, Copilot Cowork, coding clients such as GitHub CLI and Dataverse CLI, and Microsoft 365 Copilot Chat. Environment administrators manage this setting.
 - **Enable Copilot in model-driven apps**: This app-level setting makes the tables, data, views, and forms for a specific app available to Microsoft 365 Copilot Chat. Makers manage this setting in the Power Apps maker portal.
+- [Preview features](#preview-features) enabled by Work IQ.
 
 When Business Applications in Work IQ is on in an environment, Microsoft 365 Copilot Chat is automatically included in every new app you create there.
+
+### Preview features
+
+[!INCLUDE [preview-note-business-applications-work-iq-with-features](~/../shared-content/shared/preview-includes/preview-note-business-applications-work-iq-with-features.md)]
 
 ## Capabilities available with Work IQ
 
