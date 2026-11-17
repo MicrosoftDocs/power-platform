@@ -1,8 +1,8 @@
 ---
-title: "Quickstart: Set up Business Applications in Work IQ for a pilot (preview)"
+title: "Quickstart: Set up Business Applications in Work IQ for a pilot"
 description: Set up Business Applications in Work IQ so pilot users can query Dynamics 365 and Power Apps data through Microsoft 365 Copilot.
 #customer intent: As a Power Platform admin, I want to connect Dynamics 365 and Power Apps data to Work IQ, so that pilot users can ask grounded questions through Microsoft 365 Copilot.
-ms.date: 11/04/2026
+ms.date: 11/17/2026
 author: karissa-larson
 ms.author: kalars
 ms.reviewer: ellenwehrle
@@ -16,13 +16,9 @@ search.audienceType:
 ms.collection: bap-ai-copilot
 ---
 
-# Quickstart: Set up Business Applications in Work IQ for a pilot (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Quickstart: Set up Business Applications in Work IQ for a pilot
 
 In this quickstart, you connect your business applications to Work IQ so your pilot users can ask questions grounded in Dynamics 365 and Power Apps data through [Microsoft 365 Copilot](/microsoft-365/copilot/). You choose a pilot scenario, confirm availability, enable Work IQ in your environment, configure your model-driven app, and try the experience.
-
-[!INCLUDE [preview-note-business-applications-work-iq](~/../shared-content/shared/preview-includes/preview-note-business-applications-work-iq.md)]
 
 ## Before you begin
 

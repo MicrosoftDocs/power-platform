@@ -39,6 +39,33 @@
       href: /power-apps/maker/data-platform/regenerate-semantic-model?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Semantic model FAQ
       href: /power-apps/maker/data-platform/semantic-model-faq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+  - name: Use in Copilot and agents
+    expanded: false
+    items:
+    - name: Copilot Chat
+      href: /power-apps/maker/data-platform/business-applications-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+    - name: Work IQ CLI and other coding agents
+      href: /microsoft-365/copilot/extensibility/work-iq/cli?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+    - name: Work IQ plugin in Cowork
+      href: /microsoft-365/copilot/cowork/cowork-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+  - name: Add business context to agents
+    expanded: false
+    items:
+    - name: Agent Builder in Copilot
+      href: /microsoft-365/copilot/extensibility/agent-builder-add-knowledge?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json#dynamics-365-and-power-apps-data
+    - name: Copilot Studio
+      href: /microsoft-copilot-studio/agents-experience/add-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+    - name: GitHub Copilot
+      href: /microsoft-365/copilot/extensibility/work-iq/mcp/quickstart/github-copilot-cli?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+  - name: Supported business applications
+    expanded: false
+    items:
+    - name: Dynamics 365 Customer Service
+      href: /dynamics365/customer-service/develop/mcp-tools-overview?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
+    - name: Dynamics 365 Sales
+      href: /dynamics365/sales/ai-agent-overview?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json#mcp-tools-and-skills-support
+    - name: Power Apps model-driven apps
+      href: /power-apps/user/use-business-apps-work-iq?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
   - name: Developer tools
     expanded: false
     items:
@@ -60,5 +87,7 @@
         href: /power-apps/developer/data-platform/agents-plugin/reference?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Work IQ API
       href: /microsoft-365/copilot/extensibility/work-iq/api-overview
+    - name: Work IQ MCP tools reference
+      href: /microsoft-365/copilot/extensibility/work-iq/mcp/tool-reference?toc=/power-platform/business-applications-work-iq/toc.json&bc=/power-platform/breadcrumb/TOC.json
     - name: Work IQ Dev Tools
       href: https://microsoft.github.io/wiqd/getting-started/
