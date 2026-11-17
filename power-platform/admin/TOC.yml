@@ -500,6 +500,8 @@
                   href: monitoring/monitor-power-automate.md
                 - name: For Copilot Studio
                   href: monitoring/monitor-copilot-studio.md
+            - name: Export Monitor metrics with the Power Platform API (preview)
+              href: monitoring/monitor-data-export.md
         - name: Usage and inventory
           items:
             - name: Discover what drives engagement in Power Platform
