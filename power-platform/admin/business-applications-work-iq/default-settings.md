@@ -1,7 +1,7 @@
 ---
-title: Default settings (preview)
+title: Default settings
 description: Learn which Business Applications in Work IQ settings are on by default and how to manage them.
-ms.date: 10/16/2026
+ms.date: 11/17/2026
 ms.topic: concept-article
 ai-usage: ai-assisted
 author: NHelgren
@@ -9,29 +9,26 @@ ms.author: nhelgren
 ms.reviewer: ellenwehrle
 ---
 
-# Business Applications in Work IQ default settings (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Business Applications in Work IQ default settings
 
 **Business Applications in Work IQ** is a set of capabilities that lets Microsoft 365 Copilot, Microsoft 365 Copilot Chat, Copilot Cowork, and Model Context Protocol (MCP) clients work with Power Apps and Dynamics 365 data.
 
-[!INCLUDE [preview-note-business-applications-work-iq](~/../shared-content/shared/preview-includes/preview-note-business-applications-work-iq.md)]
+The plan to turn on Business Applications in Work IQ for existing environments that aren't listed as exceptionshas been deferred from the previously documented November 2026 schedule. Check this article for updates.
 
-Starting September 30, 2026, Microsoft turns on these capabilities by default for all new environments that aren't listed as exceptions in this article. You can use the capabilities without a separate configuration process.
-
-Starting in November 2026, Microsoft turns on Business Applications in Work IQ for existing environments that aren't listed as exceptions.
+To turn Business Applications in Work IQ on or off for a specific environment, see [Cascading control settings](#cascading-control-settings).
 
 ## Environments enabled by default
 
-The default applies to public production environments created for new or existing tenants. The following environments are exceptions:
+Business Applications in Work IQ is on by default for new public production environments created for new or existing tenants. The following environments are exceptions:
 
-- **European Union (EU) and European Free Trade Association (EFTA) environments**: Microsoft plans to enable environments provisioned in the European Union (EU) and European Free Trade Association (EFTA) environments when the feature becomes generally available. During public preview, customers can turn on Work IQ by using the corresponding setting in the Microsoft 365 admin center.
+- **European Union (EU) and European Free Trade Association (EFTA) environments**: This exception applies to environments provisioned in the EU and EFTA macro region geography.
 - **Government-related environments**: This exception applies to environments provisioned by customers with current or previous government cloud deployments that are likely to depend on FedRAMP security controls.
 - **Nonproduction environments**: This exception applies to trial, sandbox, and developer environments.
 
-Business Applications in Work IQ isn't currently available in sovereign or government cloud environments, including Department of Defense (DoD), Government Community Cloud (GCC), and GCC High.
+If Business Applications in Work IQ isn't on by default in your environment, you can turn it on. Turn on the [tenant-level setting](#tenant-level-setting) in the Microsoft 365 admin center and the [environment-level setting](#environment-level-setting) in the Power Platform admin center.
 
-You can manually configure an environment where Work IQ is off. See [Set up Business Applications in Work IQ for a pilot](quickstart.md).
+> [!NOTE]
+> Business Applications in Work IQ isn't currently available in sovereign or government cloud environments, including Department of Defense (DoD), Government Community Cloud (GCC), and GCC High.
 
 ## Settings enabled by default
 
@@ -41,7 +38,7 @@ When Work IQ is on by default, the following settings are also on:
 - **Work IQ**: This Power Platform admin center setting turns on Work IQ capabilities for a specific environment. Makers and users can then use these capabilities in apps, Copilot Cowork, coding clients such as GitHub CLI and Dataverse CLI, and Microsoft 365 Copilot Chat. Environment administrators manage this setting.
 - **Enable Copilot in model-driven apps**: This app-level setting makes the tables, data, views, and forms for a specific app available to Microsoft 365 Copilot Chat. Makers manage this setting in the Power Apps maker portal.
 
-During public preview, all new apps in an environment where Work IQ is on automatically include Microsoft 365 Copilot Chat.
+When Business Applications in Work IQ is on in an environment, Microsoft 365 Copilot Chat is automatically included in every new app you create there.
 
 ## Capabilities available with Work IQ
 
@@ -58,7 +55,7 @@ Some features use extra storage for search indexes. These features include seman
 
 ## Solution imports
 
-When you import a solution that contains an app into an environment where Work IQ is on, the following rules apply:
+When you import a solution that contains an app into an environment where Business Applications in Work IQ is on, the following rules apply:
 
 - If the app's **Enable Copilot in model-driven apps** setting is **On** or **Default**, the setting is **On** in the destination environment.
 - If the setting is **Off**, it remains **Off** in the destination environment.
@@ -123,3 +120,5 @@ Use the app-level setting to manage whether a model-driven app's tables, forms, 
 ## Related content
 
 - [Agent Builder in Microsoft 365 Copilot](/microsoft-365/copilot/extensibility/agent-builder)
+- [Compliance and data privacy](../wp-compliance-data-privacy.md)
+- [Power Platform and Dynamics 365 macro region geography](../macro-regions.md)

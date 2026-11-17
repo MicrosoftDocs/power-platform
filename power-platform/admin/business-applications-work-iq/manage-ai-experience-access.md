@@ -1,8 +1,8 @@
 ---
-title: Manage AI experience access to Business Applications in Work IQ (preview)
+title: Manage AI experience access to Business Applications in Work IQ
 description: Connection controls determine which AI experiences and apps access business applications data. Learn how to manage Copilot, MCP server, and App Access settings.
 #customer intent: As an IT admin, I want to understand the difference between Copilot access controls, MCP server controls, and App Access, so that I can apply the right control for a given scenario.
-ms.date: 09/25/2026
+ms.date: 11/17/2026
 author: karissa-larson
 ms.author: kalars
 ms.reviewer: ellenwehrle
@@ -16,13 +16,9 @@ search.audienceType:
 ms.collection: bap-ai-copilot
 ---
 
-# Manage AI experience access to Business Applications in Work IQ (preview)
-
-[!INCLUDE [preview-banner](~/../shared-content/shared/preview-includes/preview-banner.md)]
+# Manage AI experience access to Business Applications in Work IQ
 
 **Connection controls** are administrative settings that determine which AI experiences and applications can connect to business applications data. These controls let administrators manage availability through Microsoft 365 Copilot, allow or block access to the Work IQ MCP server, and use App Access to control which applications can access data in an environment.
-
-[!INCLUDE [preview-note-business-applications-work-iq](~/../shared-content/shared/preview-includes/preview-note-business-applications-work-iq.md)]
 
 This article covers connection controls. For environment features and data participation, see [Manage participation in Business Applications in Work IQ](manage-participation.md). For the underlying data permissions, see [Review user, agent, and application access for Business Applications in Work IQ](review-data-access.md).
 
