@@ -2,7 +2,7 @@
 title: Auto-claim policies for Power Apps licenses
 description: Learn how to assign Power Apps licenses through auto-claim policies.
 author: amiyapatr-zz
-ms.date: 02/21/2025
+ms.date: 11/18/2026
 ms.reviewer: ellenwehrle
 ms.topic: concept-article
 ms.subservice: admin
@@ -72,6 +72,14 @@ In the Power Platform admin center, administrators can decide whether the policy
 
 1.	In the [Power Platform admin center](https://admin.powerplatform.microsoft.com/), go to **Settings** and click the **Auto-claim policies** option.
 2.	In the **Auto-claim policies** pane, select whether the policy should be applicable to **All Environments** or **Only Managed Environments**.
+
+### How does auto-claim work with pay-as-you-go?
+
+When an environment is configured for pay-as-you-go billing and an auto-claim policy is enabled for the tenant, auto-claim takes precedence over pay-as-you-go billing.
+When a user launches a PowerApp that requires a premium license, the system first checks whether an eligible PowerApps license is available in the tenant. If a license is available, the system automatically assigns it to the user through the auto-claim policy before considering pay-as-you-go billing.
+If no eligible licenses are available, the app launch is billed through the environment's configured pay-as-you-go billing plan.
+
+
 
 ### Support for group-based license assignment
 
