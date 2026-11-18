@@ -108,8 +108,8 @@ landingContent:
     linkLists:
     - linkListType: concept
       links:
-      - text: Copilot availability in Power Platform by geography, language, product, and feature
-        url: https://aka.ms/bapcopilot-intl-report-external
+      - text: Microsoft Copilot Roadmap
+        url: https://aka.ms/roadmap
       - text: Microsoft Learn Copilot learning hub
         url: /copilot/   
       - text: Microsoft Learn AI learning hub

@@ -4,7 +4,7 @@ description: Learn how to manage feature settings to adjust how features appear 
 author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 11/03/2026
+ms.date: 11/10/2026
 ms.update-cycle: 180-days
 ms.subservice: admin
 ms.custom: NewPPAC
@@ -34,7 +34,7 @@ ms.collection:
 
 Use feature settings to adjust how features appear and function in Power Apps [canvas apps](/power-apps/maker/canvas-apps/getting-started) and [model-driven apps](/powerapps/maker/model-driven-apps/model-driven-app-overview).
 
-You can find these settings in the Power Platform admin center for an environment.
+Find these settings in the Power Platform admin center for an environment.
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. In the navigation pane, select **Manage**.
@@ -43,7 +43,7 @@ You can find these settings in the Power Platform admin center for an environmen
 1. In the command bar, select **Settings**.
 1. Expand **Product**, and then select **Features**.
 
-Make sure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
+Ensure you have the System Administrator security role or equivalent permissions to update the settings. To check your security role, see [View your user profile](/powerapps/user/view-your-user-profile). If you don't have the correct permissions, contact your system administrator.
 
 > [!NOTE]
 > These settings might not yet be available in your environment. Availability depends on the regional rollout schedule.
@@ -75,8 +75,8 @@ Make sure you have the System Administrator security role or equivalent permissi
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md#copilots-and-generative-ai-features-that-depend-on-data-movement-across-regions) to be turned on. For information on what data is shared with Viva Insights, see [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). | On |
-| Allow cross-geo boundary sharing of aggregated analytics data if your tenant preferred data location for Viva Insights is different from the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](/power-platform/admin/geographical-availability-copilot#turn-on-data-movement-bing-search-and-microsoft-365-services-for-copilots-and-generative-ai-features). When **On**, Microsoft Copilot Studio data is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
+| Allow Copilot Studio to share data with Viva Insights | When **On**, enables Copilot Studio data to flow to Microsoft Viva Insights for [analytical reports](/microsoft-copilot-studio/analytics-viva-insights). Also requires [Microsoft 365 services](geographical-availability-copilot.md) to be turned on. For information on what data is shared with Viva Insights, see [View advanced analytics in Microsoft Viva Insights](/microsoft-copilot-studio/analytics-viva-insights). | On |
+| Allow cross-geo boundary sharing of aggregated analytics data if your tenant preferred data location for Viva Insights is different from the location of your Copilot Studio environment | For tenants with Power Platform environments across [multiple geos](geographical-availability-copilot.md). When **On**, Microsoft Copilot Studio data is sent and stored in the base location of the tenant in Viva Insights, even when crossing geo boundaries. Requires turning on **Allow Copilot Studio to share data with Viva Insights**.  | Off |
 
 ### Sharing agents with embedded maker credentials (preview)
 
@@ -304,7 +304,7 @@ App makers can learn more about form fill assistance in [Manage model-driven app
 
 | Setting | Description | Default value |
 |---------|-------------|---------------|
-| FlowRun entity time to live | Time in seconds of when this run record is automatically deleted. | Enabled - 28 days retention (default) |
+| FlowRun entity time to live | Time in seconds for when this run record is automatically deleted. | Enabled - 28 days retention (default) |
 
 ## Block unmanaged customizations
 
@@ -408,11 +408,11 @@ App makers can learn more about form fill assistance in [Manage model-driven app
 |---------|---------|---------|
 |Enable deletion of address records in Dataverse |When **On**, users can delete address records created in Dataverse for **Account** and **Contact** tables through the user interface or through bulk deletion. Learn more in [Delete embedded address records](/power-apps/developer/data-platform/customer-entities-account-contact#delete-embedded-address-records).|    Off    |
 
-## Block deletion of out-of-the-box attribute maps
+## Block deletion of default attribute maps
 
 |Setting  |Description  |Default value  |
 |---------|---------|---------|
-| Block deletion of out-of-the-box attribute maps. | When **On**, the platform allows deletion of out-of-the-box attribute mappings introduced by Microsoft solutions.|    On    |
+| Block deletion of default attribute maps. | When **On**, the platform allows deletion of default attribute mappings introduced by Microsoft solutions.|    On    |
 
 ## Power Apps ideas for canvas apps
 

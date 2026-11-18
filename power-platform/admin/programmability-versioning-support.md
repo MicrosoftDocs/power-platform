@@ -23,7 +23,7 @@ By incrementing the version number of the API (for example, from 2021-10-01 to 2
 The various tools and SDKs that are generated on top of Power Platform API like Power Platform CLI, the Admin V2 connector, and PowerShell, are updated to newer API versions on a per action basis and are transparent to end users.
 
 ## Compatible and breaking changes
-Microsoft provides details of programmability changes in the [release plans](/dynamics365/release-plans/#microsoft-power-platform). If the changes are nonbreaking in nature, the API version remains the same, and the PowerShell version receives a minor version increment. If the changes are breaking in nature, Microsoft increments the API version and PowerShell major version. 
+Microsoft will provide details of programmability changes. If the changes are nonbreaking in nature, the API version remains the same, and the PowerShell version receives a minor version increment. If the changes are breaking in nature, Microsoft increments the API version and PowerShell major version. 
 
 Here are examples of breaking changes:
 
