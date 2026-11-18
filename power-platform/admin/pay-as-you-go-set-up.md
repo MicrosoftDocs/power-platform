@@ -37,14 +37,14 @@ If you don't already have an Azure subscription in your tenant, work through the
    
 ## Link an Azure subscription to an environment 
 
-Pay-as-you-go can be set up via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or within [Power Apps](https://make.powerapps.com/). Pay-as-you-go is available for **production** and **sandbox** environments.
+Pay-as-you-go can be set up via the [Power Platform admin center](https://admin.powerplatform.microsoft.com/) or within [Power Apps](https://make.powerapps.com/). Pay-as-you-go is available for **production** and **sandbox** environments. You can't turn on pay-as-you-go when you create a developer environment, but you can add an existing developer environment to a billing plan under **Licensing** > **Billing plans**.
 
 ## Create a billing plan
 
 To create a [billing plan](pay-as-you-go-overview.md), link [environments](environments-overview.md) to it, and add Azure subscription details for billing, complete the following steps.
 
 1. In the navigation pane, select **Licensing**.
-1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
+1. In the **Licensing** pane, select **Billing plans**.
 
 1. Select **New billing plan**. The **New billing plan** pane is displayed.
 
@@ -71,7 +71,7 @@ Microsoft 365 users without a paid Copilot license can now access and use Copilo
 
 1. In the navigation pane, select **Licensing**.
 
-1. In the **Licensing** pane, select **Pay-as-you-go plans**. The **Billing plans** page is displayed.
+1. In the **Licensing** pane, select **Billing plans**.
 
 1. Select **New billing plan**. The **New billing plan** pane is displayed.
 
@@ -156,7 +156,7 @@ You can set up pay-as-you-go for your environment right from your app's setting 
 
 You can turn off pay-as-you-go for an environment at any time by doing either of the following:
 
-- Remove the environment from a billing policy by going to the **Power Platform admin center** > **Billing policies** page and editing the billing policy.
+- Remove the environment from a billing plan by going to **Licensing** > **Billing plans** in the Power Platform admin center and editing the billing plan.
 
 **OR**
 

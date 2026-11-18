@@ -42,7 +42,7 @@ The count is the number of unique users who opened an app or a portal in the cou
 No. You need an Azure subscription to set up pay-as-you-go.
 
 ### Which environments are available for pay-as-you-go?
-Currently, production and sandbox environments are available.
+Currently, production and sandbox environments are available. You can't turn on pay-as-you-go when you create a developer environment, but you can add an existing developer environment to a billing plan under **Licensing** > **Billing plans**.
 
 ### Can pay-as-you-go be set up for individual apps?
 No. Pay-as-you-go is set up for an environment and all apps within that environment are billed against the associated Azure subscription. However, you can exclude an app from using the Azure subscription, in which case a user needs a per-user license to use the app. Per-app licenses can't be used in a pay-as-you-go environment.
