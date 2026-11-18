@@ -7,7 +7,7 @@ ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: overview
 ms.subservice: admin
-ms.date: 11/16/2026
+ms.date: 11/17/2026
 ai-usage: ai-assisted
 search.audienceType:
   - admin
@@ -55,7 +55,7 @@ Three Power Platform capabilities create and govern personal environments.
 
 A maker gets a personal environment through the following sequence:
 
-1. A maker opens Power Apps, Power Automate, Power Automate for desktop, or Microsoft Copilot Studio, or builds an app with Microsoft Copilot Managed Runtime (preview).
+1. A maker opens Power Apps, Power Automate, Power Automate for desktop, or Microsoft Copilot Studio, or builds an app with Microsoft Copilot Managed Runtime.
 2. Environment routing checks your routing rules in priority order and applies the first rule that matches the maker. Each rule targets **Everyone** or specific Microsoft Entra security groups and names an environment group.
 3. If the maker already owns a developer environment, routing takes them there. Otherwise, Power Platform creates a personal environment for them as a managed environment in the environment group that the rule names.
 4. The personal environment follows the rules of its environment group. The maker is assigned the admin role in the environment and can start building.
@@ -72,7 +72,7 @@ Contoso wants its professional developers to have more flexibility than other ma
 
 When a member of *Pro Developers* opens Power Apps for the first time, Power Platform creates their personal environment in *Pro developer workspaces*, and that group's rules apply to it. Every other maker gets a personal environment in *Maker workspaces*.
 
-## Personal environments for Copilot Managed Runtime apps (preview)
+## Personal environments for Copilot Managed Runtime apps
 
 Environment routing for [Microsoft Copilot Managed Runtime](/microsoft-365/managed-apps/) is on in every tenant, and you can't turn it off. When a maker builds an app with Copilot Managed Runtime, such as in Copilot Cowork, Copilot Studio, or the Copilot Managed Runtime command-line interface (CLI), the app is created in the maker's personal environment.
 
@@ -177,7 +177,7 @@ Everyone in your tenant can build in the default environment. It holds work from
 
 #### Which products route makers to personal environments?
 
-Environment routing works with Copilot Managed Runtime apps (preview), Power Apps, Power Automate (cloud and desktop flows), and Copilot Studio. Routing for Copilot Managed Runtime is always on. For the other products, you turn it on. Environment routing isn't available for Power Pages.
+Environment routing works with Copilot Managed Runtime apps, Power Apps, Power Automate (cloud and desktop flows), and Copilot Studio. Routing for Copilot Managed Runtime is always on. For the other products, you turn it on. Environment routing isn't available for Power Pages.
 
 #### How many personal environments can a maker have?
 
@@ -197,7 +197,7 @@ Learn when Power Platform creates personal environments and how to control who g
 
 #### Why did Power Platform create personal environments in my tenant even though I didn't turn on environment routing?
 
-Power Platform turns on environment routing for Copilot Managed Runtime automatically in all tenants, and you can't turn it off. Power Platform creates a personal environment the first time a maker builds an app with Copilot Managed Runtime. If your tenant has no routing rules, the service also creates a rule that routes **Everyone** to their own personal environment, and a default environment group with rules for Copilot Managed Runtime. If your tenant already has routing rules, the service doesn't change them. Learn more in [Personal environments for Copilot Managed Runtime apps](#personal-environments-for-copilot-managed-runtime-apps-preview).
+Power Platform turns on environment routing for Copilot Managed Runtime automatically in all tenants, and you can't turn it off. Power Platform creates a personal environment the first time a maker builds an app with Copilot Managed Runtime. If your tenant has no routing rules, the service also creates a rule that routes **Everyone** to their own personal environment, and a default environment group with rules for Copilot Managed Runtime. If your tenant already has routing rules, the service doesn't change them. Learn more in [Personal environments for Copilot Managed Runtime apps](#personal-environments-for-copilot-managed-runtime-apps).
 
 #### Where was this behavior announced?
 
@@ -308,6 +308,6 @@ It doesn't. Personal environments are managed environments, so they aren't affec
 - [Rules for environment groups](environment-groups-rules.md).
 - [Managed environments overview](managed-environment-overview.md).
 - [Automatic deletion of Power Platform environments](automatic-environment-cleanup.md).
-- [What is Microsoft Copilot Managed Runtime (preview)](/microsoft-365/managed-apps/).
-- [FAQ about Microsoft Copilot Managed Runtime (preview)](/microsoft-365/admin/manage/apps/faq-about-apps).
-- [Review default governance settings for apps (preview)](/microsoft-365/admin/manage/apps/governance).
+- [What is Microsoft Copilot Managed Runtime](/microsoft-365/copilot-managed-runtime).
+- [FAQ about Microsoft Copilot Managed Runtime](/microsoft-365/admin/manage/apps/faq-about-apps).
+- [Review default governance settings for apps](/microsoft-365/admin/manage/apps/governance).
