@@ -1,18 +1,20 @@
 ---
 title: Safeguarding Dataverse sessions with IP cookie binding
 description: Discover methods for using IP-based cookie binding to stop cookie replay, ensuring secure sessions in Dataverse against unauthorized access by internet service providers.
-ms.date: 05/8/2026
+ms.date: 11/17/2026
 ms.topic: how-to
-author: shpradha
+author: monis-azaroth
 ms.reviewer: ellenwehrle
-ms.author: shpradha
+ms.author: mohdmonis
 ms.subservice: admin
+ai-usage: ai-assisted
 search.audienceType: 
   - admin
 ---
-# Safeguarding Dataverse sessions with IP cookie binding
 
-Prevent session hijacking exploits in Dataverse with IP address-based cookie binding. Let's say that a malicious user copies a valid session cookie from an authorized computer that has cookie IP binding enabled. The user then tries to use the cookie on a different computer to gain unauthorized access to Dataverse. In real time, Dataverse compares the IP address of the cookie's origin against the IP address of the computer making the request. If the two are different, the attempt is blocked, and an error message is shown.
+# Safeguard Dataverse sessions with IP cookie binding
+
+Prevent session hijacking exploits in Dataverse with IP address-based cookie binding. If a malicious user copies a valid session cookie from an authorized computer that has cookie IP binding enabled, the user can't use the cookie on a different computer to gain unauthorized access to Dataverse. Dataverse compares the IP address of the cookie's origin against the IP address of the computer making the request. If the two are different, Dataverse blocks the request and shows an error message.
 
 IP-based cookie binding is available only for [managed environments](managed-environment-licensing.md) across all tenants, including government clouds. You can enable this feature in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
@@ -24,7 +26,7 @@ IP-based cookie binding is available only for [managed environments](managed-env
 1. On the **Environments** page, select an environment.
 1. Select **Settings** > **Product** > **Privacy + Security**.
 1. Under **IP address settings**, select the **Enable IP address based cookie binding** option.
-1. **(Optional)**: If your organization has reverse proxies configured, enter the IP addresses separated by commas in the **Reverse proxy IP addresses** field. The reverse proxy setting applies to both IP-based cookie binding and the [IP firewall](ip-firewall.md). Reach out to your network administrator to get the reverse proxy IP addresses.
+1. **(Optional)**: If your organization has reverse proxies configured, enter the IP addresses separated by commas in the **Reverse proxy IP addresses** field. The reverse proxy setting applies to both IP-based cookie binding and the [IP firewall](ip-firewall.md). Contact your network administrator to get the reverse proxy IP addresses.
 
      > [!NOTE]
      > Reverse proxy must be configured to send user client IP addresses in the [forwarded](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Forwarded) header.
@@ -53,21 +55,19 @@ IP-based cookie binding sets the IP address claim in the session cookie. Each re
 - When connecting to a wireless hotspot
 - When the Internet connection is reset by the Internet service provider
 - When a router is reset or restarted
+- Changes to the user's network or IP address during an active session can require reauthentication if the observed source IP address changes.
 
 ## How to test the feature
 
 1. Clear all the cookies from the browser. This step is important to ensure that a new cookie is generated.
-
-2. Sign in to a Dynamics 365 environment that has IP-based cooking binding enabled.
-
-3. Use a client tool such as Fiddler to copy the session cookie.
-
-4. Submit a request from an alternate computer (outside of the original network) using the previously obtained session cookie. You should expect to receive an HTTP 403 error in response.
+1. Sign in to a Dynamics 365 environment that has IP-based cookie binding enabled.
+1. Use a client tool such as Fiddler to copy the session cookie.
+1. Submit a request from an alternate computer (outside of the original network) by using the previously obtained session cookie. You should receive an HTTP 403 error in response.
 
 ## Exclusions
 
 - If the user connects to Dataverse from the same IP address with the old, valid cookie, Dataverse accepts the cookie.
-- If the traffic between your network and Power Platform is configured to use reverse proxy having dynamic IP address, IP-based cookie binding won't work.
+- If you configure the traffic between your network and Power Platform to use a reverse proxy with a dynamic IP address, IP-based cookie binding doesn't work.
 
 ## FAQ
 

@@ -4,7 +4,7 @@ description: Learn about Microsoft Azure Virtual Network support for Power Platf
 author: faix
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/23/2026
+ms.date: 11/17/2026
 ms.subservice: admin
 ms.author: osfaixat
 ms.reviewer: ellenwehrle
@@ -110,7 +110,7 @@ After confirming your environment's region, ensure you configure your enterprise
 | Germany | germanynorth, germanywestcentral |
 | Switzerland | switzerlandnorth, switzerlandwest |
 | Canada | canadacentral, canadaeast |
-| Brazil | brazilsouth |
+| Brazil | brazilsouth, brazilsoutheast |
 | Australia | australiasoutheast, australiaeast |
 | Asia | eastasia, southeastasia |
 | UAE | uaenorth, uaecentral |
