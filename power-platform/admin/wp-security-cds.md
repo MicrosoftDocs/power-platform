@@ -19,8 +19,10 @@ search.audienceType:
 
 [Dataverse](/powerapps/maker/common-data-service/data-platform-intro) provides a flexible security model for many business scenarios. The model applies only to environments that have a Dataverse database. As an administrator, you manage users, verify their security configuration, and troubleshoot access issues.
 
-> [!TIP]
-> Watch [Microsoft Dataverse - Security concepts shown in demos](https://youtu.be/8UWSj-vvxzU).
+
+Watch the following video to get an overview of ownership-based security in Microsoft Dataverse:
+
+> [!VIDEO 41f42272-0a49-4ea8-983b-3ca40412abe0]
 
 ## Role-based security
 
@@ -30,7 +32,7 @@ Security privileges are cumulative. A user receives the broadest access granted 
 
 ## Business units
 
-Watch this video to understand business units in Dataverse:
+Watch the following video to understand business units in Dataverse:
 
 > [!Video 389637aa-065f-4dcb-8789-bd97acf1a50a]
 
