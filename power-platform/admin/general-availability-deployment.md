@@ -26,7 +26,7 @@ Microsoft Power Platform has two major releases each year, in April and October.
 To test the upcoming updates, [opt in to early access updates](opt-in-early-access-updates.md).
 
 > [!TIP]
-> Check the [AI at Work Roadmap](https://aka.ms/roadmap) for planned feature availability.
+> Check the [Microsoft Copilot Roadmap](https://aka.ms/roadmap) for planned feature availability.
 
 During each release, your environments update over the scheduled weekend. These scheduled windows are based on your environments' region. The specific dates when the updates occur are published to the [Message Center](/office365/admin/manage/message-center). The specific time when the updates for an environment complete, within the scheduled weekend, can't be predetermined.
 
@@ -85,5 +85,5 @@ Learn more about early access updates in [Opt in to early access updates](opt-in
 
 ### Related content
 [Dynamics 365 release schedule](/dynamics365/get-started/release-schedule) <br />
-[AI at Work Roadmap](https://aka.ms/roadmap) <br />
+[Microsoft Copilot Roadmap](https://aka.ms/roadmap) <br />
 [Policies and communications](policies-communications.md)

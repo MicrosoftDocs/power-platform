@@ -22,7 +22,7 @@ highlightedContent:
     # Card
     - title: What's new in Power Platform?
       itemType: whats-new
-      url: /dynamics365/release-plans/
+      url: https://aka.ms/roadmap
     # Card
     - title: Power Platform training and certifications
       itemType: learn
