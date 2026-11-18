@@ -5,7 +5,7 @@ author: EllenWehrle
 ms.component: pa-admin
 ms.topic: concept-article
 ms.collection: get-started
-ms.date: 06/12/2026
+ms.date: 11/10/2026
 ms.subservice: admin
 ms.author: ellenwehrle
 ms.reviewer: ellenwehrle
@@ -14,11 +14,11 @@ search.audienceType:
 ---
 # Datacenter regions
 
-Microsoft Dynamics 365 and Microsoft Power Platform online services are being hosted in datacenters in more and more regions. After these services become available in a new region, note that for new organizations, the datacenter is aligned with the macro region you selected during environment creation.    
+Microsoft hosts Dynamics 365 and Power Platform online services in datacenters across an increasing number of regions. When Microsoft makes these services available in a new region, new organizations get a datacenter that aligns with the macro region you select during environment creation.    
   
-For information about datacenter regions for Dynamics 365 and Power Platform, see [Product Availability by Geography](https://releaseplans.microsoft.com/availability-reports/?report=productgeoreport) and [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location).  
+For information about datacenter regions for Dynamics 365 and Power Platform, see [Product availability](/dynamics365/get-started/product-availability) and [Where your data is located](https://www.microsoft.com/trust-center/privacy/data-location).  
   
-The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing).
+The following list shows regions and their URLs for Dynamics 365 (Dynamics 365 Sales, Dynamics 365 Customer Service, Dynamics 365 Field Service, and Dynamics 365 Marketing).
 
 |Region | URL | 
 | ------------- | -------------     | 
@@ -46,16 +46,16 @@ The following is a list of regions and their URL for Dynamics 365 (Dynamics 365 
 | KOR           | crm21.dynamics.com |
 
 ## Macro region 
-A [macro region](macro-regions.md) represents the data residency boundary aligning with data residency laws for the given geography. Learn more about the countries available in a specific macro region. 
+A [macro region](macro-regions.md) represents the data residency boundary that aligns with data residency laws for the given geography. Learn more about the regions available in a specific macro region. 
 
 For more information, see [Power Platform and Dynamics 365 macro regions](macro-regions.md).
 
 ## Migration process  
- This is the overall process for migrating to a new datacenter.  
+ This section describes the overall process for migrating to a new datacenter.  
   
  ![Migration Process.](media/migration-process.png "Migration Process")  
   
- Depending on the type of transition, you may be required to go through more steps.  
+ Depending on the type of transition, you might need to complete more steps.  
   
 ### See also  
  [Geo to geo migrations](geo-to-geo-migrations.md)   

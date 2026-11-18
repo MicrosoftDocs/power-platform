@@ -704,7 +704,7 @@ Every organization's journey to application modernization is unique. Your Micros
 - [EY transforms its global finance operations with innovative apps and AI-driven agents using Power Platform](https://www.microsoft.com/customers/story/25760-ey-global-services-limited-microsoft-power-platform/)
 - [Azure Private Link](/power-bi/enterprise/service-security-private-links)
 - [Microsoft Azure ExpressRoute](/power-platform/guidance/expressroute/overview)
-- [AI at Work Roadmap](https://aka.ms/roadmap)
+- [Microsoft Copilot Roadmap](https://aka.ms/roadmap)
 - [Microsoft Power Platform Licensing Guide](https://go.microsoft.com/fwlink/?linkid=2085130)
 - [Microsoft outlines framework for building AI apps and copilots; expands AI plugin ecosystem](https://news.microsoft.com/source/features/ai/microsoft-outlines-framework-for-building-ai-apps-and-copilots-expands-ai-plugin-ecosystem/)
 

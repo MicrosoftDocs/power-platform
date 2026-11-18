@@ -43,7 +43,7 @@ For more information about release channels, schedules, and configuration, see [
 
 ## Find upcoming features and timing
 
-Features are added to the [AI at Work Roadmap](https://aka.ms/roadmap) on a rolling basis. Roadmap items should be available two to three months or more before a feature is released and should identify the targeted release channel and planned availability.
+Features are added to the [Microsoft Copilot Roadmap](https://aka.ms/roadmap) on a rolling basis. Roadmap items should be available two to three months or more before a feature is released and should identify the targeted release channel and planned availability.
 
 Use the roadmap to follow features relevant to your applications and plan your validation. The roadmap provides feature information; it doesn't enroll an environment in early access.
 
@@ -54,7 +54,7 @@ For the Monthly channel's regional rollout sequence and timing, see [Monthly rel
 Before you turn on early access:
 
 - Make sure you have admin access to the Power Platform admin center.
-- Review the [AI at Work Roadmap](https://aka.ms/roadmap) and identify the features you need to validate.
+- Review the [Microsoft Copilot Roadmap](https://aka.ms/roadmap) and identify the features you need to validate.
 - Create a representative nonproduction environment from production for testing.
 - Confirm that your development, test, and production environments use the same release channel.
 - Plan time to validate key scenarios, customizations, integrations, and internal readiness materials.
@@ -86,5 +86,5 @@ If you find a regression or a functional or performance problem, contact [Suppor
 
 - [Release channel for your model-driven app](/power-apps/maker/model-driven-apps/channel-overview)
 - [Dynamics 365 release schedule and early access](/dynamics365/get-started/release-schedule)
-- [AI at Work Roadmap](https://aka.ms/roadmap)
+- [Microsoft Copilot Roadmap](https://aka.ms/roadmap)
 - [Policies and communications](policies-communications.md)

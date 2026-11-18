@@ -4,7 +4,7 @@ description: Learn about Microsoft Dynamics 365 US Government environments, feat
 author: carrema
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 12/09/2025
+ms.date: 11/10/2026
 ms.subservice: admin
 ms.author: macarrer
 ms.reviewer: ellenwehrle
@@ -20,7 +20,7 @@ ms.contributors:
 
 # Dynamics 365 US Government  
 
-In response to the unique and evolving requirements of the United States public sector, Microsoft created Microsoft Dynamics 365 US Government. It's available to a qualified government entity in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Microsoft Dynamics 365 US Government continues the protected environment originally branded as Microsoft CRM Online Government. The following Dynamics 365 products and services are available in the government cloud:
+Microsoft created Dynamics 365 US Government to address the unique and evolving requirements of the United States public sector. It's available to a qualified government entity in the United States. On October 11, 2016, Microsoft announced the next generation of intelligent business applications in the cloud under the brand Microsoft Dynamics 365. To this end, Dynamics 365 US Government continues the protected environment originally branded as Microsoft CRM Online Government. The following Dynamics 365 products and services are available in the government cloud:
 
 - Customer Service
 - Customer Voice
@@ -41,11 +41,12 @@ Microsoft strives to maintain functional parity between commercially available s
 - US GCC High
 - US Department of Defense (US DoD)
 
-Some features aren't available in all U.S. Government clouds. For more information, see [Product and Feature Availability](https://aka.ms/bapfunctionalparity). Use this information to plan your business application deployment. Microsoft continues to evaluate these services and capabilities for inclusion and updates in future releases. Check back monthly for important updates. To check the availability of Dynamics 365 apps and offers by region, including approximate availability timelines, see [Global Geographic Availability](https://dynamics.microsoft.com/geographic-availability/). 
+Some features aren't available in all U.S. Government clouds. For more information, see [Government cloud
+feature availability for Dynamics 365 & Power Platform](https://aka.ms/bapfunctionalparity). Use this information to plan your business application deployment. Microsoft continues to evaluate these services and capabilities for inclusion and updates in future releases. Check back monthly for important updates. To check the availability of Dynamics 365 apps by geography and cloud, see [Product and feature availability](/dynamics365/get-started/product-availability). 
 
 ## About Dynamics 365 US Government environments and products
 
-Select Dynamics 365 US Government products are generally available to customers through deployment into the Government Community Cloud (GCC). Among other compliance commitments and reviews as documented in the Microsoft Trust Center, the service has received several agency Authority to Operate (ATOs) since it was originally launched in January 2015. Microsoft is the first Cloud Solution Provider (CSP) to achieve a FedRAMP Joint Application Board Provisional Authority to Operate (JAB P-ATO) through the JAB Accelerated Process. In March 2018, the service impact level was granted a FedRAMP JAB High P-ATO.
+Select Dynamics 365 US Government products are generally available to customers through deployment into the Government Community Cloud (GCC). In addition to other compliance commitments and reviews documented in the Microsoft Trust Center, the service received several agency Authority to Operate (ATOs) since it originally launched in January 2015. Microsoft is the first Cloud Solution Provider (CSP) to achieve a FedRAMP Joint Authorization Board Provisional Authority to Operate (JAB P-ATO) through the JAB Accelerated Process. In March 2018, the service impact level was granted a FedRAMP JAB High P-ATO.
 
 As of April 2019, eligible customers can choose to deploy select Dynamics 365 US Government products in the **GCC High** environment, which enables single sign-on and seamless integration with Microsoft 365 GCC High deployments. Microsoft designed the platform and operational procedures to meet requirements aligning with the DISA SRG IL4 compliance framework. We anticipate our US Department of Defense contractor customer base and other federal agencies currently using Microsoft 365 GCC High to use the Dynamics 365 US Government GCC High deployment option, which enables and requires the customer to use Microsoft Entra Government for customer identities, in contrast to GCC which uses Public Microsoft Entra ID. For our US Department of Defense contractor customer base, Microsoft operates the service in a manner that enables these customers to meet ITAR commitment and DFARS acquisition regulations, as documented and required by their contracts with the US Department of Defense.
 
@@ -98,7 +99,7 @@ For more information on how Dynamics 365 protects and handles customer data, see
 
 When provisioned as part of Dynamics 365 Government, the Dynamics 365 service is offered in accordance with the National Institute of Standards and Technology (NIST) Special Publication 800-145.
 
-In addition to logical separation of customer content at the application layer, Dynamics 365 Government provides physical segregation by using infrastructure that's separate from the infrastructure used by commercial Dynamics 365 customers. This infrastructure includes Azure services in Azure’s Government Cloud and Azure’s Department of Defense Cloud. To learn more, see [Azure Government](https://azure.microsoft.com/features/gov/).
+In addition to logical separation of customer content at the application layer, Dynamics 365 Government provides physical segregation by using infrastructure that's separate from the infrastructure used by commercial Dynamics 365 customers. This infrastructure includes Azure services in Azure's Government Cloud and Azure's Department of Defense Cloud. To learn more, see [Azure Government](https://azure.microsoft.com/features/gov/).
 
 ### Customer content located within the United States
 
@@ -148,7 +149,7 @@ Dynamics 365 support and service engineering staff don't have standing access to
     <td>Bureau of Industry and Security List (BIS)</td>
     <td>Validation against the Department of Commerce list of individuals and tables barred from engaging in export activities</td>
   </tr>
-  <tr>State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program
+  <tr>State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that signed up for the Microsoft CJIS IA program
     <td>Office of Defense Trade Controls Debarred Persons List (DDTC)</td>
     <td>Validation against the Department of State list of individuals and tables barred from engaging in export activities related to the defense industry</td>
   </tr>
@@ -157,7 +158,7 @@ Dynamics 365 support and service engineering staff don't have standing access to
   </tr>
   <tr>
     <td>CJIS Background Screening</td>
-    <td>State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that has signed up for the Microsoft CJIS IA program</td>
+    <td>State-adjudicated review of federal and state criminal history by state CSA appointed authority within each state that signed up for the Microsoft CJIS IA program</td>
   </tr>
   <tr>
     <td>Department of Defense IT-2</td>
@@ -182,62 +183,62 @@ Dynamics 365 US Government uses the Microsoft 365 customer administrator UI for 
 
 ### Dynamics 365 US Government and third-party services
 
-Power Platform and Dynamics 365 apps can integrate third-party applications into the service. These third-party applications and services might involve storing, transmitting, and processing your organization’s customer data on third-party systems that are outside of the Power Platform and Dynamics 365 apps Engagement infrastructure and therefore aren't covered by the Power Platform and Dynamics 365 apps compliance and data protection commitments. We recommend that you review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
+Power Platform and Dynamics 365 apps can integrate third-party applications into the service. These third-party applications and services might involve storing, transmitting, and processing your organization's customer data on third-party systems that are outside of the Power Platform and Dynamics 365 apps Engagement infrastructure and therefore aren't covered by the Power Platform and Dynamics 365 apps compliance and data protection commitments. We recommend that you review the privacy and compliance statements provided by the third parties when assessing the appropriate use of these services for your organization.
 
 ### Dynamics 365 US Government and Azure services
 
 Microsoft Entra and Microsoft Entra Government aren't part of the Dynamics 365 US Government accreditation boundary. Government customers are responsible for using ADFS to uniquely identify and authenticate their organizational users. It is important to note that Microsoft Entra and Microsoft Entra Government provide critical functionality to both Dynamics 365 US Government and ADFS, whose dependencies are described in detail in the Dynamics 365 US Government SSP (Service Security Plan).
 
-When a user in an organization that uses ADFS attempts to access Dynamics 365, the user is redirected to a login page hosted on the organization’s ADFS server. The user provides their credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization’s existing Active Directory infrastructure. If the credentials are authenticated, the organization’s ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user’s identity and group membership. The customer ADFS server signs this ticket by using one half of an asymmetric key pair and sends the ticket to Microsoft Entra via encrypted TLS. Microsoft Entra ID validates the signature by using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain encrypted in Microsoft Entra ID. In other words, limited user-identifiable information is stored in Microsoft Entra ID. Full details of the Microsoft Entra security architecture and control implementation can be found in the Azure SSP and Azure Government SSP. 
+When a user in an organization that uses ADFS attempts to access Dynamics 365, the user is redirected to a login page hosted on the organization's ADFS server. The user provides their credentials to their organization's ADFS server, which attempts to authenticate the credentials using the organization's existing Active Directory infrastructure. If the credentials are authenticated, the organization's ADFS server issues a SAML (Security Assertion Markup Language) ticket containing information about the user's identity and group membership. The customer ADFS server signs this ticket by using one half of an asymmetric key pair and sends the ticket to Microsoft Entra via encrypted TLS. Microsoft Entra ID validates the signature by using the other half of the asymmetric key pair and grants access based on the ticket. The user's identity and group membership information remain encrypted in Microsoft Entra ID. In other words, limited user-identifiable information is stored in Microsoft Entra ID. Full details of the Microsoft Entra security architecture and control implementation can be found in the Azure SSP and Azure Government SSP. 
 
 ## Dynamics 365 US Government URLs
 
 Use a different set of URLs to access Dynamics 365 US Government environments, as documented in the following article:
 
 ### Instances
--	GCC: *.crm9.dynamics.com
--	GCC High: *.crm.microsoftdynamics.us
--	DoD: *.crm.appsplatform.us
+-    GCC: `*.crm9.dynamics.com`
+-    GCC High: `*.crm.microsoftdynamics.us`
+-    DoD: `*.crm.appsplatform.us`
 
 ### Dynamics 365 Customer Voice
--	GCC: https://customervoice.microsoft.us
+-    GCC: `https://customervoice.microsoft.us`
 
 ### Discovery (OData V4) RESTful API
--	GCC:
+-    GCC:
     - (Deprecated) Discovery URL: `https://disco.crm9.dynamics.com/api/discovery/v9.1/`
     - Global discovery URL: `https://globaldisco.crm9.dynamics.com/api/discovery/v2.0/`
 
--	GCC High:
+-    GCC High:
     - (Deprecated) Discovery URL: `https://disco.crm.microsoftdynamics.us/api/discovery/v9.1/`
-    - Global discovery URL: https://globaldisco.crm.microsoftdynamics.us/api/discovery/v2.0/
+    - Global discovery URL: `https://globaldisco.crm.microsoftdynamics.us/api/discovery/v2.0/`
 
--	DoD:
-    - Global discovery https://globaldisco.crm.appsplatform.us/api/discovery/v2.0/
+-    DoD:
+    - Global discovery `https://globaldisco.crm.appsplatform.us/api/discovery/v2.0/`
 
 ### Instance Web API
-- GCC: https://*.api.crm9.dynamics.com/api/data/v9.1/
-- GCC High: https://*.api.crm.microsoftdynamics.us/api/data/v9.1/
-- DoD: https://*.api.crm.appsplatform.us/api/data/v9.1/
+- GCC: `https://*.api.crm9.dynamics.com/api/data/v9.1/`
+- GCC High: `https://*.api.crm.microsoftdynamics.us/api/data/v9.1/`
+- DoD: `https://*.api.crm.appsplatform.us/api/data/v9.1/`
 
 ### Organization Service
-- GCC: https://*.api.crm9.dynamics.com/XRMServices/2011/Organization.svc
-- GCC High: https://*.api.crm.microsoftdynamics.us/XRMServices/2011/Organization.svc
-- GCC DoD: https://*.api.crm.appsplatform.us/XRMServices/2011/Organization.svc
+- GCC: `https://*.api.crm9.dynamics.com/XRMServices/2011/Organization.svc`
+- GCC High: `https://*.api.crm.microsoftdynamics.us/XRMServices/2011/Organization.svc`
+- GCC DoD: `https://*.api.crm.appsplatform.us/XRMServices/2011/Organization.svc`
 
 ### Microsoft Dynamics Portals
-- GCC: https://*.dynamics365portals.us
-- GCC High: https://*.high.dynamics365portals.us
-- DoD:  https://*.appsplatformportals.us
+- GCC: `https://*.dynamics365portals.us`
+- GCC High: `https://*.high.dynamics365portals.us`
+- DoD:  `https://*.appsplatformportals.us`
 
 ### Dynamics 365 Finance and Supply Chain Management
-- GCC: https://*.operations.gov.microsoftdynamics.us
-- GCC High: https://*.operations.high.microsoftdynamics.us
-- DoD: https://*.operations.dod.microsoftdynamics.us
+- GCC: `https://*.operations.gov.microsoftdynamics.us`
+- GCC High: `https://*.operations.high.microsoftdynamics.us`
+- DoD: `https://*.operations.dod.microsoftdynamics.us`
 
 ### Dynamics 365 Lifecycle Services (LCS)
-- GCC: https://gov.lcs.microsoftdynamics.us
-- GCC High: https://high.lcs.microsoftdynamics.us
-- DoD: https://dod.lcs.microsoftdynamics.us
+- GCC: `https://gov.lcs.microsoftdynamics.us`
+- GCC High: `https://high.lcs.microsoftdynamics.us`
+- DoD: `https://dod.lcs.microsoftdynamics.us`
 
 ### Telemetry for Power Apps
 
@@ -247,11 +248,11 @@ Add the following URLs to your allow list to enable Power Apps telemetry through
 - GCC High: `https://tb.pipe.aria.microsoft.com/Collector/3.0` and `https://tb.events.data.microsoft.com/OneCollector/1.0/`
 - DoD: `https://pf.pipe.aria.microsoft.com/Collector/3.0` and `https://pf.events.data.microsoft.com/OneCollector/1.0/`
 
-If you are filtering by IP ranges, ensure that you have unblocked the OneDsCollector service tag.
+If you filter by IP ranges, ensure that you unblock the OneDsCollector service tag.
 
 ## Regional Discovery Service is deprecated
 
-### Discovery Service (Deprecated)
+### Discovery Service (deprecated)
 - GCC: `https://disco.crm9.dynamics.com/XRMServices/2011/Discovery.svc`
 - GCC High: `https://disco.crm.microsoftdynamics.us/XRMServices/2011/Discovery.svc`
 

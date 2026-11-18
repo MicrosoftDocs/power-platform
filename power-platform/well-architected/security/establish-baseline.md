@@ -160,7 +160,7 @@ Explore Microsoft Purview for Power Platform, built-in features of the Power Pla
 
 ### Evaluate the baseline regularly
 
-Continuously improve security standards towards the ideal state to ensure continual risk reduction. Keep track of the latest security updates in Power Platform by checking the [roadmap](/dynamics365/release-plans/) and announcements regularly. Then, identify which new features could enhance your security baseline and plan how to implement them. Any modifications to the baseline must be officially approved and go through the appropriate change management processes.
+Continuously improve security standards towards the ideal state to ensure continual risk reduction. Keep track of the latest security updates in Power Platform by checking the [roadmap](https://aka.ms/roadmap) and announcements regularly. Then, identify which new features could enhance your security baseline and plan how to implement them. Any modifications to the baseline must be officially approved and go through the appropriate change management processes.
 
 Measure the system against the new baseline and prioritize remediations based on their relevance and effect on the workload.
 
