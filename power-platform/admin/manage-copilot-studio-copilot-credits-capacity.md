@@ -2,7 +2,7 @@
 title: Manage Copilot Credits and capacity for Copilot Studio
 description: Learn how to manage Copilot Credits and capacity for Copilot Studio.
 author: amiyapatr-zz
-ms.date: 10/14/2026
+ms.date: 11/18/2026
 ms.reviewer: ellenwehrle
 ms.topic: how-to
 ms.subservice: admin
@@ -11,13 +11,13 @@ ms.contributors:
  - surenmalik
  - venpe
  - dimutako
+ - gmosley
 ms.custom: bap-template, NewPPAC
 ai-usage: ai-assisted
 search.audienceType: 
  - admin
 contributors:
  - radioblazer
-
 ---
 
 # Manage Copilot Credits and capacity for Copilot Studio
@@ -154,9 +154,19 @@ To investigate consumption by reasoning models for agents powered by the standar
 
 To learn which tokens are billed, see [How tokens are counted for reasoning models](/microsoft-copilot-studio/requirements-messages-management#how-tokens-are-counted-for-reasoning-models).
 
+### Programmatic access to usage reports (preview)
+
+[!INCLUDE [cc-preview-features-top-note](../includes/cc-preview-features-top-note.md)]
+
+Administrators can use the Power Platform API to retrieve Copilot Studio usage data programmatically instead of manually downloading reports. Use this data in custom dashboards and reporting pipelines to monitor usage, support budgeting, and investigate usage trends.
+
+The API provides access to various reports with daily or summary results, with granularity for user, resource, environment, product, and feature.
+
+Report retrieval requires delegated administrator authentication and follows an asynchronous workflow: submit a request, poll for completion, and download the gzip-compressed file. For detailed steps, see [Tutorial: Download Copilot Credit usage reports programmatically (preview)](programmability-tutorial-download-copilot-credit-usage-reports.md).
+
 ## Manage capacity
 
-Capacity allocation can be managed in the Power Platform admin center. 
+Manage capacity allocation in the Power Platform admin center. 
 
 1. Sign in to the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 1. On the navigation pane, select **Licensing**.
