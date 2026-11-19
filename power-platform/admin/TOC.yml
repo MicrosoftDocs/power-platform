@@ -952,6 +952,8 @@
                   href: programmability-tutorial-manage-advanced-connector-policies.md
                 - name: "Tutorial: Manage Copilot Credit allocations programmatically"
                   href: programmability-tutorial-manage-copilot-credit-allocations.md
+                - name: "Tutorial: Download Copilot Credit usage reports programmatically (preview)"
+                  href: programmability-tutorial-download-copilot-credit-usage-reports.md
             - name: PowerShell
               items:
                 - name: Getting started
