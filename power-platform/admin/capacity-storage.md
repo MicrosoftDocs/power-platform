@@ -1,7 +1,7 @@
 ---
 title: Dataverse capacity-based storage details  
 description: Learn about the Microsoft Dataverse capacity-based storage model.
-ms.date: 11/2/2026
+ms.date: 11/19/2026
 ms.topic: concept-article
 author: amiyapatr 
 ms.subservice: admin
@@ -427,7 +427,8 @@ The date the tenant first exceeds 100% effective consumption is the start of the
 
 ### In scope for Dataverse storage validation
 
-The Dataverse storage validation applies only to **Dataverse-only** tenants without Dynamics 365 Finance and Operations environments or consumption. The products in scope are:
+Dataverse storage validation applies only to eligible tenants using **Microsoft Dataverse**, including those running Power Platform workloads backed by Dataverse or selected Dynamics 365 applications. The following products and workloads are in scope:
+- Microsoft Power Platform workloads backed by Dataverse
 - Microsoft Dynamics 365 Sales
 - Microsoft Dynamics 365 Customer Service
 - Microsoft Dynamics 365 Field Service
@@ -439,7 +440,7 @@ The Dataverse storage validation applies only to **Dataverse-only** tenants with
 ### Exclusions
 - Production environments don't go through the administration mode and become disabled.
 - Sandbox environments with active pay-as-you-go billing don't go through the administration mode and become disabled.
-- Tenants with Dynamics 365 Finance and Operations environments or consumption are out of scope from the upcoming Dataverse storage validation.
+- Tenants with Dynamics 365 Finance and Operations applications, environments, or consumption (including those with pooled Dataverse and Finance and Operations capacity) are excluded from this rollout.
 
 
 ## Example storage capacity scenarios and impact
