@@ -13,7 +13,7 @@ ms.reviewer: ellenwehrle
 
 **Business Applications in Work IQ** is a set of capabilities that lets Microsoft 365 Copilot, Microsoft 365 Copilot Chat, Copilot Cowork, and Model Context Protocol (MCP) clients work with Power Apps and Dynamics 365 data.
 
-The plan to turn on Business Applications in Work IQ for existing environments that aren't listed as exceptionshas been deferred from the previously documented November 2026 schedule. Check this article for updates.
+The plan to turn on Business Applications in Work IQ for existing environments that aren't listed as exceptions has been deferred from the previously documented November 2026 schedule. Check this article for updates.
 
 To turn Business Applications in Work IQ on or off for a specific environment, see [Cascading control settings](#cascading-control-settings).
 
