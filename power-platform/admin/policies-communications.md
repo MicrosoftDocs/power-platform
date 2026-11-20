@@ -33,7 +33,7 @@ Microsoft regularly performs updates and maintenance on the service and apps thr
 
 New features and capabilities are continually released for preview and general availability. For details on upcoming features and release timelines, refer to the [Microsoft Copilot Roadmap](https://aka.ms/roadmap).
 
-There are also two major service update events in April (Wave 1) and October (Wave 2) that are delivered through the weekly update mechanism, and details can be found in the [Dynamics 365 and Microsoft Power Platform](/dynamics365/release-plans/) release plans. 
+Microsoft Power Platform has two major releases each year, in April and October. Environments automatically receive the mandatory updates associated with each release. For more details on how these updates are deployed, see [General availability deployment](general-availability-deployment.md).
 
 ### Minor service updates
 
