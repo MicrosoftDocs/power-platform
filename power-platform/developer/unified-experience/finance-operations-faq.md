@@ -1,12 +1,12 @@
 ---
 title: "Frequently asked questions"
 description: "FAQs for the Power Platform unified developer experience."
-author: pvillads
+author: laneswenka
 ms.date: 11/20/2026
 ai-usage: ai-generated
 ms.topic: faq
 ms.reviewer: pehecke
-ms.author: pvillads
+ms.author: laneswenka
 ms.subservice: developer
 ---
 
@@ -41,6 +41,23 @@ We currently don't have the capability to provision or update the environment to
 No. After you provision an environment, its type can't be changed. A Unified Sandbox Environment (USE) can't be changed to a Unified Developer Environment (UDE), and a Unified Developer Environment (UDE) can't be changed to a Unified Sandbox Environment (USE).
 
 If you require a different environment type, create a new environment with the desired type.
+
+### Can I use unified environment operations with a Lifecycle Services cloud-hosted environment?
+
+No. A cloud-hosted environment that you deploy through Lifecycle Services isn't a unified environment, so unified environment operations aren't available for it. For example:
+
+- You can't migrate a cloud-hosted environment from Lifecycle Services to the Power Platform admin center. To learn more, see [Migrate finance and operations environments from Lifecycle Services to Power Platform admin center (preview)](/dynamics365/fin-ops-core/dev-itpro/lifecycle-services/migrate-lifecycle-services-environments-power-platform-admin-center).
+- You can't copy a cloud-hosted environment to a unified environment.
+- Power Platform integration for cloud-hosted development environments is deprecated and no longer supported. To learn more, see [Enable Power Platform integration](/dynamics365/fin-ops-core/dev-itpro/power-platform/enable-power-platform-integration#enable-the-integration-for-cloud-hosted-development-environments).
+- The unified developer experience tools, such as deploying and debugging X++ code in the cloud runtime from Visual Studio, require a unified developer environment (UDE).
+
+Instead, replace your cloud-hosted development environments with unified developer environments:
+
+1. Check in your X++ source code to version control, such as Azure DevOps.
+2. Provision a UDE. To learn more, see [Tutorial: Provision a new environment with an ERP-based template](../../admin/unified-experience/tutorial-deploy-new-environment-with-ERP-template.md).
+3. Install the development tools, connect Visual Studio to your UDE, and set **Folder for your own custom metadata** to the folder where your source code is. To learn more, see [Install and configure development tools](finance-operations-install-config-tools.md).
+4. To get the data and version of an existing environment, copy a Lifecycle Services sandbox or production environment, or a unified sandbox or production environment, to your UDE. To learn more, see [Tutorial: Copy a Lifecycle Services environment to a unified environment](../../admin/unified-experience/tutorial-copy-lifecycle-services-environment-unified-environment.md).
+5. Build and deploy your packages by using Azure Pipelines and Power Platform unified packages. To learn more, see [Continuous integration and deployment](finance-operations-pipelines.md).
 
 ## Developer setup (metadata download, configuration, connecting to an environment)
 
