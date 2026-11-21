@@ -5,7 +5,8 @@ author: laneswenka
 ms.reviewer: ellenwehrle
 ms.component: pa-admin
 ms.topic: reference
-ms.date: 09/17/2026
+ms.date: 11/20/2026
+ai-usage: ai-generated
 ms.subservice: admin
 ms.author: laswenka
 ms.contributors:
@@ -104,14 +105,64 @@ You can provision a new environment with finance and operations apps preinstalle
     }
     "@ | ConvertFrom-Json
     ```
-1. Provision the new environment (replace values as needed, and ensure your chosen environment name is globally unique and under 20 characters).
+1. Provision the new environment (replace values as needed, and ensure your chosen environment name is globally unique and under 20 characters). Set `-LocationName` to a location code, such as `canada` or `unitedstates`. For the location codes that support finance and operations apps, see [Regional availability for finance and operations apps](unified-environment-types-and-templates.md#regional-availability-for-finance-and-operations-apps).
 
     ```powershell
-    New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "Canada" -ProvisionDatabase
+    New-AdminPowerAppEnvironment -DisplayName "MyUniqueNameHere" -EnvironmentSku Sandbox -Templates "D365_FinOps_Finance" -TemplateMetadata $jsonObject -LocationName "canada" -ProvisionDatabase
     ```
 
-> [!NOTE]
-> Depending on tenant eligibility and rollout state, some new-environment requests require a macro region geography. If this PowerShell command returns `MacroRegionRequired` (`macroRegion must be specified for this request`), use the [Provision New Environment API](/rest/api/power-platform/environmentmanagement/environment-provisioning/provision-new-environment) and set `macroRegion` in the request body, because the legacy `Microsoft.PowerApps.Administration.PowerShell` module doesn't expose a Macro Region parameter.
+    If the command returns `MacroRegionRequired` (`macroRegion must be specified for this request`), your tenant must select a macro region instead of a location. Follow the steps in [Provision in a macro region](#provision-in-a-macro-region).
+
+#### Provision in a macro region
+
+Depending on your tenant's eligibility, you might need to select a macro region geography, such as North America or Asia-Pacific, instead of a specific location when you create an environment. The platform then assigns a datacenter region within that macro region. For more information, see [Power Platform and Dynamics 365 macro region geography](../macro-regions.md).
+
+The `Microsoft.PowerApps.Administration.PowerShell` module doesn't have a macro region parameter, so call the [Power Platform API](/rest/api/power-platform/) from PowerShell instead. These steps require the [MSAL.PS](https://www.powershellgallery.com/packages/MSAL.PS) module and an [app registration configured for the Power Platform API](../programmability-authentication-v2.md).
+
+1. Sign in and request a token for the Power Platform API. Replace the client and tenant ID placeholders with your own values.
+
+    ```powershell
+    Import-Module MSAL.PS
+
+    $ClientId = "<application (client) ID of your app registration>"
+    $TenantId = "<directory (tenant) ID>"
+    $ApiBase  = "https://api.powerplatform.com"
+    $ApiVer   = "2024-10-01"
+
+    $auth = Get-MsalToken -ClientId $ClientId -TenantId $TenantId -Scope "$ApiBase/.default" -Interactive
+    $headers = @{ Authorization = "Bearer $($auth.AccessToken)" }
+    ```
+
+2. Use the [Get Supported Locations](/rest/api/power-platform/environmentmanagement/environment-provisioning/get-supported-locations) API to check how your tenant selects a location and to list the macro regions available to it.
+
+    ```powershell
+    $locations = Invoke-RestMethod -Method Get -Uri "$ApiBase/environmentmanagement/provisioning/locations?api-version=$ApiVer" -Headers $headers
+    $locations.locationSelectionMode
+    $locations.macroRegions | Format-Table macroRegionId, displayName
+    ```
+
+    If `locationSelectionMode` is `MacroRegion`, use a `macroRegionId` value from the output, such as `north-america`, in the next step. If it's `Region`, use `New-AdminPowerAppEnvironment` with `-LocationName` as shown earlier.
+
+3. Use the [Provision New Environment](/rest/api/power-platform/environmentmanagement/environment-provisioning/provision-new-environment) API to create the environment in the macro region. This request reuses the `$jsonObject` template parameters that you created earlier. Set `macroRegion` to the ID you selected, and replace the other values as needed.
+
+    ```powershell
+    $body = @{
+        displayName    = "MyUniqueNameHere"
+        environmentSku = "Sandbox"
+        databaseType   = "CommonDataService"
+        macroRegion    = "north-america"
+        linkedEnvironmentMetadata = @{
+            baseLanguageCode = 1033
+            currency         = @{ code = "USD" }
+            templates        = @("D365_FinOps_Finance")
+            templateMetadata = $jsonObject
+        }
+    } | ConvertTo-Json -Depth 10
+
+    Invoke-RestMethod -Method Post -Uri "$ApiBase/environmentmanagement/provisioning/environments?api-version=$ApiVer" -Headers $headers -Body $body -ContentType "application/json"
+    ```
+
+    Provisioning continues in the background. To check its progress, go to **Manage** > **Environments** in the [Power Platform admin center](https://admin.powerplatform.microsoft.com/).
 
 > [!IMPORTANT]
 > If you require the user interface (UI), follow the steps in [Tutorial: Install the Finance and Operations Provisioning App](./tutorial-install-finance-operations-provisioning-app.md). You can't currently use the UI to create new developer-focused sandbox and production environments that have finance and operations apps.

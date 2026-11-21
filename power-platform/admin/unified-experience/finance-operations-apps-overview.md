@@ -3,7 +3,7 @@ title: Overview of unified admin experience for finance and operations apps
 description: Overview of unified admin experiences for finance and operations apps customers in the Power Platform admin center.
 author: laneswenka
 ms.topic: overview
-ms.date: 09/10/2026
+ms.date: 11/19/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: ellenwehrle
@@ -142,7 +142,7 @@ You can access the database in developer environments. Learn more in [Request cr
 
 #### How are proactive quality updates scheduled for unified environments?
 
-There's no difference in how proactive quality updates (PQUs) are scheduled for finance and operations environments, regardless of whether the environment is unified or managed through Lifecycle Services. For more information, see [Release schedule for proactive quality updates](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule).
+There's no difference in how proactive quality updates (PQUs) are scheduled for finance and operations environments, regardless of whether the environment is unified or managed through Lifecycle Services. For more information, see [Release schedule for proactive quality updates](/dynamics365/fin-ops-core/dev-itpro/get-started/quality-updates-schedule). To learn how PQUs work for unified environments and how to apply a PQU before it's scheduled, see [Proactive quality updates](manage-service-updates-unified-environments.md#proactive-quality-updates).
 
 ### Related articles
 

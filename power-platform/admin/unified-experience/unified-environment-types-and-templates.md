@@ -3,7 +3,7 @@ title: Unified environment types and templates for finance and operations apps
 description: Learn about unified production (UPE), sandbox (USE), and developer (UDE) environments, Dynamics 365 ERP templates, and regional availability for finance and operations apps in Power Platform.
 author: laneswenka
 ms.topic: concept-article
-ms.date: 07/23/2026
+ms.date: 11/20/2026
 ms.subservice: admin
 ms.author: laswenka
 ms.reviewer: ellenwehrle
@@ -58,7 +58,7 @@ The key characteristics of UDE environments include:
 
 - Provisioned through PowerShell by using the `DevToolsEnabled=true` parameter. For step-by-step instructions, see [Tutorial: Provision a new environment with an ERP-based template](tutorial-deploy-new-environment-with-ERP-template.md).
 - Limited to a single AOS instance with no elastic scaling. To learn more, see [Elastic compute for finance and operations apps](elastic-compute.md).
-- Intended for single-developer use. Not suitable for multi-user development or performance testing.
+- They're intended for single-developer use. They're not suitable for multi-user development, performance testing, or large-volume data migration. To learn more, see [Can I run a large data migration in a unified developer environment?](../../developer/unified-experience/finance-operations-faq.md#can-i-run-a-large-data-migration-in-a-unified-developer-environment)
 - Supports direct database access for development purposes. To learn more, see [Request credentials to product database](../../developer/unified-experience/finance-operations-product-db-access.md).
 
 > [!IMPORTANT]

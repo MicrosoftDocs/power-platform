@@ -3,7 +3,8 @@ title: Manage advanced connector policies programmatically
 description: Learn how to create, assign, copy, modify, and remove advanced connector policies (ACP) by using the Power Platform API and the administration (Admin) SDKs for PowerShell, C#, and Python.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/02/2026
+ms.date: 11/18/2026
+ai-usage: ai-generated
 author: laneswenka
 ms.author: laswenka
 ms.reviewer: ellenwehrle
@@ -26,6 +27,7 @@ In this tutorial, learn how to:
 1. [Apply or update a policy on a single environment](#step-5-apply-or-update-a-policy-on-a-single-environment).
 1. [Copy a policy from one environment group to another](#step-6-copy-a-policy-from-one-environment-group-to-another).
 1. [Remove ACP from an environment group](#step-7-remove-acp-from-an-environment-group).
+1. [Create a policy from an existing data policy](#step-8-create-a-policy-from-an-existing-data-policy).
 
 Advanced connector policies are exposed through the `governance/ruleBasedPolicies` operations of the Power Platform API. A *policy* contains one or more *rule sets*; the rule set with the ID `ConnectorManagement` holds the ACP connector allowlist. All examples in the article use API version `2024-10-01`.
 
@@ -1363,9 +1365,101 @@ foreach ($environmentId in $environmentIds) {
 
 The same per-environment `removeRule` call works with the C# and Python SDKs shown earlier. Wrap the call in a loop over the group's environment IDs.
 
+## Step 8. Create a policy from an existing data policy
+
+When you [migrate from classic data policies to ACP](advanced-connector-policies.md#migrate-from-data-policies-to-acp), you can build the first version of your allow list from a data policy that's already in place. The following PowerShell example:
+
+1. Reads a data policy by using the [data policy commands](powerapps-powershell.md#data-policy-commands) in the `Microsoft.PowerApps.Administration.PowerShell` module.
+1. Collects the connectors that the data policy classifies as **Business** or **Non-business**.
+1. Keeps only the certified connectors that appear in the [connector catalog](#find-connector-and-action-ids-with-the-connector-catalog) of an environment that the data policy applies to. It skips custom connectors, virtual connectors, and any other IDs that ACP doesn't support.
+1. Lists connectors that have [connector action control](connector-action-control.md) or [endpoint filtering](connector-endpoint-filtering.md) rules so that you can review them.
+1. Creates a new advanced connector policy. It doesn't assign the policy to any scope, and it doesn't change or delete the data policy.
+
+Before you run the example, keep the following points in mind:
+
+- Run the PowerShell example from [Step 1](#step-1-authenticate-using-power-platform-api) first to set `$headers`, `$apiBaseUrl`, and `$apiVersion`. The data policy cmdlets use a separate sign-in by using `Add-PowerAppsAccount`, and they require a Power Platform administrator account.
+- PowerShell returns only connectors that are explicitly classified in the data policy. If the policy's default group is **Business** or **Non-business**, connectors that were never moved out of the default group aren't added to the new policy. The example displays a warning in this case. Review the policy in the Power Platform admin center and add any connectors that your makers need.
+- Every connector is allowed with all of its actions. For connectors that have action rules in the data policy, restrict the allowed actions in ACP as shown in [Step 4](#step-4-enable-an-individual-connector-action). Keep endpoint filtering rules in the data policy because ACP doesn't support endpoint filtering.
+
+```powershell
+# Requires the Power Apps administration module:
+# Install-Module Microsoft.PowerApps.Administration.PowerShell -Scope CurrentUser
+Import-Module Microsoft.PowerApps.Administration.PowerShell
+Add-PowerAppsAccount
+
+$tenantId      = "<tenant ID>"
+$dlpPolicyId   = "<data policy ID>"   # Find it with: (Get-DlpPolicy).value | Select-Object name, displayName
+$environmentId = "<environment ID>"   # An environment that the data policy applies to
+$newPolicyName = "<name of the new advanced connector policy>"
+
+# 1. Read the data policy and collect the connectors that it doesn't block
+$dlpPolicy = Get-DlpPolicy -PolicyName $dlpPolicyId
+if ($dlpPolicy.defaultConnectorsClassification -ne "Blocked") {
+    Write-Warning ("The default group is '$($dlpPolicy.defaultConnectorsClassification)'. Connectors that were " +
+        "never moved out of the default group aren't returned. Review them in the Power Platform admin center.")
+}
+
+# In PowerShell output, Confidential is the Business group and General is the Non-business group
+$candidateIds = @($dlpPolicy.connectorGroups |
+    Where-Object { $_.classification -in @("Confidential", "General") } |
+    ForEach-Object { $_.connectors } |
+    ForEach-Object { $_.id } |
+    Sort-Object -Unique)
+
+# 2. Keep only certified connectors from the connector catalog of an environment in scope
+$filter  = [uri]::EscapeDataString("environment eq '$environmentId'")
+$catalog = Invoke-RestMethod -Method Get `
+    -Uri "$apiBaseUrl/connectivity/environments/$environmentId/connectors?`$filter=$filter&api-version=$apiVersion" `
+    -Headers $headers
+$certifiedIds = @($catalog.value | Where-Object { -not $_.properties.isCustomApi } | ForEach-Object { $_.id })
+
+$allowedIds = @($candidateIds | Where-Object { $certifiedIds -contains $_ })
+$skippedIds = @($candidateIds | Where-Object { $certifiedIds -notcontains $_ })
+foreach ($id in $skippedIds) {
+    Write-Host "Not a certified connector in the catalog. Keep governing it with data policies: $id"
+}
+
+# 3. List connectors that have action rules or endpoint filtering rules
+$configurations = Get-PowerAppDlpPolicyConnectorConfigurations -TenantId $tenantId -PolicyName $dlpPolicyId
+foreach ($config in $configurations.connectorActionConfigurations) {
+    Write-Host "Has action rules. Allow only the required actions in ACP: $($config.connectorId)"
+}
+foreach ($config in $configurations.endpointConfigurations) {
+    Write-Host "Has endpoint filtering rules. Keep them in the data policy: $($config.connectorId)"
+}
+
+# 4. Create the advanced connector policy. It isn't assigned to any environment or group yet.
+$policyBody = @{
+    name     = $newPolicyName
+    ruleSets = @(
+        @{
+            id      = "ConnectorManagement"
+            version = "1.0"
+            inputs  = @{
+                AllowedConnectorList = @($allowedIds | ForEach-Object {
+                    @{
+                        AllowedConnector           = $_
+                        AllowedActionsMode         = "AllAllowed"
+                        AllowedConnectionTypesMode = "AllAllowed"
+                    }
+                })
+            }
+        }
+    )
+} | ConvertTo-Json -Depth 10
+
+$policy = Invoke-RestMethod -Method Post `
+    -Uri "$apiBaseUrl/governance/ruleBasedPolicies?api-version=$apiVersion" `
+    -Headers $headers -ContentType "application/json" -Body $policyBody
+Write-Host "Created policy $($policy.id) with $($allowedIds.Count) allowed connectors"
+```
+
+After you create the policy, assign it to a pilot environment group by using the assignment call in [Step 3](#step-3-create-a-policy-and-add-it-to-an-environment-group), or to a single environment as shown in [Step 5](#step-5-apply-or-update-a-policy-on-a-single-environment). Review the policy in the Power Platform admin center, and leave the scope in mixed mode until you validate it.
+
 ## Related content
 
 [Advanced connector policies](advanced-connector-policies.md)<br/>
+[Migrate from data policies to ACP](advanced-connector-policies.md#migrate-from-data-policies-to-acp)<br/>
 [Rule Based Policies - REST API reference](/rest/api/power-platform/governance/rule-based-policies)<br/>
 [Authentication](programmability-authentication-v2.md)<br/>
 [Tutorial: Assign roles to service principals](programmability-tutorial-rbac-role-assignment.md)<br/>

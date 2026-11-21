@@ -2,7 +2,8 @@
 title: Custom connector parity
 description: About allowing makers to create and share custom connectors.
 ms.topic: concept-article
-ms.date: 11/05/2025
+ms.date: 11/18/2026
+ai-usage: ai-generated
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -131,8 +132,24 @@ $UrlPatterns = @{
 New-PowerAppPolicyUrlPatterns -TenantId $TenantId -PolicyName $PolicyId -NewUrlPatterns $UrlPatterns
 ```
 
+## Custom code in custom connectors
+
+Makers can add [custom code](/connectors/custom-connectors/write-code) written in C# to a custom connector to transform requests and responses. Custom code can send HTTP requests, including requests to endpoints other than the host URL in the connector definition.
+
+Data policies evaluate a custom connector by its name or its host URL. They don't evaluate the outbound requests that the connector's custom code sends. Because of this behavior:
+
+- Custom connector URL patterns in tenant-level data policies apply only to the host URL in the connector definition, not to the endpoints that custom code calls.
+- Classifying a custom connector as **Business** or **Non-Business** doesn't limit the endpoints that its custom code can reach.
+- In environments linked to an [Azure virtual network](vnet-support-overview.md), requests that custom code sends use a public endpoint instead of your virtual network. Network controls that you configure for your delegated subnet don't apply to these requests. For more information, see [Virtual network support for custom code](/connectors/custom-connectors/write-code#virtual-network-support).
+
+If your organization requires strict control over the endpoints that apps, flows, and agents can reach, use the following recommendations for the environments that need that control:
+
+- Block custom connectors. For example, in a tenant-level data policy that applies to those environments, classify the `*` custom connector URL pattern as **Blocked**.
+- If you need to allow specific custom connectors, allow only connectors that trusted parties build and maintain. Review their custom code before you allow them, and confirm that the code sends requests only to expected endpoints.
+- Limit who can create and update custom connectors. Users with the *Environment Maker* role can create custom connectors. For more information, see [Environment roles](environments-overview.md#environment-roles).
+
 ## Known limitations
 - The use of custom connectors isn't enforced by data policies in apps that were last published before October 2020.
 - When an environment admin creates or updates an environment-level data policy, they can only view custom connectors for which they're an owner or that have been shared with them.
 - If a custom connector has been added by name to a tenant-level policy (by using PowerShell cmdlets), the custom connector URL pattern rules is superseded by the existing classification for the connector by name. Use the Remove-DlpPolicy cmdlet to remove the custom connectors from the policy for these rules to take effect. We recommend that tenant-level policies only use custom connector host URL patterns. Don't manage custom connectors by name in tenant-level policies because individual custom connector scope is limited to the environment boundary and a custom connector's name has no significance at the tenant level.
-- Custom connector evaluation with data policies happens before the use of [Set Host URL](/connectors/custom-connectors/policy-templates/dynamichosturl/dynamichosturl) which can dynamically change the custom connector to point to any other REST API.  Be sure that custom connectors are built and used by trusted parties.
+- Data policies don't evaluate outbound requests that custom code in a custom connector sends. For more information, see [Custom code in custom connectors](#custom-code-in-custom-connectors).
