@@ -3,7 +3,7 @@ title: Connector classification
 description: About ways to categorize connectors within a data policy.
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 04/07/2026
+ms.date: 11/18/2026
 ms.subservice: admin
 author: mikferland-msft
 ms.author: miferlan
@@ -105,6 +105,8 @@ ACP currently applies to **certified connectors only**. The following connector 
 For more information, see [Supported connector types in ACP](./advanced-connector-policies.md#supported-connector-types).
 
 ## Custom connector classification
+
+You can classify custom connectors by name in environment-level data policies and by host URL pattern in tenant-level data policies. Data policies don't evaluate the outbound requests that a custom connector's [custom code](/connectors/custom-connectors/write-code) sends. For more information, see [Custom code in custom connectors](dlp-custom-connector-parity.md#custom-code-in-custom-connectors).
 
 ### Environment-level data policies 
 
