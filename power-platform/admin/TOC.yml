@@ -954,6 +954,8 @@
                   href: programmability-tutorial-manage-copilot-credit-allocations.md
                 - name: "Tutorial: Download Copilot Credit usage reports programmatically (preview)"
                   href: programmability-tutorial-download-copilot-credit-usage-reports.md
+                - name: "Tutorial: Land Copilot Credit Usage Reports in a Microsoft Fabric Lakehouse (preview)"
+                  href: programmability-tutorial-copilot-credit-fabric.md
             - name: PowerShell
               items:
                 - name: Getting started
