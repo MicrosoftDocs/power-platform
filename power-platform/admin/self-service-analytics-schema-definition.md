@@ -3,14 +3,14 @@ title: Microsoft Power Platform self-service analytics schema definition (previe
 description: Learn about the contents of the data exported from Power Platform to Azure Data Lake Gen2 storage locations. 
 ms.component: pa-admin
 ms.topic: concept-article
-ms.date: 09/13/2023
+ms.date: 11/23/2026
 ms.subservice: admin
-author: ChrisGarty
+author: mikferland-msft
+ms.author: miferlan
 contributors:
   - ChrisGarty
   - v-aangie
   - Zeffin
-ms.author: cgarty
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -26,6 +26,9 @@ This topic discusses the contents of the data exported from Power Platform to Az
 > - This is a preview feature.
 > - Preview features aren’t meant for production use and may have restricted functionality. These features are available before an official release so that customers can get early access and provide feedback.
 > - This feature is being gradually rolled out across regions and might not be available yet in your region.
+
+> [!NOTE]
+> Data export (preview) is deprecated and will retire in phases. Inventory data export stops on December 1, 2026. Usage and environment data exports aren't affected by this change and continue to run as they do today. They will retire at a later date, with advance notice. Your data lake keeps data you already exported. To keep getting inventory data, switch to the [Power Platform inventory API](inventory-api.md). Before you migrate, compare data export and the inventory API by reviewing the [field mappings and known gaps](inventory-data-availability-differences.md).
 
 ## Structure of the data output
 
