@@ -3,13 +3,16 @@ title: Set up self-service analytics to export inventory and usage data (preview
 description: Learn how to use Power Platform self-service analytics to export inventory and usage data for your organization's business needs.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 10/22/2026
+ms.date: 11/23/2026
 ms.subservice: admin
 author: souravmukherjeedotnet
 ms.author: somukhe
 ms.reviewer: ellenwehrle
 contributors:
   - Mattp123
+  - mikferland-msft
+ms.contributors:
+ - miferlan
 search.audienceType: 
   - admin
 ms.custom: 
@@ -31,9 +34,9 @@ Use the Power Platform admin center to export Power Platform inventory and usage
 > - During this preview, the list of established subscriptions shows only the first 50 subscriptions created in the tenant.
 
 > [!NOTE]
-> Microsoft is retiring the preview version of data export. Inventory data exports stop after December 1, 2026. Usage and environment data exports continue through existing and new configurations. Data you already exported remains in your data lake. Expect another notification from Microsoft when inventory data exports stop.
+> Data export (preview) is deprecated and will be retired in phases. Inventory data export stops on December 1, 2026. Usage and environment data exports aren't affected by this change and continue to run as they do today. They will be retired at a later date, with advance notice. Data you've already exported stays in your data lake.
 >
-> To prepare, use the [Power Platform inventory API](inventory-api.md) to export inventory data programmatically. Before you migrate, review the [field mappings and known gaps](inventory-data-availability-differences.md). Some data export inventory fields aren't available through the API or have different coverage.
+> To keep getting inventory data, switch to the [Power Platform inventory API](inventory-api.md). Before you migrate, compare data export and the inventory API by reviewing the [field mappings and known gaps](inventory-data-availability-differences.md).
 >
 > The Power Platform inventory API doesn't automatically export data to customer-owned storage. To create a recurring export, use an Azure service, such as [Azure Functions](/azure/azure-functions/functions-overview), [Azure Logic Apps](/azure/logic-apps/logic-apps-overview), or [Azure Automation](/azure/automation/overview), to query the Power Platform inventory API on a schedule and write the results to [Azure Blob Storage](/azure/storage/blobs/storage-blobs-introduction), [Azure Data Lake Storage](/azure/storage/blobs/data-lake-storage-introduction), or another supported destination.
 

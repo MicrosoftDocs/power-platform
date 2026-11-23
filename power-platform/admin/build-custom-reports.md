@@ -3,10 +3,10 @@ title: "Create custom dashboards with Power Platform inventory and usage data (p
 description: Use Power Apps exported data with other line-of-business scenarios and display data insights at tenant and environment levels across business units.
 ms.component: pa-admin
 ms.topic: how-to
-ms.date: 03/30/2022
+ms.date: 11/23/2026
 ms.subservice: admin
-author: EllenWehrle
-ms.author: ellenwehrle
+author: mikferland-msft
+ms.author: miferlan
 ms.reviewer: ellenwehrle
 search.audienceType: 
   - admin
@@ -14,6 +14,9 @@ search.audienceType:
 # Create custom dashboards by using Power Platform inventory and usage data (preview)
 
 [!INCLUDE [cc-beta-prerelease-disclaimer](../includes/cc-beta-prerelease-disclaimer.md)]
+
+> [!NOTE]
+> Data export (preview) is deprecated and will retire in phases. Inventory data export stops on December 1, 2026. Usage and environment data exports aren't affected by this change and continue to run as they do today. They retire at a later date, with advance notice. Data you already exported stays in your data lake. To keep getting inventory data, switch to the [Power Platform inventory API](inventory-api.md). Before you migrate, compare data export and the inventory API by reviewing the [field mappings and known gaps](inventory-data-availability-differences.md).
 
 This topic discusses how you can use data exported from Power Platform and with other line-of-business scenarios, and display data insights at tenant and environment levels across business units. For example, you can use exported Power Platform inventory and usage data for your existing enterprise dashboards and other custom solutions.
 

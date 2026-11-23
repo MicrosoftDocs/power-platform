@@ -1,7 +1,7 @@
 ---
 title: Important changes (deprecations) coming in Power Platform
 description: Important changes (deprecations) coming in Power Platform 
-ms.date: 11/18/2026
+ms.date: 11/23/2026
 ai-usage: ai-assisted
 ms.topic: concept-article
 ms.subservice: admin
@@ -14,8 +14,11 @@ contributors:
   - v-jlandrum 
   - sbasi19
   - v-aangie
+  - mikferland-msft
 ms.author: jasongre
-ms.reviewer: smurkute
+ms.reviewer: ellenwehrle
+ms.contributors:
+- miferlan
 ---
 # Important changes (deprecations) coming in Power Platform
 
@@ -25,6 +28,24 @@ For deprecation information of other products, see [Other deprecation articles](
 
 > [!IMPORTANT]
 > "Deprecated" means Microsoft intends to remove the feature or capability in a future release. The feature or capability is fully supported until it's officially removed. This deprecation notification can span a few months or years. After removal, the feature or capability no longer works. This notice is to allow you sufficient time to plan and update your code before the feature or capability is removed.
+
+## Deprecation of data export (preview)
+
+Data export (preview) in the Power Platform admin center is deprecated and will be retired in phases. After December 1, 2026, inventory data export won't be available. Usage and environment data exports aren't affected by this change and continue to run as they do today. They will be retired at a later date, with advance notice.
+
+### Impact
+
+After December 1, 2026, data export no longer exports inventory data. Data you've already exported stays in your data lake.
+
+### Action required
+
+To keep getting inventory data, switch to the Power Platform inventory API. Before you migrate, compare data export and the inventory API.
+
+Learn more:
+
+- [Power Platform inventory API](admin/inventory-api.md)
+- [Data export migration: Power Platform inventory API field mapping](admin/inventory-data-availability-differences.md)
+- [Set up self-service analytics to export inventory and usage data (preview)](admin/self-service-analytics.md)
 
 ## Retirement of Copilot in the designer for cloud flows and agent flows
 
