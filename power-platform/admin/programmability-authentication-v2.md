@@ -54,7 +54,7 @@ If you don't see Power Platform API displayed in the list when searching by GUID
 #Install the Microsoft Graph PowerShell SDK module
 Install-Module Microsoft.Graph -Scope CurrentUser -Repository PSGallery -Force
 
-Connect-MgGraph
+Connect-MgGraph -Scopes Application.ReadWrite.All, Directory.ReadWrite.All
 New-MgServicePrincipal -AppId 8578e004-a5c6-46e7-913e-12f58912df43 -DisplayName "Power Platform API"
 ```
 
