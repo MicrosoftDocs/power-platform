@@ -152,7 +152,7 @@ It's well understood that monitoring is a critical aspect of managing software a
 
 ### Review the audit trail
 
-[Activity logging for Power Apps](logging-powerapps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Dataverse and Microsoft 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
+[Activity logging for Power Apps](activity-logging-auditing/activity-logs-power-apps.md) is integrated with Office Security and Compliance center for comprehensive logging across Microsoft services like Dataverse and Microsoft 365. Office provides an API to query this data, which is currently used by many SIEM vendors to use the Activity Logging data for reporting.
 
 ### View the Power Apps and Power Automate license report
 
