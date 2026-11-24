@@ -157,8 +157,8 @@ Create mappings for users with full access:
 1. Sign in to the source environment.
 2. Use **Advanced Find** to find users.
 3. Select **Use Saved View** > **Full Access Users**, and then select **Edit Columns**.
-4. Remove all columns except **Full Name**.
-5. Select **Add Columns** > **Windows Live ID**.
+4. Remove all columns except **Display Name** (formerly **Full Name**).
+5. Select **Add Columns** > **User Principal Name** (formerly **Windows Live ID**).
 6. Select **OK** > **Results** to see the list of full access users.
 7. Select all records, select **Export Users** on the ribbon, and then select **Static Worksheet**.
 8. Repeat steps 1-7 for the destination tenant, if possible. You now have two Excel worksheets: one for the source tenant and one for the destination tenant.
