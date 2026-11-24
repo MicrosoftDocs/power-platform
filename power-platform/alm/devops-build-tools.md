@@ -21,8 +21,8 @@ to apps built on Microsoft Power Platform. These tasks include:
   - Customer engagement apps: Dynamics 365 Sales, Customer Service, Field Service, Marketing, and Project Service Automation
   - Canvas apps
   - Model-driven apps
-  - UI flows
-  - Virtual agents
+  - Desktop flows
+  - Copilot Studio agents
   - AI Builder models
   - Connectors between development environments and source control
 - Generating build artifacts
