@@ -47,6 +47,7 @@ Understanding Power Apps reference architectures and exploring solution ideas ca
 
 | Title | Description |
 | --- | --- |
+| [**Design scalable canvas apps with named formulas and reusable components**](../reference-architectures/design-scalable-canvas-apps.md) | Centralize canvas app validation and business logic with named formulas, and standardize the user interface with reusable components to reduce duplication and simplify maintenance. |
 | [**Streamline supplier onboarding with Power Platform**](../reference-architectures/supplier-onboarding-architecture.md) | Manage supplier onboarding, risk and privacy assessments, evidence collection, approvals, and reassessments through a secure, auditable lifecycle with internal and supplier collaboration. |
 | [**Enable secure multi-account access in Power Pages**](../reference-architectures/power-pages-multi-account-access.md) | Let external users switch between authorized accounts in Power Pages while maintaining account isolation and role-based access control. |
 | [**Build a student recruitment solution with Power Platform**](../reference-architectures/student-recruitment-solution.md) | Centralize student recruitment data, automate engagement, and connect recruitment activities to enrollment outcomes. |

@@ -22,6 +22,7 @@ Get the latest info about what's new and what's changed in the Power Platform an
 
 New in [Reference architectures](reference-architectures/index.md):
 
+- [Design scalable canvas apps with named formulas and reusable components](reference-architectures/design-scalable-canvas-apps.md)
 - [Streamline supplier onboarding with Power Platform](reference-architectures/supplier-onboarding-architecture.md)
 - [Build a multilingual IT self-service agent with Copilot Studio](reference-architectures/multilingual-it-self-service-agent.md)
 - [Build a regulatory application management solution](reference-architectures/regulatory-application-management.md)

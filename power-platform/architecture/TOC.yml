@@ -123,6 +123,8 @@
               href: reference-architectures/regulatory-application-management.md
             - name: Connect Power Apps to a data warehouse with Dataverse virtual tables
               href: reference-architectures/power-apps-virtual-tables.md
+            - name: Design scalable canvas apps with named formulas and reusable components
+              href: reference-architectures/design-scalable-canvas-apps.md
             - name: Modernize applications with React and Dataverse custom APIs
               href: reference-architectures/modernize-legacy-applications.md
             - name: Modernize frontline applications with Power Platform
