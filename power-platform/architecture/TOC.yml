@@ -149,6 +149,8 @@
               href: reference-architectures/rpa-scale-operations.md
             - name: Secure intelligent document processing with Azure VNet support
               href: reference-architectures/secure-document-automation.md
+            - name: Streamline supplier onboarding with Power Platform
+              href: reference-architectures/supplier-onboarding-architecture.md
         - name: Secure, govern, and manage
           items:
             - name: Automate enterprise Power Platform ALM

@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 11/09/2026
+ms.date: 11/25/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -82,6 +82,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 | **[Implement a scalable notification system with Power Platform](scalable-notification-system.md)** | Implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
 | **[Reduce infrastructure challenges with hosted RPA in Power Automate​](rpa-scale-operations.md)** | Use the Hosted RPA feature to decrease the time and effort required for procuring, provisioning, operationalizing, and maintaining infrastructure to support robotic process automations. |
 | **[Secure intelligent document processing with Azure Virtual Network support](secure-document-automation.md)** | Securely automate document ingestion, processing, validation, and storage by using Power Platform, Azure Document Intelligence, and Power Platform virtual network (VNet) support. |
+| **[Streamline supplier onboarding with Power Platform](supplier-onboarding-architecture.md)** | Manage supplier onboarding, risk and privacy assessments, evidence collection, approvals, and reassessments through a secure, auditable lifecycle with internal and supplier collaboration. |
 
 ## Secure, govern, and manage
 
