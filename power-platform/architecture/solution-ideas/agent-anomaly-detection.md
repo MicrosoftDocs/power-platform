@@ -6,7 +6,7 @@ author: carcla
 ms.subservice: architecture-center
 ms.topic: solution-idea
 ms.date: 02/04/2026
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 search.audienceType:
 - admin
@@ -41,7 +41,7 @@ To properly identify potential problems, the solution requires several knowledge
 
 1. **Proactive alerting**: The agent flow escalates new items that require investigation by posting to the finance team's Anomaly channel on Microsoft Teams. Alerts include the anomaly type, vendor name, amount at risk, severity level, and recommended action. For critical findings, the system can automatically create investigation tasks in Microsoft Planner or the organization's task tracking application.
 
-1. **Interactive investigation**: Finance team members interact with the Spend Anomaly agent through Microsoft Teams or Microsoft 365 Copilot. Users can ask natural language questions like "Show me suspicious vendors" or "Are there duplicate invoices this week?" For any questions regarding data, the custom Spend Anomaly Data agent is used. This agent was configured in the Fabric Workspace by customizing a Fabric Data Agent to know how to query the Lakehouse and Eventhouse data. This agent translates questions into the appropriate queries, retrieves results from the Lakehouse or Eventhouse, and presents findings in a summarized, actionable format. The agent provides context including severity interpretation, historical patterns, and recommended next steps.
+1. **Interactive investigation**: Finance team members interact with the Spend Anomaly agent through Microsoft Teams or Microsoft Copilot. Users can ask natural language questions like "Show me suspicious vendors" or "Are there duplicate invoices this week?" For any questions regarding data, the custom Spend Anomaly Data agent is used. This agent was configured in the Fabric Workspace by customizing a Fabric Data Agent to know how to query the Lakehouse and Eventhouse data. This agent translates questions into the appropriate queries, retrieves results from the Lakehouse or Eventhouse, and presents findings in a summarized, actionable format. The agent provides context including severity interpretation, historical patterns, and recommended next steps.
 
 1. **Action and resolution**: Once an anomaly is investigated, the Spend Anomaly agent supports resolution workflows. Users can mark items as reviewed, escalate to management, create investigation tasks, or flag as false positives directly through the conversation. The agent can connect to other systems via agent flows and connectors to hold payments, request more documentation, or update vendor risk ratings.
 

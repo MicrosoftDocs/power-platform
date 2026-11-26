@@ -9,6 +9,16 @@
       items:
         - name: Overview
           href: key-concepts/index.md
+        - name: Copilot Studio agents over Microsoft Fabric data
+          items:
+            - name: Choose an architecture
+              href: key-concepts/copilot-studio-fabric/index.md
+            - name: Prepare a semantic model for AI agents
+              href: key-concepts/copilot-studio-fabric/semantic-model-ai-agents.md
+            - name: Copilot Studio analytics agent over a Fabric semantic model
+              href: key-concepts/copilot-studio-fabric/copilot-studio-fabric-analytics-agent.md
+            - name: Evaluate analytical agents with golden prompts
+              href: key-concepts/copilot-studio-fabric/evaluate-analytical-agents.md
         - name: ExpressRoute and Power Platform
           items:
             - name: Overview

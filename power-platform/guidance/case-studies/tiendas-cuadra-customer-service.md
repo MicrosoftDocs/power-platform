@@ -3,7 +3,7 @@ title: Tiendas CUADRA delivers always-on customer service and product discovery 
 description: Learn how Tiendas CUADRA improved customer service response times and enabled AI-powered product discovery by using Microsoft Copilot Studio.
 #customer intent: As a Power Platform user, I want to learn how to use Microsoft Copilot Studio to automate customer service and enable AI-powered product discovery so that I can support customers more effectively without significantly increasing operational effort.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.date: 04/27/2026

@@ -6,7 +6,7 @@ author: carcla
 ms.subservice: architecture-center
 ms.topic: solution-idea
 ms.date: 02/11/2026
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 search.audienceType:
   - admin

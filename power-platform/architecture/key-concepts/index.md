@@ -5,9 +5,10 @@ description: Learn foundational principles to design scalable and efficient solu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 12/11/2025
+ms.date: 11/26/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
+ai-usage: ai-assisted
 contributors:
   - manuelap-msft
 search.audienceType:
@@ -27,6 +28,10 @@ The following table describes the key concepts of Power Platform and Copilot Stu
 
 | Title | Description |
 | --- | --- |
+| **[Choose an architecture to connect Copilot Studio agents to Microsoft Fabric data](copilot-studio-fabric/index.md)** | Compare four patterns for connecting agents to Microsoft Fabric and Power BI semantic models, and choose an architecture based on accuracy, response time, maintainability, and security. |
+| **[Prepare a semantic model for AI agents](copilot-studio-fabric/semantic-model-ai-agents.md)** | Prepare a semantic model with a star schema, governed measures, and documented names so agents return accurate, consistent answers. |
+| **[Copilot Studio analytics agent over a Microsoft Fabric semantic model](copilot-studio-fabric/copilot-studio-fabric-analytics-agent.md)** | Explore an analytics agent architecture that runs live, read-only DAX queries over a governed semantic model and returns formatted answers for human review. |
+| **[Evaluate analytical agents with an output contract and golden prompts](copilot-studio-fabric/evaluate-analytical-agents.md)** | Define an output contract, build golden prompts with exact expected answers, and set accuracy gates to evaluate analytical agents after each change. |
 | **[ExpressRoute and Power Platform](expressroute/overview.md)** | Learn how to use Microsoft Azure ExpressRoute to connect your on-premises network to Microsoft cloud services by using private connectivity. |
 | **[Dataverse auditing](dataverse-auditing.md)** | Learn how to track and record changes to data, user activities, and system events with Dataverse auditing. |
 | **[CRM data migration to Dataverse: Key insights and best practices](data-migration/index.md)** | Learn how to move data from external customer relationship management (CRM) systems to Microsoft Dataverse, overcome common challenges, and ensure business continuity. |

@@ -3,7 +3,7 @@ title: Action Apps redefines athlete management with Power Platform and Azure AI
 description: Learn how Action Apps uses Power Platform and Azure AI to centralize athlete data, improve decision-making, and enhance sports performance management.
 #customer intent: As a Power Platform user, I want to learn how Action Apps used Power Platform and Azure AI to create an athlete management solution so that I can build a similar data-driven solution for my organization.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.date: 03/13/2026

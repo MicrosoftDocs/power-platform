@@ -3,7 +3,7 @@ title: Automate deployments with Dataverse Git integration and pipelines in Powe
 description: Learn how to streamline Power Platform development and releases by integrating Dataverse Git, pipelines in Power Platform, and AI-assisted governance.
 #customer intent: As a developer, I want to integrate Dataverse environments with Git so that I can manage source control and enable collaborative development.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.date: 08/07/2026
 ms.subservice: architecture-center
 ms.topic: example-scenario

@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: whats-new
-ms.date: 11/25/2026
+ms.date: 11/26/2026
 ms.custom:
   - ai-gen-docs-bap
   - ai-gen-description
@@ -19,6 +19,10 @@ ms.custom:
 Get the latest info about what's new and what's changed in the Power Platform and Copilot Studio Architecture Center.
 
 ## November 2026
+
+New in [Architecture key concepts](key-concepts/index.md):
+
+- [Choose an architecture to connect Copilot Studio agents to Microsoft Fabric data](key-concepts/copilot-studio-fabric/index.md) including the related reference architecture [Copilot Studio analytics agent over a Microsoft Fabric semantic model](key-concepts/copilot-studio-fabric/copilot-studio-fabric-analytics-agent.md)
 
 New in [Reference architectures](reference-architectures/index.md):
 

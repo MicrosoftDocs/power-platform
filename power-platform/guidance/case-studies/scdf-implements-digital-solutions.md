@@ -3,7 +3,7 @@ title: Singapore Civil Defence Force implements digital solutions using Power Pl
 description: Learn how SCDF transformed manual processes into automated solutions, saving millions of dollars and empowering 6,000 officers with innovative apps and AI tools.
 #customer intent: As a Power Platform user, I want to learn how SCDF empowers its officers with apps and agents so that I can get inspiration for building apps and agents for my organization.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.date: 03/18/2026

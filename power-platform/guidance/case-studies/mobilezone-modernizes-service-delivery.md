@@ -3,7 +3,7 @@ title: Telecom provider mobilezone modernizes service delivery using Microsoft C
 description: Learn how mobilezone improved customer satisfaction and internal efficiency by deploying AI agents Mia and Supporto using Microsoft Copilot Studio.
 #customer intent: As a Power Platform user, I want to learn how to implement AI agents so that I can improve customer service and internal IT support efficiency.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.date: 04/22/2026
