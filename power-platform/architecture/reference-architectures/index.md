@@ -5,7 +5,7 @@ description: Discover how Power Platform and Copilot Studio reference architectu
 author: manuelap-msft
 ms.subservice: architecture-center
 ms.topic: overview
-ms.date: 11/09/2026
+ms.date: 11/25/2026
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 contributors: 
@@ -65,6 +65,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 | --- | --- |
 | **[Build a regulatory application management solution](regulatory-application-management.md)** | Streamline regulatory application submissions, assessments, approvals, and licensing across business areas with a single solution that combines applicant self-service, AI-assisted guidance, internal application management, document handling, and reporting. |
 | **[Connect Power Apps to a centralized data warehouse with Dataverse virtual tables](power-apps-virtual-tables.md)** | Connect Power Apps to a centralized data warehouse through Dataverse virtual tables, enabling business processes to use consolidated enterprise data alongside operational records stored in Dataverse. |
+| **[Design scalable canvas apps with named formulas and reusable components](design-scalable-canvas-apps.md)** | Centralize canvas app validation and business logic with named formulas, and standardize the user interface with reusable components to reduce duplication and simplify maintenance. |
 | **[Modernize legacy applications with React web resources and Dataverse custom APIs](modernize-legacy-applications.md)** | Learn how to modernize legacy applications with Power Platform, React web resources, and Dataverse custom APIs. |
 | **[Modernize frontline applications with Power Platform](modernize-frontline-applications.md)** | Modernize frontline material requests with an offline-capable canvas app, automated approvals, centralized data in Dataverse, and SAP integration. |
 | **[Optimize the performance of canvas apps that require complex business logic](optimize-performance-canvas-apps.md)** | Optimize Power Apps canvas app performance by shifting complex business logic to Dataverse using Power Fx functions or Dataverse custom APIs. |
@@ -82,6 +83,7 @@ Browse reference architectures categorized by common design decisions. Each refe
 | **[Implement a scalable notification system with Power Platform](scalable-notification-system.md)** | Implement a scalable notification system to automate SMS and email reminders and improve appointment reliability. |
 | **[Reduce infrastructure challenges with hosted RPA in Power Automate​](rpa-scale-operations.md)** | Use the Hosted RPA feature to decrease the time and effort required for procuring, provisioning, operationalizing, and maintaining infrastructure to support robotic process automations. |
 | **[Secure intelligent document processing with Azure Virtual Network support](secure-document-automation.md)** | Securely automate document ingestion, processing, validation, and storage by using Power Platform, Azure Document Intelligence, and Power Platform virtual network (VNet) support. |
+| **[Streamline supplier onboarding with Power Platform](supplier-onboarding-architecture.md)** | Manage supplier onboarding, risk and privacy assessments, evidence collection, approvals, and reassessments through a secure, auditable lifecycle with internal and supplier collaboration. |
 
 ## Secure, govern, and manage
 

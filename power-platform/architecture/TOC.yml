@@ -123,6 +123,8 @@
               href: reference-architectures/regulatory-application-management.md
             - name: Connect Power Apps to a data warehouse with Dataverse virtual tables
               href: reference-architectures/power-apps-virtual-tables.md
+            - name: Design scalable canvas apps with named formulas and reusable components
+              href: reference-architectures/design-scalable-canvas-apps.md
             - name: Modernize applications with React and Dataverse custom APIs
               href: reference-architectures/modernize-legacy-applications.md
             - name: Modernize frontline applications with Power Platform
@@ -149,6 +151,8 @@
               href: reference-architectures/rpa-scale-operations.md
             - name: Secure intelligent document processing with Azure VNet support
               href: reference-architectures/secure-document-automation.md
+            - name: Streamline supplier onboarding with Power Platform
+              href: reference-architectures/supplier-onboarding-architecture.md
         - name: Secure, govern, and manage
           items:
             - name: Automate enterprise Power Platform ALM
