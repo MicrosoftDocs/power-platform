@@ -173,6 +173,8 @@
               href: reference-architectures/sharepoint-dataverse-security.md
             - name: Enable secure multi-account access in Power Pages
               href: reference-architectures/power-pages-multi-account-access.md
+            - name: Secure Power Pages file uploads with Microsoft Defender for Storage
+              href: reference-architectures/secure-power-pages-file-uploads.md
             - name: Secure Power Platform access to resources
               href: reference-architectures/secure-access-azure-resources.md
             - name: Standardize access control for Dataverse

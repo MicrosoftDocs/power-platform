@@ -7,7 +7,7 @@ ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 11/25/2026
+ms.date: 11/26/2026
 ---
 
 # Power Automate reference architectures and solution ideas
@@ -35,6 +35,7 @@ Understanding reference architectures and exploring solution ideas can help you 
 
 | Title | Description |
 | --- | --- |
+| [**Secure Power Pages file uploads with Microsoft Defender for Storage**](../reference-architectures/secure-power-pages-file-uploads.md) | Scan Power Pages file uploads for malware with Microsoft Defender for Storage, and use event-driven automation to process clean files and quarantine malicious files. |
 | [**Design scalable canvas apps with named formulas and reusable components**](../reference-architectures/design-scalable-canvas-apps.md) | Centralize canvas app validation and business logic with named formulas, and standardize the user interface with reusable components to reduce duplication and simplify maintenance. |
 | [**Streamline supplier onboarding with Power Platform**](../reference-architectures/supplier-onboarding-architecture.md) | Manage supplier onboarding, risk and privacy assessments, evidence collection, approvals, and reassessments through a secure, auditable lifecycle with internal and supplier collaboration. |
 | [**Enable secure multi-account access in Power Pages**](../reference-architectures/power-pages-multi-account-access.md) | Let external users switch between authorized accounts in Power Pages while maintaining account isolation and role-based access control. |

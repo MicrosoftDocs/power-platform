@@ -26,6 +26,7 @@ New in [Architecture key concepts](key-concepts/index.md):
 
 New in [Reference architectures](reference-architectures/index.md):
 
+- [Secure Power Pages file uploads with Microsoft Defender for Storage](reference-architectures/secure-power-pages-file-uploads.md)
 - [Design scalable canvas apps with named formulas and reusable components](reference-architectures/design-scalable-canvas-apps.md)
 - [Streamline supplier onboarding with Power Platform](reference-architectures/supplier-onboarding-architecture.md)
 - [Build a multilingual IT self-service agent with Copilot Studio](reference-architectures/multilingual-it-self-service-agent.md)
