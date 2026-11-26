@@ -3,7 +3,7 @@ title: Coca-Cola Andina improves HR support for frontline workers with Copilot S
 description: Learn how Coca-Cola Andina uses Microsoft Copilot Studio to give employees faster answers while reducing the need for manual HR support.
 #customer intent: As a Power Platform user, I want to learn how Coca-Cola Andina used Copilot Studio to create an HR assistant so that I can build a similar agent for my organization.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.date: 09/08/2026

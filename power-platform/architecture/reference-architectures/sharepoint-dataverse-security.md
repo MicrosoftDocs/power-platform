@@ -6,7 +6,7 @@ author: carcla
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.date: 08/25/2026
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ---
 

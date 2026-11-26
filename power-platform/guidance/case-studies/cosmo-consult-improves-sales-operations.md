@@ -3,7 +3,7 @@ title: COSMO CONSULT improves sales operations and data quality using Copilot St
 description: Learn how COSMO CONSULT used Copilot Studio and Dynamics 365 to build four agents that improve data quality and streamline sales operations.
 #customer intent: As a Power Platform user, I want to learn how COSMO CONSULT embedded Copilot Studio agents into Dynamics 365 sales workflows, so that I can build similar solutions for my organization.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview

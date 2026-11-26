@@ -3,7 +3,7 @@ title: Connect Power Apps to a centralized data warehouse with Dataverse virtual
 description: Learn how to connect Power Apps to a centralized data warehouse through Dataverse virtual tables, enabling business processes to use consolidated enterprise data alongside operational records stored in Dataverse.
 #customer intent: As a Power Apps maker, I want to learn how to build applications that combine warehouse data with Dataverse records through virtual tables, so that I can create solutions without duplicating data.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.date: 08/18/2026

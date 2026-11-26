@@ -1,7 +1,7 @@
 ---
 title: Power Pages reference architectures and solution ideas
 description: Learn about key concepts, reference architectures, and solution ideas to build secure, efficient, and scalable Power Pages websites with low-code tools.
-#customer intent: As a business decision maker, I want to learn about Power Pages key concepts and solution ideas so that I can build secure and efficient websites.
+#customer intent: As a business decision maker, I want to learn about Power Pages key concepts, reference architectures, and solution ideas so that I can build secure and efficient websites.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
@@ -42,6 +42,7 @@ Understanding Power Pages architecture concepts and exploring reference architec
 
 | Title | Description |
 | --- | --- |
+| [**Secure Power Pages file uploads with Microsoft Defender for Storage**](../reference-architectures/secure-power-pages-file-uploads.md) | Scan Power Pages file uploads for malware with Microsoft Defender for Storage, and use event-driven automation to process clean files and quarantine malicious files. |
 | [**Streamline supplier onboarding with Power Platform**](../reference-architectures/supplier-onboarding-architecture.md) | Manage supplier onboarding, risk and privacy assessments, evidence collection, approvals, and reassessments through a secure, auditable lifecycle with internal and supplier collaboration. |
 | [**Enable secure multi-account access in Power Pages**](../reference-architectures/power-pages-multi-account-access.md) | Let external users switch between authorized accounts in Power Pages while maintaining account isolation and role-based access control. |
 | [**Build a regulatory application management solution**](../reference-architectures/regulatory-application-management.md) | Streamline regulatory application submissions, assessments, approvals, and licensing across business areas with a single solution that combines applicant self-service, AI-assisted guidance, internal application management, document handling, and reporting. |

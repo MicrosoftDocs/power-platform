@@ -5,7 +5,7 @@ description: Discover how an AI-powered donor management solution streamlines do
 author: carcla
 ms.subservice: architecture-center
 ms.topic: solution-idea
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 02/04/2026
 search.audienceType:
@@ -62,7 +62,7 @@ End-to-end flow:
 
         1. Interacts with users for clarifications as necessary, and posts updates back to the Donor Management app.
 
-    1. You can publish the agent to Microsoft 365 Copilot for conversational access via Teams or Outlook.
+    1. You can publish the agent to Microsoft Copilot for conversational access via Teams or Outlook.
 
 1. **Operational processing via Power Automate:**
 
@@ -130,7 +130,7 @@ This architecture delivers an AI-powered donor management solution built on Micr
 
 - [**AI Builder**](/ai-builder/): Provides sentiment analysis and form processing. Chosen for low-code AI integration, with Azure AI considered for complex Optical Character Recognition (OCR).
 
-- [**Copilot Studio**](/microsoft-copilot-studio/): Orchestrates donor engagement agents published to Teams and Microsoft 365 Copilot. Preferred over custom bots for governance and ease.
+- [**Copilot Studio**](/microsoft-copilot-studio/): Orchestrates donor engagement agents published to Teams and Microsoft Copilot. Preferred over custom bots for governance and ease.
 
 - [**Power Apps**](/power-apps/) (Model-driven): Delivers the donor management user interface. Selected for process-heavy, relational data scenarios over canvas apps.
 
@@ -164,7 +164,7 @@ Dataverse tables and indexes are optimized for donor records and inquiry volumes
 
 ### Experience Optimization
 
-The model-driven app delivers a consistent, responsive UI for donor management. Copilot Studio agents provide conversational experiences in Teams and Microsoft 365 Copilot, reducing friction for staff. Approvals and notifications are integrated into familiar collaboration tools, improving adoption and reducing training overhead.
+The model-driven app delivers a consistent, responsive UI for donor management. Copilot Studio agents provide conversational experiences in Teams and Microsoft Copilot, reducing friction for staff. Approvals and notifications are integrated into familiar collaboration tools, improving adoption and reducing training overhead.
 
 ## Responsible AI
 

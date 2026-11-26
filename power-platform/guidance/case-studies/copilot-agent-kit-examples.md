@@ -3,7 +3,7 @@ title: Copilot Agent Kit real-world examples
 description: Learn how organizations use Copilot Agent Kit to improve visibility, monitor performance, and refine their agents.
 #customer intent: As a Power Platform user, I want to learn how organizations use Copilot Agent Kit to improve visibility, monitor performance, and refine their agents so that I can apply similar practices in my own organization.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: edoyle
 ms.subservice: case-study
 ms.date: 06/29/2026

@@ -3,7 +3,7 @@ title: Build a student recruitment solution with Power Platform
 description: Learn how to build a student recruitment solution for higher education that centralizes data, automates engagement, and connects recruitment to enrollment outcomes.
 #customer intent: As a Power Platform user, I want to learn how to build a student recruitment solution by using Power Platform, so that I can build one for my organization.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.date: 10/20/2026
