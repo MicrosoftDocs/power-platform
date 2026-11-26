@@ -3,7 +3,7 @@ title: Manage healthcare stakeholder engagement with Power Platform
 description: Learn how to build a platform for managing Healthcare Professional (HCP), Healthcare Organization (HCO), and patient engagements and events using Power Platform.
 #customer intent: As a Power Platform user, I want to standardize end-to-end HCP event workflows so that I can build a similar solution in my organization.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.date: 06/22/2026
 ms.subservice: architecture-center
 ms.topic: solution-idea

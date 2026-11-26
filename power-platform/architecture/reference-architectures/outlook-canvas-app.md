@@ -3,7 +3,7 @@ title: Integrate Outlook and SAP with Power Apps
 description: Learn how to extend Outlook using a Power Apps canvas app to interact with SAP CRM and SAP S/4HANA data directly from Outlook.
 #customer intent: As a Power Apps maker, I want to learn how to extend Outlook with a canvas app that integrates with SAP systems so users can complete tasks without switching between applications.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.date: 07/15/2026

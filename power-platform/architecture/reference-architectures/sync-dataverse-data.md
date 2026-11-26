@@ -3,7 +3,7 @@ title: Synchronize data across Dataverse environments using Power Platform
 description: Learn how to manage master data across two Dataverse environments using Power Automate cloud flows and Power Platform dataflows.
 #customer intent: As a Power Platform user, I want to learn how to build a solution for synchronizing master data from a primary to a secondary Dataverse environment so that I can ensure reliable master data management without high complexity.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center  
 ms.topic: example-scenario  

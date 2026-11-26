@@ -3,7 +3,7 @@ title: Concentrix modernizes invoice processing with Power Platform and AI
 description: Learn how Concentrix used AI and Power Platform to streamline invoice processing, handle diverse formats, and achieve 96 percent data extraction accuracy.
 #customer intent: As a Power Platform user, I want to learn how Concentrix used AI Builder, custom prompts, and Power Automate to build an invoice‑processing solution that handles highly variable invoice formats.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.date: 03/17/2026

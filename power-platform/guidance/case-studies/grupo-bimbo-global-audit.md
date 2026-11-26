@@ -3,7 +3,7 @@ title: Grupo Bimbo standardizes global audit processes with Copilot Studio
 description: Learn how Grupo Bimbo used Microsoft Copilot Studio to build the Comatrix and Audit Assist agents, helping standardize audit planning and execution across a global internal audit team.
 #customer intent: As a Power Platform user, I want to learn how Grupo Bimbo used Copilot Studio to build agents grounded in enterprise content, so that I can standardize processes and improve consistency in my organization.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview

@@ -9,6 +9,16 @@
       items:
         - name: Overview
           href: key-concepts/index.md
+        - name: Copilot Studio agents over Microsoft Fabric data
+          items:
+            - name: Choose an architecture
+              href: key-concepts/copilot-studio-fabric/index.md
+            - name: Prepare a semantic model for AI agents
+              href: key-concepts/copilot-studio-fabric/semantic-model-ai-agents.md
+            - name: Copilot Studio analytics agent over a Fabric semantic model
+              href: key-concepts/copilot-studio-fabric/copilot-studio-fabric-analytics-agent.md
+            - name: Evaluate analytical agents with golden prompts
+              href: key-concepts/copilot-studio-fabric/evaluate-analytical-agents.md
         - name: ExpressRoute and Power Platform
           items:
             - name: Overview
@@ -163,6 +173,8 @@
               href: reference-architectures/sharepoint-dataverse-security.md
             - name: Enable secure multi-account access in Power Pages
               href: reference-architectures/power-pages-multi-account-access.md
+            - name: Secure Power Pages file uploads with Microsoft Defender for Storage
+              href: reference-architectures/secure-power-pages-file-uploads.md
             - name: Secure Power Platform access to resources
               href: reference-architectures/secure-access-azure-resources.md
             - name: Standardize access control for Dataverse

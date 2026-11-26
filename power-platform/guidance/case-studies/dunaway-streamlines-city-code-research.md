@@ -3,7 +3,7 @@ title: Dunaway streamlines city code research with Copilot Studio
 description: Learn how Dunaway's engineers transformed compliance workflows with Atlas, a conversational AI agent that delivers instant, accurate regulatory answers.
 #customer intent: As a Power Platform user, I want to learn how Dunaway used Copilot Studio to build a conversational agent, including a knowledge ingestion pipeline that keeps content up to date, so that I can build a similar agent for my organization.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.date: 03/05/2026

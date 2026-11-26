@@ -3,7 +3,7 @@ title: Nexi Group revolutionizes customer support with Copilot Studio
 description: Learn how Nexi Group uses Microsoft Copilot Studio and Foundry Tools to streamline customer interactions, reduce contact center workload, and modernize card-service support.
 #customer intent: As a Power Platform user, I want to learn how Nexi built a conversational agent with Copilot Studio and Foundry Tools so that I can implement similar solutions in my organization.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: case-study
 ms.topic: overview

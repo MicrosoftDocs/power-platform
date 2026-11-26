@@ -3,7 +3,7 @@ title: Automate bill copy requests with Power Platform
 description: Automate bill copy requests using Microsoft Power Platform, combining Microsoft Dataverse, Power Automate, Power Apps, and Power BI to streamline processing and enable real-time reporting.
 #customer intent: As a Power Platform user, I want to automate bill copy requests so that I can eliminate manual work, reduce processing time, and maintain reliable tracking and reporting.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.subservice: architecture-center
 ms.topic: example-scenario
 ms.date: 06/11/2026

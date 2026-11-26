@@ -1,28 +1,30 @@
 ---
 title: Copilot Studio reference architectures and solution ideas
-description: Learn key architecture concepts and solution ideas to create intelligent applications and solutions with advanced AI capabilities in Microsoft Copilot Studio.
-#customer intent: As a business decision maker, I want to understand Microsoft Copilot Studio key concepts and solution ideas so that I can create intelligent applications with advanced AI capabilities.
+description: Learn key architecture concepts, reference architectures, and solution ideas to create intelligent applications and solutions with advanced AI capabilities in Microsoft Copilot Studio.
+#customer intent: As a business decision maker, I want to understand Microsoft Copilot Studio key concepts, reference architectures, and solution ideas so that I can create intelligent applications with advanced AI capabilities.
 author: manuelap-msft
 ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.subservice: architecture-center
 ms.topic: concept-article
-ms.date: 11/09/2026
+ms.date: 11/26/2026
 ---
 
 # Copilot Studio reference architectures and solution ideas
 
-Microsoft Copilot Studio is a graphical, low-code platform that allows organizations to create powerful applications and solutions that integrate advanced AI capabilities. You can use Copilot Studio to create custom agents and to extend a Microsoft 365 Copilot with your own enterprise data.
+Microsoft Copilot Studio is a graphical, low-code platform that allows organizations to create powerful applications and solutions that integrate advanced AI capabilities. You can use Copilot Studio to create custom agents and to extend a Microsoft Copilot with your own enterprise data.
 
-Understanding Copilot Studio design and implementation concepts and exploring solution ideas can help you unlock new opportunities for automation, optimization, and innovation in your organization. In this article, we look at:
+Understanding Copilot Studio design and implementation concepts and exploring reference architectures and solution ideas can help you unlock new opportunities for automation, optimization, and innovation in your organization. This article covers:
 
-- **Key concepts**: Learn about key pillars and responsibilities for implementing Copilot Studio projects to help you build robust, efficient, and maintainable solutions.
+- **Copilot Studio pillars and responsibilities**: Find guidance for each area of the solution lifecycle, from architecture and planning to adoption, governance, and continuous improvement.
+
+- **Key concepts**: Learn about additional architecture concepts that help you build robust, efficient, and maintainable solutions with Copilot Studio.
 
 - **Reference architectures**: Explore foundational reference architectures that support building well-architected solutions with Copilot Studio.
 
 - **Solution ideas**: Discover a range of solution ideas that demonstrate the versatility and power of Copilot Studio.
 
-## Key concepts
+## Copilot Studio pillars and responsibilities
 
 | Pillar | Description |
 | --- | --- |
@@ -34,10 +36,17 @@ Understanding Copilot Studio design and implementation concepts and exploring so
 | [**Improve**](/microsoft-copilot-studio/guidance/improve-overview) | Continuously optimize agent performance using analytics, key performance indicators (KPIs), user feedback, and iterative refinement to increase quality and business impact. |
 | Extend | Expand agent capabilities and integrations by using [Copilot Agent Kit](/microsoft-copilot-studio/guidance/kit-overview) and SDKs like the [Microsoft 365 Agents SDK](/microsoft-365-copilot/extensibility/m365-agents-sdk) and the [Microsoft Agent 365 SDK](/microsoft-agent-365/developer/). |
 
+## Key concepts
+
+| Title | Description |
+| --- | --- |
+| [**Choose an architecture to connect Copilot Studio agents to Microsoft Fabric data**](../key-concepts/copilot-studio-fabric/index.md) | Compare four patterns for connecting Copilot Studio agents to Microsoft Fabric and Power BI semantic models, and choose the one that meets your needs. |
+
 ## Reference architectures
 
 | Title | Description |
 | --- | --- |
+| [**Copilot Studio analytics agent over a Microsoft Fabric semantic model**](../key-concepts/copilot-studio-fabric/copilot-studio-fabric-analytics-agent.md) | Answer business questions with live, read-only DAX queries over a governed Fabric semantic model, with formatted results and narrative commentary for users to review in Microsoft Copilot or Teams. |
 | [**Build a multilingual IT self-service agent with Copilot Studio**](../reference-architectures/multilingual-it-self-service-agent.md) | Help employees get IT answers, find service catalog items, and manage support tickets in Microsoft Teams with a multilingual agent that preserves employee identity across ITSM integrations and supports hand-off to a service desk analyst. |
 | [**Build a regulatory application management solution**](../reference-architectures/regulatory-application-management.md) | Streamline regulatory application submissions, assessments, approvals, and licensing across business areas with a single solution that combines applicant self-service, AI-assisted guidance, internal application management, document handling, and reporting. |
 | [**Automate procurement order acknowledgment matching with Copilot Studio and SAP**](../reference-architectures/order-acknowledgment-validation.md) | Use a multi-agent architecture to compare supplier order acknowledgments with purchase orders in SAP, automatically confirm matches, and escalate exceptions for review. |

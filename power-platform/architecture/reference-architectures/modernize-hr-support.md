@@ -14,7 +14,7 @@ ms.reviewer: jhaskett-msft
 
 Large organizations manage HR across several systems of record. Employees often switch between a human capital management (HCM) system, an IT service management portal, and a learning platform to find a policy, update a personal detail, or request time off.
 
-This reference architecture describes a conversational multi-agent Human Resources assistant for employees and managers. An orchestrator agent built with Microsoft Copilot Studio routes each request to a specialized agent, and each specialized agent completes its work in the system of record on the employee's behalf. Employees work in Microsoft Teams and Microsoft 365 Copilot throughout the process.
+This reference architecture describes a conversational multi-agent Human Resources assistant for employees and managers. An orchestrator agent built with Microsoft Copilot Studio routes each request to a specialized agent, and each specialized agent completes its work in the system of record on the employee's behalf. Employees work in Microsoft Teams and Microsoft Copilot throughout the process.
 
 > [!TIP]
 > This article provides an example scenario and architectural overview of a conversational agent for HR processes. This solution is a generalized example that can be adapted to various industries and use cases.
@@ -25,7 +25,7 @@ This reference architecture describes a conversational multi-agent Human Resourc
 
 ## Workflow
 
-1. An employee or a manager opens the assistant in Microsoft Teams or Microsoft 365 Copilot and signs in with Microsoft Entra ID single sign-on to ask a question.
+1. An employee or a manager opens the assistant in Microsoft Teams or Microsoft Copilot and signs in with Microsoft Entra ID single sign-on to ask a question.
 
 1. The orchestrator agent classifies the request and routes it to the specialized agent that owns that HR area. The orchestrator also handles task switching, collects missing details, recognizes sensitive topics, detects out-of-scope requests, and applies fallback behavior.
 
@@ -47,7 +47,7 @@ The architecture uses the following Microsoft services to provide the agent expe
 |----|----|
 | [Copilot Studio](/microsoft-copilot-studio/) | Hosts the orchestrator agent and each specialized agent, including topics, instructions, knowledge, actions, and answer evaluation. |
 | [Microsoft Teams](/microsoftteams/teams-overview) | Delivers the assistant in the collaboration client that employees and managers already use. |
-| [Microsoft 365 Copilot](/microsoft-365/copilot/) | Provides a second entry point to the same assistant inside the Microsoft 365 experience. |
+| [Microsoft Copilot](/microsoft-365/copilot/) | Provides a second entry point to the same assistant inside the Microsoft 365 experience. |
 | [Microsoft 365 Graph connector](/microsoft-365/copilot/connectors/connector-agent) | Indexes knowledge articles from the IT service management platform so the HR policy agent can retrieve them with semantic search. |
 | [Microsoft Power Automate](/power-automate/) | Runs the flows that carry requests between agents and the connected systems. |
 | [Custom connectors](/connectors/custom-connectors) | Expose the APIs of the HCM, IT service management, and learning systems as actions the agents can call. |

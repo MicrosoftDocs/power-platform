@@ -3,7 +3,7 @@ title: Upload files to SharePoint with metadata from model‑driven apps
 description: Learn how to use a custom page in a model-driven app for SharePoint file uploads with metadata to improve user experience and governance.
 #customer intent: As a Power Platform user, I want to learn how to build a solution that lets users upload documents from a model‑driven app to SharePoint by using a custom page, including adding metadata, so that I can improve user experience and governance.
 author: carcla
-ms.author: v-caclaesson
+ms.author: mapichle
 ms.reviewer: jhaskett-msft
 ms.date: 04/30/2026
 ms.subservice: architecture-center
